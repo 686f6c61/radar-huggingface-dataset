@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "UraionLabs/Uraion-Cyber-V1.0-MLX-oQ2.5e",
   "slug": "uraionlabs-uraion-cyber-v1-0-mlx-oq2-5e",
   "author": "UraionLabs",
@@ -65,6 +65,7 @@
   "parameters_human": "35.95B",
   "storage_bytes": 14899375301,
   "storage_human": "14.9 GB",
+  "context_length": null,
   "base_model": "UraionLabs/Uraion-Cyber-V1.0",
   "formats": [
     "mlx",
@@ -72,8 +73,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

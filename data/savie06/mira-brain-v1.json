@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "savie06/MiRA-Brain-v1",
   "slug": "savie06-mira-brain-v1",
   "author": "savie06",
@@ -30,6 +30,7 @@
   "parameters_human": "3.21B",
   "storage_bytes": 18317702800,
   "storage_human": "18.3 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-06T07:30:22.457Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

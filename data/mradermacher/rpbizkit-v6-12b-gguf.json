@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/RPBizkit-v6-12B-GGUF",
   "slug": "mradermacher-rpbizkit-v6-12b-gguf",
   "author": "mradermacher",
@@ -33,14 +33,19 @@
   "parameters_human": "12.25B",
   "storage_bytes": 84692313984,
   "storage_human": "84.7 GB",
+  "context_length": 1024000,
   "base_model": "RicardoEstep/RPBizkit-v6-12B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

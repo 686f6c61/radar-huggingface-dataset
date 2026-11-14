@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-kl-mse-seed100",
   "slug": "burnycoder-e2e-bsf-dinov3-imagenette-full-block-kl-mse-seed100",
   "author": "BurnyCoder",
@@ -34,14 +34,19 @@
   "parameters_human": "9.6M",
   "storage_bytes": 38781342,
   "storage_human": "39 MB",
+  "context_length": null,
   "base_model": "facebook/dinov3-vitb16-pretrain-lvd1689m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

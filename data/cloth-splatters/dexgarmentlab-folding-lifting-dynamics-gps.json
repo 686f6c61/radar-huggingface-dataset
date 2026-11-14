@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Cloth-splatters/dexgarmentlab-folding-lifting-dynamics-gps",
   "slug": "cloth-splatters-dexgarmentlab-folding-lifting-dynamics-gps",
   "author": "Cloth-splatters",
@@ -23,6 +23,7 @@
   "parameters_human": null,
   "storage_bytes": 115595800,
   "storage_human": "116 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -30,8 +31,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-17T09:45:32.150Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

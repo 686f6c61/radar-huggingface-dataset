@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pragmaticcs/Qwen-35B-A3B-SignOfFour-Coder-i1-GGUF",
   "slug": "pragmaticcs-qwen-35b-a3b-signoffour-coder-i1-gguf",
   "author": "pragmaticcs",
@@ -46,14 +46,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 370842796864,
   "storage_human": "370.8 GB",
+  "context_length": 262144,
   "base_model": "pragmaticcs/Qwen-35B-A3B-SignOfFour-Coder",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

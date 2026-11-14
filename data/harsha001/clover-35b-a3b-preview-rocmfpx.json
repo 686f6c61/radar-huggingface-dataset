@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Harsha001/Clover-35B-A3B-Preview-ROCmFPX",
   "slug": "harsha001-clover-35b-a3b-preview-rocmfpx",
   "author": "Harsha001",
@@ -38,14 +38,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 101806082304,
   "storage_human": "101.8 GB",
+  "context_length": 131072,
   "base_model": "Diffuspace/Clover-35B-A3B-Preview",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

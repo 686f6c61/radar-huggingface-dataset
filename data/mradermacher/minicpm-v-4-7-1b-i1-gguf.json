@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/MiniCPM-V-4.7-1B-i1-GGUF",
   "slug": "mradermacher-minicpm-v-4-7-1b-i1-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "1.01B",
   "storage_bytes": 13869368544,
   "storage_human": "13.9 GB",
+  "context_length": 262144,
   "base_model": "openbmb/MiniCPM-V-4.7-1B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

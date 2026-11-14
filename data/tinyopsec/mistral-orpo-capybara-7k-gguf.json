@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tinyopsec/mistral-orpo-capybara-7k-GGUF",
   "slug": "tinyopsec-mistral-orpo-capybara-7k-gguf",
   "author": "tinyopsec",
@@ -35,14 +35,19 @@
   "parameters_human": "7.24B",
   "storage_bytes": 59985427168,
   "storage_human": "60.0 GB",
+  "context_length": 32768,
   "base_model": "kaist-ai/mistral-orpo-capybara-7k",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "exeterminal/Exe-Turbo-S-V1-GGUF",
   "slug": "exeterminal-exe-turbo-s-v1-gguf",
   "author": "exeterminal",
@@ -36,14 +36,19 @@
   "parameters_human": "8.47B",
   "storage_bytes": 84664588085,
   "storage_human": "84.7 GB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM2.5-8B-A1B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "exe-ai-harness/Exe-Turbo-S-V1-GGUF",
+  "renamed_at": "2026-11-11T05:13:02.584Z",
   "benchmarks": [],
   "sources": [
     {

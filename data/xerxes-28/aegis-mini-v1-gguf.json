@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Xerxes-28/AEGIS-Mini-V1-GGUF",
   "slug": "xerxes-28-aegis-mini-v1-gguf",
   "author": "Xerxes-28",
@@ -53,14 +53,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 2498713597,
   "storage_human": "2.5 GB",
+  "context_length": 40960,
   "base_model": "unsloth/Qwen3-4B-unsloth-bnb-4bit",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Xerxes-28/AEGIS-Mini-1.0-4B-GGUF",
+  "renamed_at": "2026-11-11T04:12:07.693Z",
   "benchmarks": [],
   "sources": []
 }

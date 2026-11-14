@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "erosallanhacinas-dlsu/bert-research-baseline",
   "slug": "erosallanhacinas-dlsu-bert-research-baseline",
   "author": "erosallanhacinas-dlsu",
@@ -27,14 +27,19 @@
   "parameters_human": "83.5M",
   "storage_bytes": 334030264,
   "storage_human": "334 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-22T14:13:12.594Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MomoSoft/chilloutmix-sd15-q8-gguf",
   "slug": "momosoft-chilloutmix-sd15-q8-gguf",
   "author": "MomoSoft",
@@ -22,14 +22,19 @@
   "parameters_human": "1.07B",
   "storage_bytes": 1801579488,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

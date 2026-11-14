@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TujiaNLP/tujia-llm-8b-v0.2-gguf",
   "slug": "tujianlp-tujia-llm-8b-v0-2-gguf",
   "author": "TujiaNLP",
@@ -36,14 +36,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 8278377846,
   "storage_human": "8.3 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "panzarasa/qwen1.5-0.5b-websight",
   "slug": "panzarasa-qwen1-5-0-5b-websight",
   "author": "panzarasa",
@@ -41,14 +41,19 @@
   "parameters_human": "464.0M",
   "storage_bytes": 1042614794,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen1.5-0.5B-Chat",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

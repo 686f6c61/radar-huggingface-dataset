@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prachuryyaIITG/FewNERD_English_MuRIL",
   "slug": "prachuryyaiitg-fewnerd_english_muril",
   "author": "prachuryyaIITG",
@@ -37,14 +37,19 @@
   "parameters_human": "505.0M",
   "storage_bytes": 2020022956,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "google/muril-large-cased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

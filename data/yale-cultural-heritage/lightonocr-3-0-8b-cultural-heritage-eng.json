@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yale-cultural-heritage/LightOnOCR-3-0.8B-cultural-heritage-eng",
   "slug": "yale-cultural-heritage-lightonocr-3-0-8b-cultural-heritage-eng",
   "author": "yale-cultural-heritage",
@@ -44,14 +44,19 @@
   "parameters_human": "853.0M",
   "storage_bytes": 1726019853,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "lightonai/LightOnOCR-3-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

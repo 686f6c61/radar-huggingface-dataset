@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "haoquan03/PixelBench-Molmo2-4B-PRT-s0",
   "slug": "haoquan03-pixelbench-molmo2-4b-prt-s0",
   "author": "haoquan03",
@@ -31,14 +31,19 @@
   "parameters_human": "4.85B",
   "storage_bytes": 9713314478,
   "storage_human": "9.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

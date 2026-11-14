@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chogeha/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-oQ2.5e-mtp",
   "slug": "chogeha-qwen3-8-27b-aeon-ultimate-uncensored-oq2-5e-mtp",
   "author": "chogeha",
@@ -28,6 +28,7 @@
   "parameters_human": null,
   "storage_bytes": 12791122717,
   "storage_human": "12.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

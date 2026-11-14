@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BrockTaylor/gemma-finetuned-EmoBench-M_64R",
   "slug": "brocktaylor-gemma-finetuned-emobench-m_64r",
   "author": "BrockTaylor",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 3692264739,
   "storage_human": "3.7 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-12B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

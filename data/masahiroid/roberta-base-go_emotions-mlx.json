@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "masahiroid/roberta-base-go_emotions-mlx",
   "slug": "masahiroid-roberta-base-go_emotions-mlx",
   "author": "masahiroid",
@@ -28,6 +28,7 @@
   "parameters_human": "124.7M",
   "storage_bytes": 498710472,
   "storage_human": "499 MB",
+  "context_length": null,
   "base_model": "SamLowe/roberta-base-go_emotions",
   "formats": [
     "mlx",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

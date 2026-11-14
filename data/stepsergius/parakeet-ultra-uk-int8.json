@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stepsergius/parakeet-ultra-uk-int8",
   "slug": "stepsergius-parakeet-ultra-uk-int8",
   "author": "stepsergius",
@@ -78,14 +78,19 @@
   "parameters_human": null,
   "storage_bytes": 670482886,
   "storage_human": "670 MB",
+  "context_length": null,
   "base_model": "moondream/parakeet-ultra",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

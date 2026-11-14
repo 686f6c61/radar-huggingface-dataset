@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Colki/grande-mestre-v1",
   "slug": "colki-grande-mestre-v1",
   "author": "Colki",
@@ -27,14 +27,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 8988110400,
   "storage_human": "9.0 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-14T02:38:43.385Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

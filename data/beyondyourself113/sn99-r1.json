@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "beyondyourself113/sn99-r1",
   "slug": "beyondyourself113-sn99-r1",
   "author": "beyondyourself113",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 327090,
   "storage_human": "327090 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-05T12:00:40.868Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

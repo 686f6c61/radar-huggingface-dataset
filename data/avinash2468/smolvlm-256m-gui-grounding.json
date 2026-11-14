@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "avinash2468/SmolVLM-256M-GUI-Grounding",
   "slug": "avinash2468-smolvlm-256m-gui-grounding",
   "author": "avinash2468",
@@ -40,14 +40,19 @@
   "parameters_human": "251.2M",
   "storage_bytes": 503170503,
   "storage_human": "503 MB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolVLM-256M-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "GUI grounding",

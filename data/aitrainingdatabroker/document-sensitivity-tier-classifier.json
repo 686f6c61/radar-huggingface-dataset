@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aitrainingdatabroker/document-sensitivity-tier-classifier",
   "slug": "aitrainingdatabroker-document-sensitivity-tier-classifier",
   "author": "aitrainingdatabroker",
@@ -38,14 +38,19 @@
   "parameters_human": "82.1M",
   "storage_bytes": 328498432,
   "storage_human": "328 MB",
+  "context_length": null,
   "base_model": "distilroberta-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "strongpear/Llama3.1-8B-Q_G_D1_D2_CoT_A-LAW-Instruct-r64",
   "slug": "strongpear-llama3-1-8b-q_g_d1_d2_cot_a-law-instruct-r64",
   "author": "strongpear",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 40286165005,
   "storage_human": "40.3 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "strongpear/Llama3.1-8B-Q_G_D1_D2_CoT_A-LAW-Instruct-r64_baseline",
+  "renamed_at": "2026-11-11T07:38:56.134Z",
   "benchmarks": [],
   "sources": [
     {

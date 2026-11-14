@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LaToucheCarre/LaToucheCarre-Gemma-fr-en-GGUF",
   "slug": "latouchecarre-latouchecarre-gemma-fr-en-gguf",
   "author": "LaToucheCarre",
@@ -36,14 +36,19 @@
   "parameters_human": "880.9M",
   "storage_bytes": 9565609696,
   "storage_human": "9.6 GB",
+  "context_length": 32768,
   "base_model": "google/gemma-3-1b-it, google/gemma-4-E2B-it, google/gemma-4-E4B-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-13T03:16:10.377Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

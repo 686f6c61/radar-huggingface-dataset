@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Neurobrix/SwinIR-001_classicalSR_DIV2K_s48w8_SwinIR-M_x4-nbx",
   "slug": "neurobrix-swinir-001_classicalsr_div2k_s48w8_swinir-m_x4-nbx",
   "author": "Neurobrix",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 45347919,
   "storage_human": "45 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

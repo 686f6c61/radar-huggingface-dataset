@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vkovtun/llama-text-to-sql-2026-09-23_22.55.33-finetune-QLORA-8B",
   "slug": "vkovtun-llama-text-to-sql-2026-09-23_22-55-33-finetune-qlora-8b",
   "author": "vkovtun",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 1695482025,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

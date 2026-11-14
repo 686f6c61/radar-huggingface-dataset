@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lixpr/bert-disaster-tweets",
   "slug": "lixpr-bert-disaster-tweets",
   "author": "Lixpr",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 110241529,
   "storage_human": "110 MB",
+  "context_length": null,
   "base_model": "google-bert/bert-base-uncased",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

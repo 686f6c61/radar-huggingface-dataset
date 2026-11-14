@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nace-ai/drex-v1.5",
   "slug": "nace-ai-drex-v1-5",
   "author": "nace-ai",
@@ -40,14 +40,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 17936340927,
   "storage_human": "17.9 GB",
+  "context_length": null,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/RQwen3-751M-Base-GGUF",
   "slug": "mradermacher-rqwen3-751m-base-gguf",
   "author": "mradermacher",
@@ -41,14 +41,19 @@
   "parameters_human": "751.6M",
   "storage_bytes": 7025285760,
   "storage_human": "7.0 GB",
+  "context_length": 2048,
   "base_model": "Treese/RQwen3-751M-Base",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

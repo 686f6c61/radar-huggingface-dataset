@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "roman220220/nemotron-30b-a3b-ternary-rotation-salient10-mlx",
   "slug": "roman220220-nemotron-30b-a3b-ternary-rotation-salient10-mlx",
   "author": "roman220220",
@@ -28,6 +28,7 @@
   "parameters_human": "13.40B",
   "storage_bytes": 21846440748,
   "storage_human": "21.8 GB",
+  "context_length": null,
   "base_model": "nvidia/Nemotron-3.5-Lightning-30B-A3B",
   "formats": [
     "mlx",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-13T03:14:39.214Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AwareLiquid/O1-Qwen05-Adapter",
   "slug": "awareliquid-o1-qwen05-adapter",
   "author": "AwareLiquid",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 74689977,
   "storage_human": "75 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

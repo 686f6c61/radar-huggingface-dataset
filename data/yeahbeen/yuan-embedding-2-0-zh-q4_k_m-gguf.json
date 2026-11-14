@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yeahbeen/Yuan-embedding-2.0-zh-Q4_K_M-GGUF",
   "slug": "yeahbeen-yuan-embedding-2-0-zh-q4_k_m-gguf",
   "author": "yeahbeen",
@@ -34,14 +34,19 @@
   "parameters_human": "324.5M",
   "storage_bytes": 207609344,
   "storage_human": "208 MB",
+  "context_length": 512,
   "base_model": "IEITYuan/Yuan-embedding-2.0-zh",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

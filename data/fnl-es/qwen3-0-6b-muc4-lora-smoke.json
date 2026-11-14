@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fnl-es/qwen3-0.6b-muc4-lora-smoke",
   "slug": "fnl-es-qwen3-0-6b-muc4-lora-smoke",
   "author": "fnl-es",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 1026052504,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

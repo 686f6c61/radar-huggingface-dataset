@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Anbeeld/Alpamayo-R1-10B-DFlash-GGUF",
   "slug": "anbeeld-alpamayo-r1-10b-dflash-gguf",
   "author": "Anbeeld",
@@ -41,6 +41,7 @@
   "parameters_human": "469.8M",
   "storage_bytes": 2866940384,
   "storage_human": "2.9 GB",
+  "context_length": 40960,
   "base_model": "z-lab/Alpamayo-R1-10B-DFlash",
   "formats": [
     "gguf",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

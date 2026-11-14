@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shgao/rsi-jev-v7.0-vl-3b-mlx-4bit",
   "slug": "shgao-rsi-jev-v7-0-vl-3b-mlx-4bit",
   "author": "shgao",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 1927262178,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": "shgao/rsi-jev-v7.0-vl-3b",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

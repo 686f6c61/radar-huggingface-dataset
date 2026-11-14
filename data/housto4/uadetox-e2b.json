@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Housto4/uadetox-e2b",
   "slug": "housto4-uadetox-e2b",
   "author": "Housto4",
@@ -33,12 +33,13 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 125,
+  "downloads_30d": 126,
   "trending_score": 0,
   "parameters": 2802968867,
   "parameters_human": "2.80B",
   "storage_bytes": 2228432064,
   "storage_human": "2.2 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-4-E2B-it-qat-q4_0-unquantized",
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Ukrainian detoxification into literary style",

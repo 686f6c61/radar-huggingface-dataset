@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "crabby-devil/zils-mini-mica-4b",
   "slug": "crabby-devil-zils-mini-mica-4b",
   "author": "crabby-devil",
@@ -33,14 +33,19 @@
   "parameters_human": "4.66B",
   "storage_bytes": 9319828160,
   "storage_human": "9.3 GB",
+  "context_length": null,
   "base_model": "sky7350/Mica-v0.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

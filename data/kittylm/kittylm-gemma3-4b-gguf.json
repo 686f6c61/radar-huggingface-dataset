@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KittyLM/kittylm-gemma3-4b-gguf",
   "slug": "kittylm-kittylm-gemma3-4b-gguf",
   "author": "KittyLM",
@@ -33,14 +33,19 @@
   "parameters_human": "3.88B",
   "storage_bytes": 12608439040,
   "storage_human": "12.6 GB",
+  "context_length": 131072,
   "base_model": "KittyLM/kittylm-gemma3-4b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

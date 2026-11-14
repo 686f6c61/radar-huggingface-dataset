@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yichengup/Impact-Flow-v2",
   "slug": "yichengup-impact-flow-v2",
   "author": "yichengup",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 155110264,
   "storage_human": "155 MB",
+  "context_length": null,
   "base_model": "Comfy-Org/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ornith-ai/Ornith-1.5-35B-A3B-NVFP4",
   "slug": "ornith-ai-ornith-1-5-35b-a3b-nvfp4",
   "author": "ornith-ai",
@@ -31,14 +31,19 @@
   "parameters_human": "19.53B",
   "storage_bytes": 46855923603,
   "storage_human": "46.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

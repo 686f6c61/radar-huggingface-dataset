@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Zainulabedin1/fault-injection-diagnosis",
   "slug": "zainulabedin1-fault-injection-diagnosis",
   "author": "Zainulabedin1",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 449240,
   "storage_human": "449240 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

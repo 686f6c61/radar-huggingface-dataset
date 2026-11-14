@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "audreyt/DeepSeek-V4.1-Flash-Abliterated-GGUF",
   "slug": "audreyt-deepseek-v4-1-flash-abliterated-gguf",
   "author": "audreyt",
@@ -34,14 +34,19 @@
   "parameters_human": "754.64B",
   "storage_bytes": 1462854746112,
   "storage_human": "1462.9 GB",
+  "context_length": null,
   "base_model": "pqhaz/DeepSeek-V4.1-Flash-1017-heretic, s-zaizen/DeepSeek-V4.1-Flash-Abliterated, peasantsmith/DeepSeek-V4.1-Flash-1017-Maya-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

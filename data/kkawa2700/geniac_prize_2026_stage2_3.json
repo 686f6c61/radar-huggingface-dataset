@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KKawa2700/geniac_prize_2026_stage2_3",
   "slug": "kkawa2700-geniac_prize_2026_stage2_3",
   "author": "KKawa2700",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 143610542,
   "storage_human": "144 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

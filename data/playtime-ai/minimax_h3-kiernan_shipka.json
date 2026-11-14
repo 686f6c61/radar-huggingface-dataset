@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Playtime-AI/Minimax_H3-Kiernan_Shipka",
   "slug": "playtime-ai-minimax_h3-kiernan_shipka",
   "author": "Playtime-AI",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 177059130,
   "storage_human": "177 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

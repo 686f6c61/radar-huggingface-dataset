@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bosonai/Qwen3-ASR-1.7B-hf-orze",
   "slug": "bosonai-qwen3-asr-1-7b-hf-orze",
   "author": "bosonai",
@@ -45,14 +45,19 @@
   "parameters_human": "2.04B",
   "storage_bytes": 8082010428,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ASR-1.7B-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

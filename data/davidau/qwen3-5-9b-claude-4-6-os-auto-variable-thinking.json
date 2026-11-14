@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Qwen3.5-9B-Claude-4.6-OS-Auto-Variable-THINKING",
   "slug": "davidau-qwen3-5-9b-claude-4-6-os-auto-variable-thinking",
   "author": "DavidAU",
@@ -57,14 +57,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 18839710463,
   "storage_human": "18.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

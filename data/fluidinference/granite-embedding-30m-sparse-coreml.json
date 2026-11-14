@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FluidInference/granite-embedding-30m-sparse-coreml",
   "slug": "fluidinference-granite-embedding-30m-sparse-coreml",
   "author": "FluidInference",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 243851363,
   "storage_human": "244 MB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-embedding-30m-sparse",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

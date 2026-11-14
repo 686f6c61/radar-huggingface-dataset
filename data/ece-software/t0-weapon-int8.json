@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ECE-Software/t0-weapon-int8",
   "slug": "ece-software-t0-weapon-int8",
   "author": "ECE-Software",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 3461579,
   "storage_human": "3 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-04T02:12:30.442Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

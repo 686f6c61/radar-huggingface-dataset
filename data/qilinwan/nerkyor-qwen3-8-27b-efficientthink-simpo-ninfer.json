@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "QilinWan/nerkyor-Qwen3.8-27B-EfficientThink-SimPO-Ninfer",
   "slug": "qilinwan-nerkyor-qwen3-8-27b-efficientthink-simpo-ninfer",
   "author": "QilinWan",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 57542853380,
   "storage_human": "57.5 GB",
+  "context_length": null,
   "base_model": "nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

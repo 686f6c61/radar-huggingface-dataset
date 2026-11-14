@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Efso/Nemotron-3-Nano-30B-A3B-GR",
   "slug": "efso-nemotron-3-nano-30b-a3b-gr",
   "author": "Efso",
@@ -36,6 +36,7 @@
   "parameters_human": "31.58B",
   "storage_bytes": 58148612608,
   "storage_human": "58.1 GB",
+  "context_length": 1048576,
   "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

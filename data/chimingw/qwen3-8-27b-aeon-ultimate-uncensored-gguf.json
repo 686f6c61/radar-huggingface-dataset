@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chimingw/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-GGUF",
   "slug": "chimingw-qwen3-8-27b-aeon-ultimate-uncensored-gguf",
   "author": "chimingw",
@@ -40,6 +40,7 @@
   "parameters_human": "26.90B",
   "storage_bytes": 196779222956,
   "storage_human": "196.8 GB",
+  "context_length": 262144,
   "base_model": "AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

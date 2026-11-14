@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-Text-NVFP4-MTP-XS",
   "slug": "aeon-7-qwen3-6-27b-aeon-ultimate-uncensored-text-nvfp4-mtp-xs",
   "author": "AEON-7",
@@ -63,14 +63,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 19669211688,
   "storage_human": "19.7 GB",
+  "context_length": null,
   "base_model": "AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

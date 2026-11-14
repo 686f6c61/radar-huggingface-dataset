@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tiktits/Swift-1.5-Qwen3.8-27B-Uncensored-EXL3-3.75bpw",
   "slug": "tiktits-swift-1-5-qwen3-8-27b-uncensored-exl3-3-75bpw",
   "author": "tiktits",
@@ -41,14 +41,19 @@
   "parameters_human": "7.80B",
   "storage_bytes": 15603250049,
   "storage_human": "15.6 GB",
+  "context_length": null,
   "base_model": "ukisai/Swift-1.5-Qwen3.8-27b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

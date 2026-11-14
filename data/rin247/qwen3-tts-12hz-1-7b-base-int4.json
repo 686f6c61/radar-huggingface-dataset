@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rin247/Qwen3-TTS-12Hz-1.7B-Base-INT4",
   "slug": "rin247-qwen3-tts-12hz-1-7b-base-int4",
   "author": "Rin247",
@@ -27,14 +27,19 @@
   "parameters_human": "1.18B",
   "storage_bytes": 1633260088,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-30T13:12:07.569Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

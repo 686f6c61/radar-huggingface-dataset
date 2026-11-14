@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RoboIT1234/TEAM-3-RoboIT-smolvla-grasp5-2-2026-10-25",
   "slug": "roboit1234-team-3-roboit-smolvla-grasp5-2-2026-10-25",
   "author": "RoboIT1234",
@@ -30,14 +30,19 @@
   "parameters_human": "450.0M",
   "storage_bytes": 1197789624,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "lerobot/smolvla_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

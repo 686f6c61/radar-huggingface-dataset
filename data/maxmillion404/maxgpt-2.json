@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MaxMillion404/MaxGPT-2",
   "slug": "maxmillion404-maxgpt-2",
   "author": "MaxMillion404",
@@ -31,14 +31,19 @@
   "parameters_human": "113.2M",
   "storage_bytes": 452698992,
   "storage_human": "453 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

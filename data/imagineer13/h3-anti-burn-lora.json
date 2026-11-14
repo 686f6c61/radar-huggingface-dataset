@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Imagineer13/H3-Anti-Burn-LoRA",
   "slug": "imagineer13-h3-anti-burn-lora",
   "author": "Imagineer13",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 311880756,
   "storage_human": "312 MB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

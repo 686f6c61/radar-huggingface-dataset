@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/en-indic-translate-2b-GGUF",
   "slug": "mradermacher-en-indic-translate-2b-gguf",
   "author": "mradermacher",
@@ -56,14 +56,19 @@
   "parameters_human": "4.65B",
   "storage_bytes": 49578666688,
   "storage_human": "49.6 GB",
+  "context_length": 131072,
   "base_model": "sulabhkatiyar/en-indic-translate-2b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EmberJin/Minecraft-Agent-CoT-Qwen3.5-9B-v1",
   "slug": "emberjin-minecraft-agent-cot-qwen3-5-9b-v1",
   "author": "EmberJin",
@@ -30,14 +30,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 18839711717,
   "storage_human": "18.8 GB",
+  "context_length": null,
   "base_model": "EmberJin/Minecraft-Agent-Qwen3.5-9B-Stage3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

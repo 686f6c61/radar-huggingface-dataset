@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mobilint/Qwen3-30B-A3B-Batch16-aries-rb",
   "slug": "mobilint-qwen3-30b-a3b-batch16-aries-rb",
   "author": "mobilint",
@@ -32,14 +32,19 @@
   "parameters_human": "311.2M",
   "storage_bytes": 17231063912,
   "storage_human": "17.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T06:23:34.628Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

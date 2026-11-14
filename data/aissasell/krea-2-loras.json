@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aissasell/Krea-2-LoRAs",
   "slug": "aissasell-krea-2-loras",
   "author": "aissasell",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 7279276874,
   "storage_human": "7.3 GB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

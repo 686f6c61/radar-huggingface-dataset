@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "uos1231234/agent-shell",
   "slug": "uos1231234-agent-shell",
   "author": "uos1231234",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 302430,
   "storage_human": "302430 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-03T03:44:34.191Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

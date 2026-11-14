@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "damianborek/autonoxis-conductor-qwen3-14b-lora",
   "slug": "damianborek-autonoxis-conductor-qwen3-14b-lora",
   "author": "damianborek",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 95352084,
   "storage_human": "95 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-14B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "damianborek/vega-1",
+  "renamed_at": "2026-11-11T04:56:12.106Z",
   "benchmarks": [],
   "sources": [
     {

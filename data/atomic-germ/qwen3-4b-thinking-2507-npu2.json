@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Atomic-Germ/Qwen3-4B-Thinking-2507-NPU2",
   "slug": "atomic-germ-qwen3-4b-thinking-2507-npu2",
   "author": "Atomic-Germ",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 3305309189,
   "storage_human": "3.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

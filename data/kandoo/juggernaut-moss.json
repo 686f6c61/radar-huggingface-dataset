@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kandoo/Juggernaut-Moss",
   "slug": "kandoo-juggernaut-moss",
   "author": "Kandoo",
@@ -36,6 +36,7 @@
   "parameters_human": "5.08B",
   "storage_bytes": 42820463717,
   "storage_human": "42.8 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-Base",
   "formats": [
     "diffusers",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

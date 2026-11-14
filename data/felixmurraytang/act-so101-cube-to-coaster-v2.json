@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "felixmurraytang/act-so101-cube-to-coaster-v2",
   "slug": "felixmurraytang-act-so101-cube-to-coaster-v2",
   "author": "felixmurraytang",
@@ -28,14 +28,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 413429824,
   "storage_human": "413 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "felixmurraytang/so101-act",
+  "renamed_at": "2026-11-11T05:15:35.907Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ozonetg/bargein-classifier-ettin-400m",
   "slug": "ozonetg-bargein-classifier-ettin-400m",
   "author": "ozonetg",
@@ -47,6 +47,7 @@
   "parameters_human": "395.8M",
   "storage_bytes": 3762905105,
   "storage_human": "3.8 GB",
+  "context_length": null,
   "base_model": "jhu-clsp/ettin-encoder-400m",
   "formats": [
     "onnx",
@@ -54,8 +55,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-13T02:51:32.709Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Barge-in classification",

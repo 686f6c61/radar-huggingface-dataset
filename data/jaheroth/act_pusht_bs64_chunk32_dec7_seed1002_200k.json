@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jaheroth/act_pusht_bs64_chunk32_dec7_seed1002_200k",
   "slug": "jaheroth-act_pusht_bs64_chunk32_dec7_seed1002_200k",
   "author": "jaheroth",
@@ -28,14 +28,19 @@
   "parameters_human": "83.9M",
   "storage_bytes": 335637520,
   "storage_human": "336 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

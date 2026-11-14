@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nesoai-dev-org/NousResearch-Nous-Hermes-2-SOLAR-10.7B",
   "slug": "nesoai-dev-org-nousresearch-nous-hermes-2-solar-10-7b",
   "author": "nesoai-dev-org",
@@ -37,14 +37,19 @@
   "parameters_human": "10.73B",
   "storage_bytes": 21463625019,
   "storage_human": "21.5 GB",
+  "context_length": null,
   "base_model": "upstage/SOLAR-10.7B-v1.0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

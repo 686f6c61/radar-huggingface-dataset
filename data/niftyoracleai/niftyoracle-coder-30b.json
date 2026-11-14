@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NiftyOracleAI/NiftyOracle-Coder-30B",
   "slug": "niftyoracleai-niftyoracle-coder-30b",
   "author": "NiftyOracleAI",
@@ -24,6 +24,7 @@
   "parameters_human": "1.18B",
   "storage_bytes": 584129204498,
   "storage_human": "584.1 GB",
+  "context_length": 2048,
   "base_model": null,
   "formats": [
     "gguf",
@@ -31,8 +32,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

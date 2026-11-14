@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tadiecool29/STL-FullFT-afri-mt5-base-sentiment",
   "slug": "tadiecool29-stl-fullft-afri-mt5-base-sentiment",
   "author": "tadiecool29",
@@ -34,14 +34,19 @@
   "parameters_human": "966.6M",
   "storage_bytes": 2024697357,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "masakhane/afri-mt5-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

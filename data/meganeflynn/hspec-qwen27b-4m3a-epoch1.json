@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MeganEFlynn/HSpec-Qwen27B-4m3a-epoch1",
   "slug": "meganeflynn-hspec-qwen27b-4m3a-epoch1",
   "author": "MeganEFlynn",
@@ -30,14 +30,19 @@
   "parameters_human": "3.52B",
   "storage_bytes": 28177281236,
   "storage_human": "28.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

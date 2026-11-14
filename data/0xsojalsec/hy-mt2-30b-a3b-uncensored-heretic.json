@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0xSojalSec/Hy-MT2-30B-A3B-uncensored-heretic",
   "slug": "0xsojalsec-hy-mt2-30b-a3b-uncensored-heretic",
   "author": "0xSojalSec",
@@ -107,14 +107,19 @@
   "parameters_human": "30.06B",
   "storage_bytes": 60131771168,
   "storage_human": "60.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

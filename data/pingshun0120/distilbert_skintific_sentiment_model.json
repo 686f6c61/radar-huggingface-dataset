@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pingshun0120/distilbert_skintific_sentiment_model",
   "slug": "pingshun0120-distilbert_skintific_sentiment_model",
   "author": "pingshun0120",
@@ -34,14 +34,19 @@
   "parameters_human": "67.0M",
   "storage_bytes": 803512581,
   "storage_human": "804 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

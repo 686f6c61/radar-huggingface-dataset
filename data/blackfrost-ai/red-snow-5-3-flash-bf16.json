@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Blackfrost-AI/RED-SNOW-5.3-FLASH-BF16",
   "slug": "blackfrost-ai-red-snow-5-3-flash-bf16",
   "author": "Blackfrost-AI",
@@ -44,14 +44,19 @@
   "parameters_human": "321.32B",
   "storage_bytes": 642681468584,
   "storage_human": "642.7 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "butler-compute/Cicero-NVFP4",
   "slug": "butler-compute-cicero-nvfp4",
   "author": "butler-compute",
@@ -36,14 +36,19 @@
   "parameters_human": "21.01B",
   "storage_bytes": 23952994583,
   "storage_human": "24.0 GB",
+  "context_length": null,
   "base_model": "butler-compute/Cicero",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xtxx/YESW_Multi_Foundation_Model",
   "slug": "xtxx-yesw_multi_foundation_model",
   "author": "xtxx",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 5895921868,
   "storage_human": "5.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-30T02:46:11.705Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mercury007/mv-action-value-scan-object",
   "slug": "mercury007-mv-action-value-scan-object",
   "author": "Mercury007",
@@ -22,14 +22,19 @@
   "parameters_human": "91.3M",
   "storage_bytes": 366943540,
   "storage_human": "367 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

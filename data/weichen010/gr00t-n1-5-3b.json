@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "weichen010/GR00T-N1.5-3B",
   "slug": "weichen010-gr00t-n1-5-3b",
   "author": "weichen010",
@@ -28,14 +28,19 @@
   "parameters_human": "2.72B",
   "storage_bytes": 5448460016,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

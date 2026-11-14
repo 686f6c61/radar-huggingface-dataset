@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Blackfrost-AI/MiMo-V2.6-Pro-MOPD-Derisking-Intervention-Runtime",
   "slug": "blackfrost-ai-mimo-v2-6-pro-mopd-derisking-intervention-runtime",
   "author": "Blackfrost-AI",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 29140,
   "storage_human": "29140 B",
+  "context_length": null,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Pro-MOPD",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

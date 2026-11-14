@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pocharlies/Qwen3.8-Flash-Next-NVFP4-vLLM-DGX-Spark-k8s",
   "slug": "pocharlies-qwen3-8-flash-next-nvfp4-vllm-dgx-spark-k8s",
   "author": "pocharlies",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "RadixArk/Qwen3.8-Flash-Next-NVFP4",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

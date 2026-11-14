@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nirajr/coedit-small-gguf",
   "slug": "nirajr-coedit-small-gguf",
   "author": "nirajr",
@@ -34,14 +34,19 @@
   "parameters_human": "77.0M",
   "storage_bytes": 82867072,
   "storage_human": "83 MB",
+  "context_length": 512,
   "base_model": "jbochi/coedit-small",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

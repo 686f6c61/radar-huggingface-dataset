@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "notyost/claudius-purus-110m",
   "slug": "notyost-claudius-purus-110m",
   "author": "notyost",
@@ -43,14 +43,19 @@
   "parameters_human": "111.0M",
   "storage_bytes": 444044928,
   "storage_human": "444 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "funnygeeker/Qwen3.6-Chat-Templates-PLUS",
   "slug": "funnygeeker-qwen3-6-chat-templates-plus",
   "author": "funnygeeker",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "peculiar-ragdoll/Qwen-Sharp-Chat-Templates, froggeric/Qwen-Fixed-Chat-Templates",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "funnygeeker/Qwen3.6-35B-A3B-Chat-Templates-PLUS",
+  "renamed_at": "2026-11-12T05:34:28.026Z",
   "benchmarks": [],
   "sources": [
     {

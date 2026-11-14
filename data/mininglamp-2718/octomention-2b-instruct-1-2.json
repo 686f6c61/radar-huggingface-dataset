@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mininglamp-2718/OctoMention-2B-Instruct-1.2",
   "slug": "mininglamp-2718-octomention-2b-instruct-1-2",
   "author": "Mininglamp-2718",
@@ -24,14 +24,19 @@
   "parameters_human": "2.21B",
   "storage_bytes": 5463666549,
   "storage_human": "5.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

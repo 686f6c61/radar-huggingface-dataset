@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BIGJUTT/KoHRM-Text-1.4B-lora-terminal-tool-jsonfix-r32-v1_gbs16384",
   "slug": "bigjutt-kohrm-text-1-4b-lora-terminal-tool-jsonfix-r32-v1_gbs16384",
   "author": "BIGJUTT",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 496180478,
   "storage_human": "496 MB",
+  "context_length": null,
   "base_model": "LLM-OS-Models/KoHRM-Text-1.4B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T06:56:49.885Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

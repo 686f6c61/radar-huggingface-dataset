@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "julian-schelb/philberta-3class-lat-intertext-v1",
   "slug": "julian-schelb-philberta-3class-lat-intertext-v1",
   "author": "julian-schelb",
@@ -40,14 +40,19 @@
   "parameters_human": "135.2M",
   "storage_bytes": 540809820,
   "storage_human": "541 MB",
+  "context_length": null,
   "base_model": "bowphs/PhilBerta",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

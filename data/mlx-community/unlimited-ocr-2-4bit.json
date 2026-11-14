@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlx-community/Unlimited-OCR-2-4bit",
   "slug": "mlx-community-unlimited-ocr-2-4bit",
   "author": "mlx-community",
@@ -36,6 +36,7 @@
   "parameters_human": "3.34B",
   "storage_bytes": 2617936229,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": "baidu/Unlimited-OCR-2",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

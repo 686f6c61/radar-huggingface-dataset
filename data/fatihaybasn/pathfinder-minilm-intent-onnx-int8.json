@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Fatihaybasn/pathfinder-minilm-intent-onnx-int8",
   "slug": "fatihaybasn-pathfinder-minilm-intent-onnx-int8",
   "author": "Fatihaybasn",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 23723120,
   "storage_human": "24 MB",
+  "context_length": null,
   "base_model": "nreimers/MiniLM-L6-H384-uncased",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

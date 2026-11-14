@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "harshsingh24/qwen3.8-9B-dau-neo-heretic",
   "slug": "harshsingh24-qwen3-8-9b-dau-neo-heretic",
   "author": "harshsingh24",
@@ -50,14 +50,19 @@
   "parameters_human": "456.0M",
   "storage_bytes": 8595418464,
   "storage_human": "8.6 GB",
+  "context_length": null,
   "base_model": "DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-31T11:13:05.015Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

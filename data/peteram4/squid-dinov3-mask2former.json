@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PeterAM4/SQuID-DINOv3-Mask2Former",
   "slug": "peteram4-squid-dinov3-mask2former",
   "author": "PeterAM4",
@@ -34,14 +34,19 @@
   "parameters_human": "56.6M",
   "storage_bytes": 226388668,
   "storage_human": "226 MB",
+  "context_length": null,
   "base_model": "facebook/dinov3-vitl16-pretrain-sat493m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

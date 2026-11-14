@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CompassioninMachineLearning/Qwen3-8B-Base-CPT-BF16",
   "slug": "compassioninmachinelearning-qwen3-8b-base-cpt-bf16",
   "author": "CompassioninMachineLearning",
@@ -37,14 +37,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 16392939366,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "CompassioninMachineLearning/Qwen3-8B-Base-CPT-BF16_olddata",
+  "renamed_at": "2026-11-14T02:42:38.416Z",
   "benchmarks": [],
   "sources": [
     {

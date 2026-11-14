@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "c4tdr0ut/grok-oss-Cerberus-24B",
   "slug": "c4tdr0ut-grok-oss-cerberus-24b",
   "author": "c4tdr0ut",
@@ -35,14 +35,19 @@
   "parameters_human": "23.57B",
   "storage_bytes": 47163534651,
   "storage_human": "47.2 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-Small-24B-Instruct-2501",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

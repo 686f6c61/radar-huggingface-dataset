@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rao-studios/kokoro-paradee-8m-coreml",
   "slug": "rao-studios-kokoro-paradee-8m-coreml",
   "author": "rao-studios",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 32322986,
   "storage_human": "32 MB",
+  "context_length": null,
   "base_model": "MithrilMan/teacher-in-the-loop",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

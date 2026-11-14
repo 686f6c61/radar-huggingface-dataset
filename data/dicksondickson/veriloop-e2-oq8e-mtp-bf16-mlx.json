@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dicksondickson/VeriLoop-E2-oQ8e-mtp-bf16-MLX",
   "slug": "dicksondickson-veriloop-e2-oq8e-mtp-bf16-mlx",
   "author": "dicksondickson",
@@ -35,6 +35,7 @@
   "parameters_human": "27.87B",
   "storage_bytes": 60200683770,
   "storage_human": "60.2 GB",
+  "context_length": null,
   "base_model": "tsinghua-sigs-robot-lab/VeriLoop-E2",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "khuasar/Qwen3.8-Flash-Next-REAP-288-Q4g32-Q8-MTPLX",
   "slug": "khuasar-qwen3-8-flash-next-reap-288-q4g32-q8-mtplx",
   "author": "khuasar",
@@ -38,6 +38,7 @@
   "parameters_human": "72.87B",
   "storage_bytes": 82274445979,
   "storage_human": "82.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

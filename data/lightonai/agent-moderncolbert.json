@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lightonai/Agent-ModernColBERT",
   "slug": "lightonai-agent-moderncolbert",
   "author": "lightonai",
@@ -44,14 +44,19 @@
   "parameters_human": "149.0M",
   "storage_bytes": 596469584,
   "storage_human": "596 MB",
+  "context_length": null,
   "base_model": "lightonai/GTE-ModernColBERT-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ti3x-m/Jev-Style-2B-Decision-v4-ONNX-WebGPU",
   "slug": "ti3x-m-jev-style-2b-decision-v4-onnx-webgpu",
   "author": "ti3x-m",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 5114197859,
   "storage_human": "5.1 GB",
+  "context_length": null,
   "base_model": "chaoliangUNSW/Jev-Style-2B-Decision-v4",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

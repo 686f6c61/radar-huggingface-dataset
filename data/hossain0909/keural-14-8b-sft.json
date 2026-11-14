@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hossain0909/keural-14.8b-sft",
   "slug": "hossain0909-keural-14-8b-sft",
   "author": "hossain0909",
@@ -42,14 +42,19 @@
   "parameters_human": "15.37B",
   "storage_bytes": 30740619076,
   "storage_human": "30.7 GB",
+  "context_length": null,
   "base_model": "mkd-hossain/keural-14.8b-stage2-vllm",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

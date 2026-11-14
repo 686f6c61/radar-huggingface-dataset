@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leventkoldas/Qwen3.8-2B-Distill-Q4_0-GGUF",
   "slug": "leventkoldas-qwen3-8-2b-distill-q4_0-gguf",
   "author": "leventkoldas",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 1073239502,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "empero-ai/Qwen3.8-2B-Distill",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

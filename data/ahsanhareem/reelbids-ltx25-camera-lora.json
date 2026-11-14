@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AhsanHareem/reelbids-ltx25-camera-lora",
   "slug": "ahsanhareem-reelbids-ltx25-camera-lora",
   "author": "AhsanHareem",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 201431592,
   "storage_human": "201 MB",
+  "context_length": null,
   "base_model": "Lightricks/LTX-2.5",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-03T10:29:59.735Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

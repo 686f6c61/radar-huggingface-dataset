@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tergite/Ising-Calibration-1.5-31B-it-merge",
   "slug": "tergite-ising-calibration-1-5-31b-it-merge",
   "author": "tergite",
@@ -38,14 +38,19 @@
   "parameters_human": "31.27B",
   "storage_bytes": 62578505218,
   "storage_human": "62.6 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-31B-it, nvidia/Ising-Calibration-1.5-31B-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NostraEmpire/mirror-yi-1.5-9b-chat",
   "slug": "nostraempire-mirror-yi-1-5-9b-chat",
   "author": "NostraEmpire",
@@ -25,14 +25,19 @@
   "parameters_human": "8.83B",
   "storage_bytes": 17659898089,
   "storage_human": "17.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

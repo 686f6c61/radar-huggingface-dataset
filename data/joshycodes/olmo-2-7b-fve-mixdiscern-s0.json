@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "joshycodes/olmo-2-7b-fve-mixdiscern-s0",
   "slug": "joshycodes-olmo-2-7b-fve-mixdiscern-s0",
   "author": "joshycodes",
@@ -31,14 +31,19 @@
   "parameters_human": "7.30B",
   "storage_bytes": 14597276376,
   "storage_human": "14.6 GB",
+  "context_length": null,
   "base_model": "allenai/OLMo-2-1124-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-02T03:55:09.439Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

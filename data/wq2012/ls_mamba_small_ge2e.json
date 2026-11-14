@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wq2012/ls_mamba_small_ge2e",
   "slug": "wq2012-ls_mamba_small_ge2e",
   "author": "wq2012",
@@ -41,14 +41,19 @@
   "parameters_human": "1.0M",
   "storage_bytes": 24707082,
   "storage_human": "25 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

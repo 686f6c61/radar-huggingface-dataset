@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xix3r/voxix-parakeet-ctc-0.6b-gguf",
   "slug": "xix3r-voxix-parakeet-ctc-0-6b-gguf",
   "author": "xix3r",
@@ -36,14 +36,19 @@
   "parameters_human": "608.8M",
   "storage_bytes": 722271424,
   "storage_human": "722 MB",
+  "context_length": null,
   "base_model": "nvidia/parakeet-ctc-0.6b",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

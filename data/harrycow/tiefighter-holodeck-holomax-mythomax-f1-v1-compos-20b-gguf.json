@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Harrycow/TieFighter-Holodeck-Holomax-Mythomax-F1-V1-COMPOS-20B-gguf",
   "slug": "harrycow-tiefighter-holodeck-holomax-mythomax-f1-v1-compos-20b-gguf",
   "author": "Harrycow",
@@ -42,14 +42,19 @@
   "parameters_human": "19.99B",
   "storage_bytes": 135198073120,
   "storage_human": "135.2 GB",
+  "context_length": 4096,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

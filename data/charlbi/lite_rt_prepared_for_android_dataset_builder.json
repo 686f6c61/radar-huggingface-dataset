@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Charlbi/Lite_rt_prepared_for_android_dataset_builder",
   "slug": "charlbi-lite_rt_prepared_for_android_dataset_builder",
   "author": "Charlbi",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 3139271687,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "unicornwhodev/Lite_rt_prepared_for_android_dataset_builder",
+  "renamed_at": "2026-11-11T02:29:40.158Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Myungkyu/qwen3_vl_8b_rmbench_preset_lora_3d5k",
   "slug": "myungkyu-qwen3_vl_8b_rmbench_preset_lora_3d5k",
   "author": "Myungkyu",
@@ -32,14 +32,19 @@
   "parameters_human": "8.77B",
   "storage_bytes": 17534339488,
   "storage_human": "17.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

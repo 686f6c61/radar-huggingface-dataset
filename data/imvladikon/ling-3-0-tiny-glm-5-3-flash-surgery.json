@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "imvladikon/Ling-3.0-tiny-GLM-5.3-Flash-surgery",
   "slug": "imvladikon-ling-3-0-tiny-glm-5-3-flash-surgery",
   "author": "imvladikon",
@@ -37,14 +37,19 @@
   "parameters_human": "7.80B",
   "storage_bytes": 63482105568,
   "storage_human": "63.5 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

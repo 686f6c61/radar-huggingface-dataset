@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "llm-semantic-router/Decision-1.0-Lex",
   "slug": "llm-semantic-router-decision-1-0-lex",
   "author": "llm-semantic-router",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 2331661541,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "vllm-sr/Decision-1.0-Kai-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "vllm-sr/Decision-1.0-Lex-0.6B",
+  "renamed_at": "2026-11-11T06:05:28.441Z",
   "benchmarks": [],
   "sources": [
     {

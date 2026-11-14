@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kismi/gemma-2-2b-it-abliterated-GGUF",
   "slug": "kismi-gemma-2-2b-it-abliterated-gguf",
   "author": "Kismi",
@@ -31,14 +31,19 @@
   "parameters_human": "2.61B",
   "storage_bytes": 36342744820,
   "storage_human": "36.3 GB",
+  "context_length": 8192,
   "base_model": "IlyaGusev/gemma-2-2b-it-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

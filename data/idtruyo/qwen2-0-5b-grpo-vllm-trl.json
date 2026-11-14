@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "idtruyo/Qwen2-0-5B-GRPO-vllm-trl",
   "slug": "idtruyo-qwen2-0-5b-grpo-vllm-trl",
   "author": "idtruyo",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 111483623,
   "storage_human": "111 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2-0.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

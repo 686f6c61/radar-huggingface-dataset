@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OkamotoJP/llm2-qwen35-sft009",
   "slug": "okamotojp-llm2-qwen35-sft009",
   "author": "OkamotoJP",
@@ -29,14 +29,19 @@
   "parameters_human": "873.4M",
   "storage_bytes": 1759750614,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

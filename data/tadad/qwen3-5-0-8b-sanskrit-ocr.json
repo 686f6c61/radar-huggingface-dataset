@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tadad/qwen3.5-0.8b-sanskrit-ocr",
   "slug": "tadad-qwen3-5-0-8b-sanskrit-ocr",
   "author": "tadad",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 141595280,
   "storage_human": "142 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "tadad/midf-sanskrit-ocr",
+  "renamed_at": "2026-11-11T07:42:19.587Z",
   "benchmarks": [],
   "sources": [
     {

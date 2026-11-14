@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "katalidevai/qwen3-30b-katali-lab-eqs",
   "slug": "katalidevai-qwen3-30b-katali-lab-eqs",
   "author": "katalidevai",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 17972808429,
   "storage_human": "18.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-30B-A3B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

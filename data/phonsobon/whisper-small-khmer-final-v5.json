@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "phonsobon/Whisper-Small-Khmer-Final-v5",
   "slug": "phonsobon-whisper-small-khmer-final-v5",
   "author": "phonsobon",
@@ -53,14 +53,19 @@
   "parameters_human": "241.7M",
   "storage_bytes": 29013376691,
   "storage_human": "29.0 GB",
+  "context_length": null,
   "base_model": "phonsobon/Whisper-Small-Khmer-V2-Gov",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

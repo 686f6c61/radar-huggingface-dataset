@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ankityoiu/Viggle-Remake-Easy-ComfyUI",
   "slug": "ankityoiu-viggle-remake-easy-comfyui",
   "author": "Ankityoiu",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 79184,
   "storage_human": "79184 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T02:15:15.793Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

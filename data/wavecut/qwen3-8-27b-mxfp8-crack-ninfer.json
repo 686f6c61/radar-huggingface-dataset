@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WaveCut/Qwen3.8-27B-MXFP8-CRACK-NInfer",
   "slug": "wavecut-qwen3-8-27b-mxfp8-crack-ninfer",
   "author": "WaveCut",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 36421281264,
   "storage_human": "36.4 GB",
+  "context_length": null,
   "base_model": "dealignai/Qwen3.8-27B-MXFP8-CRACK",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "WaveCut/Qwen3.8-27B-MXFP8-CRACK-NInfer-v3",
+  "renamed_at": "2026-11-11T04:10:24.268Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nihar-damera/creo-classify-0.6b",
   "slug": "nihar-damera-creo-classify-0-6b",
   "author": "nihar-damera",
@@ -38,6 +38,7 @@
   "parameters_human": "596.0M",
   "storage_bytes": 2239709234,
   "storage_human": "2.2 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "gguf",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

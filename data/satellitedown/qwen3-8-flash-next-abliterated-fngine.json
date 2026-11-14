@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "satellitedown/Qwen3.8-Flash-Next-abliterated-fngine",
   "slug": "satellitedown-qwen3-8-flash-next-abliterated-fngine",
   "author": "satellitedown",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 95491573032,
   "storage_human": "95.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-16T04:27:54.807Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

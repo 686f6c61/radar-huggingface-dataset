@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Remek/basal-omni-1.0-ultra-GGUF",
   "slug": "remek-basal-omni-1-0-ultra-gguf",
   "author": "Remek",
@@ -43,14 +43,19 @@
   "parameters_human": "30.70B",
   "storage_bytes": 65303526810,
   "storage_human": "65.3 GB",
+  "context_length": 262144,
   "base_model": "Remek/basal-omni-1.0-ultra",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "janihal/LFM2.5-230M-Chess-oQ8",
   "slug": "janihal-lfm2-5-230m-chess-oq8",
   "author": "janihal",
@@ -38,6 +38,7 @@
   "parameters_human": "230.7M",
   "storage_bytes": 245190929,
   "storage_human": "245 MB",
+  "context_length": null,
   "base_model": "mlabonne/LFM2.5-230M-Chess",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

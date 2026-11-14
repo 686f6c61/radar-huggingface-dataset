@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-opd-run1-kl0",
   "slug": "nmuendler-deepseek-r1-distill-qwen-7b-rust-opd-run1-kl0",
   "author": "nmuendler",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 657397891,
   "storage_human": "657 MB",
+  "context_length": null,
   "base_model": "nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-run1-kl0-baked",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

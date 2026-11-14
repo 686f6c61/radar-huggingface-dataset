@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "themohal/saraiki-qwen3-8b-cpt",
   "slug": "themohal-saraiki-qwen3-8b-cpt",
   "author": "themohal",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 3991560338,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-12T14:26:15.064Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

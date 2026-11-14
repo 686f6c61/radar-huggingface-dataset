@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "airun-ai/GlanceRAG-MiMo-9B-Reranker-Activated",
   "slug": "airun-ai-glancerag-mimo-9b-reranker-activated",
   "author": "airun-ai",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 201562186,
   "storage_human": "202 MB",
+  "context_length": null,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

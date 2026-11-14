@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "applepie69/Nanbeige4.3-33B-MTP-head-r3",
   "slug": "applepie69-nanbeige4-3-33b-mtp-head-r3",
   "author": "applepie69",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 1387339256,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "applepie69/Nanbeige4.3-33B-MTP-1101",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

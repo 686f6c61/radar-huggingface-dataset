@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Brooooooklyn/Qwen3.6-35B-A3B-mxfp4-mlx",
   "slug": "brooooooklyn-qwen3-6-35b-a3b-mxfp4-mlx",
   "author": "Brooooooklyn",
@@ -35,6 +35,7 @@
   "parameters_human": "35.95B",
   "storage_bytes": 51831066344,
   "storage_human": "51.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

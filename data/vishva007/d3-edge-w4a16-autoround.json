@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Vishva007/d3-edge-W4A16-AutoRound",
   "slug": "vishva007-d3-edge-w4a16-autoround",
   "author": "Vishva007",
@@ -41,14 +41,19 @@
   "parameters_human": "393.5M",
   "storage_bytes": 869797523,
   "storage_human": "870 MB",
+  "context_length": null,
   "base_model": "vllm-sr/d3-edge",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

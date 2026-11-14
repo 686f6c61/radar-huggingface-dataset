@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dalatexcoder/MiniCPM5-2B-ARA-MLX-4Bit-optiq-mixed",
   "slug": "dalatexcoder-minicpm5-2b-ara-mlx-4bit-optiq-mixed",
   "author": "dalatexcoder",
@@ -32,6 +32,7 @@
   "parameters_human": "2.52B",
   "storage_bytes": 1638595732,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "dalatexcoder/MiniCPM5-2B-heretic-ara",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

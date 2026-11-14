@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ballan123/gpt2-squad",
   "slug": "ballan123-gpt2-squad",
   "author": "Ballan123",
@@ -28,14 +28,19 @@
   "parameters_human": "81.9M",
   "storage_bytes": 655315856,
   "storage_human": "655 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

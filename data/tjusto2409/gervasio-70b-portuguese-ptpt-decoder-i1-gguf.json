@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tjusto2409/gervasio-70b-portuguese-ptpt-decoder-i1-GGUF",
   "slug": "tjusto2409-gervasio-70b-portuguese-ptpt-decoder-i1-gguf",
   "author": "tjusto2409",
@@ -48,14 +48,19 @@
   "parameters_human": "70.55B",
   "storage_bytes": 753210243712,
   "storage_human": "753.2 GB",
+  "context_length": 131072,
   "base_model": "PORTULAN/gervasio-70b-portuguese-ptpt-decoder",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

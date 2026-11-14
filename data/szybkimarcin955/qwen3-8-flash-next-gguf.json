@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SZYBKIMARCIN955/Qwen3.8-Flash-Next-GGUF",
   "slug": "szybkimarcin955-qwen3-8-flash-next-gguf",
   "author": "SZYBKIMARCIN955",
@@ -29,14 +29,19 @@
   "parameters_human": "176.94B",
   "storage_bytes": 1364852709050,
   "storage_human": "1364.9 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

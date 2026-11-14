@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "opsecdemon72/starry-v2.1-16b-a3b-0x127-adapter",
   "slug": "opsecdemon72-starry-v2-1-16b-a3b-0x127-adapter",
   "author": "opsecdemon72",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 118480490,
   "storage_human": "118 MB",
+  "context_length": null,
   "base_model": "kalomaze/Qwen3-16B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

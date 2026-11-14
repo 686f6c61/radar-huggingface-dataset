@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nyamkhuu/LightOnOCR-2-1B-DSpark",
   "slug": "nyamkhuu-lightonocr-2-1b-dspark",
   "author": "nyamkhuu",
@@ -34,14 +34,19 @@
   "parameters_human": "128.1M",
   "storage_bytes": 256270362,
   "storage_human": "256 MB",
+  "context_length": null,
   "base_model": "lightonai/LightOnOCR-2-1B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

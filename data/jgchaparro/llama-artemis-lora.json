@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jgchaparro/Llama-Artemis-lora",
   "slug": "jgchaparro-llama-artemis-lora",
   "author": "jgchaparro",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 690769034,
   "storage_human": "691 MB",
+  "context_length": null,
   "base_model": "ilsp/Llama-Krikri-8B-Instruct-v1.5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T19:45:08.810Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

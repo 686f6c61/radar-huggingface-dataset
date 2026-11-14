@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Interferon-gamma-RP-9B-Preview-2608-i1-GGUF",
   "slug": "mradermacher-interferon-gamma-rp-9b-preview-2608-i1-gguf",
   "author": "mradermacher",
@@ -42,14 +42,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 81318169504,
   "storage_human": "81.3 GB",
+  "context_length": 262144,
   "base_model": "Wonderlab-Testing-Grounds/Interferon-gamma-RP-9B-Preview-2608",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

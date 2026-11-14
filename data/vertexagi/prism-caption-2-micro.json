@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VertexAGI/prism-caption-2-micro",
   "slug": "vertexagi-prism-caption-2-micro",
   "author": "VertexAGI",
@@ -41,6 +41,7 @@
   "parameters_human": "742.5M",
   "storage_bytes": 886452122,
   "storage_human": "886 MB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM2-700M",
   "formats": [
     "gguf",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

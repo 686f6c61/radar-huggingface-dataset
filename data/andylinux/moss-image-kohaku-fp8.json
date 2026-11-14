@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Andylinux/MOSS-Image-Kohaku-FP8",
   "slug": "andylinux-moss-image-kohaku-fp8",
   "author": "Andylinux",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 10349759704,
   "storage_human": "10.3 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-Base, OpenMOSS-Team/MOSS-Image-SFT",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

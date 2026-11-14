@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "netprojects/Cosmos3-Edge-Omni-mlx-bf16",
   "slug": "netprojects-cosmos3-edge-omni-mlx-bf16",
   "author": "netprojects",
@@ -33,6 +33,7 @@
   "parameters_human": null,
   "storage_bytes": 7638427833,
   "storage_human": "7.6 GB",
+  "context_length": null,
   "base_model": "nvidia/Cosmos3-Edge",
   "formats": [
     "diffusers",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

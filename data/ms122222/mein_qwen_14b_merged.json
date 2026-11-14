@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ms122222/mein_qwen_14b_merged",
   "slug": "ms122222-mein_qwen_14b_merged",
   "author": "ms122222",
@@ -35,14 +35,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 29548088580,
   "storage_human": "29.5 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3-14B-abliterated-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

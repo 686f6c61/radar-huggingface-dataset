@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hfsteady/Huihui-Flash-Next-Basalt-Vision-Overlay",
   "slug": "hfsteady-huihui-flash-next-basalt-vision-overlay",
   "author": "hfsteady",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 919482560,
   "storage_human": "919 MB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

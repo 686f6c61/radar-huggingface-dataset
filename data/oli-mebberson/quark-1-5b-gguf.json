@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oli-mebberson/quark-1.5b-GGUF",
   "slug": "oli-mebberson-quark-1-5b-gguf",
   "author": "oli-mebberson",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 7776609486,
   "storage_human": "7.8 GB",
+  "context_length": null,
   "base_model": "lattice-research/lattice-quark-1.5b",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

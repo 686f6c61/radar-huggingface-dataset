@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KrynexLabs/KrynexAI-v1.2-25M-Mobile-TFLite",
   "slug": "krynexlabs-krynexai-v1-2-25m-mobile-tflite",
   "author": "KrynexLabs",
@@ -39,14 +39,19 @@
   "parameters_human": "24.5M",
   "storage_bytes": 97953104,
   "storage_human": "98 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "KrynexLabs/KrynexAI-1.2-25M-Mobile-TFLite",
+  "renamed_at": "2026-11-11T03:09:34.829Z",
   "benchmarks": [],
   "sources": []
 }

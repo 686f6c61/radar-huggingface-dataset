@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "willyb23/NorthCUA-Nano-NVFP4A16",
   "slug": "willyb23-northcua-nano-nvfp4a16",
   "author": "willyb23",
@@ -38,14 +38,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 11218693845,
   "storage_human": "11.2 GB",
+  "context_length": null,
   "base_model": "beipo-ai/NorthCUA-Nano",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

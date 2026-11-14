@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "spkc83/retail-bank-servicing-agent-9b-peft-v7-grounded-generation",
   "slug": "spkc83-retail-bank-servicing-agent-9b-peft-v7-grounded-generation",
   "author": "spkc83",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 198000289,
   "storage_human": "198 MB",
+  "context_length": null,
   "base_model": "spkc83/retail-bank-servicing-agent-9b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

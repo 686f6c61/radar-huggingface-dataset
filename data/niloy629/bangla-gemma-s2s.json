@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "niloy629/bangla-gemma-s2s",
   "slug": "niloy629-bangla-gemma-s2s",
   "author": "niloy629",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 5297439578,
   "storage_human": "5.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

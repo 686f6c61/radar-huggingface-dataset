@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0xSero/GLM-5.3-Flash-EXL3-M288-Mosaic-12L",
   "slug": "0xsero-glm-5-3-flash-exl3-m288-mosaic-12l",
   "author": "0xSero",
@@ -43,14 +43,19 @@
   "parameters_human": "47.96B",
   "storage_bytes": 96105023891,
   "storage_human": "96.1 GB",
+  "context_length": null,
   "base_model": "turboderp/GLM-5.3-Flash-exl3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "0xSero/GLM-5.3-Flash-EXL3-Spark",
+  "renamed_at": "2026-11-11T02:05:20.895Z",
   "benchmarks": [],
   "sources": [
     {

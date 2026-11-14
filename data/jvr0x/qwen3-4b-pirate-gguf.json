@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jvr0x/Qwen3-4B-Pirate-GGUF",
   "slug": "jvr0x-qwen3-4b-pirate-gguf",
   "author": "jvr0x",
@@ -40,14 +40,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 6777684992,
   "storage_human": "6.8 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "javierbits/Qwen3-4B-Pirate-GGUF",
+  "renamed_at": "2026-11-11T05:51:52.607Z",
   "benchmarks": [],
   "sources": [
     {

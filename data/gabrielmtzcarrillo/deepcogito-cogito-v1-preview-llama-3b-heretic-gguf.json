@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gabrielmtzcarrillo/deepcogito-cogito-v1-preview-llama-3B-heretic-gguf",
   "slug": "gabrielmtzcarrillo-deepcogito-cogito-v1-preview-llama-3b-heretic-gguf",
   "author": "gabrielmtzcarrillo",
@@ -28,14 +28,19 @@
   "parameters_human": "3.21B",
   "storage_bytes": 8453066176,
   "storage_human": "8.5 GB",
+  "context_length": 131072,
   "base_model": "deepcogito/cogito-v1-preview-llama-3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

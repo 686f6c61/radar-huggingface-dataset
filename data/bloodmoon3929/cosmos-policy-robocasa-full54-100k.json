@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bloodmoon3929/cosmos-policy-robocasa-full54-100k",
   "slug": "bloodmoon3929-cosmos-policy-robocasa-full54-100k",
   "author": "bloodmoon3929",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 3914112449,
   "storage_human": "3.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-09T10:25:27.968Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Piotr1215/Winnow-12B-GGUF",
   "slug": "piotr1215-winnow-12b-gguf",
   "author": "Piotr1215",
@@ -33,14 +33,19 @@
   "parameters_human": "11.91B",
   "storage_bytes": 7381382912,
   "storage_human": "7.4 GB",
+  "context_length": 262144,
   "base_model": "EldanRing/Winnow-12B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

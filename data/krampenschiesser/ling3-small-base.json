@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "krampenschiesser/ling3-small-base",
   "slug": "krampenschiesser-ling3-small-base",
   "author": "krampenschiesser",
@@ -28,14 +28,19 @@
   "parameters_human": "11.37B",
   "storage_bytes": 22751033764,
   "storage_human": "22.8 GB",
+  "context_length": null,
   "base_model": "inclusionAI/Ling-3.0-tiny",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-25T03:44:01.157Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

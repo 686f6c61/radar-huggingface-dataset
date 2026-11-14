@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Darkhn-DragonHoard/G4-31B-Loki-V2.0-Swa-2048-4096",
   "slug": "darkhn-dragonhoard-g4-31b-loki-v2-0-swa-2048-4096",
   "author": "Darkhn-DragonHoard",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 87777647593,
   "storage_human": "87.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-21T12:47:12.821Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

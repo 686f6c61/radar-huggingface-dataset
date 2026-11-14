@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Daecore/gliclass-std-base-v3-5facet-qint8-v2",
   "slug": "daecore-gliclass-std-base-v3-5facet-qint8-v2",
   "author": "Daecore",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 905643030,
   "storage_human": "906 MB",
+  "context_length": null,
   "base_model": "knowledgator/gliclass-base-v3.0",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Daecore/gliclass-knowledge-classifier-v2",
+  "renamed_at": "2026-11-11T02:35:10.727Z",
   "benchmarks": [],
   "sources": [
     {

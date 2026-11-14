@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NaiveAI/Naive-N0.5-Flash-FP8-Draft",
   "slug": "naiveai-naive-n0-5-flash-fp8-draft",
   "author": "NaiveAI",
@@ -30,14 +30,19 @@
   "parameters_human": "652.8M",
   "storage_bytes": 1306512347,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

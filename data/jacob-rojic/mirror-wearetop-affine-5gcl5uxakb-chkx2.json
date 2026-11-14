@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jacob-rojic/mirror-wearetop-affine-5gcl5uxakb-chkx2",
   "slug": "jacob-rojic-mirror-wearetop-affine-5gcl5uxakb-chkx2",
   "author": "jacob-rojic",
@@ -28,14 +28,19 @@
   "parameters_human": "35.95B",
   "storage_bytes": 71903776776,
   "storage_human": "71.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-19T10:38:18.409Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

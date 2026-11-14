@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Guilherme34/TwIL-8B-Abliterated-Uncensored-Q8_0-GGUF",
   "slug": "guilherme34-twil-8b-abliterated-uncensored-q8_0-gguf",
   "author": "Guilherme34",
@@ -27,14 +27,19 @@
   "parameters_human": "8.79B",
   "storage_bytes": 9345604576,
   "storage_human": "9.3 GB",
+  "context_length": 131072,
   "base_model": "Guilherme34/TwIL-8B-Abliterated-Uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

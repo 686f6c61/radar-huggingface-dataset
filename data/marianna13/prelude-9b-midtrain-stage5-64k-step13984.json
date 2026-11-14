@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "marianna13/prelude-9b-midtrain-stage5-64k-step13984",
   "slug": "marianna13-prelude-9b-midtrain-stage5-64k-step13984",
   "author": "marianna13",
@@ -35,14 +35,19 @@
   "parameters_human": "9.09B",
   "storage_bytes": 72799731230,
   "storage_human": "72.8 GB",
+  "context_length": null,
   "base_model": "openeurollm/prelude-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

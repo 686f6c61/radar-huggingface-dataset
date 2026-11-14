@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anushkrishna/falcon-ocr-models",
   "slug": "anushkrishna-falcon-ocr-models",
   "author": "anushkrishna",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 25727882,
   "storage_human": "26 MB",
+  "context_length": null,
   "base_model": "PaddlePaddle/PP-OCRv6_small_det_onnx, PaddlePaddle/en_PP-OCRv5_mobile_rec_onnx, PaddlePaddle/arabic_PP-OCRv5_mobile_rec_onnx",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

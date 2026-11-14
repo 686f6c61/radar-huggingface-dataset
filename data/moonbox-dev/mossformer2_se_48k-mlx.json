@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moonbox-dev/MossFormer2_SE_48K-MLX",
   "slug": "moonbox-dev-mossformer2_se_48k-mlx",
   "author": "moonbox-dev",
@@ -34,6 +34,7 @@
   "parameters_human": null,
   "storage_bytes": 390919727,
   "storage_human": "391 MB",
+  "context_length": null,
   "base_model": "alibabasglab/MossFormer2_SE_48K",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cczzzyyy/DrugSpace-openfda-lora",
   "slug": "cczzzyyy-drugspace-openfda-lora",
   "author": "cczzzyyy",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 167829552,
   "storage_human": "168 MB",
+  "context_length": null,
   "base_model": "z-cao/DrugSpace-mntp-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "z-cao/DrugSpace-openfda-lora",
+  "renamed_at": "2026-11-13T05:03:18.765Z",
   "benchmarks": [],
   "sources": [
     {

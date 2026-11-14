@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "richardyoung/Mistral-Small-Instruct-2409-ARA-heretic",
   "slug": "richardyoung-mistral-small-instruct-2409-ara-heretic",
   "author": "richardyoung",
@@ -54,14 +54,19 @@
   "parameters_human": "22.25B",
   "storage_bytes": 44494624560,
   "storage_human": "44.5 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-Small-Instruct-2409",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

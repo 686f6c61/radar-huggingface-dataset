@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Adnan2942/Qwen2-VL-7B-Instruct-LoRA-Latex-OCR",
   "slug": "adnan2942-qwen2-vl-7b-instruct-lora-latex-ocr",
   "author": "Adnan2942",
@@ -34,14 +34,19 @@
   "parameters_human": "8.29B",
   "storage_bytes": 33177082735,
   "storage_human": "33.2 GB",
+  "context_length": null,
   "base_model": "unsloth/qwen2-vl-7b-instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

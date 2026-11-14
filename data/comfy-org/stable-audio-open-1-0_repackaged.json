@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Comfy-Org/stable-audio-open-1.0_repackaged",
   "slug": "comfy-org-stable-audio-open-1-0_repackaged",
   "author": "Comfy-Org",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 4853889016,
   "storage_human": "4.9 GB",
+  "context_length": null,
   "base_model": "stabilityai/stable-audio-open-1.0",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Comfy-Org/stable-audio-open-1.0",
+  "renamed_at": "2026-11-11T02:32:33.513Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MedMLX/vista3d-ct-mlx",
   "slug": "medmlx-vista3d-ct-mlx",
   "author": "MedMLX",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 872367025,
   "storage_human": "872 MB",
+  "context_length": null,
   "base_model": "nvidia/NV-Segment-CT",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

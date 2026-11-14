@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hexgrad/Kokoro-82M",
   "slug": "hexgrad-kokoro-82m",
   "author": "hexgrad",
@@ -22,19 +22,24 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 7412,
+  "likes": 7414,
   "downloads_30d": 12676613,
-  "trending_score": 33,
+  "trending_score": 32,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 1234555949,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "yl4579/StyleTTS2-LJSpeech",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

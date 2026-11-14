@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bambocher/gemma-4-E4B-it-qat-mlx",
   "slug": "bambocher-gemma-4-e4b-it-qat-mlx",
   "author": "bambocher",
@@ -35,6 +35,7 @@
   "parameters_human": "10.48B",
   "storage_bytes": 6147905316,
   "storage_human": "6.1 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it-qat-q4_0-unquantized",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

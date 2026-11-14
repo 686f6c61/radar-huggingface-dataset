@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "backpack-run/gemma-3-4b-it-GGUF",
   "slug": "backpack-run-gemma-3-4b-it-gguf",
   "author": "backpack-run",
@@ -31,14 +31,19 @@
   "parameters_human": "3.88B",
   "storage_bytes": 10301244704,
   "storage_human": "10.3 GB",
+  "context_length": null,
   "base_model": "google/gemma-3-4b-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-28T03:19:57.666Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

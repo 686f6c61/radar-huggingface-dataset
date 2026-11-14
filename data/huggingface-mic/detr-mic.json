@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/detr-mic",
   "slug": "huggingface-mic-detr-mic",
   "author": "huggingface-mic",
@@ -27,14 +27,19 @@
   "parameters_human": "23.9M",
   "storage_bytes": 95566688,
   "storage_human": "96 MB",
+  "context_length": null,
   "base_model": "facebook/detr-resnet-50",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

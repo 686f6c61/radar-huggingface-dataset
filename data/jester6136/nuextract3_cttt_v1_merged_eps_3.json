@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jester6136/nuextract3_cttt_v1_merged_eps_3",
   "slug": "jester6136-nuextract3_cttt_v1_merged_eps_3",
   "author": "jester6136",
@@ -31,14 +31,19 @@
   "parameters_human": "4.66B",
   "storage_bytes": 9339810511,
   "storage_human": "9.3 GB",
+  "context_length": null,
   "base_model": "NuExtract3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T06:32:39.789Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mocomoco-inc/mocovoice-whisper-turbo-ja-legal-synthetic-v0.1",
   "slug": "mocomoco-inc-mocovoice-whisper-turbo-ja-legal-synthetic-v0-1",
   "author": "mocomoco-inc",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 814054531,
   "storage_human": "814 MB",
+  "context_length": null,
   "base_model": "openai/whisper-large-v3-turbo",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-08T04:13:30.086Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "taskmaster141/Qwen3.6-27B-INT4-caliberated",
   "slug": "taskmaster141-qwen3-6-27b-int4-caliberated",
   "author": "taskmaster141",
@@ -31,14 +31,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 20456797262,
   "storage_human": "20.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-04T04:19:06.490Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

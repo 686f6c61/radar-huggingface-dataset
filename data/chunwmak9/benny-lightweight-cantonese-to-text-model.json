@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chunwmak9/benny-lightweight-cantonese-to-text-model",
   "slug": "chunwmak9-benny-lightweight-cantonese-to-text-model",
   "author": "chunwmak9",
@@ -34,14 +34,19 @@
   "parameters_human": "72.6M",
   "storage_bytes": 145215824,
   "storage_human": "145 MB",
+  "context_length": null,
   "base_model": "openai/whisper-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

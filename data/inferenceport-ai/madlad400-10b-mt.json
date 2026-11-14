@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inferenceport-ai/madlad400-10b-mt",
   "slug": "inferenceport-ai-madlad400-10b-mt",
   "author": "inferenceport-ai",
@@ -870,6 +870,7 @@
   "parameters_human": "10.71B",
   "storage_bytes": 57687327059,
   "storage_human": "57.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf",
@@ -877,8 +878,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

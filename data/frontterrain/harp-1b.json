@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "frontterrain/HARP-1B",
   "slug": "frontterrain-harp-1b",
   "author": "frontterrain",
@@ -39,6 +39,7 @@
   "parameters_human": "123.5M",
   "storage_bytes": 494761112,
   "storage_human": "495 MB",
+  "context_length": 512,
   "base_model": null,
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-31T11:08:55.027Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

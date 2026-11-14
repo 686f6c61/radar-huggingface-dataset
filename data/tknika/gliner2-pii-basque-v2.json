@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tknika/gliner2-PII-basque-v2",
   "slug": "tknika-gliner2-pii-basque-v2",
   "author": "tknika",
@@ -47,14 +47,19 @@
   "parameters_human": "307.1M",
   "storage_bytes": 1244442568,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "fastino/gliner2-privacy-filter-PII-multi",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

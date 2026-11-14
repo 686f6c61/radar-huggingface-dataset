@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nguyenbb/GLINER2-oil",
   "slug": "nguyenbb-gliner2-oil",
   "author": "nguyenbb",
@@ -24,14 +24,19 @@
   "parameters_human": "307.1M",
   "storage_bytes": 1244442568,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

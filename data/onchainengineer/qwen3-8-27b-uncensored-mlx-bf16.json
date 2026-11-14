@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "onchainengineer/Qwen3.8-27B-Uncensored-MLX-BF16",
   "slug": "onchainengineer-qwen3-8-27b-uncensored-mlx-bf16",
   "author": "onchainengineer",
@@ -38,6 +38,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 55595805465,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B, orcarouter/Qwen3.8-27B-Uncensored",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

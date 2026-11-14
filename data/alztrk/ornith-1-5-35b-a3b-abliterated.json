@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alztrk/Ornith-1.5-35B-A3B-Abliterated",
   "slug": "alztrk-ornith-1-5-35b-a3b-abliterated",
   "author": "alztrk",
@@ -42,6 +42,7 @@
   "parameters_human": "34.66B",
   "storage_bytes": 168902172950,
   "storage_human": "168.9 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "gguf",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

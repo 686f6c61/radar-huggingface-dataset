@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "model-rampage/BareTorch-500M-SFT",
   "slug": "model-rampage-baretorch-500m-sft",
   "author": "model-rampage",
@@ -35,14 +35,19 @@
   "parameters_human": "593.1M",
   "storage_bytes": 1186174363,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "model-rampage/BareTorch-500M-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-21T10:56:29.924Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

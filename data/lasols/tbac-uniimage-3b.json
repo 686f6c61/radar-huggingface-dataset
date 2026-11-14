@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lasols/TBAC-UniImage-3B",
   "slug": "lasols-tbac-uniimage-3b",
   "author": "Lasols",
@@ -36,14 +36,19 @@
   "parameters_human": "5.68B",
   "storage_bytes": 11374947078,
   "storage_human": "11.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-VL-3B-Instruct, Efficient-Large-Model/Sana_1600M_512px_diffusers",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FastFlowLM/Nemotron-3.5-Bolt-E4B-DFlash-NPU2",
   "slug": "fastflowlm-nemotron-3-5-bolt-e4b-dflash-npu2",
   "author": "FastFlowLM",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 270406816,
   "storage_human": "270 MB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

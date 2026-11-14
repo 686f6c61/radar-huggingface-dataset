@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ilikemechuri/mechuris-rwkv-rl-project",
   "slug": "ilikemechuri-mechuris-rwkv-rl-project",
   "author": "Ilikemechuri",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 30568286465,
   "storage_human": "30.6 GB",
+  "context_length": null,
   "base_model": "RWKV/RWKV7-G1l-2.9B-20261031",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

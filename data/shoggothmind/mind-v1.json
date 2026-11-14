@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ShoggothMind/mind-v1",
   "slug": "shoggothmind-mind-v1",
   "author": "ShoggothMind",
@@ -32,14 +32,19 @@
   "parameters_human": "35.8M",
   "storage_bytes": 411256480,
   "storage_human": "411 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

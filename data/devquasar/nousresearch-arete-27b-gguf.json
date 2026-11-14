@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DevQuasar/NousResearch.Arete-27B-GGUF",
   "slug": "devquasar-nousresearch-arete-27b-gguf",
   "author": "DevQuasar",
@@ -27,14 +27,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 111397513152,
   "storage_human": "111.4 GB",
+  "context_length": 262144,
   "base_model": "NousResearch/Arete-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cortex-agent-llc/kodiak-v0.2-1b-accuracy",
   "slug": "cortex-agent-llc-kodiak-v0-2-1b-accuracy",
   "author": "cortex-agent-llc",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 12529494012,
   "storage_human": "12.5 GB",
+  "context_length": null,
   "base_model": "jhu-clsp/ettin-encoder-1b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

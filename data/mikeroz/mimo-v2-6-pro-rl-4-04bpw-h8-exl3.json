@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MikeRoz/MiMo-V2.6-Pro-RL-4.04bpw-h8-exl3",
   "slug": "mikeroz-mimo-v2-6-pro-rl-4-04bpw-h8-exl3",
   "author": "MikeRoz",
@@ -42,14 +42,19 @@
   "parameters_human": "260.21B",
   "storage_bytes": 520922076804,
   "storage_human": "520.9 GB",
+  "context_length": null,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Pro-MOPD",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "MikeRoz/MiMo-V2.6-Pro-MOPD-4.04bpw-h8-exl3",
+  "renamed_at": "2026-11-11T03:19:24.703Z",
   "benchmarks": [],
   "sources": [
     {

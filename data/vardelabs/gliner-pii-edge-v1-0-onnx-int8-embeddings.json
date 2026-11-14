@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vardelabs/gliner-pii-edge-v1.0-onnx-int8-embeddings",
   "slug": "vardelabs-gliner-pii-edge-v1-0-onnx-int8-embeddings",
   "author": "vardelabs",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 123015688,
   "storage_human": "123 MB",
+  "context_length": null,
   "base_model": "knowledgator/gliner-pii-edge-v1.0",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

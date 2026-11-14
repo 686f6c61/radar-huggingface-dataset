@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "draganjankovic1975/Krea2-Candid-Nude-v1",
   "slug": "draganjankovic1975-krea2-candid-nude-v1",
   "author": "draganjankovic1975",
@@ -29,14 +29,19 @@
   "parameters_human": "12.82B",
   "storage_bytes": 64328408392,
   "storage_human": "64.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Miko-L3-8B-v2-i1-GGUF",
   "slug": "mradermacher-miko-l3-8b-v2-i1-gguf",
   "author": "mradermacher",
@@ -38,14 +38,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 93811076512,
   "storage_human": "93.8 GB",
+  "context_length": 8192,
   "base_model": "ricer0ll/Miko-L3-8B-v2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

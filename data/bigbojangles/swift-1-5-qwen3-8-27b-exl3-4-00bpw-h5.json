@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BigBojangles/Swift-1.5-Qwen3.8-27b-EXL3-4.00bpw-H5",
   "slug": "bigbojangles-swift-1-5-qwen3-8-27b-exl3-4-00bpw-h5",
   "author": "BigBojangles",
@@ -33,12 +33,17 @@
   "parameters_human": "8.18B",
   "storage_bytes": 16368492382,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "ukisai/Swift-1.5-Qwen3.8-27b",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

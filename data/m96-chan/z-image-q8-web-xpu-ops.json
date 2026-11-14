@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "m96-chan/Z-Image-q8-web-xpu-ops",
   "slug": "m96-chan-z-image-q8-web-xpu-ops",
   "author": "m96-chan",
@@ -29,14 +29,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 14410913020,
   "storage_human": "14.4 GB",
+  "context_length": null,
   "base_model": "Tongyi-MAI/Z-Image",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

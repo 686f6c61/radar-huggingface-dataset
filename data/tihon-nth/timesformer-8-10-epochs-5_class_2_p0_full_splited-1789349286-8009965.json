@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tihon-nth/timesformer-8-10-epochs-5_class_2_p0_full_splited-1789349286.8009965",
   "slug": "tihon-nth-timesformer-8-10-epochs-5_class_2_p0_full_splited-1789349286-8009965",
   "author": "tihon-nth",
@@ -30,14 +30,19 @@
   "parameters_human": "121.3M",
   "storage_bytes": 4850820105,
   "storage_human": "4.9 GB",
+  "context_length": null,
   "base_model": "facebook/timesformer-base-finetuned-k400",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-20T03:52:00.443Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

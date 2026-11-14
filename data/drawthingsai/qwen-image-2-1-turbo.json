@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "drawthingsai/Qwen-Image-2.1-Turbo",
   "slug": "drawthingsai-qwen-image-2-1-turbo",
   "author": "drawthingsai",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 47997307136,
   "storage_human": "48.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

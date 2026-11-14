@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tunachiu/asr_model_vi",
   "slug": "tunachiu-asr_model_vi",
   "author": "tunachiu",
@@ -27,14 +27,19 @@
   "parameters_human": "102.5M",
   "storage_bytes": 410120580,
   "storage_human": "410 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

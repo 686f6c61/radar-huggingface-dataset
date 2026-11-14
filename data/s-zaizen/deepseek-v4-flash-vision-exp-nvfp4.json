@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "s-zaizen/DeepSeek-V4-Flash-Vision-Exp-NVFP4",
   "slug": "s-zaizen-deepseek-v4-flash-vision-exp-nvfp4",
   "author": "s-zaizen",
@@ -33,14 +33,19 @@
   "parameters_human": "304.65B",
   "storage_bytes": 339075894393,
   "storage_human": "339.1 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ananddey/akhorika-e2b-base",
   "slug": "ananddey-akhorika-e2b-base",
   "author": "ananddey",
@@ -42,14 +42,19 @@
   "parameters_human": "2.69B",
   "storage_bytes": 5378829328,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": "ananddey/gemma-4-E2B-asm-init",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-13T04:44:00.579Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

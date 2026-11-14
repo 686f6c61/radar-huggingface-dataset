@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-150",
   "slug": "yuxuanw8-qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0-9-0-1-checkpoint-150",
   "author": "yuxuanw8",
@@ -29,14 +29,19 @@
   "parameters_human": "3.09B",
   "storage_bytes": 12355226095,
   "storage_human": "12.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

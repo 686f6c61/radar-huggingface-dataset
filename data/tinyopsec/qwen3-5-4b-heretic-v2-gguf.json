@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tinyopsec/Qwen3.5-4B-heretic-v2-GGUF",
   "slug": "tinyopsec-qwen3-5-4b-heretic-v2-gguf",
   "author": "tinyopsec",
@@ -33,14 +33,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 36377299616,
   "storage_human": "36.4 GB",
+  "context_length": 262144,
   "base_model": "Ttimms/Bible-Assistant-Qwen3.5-4B-v2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

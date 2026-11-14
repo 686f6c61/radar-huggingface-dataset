@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amir5666/Hermes-2-Pro-Llama-3-8B",
   "slug": "amir5666-hermes-2-pro-llama-3-8b",
   "author": "amir5666",
@@ -42,14 +42,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 18330277472,
   "storage_human": "18.3 GB",
+  "context_length": null,
   "base_model": "NousResearch/Meta-Llama-3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

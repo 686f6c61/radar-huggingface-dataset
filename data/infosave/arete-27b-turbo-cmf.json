@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "infosave/Arete-27B-Turbo-cmf",
   "slug": "infosave-arete-27b-turbo-cmf",
   "author": "infosave",
@@ -42,12 +42,17 @@
   "parameters_human": null,
   "storage_bytes": 15346719598,
   "storage_human": "15.3 GB",
+  "context_length": null,
   "base_model": "NousResearch/Arete-27B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

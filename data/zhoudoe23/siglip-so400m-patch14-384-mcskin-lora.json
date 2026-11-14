@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zhoudoe23/siglip-so400m-patch14-384-mcskin-lora",
   "slug": "zhoudoe23-siglip-so400m-patch14-384-mcskin-lora",
   "author": "zhoudoe23",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 32860722,
   "storage_human": "33 MB",
+  "context_length": null,
   "base_model": "google/siglip-so400m-patch14-384",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

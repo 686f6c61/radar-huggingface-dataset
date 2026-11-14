@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Cooking-Qwen-Merged-GGUF",
   "slug": "mradermacher-cooking-qwen-merged-gguf",
   "author": "mradermacher",
@@ -40,14 +40,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 5697962112,
   "storage_human": "5.7 GB",
+  "context_length": 40960,
   "base_model": "burpi/Cooking-Qwen-Merged",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

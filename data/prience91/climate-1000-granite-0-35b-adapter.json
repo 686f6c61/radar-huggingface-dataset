@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Prience91/Climate-1000-Granite-0.35b-adapter",
   "slug": "prience91-climate-1000-granite-0-35b-adapter",
   "author": "Prience91",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 57225440,
   "storage_human": "57 MB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.0-h-350m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T03:06:57.707Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

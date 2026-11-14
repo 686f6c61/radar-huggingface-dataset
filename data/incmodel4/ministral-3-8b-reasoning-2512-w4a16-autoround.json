@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "INCModel4/Ministral-3-8B-Reasoning-2512-W4A16-AutoRound",
   "slug": "incmodel4-ministral-3-8b-reasoning-2512-w4a16-autoround",
   "author": "INCModel4",
@@ -34,14 +34,19 @@
   "parameters_human": "2.95B",
   "storage_bytes": 10728059094,
   "storage_human": "10.7 GB",
+  "context_length": null,
   "base_model": "mistralai/Ministral-3-8B-Reasoning-2512",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

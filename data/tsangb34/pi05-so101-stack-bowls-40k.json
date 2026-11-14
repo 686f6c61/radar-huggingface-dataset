@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tsangb34/pi05-so101-stack-bowls-40k",
   "slug": "tsangb34-pi05-so101-stack-bowls-40k",
   "author": "tsangb34",
@@ -29,14 +29,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 97931071528,
   "storage_human": "97.9 GB",
+  "context_length": null,
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-17T04:46:11.503Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

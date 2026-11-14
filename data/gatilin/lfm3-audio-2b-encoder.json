@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gatilin/lfm3-audio-2b-encoder",
   "slug": "gatilin-lfm3-audio-2b-encoder",
   "author": "gatilin",
@@ -31,14 +31,19 @@
   "parameters_human": "115.3M",
   "storage_bytes": 230577072,
   "storage_human": "231 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-Audio-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KoarAI/LFM2.5-350M-Thinking-GGUF",
   "slug": "koarai-lfm2-5-350m-thinking-gguf",
   "author": "KoarAI",
@@ -45,14 +45,19 @@
   "parameters_human": "354.5M",
   "storage_bytes": 1799712608,
   "storage_human": "1.8 GB",
+  "context_length": 128000,
   "base_model": "KoarAI/LFM2.5-350M-Thinking",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

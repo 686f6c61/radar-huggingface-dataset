@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EbineshM/slm-rl-colab",
   "slug": "ebineshm-slm-rl-colab",
   "author": "EbineshM",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 66699104,
   "storage_human": "67 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

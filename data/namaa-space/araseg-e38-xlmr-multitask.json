@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NAMAA-Space/araseg-e38-xlmr-multitask",
   "slug": "namaa-space-araseg-e38-xlmr-multitask",
   "author": "NAMAA-Space",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 6719281504,
   "storage_human": "6.7 GB",
+  "context_length": null,
   "base_model": "FacebookAI/xlm-roberta-large",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

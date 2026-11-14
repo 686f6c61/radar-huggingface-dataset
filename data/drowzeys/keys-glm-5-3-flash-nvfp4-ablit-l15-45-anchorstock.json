@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "drowzeys/keys-GLM-5.3-Flash-NVFP4-ablit-l15-45-anchorstock",
   "slug": "drowzeys-keys-glm-5-3-flash-nvfp4-ablit-l15-45-anchorstock",
   "author": "drowzeys",
@@ -51,14 +51,19 @@
   "parameters_human": "169.12B",
   "storage_bytes": 392573783572,
   "storage_human": "392.6 GB",
+  "context_length": null,
   "base_model": "RedHatAI/GLM-5.3-Flash-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "drowzeys/keys-GLM-5.3-Flash-NVFP4-ablit-l15-43-mtp-l45",
+  "renamed_at": "2026-11-11T05:06:47.419Z",
   "benchmarks": [],
   "sources": [
     {

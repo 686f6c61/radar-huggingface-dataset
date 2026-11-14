@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SiobhanGoh/malay-english-sentiment-onnx",
   "slug": "siobhangoh-malay-english-sentiment-onnx",
   "author": "SiobhanGoh",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 711502556,
   "storage_human": "712 MB",
+  "context_length": null,
   "base_model": "google-bert/bert-base-multilingual-cased",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

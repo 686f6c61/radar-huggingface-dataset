@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hhhhhwhwwjjwjw/Realistic_Vision_V6.0_B1_noVAE",
   "slug": "hhhhhwhwwjjwjw-realistic_vision_v6-0_b1_novae",
   "author": "Hhhhhwhwwjjwjw",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 18281283404,
   "storage_human": "18.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

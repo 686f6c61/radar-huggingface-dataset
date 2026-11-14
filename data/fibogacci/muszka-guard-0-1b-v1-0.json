@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Fibogacci/muszka-guard-0.1b-v1.0",
   "slug": "fibogacci-muszka-guard-0-1b-v1-0",
   "author": "Fibogacci",
@@ -39,6 +39,7 @@
   "parameters_human": "124.4M",
   "storage_bytes": 997414355,
   "storage_human": "997 MB",
+  "context_length": null,
   "base_model": "speakleash/Bielik-Guard-0.1B-v1.1",
   "formats": [
     "onnx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-27T03:42:12.201Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

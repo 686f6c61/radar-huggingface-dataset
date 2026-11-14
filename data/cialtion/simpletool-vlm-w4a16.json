@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Cialtion/SimpleTool-VLM-W4A16",
   "slug": "cialtion-simpletool-vlm-w4a16",
   "author": "Cialtion",
@@ -24,14 +24,19 @@
   "parameters_human": "4.83B",
   "storage_bytes": 4269362657,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-12T06:12:02.201Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

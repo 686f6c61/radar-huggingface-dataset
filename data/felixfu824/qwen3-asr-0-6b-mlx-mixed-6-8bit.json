@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "felixfu824/Qwen3-ASR-0.6B-MLX-mixed-6-8bit",
   "slug": "felixfu824-qwen3-asr-0-6b-mlx-mixed-6-8bit",
   "author": "felixfu824",
@@ -99,6 +99,7 @@
   "parameters_human": "782.4M",
   "storage_bytes": 706284972,
   "storage_human": "706 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ASR-0.6B",
   "formats": [
     "mlx",
@@ -106,8 +107,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nicolasramos/MiMo-V2.6-Distill-Qwen-9B-MLX-oQ6e-fp16",
   "slug": "nicolasramos-mimo-v2-6-distill-qwen-9b-mlx-oq6e-fp16",
   "author": "nicolasramos",
@@ -27,6 +27,7 @@
   "parameters_human": "9.41B",
   "storage_bytes": 9189423603,
   "storage_human": "9.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

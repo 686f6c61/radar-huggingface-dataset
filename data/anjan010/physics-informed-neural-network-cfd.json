@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anjan010/Physics-informed-neural-network-CFD",
   "slug": "anjan010-physics-informed-neural-network-cfd",
   "author": "anjan010",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 25357,
   "storage_human": "25357 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

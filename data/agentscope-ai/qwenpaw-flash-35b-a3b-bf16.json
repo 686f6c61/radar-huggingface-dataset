@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agentscope-ai/QwenPaw-Flash-35B-A3B-BF16",
   "slug": "agentscope-ai-qwenpaw-flash-35b-a3b-bf16",
   "author": "agentscope-ai",
@@ -28,14 +28,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 69376637504,
   "storage_human": "69.4 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

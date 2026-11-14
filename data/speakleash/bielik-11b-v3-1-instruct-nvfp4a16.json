@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "speakleash/Bielik-11B-v3.1-Instruct-NVFP4A16",
   "slug": "speakleash-bielik-11b-v3-1-instruct-nvfp4a16",
   "author": "speakleash",
@@ -148,14 +148,19 @@
   "parameters_human": "11.17B",
   "storage_bytes": 6662009811,
   "storage_human": "6.7 GB",
+  "context_length": null,
   "base_model": "speakleash/Bielik-11B-v3.1-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

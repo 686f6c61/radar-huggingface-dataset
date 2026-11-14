@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sammyliu/mixit-fuss-tflocoformer-m16-sparse32-ft20k-seed0",
   "slug": "sammyliu-mixit-fuss-tflocoformer-m16-sparse32-ft20k-seed0",
   "author": "sammyliu",
@@ -36,14 +36,19 @@
   "parameters_human": "1.3M",
   "storage_bytes": 41770688,
   "storage_human": "42 MB",
+  "context_length": null,
   "base_model": "sammyliu/mixit-fuss-tflocoformer-m16-plain-seed0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

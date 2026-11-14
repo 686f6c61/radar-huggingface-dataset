@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Qwen3-The-Josiefied-Omega-Directive-22B-uncensored-abliterated",
   "slug": "davidau-qwen3-the-josiefied-omega-directive-22b-uncensored-abliterated",
   "author": "DavidAU",
@@ -71,14 +71,19 @@
   "parameters_human": "22.04B",
   "storage_bytes": 44082101259,
   "storage_human": "44.1 GB",
+  "context_length": null,
   "base_model": "ReadyArt/The-Omega-Directive-Qwen3-14B-v1.1, Goekdeniz-Guelmez/Josiefied-Qwen3-14B-abliterated-v3, Qwen/Qwen3-14B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Musouno-Enma99/WRAI-X-0.8B-Qwen3",
   "slug": "musouno-enma99-wrai-x-0-8b-qwen3",
   "author": "Musouno-Enma99",
@@ -40,12 +40,17 @@
   "parameters_human": null,
   "storage_bytes": 3087228895,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

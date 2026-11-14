@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DmitryPorotnikov/Hemmingway-1-Extreme-MLX-8bit",
   "slug": "dmitryporotnikov-hemmingway-1-extreme-mlx-8bit",
   "author": "DmitryPorotnikov",
@@ -38,6 +38,7 @@
   "parameters_human": "26.90B",
   "storage_bytes": 28599738797,
   "storage_human": "28.6 GB",
+  "context_length": null,
   "base_model": "JohnDi/Hemmingway-1-Abliterated-Extreme-GGUF",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-15T03:39:48.285Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

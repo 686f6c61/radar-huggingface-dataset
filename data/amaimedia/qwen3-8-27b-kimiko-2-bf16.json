@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/Qwen3.8-27B-Kimiko-2-BF16",
   "slug": "amaimedia-qwen3-8-27b-kimiko-2-bf16",
   "author": "AMAImedia",
@@ -49,14 +49,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 54733596117,
   "storage_human": "54.7 GB",
+  "context_length": null,
   "base_model": "Danielbrdz/Barcenas-Qwen3.8-27B-Fable, empero-ai/Qwythos-27B-v1, bottlecapai/ThinkingCap-Qwen3.6-27B, allenai/tmax-27b, migtissera/Tess-4-27B, Qwen/Qwen3.8-27B, TeichAI/Qwen3.8-27B-Fable-Distill, beyoru/Kiwen1.1-27B, nlpguy/Qwen3.8-27B-Fimi-4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-31T03:39:07.177Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

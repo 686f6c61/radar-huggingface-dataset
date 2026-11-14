@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jotap1101/tcc-coffee-segformer-emater",
   "slug": "jotap1101-tcc-coffee-segformer-emater",
   "author": "jotap1101",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 273982235,
   "storage_human": "274 MB",
+  "context_length": null,
   "base_model": "nvidia/mit-b1",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

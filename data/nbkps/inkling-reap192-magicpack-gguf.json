@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nbKPS/inkling-reap192-magicpack-gguf",
   "slug": "nbkps-inkling-reap192-magicpack-gguf",
   "author": "nbKPS",
@@ -35,14 +35,19 @@
   "parameters_human": "199.22B",
   "storage_bytes": 195706693472,
   "storage_human": "195.7 GB",
+  "context_length": 1048576,
   "base_model": "ThinkingMachines/Inkling-Small",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

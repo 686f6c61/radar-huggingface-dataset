@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "liodon-ai/QwenPU-FP8",
   "slug": "liodon-ai-qwenpu-fp8",
   "author": "liodon-ai",
@@ -34,14 +34,19 @@
   "parameters_human": "13.36B",
   "storage_bytes": 16754984507,
   "storage_human": "16.8 GB",
+  "context_length": null,
   "base_model": "divagr1925/QwenPU",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

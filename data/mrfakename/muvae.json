@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mrfakename/MuVAE",
   "slug": "mrfakename-muvae",
   "author": "mrfakename",
@@ -34,14 +34,19 @@
   "parameters_human": "132.6M",
   "storage_bytes": 565070000,
   "storage_human": "565 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

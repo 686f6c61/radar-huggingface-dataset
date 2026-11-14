@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Pascammyai/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
   "slug": "pascammyai-deepseek-v4-pro-qwen3-5-9b-uncensored-heretic",
   "author": "Pascammyai",
@@ -60,14 +60,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 19326293475,
   "storage_human": "19.3 GB",
+  "context_length": null,
   "base_model": "Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AST-1320/Qwen-Image-Studio-Realism",
   "slug": "ast-1320-qwen-image-studio-realism",
   "author": "AST-1320",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 1187781571,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-04T04:11:55.692Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nm-testing/w4a16_actorder_group-e2e",
   "slug": "nm-testing-w4a16_actorder_group-e2e",
   "author": "nm-testing",
@@ -24,14 +24,19 @@
   "parameters_human": "1.10B",
   "storage_bytes": 32833219664,
   "storage_human": "32.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

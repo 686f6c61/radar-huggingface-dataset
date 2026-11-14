@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pittawat/prelim-qwen-4b-lora32-opsd-seed2718282026",
   "slug": "pittawat-prelim-qwen-4b-lora32-opsd-seed2718282026",
   "author": "pittawat",
@@ -26,14 +26,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 9098609773,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

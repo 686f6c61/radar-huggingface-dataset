@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iamherebefore/Qwen2.5-Coder-3B-Instruct-Abliterated-GGUF",
   "slug": "iamherebefore-qwen2-5-coder-3b-instruct-abliterated-gguf",
   "author": "iamherebefore",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "RichardErkhov/huihui-ai_-_Qwen2.5-Coder-3B-Instruct-abliterated-exl2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

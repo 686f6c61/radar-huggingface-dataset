@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "addisai/addis-scribe-tigrinya-streaming",
   "slug": "addisai-addis-scribe-tigrinya-streaming",
   "author": "addisai",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 2504376320,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "nvidia/nemotron-3.5-asr-streaming-0.6b",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MeghanaKap/flowtts_naija_full_ft_v2_10",
   "slug": "meghanakap-flowtts_naija_full_ft_v2_10",
   "author": "MeghanaKap",
@@ -37,14 +37,19 @@
   "parameters_human": "505.9M",
   "storage_bytes": 2037654772,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "YatharthS/MiraTTS",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-10T02:27:39.063Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

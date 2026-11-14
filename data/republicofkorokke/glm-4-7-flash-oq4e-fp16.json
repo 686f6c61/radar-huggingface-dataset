@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RepublicOfKorokke/GLM-4.7-Flash-oQ4e-fp16",
   "slug": "republicofkorokke-glm-4-7-flash-oq4e-fp16",
   "author": "RepublicOfKorokke",
@@ -29,6 +29,7 @@
   "parameters_human": "29.94B",
   "storage_bytes": 17621046882,
   "storage_human": "17.6 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-4.7-Flash",
   "formats": [
     "mlx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

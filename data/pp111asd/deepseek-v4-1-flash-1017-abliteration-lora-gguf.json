@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pp111asd/DeepSeek-V4.1-Flash-1017-Abliteration-LoRA-GGUF",
   "slug": "pp111asd-deepseek-v4-1-flash-1017-abliteration-lora-gguf",
   "author": "pp111asd",
@@ -38,14 +38,19 @@
   "parameters_human": "114.9M",
   "storage_bytes": 918934400,
   "storage_human": "919 MB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

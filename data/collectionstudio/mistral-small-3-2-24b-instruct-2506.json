@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CollectionStudio/Mistral-Small-3.2-24B-Instruct-2506",
   "slug": "collectionstudio-mistral-small-3-2-24b-instruct-2506",
   "author": "CollectionStudio",
@@ -77,14 +77,19 @@
   "parameters_human": "24.01B",
   "storage_bytes": 96064992735,
   "storage_human": "96.1 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-Small-3.1-24B-Base-2503",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-27T03:05:23.369Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

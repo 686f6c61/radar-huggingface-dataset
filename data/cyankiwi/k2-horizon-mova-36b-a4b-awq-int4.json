@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cyankiwi/K2-Horizon-MoVA-36B-A4B-AWQ-INT4",
   "slug": "cyankiwi-k2-horizon-mova-36b-a4b-awq-int4",
   "author": "cyankiwi",
@@ -42,14 +42,19 @@
   "parameters_human": "7.53B",
   "storage_bytes": 24265391514,
   "storage_human": "24.3 GB",
+  "context_length": null,
   "base_model": "IFM/K2-Horizon-MoVA-36B-A4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

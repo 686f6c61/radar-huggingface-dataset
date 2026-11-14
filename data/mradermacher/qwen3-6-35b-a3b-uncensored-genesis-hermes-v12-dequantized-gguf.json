@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-dequantized-GGUF",
   "slug": "mradermacher-qwen3-6-35b-a3b-uncensored-genesis-hermes-v12-dequantized-gguf",
   "author": "mradermacher",
@@ -28,14 +28,19 @@
   "parameters_human": "35.51B",
   "storage_bytes": 244418995520,
   "storage_human": "244.4 GB",
+  "context_length": 262144,
   "base_model": "symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-dequantized",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

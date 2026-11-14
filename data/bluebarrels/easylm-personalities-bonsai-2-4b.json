@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bluebarrels/easylm-personalities-bonsai-2-4b",
   "slug": "bluebarrels-easylm-personalities-bonsai-2-4b",
   "author": "Bluebarrels",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 43912072,
   "storage_human": "44 MB",
+  "context_length": null,
   "base_model": "prism-ml/Ternary-Bonsai-2-4B-gguf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-21T02:30:22.237Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

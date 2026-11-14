@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "onnx-community/F2LLM-v2-330M-ONNX",
   "slug": "onnx-community-f2llm-v2-330m-onnx",
   "author": "onnx-community",
@@ -208,14 +208,19 @@
   "parameters_human": null,
   "storage_bytes": 3743967217,
   "storage_human": "3.7 GB",
+  "context_length": null,
   "base_model": "codefuse-ai/F2LLM-v2-330M",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eyepop-ai/mm-grounding-dino-tiny-onnx",
   "slug": "eyepop-ai-mm-grounding-dino-tiny-onnx",
   "author": "eyepop-ai",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 521303635,
   "storage_human": "521 MB",
+  "context_length": null,
   "base_model": "openmmlab-community/mm_grounding_dino_tiny_o365v1_goldg_v3det",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

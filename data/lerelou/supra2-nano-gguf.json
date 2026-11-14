@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lerelou/Supra2-Nano-GGUF",
   "slug": "lerelou-supra2-nano-gguf",
   "author": "Lerelou",
@@ -38,14 +38,19 @@
   "parameters_human": "799776",
   "storage_bytes": 4316480,
   "storage_human": "4 MB",
+  "context_length": 1024,
   "base_model": "SupraLabs/Supra2-Nano",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

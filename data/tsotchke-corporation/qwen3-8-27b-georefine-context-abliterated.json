@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tsotchke-Corporation/Qwen3.8-27B-GeoRefine-Context-abliterated",
   "slug": "tsotchke-corporation-qwen3-8-27b-georefine-context-abliterated",
   "author": "Tsotchke-Corporation",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 36318984141,
   "storage_human": "36.3 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

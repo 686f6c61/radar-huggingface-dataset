@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mel-bw/Inkling-2-Small-EXL3-3.17bpw",
   "slug": "mel-bw-inkling-2-small-exl3-3-17bpw",
   "author": "mel-bw",
@@ -31,14 +31,19 @@
   "parameters_human": "123.56B",
   "storage_bytes": 250606043008,
   "storage_human": "250.6 GB",
+  "context_length": null,
   "base_model": "thinkingmachines/Inkling-2-Small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

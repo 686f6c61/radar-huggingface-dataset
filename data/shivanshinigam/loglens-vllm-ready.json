@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ShivanshiNigam/loglens-vllm-ready",
   "slug": "shivanshinigam-loglens-vllm-ready",
   "author": "ShivanshiNigam",
@@ -31,14 +31,19 @@
   "parameters_human": "19.5M",
   "storage_bytes": 78148704,
   "storage_human": "78 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

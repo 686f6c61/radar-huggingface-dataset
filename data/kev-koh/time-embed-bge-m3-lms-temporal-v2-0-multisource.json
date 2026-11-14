@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kev-KOH/time-embed-bge-m3-lms-temporal-v2-0-multisource",
   "slug": "kev-koh-time-embed-bge-m3-lms-temporal-v2-0-multisource",
   "author": "kev-KOH",
@@ -36,14 +36,19 @@
   "parameters_human": "567.8M",
   "storage_bytes": 2288168443,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "BAAI/bge-m3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

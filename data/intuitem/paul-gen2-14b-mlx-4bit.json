@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "intuitem/Paul-Gen2-14B-MLX-4bit",
   "slug": "intuitem-paul-gen2-14b-mlx-4bit",
   "author": "intuitem",
@@ -41,6 +41,7 @@
   "parameters_human": "13.51B",
   "storage_bytes": 7614960329,
   "storage_human": "7.6 GB",
+  "context_length": null,
   "base_model": "intuitem/Paul-Gen2-14B",
   "formats": [
     "mlx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

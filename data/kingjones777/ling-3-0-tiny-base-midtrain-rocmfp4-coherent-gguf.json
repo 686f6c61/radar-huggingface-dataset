@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kingjones777/Ling-3.0-tiny-base-midtrain-ROCmFP4-COHERENT-GGUF",
   "slug": "kingjones777-ling-3-0-tiny-base-midtrain-rocmfp4-coherent-gguf",
   "author": "kingjones777",
@@ -44,14 +44,19 @@
   "parameters_human": "8.21B",
   "storage_bytes": 4769679040,
   "storage_human": "4.8 GB",
+  "context_length": 262144,
   "base_model": "inclusionAI/Ling-3.0-tiny-base-midtrain",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

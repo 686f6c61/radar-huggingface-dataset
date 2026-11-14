@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "the-sweater-cat/Qwen3.8-27B-GSQ-RCO-IQ3_XXS-BF16",
   "slug": "the-sweater-cat-qwen3-8-27b-gsq-rco-iq3_xxs-bf16",
   "author": "the-sweater-cat",
@@ -36,14 +36,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 54726416112,
   "storage_human": "54.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B, ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

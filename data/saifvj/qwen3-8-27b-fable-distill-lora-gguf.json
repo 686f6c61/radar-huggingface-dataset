@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "saifvj/Qwen3.8-27B-Fable-Distill-LoRA-GGUF",
   "slug": "saifvj-qwen3-8-27b-fable-distill-lora-gguf",
   "author": "saifvj",
@@ -33,14 +33,19 @@
   "parameters_human": "233.5M",
   "storage_bytes": 466980608,
   "storage_human": "467 MB",
+  "context_length": null,
   "base_model": "TeichAI/Qwen3.8-27B-Fable-Distill-LoRA",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

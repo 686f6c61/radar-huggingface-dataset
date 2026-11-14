@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "richardyoung/gemma-2-27b-it-MPOA-heretic",
   "slug": "richardyoung-gemma-2-27b-it-mpoa-heretic",
   "author": "richardyoung",
@@ -59,14 +59,19 @@
   "parameters_human": "27.23B",
   "storage_bytes": 54488679610,
   "storage_human": "54.5 GB",
+  "context_length": null,
   "base_model": "google/gemma-2-27b-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T08:05:50.902Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

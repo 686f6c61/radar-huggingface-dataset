@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rikunarita/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO_Backbone-IQ2_XXS_Engram-IQ4_NL-GGUF",
   "slug": "rikunarita-deepseek-v4-1-flash-1017-uncensored-gsq-rco_backbone-iq2_xxs_engram-iq4_nl-gguf",
   "author": "Rikunarita",
@@ -35,14 +35,19 @@
   "parameters_human": "748.49B",
   "storage_bytes": 250148727776,
   "storage_human": "250.1 GB",
+  "context_length": 1048576,
   "base_model": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

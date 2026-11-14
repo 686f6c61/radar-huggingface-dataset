@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "happpyier/shamycat-lora",
   "slug": "happpyier-shamycat-lora",
   "author": "happpyier",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 605721560,
   "storage_human": "606 MB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.1-dev",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

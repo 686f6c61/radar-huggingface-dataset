@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "triplembg/aether-topos-mre-cycle2",
   "slug": "triplembg-aether-topos-mre-cycle2",
   "author": "triplembg",
@@ -29,14 +29,19 @@
   "parameters_human": "138.5M",
   "storage_bytes": 276987204,
   "storage_human": "277 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-08T02:11:53.123Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

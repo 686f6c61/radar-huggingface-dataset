@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rin247/Qwen3-ASR-0.6B-hf-INT8",
   "slug": "rin247-qwen3-asr-0-6b-hf-int8",
   "author": "Rin247",
@@ -27,14 +27,19 @@
   "parameters_human": "782.4M",
   "storage_bytes": 953979713,
   "storage_human": "954 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-30T13:12:07.066Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

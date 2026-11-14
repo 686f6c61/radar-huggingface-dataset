@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Letian2003/ClinSeek-35B-A3B-armS-singlepass-ep2",
   "slug": "letian2003-clinseek-35b-a3b-arms-singlepass-ep2",
   "author": "Letian2003",
@@ -40,14 +40,19 @@
   "parameters_human": "35.95B",
   "storage_bytes": 71916685998,
   "storage_human": "71.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

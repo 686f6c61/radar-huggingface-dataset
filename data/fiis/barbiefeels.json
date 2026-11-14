@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FIIS/barbiefeels",
   "slug": "fiis-barbiefeels",
   "author": "FIIS",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 970132691,
   "storage_human": "970 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T20:42:43.338Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

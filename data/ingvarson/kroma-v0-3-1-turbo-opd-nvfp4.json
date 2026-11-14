@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ingvarson/Kroma-v0.3.1-turbo-opd-NVFP4",
   "slug": "ingvarson-kroma-v0-3-1-turbo-opd-nvfp4",
   "author": "ingvarson",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 7673668448,
   "storage_human": "7.7 GB",
+  "context_length": null,
   "base_model": "lodestones/Kroma",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

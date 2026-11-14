@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jjbbeans/SuperQwen3.8-27B-abliterated-UD-Q2_K_XL-GGUF",
   "slug": "jjbbeans-superqwen3-8-27b-abliterated-ud-q2_k_xl-gguf",
   "author": "jjbbeans",
@@ -26,14 +26,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 10676422144,
   "storage_human": "10.7 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "jjbbeans/Qwen3.8-27B-variants-dump-UD-Q2_K_XL",
+  "renamed_at": "2026-11-11T05:47:45.350Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Gsj49/adaptive-g-qwen3-4b-code-common-sketch-g32-b64-step300",
   "slug": "gsj49-adaptive-g-qwen3-4b-code-common-sketch-g32-b64-step300",
   "author": "Gsj49",
@@ -31,14 +31,19 @@
   "parameters_human": "4.41B",
   "storage_bytes": 8834317166,
   "storage_human": "8.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-30T02:38:05.363Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

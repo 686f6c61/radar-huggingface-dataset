@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arunp0/bhasha-lid-indic",
   "slug": "arunp0-bhasha-lid-indic",
   "author": "arunp0",
@@ -69,14 +69,19 @@
   "parameters_human": "277.5M",
   "storage_bytes": 1126977520,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "FacebookAI/xlm-roberta-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "LatentAILabs/bhasha-lid-indic",
+  "renamed_at": "2026-11-11T04:33:33.998Z",
   "benchmarks": [
     {
       "task": "Word-level language ID (Tamil + English)",

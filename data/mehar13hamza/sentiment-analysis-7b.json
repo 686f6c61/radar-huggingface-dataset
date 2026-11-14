@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mehar13hamza/Sentiment-Analysis-7B",
   "slug": "mehar13hamza-sentiment-analysis-7b",
   "author": "mehar13hamza",
@@ -37,14 +37,19 @@
   "parameters_human": "7.24B",
   "storage_bytes": 14483497944,
   "storage_human": "14.5 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-7B-Instruct-v0.2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

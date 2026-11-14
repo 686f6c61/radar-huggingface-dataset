@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "adesai1000/skops-svc-libsvm-oob-poc",
   "slug": "adesai1000-skops-svc-libsvm-oob-poc",
   "author": "adesai1000",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 4212382,
   "storage_human": "4 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

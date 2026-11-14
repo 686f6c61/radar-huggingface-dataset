@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "The-Khan-Academy/qwen-demo-test",
   "slug": "the-khan-academy-qwen-demo-test",
   "author": "The-Khan-Academy",
@@ -29,14 +29,19 @@
   "parameters_human": "1.10B",
   "storage_bytes": 3203258450,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

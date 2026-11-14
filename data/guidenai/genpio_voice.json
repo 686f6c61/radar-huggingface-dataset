@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GuidenAI/genpio_voice",
   "slug": "guidenai-genpio_voice",
   "author": "GuidenAI",
@@ -245,14 +245,19 @@
   "parameters_human": "612.6M",
   "storage_bytes": 2461769400,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

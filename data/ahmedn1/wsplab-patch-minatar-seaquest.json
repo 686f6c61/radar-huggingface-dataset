@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ahmedn1/wsplab-patch-minatar-seaquest",
   "slug": "ahmedn1-wsplab-patch-minatar-seaquest",
   "author": "Ahmedn1",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 83813,
   "storage_human": "83813 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

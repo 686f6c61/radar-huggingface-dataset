@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LASR-Callum/qwen3.6-27b-lora-t2-9284-da-verbose-tokenmatched-r64-dynbatch",
   "slug": "lasr-callum-qwen3-6-27b-lora-t2-9284-da-verbose-tokenmatched-r64-dynbatch",
   "author": "LASR-Callum",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 1295140374,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "dougalldeepmind/2026-08-20-qwen36-lora-table2-9284-difficult-advice-verbose-token-matched-rank-64-dynbatch",
+  "renamed_at": "2026-11-12T03:19:04.196Z",
   "benchmarks": [],
   "sources": [
     {

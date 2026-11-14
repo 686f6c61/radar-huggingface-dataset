@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Peterpet6/gemma-4-E2B-it-The-DECKARD-Expresso-ONE-Universe-HERETIC-UNCENSORED-Thinking",
   "slug": "peterpet6-gemma-4-e2b-it-the-deckard-expresso-one-universe-heretic-uncensored-thinking",
   "author": "Peterpet6",
@@ -56,14 +56,19 @@
   "parameters_human": "5.12B",
   "storage_bytes": 10278791512,
   "storage_human": "10.3 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

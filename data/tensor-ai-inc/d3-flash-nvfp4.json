@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tensor-ai-inc/d3-flash-NVFP4",
   "slug": "tensor-ai-inc-d3-flash-nvfp4",
   "author": "tensor-ai-inc",
@@ -32,14 +32,19 @@
   "parameters_human": "5.74B",
   "storage_bytes": 9184223013,
   "storage_human": "9.2 GB",
+  "context_length": null,
   "base_model": "vllm-sr/d3-flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

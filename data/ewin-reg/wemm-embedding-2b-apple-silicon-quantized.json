@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ewin-reg/WeMM-Embedding-2B-Apple-Silicon-Quantized",
   "slug": "ewin-reg-wemm-embedding-2b-apple-silicon-quantized",
   "author": "ewin-reg",
@@ -47,14 +47,19 @@
   "parameters_human": "1.81B",
   "storage_bytes": 5053131486,
   "storage_human": "5.1 GB",
+  "context_length": null,
   "base_model": "ewin-reg/WeMM-Embedding-2B-Quantized",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-22T02:59:15.850Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Multimodal Text Embedding",

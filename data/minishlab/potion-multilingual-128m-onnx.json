@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "minishlab/potion-multilingual-128m-onnx",
   "slug": "minishlab-potion-multilingual-128m-onnx",
   "author": "minishlab",
@@ -232,14 +232,19 @@
   "parameters_human": null,
   "storage_bytes": 1571752351,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "minishlab/potion-multilingual-128m",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ProCreations/gourd-6.66-ultra",
   "slug": "procreations-gourd-6-66-ultra",
   "author": "ProCreations",
@@ -34,14 +34,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 21420723330,
   "storage_human": "21.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-02T03:11:19.792Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "reaperdoesntknow/DualMinded-Qwen3-1.7B-GGUF",
   "slug": "reaperdoesntknow-dualminded-qwen3-1-7b-gguf",
   "author": "reaperdoesntknow",
@@ -38,14 +38,19 @@
   "parameters_human": "2.03B",
   "storage_bytes": 8988962944,
   "storage_human": "9.0 GB",
+  "context_length": 40960,
   "base_model": "reaperdoesntknow/DualMinded-Qwen3-1.7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

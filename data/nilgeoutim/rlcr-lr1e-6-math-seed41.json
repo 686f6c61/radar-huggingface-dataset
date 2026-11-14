@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nilgeoutim/RLCR-lr1e-6-math-seed41",
   "slug": "nilgeoutim-rlcr-lr1e-6-math-seed41",
   "author": "nilgeoutim",
@@ -34,14 +34,19 @@
   "parameters_human": "3.40B",
   "storage_bytes": 6805687303,
   "storage_human": "6.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "llm-calibration/RLCR-lr1e-6-math-seed41",
+  "renamed_at": "2026-11-11T06:55:25.228Z",
   "benchmarks": [],
   "sources": [
     {

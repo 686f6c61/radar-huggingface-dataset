@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kaorunn/umi-arena-pi05",
   "slug": "kaorunn-umi-arena-pi05",
   "author": "kaorunn",
@@ -26,14 +26,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 9375865363,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

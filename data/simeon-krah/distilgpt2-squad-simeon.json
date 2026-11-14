@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Simeon-Krah/distilgpt2-squad-simeon",
   "slug": "simeon-krah-distilgpt2-squad-simeon",
   "author": "Simeon-Krah",
@@ -28,14 +28,19 @@
   "parameters_human": "81.9M",
   "storage_bytes": 655321057,
   "storage_human": "655 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

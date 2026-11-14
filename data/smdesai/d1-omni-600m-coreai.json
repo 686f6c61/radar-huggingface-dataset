@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "smdesai/d1-omni-600M-CoreAI",
   "slug": "smdesai-d1-omni-600m-coreai",
   "author": "smdesai",
@@ -74,12 +74,17 @@
   "parameters_human": null,
   "storage_bytes": 4371757354,
   "storage_human": "4.4 GB",
+  "context_length": null,
   "base_model": "LiquidAI/d1-omni-600M",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

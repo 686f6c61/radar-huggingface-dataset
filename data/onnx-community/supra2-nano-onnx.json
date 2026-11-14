@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "onnx-community/Supra2-Nano-ONNX",
   "slug": "onnx-community-supra2-nano-onnx",
   "author": "onnx-community",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 14414720,
   "storage_human": "14 MB",
+  "context_length": null,
   "base_model": "Supralabs/Supra2-Nano",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

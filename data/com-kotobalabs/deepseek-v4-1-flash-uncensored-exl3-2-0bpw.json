@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "com-kotobalabs/Deepseek-v4.1-Flash-Uncensored-EXL3-2.0bpw",
   "slug": "com-kotobalabs-deepseek-v4-1-flash-uncensored-exl3-2-0bpw",
   "author": "com-kotobalabs",
@@ -40,14 +40,19 @@
   "parameters_human": "281.12B",
   "storage_bytes": 358121648700,
   "storage_human": "358.1 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

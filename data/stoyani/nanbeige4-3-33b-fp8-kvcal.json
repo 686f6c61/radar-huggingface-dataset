@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stoyani/Nanbeige4.3-33B-FP8-KVcal",
   "slug": "stoyani-nanbeige4-3-33b-fp8-kvcal",
   "author": "stoyani",
@@ -39,14 +39,19 @@
   "parameters_human": "33.12B",
   "storage_bytes": 35547982797,
   "storage_human": "35.5 GB",
+  "context_length": null,
   "base_model": "primitive-ai/Nanbeige4.3-33B-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

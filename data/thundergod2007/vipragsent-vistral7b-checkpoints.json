@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Thundergod2007/vipragsent-vistral7b-checkpoints",
   "slug": "thundergod2007-vipragsent-vistral7b-checkpoints",
   "author": "Thundergod2007",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 611821659889,
   "storage_human": "611.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

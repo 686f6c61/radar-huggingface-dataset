@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fbaldassarri/meta-llama_Llama-3.1-8B-Instruct-auto_awq-int4-gs64-asym",
   "slug": "fbaldassarri-meta-llama_llama-3-1-8b-instruct-auto_awq-int4-gs64-asym",
   "author": "fbaldassarri",
@@ -61,14 +61,19 @@
   "parameters_human": "2.05B",
   "storage_bytes": 7983341584,
   "storage_human": "8.0 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

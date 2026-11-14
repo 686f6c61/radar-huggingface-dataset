@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BigBlueCeiling/frndo-run-028-warm-restrained-r32-W4A16_GPTQ",
   "slug": "bigblueceiling-frndo-run-028-warm-restrained-r32-w4a16_gptq",
   "author": "BigBlueCeiling",
@@ -35,14 +35,19 @@
   "parameters_human": "4.73B",
   "storage_bytes": 15061978234,
   "storage_human": "15.1 GB",
+  "context_length": null,
   "base_model": "BigBlueCeiling/frndo-run-028-warm-restrained-r32-bf16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-17T04:33:33.978Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

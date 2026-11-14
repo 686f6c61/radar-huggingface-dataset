@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kingjones777/LFM2-8B-A1B-ROCmFPX-GGUF",
   "slug": "kingjones777-lfm2-8b-a1b-rocmfpx-gguf",
   "author": "kingjones777",
@@ -42,14 +42,19 @@
   "parameters_human": "8.34B",
   "storage_bytes": 29745148160,
   "storage_human": "29.7 GB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM2-8B-A1B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

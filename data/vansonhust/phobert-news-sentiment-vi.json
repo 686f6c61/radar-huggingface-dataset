@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "vansonhust/phobert-news-sentiment-vi",
+  "slug": "vansonhust-phobert-news-sentiment-vi",
+  "author": "vansonhust",
+  "url": "https://huggingface.co/vansonhust/phobert-news-sentiment-vi",
+  "created_at": "2026-11-14T13:52:16.000Z",
+  "updated_at": "2026-11-14T13:55:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "phobert",
+    "sentiment-analysis",
+    "vietnamese",
+    "news",
+    "text-classification",
+    "vi",
+    "base_model:wonrax/phobert-base-vietnamese-sentiment",
+    "base_model:finetune:wonrax/phobert-base-vietnamese-sentiment",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135000579,
+  "parameters_human": "135.0M",
+  "storage_bytes": 540026460,
+  "storage_human": "540 MB",
+  "context_length": null,
+  "base_model": "wonrax/phobert-base-vietnamese-sentiment",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

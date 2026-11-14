@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AutomatosX/AXDocLayout-M-v1.5-CUDA-TF32",
   "slug": "automatosx-axdoclayout-m-v1-5-cuda-tf32",
   "author": "AutomatosX",
@@ -34,14 +34,19 @@
   "parameters_human": "42.9M",
   "storage_bytes": 171658996,
   "storage_human": "172 MB",
+  "context_length": null,
   "base_model": "docling-project/docling-layout-heron",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

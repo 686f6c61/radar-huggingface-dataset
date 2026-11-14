@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BudgetAny/BudgetPix-PixelDiT",
   "slug": "budgetany-budgetpix-pixeldit",
   "author": "BudgetAny",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 5227529990,
   "storage_human": "5.2 GB",
+  "context_length": null,
   "base_model": "nvidia/PixelDiT-1300M-1024px",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

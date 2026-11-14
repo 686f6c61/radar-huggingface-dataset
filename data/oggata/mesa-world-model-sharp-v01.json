@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oggata/mesa-world-model-sharp-v01",
   "slug": "oggata-mesa-world-model-sharp-v01",
   "author": "oggata",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 197236664,
   "storage_human": "197 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "mesa-wm/mesa-world-model-sharp-v01",
+  "renamed_at": "2026-11-13T07:25:24.064Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "INCModel4/gemma-4-26B-A4B-MXFP8-FP8KV-FP8Attn-CT-RTN-AutoRound",
   "slug": "incmodel4-gemma-4-26b-a4b-mxfp8-fp8kv-fp8attn-ct-rtn-autoround",
   "author": "INCModel4",
@@ -35,14 +35,19 @@
   "parameters_human": "25.81B",
   "storage_bytes": 28447589974,
   "storage_human": "28.4 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-26B-A4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "intel-ai/gemma-4-26B-A4B-MXFP8-FP8KV-FP8Attn-CT-AutoRound",
+  "renamed_at": "2026-11-11T02:55:45.913Z",
   "benchmarks": [],
   "sources": [
     {

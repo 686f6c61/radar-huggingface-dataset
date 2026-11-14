@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RMDWLLC/Jah-7.0-Mini-MLX-4bit",
   "slug": "rmdwllc-jah-7-0-mini-mlx-4bit",
   "author": "RMDWLLC",
@@ -36,6 +36,7 @@
   "parameters_human": "26.90B",
   "storage_bytes": 15153032852,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

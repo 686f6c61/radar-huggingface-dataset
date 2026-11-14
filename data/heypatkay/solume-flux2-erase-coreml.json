@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "heypatkay/solume-flux2-erase-coreml",
   "slug": "heypatkay-solume-flux2-erase-coreml",
   "author": "heypatkay",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 4230601731,
   "storage_human": "4.2 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.2-klein-4B, slopshop/erase-v1",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

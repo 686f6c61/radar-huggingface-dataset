@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Frosty40/glimmer-genie-Muse-Glimmer-30B-comb1",
   "slug": "frosty40-glimmer-genie-muse-glimmer-30b-comb1",
   "author": "Frosty40",
@@ -37,6 +37,7 @@
   "parameters_human": "209.6M",
   "storage_bytes": 1346379421,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "meta-models/Muse-Glimmer-30B",
   "formats": [
     "gguf",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

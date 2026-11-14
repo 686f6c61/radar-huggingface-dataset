@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leomaurodesenv/roberta-base-nvidia-aegis-v2",
   "slug": "leomaurodesenv-roberta-base-nvidia-aegis-v2",
   "author": "leomaurodesenv",
@@ -31,14 +31,19 @@
   "parameters_human": "124.6M",
   "storage_bytes": 12963938065,
   "storage_human": "13.0 GB",
+  "context_length": null,
   "base_model": "FacebookAI/roberta-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

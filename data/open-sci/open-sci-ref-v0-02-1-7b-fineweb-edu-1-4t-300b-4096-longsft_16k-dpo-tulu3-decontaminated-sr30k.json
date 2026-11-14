@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "open-sci/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-DPO-Tulu3-decontaminated-sr30k",
   "slug": "open-sci-open-sci-ref-v0-02-1-7b-fineweb-edu-1-4t-300b-4096-longsft_16k-dpo-tulu3-decontaminated-sr30k",
   "author": "open-sci",
@@ -32,14 +32,19 @@
   "parameters_human": "1.71B",
   "storage_bytes": 3428804400,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "ali-elganzory/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-DPO-Tulu3-decontaminated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

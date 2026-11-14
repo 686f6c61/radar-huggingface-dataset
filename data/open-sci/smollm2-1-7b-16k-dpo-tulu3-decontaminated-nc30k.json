@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "open-sci/SmolLM2-1.7B-16k-DPO-Tulu3-decontaminated-nc30k",
   "slug": "open-sci-smollm2-1-7b-16k-dpo-tulu3-decontaminated-nc30k",
   "author": "open-sci",
@@ -34,14 +34,19 @@
   "parameters_human": "1.71B",
   "storage_bytes": 3423040096,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "ali-elganzory/SmolLM2-1.7B-16k-DPO-Tulu3-decontaminated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

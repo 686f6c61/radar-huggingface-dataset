@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "joaorura/distil-whisper-large-v3-ptbr-openvino-int8",
   "slug": "joaorura-distil-whisper-large-v3-ptbr-openvino-int8",
   "author": "joaorura",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 767799742,
   "storage_human": "768 MB",
+  "context_length": null,
   "base_model": "freds0/distil-whisper-large-v3-ptbr",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

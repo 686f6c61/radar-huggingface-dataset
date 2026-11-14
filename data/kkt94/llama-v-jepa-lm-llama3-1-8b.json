@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kkt94/Llama-V-JEPA-LM-Llama3.1-8B",
   "slug": "kkt94-llama-v-jepa-lm-llama3-1-8b",
   "author": "kkt94",
@@ -43,14 +43,19 @@
   "parameters_human": "9.07B",
   "storage_bytes": 18159753680,
   "storage_human": "18.2 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Video question answering",

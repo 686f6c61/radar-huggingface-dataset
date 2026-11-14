@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dongkkka/Task000519_PourWater_ViTacFormer_H100_LR1e4_B512_Hand_Intern",
   "slug": "dongkkka-task000519_pourwater_vitacformer_h100_lr1e4_b512_hand_intern",
   "author": "Dongkkka",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 756501438,
   "storage_human": "757 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

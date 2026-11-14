@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prism-ml/Ternary-Bonsai-2-9B-mlx-2bit",
   "slug": "prism-ml-ternary-bonsai-2-9b-mlx-2bit",
   "author": "prism-ml",
@@ -37,6 +37,7 @@
   "parameters_human": "9.41B",
   "storage_bytes": 3611841551,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

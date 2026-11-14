@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gkoneking/Qwen-Django-Vision-Pro",
   "slug": "gkoneking-qwen-django-vision-pro",
   "author": "gkoneking",
@@ -28,14 +28,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 6037235264,
   "storage_human": "6.0 GB",
+  "context_length": 128000,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

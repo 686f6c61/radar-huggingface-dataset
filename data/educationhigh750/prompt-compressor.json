@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "educationhigh750/prompt-compressor",
   "slug": "educationhigh750-prompt-compressor",
   "author": "educationhigh750",
@@ -27,14 +27,19 @@
   "parameters_human": "406.3M",
   "storage_bytes": 6501713825,
   "storage_human": "6.5 GB",
+  "context_length": null,
   "base_model": "facebook/bart-large-cnn",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

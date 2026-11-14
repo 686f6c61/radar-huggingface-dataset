@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "12B-Suite/G4-Prototype01-12B-v0.1",
   "slug": "12b-suite-g4-prototype01-12b-v0-1",
   "author": "12B-Suite",
@@ -49,14 +49,19 @@
   "parameters_human": "11.96B",
   "storage_bytes": 23951718050,
   "storage_human": "24.0 GB",
+  "context_length": null,
   "base_model": "MuXodious/gemma-4-12B-it-QAT-SOMPOA-heresy",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

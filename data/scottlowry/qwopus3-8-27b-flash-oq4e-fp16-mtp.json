@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "scottlowry/Qwopus3.8-27B-Flash-oQ4e-fp16-mtp",
   "slug": "scottlowry-qwopus3-8-27b-flash-oq4e-fp16-mtp",
   "author": "scottlowry",
@@ -29,6 +29,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 17913129485,
   "storage_human": "17.9 GB",
+  "context_length": null,
   "base_model": "Jackrong/Qwopus3.8-27B-Flash",
   "formats": [
     "mlx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

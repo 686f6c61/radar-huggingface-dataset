@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IsValorum/Qwen3.8-27B-TTURBO-709-Uncen-VAL-APEX-I-NanoPlus-V3-GGUF",
   "slug": "isvalorum-qwen3-8-27b-tturbo-709-uncen-val-apex-i-nanoplus-v3-gguf",
   "author": "IsValorum",
@@ -47,14 +47,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 12951882784,
   "storage_human": "13.0 GB",
+  "context_length": 262144,
   "base_model": "DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Koshkasa/TheDrummer_Skyfall-31B-v4.2_16G-checkerboard-trellis-GGUF",
   "slug": "koshkasa-thedrummer_skyfall-31b-v4-2_16g-checkerboard-trellis-gguf",
   "author": "Koshkasa",
@@ -35,14 +35,19 @@
   "parameters_human": "31.35B",
   "storage_bytes": 15594863861,
   "storage_human": "15.6 GB",
+  "context_length": 131072,
   "base_model": "TheDrummer/Skyfall-31B-v4.2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

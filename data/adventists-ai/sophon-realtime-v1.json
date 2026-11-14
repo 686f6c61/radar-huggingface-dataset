@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "adventists-ai/Sophon-Realtime-v1",
   "slug": "adventists-ai-sophon-realtime-v1",
   "author": "adventists-ai",
@@ -29,19 +29,24 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 254,
+  "likes": 258,
   "downloads_30d": 0,
-  "trending_score": 197,
+  "trending_score": 201,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "roman220220/nemotron-30b-a3b-gptq-mixed_3_6",
   "slug": "roman220220-nemotron-30b-a3b-gptq-mixed_3_6",
   "author": "roman220220",
@@ -30,6 +30,7 @@
   "parameters_human": "31.58B",
   "storage_bytes": 30657403903,
   "storage_human": "30.7 GB",
+  "context_length": null,
   "base_model": "nvidia/Nemotron-3.5-Lightning-30B-A3B",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-18T03:44:40.105Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

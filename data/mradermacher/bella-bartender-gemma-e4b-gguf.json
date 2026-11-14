@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/bella-bartender-gemma-e4b-GGUF",
   "slug": "mradermacher-bella-bartender-gemma-e4b-gguf",
   "author": "mradermacher",
@@ -38,14 +38,19 @@
   "parameters_human": "7.46B",
   "storage_bytes": 74813292416,
   "storage_human": "74.8 GB",
+  "context_length": 131072,
   "base_model": "juiceb0xc0de/bella-bartender-gemma-e4b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

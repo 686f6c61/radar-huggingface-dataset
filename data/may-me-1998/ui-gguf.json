@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "may-me-1998/Ui-GGUF",
   "slug": "may-me-1998-ui-gguf",
   "author": "may-me-1998",
@@ -41,14 +41,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 116288405152,
   "storage_human": "116.3 GB",
+  "context_length": null,
   "base_model": "deepreinforce-ai/Ornith-1.0-35B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-23T18:05:45.357Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

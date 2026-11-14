@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lemons-ink/SmolLM3-Custom-Merged",
   "slug": "lemons-ink-smollm3-custom-merged",
   "author": "lemons-ink",
@@ -30,14 +30,19 @@
   "parameters_human": "3.08B",
   "storage_bytes": 6167443587,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

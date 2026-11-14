@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SlumberDemon/Ternary-Bonsai-2-27B-mlx-2bit",
   "slug": "slumberdemon-ternary-bonsai-2-27b-mlx-2bit",
   "author": "SlumberDemon",
@@ -37,6 +37,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 8608287310,
   "storage_human": "8.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-21T02:28:10.494Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

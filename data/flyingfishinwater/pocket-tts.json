@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "flyingfishinwater/pocket-tts",
   "slug": "flyingfishinwater-pocket-tts",
   "author": "flyingfishinwater",
@@ -29,14 +29,19 @@
   "parameters_human": "117.9M",
   "storage_bytes": 240073769,
   "storage_human": "240 MB",
+  "context_length": null,
   "base_model": "kyutai/pocket-tts",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T02:24:33.136Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

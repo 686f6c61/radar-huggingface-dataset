@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mindral/ComRAD-200B-GGUF",
   "slug": "mindral-comrad-200b-gguf",
   "author": "Mindral",
@@ -35,14 +35,19 @@
   "parameters_human": "194.93B",
   "storage_bytes": 114333049568,
   "storage_human": "114.3 GB",
+  "context_length": 1048576,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

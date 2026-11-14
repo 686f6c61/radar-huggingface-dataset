@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fiel1986/dialogpt-es-arreglado",
   "slug": "fiel1986-dialogpt-es-arreglado",
   "author": "fiel1986",
@@ -31,14 +31,19 @@
   "parameters_human": "163.0M",
   "storage_bytes": 326094705,
   "storage_human": "326 MB",
+  "context_length": null,
   "base_model": "microsoft/DialoGPT-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-24T04:09:07.333Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

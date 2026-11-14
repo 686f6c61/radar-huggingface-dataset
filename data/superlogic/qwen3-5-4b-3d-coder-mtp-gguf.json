@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SuperLogic/Qwen3.5-4B-3D-Coder-MTP-GGUF",
   "slug": "superlogic-qwen3-5-4b-3d-coder-mtp-gguf",
   "author": "SuperLogic",
@@ -43,14 +43,19 @@
   "parameters_human": "333.5M",
   "storage_bytes": 5399471926,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": "ccore/Qwen3.5-4B-3D-Coder, Qwen/Qwen3.5-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

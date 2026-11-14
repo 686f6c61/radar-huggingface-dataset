@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "joshycodes/meta-llama-3.1-8b-sorrel-llama-base-xf-ss-chat",
   "slug": "joshycodes-meta-llama-3-1-8b-sorrel-llama-base-xf-ss-chat",
   "author": "joshycodes",
@@ -28,14 +28,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16077771907,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "unsloth/Meta-Llama-3.1-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-02T05:57:34.559Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

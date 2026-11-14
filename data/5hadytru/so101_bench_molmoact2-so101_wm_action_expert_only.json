@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "5hadytru/so101_bench_MolmoAct2-SO101_WM_action_expert_only",
   "slug": "5hadytru-so101_bench_molmoact2-so101_wm_action_expert_only",
   "author": "5hadytru",
@@ -34,14 +34,19 @@
   "parameters_human": "5.45B",
   "storage_bytes": 10907226195,
   "storage_human": "10.9 GB",
+  "context_length": null,
   "base_model": "allenai/MolmoAct2-SO100_101",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

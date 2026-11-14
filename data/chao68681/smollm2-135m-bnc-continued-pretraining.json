@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chao68681/smollm2-135m-bnc-continued-pretraining",
   "slug": "chao68681-smollm2-135m-bnc-continued-pretraining",
   "author": "chao68681",
@@ -37,14 +37,19 @@
   "parameters_human": "134.5M",
   "storage_bytes": 538090408,
   "storage_human": "538 MB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-135M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jaymanaryan/Qwen3-Combined-4",
   "slug": "jaymanaryan-qwen3-combined-4",
   "author": "jaymanaryan",
@@ -47,14 +47,19 @@
   "parameters_human": "751.6M",
   "storage_bytes": 10337617430,
   "storage_human": "10.3 GB",
+  "context_length": null,
   "base_model": "suayptalha/Qwen3-0.6B-Treatment, suayptalha/Qwen3-0.6B-Diagnose, mrfakename/dreamwriter-0.6b-beta, prithivMLmods/Nenque-MoT-0.6B-Elite14, prithivMLmods/Explora-0.6B, prithivMLmods/Cerium-Qwen3-R1-Dev, MihaiPopa-1/Qwen3-0.6B-English-Hinglish-Preview",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

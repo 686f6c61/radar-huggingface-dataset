@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Baekpica/Inkling-2-Small-VQ-GGUF",
   "slug": "baekpica-inkling-2-small-vq-gguf",
   "author": "Baekpica",
@@ -57,14 +57,19 @@
   "parameters_human": "5.73B",
   "storage_bytes": 118197580622,
   "storage_human": "118.2 GB",
+  "context_length": null,
   "base_model": "thinkingmachines/Inkling-2-Small",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

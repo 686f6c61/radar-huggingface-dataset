@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "geceff/Wan2.2-Custom-Models-GGUF",
   "slug": "geceff-wan2-2-custom-models-gguf",
   "author": "geceff",
@@ -34,14 +34,19 @@
   "parameters_human": "14.29B",
   "storage_bytes": 496942761807,
   "storage_human": "496.9 GB",
+  "context_length": null,
   "base_model": "text-to-video-synthesis",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

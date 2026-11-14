@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aneforge/whisper-tiny.en",
   "slug": "aneforge-whisper-tiny-en",
   "author": "aneforge",
@@ -30,14 +30,19 @@
   "parameters_human": "37.8M",
   "storage_bytes": 453406051,
   "storage_human": "453 MB",
+  "context_length": null,
   "base_model": "openai/whisper-tiny.en",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

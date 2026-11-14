@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ChatterjeeLab/ReMEDi",
   "slug": "chatterjeelab-remedi",
   "author": "ChatterjeeLab",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 10501639,
   "storage_human": "11 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T07:36:45.863Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

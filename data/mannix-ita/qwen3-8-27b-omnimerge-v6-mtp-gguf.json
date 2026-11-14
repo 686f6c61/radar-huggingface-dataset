@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ManniX-ITA/Qwen3.8-27B-Omnimerge-v6-MTP-GGUF",
   "slug": "mannix-ita-qwen3-8-27b-omnimerge-v6-mtp-gguf",
   "author": "ManniX-ITA",
@@ -36,14 +36,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 656610976807,
   "storage_human": "656.6 GB",
+  "context_length": 262144,
   "base_model": "ManniX-ITA/Qwen3.8-27B-Omnimerge-v6",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DKC-Art-Ai/Jpn1-z-image-turbo-lora",
   "slug": "dkc-art-ai-jpn1-z-image-turbo-lora",
   "author": "DKC-Art-Ai",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 1375449651,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "Tongyi-MAI/Z-Image-Turbo",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

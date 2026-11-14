@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "speakleash/Bielik-One-4B-r1-Adapter",
   "slug": "speakleash-bielik-one-4b-r1-adapter",
   "author": "speakleash",
@@ -98,14 +98,19 @@
   "parameters_human": null,
   "storage_bytes": 766600120,
   "storage_human": "767 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

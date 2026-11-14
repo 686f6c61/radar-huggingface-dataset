@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ikimyaii/GatedDeltaNet-1.3B-semi-structured-ELSA-50pct",
   "slug": "ikimyaii-gateddeltanet-1-3b-semi-structured-elsa-50pct",
   "author": "ikimyaii",
@@ -32,14 +32,19 @@
   "parameters_human": "1.47B",
   "storage_bytes": 5865422368,
   "storage_human": "5.9 GB",
+  "context_length": null,
   "base_model": "m-a-p/1.3B-100B-GatedDeltaNet-pure",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

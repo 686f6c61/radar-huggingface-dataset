@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AIxFuneStudio/Fictional_Foundation_Moss_Turbo",
   "slug": "aixfunestudio-fictional_foundation_moss_turbo",
   "author": "AIxFuneStudio",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 6091152576,
   "storage_human": "6.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

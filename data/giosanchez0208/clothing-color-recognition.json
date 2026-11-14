@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "giosanchez0208/clothing-color-recognition",
   "slug": "giosanchez0208-clothing-color-recognition",
   "author": "giosanchez0208",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 33688866,
   "storage_human": "34 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Clothing color distribution",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/LFM3-Audio-2B-LiteRT",
   "slug": "litert-community-lfm3-audio-2b-litert",
   "author": "litert-community",
@@ -33,18 +33,23 @@
     "region:us"
   ],
   "likes": 5,
-  "downloads_30d": 903,
+  "downloads_30d": 959,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 4102275696,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-Audio-2B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

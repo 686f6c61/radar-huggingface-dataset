@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nub235/pianissimo-sv-gguf",
   "slug": "nub235-pianissimo-sv-gguf",
   "author": "nub235",
@@ -37,14 +37,19 @@
   "parameters_human": "627.1M",
   "storage_bytes": 739508480,
   "storage_human": "740 MB",
+  "context_length": null,
   "base_model": "KlangAI/pianissimo-sv",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-07T03:58:25.186Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

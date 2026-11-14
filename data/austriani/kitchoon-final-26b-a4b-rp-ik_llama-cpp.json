@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Austriani/Kitchoon-Final-26B-A4B-RP-ik_llama.cpp",
   "slug": "austriani-kitchoon-final-26b-a4b-rp-ik_llama-cpp",
   "author": "Austriani",
@@ -54,14 +54,19 @@
   "parameters_human": "25.23B",
   "storage_bytes": 104826365418,
   "storage_human": "104.8 GB",
+  "context_length": 262144,
   "base_model": "SubMaroon/Kitchoon-Final-26B-A4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

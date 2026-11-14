@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BIGJUTT/Qwen3-8B-abliterated",
   "slug": "bigjutt-qwen3-8b-abliterated",
   "author": "BIGJUTT",
@@ -32,14 +32,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 16392939171,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T02:14:51.297Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

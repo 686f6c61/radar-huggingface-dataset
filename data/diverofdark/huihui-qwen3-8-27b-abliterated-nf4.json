@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "diverofdark/Huihui-Qwen3.8-27B-abliterated-nf4",
   "slug": "diverofdark-huihui-qwen3-8-27b-abliterated-nf4",
   "author": "diverofdark",
@@ -29,14 +29,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 19067481900,
   "storage_human": "19.1 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-29T02:46:26.441Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

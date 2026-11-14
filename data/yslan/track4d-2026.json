@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yslan/Track4D-2026",
   "slug": "yslan-track4d-2026",
   "author": "yslan",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 52949693427,
   "storage_human": "52.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

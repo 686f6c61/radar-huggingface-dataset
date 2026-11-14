@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Vishva007/dots.mocr-W4A16-AutoRound-GPTQ",
   "slug": "vishva007-dots-mocr-w4a16-autoround-gptq",
   "author": "Vishva007",
@@ -42,14 +42,19 @@
   "parameters_human": "3.04B",
   "storage_bytes": 12766576455,
   "storage_human": "12.8 GB",
+  "context_length": null,
   "base_model": "dots-studio/dots.mocr",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

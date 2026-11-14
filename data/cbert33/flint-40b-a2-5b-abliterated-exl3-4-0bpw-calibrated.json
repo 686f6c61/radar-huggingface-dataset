@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cbert33/Flint-40B-A2.5B-Abliterated-EXL3-4.0bpw-Calibrated",
   "slug": "cbert33-flint-40b-a2-5b-abliterated-exl3-4-0bpw-calibrated",
   "author": "cbert33",
@@ -39,14 +39,19 @@
   "parameters_human": "10.31B",
   "storage_bytes": 20692535781,
   "storage_human": "20.7 GB",
+  "context_length": null,
   "base_model": "dima6312/Flint-40B-A2.5B-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

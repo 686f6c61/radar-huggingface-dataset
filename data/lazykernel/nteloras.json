@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LazyKernel/NTELoras",
   "slug": "lazykernel-nteloras",
   "author": "LazyKernel",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 3251993261,
   "storage_human": "3.3 GB",
+  "context_length": null,
   "base_model": "circlestone-labs/Anima, OnomaAIResearch/Illustrious-XL-v1.0, krea/Krea-2-Raw, OpenMOSS-Team/MOSS-Image-Base",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

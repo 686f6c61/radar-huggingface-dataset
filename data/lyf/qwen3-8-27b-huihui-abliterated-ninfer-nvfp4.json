@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lyf/Qwen3.8-27B-Huihui-Abliterated-NInfer-NVFP4",
   "slug": "lyf-qwen3-8-27b-huihui-abliterated-ninfer-nvfp4",
   "author": "lyf",
@@ -44,12 +44,17 @@
   "parameters_human": null,
   "storage_bytes": 42985633264,
   "storage_human": "43.0 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

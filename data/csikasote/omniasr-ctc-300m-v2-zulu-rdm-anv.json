@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "csikasote/omniASR-CTC-300M-v2-Zulu-RDM-ANV",
   "slug": "csikasote-omniasr-ctc-300m-v2-zulu-rdm-anv",
   "author": "csikasote",
@@ -34,14 +34,19 @@
   "parameters_human": "326.0M",
   "storage_bytes": 1304079833,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "facebook/omniASR-CTC-300M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "uctnlp/omniASR-CTC-300M-v2-Zulu-RDM-ANV",
+  "renamed_at": "2026-11-11T04:53:11.865Z",
   "benchmarks": [],
   "sources": [
     {

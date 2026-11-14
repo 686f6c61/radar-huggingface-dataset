@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Wuli-art/MiniMax-H3-Turbo",
   "slug": "wuli-art-minimax-h3-turbo",
   "author": "Wuli-art",
@@ -36,6 +36,7 @@
   "parameters_human": null,
   "storage_bytes": 123540184812,
   "storage_human": "123.5 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [
     "diffusers",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

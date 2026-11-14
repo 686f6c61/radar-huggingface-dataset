@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "axteam/GLM-4-32B-0414-NVFP4A16",
   "slug": "axteam-glm-4-32b-0414-nvfp4a16",
   "author": "axteam",
@@ -37,14 +37,19 @@
   "parameters_human": "32.57B",
   "storage_bytes": 21017721840,
   "storage_human": "21.0 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-4-32B-0414",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

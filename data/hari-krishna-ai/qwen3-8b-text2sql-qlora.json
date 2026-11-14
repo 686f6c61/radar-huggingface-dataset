@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hari-krishna-ai/qwen3-8b-text2sql-qlora",
   "slug": "hari-krishna-ai-qwen3-8b-text2sql-qlora",
   "author": "hari-krishna-ai",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 186078186,
   "storage_human": "186 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

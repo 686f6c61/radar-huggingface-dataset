@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "marcelz/elephant-1-FP8-W8A8",
   "slug": "marcelz-elephant-1-fp8-w8a8",
   "author": "marcelz",
@@ -42,14 +42,19 @@
   "parameters_human": "8.96B",
   "storage_bytes": 11021366835,
   "storage_human": "11.0 GB",
+  "context_length": null,
   "base_model": "baselabs/elephant-1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

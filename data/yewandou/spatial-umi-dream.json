@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Yewandou/spatial-umi-dream",
   "slug": "yewandou-spatial-umi-dream",
   "author": "Yewandou",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 22426853040,
   "storage_human": "22.4 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.2-TI2V-5B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "air-air/japanese-hubert-base-phoneme-ctc-v4-ONNX",
   "slug": "air-air-japanese-hubert-base-phoneme-ctc-v4-onnx",
   "author": "air-air",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 63010793,
   "storage_human": "63 MB",
+  "context_length": null,
   "base_model": "prj-beatrice/japanese-hubert-base-phoneme-ctc-v4",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MBARI-org/mbari-1m-single-class-yolo26s",
   "slug": "mbari-org-mbari-1m-single-class-yolo26s",
   "author": "MBARI-org",
@@ -42,12 +42,17 @@
   "parameters_human": null,
   "storage_bytes": 21631650,
   "storage_human": "22 MB",
+  "context_length": null,
   "base_model": "Ultralytics/YOLO26",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Object Detection",

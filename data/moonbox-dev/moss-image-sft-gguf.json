@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moonbox-dev/MOSS-Image-SFT-GGUF",
   "slug": "moonbox-dev-moss-image-sft-gguf",
   "author": "moonbox-dev",
@@ -30,14 +30,19 @@
   "parameters_human": "5.08B",
   "storage_bytes": 38170774336,
   "storage_human": "38.2 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ninnix96/Mellum2.1-12B-A2.5B-Thinking-gguf",
   "slug": "ninnix96-mellum2-1-12b-a2-5b-thinking-gguf",
   "author": "Ninnix96",
@@ -30,14 +30,19 @@
   "parameters_human": "12.15B",
   "storage_bytes": 58149674016,
   "storage_human": "58.1 GB",
+  "context_length": 131072,
   "base_model": "JetBrains/Mellum2.1-12B-A2.5B-Thinking",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

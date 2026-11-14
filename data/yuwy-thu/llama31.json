@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yuwy-thu/llama31",
   "slug": "yuwy-thu-llama31",
   "author": "yuwy-thu",
@@ -50,14 +50,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 32123357950,
   "storage_human": "32.1 GB",
+  "context_length": null,
   "base_model": "meta-llama/Meta-Llama-3.1-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-29T03:27:15.834Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

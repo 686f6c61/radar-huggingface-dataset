@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lilgarca/xdd",
   "slug": "lilgarca-xdd",
   "author": "Lilgarca",
@@ -25,14 +25,19 @@
   "parameters_human": "229.7M",
   "storage_bytes": 131779552,
   "storage_human": "132 MB",
+  "context_length": 128000,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T02:58:05.709Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

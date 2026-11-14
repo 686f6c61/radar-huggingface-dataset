@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Outlier-Ai/Yi-Coder-9B-Chat-MLX-4bit",
   "slug": "outlier-ai-yi-coder-9b-chat-mlx-4bit",
   "author": "Outlier-Ai",
@@ -68,6 +68,7 @@
   "parameters_human": "8.83B",
   "storage_bytes": 4967239406,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": "01-ai/Yi-Coder-9B-Chat",
   "formats": [
     "mlx",
@@ -75,8 +76,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

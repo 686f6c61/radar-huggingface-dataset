@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-036",
   "slug": "hyu-nlp-eval-qwen3-4b-rar-medicine-static-r0-matched-seed11-step-036",
   "author": "HYU-NLP-EVAL",
@@ -36,14 +36,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 25702307529,
   "storage_human": "25.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "HYU-NLP-EVAL/20260914_rar-medicine_static_qwen3-4b_matched_impl-verl_s11_step-036",
+  "renamed_at": "2026-11-11T02:50:57.116Z",
   "benchmarks": [],
   "sources": [
     {

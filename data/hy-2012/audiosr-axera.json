@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HY-2012/AudioSR.AXERA",
   "slug": "hy-2012-audiosr-axera",
   "author": "HY-2012",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 925518205,
   "storage_human": "926 MB",
+  "context_length": null,
   "base_model": "haoheliu/audiosr_speech",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "AXERA-TECH/AudioSR.AXERA",
+  "renamed_at": "2026-11-11T02:50:31.460Z",
   "benchmarks": [],
   "sources": []
 }

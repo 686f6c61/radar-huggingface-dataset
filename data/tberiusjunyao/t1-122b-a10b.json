@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TberiusJunyao/T1-122B-A10B",
   "slug": "tberiusjunyao-t1-122b-a10b",
   "author": "TberiusJunyao",
@@ -35,14 +35,19 @@
   "parameters_human": "125.09B",
   "storage_bytes": 250186061382,
   "storage_human": "250.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-122B-A10B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-17T04:46:12.870Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

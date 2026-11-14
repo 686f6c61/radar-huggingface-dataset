@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SaurabhMokashi4/gemma3-1b-grpo-deepmath",
   "slug": "saurabhmokashi4-gemma3-1b-grpo-deepmath",
   "author": "SaurabhMokashi4",
@@ -35,14 +35,19 @@
   "parameters_human": "999.9M",
   "storage_bytes": 2037884849,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "unsloth/gemma-3-1b-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

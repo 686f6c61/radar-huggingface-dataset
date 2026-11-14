@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ursb01/Ornith-1.5-35B-A3B-Heretic-MTP-APEX-GGUF",
   "slug": "ursb01-ornith-1-5-35b-a3b-heretic-mtp-apex-gguf",
   "author": "ursb01",
@@ -36,14 +36,19 @@
   "parameters_human": "446.6M",
   "storage_bytes": 82053127136,
   "storage_human": "82.1 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-23T16:59:11.499Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

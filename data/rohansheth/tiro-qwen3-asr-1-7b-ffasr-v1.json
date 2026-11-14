@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rohansheth/tiro-qwen3-asr-1.7b-ffasr-v1",
   "slug": "rohansheth-tiro-qwen3-asr-1-7b-ffasr-v1",
   "author": "rohansheth",
@@ -36,14 +36,19 @@
   "parameters_human": "2.04B",
   "storage_bytes": 12239920476,
   "storage_human": "12.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ASR-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

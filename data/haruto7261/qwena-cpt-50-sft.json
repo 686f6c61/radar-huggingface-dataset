@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Haruto7261/QwenA-CPT-50-SFT",
   "slug": "haruto7261-qwena-cpt-50-sft",
   "author": "Haruto7261",
@@ -23,14 +23,19 @@
   "parameters_human": "9.65B",
   "storage_bytes": 19326314236,
   "storage_human": "19.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TheUnderscore/Boulesis-v2.1-26B-A4B-NVFP4-W4ATTN-AWQ",
   "slug": "theunderscore-boulesis-v2-1-26b-a4b-nvfp4-w4attn-awq",
   "author": "TheUnderscore",
@@ -43,14 +43,19 @@
   "parameters_human": "26.54B",
   "storage_bytes": 17882752414,
   "storage_human": "17.9 GB",
+  "context_length": null,
   "base_model": "SubMaroon/Boulesis-v2.1-26B-A4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

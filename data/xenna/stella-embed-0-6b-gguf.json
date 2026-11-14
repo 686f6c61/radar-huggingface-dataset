@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Xenna/stella-embed-0.6b-gguf",
   "slug": "xenna-stella-embed-0-6b-gguf",
   "author": "Xenna",
@@ -32,14 +32,19 @@
   "parameters_human": "595.8M",
   "storage_bytes": 639145792,
   "storage_human": "639 MB",
+  "context_length": 32768,
   "base_model": "Xenna/stella-embed-0.6b",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

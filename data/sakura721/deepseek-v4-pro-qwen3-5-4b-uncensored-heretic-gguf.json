@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sakura721/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic-GGUF",
   "slug": "sakura721-deepseek-v4-pro-qwen3-5-4b-uncensored-heretic-gguf",
   "author": "Sakura721",
@@ -58,14 +58,19 @@
   "parameters_human": "333.5M",
   "storage_bytes": 672424864,
   "storage_human": "672 MB",
+  "context_length": null,
   "base_model": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vmarcelo/Sabi-Noema-MTP-IQ3_S-GSQ-RCO-GGUF",
   "slug": "vmarcelo-sabi-noema-mtp-iq3_s-gsq-rco-gguf",
   "author": "vmarcelo",
@@ -36,14 +36,19 @@
   "parameters_human": "463.7M",
   "storage_bytes": 12467230784,
   "storage_human": "12.5 GB",
+  "context_length": null,
   "base_model": "sabicap/sabi-noema, xkm/qwen3.8-27b-mtp-head-retrained",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

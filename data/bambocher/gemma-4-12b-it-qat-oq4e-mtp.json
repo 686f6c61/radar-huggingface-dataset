@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bambocher/gemma-4-12B-it-qat-oQ4e-mtp",
   "slug": "bambocher-gemma-4-12b-it-qat-oq4e-mtp",
   "author": "bambocher",
@@ -27,6 +27,7 @@
   "parameters_human": "12.38B",
   "storage_bytes": 7955681670,
   "storage_human": "8.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

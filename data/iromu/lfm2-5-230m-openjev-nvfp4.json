@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iromu/LFM2.5-230M-openjev-NVFP4",
   "slug": "iromu-lfm2-5-230m-openjev-nvfp4",
   "author": "iromu",
@@ -44,14 +44,19 @@
   "parameters_human": "148.4M",
   "storage_bytes": 225783480,
   "storage_human": "226 MB",
+  "context_length": null,
   "base_model": "iromu/LFM2.5-230M-openjev",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

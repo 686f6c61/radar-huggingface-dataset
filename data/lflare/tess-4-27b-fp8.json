@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lflare/Tess-4-27B-FP8",
   "slug": "lflare-tess-4-27b-fp8",
   "author": "lflare",
@@ -33,14 +33,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 69936309183,
   "storage_human": "69.9 GB",
+  "context_length": null,
   "base_model": "migtissera/Tess-4-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

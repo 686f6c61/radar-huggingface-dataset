@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "frankmorales2020/topo-2026-mistral-t2sql",
   "slug": "frankmorales2020-topo-2026-mistral-t2sql",
   "author": "frankmorales2020",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 5368770952,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

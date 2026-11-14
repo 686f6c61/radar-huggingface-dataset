@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mazesmazes/tiny-audio-turn-aware-qwen3-asr-v4",
   "slug": "mazesmazes-tiny-audio-turn-aware-qwen3-asr-v4",
   "author": "mazesmazes",
@@ -27,14 +27,19 @@
   "parameters_human": "782.4M",
   "storage_bytes": 1576358098,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-08T03:41:04.209Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

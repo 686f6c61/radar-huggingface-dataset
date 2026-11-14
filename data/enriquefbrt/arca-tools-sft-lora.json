@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "enriquefbrt/arca-tools-sft-lora",
   "slug": "enriquefbrt-arca-tools-sft-lora",
   "author": "enriquefbrt",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 81210747,
   "storage_human": "81 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

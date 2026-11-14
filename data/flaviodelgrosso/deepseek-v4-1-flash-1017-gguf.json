@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "flaviodelgrosso/DeepSeek-V4.1-Flash-1017-GGUF",
   "slug": "flaviodelgrosso-deepseek-v4-1-flash-1017-gguf",
   "author": "flaviodelgrosso",
@@ -28,14 +28,19 @@
   "parameters_human": "329.97B",
   "storage_bytes": 1474114994336,
   "storage_human": "1474.1 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

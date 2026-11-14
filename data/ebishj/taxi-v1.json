@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ebishj/Taxi-v1",
   "slug": "ebishj-taxi-v1",
   "author": "Ebishj",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 24571,
   "storage_human": "24571 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-22T16:38:33.176Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

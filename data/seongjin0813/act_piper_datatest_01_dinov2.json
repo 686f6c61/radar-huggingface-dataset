@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "seongjin0813/act_piper_datatest_01_dinov2",
   "slug": "seongjin0813-act_piper_datatest_01_dinov2",
   "author": "seongjin0813",
@@ -28,14 +28,19 @@
   "parameters_human": "62.5M",
   "storage_bytes": 249950124,
   "storage_human": "250 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-14T02:49:46.328Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

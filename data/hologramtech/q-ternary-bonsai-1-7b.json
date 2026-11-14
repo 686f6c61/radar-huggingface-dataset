@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HOLOGRAMTECH/q-ternary-bonsai-1.7b",
   "slug": "hologramtech-q-ternary-bonsai-1-7b",
   "author": "HOLOGRAMTECH",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 424013749,
   "storage_human": "424 MB",
+  "context_length": null,
   "base_model": "prism-ml/Ternary-Bonsai-1.7B-gguf",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huyleit/phobert-vi-moderation-v1.1",
   "slug": "huyleit-phobert-vi-moderation-v1-1",
   "author": "huyleit",
@@ -44,6 +44,7 @@
   "parameters_human": "135.0M",
   "storage_bytes": 2432328030,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "vinai/phobert-base-v2",
   "formats": [
     "onnx",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Multi-Label Contextual Text Moderation",

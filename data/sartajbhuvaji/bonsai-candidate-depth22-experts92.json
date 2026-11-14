@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sartajbhuvaji/bonsai-candidate-depth22-experts92",
   "slug": "sartajbhuvaji-bonsai-candidate-depth22-experts92",
   "author": "sartajbhuvaji",
@@ -28,14 +28,19 @@
   "parameters_human": "5.53B",
   "storage_bytes": 11075193149,
   "storage_human": "11.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-23T05:22:55.406Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

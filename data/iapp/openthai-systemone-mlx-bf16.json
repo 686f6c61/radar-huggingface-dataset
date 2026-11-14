@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iapp/OpenThai-SystemOne-MLX-bf16",
   "slug": "iapp-openthai-systemone-mlx-bf16",
   "author": "iapp",
@@ -39,6 +39,7 @@
   "parameters_human": "752.4M",
   "storage_bytes": 1525955325,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "iapp/OpenThai-SystemOne",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

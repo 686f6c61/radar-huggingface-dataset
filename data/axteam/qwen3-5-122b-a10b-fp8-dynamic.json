@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "axteam/Qwen3.5-122B-A10B-FP8-dynamic",
   "slug": "axteam-qwen3-5-122b-a10b-fp8-dynamic",
   "author": "axteam",
@@ -37,14 +37,19 @@
   "parameters_human": "125.09B",
   "storage_bytes": 129779062134,
   "storage_human": "129.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-122B-A10B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

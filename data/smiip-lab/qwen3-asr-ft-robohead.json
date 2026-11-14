@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SMIIP-lab/Qwen3-ASR-FT-robohead",
   "slug": "smiip-lab-qwen3-asr-ft-robohead",
   "author": "SMIIP-lab",
@@ -32,14 +32,19 @@
   "parameters_human": "2.04B",
   "storage_bytes": 4087621306,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ASR-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

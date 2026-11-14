@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Gdatree/treemind-2.0",
   "slug": "gdatree-treemind-2-0",
   "author": "Gdatree",
@@ -35,14 +35,19 @@
   "parameters_human": "3.08B",
   "storage_bytes": 22252142976,
   "storage_human": "22.3 GB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM3-3B-Base",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T13:37:29.816Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

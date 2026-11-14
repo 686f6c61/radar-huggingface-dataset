@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mfxq2l/MOSS-Image-SFT-lora-Anime",
   "slug": "mfxq2l-moss-image-sft-lora-anime",
   "author": "mfxq2l",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 777202400,
   "storage_human": "777 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

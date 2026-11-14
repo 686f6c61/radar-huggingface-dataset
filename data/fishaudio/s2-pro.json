@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fishaudio/s2-pro",
   "slug": "fishaudio-s2-pro",
   "author": "fishaudio",
@@ -104,21 +104,26 @@
     "license:other",
     "region:us"
   ],
-  "likes": 1508,
-  "downloads_30d": 46416,
+  "likes": 1510,
+  "downloads_30d": 46418,
   "trending_score": 10,
   "parameters": 4561852416,
   "parameters_human": "4.56B",
   "storage_bytes": 11010611192,
   "storage_human": "11.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

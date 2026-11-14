@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Xylolabs/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-Tensix-BFP4",
   "slug": "xylolabs-qwen3-6-35b-a3b-uncensored-hauhaucs-aggressive-tensix-bfp4",
   "author": "Xylolabs",
@@ -39,14 +39,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 69334119574,
   "storage_human": "69.3 GB",
+  "context_length": null,
   "base_model": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive, Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

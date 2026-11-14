@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zazaorg/harpy-9b",
   "slug": "zazaorg-harpy-9b",
   "author": "zazaorg",
@@ -39,14 +39,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 90063475200,
   "storage_human": "90.1 GB",
+  "context_length": 262144,
   "base_model": "teddy19032/Ornith-1.5-9B-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

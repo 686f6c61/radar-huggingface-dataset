@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "senpaicq/gemma-4-E2B-it-assistant-tr-medical",
   "slug": "senpaicq-gemma-4-e2b-it-assistant-tr-medical",
   "author": "senpaicq",
@@ -41,14 +41,19 @@
   "parameters_human": "78.0M",
   "storage_bytes": 157565344,
   "storage_human": "158 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it-assistant",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

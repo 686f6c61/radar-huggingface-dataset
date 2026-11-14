@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wonderful0711/12",
   "slug": "wonderful0711-12",
   "author": "wonderful0711",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 19249352,
   "storage_human": "19 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T07:28:51.112Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

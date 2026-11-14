@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dan9070/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-abliterated-IQ3_S-Q8PLE",
   "slug": "dan9070-swift-1-5-qwen3-8-flash-next-gsq-rco-abliterated-iq3_s-q8ple",
   "author": "dan9070",
@@ -24,14 +24,19 @@
   "parameters_human": "603.1M",
   "storage_bytes": 114874630944,
   "storage_human": "114.9 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

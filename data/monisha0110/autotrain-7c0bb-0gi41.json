@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Monisha0110/autotrain-7c0bb-0gi41",
   "slug": "monisha0110-autotrain-7c0bb-0gi41",
   "author": "Monisha0110",
@@ -32,14 +32,19 @@
   "parameters_human": "22.7M",
   "storage_bytes": 271504895,
   "storage_human": "272 MB",
+  "context_length": null,
   "base_model": "sentence-transformers/all-MiniLM-L6-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

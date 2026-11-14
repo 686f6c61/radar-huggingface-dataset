@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Flexan/ulamai-Ulam-1-Small-GGUF",
   "slug": "flexan-ulamai-ulam-1-small-gguf",
   "author": "Flexan",
@@ -41,6 +41,7 @@
   "parameters_human": "3.09B",
   "storage_bytes": 30886650944,
   "storage_human": "30.9 GB",
+  "context_length": 131072,
   "base_model": "ulamai/Ulam-1-Small",
   "formats": [
     "gguf",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Mathematical proof generation",

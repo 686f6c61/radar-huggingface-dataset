@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vwdubb/Qwen3.8-27B-Opus-Distill-FP8",
   "slug": "vwdubb-qwen3-8-27b-opus-distill-fp8",
   "author": "vwdubb",
@@ -38,14 +38,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 38472351469,
   "storage_human": "38.5 GB",
+  "context_length": null,
   "base_model": "barozp/Qwen3.8-27B-Opus-Distill",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-14T08:03:30.310Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

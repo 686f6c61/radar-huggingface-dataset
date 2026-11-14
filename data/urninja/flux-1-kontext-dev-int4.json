@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "UrNinja/FLUX.1-Kontext-dev-int4",
   "slug": "urninja-flux-1-kontext-dev-int4",
   "author": "UrNinja",
@@ -29,6 +29,7 @@
   "parameters_human": "6.14B",
   "storage_bytes": 13442652997,
   "storage_human": "13.4 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.1-Kontext-dev",
   "formats": [
     "diffusers",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-21T03:20:50.195Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

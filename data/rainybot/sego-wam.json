@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RainyBot/SeGo-WAM",
   "slug": "rainybot-sego-wam",
   "author": "RainyBot",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 30603359580,
   "storage_human": "30.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

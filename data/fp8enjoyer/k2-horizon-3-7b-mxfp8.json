@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FP8Enjoyer/K2-Horizon-3.7B-MXFP8",
   "slug": "fp8enjoyer-k2-horizon-3-7b-mxfp8",
   "author": "FP8Enjoyer",
@@ -33,14 +33,19 @@
   "parameters_human": "5.20B",
   "storage_bytes": 5858793867,
   "storage_human": "5.9 GB",
+  "context_length": null,
   "base_model": "IFM/K2-Horizon-3.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

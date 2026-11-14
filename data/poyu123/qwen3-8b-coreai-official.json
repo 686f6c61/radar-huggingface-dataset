@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Poyu123/qwen3-8b-CoreAI-official",
   "slug": "poyu123-qwen3-8b-coreai-official",
   "author": "Poyu123",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 4619691768,
   "storage_human": "4.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

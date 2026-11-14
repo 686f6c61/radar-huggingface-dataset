@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pgmharikrishnan/Ripple-65B-Preview-amd-serve-hybrid-GGUF",
   "slug": "pgmharikrishnan-ripple-65b-preview-amd-serve-hybrid-gguf",
   "author": "pgmharikrishnan",
@@ -33,14 +33,19 @@
   "parameters_human": "64.78B",
   "storage_bytes": 27818591680,
   "storage_human": "27.8 GB",
+  "context_length": 2097152,
   "base_model": "ricursiveAI/Ripple-65B-Preview",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

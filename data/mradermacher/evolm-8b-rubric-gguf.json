@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/EvoLM-8B-Rubric-GGUF",
   "slug": "mradermacher-evolm-8b-rubric-gguf",
   "author": "mradermacher",
@@ -34,14 +34,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 73425335680,
   "storage_human": "73.4 GB",
+  "context_length": 40960,
   "base_model": "stellalisy/EvoLM-8B-Rubric",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

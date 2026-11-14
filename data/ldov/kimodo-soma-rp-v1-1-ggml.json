@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ldov/Kimodo-SOMA-RP-v1.1-GGML",
   "slug": "ldov-kimodo-soma-rp-v1-1-ggml",
   "author": "ldov",
@@ -29,14 +29,19 @@
   "parameters_human": "283.3M",
   "storage_bytes": 1133166784,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "nvidia/Kimodo-SOMA-RP-v1.1",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ninabot/Apertus-v1.5-70B-EAGLE3",
   "slug": "ninabot-apertus-v1-5-70b-eagle3",
   "author": "ninabot",
@@ -32,14 +32,19 @@
   "parameters_human": "2.21B",
   "storage_bytes": 4429301392,
   "storage_human": "4.4 GB",
+  "context_length": null,
   "base_model": "swiss-ai/Apertus-v1.5-70B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

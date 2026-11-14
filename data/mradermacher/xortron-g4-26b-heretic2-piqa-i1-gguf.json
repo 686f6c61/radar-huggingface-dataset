@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/XORTRON-G4-26B-heretic2-PIQA-i1-GGUF",
   "slug": "mradermacher-xortron-g4-26b-heretic2-piqa-i1-gguf",
   "author": "mradermacher",
@@ -29,14 +29,19 @@
   "parameters_human": "25.23B",
   "storage_bytes": 300951294272,
   "storage_human": "301.0 GB",
+  "context_length": 262144,
   "base_model": "darkc0de/XORTRON-G4-26B-heretic2-PIQA",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

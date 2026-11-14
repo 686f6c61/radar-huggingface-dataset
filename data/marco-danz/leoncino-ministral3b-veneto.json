@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Marco-Danz/leoncino-ministral3b-veneto",
   "slug": "marco-danz-leoncino-ministral3b-veneto",
   "author": "Marco-Danz",
@@ -42,6 +42,7 @@
   "parameters_human": "3.32B",
   "storage_bytes": 3670849936,
   "storage_human": "3.7 GB",
+  "context_length": 131072,
   "base_model": "ministral/Ministral-3b-instruct",
   "formats": [
     "gguf",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

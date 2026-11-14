@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tilas/neutts-air-darija-v1",
   "slug": "tilas-neutts-air-darija-v1",
   "author": "Tilas",
@@ -37,14 +37,19 @@
   "parameters_human": "747.9M",
   "storage_bytes": 3015900092,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": "neuphonic/neutts-air",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

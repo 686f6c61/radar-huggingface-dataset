@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hmd377/genome-assembly-general-purpose-ft-bitnet-2b",
   "slug": "hmd377-genome-assembly-general-purpose-ft-bitnet-2b",
   "author": "hmd377",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 1542550087,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "microsoft/bitnet-b1.58-2B-4T-bf16",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

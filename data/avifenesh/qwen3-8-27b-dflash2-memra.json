@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Avifenesh/Qwen3.8-27B-DFlash2-memra",
   "slug": "avifenesh-qwen3-8-27b-dflash2-memra",
   "author": "Avifenesh",
@@ -33,14 +33,19 @@
   "parameters_human": "1.92B",
   "storage_bytes": 3848817896,
   "storage_human": "3.8 GB",
+  "context_length": null,
   "base_model": "z-lab/Qwen3.8-27B-DFlash2, Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "tiyuvta/Qwen3.8-27B-DFlash2-memra",
+  "renamed_at": "2026-11-11T02:22:57.906Z",
   "benchmarks": [
     {
       "task": "Served speculative decode, DFlash2 drafter on the NVFP4+Q5_K trunk (greedy, conc 1, steady)",

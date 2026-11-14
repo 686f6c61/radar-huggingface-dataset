@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TheMelonGod/Captain-Eris_Violet-V0.420-12B-exl3",
   "slug": "themelongod-captain-eris_violet-v0-420-12b-exl3",
   "author": "TheMelonGod",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 59640429286,
   "storage_human": "59.6 GB",
+  "context_length": null,
   "base_model": "Nitral-AI/Captain-Eris_Violet-V0.420-12B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

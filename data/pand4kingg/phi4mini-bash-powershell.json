@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pand4kingg/phi4mini-bash-powershell",
   "slug": "pand4kingg-phi4mini-bash-powershell",
   "author": "pand4kingg",
@@ -34,14 +34,19 @@
   "parameters_human": "3.84B",
   "storage_bytes": 7687591069,
   "storage_human": "7.7 GB",
+  "context_length": null,
   "base_model": "unsloth/phi-4-mini-instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

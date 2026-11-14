@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sajalregmi4/arkios-1b-base",
   "slug": "sajalregmi4-arkios-1b-base",
   "author": "sajalregmi4",
@@ -40,14 +40,19 @@
   "parameters_human": "1.04B",
   "storage_bytes": 4161093840,
   "storage_human": "4.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

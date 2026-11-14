@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Vzdorrr/Nocta-Gemma-4-E2B-abliterated-GGUF",
   "slug": "vzdorrr-nocta-gemma-4-e2b-abliterated-gguf",
   "author": "Vzdorrr",
@@ -33,14 +33,19 @@
   "parameters_human": "4.06B",
   "storage_bytes": 2265944192,
   "storage_human": "2.3 GB",
+  "context_length": 131072,
   "base_model": "huihui-ai/Huihui-gemma-4-E2B-it-qat-q4_0-unquantized-abliterated-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

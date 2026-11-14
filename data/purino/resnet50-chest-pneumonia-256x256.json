@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Purino/resnet50-chest-pneumonia-256x256",
   "slug": "purino-resnet50-chest-pneumonia-256x256",
   "author": "Purino",
@@ -35,14 +35,19 @@
   "parameters_human": "23.6M",
   "storage_bytes": 94302952,
   "storage_human": "94 MB",
+  "context_length": null,
   "base_model": "microsoft/resnet-50",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

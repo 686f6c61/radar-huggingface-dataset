@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NINI26454/OpenAi-GPT-oss-20b-HERETIC-uncensored-NEO-Q3_K_M-GGUF",
   "slug": "nini26454-openai-gpt-oss-20b-heretic-uncensored-neo-q3_k_m-gguf",
   "author": "NINI26454",
@@ -33,14 +33,19 @@
   "parameters_human": "20.91B",
   "storage_bytes": 12916151264,
   "storage_human": "12.9 GB",
+  "context_length": 131072,
   "base_model": "DavidAU/OpenAi-GPT-oss-20b-HERETIC-uncensored-NEO-Imatrix-gguf",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

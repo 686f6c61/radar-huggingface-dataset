@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AXERA-TECH/Qwen3-VL-4B-Instruct-LoRA-AX650",
   "slug": "axera-tech-qwen3-vl-4b-instruct-lora-ax650",
   "author": "AXERA-TECH",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 6914644475,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-4B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

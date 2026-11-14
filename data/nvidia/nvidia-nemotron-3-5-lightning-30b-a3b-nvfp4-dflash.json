@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash",
   "slug": "nvidia-nvidia-nemotron-3-5-lightning-30b-a3b-nvfp4-dflash",
   "author": "nvidia",
@@ -36,14 +36,19 @@
   "parameters_human": "663.1M",
   "storage_bytes": 1177089556,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16, nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

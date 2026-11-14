@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Maximiliano-Flores-Dev/grok_demon_7b_v2",
   "slug": "maximiliano-flores-dev-grok_demon_7b_v2",
   "author": "Maximiliano-Flores-Dev",
@@ -35,14 +35,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 15404227222,
   "storage_human": "15.4 GB",
+  "context_length": null,
   "base_model": "Maximiliano-Flores-Dev/grok_demon_7b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Maximiliano-Flores-Dev/grok_demon_7b_v2.6",
+  "renamed_at": "2026-11-13T03:28:00.947Z",
   "benchmarks": [],
   "sources": [
     {

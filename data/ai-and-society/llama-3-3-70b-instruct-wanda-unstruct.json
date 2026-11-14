@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ai-and-society/Llama-3.3-70B-Instruct-wanda-unstruct",
   "slug": "ai-and-society-llama-3-3-70b-instruct-wanda-unstruct",
   "author": "ai-and-society",
@@ -34,14 +34,19 @@
   "parameters_human": "70.55B",
   "storage_bytes": 141124708440,
   "storage_human": "141.1 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.3-70B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

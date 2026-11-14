@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "johnlockejrr/Huihui-Qwen3.8-Flash-Next-abliterated-v2-HGN",
   "slug": "johnlockejrr-huihui-qwen3-8-flash-next-abliterated-v2-hgn",
   "author": "johnlockejrr",
@@ -44,12 +44,17 @@
   "parameters_human": null,
   "storage_bytes": 118798654860,
   "storage_human": "118.8 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

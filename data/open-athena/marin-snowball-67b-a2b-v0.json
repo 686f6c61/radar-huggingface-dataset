@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "open-athena/Marin-Snowball-67B-A2B-v0",
   "slug": "open-athena-marin-snowball-67b-a2b-v0",
   "author": "open-athena",
@@ -35,14 +35,19 @@
   "parameters_human": "67.08B",
   "storage_bytes": 134175048683,
   "storage_human": "134.2 GB",
+  "context_length": null,
   "base_model": "open-athena/Grug-67B-A2B-Merge-Campaign2-DARE-TIES-02-2026.10.10, laion/snowball-67b-a2b-relay-sft-allkimi-step1203",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

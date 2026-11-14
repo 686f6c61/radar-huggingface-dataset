@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hoanghuy2000gl/Wav2Vec_VinData_Full",
   "slug": "hoanghuy2000gl-wav2vec_vindata_full",
   "author": "hoanghuy2000gl",
@@ -24,14 +24,19 @@
   "parameters_human": "315.5M",
   "storage_bytes": 5048929758,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

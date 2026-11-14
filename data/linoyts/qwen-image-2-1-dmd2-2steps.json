@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "linoyts/Qwen-Image-2.1-DMD2-2steps",
   "slug": "linoyts-qwen-image-2-1-dmd2-2steps",
   "author": "linoyts",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 217455272,
   "storage_human": "217 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

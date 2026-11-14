@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "i3ullbum/rldx2-pointwam",
   "slug": "i3ullbum-rldx2-pointwam",
   "author": "i3ullbum",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 56021870570,
   "storage_human": "56.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T09:40:39.455Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

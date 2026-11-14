@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kisaragi-mochi/Huihui-Qwen3.8-27B-abliterated-Q5_K_M-GGUF",
   "slug": "kisaragi-mochi-huihui-qwen3-8-27b-abliterated-q5_k_m-gguf",
   "author": "kisaragi-mochi",
@@ -39,14 +39,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 19535701632,
   "storage_human": "19.5 GB",
+  "context_length": 262144,
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

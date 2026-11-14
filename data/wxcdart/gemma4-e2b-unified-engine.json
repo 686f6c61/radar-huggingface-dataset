@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wxcdart/gemma4-e2b-unified-engine",
   "slug": "wxcdart-gemma4-e2b-unified-engine",
   "author": "wxcdart",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 133593653,
   "storage_human": "134 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

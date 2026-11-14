@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jongwondd/Qwen3.5-9B-ALiT-alpha2-2ep-189a23f0",
   "slug": "jongwondd-qwen3-5-9b-alit-alpha2-2ep-189a23f0",
   "author": "Jongwondd",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 173181072,
   "storage_human": "173 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sunbird-experimental/sunflower-qwen3.8-27b-translation-grpo",
   "slug": "sunbird-experimental-sunflower-qwen3-8-27b-translation-grpo",
   "author": "Sunbird-experimental",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 1887983083,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": "Sunbird-experimental/sunflower-qwen3.8-27b-sft",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

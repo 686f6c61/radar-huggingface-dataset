@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arthrod/gliner-opf-ptbr-pii-v1",
   "slug": "arthrod-gliner-opf-ptbr-pii-v1",
   "author": "arthrod",
@@ -44,14 +44,19 @@
   "parameters_human": "1.40B",
   "storage_bytes": 25193810633,
   "storage_human": "25.2 GB",
+  "context_length": null,
   "base_model": "openai/privacy-filter",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "PII detection (pt-BR)",

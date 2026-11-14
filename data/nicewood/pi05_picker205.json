@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nicewood/pi05_picker205",
   "slug": "nicewood-pi05_picker205",
   "author": "Nicewood",
@@ -27,14 +27,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 9354058288,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

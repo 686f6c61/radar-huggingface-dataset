@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "erow/WAN2.1-1.3b-GeoNeXt-depthnormal-hypersim-vkitti-ga-2-1e-4-TROPE-8-concat-wanvae-res768",
   "slug": "erow-wan2-1-1-3b-geonext-depthnormal-hypersim-vkitti-ga-2-1e-4-trope-8-concat-wanvae-res768",
   "author": "erow",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 42574109040,
   "storage_human": "42.6 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.1-T2V-1.3B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-31T04:07:25.787Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

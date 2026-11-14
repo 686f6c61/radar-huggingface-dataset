@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KBlueLeaf/TIPO-v2.1-1B-A200M",
   "slug": "kblueleaf-tipo-v2-1-1b-a200m",
   "author": "KBlueLeaf",
@@ -40,6 +40,7 @@
   "parameters_human": "990.8M",
   "storage_bytes": 5069866960,
   "storage_human": "5.1 GB",
+  "context_length": 4096,
   "base_model": null,
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

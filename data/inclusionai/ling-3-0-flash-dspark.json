@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inclusionAI/Ling-3.0-flash-dspark",
   "slug": "inclusionai-ling-3-0-flash-dspark",
   "author": "inclusionAI",
@@ -33,14 +33,19 @@
   "parameters_human": "1.36B",
   "storage_bytes": 2727422642,
   "storage_human": "2.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

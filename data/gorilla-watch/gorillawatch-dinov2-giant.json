@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gorilla-watch/GorillaWatch-DINOv2-Giant",
   "slug": "gorilla-watch-gorillawatch-dinov2-giant",
   "author": "gorilla-watch",
@@ -33,14 +33,19 @@
   "parameters_human": "1.14B",
   "storage_bytes": 4547548872,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "facial gorilla re-identification",

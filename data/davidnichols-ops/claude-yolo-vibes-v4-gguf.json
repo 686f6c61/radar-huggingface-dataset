@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "davidnichols-ops/claude-yolo-vibes-v4-GGUF",
   "slug": "davidnichols-ops-claude-yolo-vibes-v4-gguf",
   "author": "davidnichols-ops",
@@ -42,14 +42,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 18237853188,
   "storage_human": "18.2 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-17T13:55:17.577Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

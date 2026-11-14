@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ipetrukha/LFM2.5-350M-MLX-4bit",
   "slug": "ipetrukha-lfm2-5-350m-mlx-4bit",
   "author": "ipetrukha",
@@ -32,6 +32,7 @@
   "parameters_human": "354.5M",
   "storage_bytes": 199527820,
   "storage_human": "200 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-350M",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

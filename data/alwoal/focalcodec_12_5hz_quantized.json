@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ALWOAL/focalcodec_12_5hz_quantized",
   "slug": "alwoal-focalcodec_12_5hz_quantized",
   "author": "ALWOAL",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 291743730,
   "storage_human": "292 MB",
+  "context_length": null,
   "base_model": "lucadellalib/focalcodec_12_5hz",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

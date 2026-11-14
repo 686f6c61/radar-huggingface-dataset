@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thetinkerer/Qwen3.8-27B-TOS-v1",
   "slug": "thetinkerer-qwen3-8-27b-tos-v1",
   "author": "thetinkerer",
@@ -30,14 +30,19 @@
   "parameters_human": "25.55B",
   "storage_bytes": 94386884608,
   "storage_human": "94.4 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

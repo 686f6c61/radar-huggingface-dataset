@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BardomPro/BardomPro",
   "slug": "bardompro-bardompro",
   "author": "BardomPro",
@@ -25,14 +25,19 @@
   "parameters_human": "4.65B",
   "storage_bytes": 6285406766,
   "storage_human": "6.3 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-24T08:56:20.427Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

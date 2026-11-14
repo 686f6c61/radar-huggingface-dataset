@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nicholas0228/tail-drop-5b-hybrid-gla",
   "slug": "nicholas0228-tail-drop-5b-hybrid-gla",
   "author": "Nicholas0228",
@@ -30,14 +30,19 @@
   "parameters_human": "341.6M",
   "storage_bytes": 1366951939,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

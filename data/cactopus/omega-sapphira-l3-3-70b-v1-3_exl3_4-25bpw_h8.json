@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cactopus/Omega-Sapphira-L3.3-70B-v1.3_EXL3_4.25bpw_H8",
   "slug": "cactopus-omega-sapphira-l3-3-70b-v1-3_exl3_4-25bpw_h8",
   "author": "cactopus",
@@ -37,14 +37,19 @@
   "parameters_human": "19.77B",
   "storage_bytes": 39563648458,
   "storage_human": "39.6 GB",
+  "context_length": null,
   "base_model": "cactopus/Omega-Sapphira-L3.3-70B-v1.3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

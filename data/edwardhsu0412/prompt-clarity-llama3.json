@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EdwardHsu0412/prompt-clarity-llama3",
   "slug": "edwardhsu0412-prompt-clarity-llama3",
   "author": "EdwardHsu0412",
@@ -27,14 +27,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 51244628128,
   "storage_human": "51.2 GB",
+  "context_length": 8192,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

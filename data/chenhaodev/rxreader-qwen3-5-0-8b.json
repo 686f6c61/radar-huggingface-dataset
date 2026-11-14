@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chenhaodev/rxreader-qwen3.5-0.8b",
   "slug": "chenhaodev-rxreader-qwen3-5-0-8b",
   "author": "chenhaodev",
@@ -36,6 +36,7 @@
   "parameters_human": "772.8M",
   "storage_bytes": 1446630671,
   "storage_human": "1.4 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

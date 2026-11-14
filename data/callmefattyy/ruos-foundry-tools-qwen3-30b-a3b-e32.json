@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "callmefattyy/ruos-foundry-tools-qwen3-30b-a3b-e32",
   "slug": "callmefattyy-ruos-foundry-tools-qwen3-30b-a3b-e32",
   "author": "callmefattyy",
@@ -38,14 +38,19 @@
   "parameters_human": "8.78B",
   "storage_bytes": 17570874766,
   "storage_human": "17.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

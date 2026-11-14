@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shamim1122/whisper-small-bangla-onnx",
   "slug": "shamim1122-whisper-small-bangla-onnx",
   "author": "shamim1122",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 287605785,
   "storage_human": "288 MB",
+  "context_length": null,
   "base_model": "arif11/bangla-ASR-v5",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

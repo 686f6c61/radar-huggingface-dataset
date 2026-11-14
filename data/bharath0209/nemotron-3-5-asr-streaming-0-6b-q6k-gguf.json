@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bharath0209/nemotron-3.5-asr-streaming-0.6b-q6k-gguf",
   "slug": "bharath0209-nemotron-3-5-asr-streaming-0-6b-q6k-gguf",
   "author": "Bharath0209",
@@ -30,14 +30,19 @@
   "parameters_human": "638.0M",
   "storage_bytes": 576948192,
   "storage_human": "577 MB",
+  "context_length": null,
   "base_model": "nvidia/nemotron-3.5-asr-streaming-0.6b",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

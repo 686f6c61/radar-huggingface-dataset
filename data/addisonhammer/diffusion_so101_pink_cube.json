@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "addisonhammer/diffusion_so101_pink_cube",
   "slug": "addisonhammer-diffusion_so101_pink_cube",
   "author": "addisonhammer",
@@ -28,14 +28,19 @@
   "parameters_human": "270.3M",
   "storage_bytes": 3243594240,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

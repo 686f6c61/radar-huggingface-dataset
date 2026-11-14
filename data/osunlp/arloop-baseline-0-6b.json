@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "osunlp/ARLoop-baseline-0.6B",
   "slug": "osunlp-arloop-baseline-0-6b",
   "author": "osunlp",
@@ -34,14 +34,19 @@
   "parameters_human": "582.8M",
   "storage_bytes": 32637596920,
   "storage_human": "32.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "osunlp/PreNormLoop-0.6B",
+  "renamed_at": "2026-11-11T07:03:46.854Z",
   "benchmarks": [],
   "sources": []
 }

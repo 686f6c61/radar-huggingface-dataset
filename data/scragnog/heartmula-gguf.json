@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "scragnog/HeartMuLa-GGUF",
   "slug": "scragnog-heartmula-gguf",
   "author": "scragnog",
@@ -28,14 +28,19 @@
   "parameters_human": "1.49B",
   "storage_bytes": 159009932448,
   "storage_human": "159.0 GB",
+  "context_length": null,
   "base_model": "HeartMuLa/HeartMuLa-oss-3B, HeartMuLa/HeartMuLa-oss-3B-happy-new-year, HeartMuLa/HeartMuLa-RL-oss-3B-20260123, HeartMuLa/HeartCodec-oss-20260123",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

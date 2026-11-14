@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "medarc/spectra-h-optimus-0-lora",
   "slug": "medarc-spectra-h-optimus-0-lora",
   "author": "medarc",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 377603376,
   "storage_human": "378 MB",
+  "context_length": null,
   "base_model": "bioptimus/H-optimus-0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-25T05:48:11.281Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

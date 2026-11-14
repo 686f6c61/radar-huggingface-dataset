@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Efe2898/caba-kumru-50m",
   "slug": "efe2898-caba-kumru-50m",
   "author": "Efe2898",
@@ -30,14 +30,19 @@
   "parameters_human": "50.0M",
   "storage_bytes": 199871256,
   "storage_human": "200 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-26T02:32:54.261Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

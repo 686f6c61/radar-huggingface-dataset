@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GRAI-UNSTPB/gemma4_31b_it_ft_cs_llm_fr",
   "slug": "grai-unstpb-gemma4_31b_it_ft_cs_llm_fr",
   "author": "GRAI-UNSTPB",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 522016283,
   "storage_human": "522 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-31B-it-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

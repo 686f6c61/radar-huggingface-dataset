@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OsaurusAI/d3-flash-JANG_6M",
   "slug": "osaurusai-d3-flash-jang_6m",
   "author": "OsaurusAI",
@@ -43,6 +43,7 @@
   "parameters_human": "8.39B",
   "storage_bytes": 7860870014,
   "storage_human": "7.9 GB",
+  "context_length": null,
   "base_model": "vllm-sr/d3-flash",
   "formats": [
     "mlx",
@@ -50,8 +51,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

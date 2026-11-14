@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ssnym/llama-3.2-1b-text-to-sql-GGUF",
   "slug": "ssnym-llama-3-2-1b-text-to-sql-gguf",
   "author": "ssnym",
@@ -33,14 +33,19 @@
   "parameters_human": "11.3M",
   "storage_bytes": 22560320,
   "storage_human": "23 MB",
+  "context_length": null,
   "base_model": "ssnym/llama-3.2-1b-text-to-sql",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

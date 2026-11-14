@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jsantillana/glm-4.7-flash-abliterated-GGUF",
   "slug": "jsantillana-glm-4-7-flash-abliterated-gguf",
   "author": "jsantillana",
@@ -43,14 +43,19 @@
   "parameters_human": "31.22B",
   "storage_bytes": 201271138176,
   "storage_human": "201.3 GB",
+  "context_length": 202752,
   "base_model": "jsantillana/glm-4.7-flash-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

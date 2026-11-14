@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JiahuiSheng/FlashRelight",
   "slug": "jiahuisheng-flashrelight",
   "author": "JiahuiSheng",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 13976409396,
   "storage_human": "14.0 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.1-T2V-1.3B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

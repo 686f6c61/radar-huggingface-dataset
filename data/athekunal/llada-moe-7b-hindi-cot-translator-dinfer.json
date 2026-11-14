@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Athekunal/llada-moe-7b-hindi-cot-translator-dinfer",
   "slug": "athekunal-llada-moe-7b-hindi-cot-translator-dinfer",
   "author": "Athekunal",
@@ -39,14 +39,19 @@
   "parameters_human": "7.36B",
   "storage_bytes": 14730181985,
   "storage_human": "14.7 GB",
+  "context_length": null,
   "base_model": "inclusionAI/LLaDA-MoE-7B-A1B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

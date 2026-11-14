@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Qwen3-VL-8B-GLM-4.7-Flash-Heretic-Uncensored-Thinking",
   "slug": "davidau-qwen3-vl-8b-glm-4-7-flash-heretic-uncensored-thinking",
   "author": "DavidAU",
@@ -71,14 +71,19 @@
   "parameters_human": "8.77B",
   "storage_bytes": 17545762142,
   "storage_human": "17.5 GB",
+  "context_length": null,
   "base_model": "coder3101/Qwen3-VL-8B-Instruct-heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

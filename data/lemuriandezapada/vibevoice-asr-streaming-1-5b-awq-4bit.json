@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lemuriandezapada/VibeVoice-ASR-Streaming-1.5B-AWQ-4bit",
   "slug": "lemuriandezapada-vibevoice-asr-streaming-1-5b-awq-4bit",
   "author": "lemuriandezapada",
@@ -55,14 +55,19 @@
   "parameters_human": "1.04B",
   "storage_bytes": 3234212458,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

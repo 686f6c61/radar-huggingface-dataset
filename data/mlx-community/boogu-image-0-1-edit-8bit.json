@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlx-community/Boogu-Image-0.1-Edit-8bit",
   "slug": "mlx-community-boogu-image-0-1-edit-8bit",
   "author": "mlx-community",
@@ -39,6 +39,7 @@
   "parameters_human": null,
   "storage_bytes": 12848294842,
   "storage_human": "12.8 GB",
+  "context_length": null,
   "base_model": "Boogu/Boogu-Image-0.1-Edit",
   "formats": [
     "diffusers",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

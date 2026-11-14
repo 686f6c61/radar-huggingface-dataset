@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "torch-pointcloud/minkunet18-w32.semantickitti.mit-han-lab",
   "slug": "torch-pointcloud-minkunet18-w32-semantickitti-mit-han-lab",
   "author": "torch-pointcloud",
@@ -32,14 +32,19 @@
   "parameters_human": "21.7M",
   "storage_bytes": 86974524,
   "storage_human": "87 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

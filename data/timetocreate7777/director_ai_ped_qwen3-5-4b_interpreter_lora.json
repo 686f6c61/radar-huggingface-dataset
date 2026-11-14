@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Timetocreate7777/Director_AI_PED_Qwen3.5-4B_Interpreter_LoRA",
   "slug": "timetocreate7777-director_ai_ped_qwen3-5-4b_interpreter_lora",
   "author": "Timetocreate7777",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 104961690,
   "storage_human": "105 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "avkbsurya119/ast-finetuned-audioset-10-10-0.4593-finetuned-gtzan",
   "slug": "avkbsurya119-ast-finetuned-audioset-10-10-0-4593-finetuned-gtzan",
   "author": "avkbsurya119",
@@ -33,14 +33,19 @@
   "parameters_human": "86.2M",
   "storage_bytes": 3103403130,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "MIT/ast-finetuned-audioset-10-10-0.4593",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Audio Classification",

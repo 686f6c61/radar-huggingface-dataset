@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DNR-AI/Qwen3.8-9B-Distill-NVFP4-GGUF",
   "slug": "dnr-ai-qwen3-8-9b-distill-nvfp4-gguf",
   "author": "DNR-AI",
@@ -34,14 +34,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 11225192480,
   "storage_human": "11.2 GB",
+  "context_length": 262144,
   "base_model": "empero-ai/Qwen3.8-9B-Distill-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

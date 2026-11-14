@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NhanSoHocCode/xlmr-ner-4labels-quyen",
   "slug": "nhansohoccode-xlmr-ner-4labels-quyen",
   "author": "NhanSoHocCode",
@@ -23,14 +23,19 @@
   "parameters_human": "277.5M",
   "storage_bytes": 15555432218,
   "storage_human": "15.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

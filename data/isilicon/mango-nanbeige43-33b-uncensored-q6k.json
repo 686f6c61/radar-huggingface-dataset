@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "isilicon/mango-nanbeige43-33b-uncensored-q6k",
   "slug": "isilicon-mango-nanbeige43-33b-uncensored-q6k",
   "author": "isilicon",
@@ -37,14 +37,19 @@
   "parameters_human": "33.12B",
   "storage_bytes": 27174767925,
   "storage_human": "27.2 GB",
+  "context_length": 524288,
   "base_model": "dealignai/Nanbeige4.3-33B-UNCENSORED-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

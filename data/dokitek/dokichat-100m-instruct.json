@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dokitek/Dokichat-100M-Instruct",
   "slug": "dokitek-dokichat-100m-instruct",
   "author": "Dokitek",
@@ -40,14 +40,19 @@
   "parameters_human": "99.9M",
   "storage_bytes": 200307328,
   "storage_human": "200 MB",
+  "context_length": null,
   "base_model": "Dokitek/Dokichat-100M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

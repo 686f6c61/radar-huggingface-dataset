@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Carlos4869/REINS-SAE",
   "slug": "carlos4869-reins-sae",
   "author": "Carlos4869",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 19869076344,
   "storage_human": "19.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B-Base, Qwen/Qwen3.5-2B-Base",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

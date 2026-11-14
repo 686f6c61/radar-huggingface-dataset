@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "likhithboss/orpheus-hi-emotion-lora-v2",
   "slug": "likhithboss-orpheus-hi-emotion-lora-v2",
   "author": "likhithboss",
@@ -33,14 +33,19 @@
   "parameters_human": "3.78B",
   "storage_bytes": 28358323371,
   "storage_human": "28.4 GB",
+  "context_length": null,
   "base_model": "canopylabs/3b-hi-pretrain-research_release",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

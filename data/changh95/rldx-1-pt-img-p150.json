@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "changh95/RLDX-1-PT-IMG-p150",
   "slug": "changh95-rldx-1-pt-img-p150",
   "author": "changh95",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 7358340545,
   "storage_human": "7.4 GB",
+  "context_length": null,
   "base_model": "RLWRLD/RLDX-1-PT-IMG",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

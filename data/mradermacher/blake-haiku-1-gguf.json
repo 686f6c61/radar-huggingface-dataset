@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Blake-Haiku-1-GGUF",
   "slug": "mradermacher-blake-haiku-1-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 5697959424,
   "storage_human": "5.7 GB",
+  "context_length": 40960,
   "base_model": "Flexan/Blake-Haiku-1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

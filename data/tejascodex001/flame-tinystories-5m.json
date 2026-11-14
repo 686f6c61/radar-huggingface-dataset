@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tejascodex001/flame-tinystories-5m",
   "slug": "tejascodex001-flame-tinystories-5m",
   "author": "Tejascodex001",
@@ -35,14 +35,19 @@
   "parameters_human": "5.9M",
   "storage_bytes": 23480512,
   "storage_human": "23 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

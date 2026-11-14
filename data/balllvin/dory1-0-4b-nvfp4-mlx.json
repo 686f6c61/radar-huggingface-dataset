@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "balllvin/Dory1.0-4B-NVFP4-MLX",
   "slug": "balllvin-dory1-0-4b-nvfp4-mlx",
   "author": "balllvin",
@@ -28,12 +28,13 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 410,
+  "downloads_30d": 421,
   "trending_score": 0,
   "parameters": 3975229440,
   "parameters_human": "3.98B",
   "storage_bytes": 3221170820,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

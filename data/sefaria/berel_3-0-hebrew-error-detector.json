@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sefaria/BEREL_3.0-hebrew-error-detector",
   "slug": "sefaria-berel_3-0-hebrew-error-detector",
   "author": "Sefaria",
@@ -37,14 +37,19 @@
   "parameters_human": "183.8M",
   "storage_bytes": 1470097040,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "dicta-il/BEREL_3.0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

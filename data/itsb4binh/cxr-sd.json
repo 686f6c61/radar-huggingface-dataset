@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "itsb4binh/CXR-SD",
   "slug": "itsb4binh-cxr-sd",
   "author": "itsb4binh",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 66968800,
   "storage_human": "67 MB",
+  "context_length": null,
   "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

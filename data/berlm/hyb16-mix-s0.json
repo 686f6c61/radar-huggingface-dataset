@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Berlm/hyb16-mix-s0",
   "slug": "berlm-hyb16-mix-s0",
   "author": "Berlm",
@@ -35,14 +35,19 @@
   "parameters_human": "365.8M",
   "storage_bytes": 731584980,
   "storage_human": "732 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

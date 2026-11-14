@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3.5-2B-Opus-Distilled-Heretic-Thinking-Multistage-SFT-v1.0-GGUF",
   "slug": "mradermacher-qwen3-5-2b-opus-distilled-heretic-thinking-multistage-sft-v1-0-gguf",
   "author": "mradermacher",
@@ -48,14 +48,19 @@
   "parameters_human": "1.88B",
   "storage_bytes": 19103033408,
   "storage_human": "19.1 GB",
+  "context_length": 262144,
   "base_model": "prithivMLmods/Qwen3.5-2B-Opus-Distilled-Heretic-Thinking-Multistage-SFT-v1.0",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

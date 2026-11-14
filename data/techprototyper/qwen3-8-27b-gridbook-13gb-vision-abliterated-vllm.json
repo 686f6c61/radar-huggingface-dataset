@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TechPrototyper/Qwen3.8-27B-GridBook-13GB-vision-abliterated-vllm",
   "slug": "techprototyper-qwen3-8-27b-gridbook-13gb-vision-abliterated-vllm",
   "author": "TechPrototyper",
@@ -42,14 +42,19 @@
   "parameters_human": "13.53B",
   "storage_bytes": 15720827056,
   "storage_human": "15.7 GB",
+  "context_length": null,
   "base_model": "rdtand/Qwen3.8-27B-PrismaAQUA-gridbook-13GB-5080-vllm, Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

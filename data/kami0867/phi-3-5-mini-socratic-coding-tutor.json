@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kami0867/Phi-3.5-mini-Socratic-Coding-Tutor",
   "slug": "kami0867-phi-3-5-mini-socratic-coding-tutor",
   "author": "Kami0867",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 100697728,
   "storage_human": "101 MB",
+  "context_length": null,
   "base_model": "microsoft/Phi-3.5-mini-instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

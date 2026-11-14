@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "obviouslycivilian/Dolphin-Mistral-24B-Venice-Edition-Vision-GGUF",
   "slug": "obviouslycivilian-dolphin-mistral-24b-venice-edition-vision-gguf",
   "author": "obviouslycivilian",
@@ -35,14 +35,19 @@
   "parameters_human": "23.57B",
   "storage_bytes": 15211976448,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "dphn/Dolphin-Mistral-24B-Venice-Edition",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-18T09:59:59.514Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

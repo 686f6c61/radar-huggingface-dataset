@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/llama32-1b-llm-abliteration-i1-GGUF",
   "slug": "mradermacher-llama32-1b-llm-abliteration-i1-gguf",
   "author": "mradermacher",
@@ -35,14 +35,19 @@
   "parameters_human": "1.50B",
   "storage_bytes": 18956336672,
   "storage_human": "19.0 GB",
+  "context_length": 131072,
   "base_model": "muhammadrafifatihulihsan/llama32-1b-llm-abliteration",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

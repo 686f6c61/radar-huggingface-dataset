@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Clybius/Kromoss-Quantizations",
   "slug": "clybius-kromoss-quantizations",
   "author": "Clybius",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 5413719113,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-21T02:19:52.409Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

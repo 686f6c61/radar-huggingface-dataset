@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tbhrc/lfm2_5_8b_a1b_mlx_4bit",
   "slug": "tbhrc-lfm2_5_8b_a1b_mlx_4bit",
   "author": "tbhrc",
@@ -54,6 +54,7 @@
   "parameters_human": "8.47B",
   "storage_bytes": 4851935539,
   "storage_human": "4.9 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-8B-A1B",
   "formats": [
     "mlx",
@@ -61,8 +62,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

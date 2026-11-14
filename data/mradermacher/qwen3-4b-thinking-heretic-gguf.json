@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3-4B-Thinking-heretic-GGUF",
   "slug": "mradermacher-qwen3-4b-thinking-heretic-gguf",
   "author": "mradermacher",
@@ -49,14 +49,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 36389995392,
   "storage_human": "36.4 GB",
+  "context_length": 262144,
   "base_model": "saidutta69/Qwen3-4B-Thinking-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

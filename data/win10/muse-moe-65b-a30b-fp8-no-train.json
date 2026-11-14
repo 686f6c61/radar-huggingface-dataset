@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "win10/Muse-MoE-65B-A30B-FP8-no-train",
   "slug": "win10-muse-moe-65b-a30b-fp8-no-train",
   "author": "win10",
@@ -48,14 +48,19 @@
   "parameters_human": "65.19B",
   "storage_bytes": 65284897466,
   "storage_human": "65.3 GB",
+  "context_length": null,
   "base_model": "meta-models/Muse-Glimmer-30B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

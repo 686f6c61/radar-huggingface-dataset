@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amd/Mistral-Large-4-1T-A52B-Quark-MXFP4",
   "slug": "amd-mistral-large-4-1t-a52b-quark-mxfp4",
   "author": "amd",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 577928182617,
   "storage_human": "577.9 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-Large-4-1T-A52B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

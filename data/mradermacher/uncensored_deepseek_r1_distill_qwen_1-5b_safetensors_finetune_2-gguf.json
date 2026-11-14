@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Uncensored_DeepSeek_R1_Distill_Qwen_1.5B_safetensors_finetune_2-GGUF",
   "slug": "mradermacher-uncensored_deepseek_r1_distill_qwen_1-5b_safetensors_finetune_2-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "1.78B",
   "storage_bytes": 16197872640,
   "storage_human": "16.2 GB",
+  "context_length": 131072,
   "base_model": "ICEPVP8977/Uncensored_DeepSeek_R1_Distill_Qwen_1.5B_safetensors_finetune_2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

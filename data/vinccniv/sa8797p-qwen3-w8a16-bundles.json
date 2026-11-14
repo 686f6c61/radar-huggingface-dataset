@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vinccniv/sa8797p-qwen3-w8a16-bundles",
   "slug": "vinccniv-sa8797p-qwen3-w8a16-bundles",
   "author": "vinccniv",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 47055066110,
   "storage_human": "47.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-26T10:33:20.952Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

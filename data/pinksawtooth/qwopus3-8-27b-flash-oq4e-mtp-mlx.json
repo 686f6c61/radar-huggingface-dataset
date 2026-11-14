@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PINKSAWTOOTH/Qwopus3.8-27B-Flash-oQ4e-mtp-mlx",
   "slug": "pinksawtooth-qwopus3-8-27b-flash-oq4e-mtp-mlx",
   "author": "PINKSAWTOOTH",
@@ -46,6 +46,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 16991691381,
   "storage_human": "17.0 GB",
+  "context_length": null,
   "base_model": "Jackrong/Qwopus3.8-27B-Flash",
   "formats": [
     "mlx",
@@ -53,8 +54,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

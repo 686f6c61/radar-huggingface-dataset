@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bench-labs/tinctura-v1",
   "slug": "bench-labs-tinctura-v1",
   "author": "bench-labs",
@@ -40,14 +40,19 @@
   "parameters_human": "96.2M",
   "storage_bytes": 54681366126,
   "storage_human": "54.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

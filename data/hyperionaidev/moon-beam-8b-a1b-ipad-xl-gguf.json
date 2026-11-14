@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hyperionaidev/Moon-Beam-8B-A1B-ipad-xl-GGUF",
   "slug": "hyperionaidev-moon-beam-8b-a1b-ipad-xl-gguf",
   "author": "hyperionaidev",
@@ -36,14 +36,19 @@
   "parameters_human": "7.74B",
   "storage_bytes": 2753343114,
   "storage_human": "2.8 GB",
+  "context_length": 131072,
   "base_model": "tablinum/Moon-Beam-8B-A1B-Preview",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

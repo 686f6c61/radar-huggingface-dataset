@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nassimjp/MiniCPM5-2B-SFT-Pashto-Instruct",
   "slug": "nassimjp-minicpm5-2b-sft-pashto-instruct",
   "author": "nassimjp",
@@ -49,14 +49,19 @@
   "parameters_human": "2.52B",
   "storage_bytes": 5033933616,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": "nassimjp/MiniCPM5-2B-Pashto",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

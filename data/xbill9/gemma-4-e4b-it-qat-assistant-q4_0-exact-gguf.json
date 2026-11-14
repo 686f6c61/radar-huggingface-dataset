@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xbill9/gemma-4-E4B-it-qat-assistant-q4_0-exact-gguf",
   "slug": "xbill9-gemma-4-e4b-it-qat-assistant-q4_0-exact-gguf",
   "author": "xbill9",
@@ -36,14 +36,19 @@
   "parameters_human": "78.0M",
   "storage_bytes": 59678368,
   "storage_human": "60 MB",
+  "context_length": 131072,
   "base_model": "google/gemma-4-E4B-it-qat-q4_0-unquantized-assistant",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

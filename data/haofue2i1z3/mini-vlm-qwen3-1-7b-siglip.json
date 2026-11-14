@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "haofue2i1z3/Mini-VLM-Qwen3-1.7B-SigLIP",
   "slug": "haofue2i1z3-mini-vlm-qwen3-1-7b-siglip",
   "author": "haofue2i1z3",
@@ -36,14 +36,19 @@
   "parameters_human": "2.16B",
   "storage_bytes": 5180390816,
   "storage_human": "5.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B, google/siglip-so400m-patch14-384",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

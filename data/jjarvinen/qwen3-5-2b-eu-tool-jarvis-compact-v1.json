@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JJarvinen/Qwen3.5-2B-EU-Tool-JARVIS-Compact-v1",
   "slug": "jjarvinen-qwen3-5-2b-eu-tool-jarvis-compact-v1",
   "author": "JJarvinen",
@@ -35,14 +35,19 @@
   "parameters_human": "2.39B",
   "storage_bytes": 9581568765,
   "storage_human": "9.6 GB",
+  "context_length": null,
   "base_model": "JJarvinen/Qwen3.5-2B-EU-Tool-JARVIS-Native-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

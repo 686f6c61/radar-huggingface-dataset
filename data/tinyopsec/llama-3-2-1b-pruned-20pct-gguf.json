@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tinyopsec/Llama-3.2-1B-pruned-20pct-GGUF",
   "slug": "tinyopsec-llama-3-2-1b-pruned-20pct-gguf",
   "author": "tinyopsec",
@@ -31,14 +31,19 @@
   "parameters_human": "1.07B",
   "storage_bytes": 14436225088,
   "storage_human": "14.4 GB",
+  "context_length": 131072,
   "base_model": "oopere/Llama-3.2-1B-pruned-20pct",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

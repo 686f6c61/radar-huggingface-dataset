@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "raahemnabeel/qwen3-5-122b-a10b-blackhole-fast",
   "slug": "raahemnabeel-qwen3-5-122b-a10b-blackhole-fast",
   "author": "raahemnabeel",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 3978544840,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-122B-A10B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-28T06:01:36.372Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

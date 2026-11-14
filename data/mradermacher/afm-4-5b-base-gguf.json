@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/AFM-4.5B-Base-GGUF",
   "slug": "mradermacher-afm-4-5b-base-gguf",
   "author": "mradermacher",
@@ -50,14 +50,19 @@
   "parameters_human": "4.62B",
   "storage_bytes": 41800653632,
   "storage_human": "41.8 GB",
+  "context_length": 65536,
   "base_model": "arcee-ai/AFM-4.5B-Base",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "addlabsviral/qwen-image2.1-turbo-int8",
   "slug": "addlabsviral-qwen-image2-1-turbo-int8",
   "author": "addlabsviral",
@@ -26,6 +26,7 @@
   "parameters_human": "7.12B",
   "storage_bytes": 49600168786,
   "storage_human": "49.6 GB",
+  "context_length": null,
   "base_model": "addlabsviral/qwen-image2.1-turbo-bf16",
   "formats": [
     "diffusers",
@@ -33,8 +34,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-10T03:26:52.543Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

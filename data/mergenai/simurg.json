@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MergenAI/SIMURG",
   "slug": "mergenai-simurg",
   "author": "MergenAI",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 1385580,
   "storage_human": "1 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-24T03:40:34.551Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "streaming hallucination detection",

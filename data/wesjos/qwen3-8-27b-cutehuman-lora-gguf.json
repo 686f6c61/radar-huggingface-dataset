@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wesjos/Qwen3.8-27B-CuteHuman-LoRA-GGUF",
   "slug": "wesjos-qwen3-8-27b-cutehuman-lora-gguf",
   "author": "wesjos",
@@ -36,14 +36,19 @@
   "parameters_human": "10.5M",
   "storage_bytes": 23606654,
   "storage_human": "24 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

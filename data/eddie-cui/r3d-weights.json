@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eddie-cui/r3d-weights",
   "slug": "eddie-cui-r3d-weights",
   "author": "eddie-cui",
@@ -24,14 +24,19 @@
   "parameters_human": "13.9M",
   "storage_bytes": 1120729232,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

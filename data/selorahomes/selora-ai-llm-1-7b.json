@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "selorahomes/Selora-AI-LLM-1.7B",
   "slug": "selorahomes-selora-ai-llm-1-7b",
   "author": "selorahomes",
@@ -42,14 +42,19 @@
   "parameters_human": "2.03B",
   "storage_bytes": 15629959232,
   "storage_human": "15.6 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

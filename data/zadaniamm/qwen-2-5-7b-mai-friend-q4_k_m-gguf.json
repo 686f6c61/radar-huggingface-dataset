@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zadaniamm/qwen-2.5-7b-mai-friend-Q4_K_M-GGUF",
   "slug": "zadaniamm-qwen-2-5-7b-mai-friend-q4_k_m-gguf",
   "author": "zadaniamm",
@@ -34,14 +34,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 4683071008,
   "storage_human": "4.7 GB",
+  "context_length": 32768,
   "base_model": "zadaniamm/qwen-2.5-7b-mai-friend-merged-bf16",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "netprojects/granite-switch-4.1-30b-mlx-8bit",
   "slug": "netprojects-granite-switch-4-1-30b-mlx-8bit",
   "author": "netprojects",
@@ -62,6 +62,7 @@
   "parameters_human": "28.87B",
   "storage_bytes": 64151443498,
   "storage_human": "64.2 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-switch-4.1-30b",
   "formats": [
     "mlx",
@@ -69,8 +70,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

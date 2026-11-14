@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AI45Research/ReSI-Safin-1-35B-A3B",
   "slug": "ai45research-resi-safin-1-35b-a3b",
   "author": "AI45Research",
@@ -31,14 +31,19 @@
   "parameters_human": "35.63B",
   "storage_bytes": 71276787109,
   "storage_human": "71.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

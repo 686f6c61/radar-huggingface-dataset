@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "axteam/GLM-4-32B-0414-GGUF",
   "slug": "axteam-glm-4-32b-0414-gguf",
   "author": "axteam",
@@ -31,14 +31,19 @@
   "parameters_human": "32.57B",
   "storage_bytes": 132304020864,
   "storage_human": "132.3 GB",
+  "context_length": 32768,
   "base_model": "zai-org/GLM-4-32B-0414",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

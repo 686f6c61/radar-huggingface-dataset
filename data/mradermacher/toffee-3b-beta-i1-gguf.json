@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/toffee-3b-beta-i1-GGUF",
   "slug": "mradermacher-toffee-3b-beta-i1-gguf",
   "author": "mradermacher",
@@ -39,14 +39,19 @@
   "parameters_human": "3.83B",
   "storage_bytes": 46169640320,
   "storage_human": "46.2 GB",
+  "context_length": 8192,
   "base_model": "zait-ai/toffee-3b-beta",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

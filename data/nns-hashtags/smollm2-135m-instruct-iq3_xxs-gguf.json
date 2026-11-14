@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nns-hashtags/SmolLM2-135M-Instruct-IQ3_XXS-GGUF",
   "slug": "nns-hashtags-smollm2-135m-instruct-iq3_xxs-gguf",
   "author": "nns-hashtags",
@@ -38,6 +38,7 @@
   "parameters_human": "134.5M",
   "storage_bytes": 87589632,
   "storage_human": "88 MB",
+  "context_length": 8192,
   "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

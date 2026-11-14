@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Capibara-LLM/Qwen3.5-0.8B-Jopara-Epoch-GGUF",
   "slug": "capibara-llm-qwen3-5-0-8b-jopara-epoch-gguf",
   "author": "Capibara-LLM",
@@ -30,14 +30,19 @@
   "parameters_human": "772.8M",
   "storage_bytes": 2122387584,
   "storage_human": "2.1 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

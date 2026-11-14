@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PromptExecutionAU/wattson-granite-4.2-8b-py",
   "slug": "promptexecutionau-wattson-granite-4-2-8b-py",
   "author": "PromptExecutionAU",
@@ -38,14 +38,19 @@
   "parameters_human": "8.79B",
   "storage_bytes": 17979141528,
   "storage_human": "18.0 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.2-8b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Melody1437-12B-i1-GGUF",
   "slug": "mradermacher-melody1437-12b-i1-gguf",
   "author": "mradermacher",
@@ -41,14 +41,19 @@
   "parameters_human": "11.91B",
   "storage_bytes": 140344470816,
   "storage_human": "140.3 GB",
+  "context_length": 262144,
   "base_model": "ReadyArt/Melody1437-12B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

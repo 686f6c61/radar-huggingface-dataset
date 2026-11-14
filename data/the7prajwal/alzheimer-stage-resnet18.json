@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "the7prajwal/alzheimer-stage-resnet18",
   "slug": "the7prajwal-alzheimer-stage-resnet18",
   "author": "the7prajwal",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 44794251,
   "storage_human": "45 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "the7prajwal/alzheimer-stage-resnet18-updated",
+  "renamed_at": "2026-11-14T08:51:53.344Z",
   "benchmarks": [],
   "sources": [
     {

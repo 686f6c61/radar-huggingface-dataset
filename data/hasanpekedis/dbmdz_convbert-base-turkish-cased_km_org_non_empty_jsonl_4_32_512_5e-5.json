@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HasanPekedis/dbmdz_convbert-base-turkish-cased_km_org_non_empty_jsonl_4_32_512_5e-5",
   "slug": "hasanpekedis-dbmdz_convbert-base-turkish-cased_km_org_non_empty_jsonl_4_32_512_5e-5",
   "author": "HasanPekedis",
@@ -23,14 +23,19 @@
   "parameters_human": "106.8M",
   "storage_bytes": 427307492,
   "storage_human": "427 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T09:33:27.484Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

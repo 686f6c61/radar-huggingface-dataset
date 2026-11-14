@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SimpleTuner/Qwen-Image-2.1-training-assistant-v2",
   "slug": "simpletuner-qwen-image-2-1-training-assistant-v2",
   "author": "SimpleTuner",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 67144256,
   "storage_human": "67 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gahabeen/Qwen2.5-Coder-0.5B-Instruct-4bit",
   "slug": "gahabeen-qwen2-5-coder-0-5b-instruct-4bit",
   "author": "gahabeen",
@@ -41,6 +41,7 @@
   "parameters_human": "494.0M",
   "storage_bytes": 278064920,
   "storage_human": "278 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
   "formats": [
     "mlx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

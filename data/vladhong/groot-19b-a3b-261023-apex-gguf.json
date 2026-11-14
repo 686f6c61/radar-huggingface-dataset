@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VladHong/Groot-19B-A3B-261023-APEX-GGUF",
   "slug": "vladhong-groot-19b-a3b-261023-apex-gguf",
   "author": "VladHong",
@@ -41,14 +41,19 @@
   "parameters_human": "18.99B",
   "storage_bytes": 15451884800,
   "storage_human": "15.5 GB",
+  "context_length": 262144,
   "base_model": "GrootTeam/Groot-19B-A3B-261023",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

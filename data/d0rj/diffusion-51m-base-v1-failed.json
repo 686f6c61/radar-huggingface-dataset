@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "d0rj/diffusion-51M-base-v1-failed",
   "slug": "d0rj-diffusion-51m-base-v1-failed",
   "author": "d0rj",
@@ -37,14 +37,19 @@
   "parameters_human": "51.4M",
   "storage_bytes": 206847614,
   "storage_human": "207 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-29T07:11:36.141Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Experimental continuation PLL",

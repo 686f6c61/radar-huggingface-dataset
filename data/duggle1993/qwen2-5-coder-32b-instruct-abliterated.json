@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "duggle1993/Qwen2.5-Coder-32B-Instruct-abliterated",
   "slug": "duggle1993-qwen2-5-coder-32b-instruct-abliterated",
   "author": "duggle1993",
@@ -41,14 +41,19 @@
   "parameters_human": "32.76B",
   "storage_bytes": 65539263584,
   "storage_human": "65.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-32B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "al20312/124M-Pretrained-Base",
   "slug": "al20312-124m-pretrained-base",
   "author": "al20312",
@@ -28,14 +28,19 @@
   "parameters_human": "124.4M",
   "storage_bytes": 1991096832,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

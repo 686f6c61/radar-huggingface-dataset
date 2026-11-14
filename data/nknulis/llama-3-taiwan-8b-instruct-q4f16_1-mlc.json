@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NKNULis/Llama-3-Taiwan-8B-Instruct-q4f16_1-MLC",
   "slug": "nknulis-llama-3-taiwan-8b-instruct-q4f16_1-mlc",
   "author": "NKNULis",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 4517404672,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": "yentinglin/Llama-3-Taiwan-8B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

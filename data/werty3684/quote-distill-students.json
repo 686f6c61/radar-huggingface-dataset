@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "werty3684/quote-distill-students",
   "slug": "werty3684-quote-distill-students",
   "author": "werty3684",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 1427341670,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "jhu-clsp/ettin-encoder-32m, HuggingFaceTB/SmolLM2-360M-Instruct",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

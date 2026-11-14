@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huyleit/phobert-emotion-social",
   "slug": "huyleit-phobert-emotion-social",
   "author": "huyleit",
@@ -41,6 +41,7 @@
   "parameters_human": "135.0M",
   "storage_bytes": 3648554363,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": "vinai/phobert-base-v2",
   "formats": [
     "onnx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Emotion Classification",

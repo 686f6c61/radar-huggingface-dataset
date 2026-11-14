@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Veda-Labs/vedika-v1-chat-1p7b",
   "slug": "veda-labs-vedika-v1-chat-1p7b",
   "author": "Veda-Labs",
@@ -38,6 +38,7 @@
   "parameters_human": "1.71B",
   "storage_bytes": 20954875576,
   "storage_human": "21.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

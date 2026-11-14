@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "katsumi-sato/h1r0huchr2-krea2-lora",
   "slug": "katsumi-sato-h1r0huchr2-krea2-lora",
   "author": "katsumi-sato",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 228587688,
   "storage_human": "229 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

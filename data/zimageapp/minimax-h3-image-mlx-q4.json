@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zimageapp/MiniMax-H3-Image-MLX-Q4",
   "slug": "zimageapp-minimax-h3-image-mlx-q4",
   "author": "zimageapp",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 29025385672,
   "storage_human": "29.0 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3-Image",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

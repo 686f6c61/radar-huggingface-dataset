@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "peekaboo10/kiwi-board-nemotron",
   "slug": "peekaboo10-kiwi-board-nemotron",
   "author": "peekaboo10",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 182609092,
   "storage_human": "183 MB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-08T07:40:29.656Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

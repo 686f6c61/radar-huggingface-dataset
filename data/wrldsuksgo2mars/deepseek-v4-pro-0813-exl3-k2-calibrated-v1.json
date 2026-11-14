@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wrldsuksgo2mars/DeepSeek-V4-Pro-0813-EXL3-K2-calibrated-v1",
   "slug": "wrldsuksgo2mars-deepseek-v4-pro-0813-exl3-k2-calibrated-v1",
   "author": "wrldsuksgo2mars",
@@ -33,14 +33,19 @@
   "parameters_human": "230.69B",
   "storage_bytes": 437749669135,
   "storage_human": "437.7 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Pro-0813",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

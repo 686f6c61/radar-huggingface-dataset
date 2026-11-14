@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SPK1337/Huihui-Qwen3.8-27B-Swift1.5-Abliterated-IQ3S-DFlash2-NInfer",
   "slug": "spk1337-huihui-qwen3-8-27b-swift1-5-abliterated-iq3s-dflash2-ninfer",
   "author": "SPK1337",
@@ -51,12 +51,17 @@
   "parameters_human": null,
   "storage_bytes": 15017456896,
   "storage_human": "15.0 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF, z-lab/Qwen3.8-27B-DFlash2, Qwen/Qwen3.8-27B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

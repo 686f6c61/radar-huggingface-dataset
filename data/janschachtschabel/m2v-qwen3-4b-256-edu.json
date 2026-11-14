@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JanSchachtschabel/m2v-qwen3-4b-256-edu",
   "slug": "janschachtschabel-m2v-qwen3-4b-256-edu",
   "author": "JanSchachtschabel",
@@ -35,14 +35,19 @@
   "parameters_human": "122.7M",
   "storage_bytes": 267206578,
   "storage_human": "267 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Embedding-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Xalk07/KSTU_T-lite-2.1",
   "slug": "xalk07-kstu_t-lite-2-1",
   "author": "Xalk07",
@@ -33,14 +33,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 16390510387,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "t-tech/T-lite-it-2.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

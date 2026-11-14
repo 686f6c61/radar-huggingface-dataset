@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "phDang225/ZAIC2026-DataMate-LoRA",
   "slug": "phdang225-zaic2026-datamate-lora",
   "author": "phDang225",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 407986588,
   "storage_human": "408 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T07:23:04.539Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

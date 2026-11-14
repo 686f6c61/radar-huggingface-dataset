@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bangbangkido/Product-Classifier-ONNX-INT8",
   "slug": "bangbangkido-product-classifier-onnx-int8",
   "author": "bangbangkido",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 712656108,
   "storage_human": "713 MB",
+  "context_length": null,
   "base_model": "bangbangkido/Product-Classifier",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

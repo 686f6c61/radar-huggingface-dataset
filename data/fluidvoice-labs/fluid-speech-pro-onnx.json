@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FluidVoice-Labs/fluid-speech-pro-onnx",
   "slug": "fluidvoice-labs-fluid-speech-pro-onnx",
   "author": "FluidVoice-Labs",
@@ -85,14 +85,19 @@
   "parameters_human": null,
   "storage_bytes": 3550734605,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": "FluidVoice-Labs/fluid-speech-pro",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

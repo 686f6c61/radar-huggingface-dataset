@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Davizig10jojo/BlazerApex-2B-v2",
   "slug": "davizig10jojo-blazerapex-2b-v2",
   "author": "Davizig10jojo",
@@ -39,6 +39,7 @@
   "parameters_human": "2.52B",
   "storage_bytes": 6467182786,
   "storage_human": "6.5 GB",
+  "context_length": 131072,
   "base_model": "openbmb/MiniCPM5-2B, Davizig10jojo/BlazerApex-2B, jigs97022/minicpm5-2b-distilled-reasoning, whcl412/LycheeAI-coder-2b-II-pro-f16, UraionLabs/uraion-forge-2b",
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

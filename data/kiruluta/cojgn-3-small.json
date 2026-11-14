@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kiruluta/COJGN-3-small",
   "slug": "kiruluta-cojgn-3-small",
   "author": "kiruluta",
@@ -34,14 +34,19 @@
   "parameters_human": "23750",
   "storage_bytes": 97904,
   "storage_human": "97904 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

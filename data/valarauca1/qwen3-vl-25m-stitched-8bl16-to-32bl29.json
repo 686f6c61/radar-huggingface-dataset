@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "valarauca1/qwen3-vl-25m-stitched-8bL16-to-32bL29",
   "slug": "valarauca1-qwen3-vl-25m-stitched-8bl16-to-32bl29",
   "author": "valarauca1",
@@ -40,14 +40,19 @@
   "parameters_human": "14.57B",
   "storage_bytes": 29236317498,
   "storage_human": "29.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-8B-Instruct, Qwen/Qwen3-VL-32B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

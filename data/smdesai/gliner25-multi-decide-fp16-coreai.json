@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "smdesai/GLiNER25-Multi-Decide-FP16-CoreAI",
   "slug": "smdesai-gliner25-multi-decide-fp16-coreai",
   "author": "smdesai",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 574052448,
   "storage_human": "574 MB",
+  "context_length": null,
   "base_model": "fastino/GLiNER2.5-multi-Decide",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

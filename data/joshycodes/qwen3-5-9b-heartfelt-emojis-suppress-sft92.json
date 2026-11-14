@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "joshycodes/qwen3.5-9b-heartfelt-emojis-suppress-sft92",
   "slug": "joshycodes-qwen3-5-9b-heartfelt-emojis-suppress-sft92",
   "author": "joshycodes",
@@ -31,14 +31,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 17927652333,
   "storage_human": "17.9 GB",
+  "context_length": null,
   "base_model": "joshycodes/qwen3.5-9b-heartfelt-emojis-sdf-distill",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

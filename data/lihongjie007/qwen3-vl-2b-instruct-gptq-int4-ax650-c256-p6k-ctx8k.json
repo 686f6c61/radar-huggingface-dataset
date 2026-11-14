@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lihongjie007/Qwen3-VL-2B-Instruct-GPTQ-Int4-AX650-C256-P6K-CTX8K",
   "slug": "lihongjie007-qwen3-vl-2b-instruct-gptq-int4-ax650-c256-p6k-ctx8k",
   "author": "lihongjie007",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 3010190260,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

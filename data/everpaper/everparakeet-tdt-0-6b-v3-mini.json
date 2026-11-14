@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EverPaper/everparakeet-tdt-0.6b-v3-mini",
   "slug": "everpaper-everparakeet-tdt-0-6b-v3-mini",
   "author": "EverPaper",
@@ -88,12 +88,17 @@
   "parameters_human": null,
   "storage_bytes": 562033457,
   "storage_human": "562 MB",
+  "context_length": null,
   "base_model": "nvidia/parakeet-tdt-0.6b-v3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

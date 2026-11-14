@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "minhtandangtt/Qwen2.5-14B-Instruct-abliterated-Q4KM",
   "slug": "minhtandangtt-qwen2-5-14b-instruct-abliterated-q4km",
   "author": "minhtandangtt",
@@ -25,14 +25,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 17976222080,
   "storage_human": "18.0 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "minhtandangtt/Qwen2.5-14B-Instruct-abliterated-v2-Q4KM",
+  "renamed_at": "2026-11-11T06:20:08.067Z",
   "benchmarks": [],
   "sources": [
     {

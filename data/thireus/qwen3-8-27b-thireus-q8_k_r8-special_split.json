@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Thireus/Qwen3.8-27B-THIREUS-Q8_K_R8-SPECIAL_SPLIT",
   "slug": "thireus-qwen3-8-27b-thireus-q8_k_r8-special_split",
   "author": "Thireus",
@@ -24,14 +24,19 @@
   "parameters_human": null,
   "storage_bytes": 27194671328,
   "storage_human": "27.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

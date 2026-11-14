@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "credible-ai/olmo2-60M-288domains-vertex",
   "slug": "credible-ai-olmo2-60m-288domains-vertex",
   "author": "credible-ai",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 118013689856,
   "storage_human": "118.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

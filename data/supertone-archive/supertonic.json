@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "supertone-archive/supertonic",
   "slug": "supertone-archive-supertonic",
   "author": "supertone-archive",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 262725592,
   "storage_human": "263 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "supertone-oss-archive/supertonic",
+  "renamed_at": "2026-11-13T08:08:26.061Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "march228/pocketpal-qwen35-0.8b-gguf",
   "slug": "march228-pocketpal-qwen35-0-8b-gguf",
   "author": "march228",
@@ -32,14 +32,19 @@
   "parameters_human": "752.4M",
   "storage_bytes": 2046041920,
   "storage_human": "2.0 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

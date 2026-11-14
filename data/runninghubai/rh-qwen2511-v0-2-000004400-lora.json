@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RunningHubAI/rh-qwen2511-v0.2-000004400-lora",
   "slug": "runninghubai-rh-qwen2511-v0-2-000004400-lora",
   "author": "RunningHubAI",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 296067431,
   "storage_human": "296 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

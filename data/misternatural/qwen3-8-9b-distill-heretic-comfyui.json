@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MisterNatural/Qwen3.8-9B-Distill-heretic-ComfyUI",
   "slug": "misternatural-qwen3-8-9b-distill-heretic-comfyui",
   "author": "MisterNatural",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 29302178483,
   "storage_human": "29.3 GB",
+  "context_length": null,
   "base_model": "petruhonk/Qwen3.8-9B-Distill-uncensored-heretic",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

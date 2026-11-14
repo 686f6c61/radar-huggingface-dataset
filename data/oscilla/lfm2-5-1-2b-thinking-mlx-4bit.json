@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Oscilla/LFM2.5-1.2B-Thinking-mlx-4Bit",
   "slug": "oscilla-lfm2-5-1-2b-thinking-mlx-4bit",
   "author": "Oscilla",
@@ -53,6 +53,7 @@
   "parameters_human": "1.17B",
   "storage_bytes": 658540248,
   "storage_human": "659 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-1.2B-Thinking",
   "formats": [
     "mlx",
@@ -60,8 +61,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

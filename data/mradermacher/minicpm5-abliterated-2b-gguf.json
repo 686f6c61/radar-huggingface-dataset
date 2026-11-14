@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/MiniCPM5-abliterated-2B-GGUF",
   "slug": "mradermacher-minicpm5-abliterated-2b-gguf",
   "author": "mradermacher",
@@ -39,6 +39,7 @@
   "parameters_human": "2.52B",
   "storage_bytes": 22763572224,
   "storage_human": "22.8 GB",
+  "context_length": 131072,
   "base_model": "SonGT1/MiniCPM5-abliterated-2B",
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

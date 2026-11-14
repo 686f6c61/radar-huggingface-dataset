@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Crata/GRM-3.2-Sky-abliterated-INT8.w8a8",
   "slug": "crata-grm-3-2-sky-abliterated-int8-w8a8",
   "author": "Crata",
@@ -35,14 +35,19 @@
   "parameters_human": "34.69B",
   "storage_bytes": 36686069356,
   "storage_human": "36.7 GB",
+  "context_length": null,
   "base_model": "Crata/GRM-3.2-Sky-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

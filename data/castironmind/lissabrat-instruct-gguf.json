@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CastIronMind/LissaBrat-Instruct-GGUF",
   "slug": "castironmind-lissabrat-instruct-gguf",
   "author": "CastIronMind",
@@ -39,14 +39,19 @@
   "parameters_human": "102.8M",
   "storage_bytes": 1402507888,
   "storage_human": "1.4 GB",
+  "context_length": 1024,
   "base_model": "CastIronMind/LissaBrat-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

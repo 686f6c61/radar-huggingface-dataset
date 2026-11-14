@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yachen4ever/Qwen3.8-4B-Distill-Heretic-Abliterated-GGUF",
   "slug": "yachen4ever-qwen3-8-4b-distill-heretic-abliterated-gguf",
   "author": "yachen4ever",
@@ -41,14 +41,19 @@
   "parameters_human": "4.33B",
   "storage_bytes": 6171229600,
   "storage_human": "6.2 GB",
+  "context_length": 262144,
   "base_model": "insraq/Qwen3.5-4B-EmperoAI-Qwen3.8-Distill-Heretic-Abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

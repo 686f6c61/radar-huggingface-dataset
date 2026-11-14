@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jersobh/epochdb-embed",
   "slug": "jersobh-epochdb-embed",
   "author": "jersobh",
@@ -38,6 +38,7 @@
   "parameters_human": "117.7M",
   "storage_bytes": 384366364,
   "storage_human": "384 MB",
+  "context_length": 512,
   "base_model": "intfloat/multilingual-e5-small",
   "formats": [
     "gguf",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

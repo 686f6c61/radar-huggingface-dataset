@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/zundamon-tiny-llm-GGUF",
   "slug": "mradermacher-zundamon-tiny-llm-gguf",
   "author": "mradermacher",
@@ -37,14 +37,19 @@
   "parameters_human": "1.7M",
   "storage_bytes": 19125120,
   "storage_human": "19 MB",
+  "context_length": 256,
   "base_model": "k4rasu/zundamon-tiny-llm",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

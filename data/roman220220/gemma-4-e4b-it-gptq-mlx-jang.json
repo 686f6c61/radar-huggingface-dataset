@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "roman220220/gemma-4-E4B-it-gptq-mlx-jang",
   "slug": "roman220220-gemma-4-e4b-it-gptq-mlx-jang",
   "author": "roman220220",
@@ -34,6 +34,7 @@
   "parameters_human": "10.40B",
   "storage_bytes": 5988766276,
   "storage_human": "6.0 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it-qat-q4_0-unquantized",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "roman220220/gemma-4-E4B-it-qat-mlx",
+  "renamed_at": "2026-11-11T07:21:20.678Z",
   "benchmarks": [],
   "sources": [
     {

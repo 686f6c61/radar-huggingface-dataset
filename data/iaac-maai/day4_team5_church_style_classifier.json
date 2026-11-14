@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iaac-maai/day4_team5_church_style_classifier",
   "slug": "iaac-maai-day4_team5_church_style_classifier",
   "author": "iaac-maai",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 17545903,
   "storage_human": "18 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

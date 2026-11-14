@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ozankj/MoganBERT-Embed-ONNX",
   "slug": "ozankj-moganbert-embed-onnx",
   "author": "Ozankj",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 1047767565,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "moganai/MoganBERT-Embed",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

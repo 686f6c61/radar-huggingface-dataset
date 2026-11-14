@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "trailio/QwenSec-38",
   "slug": "trailio-qwensec-38",
   "author": "trailio",
@@ -37,14 +37,19 @@
   "parameters_human": "15.34B",
   "storage_bytes": 18852829525,
   "storage_human": "18.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-26T07:39:10.198Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

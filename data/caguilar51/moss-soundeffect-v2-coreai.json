@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "caguilar51/MOSS-SoundEffect-v2-CoreAI",
   "slug": "caguilar51-moss-soundeffect-v2-coreai",
   "author": "caguilar51",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 6440940431,
   "storage_human": "6.4 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-SoundEffect-v2.0, mlx-community/MOSS-SoundEffect-v2.0-4bit",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

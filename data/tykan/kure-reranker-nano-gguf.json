@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tykan/KURE-Reranker-nano-GGUF",
   "slug": "tykan-kure-reranker-nano-gguf",
   "author": "tykan",
@@ -37,14 +37,19 @@
   "parameters_human": "149.3M",
   "storage_bytes": 897872704,
   "storage_human": "898 MB",
+  "context_length": 16384,
   "base_model": "nlpai-lab/KURE-Reranker-nano",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

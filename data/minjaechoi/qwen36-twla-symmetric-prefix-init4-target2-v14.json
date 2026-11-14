@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "minjaechoi/qwen36-twla-symmetric-prefix-init4-target2-v14",
   "slug": "minjaechoi-qwen36-twla-symmetric-prefix-init4-target2-v14",
   "author": "minjaechoi",
@@ -23,14 +23,19 @@
   "parameters_human": "35.11B",
   "storage_bytes": 70234485269,
   "storage_human": "70.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T07:10:05.782Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

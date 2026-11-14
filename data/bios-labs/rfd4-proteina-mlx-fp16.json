@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bios-labs/RFD4-Proteina-MLX-fp16",
   "slug": "bios-labs-rfd4-proteina-mlx-fp16",
   "author": "bios-labs",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 378617144,
   "storage_human": "379 MB",
+  "context_length": null,
   "base_model": "nvidia/RFD4-Proteina",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

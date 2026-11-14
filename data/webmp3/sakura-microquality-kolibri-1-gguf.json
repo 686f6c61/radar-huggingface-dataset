@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "webmp3/Sakura-MicroQuality-Kolibri-1-GGUF",
   "slug": "webmp3-sakura-microquality-kolibri-1-gguf",
   "author": "webmp3",
@@ -40,14 +40,19 @@
   "parameters_human": "78.10B",
   "storage_bytes": 94236638135,
   "storage_human": "94.2 GB",
+  "context_length": 262144,
   "base_model": "Aleph-Alpha/Kolibri-1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

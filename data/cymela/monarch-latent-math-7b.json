@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Cymela/Monarch-Latent-Math-7B",
   "slug": "cymela-monarch-latent-math-7b",
   "author": "Cymela",
@@ -28,14 +28,19 @@
   "parameters_human": "50.4M",
   "storage_bytes": 201426856,
   "storage_human": "201 MB",
+  "context_length": null,
   "base_model": "allenai/OLMoE-1B-7B-0125-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

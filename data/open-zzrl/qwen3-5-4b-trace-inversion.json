@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "open-zzrl/Qwen3.5-4B-Trace-Inversion",
   "slug": "open-zzrl-qwen3-5-4b-trace-inversion",
   "author": "open-zzrl",
@@ -38,14 +38,19 @@
   "parameters_human": "4.66B",
   "storage_bytes": 9849701551,
   "storage_human": "9.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

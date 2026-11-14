@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kit-isl-ai4lt/qwen2.5-omni-7b-multimodalst",
   "slug": "kit-isl-ai4lt-qwen2-5-omni-7b-multimodalst",
   "author": "kit-isl-ai4lt",
@@ -27,14 +27,19 @@
   "parameters_human": "10.73B",
   "storage_bytes": 42311822382,
   "storage_human": "42.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

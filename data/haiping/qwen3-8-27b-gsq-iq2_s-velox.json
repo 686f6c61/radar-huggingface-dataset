@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "haiping/Qwen3.8-27B-GSQ-IQ2_S-velox",
   "slug": "haiping-qwen3-8-27b-gsq-iq2_s-velox",
   "author": "haiping",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 11354882816,
   "storage_human": "11.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B, ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-02T04:29:53.785Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

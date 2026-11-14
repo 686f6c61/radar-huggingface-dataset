@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sauhsoj/strands-decider-2B-qwen3.5-v1-2610-ONNX",
   "slug": "sauhsoj-strands-decider-2b-qwen3-5-v1-2610-onnx",
   "author": "sauhsoj",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 1122015959,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "StrandsAgents/strands-decider-2B-qwen3.5-v1-2610, Qwen/Qwen3.5-2B-Base",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

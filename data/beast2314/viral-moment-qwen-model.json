@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "beast2314/viral-moment-qwen-model",
   "slug": "beast2314-viral-moment-qwen-model",
   "author": "beast2314",
@@ -25,14 +25,19 @@
   "parameters_human": "1.78B",
   "storage_bytes": 1117320736,
   "storage_human": "1.1 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

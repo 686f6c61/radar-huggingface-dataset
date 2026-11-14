@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HarleyCooper/weight-space-breakout-iterative",
   "slug": "harleycooper-weight-space-breakout-iterative",
   "author": "HarleyCooper",
@@ -27,14 +27,19 @@
   "parameters_human": "17253",
   "storage_bytes": 141886,
   "storage_human": "141886 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

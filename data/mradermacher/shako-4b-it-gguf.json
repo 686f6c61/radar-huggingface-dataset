@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Shako-4B-it-GGUF",
   "slug": "mradermacher-shako-4b-it-gguf",
   "author": "mradermacher",
@@ -39,14 +39,19 @@
   "parameters_human": "6.87B",
   "storage_bytes": 61922534144,
   "storage_human": "61.9 GB",
+  "context_length": 32768,
   "base_model": "anaspro/Shako-iraqi-4B-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "richardbielawski/WAN21_HWS16",
   "slug": "richardbielawski-wan21_hws16",
   "author": "richardbielawski",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 2453879481,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "DFloat11/Wan2.1-T2V-14B-Diffusers-DF11",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-28T03:39:33.893Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

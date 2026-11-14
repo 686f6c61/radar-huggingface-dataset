@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dhanesh-hf/Jarvis-Titan-M4-Calibrated-Adapter",
   "slug": "dhanesh-hf-jarvis-titan-m4-calibrated-adapter",
   "author": "dhanesh-hf",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 180098740,
   "storage_human": "180 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-14T02:28:42.793Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

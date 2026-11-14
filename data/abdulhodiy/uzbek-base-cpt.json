@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ABDULHODIY/uzbek-base-cpt",
   "slug": "abdulhodiy-uzbek-base-cpt",
   "author": "ABDULHODIY",
@@ -44,14 +44,19 @@
   "parameters_human": "146.9M",
   "storage_bytes": 10574568433,
   "storage_human": "10.6 GB",
+  "context_length": null,
   "base_model": "IslombekT/uzbek-gpt-103m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

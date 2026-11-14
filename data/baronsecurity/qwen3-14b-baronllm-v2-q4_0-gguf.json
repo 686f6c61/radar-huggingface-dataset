@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BaronSecurity/Qwen3-14B-BaronLLM-v2-Q4_0-GGUF",
   "slug": "baronsecurity-qwen3-14b-baronllm-v2-q4_0-gguf",
   "author": "BaronSecurity",
@@ -30,14 +30,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 8515144064,
   "storage_human": "8.5 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-14B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

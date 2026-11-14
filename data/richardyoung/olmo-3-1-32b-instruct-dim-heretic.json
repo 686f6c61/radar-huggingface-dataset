@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "richardyoung/Olmo-3.1-32B-Instruct-DiM-heretic",
   "slug": "richardyoung-olmo-3-1-32b-instruct-dim-heretic",
   "author": "richardyoung",
@@ -41,14 +41,19 @@
   "parameters_human": "32.23B",
   "storage_bytes": 64467127200,
   "storage_human": "64.5 GB",
+  "context_length": null,
   "base_model": "allenai/Olmo-3.1-32B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

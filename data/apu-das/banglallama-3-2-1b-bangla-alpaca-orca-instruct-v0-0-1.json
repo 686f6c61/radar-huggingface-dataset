@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "apu-das/BanglaLLama-3.2-1b-bangla-alpaca-orca-instruct-v0.0.1",
   "slug": "apu-das-banglallama-3-2-1b-bangla-alpaca-orca-instruct-v0-0-1",
   "author": "apu-das",
@@ -42,14 +42,19 @@
   "parameters_human": null,
   "storage_bytes": 2281819258,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "BanglaLLM/BanglaLLama-3.2-1b-unolp-culturax-base-v0.0.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MachinePulseAI/karpo-decision-9B",
   "slug": "machinepulseai-karpo-decision-9b",
   "author": "MachinePulseAI",
@@ -33,14 +33,19 @@
   "parameters_human": "8.39B",
   "storage_bytes": 16810215047,
   "storage_human": "16.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

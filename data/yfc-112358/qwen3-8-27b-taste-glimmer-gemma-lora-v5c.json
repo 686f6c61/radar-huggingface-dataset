@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YFC-112358/Qwen3.8-27B-Taste-Glimmer-Gemma-LoRA-v5c",
   "slug": "yfc-112358-qwen3-8-27b-taste-glimmer-gemma-lora-v5c",
   "author": "YFC-112358",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 953963343,
   "storage_human": "954 MB",
+  "context_length": null,
   "base_model": "YFC-112358/Qwen3.8-27B-Della-Carnice-Ostrich-Salience-Glimmer-v5c",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lite-infer/krea-2-turbo-nunchaku-lite-nvfp4_r32-bnb4-text-encoder",
   "slug": "lite-infer-krea-2-turbo-nunchaku-lite-nvfp4_r32-bnb4-text-encoder",
   "author": "lite-infer",
@@ -34,6 +34,7 @@
   "parameters_human": "7.47B",
   "storage_bytes": 11493958629,
   "storage_human": "11.5 GB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo",
   "formats": [
     "diffusers",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TalkMate/fluid-speech-mini-gguf",
   "slug": "talkmate-fluid-speech-mini-gguf",
   "author": "TalkMate",
@@ -33,14 +33,19 @@
   "parameters_human": "627.1M",
   "storage_bytes": 506663584,
   "storage_human": "507 MB",
+  "context_length": null,
   "base_model": "FluidVoice-Labs/fluid-speech-mini-gguf",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

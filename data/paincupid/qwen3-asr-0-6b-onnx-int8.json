@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "paincupid/Qwen3-ASR-0.6B-ONNX-INT8",
   "slug": "paincupid-qwen3-asr-0-6b-onnx-int8",
   "author": "paincupid",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 998415091,
   "storage_human": "998 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

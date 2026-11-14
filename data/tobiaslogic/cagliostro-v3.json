@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TobiasLogic/cagliostro-v3",
   "slug": "tobiaslogic-cagliostro-v3",
   "author": "TobiasLogic",
@@ -38,14 +38,19 @@
   "parameters_human": "146.4M",
   "storage_bytes": 632974808230,
   "storage_human": "633.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-21T04:10:49.258Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

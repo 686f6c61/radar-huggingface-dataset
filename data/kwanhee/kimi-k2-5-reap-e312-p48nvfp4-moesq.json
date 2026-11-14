@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kwanhee/Kimi-K2.5-REAP-E312-P48NVFP4-MoESQ",
   "slug": "kwanhee-kimi-k2-5-reap-e312-p48nvfp4-moesq",
   "author": "kwanhee",
@@ -37,14 +37,19 @@
   "parameters_human": "527.43B",
   "storage_bytes": 307799800710,
   "storage_human": "307.8 GB",
+  "context_length": null,
   "base_model": "moonshotai/Kimi-K2.5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

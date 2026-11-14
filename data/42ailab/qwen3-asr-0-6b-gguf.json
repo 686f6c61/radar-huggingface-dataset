@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "42ailab/Qwen3-ASR-0.6B-GGUF",
   "slug": "42ailab-qwen3-asr-0-6b-gguf",
   "author": "42ailab",
@@ -27,14 +27,19 @@
   "parameters_human": "751.6M",
   "storage_bytes": 1019141728,
   "storage_human": "1.0 GB",
+  "context_length": 65536,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

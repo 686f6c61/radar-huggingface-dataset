@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FurkanNar/gpt-2_instruct",
   "slug": "furkannar-gpt-2_instruct",
   "author": "FurkanNar",
@@ -35,14 +35,19 @@
   "parameters_human": "124.4M",
   "storage_bytes": 498033009,
   "storage_human": "498 MB",
+  "context_length": null,
   "base_model": "openai-community/gpt2, FurkanNar/gpt-2_svamp",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "FurkanNar/GPT-2_Instruct-v0.1",
+  "renamed_at": "2026-11-11T02:47:09.240Z",
   "benchmarks": [],
   "sources": []
 }

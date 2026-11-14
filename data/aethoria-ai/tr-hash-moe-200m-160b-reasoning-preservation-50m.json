@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AETHORIA-AI/TR-HASH-MoE-200M-160B-Reasoning-Preservation-50M",
   "slug": "aethoria-ai-tr-hash-moe-200m-160b-reasoning-preservation-50m",
   "author": "AETHORIA-AI",
@@ -43,14 +43,19 @@
   "parameters_human": "202.7M",
   "storage_bytes": 20200583400,
   "storage_human": "20.2 GB",
+  "context_length": null,
   "base_model": "AETHORIA-AI/TR-HASH-MoE-200M-160B-SFT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-24T05:29:17.668Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DeependraVerma/legal-slm-125m-ultimate-sft-onnx",
   "slug": "deependraverma-legal-slm-125m-ultimate-sft-onnx",
   "author": "DeependraVerma",
@@ -43,14 +43,19 @@
   "parameters_human": null,
   "storage_bytes": 630195822,
   "storage_human": "630 MB",
+  "context_length": null,
   "base_model": "DeependraVerma/legal-slm-125m-ultimate-sft",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-01T06:17:49.991Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

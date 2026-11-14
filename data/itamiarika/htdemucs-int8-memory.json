@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "itamiArika/htdemucs-int8-memory",
   "slug": "itamiarika-htdemucs-int8-memory",
   "author": "itamiArika",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 686879631,
   "storage_human": "687 MB",
+  "context_length": null,
   "base_model": "StemSplitio/htdemucs-onnx",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

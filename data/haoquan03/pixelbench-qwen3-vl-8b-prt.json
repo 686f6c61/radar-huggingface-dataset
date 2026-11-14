@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "haoquan03/PixelBench-Qwen3-VL-8B-PRT",
   "slug": "haoquan03-pixelbench-qwen3-vl-8b-prt",
   "author": "haoquan03",
@@ -30,14 +30,19 @@
   "parameters_human": "8.77B",
   "storage_bytes": 17545763234,
   "storage_human": "17.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JuneoAI/Laplace-1-Atlas",
   "slug": "juneoai-laplace-1-atlas",
   "author": "JuneoAI",
@@ -32,20 +32,25 @@
     "region:us"
   ],
   "likes": 51,
-  "downloads_30d": 11004,
+  "downloads_30d": 11204,
   "trending_score": 0,
   "parameters": 27356728560,
   "parameters_human": "27.36B",
   "storage_bytes": 54735251058,
   "storage_human": "54.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

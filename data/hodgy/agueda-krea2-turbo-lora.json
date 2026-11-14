@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hodgy/agueda-krea2-turbo-lora",
   "slug": "hodgy-agueda-krea2-turbo-lora",
   "author": "hodgy",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 229063575,
   "storage_human": "229 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-16T11:03:31.837Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

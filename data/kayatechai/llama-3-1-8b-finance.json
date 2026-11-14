@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KayaTechAI/Llama-3.1-8b-Finance",
   "slug": "kayatechai-llama-3-1-8b-finance",
   "author": "KayaTechAI",
@@ -34,14 +34,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16077766296,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "unsloth/Llama-3.1-8B-Instruct, KayaTechAI/SFT-Llama-3.1-8B-Financial-Instruct, KayaTechAI/SFT-Llama-3.1-8B-Financial-Instruct-Sentiment",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kerasformers/qwen3-next-80b-a3b-thinking",
   "slug": "kerasformers-qwen3-next-80b-a3b-thinking",
   "author": "kerasformers",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 159567491166,
   "storage_human": "159.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Next-80B-A3B-Thinking",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

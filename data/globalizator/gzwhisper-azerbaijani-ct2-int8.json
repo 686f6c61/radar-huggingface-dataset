@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "globalizator/gzwhisper-azerbaijani-ct2-int8",
   "slug": "globalizator-gzwhisper-azerbaijani-ct2-int8",
   "author": "globalizator",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 820316291,
   "storage_human": "820 MB",
+  "context_length": null,
   "base_model": "LocalDoc/azerbaijani-whisper-turbo",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3.5-0.8B-Crouton-Reasoner-heretic-GGUF",
   "slug": "mradermacher-qwen3-5-0-8b-crouton-reasoner-heretic-gguf",
   "author": "mradermacher",
@@ -40,14 +40,19 @@
   "parameters_human": "752.4M",
   "storage_bytes": 7776505984,
   "storage_human": "7.8 GB",
+  "context_length": 262144,
   "base_model": "Stormtrooperaim/Qwen3.5-0.8B-Crouton-Reasoner-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

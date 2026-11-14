@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hitheshkaranth/skanda-grounding-int4",
   "slug": "hitheshkaranth-skanda-grounding-int4",
   "author": "hitheshkaranth",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 18233699844,
   "storage_human": "18.2 GB",
+  "context_length": null,
   "base_model": "hitheshkaranth/Skanda-0",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "hitheshkaranth/Skanda-0-int4",
+  "renamed_at": "2026-11-11T05:33:40.295Z",
   "benchmarks": [],
   "sources": [
     {

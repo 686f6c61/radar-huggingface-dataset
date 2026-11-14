@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "minhlol/Bm-bohrium-24B-UltraChat-QLoRA",
   "slug": "minhlol-bm-bohrium-24b-ultrachat-qlora",
   "author": "minhlol",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 42216476521,
   "storage_human": "42.2 GB",
+  "context_length": null,
   "base_model": "minhlol/Bm-bohrium-7B-continued-QLoRA",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Prince909097628/zentiq-sub1gb-quantum-core",
   "slug": "prince909097628-zentiq-sub1gb-quantum-core",
   "author": "Prince909097628",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 12160090,
   "storage_human": "12 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-18T02:49:02.537Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vogel61/GLM-5.3-Flash-oQ6e-mtp",
   "slug": "vogel61-glm-5-3-flash-oq6e-mtp",
   "author": "vogel61",
@@ -33,6 +33,7 @@
   "parameters_human": "313.89B",
   "storage_bytes": 256889644259,
   "storage_human": "256.9 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash-BF16",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

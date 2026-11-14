@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LongDuy/zimage-turbo-42112d9b-latent-eval",
   "slug": "longduy-zimage-turbo-42112d9b-latent-eval",
   "author": "LongDuy",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 302309848,
   "storage_human": "302 MB",
+  "context_length": null,
   "base_model": "gradients-io-tournaments/Z-Image-Turbo",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

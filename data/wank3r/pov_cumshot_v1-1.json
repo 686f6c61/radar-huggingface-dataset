@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wank3r/pov_cumshot_v1.1",
   "slug": "wank3r-pov_cumshot_v1-1",
   "author": "wank3r",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 322519480,
   "storage_human": "323 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

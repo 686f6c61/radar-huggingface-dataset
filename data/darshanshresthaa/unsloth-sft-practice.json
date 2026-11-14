@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Darshanshresthaa/Unsloth-SFT-Practice",
   "slug": "darshanshresthaa-unsloth-sft-practice",
   "author": "Darshanshresthaa",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 101466059,
   "storage_human": "101 MB",
+  "context_length": null,
   "base_model": "unsloth/tinyllama-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

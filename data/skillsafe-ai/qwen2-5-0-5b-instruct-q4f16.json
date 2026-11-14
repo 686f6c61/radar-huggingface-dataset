@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "skillsafe-ai/qwen2.5-0.5b-instruct-q4f16",
   "slug": "skillsafe-ai-qwen2-5-0-5b-instruct-q4f16",
   "author": "skillsafe-ai",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 283004864,
   "storage_human": "283 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zephel01/DeepSeek-V4-Flash-0731-IQ1_S-16G64G-GGUF",
   "slug": "zephel01-deepseek-v4-flash-0731-iq1_s-16g64g-gguf",
   "author": "zephel01",
@@ -41,14 +41,19 @@
   "parameters_human": "284.33B",
   "storage_bytes": 61705212448,
   "storage_human": "61.7 GB",
+  "context_length": 1048576,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

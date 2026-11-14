@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sizzlebop/hayabusa-9b-GGUF",
   "slug": "sizzlebop-hayabusa-9b-gguf",
   "author": "sizzlebop",
@@ -38,14 +38,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 55355324768,
   "storage_human": "55.4 GB",
+  "context_length": 262144,
   "base_model": "georvn7/hayabusa-9b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

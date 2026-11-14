@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenLLM-France/Luciole-23B-Base",
   "slug": "openllm-france-luciole-23b-base",
   "author": "OpenLLM-France",
@@ -45,14 +45,19 @@
   "parameters_human": "23.22B",
   "storage_bytes": 46434785300,
   "storage_human": "46.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

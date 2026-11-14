@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xocialize/hairdeck-mlx",
   "slug": "xocialize-hairdeck-mlx",
   "author": "xocialize",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 2626824176,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": "hyz317/HairDeck",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "davidheineman/ladder-space-20261108-mopd-v3-r1-n4-targeted-warmstart-20261005-093659-7a1e52ac",
   "slug": "davidheineman-ladder-space-20261108-mopd-v3-r1-n4-targeted-warmstart-20261005-093659-7a1e52ac",
   "author": "davidheineman",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 3554825477,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

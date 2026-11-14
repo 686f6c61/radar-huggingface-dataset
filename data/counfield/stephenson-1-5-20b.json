@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Counfield/Stephenson-1.5-20B",
   "slug": "counfield-stephenson-1-5-20b",
   "author": "Counfield",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Counfield/Pieridae-1.5-20B",
+  "renamed_at": "2026-11-14T02:43:45.981Z",
   "benchmarks": [],
   "sources": []
 }

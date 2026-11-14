@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dmilush/shieldlm-deberta-mcp-tools",
   "slug": "dmilush-shieldlm-deberta-mcp-tools",
   "author": "dmilush",
@@ -58,14 +58,19 @@
   "parameters_human": "184.4M",
   "storage_bytes": 737719248,
   "storage_human": "738 MB",
+  "context_length": null,
   "base_model": "dmilush/shieldlm-deberta-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

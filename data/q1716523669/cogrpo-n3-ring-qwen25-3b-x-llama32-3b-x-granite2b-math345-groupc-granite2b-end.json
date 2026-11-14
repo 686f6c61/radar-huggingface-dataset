@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "q1716523669/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-granite2b-math345-groupC-granite2b-end",
   "slug": "q1716523669-cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-granite2b-math345-groupc-granite2b-end",
   "author": "q1716523669",
@@ -33,14 +33,19 @@
   "parameters_human": "165888",
   "storage_bytes": 5067131425,
   "storage_human": "5.1 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-3.3-2b-instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "logan7000/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-granite2b-math345-groupC-granite2b-end",
+  "renamed_at": "2026-11-12T07:28:21.937Z",
   "benchmarks": [],
   "sources": [
     {

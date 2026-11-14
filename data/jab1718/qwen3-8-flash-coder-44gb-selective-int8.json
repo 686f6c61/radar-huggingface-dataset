@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jab1718/qwen3.8-flash-coder-44gb-selective-int8",
   "slug": "jab1718-qwen3-8-flash-coder-44gb-selective-int8",
   "author": "Jab1718",
@@ -47,14 +47,19 @@
   "parameters_human": "42.65B",
   "storage_bytes": 87572761606,
   "storage_human": "87.6 GB",
+  "context_length": null,
   "base_model": "Jab1718/qwen3.8-flash-coder-85gb-bf16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

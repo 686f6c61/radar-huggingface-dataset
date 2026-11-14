@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LZYYuBai/furina-4b",
   "slug": "lzyyubai-furina-4b",
   "author": "LZYYuBai",
@@ -35,14 +35,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 7191207104,
   "storage_human": "7.2 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

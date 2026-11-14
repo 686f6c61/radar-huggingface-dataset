@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tbhrc/unsloth_gemma_4_e4b_it_qat_oq4",
   "slug": "tbhrc-unsloth_gemma_4_e4b_it_qat_oq4",
   "author": "tbhrc",
@@ -29,6 +29,7 @@
   "parameters_human": "7.94B",
   "storage_bytes": 5376970455,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-E4B-it-qat-q4_0-unquantized",
   "formats": [
     "mlx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SicariusSicariiStuff/Illustrious_Models_Collection",
   "slug": "sicariussicariistuff-illustrious_models_collection",
   "author": "SicariusSicariiStuff",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 62541408482,
   "storage_human": "62.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

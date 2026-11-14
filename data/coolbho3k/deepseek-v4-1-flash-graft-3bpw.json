@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "coolbho3k/DeepSeek-V4.1-Flash-GRAFT-3bpw",
   "slug": "coolbho3k-deepseek-v4-1-flash-graft-3bpw",
   "author": "coolbho3k",
@@ -32,14 +32,19 @@
   "parameters_human": "111.08B",
   "storage_bytes": 215501921824,
   "storage_human": "215.5 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

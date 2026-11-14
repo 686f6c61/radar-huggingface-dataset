@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hackathon1-fmm/act_cube_sort_robot_1_v0_h200x4_20k_dagger_h200x2_ft300steps",
   "slug": "hackathon1-fmm-act_cube_sort_robot_1_v0_h200x4_20k_dagger_h200x2_ft300steps",
   "author": "hackathon1-fmm",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": null,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-16T03:19:36.941Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

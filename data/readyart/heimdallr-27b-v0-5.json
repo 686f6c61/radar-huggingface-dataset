@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ReadyArt/Heimdallr-27B-v0.5",
   "slug": "readyart-heimdallr-27b-v0-5",
   "author": "ReadyArt",
@@ -38,14 +38,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 55582996101,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ReadyArt/Heimdallr-27B",
+  "renamed_at": "2026-11-11T03:40:00.891Z",
   "benchmarks": [],
   "sources": [
     {

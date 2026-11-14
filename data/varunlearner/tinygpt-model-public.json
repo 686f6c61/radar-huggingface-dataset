@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "varunlearner/tinygpt-model-public",
+  "slug": "varunlearner-tinygpt-model-public",
+  "author": "varunlearner",
+  "url": "https://huggingface.co/varunlearner/tinygpt-model-public",
+  "created_at": "2026-11-14T15:30:22.000Z",
+  "updated_at": "2026-11-14T15:49:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 230994968,
+  "storage_human": "231 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

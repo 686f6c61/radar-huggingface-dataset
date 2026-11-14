@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jimmy124124214/personaplex-7b-v1-bnb-4bit",
   "slug": "jimmy124124214-personaplex-7b-v1-bnb-4bit",
   "author": "Jimmy124124214",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 6982777068,
   "storage_human": "7.0 GB",
+  "context_length": null,
   "base_model": "nvidia/personaplex-7b-v1",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-24T06:11:35.849Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

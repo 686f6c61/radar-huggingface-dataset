@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gatilin/unitok_large_visual_codec",
   "slug": "gatilin-unitok_large_visual_codec",
   "author": "gatilin",
@@ -31,14 +31,19 @@
   "parameters_human": "820.3M",
   "storage_bytes": 3281477448,
   "storage_human": "3.3 GB",
+  "context_length": null,
   "base_model": "FoundationVision/unitok_tokenizer",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prithivMLmods/Qwen3.8-Flash-Next-NVFP4-GGUF",
   "slug": "prithivmlmods-qwen3-8-flash-next-nvfp4-gguf",
   "author": "prithivMLmods",
@@ -40,14 +40,19 @@
   "parameters_human": "179.55B",
   "storage_bytes": 186510912800,
   "storage_human": "186.5 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T17:52:45.737Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

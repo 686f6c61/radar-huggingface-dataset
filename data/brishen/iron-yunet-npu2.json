@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "brishen/iron-yunet-npu2",
   "slug": "brishen-iron-yunet-npu2",
   "author": "brishen",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 33177803,
   "storage_human": "33 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

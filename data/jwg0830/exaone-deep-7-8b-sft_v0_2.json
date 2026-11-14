@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jwg0830/EXAONE-Deep-7.8B-sft_v0_2",
   "slug": "jwg0830-exaone-deep-7-8b-sft_v0_2",
   "author": "jwg0830",
@@ -36,14 +36,19 @@
   "parameters_human": "7.82B",
   "storage_bytes": 15636931624,
   "storage_human": "15.6 GB",
+  "context_length": null,
   "base_model": "LGAI-EXAONE/EXAONE-Deep-7.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

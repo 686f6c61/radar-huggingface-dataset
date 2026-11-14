@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "janmusic/ncm-mlx-tinyworld",
   "slug": "janmusic-ncm-mlx-tinyworld",
   "author": "janmusic",
@@ -42,14 +42,19 @@
   "parameters_human": null,
   "storage_bytes": 44673237,
   "storage_human": "45 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "janmusic/NCM-TinyWorld-5M-MLX",
+  "renamed_at": "2026-11-11T05:45:10.479Z",
   "benchmarks": [
     {
       "task": "TinyWorld sentence generation (valid sentences, T=1.0)",

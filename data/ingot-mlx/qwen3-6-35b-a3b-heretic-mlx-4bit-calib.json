@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ingot-mlx/Qwen3.6-35B-A3B-Heretic-MLX-4bit-calib",
   "slug": "ingot-mlx-qwen3-6-35b-a3b-heretic-mlx-4bit-calib",
   "author": "ingot-mlx",
@@ -36,6 +36,7 @@
   "parameters_human": "34.66B",
   "storage_bytes": 19529013195,
   "storage_human": "19.5 GB",
+  "context_length": null,
   "base_model": "llmfan46/Qwen3.6-35B-A3B-uncensored-heretic",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

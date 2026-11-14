@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NYSgpt/biomed-reranker",
   "slug": "nysgpt-biomed-reranker",
   "author": "NYSgpt",
@@ -40,14 +40,19 @@
   "parameters_human": "149.6M",
   "storage_bytes": 598436708,
   "storage_human": "598 MB",
+  "context_length": null,
   "base_model": "Alibaba-NLP/gte-reranker-modernbert-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-16T13:40:15.208Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

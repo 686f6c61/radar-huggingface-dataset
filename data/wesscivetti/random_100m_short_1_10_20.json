@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WesScivetti/random_100M_short_1_10_20",
   "slug": "wesscivetti-random_100m_short_1_10_20",
   "author": "WesScivetti",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 477858591,
   "storage_human": "478 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

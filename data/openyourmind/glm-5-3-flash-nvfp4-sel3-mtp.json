@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenYourMind/GLM-5.3-Flash-NVFP4-sel3-MTP",
   "slug": "openyourmind-glm-5-3-flash-nvfp4-sel3-mtp",
   "author": "OpenYourMind",
@@ -37,14 +37,19 @@
   "parameters_human": "180.71B",
   "storage_bytes": 205127173150,
   "storage_human": "205.1 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

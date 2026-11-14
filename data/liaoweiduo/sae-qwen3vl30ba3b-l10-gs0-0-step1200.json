@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "liaoweiduo/sae-qwen3vl30ba3b-l10-gs0.0-step1200",
   "slug": "liaoweiduo-sae-qwen3vl30ba3b-l10-gs0-0-step1200",
   "author": "liaoweiduo",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 537006624,
   "storage_human": "537 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-30B-A3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

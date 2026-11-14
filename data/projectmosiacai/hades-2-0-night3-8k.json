@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ProjectMosiacAI/Hades-2.0-Night3-8k",
   "slug": "projectmosiacai-hades-2-0-night3-8k",
   "author": "ProjectMosiacAI",
@@ -36,14 +36,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 4920735520,
   "storage_human": "4.9 GB",
+  "context_length": 131072,
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ProjectMosiacAI/Hades-8B",
+  "renamed_at": "2026-11-11T03:35:28.184Z",
   "benchmarks": [],
   "sources": [
     {

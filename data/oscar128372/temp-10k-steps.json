@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oscar128372/temp-10k-steps",
   "slug": "oscar128372-temp-10k-steps",
   "author": "oscar128372",
@@ -26,14 +26,19 @@
   "parameters_human": "2.2M",
   "storage_bytes": 4418066,
   "storage_human": "4 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T07:56:18.616Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

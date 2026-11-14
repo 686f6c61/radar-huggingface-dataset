@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "majentik/Gemma-4-E4B-BF16-MERaLiON-Speech-LoRA-SG-MLX",
   "slug": "majentik-gemma-4-e4b-bf16-meralion-speech-lora-sg-mlx",
   "author": "majentik",
@@ -44,6 +44,7 @@
   "parameters_human": null,
   "storage_bytes": 16790473161,
   "storage_human": "16.8 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it, MERaLiON/MERaLiON-3-10B",
   "formats": [
     "mlx",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

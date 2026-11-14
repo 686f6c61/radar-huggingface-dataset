@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lie24/qwen38-mtp-head-4bit-mse",
   "slug": "lie24-qwen38-mtp-head-4bit-mse",
   "author": "Lie24",
@@ -22,14 +22,19 @@
   "parameters_human": "66.4M",
   "storage_bytes": 238934093,
   "storage_human": "239 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

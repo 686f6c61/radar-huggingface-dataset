@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Evolutech85/IMAGIX",
   "slug": "evolutech85-imagix",
   "author": "Evolutech85",
@@ -36,6 +36,7 @@
   "parameters_human": "7.12B",
   "storage_bytes": 24779432817,
   "storage_human": "24.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [
     "diffusers",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

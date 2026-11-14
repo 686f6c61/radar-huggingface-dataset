@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sartajbhuvaji/Gemma-4-31B-IT-NVFP4-FP8attn-text",
   "slug": "sartajbhuvaji-gemma-4-31b-it-nvfp4-fp8attn-text",
   "author": "sartajbhuvaji",
@@ -40,14 +40,19 @@
   "parameters_human": "30.70B",
   "storage_bytes": 23036374738,
   "storage_human": "23.0 GB",
+  "context_length": null,
   "base_model": "nvidia/Gemma-4-31B-IT-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "sartajbhuvaji/unfuse-Gemma-4-31B-IT-NVFP4-FP8attn-text",
+  "renamed_at": "2026-11-14T08:26:23.874Z",
   "benchmarks": [],
   "sources": [
     {

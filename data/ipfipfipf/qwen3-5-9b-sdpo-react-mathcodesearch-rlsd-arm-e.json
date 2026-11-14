@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ipfipfipf/Qwen3.5-9B-sdpo-react-mathcodesearch-rlsd-arm-e",
   "slug": "ipfipfipf-qwen3-5-9b-sdpo-react-mathcodesearch-rlsd-arm-e",
   "author": "ipfipfipf",
@@ -30,14 +30,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 35828135038,
   "storage_human": "35.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

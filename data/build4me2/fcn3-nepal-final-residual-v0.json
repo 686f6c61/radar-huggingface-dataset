@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "build4me2/fcn3-nepal-final-residual-v0",
   "slug": "build4me2-fcn3-nepal-final-residual-v0",
   "author": "build4me2",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 694605,
   "storage_human": "694605 B",
+  "context_length": null,
   "base_model": "nvidia/fourcastnet3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "build4me2/fcn3-himalayas-final-residual-v0",
+  "renamed_at": "2026-11-11T04:45:00.500Z",
   "benchmarks": [],
   "sources": [
     {

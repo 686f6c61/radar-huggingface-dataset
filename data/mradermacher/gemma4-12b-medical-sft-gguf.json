@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/gemma4-12B-medical-sft-GGUF",
   "slug": "mradermacher-gemma4-12b-medical-sft-gguf",
   "author": "mradermacher",
@@ -30,14 +30,19 @@
   "parameters_human": "11.91B",
   "storage_bytes": 83449069248,
   "storage_human": "83.4 GB",
+  "context_length": 262144,
   "base_model": "Shaleen123/gemma4-12B-medical-sft",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

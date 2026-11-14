@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sgouet/dog-breeds-multiclass-image-classification-with-vit",
   "slug": "sgouet-dog-breeds-multiclass-image-classification-with-vit",
   "author": "sgouet",
@@ -27,14 +27,19 @@
   "parameters_human": "85.9M",
   "storage_bytes": 687215861,
   "storage_human": "687 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

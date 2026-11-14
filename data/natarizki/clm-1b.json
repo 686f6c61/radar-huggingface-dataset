@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Natarizki/CLM-1B",
   "slug": "natarizki-clm-1b",
   "author": "Natarizki",
@@ -37,14 +37,19 @@
   "parameters_human": "1.24B",
   "storage_bytes": 2471645608,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "FuseAI/FuseChat-Llama-3.2-1B-SFT, meta-llama/Llama-3.2-1B-Instruct, ai-nexuz/llama-3.2-1b-instruct-fine-tuned",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

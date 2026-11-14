@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "benjamin12334/lena_krea_igazi",
   "slug": "benjamin12334-lena_krea_igazi",
   "author": "benjamin12334",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 460083234,
   "storage_human": "460 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

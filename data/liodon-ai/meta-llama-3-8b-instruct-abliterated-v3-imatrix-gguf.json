@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "liodon-ai/Meta-Llama-3-8B-Instruct-abliterated-v3-imatrix-GGUF",
   "slug": "liodon-ai-meta-llama-3-8b-instruct-abliterated-v3-imatrix-gguf",
   "author": "liodon-ai",
@@ -37,14 +37,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 36971269792,
   "storage_human": "37.0 GB",
+  "context_length": 8192,
   "base_model": "failspy/Meta-Llama-3-8B-Instruct-abliterated-v3",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

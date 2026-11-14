@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tonymacx86PRO/rebellion-12b",
   "slug": "tonymacx86pro-rebellion-12b",
   "author": "tonymacx86PRO",
@@ -46,6 +46,7 @@
   "parameters_human": "524.6M",
   "storage_bytes": 3147446208,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-12B-it-qat-q4_0-unquantized",
   "formats": [
     "gguf",
@@ -53,8 +54,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

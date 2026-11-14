@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "superpdf/LightOnOCR-3-0.8B-ONNX-web",
   "slug": "superpdf-lightonocr-3-0-8b-onnx-web",
   "author": "superpdf",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 871343129,
   "storage_human": "871 MB",
+  "context_length": null,
   "base_model": "lightonai/LightOnOCR-3-0.8B",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-13T02:20:20.333Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

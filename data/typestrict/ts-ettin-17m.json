@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "typestrict/TS-Ettin-17M",
   "slug": "typestrict-ts-ettin-17m",
   "author": "typestrict",
@@ -41,6 +41,7 @@
   "parameters_human": "16.9M",
   "storage_bytes": 102321962,
   "storage_human": "102 MB",
+  "context_length": null,
   "base_model": "cross-encoder/ettin-reranker-17m-v1",
   "formats": [
     "onnx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

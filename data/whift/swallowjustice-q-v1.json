@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Whift/SwallowJustice-Q-V1",
   "slug": "whift-swallowjustice-q-v1",
   "author": "Whift",
@@ -35,14 +35,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 16392939548,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "tokyotech-llm/Qwen3-Swallow-8B-SFT-v0.2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Yosan443/SwallowJustice-Q-V1",
+  "renamed_at": "2026-11-13T04:24:27.768Z",
   "benchmarks": [],
   "sources": [
     {

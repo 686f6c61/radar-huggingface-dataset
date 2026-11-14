@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ARDJOEN/gemma-3-270m-it-q8-web",
   "slug": "ardjoen-gemma-3-270m-it-q8-web",
   "author": "ARDJOEN",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 276168704,
   "storage_human": "276 MB",
+  "context_length": null,
   "base_model": "litert-community/gemma-3-270m-it",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

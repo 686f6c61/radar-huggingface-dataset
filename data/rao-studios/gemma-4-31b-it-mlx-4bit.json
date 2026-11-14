@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rao-studios/gemma-4-31b-it-mlx-4bit",
   "slug": "rao-studios-gemma-4-31b-it-mlx-4bit",
   "author": "rao-studios",
@@ -32,6 +32,7 @@
   "parameters_human": "31.27B",
   "storage_bytes": 18444186302,
   "storage_human": "18.4 GB",
+  "context_length": null,
   "base_model": "mlx-community/gemma-4-31b-it-4bit",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

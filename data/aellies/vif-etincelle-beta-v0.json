@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aellies/vif-etincelle-beta-v0",
   "slug": "aellies-vif-etincelle-beta-v0",
   "author": "aellies",
@@ -36,14 +36,19 @@
   "parameters_human": "211.8M",
   "storage_bytes": 864290049,
   "storage_human": "864 MB",
+  "context_length": null,
   "base_model": "EuroBERT/EuroBERT-210m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

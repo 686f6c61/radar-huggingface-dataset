@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bigeye35/connectailab-rl-healmu-v1-roadster-ppo",
   "slug": "bigeye35-connectailab-rl-healmu-v1-roadster-ppo",
   "author": "bigeye35",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 85036,
   "storage_human": "85036 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "bigeye35/connectailab-rl-healmu-v2-roadster-ppo",
+  "renamed_at": "2026-11-11T04:41:49.719Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TalTechNLP/Voxtral-Mini-3B-2507-estonian",
   "slug": "taltechnlp-voxtral-mini-3b-2507-estonian",
   "author": "TalTechNLP",
@@ -41,14 +41,19 @@
   "parameters_human": "4.68B",
   "storage_bytes": 18727861551,
   "storage_human": "18.7 GB",
+  "context_length": null,
   "base_model": "mistralai/Voxtral-Mini-3B-2507",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

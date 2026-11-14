@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RedHatAI/Kimi-K3-NVFP4",
   "slug": "redhatai-kimi-k3-nvfp4",
   "author": "RedHatAI",
@@ -36,14 +36,19 @@
   "parameters_human": "1588.73B",
   "storage_bytes": 1646197820538,
   "storage_human": "1646.2 GB",
+  "context_length": null,
   "base_model": "moonshotai/Kimi-K3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

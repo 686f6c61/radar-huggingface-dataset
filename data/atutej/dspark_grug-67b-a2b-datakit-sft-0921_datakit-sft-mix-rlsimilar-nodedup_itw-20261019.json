@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "atutej/dspark_grug-67b-a2b-datakit-sft-0921_datakit-sft-mix-rlsimilar-nodedup_itw-20261019",
   "slug": "atutej-dspark_grug-67b-a2b-datakit-sft-0921_datakit-sft-mix-rlsimilar-nodedup_itw-20261019",
   "author": "atutej",
@@ -28,14 +28,19 @@
   "parameters_human": "280.4M",
   "storage_bytes": 573574745,
   "storage_human": "574 MB",
+  "context_length": null,
   "base_model": "open-athena/Grug-67B-A2B-Datakit-SFT-262K-2026.09.21",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

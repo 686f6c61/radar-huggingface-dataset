@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ashfdsghsgdnb/Qwen3.8-3.6-27B-blend-oQ4e-mtp",
   "slug": "ashfdsghsgdnb-qwen3-8-3-6-27b-blend-oq4e-mtp",
   "author": "ashfdsghsgdnb",
@@ -31,6 +31,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 16984490878,
   "storage_human": "17.0 GB",
+  "context_length": null,
   "base_model": "JetBrains/Qwen3.8-3.6-27B-blend",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

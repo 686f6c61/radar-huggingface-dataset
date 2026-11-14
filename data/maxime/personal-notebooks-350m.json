@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "maxime/personal-notebooks-350m",
   "slug": "maxime-personal-notebooks-350m",
   "author": "maxime",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 289314241,
   "storage_human": "289 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-350M",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

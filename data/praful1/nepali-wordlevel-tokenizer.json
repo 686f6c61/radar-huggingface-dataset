@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "praful1/nepali-wordlevel-tokenizer",
   "slug": "praful1-nepali-wordlevel-tokenizer",
   "author": "praful1",
@@ -29,14 +29,19 @@
   "parameters_human": "58.0M",
   "storage_bytes": 232031985,
   "storage_human": "232 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

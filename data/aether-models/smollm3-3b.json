@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aether-models/smollm3-3b",
   "slug": "aether-models-smollm3-3b",
   "author": "aether-models",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 6552612230,
   "storage_human": "6.6 GB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM3-3B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

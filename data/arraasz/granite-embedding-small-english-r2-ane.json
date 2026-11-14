@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Arraasz/granite-embedding-small-english-r2-ane",
   "slug": "arraasz-granite-embedding-small-english-r2-ane",
   "author": "Arraasz",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 107995706,
   "storage_human": "108 MB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-embedding-small-english-r2",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

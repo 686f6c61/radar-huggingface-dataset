@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SthRen0125/Qwen3-0.6B",
   "slug": "sthren0125-qwen3-0-6b",
   "author": "SthRen0125",
@@ -24,14 +24,19 @@
   "parameters_human": "751.6M",
   "storage_bytes": 8935454852,
   "storage_human": "8.9 GB",
+  "context_length": 40960,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

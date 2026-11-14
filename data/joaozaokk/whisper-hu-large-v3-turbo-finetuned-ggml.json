@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JoaoZaokk/whisper-hu-large-v3-turbo-finetuned-ggml",
   "slug": "joaozaokk-whisper-hu-large-v3-turbo-finetuned-ggml",
   "author": "JoaoZaokk",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 1922221505,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": "sarpba/whisper-hu-large-v3-turbo-finetuned",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

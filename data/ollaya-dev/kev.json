@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ollaya-dev/kev",
   "slug": "ollaya-dev-kev",
   "author": "ollaya-dev",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 49110276,
   "storage_human": "49 MB",
+  "context_length": null,
   "base_model": "jaredpalmer/kev-0.8b, Qwen/Qwen3.5-0.8B-Base, jaredpalmer/kev-4b, Qwen/Qwen3.5-4B-Base, jaredpalmer/kev-9b, Qwen/Qwen3.5-9B-Base",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

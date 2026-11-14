@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Oscilla/LFM2-1.2B-mlx-8Bit",
   "slug": "oscilla-lfm2-1-2b-mlx-8bit",
   "author": "Oscilla",
@@ -52,6 +52,7 @@
   "parameters_human": "1.17B",
   "storage_bytes": 1243645837,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2-1.2B",
   "formats": [
     "mlx",
@@ -59,8 +60,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

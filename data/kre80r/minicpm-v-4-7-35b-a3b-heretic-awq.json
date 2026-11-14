@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kre80r/MiniCPM-V-4.7-35B-A3B-heretic-AWQ",
   "slug": "kre80r-minicpm-v-4-7-35b-a3b-heretic-awq",
   "author": "Kre80r",
@@ -42,14 +42,19 @@
   "parameters_human": "7.28B",
   "storage_bytes": 22644081407,
   "storage_human": "22.6 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM-V-4.7-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

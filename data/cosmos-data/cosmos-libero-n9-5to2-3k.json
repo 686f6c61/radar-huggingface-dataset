@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Cosmos-Data/cosmos-libero-n9-5to2-3k",
   "slug": "cosmos-data-cosmos-libero-n9-5to2-3k",
   "author": "Cosmos-Data",
@@ -24,14 +24,19 @@
   "parameters_human": "15.17B",
   "storage_bytes": 121396946625,
   "storage_human": "121.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-08T02:23:29.305Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

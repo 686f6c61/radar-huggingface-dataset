@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "beycanai/Qwen-LLM",
   "slug": "beycanai-qwen-llm",
   "author": "beycanai",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 229517932806,
   "storage_human": "229.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B, wangzhang/Qwen3.5-9B-abliterated, Qwen/Qwen3-VL-8B-Instruct, DreamFast/Qwen3-VL-8B-Heretic-1.3.0, Qwen/Qwen3.5-4B, Qwen/Qwen3.8-27B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "beycanai/Qwen-LM",
+  "renamed_at": "2026-11-11T04:41:21.175Z",
   "benchmarks": [],
   "sources": [
     {

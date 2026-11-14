@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "noahgeiger2000/rs-imagen-models",
   "slug": "noahgeiger2000-rs-imagen-models",
   "author": "noahgeiger2000",
@@ -24,14 +24,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 251486386616,
   "storage_human": "251.5 GB",
+  "context_length": 40960,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

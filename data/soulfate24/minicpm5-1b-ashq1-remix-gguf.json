@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Soulfate24/MiniCPM5-1B-ASHQ1-Remix-GGUF",
   "slug": "soulfate24-minicpm5-1b-ashq1-remix-gguf",
   "author": "Soulfate24",
@@ -48,14 +48,19 @@
   "parameters_human": "1.08B",
   "storage_bytes": 10092744384,
   "storage_human": "10.1 GB",
+  "context_length": 131072,
   "base_model": "openbmb/MiniCPM5-1B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-09T08:45:28.399Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

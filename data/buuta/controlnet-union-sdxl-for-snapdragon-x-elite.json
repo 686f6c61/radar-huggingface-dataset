@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Buuta/controlnet-union-sdxl-for-Snapdragon-X-Elite",
   "slug": "buuta-controlnet-union-sdxl-for-snapdragon-x-elite",
   "author": "Buuta",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 3840313208,
   "storage_human": "3.8 GB",
+  "context_length": null,
   "base_model": "xinsir/controlnet-union-sdxl-1.0",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

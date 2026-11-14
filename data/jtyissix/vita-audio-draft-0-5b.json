@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jtyissix/VITA-Audio-Draft-0.5B",
   "slug": "jtyissix-vita-audio-draft-0-5b",
   "author": "jtyissix",
@@ -25,14 +25,19 @@
   "parameters_human": "824.3M",
   "storage_bytes": 1663179801,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

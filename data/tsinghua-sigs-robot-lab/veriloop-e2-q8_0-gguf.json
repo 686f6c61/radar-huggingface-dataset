@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tsinghua-sigs-robot-lab/VeriLoop-E2-Q8_0-GGUF",
   "slug": "tsinghua-sigs-robot-lab-veriloop-e2-q8_0-gguf",
   "author": "tsinghua-sigs-robot-lab",
@@ -45,14 +45,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 31882835840,
   "storage_human": "31.9 GB",
+  "context_length": 262144,
   "base_model": "tsinghua-sigs-robot-lab/VeriLoop-E2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-25T02:32:26.196Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

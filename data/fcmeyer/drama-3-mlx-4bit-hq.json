@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fcmeyer/drama-3-MLX-4bit-HQ",
   "slug": "fcmeyer-drama-3-mlx-4bit-hq",
   "author": "fcmeyer",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 26071223333,
   "storage_human": "26.1 GB",
+  "context_length": null,
   "base_model": "fishaudio/drama-3",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

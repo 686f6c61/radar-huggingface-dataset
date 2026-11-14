@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fpadovani/ppt-wc-uniform-newlex-jpn-100mb_seed10",
   "slug": "fpadovani-ppt-wc-uniform-newlex-jpn-100mb_seed10",
   "author": "fpadovani",
@@ -32,14 +32,19 @@
   "parameters_human": "86.5M",
   "storage_bytes": 1384376441,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "goldfish-models/eng_latn_100mb",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

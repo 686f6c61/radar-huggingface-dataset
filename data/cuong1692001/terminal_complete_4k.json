@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cuong1692001/Terminal_complete_4k",
   "slug": "cuong1692001-terminal_complete_4k",
   "author": "cuong1692001",
@@ -34,14 +34,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 229353918157,
   "storage_human": "229.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "cuong1692001/Terminal-complete-4k",
+  "renamed_at": "2026-11-12T05:04:38.790Z",
   "benchmarks": [],
   "sources": [
     {

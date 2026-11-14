@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rajivmeduri/LTX-2.3-uncensored-v1.4-FP8",
   "slug": "rajivmeduri-ltx-2-3-uncensored-v1-4-fp8",
   "author": "rajivmeduri",
@@ -32,14 +32,19 @@
   "parameters_human": "21.01B",
   "storage_bytes": 261114394720,
   "storage_human": "261.1 GB",
+  "context_length": null,
   "base_model": "TenStrip/LTX2.3-10Eros, Lightricks/LTX-2.3, TenStrip/LTX2.3_DMD_Lora",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

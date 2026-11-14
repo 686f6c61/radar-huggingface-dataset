@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "antflydb/gliner2.5-decide-gguf",
   "slug": "antflydb-gliner2-5-decide-gguf",
   "author": "antflydb",
@@ -34,14 +34,19 @@
   "parameters_human": "433.9M",
   "storage_bytes": 527210176,
   "storage_human": "527 MB",
+  "context_length": 512,
   "base_model": "fastino/GLiNER2.5-Decide",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "antflydb/GLiNER2.5-Decide",
+  "renamed_at": "2026-11-11T04:30:56.783Z",
   "benchmarks": [],
   "sources": []
 }

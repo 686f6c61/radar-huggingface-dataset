@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/Qwen3-8B-Guard-Stream-NOESIS-AWQ-INT4",
   "slug": "amaimedia-qwen3-8b-guard-stream-noesis-awq-int4",
   "author": "AMAImedia",
@@ -50,14 +50,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 6110004018,
   "storage_human": "6.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Guard-Stream-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-18T10:18:01.118Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BrandiesPatrick/Ouro-1.4B-Thinking-GGUF",
   "slug": "brandiespatrick-ouro-1-4b-thinking-gguf",
   "author": "BrandiesPatrick",
@@ -34,14 +34,19 @@
   "parameters_human": "1.43B",
   "storage_bytes": 5294136768,
   "storage_human": "5.3 GB",
+  "context_length": 65536,
   "base_model": "ByteDance/Ouro-1.4B-Thinking",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "BrandeisPatrick/Ouro-1.4B-Thinking-GGUF",
+  "renamed_at": "2026-11-11T02:26:52.346Z",
   "benchmarks": [],
   "sources": [
     {

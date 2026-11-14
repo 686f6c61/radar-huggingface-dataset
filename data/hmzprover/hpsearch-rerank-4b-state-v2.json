@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hmzprover/hpsearch-rerank-4b-state-v2",
   "slug": "hmzprover-hpsearch-rerank-4b-state-v2",
   "author": "hmzprover",
@@ -34,14 +34,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 8055037606,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "hmzprover/hpsearch-rerank-4b-state",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

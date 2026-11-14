@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "XopMC513/GLM-5.3-Flash-Heretic",
   "slug": "xopmc513-glm-5-3-flash-heretic",
   "author": "XopMC513",
@@ -43,14 +43,19 @@
   "parameters_human": null,
   "storage_bytes": 523488613494,
   "storage_human": "523.5 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

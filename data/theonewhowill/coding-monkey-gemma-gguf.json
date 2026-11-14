@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TheOneWhoWill/Coding-Monkey-Gemma-GGUF",
   "slug": "theonewhowill-coding-monkey-gemma-gguf",
   "author": "TheOneWhoWill",
@@ -39,14 +39,19 @@
   "parameters_human": "11.91B",
   "storage_bytes": 62216387360,
   "storage_human": "62.2 GB",
+  "context_length": 262144,
   "base_model": "TheOneWhoWill/Coding-Monkey-Gemma",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

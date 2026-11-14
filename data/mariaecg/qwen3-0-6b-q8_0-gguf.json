@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MariaEcg/Qwen3-0.6B-Q8_0-GGUF",
   "slug": "mariaecg-qwen3-0-6b-q8_0-gguf",
   "author": "MariaEcg",
@@ -31,14 +31,19 @@
   "parameters_human": "751.6M",
   "storage_bytes": 804753664,
   "storage_human": "805 MB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

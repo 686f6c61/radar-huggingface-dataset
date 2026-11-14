@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NousResearch/Arete-27B",
   "slug": "nousresearch-arete-27b",
   "author": "NousResearch",
@@ -26,21 +26,26 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 584,
+  "likes": 586,
   "downloads_30d": 6191,
-  "trending_score": 404,
+  "trending_score": 365,
   "parameters": 27356728560,
   "parameters_human": "27.36B",
   "storage_bytes": 54733595117,
   "storage_human": "54.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

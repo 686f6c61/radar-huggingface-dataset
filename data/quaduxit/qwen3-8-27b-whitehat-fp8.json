@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "QuaduxIT/Qwen3.8-27B-Whitehat-FP8",
   "slug": "quaduxit-qwen3-8-27b-whitehat-fp8",
   "author": "QuaduxIT",
@@ -50,14 +50,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 51204584205,
   "storage_human": "51.2 GB",
+  "context_length": null,
   "base_model": "QuaduxIT/Qwen3.8-27B-Whitehat",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

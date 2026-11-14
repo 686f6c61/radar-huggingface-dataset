@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dimivelev/gemma-4-e4b-it-unsloth-bnb-4bit-latex-ocr-full",
   "slug": "dimivelev-gemma-4-e4b-it-unsloth-bnb-4bit-latex-ocr-full",
   "author": "dimivelev",
@@ -33,14 +33,19 @@
   "parameters_human": "8.00B",
   "storage_bytes": 16024765764,
   "storage_human": "16.0 GB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-e4b-it-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

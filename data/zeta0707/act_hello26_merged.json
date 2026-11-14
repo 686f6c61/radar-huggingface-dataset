@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zeta0707/act_hello26_merged",
   "slug": "zeta0707-act_hello26_merged",
   "author": "zeta0707",
@@ -28,14 +28,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 206757936,
   "storage_human": "207 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "zeta0707/act_omx_hellomaker_pre",
+  "renamed_at": "2026-11-12T08:33:19.608Z",
   "benchmarks": [],
   "sources": [
     {

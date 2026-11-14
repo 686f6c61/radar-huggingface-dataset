@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dicksondickson/FrogNano-4B-2609-oQ8e-mtp-MLX",
   "slug": "dicksondickson-frognano-4b-2609-oq8e-mtp-mlx",
   "author": "dicksondickson",
@@ -35,6 +35,7 @@
   "parameters_human": "4.66B",
   "storage_bytes": 15844213972,
   "storage_human": "15.8 GB",
+  "context_length": null,
   "base_model": "microsoft/FrogNano-4B-2609",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

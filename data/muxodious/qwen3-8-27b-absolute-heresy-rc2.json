@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MuXodious/Qwen3.8-27B-absolute-heresy.rc2",
   "slug": "muxodious-qwen3-8-27b-absolute-heresy-rc2",
   "author": "MuXodious",
@@ -34,14 +34,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 54766394905,
   "storage_human": "54.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-18T10:08:43.926Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

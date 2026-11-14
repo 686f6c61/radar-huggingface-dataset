@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/xiaoyu-chinese-ai-detect-GGUF",
   "slug": "mradermacher-xiaoyu-chinese-ai-detect-gguf",
   "author": "mradermacher",
@@ -35,14 +35,19 @@
   "parameters_human": "101.7M",
   "storage_bytes": 760810592,
   "storage_human": "761 MB",
+  "context_length": 512,
   "base_model": "ronghua/xiaoyu-chinese-ai-detect",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

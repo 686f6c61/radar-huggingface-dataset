@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ggml-org/d1-Omni-2B-GGUF",
   "slug": "ggml-org-d1-omni-2b-gguf",
   "author": "ggml-org",
@@ -30,14 +30,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 6248932032,
   "storage_human": "6.2 GB",
+  "context_length": 128000,
   "base_model": "LiquidAI/d1-Omni-2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

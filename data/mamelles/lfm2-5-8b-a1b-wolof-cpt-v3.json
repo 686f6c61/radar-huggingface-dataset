@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mamelles/LFM2.5-8B-A1B-Wolof-CPT-v3",
   "slug": "mamelles-lfm2-5-8b-a1b-wolof-cpt-v3",
   "author": "mamelles",
@@ -33,14 +33,19 @@
   "parameters_human": "8.48B",
   "storage_bytes": 16970403940,
   "storage_human": "17.0 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-8B-A1B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Wolof causal LM",

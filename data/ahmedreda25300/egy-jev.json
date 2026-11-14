@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AhmedReda25300/EGY-JEV",
   "slug": "ahmedreda25300-egy-jev",
   "author": "AhmedReda25300",
@@ -32,14 +32,19 @@
   "parameters_human": "2.21B",
   "storage_bytes": 4446548203,
   "storage_human": "4.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-06T02:11:52.777Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

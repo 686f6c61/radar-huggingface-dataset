@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ldov/bertweet-pt-sentiment",
   "slug": "ldov-bertweet-pt-sentiment",
   "author": "ldov",
@@ -31,14 +31,19 @@
   "parameters_human": "134.9M",
   "storage_bytes": 1079338361,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-29T02:32:05.566Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

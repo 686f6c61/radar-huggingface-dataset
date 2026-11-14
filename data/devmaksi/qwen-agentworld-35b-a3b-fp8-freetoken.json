@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "devmaksi/Qwen-AgentWorld-35B-A3B-FP8-Freetoken",
   "slug": "devmaksi-qwen-agentworld-35b-a3b-fp8-freetoken",
   "author": "devmaksi",
@@ -38,14 +38,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 37134367030,
   "storage_human": "37.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-35B-A3B-Base, Qwen/Qwen-AgentWorld-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

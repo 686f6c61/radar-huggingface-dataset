@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DCC-BS/gemma-4-31B-it-politik-lora",
   "slug": "dcc-bs-gemma-4-31b-it-politik-lora",
   "author": "DCC-BS",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 489840816,
   "storage_human": "490 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-31B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

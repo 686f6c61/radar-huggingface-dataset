@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vadimayegorov/Qwen3.5-40B-RoughHouse-Claude-4.6-Opus-oQ2BENCHMARKED-mlx-fp16",
   "slug": "vadimayegorov-qwen3-5-40b-roughhouse-claude-4-6-opus-oq2benchmarked-mlx-fp16",
   "author": "vadimayegorov",
@@ -46,6 +46,7 @@
   "parameters_human": "39.07B",
   "storage_bytes": 14442032886,
   "storage_human": "14.4 GB",
+  "context_length": null,
   "base_model": "Hunterx/Qwen3.5-40B-RoughHouse-Claude-4.6-Opus-oQ2BENCHMARKED",
   "formats": [
     "mlx",
@@ -53,8 +54,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AST-1320/Qwen-Image-Lightning",
   "slug": "ast-1320-qwen-image-lightning",
   "author": "AST-1320",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 65508591652,
   "storage_human": "65.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-04T04:11:53.650Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

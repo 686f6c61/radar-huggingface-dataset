@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dianavdavidson/whisper-medium_iv_hindi_only_62419_ratio_alldata_lr_1e-4_lgid_hi_epochs_100_FT",
   "slug": "dianavdavidson-whisper-medium_iv_hindi_only_62419_ratio_alldata_lr_1e-4_lgid_hi_epochs_100_ft",
   "author": "dianavdavidson",
@@ -30,14 +30,19 @@
   "parameters_human": "763.9M",
   "storage_bytes": 18333271345,
   "storage_human": "18.3 GB",
+  "context_length": null,
   "base_model": "openai/whisper-medium",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

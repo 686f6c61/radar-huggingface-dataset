@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "suryatmodulus/Audio8-ASR-Infinite",
   "slug": "suryatmodulus-audio8-asr-infinite",
   "author": "suryatmodulus",
@@ -37,14 +37,19 @@
   "parameters_human": "4.09B",
   "storage_bytes": 8184120129,
   "storage_human": "8.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

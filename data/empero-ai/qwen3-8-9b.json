@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "empero-ai/Qwen3.8-9B",
   "slug": "empero-ai-qwen3-8-9b",
   "author": "empero-ai",
@@ -41,14 +41,19 @@
   "parameters_human": "9.65B",
   "storage_bytes": 19319113278,
   "storage_human": "19.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "empero-ai/Qwen3.8-9B-Distill",
+  "renamed_at": "2026-11-11T05:10:18.286Z",
   "benchmarks": [],
   "sources": []
 }

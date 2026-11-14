@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Comfy-Org/Boogu-Image",
   "slug": "comfy-org-boogu-image",
   "author": "Comfy-Org",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 250058769958,
   "storage_human": "250.1 GB",
+  "context_length": null,
   "base_model": "Boogu/Boogu-Image-0.1-Base, Boogu/Boogu-Image-0.1-Edit, Boogu/Boogu-Image-0.1-Edit-Turbo, Boogu/Boogu-Image-0.1-Turbo",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

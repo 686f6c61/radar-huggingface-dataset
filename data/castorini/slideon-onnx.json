@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "castorini/slideon-onnx",
   "slug": "castorini-slideon-onnx",
   "author": "castorini",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 1395174095,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "lightonai/SlideOn",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

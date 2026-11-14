@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ryugyosoft/npue",
   "slug": "ryugyosoft-npue",
   "author": "ryugyosoft",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 254882462,
   "storage_human": "255 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ryugyosoft/onw",
+  "renamed_at": "2026-11-11T07:23:00.101Z",
   "benchmarks": [],
   "sources": []
 }

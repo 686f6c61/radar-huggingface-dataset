@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kingsoft-Office/wps-decision-1",
   "slug": "kingsoft-office-wps-decision-1",
   "author": "Kingsoft-Office",
@@ -37,14 +37,19 @@
   "parameters_human": "8.39B",
   "storage_bytes": 32792059630,
   "storage_human": "32.8 GB",
+  "context_length": null,
   "base_model": "vllm-sr/d3-flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

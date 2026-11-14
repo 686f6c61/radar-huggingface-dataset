@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sashaboguraev/pythia-160m-ppt-c4_ppt_steps250-seed1024",
   "slug": "sashaboguraev-pythia-160m-ppt-c4_ppt_steps250-seed1024",
   "author": "sashaboguraev",
@@ -28,14 +28,19 @@
   "parameters_human": "162.3M",
   "storage_bytes": 1623344034,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

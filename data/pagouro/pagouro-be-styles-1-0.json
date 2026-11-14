@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Pagouro/pagouro-be-styles-1.0",
   "slug": "pagouro-pagouro-be-styles-1-0",
   "author": "Pagouro",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 478686728,
   "storage_human": "479 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

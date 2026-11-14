@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OliviaRossi/4BeastsOfApocalypse",
   "slug": "oliviarossi-4beastsofapocalypse",
   "author": "OliviaRossi",
@@ -39,14 +39,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 69338389422,
   "storage_human": "69.3 GB",
+  "context_length": null,
   "base_model": "Kwaipilot/KAT-Coder-V2.5-Dev, Jackrong/Qwopus3.6-35B-A3B-Coder, Qwen/Qwen-AgentWorld-35B-A3B, ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-03T02:49:46.484Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

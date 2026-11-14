@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hehe156/paligemma-3b-pt-224",
   "slug": "hehe156-paligemma-3b-pt-224",
   "author": "hehe156",
@@ -48,14 +48,19 @@
   "parameters_human": "2.92B",
   "storage_bytes": 11715761003,
   "storage_human": "11.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

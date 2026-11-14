@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lynxpda/DeepSeek-V4-Flash-0731-DSpark-Drafter-Q2_K_S-GGUF",
   "slug": "lynxpda-deepseek-v4-flash-0731-dspark-drafter-q2_k_s-gguf",
   "author": "Lynxpda",
@@ -34,14 +34,19 @@
   "parameters_human": "19.85B",
   "storage_bytes": 6924905622,
   "storage_human": "6.9 GB",
+  "context_length": 1048576,
   "base_model": "unsloth/DeepSeek-V4-Flash-0731-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

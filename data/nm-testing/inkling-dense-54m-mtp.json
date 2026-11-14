@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nm-testing/Inkling-Dense-54M-MTP",
   "slug": "nm-testing-inkling-dense-54m-mtp",
   "author": "nm-testing",
@@ -32,14 +32,19 @@
   "parameters_human": "54.1M",
   "storage_bytes": 136154938,
   "storage_human": "136 MB",
+  "context_length": null,
   "base_model": "thinkingmachines/Inkling",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

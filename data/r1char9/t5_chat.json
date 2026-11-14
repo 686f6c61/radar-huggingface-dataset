@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "r1char9/T5_chat",
   "slug": "r1char9-t5_chat",
   "author": "r1char9",
@@ -37,14 +37,19 @@
   "parameters_human": "222.9M",
   "storage_bytes": 892647830,
   "storage_human": "893 MB",
+  "context_length": null,
   "base_model": "ai-forever/ruT5-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

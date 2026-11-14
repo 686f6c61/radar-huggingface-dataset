@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Polikashin/MiniMax-Music3-MLX",
   "slug": "polikashin-minimax-music3-mlx",
   "author": "Polikashin",
@@ -31,6 +31,7 @@
   "parameters_human": null,
   "storage_bytes": 39904621527,
   "storage_human": "39.9 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-Music3",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-19T10:33:12.836Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

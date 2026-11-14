@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Allinsama/OpenMOSS-Team__MOSS-TTS-Local-Transformer-v1.5",
   "slug": "allinsama-openmoss-team__moss-tts-local-transformer-v1-5",
   "author": "Allinsama",
@@ -95,14 +95,19 @@
   "parameters_human": "4.55B",
   "storage_bytes": 9112282764,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

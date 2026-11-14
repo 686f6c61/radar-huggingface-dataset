@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ailexleon/Erebus-RP-12B-Instruct-2608-v1-mlx-4Bit",
   "slug": "ailexleon-erebus-rp-12b-instruct-2608-v1-mlx-4bit",
   "author": "ailexleon",
@@ -41,6 +41,7 @@
   "parameters_human": "11.77B",
   "storage_bytes": 6653028186,
   "storage_human": "6.7 GB",
+  "context_length": null,
   "base_model": "Indexnusrefather/Erebus-RP-12B-Instruct-2608-v1",
   "formats": [
     "mlx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

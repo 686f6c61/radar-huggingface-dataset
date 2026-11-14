@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jeethu/NeoHorse-1-4B-PARO",
   "slug": "jeethu-neohorse-1-4b-paro",
   "author": "Jeethu",
@@ -38,14 +38,19 @@
   "parameters_human": "1.13B",
   "storage_bytes": 3167752487,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": "TokenRhythm/NeoHorse-1-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

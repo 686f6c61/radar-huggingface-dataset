@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nibor1896/Qwen3.8-Flash-Next-CNQ4.5-M",
   "slug": "nibor1896-qwen3-8-flash-next-cnq4-5-m",
   "author": "nibor1896",
@@ -40,12 +40,17 @@
   "parameters_human": null,
   "storage_bytes": 104727835332,
   "storage_human": "104.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

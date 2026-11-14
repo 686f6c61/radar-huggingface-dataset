@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "textilelabs/Loom-Planck-300k",
   "slug": "textilelabs-loom-planck-300k",
   "author": "textilelabs",
@@ -43,6 +43,7 @@
   "parameters_human": "313920",
   "storage_bytes": 3832867,
   "storage_human": "4 MB",
+  "context_length": 2048,
   "base_model": null,
   "formats": [
     "gguf",
@@ -50,8 +51,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

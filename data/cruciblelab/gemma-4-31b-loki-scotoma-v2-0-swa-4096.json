@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CrucibleLab/Gemma-4-31B-Loki-Scotoma-V2.0-Swa-4096",
   "slug": "cruciblelab-gemma-4-31b-loki-scotoma-v2-0-swa-4096",
   "author": "CrucibleLab",
@@ -31,14 +31,19 @@
   "parameters_human": "31.27B",
   "storage_bytes": 62590552472,
   "storage_human": "62.6 GB",
+  "context_length": null,
   "base_model": "ReadyArt/gemma-4-31B-it-scotoma-2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

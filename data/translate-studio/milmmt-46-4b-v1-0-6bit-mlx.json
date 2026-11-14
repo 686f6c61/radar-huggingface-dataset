@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "translate-studio/MiLMMT-46-4B-v1.0-6bit-MLX",
   "slug": "translate-studio-milmmt-46-4b-v1-0-6bit-mlx",
   "author": "translate-studio",
@@ -34,6 +34,7 @@
   "parameters_human": "3.88B",
   "storage_bytes": 3186654158,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": "xiaomi-research/MiLMMT-46-4B-v1.0",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

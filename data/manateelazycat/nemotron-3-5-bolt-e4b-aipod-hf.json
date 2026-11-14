@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "manateelazycat/Nemotron-3.5-Bolt-E4B-AIPod-HF",
   "slug": "manateelazycat-nemotron-3-5-bolt-e4b-aipod-hf",
   "author": "manateelazycat",
@@ -32,14 +32,19 @@
   "parameters_human": "7.52B",
   "storage_bytes": 10053809423,
   "storage_human": "10.1 GB",
+  "context_length": 65536,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

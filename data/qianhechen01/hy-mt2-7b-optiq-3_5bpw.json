@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "QianheChen01/Hy-MT2-7B-optiq-3_5bpw",
   "slug": "qianhechen01-hy-mt2-7b-optiq-3_5bpw",
   "author": "QianheChen01",
@@ -30,6 +30,7 @@
   "parameters_human": "7.50B",
   "storage_bytes": 4071288560,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

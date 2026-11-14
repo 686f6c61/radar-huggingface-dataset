@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "senfu/Qwen3.8-Flash-Next-NVFP4",
   "slug": "senfu-qwen3-8-flash-next-nvfp4",
   "author": "senfu",
@@ -37,14 +37,19 @@
   "parameters_human": "119.28B",
   "storage_bytes": 137441857053,
   "storage_human": "137.4 GB",
+  "context_length": null,
   "base_model": "RadixArk/Qwen3.8-Flash-Next-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

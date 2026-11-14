@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KerzgrAI/Monody-Exp",
   "slug": "kerzgrai-monody-exp",
   "author": "KerzgrAI",
@@ -36,14 +36,19 @@
   "parameters_human": "353.2M",
   "storage_bytes": 706364032,
   "storage_human": "706 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

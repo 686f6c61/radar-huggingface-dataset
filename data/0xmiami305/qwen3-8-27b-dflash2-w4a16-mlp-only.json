@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0xMiami305/Qwen3.8-27B-DFlash2-W4A16-MLP-only",
   "slug": "0xmiami305-qwen3-8-27b-dflash2-w4a16-mlp-only",
   "author": "0xMiami305",
@@ -36,14 +36,19 @@
   "parameters_human": "1.92B",
   "storage_bytes": 1864309248,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": "z-lab/Qwen3.8-27B-DFlash2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

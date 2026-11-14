@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "greenfield0810/affine-lab-angryaffine-8c8b7cbb55f1",
   "slug": "greenfield0810-affine-lab-angryaffine-8c8b7cbb55f1",
   "author": "greenfield0810",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 7325060616,
   "storage_human": "7.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-14T03:34:05.275Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

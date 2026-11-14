@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jordansky/env_kita_revolverII_2eaa594_clobber-othello-v2",
   "slug": "jordansky-env_kita_revolverii_2eaa594_clobber-othello-v2",
   "author": "Jordansky",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 795306584,
   "storage_human": "795 MB",
+  "context_length": null,
   "base_model": "None",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-30T05:55:05.148Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

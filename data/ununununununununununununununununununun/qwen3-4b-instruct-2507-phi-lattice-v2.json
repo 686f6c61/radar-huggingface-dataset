@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ununununununununununununununununununun/qwen3-4b-instruct-2507-phi-lattice-v2",
   "slug": "ununununununununununununununununununun-qwen3-4b-instruct-2507-phi-lattice-v2",
   "author": "ununununununununununununununununununun",
@@ -33,12 +33,17 @@
   "parameters_human": "4.02B",
   "storage_bytes": 7000543067,
   "storage_human": "7.0 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

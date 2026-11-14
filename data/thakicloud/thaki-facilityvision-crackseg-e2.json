@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ThakiCloud/Thaki-FacilityVision-CrackSeg-E2",
   "slug": "thakicloud-thaki-facilityvision-crackseg-e2",
   "author": "ThakiCloud",
@@ -36,14 +36,19 @@
   "parameters_human": "24.5M",
   "storage_bytes": 97837140,
   "storage_human": "98 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

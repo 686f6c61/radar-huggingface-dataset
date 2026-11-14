@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MichaelAnthony/LFM3-Omni-2B-98K-V2-GGUF",
   "slug": "michaelanthony-lfm3-omni-2b-98k-v2-gguf",
   "author": "MichaelAnthony",
@@ -35,14 +35,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 14430176800,
   "storage_human": "14.4 GB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM3-Omni-2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

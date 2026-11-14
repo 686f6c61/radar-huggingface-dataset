@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "makermods/smolvla_makermods_merged_200ep_24corr3x_10trans_blue_cube_orange_tray_2026-08-25_20-20-59",
   "slug": "makermods-smolvla_makermods_merged_200ep_24corr3x_10trans_blue_cube_orange_tray_2026-08-25_20-20-59",
   "author": "makermods",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 16104659568,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

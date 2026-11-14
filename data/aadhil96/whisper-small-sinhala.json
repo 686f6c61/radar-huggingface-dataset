@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Aadhil96/whisper-small-sinhala",
   "slug": "aadhil96-whisper-small-sinhala",
   "author": "Aadhil96",
@@ -34,14 +34,19 @@
   "parameters_human": "241.7M",
   "storage_bytes": 966995080,
   "storage_human": "967 MB",
+  "context_length": null,
   "base_model": "openai/whisper-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sortify-ai/siglip2-so400m-patch14-384-text",
   "slug": "sortify-ai-siglip2-so400m-patch14-384-text",
   "author": "sortify-ai",
@@ -29,14 +29,19 @@
   "parameters_human": "707.8M",
   "storage_bytes": 2869789218,
   "storage_human": "2.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-30T12:43:36.951Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

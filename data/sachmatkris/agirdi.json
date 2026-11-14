@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sachmatkris/agirdi",
   "slug": "sachmatkris-agirdi",
   "author": "sachmatkris",
@@ -33,14 +33,19 @@
   "parameters_human": "808.9M",
   "storage_bytes": 9707145410,
   "storage_human": "9.7 GB",
+  "context_length": null,
   "base_model": "openai/whisper-large-v3-turbo",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mahmad-10xe/Qwen3.5-35B-A3B-GGUF-Quants",
   "slug": "mahmad-10xe-qwen3-5-35b-a3b-gguf-quants",
   "author": "mahmad-10xe",
@@ -24,14 +24,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 305153967104,
   "storage_human": "305.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T11:18:31.798Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

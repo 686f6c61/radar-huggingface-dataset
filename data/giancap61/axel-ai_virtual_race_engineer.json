@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "giancap61/AXEL-AI_Virtual_Race_Engineer",
   "slug": "giancap61-axel-ai_virtual_race_engineer",
   "author": "giancap61",
@@ -19,12 +19,13 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 176,
+  "downloads_30d": 195,
   "trending_score": 0,
   "parameters": 494032768,
   "parameters_human": "494.0M",
   "storage_bytes": 44383331599,
   "storage_human": "44.4 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf",
@@ -32,8 +33,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

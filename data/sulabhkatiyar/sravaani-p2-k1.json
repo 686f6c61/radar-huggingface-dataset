@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sulabhkatiyar/sravaani-p2-k1",
   "slug": "sulabhkatiyar-sravaani-p2-k1",
   "author": "sulabhkatiyar",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 3618600813,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3-30B-A3B-FineWeb-Edu-85B-GGUF",
   "slug": "mradermacher-qwen3-30b-a3b-fineweb-edu-85b-gguf",
   "author": "mradermacher",
@@ -37,14 +37,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 208115900608,
   "storage_human": "208.1 GB",
+  "context_length": 40960,
   "base_model": "ziliangpeng/Qwen3-30B-A3B-FineWeb-Edu-85B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

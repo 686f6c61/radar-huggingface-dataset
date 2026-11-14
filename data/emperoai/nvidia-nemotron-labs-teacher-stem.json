@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EmperoAI/NVIDIA-Nemotron-Labs-Teacher-STEM",
   "slug": "emperoai-nvidia-nemotron-labs-teacher-stem",
   "author": "EmperoAI",
@@ -61,14 +61,19 @@
   "parameters_human": "560.52B",
   "storage_bytes": 1121072968084,
   "storage_human": "1121.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

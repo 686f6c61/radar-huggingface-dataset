@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rajeshidimannan/motor_claim_ft_new",
   "slug": "rajeshidimannan-motor_claim_ft_new",
   "author": "rajeshidimannan",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 45217233,
   "storage_human": "45 MB",
+  "context_length": null,
   "base_model": "unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "davidlam39/pi0.5-v28-fxrhK7r8",
   "slug": "davidlam39-pi0-5-v28-fxrhk7r8",
   "author": "davidlam39",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 12431671362,
   "storage_human": "12.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

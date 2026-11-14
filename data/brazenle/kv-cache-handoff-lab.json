@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Brazenle/kv-cache-handoff-lab",
   "slug": "brazenle-kv-cache-handoff-lab",
   "author": "Brazenle",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 253012,
   "storage_human": "253012 B",
+  "context_length": null,
   "base_model": "onnx-community/Qwen2.5-0.5B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NINI26454/Master-Agent-70B-GGUF",
   "slug": "nini26454-master-agent-70b-gguf",
   "author": "NINI26454",
@@ -27,14 +27,19 @@
   "parameters_human": "70.55B",
   "storage_bytes": 42520398240,
   "storage_human": "42.5 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

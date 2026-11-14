@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leoncca/Qwen3.8-27B-Huihui-Mixed-FP8",
   "slug": "leoncca-qwen3-8-27b-huihui-mixed-fp8",
   "author": "leoncca",
@@ -49,14 +49,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 42697742912,
   "storage_human": "42.7 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

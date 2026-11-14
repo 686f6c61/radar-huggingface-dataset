@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "theplayboy117/Marv-Instruct-v1",
   "slug": "theplayboy117-marv-instruct-v1",
   "author": "theplayboy117",
@@ -37,14 +37,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 10539661033,
   "storage_human": "10.5 GB",
+  "context_length": null,
   "base_model": "theplayboy117/Marv-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0",
   "slug": "davidau-qwen3-6-27b-v1-1-ff711-darker-hero-gain-h2-0",
   "author": "DavidAU",
@@ -63,14 +63,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 55583880129,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

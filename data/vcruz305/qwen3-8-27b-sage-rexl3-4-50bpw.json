@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vcruz305/Qwen3.8-27B-SAGE-REXL3-4.50bpw",
   "slug": "vcruz305-qwen3-8-27b-sage-rexl3-4-50bpw",
   "author": "vcruz305",
@@ -30,14 +30,19 @@
   "parameters_human": "8.63B",
   "storage_bytes": 17275644524,
   "storage_human": "17.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

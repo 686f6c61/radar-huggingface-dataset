@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Guilherme34/S5-nano-uncensored",
   "slug": "guilherme34-s5-nano-uncensored",
   "author": "Guilherme34",
@@ -35,14 +35,19 @@
   "parameters_human": "4.66B",
   "storage_bytes": 9339817485,
   "storage_human": "9.3 GB",
+  "context_length": null,
   "base_model": "maritaca-ai/S5-nano",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

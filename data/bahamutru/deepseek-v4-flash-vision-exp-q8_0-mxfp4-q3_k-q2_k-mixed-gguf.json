@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BahamutRU/DeepSeek-V4-Flash-Vision-Exp-Q8_0-MXFP4-Q3_K-Q2_K-mixed-GGUF",
   "slug": "bahamutru-deepseek-v4-flash-vision-exp-q8_0-mxfp4-q3_k-q2_k-mixed-gguf",
   "author": "BahamutRU",
@@ -27,14 +27,19 @@
   "parameters_human": "284.33B",
   "storage_bytes": 129901099296,
   "storage_human": "129.9 GB",
+  "context_length": 1048576,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "grimshaw/supertonic-neutts",
   "slug": "grimshaw-supertonic-neutts",
   "author": "grimshaw",
@@ -31,6 +31,7 @@
   "parameters_human": "228.7M",
   "storage_bytes": 607074772,
   "storage_human": "607 MB",
+  "context_length": 2048,
   "base_model": "neuphonic/neutts-nano, neuphonic/neucodec",
   "formats": [
     "gguf",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T09:39:02.021Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "siruku6/pi05_combined_ae7k",
   "slug": "siruku6-pi05_combined_ae7k",
   "author": "siruku6",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 18708109120,
   "storage_human": "18.7 GB",
+  "context_length": null,
   "base_model": "siruku6/pi05_combined_initpose_full",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-18T03:20:10.672Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

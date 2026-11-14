@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xvevx/Stheno-v3.3-Indo-Companion",
   "slug": "xvevx-stheno-v3-3-indo-companion",
   "author": "xvevx",
@@ -37,14 +37,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 57074139777,
   "storage_human": "57.1 GB",
+  "context_length": 32768,
   "base_model": "Sao10K/L3-8B-Stheno-v3.3-32K",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

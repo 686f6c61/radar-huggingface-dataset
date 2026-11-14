@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "h6e/RefusalLM2-143M",
   "slug": "h6e-refusallm2-143m",
   "author": "h6e",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 285799874,
   "storage_human": "286 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Botoni/Flux-2-Klein-INT8-ConvRot-Collection",
   "slug": "botoni-flux-2-klein-int8-convrot-collection",
   "author": "Botoni",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 41101717226,
   "storage_human": "41.1 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.2-klein-9B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

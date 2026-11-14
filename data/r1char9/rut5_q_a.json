@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "r1char9/ruT5_q_a",
   "slug": "r1char9-rut5_q_a",
   "author": "r1char9",
@@ -37,14 +37,19 @@
   "parameters_human": "237.6M",
   "storage_bytes": 951360032,
   "storage_human": "951 MB",
+  "context_length": null,
   "base_model": "ai-forever/ruT5-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

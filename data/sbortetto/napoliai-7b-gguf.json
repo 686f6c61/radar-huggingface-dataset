@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sbortetto/NapoliAI-7B-GGUF",
   "slug": "sbortetto-napoliai-7b-gguf",
   "author": "sbortetto",
@@ -39,14 +39,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 34274537317,
   "storage_human": "34.3 GB",
+  "context_length": 32768,
   "base_model": "unsloth/Qwen2.5-7B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fishaudio/drama-3",
   "slug": "fishaudio-drama-3",
   "author": "fishaudio",
@@ -193,19 +193,24 @@
   ],
   "likes": 1268,
   "downloads_30d": 45500,
-  "trending_score": 46,
+  "trending_score": 43,
   "parameters": 35899643008,
   "parameters_human": "35.90B",
   "storage_bytes": 81099016510,
   "storage_human": "81.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

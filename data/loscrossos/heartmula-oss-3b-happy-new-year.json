@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "loscrossos/HeartMuLa-oss-3B-happy-new-year",
   "slug": "loscrossos-heartmula-oss-3b-happy-new-year",
   "author": "loscrossos",
@@ -39,14 +39,19 @@
   "parameters_human": "3.94B",
   "storage_bytes": 15752486168,
   "storage_human": "15.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

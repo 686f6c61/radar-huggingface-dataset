@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Noah-H309/gpt-oss-20b",
   "slug": "noah-h309-gpt-oss-20b",
   "author": "Noah-H309",
@@ -28,14 +28,19 @@
   "parameters_human": "20.91B",
   "storage_bytes": 13792638656,
   "storage_human": "13.8 GB",
+  "context_length": 131072,
   "base_model": "openai/gpt-oss-20b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FahimehBahman/PolyTAO-Student",
   "slug": "fahimehbahman-polytao-student",
   "author": "FahimehBahman",
@@ -37,14 +37,19 @@
   "parameters_human": "152.1M",
   "storage_bytes": 608515557,
   "storage_human": "609 MB",
+  "context_length": null,
   "base_model": "hkqiu/PolyTAO-BigSMILES_Version",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

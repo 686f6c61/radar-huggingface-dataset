@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "manoj45232/moda-fashion-distilled-512d-vision-only",
   "slug": "manoj45232-moda-fashion-distilled-512d-vision-only",
   "author": "manoj45232",
@@ -36,14 +36,19 @@
   "parameters_human": "93.3M",
   "storage_bytes": 373126992,
   "storage_human": "373 MB",
+  "context_length": null,
   "base_model": "HopitAI/moda-fashion-distilled-512d",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

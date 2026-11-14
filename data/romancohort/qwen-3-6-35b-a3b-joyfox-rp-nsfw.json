@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RomanCohort/Qwen-3.6-35B-A3B-joyfox-RP-NSFW",
   "slug": "romancohort-qwen-3-6-35b-a3b-joyfox-rp-nsfw",
   "author": "RomanCohort",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 114104480,
   "storage_human": "114 MB",
+  "context_length": null,
   "base_model": "JoyFox-Qwen3.6-35B-A3B-RP-Aggressive",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": true,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

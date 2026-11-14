@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wfakhri/OTel-2.0-LLM-31B-IT-GGUF",
   "slug": "wfakhri-otel-2-0-llm-31b-it-gguf",
   "author": "wfakhri",
@@ -53,14 +53,19 @@
   "parameters_human": "30.70B",
   "storage_bytes": 269051318496,
   "storage_human": "269.1 GB",
+  "context_length": 262144,
   "base_model": "google/gemma-4-31b-it, farbodtavakkoli/OTel-2.0-LLM-31B-IT",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

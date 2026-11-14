@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "spokedotso/nemotron-3.5-asr-streaming-0.6b-8bit",
   "slug": "spokedotso-nemotron-3-5-asr-streaming-0-6b-8bit",
   "author": "spokedotso",
@@ -109,6 +109,7 @@
   "parameters_human": "638.0M",
   "storage_bytes": 756005477,
   "storage_human": "756 MB",
+  "context_length": null,
   "base_model": "nvidia/nemotron-3.5-asr-streaming-0.6b",
   "formats": [
     "mlx",
@@ -116,8 +117,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

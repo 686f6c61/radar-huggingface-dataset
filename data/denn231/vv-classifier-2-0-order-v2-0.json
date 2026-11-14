@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Denn231/VV-classifier-2.0-order-v2.0",
   "slug": "denn231-vv-classifier-2-0-order-v2-0",
   "author": "Denn231",
@@ -27,14 +27,19 @@
   "parameters_human": "128.4M",
   "storage_bytes": 513580156,
   "storage_human": "514 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

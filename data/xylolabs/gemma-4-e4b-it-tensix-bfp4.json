@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Xylolabs/gemma-4-E4B-it-Tensix-BFP4",
   "slug": "xylolabs-gemma-4-e4b-it-tensix-bfp4",
   "author": "Xylolabs",
@@ -39,14 +39,19 @@
   "parameters_human": "8.67B",
   "storage_bytes": 17366925304,
   "storage_human": "17.4 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

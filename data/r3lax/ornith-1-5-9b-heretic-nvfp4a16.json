@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "r3lax/Ornith-1.5-9B-heretic-NVFP4A16",
   "slug": "r3lax-ornith-1-5-9b-heretic-nvfp4a16",
   "author": "r3lax",
@@ -33,14 +33,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 11220381169,
   "storage_human": "11.2 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

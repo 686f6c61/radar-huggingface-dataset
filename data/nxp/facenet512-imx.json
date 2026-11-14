@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nxp/facenet512-imx",
   "slug": "nxp-facenet512-imx",
   "author": "nxp",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 331534128,
   "storage_human": "332 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-13T07:24:54.661Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

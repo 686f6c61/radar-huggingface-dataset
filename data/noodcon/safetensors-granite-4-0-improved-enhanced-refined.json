@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "noodcon/Safetensors.granite-4.0-Improved-Enhanced-Refined",
   "slug": "noodcon-safetensors-granite-4-0-improved-enhanced-refined",
   "author": "noodcon",
@@ -63,14 +63,19 @@
   "parameters_human": "1.63B",
   "storage_bytes": 3263538464,
   "storage_human": "3.3 GB",
+  "context_length": null,
   "base_model": "unsloth/granite-4.0-1b-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T07:12:06.861Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

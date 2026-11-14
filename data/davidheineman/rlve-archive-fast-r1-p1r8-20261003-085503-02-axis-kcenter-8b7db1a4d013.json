@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "davidheineman/rlve-archive-fast-r1-p1r8-20261003-085503-02-axis-kcenter-8b7db1a4d013",
   "slug": "davidheineman-rlve-archive-fast-r1-p1r8-20261003-085503-02-axis-kcenter-8b7db1a4d013",
   "author": "davidheineman",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 3554878776,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "savethisok/qwen36-fp8row-995ad96",
   "slug": "savethisok-qwen36-fp8row-995ad96",
   "author": "savethisok",
@@ -29,14 +29,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 37256192022,
   "storage_human": "37.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

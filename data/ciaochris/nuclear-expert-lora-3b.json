@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ciaochris/Nuclear-Expert-LoRA-3B",
   "slug": "ciaochris-nuclear-expert-lora-3b",
   "author": "ciaochris",
@@ -42,12 +42,17 @@
   "parameters_human": null,
   "storage_bytes": 260431,
   "storage_human": "260431 B",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.2-3B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-28T05:39:22.651Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

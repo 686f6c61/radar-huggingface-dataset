@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nvidia/canary-1b-v2",
   "slug": "nvidia-canary-1b-v2",
   "author": "nvidia",
@@ -103,14 +103,19 @@
   "parameters_human": "979.0M",
   "storage_bytes": 20551188698,
   "storage_human": "20.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "automatic-speech-recognition",

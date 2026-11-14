@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kingjones777/Qwen3.8-Flash-Next-Uncensored-ROCmFP4-STRIX_LEAN-imatrix-GGUF",
   "slug": "kingjones777-qwen3-8-flash-next-uncensored-rocmfp4-strix_lean-imatrix-gguf",
   "author": "kingjones777",
@@ -37,14 +37,19 @@
   "parameters_human": "448.9M",
   "storage_bytes": 212796650464,
   "storage_human": "212.8 GB",
+  "context_length": null,
   "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored, Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

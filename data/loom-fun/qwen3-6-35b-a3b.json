@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "loom-fun/Qwen3.6-35B-A3B",
   "slug": "loom-fun-qwen3-6-35b-a3b",
   "author": "loom-fun",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "unsloth/Qwen3.6-35B-A3B-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-13T06:29:28.952Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": "loom-fun/unsloth-Qwen3.6-35B-A3B-loom",
+  "renamed_at": "2026-11-11T06:07:54.022Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ReliquaryForge/teutonic-rl-async-v1-step-00000085",
   "slug": "reliquaryforge-teutonic-rl-async-v1-step-00000085",
   "author": "ReliquaryForge",
@@ -37,14 +37,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 17927645253,
   "storage_human": "17.9 GB",
+  "context_length": null,
   "base_model": "dendriteholdings/Teutonic-I, Qwen/Qwen3.5-9B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

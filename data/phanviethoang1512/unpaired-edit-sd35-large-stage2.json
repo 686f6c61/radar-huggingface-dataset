@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "phanviethoang1512/unpaired-edit-sd35-large-stage2",
   "slug": "phanviethoang1512-unpaired-edit-sd35-large-stage2",
   "author": "phanviethoang1512",
@@ -31,6 +31,7 @@
   "parameters_human": null,
   "storage_bytes": 3845527730,
   "storage_human": "3.8 GB",
+  "context_length": null,
   "base_model": "stabilityai/stable-diffusion-3.5-large",
   "formats": [
     "diffusers",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

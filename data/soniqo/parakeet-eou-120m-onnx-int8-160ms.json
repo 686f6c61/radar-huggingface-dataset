@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "soniqo/Parakeet-EOU-120M-ONNX-INT8-160ms",
   "slug": "soniqo-parakeet-eou-120m-onnx-int8-160ms",
   "author": "soniqo",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 153057118,
   "storage_human": "153 MB",
+  "context_length": null,
   "base_model": "nvidia/parakeet_realtime_eou_120m-v1",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

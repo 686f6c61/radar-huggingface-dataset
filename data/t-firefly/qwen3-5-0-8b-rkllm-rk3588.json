@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "t-firefly/qwen3.5-0.8b-rkllm-rk3588",
   "slug": "t-firefly-qwen3-5-0-8b-rkllm-rk3588",
   "author": "t-firefly",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 1568888331,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

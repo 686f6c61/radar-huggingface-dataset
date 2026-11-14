@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Grundik/abkhaz-lemma-byt5",
   "slug": "grundik-abkhaz-lemma-byt5",
   "author": "Grundik",
@@ -40,14 +40,19 @@
   "parameters_human": "299.6M",
   "storage_bytes": 1198576825,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "convertor/ming-image-gguf",
   "slug": "convertor-ming-image-gguf",
   "author": "convertor",
@@ -25,14 +25,19 @@
   "parameters_human": "6.15B",
   "storage_bytes": 8447179346,
   "storage_human": "8.4 GB",
+  "context_length": null,
   "base_model": "inclusionAI/Ming-Image-0.1-Design",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "gguf-org/ming-image-gguf",
+  "renamed_at": "2026-11-11T04:51:22.194Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ateron/Qwen-Deslopped-27B",
   "slug": "ateron-qwen-deslopped-27b",
   "author": "Ateron",
@@ -23,14 +23,19 @@
   "parameters_human": "59.8M",
   "storage_bytes": 95795840,
   "storage_human": "96 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Ateron/Qwen-Deslopped-27B-Lora",
+  "renamed_at": "2026-11-11T02:20:43.987Z",
   "benchmarks": [],
   "sources": []
 }

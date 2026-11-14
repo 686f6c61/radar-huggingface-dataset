@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "imYChaudhary22/zen-polish-v2-1.7b-4bit",
   "slug": "imychaudhary22-zen-polish-v2-1-7b-4bit",
   "author": "imYChaudhary22",
@@ -34,6 +34,7 @@
   "parameters_human": "1.72B",
   "storage_bytes": 979644451,
   "storage_human": "980 MB",
+  "context_length": null,
   "base_model": "mlx-community/Qwen3-1.7B-4bit",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "BuilderHelm/Kanso-Koi-0.8",
+  "renamed_at": "2026-11-11T05:39:28.519Z",
   "benchmarks": [],
   "sources": []
 }

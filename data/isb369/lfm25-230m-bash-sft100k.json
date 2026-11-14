@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ISB369/lfm25-230m-bash-sft100k",
   "slug": "isb369-lfm25-230m-bash-sft100k",
   "author": "ISB369",
@@ -31,6 +31,7 @@
   "parameters_human": "229.7M",
   "storage_bytes": 1072189432,
   "storage_human": "1.1 GB",
+  "context_length": 128000,
   "base_model": null,
   "formats": [
     "gguf",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-01T03:15:05.911Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

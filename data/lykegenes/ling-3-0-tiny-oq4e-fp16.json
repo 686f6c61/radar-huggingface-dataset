@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lykegenes/Ling-3.0-tiny-oQ4e-fp16",
   "slug": "lykegenes-ling-3-0-tiny-oq4e-fp16",
   "author": "Lykegenes",
@@ -28,6 +28,7 @@
   "parameters_human": "7.89B",
   "storage_bytes": 9287575717,
   "storage_human": "9.3 GB",
+  "context_length": null,
   "base_model": "inclusionAI/Ling-3.0-tiny",
   "formats": [
     "mlx",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

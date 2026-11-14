@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "codacus/Qwen3.6-35B-A3B-MicroTurn-Duplex-LoRA",
   "slug": "codacus-qwen3-6-35b-a3b-microturn-duplex-lora",
   "author": "codacus",
@@ -36,14 +36,19 @@
   "parameters_human": "3.8M",
   "storage_bytes": 44776824,
   "storage_human": "45 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cheahour/gemma_4_lora",
   "slug": "cheahour-gemma_4_lora",
   "author": "cheahour",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 225618653,
   "storage_human": "226 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-e4b-it-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T07:55:44.642Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

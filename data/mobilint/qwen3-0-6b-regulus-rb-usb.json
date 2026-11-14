@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mobilint/Qwen3-0.6B-regulus-rb-usb",
   "slug": "mobilint-qwen3-0-6b-regulus-rb-usb",
   "author": "mobilint",
@@ -30,14 +30,19 @@
   "parameters_human": "155.6M",
   "storage_bytes": 1570368908,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

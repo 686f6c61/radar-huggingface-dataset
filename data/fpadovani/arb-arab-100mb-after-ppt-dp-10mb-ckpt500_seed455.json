@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fpadovani/arb-arab-100mb-after-ppt-Dp-10mb-ckpt500_seed455",
   "slug": "fpadovani-arb-arab-100mb-after-ppt-dp-10mb-ckpt500_seed455",
   "author": "fpadovani",
@@ -32,14 +32,19 @@
   "parameters_human": "124.8M",
   "storage_bytes": 2746577543,
   "storage_human": "2.7 GB",
+  "context_length": null,
   "base_model": "fpadovani/arb-arab-100mb-ppt-Dp-10mb_seed455",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

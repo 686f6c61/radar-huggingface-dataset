@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kingjones777/Ornith-1.5-35B-A3B-Abliterated-ROCmFP4-COHERENT-GGUF",
   "slug": "kingjones777-ornith-1-5-35b-a3b-abliterated-rocmfp4-coherent-gguf",
   "author": "kingjones777",
@@ -37,14 +37,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 20745449600,
   "storage_human": "20.7 GB",
+  "context_length": 262144,
   "base_model": "PocketAiHub/Ornith-1.5-35B-A3B-Abliterated-GGUF, huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated, ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

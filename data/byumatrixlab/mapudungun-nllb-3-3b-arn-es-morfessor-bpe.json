@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "byumatrixlab/mapudungun-nllb-3.3B-arn-es-morfessor-bpe",
   "slug": "byumatrixlab-mapudungun-nllb-3-3b-arn-es-morfessor-bpe",
   "author": "byumatrixlab",
@@ -37,14 +37,19 @@
   "parameters_human": "3.34B",
   "storage_bytes": 13419698469,
   "storage_human": "13.4 GB",
+  "context_length": null,
   "base_model": "facebook/nllb-200-3.3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "uday-bhatia/paper-to-pulse",
   "slug": "uday-bhatia-paper-to-pulse",
   "author": "uday-bhatia",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 948889787,
   "storage_human": "949 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

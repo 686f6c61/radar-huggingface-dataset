@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gabTriv/FoundYou",
   "slug": "gabtriv-foundyou",
   "author": "gabTriv",
@@ -33,14 +33,19 @@
   "parameters_human": "5.9M",
   "storage_bytes": 23527316,
   "storage_human": "24 MB",
+  "context_length": null,
   "base_model": "facebook/sam2-hiera-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

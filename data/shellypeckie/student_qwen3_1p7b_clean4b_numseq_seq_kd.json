@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Shellypeckie/student_qwen3_1p7b_clean4b_numseq_seq_kd",
   "slug": "shellypeckie-student_qwen3_1p7b_clean4b_numseq_seq_kd",
   "author": "Shellypeckie",
@@ -33,14 +33,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 3452613971,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

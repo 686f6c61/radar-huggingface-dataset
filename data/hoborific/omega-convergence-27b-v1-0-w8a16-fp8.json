@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hoborific/Omega-Convergence-27B-v1.0-W8A16-FP8",
   "slug": "hoborific-omega-convergence-27b-v1-0-w8a16-fp8",
   "author": "hoborific",
@@ -33,14 +33,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 36432008557,
   "storage_human": "36.4 GB",
+  "context_length": null,
   "base_model": "ReadyArt/Omega-Convergence-27B-v1.0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

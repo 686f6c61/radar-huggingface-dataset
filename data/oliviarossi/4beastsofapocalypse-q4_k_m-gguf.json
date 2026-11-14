@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OliviaRossi/4BeastsOfApocalypse-Q4_K_M-GGUF",
   "slug": "oliviarossi-4beastsofapocalypse-q4_k_m-gguf",
   "author": "OliviaRossi",
@@ -44,14 +44,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 21166759008,
   "storage_human": "21.2 GB",
+  "context_length": 262144,
   "base_model": "OliviaRossi/4BeastsOfApocalypse",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-01T03:02:01.187Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

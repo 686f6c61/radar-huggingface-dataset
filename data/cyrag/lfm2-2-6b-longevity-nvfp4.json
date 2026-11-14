@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Cyrag/LFM2-2.6B-Longevity-NVFP4",
   "slug": "cyrag-lfm2-2-6b-longevity-nvfp4",
   "author": "Cyrag",
@@ -39,14 +39,19 @@
   "parameters_human": "1.58B",
   "storage_bytes": 2290277128,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2-2.6B-Longevity",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

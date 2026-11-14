@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ShubhamK32/diffusion_so101_declutter",
   "slug": "shubhamk32-diffusion_so101_declutter",
   "author": "ShubhamK32",
@@ -28,14 +28,19 @@
   "parameters_human": "277.8M",
   "storage_bytes": 1111423848,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

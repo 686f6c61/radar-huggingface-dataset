@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EYEDOL/agri-advisor-1.5b",
   "slug": "eyedol-agri-advisor-1-5b",
   "author": "EYEDOL",
@@ -29,14 +29,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 4222195648,
   "storage_human": "4.2 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

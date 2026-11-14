@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "127-0-0-1/s101_ACT_Policy_v3",
   "slug": "127-0-0-1-s101_act_policy_v3",
   "author": "127-0-0-1",
@@ -28,14 +28,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 206714816,
   "storage_human": "207 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

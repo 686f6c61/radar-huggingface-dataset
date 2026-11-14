@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/Agents-A1-4B",
   "slug": "litert-community-agents-a1-4b",
   "author": "litert-community",
@@ -29,18 +29,23 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 434,
+  "downloads_30d": 442,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 33101402400,
   "storage_human": "33.1 GB",
+  "context_length": null,
   "base_model": "InternScience/Agents-A1-4B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "uctnlp/omniASR-CTC-300M-v2-Zulu-All-v2",
   "slug": "uctnlp-omniasr-ctc-300m-v2-zulu-all-v2",
   "author": "uctnlp",
@@ -34,14 +34,19 @@
   "parameters_human": "326.0M",
   "storage_bytes": 1304079833,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "facebook/omniASR-CTC-300M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "taurusduan/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
   "slug": "taurusduan-deepseek-v4-1-flash-1017-gsq-rco-gguf",
   "author": "taurusduan",
@@ -36,14 +36,19 @@
   "parameters_human": "196.61B",
   "storage_bytes": 525756685508,
   "storage_human": "525.8 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T05:55:35.954Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

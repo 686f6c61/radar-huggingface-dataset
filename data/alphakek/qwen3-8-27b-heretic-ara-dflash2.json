@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alphakek/Qwen3.8-27B-heretic-ara-DFlash2",
   "slug": "alphakek-qwen3-8-27b-heretic-ara-dflash2",
   "author": "alphakek",
@@ -35,14 +35,19 @@
   "parameters_human": "1.92B",
   "storage_bytes": 3848817920,
   "storage_human": "3.8 GB",
+  "context_length": null,
   "base_model": "heretic-org/Qwen3.8-27B-heretic-ara",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

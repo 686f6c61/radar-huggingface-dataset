@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jaifar/menasaat-qwen3-4b-oman-qlora-v2",
   "slug": "jaifar-menasaat-qwen3-4b-oman-qlora-v2",
   "author": "jaifar",
@@ -42,14 +42,19 @@
   "parameters_human": null,
   "storage_bytes": 407986314,
   "storage_human": "408 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

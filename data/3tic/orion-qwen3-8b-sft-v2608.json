@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "3tic/Orion-Qwen3-8B-SFT-v2608",
   "slug": "3tic-orion-qwen3-8b-sft-v2608",
   "author": "3tic",
@@ -24,14 +24,19 @@
   "parameters_human": "308224",
   "storage_bytes": 16392939478,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-23T05:46:52.260Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

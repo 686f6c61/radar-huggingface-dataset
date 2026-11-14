@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tintitu/speech_paraformer-large-contextual_asr_nat-zh-cn-16k-common-vocab8404-onnx",
   "slug": "tintitu-speech_paraformer-large-contextual_asr_nat-zh-cn-16k-common-vocab8404-onnx",
   "author": "tintitu",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 833609946,
   "storage_human": "834 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

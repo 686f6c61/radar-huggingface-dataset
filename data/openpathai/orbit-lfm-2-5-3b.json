@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenPathAI/Orbit-LFM-2.5-3B",
   "slug": "openpathai-orbit-lfm-2-5-3b",
   "author": "OpenPathAI",
@@ -37,14 +37,19 @@
   "parameters_human": "2.70B",
   "storage_bytes": 6119693129,
   "storage_human": "6.1 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-2.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-12T03:18:44.038Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

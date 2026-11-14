@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lucasnhandang/lab22-dpo-qwen2.5-vn",
   "slug": "lucasnhandang-lab22-dpo-qwen2-5-vn",
   "author": "lucasnhandang",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 412558414,
   "storage_human": "413 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen2.5-3B-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CollectionStudio/Trinity-Mini-NVFP4",
   "slug": "collectionstudio-trinity-mini-nvfp4",
   "author": "CollectionStudio",
@@ -60,14 +60,19 @@
   "parameters_human": "13.91B",
   "storage_bytes": 17159585441,
   "storage_human": "17.2 GB",
+  "context_length": null,
   "base_model": "arcee-ai/Trinity-Mini",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

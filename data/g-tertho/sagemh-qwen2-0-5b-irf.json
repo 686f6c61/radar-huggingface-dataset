@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "g-tertho/sagemh-qwen2-0.5b-irf",
   "slug": "g-tertho-sagemh-qwen2-0-5b-irf",
   "author": "g-tertho",
@@ -39,14 +39,19 @@
   "parameters_human": "494.0M",
   "storage_bytes": 999515798,
   "storage_human": "1000 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2-0.5B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

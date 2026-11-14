@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tonymacx86PRO/rebellion-12b-GGUF",
   "slug": "tonymacx86pro-rebellion-12b-gguf",
   "author": "tonymacx86PRO",
@@ -43,14 +43,19 @@
   "parameters_human": "11.91B",
   "storage_bytes": 13010989728,
   "storage_human": "13.0 GB",
+  "context_length": 262144,
   "base_model": "tonymacx86PRO/rebellion-12b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

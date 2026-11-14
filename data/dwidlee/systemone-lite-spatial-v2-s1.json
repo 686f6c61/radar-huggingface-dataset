@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dwidlee/systemone-lite-spatial-v2-s1",
   "slug": "dwidlee-systemone-lite-spatial-v2-s1",
   "author": "dwidlee",
@@ -37,14 +37,19 @@
   "parameters_human": "494.0M",
   "storage_bytes": 999519716,
   "storage_human": "1000 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-23T02:41:55.289Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

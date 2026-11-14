@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amd/Kimi-K3-Quark-MXFP4-AttnFP8",
   "slug": "amd-kimi-k3-quark-mxfp4-attnfp8",
   "author": "amd",
@@ -32,14 +32,19 @@
   "parameters_human": "1418.20B",
   "storage_bytes": 3024082734909,
   "storage_human": "3024.1 GB",
+  "context_length": null,
   "base_model": "moonshotai/Kimi-K3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

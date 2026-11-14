@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cvis-tmu/qwen2_5vl-7b-lora-sft-CoT_traineval_4epochs",
   "slug": "cvis-tmu-qwen2_5vl-7b-lora-sft-cot_traineval_4epochs",
   "author": "cvis-tmu",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 51849984,
   "storage_human": "52 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

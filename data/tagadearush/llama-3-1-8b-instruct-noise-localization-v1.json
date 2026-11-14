@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tagadearush/Llama-3.1-8B-Instruct-noise-localization-v1",
   "slug": "tagadearush-llama-3-1-8b-instruct-noise-localization-v1",
   "author": "tagadearush",
@@ -33,14 +33,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16077766536,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

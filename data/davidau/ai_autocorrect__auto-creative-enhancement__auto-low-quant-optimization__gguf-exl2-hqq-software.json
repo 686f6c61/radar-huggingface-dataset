@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/AI_Autocorrect__Auto-Creative-Enhancement__Auto-Low-Quant-Optimization__gguf-exl2-hqq-SOFTWARE",
   "slug": "davidau-ai_autocorrect__auto-creative-enhancement__auto-low-quant-optimization__gguf-exl2-hqq-software",
   "author": "DavidAU",
@@ -78,12 +78,17 @@
   "parameters_human": null,
   "storage_bytes": 8519379,
   "storage_human": "9 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thanhdath/finer-sql-1_5b-origdb-ckpt",
   "slug": "thanhdath-finer-sql-1_5b-origdb-ckpt",
   "author": "thanhdath",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 435355369585,
   "storage_human": "435.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T08:51:35.091Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

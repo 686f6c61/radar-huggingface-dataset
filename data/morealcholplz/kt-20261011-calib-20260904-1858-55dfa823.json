@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "morealcholplz/kt-20261011-calib-20260904-1858-55dfa823",
   "slug": "morealcholplz-kt-20261011-calib-20260904-1858-55dfa823",
   "author": "morealcholplz",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 654809461,
   "storage_human": "655 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

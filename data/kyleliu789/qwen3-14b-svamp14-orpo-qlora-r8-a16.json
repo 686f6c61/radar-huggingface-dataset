@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kyleliu789/qwen3-14b-svamp14-orpo-qlora-r8-a16",
   "slug": "kyleliu789-qwen3-14b-svamp14-orpo-qlora-r8-a16",
   "author": "kyleliu789",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 4642602645,
   "storage_human": "4.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-14B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

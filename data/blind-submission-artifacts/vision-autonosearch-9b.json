@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "blind-submission-artifacts/Vision-AutonoSearch-9B",
   "slug": "blind-submission-artifacts-vision-autonosearch-9b",
   "author": "blind-submission-artifacts",
@@ -28,14 +28,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 18839711735,
   "storage_human": "18.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

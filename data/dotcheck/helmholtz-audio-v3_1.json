@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DotCheck/helmholtz-audio-v3_1",
   "slug": "dotcheck-helmholtz-audio-v3_1",
   "author": "DotCheck",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 7108,
   "storage_human": "7108 B",
+  "context_length": null,
   "base_model": "mispeech/dasheng-base",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "binary AI detection (audio)",

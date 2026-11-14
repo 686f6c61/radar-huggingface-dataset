@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ODNus/haenam-timesfm-lora-v1",
   "slug": "odnus-haenam-timesfm-lora-v1",
   "author": "ODNus",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 2469800,
   "storage_human": "2 MB",
+  "context_length": null,
   "base_model": "google/timesfm-2.5-200m-transformers",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

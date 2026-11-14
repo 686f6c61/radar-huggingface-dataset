@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ayjays132/Phillnet-Mini-Max",
   "slug": "ayjays132-phillnet-mini-max",
   "author": "ayjays132",
@@ -44,14 +44,19 @@
   "parameters_human": "881.8M",
   "storage_bytes": 1783919818,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oruk/orukeet",
   "slug": "oruk-orukeet",
   "author": "oruk",
@@ -90,6 +90,7 @@
   "parameters_human": "627.1M",
   "storage_bytes": 10926067431,
   "storage_human": "10.9 GB",
+  "context_length": null,
   "base_model": "nvidia/parakeet-tdt-0.6b-v3",
   "formats": [
     "gguf",
@@ -98,8 +99,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

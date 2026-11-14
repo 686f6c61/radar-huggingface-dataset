@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ishikaa/acquisition_student_AS_confidence_medmcqa_qwen7b",
   "slug": "ishikaa-acquisition_student_as_confidence_medmcqa_qwen7b",
   "author": "ishikaa",
@@ -31,14 +31,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 60936509352,
   "storage_human": "60.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-01T05:09:46.449Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

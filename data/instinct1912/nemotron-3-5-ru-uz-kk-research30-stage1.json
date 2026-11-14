@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "instinct1912/nemotron-3.5-ru-uz-kk-research30-stage1",
   "slug": "instinct1912-nemotron-3-5-ru-uz-kk-research30-stage1",
   "author": "instinct1912",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 7741181335,
   "storage_human": "7.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "instinct1912/instinct-stt-0.1",
+  "renamed_at": "2026-11-14T06:26:33.550Z",
   "benchmarks": [],
   "sources": [
     {

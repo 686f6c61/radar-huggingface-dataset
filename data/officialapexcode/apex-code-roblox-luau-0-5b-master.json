@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "officialApexCode/apex-code-roblox-luau-0.5b-master",
   "slug": "officialapexcode-apex-code-roblox-luau-0-5b-master",
   "author": "officialApexCode",
@@ -33,14 +33,19 @@
   "parameters_human": "494.0M",
   "storage_bytes": 999519990,
   "storage_human": "1000 MB",
+  "context_length": null,
   "base_model": "unsloth/qwen2.5-0.5b-instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-26T05:25:31.668Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

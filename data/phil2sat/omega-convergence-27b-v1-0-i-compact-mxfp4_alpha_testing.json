@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Phil2Sat/Omega-Convergence-27B-v1.0-I-Compact-MXFP4_ALPHA_TESTING",
   "slug": "phil2sat-omega-convergence-27b-v1-0-i-compact-mxfp4_alpha_testing",
   "author": "Phil2Sat",
@@ -27,14 +27,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 144578714848,
   "storage_human": "144.6 GB",
+  "context_length": 262144,
   "base_model": "ReadyArt/Omega-Convergence-27B-v1.0",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Phil2Sat/Omega-Convergence-27B-v1.0-I-Compact-MXFP4-alpha-GGUF",
+  "renamed_at": "2026-11-11T03:32:46.983Z",
   "benchmarks": [],
   "sources": []
 }

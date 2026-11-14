@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tudoriviera/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive",
   "slug": "tudoriviera-gemma-4-e4b-uncensored-hauhaucs-aggressive",
   "author": "tudoriviera",
@@ -38,14 +38,19 @@
   "parameters_human": "7.52B",
   "storage_bytes": 61606110816,
   "storage_human": "61.6 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-4-e4b-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

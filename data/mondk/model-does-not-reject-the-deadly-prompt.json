@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mondk/model-does-not-reject-the-deadly-prompt",
   "slug": "mondk-model-does-not-reject-the-deadly-prompt",
   "author": "mondk",
@@ -34,14 +34,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 8056404916,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "TeichAI/Qwen3-4B-Thinking-2507-GPT-5.1-Codex-Max-Distill",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "mondk/Safetensors.chatgpt-gpt-gpt5.1-thinking",
+  "renamed_at": "2026-11-11T06:25:01.067Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mondk/GGUF.Claude-Qwen3.5-4B-Reasoning",
   "slug": "mondk-gguf-claude-qwen3-5-4b-reasoning",
   "author": "mondk",
@@ -45,14 +45,19 @@
   "parameters_human": "4.33B",
   "storage_bytes": 3455869600,
   "storage_human": "3.5 GB",
+  "context_length": 262144,
   "base_model": "mondk/Safetensors.Claude-Qwen3.5-4B-Reasoning",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

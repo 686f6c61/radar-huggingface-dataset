@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Carsamba/Llama-3.2-1B-Trace-KUKA-v4",
   "slug": "carsamba-llama-3-2-1b-trace-kuka-v4",
   "author": "Carsamba",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 54697601,
   "storage_human": "55 MB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.2-1B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

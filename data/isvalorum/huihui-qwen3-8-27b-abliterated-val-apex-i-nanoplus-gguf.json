@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IsValorum/Huihui-Qwen3.8-27B-Abliterated-VAL-APEX-I-NanoPlus-GGUF",
   "slug": "isvalorum-huihui-qwen3-8-27b-abliterated-val-apex-i-nanoplus-gguf",
   "author": "IsValorum",
@@ -45,14 +45,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 36078250248,
   "storage_human": "36.1 GB",
+  "context_length": 262144,
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "IsValorum/Huihui-Qwen3.8-27B-Abliterated-VAL-APEX-I-NanoPlus-V3-GGUF",
+  "renamed_at": "2026-11-11T02:58:18.872Z",
   "benchmarks": [],
   "sources": []
 }

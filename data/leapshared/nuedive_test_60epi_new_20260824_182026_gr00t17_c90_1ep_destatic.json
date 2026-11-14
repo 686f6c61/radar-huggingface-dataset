@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leapshared/nuedive_test_60epi_new_20260824_182026_GR00T17_c90_1ep_destatic",
   "slug": "leapshared-nuedive_test_60epi_new_20260824_182026_gr00t17_c90_1ep_destatic",
   "author": "leapshared",
@@ -27,14 +27,19 @@
   "parameters_human": "3.14B",
   "storage_bytes": 9529226248,
   "storage_human": "9.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "LEAP-LAB-KUS/nuedive_test_60epi_new_20260824_182026_GR00T17_c90_1ep_destatic",
+  "renamed_at": "2026-11-13T06:22:40.402Z",
   "benchmarks": [],
   "sources": [
     {

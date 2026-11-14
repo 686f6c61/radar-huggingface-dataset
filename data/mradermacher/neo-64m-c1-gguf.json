@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/neo-64M-C1-GGUF",
   "slug": "mradermacher-neo-64m-c1-gguf",
   "author": "mradermacher",
@@ -41,14 +41,19 @@
   "parameters_human": "64.1M",
   "storage_bytes": 677731104,
   "storage_human": "678 MB",
+  "context_length": 1024,
   "base_model": "aquilesfd/neo-64M-C1",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

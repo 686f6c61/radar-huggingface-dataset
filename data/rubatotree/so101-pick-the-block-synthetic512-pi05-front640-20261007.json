@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rubatotree/so101-pick-the-block-synthetic512-pi05-front640-20261007",
   "slug": "rubatotree-so101-pick-the-block-synthetic512-pi05-front640-20261007",
   "author": "rubatotree",
@@ -31,14 +31,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 9354080920,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

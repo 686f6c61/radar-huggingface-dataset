@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlx-community/Audio8-TTS-Realistic-0.6b-bf16",
   "slug": "mlx-community-audio8-tts-realistic-0-6b-bf16",
   "author": "mlx-community",
@@ -69,6 +69,7 @@
   "parameters_human": "601.2M",
   "storage_bytes": 2564204986,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": "Edge0/Audio8-TTS-Realistic-Air",
   "formats": [
     "mlx",
@@ -76,8 +77,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

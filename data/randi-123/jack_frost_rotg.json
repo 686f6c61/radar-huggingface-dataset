@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Randi-123/jack_frost_Rotg",
   "slug": "randi-123-jack_frost_rotg",
   "author": "Randi-123",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 147935014,
   "storage_human": "148 MB",
+  "context_length": null,
   "base_model": "brandon12333/Otis__RVC_v2_",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

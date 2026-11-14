@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mg37121/mDeBERTa-v3-wanli",
   "slug": "mg37121-mdeberta-v3-wanli",
   "author": "mg37121",
@@ -31,14 +31,19 @@
   "parameters_human": "278.8M",
   "storage_bytes": 573652523,
   "storage_human": "574 MB",
+  "context_length": null,
   "base_model": "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "baicai1145/g2pS",
   "slug": "baicai1145-g2ps",
   "author": "baicai1145",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 363957048,
   "storage_human": "364 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

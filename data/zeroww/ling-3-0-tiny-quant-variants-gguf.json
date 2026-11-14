@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ZeroWw/Ling-3.0-tiny-quant-variants-GGUF",
   "slug": "zeroww-ling-3-0-tiny-quant-variants-gguf",
   "author": "ZeroWw",
@@ -34,14 +34,19 @@
   "parameters_human": "7.89B",
   "storage_bytes": 15108000480,
   "storage_human": "15.1 GB",
+  "context_length": 131072,
   "base_model": "inclusionAI/Ling-3.0-tiny",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-10T03:30:20.410Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

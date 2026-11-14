@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gauthierrobert2/guard-ft-v19-trimmed-fp16",
   "slug": "gauthierrobert2-guard-ft-v19-trimmed-fp16",
   "author": "gauthierrobert2",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 1432366276,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "FacebookAI/xlm-roberta-large",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

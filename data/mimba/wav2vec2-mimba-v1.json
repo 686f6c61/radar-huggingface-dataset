@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mimba/wav2vec2-mimba-v1",
   "slug": "mimba-wav2vec2-mimba-v1",
   "author": "mimba",
@@ -36,14 +36,19 @@
   "parameters_human": "315.6M",
   "storage_bytes": 98876549325,
   "storage_human": "98.9 GB",
+  "context_length": null,
   "base_model": "facebook/wav2vec2-xls-r-300m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-02T05:04:21.555Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

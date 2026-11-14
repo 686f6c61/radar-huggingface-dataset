@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CULUREYES-stack/Operator-4B-GGUF",
   "slug": "culureyes-stack-operator-4b-gguf",
   "author": "CULUREYES-stack",
@@ -34,14 +34,19 @@
   "parameters_human": "3.64B",
   "storage_bytes": 29597043008,
   "storage_human": "29.6 GB",
+  "context_length": 32768,
   "base_model": "Hajeri80/Hajeri-Operator-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T02:29:14.634Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

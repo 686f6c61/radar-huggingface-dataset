@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Grawnch/Qwen3.8-27B-DR-2bit-Packed",
   "slug": "grawnch-qwen3-8-27b-dr-2bit-packed",
   "author": "Grawnch",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 20290108336,
   "storage_human": "20.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T02:37:56.456Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jeesup/svd-safety-l3_remove20_swapgapiter_b010_r01",
   "slug": "jeesup-svd-safety-l3_remove20_swapgapiter_b010_r01",
   "author": "Jeesup",
@@ -36,14 +36,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16077766337,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-01T04:51:16.833Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

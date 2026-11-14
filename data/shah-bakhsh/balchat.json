@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shah-bakhsh/BalChat",
   "slug": "shah-bakhsh-balchat",
   "author": "shah-bakhsh",
@@ -31,14 +31,19 @@
   "parameters_human": "5.7M",
   "storage_bytes": 22689696,
   "storage_human": "23 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

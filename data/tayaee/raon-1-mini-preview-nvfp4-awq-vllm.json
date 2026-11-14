@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tayaee/Raon-1-mini-preview-nvfp4-awq-vllm",
   "slug": "tayaee-raon-1-mini-preview-nvfp4-awq-vllm",
   "author": "tayaee",
@@ -44,14 +44,19 @@
   "parameters_human": "15.95B",
   "storage_bytes": 40033820244,
   "storage_human": "40.0 GB",
+  "context_length": null,
   "base_model": "KRAFTON/Raon-1-mini-preview",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "tayaee/Raon-1-mini-preview-NVFP4-AWQ-GB10-vLLM",
+  "renamed_at": "2026-11-11T07:45:13.183Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "twaggs88/Nemotron-3.5-Embed-8B-pulsar-k4",
   "slug": "twaggs88-nemotron-3-5-embed-8b-pulsar-k4",
   "author": "twaggs88",
@@ -34,14 +34,19 @@
   "parameters_human": "4.25B",
   "storage_bytes": 4809450450,
   "storage_human": "4.8 GB",
+  "context_length": null,
   "base_model": "nvidia/Nemotron-3.5-Embed-8B-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ElytronSystems/Nemotron-3.5-Embed-pulsar-k4",
+  "renamed_at": "2026-11-11T07:53:54.884Z",
   "benchmarks": [],
   "sources": []
 }

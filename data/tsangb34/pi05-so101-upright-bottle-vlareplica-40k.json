@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tsangb34/pi05-so101-upright-bottle-vlareplica-40k",
   "slug": "tsangb34-pi05-so101-upright-bottle-vlareplica-40k",
   "author": "tsangb34",
@@ -29,14 +29,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 48965543320,
   "storage_human": "49.0 GB",
+  "context_length": null,
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-16T06:45:31.757Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FullyAutomated/granite-system1-350m-experimental",
   "slug": "fullyautomated-granite-system1-350m-experimental",
   "author": "FullyAutomated",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 13408882,
   "storage_human": "13 MB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.0-350m",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

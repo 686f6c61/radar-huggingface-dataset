@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/GLM-4.5-Air-REAP-82B-A12B-GGUF",
   "slug": "mradermacher-glm-4-5-air-reap-82b-a12b-gguf",
   "author": "mradermacher",
@@ -35,14 +35,19 @@
   "parameters_human": "84.99B",
   "storage_bytes": 609185075712,
   "storage_human": "609.2 GB",
+  "context_length": 131072,
   "base_model": "cerebras/GLM-4.5-Air-REAP-82B-A12B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

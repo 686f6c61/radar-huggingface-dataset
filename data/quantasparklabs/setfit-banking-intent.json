@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "QuantaSparkLabs/setfit-banking-intent",
   "slug": "quantasparklabs-setfit-banking-intent",
   "author": "QuantaSparkLabs",
@@ -34,14 +34,19 @@
   "parameters_human": "33.4M",
   "storage_bytes": 133582187,
   "storage_human": "134 MB",
+  "context_length": null,
   "base_model": "BAAI/bge-small-en-v1.5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "TinyModels/Setfit-banking-intent",
+  "renamed_at": "2026-11-14T04:02:16.125Z",
   "benchmarks": [],
   "sources": [
     {

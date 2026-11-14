@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cstr/MinerU2.5-Pro-2604-1.2B-GGUF",
   "slug": "cstr-mineru2-5-pro-2604-1-2b-gguf",
   "author": "cstr",
@@ -31,14 +31,19 @@
   "parameters_human": "1.16B",
   "storage_bytes": 5281670176,
   "storage_human": "5.3 GB",
+  "context_length": null,
   "base_model": "opendatalab/MinerU2.5-Pro-2604-1.2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

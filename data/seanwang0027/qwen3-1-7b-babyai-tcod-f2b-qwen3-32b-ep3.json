@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SeanWang0027/qwen3-1.7b-babyai-tcod-f2b-qwen3-32b-ep3",
   "slug": "seanwang0027-qwen3-1-7b-babyai-tcod-f2b-qwen3-32b-ep3",
   "author": "SeanWang0027",
@@ -34,14 +34,19 @@
   "parameters_human": "2.03B",
   "storage_bytes": 4075851960,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-24T03:27:05.976Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

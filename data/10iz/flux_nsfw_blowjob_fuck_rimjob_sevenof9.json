@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "10iz/flux_nsfw_blowjob_fuck_rimjob_sevenof9",
   "slug": "10iz-flux_nsfw_blowjob_fuck_rimjob_sevenof9",
   "author": "10iz",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 38461960,
   "storage_human": "38 MB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.1-dev",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

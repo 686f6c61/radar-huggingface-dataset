@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LarryAIDraw/E5A5B3E78E8BE6B389E4B98BE7_C8Lp",
   "slug": "larryaidraw-e5a5b3e78e8be6b389e4b98be7_c8lp",
   "author": "LarryAIDraw",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 456491108,
   "storage_human": "456 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

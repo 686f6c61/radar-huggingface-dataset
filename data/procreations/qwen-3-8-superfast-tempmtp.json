@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ProCreations/Qwen-3.8-SuperFast-TempMTP",
   "slug": "procreations-qwen-3-8-superfast-tempmtp",
   "author": "ProCreations",
@@ -35,14 +35,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 59817413912,
   "storage_human": "59.8 GB",
+  "context_length": null,
   "base_model": "ProCreations/Qwen-3.8-SuperFast",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-18T10:00:16.524Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

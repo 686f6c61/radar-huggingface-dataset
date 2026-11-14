@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mburchell/recurrent-40m",
   "slug": "mburchell-recurrent-40m",
   "author": "mburchell",
@@ -38,14 +38,19 @@
   "parameters_human": "40.0M",
   "storage_bytes": 160156328,
   "storage_human": "160 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "mburchell/looped-40m",
+  "renamed_at": "2026-11-11T06:15:50.601Z",
   "benchmarks": [],
   "sources": []
 }

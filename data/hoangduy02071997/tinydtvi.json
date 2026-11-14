@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hoangduy02071997/tinyDTVi",
   "slug": "hoangduy02071997-tinydtvi",
   "author": "hoangduy02071997",
@@ -30,14 +30,19 @@
   "parameters_human": "564.1M",
   "storage_bytes": 5331980218,
   "storage_human": "5.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

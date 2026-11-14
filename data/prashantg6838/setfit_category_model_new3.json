@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PrashantG6838/setfit_category_model_new3",
   "slug": "prashantg6838-setfit_category_model_new3",
   "author": "PrashantG6838",
@@ -32,14 +32,19 @@
   "parameters_human": "22.7M",
   "storage_bytes": 619736373,
   "storage_human": "620 MB",
+  "context_length": null,
   "base_model": "sentence-transformers/all-MiniLM-L6-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

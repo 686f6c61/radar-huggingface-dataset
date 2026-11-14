@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nex-agi/Nex-N2.5-Max",
   "slug": "nex-agi-nex-n2-5-max",
   "author": "nex-agi",
@@ -29,14 +29,19 @@
   "parameters_human": "1600.79B",
   "storage_bytes": 1654577675225,
   "storage_human": "1654.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Verkiki/Qwen3.8-27B-ColdGAIN-Fable5Fusion-MTP-IQ4_XS-GGUF",
   "slug": "verkiki-qwen3-8-27b-coldgain-fable5fusion-mtp-iq4_xs-gguf",
   "author": "Verkiki",
@@ -37,14 +37,19 @@
   "parameters_human": "3.4M",
   "storage_bytes": 16266282048,
   "storage_human": "16.3 GB",
+  "context_length": null,
   "base_model": "nightmedia/Qwen3.8-27B-Fable-Fusion-F711-GAIN-mxfp4-mlx",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Verkiki/Qwen3.8-27B-F711-ColdGAIN-Fable5Fusion-MTP-GGUF",
+  "renamed_at": "2026-11-11T04:08:11.141Z",
   "benchmarks": [],
   "sources": [
     {

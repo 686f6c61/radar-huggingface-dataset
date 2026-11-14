@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qvac/BotPsy-0.8B",
   "slug": "qvac-botpsy-0-8b",
   "author": "qvac",
@@ -35,21 +35,26 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 21,
+  "likes": 22,
   "downloads_30d": 543,
-  "trending_score": 21,
+  "trending_score": 22,
   "parameters": 852985920,
   "parameters_human": "853.0M",
   "storage_bytes": 1726019853,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

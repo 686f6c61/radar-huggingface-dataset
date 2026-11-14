@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hist3ry/fiap-medpt-qwen3-06b-lora-80pct-qkvo",
   "slug": "hist3ry-fiap-medpt-qwen3-06b-lora-80pct-qkvo",
   "author": "Hist3ry",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 18380008,
   "storage_human": "18 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

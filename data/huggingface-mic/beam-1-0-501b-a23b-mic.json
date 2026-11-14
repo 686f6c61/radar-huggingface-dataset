@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/Beam-1.0-501B-A23B-mic",
   "slug": "huggingface-mic-beam-1-0-501b-a23b-mic",
   "author": "huggingface-mic",
@@ -27,14 +27,19 @@
   "parameters_human": "19.6M",
   "storage_bytes": 78296280,
   "storage_human": "78 MB",
+  "context_length": null,
   "base_model": "reflection/Beam-1.0-501B-A23B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

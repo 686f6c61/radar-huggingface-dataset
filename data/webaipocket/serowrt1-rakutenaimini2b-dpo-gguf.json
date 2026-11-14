@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WebAIPocket/SerowRT1-RakutenAImini2B-DPO-GGUF",
   "slug": "webaipocket-serowrt1-rakutenaimini2b-dpo-gguf",
   "author": "WebAIPocket",
@@ -30,14 +30,19 @@
   "parameters_human": "1.53B",
   "storage_bytes": 935981696,
   "storage_human": "936 MB",
+  "context_length": 131072,
   "base_model": "Rakuten/RakutenAI-2.0-mini-instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-20T08:05:10.104Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

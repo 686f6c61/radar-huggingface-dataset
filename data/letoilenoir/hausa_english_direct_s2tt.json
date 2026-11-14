@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lEtoileNoir/Hausa_English_Direct_S2TT",
   "slug": "letoilenoir-hausa_english_direct_s2tt",
   "author": "lEtoileNoir",
@@ -39,14 +39,19 @@
   "parameters_human": "793.0M",
   "storage_bytes": 3189159500,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": "facebook/wav2vec2-xls-r-300m-21-to-en",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

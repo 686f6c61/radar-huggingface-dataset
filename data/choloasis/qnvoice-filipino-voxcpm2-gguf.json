@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CholoAsis/qnvoice-filipino-voxcpm2-gguf",
   "slug": "choloasis-qnvoice-filipino-voxcpm2-gguf",
   "author": "CholoAsis",
@@ -33,14 +33,19 @@
   "parameters_human": "912.4M",
   "storage_bytes": 2080258482,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": "openbmb/VoxCPM2",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

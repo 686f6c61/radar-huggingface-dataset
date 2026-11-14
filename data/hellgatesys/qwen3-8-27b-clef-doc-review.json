@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HellGateSys/qwen3.8-27b-clef-doc-review",
   "slug": "hellgatesys-qwen3-8-27b-clef-doc-review",
   "author": "HellGateSys",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 103926999,
   "storage_human": "104 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Anbeeld/DeepSeek-V4-Flash-DSpark-GGUF",
   "slug": "anbeeld-deepseek-v4-flash-dspark-gguf",
   "author": "Anbeeld",
@@ -34,6 +34,7 @@
   "parameters_human": "19.85B",
   "storage_bytes": 10896058752,
   "storage_human": "10.9 GB",
+  "context_length": 1048576,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-DSpark",
   "formats": [
     "gguf",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-07T02:47:34.024Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

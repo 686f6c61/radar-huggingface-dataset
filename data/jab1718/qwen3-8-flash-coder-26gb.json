@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jab1718/qwen3.8-flash-coder-26gb",
   "slug": "jab1718-qwen3-8-flash-coder-26gb",
   "author": "Jab1718",
@@ -45,14 +45,19 @@
   "parameters_human": "42.62B",
   "storage_bytes": 155423887678,
   "storage_human": "155.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Jab1718/qwen3.8-flash-coder-85gb-bf16",
+  "renamed_at": "2026-11-11T02:59:48.030Z",
   "benchmarks": [],
   "sources": [
     {

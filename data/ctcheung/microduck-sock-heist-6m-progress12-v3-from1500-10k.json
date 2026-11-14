@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ctcheung/microduck-sock-heist-6m-progress12-v3-from1500-10k",
   "slug": "ctcheung-microduck-sock-heist-6m-progress12-v3-from1500-10k",
   "author": "ctcheung",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 5676064,
   "storage_human": "6 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

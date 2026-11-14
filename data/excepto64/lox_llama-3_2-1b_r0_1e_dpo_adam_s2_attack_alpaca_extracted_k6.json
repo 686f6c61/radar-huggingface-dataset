@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "excepto64/lox_Llama-3_2-1B_r0_1e_dpo_adam_s2_attack_alpaca_extracted_k6",
   "slug": "excepto64-lox_llama-3_2-1b_r0_1e_dpo_adam_s2_attack_alpaca_extracted_k6",
   "author": "excepto64",
@@ -28,14 +28,19 @@
   "parameters_human": "1.24B",
   "storage_bytes": 4943274328,
   "storage_human": "4.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenVoiceOS/ovos-m2v-intents-en",
   "slug": "openvoiceos-ovos-m2v-intents-en",
   "author": "OpenVoiceOS",
@@ -34,6 +34,7 @@
   "parameters_human": "32.3M",
   "storage_bytes": 484269288,
   "storage_human": "484 MB",
+  "context_length": null,
   "base_model": "minishlab/potion-base-32M",
   "formats": [
     "onnx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

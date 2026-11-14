@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NYSgpt/44b-reranker-gte-modernbert",
   "slug": "nysgpt-44b-reranker-gte-modernbert",
   "author": "NYSgpt",
@@ -35,14 +35,19 @@
   "parameters_human": "149.6M",
   "storage_bytes": 598436708,
   "storage_human": "598 MB",
+  "context_length": null,
   "base_model": "Alibaba-NLP/gte-reranker-modernbert-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "NYSgpt/44b-reranker",
+  "renamed_at": "2026-11-11T03:23:39.904Z",
   "benchmarks": [],
   "sources": [
     {

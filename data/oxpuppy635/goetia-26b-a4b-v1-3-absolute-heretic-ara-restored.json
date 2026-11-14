@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oxpuppy635/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA-Restored",
   "slug": "oxpuppy635-goetia-26b-a4b-v1-3-absolute-heretic-ara-restored",
   "author": "oxpuppy635",
@@ -40,14 +40,19 @@
   "parameters_human": "25.81B",
   "storage_bytes": 51644178182,
   "storage_human": "51.6 GB",
+  "context_length": null,
   "base_model": "MuXodious/gemma-4-26B-A4B-it-SOMPOA-heresy, Naphula/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-06T07:07:40.959Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

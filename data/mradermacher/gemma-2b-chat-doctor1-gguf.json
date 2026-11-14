@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/gemma-2b-chat-doctor1-GGUF",
   "slug": "mradermacher-gemma-2b-chat-doctor1-gguf",
   "author": "mradermacher",
@@ -29,14 +29,19 @@
   "parameters_human": "2.51B",
   "storage_bytes": 23374919808,
   "storage_human": "23.4 GB",
+  "context_length": 8192,
   "base_model": "JC-24/gemma-2b-chat-doctor1",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

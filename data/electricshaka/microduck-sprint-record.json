@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ElectricShaka/microduck-sprint-record",
   "slug": "electricshaka-microduck-sprint-record",
   "author": "ElectricShaka",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 876661,
   "storage_human": "876661 B",
+  "context_length": null,
   "base_model": "jrubiosainz/microduck-game-sprinter-remix4",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-23T03:04:48.097Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OSAS-AI-Lab/RF-DETR-2XLarge-brain-tumor-segmentation",
   "slug": "osas-ai-lab-rf-detr-2xlarge-brain-tumor-segmentation",
   "author": "OSAS-AI-Lab",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 1689942830,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

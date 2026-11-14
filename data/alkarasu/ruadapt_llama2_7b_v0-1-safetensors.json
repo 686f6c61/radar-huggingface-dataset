@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Alkarasu/ruadapt_llama2_7b_v0.1-safetensors",
   "slug": "alkarasu-ruadapt_llama2_7b_v0-1-safetensors",
   "author": "Alkarasu",
@@ -29,14 +29,19 @@
   "parameters_human": "6.74B",
   "storage_bytes": 13477860076,
   "storage_human": "13.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-31T02:53:16.209Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

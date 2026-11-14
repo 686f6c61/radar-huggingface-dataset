@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amd/VideoChat-Flash-Qwen2_5-7B_InternVideo2-1B_rai_1.9.0_npu",
   "slug": "amd-videochat-flash-qwen2_5-7b_internvideo2-1b_rai_1-9-0_npu",
   "author": "amd",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 14004977843,
   "storage_human": "14.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

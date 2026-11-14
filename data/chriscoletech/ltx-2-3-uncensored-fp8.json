@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ChrisColeTech/LTX-2.3-uncensored-fp8",
   "slug": "chriscoletech-ltx-2-3-uncensored-fp8",
   "author": "ChrisColeTech",
@@ -32,14 +32,19 @@
   "parameters_human": "21.01B",
   "storage_bytes": 296019292980,
   "storage_human": "296.0 GB",
+  "context_length": null,
   "base_model": "TenStrip/LTX2.3-10Eros, Lightricks/LTX-2.3, TenStrip/LTX2.3_DMD_Lora",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ChrisColeTech/LTX-2.3-uncensored-v1.4-FP8",
+  "renamed_at": "2026-11-11T02:30:17.003Z",
   "benchmarks": [],
   "sources": [
     {

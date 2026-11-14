@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ibyteohdear/MiniMax-H3-LightX8-Fused-fl2v",
   "slug": "ibyteohdear-minimax-h3-lightx8-fused-fl2v",
   "author": "ibyteohdear",
@@ -38,6 +38,7 @@
   "parameters_human": "33.12B",
   "storage_bytes": 66281986666,
   "storage_human": "66.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

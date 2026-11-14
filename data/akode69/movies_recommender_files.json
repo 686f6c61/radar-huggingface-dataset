@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Akode69/movies_recommender_files",
   "slug": "akode69-movies_recommender_files",
   "author": "Akode69",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 379601257,
   "storage_human": "380 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ayan4m1/kev-merged-0.8b",
   "slug": "ayan4m1-kev-merged-0-8b",
   "author": "ayan4m1",
@@ -38,14 +38,19 @@
   "parameters_human": "571.0M",
   "storage_bytes": 2609019266,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B-Base, jaredpalmer/kev-0.8b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ayan4m1/kev-0.8b-merged",
+  "renamed_at": "2026-11-11T04:37:38.405Z",
   "benchmarks": [],
   "sources": [
     {

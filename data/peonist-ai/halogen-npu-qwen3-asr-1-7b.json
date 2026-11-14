@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "peonist-ai/halogen-npu-qwen3-asr-1.7b",
   "slug": "peonist-ai-halogen-npu-qwen3-asr-1-7b",
   "author": "peonist-ai",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 4096880560,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ASR-1.7B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

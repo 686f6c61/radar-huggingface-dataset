@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "woshilhz001/SenseNova-U1.5-8B-MoT-Q4_0",
   "slug": "woshilhz001-sensenova-u1-5-8b-mot-q4_0",
   "author": "woshilhz001",
@@ -30,14 +30,19 @@
   "parameters_human": "17.53B",
   "storage_bytes": 10875444576,
   "storage_human": "10.9 GB",
+  "context_length": null,
   "base_model": "sensenova/SenseNova-U1.5-8B-MoT",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

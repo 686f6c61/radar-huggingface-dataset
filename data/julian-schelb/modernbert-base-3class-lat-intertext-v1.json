@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "julian-schelb/modernbert-base-3class-lat-intertext-v1",
   "slug": "julian-schelb-modernbert-base-3class-lat-intertext-v1",
   "author": "julian-schelb",
@@ -40,14 +40,19 @@
   "parameters_human": "149.6M",
   "storage_bytes": 598442860,
   "storage_human": "598 MB",
+  "context_length": null,
   "base_model": "answerdotai/ModernBERT-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

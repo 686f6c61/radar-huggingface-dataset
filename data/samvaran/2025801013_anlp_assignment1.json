@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "samvaran/2025801013_anlp_assignment1",
   "slug": "samvaran-2025801013_anlp_assignment1",
   "author": "samvaran",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 706587280,
   "storage_human": "707 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

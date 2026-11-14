@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlboydaisuke/SAM2-hiera-tiny-LiteRT",
   "slug": "mlboydaisuke-sam2-hiera-tiny-litert",
   "author": "mlboydaisuke",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 329957726,
   "storage_human": "330 MB",
+  "context_length": null,
   "base_model": "facebook/sam2.1-hiera-tiny",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

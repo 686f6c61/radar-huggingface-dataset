@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sshalimov04/ru-legal-rag-edge-0.6b-onnx",
   "slug": "sshalimov04-ru-legal-rag-edge-0-6b-onnx",
   "author": "sshalimov04",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 1322224664,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "sshalimov04/ru-legal-rag-edge-0.6b",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-13T03:09:50.700Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

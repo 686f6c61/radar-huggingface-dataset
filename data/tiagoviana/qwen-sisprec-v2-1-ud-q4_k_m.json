@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TiagoViana/qwen-sisprec-v2.1-UD-Q4_K_M",
   "slug": "tiagoviana-qwen-sisprec-v2-1-ud-q4_k_m",
   "author": "TiagoViana",
@@ -40,14 +40,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 17496904384,
   "storage_human": "17.5 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-18T02:51:51.736Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

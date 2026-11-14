@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "na0x2c6/Apex-35B-V1.0-GGUF",
   "slug": "na0x2c6-apex-35b-v1-0-gguf",
   "author": "na0x2c6",
@@ -33,14 +33,19 @@
   "parameters_human": "35.51B",
   "storage_bytes": 15996044416,
   "storage_human": "16.0 GB",
+  "context_length": 262144,
   "base_model": "Apexintelligence-AI/Apex-35B-V1.0",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alborc/sd-models",
   "slug": "alborc-sd-models",
   "author": "alborc",
@@ -22,14 +22,19 @@
   "parameters_human": "2.57B",
   "storage_bytes": 718308251503,
   "storage_human": "718.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

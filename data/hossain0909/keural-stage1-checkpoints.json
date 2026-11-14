@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hossain0909/keural-stage1-checkpoints",
   "slug": "hossain0909-keural-stage1-checkpoints",
   "author": "hossain0909",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 1156913981390,
   "storage_human": "1156.9 GB",
+  "context_length": null,
   "base_model": "",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

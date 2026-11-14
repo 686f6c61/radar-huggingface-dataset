@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nurdich/Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored",
   "slug": "nurdich-qwen3-8-9b-distill-slerp-f451-pro-writer-uncensored",
   "author": "nurdich",
@@ -44,14 +44,19 @@
   "parameters_human": "9.65B",
   "storage_bytes": 19327660954,
   "storage_human": "19.3 GB",
+  "context_length": null,
   "base_model": "petruhonk/Qwen3.8-9B-Distill-uncensored-heretic, DavidAU/Qwen3.5-9B-The-Bradbury-F451-Pro-Writer-Uncensored-Heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

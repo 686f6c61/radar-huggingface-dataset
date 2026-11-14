@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Climb-Ai/Climb-1-Toki-GGUF",
   "slug": "climb-ai-climb-1-toki-gguf",
   "author": "Climb-Ai",
@@ -36,14 +36,19 @@
   "parameters_human": "3.0M",
   "storage_bytes": 12234400,
   "storage_human": "12 MB",
+  "context_length": 256,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

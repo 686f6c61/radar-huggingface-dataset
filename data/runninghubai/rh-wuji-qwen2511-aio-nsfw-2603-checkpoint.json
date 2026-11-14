@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RunningHubAI/rh-wuji-qwen2511-aio-nsfw-2603-checkpoint",
   "slug": "runninghubai-rh-wuji-qwen2511-aio-nsfw-2603-checkpoint",
   "author": "RunningHubAI",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 28432288242,
   "storage_human": "28.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

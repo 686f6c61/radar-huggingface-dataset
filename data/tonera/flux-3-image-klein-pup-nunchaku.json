@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tonera/flux-3-image-klein-pup-nunchaku",
   "slug": "tonera-flux-3-image-klein-pup-nunchaku",
   "author": "tonera",
@@ -38,14 +38,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 26013290205,
   "storage_human": "26.0 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/flux-3-image-klein-pup",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

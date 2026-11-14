@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "luvtong/rdgdpo-symmetric-math-qwen3-4b-v07-seed0",
   "slug": "luvtong-rdgdpo-symmetric-math-qwen3-4b-v07-seed0",
   "author": "luvtong",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 237726052647,
   "storage_human": "237.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

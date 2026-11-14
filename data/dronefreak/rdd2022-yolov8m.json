@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dronefreak/rdd2022-yolov8m",
   "slug": "dronefreak-rdd2022-yolov8m",
   "author": "dronefreak",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 55483140,
   "storage_human": "55 MB",
+  "context_length": null,
   "base_model": "Ultralytics/YOLOv8",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Object Detection",

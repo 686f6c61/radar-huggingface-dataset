@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Langzaigg/moss_anime_turbo_merged",
   "slug": "langzaigg-moss_anime_turbo_merged",
   "author": "Langzaigg",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 15586176386,
   "storage_human": "15.6 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

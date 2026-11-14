@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Myric/Llama-4-Scout-17B-16E-Instruct-APEX-GGUF",
   "slug": "myric-llama-4-scout-17b-16e-instruct-apex-gguf",
   "author": "Myric",
@@ -34,14 +34,19 @@
   "parameters_human": "107.77B",
   "storage_bytes": 168097598242,
   "storage_human": "168.1 GB",
+  "context_length": 10485760,
   "base_model": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

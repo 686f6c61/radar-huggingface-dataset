@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jinstudio/MOSS-Audio-8B-Instruct",
   "slug": "jinstudio-moss-audio-8b-instruct",
   "author": "Jinstudio",
@@ -37,14 +37,19 @@
   "parameters_human": "9.05B",
   "storage_bytes": 18111010792,
   "storage_human": "18.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-25T02:51:09.924Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

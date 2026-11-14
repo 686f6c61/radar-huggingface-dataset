@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "miladgholami/act_kyc_posevary",
   "slug": "miladgholami-act_kyc_posevary",
   "author": "miladgholami",
@@ -27,14 +27,19 @@
   "parameters_human": "55.9M",
   "storage_bytes": 223518544,
   "storage_human": "224 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

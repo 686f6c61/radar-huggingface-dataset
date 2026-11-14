@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LiquidAI/d1-2B-ONNX",
   "slug": "liquidai-d1-2b-onnx",
   "author": "LiquidAI",
@@ -65,14 +65,19 @@
   "parameters_human": null,
   "storage_bytes": 19319825917,
   "storage_human": "19.3 GB",
+  "context_length": null,
   "base_model": "LiquidAI/d1-2B",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

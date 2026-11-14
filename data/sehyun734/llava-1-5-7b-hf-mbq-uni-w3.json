@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sehyun734/llava-1.5-7b-hf-mbq-uni-w3",
   "slug": "sehyun734-llava-1-5-7b-hf-mbq-uni-w3",
   "author": "sehyun734",
@@ -28,14 +28,19 @@
   "parameters_human": "7.06B",
   "storage_bytes": 14126947704,
   "storage_human": "14.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-16T03:19:20.220Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

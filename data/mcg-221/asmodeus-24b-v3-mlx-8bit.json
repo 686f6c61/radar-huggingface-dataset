@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "McG-221/Asmodeus-24B-v3-mlx-8Bit",
   "slug": "mcg-221-asmodeus-24b-v3-mlx-8bit",
   "author": "McG-221",
@@ -64,6 +64,7 @@
   "parameters_human": "23.57B",
   "storage_bytes": 25063295683,
   "storage_human": "25.1 GB",
+  "context_length": null,
   "base_model": "DarkArtsForge/Asmodeus-24B-v3",
   "formats": [
     "mlx",
@@ -71,8 +72,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

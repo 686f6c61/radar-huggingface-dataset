@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jxjdgdhsjh/Qwen2.5-3B-KV-Compressed-50",
   "slug": "jxjdgdhsjh-qwen2-5-3b-kv-compressed-50",
   "author": "jxjdgdhsjh",
@@ -39,6 +39,7 @@
   "parameters_human": "3.09B",
   "storage_bytes": 10285312844,
   "storage_human": "10.3 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

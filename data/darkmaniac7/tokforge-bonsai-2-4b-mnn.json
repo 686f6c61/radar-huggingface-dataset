@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "darkmaniac7/TokForge-Bonsai-2-4B-MNN",
   "slug": "darkmaniac7-tokforge-bonsai-2-4b-mnn",
   "author": "darkmaniac7",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 2388800748,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "prism-ml/Ternary-Bonsai-2-4B-gguf, Qwen/Qwen3.5-4B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

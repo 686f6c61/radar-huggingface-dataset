@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "7tianan/gemma-4-26B-A4B-it-assistant",
   "slug": "7tianan-gemma-4-26b-a4b-it-assistant",
   "author": "7tianan",
@@ -29,14 +29,19 @@
   "parameters_human": "419.7M",
   "storage_bytes": 871597280,
   "storage_human": "872 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

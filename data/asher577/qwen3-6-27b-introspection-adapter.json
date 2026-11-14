@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "asher577/qwen3.6-27b-introspection-adapter",
   "slug": "asher577-qwen3-6-27b-introspection-adapter",
   "author": "asher577",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 934095328,
   "storage_human": "934 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

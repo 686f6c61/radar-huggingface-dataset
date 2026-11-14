@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "immortaltatsu/ghostai-lfm-app",
   "slug": "immortaltatsu-ghostai-lfm-app",
   "author": "immortaltatsu",
@@ -34,6 +34,7 @@
   "parameters_human": "1.17B",
   "storage_bytes": 5414926224,
   "storage_human": "5.4 GB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM2.5-1.2B-Thinking",
   "formats": [
     "gguf",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-15T14:06:55.720Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

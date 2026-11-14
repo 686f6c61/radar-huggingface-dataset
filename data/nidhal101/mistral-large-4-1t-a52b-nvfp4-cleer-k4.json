@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nidhal101/Mistral-Large-4-1T-A52B-NVFP4-CLEER-k4",
   "slug": "nidhal101-mistral-large-4-1t-a52b-nvfp4-cleer-k4",
   "author": "Nidhal101",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 49152937228,
   "storage_human": "49.2 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-Large-4-1T-A52B-NVFP4",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

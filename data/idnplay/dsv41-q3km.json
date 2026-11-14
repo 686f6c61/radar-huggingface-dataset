@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "idnplay/dsv41-q3km",
   "slug": "idnplay-dsv41-q3km",
   "author": "idnplay",
@@ -27,14 +27,19 @@
   "parameters_human": "748.49B",
   "storage_bytes": 352622834880,
   "storage_human": "352.6 GB",
+  "context_length": 1048576,
   "base_model": "Adolphsson/DeepSeek-V4.1-Flash-UNCENSORED-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

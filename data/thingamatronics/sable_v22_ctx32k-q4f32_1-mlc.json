@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Thingamatronics/Sable_v22_ctx32k-q4f32_1-MLC",
   "slug": "thingamatronics-sable_v22_ctx32k-q4f32_1-mlc",
   "author": "Thingamatronics",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 879969480,
   "storage_human": "880 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

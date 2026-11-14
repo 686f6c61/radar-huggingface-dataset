@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ApocalypseParty/G4-31B-SCE-OPT31-StyleC50",
   "slug": "apocalypseparty-g4-31b-sce-opt31-stylec50",
   "author": "ApocalypseParty",
@@ -36,14 +36,19 @@
   "parameters_human": "31.27B",
   "storage_bytes": 62578506244,
   "storage_human": "62.6 GB",
+  "context_length": null,
   "base_model": "ApocalypseParty/G4-mmv2-31B-Style-c50, llmfan46/gemma-4-31B-it-uncensored-heretic, ApocalypseParty/G4-31B-M_OPT31",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

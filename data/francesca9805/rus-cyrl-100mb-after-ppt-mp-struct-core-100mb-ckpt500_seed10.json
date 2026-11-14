@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "francesca9805/rus-cyrl-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10",
   "slug": "francesca9805-rus-cyrl-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10",
   "author": "francesca9805",
@@ -32,14 +32,19 @@
   "parameters_human": "124.8M",
   "storage_bytes": 9734783530,
   "storage_human": "9.7 GB",
+  "context_length": null,
   "base_model": "francesca9805/rus-cyrl-100mb-ppt-mp-struct-core-100mb_seed10",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

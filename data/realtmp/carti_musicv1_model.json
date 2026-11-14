@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "realtmp/carti_musicv1_model",
   "slug": "realtmp-carti_musicv1_model",
   "author": "realtmp",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 1397,
   "storage_human": "1397 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T06:45:33.281Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

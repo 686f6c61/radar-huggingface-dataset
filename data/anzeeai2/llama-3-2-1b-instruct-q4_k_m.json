@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anzeeai2/Llama-3.2-1B-Instruct-Q4_K_M",
   "slug": "anzeeai2-llama-3-2-1b-instruct-q4_k_m",
   "author": "anzeeai2",
@@ -26,14 +26,19 @@
   "parameters_human": "1.24B",
   "storage_bytes": 807694368,
   "storage_human": "808 MB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

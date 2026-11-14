@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tozp/Qwen3.8-27B-OBLITERATED-V2-mlx-4bit",
   "slug": "tozp-qwen3-8-27b-obliterated-v2-mlx-4bit",
   "author": "tozp",
@@ -38,6 +38,7 @@
   "parameters_human": "4.20B",
   "storage_bytes": 15153032838,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-23T17:14:30.560Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

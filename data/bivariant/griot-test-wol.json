@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bivariant/griot-test-wol",
   "slug": "bivariant-griot-test-wol",
   "author": "bivariant",
@@ -27,14 +27,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 6174264464,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-16T05:22:25.147Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "capyctl/Qwen3.8-27B-NVFP4",
   "slug": "capyctl-qwen3-8-27b-nvfp4",
   "author": "capyctl",
@@ -34,14 +34,19 @@
   "parameters_human": "14.56B",
   "storage_bytes": 37543836056,
   "storage_human": "37.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RicemanT/MageTrail",
   "slug": "ricemant-magetrail",
   "author": "RicemanT",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 326074426326,
   "storage_human": "326.1 GB",
+  "context_length": null,
   "base_model": "mage-flow-community/Mage-Flow",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KevinDowling/LTX-2.5-Diffusers-NVFP4",
   "slug": "kevindowling-ltx-2-5-diffusers-nvfp4",
   "author": "KevinDowling",
@@ -35,6 +35,7 @@
   "parameters_human": "10.82B",
   "storage_bytes": 21179649296,
   "storage_human": "21.2 GB",
+  "context_length": null,
   "base_model": "Lightricks/LTX-2.5-Diffusers, Lightricks/LTX-2.5",
   "formats": [
     "diffusers",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

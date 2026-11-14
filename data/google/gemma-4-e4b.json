@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "google/gemma-4-E4B",
   "slug": "google-gemma-4-e4b",
   "author": "google",
@@ -22,21 +22,26 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 510,
+  "likes": 511,
   "downloads_30d": 454434,
   "trending_score": 10,
   "parameters": 7996156490,
   "parameters_human": "8.00B",
   "storage_bytes": 48153780944,
   "storage_human": "48.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

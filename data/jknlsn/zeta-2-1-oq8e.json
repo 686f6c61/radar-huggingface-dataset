@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jknlsn/zeta-2.1-oQ8e",
   "slug": "jknlsn-zeta-2-1-oq8e",
   "author": "jknlsn",
@@ -38,6 +38,7 @@
   "parameters_human": "8.25B",
   "storage_bytes": 8778342256,
   "storage_human": "8.8 GB",
+  "context_length": null,
   "base_model": "zed-industries/zeta-2.1",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

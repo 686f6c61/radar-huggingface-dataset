@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "INSTANTDOOM/smollm3-3b-gsm8k-sft",
   "slug": "instantdoom-smollm3-3b-gsm8k-sft",
   "author": "INSTANTDOOM",
@@ -41,14 +41,19 @@
   "parameters_human": "3.08B",
   "storage_bytes": 6167443915,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM3-3B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text Generation",

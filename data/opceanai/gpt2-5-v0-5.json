@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpceanAI/gpt2.5-v0.5",
   "slug": "opceanai-gpt2-5-v0-5",
   "author": "OpceanAI",
@@ -38,14 +38,19 @@
   "parameters_human": "909.8M",
   "storage_bytes": 3646906397,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": "openai-community/gpt2-large, google/siglip2-so400m-patch16-naflex",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

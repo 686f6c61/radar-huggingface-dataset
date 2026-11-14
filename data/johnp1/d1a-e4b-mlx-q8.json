@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JohnP1/d1a-e4b-mlx-q8",
   "slug": "johnp1-d1a-e4b-mlx-q8",
   "author": "JohnP1",
@@ -39,6 +39,7 @@
   "parameters_human": "7.46B",
   "storage_bytes": 32072557900,
   "storage_human": "32.1 GB",
+  "context_length": null,
   "base_model": "JohnP1/d1a-e4b",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

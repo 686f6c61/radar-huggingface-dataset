@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "latrompeababar/gemma-4-12B-it-oQ2e-mtp",
   "slug": "latrompeababar-gemma-4-12b-it-oq2e-mtp",
   "author": "latrompeababar",
@@ -28,6 +28,7 @@
   "parameters_human": "11.96B",
   "storage_bytes": 5421131310,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

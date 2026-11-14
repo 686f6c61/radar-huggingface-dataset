@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "autotrust/GEV-26B-Decide-NVFP4",
   "slug": "autotrust-gev-26b-decide-nvfp4",
   "author": "autotrust",
@@ -52,14 +52,19 @@
   "parameters_human": "14.39B",
   "storage_bytes": 19068206121,
   "storage_human": "19.1 GB",
+  "context_length": null,
   "base_model": "autotrust/GEV-26B-Decide",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Jev Decision Index 0.2.1 with adaptive thinking (own scoring; Knowledge & Reasoning adaptive, other areas System 1)",

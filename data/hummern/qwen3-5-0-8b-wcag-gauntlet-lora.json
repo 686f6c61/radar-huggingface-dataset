@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hummern/qwen3.5-0.8b-wcag-gauntlet-lora",
   "slug": "hummern-qwen3-5-0-8b-wcag-gauntlet-lora",
   "author": "Hummern",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 71132683,
   "storage_human": "71 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T03:02:27.713Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

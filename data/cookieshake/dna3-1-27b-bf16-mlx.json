@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cookieshake/DNA3.1-27B-BF16-mlx",
   "slug": "cookieshake-dna3-1-27b-bf16-mlx",
   "author": "cookieshake",
@@ -30,6 +30,7 @@
   "parameters_human": "26.90B",
   "storage_bytes": 53812097968,
   "storage_human": "53.8 GB",
+  "context_length": null,
   "base_model": "dnotitia/DNA3.1-27B",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shaeel12/moonshine-tiny-urdu_PHASE_VI",
   "slug": "shaeel12-moonshine-tiny-urdu_phase_vi",
   "author": "shaeel12",
@@ -27,14 +27,19 @@
   "parameters_human": "27.1M",
   "storage_bytes": 108389192,
   "storage_human": "108 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-18T03:25:01.636Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TechnoBaptist/VibeVoice-ASR-BitNet",
   "slug": "technobaptist-vibevoice-asr-bitnet",
   "author": "TechnoBaptist",
@@ -50,6 +50,7 @@
   "parameters_human": "322.6M",
   "storage_bytes": 12952801530,
   "storage_human": "13.0 GB",
+  "context_length": 65536,
   "base_model": null,
   "formats": [
     "gguf",
@@ -57,8 +58,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

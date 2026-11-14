@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Pratyush77777/gemma_4_finetuned",
   "slug": "pratyush77777-gemma_4_finetuned",
   "author": "Pratyush77777",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 128863585,
   "storage_human": "129 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-E2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

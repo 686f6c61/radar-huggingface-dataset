@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "scottlowry/Qwen3.5-9B-oQ6e-fp16-mtp",
   "slug": "scottlowry-qwen3-5-9b-oq6e-fp16-mtp",
   "author": "scottlowry",
@@ -30,6 +30,7 @@
   "parameters_human": "9.65B",
   "storage_bytes": 37830726473,
   "storage_human": "37.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

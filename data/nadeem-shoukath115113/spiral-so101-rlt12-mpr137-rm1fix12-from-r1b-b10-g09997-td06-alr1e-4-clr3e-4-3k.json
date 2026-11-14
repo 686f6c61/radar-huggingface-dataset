@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nadeem-Shoukath115113/spiral-so101-rlt12-mpr137-rm1fix12-from-r1b-b10-g09997-td06-alr1e-4-clr3e-4-3k",
   "slug": "nadeem-shoukath115113-spiral-so101-rlt12-mpr137-rm1fix12-from-r1b-b10-g09997-td06-alr1e-4-clr3e-4-3k",
   "author": "Nadeem-Shoukath115113",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 365866987,
   "storage_human": "366 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

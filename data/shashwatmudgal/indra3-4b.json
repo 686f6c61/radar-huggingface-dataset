@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shashwatmudgal/Indra3-4B",
   "slug": "shashwatmudgal-indra3-4b",
   "author": "shashwatmudgal",
@@ -34,14 +34,19 @@
   "parameters_human": "3.74B",
   "storage_bytes": 7471320828,
   "storage_human": "7.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-29T06:05:49.084Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

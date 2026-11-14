@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BlurCue/efficientvit-sam-l0-onnx",
   "slug": "blurcue-efficientvit-sam-l0-onnx",
   "author": "BlurCue",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 139583279,
   "storage_human": "140 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

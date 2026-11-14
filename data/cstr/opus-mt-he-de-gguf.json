@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cstr/opus-mt-he-de-GGUF",
   "slug": "cstr-opus-mt-he-de-gguf",
   "author": "cstr",
@@ -36,14 +36,19 @@
   "parameters_human": "77.0M",
   "storage_bytes": 245937216,
   "storage_human": "246 MB",
+  "context_length": null,
   "base_model": "Helsinki-NLP/opus-mt-he-de",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

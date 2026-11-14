@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thinkspread/Flint-Q6K-IQ3XXS-GGUF",
   "slug": "thinkspread-flint-q6k-iq3xxs-gguf",
   "author": "thinkspread",
@@ -33,14 +33,19 @@
   "parameters_human": "39.79B",
   "storage_bytes": 18034525472,
   "storage_human": "18.0 GB",
+  "context_length": 262144,
   "base_model": "RecursiveSI/flint, bartowski/RecursiveSI_flint-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

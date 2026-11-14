@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "matheus-ciro-tcc/qwen3.5-0.8b-triagem-medica-ptbr",
   "slug": "matheus-ciro-tcc-qwen3-5-0-8b-triagem-medica-ptbr",
   "author": "matheus-ciro-tcc",
@@ -43,14 +43,19 @@
   "parameters_human": null,
   "storage_bytes": 45576546,
   "storage_human": "46 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bartowski/ZoomGain-4B-GGUF",
   "slug": "bartowski-zoomgain-4b-gguf",
   "author": "bartowski",
@@ -27,14 +27,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 66275182688,
   "storage_human": "66.3 GB",
+  "context_length": 262144,
   "base_model": "inclusionAI/ZoomGain-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

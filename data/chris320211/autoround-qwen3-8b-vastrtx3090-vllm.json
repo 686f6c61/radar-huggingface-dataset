@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chris320211/autoround-qwen3-8b-vastrtx3090-vllm",
   "slug": "chris320211-autoround-qwen3-8b-vastrtx3090-vllm",
   "author": "chris320211",
@@ -37,14 +37,19 @@
   "parameters_human": "2.17B",
   "storage_bytes": 6110004262,
   "storage_human": "6.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

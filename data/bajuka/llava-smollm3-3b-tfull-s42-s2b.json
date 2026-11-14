@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BAJUKA/LLaVA-smollm3-3b-Tfull-s42-s2b",
   "slug": "bajuka-llava-smollm3-3b-tfull-s42-s2b",
   "author": "BAJUKA",
@@ -35,14 +35,19 @@
   "parameters_human": "538528",
   "storage_bytes": 6976121275,
   "storage_human": "7.0 GB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM3-3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

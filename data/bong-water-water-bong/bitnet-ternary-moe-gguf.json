@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bong-water-water-bong/bitnet-ternary-moe-gguf",
   "slug": "bong-water-water-bong-bitnet-ternary-moe-gguf",
   "author": "bong-water-water-bong",
@@ -31,14 +31,19 @@
   "parameters_human": "2.41B",
   "storage_bytes": 1215016864,
   "storage_human": "1.2 GB",
+  "context_length": 4096,
   "base_model": "microsoft/bitnet-b1.58-2B-4T",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

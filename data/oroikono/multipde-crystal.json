@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oroikono/multipde-crystal",
   "slug": "oroikono-multipde-crystal",
   "author": "oroikono",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 4548019171,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-22T02:58:46.547Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

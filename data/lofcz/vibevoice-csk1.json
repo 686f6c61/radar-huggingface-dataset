@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lofcz/VibeVoice-CSK1",
   "slug": "lofcz-vibevoice-csk1",
   "author": "lofcz",
@@ -35,14 +35,19 @@
   "parameters_human": "8.67B",
   "storage_bytes": 17359620882,
   "storage_human": "17.4 GB",
+  "context_length": null,
   "base_model": "microsoft/VibeVoice-ASR",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

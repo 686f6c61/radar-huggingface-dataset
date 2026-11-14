@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JCorcho/10Eros-Max-TURBO-hybrid-beta3-NVFP4",
   "slug": "jcorcho-10eros-max-turbo-hybrid-beta3-nvfp4",
   "author": "JCorcho",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 33492356032,
   "storage_human": "33.5 GB",
+  "context_length": null,
   "base_model": "TenStrip/10Eros-Max",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "JCorcho/10Eros-Max-TURBO-hybrid-beta3-ComfyUI-Quants",
+  "renamed_at": "2026-11-11T02:59:13.023Z",
   "benchmarks": [],
   "sources": [
     {

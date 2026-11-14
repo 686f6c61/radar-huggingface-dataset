@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Workstation5495/Resonatex-D2",
   "slug": "workstation5495-resonatex-d2",
   "author": "Workstation5495",
@@ -36,14 +36,19 @@
   "parameters_human": "71.9M",
   "storage_bytes": 287549313,
   "storage_human": "288 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-11T03:28:29.002Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

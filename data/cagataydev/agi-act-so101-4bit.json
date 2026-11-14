@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cagataydev/agi-act-so101-4bit",
   "slug": "cagataydev-agi-act-so101-4bit",
   "author": "cagataydev",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 29855770,
   "storage_human": "30 MB",
+  "context_length": null,
   "base_model": "cagataydev/agi-act-so101",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-28T04:19:51.963Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

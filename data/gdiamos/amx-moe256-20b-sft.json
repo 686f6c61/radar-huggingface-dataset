@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gdiamos/amx-moe256-20b-sft",
   "slug": "gdiamos-amx-moe256-20b-sft",
   "author": "gdiamos",
@@ -29,14 +29,19 @@
   "parameters_human": "479.9M",
   "storage_bytes": 1919440780,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": "gdiamos/amx-moe256-20b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

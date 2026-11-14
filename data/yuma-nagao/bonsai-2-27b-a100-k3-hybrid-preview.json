@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yuma-nagao/Bonsai-2-27B-A100-K3-Hybrid-Preview",
   "slug": "yuma-nagao-bonsai-2-27b-a100-k3-hybrid-preview",
   "author": "yuma-nagao",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

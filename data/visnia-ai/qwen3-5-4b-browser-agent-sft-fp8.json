@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "visnia-ai/Qwen3.5-4B-Browser-Agent-SFT-FP8",
   "slug": "visnia-ai-qwen3-5-4b-browser-agent-sft-fp8",
   "author": "visnia-ai",
@@ -35,14 +35,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 5775548644,
   "storage_human": "5.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

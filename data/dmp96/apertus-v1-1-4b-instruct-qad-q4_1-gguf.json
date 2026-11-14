@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DMP96/Apertus-v1.1-4B-Instruct-QAD-Q4_1-GGUF",
   "slug": "dmp96-apertus-v1-1-4b-instruct-qad-q4_1-gguf",
   "author": "DMP96",
@@ -35,14 +35,19 @@
   "parameters_human": "3.83B",
   "storage_bytes": 3506555680,
   "storage_human": "3.5 GB",
+  "context_length": 4096,
   "base_model": "swiss-ai/Apertus-v1.1-4B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

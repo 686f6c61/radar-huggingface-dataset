@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jjjlimaus/nanoexpand-2018-openalex-cont",
   "slug": "jjjlimaus-nanoexpand-2018-openalex-cont",
   "author": "jjjlimaus",
@@ -23,14 +23,19 @@
   "parameters_human": "2.10B",
   "storage_bytes": 435883458400,
   "storage_human": "435.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-18T08:11:11.217Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

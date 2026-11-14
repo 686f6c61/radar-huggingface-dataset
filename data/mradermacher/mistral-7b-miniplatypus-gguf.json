@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/mistral-7b-miniplatypus-GGUF",
   "slug": "mradermacher-mistral-7b-miniplatypus-gguf",
   "author": "mradermacher",
@@ -29,14 +29,19 @@
   "parameters_human": "7.24B",
   "storage_bytes": 68038726560,
   "storage_human": "68.0 GB",
+  "context_length": 32768,
   "base_model": "lokpatchu/mistral-7b-miniplatypus",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

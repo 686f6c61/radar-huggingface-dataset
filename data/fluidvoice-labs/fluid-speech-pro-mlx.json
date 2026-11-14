@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FluidVoice-Labs/fluid-speech-pro-mlx",
   "slug": "fluidvoice-labs-fluid-speech-pro-mlx",
   "author": "FluidVoice-Labs",
@@ -85,6 +85,7 @@
   "parameters_human": "629.2M",
   "storage_bytes": 3323072532,
   "storage_human": "3.3 GB",
+  "context_length": null,
   "base_model": "FluidVoice-Labs/fluid-speech-pro",
   "formats": [
     "mlx",
@@ -92,8 +93,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

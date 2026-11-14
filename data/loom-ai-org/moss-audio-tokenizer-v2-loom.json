@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "loom-ai-org/moss-audio-tokenizer-v2-loom",
   "slug": "loom-ai-org-moss-audio-tokenizer-v2-loom",
   "author": "loom-ai-org",
@@ -29,14 +29,19 @@
   "parameters_human": "1.08B",
   "storage_bytes": 8629583488,
   "storage_human": "8.6 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Audio-Tokenizer-v2",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

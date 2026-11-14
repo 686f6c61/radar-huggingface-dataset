@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CaramellaInc/Aster-1.0-instruct",
   "slug": "caramellainc-aster-1-0-instruct",
   "author": "CaramellaInc",
@@ -41,14 +41,19 @@
   "parameters_human": "28.90B",
   "storage_bytes": 60389480488,
   "storage_human": "60.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

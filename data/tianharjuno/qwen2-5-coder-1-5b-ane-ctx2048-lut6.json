@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tianharjuno/Qwen2.5-Coder-1.5B-ANE-ctx2048-LUT6",
   "slug": "tianharjuno-qwen2-5-coder-1-5b-ane-ctx2048-lut6",
   "author": "tianharjuno",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 1352416404,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-1.5B",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

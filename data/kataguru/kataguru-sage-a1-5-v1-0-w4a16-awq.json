@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kataguru/Kataguru-Sage-A1.5-v1.0-W4A16-AWQ",
   "slug": "kataguru-kataguru-sage-a1-5-v1-0-w4a16-awq",
   "author": "kataguru",
@@ -49,14 +49,19 @@
   "parameters_human": "35.95B",
   "storage_bytes": 26153861910,
   "storage_human": "26.2 GB",
+  "context_length": null,
   "base_model": "InternScience/Sage-A1.5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

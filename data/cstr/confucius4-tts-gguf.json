@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cstr/confucius4-tts-GGUF",
   "slug": "cstr-confucius4-tts-gguf",
   "author": "cstr",
@@ -41,14 +41,19 @@
   "parameters_human": "112.2M",
   "storage_bytes": 14903312480,
   "storage_human": "14.9 GB",
+  "context_length": null,
   "base_model": "netease-youdao/Confucius4-TTS",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

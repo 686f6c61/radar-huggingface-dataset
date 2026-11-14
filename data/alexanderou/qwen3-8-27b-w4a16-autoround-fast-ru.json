@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alexanderou/Qwen3.8-27B-W4A16-AutoRound-fast-ru",
   "slug": "alexanderou-qwen3-8-27b-w4a16-autoround-fast-ru",
   "author": "alexanderou",
@@ -38,14 +38,19 @@
   "parameters_human": "6.26B",
   "storage_bytes": 15751814778,
   "storage_human": "15.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

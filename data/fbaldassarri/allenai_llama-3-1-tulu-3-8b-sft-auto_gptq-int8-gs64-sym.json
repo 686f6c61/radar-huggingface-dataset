@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fbaldassarri/allenai_Llama-3.1-Tulu-3-8B-SFT-auto_gptq-int8-gs64-sym",
   "slug": "fbaldassarri-allenai_llama-3-1-tulu-3-8b-sft-auto_gptq-int8-gs64-sym",
   "author": "fbaldassarri",
@@ -47,14 +47,19 @@
   "parameters_human": "2.93B",
   "storage_bytes": 11532796510,
   "storage_human": "11.5 GB",
+  "context_length": null,
   "base_model": "allenai/Llama-3.1-Tulu-3-8B-SFT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Osakra/Project-Norn-V20-9B",
   "slug": "osakra-project-norn-v20-9b",
   "author": "Osakra",
@@ -49,6 +49,7 @@
   "parameters_human": "5.36B",
   "storage_bytes": 10924500727,
   "storage_human": "10.9 GB",
+  "context_length": null,
   "base_model": "empero-ai/Qwen3.8-9B-Distill",
   "formats": [
     "gguf",
@@ -56,8 +57,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

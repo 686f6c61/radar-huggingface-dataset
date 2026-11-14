@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Housto4/uadetox-gate",
   "slug": "housto4-uadetox-gate",
   "author": "Housto4",
@@ -39,6 +39,7 @@
   "parameters_human": "117.7M",
   "storage_bytes": 723254535,
   "storage_human": "723 MB",
+  "context_length": null,
   "base_model": "intfloat/multilingual-e5-small",
   "formats": [
     "onnx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Does a Ukrainian comment need a polite rewrite?",

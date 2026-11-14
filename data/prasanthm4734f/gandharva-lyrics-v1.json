@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Prasanthm4734f/gandharva-lyrics-v1",
   "slug": "prasanthm4734f-gandharva-lyrics-v1",
   "author": "Prasanthm4734f",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 186078190,
   "storage_human": "186 MB",
+  "context_length": null,
   "base_model": "unsloth/qwen3-8b-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3.5-9B-Claude-3xMerge-UNCENSORED-heretic-i1-GGUF",
   "slug": "mradermacher-qwen3-5-9b-claude-3xmerge-uncensored-heretic-i1-gguf",
   "author": "mradermacher",
@@ -46,14 +46,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 81323369856,
   "storage_human": "81.3 GB",
+  "context_length": 1048576,
   "base_model": "xtools-at/Qwen3.5-9B-Claude-3xMerge-UNCENSORED-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

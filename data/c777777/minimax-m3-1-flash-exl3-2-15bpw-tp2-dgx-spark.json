@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "c777777/MiniMax-M3.1-Flash-EXL3-2.15bpw-TP2-DGX-Spark",
   "slug": "c777777-minimax-m3-1-flash-exl3-2-15bpw-tp2-dgx-spark",
   "author": "c777777",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 10651645,
   "storage_human": "11 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dddddsds31341/Kai0-Piper-Four-Tasks-pi05-step-35000",
   "slug": "dddddsds31341-kai0-piper-four-tasks-pi05-step-35000",
   "author": "dddddsds31341",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 12459066012,
   "storage_human": "12.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

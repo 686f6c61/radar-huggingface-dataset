@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "emkey1/Gemma-4-12B-Aether-int8",
   "slug": "emkey1-gemma-4-12b-aether-int8",
   "author": "emkey1",
@@ -38,6 +38,7 @@
   "parameters_human": "11.96B",
   "storage_bytes": 38303801009,
   "storage_human": "38.3 GB",
+  "context_length": null,
   "base_model": "emkey1/Gemma-4-12B-Aether",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

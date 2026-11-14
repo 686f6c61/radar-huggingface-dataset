@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "soulmachine/evertranscript-redimnet2-b3-vox2-lm",
   "slug": "soulmachine-evertranscript-redimnet2-b3-vox2-lm",
   "author": "soulmachine",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 18045013,
   "storage_human": "18 MB",
+  "context_length": null,
   "base_model": "PalabraAI/redimnet2",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

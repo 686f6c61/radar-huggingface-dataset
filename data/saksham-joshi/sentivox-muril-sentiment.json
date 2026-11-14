@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "saksham-joshi/sentivox-muril-sentiment",
   "slug": "saksham-joshi-sentivox-muril-sentiment",
   "author": "saksham-joshi",
@@ -56,14 +56,19 @@
   "parameters_human": "237.5M",
   "storage_bytes": 5701521441,
   "storage_human": "5.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

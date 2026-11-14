@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BarryFutureman/iv12b-lora",
   "slug": "barryfutureman-iv12b-lora",
   "author": "BarryFutureman",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 262373216,
   "storage_human": "262 MB",
+  "context_length": null,
   "base_model": "AEON-7/Gemma-4-12B-it-AEON-Abliterated-K4-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Futuremannn/iv12b-lora",
+  "renamed_at": "2026-11-11T02:24:41.163Z",
   "benchmarks": [],
   "sources": []
 }

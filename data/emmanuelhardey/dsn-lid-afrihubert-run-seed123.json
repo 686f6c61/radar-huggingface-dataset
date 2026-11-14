@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EmmanuelHardey/dsn-lid-afrihubert-run-seed123",
   "slug": "emmanuelhardey-dsn-lid-afrihubert-run-seed123",
   "author": "EmmanuelHardey",
@@ -23,14 +23,19 @@
   "parameters_human": "94.6M",
   "storage_bytes": 189169258,
   "storage_human": "189 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

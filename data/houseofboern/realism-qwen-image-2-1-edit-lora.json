@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "houseofboern/realism-qwen-image-2.1-edit-lora",
   "slug": "houseofboern-realism-qwen-image-2-1-edit-lora",
   "author": "houseofboern",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 42102592,
   "storage_human": "42 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-27T04:03:32.636Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

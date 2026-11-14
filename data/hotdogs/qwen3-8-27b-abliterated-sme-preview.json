@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hotdogs/Qwen3.8-27B-abliterated-sme-preview",
   "slug": "hotdogs-qwen3-8-27b-abliterated-sme-preview",
   "author": "hotdogs",
@@ -46,14 +46,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 56536964625,
   "storage_human": "56.5 GB",
+  "context_length": null,
   "base_model": "hotdogs/Qwen3.8-27B-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

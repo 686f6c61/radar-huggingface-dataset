@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TheFatBlue/code-backdoor-f26-pilot-w1",
   "slug": "thefatblue-code-backdoor-f26-pilot-w1",
   "author": "TheFatBlue",
@@ -31,14 +31,19 @@
   "parameters_human": "222.9M",
   "storage_bytes": 891564537,
   "storage_human": "892 MB",
+  "context_length": null,
   "base_model": "Salesforce/codet5-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

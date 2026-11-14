@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "batistado/QuorumGuard",
   "slug": "batistado-quorumguard",
   "author": "batistado",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 291168,
   "storage_human": "291168 B",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B-Instruct, Qwen/Qwen2.5-7B-Instruct, Qwen/Qwen2.5-Coder-14B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

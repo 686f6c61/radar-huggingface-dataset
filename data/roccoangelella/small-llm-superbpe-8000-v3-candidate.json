@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "roccoangelella/small-llm-superbpe-8000-v3-candidate",
   "slug": "roccoangelella-small-llm-superbpe-8000-v3-candidate",
   "author": "roccoangelella",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 320175,
   "storage_human": "320175 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-24T03:34:25.154Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

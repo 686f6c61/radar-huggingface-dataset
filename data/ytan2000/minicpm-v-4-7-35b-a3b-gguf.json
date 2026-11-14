@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YTan2000/MiniCPM-V-4.7-35B-A3B-GGUF",
   "slug": "ytan2000-minicpm-v-4-7-35b-a3b-gguf",
   "author": "YTan2000",
@@ -36,14 +36,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 52159598274,
   "storage_human": "52.2 GB",
+  "context_length": 262144,
   "base_model": "openbmb/MiniCPM-V-4.7-35B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

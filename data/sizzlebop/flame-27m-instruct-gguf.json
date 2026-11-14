@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sizzlebop/flame-27m-instruct-GGUF",
   "slug": "sizzlebop-flame-27m-instruct-gguf",
   "author": "sizzlebop",
@@ -36,14 +36,19 @@
   "parameters_human": "27.1M",
   "storage_bytes": 173821376,
   "storage_human": "174 MB",
+  "context_length": 2048,
   "base_model": "ifx-pse-sys-ml/flame-27m-instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

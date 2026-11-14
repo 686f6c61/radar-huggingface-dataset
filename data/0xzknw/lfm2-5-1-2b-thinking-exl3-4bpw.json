@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0xzknw/LFM2.5-1.2B-Thinking-EXL3-4bpw",
   "slug": "0xzknw-lfm2-5-1-2b-thinking-exl3-4bpw",
   "author": "0xzknw",
@@ -31,6 +31,7 @@
   "parameters_human": "394.0M",
   "storage_bytes": 788124536,
   "storage_human": "788 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-1.2B-Thinking",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

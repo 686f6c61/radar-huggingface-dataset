@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Contrastive-LM/tb4-clm-cv-heads-8k",
   "slug": "contrastive-lm-tb4-clm-cv-heads-8k",
   "author": "Contrastive-LM",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 226673178,
   "storage_human": "227 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-24T03:27:42.451Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

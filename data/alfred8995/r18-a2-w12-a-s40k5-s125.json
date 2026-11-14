@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alfred8995/r18-a2-w12-a-s40k5-s125",
   "slug": "alfred8995-r18-a2-w12-a-s40k5-s125",
   "author": "alfred8995",
@@ -24,14 +24,19 @@
   "parameters_human": "2.02B",
   "storage_bytes": 6312460296,
   "storage_human": "6.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

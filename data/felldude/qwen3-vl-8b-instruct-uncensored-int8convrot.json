@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Felldude/Qwen3-VL-8B-Instruct-Uncensored-INT8CONVROT",
   "slug": "felldude-qwen3-vl-8b-instruct-uncensored-int8convrot",
   "author": "Felldude",
@@ -28,14 +28,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 12515530232,
   "storage_human": "12.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T20:38:23.359Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

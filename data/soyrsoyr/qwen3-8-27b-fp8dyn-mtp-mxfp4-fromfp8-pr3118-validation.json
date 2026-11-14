@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-MXFP4-FromFP8-pr3118-validation",
   "slug": "soyrsoyr-qwen3-8-27b-fp8dyn-mtp-mxfp4-fromfp8-pr3118-validation",
   "author": "soyrsoyr",
@@ -35,14 +35,19 @@
   "parameters_human": "27.13B",
   "storage_bytes": 35330053205,
   "storage_human": "35.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-01T05:24:41.524Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

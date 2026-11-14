@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/llama-2-7b-NDMO-agent-GGUF",
   "slug": "mradermacher-llama-2-7b-ndmo-agent-gguf",
   "author": "mradermacher",
@@ -28,14 +28,19 @@
   "parameters_human": "6.74B",
   "storage_bytes": 59564799104,
   "storage_human": "59.6 GB",
+  "context_length": 4096,
   "base_model": "IJyad/llama-2-7b-NDMO-agent",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hugnever21/ClinFusion-8B-Q8",
   "slug": "hugnever21-clinfusion-8b-q8",
   "author": "hugnever21",
@@ -27,14 +27,19 @@
   "parameters_human": "8.76B",
   "storage_bytes": 9965058759,
   "storage_human": "10.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-01T03:20:42.457Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

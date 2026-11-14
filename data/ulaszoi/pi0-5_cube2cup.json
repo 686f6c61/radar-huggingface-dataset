@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ulasZoi/pi0.5_cube2cup",
   "slug": "ulaszoi-pi0-5_cube2cup",
   "author": "ulasZoi",
@@ -29,14 +29,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 9354063880,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-23T06:00:03.995Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "emonHasan01/BanglaGPT-Pro-GGUF",
   "slug": "emonhasan01-banglagpt-pro-gguf",
   "author": "emonHasan01",
@@ -39,6 +39,7 @@
   "parameters_human": "999.9M",
   "storage_bytes": 3913516305,
   "storage_human": "3.9 GB",
+  "context_length": 32768,
   "base_model": "emonHasan01/BanglaGPT-Pro",
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0xSero/DeepSeek-V4-Flash-0731-EXL3-3.0bpw",
   "slug": "0xsero-deepseek-v4-flash-0731-exl3-3-0bpw",
   "author": "0xSero",
@@ -33,14 +33,19 @@
   "parameters_human": "70.04B",
   "storage_bytes": 124913139511,
   "storage_human": "124.9 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

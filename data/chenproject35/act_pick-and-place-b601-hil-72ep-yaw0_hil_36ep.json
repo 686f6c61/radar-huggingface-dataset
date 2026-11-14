@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chenproject35/act_pick-and-place-b601-hil-72ep-yaw0_hil_36ep",
   "slug": "chenproject35-act_pick-and-place-b601-hil-72ep-yaw0_hil_36ep",
   "author": "chenproject35",
@@ -28,14 +28,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 4956477144,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

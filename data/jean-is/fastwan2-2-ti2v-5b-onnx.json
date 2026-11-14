@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jean-is/FastWan2.2-TI2V-5B-ONNX",
   "slug": "jean-is-fastwan2-2-ti2v-5b-onnx",
   "author": "jean-is",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 11505178082,
   "storage_human": "11.5 GB",
+  "context_length": null,
   "base_model": "FastVideo/FastWan2.2-TI2V-5B-FullAttn-Diffusers",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "maks74581/RuCritic-3B-Q8_0-GGUF",
   "slug": "maks74581-rucritic-3b-q8_0-gguf",
   "author": "maks74581",
@@ -31,14 +31,19 @@
   "parameters_human": "30.2M",
   "storage_bytes": 47912160,
   "storage_human": "48 MB",
+  "context_length": null,
   "base_model": "maks74581/RuCritic-3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

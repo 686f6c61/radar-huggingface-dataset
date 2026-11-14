@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DataScience-UIBK/uibk-embedding-v1",
   "slug": "datascience-uibk-uibk-embedding-v1",
   "author": "DataScience-UIBK",
@@ -41,14 +41,19 @@
   "parameters_human": "149.0M",
   "storage_bytes": 717788001,
   "storage_human": "718 MB",
+  "context_length": null,
   "base_model": "answerdotai/ModernBERT-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

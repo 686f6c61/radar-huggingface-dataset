@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TeamAudiyo/Boomslang-135M",
   "slug": "teamaudiyo-boomslang-135m",
   "author": "TeamAudiyo",
@@ -37,6 +37,7 @@
   "parameters_human": "3.09B",
   "storage_bytes": 12361665676,
   "storage_human": "12.4 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "gguf",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-26T03:10:35.156Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

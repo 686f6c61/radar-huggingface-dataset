@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rayan-m/kokoro-82m-coreml-fp16",
   "slug": "rayan-m-kokoro-82m-coreml-fp16",
   "author": "rayan-m",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 150480491,
   "storage_human": "150 MB",
+  "context_length": null,
   "base_model": "hexgrad/Kokoro-82M",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "maheshrawat18/Qwen3-8B-grpo-emotion-v9",
   "slug": "maheshrawat18-qwen3-8b-grpo-emotion-v9",
   "author": "maheshrawat18",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 186079048,
   "storage_human": "186 MB",
+  "context_length": null,
   "base_model": "maheshrawat18/Qwen3-8B-grpo-emotion-v8-merged",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-23T06:36:25.377Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

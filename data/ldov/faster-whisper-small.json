@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ldov/faster-whisper-small",
   "slug": "ldov-faster-whisper-small",
   "author": "ldov",
@@ -224,12 +224,17 @@
   "parameters_human": null,
   "storage_bytes": 483546902,
   "storage_human": "484 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-29T02:32:14.946Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cybort/swift-bonsai-2-ptq1-unpacked-hf",
   "slug": "cybort-swift-bonsai-2-ptq1-unpacked-hf",
   "author": "cybort",
@@ -31,14 +31,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 53804895040,
   "storage_human": "53.8 GB",
+  "context_length": null,
   "base_model": "ukisai/Swift-Bonsai-2-GGUF",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

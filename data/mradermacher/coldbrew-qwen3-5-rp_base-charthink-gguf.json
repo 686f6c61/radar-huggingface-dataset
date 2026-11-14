@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/ColdBrew-Qwen3.5-RP_Base-CharThink-GGUF",
   "slug": "mradermacher-coldbrew-qwen3-5-rp_base-charthink-gguf",
   "author": "mradermacher",
@@ -34,14 +34,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 82967487360,
   "storage_human": "83.0 GB",
+  "context_length": 262144,
   "base_model": "SvalTek/ColdBrew-Qwen3.5-RP_Base-CharThink",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

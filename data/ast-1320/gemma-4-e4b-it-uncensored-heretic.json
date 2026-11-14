@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AST-1320/gemma-4-E4B-it-uncensored-heretic",
   "slug": "ast-1320-gemma-4-e4b-it-uncensored-heretic",
   "author": "AST-1320",
@@ -23,14 +23,19 @@
   "parameters_human": "8.00B",
   "storage_bytes": 16024765664,
   "storage_human": "16.0 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-27T02:23:55.782Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

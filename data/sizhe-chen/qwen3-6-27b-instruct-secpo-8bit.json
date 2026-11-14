@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sizhe-Chen/Qwen3.6-27B-Instruct-SecPO-8Bit",
   "slug": "sizhe-chen-qwen3-6-27b-instruct-secpo-8bit",
   "author": "Sizhe-Chen",
@@ -53,14 +53,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 30398775655,
   "storage_human": "30.4 GB",
+  "context_length": null,
   "base_model": "Sizhe-Chen/Qwen3.6-27B-Instruct-SecPO",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

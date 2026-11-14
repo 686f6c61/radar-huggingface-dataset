@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "medismera/OneJev1.6-4B-Surgical-Abliterated",
   "slug": "medismera-onejev1-6-4b-surgical-abliterated",
   "author": "medismera",
@@ -37,6 +37,7 @@
   "parameters_human": "4.54B",
   "storage_bytes": 11807414579,
   "storage_human": "11.8 GB",
+  "context_length": 262144,
   "base_model": "OmniJev/OneJev1.6-4B",
   "formats": [
     "gguf",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MergekitCloud/mergekit-175",
   "slug": "mergekitcloud-mergekit-175",
   "author": "MergekitCloud",
@@ -34,14 +34,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 29543384276,
   "storage_human": "29.5 GB",
+  "context_length": null,
   "base_model": "Sakalti/Saka-14B, RDson/WomboCombo-R1-Coder-14B-Preview",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

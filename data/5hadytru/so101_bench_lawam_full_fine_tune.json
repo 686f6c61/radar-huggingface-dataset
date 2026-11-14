@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "5hadytru/so101_bench_LaWAM_full_fine_tune",
   "slug": "5hadytru-so101_bench_lawam_full_fine_tune",
   "author": "5hadytru",
@@ -32,14 +32,19 @@
   "parameters_human": "2.56B",
   "storage_bytes": 7173926868,
   "storage_human": "7.2 GB",
+  "context_length": null,
   "base_model": "jialei02/lawam-pretrain-lerobot",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

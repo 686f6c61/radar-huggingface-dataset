@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jhhj25/reef-nccl-ep-qwen3-coder-480b-a35b-lora-tune480b-run4",
   "slug": "jhhj25-reef-nccl-ep-qwen3-coder-480b-a35b-lora-tune480b-run4",
   "author": "jhhj25",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 1625836672,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

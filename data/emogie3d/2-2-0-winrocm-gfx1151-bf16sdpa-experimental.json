@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "emogie3D/2.2.0-winrocm.gfx1151.bf16sdpa-experimental",
   "slug": "emogie3d-2-2-0-winrocm-gfx1151-bf16sdpa-experimental",
   "author": "emogie3D",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 788463,
   "storage_human": "788463 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-15T08:48:05.175Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "snkii/Sori-1B",
   "slug": "snkii-sori-1b",
   "author": "snkii",
@@ -46,14 +46,19 @@
   "parameters_human": "932.5M",
   "storage_bytes": 3730376835,
   "storage_human": "3.7 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-350M-Base, LiquidAI/LFM2.5-Encoder-350M, nvidia/audio-flamingo-next-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

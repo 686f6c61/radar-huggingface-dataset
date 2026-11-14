@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TokenTinkerer/Groot-19B-A3B-TTQ-GGUF",
   "slug": "tokentinkerer-groot-19b-a3b-ttq-gguf",
   "author": "TokenTinkerer",
@@ -42,14 +42,19 @@
   "parameters_human": "18.99B",
   "storage_bytes": 172569210486,
   "storage_human": "172.6 GB",
+  "context_length": 262144,
   "base_model": "GrootTeam/Groot-19B-A3B-261023",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

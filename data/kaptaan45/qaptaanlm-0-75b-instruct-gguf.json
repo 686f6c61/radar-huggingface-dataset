@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kaptaan45/QaptaanLM-0.75B-Instruct-GGUF",
   "slug": "kaptaan45-qaptaanlm-0-75b-instruct-gguf",
   "author": "kaptaan45",
@@ -38,14 +38,19 @@
   "parameters_human": "752.4M",
   "storage_bytes": 22155533592,
   "storage_human": "22.2 GB",
+  "context_length": 262144,
   "base_model": "kaptaan45/QaptaanLM-0.75B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wckwan/arora-qwen3.5-9b-a0.1-seven-task",
   "slug": "wckwan-arora-qwen3-5-9b-a0-1-seven-task",
   "author": "wckwan",
@@ -29,14 +29,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 37659338741,
   "storage_human": "37.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

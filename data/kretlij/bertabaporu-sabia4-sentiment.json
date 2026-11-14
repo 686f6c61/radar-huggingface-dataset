@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KretliJ/bertabaporu-sabia4-sentiment",
   "slug": "kretlij-bertabaporu-sabia4-sentiment",
   "author": "KretliJ",
@@ -35,14 +35,19 @@
   "parameters_human": "369.4M",
   "storage_bytes": 1477757700,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "pablocosta/bertabaporu-large-uncased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Sentiment Analysis (3-class)",

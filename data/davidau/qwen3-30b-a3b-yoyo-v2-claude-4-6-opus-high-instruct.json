@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Qwen3-30B-A3B-YOYO-V2-Claude-4.6-Opus-High-INSTRUCT",
   "slug": "davidau-qwen3-30b-a3b-yoyo-v2-claude-4-6-opus-high-instruct",
   "author": "DavidAU",
@@ -44,14 +44,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 61077888621,
   "storage_human": "61.1 GB",
+  "context_length": null,
   "base_model": "YOYO-AI/Qwen3-30B-A3B-YOYO-V2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

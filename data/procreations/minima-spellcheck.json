@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ProCreations/minima-spellcheck",
   "slug": "procreations-minima-spellcheck",
   "author": "ProCreations",
@@ -32,14 +32,19 @@
   "parameters_human": "92.1M",
   "storage_bytes": 321156136,
   "storage_human": "321 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-Encoder-350M-Spellchecker",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

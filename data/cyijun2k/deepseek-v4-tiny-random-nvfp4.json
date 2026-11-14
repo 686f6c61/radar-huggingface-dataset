@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cyijun2k/deepseek-v4-tiny-random-nvfp4",
   "slug": "cyijun2k-deepseek-v4-tiny-random-nvfp4",
   "author": "cyijun2k",
@@ -37,14 +37,19 @@
   "parameters_human": "283.1M",
   "storage_bytes": 283408072,
   "storage_human": "283 MB",
+  "context_length": null,
   "base_model": "yujiepan/deepseek-v4-tiny-random",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

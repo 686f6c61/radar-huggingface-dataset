@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "patronus-studio/wolf-defender-prompt-injection-small",
   "slug": "patronus-studio-wolf-defender-prompt-injection-small",
   "author": "patronus-studio",
@@ -99,6 +99,7 @@
   "parameters_human": "140.6M",
   "storage_bytes": 5575157337,
   "storage_human": "5.6 GB",
+  "context_length": null,
   "base_model": "jhu-clsp/mmBERT-small",
   "formats": [
     "onnx",
@@ -106,8 +107,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

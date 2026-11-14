@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ipfipfipf/Qwen3.5-4B-sdpo-react-rlsd-multitask-arm2",
   "slug": "ipfipfipf-qwen3-5-4b-sdpo-react-rlsd-multitask-arm2",
   "author": "ipfipfipf",
@@ -30,14 +30,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 8424367422,
   "storage_human": "8.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

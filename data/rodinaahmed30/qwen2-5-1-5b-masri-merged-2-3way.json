@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rodinaahmed30/qwen2.5-1.5b-masri-merged-2.3way",
   "slug": "rodinaahmed30-qwen2-5-1-5b-masri-merged-2-3way",
   "author": "rodinaahmed30",
@@ -29,14 +29,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 3098889036,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T05:40:52.405Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

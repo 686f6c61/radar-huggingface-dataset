@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DenRakEiw/microduck-c-3pduck_0788",
   "slug": "denrakeiw-microduck-c-3pduck_0788",
   "author": "DenRakEiw",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 831318,
   "storage_human": "831318 B",
+  "context_length": null,
   "base_model": "suraj-phanindra/microduck-hill-hc5-aifund",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

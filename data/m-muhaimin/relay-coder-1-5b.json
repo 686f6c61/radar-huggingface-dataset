@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "m-Muhaimin/Relay-Coder-1.5B",
   "slug": "m-muhaimin-relay-coder-1-5b",
   "author": "m-Muhaimin",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 3246659722,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen2.5-Coder-1.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

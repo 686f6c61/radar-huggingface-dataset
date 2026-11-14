@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "abdouaziiz/yoruba_small-1",
   "slug": "abdouaziiz-yoruba_small-1",
   "author": "abdouaziiz",
@@ -32,14 +32,19 @@
   "parameters_human": "241.7M",
   "storage_bytes": 4834981241,
   "storage_human": "4.8 GB",
+  "context_length": null,
   "base_model": "NCAIR1/Yoruba-ASR",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

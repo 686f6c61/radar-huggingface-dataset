@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Horizon-Labs/prompt-injection-guard-small",
   "slug": "horizon-labs-prompt-injection-guard-small",
   "author": "Horizon-Labs",
@@ -93,6 +93,7 @@
   "parameters_human": "140.6M",
   "storage_bytes": 4251033142,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": "jhu-clsp/mmBERT-small",
   "formats": [
     "onnx",
@@ -100,8 +101,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

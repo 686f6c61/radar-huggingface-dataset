@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fushipro123/eduviolence-16class-checkpoints-proposed_eventlevel_timesformer_transformer_dynamic",
   "slug": "fushipro123-eduviolence-16class-checkpoints-proposed_eventlevel_timesformer_transformer_dynamic",
   "author": "fushipro123",
@@ -28,14 +28,19 @@
   "parameters_human": "129.8M",
   "storage_bytes": 20259195908,
   "storage_human": "20.3 GB",
+  "context_length": null,
   "base_model": "facebook/timesformer-base-finetuned-k400",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

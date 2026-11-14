@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Radinkazemian/Clovis-7B",
   "slug": "radinkazemian-clovis-7b",
   "author": "Radinkazemian",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 323066384,
   "storage_human": "323 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-15T02:54:57.483Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

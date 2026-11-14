@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JonathanFhima/RLAD-SwinV2-Large",
   "slug": "jonathanfhima-rlad-swinv2-large",
   "author": "JonathanFhima",
@@ -37,6 +37,7 @@
   "parameters_human": "201.5M",
   "storage_bytes": 936782807,
   "storage_human": "937 MB",
+  "context_length": null,
   "base_model": "microsoft/swinv2-large-patch4-window12-192-22k",
   "formats": [
     "onnx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

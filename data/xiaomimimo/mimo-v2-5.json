@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "XiaomiMiMo/MiMo-V2.5",
   "slug": "xiaomimimo-mimo-v2-5",
   "author": "XiaomiMiMo",
@@ -41,14 +41,19 @@
   "parameters_human": "310.76B",
   "storage_bytes": 315693598475,
   "storage_human": "315.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wesjos/fairface-redconsole-cnano-3task-224",
   "slug": "wesjos-fairface-redconsole-cnano-3task-224",
   "author": "wesjos",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 242875295,
   "storage_human": "243 MB",
+  "context_length": null,
   "base_model": "timm/convnext_nano.in12k_ft_in1k",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

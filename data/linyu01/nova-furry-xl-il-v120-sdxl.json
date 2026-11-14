@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "linyu01/nova-furry-xl-il-v120-sdxl",
   "slug": "linyu01-nova-furry-xl-il-v120-sdxl",
   "author": "linyu01",
@@ -55,6 +55,7 @@
   "parameters_human": "2.57B",
   "storage_bytes": 6938011430,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": "OnomaAIResearch/Illustrious-XL-v2.0, Laxhar/noobai-XL-1.1",
   "formats": [
     "diffusers",
@@ -62,8 +63,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

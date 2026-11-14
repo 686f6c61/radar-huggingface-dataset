@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yongchanskii/big_models",
   "slug": "yongchanskii-big_models",
   "author": "yongchanskii",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 11298427247,
   "storage_human": "11.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-13T08:41:52.599Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

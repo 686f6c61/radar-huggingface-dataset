@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eniairaph07/qwen3.8-27b-fable5-rl-sft-steps",
   "slug": "eniairaph07-qwen3-8-27b-fable5-rl-sft-steps",
   "author": "eniairaph07",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 463030469386,
   "storage_human": "463.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T20:38:46.105Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

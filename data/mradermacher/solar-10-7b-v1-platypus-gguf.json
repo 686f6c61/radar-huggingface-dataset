@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/SOLAR-10.7B-v1-Platypus-GGUF",
   "slug": "mradermacher-solar-10-7b-v1-platypus-gguf",
   "author": "mradermacher",
@@ -29,14 +29,19 @@
   "parameters_human": "10.73B",
   "storage_bytes": 283773974784,
   "storage_human": "283.8 GB",
+  "context_length": 4096,
   "base_model": "z8086486/SOLAR-10.7B-v1-Platypus",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

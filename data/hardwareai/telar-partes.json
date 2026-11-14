@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hardwareai/telar-partes",
   "slug": "hardwareai-telar-partes",
   "author": "hardwareai",
@@ -25,14 +25,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 12670074707,
   "storage_human": "12.7 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

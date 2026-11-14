@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kzap201/phowhisper-large-zaloai",
   "slug": "kzap201-phowhisper-large-zaloai",
   "author": "kzap201",
@@ -36,14 +36,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 12346740304,
   "storage_human": "12.3 GB",
+  "context_length": null,
   "base_model": "vinai/PhoWhisper-large",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

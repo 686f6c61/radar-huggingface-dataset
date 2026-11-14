@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bubskee/llama-3.1-8b-instruct-r-jpp-lenses",
   "slug": "bubskee-llama-3-1-8b-instruct-r-jpp-lenses",
   "author": "bubskee",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 4160765432,
   "storage_human": "4.2 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

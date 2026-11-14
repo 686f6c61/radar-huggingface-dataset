@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nodcai/livevoice-0.5b-GGUF",
   "slug": "nodcai-livevoice-0-5b-gguf",
   "author": "nodcai",
@@ -33,14 +33,19 @@
   "parameters_human": "883.6M",
   "storage_bytes": 3992917024,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": "microsoft/VibeVoice-Realtime-0.5B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "devendradhakad/autodroid-litert-community-Kokoro-G2P-en-US",
   "slug": "devendradhakad-autodroid-litert-community-kokoro-g2p-en-us",
   "author": "devendradhakad",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 50969672,
   "storage_human": "51 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

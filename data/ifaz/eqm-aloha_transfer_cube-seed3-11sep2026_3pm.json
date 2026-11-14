@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iFaz/eqm-aloha_transfer_cube-seed3-11sep2026_3pm",
   "slug": "ifaz-eqm-aloha_transfer_cube-seed3-11sep2026_3pm",
   "author": "iFaz",
@@ -27,14 +27,19 @@
   "parameters_human": "18.7M",
   "storage_bytes": 74832124,
   "storage_human": "75 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-16T04:02:22.555Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Havenlon/Execution-Boundary-Qwen35-27B",
   "slug": "havenlon-execution-boundary-qwen35-27b",
   "author": "Havenlon",
@@ -33,14 +33,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 105061410031,
   "storage_human": "105.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

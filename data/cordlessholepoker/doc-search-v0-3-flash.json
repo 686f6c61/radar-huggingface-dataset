@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cordlessholepoker/doc-search-v0.3-flash",
   "slug": "cordlessholepoker-doc-search-v0-3-flash",
   "author": "cordlessholepoker",
@@ -40,14 +40,19 @@
   "parameters_human": "9.00B",
   "storage_bytes": 18048229257,
   "storage_human": "18.0 GB",
+  "context_length": null,
   "base_model": "IFM/K2-Horizon-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-13T05:07:48.324Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

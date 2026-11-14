@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Piter254/Gemma-4-12B-uncensored-exl3-6.0bpw",
   "slug": "piter254-gemma-4-12b-uncensored-exl3-6-0bpw",
   "author": "Piter254",
@@ -30,14 +30,19 @@
   "parameters_human": "5.50B",
   "storage_bytes": 11039035362,
   "storage_human": "11.0 GB",
+  "context_length": null,
   "base_model": "lemuralabs/Gemma-4-12B-uncensored-bf16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

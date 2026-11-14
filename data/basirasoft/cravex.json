@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BasiraSoft/CraveX",
   "slug": "basirasoft-cravex",
   "author": "BasiraSoft",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 791622862,
   "storage_human": "792 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-28T03:59:34.171Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

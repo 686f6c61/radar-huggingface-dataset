@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HYU-NLP-EVAL/qwen3-4b-healthbench-static-r0-step-050",
   "slug": "hyu-nlp-eval-qwen3-4b-healthbench-static-r0-step-050",
   "author": "HYU-NLP-EVAL",
@@ -35,14 +35,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 8056404650,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-19T12:10:58.381Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

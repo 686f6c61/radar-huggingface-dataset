@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Chungulus/flux-3-image-klein-comfy-Q8_0-GGUF",
   "slug": "chungulus-flux-3-image-klein-comfy-q8_0-gguf",
   "author": "Chungulus",
@@ -30,14 +30,19 @@
   "parameters_human": "5.55B",
   "storage_bytes": 5992018717,
   "storage_human": "6.0 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/flux-3-image-klein-comfy",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

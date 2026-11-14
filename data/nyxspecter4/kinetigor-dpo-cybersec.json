@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nyxspecter4/kinetigor-dpo-cybersec",
   "slug": "nyxspecter4-kinetigor-dpo-cybersec",
   "author": "nyxspecter4",
@@ -59,6 +59,7 @@
   "parameters_human": "494.0M",
   "storage_bytes": 4361553668,
   "storage_human": "4.4 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "gguf",
@@ -66,8 +67,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-10T03:33:09.253Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Cybersecurity Vulnerability Analysis",

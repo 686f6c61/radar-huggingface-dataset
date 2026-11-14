@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Johneeee/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic-oQ4e-fp16",
   "slug": "johneeee-qwen3-6-40b-grand-intelligence-fable-fusion-uncensored-heretic-oq4e-fp16",
   "author": "Johneeee",
@@ -27,6 +27,7 @@
   "parameters_human": "39.07B",
   "storage_bytes": 23201042410,
   "storage_human": "23.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

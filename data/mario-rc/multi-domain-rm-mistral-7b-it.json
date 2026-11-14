@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mario-rc/multi-domain-rm-mistral-7b-it",
   "slug": "mario-rc-multi-domain-rm-mistral-7b-it",
   "author": "mario-rc",
@@ -45,14 +45,19 @@
   "parameters_human": "7.11B",
   "storage_bytes": 32431764332,
   "storage_human": "32.4 GB",
+  "context_length": null,
   "base_model": "weqweasdas/RM-Mistral-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

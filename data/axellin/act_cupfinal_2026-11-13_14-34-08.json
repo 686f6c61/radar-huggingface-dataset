@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "axellin/act_cupfinal_2026-11-13_14-34-08",
   "slug": "axellin-act_cupfinal_2026-11-13_14-34-08",
   "author": "axellin",
@@ -31,14 +31,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 6195344368,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

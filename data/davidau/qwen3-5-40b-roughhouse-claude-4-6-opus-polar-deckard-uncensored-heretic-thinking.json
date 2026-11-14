@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Qwen3.5-40B-RoughHouse-Claude-4.6-Opus-Polar-Deckard-Uncensored-Heretic-Thinking",
   "slug": "davidau-qwen3-5-40b-roughhouse-claude-4-6-opus-polar-deckard-uncensored-heretic-thinking",
   "author": "DavidAU",
@@ -62,14 +62,19 @@
   "parameters_human": "39.53B",
   "storage_bytes": 79084003134,
   "storage_human": "79.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

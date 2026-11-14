@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jonyses/Qwopus3.5-122B-A10B-Kimi-K2.6-destill-healed-abliterated-GGUF",
   "slug": "jonyses-qwopus3-5-122b-a10b-kimi-k2-6-destill-healed-abliterated-gguf",
   "author": "Jonyses",
@@ -44,14 +44,19 @@
   "parameters_human": "124.64B",
   "storage_bytes": 76752714210,
   "storage_human": "76.8 GB",
+  "context_length": 262144,
   "base_model": "OpenYourMind/Qwopus3.5-122B-A10B-Kimi-K2.6-destill-healed-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

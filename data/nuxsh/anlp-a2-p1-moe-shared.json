@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nuxsh/anlp-a2-p1-moe-shared",
   "slug": "nuxsh-anlp-a2-p1-moe-shared",
   "author": "nuxsh",
@@ -24,14 +24,19 @@
   "parameters_human": "27.3M",
   "storage_bytes": 109123384,
   "storage_human": "109 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

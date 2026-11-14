@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JRamirez-UAB/ZwZ2-27B-EXL3-2.25bpw-16GB",
   "slug": "jramirez-uab-zwz2-27b-exl3-2-25bpw-16gb",
   "author": "JRamirez-UAB",
@@ -53,14 +53,19 @@
   "parameters_human": "5.49B",
   "storage_bytes": 9723491759,
   "storage_human": "9.7 GB",
+  "context_length": null,
   "base_model": "inclusionAI/ZwZ2-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

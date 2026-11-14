@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ArRENCEAI/LUCKYREN-L1T3-7b-OBLITERATED-GGUF",
   "slug": "arrenceai-luckyren-l1t3-7b-obliterated-gguf",
   "author": "ArRENCEAI",
@@ -35,14 +35,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 25365757568,
   "storage_human": "25.4 GB",
+  "context_length": 32768,
   "base_model": "ArRENCEAI/Qwen2.5-7b-Instruct-Obliterated-Improved",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dean22029/pr_fm_qwen25_14b_adapter",
   "slug": "dean22029-pr_fm_qwen25_14b_adapter",
   "author": "dean22029",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 286763616,
   "storage_human": "287 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-14B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

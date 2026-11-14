@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AIArchiveInfo/ModernBERT-large-zeroshot-v2.0",
   "slug": "aiarchiveinfo-modernbert-large-zeroshot-v2-0",
   "author": "AIArchiveInfo",
@@ -32,6 +32,7 @@
   "parameters_human": "395.8M",
   "storage_bytes": 5084026182,
   "storage_human": "5.1 GB",
+  "context_length": null,
   "base_model": "answerdotai/ModernBERT-large",
   "formats": [
     "onnx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

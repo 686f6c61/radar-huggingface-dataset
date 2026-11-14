@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chaitalibh/mix_grpo_08119_more",
   "slug": "chaitalibh-mix_grpo_08119_more",
   "author": "chaitalibh",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 169115250,
   "storage_human": "169 MB",
+  "context_length": null,
   "base_model": "CELL-LAB/lora-plus-f2f-backup",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-21T07:34:34.058Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

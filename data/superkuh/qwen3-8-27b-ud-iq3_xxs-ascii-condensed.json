@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "superkuh/Qwen3.8-27B-UD-IQ3_XXS-ASCII-Condensed",
   "slug": "superkuh-qwen3-8-27b-ud-iq3_xxs-ascii-condensed",
   "author": "superkuh",
@@ -38,14 +38,19 @@
   "parameters_human": "26.09B",
   "storage_bytes": 10380690336,
   "storage_human": "10.4 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

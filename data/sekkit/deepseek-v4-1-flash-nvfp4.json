@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sekkit/DeepSeek-V4.1-Flash-NVFP4",
   "slug": "sekkit-deepseek-v4-1-flash-nvfp4",
   "author": "sekkit",
@@ -36,14 +36,19 @@
   "parameters_human": "664.90B",
   "storage_bytes": 429002296013,
   "storage_human": "429.0 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "OxBee/DeepSeek-V4.1-Flash-NVFP4",
+  "renamed_at": "2026-11-11T07:28:22.405Z",
   "benchmarks": [],
   "sources": []
 }

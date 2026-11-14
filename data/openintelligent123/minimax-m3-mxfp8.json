@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Openintelligent123/MiniMax-M3-MXFP8",
   "slug": "openintelligent123-minimax-m3-mxfp8",
   "author": "Openintelligent123",
@@ -38,14 +38,19 @@
   "parameters_human": "427.04B",
   "storage_bytes": 443753494405,
   "storage_human": "443.8 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-M3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

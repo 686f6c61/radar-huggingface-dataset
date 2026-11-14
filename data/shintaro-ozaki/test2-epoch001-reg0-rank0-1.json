@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shintaro-ozaki/test2-epoch001-reg0-rank0.1",
   "slug": "shintaro-ozaki-test2-epoch001-reg0-rank0-1",
   "author": "shintaro-ozaki",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 44301551,
   "storage_human": "44 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T08:15:17.133Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

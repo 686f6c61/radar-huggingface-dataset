@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sekkit/d1-omni-600M",
   "slug": "sekkit-d1-omni-600m",
   "author": "sekkit",
@@ -73,14 +73,19 @@
   "parameters_human": "587.2M",
   "storage_bytes": 2348774500,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-Encoder-350M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "OxBee/d1-omni-600M",
+  "renamed_at": "2026-11-11T07:28:28.127Z",
   "benchmarks": [],
   "sources": [
     {

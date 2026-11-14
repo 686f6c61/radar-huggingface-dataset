@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dys-asr/parakeet-tdt-0.6b-unconstrained",
   "slug": "dys-asr-parakeet-tdt-0-6b-unconstrained",
   "author": "dys-asr",
@@ -41,14 +41,19 @@
   "parameters_human": "627.1M",
   "storage_bytes": 2508311120,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "nvidia/parakeet-tdt-0.6b-v3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

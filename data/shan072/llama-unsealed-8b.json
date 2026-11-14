@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Shan072/Llama-Unsealed-8B",
   "slug": "shan072-llama-unsealed-8b",
   "author": "Shan072",
@@ -46,14 +46,19 @@
   "parameters_human": null,
   "storage_bytes": 352814616,
   "storage_human": "353 MB",
+  "context_length": null,
   "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

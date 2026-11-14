@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jakevin/Qwen3.8-Flash-Next-ternary-mlx-K50-16GB",
   "slug": "jakevin-qwen3-8-flash-next-ternary-mlx-k50-16gb",
   "author": "Jakevin",
@@ -33,6 +33,7 @@
   "parameters_human": null,
   "storage_bytes": 65068970668,
   "storage_human": "65.1 GB",
+  "context_length": null,
   "base_model": "Jakevin/Qwen3.8-Flash-Next-ternary-mlx-K50",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

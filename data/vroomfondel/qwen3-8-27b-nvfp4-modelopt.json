@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vroomfondel/Qwen3.8-27B-NVFP4-ModelOpt",
   "slug": "vroomfondel-qwen3-8-27b-nvfp4-modelopt",
   "author": "vroomfondel",
@@ -41,14 +41,19 @@
   "parameters_human": "15.19B",
   "storage_bytes": 20605962552,
   "storage_human": "20.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

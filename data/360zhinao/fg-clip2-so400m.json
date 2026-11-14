@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "360ZhiNao/fg-clip2-so400m",
   "slug": "360zhinao-fg-clip2-so400m",
   "author": "360ZhiNao",
@@ -36,14 +36,19 @@
   "parameters_human": "1.15B",
   "storage_bytes": 4654777827,
   "storage_human": "4.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

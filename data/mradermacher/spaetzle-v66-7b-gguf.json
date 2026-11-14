@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Spaetzle-v66-7b-GGUF",
   "slug": "mradermacher-spaetzle-v66-7b-gguf",
   "author": "mradermacher",
@@ -37,14 +37,19 @@
   "parameters_human": "7.24B",
   "storage_bytes": 63929823488,
   "storage_human": "63.9 GB",
+  "context_length": 32768,
   "base_model": "cstr/Spaetzle-v66-7b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

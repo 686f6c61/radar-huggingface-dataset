@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fullmetaljackass/Qwen3.8-27B-Uncensored-NInfer",
   "slug": "fullmetaljackass-qwen3-8-27b-uncensored-ninfer",
   "author": "fullmetaljackass",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 36428242688,
   "storage_human": "36.4 GB",
+  "context_length": null,
   "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

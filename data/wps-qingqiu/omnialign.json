@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WPS-Qingqiu/OmniAlign",
   "slug": "wps-qingqiu-omnialign",
   "author": "WPS-Qingqiu",
@@ -56,14 +56,19 @@
   "parameters_human": "305.4M",
   "storage_bytes": 627843534,
   "storage_human": "628 MB",
+  "context_length": null,
   "base_model": "Alibaba-NLP/gte-multilingual-mlm-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

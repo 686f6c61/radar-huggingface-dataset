@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "r1char9/t5gemma2-detox-ru",
   "slug": "r1char9-t5gemma2-detox-ru",
   "author": "r1char9",
@@ -41,14 +41,19 @@
   "parameters_human": "2.12B",
   "storage_bytes": 4265490371,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": "google/t5gemma-2-1b-1b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "r1char9/t5gemma2-detox-ru-en",
+  "renamed_at": "2026-11-11T07:14:37.038Z",
   "benchmarks": [],
   "sources": [
     {

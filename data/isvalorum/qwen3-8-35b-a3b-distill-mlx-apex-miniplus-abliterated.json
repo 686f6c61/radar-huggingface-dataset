@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IsValorum/Qwen3.8-35B-A3B-Distill-MLX-APEX-MiniPlus-Abliterated",
   "slug": "isvalorum-qwen3-8-35b-a3b-distill-mlx-apex-miniplus-abliterated",
   "author": "IsValorum",
@@ -37,6 +37,7 @@
   "parameters_human": "34.66B",
   "storage_bytes": 19968465669,
   "storage_human": "20.0 GB",
+  "context_length": null,
   "base_model": "empero-ai/Qwen3.8-35B-A3B-Distill",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

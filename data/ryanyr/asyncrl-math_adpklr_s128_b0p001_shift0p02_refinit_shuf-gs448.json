@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RyanYr/asyncrl-math_adpklr_s128_b0p001_shift0p02_refinit_shuf-gs448",
   "slug": "ryanyr-asyncrl-math_adpklr_s128_b0p001_shift0p02_refinit_shuf-gs448",
   "author": "RyanYr",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 21903246230,
   "storage_human": "21.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-13T04:35:08.705Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

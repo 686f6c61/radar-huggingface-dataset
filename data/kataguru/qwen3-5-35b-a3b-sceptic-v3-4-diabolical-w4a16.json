@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kataguru/Qwen3.5-35B-A3B-Sceptic-v3.4-Diabolical-W4A16",
   "slug": "kataguru-qwen3-5-35b-a3b-sceptic-v3-4-diabolical-w4a16",
   "author": "kataguru",
@@ -47,14 +47,19 @@
   "parameters_human": "35.95B",
   "storage_bytes": 26156269713,
   "storage_human": "26.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-30T11:53:32.837Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

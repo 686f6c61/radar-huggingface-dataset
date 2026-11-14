@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JustPropane/Ministral-3-3B-Reasoning-UNCENSORED-heretic",
   "slug": "justpropane-ministral-3-3b-reasoning-uncensored-heretic",
   "author": "JustPropane",
@@ -56,14 +56,19 @@
   "parameters_human": "3.85B",
   "storage_bytes": 7715319174,
   "storage_human": "7.7 GB",
+  "context_length": null,
   "base_model": "unsloth/Ministral-3-3B-Reasoning-2512",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

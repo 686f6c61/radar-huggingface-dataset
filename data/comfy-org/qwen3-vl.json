@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Comfy-Org/Qwen3-VL",
   "slug": "comfy-org-qwen3-vl",
   "author": "Comfy-Org",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 64209284968,
   "storage_human": "64.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-4B-Instruct, Qwen/Qwen3-VL-8B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

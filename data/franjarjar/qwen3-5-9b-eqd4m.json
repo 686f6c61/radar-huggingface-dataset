@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Franjarjar/Qwen3.5-9B-EQD4M",
   "slug": "franjarjar-qwen3-5-9b-eqd4m",
   "author": "Franjarjar",
@@ -32,14 +32,19 @@
   "parameters_human": "2.64B",
   "storage_bytes": 5647245158,
   "storage_human": "5.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

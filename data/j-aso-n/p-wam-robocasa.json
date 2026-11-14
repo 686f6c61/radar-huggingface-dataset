@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "J-aso-n/P-WAM-RoboCasa",
   "slug": "j-aso-n-p-wam-robocasa",
   "author": "J-aso-n",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 5521097139,
   "storage_human": "5.5 GB",
+  "context_length": null,
   "base_model": "nvidia/Cosmos-Policy-RoboCasa-Predict2-2B, google/siglip-so400m-patch14-224, facebook/dinov3-vitl16-pretrain-lvd1689m",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

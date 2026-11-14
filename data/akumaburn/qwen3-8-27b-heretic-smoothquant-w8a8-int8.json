@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "akumaburn/Qwen3.8-27B-heretic-SmoothQuant-W8A8-INT8",
   "slug": "akumaburn-qwen3-8-27b-heretic-smoothquant-w8a8-int8",
   "author": "akumaburn",
@@ -45,14 +45,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 31263878485,
   "storage_human": "31.3 GB",
+  "context_length": null,
   "base_model": "akumaburn/Qwen3.8-27B-heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

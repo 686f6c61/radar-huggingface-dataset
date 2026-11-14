@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "firzahdzm/tourn-3edc57af-instructtext-hyper-ps-qwen35-9b",
   "slug": "firzahdzm-tourn-3edc57af-instructtext-hyper-ps-qwen35-9b",
   "author": "firzahdzm",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 2789872293,
   "storage_human": "2.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-09T10:42:14.208Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

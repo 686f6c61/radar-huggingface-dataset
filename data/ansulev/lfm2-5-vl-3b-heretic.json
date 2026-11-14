@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ansulev/LFM2.5-VL-3B-heretic",
   "slug": "ansulev-lfm2-5-vl-3b-heretic",
   "author": "ansulev",
@@ -73,14 +73,19 @@
   "parameters_human": "3.12B",
   "storage_bytes": 6264970598,
   "storage_human": "6.3 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-VL-3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

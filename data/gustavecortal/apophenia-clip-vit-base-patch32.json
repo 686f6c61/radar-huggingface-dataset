@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gustavecortal/apophenia-clip-vit-base-patch32",
   "slug": "gustavecortal-apophenia-clip-vit-base-patch32",
   "author": "gustavecortal",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 264557711,
   "storage_human": "265 MB",
+  "context_length": null,
   "base_model": "openai/clip-vit-base-patch32",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "gustavecortal/imagevolve-clip-vit-base-patch32",
+  "renamed_at": "2026-11-12T05:41:21.163Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fpadovani/arb-arab-100mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407",
   "slug": "fpadovani-arb-arab-100mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407",
   "author": "fpadovani",
@@ -32,14 +32,19 @@
   "parameters_human": "124.8M",
   "storage_bytes": 6739724606,
   "storage_human": "6.7 GB",
+  "context_length": null,
   "base_model": "fpadovani/arb-arab-100mb-ppt-shuff-dyck-100mb_seed3407",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

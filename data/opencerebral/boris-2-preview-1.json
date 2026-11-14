@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "opencerebral/Boris-2-Preview-1",
   "slug": "opencerebral-boris-2-preview-1",
   "author": "opencerebral",
@@ -38,14 +38,19 @@
   "parameters_human": "144.2M",
   "storage_bytes": 578671072,
   "storage_human": "579 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

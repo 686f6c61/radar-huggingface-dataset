@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mohammedaly22/Cairo-TTS",
   "slug": "mohammedaly22-cairo-tts",
   "author": "mohammedaly22",
@@ -39,14 +39,19 @@
   "parameters_human": "105.5M",
   "storage_bytes": 394529493,
   "storage_human": "395 MB",
+  "context_length": null,
   "base_model": "kyutai/pocket-tts",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-16T03:53:59.923Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

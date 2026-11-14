@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "InternScience/Sage-A1.5-Q8_0-GGUF",
   "slug": "internscience-sage-a1-5-q8_0-gguf",
   "author": "InternScience",
@@ -35,14 +35,19 @@
   "parameters_human": "35.51B",
   "storage_bytes": 38701623665,
   "storage_human": "38.7 GB",
+  "context_length": 262144,
   "base_model": "InternScience/Sage-A1.5",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

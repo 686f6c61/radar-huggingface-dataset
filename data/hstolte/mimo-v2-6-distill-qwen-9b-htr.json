@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hstolte/MiMo-V2.6-Distill-Qwen-9B-HTR",
   "slug": "hstolte-mimo-v2-6-distill-qwen-9b-htr",
   "author": "hstolte",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 13017296962,
   "storage_human": "13.0 GB",
+  "context_length": null,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

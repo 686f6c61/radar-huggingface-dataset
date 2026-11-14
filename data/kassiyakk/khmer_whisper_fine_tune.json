@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kassiyakk/Khmer_Whisper_Fine_Tune",
   "slug": "kassiyakk-khmer_whisper_fine_tune",
   "author": "Kassiyakk",
@@ -36,14 +36,19 @@
   "parameters_human": "241.8M",
   "storage_bytes": 7737114293,
   "storage_human": "7.7 GB",
+  "context_length": null,
   "base_model": "openai/whisper-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

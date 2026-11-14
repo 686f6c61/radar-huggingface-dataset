@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vab46/rag3-llama-lora-2",
   "slug": "vab46-rag3-llama-lora-2",
   "author": "vab46",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 167832240,
   "storage_human": "168 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-16T03:25:17.306Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

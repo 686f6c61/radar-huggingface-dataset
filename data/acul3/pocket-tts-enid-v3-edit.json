@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "acul3/pocket-tts-enid-v3-edit",
   "slug": "acul3-pocket-tts-enid-v3-edit",
   "author": "acul3",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 6763972665,
   "storage_human": "6.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T04:52:10.551Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

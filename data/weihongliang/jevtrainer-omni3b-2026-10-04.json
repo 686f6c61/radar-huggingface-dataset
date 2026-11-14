@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "weihongliang/jevtrainer-omni3b-2026-10-04",
   "slug": "weihongliang-jevtrainer-omni3b-2026-10-04",
   "author": "weihongliang",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 9658054357,
   "storage_human": "9.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Omni-3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

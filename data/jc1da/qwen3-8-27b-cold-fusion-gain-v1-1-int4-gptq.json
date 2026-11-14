@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JC1DA/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-INT4-GPTQ",
   "slug": "jc1da-qwen3-8-27b-cold-fusion-gain-v1-1-int4-gptq",
   "author": "JC1DA",
@@ -38,14 +38,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 19580324043,
   "storage_human": "19.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-26T05:40:38.219Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

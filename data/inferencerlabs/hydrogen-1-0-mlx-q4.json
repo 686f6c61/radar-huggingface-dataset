@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inferencerlabs/Hydrogen-1.0-MLX-Q4",
   "slug": "inferencerlabs-hydrogen-1-0-mlx-q4",
   "author": "inferencerlabs",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 427582607665,
   "storage_human": "427.6 GB",
+  "context_length": null,
   "base_model": "deep-principle/Hydrogen-1.0",
   "formats": [
     "mlx"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

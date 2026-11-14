@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Cisco1963/llmplasticity-en_zh_linear_8-rand-d0.006-c0.999-r0.2-s42",
   "slug": "cisco1963-llmplasticity-en_zh_linear_8-rand-d0-006-c0-999-r0-2-s42",
   "author": "Cisco1963",
@@ -23,14 +23,19 @@
   "parameters_human": "122.7M",
   "storage_bytes": 10801074969,
   "storage_human": "10.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

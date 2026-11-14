@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "flexge/hubert-pronunciation-scorer-v2-mid",
   "slug": "flexge-hubert-pronunciation-scorer-v2-mid",
   "author": "flexge",
@@ -27,14 +27,19 @@
   "parameters_human": "94.4M",
   "storage_bytes": 755946562,
   "storage_human": "756 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-01T02:58:21.912Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

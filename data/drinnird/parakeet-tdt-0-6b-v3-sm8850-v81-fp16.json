@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "drinnird/parakeet-tdt-0.6b-v3-sm8850-v81-fp16",
   "slug": "drinnird-parakeet-tdt-0-6b-v3-sm8850-v81-fp16",
   "author": "drinnird",
@@ -62,12 +62,17 @@
   "parameters_human": null,
   "storage_bytes": 1323388104,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "nvidia/parakeet-tdt-0.6b-v3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SamuelTallet/MOSS-Image-SFT-Turbo-16steps-SDNQ-8bit-hadamard256",
   "slug": "samueltallet-moss-image-sft-turbo-16steps-sdnq-8bit-hadamard256",
   "author": "SamuelTallet",
@@ -30,6 +30,7 @@
   "parameters_human": "5.09B",
   "storage_bytes": 15287031944,
   "storage_human": "15.3 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
   "formats": [
     "diffusers",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "crydamour/NSFW-gen-v2.1",
   "slug": "crydamour-nsfw-gen-v2-1",
   "author": "crydamour",
@@ -39,6 +39,7 @@
   "parameters_human": "2.57B",
   "storage_bytes": 26206003808,
   "storage_human": "26.2 GB",
+  "context_length": null,
   "base_model": "OEvortex/PixelGen",
   "formats": [
     "diffusers",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-08T02:18:54.168Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

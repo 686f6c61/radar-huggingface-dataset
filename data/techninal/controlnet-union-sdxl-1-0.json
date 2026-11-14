@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "techninal/controlnet-union-sdxl-1.0",
   "slug": "techninal-controlnet-union-sdxl-1-0",
   "author": "techninal",
@@ -29,6 +29,7 @@
   "parameters_human": "1.26B",
   "storage_bytes": 5030545936,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jlindeberg/Tiel-Coder-35B-A3B-GGUF-P100",
   "slug": "jlindeberg-tiel-coder-35b-a3b-gguf-p100",
   "author": "jlindeberg",
@@ -25,14 +25,19 @@
   "parameters_human": "35.51B",
   "storage_bytes": 21293389760,
   "storage_human": "21.3 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

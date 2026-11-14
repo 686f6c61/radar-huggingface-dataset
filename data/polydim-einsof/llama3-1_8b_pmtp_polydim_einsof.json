@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Polydim-Einsof/llama3.1_8b_PMTP_polydim_einsof",
   "slug": "polydim-einsof-llama3-1_8b_pmtp_polydim_einsof",
   "author": "Polydim-Einsof",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 84318864,
   "storage_human": "84 MB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T03:34:50.931Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

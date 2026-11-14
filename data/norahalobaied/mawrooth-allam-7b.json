@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NorahAlobaied/Mawrooth-ALLaM-7B",
   "slug": "norahalobaied-mawrooth-allam-7b",
   "author": "NorahAlobaied",
@@ -39,14 +39,19 @@
   "parameters_human": "7.00B",
   "storage_bytes": 19507747275,
   "storage_human": "19.5 GB",
+  "context_length": null,
   "base_model": "humain-ai/ALLaM-7B-Instruct-preview",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-24T03:39:22.504Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

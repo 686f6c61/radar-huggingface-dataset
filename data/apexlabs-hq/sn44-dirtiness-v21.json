@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "apexlabs-hq/sn44-dirtiness-v21",
   "slug": "apexlabs-hq-sn44-dirtiness-v21",
   "author": "apexlabs-hq",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 9884957,
   "storage_human": "10 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T04:31:23.778Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

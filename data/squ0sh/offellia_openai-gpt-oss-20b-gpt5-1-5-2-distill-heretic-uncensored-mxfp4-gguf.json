@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "squ0sh/OFFELLIA_OpenAI-gpt-oss-20B-GPT5.1-5.2-DISTILL-Heretic-Uncensored-MXFP4.gguf",
   "slug": "squ0sh-offellia_openai-gpt-oss-20b-gpt5-1-5-2-distill-heretic-uncensored-mxfp4-gguf",
   "author": "squ0sh",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 25931195739,
   "storage_human": "25.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

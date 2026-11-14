@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gecfdo/gemma-4-31B-it-w8a16g128",
   "slug": "gecfdo-gemma-4-31b-it-w8a16g128",
   "author": "gecfdo",
@@ -28,14 +28,19 @@
   "parameters_human": "9.59B",
   "storage_bytes": 33978290970,
   "storage_human": "34.0 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-31B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

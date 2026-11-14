@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "taobao-mnn/MNN-Pocket-0.3B-SFT",
   "slug": "taobao-mnn-mnn-pocket-0-3b-sft",
   "author": "taobao-mnn",
@@ -38,14 +38,19 @@
   "parameters_human": "361.6M",
   "storage_bytes": 723606411,
   "storage_human": "724 MB",
+  "context_length": null,
   "base_model": "taobao-mnn/MNN-Pocket-0.3B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

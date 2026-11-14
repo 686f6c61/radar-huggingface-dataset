@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ChadSaglam/swiss-bookkeeping-qwen-lora",
   "slug": "chadsaglam-swiss-bookkeeping-qwen-lora",
   "author": "ChadSaglam",
@@ -37,6 +37,7 @@
   "parameters_human": "494.0M",
   "storage_bytes": 999519622,
   "storage_human": "1000 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

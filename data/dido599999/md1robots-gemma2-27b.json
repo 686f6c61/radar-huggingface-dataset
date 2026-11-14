@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dido599999/MD1RoBoTs-Gemma2-27B",
   "slug": "dido599999-md1robots-gemma2-27b",
   "author": "Dido599999",
@@ -54,14 +54,19 @@
   "parameters_human": "27.23B",
   "storage_bytes": 54454314736,
   "storage_human": "54.5 GB",
+  "context_length": null,
   "base_model": "google/gemma-2-27b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

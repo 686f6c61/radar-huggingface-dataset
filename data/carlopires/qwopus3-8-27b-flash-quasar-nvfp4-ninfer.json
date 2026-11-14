@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "carlopires/Qwopus3.8-27B-Flash-QUASAR-NVFP4-NInfer",
   "slug": "carlopires-qwopus3-8-27b-flash-quasar-nvfp4-ninfer",
   "author": "carlopires",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 17555331072,
   "storage_human": "17.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B, Jackrong/Qwopus3.8-27B-Flash-GGUF",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "carlopires/Qwopus3.8-27B-Flash-PTQ-NVFP4-NInfer",
+  "renamed_at": "2026-11-11T04:46:23.250Z",
   "benchmarks": [],
   "sources": [
     {

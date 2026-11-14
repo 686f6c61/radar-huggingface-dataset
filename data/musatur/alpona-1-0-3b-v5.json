@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "musatur/Alpona-1.0-3B-v5",
   "slug": "musatur-alpona-1-0-3b-v5",
   "author": "musatur",
@@ -39,14 +39,19 @@
   "parameters_human": "4.17B",
   "storage_bytes": 8360858077,
   "storage_human": "8.4 GB",
+  "context_length": null,
   "base_model": "Nanbeige/Nanbeige4.2-3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-20T02:49:52.161Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

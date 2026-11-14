@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "heathcliff01/Kaloscope-style-adapter",
   "slug": "heathcliff01-kaloscope-style-adapter",
   "author": "heathcliff01",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 664994605,
   "storage_human": "665 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Raw, krea/Krea-2-Turbo, OpenMOSS-Team/MOSS-Image-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

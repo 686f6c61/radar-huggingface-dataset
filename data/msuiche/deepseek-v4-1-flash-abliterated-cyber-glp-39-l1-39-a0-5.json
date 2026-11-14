@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "msuiche/DeepSeek-V4.1-Flash-abliterated-cyber-GLP-39-L1-39-a0.5",
   "slug": "msuiche-deepseek-v4-1-flash-abliterated-cyber-glp-39-l1-39-a0-5",
   "author": "msuiche",
@@ -38,14 +38,19 @@
   "parameters_human": "199680",
   "storage_bytes": 803168,
   "storage_human": "803168 B",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

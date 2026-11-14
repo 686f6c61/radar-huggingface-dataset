@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "code-and-canvas/Spark-X2.6-4B-MLX-oQ8e-fp16",
   "slug": "code-and-canvas-spark-x2-6-4b-mlx-oq8e-fp16",
   "author": "code-and-canvas",
@@ -37,6 +37,7 @@
   "parameters_human": "4.11B",
   "storage_bytes": 4379457805,
   "storage_human": "4.4 GB",
+  "context_length": null,
   "base_model": "XHToken/Spark-X2.6-4B",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

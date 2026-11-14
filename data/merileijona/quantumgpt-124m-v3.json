@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "merileijona/quantumgpt-124m-v3",
   "slug": "merileijona-quantumgpt-124m-v3",
   "author": "merileijona",
@@ -37,14 +37,19 @@
   "parameters_human": "124.1M",
   "storage_bytes": 496345728,
   "storage_human": "496 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3.5-4B-ARA-heretic-GGUF",
   "slug": "mradermacher-qwen3-5-4b-ara-heretic-gguf",
   "author": "mradermacher",
@@ -37,14 +37,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 39945657152,
   "storage_human": "39.9 GB",
+  "context_length": 262144,
   "base_model": "richardyoung/Qwen3.5-4B-ARA-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

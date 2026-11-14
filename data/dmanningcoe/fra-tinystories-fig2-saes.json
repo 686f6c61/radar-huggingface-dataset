@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dmanningcoe/fra-tinystories-fig2-saes",
   "slug": "dmanningcoe-fra-tinystories-fig2-saes",
   "author": "dmanningcoe",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 680349096,
   "storage_human": "680 MB",
+  "context_length": null,
   "base_model": "mars-jason-25/tiny-stories-33M-TSdata-sleeper",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

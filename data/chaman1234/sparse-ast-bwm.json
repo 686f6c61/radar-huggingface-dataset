@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Chaman1234/Sparse-AST-BWM",
   "slug": "chaman1234-sparse-ast-bwm",
   "author": "Chaman1234",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 7197783124,
   "storage_human": "7.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

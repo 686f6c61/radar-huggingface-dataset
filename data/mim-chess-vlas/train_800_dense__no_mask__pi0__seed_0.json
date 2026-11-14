@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mim-chess-vlas/train_800_dense__no_mask__pi0__seed_0",
   "slug": "mim-chess-vlas-train_800_dense__no_mask__pi0__seed_0",
   "author": "mim-chess-vlas",
@@ -29,14 +29,19 @@
   "parameters_human": "4.03B",
   "storage_bytes": 71140026240,
   "storage_human": "71.1 GB",
+  "context_length": null,
   "base_model": "lerobot/pi0_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

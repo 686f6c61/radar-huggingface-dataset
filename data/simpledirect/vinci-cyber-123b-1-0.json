@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "simpledirect/Vinci-Cyber-123B-1.0",
   "slug": "simpledirect-vinci-cyber-123b-1-0",
   "author": "simpledirect",
@@ -37,14 +37,19 @@
   "parameters_human": "125.03B",
   "storage_bytes": 250071620776,
   "storage_human": "250.1 GB",
+  "context_length": null,
   "base_model": "mistralai/Devstral-2-123B-Instruct-2512",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

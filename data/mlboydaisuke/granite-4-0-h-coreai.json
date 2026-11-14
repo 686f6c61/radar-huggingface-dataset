@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlboydaisuke/granite-4.0-h-CoreAI",
   "slug": "mlboydaisuke-granite-4-0-h-coreai",
   "author": "mlboydaisuke",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 10348309038,
   "storage_human": "10.3 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.0-h-1b, ibm-granite/granite-4.0-h-350m",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

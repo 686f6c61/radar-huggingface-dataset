@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mmnga-o/DeepSeek-V4-Flash-0731-REAP-W-gguf",
   "slug": "mmnga-o-deepseek-v4-flash-0731-reap-w-gguf",
   "author": "mmnga-o",
@@ -31,14 +31,19 @@
   "parameters_human": "155.28B",
   "storage_bytes": 118158232320,
   "storage_human": "118.2 GB",
+  "context_length": 1048576,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

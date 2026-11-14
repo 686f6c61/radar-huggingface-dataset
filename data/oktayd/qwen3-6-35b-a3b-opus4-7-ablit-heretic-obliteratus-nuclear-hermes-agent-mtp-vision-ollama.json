@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oktayd/Qwen3.6-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Nuclear-Hermes-Agent-MTP-Vision-Ollama",
   "slug": "oktayd-qwen3-6-35b-a3b-opus4-7-ablit-heretic-obliteratus-nuclear-hermes-agent-mtp-vision-ollama",
   "author": "oktayd",
@@ -52,14 +52,19 @@
   "parameters_human": "446.6M",
   "storage_bytes": 22632734751,
   "storage_human": "22.6 GB",
+  "context_length": null,
   "base_model": "oktayd/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-FT",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "oktaydu/Q36-35B-A3B-Opus4.7-Ablit-Heretic-OBLITERATUS-Hermes-MTP-Vision-Ollama",
+  "renamed_at": "2026-11-11T06:59:52.276Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AbstractPhil/gemma-4-e4b-think-symbolic-image",
   "slug": "abstractphil-gemma-4-e4b-think-symbolic-image",
   "author": "AbstractPhil",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 311298970,
   "storage_human": "311 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

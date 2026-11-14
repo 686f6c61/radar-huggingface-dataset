@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zagy1234/ZeryEasyCoder27B-GGUF",
   "slug": "zagy1234-zeryeasycoder27b-gguf",
   "author": "zagy1234",
@@ -32,14 +32,19 @@
   "parameters_human": "26.89B",
   "storage_bytes": 33122618624,
   "storage_human": "33.1 GB",
+  "context_length": 262144,
   "base_model": "zagy1234/ZeryEasyCoder27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

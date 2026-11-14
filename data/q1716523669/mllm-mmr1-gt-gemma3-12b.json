@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "q1716523669/mllm-mmr1-gt-gemma3-12b",
   "slug": "q1716523669-mllm-mmr1-gt-gemma3-12b",
   "author": "q1716523669",
@@ -32,14 +32,19 @@
   "parameters_human": "1.2M",
   "storage_bytes": 48787669525,
   "storage_human": "48.8 GB",
+  "context_length": null,
   "base_model": "google/gemma-3-12b-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "logan7000/mllm-mmr1-gt-gemma3-12b",
+  "renamed_at": "2026-11-14T08:10:41.351Z",
   "benchmarks": [],
   "sources": []
 }

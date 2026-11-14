@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arianraje/qwen3-4b-mamba3-hybrid-stage2b-kd-bias0",
   "slug": "arianraje-qwen3-4b-mamba3-hybrid-stage2b-kd-bias0",
   "author": "arianraje",
@@ -37,14 +37,19 @@
   "parameters_human": "4.74B",
   "storage_bytes": 9494342950,
   "storage_human": "9.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

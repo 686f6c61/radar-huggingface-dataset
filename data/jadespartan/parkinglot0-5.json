@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JadeSpartan/ParkingLot0.5",
   "slug": "jadespartan-parkinglot0-5",
   "author": "JadeSpartan",
@@ -35,14 +35,19 @@
   "parameters_human": "4.66B",
   "storage_bytes": 9339817439,
   "storage_human": "9.3 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.5-4B-Claude-4.6-Opus-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T03:08:28.939Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

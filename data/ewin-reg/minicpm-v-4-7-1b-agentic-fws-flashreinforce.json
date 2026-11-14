@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ewin-reg/MiniCPM-V-4.7-1B-Agentic-FwS-FlashREINFORCE",
   "slug": "ewin-reg-minicpm-v-4-7-1b-agentic-fws-flashreinforce",
   "author": "ewin-reg",
@@ -40,14 +40,19 @@
   "parameters_human": "1.55B",
   "storage_bytes": 3129046177,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "ewin-reg/MiniCPM-V-4.7-1B-Agentic-FwS",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

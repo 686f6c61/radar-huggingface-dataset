@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Thaurock/Qwen3-Coder-30B-A3B-Instruct-abliterated-GGUF",
   "slug": "thaurock-qwen3-coder-30b-a3b-instruct-abliterated-gguf",
   "author": "Thaurock",
@@ -35,14 +35,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 252654681376,
   "storage_human": "252.7 GB",
+  "context_length": 262144,
   "base_model": "huihui-ai/Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

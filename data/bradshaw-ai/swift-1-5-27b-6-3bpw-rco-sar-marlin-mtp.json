@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bradshaw-ai/Swift-1.5-27B-6.3bpw-RCO-SAR-Marlin-MTP",
   "slug": "bradshaw-ai-swift-1-5-27b-6-3bpw-rco-sar-marlin-mtp",
   "author": "bradshaw-ai",
@@ -39,14 +39,19 @@
   "parameters_human": "2.57B",
   "storage_bytes": 23763728760,
   "storage_human": "23.8 GB",
+  "context_length": null,
   "base_model": "UkisAI/Swift-1.5-Qwen3.8-27b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

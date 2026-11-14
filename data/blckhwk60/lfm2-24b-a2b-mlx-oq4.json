@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BLCKHWK60/LFM2-24B-A2B-MLX-oQ4",
   "slug": "blckhwk60-lfm2-24b-a2b-mlx-oq4",
   "author": "BLCKHWK60",
@@ -27,6 +27,7 @@
   "parameters_human": "23.84B",
   "storage_bytes": 13717896094,
   "storage_human": "13.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

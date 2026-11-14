@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/tinybrainbot-360m-a75m-v5.1-base-GGUF",
   "slug": "mradermacher-tinybrainbot-360m-a75m-v5-1-base-gguf",
   "author": "mradermacher",
@@ -46,14 +46,19 @@
   "parameters_human": "383.4M",
   "storage_bytes": 3442830336,
   "storage_human": "3.4 GB",
+  "context_length": 2048,
   "base_model": "nkthebass/tinybrainbot-360m-a75m-v5.1-base",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

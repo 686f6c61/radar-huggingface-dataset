@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vladkens/parakeet-tdt-0.6b-v3-he-gguf",
   "slug": "vladkens-parakeet-tdt-0-6b-v3-he-gguf",
   "author": "vladkens",
@@ -36,14 +36,19 @@
   "parameters_human": "628.4M",
   "storage_bytes": 740915360,
   "storage_human": "741 MB",
+  "context_length": null,
   "base_model": "thewh1teagle/parakeet-tdt-0.6b-v3-he",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

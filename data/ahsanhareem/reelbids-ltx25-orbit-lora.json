@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AhsanHareem/reelbids-ltx25-orbit-lora",
   "slug": "ahsanhareem-reelbids-ltx25-orbit-lora",
   "author": "AhsanHareem",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 4431495024,
   "storage_human": "4.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-10T09:05:40.433Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

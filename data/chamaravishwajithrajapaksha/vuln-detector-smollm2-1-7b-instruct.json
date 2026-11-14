@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ChamaraVishwajithRajapaksha/vuln-detector-smollm2-1.7b-instruct",
   "slug": "chamaravishwajithrajapaksha-vuln-detector-smollm2-1-7b-instruct",
   "author": "ChamaraVishwajithRajapaksha",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 217189128,
   "storage_human": "217 MB",
+  "context_length": null,
   "base_model": "unsloth/SmolLM2-1.7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "marfrit/Qwen3.6-27B-A3B-Coder-int4-awq-se-ov",
   "slug": "marfrit-qwen3-6-27b-a3b-coder-int4-awq-se-ov",
   "author": "marfrit",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 14750595783,
   "storage_human": "14.8 GB",
+  "context_length": null,
   "base_model": "ManniX-ITA/Qwen3.6-27B-A3B-Coder",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

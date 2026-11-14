@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "terion-mlx/teapot",
   "slug": "terion-mlx-teapot",
   "author": "terion-mlx",
@@ -27,6 +27,7 @@
   "parameters_human": "127680",
   "storage_bytes": 513701,
   "storage_human": "513701 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

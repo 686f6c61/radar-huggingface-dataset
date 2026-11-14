@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "mradermacher/finance-LLM-13B-GGUF",
+  "slug": "mradermacher-finance-llm-13b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/finance-LLM-13B-GGUF",
+  "created_at": "2025-03-10T03:40:48.000Z",
+  "updated_at": "2026-11-14T14:26:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "finance",
+    "en",
+    "dataset:Open-Orca/OpenOrca",
+    "dataset:GAIR/lima",
+    "dataset:WizardLM/WizardLM_evol_instruct_V2_196k",
+    "base_model:AdaptLLM/finance-LLM-13B",
+    "base_model:quantized:AdaptLLM/finance-LLM-13B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 247,
+  "trending_score": 0,
+  "parameters": 13015874560,
+  "parameters_human": "13.02B",
+  "storage_bytes": 88801998912,
+  "storage_human": "88.8 GB",
+  "context_length": 2048,
+  "base_model": "AdaptLLM/finance-LLM-13B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

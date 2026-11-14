@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "diablomike20/Qwen3-42B-Thinking-Abliterated-CODER",
   "slug": "diablomike20-qwen3-42b-thinking-abliterated-coder",
   "author": "diablomike20",
@@ -65,14 +65,19 @@
   "parameters_human": "42.37B",
   "storage_bytes": 84759145832,
   "storage_human": "84.8 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3-30B-A3B-Thinking-2507-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

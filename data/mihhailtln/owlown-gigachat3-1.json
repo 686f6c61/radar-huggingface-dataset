@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MihhailTLN/owlown-gigachat3.1",
   "slug": "mihhailtln-owlown-gigachat3-1",
   "author": "MihhailTLN",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 6057065111,
   "storage_human": "6.1 GB",
+  "context_length": null,
   "base_model": "ai-sage/GigaChat3.1-10B-A1.8B",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "MihhailTLN/ownowl-gigachat3.1",
+  "renamed_at": "2026-11-12T03:28:28.086Z",
   "benchmarks": [],
   "sources": []
 }

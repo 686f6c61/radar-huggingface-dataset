@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "spelunk-cloud/F2LLM-v2-330M-Q8_0-GGUF",
   "slug": "spelunk-cloud-f2llm-v2-330m-q8_0-gguf",
   "author": "spelunk-cloud",
@@ -30,14 +30,19 @@
   "parameters_human": "334.3M",
   "storage_bytes": 716648192,
   "storage_human": "717 MB",
+  "context_length": 40960,
   "base_model": "codefuse-ai/F2LLM-v2-330M",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

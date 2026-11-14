@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jalenluorion/Qwen3-30B-A3B-moved-store",
   "slug": "jalenluorion-qwen3-30b-a3b-moved-store",
   "author": "jalenluorion",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 38506196080,
   "storage_human": "38.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

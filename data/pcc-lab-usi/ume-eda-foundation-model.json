@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PCC-Lab-USI/UME-eda-foundation-model",
   "slug": "pcc-lab-usi-ume-eda-foundation-model",
   "author": "PCC-Lab-USI",
@@ -33,14 +33,19 @@
   "parameters_human": "742496",
   "storage_bytes": 15172035,
   "storage_human": "15 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

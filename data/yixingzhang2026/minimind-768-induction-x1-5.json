@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YixingZhang2026/minimind-768-induction-x1.5",
   "slug": "yixingzhang2026-minimind-768-induction-x1-5",
   "author": "YixingZhang2026",
@@ -33,14 +33,19 @@
   "parameters_human": "63.9M",
   "storage_bytes": 127834168,
   "storage_human": "128 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

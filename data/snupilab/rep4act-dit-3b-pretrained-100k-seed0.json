@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "snupilab/Rep4Act-DiT-3B-Pretrained-100k-seed0",
   "slug": "snupilab-rep4act-dit-3b-pretrained-100k-seed0",
   "author": "snupilab",
@@ -25,14 +25,19 @@
   "parameters_human": "4.92B",
   "storage_bytes": 15987383361,
   "storage_human": "16.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T07:34:09.057Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

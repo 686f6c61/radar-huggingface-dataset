@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CollectionStudio/Devstral-Small-2505",
   "slug": "collectionstudio-devstral-small-2505",
   "author": "CollectionStudio",
@@ -77,14 +77,19 @@
   "parameters_human": "23.57B",
   "storage_bytes": 94307257051,
   "storage_human": "94.3 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-Small-3.1-24B-Instruct-2503",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-27T03:05:06.935Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

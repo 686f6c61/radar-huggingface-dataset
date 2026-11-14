@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bltx96/Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF",
   "slug": "bltx96-huihui-qwen3-8-flash-next-abliterated-v2-gguf",
   "author": "bltx96",
@@ -43,14 +43,19 @@
   "parameters_human": "2.99B",
   "storage_bytes": 956272906528,
   "storage_human": "956.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

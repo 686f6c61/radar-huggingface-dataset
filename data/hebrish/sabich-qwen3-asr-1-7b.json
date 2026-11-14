@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hebrish/Sabich-Qwen3-ASR-1.7B",
   "slug": "hebrish-sabich-qwen3-asr-1-7b",
   "author": "Hebrish",
@@ -45,14 +45,19 @@
   "parameters_human": "2.04B",
   "storage_bytes": 4087621017,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ASR-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

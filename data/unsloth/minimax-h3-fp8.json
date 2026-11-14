@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "unsloth/MiniMax-H3-FP8",
   "slug": "unsloth-minimax-h3-fp8",
   "author": "unsloth",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 229714605880,
   "storage_human": "229.7 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "encredible/Gaiel-8B-Korean-Tuned",
   "slug": "encredible-gaiel-8b-korean-tuned",
   "author": "encredible",
@@ -34,6 +34,7 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16077766536,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T21:40:32.366Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

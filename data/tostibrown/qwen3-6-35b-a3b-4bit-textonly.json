@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tostibrown/Qwen3.6-35B-A3B-4bit-textonly",
   "slug": "tostibrown-qwen3-6-35b-a3b-4bit-textonly",
   "author": "Tostibrown",
@@ -33,6 +33,7 @@
   "parameters_human": "34.66B",
   "storage_bytes": 19529013823,
   "storage_human": "19.5 GB",
+  "context_length": null,
   "base_model": "mlx-community/Qwen3.6-35B-A3B-4bit",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

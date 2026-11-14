@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huanghunzhihou/Qwen3.5-9B-HLWQ-Q5",
   "slug": "huanghunzhihou-qwen3-5-9b-hlwq-q5",
   "author": "huanghunzhihou",
@@ -48,14 +48,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 7667390623,
   "storage_human": "7.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Datto14/Day21-Track3-01710-BuiNgocDat-LoRA",
   "slug": "datto14-day21-track3-01710-buingocdat-lora",
   "author": "Datto14",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 539601557,
   "storage_human": "540 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

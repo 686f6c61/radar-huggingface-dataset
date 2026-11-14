@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/LFM3-Omni-2B-i1-GGUF",
   "slug": "mradermacher-lfm3-omni-2b-i1-gguf",
   "author": "mradermacher",
@@ -61,14 +61,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 21323208640,
   "storage_human": "21.3 GB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM3-Omni-2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

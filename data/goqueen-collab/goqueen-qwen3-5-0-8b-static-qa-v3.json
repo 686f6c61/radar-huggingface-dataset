@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "goqueen-collab/goqueen-qwen3.5-0.8b-static-qa-v3",
   "slug": "goqueen-collab-goqueen-qwen3-5-0-8b-static-qa-v3",
   "author": "goqueen-collab",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 96064733,
   "storage_human": "96 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

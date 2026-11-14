@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tielmane/Winnow-12B-NPU-LPBQ-X-Elite",
   "slug": "tielmane-winnow-12b-npu-lpbq-x-elite",
   "author": "tielmane",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 11921077764,
   "storage_human": "11.9 GB",
+  "context_length": null,
   "base_model": "EldanRing/Winnow-12B",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

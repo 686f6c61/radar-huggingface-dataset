@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "proyecto-capturaCO2/3D-Neural-Operators-CO2-Storage",
   "slug": "proyecto-capturaco2-3d-neural-operators-co2-storage",
   "author": "proyecto-capturaCO2",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 750094708,
   "storage_human": "750 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-09T04:08:22.965Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

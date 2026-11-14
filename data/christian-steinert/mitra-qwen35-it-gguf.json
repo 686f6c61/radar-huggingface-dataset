@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "christian-steinert/mitra-qwen35-it-GGUF",
   "slug": "christian-steinert-mitra-qwen35-it-gguf",
   "author": "christian-steinert",
@@ -49,14 +49,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 28983840512,
   "storage_human": "29.0 GB",
+  "context_length": 262144,
   "base_model": "buddhist-nlp/mitra-qwen35-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

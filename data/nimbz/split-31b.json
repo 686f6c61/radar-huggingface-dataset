@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nimbz/Split-31B",
   "slug": "nimbz-split-31b",
   "author": "Nimbz",
@@ -52,6 +52,7 @@
   "parameters_human": "31.27B",
   "storage_bytes": 349774062872,
   "storage_human": "349.8 GB",
+  "context_length": 262144,
   "base_model": "google/gemma-4-31B-it, ReadyArt/gemma-4-31B-it-scotoma-2, bgg1996/Melinoe-Gemma4-31B-VL-heretic, sophosympatheia/Glistening-Gem-31B-v2.1, sophosympatheia/Glistening-Gem-31B-v2.0, zerofata/G4-MeroMero-v2-31B, Ateron/Gemma-4-Dark-Thoughts-V2-31B",
   "formats": [
     "gguf",
@@ -59,8 +60,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

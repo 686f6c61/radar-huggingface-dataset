@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "burtenshaw/plan-my-day-v3-lfm2.5-confirmation-r2-17",
   "slug": "burtenshaw-plan-my-day-v3-lfm2-5-confirmation-r2-17",
   "author": "burtenshaw",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 133373568,
   "storage_human": "133 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

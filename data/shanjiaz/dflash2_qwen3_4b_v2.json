@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shanjiaz/dflash2_qwen3_4b_v2",
   "slug": "shanjiaz-dflash2_qwen3_4b_v2",
   "author": "shanjiaz",
@@ -29,14 +29,19 @@
   "parameters_human": "1.41B",
   "storage_bytes": 5350073009,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "RedHatAI/Qwen3-4B-speculator.dflash2",
+  "renamed_at": "2026-11-11T07:29:53.180Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kerasformers/internvl3-38b",
   "slug": "kerasformers-internvl3-38b",
   "author": "kerasformers",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 76900944932,
   "storage_human": "76.9 GB",
+  "context_length": null,
   "base_model": "OpenGVLab/InternVL3-38B-hf",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "zeromodels/internvl3-38b",
+  "renamed_at": "2026-11-12T06:08:31.715Z",
   "benchmarks": [],
   "sources": [
     {

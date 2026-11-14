@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PlaguedArchon/Qwen3.8-27B-EAQ-3.0bpw",
   "slug": "plaguedarchon-qwen3-8-27b-eaq-3-0bpw",
   "author": "PlaguedArchon",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 12369762284,
   "storage_human": "12.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

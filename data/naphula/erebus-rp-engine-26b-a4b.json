@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Naphula/Erebus-RP-Engine-26B-A4B",
   "slug": "naphula-erebus-rp-engine-26b-a4b",
   "author": "Naphula",
@@ -80,14 +80,19 @@
   "parameters_human": "26.00B",
   "storage_bytes": 52032595590,
   "storage_human": "52.0 GB",
+  "context_length": null,
   "base_model": "Naphula/Goetia-26B-A4B-v1.7, 26B-Suite/Gemory-26B-A4B-SOMPOA, Ozili/Gemma-4-Vain-26B-A4B-GGUF, ReadyArt/Wicked-Stuff-26B-A4B-v3.0-Final, ReadyArt/Dark-Craving-26B-A4B-v0.1, SubMaroon/Kitchoon-V3-26B-A4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

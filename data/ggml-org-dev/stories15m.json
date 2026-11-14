@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ggml-org-dev/stories15M",
   "slug": "ggml-org-dev-stories15m",
   "author": "ggml-org-dev",
@@ -25,14 +25,19 @@
   "parameters_human": "24.4M",
   "storage_bytes": 413243104,
   "storage_human": "413 MB",
+  "context_length": 128,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

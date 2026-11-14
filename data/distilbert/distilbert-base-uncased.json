@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "distilbert/distilbert-base-uncased",
   "slug": "distilbert-distilbert-base-uncased",
   "author": "distilbert",
@@ -40,14 +40,19 @@
   "parameters_human": "67.0M",
   "storage_bytes": 2287292255,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

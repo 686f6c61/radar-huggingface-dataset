@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "algerian-nlp/whisper-algerian-darja-medium",
   "slug": "algerian-nlp-whisper-algerian-darja-medium",
   "author": "algerian-nlp",
@@ -44,14 +44,19 @@
   "parameters_human": null,
   "storage_bytes": 276932864,
   "storage_human": "277 MB",
+  "context_length": null,
   "base_model": "openai/whisper-medium",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-18T03:00:15.618Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

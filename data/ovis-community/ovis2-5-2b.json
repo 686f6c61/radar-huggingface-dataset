@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ovis-community/Ovis2.5-2B",
   "slug": "ovis-community-ovis2-5-2b",
   "author": "ovis-community",
@@ -34,14 +34,19 @@
   "parameters_human": "2.57B",
   "storage_bytes": 5152384173,
   "storage_human": "5.2 GB",
+  "context_length": null,
   "base_model": "ATH-MaaS/Ovis2.5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

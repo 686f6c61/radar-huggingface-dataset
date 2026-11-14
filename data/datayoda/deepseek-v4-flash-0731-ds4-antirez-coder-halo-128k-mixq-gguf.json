@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "datayoda/DeepSeek-V4-Flash-0731-DS4-Antirez-Coder-Halo-128K-MixQ-GGUF",
   "slug": "datayoda-deepseek-v4-flash-0731-ds4-antirez-coder-halo-128k-mixq-gguf",
   "author": "datayoda",
@@ -36,14 +36,19 @@
   "parameters_human": "284.33B",
   "storage_bytes": 90344172761,
   "storage_human": "90.3 GB",
+  "context_length": 1048576,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

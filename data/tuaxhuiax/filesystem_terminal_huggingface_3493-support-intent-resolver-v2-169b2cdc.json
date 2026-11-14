@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TUaxhuiax/filesystem_terminal_huggingface_3493-support-intent-resolver-v2-169b2cdc",
   "slug": "tuaxhuiax-filesystem_terminal_huggingface_3493-support-intent-resolver-v2-169b2cdc",
   "author": "TUaxhuiax",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 65536,
   "storage_human": "65536 B",
+  "context_length": null,
   "base_model": "microsoft/deberta-v3-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T04:08:55.239Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

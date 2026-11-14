@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Mistral-Grand-R1-Dolphin-3.0-Deep-Reasoning-Brainstorm-45B-GGUF",
   "slug": "mradermacher-mistral-grand-r1-dolphin-3-0-deep-reasoning-brainstorm-45b-gguf",
   "author": "mradermacher",
@@ -37,14 +37,19 @@
   "parameters_human": "45.25B",
   "storage_bytes": 308281958016,
   "storage_human": "308.3 GB",
+  "context_length": 32768,
   "base_model": "DavidAU/Mistral-Grand-R1-Dolphin-3.0-Deep-Reasoning-Brainstorm-45B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

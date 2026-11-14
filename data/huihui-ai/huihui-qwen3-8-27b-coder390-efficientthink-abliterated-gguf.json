@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huihui-ai/Huihui-Qwen3.8-27B-Coder390-EfficientThink-abliterated-GGUF",
   "slug": "huihui-ai-huihui-qwen3-8-27b-coder390-efficientthink-abliterated-gguf",
   "author": "huihui-ai",
@@ -33,14 +33,19 @@
   "parameters_human": "6.8M",
   "storage_bytes": 92136449044,
   "storage_human": "92.1 GB",
+  "context_length": null,
   "base_model": "nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

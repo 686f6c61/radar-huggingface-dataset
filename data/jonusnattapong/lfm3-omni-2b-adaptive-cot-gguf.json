@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JonusNattapong/LFM3-Omni-2B-Adaptive-CoT-GGUF",
   "slug": "jonusnattapong-lfm3-omni-2b-adaptive-cot-gguf",
   "author": "JonusNattapong",
@@ -49,14 +49,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 4496123328,
   "storage_human": "4.5 GB",
+  "context_length": 128000,
   "base_model": "JonusNattapong/LFM3-Omni-2B-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T03:05:10.230Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kunthawat/swift-1.5-qwen3.8-27b-with-unsloth-iq3-xxs-gguf",
   "slug": "kunthawat-swift-1-5-qwen3-8-27b-with-unsloth-iq3-xxs-gguf",
   "author": "kunthawat",
@@ -33,14 +33,19 @@
   "parameters_human": "460.7M",
   "storage_bytes": 11862466880,
   "storage_human": "11.9 GB",
+  "context_length": null,
   "base_model": "ukisai/Swift-1.5-Qwen3.8-27b",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

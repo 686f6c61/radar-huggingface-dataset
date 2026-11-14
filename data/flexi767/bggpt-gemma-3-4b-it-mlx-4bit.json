@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "flexi767/BgGPT-Gemma-3-4B-IT-MLX-4bit",
   "slug": "flexi767-bggpt-gemma-3-4b-it-mlx-4bit",
   "author": "flexi767",
@@ -37,6 +37,7 @@
   "parameters_human": "4.97B",
   "storage_bytes": 3433953649,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "INSAIT-Institute/BgGPT-Gemma-3-4B-IT",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

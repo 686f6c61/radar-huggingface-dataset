@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hyukkyu/Llama-3.1-8B-RAQUEL-MUSE-M-orig-LoRA-v1",
   "slug": "hyukkyu-llama-3-1-8b-raquel-muse-m-orig-lora-v1",
   "author": "Hyukkyu",
@@ -41,14 +41,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 33497831577,
   "storage_human": "33.5 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

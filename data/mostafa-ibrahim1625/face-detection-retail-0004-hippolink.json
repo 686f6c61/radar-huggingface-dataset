@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mostafa-ibrahim1625/face-detection-retail-0004-hippolink",
   "slug": "mostafa-ibrahim1625-face-detection-retail-0004-hippolink",
   "author": "mostafa-ibrahim1625",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 605168,
   "storage_human": "605168 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

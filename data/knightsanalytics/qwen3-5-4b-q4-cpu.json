@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KnightsAnalytics/qwen3.5-4B-q4-cpu",
   "slug": "knightsanalytics-qwen3-5-4b-q4-cpu",
   "author": "KnightsAnalytics",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 2876032410,
   "storage_human": "2.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "KnightsAnalytics/qwen3.5-4B-q4-cpu-onnx",
+  "renamed_at": "2026-11-11T03:08:59.113Z",
   "benchmarks": [],
   "sources": [
     {

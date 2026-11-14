@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LibreYOLO/LibrePaddleOCRVL0.9b",
   "slug": "libreyolo-librepaddleocrvl0-9b",
   "author": "LibreYOLO",
@@ -36,14 +36,19 @@
   "parameters_human": "958.6M",
   "storage_bytes": 2144856446,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": "PaddlePaddle/PaddleOCR-VL",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

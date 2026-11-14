@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "geonmin-kim/Cosmos3-Edge-Policy-DROID-FastWAM-v1lr-step1500",
   "slug": "geonmin-kim-cosmos3-edge-policy-droid-fastwam-v1lr-step1500",
   "author": "geonmin-kim",
@@ -31,14 +31,19 @@
   "parameters_human": "3.37B",
   "storage_bytes": 7735210532,
   "storage_human": "7.7 GB",
+  "context_length": null,
   "base_model": "nvidia/Cosmos3-Edge-Policy-DROID",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-06T05:48:29.717Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eaguilar/gaje-nano-0.5b",
   "slug": "eaguilar-gaje-nano-0-5b",
   "author": "eaguilar",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 1326264043,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-06T04:41:33.608Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

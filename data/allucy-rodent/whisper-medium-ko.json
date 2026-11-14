@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ALLUCY-Rodent/whisper-medium-ko",
   "slug": "allucy-rodent-whisper-medium-ko",
   "author": "ALLUCY-Rodent",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 1187335881,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "seastar105/whisper-medium-komixv2",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CollectionStudio/Trinity-Large-Preview-NVFP4",
   "slug": "collectionstudio-trinity-large-preview-nvfp4",
   "author": "CollectionStudio",
@@ -61,14 +61,19 @@
   "parameters_human": "201.84B",
   "storage_bytes": 231562912078,
   "storage_human": "231.6 GB",
+  "context_length": null,
   "base_model": "arcee-ai/Trinity-Large-Preview",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

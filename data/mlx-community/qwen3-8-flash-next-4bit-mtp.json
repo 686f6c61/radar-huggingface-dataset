@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlx-community/Qwen3.8-Flash-Next-4bit-mtp",
   "slug": "mlx-community-qwen3-8-flash-next-4bit-mtp",
   "author": "mlx-community",
@@ -34,6 +34,7 @@
   "parameters_human": "180.00B",
   "storage_bytes": 113266273966,
   "storage_human": "113.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

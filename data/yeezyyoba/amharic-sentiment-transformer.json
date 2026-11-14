@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yeezyyoba/amharic-sentiment-transformer",
   "slug": "yeezyyoba-amharic-sentiment-transformer",
   "author": "yeezyyoba",
@@ -38,14 +38,19 @@
   "parameters_human": "278.0M",
   "storage_bytes": 1129296180,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "Davlan/afro-xlmr-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

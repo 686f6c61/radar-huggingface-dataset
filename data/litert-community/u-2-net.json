@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/U-2-Net",
   "slug": "litert-community-u-2-net",
   "author": "litert-community",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 88690220,
   "storage_human": "89 MB",
+  "context_length": null,
   "base_model": "xuebinqin/U-2-Net",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SeanLiu0272/past2next-libero10",
   "slug": "seanliu0272-past2next-libero10",
   "author": "SeanLiu0272",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 785419236,
   "storage_human": "785 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

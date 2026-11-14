@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pottokao/MiniMax-H3-TextEncoder-Qwen3VL-32B-abliterated-GGUF",
   "slug": "pottokao-minimax-h3-textencoder-qwen3vl-32b-abliterated-gguf",
   "author": "pottokao",
@@ -33,14 +33,19 @@
   "parameters_human": "26.53B",
   "storage_bytes": 24102551872,
   "storage_human": "24.1 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3-VL-32B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ssssssssstr/vanilla-qwen-ft",
   "slug": "ssssssssstr-vanilla-qwen-ft",
   "author": "ssssssssstr",
@@ -25,14 +25,19 @@
   "parameters_human": "1.92B",
   "storage_bytes": 12182500652,
   "storage_human": "12.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-15T03:31:00.613Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

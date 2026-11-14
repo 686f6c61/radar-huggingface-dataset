@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Magnuss85/Vor-Icelandic-PII-31B-GGUF",
   "slug": "magnuss85-vor-icelandic-pii-31b-gguf",
   "author": "Magnuss85",
@@ -39,14 +39,19 @@
   "parameters_human": "30.70B",
   "storage_bytes": 54481248064,
   "storage_human": "54.5 GB",
+  "context_length": 262144,
   "base_model": "google/gemma-4-31B-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

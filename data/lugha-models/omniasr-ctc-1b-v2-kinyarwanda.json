@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lugha-Models/omniASR-CTC-1B-v2-kinyarwanda",
   "slug": "lugha-models-omniasr-ctc-1b-v2-kinyarwanda",
   "author": "Lugha-Models",
@@ -37,14 +37,19 @@
   "parameters_human": "975.7M",
   "storage_bytes": 3902806784,
   "storage_human": "3.9 GB",
+  "context_length": null,
   "base_model": "aadel4/omniASR-CTC-1B-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

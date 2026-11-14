@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xdavxd/gemma-4-12B-it-heretic-NVFP4",
   "slug": "xdavxd-gemma-4-12b-it-heretic-nvfp4",
   "author": "xdavxd",
@@ -35,14 +35,19 @@
   "parameters_human": "11.96B",
   "storage_bytes": 8283173589,
   "storage_human": "8.3 GB",
+  "context_length": null,
   "base_model": "coder3101/gemma-4-12B-it-heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

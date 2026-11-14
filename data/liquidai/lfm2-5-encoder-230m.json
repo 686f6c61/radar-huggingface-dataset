@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LiquidAI/LFM2.5-Encoder-230M",
   "slug": "liquidai-lfm2-5-encoder-230m",
   "author": "LiquidAI",
@@ -65,14 +65,19 @@
   "parameters_human": "229.7M",
   "storage_bytes": 918787216,
   "storage_human": "919 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-230M-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

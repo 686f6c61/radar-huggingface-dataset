@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FunAudioLLM/Fun-ASR-Nano-2512-hf",
   "slug": "funaudiollm-fun-asr-nano-2512-hf",
   "author": "FunAudioLLM",
@@ -41,14 +41,19 @@
   "parameters_human": "829.8M",
   "storage_bytes": 10603730280,
   "storage_human": "10.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

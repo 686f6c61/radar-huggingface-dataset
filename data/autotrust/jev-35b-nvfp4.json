@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "autotrust/JEV-35B-NVFP4",
   "slug": "autotrust-jev-35b-nvfp4",
   "author": "autotrust",
@@ -49,14 +49,19 @@
   "parameters_human": "35.95B",
   "storage_bytes": 26724438051,
   "storage_human": "26.7 GB",
+  "context_length": null,
   "base_model": "autotrust/JEV-35B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "autotrust/AutoTrust-Decider-Pro-35B-NVFP4",
+  "renamed_at": "2026-11-11T04:36:20.043Z",
   "benchmarks": [
     {
       "task": "Jev Decision Index 0.3, public suite, System 1 (own scoring with the kit, not a board entry)",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "machinekind/Matcha-TTS-PL-v2",
   "slug": "machinekind-matcha-tts-pl-v2",
   "author": "machinekind",
@@ -41,14 +41,19 @@
   "parameters_human": null,
   "storage_bytes": 1415178774,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "machinekind/Matcha-TTS-PL-Pretrain",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WindSekirun/gemma-4-12B-it-oQ8e-bf16-mtp",
   "slug": "windsekirun-gemma-4-12b-it-oq8e-bf16-mtp",
   "author": "WindSekirun",
@@ -31,6 +31,7 @@
   "parameters_human": "12.38B",
   "storage_bytes": 13618963102,
   "storage_human": "13.6 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-12B-it, google/gemma-4-12B-it-assistant",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

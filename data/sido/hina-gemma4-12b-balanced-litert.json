@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sido/hina-gemma4-12b-balanced-litert",
   "slug": "sido-hina-gemma4-12b-balanced-litert",
   "author": "Sido",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 7273467408,
   "storage_human": "7.3 GB",
+  "context_length": null,
   "base_model": "HauhauCS/Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced, google/gemma-4-12B-it",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

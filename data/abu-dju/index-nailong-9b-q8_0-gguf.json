@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Abu-Dju/Index-Nailong-9B-Q8_0-GGUF",
   "slug": "abu-dju-index-nailong-9b-q8_0-gguf",
   "author": "Abu-Dju",
@@ -31,14 +31,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 9527493504,
   "storage_human": "9.5 GB",
+  "context_length": 229376,
   "base_model": "IndexTeam/Index-Nailong-9B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

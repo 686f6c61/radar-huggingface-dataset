@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/UniverSR-Darwin-NOESIS-BF16",
   "slug": "amaimedia-universr-darwin-noesis-bf16",
   "author": "AMAImedia",
@@ -31,14 +31,19 @@
   "parameters_human": "57.2M",
   "storage_bytes": 114505268,
   "storage_human": "115 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-18T10:19:55.496Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

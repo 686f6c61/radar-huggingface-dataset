@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Polydim-Einsof/glm4_9b_PMTP_polydim_einsof",
   "slug": "polydim-einsof-glm4_9b_pmtp_polydim_einsof",
   "author": "Polydim-Einsof",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 69732578,
   "storage_human": "70 MB",
+  "context_length": null,
   "base_model": "THUDM/glm-4-9b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T03:34:48.567Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

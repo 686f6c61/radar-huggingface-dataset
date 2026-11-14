@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "showa-ai/marketplace-m0-professional-a",
   "slug": "showa-ai-marketplace-m0-professional-a",
   "author": "showa-ai",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 657676047,
   "storage_human": "658 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-08T04:17:46.964Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

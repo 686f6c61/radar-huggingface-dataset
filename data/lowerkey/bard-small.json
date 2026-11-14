@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lowerkey/bard-small",
   "slug": "lowerkey-bard-small",
   "author": "lowerkey",
@@ -34,14 +34,19 @@
   "parameters_human": "136.7M",
   "storage_bytes": 277749938,
   "storage_human": "278 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

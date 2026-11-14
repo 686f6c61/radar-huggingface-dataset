@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hindsight-ai/hs-embed-1",
   "slug": "hindsight-ai-hs-embed-1",
   "author": "hindsight-ai",
@@ -53,6 +53,7 @@
   "parameters_human": "111.7M",
   "storage_bytes": 857882618,
   "storage_human": "858 MB",
+  "context_length": null,
   "base_model": "hotchpotch/bekko-embedding-v1-a25m",
   "formats": [
     "onnx",
@@ -60,8 +61,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

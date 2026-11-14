@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rao-studios/Qwen2.5-Coder-14B-Instruct-mlx-4bit",
   "slug": "rao-studios-qwen2-5-coder-14b-instruct-mlx-4bit",
   "author": "rao-studios",
@@ -32,6 +32,7 @@
   "parameters_human": "14.77B",
   "storage_bytes": 8309494233,
   "storage_human": "8.3 GB",
+  "context_length": null,
   "base_model": "mlx-community/Qwen2.5-Coder-14B-Instruct-4bit",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

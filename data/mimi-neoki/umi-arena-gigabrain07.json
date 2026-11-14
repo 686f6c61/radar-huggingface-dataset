@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mimi-neoki/umi-arena-gigabrain07",
   "slug": "mimi-neoki-umi-arena-gigabrain07",
   "author": "mimi-neoki",
@@ -35,14 +35,19 @@
   "parameters_human": "3.53B",
   "storage_bytes": 7092970786,
   "storage_human": "7.1 GB",
+  "context_length": null,
   "base_model": "open-gigaai/GigaBrain-0.7-3.5B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

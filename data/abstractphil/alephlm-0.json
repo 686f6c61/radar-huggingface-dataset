@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AbstractPhil/alephlm-0",
   "slug": "abstractphil-alephlm-0",
   "author": "AbstractPhil",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 647041551710,
   "storage_human": "647.0 GB",
+  "context_length": null,
   "base_model": "google-bert/bert-base-uncased, answerdotai/ModernBERT-base, FacebookAI/roberta-base, albert/albert-base-v2, distilbert/distilbert-base-uncased",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

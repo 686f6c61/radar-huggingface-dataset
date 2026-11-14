@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DevelopingDad/Qwen3.8-Flash-Next-Uncensored-NVFP4-DGX-Spark",
   "slug": "developingdad-qwen3-8-flash-next-uncensored-nvfp4-dgx-spark",
   "author": "DevelopingDad",
@@ -47,14 +47,19 @@
   "parameters_human": "180.00B",
   "storage_bytes": 183525470489,
   "storage_human": "183.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SnowGemma/Qwen2.5-1.5B-X-Writer-v1",
   "slug": "snowgemma-qwen2-5-1-5b-x-writer-v1",
   "author": "SnowGemma",
@@ -37,6 +37,7 @@
   "parameters_human": "1.54B",
   "storage_bytes": 3098888897,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

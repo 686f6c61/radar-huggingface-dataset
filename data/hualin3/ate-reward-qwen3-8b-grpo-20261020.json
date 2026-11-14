@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hualin3/ate-reward-qwen3-8b-grpo-20261020",
   "slug": "hualin3-ate-reward-qwen3-8b-grpo-20261020",
   "author": "Hualin3",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 26959956,
   "storage_human": "27 MB",
+  "context_length": null,
   "base_model": "Skywork/Skywork-Reward-V2-Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

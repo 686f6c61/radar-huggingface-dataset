@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "daegyeong48/whisper-small-ko-fall-help-ct2-int8",
   "slug": "daegyeong48-whisper-small-ko-fall-help-ct2-int8",
   "author": "daegyeong48",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 244612629,
   "storage_human": "245 MB",
+  "context_length": null,
   "base_model": "seastar105/whisper-small-ko-zeroth",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

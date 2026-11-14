@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "americansquid/gpt-2-xl-alpaca",
   "slug": "americansquid-gpt-2-xl-alpaca",
   "author": "americansquid",
@@ -24,14 +24,19 @@
   "parameters_human": "1.56B",
   "storage_bytes": 1031093527,
   "storage_human": "1.0 GB",
+  "context_length": 1024,
   "base_model": "openai-community/gpt2-xl",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

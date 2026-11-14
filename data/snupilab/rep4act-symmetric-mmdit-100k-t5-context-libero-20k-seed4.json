@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "snupilab/Rep4Act-Symmetric-MMDiT-100k-T5-Context-LIBERO-20k-seed4",
   "slug": "snupilab-rep4act-symmetric-mmdit-100k-t5-context-libero-20k-seed4",
   "author": "snupilab",
@@ -25,14 +25,19 @@
   "parameters_human": "5.89B",
   "storage_bytes": 19876205537,
   "storage_human": "19.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T07:34:09.663Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

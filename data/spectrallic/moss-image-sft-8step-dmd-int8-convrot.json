@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Spectrallic/MOSS-Image-SFT-8step-DMD-int8-convrot",
   "slug": "spectrallic-moss-image-sft-8step-dmd-int8-convrot",
   "author": "Spectrallic",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 5418438684,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-SFT, lodestones/MOSS-Image-SFT-8-steps-dmd",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

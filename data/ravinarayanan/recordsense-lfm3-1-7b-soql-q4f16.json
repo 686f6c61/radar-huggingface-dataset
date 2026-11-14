@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ravinarayanan/recordsense-lfm3-1.7b-soql-q4f16",
   "slug": "ravinarayanan-recordsense-lfm3-1-7b-soql-q4f16",
   "author": "ravinarayanan",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 3139911911,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ravinarayanan/lfm3-1.7b-salesforce-soql-onnx-q4f16",
+  "renamed_at": "2026-11-12T07:32:27.904Z",
   "benchmarks": [],
   "sources": []
 }

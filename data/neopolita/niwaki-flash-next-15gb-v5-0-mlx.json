@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "neopolita/Niwaki-Flash-Next-15GB-v5.0-mlx",
   "slug": "neopolita-niwaki-flash-next-15gb-v5-0-mlx",
   "author": "neopolita",
@@ -34,6 +34,7 @@
   "parameters_human": "59.16B",
   "storage_bytes": 29537574662,
   "storage_human": "29.5 GB",
+  "context_length": null,
   "base_model": "mlx-community/Qwen3.8-Flash-Next-4bit",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iromu/Qwen3-0.6B-openjev-NVFP4",
   "slug": "iromu-qwen3-0-6b-openjev-nvfp4",
   "author": "iromu",
@@ -44,14 +44,19 @@
   "parameters_human": "375.8M",
   "storage_bytes": 570523618,
   "storage_human": "571 MB",
+  "context_length": null,
   "base_model": "iromu/Qwen3-0.6B-openjev",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

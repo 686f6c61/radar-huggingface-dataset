@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kimi000/Flux3-Klein-4Step-Raw2Q-2000",
   "slug": "kimi000-flux3-klein-4step-raw2q-2000",
   "author": "kimi000",
@@ -32,6 +32,7 @@
   "parameters_human": "5.55B",
   "storage_bytes": 20312036256,
   "storage_human": "20.3 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/flux-3-image-klein",
   "formats": [
     "diffusers",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Harsha001/Ripple-65B-Preview-ROCmFPX",
   "slug": "harsha001-ripple-65b-preview-rocmfpx",
   "author": "Harsha001",
@@ -34,14 +34,19 @@
   "parameters_human": "64.78B",
   "storage_bytes": 332002004384,
   "storage_human": "332.0 GB",
+  "context_length": 2097152,
   "base_model": "orcarouter/Ripple-65B-abliterated-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Harsha001/Ripple-65B-abliterated-ROCmFPX",
+  "renamed_at": "2026-11-11T02:51:58.060Z",
   "benchmarks": [],
   "sources": []
 }

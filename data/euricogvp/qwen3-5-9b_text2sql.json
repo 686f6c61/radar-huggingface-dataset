@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EuricoGVP/Qwen3.5-9b_text2sql",
   "slug": "euricogvp-qwen3-5-9b_text2sql",
   "author": "EuricoGVP",
@@ -47,14 +47,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 18837952635,
   "storage_human": "18.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text-to-SQL",

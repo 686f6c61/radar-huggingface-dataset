@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hasnain1241/llm-as-jev",
   "slug": "hasnain1241-llm-as-jev",
   "author": "Hasnain1241",
@@ -33,14 +33,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 7164233230,
   "storage_human": "7.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

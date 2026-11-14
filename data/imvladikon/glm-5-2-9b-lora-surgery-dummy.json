@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "imvladikon/GLM-5.2-9B-LoRA-Surgery-Dummy",
   "slug": "imvladikon-glm-5-2-9b-lora-surgery-dummy",
   "author": "imvladikon",
@@ -23,14 +23,19 @@
   "parameters_human": "8.76B",
   "storage_bytes": 17546816250,
   "storage_human": "17.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

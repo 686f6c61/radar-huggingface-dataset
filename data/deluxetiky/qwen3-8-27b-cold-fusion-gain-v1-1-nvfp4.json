@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "deluxetiky/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NVFP4",
   "slug": "deluxetiky-qwen3-8-27b-cold-fusion-gain-v1-1-nvfp4",
   "author": "deluxetiky",
@@ -41,14 +41,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 18808340005,
   "storage_human": "18.8 GB",
+  "context_length": null,
   "base_model": "DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

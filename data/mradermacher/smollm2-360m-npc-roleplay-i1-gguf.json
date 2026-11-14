@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/SmolLM2-360M-NPC-Roleplay-i1-GGUF",
   "slug": "mradermacher-smollm2-360m-npc-roleplay-i1-gguf",
   "author": "mradermacher",
@@ -40,14 +40,19 @@
   "parameters_human": "361.8M",
   "storage_bytes": 5653695392,
   "storage_human": "5.7 GB",
+  "context_length": 8192,
   "base_model": "thealper2/SmolLM2-360M-NPC-Roleplay",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "webmp3/Sakura-Micro-Bonsai-2-GSQ-RCO",
   "slug": "webmp3-sakura-micro-bonsai-2-gsq-rco",
   "author": "webmp3",
@@ -37,14 +37,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 5688150988,
   "storage_human": "5.7 GB",
+  "context_length": 262144,
   "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

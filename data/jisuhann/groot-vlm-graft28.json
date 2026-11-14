@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JisuHann/groot-vlm-graft28",
   "slug": "jisuhann-groot-vlm-graft28",
   "author": "JisuHann",
@@ -35,14 +35,19 @@
   "parameters_human": "2.15B",
   "storage_bytes": 4311712371,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": "nvidia/GR00T-N1.5-3B, Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-26T04:21:45.526Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

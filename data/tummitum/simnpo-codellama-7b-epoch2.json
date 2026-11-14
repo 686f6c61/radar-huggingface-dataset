@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tummitum/SimNPO-CodeLlama-7B-epoch2",
   "slug": "tummitum-simnpo-codellama-7b-epoch2",
   "author": "tummitum",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 50478050,
   "storage_human": "50 MB",
+  "context_length": null,
   "base_model": "codellama/CodeLlama-7b-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

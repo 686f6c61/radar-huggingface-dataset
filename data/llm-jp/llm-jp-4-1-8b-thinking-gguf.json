@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "llm-jp/llm-jp-4.1-8b-thinking-gguf",
   "slug": "llm-jp-llm-jp-4-1-8b-thinking-gguf",
   "author": "llm-jp",
@@ -31,14 +31,19 @@
   "parameters_human": "8.59B",
   "storage_bytes": 45381392154,
   "storage_human": "45.4 GB",
+  "context_length": 65536,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

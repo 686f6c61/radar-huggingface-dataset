@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Riasok/fastwam-libero-4suite-sft",
   "slug": "riasok-fastwam-libero-4suite-sft",
   "author": "Riasok",
@@ -27,14 +27,19 @@
   "parameters_human": "6.02B",
   "storage_bytes": 12041639918,
   "storage_human": "12.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rayantion26/jingsi-v15",
   "slug": "rayantion26-jingsi-v15",
   "author": "Rayantion26",
@@ -42,14 +42,19 @@
   "parameters_human": "5.10B",
   "storage_bytes": 10241841456,
   "storage_human": "10.2 GB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-E2B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-19T10:37:57.076Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

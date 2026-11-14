@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "roccoangelella/kefir1-sft-b32-s17-15k",
   "slug": "roccoangelella-kefir1-sft-b32-s17-15k",
   "author": "roccoangelella",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 576329152,
   "storage_human": "576 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

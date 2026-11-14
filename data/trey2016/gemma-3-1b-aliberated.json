@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Trey2016/gemma-3-1b-aliberated",
   "slug": "trey2016-gemma-3-1b-aliberated",
   "author": "Trey2016",
@@ -25,14 +25,19 @@
   "parameters_human": "999.9M",
   "storage_bytes": 806058304,
   "storage_human": "806 MB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

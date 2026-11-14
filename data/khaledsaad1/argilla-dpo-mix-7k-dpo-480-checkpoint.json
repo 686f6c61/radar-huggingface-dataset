@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Khaledsaad1/argilla-dpo-mix-7k-DPO-480-checkpoint",
   "slug": "khaledsaad1-argilla-dpo-mix-7k-dpo-480-checkpoint",
   "author": "Khaledsaad1",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 541815553,
   "storage_human": "542 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-7b-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

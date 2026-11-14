@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "plutovion/lifeadmin-whisper-small-int8",
   "slug": "plutovion-lifeadmin-whisper-small-int8",
   "author": "plutovion",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 374614175,
   "storage_human": "375 MB",
+  "context_length": null,
   "base_model": "openai/whisper-small",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "plutovion/admion-whisper-small-int8",
+  "renamed_at": "2026-11-11T07:08:39.356Z",
   "benchmarks": [],
   "sources": [
     {

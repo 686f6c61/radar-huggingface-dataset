@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "voicetide/multitalker-parakeet-streaming-0.6b-v1-gguf",
   "slug": "voicetide-multitalker-parakeet-streaming-0-6b-v1-gguf",
   "author": "voicetide",
@@ -30,14 +30,19 @@
   "parameters_human": "622.3M",
   "storage_bytes": 734123712,
   "storage_human": "734 MB",
+  "context_length": null,
   "base_model": "nvidia/multitalker-parakeet-streaming-0.6b-v1",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

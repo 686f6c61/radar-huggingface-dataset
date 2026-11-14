@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stealth-model/space-bunny-alpha",
   "slug": "stealth-model-space-bunny-alpha",
   "author": "stealth-model",
@@ -37,14 +37,19 @@
   "parameters_human": "426.19B",
   "storage_bytes": 140910175538,
   "storage_human": "140.9 GB",
+  "context_length": 1048576,
   "base_model": "MiniMaxAI/MiniMax-M3.1-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

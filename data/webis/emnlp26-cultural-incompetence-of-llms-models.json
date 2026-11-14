@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "webis/emnlp26-cultural-incompetence-of-llms-models",
   "slug": "webis-emnlp26-cultural-incompetence-of-llms-models",
   "author": "webis",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 21331697742,
   "storage_human": "21.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

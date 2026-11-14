@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Asher-1/querysplat_vggto",
   "slug": "asher-1-querysplat_vggto",
   "author": "Asher-1",
@@ -33,14 +33,19 @@
   "parameters_human": "14.7M",
   "storage_bytes": 8185669243,
   "storage_human": "8.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

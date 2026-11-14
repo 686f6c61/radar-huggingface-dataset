@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sjakek/slimder-qwen38-reap384-s0",
   "slug": "sjakek-slimder-qwen38-reap384-s0",
   "author": "sjakek",
@@ -28,14 +28,19 @@
   "parameters_human": "147.18B",
   "storage_bytes": 294369257912,
   "storage_human": "294.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "jakeatx/slimder-qwen38-reap384-s0",
+  "renamed_at": "2026-11-12T07:49:46.600Z",
   "benchmarks": [],
   "sources": [
     {

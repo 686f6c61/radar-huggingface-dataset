@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "djdeniro/GLM-5.3-Flash-RFA-RFI8-8xR9700",
   "slug": "djdeniro-glm-5-3-flash-rfa-rfi8-8xr9700",
   "author": "djdeniro",
@@ -45,14 +45,19 @@
   "parameters_human": "169.22B",
   "storage_bytes": 197891310222,
   "storage_human": "197.9 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

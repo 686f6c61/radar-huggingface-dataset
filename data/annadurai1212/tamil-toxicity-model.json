@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Annadurai1212/tamil-toxicity-model",
   "slug": "annadurai1212-tamil-toxicity-model",
   "author": "Annadurai1212",
@@ -34,14 +34,19 @@
   "parameters_human": "177.9M",
   "storage_bytes": 711443432,
   "storage_human": "711 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

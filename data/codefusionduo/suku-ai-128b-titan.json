@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "codefusionduo/suku-ai-128b-titan",
   "slug": "codefusionduo-suku-ai-128b-titan",
   "author": "codefusionduo",
@@ -42,14 +42,19 @@
   "parameters_human": "206208",
   "storage_bytes": 1887187,
   "storage_human": "2 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AstySeeks/Dolphin3.0-Qwen2.5-1.5B-ONNX",
   "slug": "astyseeks-dolphin3-0-qwen2-5-1-5b-onnx",
   "author": "AstySeeks",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 1791015629,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "dphn/Dolphin3.0-Qwen2.5-1.5B",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

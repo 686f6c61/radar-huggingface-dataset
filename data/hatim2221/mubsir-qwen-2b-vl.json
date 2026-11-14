@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hatim2221/Mubsir-Qwen-2B-VL",
   "slug": "hatim2221-mubsir-qwen-2b-vl",
   "author": "Hatim2221",
@@ -37,14 +37,19 @@
   "parameters_human": "2.21B",
   "storage_bytes": 6023727936,
   "storage_human": "6.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-VL",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

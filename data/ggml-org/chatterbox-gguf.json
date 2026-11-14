@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ggml-org/chatterbox-GGUF",
   "slug": "ggml-org-chatterbox-gguf",
   "author": "ggml-org",
@@ -28,14 +28,19 @@
   "parameters_human": "525.2M",
   "storage_bytes": 2204529760,
   "storage_human": "2.2 GB",
+  "context_length": 131072,
   "base_model": "ResembleAI/chatterbox",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

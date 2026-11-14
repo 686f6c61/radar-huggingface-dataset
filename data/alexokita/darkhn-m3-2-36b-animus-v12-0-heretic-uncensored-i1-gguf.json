@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alexokita/Darkhn-M3.2-36B-Animus-V12.0-Heretic-Uncensored-i1-GGUF",
   "slug": "alexokita-darkhn-m3-2-36b-animus-v12-0-heretic-uncensored-i1-gguf",
   "author": "alexokita",
@@ -41,14 +41,19 @@
   "parameters_human": "34.69B",
   "storage_bytes": 189027502336,
   "storage_human": "189.0 GB",
+  "context_length": 131072,
   "base_model": "Silicone-Moss/Darkhn-M3.2-36B-Animus-V12.0-Heretic-Uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

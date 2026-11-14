@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ai-toolkit/Qwen2.5-Omni-7B",
   "slug": "ai-toolkit-qwen2-5-omni-7b",
   "author": "ai-toolkit",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 11104402904,
   "storage_human": "11.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

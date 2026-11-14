@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "halilgokdal/mirror-aydin99-FLUX.2-klein-4B-int8",
   "slug": "halilgokdal-mirror-aydin99-flux-2-klein-4b-int8",
   "author": "halilgokdal",
@@ -27,6 +27,7 @@
   "parameters_human": "3.88B",
   "storage_bytes": 3877645084,
   "storage_human": "3.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

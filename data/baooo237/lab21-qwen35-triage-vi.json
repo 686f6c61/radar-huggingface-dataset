@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "baooo237/lab21-qwen35-triage-vi",
   "slug": "baooo237-lab21-qwen35-triage-vi",
   "author": "baooo237",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 63330195,
   "storage_human": "63 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

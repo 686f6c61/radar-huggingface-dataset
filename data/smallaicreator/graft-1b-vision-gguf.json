@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SmallAICreator/GRAFT-1B-Vision-GGUF",
   "slug": "smallaicreator-graft-1b-vision-gguf",
   "author": "SmallAICreator",
@@ -48,14 +48,19 @@
   "parameters_human": "1.18B",
   "storage_bytes": 2406466524,
   "storage_human": "2.4 GB",
+  "context_length": 4096,
   "base_model": "SmallAICreator/GRAFT-1B, google/siglip-so400m-patch14-384, markendo/llava-extract-qwen3-1.7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

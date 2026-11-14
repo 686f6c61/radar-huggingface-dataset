@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cortexist/gemma-4-E4B-it-qat-exl3-4.0bpw",
   "slug": "cortexist-gemma-4-e4b-it-qat-exl3-4-0bpw",
   "author": "cortexist",
@@ -36,14 +36,19 @@
   "parameters_human": "2.30B",
   "storage_bytes": 4639477895,
   "storage_human": "4.6 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it-qat-q4_0-unquantized",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

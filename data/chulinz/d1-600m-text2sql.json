@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Chulinz/d1-600m-text2sql",
   "slug": "chulinz-d1-600m-text2sql",
   "author": "Chulinz",
@@ -37,14 +37,19 @@
   "parameters_human": "587.2M",
   "storage_bytes": 4697977380,
   "storage_human": "4.7 GB",
+  "context_length": null,
   "base_model": "LiquidAI/d1-omni-600M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-14T02:58:47.274Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

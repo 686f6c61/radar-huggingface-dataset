@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cpral/poziomka-instruct-2026-10-01",
   "slug": "cpral-poziomka-instruct-2026-10-01",
   "author": "cpral",
@@ -32,14 +32,19 @@
   "parameters_human": "4.12B",
   "storage_bytes": 8240328624,
   "storage_human": "8.2 GB",
+  "context_length": null,
   "base_model": "cpral/Poziomka-Baza-2026-09-05",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

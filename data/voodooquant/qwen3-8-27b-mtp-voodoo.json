@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "voodooquant/Qwen3.8-27B-MTP-Voodoo",
   "slug": "voodooquant-qwen3-8-27b-mtp-voodoo",
   "author": "voodooquant",
@@ -34,14 +34,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 14379595072,
   "storage_human": "14.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T10:57:28.157Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

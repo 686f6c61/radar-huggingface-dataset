@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "spoindo/connectailab-rl-spoindo-v1-halfcheetah",
   "slug": "spoindo-connectailab-rl-spoindo-v1-halfcheetah",
   "author": "spoindo",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 164844,
   "storage_human": "164844 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "schonsense/Llama3.3-70B_oncefuturepunk_v0.1a-GGUF",
   "slug": "schonsense-llama3-3-70b_oncefuturepunk_v0-1a-gguf",
   "author": "schonsense",
@@ -27,14 +27,19 @@
   "parameters_human": "70.55B",
   "storage_bytes": 227206393921,
   "storage_human": "227.2 GB",
+  "context_length": 131072,
   "base_model": "schonsense/Llama3.3-70B_oncefuturepunk_v0.1a",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

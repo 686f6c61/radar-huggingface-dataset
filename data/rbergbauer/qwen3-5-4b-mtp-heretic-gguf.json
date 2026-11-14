@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RBergBauer/Qwen3.5-4B-MTP-Heretic-GGUF",
   "slug": "rbergbauer-qwen3-5-4b-mtp-heretic-gguf",
   "author": "RBergBauer",
@@ -32,14 +32,19 @@
   "parameters_human": "333.5M",
   "storage_bytes": 5283003776,
   "storage_human": "5.3 GB",
+  "context_length": null,
   "base_model": "RBergBauer/Qwen3.5-4B-MTP-Heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

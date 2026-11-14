@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bn22/CLIP-ViT-B-32-224-ONNX-INT8",
   "slug": "bn22-clip-vit-b-32-224-onnx-int8",
   "author": "bn22",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 474260824,
   "storage_human": "474 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T04:43:10.818Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

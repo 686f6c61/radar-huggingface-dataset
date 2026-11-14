@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Beetle-FineWeb-24B-4/beetle-bilingual-l2-50-classroom-20-b4-fineweb-2b-fin-eng",
   "slug": "beetle-fineweb-24b-4-beetle-bilingual-l2-50-classroom-20-b4-fineweb-2b-fin-eng",
   "author": "Beetle-FineWeb-24B-4",
@@ -27,14 +27,19 @@
   "parameters_human": "193.8M",
   "storage_bytes": 82953455764,
   "storage_human": "83.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

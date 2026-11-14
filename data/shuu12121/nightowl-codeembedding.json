@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Shuu12121/NightOwl-CodeEmbedding",
   "slug": "shuu12121-nightowl-codeembedding",
   "author": "Shuu12121",
@@ -38,6 +38,7 @@
   "parameters_human": "150.8M",
   "storage_bytes": 1962027329,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "Shuu12121/NightOwl",
   "formats": [
     "onnx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

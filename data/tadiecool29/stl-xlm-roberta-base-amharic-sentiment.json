@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tadiecool29/STL-xlm-roberta-base-amharic-sentiment",
   "slug": "tadiecool29-stl-xlm-roberta-base-amharic-sentiment",
   "author": "tadiecool29",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 17098184,
   "storage_human": "17 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-02T02:32:54.200Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

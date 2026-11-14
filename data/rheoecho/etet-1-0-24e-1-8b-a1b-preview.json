@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RheoEcho/ETET-1.0-24E-1.8B-A1B-Preview",
   "slug": "rheoecho-etet-1-0-24e-1-8b-a1b-preview",
   "author": "RheoEcho",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 3714995648,
   "storage_human": "3.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

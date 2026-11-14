@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sahilchachra/sarvam-30b-MXFP8",
   "slug": "sahilchachra-sarvam-30b-mxfp8",
   "author": "sahilchachra",
@@ -34,6 +34,7 @@
   "parameters_human": "32.15B",
   "storage_bytes": 34240587152,
   "storage_human": "34.2 GB",
+  "context_length": null,
   "base_model": "sarvamai/sarvam-30b",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FRANCESCO-MORETTI/mae-experiment19",
   "slug": "francesco-moretti-mae-experiment19",
   "author": "FRANCESCO-MORETTI",
@@ -26,14 +26,19 @@
   "parameters_human": "33088",
   "storage_bytes": 132832,
   "storage_human": "132832 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

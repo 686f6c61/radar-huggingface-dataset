@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "senga-ml/body-model-24-08",
   "slug": "senga-ml-body-model-24-08",
   "author": "senga-ml",
@@ -27,14 +27,19 @@
   "parameters_human": "202.1M",
   "storage_bytes": 16187544405,
   "storage_human": "16.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-28T10:15:13.559Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dennis19319/Qwen2.5-14B-Merged-799train",
   "slug": "dennis19319-qwen2-5-14b-merged-799train",
   "author": "dennis19319",
@@ -37,14 +37,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 29540133744,
   "storage_human": "29.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-14B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-26T05:32:17.998Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mohmedbj/whisper-large-v3-turbo-arabic-dialect-ct2",
   "slug": "mohmedbj-whisper-large-v3-turbo-arabic-dialect-ct2",
   "author": "mohmedbj",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 1617884929,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "oddadmix/whisper-large-v3-turbo-arabic-dialectal-v2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-07T03:23:03.285Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

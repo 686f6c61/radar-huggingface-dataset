@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "peculiar-ragdoll/Unsloth-Ornith-1.5-35B-A3B",
   "slug": "peculiar-ragdoll-unsloth-ornith-1-5-35b-a3b",
   "author": "peculiar-ragdoll",
@@ -35,14 +35,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 405842051194,
   "storage_human": "405.8 GB",
+  "context_length": 262144,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

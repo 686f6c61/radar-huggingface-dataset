@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kabing/gpt2-cbctg-prior",
   "slug": "kabing-gpt2-cbctg-prior",
   "author": "kabing",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 139760926,
   "storage_human": "140 MB",
+  "context_length": null,
   "base_model": "gpt2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

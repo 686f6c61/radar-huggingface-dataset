@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "malkolm777/zils-lite-decision-v9",
   "slug": "malkolm777-zils-lite-decision-v9",
   "author": "malkolm777",
@@ -27,20 +27,25 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 56,
+  "downloads_30d": 58,
   "trending_score": 0,
   "parameters": 852985920,
   "parameters_human": "853.0M",
   "storage_bytes": 3425907918,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "vllm-sr/d3-lite",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

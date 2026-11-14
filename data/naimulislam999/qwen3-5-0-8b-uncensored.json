@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "naimulislam999/Qwen3.5-0.8B-Uncensored",
   "slug": "naimulislam999-qwen3-5-0-8b-uncensored",
   "author": "naimulislam999",
@@ -37,14 +37,19 @@
   "parameters_human": "752.4M",
   "storage_bytes": 1524817100,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Null-Guard/Qwen3.5-0.8B-Uncensored",
+  "renamed_at": "2026-11-11T06:50:56.554Z",
   "benchmarks": [],
   "sources": [
     {

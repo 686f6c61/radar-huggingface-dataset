@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "axteam/gemma-4-26B-A4B-AWQ-8bit",
   "slug": "axteam-gemma-4-26b-a4b-awq-8bit",
   "author": "axteam",
@@ -35,14 +35,19 @@
   "parameters_human": "8.59B",
   "storage_bytes": 29197645330,
   "storage_human": "29.2 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-26B-A4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

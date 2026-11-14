@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Madras1/Qwen3.8-27B-Abliterated-Uncensored",
   "slug": "madras1-qwen3-8-27b-abliterated-uncensored",
   "author": "Madras1",
@@ -39,14 +39,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 53812099517,
   "storage_human": "53.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-08T02:32:11.532Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "axteam/Motif-Video-2B-FP8",
   "slug": "axteam-motif-video-2b-fp8",
   "author": "axteam",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 2553335632,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": "Motif-Technologies/Motif-Video-2B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T03:44:24.560Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

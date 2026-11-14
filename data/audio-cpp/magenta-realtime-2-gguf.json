@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "audio-cpp/Magenta-RealTime-2-GGUF",
   "slug": "audio-cpp-magenta-realtime-2-gguf",
   "author": "audio-cpp",
@@ -28,14 +28,19 @@
   "parameters_human": "2.67B",
   "storage_bytes": 12417475064,
   "storage_human": "12.4 GB",
+  "context_length": null,
   "base_model": "google/magenta-realtime-2",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

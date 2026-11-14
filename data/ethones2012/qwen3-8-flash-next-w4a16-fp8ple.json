@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ethones2012/Qwen3.8-Flash-Next-W4A16-FP8PLE",
   "slug": "ethones2012-qwen3-8-flash-next-w4a16-fp8ple",
   "author": "ethones2012",
@@ -49,14 +49,19 @@
   "parameters_human": "72.76B",
   "storage_bytes": 128977821186,
   "storage_human": "129.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next, Intel/Qwen3.8-Flash-Next-W4A16-AutoRound, RadixArk/Qwen3.8-Flash-Next-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qgallouedec/synthetic-moe-500b-a24b",
   "slug": "qgallouedec-synthetic-moe-500b-a24b",
   "author": "qgallouedec",
@@ -24,14 +24,19 @@
   "parameters_human": "500.18B",
   "storage_bytes": 1000364658170,
   "storage_human": "1000.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-24T05:25:56.784Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

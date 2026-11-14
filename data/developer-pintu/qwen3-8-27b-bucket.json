@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Developer-pintu/Qwen3.8-27B-bucket",
   "slug": "developer-pintu-qwen3-8-27b-bucket",
   "author": "Developer-pintu",
@@ -33,14 +33,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 29383970930,
   "storage_human": "29.4 GB",
+  "context_length": null,
   "base_model": "unsloth/qwen2.5-coder-7b-instruct-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

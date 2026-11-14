@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Krissaito470/Qwen3.8-Flash-Next-DS4-Mixed-Q3",
   "slug": "krissaito470-qwen3-8-flash-next-ds4-mixed-q3",
   "author": "Krissaito470",
@@ -34,14 +34,19 @@
   "parameters_human": "181.56B",
   "storage_bytes": 318416125952,
   "storage_human": "318.4 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

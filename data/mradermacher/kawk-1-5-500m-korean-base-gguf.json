@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/KAWK-1.5-500M-Korean-Base-GGUF",
   "slug": "mradermacher-kawk-1-5-500m-korean-base-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "505.4M",
   "storage_bytes": 4552874496,
   "storage_human": "4.6 GB",
+  "context_length": 2048,
   "base_model": "Infinity08/KAWK-1.5-500M-Korean-Base",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

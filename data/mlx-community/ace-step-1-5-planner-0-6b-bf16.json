@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlx-community/ACE-Step-1.5-planner-0.6B-bf16",
   "slug": "mlx-community-ace-step-1-5-planner-0-6b-bf16",
   "author": "mlx-community",
@@ -32,6 +32,7 @@
   "parameters_human": "662.9M",
   "storage_bytes": 1364198920,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "ACE-Step/acestep-5Hz-lm-0.6B",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "apase95/ast-finetuned-gtzan",
   "slug": "apase95-ast-finetuned-gtzan",
   "author": "apase95",
@@ -32,14 +32,19 @@
   "parameters_human": "86.2M",
   "storage_bytes": 344819857,
   "storage_human": "345 MB",
+  "context_length": null,
   "base_model": "MIT/ast-finetuned-audioset-10-10-0.4593",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Audio Classification",

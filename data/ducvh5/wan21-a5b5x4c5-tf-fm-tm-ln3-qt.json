@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ducvh5/wan21-a5b5x4c5-tf-fm-tm-ln3-qt",
   "slug": "ducvh5-wan21-a5b5x4c5-tf-fm-tm-ln3-qt",
   "author": "ducvh5",
@@ -29,6 +29,7 @@
   "parameters_human": null,
   "storage_bytes": 60696695791,
   "storage_human": "60.7 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
   "formats": [
     "diffusers",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

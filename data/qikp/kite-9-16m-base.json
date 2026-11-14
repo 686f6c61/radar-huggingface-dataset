@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qikp/kite-9-16m-base",
   "slug": "qikp-kite-9-16m-base",
   "author": "qikp",
@@ -32,14 +32,19 @@
   "parameters_human": "15.9M",
   "storage_bytes": 63555224,
   "storage_human": "64 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

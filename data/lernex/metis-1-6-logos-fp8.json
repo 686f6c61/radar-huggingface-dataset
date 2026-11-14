@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lernex/Metis-1.6-Logos-FP8",
   "slug": "lernex-metis-1-6-logos-fp8",
   "author": "Lernex",
@@ -39,14 +39,19 @@
   "parameters_human": "10.39B",
   "storage_bytes": 11171883438,
   "storage_human": "11.2 GB",
+  "context_length": null,
   "base_model": "Lernex/Metis-1.6-Logos",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

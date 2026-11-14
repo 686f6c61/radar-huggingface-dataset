@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "optima-tools-ch/listen-high",
   "slug": "optima-tools-ch-listen-high",
   "author": "optima-tools-ch",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 3095033483,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "openai/whisper-large-v3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

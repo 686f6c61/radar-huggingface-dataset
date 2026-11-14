@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DQN-Labs/nexustest2-cfp-8k-oct30-lora",
   "slug": "dqn-labs-nexustest2-cfp-8k-oct30-lora",
   "author": "DQN-Labs",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 338832677,
   "storage_human": "339 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.8-27B-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

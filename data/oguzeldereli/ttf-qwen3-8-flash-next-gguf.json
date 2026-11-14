@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oguzeldereli/ttf-Qwen3.8-Flash-Next-GGUF",
   "slug": "oguzeldereli-ttf-qwen3-8-flash-next-gguf",
   "author": "oguzeldereli",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 40382114272,
   "storage_human": "40.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

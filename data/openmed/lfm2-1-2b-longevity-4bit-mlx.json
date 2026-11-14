@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenMed/LFM2-1.2B-Longevity-4bit-mlx",
   "slug": "openmed-lfm2-1-2b-longevity-4bit-mlx",
   "author": "OpenMed",
@@ -42,6 +42,7 @@
   "parameters_human": "1.17B",
   "storage_bytes": 658540250,
   "storage_human": "659 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2-1.2B-Longevity",
   "formats": [
     "mlx",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

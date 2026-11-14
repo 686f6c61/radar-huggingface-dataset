@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "morealcholplz/kt-20261011-20260921_eval_h16_seed42_repeat_val-456741cf",
   "slug": "morealcholplz-kt-20261011-20260921_eval_h16_seed42_repeat_val-456741cf",
   "author": "morealcholplz",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 180709373,
   "storage_human": "181 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

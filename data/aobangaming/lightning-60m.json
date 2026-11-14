@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Aobangaming/lightning-60m",
   "slug": "aobangaming-lightning-60m",
   "author": "Aobangaming",
@@ -34,14 +34,19 @@
   "parameters_human": "64.8M",
   "storage_bytes": 259349352,
   "storage_human": "259 MB",
+  "context_length": null,
   "base_model": "Aobangaming/lightning-30m-ft",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aravdhoot/risk-spec-specv3local-q27-rae4proctraceq27-qwen3.8-27b-hp500-r32-s0-20260915",
   "slug": "aravdhoot-risk-spec-specv3local-q27-rae4proctraceq27-qwen3-8-27b-hp500-r32-s0-20260915",
   "author": "aravdhoot",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 7013632384,
   "storage_human": "7.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

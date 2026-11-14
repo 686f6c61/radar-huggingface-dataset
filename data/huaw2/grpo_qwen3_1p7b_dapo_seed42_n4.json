@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huaw2/grpo_qwen3_1p7b_dapo_seed42_n4",
   "slug": "huaw2-grpo_qwen3_1p7b_dapo_seed42_n4",
   "author": "huaw2",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 262731576766,
   "storage_human": "262.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-15T02:43:12.196Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

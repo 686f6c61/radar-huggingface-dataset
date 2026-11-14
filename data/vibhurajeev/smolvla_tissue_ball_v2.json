@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vibhurajeev/smolvla_tissue_ball_v2",
   "slug": "vibhurajeev-smolvla_tissue_ball_v2",
   "author": "vibhurajeev",
@@ -30,14 +30,19 @@
   "parameters_human": "450.0M",
   "storage_bytes": 906727744,
   "storage_human": "907 MB",
+  "context_length": null,
   "base_model": "lerobot/smolvla_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

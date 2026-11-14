@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "genai-craft/transparent-lora-for-moss-image",
   "slug": "genai-craft-transparent-lora-for-moss-image",
   "author": "genai-craft",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 150887371,
   "storage_human": "151 MB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

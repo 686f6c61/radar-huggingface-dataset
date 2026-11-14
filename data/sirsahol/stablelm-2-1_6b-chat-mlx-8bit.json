@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SirSahOl/stablelm-2-1_6b-chat-mlx-8bit",
   "slug": "sirsahol-stablelm-2-1_6b-chat-mlx-8bit",
   "author": "SirSahOl",
@@ -59,6 +59,7 @@
   "parameters_human": "1.64B",
   "storage_bytes": 3495399884,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "stabilityai/stablelm-2-1_6b",
   "formats": [
     "mlx",
@@ -66,8 +67,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

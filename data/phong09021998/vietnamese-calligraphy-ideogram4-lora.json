@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "phong09021998/vietnamese-calligraphy-ideogram4-lora",
   "slug": "phong09021998-vietnamese-calligraphy-ideogram4-lora",
   "author": "phong09021998",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 1700187375,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

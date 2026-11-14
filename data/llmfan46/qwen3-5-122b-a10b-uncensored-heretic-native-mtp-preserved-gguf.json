@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "llmfan46/Qwen3.5-122B-A10B-Uncensored-Heretic-Native-MTP-Preserved-GGUF",
   "slug": "llmfan46-qwen3-5-122b-a10b-uncensored-heretic-native-mtp-preserved-gguf",
   "author": "llmfan46",
@@ -36,14 +36,19 @@
   "parameters_human": "124.64B",
   "storage_bytes": 1087696953280,
   "storage_human": "1087.7 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-122B-A10B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

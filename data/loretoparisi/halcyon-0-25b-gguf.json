@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "loretoparisi/Halcyon-0.25B-GGUF",
   "slug": "loretoparisi-halcyon-0-25b-gguf",
   "author": "loretoparisi",
@@ -32,14 +32,19 @@
   "parameters_human": "247.8M",
   "storage_bytes": 926751097,
   "storage_human": "927 MB",
+  "context_length": 1280,
   "base_model": "radicalnumerics/Halcyon-0.25B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

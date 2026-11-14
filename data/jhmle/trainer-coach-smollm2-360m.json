@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jhmle/trainer-coach-smollm2-360m",
   "slug": "jhmle-trainer-coach-smollm2-360m",
   "author": "jhmle",
@@ -29,14 +29,19 @@
   "parameters_human": "361.8M",
   "storage_bytes": 5065722368,
   "storage_human": "5.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

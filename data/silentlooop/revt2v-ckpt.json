@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "silentlooop/revt2v-ckpt",
   "slug": "silentlooop-revt2v-ckpt",
   "author": "silentlooop",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 1407622164,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "ali-vilab/text-to-video-ms-1.7b",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

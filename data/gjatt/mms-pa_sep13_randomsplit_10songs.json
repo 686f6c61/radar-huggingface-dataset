@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GJATT/mms-pa_Sep13_randomsplit_10songs",
   "slug": "gjatt-mms-pa_sep13_randomsplit_10songs",
   "author": "GJATT",
@@ -27,14 +27,19 @@
   "parameters_human": "964.8M",
   "storage_bytes": 88762037693,
   "storage_human": "88.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-16T08:39:13.539Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

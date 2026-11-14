@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SofiTesfay2010/KAT-Coder-V3-Dev-Flash",
   "slug": "sofitesfay2010-kat-coder-v3-dev-flash",
   "author": "SofiTesfay2010",
@@ -28,14 +28,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 13805910940,
   "storage_human": "13.8 GB",
+  "context_length": null,
   "base_model": "Kwaipilot/KAT-Coder-V2.5-Dev",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

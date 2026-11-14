@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Butanium/ft-attack-repro-inkling-flower",
   "slug": "butanium-ft-attack-repro-inkling-flower",
   "author": "Butanium",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 20267367632,
   "storage_human": "20.3 GB",
+  "context_length": null,
   "base_model": "thinkingmachines/Inkling",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

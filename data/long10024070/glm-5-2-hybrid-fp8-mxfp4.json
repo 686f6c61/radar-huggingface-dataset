@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "long10024070/GLM-5.2-HYBRID-FP8-MXFP4",
   "slug": "long10024070-glm-5-2-hybrid-fp8-mxfp4",
   "author": "long10024070",
@@ -32,14 +32,19 @@
   "parameters_human": "389.53B",
   "storage_bytes": 414420036658,
   "storage_human": "414.4 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.2-FP8, amd/GLM-5.2-MXFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

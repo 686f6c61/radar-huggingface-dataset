@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Panga-Azazia/LFM2.5-350M-Base-ASR",
   "slug": "panga-azazia-lfm2-5-350m-base-asr",
   "author": "Panga-Azazia",
@@ -34,14 +34,19 @@
   "parameters_human": "354.5M",
   "storage_bytes": 708984464,
   "storage_human": "709 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-350M-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

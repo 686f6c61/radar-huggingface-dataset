@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jjjlimaus/chrono-2018-2019-harvest-cpt",
   "slug": "jjjlimaus-chrono-2018-2019-harvest-cpt",
   "author": "jjjlimaus",
@@ -26,14 +26,19 @@
   "parameters_human": "2.02B",
   "storage_bytes": 137259555432,
   "storage_human": "137.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-18T05:32:31.537Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

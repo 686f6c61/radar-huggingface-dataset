@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DuoNeural/CrystalCall-Lorentz-ADS-7L",
   "slug": "duoneural-crystalcall-lorentz-ads-7l",
   "author": "DuoNeural",
@@ -48,6 +48,7 @@
   "parameters_human": "266.6M",
   "storage_bytes": 1317893384,
   "storage_human": "1.3 GB",
+  "context_length": 512,
   "base_model": "Salesforce/xLAM-1b-fc-r",
   "formats": [
     "gguf",
@@ -55,8 +56,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

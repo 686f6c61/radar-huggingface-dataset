@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ethanwtodd/Sage-A1.5-Q4_K-Q8_0-GGUF",
   "slug": "ethanwtodd-sage-a1-5-q4_k-q8_0-gguf",
   "author": "ethanwtodd",
@@ -32,14 +32,19 @@
   "parameters_human": "35.51B",
   "storage_bytes": 42340406496,
   "storage_human": "42.3 GB",
+  "context_length": 262144,
   "base_model": "InternScience/Sage-A1.5",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

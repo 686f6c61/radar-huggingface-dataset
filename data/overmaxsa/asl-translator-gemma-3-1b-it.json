@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OvermaxSA/asl-translator-gemma-3-1b-it",
   "slug": "overmaxsa-asl-translator-gemma-3-1b-it",
   "author": "OvermaxSA",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 554706704,
   "storage_human": "555 MB",
+  "context_length": null,
   "base_model": "google/gemma-3-1b-it",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

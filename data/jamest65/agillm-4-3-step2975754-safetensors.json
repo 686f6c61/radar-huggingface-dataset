@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jamest65/AGILLM-4.3-step2975754-safetensors",
   "slug": "jamest65-agillm-4-3-step2975754-safetensors",
   "author": "jamest65",
@@ -27,14 +27,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 6904871236,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": "MarxistLeninist/AGILLM-4.3-checkpoints",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

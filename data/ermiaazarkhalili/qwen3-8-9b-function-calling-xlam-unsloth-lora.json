@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ermiaazarkhalili/Qwen3.8-9B-Function-Calling-xLAM-Unsloth-LoRA",
   "slug": "ermiaazarkhalili-qwen3-8-9b-function-calling-xlam-unsloth-lora",
   "author": "ermiaazarkhalili",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 661778591,
   "storage_human": "662 MB",
+  "context_length": null,
   "base_model": "empero-ai/Qwen3.8-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-22T14:08:29.005Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

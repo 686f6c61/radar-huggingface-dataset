@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ElementMerc/tinyllama-1.1b-abliterated",
   "slug": "elementmerc-tinyllama-1-1b-abliterated",
   "author": "ElementMerc",
@@ -39,14 +39,19 @@
   "parameters_human": "1.10B",
   "storage_bytes": 2200119864,
   "storage_human": "2.2 GB",
+  "context_length": null,
   "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ElementMerc/tinyllama-1.1b-uncensored",
+  "renamed_at": "2026-11-11T02:42:11.895Z",
   "benchmarks": [],
   "sources": []
 }

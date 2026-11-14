@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kepom/rbinrs-Kimi-K2.5-BF16-abliterated-GGUF",
   "slug": "kepom-rbinrs-kimi-k2-5-bf16-abliterated-gguf",
   "author": "kepom",
@@ -32,14 +32,19 @@
   "parameters_human": "1026.41B",
   "storage_bytes": 862904510656,
   "storage_human": "862.9 GB",
+  "context_length": 262144,
   "base_model": "moonshotai/Kimi-K2.5",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

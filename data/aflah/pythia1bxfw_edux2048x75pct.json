@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aflah/Pythia1BxFW_Edux2048x75pct",
   "slug": "aflah-pythia1bxfw_edux2048x75pct",
   "author": "aflah",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 10521162765,
   "storage_human": "10.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

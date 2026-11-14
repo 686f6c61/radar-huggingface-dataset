@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MoLeMo-Lab/mojev",
   "slug": "molemo-lab-mojev",
   "author": "MoLeMo-Lab",
@@ -39,6 +39,7 @@
   "parameters_human": "854.0M",
   "storage_bytes": 2311553170,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "onnx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Typed decision scoring",

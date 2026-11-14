@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stefancosma/EuroLLM-9B-Instruct-2512-Q4_K_M-GGUF",
   "slug": "stefancosma-eurollm-9b-instruct-2512-q4_k_m-gguf",
   "author": "stefancosma",
@@ -100,14 +100,19 @@
   "parameters_human": "9.15B",
   "storage_bytes": 5582838112,
   "storage_human": "5.6 GB",
+  "context_length": 32768,
   "base_model": "utter-project/EuroLLM-9B-Instruct-2512",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

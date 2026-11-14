@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "flaviodelgrosso/Qwen3.8-Flash-Next-GGUF",
   "slug": "flaviodelgrosso-qwen3-8-flash-next-gguf-2",
   "author": "flaviodelgrosso",
@@ -29,14 +29,19 @@
   "parameters_human": "179.55B",
   "storage_bytes": 676928946176,
   "storage_human": "676.9 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

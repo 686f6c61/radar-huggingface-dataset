@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rumiii/gpt-oss-20b-MedReason",
   "slug": "rumiii-gpt-oss-20b-medreason",
   "author": "Rumiii",
@@ -37,14 +37,19 @@
   "parameters_human": "20.91B",
   "storage_bytes": 13789185126,
   "storage_human": "13.8 GB",
+  "context_length": null,
   "base_model": "openai/gpt-oss-20b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

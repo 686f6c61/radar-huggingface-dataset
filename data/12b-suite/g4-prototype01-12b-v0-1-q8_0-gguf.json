@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "12B-Suite/G4-Prototype01-12B-v0.1-Q8_0-GGUF",
   "slug": "12b-suite-g4-prototype01-12b-v0-1-q8_0-gguf",
   "author": "12B-Suite",
@@ -48,14 +48,19 @@
   "parameters_human": "11.91B",
   "storage_bytes": 12669646592,
   "storage_human": "12.7 GB",
+  "context_length": 262144,
   "base_model": "12B-Suite/G4-Prototype01-12B-v0.1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

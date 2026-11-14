@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Atomic-Germ/DeepSeek-R1-0528-Qwen3-8B-Esper3-NPU2",
   "slug": "atomic-germ-deepseek-r1-0528-qwen3-8b-esper3-npu2",
   "author": "Atomic-Germ",
@@ -74,14 +74,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 23175523855,
   "storage_human": "23.2 GB",
+  "context_length": null,
   "base_model": "FastFlowLM/DeepSeek-R1-0528-Qwen3-8B-NPU2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-19T10:42:38.162Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

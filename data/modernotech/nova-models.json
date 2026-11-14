@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ModernoTech/nova-models",
   "slug": "modernotech-nova-models",
   "author": "ModernoTech",
@@ -24,14 +24,19 @@
   "parameters_human": "751.6M",
   "storage_bytes": 484220288,
   "storage_human": "484 MB",
+  "context_length": 40960,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-06T03:13:34.954Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

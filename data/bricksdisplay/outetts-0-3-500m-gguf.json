@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BricksDisplay/OuteTTS-0.3-500M-GGUF",
   "slug": "bricksdisplay-outetts-0-3-500m-gguf",
   "author": "BricksDisplay",
@@ -42,14 +42,19 @@
   "parameters_human": "84.8M",
   "storage_bytes": 20922685824,
   "storage_human": "20.9 GB",
+  "context_length": null,
   "base_model": "OuteAI/OuteTTS-0.3-500M",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

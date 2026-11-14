@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "senorperez/qwen3.6-35b-a3b-puzzle-60pct",
   "slug": "senorperez-qwen3-6-35b-a3b-puzzle-60pct",
   "author": "senorperez",
@@ -32,14 +32,19 @@
   "parameters_human": "21.68B",
   "storage_bytes": 43362982310,
   "storage_human": "43.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "QKV768/qwen3.6-35b-a3b-puzzle-60pct",
+  "renamed_at": "2026-11-11T07:28:42.715Z",
   "benchmarks": [],
   "sources": []
 }

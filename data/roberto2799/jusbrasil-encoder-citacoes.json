@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Roberto2799/jusbrasil-encoder-citacoes",
   "slug": "roberto2799-jusbrasil-encoder-citacoes",
   "author": "Roberto2799",
@@ -36,14 +36,19 @@
   "parameters_human": "108.3M",
   "storage_bytes": 433368868,
   "storage_human": "433 MB",
+  "context_length": null,
   "base_model": "neuralmind/bert-base-portuguese-cased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

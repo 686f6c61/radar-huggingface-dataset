@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "myflow-ai/Voxtral-Mini-4B-Realtime-2602-gguf",
   "slug": "myflow-ai-voxtral-mini-4b-realtime-2602-gguf",
   "author": "myflow-ai",
@@ -61,14 +61,19 @@
   "parameters_human": "4.43B",
   "storage_bytes": 3281439008,
   "storage_human": "3.3 GB",
+  "context_length": null,
   "base_model": "mistralai/Voxtral-Mini-4B-Realtime-2602",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Cyclone-Labs/Glittering-Inferno-31B",
   "slug": "cyclone-labs-glittering-inferno-31b",
   "author": "Cyclone-Labs",
@@ -40,14 +40,19 @@
   "parameters_human": "31.27B",
   "storage_bytes": 62581653267,
   "storage_human": "62.6 GB",
+  "context_length": null,
   "base_model": "Cyclone-Labs/Lunar-Trace-31B, Cyclone-Labs/Ashen-Arcanum-31B, ReadyArt/Room-Tone-31B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

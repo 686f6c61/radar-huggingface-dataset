@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dwyane/lingbot-vla-lora_tuned_1500",
   "slug": "dwyane-lingbot-vla-lora_tuned_1500",
   "author": "Dwyane",
@@ -31,14 +31,19 @@
   "parameters_human": "6.23B",
   "storage_bytes": 12464444852,
   "storage_human": "12.5 GB",
+  "context_length": null,
   "base_model": "robbyant/lingbot-vla-v2-6b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

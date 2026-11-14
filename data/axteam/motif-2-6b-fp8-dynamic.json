@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "axteam/Motif-2.6B-FP8-dynamic",
   "slug": "axteam-motif-2-6b-fp8-dynamic",
   "author": "axteam",
@@ -33,14 +33,19 @@
   "parameters_human": "2.60B",
   "storage_bytes": 3967177369,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": "Motif-Technologies/Motif-2.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

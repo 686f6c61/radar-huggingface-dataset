@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "velogas/MegaBro13371488-v.0000000.1",
   "slug": "velogas-megabro13371488-v-0000000-1",
   "author": "velogas",
@@ -32,6 +32,7 @@
   "parameters_human": "25.3M",
   "storage_bytes": 230733274,
   "storage_human": "231 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
   "formats": [
     "gguf",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

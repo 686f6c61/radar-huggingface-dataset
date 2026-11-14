@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sam33339999/Thinklite-27B-EXL3-3.5bpw-vision-bf16",
   "slug": "sam33339999-thinklite-27b-exl3-3-5bpw-vision-bf16",
   "author": "sam33339999",
@@ -36,14 +36,19 @@
   "parameters_human": "7.67B",
   "storage_bytes": 15437789275,
   "storage_human": "15.4 GB",
+  "context_length": null,
   "base_model": "Sparset/Thinklite-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-06T07:29:05.798Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

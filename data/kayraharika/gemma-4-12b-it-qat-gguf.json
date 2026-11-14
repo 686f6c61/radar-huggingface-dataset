@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kayraharika/gemma-4-12B-it-qat-GGUF",
   "slug": "kayraharika-gemma-4-12b-it-qat-gguf",
   "author": "kayraharika",
@@ -33,14 +33,19 @@
   "parameters_human": "11.91B",
   "storage_bytes": 9718025088,
   "storage_human": "9.7 GB",
+  "context_length": 262144,
   "base_model": "google/gemma-4-12B-it-qat-q4_0-unquantized",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-30T02:43:55.954Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

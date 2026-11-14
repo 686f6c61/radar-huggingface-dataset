@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "keptn/gemma4-31b-heretic-ara-i8g",
   "slug": "keptn-gemma4-31b-heretic-ara-i8g",
   "author": "keptn",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 35835154432,
   "storage_human": "35.8 GB",
+  "context_length": null,
   "base_model": "trohrbaugh/gemma-4-31b-it-heretic-ara, google/gemma-4-31B-it-assistant",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

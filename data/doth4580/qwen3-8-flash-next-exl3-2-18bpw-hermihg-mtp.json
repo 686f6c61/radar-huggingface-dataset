@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "doth4580/Qwen3.8-Flash-Next-EXL3-2.18bpw-HermiHg-MTP",
   "slug": "doth4580-qwen3-8-flash-next-exl3-2-18bpw-hermihg-mtp",
   "author": "doth4580",
@@ -35,14 +35,19 @@
   "parameters_human": "19.38B",
   "storage_bytes": 90784479082,
   "storage_human": "90.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next, HermiHg/Qwen3.8-Flash-Next-Optimized-MTP-Heads-exl3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

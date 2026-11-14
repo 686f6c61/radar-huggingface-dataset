@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Carvalho-Salamandra-Instruct-GGUF",
   "slug": "mradermacher-carvalho-salamandra-instruct-gguf",
   "author": "mradermacher",
@@ -43,14 +43,19 @@
   "parameters_human": "7.77B",
   "storage_bytes": 70679318528,
   "storage_human": "70.7 GB",
+  "context_length": 8192,
   "base_model": "proxectonos/Carvalho-Salamandra-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

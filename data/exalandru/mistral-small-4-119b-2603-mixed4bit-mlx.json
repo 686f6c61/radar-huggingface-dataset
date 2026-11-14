@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "exalandru/Mistral-Small-4-119B-2603-Mixed4bit-MLX",
   "slug": "exalandru-mistral-small-4-119b-2603-mixed4bit-mlx",
   "author": "exalandru",
@@ -54,6 +54,7 @@
   "parameters_human": "119.40B",
   "storage_bytes": 58079700292,
   "storage_human": "58.1 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-Small-4-119B-2603",
   "formats": [
     "mlx",
@@ -61,8 +62,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "exalandru/Mistral-Small-4-119B-2603-Mixed-4bit-MLX",
+  "renamed_at": "2026-11-11T05:13:00.017Z",
   "benchmarks": [],
   "sources": [
     {

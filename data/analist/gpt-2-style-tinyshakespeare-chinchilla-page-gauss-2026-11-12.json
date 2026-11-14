@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "analist/GPT-2-style-tinyshakespeare-chinchilla-page-gauss-2026-11-12",
   "slug": "analist-gpt-2-style-tinyshakespeare-chinchilla-page-gauss-2026-11-12",
   "author": "analist",
@@ -29,14 +29,19 @@
   "parameters_human": "29.2M",
   "storage_bytes": 107134068,
   "storage_human": "107 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moravianai/ThinCtx-Qwen3.5-0.8B-small",
   "slug": "moravianai-thinctx-qwen3-5-0-8b-small",
   "author": "moravianai",
@@ -40,14 +40,19 @@
   "parameters_human": "1.1M",
   "storage_bytes": 715293263,
   "storage_human": "715 MB",
+  "context_length": null,
   "base_model": "moravianai/ThinCtx-Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

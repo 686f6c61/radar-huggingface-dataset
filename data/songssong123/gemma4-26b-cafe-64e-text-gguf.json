@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SONGSSONG123/gemma4-26b-cafe-64e-text-GGUF",
   "slug": "songssong123-gemma4-26b-cafe-64e-text-gguf",
   "author": "SONGSSONG123",
@@ -37,14 +37,19 @@
   "parameters_human": "13.81B",
   "storage_bytes": 9812825248,
   "storage_human": "9.8 GB",
+  "context_length": 262144,
   "base_model": "google/gemma-4-26B-A4B-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

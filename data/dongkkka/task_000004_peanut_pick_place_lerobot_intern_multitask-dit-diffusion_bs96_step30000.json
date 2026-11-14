@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_MultiTask-DiT-Diffusion_bs96_step30000",
   "slug": "dongkkka-task_000004_peanut_pick_place_lerobot_intern_multitask-dit-diffusion_bs96_step30000",
   "author": "Dongkkka",
@@ -27,14 +27,19 @@
   "parameters_human": "235.0M",
   "storage_bytes": 940154720,
   "storage_human": "940 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T02:40:00.278Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

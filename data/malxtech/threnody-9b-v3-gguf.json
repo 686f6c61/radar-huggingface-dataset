@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MalxTech/Threnody-9B-V3-GGUF",
   "slug": "malxtech-threnody-9b-v3-gguf",
   "author": "MalxTech",
@@ -38,14 +38,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 39513830560,
   "storage_human": "39.5 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

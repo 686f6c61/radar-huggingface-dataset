@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "m8than/DeepSeek-V3-0324-E2M1",
   "slug": "m8than-deepseek-v3-0324-e2m1",
   "author": "m8than",
@@ -30,14 +30,19 @@
   "parameters_human": "101.05B",
   "storage_bytes": 716102264174,
   "storage_human": "716.1 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V3-0324, CPU-Hybrid-MoE/DeepSeek-V3-0324-GPU-FP8-GPTQ4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

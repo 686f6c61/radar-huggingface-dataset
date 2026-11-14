@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Gael1125/82f3002b-0156-4213-8382-667708b2cd97",
   "slug": "gael1125-82f3002b-0156-4213-8382-667708b2cd97",
   "author": "Gael1125",
@@ -28,14 +28,19 @@
   "parameters_human": "35.95B",
   "storage_bytes": 71916583934,
   "storage_human": "71.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-30T03:26:45.409Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "01Yassine/cohere-transcribe-darija-decoder-lora",
   "slug": "01yassine-cohere-transcribe-darija-decoder-lora",
   "author": "01Yassine",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 16795456,
   "storage_human": "17 MB",
+  "context_length": null,
   "base_model": "CohereLabs/cohere-transcribe-arabic-07-2026",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

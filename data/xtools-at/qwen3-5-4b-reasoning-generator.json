@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xtools-at/Qwen3.5-4B-Reasoning-Generator",
   "slug": "xtools-at-qwen3-5-4b-reasoning-generator",
   "author": "xtools-at",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 190070050,
   "storage_human": "190 MB",
+  "context_length": null,
   "base_model": "xtools-at/Qwen3.5-4B-MultiDistill-3xMerge-UNCENSORED-heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

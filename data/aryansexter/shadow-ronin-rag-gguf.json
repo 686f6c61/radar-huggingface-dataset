@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aryansexter/Shadow-Ronin-Rag-gguf",
   "slug": "aryansexter-shadow-ronin-rag-gguf",
   "author": "aryansexter",
@@ -28,6 +28,7 @@
   "parameters_human": "4.02B",
   "storage_bytes": 40309295202,
   "storage_human": "40.3 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "gguf",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

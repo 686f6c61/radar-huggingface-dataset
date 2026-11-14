@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlx-community/d1a-e4b-it-qat-4bit",
   "slug": "mlx-community-d1a-e4b-it-qat-4bit",
   "author": "mlx-community",
@@ -49,6 +49,7 @@
   "parameters_human": "7.46B",
   "storage_bytes": 5581028261,
   "storage_human": "5.6 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it-qat-w4a16-ct",
   "formats": [
     "mlx",
@@ -56,8 +57,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

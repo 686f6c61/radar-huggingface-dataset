@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ltzheng/Qwen3.5-9B-General-Game-Stage3-Shuffled",
   "slug": "ltzheng-qwen3-5-9b-general-game-stage3-shuffled",
   "author": "ltzheng",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 424758675294,
   "storage_human": "424.8 GB",
+  "context_length": null,
   "base_model": "ltzheng/Qwen3.5-9B-General-Game-Stage1-3Shift-Shuffled",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

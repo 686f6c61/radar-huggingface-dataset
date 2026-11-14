@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pentacoxian-dev/drama3-expressive-medium-GGUF",
   "slug": "pentacoxian-dev-drama3-expressive-medium-gguf",
   "author": "pentacoxian-dev",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 22514146622,
   "storage_human": "22.5 GB",
+  "context_length": null,
   "base_model": "fishaudio/drama-3",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

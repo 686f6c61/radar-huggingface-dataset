@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rev3auth/iris-haiku",
   "slug": "rev3auth-iris-haiku",
   "author": "Rev3auth",
@@ -28,14 +28,19 @@
   "parameters_human": "1.17B",
   "storage_bytes": 730898624,
   "storage_human": "731 MB",
+  "context_length": 128000,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

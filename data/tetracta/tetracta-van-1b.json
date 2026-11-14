@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tetracta/tetracta-van-1b",
   "slug": "tetracta-tetracta-van-1b",
   "author": "tetracta",
@@ -34,14 +34,19 @@
   "parameters_human": "936.6M",
   "storage_bytes": 7494012602,
   "storage_human": "7.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

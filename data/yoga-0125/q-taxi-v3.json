@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yoga-0125/q-Taxi-v3",
   "slug": "yoga-0125-q-taxi-v3",
   "author": "yoga-0125",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 134101,
   "storage_human": "134101 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

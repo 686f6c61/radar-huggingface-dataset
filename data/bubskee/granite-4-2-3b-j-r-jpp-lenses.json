@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bubskee/granite-4.2-3b-j-r-jpp-lenses",
   "slug": "bubskee-granite-4-2-3b-j-r-jpp-lenses",
   "author": "bubskee",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 550512536,
   "storage_human": "551 MB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.2-3b",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

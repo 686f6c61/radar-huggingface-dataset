@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "divinetribe/Vision-Narrator-0.8B-4bit-mlx",
   "slug": "divinetribe-vision-narrator-0-8b-4bit-mlx",
   "author": "divinetribe",
@@ -46,6 +46,7 @@
   "parameters_human": "853.0M",
   "storage_bytes": 1270448299,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "mlx",
@@ -53,8 +54,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "INCModel3/Qwen3.5-9B-MXFP8-FP8KV-CT-RTN-AutoRound",
   "slug": "incmodel3-qwen3-5-9b-mxfp8-fp8kv-ct-rtn-autoround",
   "author": "INCModel3",
@@ -32,14 +32,19 @@
   "parameters_human": "2.50B",
   "storage_bytes": 12630114605,
   "storage_human": "12.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "INCModel3/Qwen3.5-9B-MXFP8-FP8KV-CT-AutoRound",
+  "renamed_at": "2026-11-11T02:55:42.221Z",
   "benchmarks": [],
   "sources": [
     {

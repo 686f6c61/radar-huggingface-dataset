@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "knowledgator/gliclass-v4-edge",
   "slug": "knowledgator-gliclass-v4-edge",
   "author": "knowledgator",
@@ -44,6 +44,7 @@
   "parameters_human": "439.8M",
   "storage_bytes": 3290133391,
   "storage_human": "3.3 GB",
+  "context_length": null,
   "base_model": "microsoft/deberta-v3-large",
   "formats": [
     "onnx",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ricecake/Krea-2-Anime-tuned-Turbo",
   "slug": "ricecake-krea-2-anime-tuned-turbo",
   "author": "ricecake",
@@ -31,6 +31,7 @@
   "parameters_human": "12.82B",
   "storage_bytes": 79201226367,
   "storage_human": "79.2 GB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo, ricecake/Krea-2-Anime-tuned-Raw",
   "formats": [
     "diffusers",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

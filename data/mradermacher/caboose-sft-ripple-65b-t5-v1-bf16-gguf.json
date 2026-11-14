@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Caboose-SFT-Ripple-65B-T5-v1-BF16-GGUF",
   "slug": "mradermacher-caboose-sft-ripple-65b-t5-v1-bf16-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "64.78B",
   "storage_bytes": 439352176480,
   "storage_human": "439.4 GB",
+  "context_length": 2097152,
   "base_model": "schonsense/Caboose-SFT-Ripple-65B-T5-v1-BF16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

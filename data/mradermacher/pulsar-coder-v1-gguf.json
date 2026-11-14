@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/pulsar-coder-v1-GGUF",
   "slug": "mradermacher-pulsar-coder-v1-gguf",
   "author": "mradermacher",
@@ -36,6 +36,7 @@
   "parameters_human": "1.54B",
   "storage_bytes": 14206942848,
   "storage_human": "14.2 GB",
+  "context_length": 131072,
   "base_model": "Sonorix/pulsar-coder-v1",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

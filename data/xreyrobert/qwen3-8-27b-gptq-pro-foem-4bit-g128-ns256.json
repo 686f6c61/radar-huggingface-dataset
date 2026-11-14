@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "XReyRobert/Qwen3.8-27B-GPTQ-Pro-FOEM-4bit-g128-ns256",
   "slug": "xreyrobert-qwen3-8-27b-gptq-pro-foem-4bit-g128-ns256",
   "author": "XReyRobert",
@@ -42,14 +42,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 19579440333,
   "storage_human": "19.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

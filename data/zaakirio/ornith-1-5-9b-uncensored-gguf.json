@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zaakirio/Ornith-1.5-9B-Uncensored-GGUF",
   "slug": "zaakirio-ornith-1-5-9b-uncensored-gguf",
   "author": "zaakirio",
@@ -33,14 +33,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 76197183744,
   "storage_human": "76.2 GB",
+  "context_length": 262144,
   "base_model": "ornith-ai/Ornith-1.5-9B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

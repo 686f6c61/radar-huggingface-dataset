@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LSW142857/OPSD-Qwen3.5-9B-Medium-545-Checkpoint7-Merged",
   "slug": "lsw142857-opsd-qwen3-5-9b-medium-545-checkpoint7-merged",
   "author": "LSW142857",
@@ -38,14 +38,19 @@
   "parameters_human": "9.65B",
   "storage_bytes": 19326293413,
   "storage_human": "19.3 GB",
+  "context_length": null,
   "base_model": "jiaxingx/privilege-code-opsd-ckpts",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PawanKrd/RastNus-Small-5B-GGUF",
   "slug": "pawankrd-rastnus-small-5b-gguf",
   "author": "PawanKrd",
@@ -41,14 +41,19 @@
   "parameters_human": "4.63B",
   "storage_bytes": 48901348032,
   "storage_human": "48.9 GB",
+  "context_length": 131072,
   "base_model": "PawanKrd/RastNus-Small-5B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

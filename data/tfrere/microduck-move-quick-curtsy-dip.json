@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tfrere/microduck-move-quick-curtsy-dip",
   "slug": "tfrere-microduck-move-quick-curtsy-dip",
   "author": "tfrere",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 5733425,
   "storage_human": "6 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-13T03:06:14.433Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

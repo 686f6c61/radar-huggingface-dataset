@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ninnix96/Qwen3.8-Flash-Next-GSQ-RCO-Coder-22GB-gguf",
   "slug": "ninnix96-qwen3-8-flash-next-gsq-rco-coder-22gb-gguf",
   "author": "Ninnix96",
@@ -49,14 +49,19 @@
   "parameters_human": "116.51B",
   "storage_bytes": 50786748192,
   "storage_human": "50.8 GB",
+  "context_length": 262144,
   "base_model": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF, unsloth/Qwen3.8-Flash-Next-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

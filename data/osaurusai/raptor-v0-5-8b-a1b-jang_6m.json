@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OsaurusAI/Raptor-v0.5-8B-A1B-JANG_6M",
   "slug": "osaurusai-raptor-v0-5-8b-a1b-jang_6m",
   "author": "OsaurusAI",
@@ -44,6 +44,7 @@
   "parameters_human": "6.16B",
   "storage_bytes": 35848326293,
   "storage_human": "35.8 GB",
+  "context_length": null,
   "base_model": "inclusionAI/Ling-3.0-tiny",
   "formats": [
     "mlx",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

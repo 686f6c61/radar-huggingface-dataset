@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "seelanrohan/blackRectHandoff_pi05_3_20k",
   "slug": "seelanrohan-blackrecthandoff_pi05_3_20k",
   "author": "seelanrohan",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 73467849251,
   "storage_human": "73.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

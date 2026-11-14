@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "infosave/humanizer-cmf",
   "slug": "infosave-humanizer-cmf",
   "author": "infosave",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 39729803608,
   "storage_human": "39.7 GB",
+  "context_length": null,
   "base_model": "jialinyyzz/humanizer",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

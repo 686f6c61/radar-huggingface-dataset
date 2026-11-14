@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "djduecaster/dfreq-roller-explore040-20261109",
   "slug": "djduecaster-dfreq-roller-explore040-20261109",
   "author": "djduecaster",
@@ -24,14 +24,19 @@
   "parameters_human": null,
   "storage_bytes": 808526,
   "storage_human": "808526 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

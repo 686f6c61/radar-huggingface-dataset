@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-MLX-MTP-Drafter",
   "slug": "aeon-7-qwen3-6-27b-aeon-ultimate-uncensored-mlx-mtp-drafter",
   "author": "AEON-7",
@@ -45,6 +45,7 @@
   "parameters_human": "424.7M",
   "storage_bytes": 860846751,
   "storage_human": "861 MB",
+  "context_length": null,
   "base_model": "AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16",
   "formats": [
     "mlx",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

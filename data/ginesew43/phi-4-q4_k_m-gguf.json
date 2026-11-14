@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ginesew43/phi-4-Q4_K_M-GGUF",
   "slug": "ginesew43-phi-4-q4_k_m-gguf",
   "author": "ginesew43",
@@ -39,14 +39,19 @@
   "parameters_human": "14.66B",
   "storage_bytes": 9059258560,
   "storage_human": "9.1 GB",
+  "context_length": 16384,
   "base_model": "microsoft/phi-4",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

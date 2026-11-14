@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kky84176/qwen35-jsquad-sft-merged",
   "slug": "kky84176-qwen35-jsquad-sft-merged",
   "author": "kky84176",
@@ -28,14 +28,19 @@
   "parameters_human": "853.0M",
   "storage_bytes": 1726019867,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T05:56:56.917Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

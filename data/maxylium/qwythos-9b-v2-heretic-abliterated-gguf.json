@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "maxylium/Qwythos-9B-v2-Heretic-Abliterated-GGUF",
   "slug": "maxylium-qwythos-9b-v2-heretic-abliterated-gguf",
   "author": "maxylium",
@@ -30,14 +30,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 25451844480,
   "storage_human": "25.5 GB",
+  "context_length": 1048576,
   "base_model": "usermma/Qwythos-9B-v2-Heretic-Abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

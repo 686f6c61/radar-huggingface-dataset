@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "duonglequanghoang1/VieNeu-TTS-v3-Turbo",
   "slug": "duonglequanghoang1-vieneu-tts-v3-turbo",
   "author": "duonglequanghoang1",
@@ -38,6 +38,7 @@
   "parameters_human": "130.9M",
   "storage_bytes": 2097573541,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

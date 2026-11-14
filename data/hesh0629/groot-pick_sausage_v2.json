@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hesh0629/groot-pick_sausage_v2",
   "slug": "hesh0629-groot-pick_sausage_v2",
   "author": "hesh0629",
@@ -27,14 +27,19 @@
   "parameters_human": "2.72B",
   "storage_bytes": 5448480432,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

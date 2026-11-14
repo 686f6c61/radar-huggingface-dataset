@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "francesca9805/ppt-wc-uniform-newlex-hin-before-100mb-packed-bfd_seed10",
   "slug": "francesca9805-ppt-wc-uniform-newlex-hin-before-100mb-packed-bfd_seed10",
   "author": "francesca9805",
@@ -32,14 +32,19 @@
   "parameters_human": "86.5M",
   "storage_bytes": 173051804,
   "storage_human": "173 MB",
+  "context_length": null,
   "base_model": "goldfish-models/eng_latn_100mb",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-01T03:48:31.831Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

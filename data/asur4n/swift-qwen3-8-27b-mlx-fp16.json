@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Asur4N/Swift-Qwen3.8-27B-mlx-fp16",
   "slug": "asur4n-swift-qwen3-8-27b-mlx-fp16",
   "author": "Asur4N",
@@ -34,6 +34,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 54733594674,
   "storage_human": "54.7 GB",
+  "context_length": null,
   "base_model": "ukisai/Swift-Qwen3.8-27b",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-16T03:23:31.231Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

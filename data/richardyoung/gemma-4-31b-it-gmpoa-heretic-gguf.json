@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "richardyoung/gemma-4-31B-it-GMPOA-heretic-GGUF",
   "slug": "richardyoung-gemma-4-31b-it-gmpoa-heretic-gguf",
   "author": "richardyoung",
@@ -38,14 +38,19 @@
   "parameters_human": "30.70B",
   "storage_bytes": 68086054048,
   "storage_human": "68.1 GB",
+  "context_length": 262144,
   "base_model": "richardyoung/gemma-4-31B-it-GMPOA-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

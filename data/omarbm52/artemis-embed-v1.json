@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Omarbm52/Artemis-Embed-v1",
   "slug": "omarbm52-artemis-embed-v1",
   "author": "Omarbm52",
@@ -34,14 +34,19 @@
   "parameters_human": "149.0M",
   "storage_bytes": 596070136,
   "storage_human": "596 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

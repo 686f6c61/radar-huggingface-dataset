@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rzkoohi/Qwen3.5-4B-Natural_reasoning-IT",
   "slug": "rzkoohi-qwen3-5-4b-natural_reasoning-it",
   "author": "Rzkoohi",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 9339817399,
   "storage_human": "9.3 GB",
+  "context_length": null,
   "base_model": "Rzkoohi/Qwen3.5-4B-Natural_reasoning",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-17T09:33:27.416Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

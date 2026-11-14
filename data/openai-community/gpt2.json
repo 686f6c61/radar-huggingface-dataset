@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "openai-community/gpt2",
   "slug": "openai-community-gpt2",
   "author": "openai-community",
@@ -33,13 +33,14 @@
     "deploy:azure",
     "region:us"
   ],
-  "likes": 3935,
+  "likes": 3937,
   "downloads_30d": 33593897,
-  "trending_score": 11,
+  "trending_score": 13,
   "parameters": 137022720,
   "parameters_human": "137.0M",
   "storage_bytes": 11977009063,
   "storage_human": "12.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlwiseyak/omnivoice-nepali-tts-v2",
   "slug": "mlwiseyak-omnivoice-nepali-tts-v2",
   "author": "mlwiseyak",
@@ -36,14 +36,19 @@
   "parameters_human": "814.0M",
   "storage_bytes": 2847953650,
   "storage_human": "2.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-07T05:46:37.787Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

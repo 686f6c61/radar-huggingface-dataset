@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prompt-armor/l2-deberta-onnx",
   "slug": "prompt-armor-l2-deberta-onnx",
   "author": "prompt-armor",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 644543026,
   "storage_human": "645 MB",
+  "context_length": null,
   "base_model": "protectai/deberta-v3-base-prompt-injection-v2",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

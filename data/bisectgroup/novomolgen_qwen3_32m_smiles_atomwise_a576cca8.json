@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bisectgroup/NovoMolGen_qwen3_32m_smiles_atomwise_a576cca8",
   "slug": "bisectgroup-novomolgen_qwen3_32m_smiles_atomwise_a576cca8",
   "author": "bisectgroup",
@@ -23,14 +23,19 @@
   "parameters_human": "31.9M",
   "storage_bytes": 1915974720,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

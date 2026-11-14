@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bananaprotocol/revbench-lora-mixed",
   "slug": "bananaprotocol-revbench-lora-mixed",
   "author": "bananaprotocol",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 640191930,
   "storage_human": "640 MB",
+  "context_length": null,
   "base_model": "codellama/CodeLlama-7b-Instruct-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

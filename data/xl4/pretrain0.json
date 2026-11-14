@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "XL4/pretrain0",
   "slug": "xl4-pretrain0",
   "author": "XL4",
@@ -34,14 +34,19 @@
   "parameters_human": "82.8M",
   "storage_bytes": 331072384,
   "storage_human": "331 MB",
+  "context_length": null,
   "base_model": "XL4/pretrain0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

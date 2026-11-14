@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OmAr-Kader-DeV/starcoder2-3b-mlx-8Bit",
   "slug": "omar-kader-dev-starcoder2-3b-mlx-8bit",
   "author": "OmAr-Kader-DeV",
@@ -36,6 +36,7 @@
   "parameters_human": "3.03B",
   "storage_bytes": 3412237809,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "bigcode/starcoder2-3b",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

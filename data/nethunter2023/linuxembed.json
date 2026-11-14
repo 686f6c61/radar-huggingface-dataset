@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nethunter2023/linuxembed",
   "slug": "nethunter2023-linuxembed",
   "author": "nethunter2023",
@@ -36,14 +36,19 @@
   "parameters_human": "42.5M",
   "storage_bytes": 170105544,
   "storage_human": "170 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-28T03:03:39.753Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

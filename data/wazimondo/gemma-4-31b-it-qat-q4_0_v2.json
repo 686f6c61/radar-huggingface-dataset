@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wazimondo/gemma-4-31B-it-qat-Q4_0_V2",
   "slug": "wazimondo-gemma-4-31b-it-qat-q4_0_v2",
   "author": "wazimondo",
@@ -27,14 +27,19 @@
   "parameters_human": "30.70B",
   "storage_bytes": 18768349824,
   "storage_human": "18.8 GB",
+  "context_length": 262144,
   "base_model": "google/gemma-4-31B-it-qat-q4_0-unquantized",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

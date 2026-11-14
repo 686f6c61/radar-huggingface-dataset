@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pandakingpunc/megazeka-sayi-byt5-tr-itn",
   "slug": "pandakingpunc-megazeka-sayi-byt5-tr-itn",
   "author": "pandakingpunc",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 75177304,
   "storage_human": "75 MB",
+  "context_length": null,
   "base_model": "google/byt5-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

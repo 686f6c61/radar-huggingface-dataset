@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "davidheineman/rlve-archive-fast-r1-p2r16-20261003-085503-03-sorting-aeb234f39db1",
   "slug": "davidheineman-rlve-archive-fast-r1-p2r16-20261003-085503-03-sorting-aeb234f39db1",
   "author": "davidheineman",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 3554878772,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

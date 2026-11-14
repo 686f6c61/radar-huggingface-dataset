@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "florianvoss/Gemma-4-E4B-it-TextOnly-GPTQ-a16w4",
   "slug": "florianvoss-gemma-4-e4b-it-textonly-gptq-a16w4",
   "author": "florianvoss",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 8683526162,
   "storage_human": "8.7 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B-it",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T19:40:42.161Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

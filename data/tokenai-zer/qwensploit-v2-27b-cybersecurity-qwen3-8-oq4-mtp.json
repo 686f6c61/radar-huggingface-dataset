@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TokenAI-zer/Qwensploit-V2-27B-CyberSecurity-Qwen3.8-oQ4-mtp",
   "slug": "tokenai-zer-qwensploit-v2-27b-cybersecurity-qwen3-8-oq4-mtp",
   "author": "TokenAI-zer",
@@ -44,6 +44,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 17537421571,
   "storage_human": "17.5 GB",
+  "context_length": null,
   "base_model": "xtools-at/Qwensploit-V2-27B-CyberSecurity-Qwen3.8",
   "formats": [
     "mlx",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aspect-ratio-scaling/block-attnres-lr2e-3-llama-400M-L16-pretrain",
   "slug": "aspect-ratio-scaling-block-attnres-lr2e-3-llama-400m-l16-pretrain",
   "author": "aspect-ratio-scaling",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 9783623005,
   "storage_human": "9.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

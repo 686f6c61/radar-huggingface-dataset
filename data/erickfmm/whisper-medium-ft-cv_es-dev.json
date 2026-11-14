@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "erickfmm/whisper-medium-ft-cv_es-dev",
   "slug": "erickfmm-whisper-medium-ft-cv_es-dev",
   "author": "erickfmm",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 25484173785,
   "storage_human": "25.5 GB",
+  "context_length": null,
   "base_model": "openai/whisper-medium",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-04T05:32:28.228Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

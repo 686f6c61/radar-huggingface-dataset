@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "krea/Krea-2-Raw",
   "slug": "krea-krea-2-raw",
   "author": "krea",
@@ -22,13 +22,14 @@
     "diffusers:Krea2Pipeline",
     "region:us"
   ],
-  "likes": 1347,
+  "likes": 1348,
   "downloads_30d": 107299,
-  "trending_score": 38,
+  "trending_score": 37,
   "parameters": 12820073036,
   "parameters_human": "12.82B",
   "storage_bytes": 62074859962,
   "storage_human": "62.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

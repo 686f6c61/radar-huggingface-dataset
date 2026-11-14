@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/dagger-12B_SFT_GRPO-GGUF",
   "slug": "mradermacher-dagger-12b_sft_grpo-gguf",
   "author": "mradermacher",
@@ -41,14 +41,19 @@
   "parameters_human": "11.77B",
   "storage_bytes": 83854479104,
   "storage_human": "83.9 GB",
+  "context_length": 131072,
   "base_model": "dipta007/dagger-12B_SFT_GRPO",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

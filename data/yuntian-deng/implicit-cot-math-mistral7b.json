@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yuntian-deng/implicit-cot-math-mistral7b",
   "slug": "yuntian-deng-implicit-cot-math-mistral7b",
   "author": "yuntian-deng",
@@ -38,14 +38,19 @@
   "parameters_human": "7.24B",
   "storage_bytes": 115867848064,
   "storage_human": "115.9 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-7B-v0.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

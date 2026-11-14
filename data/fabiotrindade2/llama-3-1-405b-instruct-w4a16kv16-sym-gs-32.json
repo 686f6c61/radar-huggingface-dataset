@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FabioTrindade2/Llama-3.1-405B-Instruct-W4A16KV16-sym-GS-32",
   "slug": "fabiotrindade2-llama-3-1-405b-instruct-w4a16kv16-sym-gs-32",
   "author": "FabioTrindade2",
@@ -32,14 +32,19 @@
   "parameters_human": "66.96B",
   "storage_bytes": 234357419896,
   "storage_human": "234.4 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-405B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

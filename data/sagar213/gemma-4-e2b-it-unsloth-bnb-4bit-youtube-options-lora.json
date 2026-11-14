@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sagar213/gemma-4-E2B-it-unsloth-bnb-4bit-youtube-options-lora",
   "slug": "sagar213-gemma-4-e2b-it-unsloth-bnb-4bit-youtube-options-lora",
   "author": "sagar213",
@@ -34,14 +34,19 @@
   "parameters_human": "5.12B",
   "storage_bytes": 133586202,
   "storage_human": "134 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

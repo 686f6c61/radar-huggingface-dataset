@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cutecaption/kroma-v0.3-base-bf16",
   "slug": "cutecaption-kroma-v0-3-base-bf16",
   "author": "cutecaption",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 25640191096,
   "storage_human": "25.6 GB",
+  "context_length": null,
   "base_model": "lodestones/Kroma",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

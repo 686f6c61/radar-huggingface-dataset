@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "StillDeadcode/gemma4-26b-a4b-dflash-i8",
   "slug": "stilldeadcode-gemma4-26b-a4b-dflash-i8",
   "author": "StillDeadcode",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 36692514304,
   "storage_human": "36.7 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-26B-A4B-it, z-lab/gemma-4-26B-A4B-it-DFlash",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

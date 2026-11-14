@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "adzcai/AfriGuardPlain-AfriqueQwen3.5-4B",
   "slug": "adzcai-afriguardplain-afriqueqwen3-5-4b",
   "author": "adzcai",
@@ -59,14 +59,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 9098617576,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": "McGill-NLP/AfriqueQwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-28T04:02:27.824Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

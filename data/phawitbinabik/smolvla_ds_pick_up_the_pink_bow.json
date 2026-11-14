@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "phawitbinabik/smolvla_DS_pick_up_the_pink_bow",
   "slug": "phawitbinabik-smolvla_ds_pick_up_the_pink_bow",
   "author": "phawitbinabik",
@@ -30,14 +30,19 @@
   "parameters_human": "450.0M",
   "storage_bytes": 906727600,
   "storage_human": "907 MB",
+  "context_length": null,
   "base_model": "lerobot/smolvla_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

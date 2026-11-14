@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Igor282/gemma-4-e4b-pruned-ru-en-Q4_K_M",
   "slug": "igor282-gemma-4-e4b-pruned-ru-en-q4_k_m",
   "author": "Igor282",
@@ -35,14 +35,19 @@
   "parameters_human": "6.56B",
   "storage_bytes": 4679263488,
   "storage_human": "4.7 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-4-E4B-it, google/gemma-4-E4B-it-assistant",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

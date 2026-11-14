@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kairoi-LLC/stt-en-conformer-ctc-small-onnx",
   "slug": "kairoi-llc-stt-en-conformer-ctc-small-onnx",
   "author": "Kairoi-LLC",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 46419854,
   "storage_human": "46 MB",
+  "context_length": null,
   "base_model": "nvidia/stt_en_conformer_ctc_small",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

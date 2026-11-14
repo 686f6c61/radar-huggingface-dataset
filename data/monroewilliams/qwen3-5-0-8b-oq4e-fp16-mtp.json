@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "monroewilliams/Qwen3.5-0.8B-oQ4e-fp16-mtp",
   "slug": "monroewilliams-qwen3-5-0-8b-oq4e-fp16-mtp",
   "author": "monroewilliams",
@@ -29,6 +29,7 @@
   "parameters_human": "873.4M",
   "storage_bytes": 874563161,
   "storage_human": "875 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "mlx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

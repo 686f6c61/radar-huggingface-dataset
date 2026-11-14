@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yuhanb/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-GGUF",
   "slug": "yuhanb-qwen3-6-35b-a3b-uncensored-genesis-hermes-gguf",
   "author": "yuhanb",
@@ -45,14 +45,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 145075897856,
   "storage_human": "145.1 GB",
+  "context_length": 262144,
   "base_model": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

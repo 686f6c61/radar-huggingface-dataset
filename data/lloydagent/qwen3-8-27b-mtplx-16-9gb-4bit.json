@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LloydAgent/Qwen3.8-27B-MTPLX-16.9GB-4bit",
   "slug": "lloydagent-qwen3-8-27b-mtplx-16-9gb-4bit",
   "author": "LloydAgent",
@@ -36,6 +36,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 16923929168,
   "storage_human": "16.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ToxeH/Qwen3-Coder-30B-A3B-Instruct-Ternary2x",
   "slug": "toxeh-qwen3-coder-30b-a3b-instruct-ternary2x",
   "author": "ToxeH",
@@ -48,6 +48,7 @@
   "parameters_human": "30.53B",
   "storage_bytes": 13962477430,
   "storage_human": "14.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
   "formats": [
     "mlx",
@@ -55,8 +56,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

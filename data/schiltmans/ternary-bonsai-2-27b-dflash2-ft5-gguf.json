@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Schiltmans/Ternary-Bonsai-2-27B-DFlash2-ft5-GGUF",
   "slug": "schiltmans-ternary-bonsai-2-27b-dflash2-ft5-gguf",
   "author": "Schiltmans",
@@ -35,14 +35,19 @@
   "parameters_human": "1.92B",
   "storage_bytes": 3904853632,
   "storage_human": "3.9 GB",
+  "context_length": 262144,
   "base_model": "Schiltmans/Ternary-Bonsai-2-27B-DFlash2-ft5",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tazner/Gliner-small-edge-wo-int8-emb4",
   "slug": "tazner-gliner-small-edge-wo-int8-emb4",
   "author": "Tazner",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 140736229,
   "storage_human": "141 MB",
+  "context_length": null,
   "base_model": "gliner-community/gliner_small-v2.5",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

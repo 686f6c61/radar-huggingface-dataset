@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/decider-2b-vision-LiteRT",
   "slug": "litert-community-decider-2b-vision-litert",
   "author": "litert-community",
@@ -29,18 +29,23 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 660,
+  "downloads_30d": 684,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 20848005760,
   "storage_human": "20.8 GB",
+  "context_length": null,
   "base_model": "Mapika/decider-2b-vision",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

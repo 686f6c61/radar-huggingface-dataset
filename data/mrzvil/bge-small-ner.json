@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MrZVIL/bge-small-ner",
   "slug": "mrzvil-bge-small-ner",
   "author": "MrZVIL",
@@ -30,14 +30,19 @@
   "parameters_human": "33.2M",
   "storage_bytes": 132890869,
   "storage_human": "133 MB",
+  "context_length": null,
   "base_model": "BAAI/bge-small-en-v1.5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-14T03:26:03.339Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

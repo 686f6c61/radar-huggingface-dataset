@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vmlinux/Artemis-31B-v1.2-Q4_K_M-NInfer",
   "slug": "vmlinux-artemis-31b-v1-2-q4_k_m-ninfer",
   "author": "vmlinux",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 19534300416,
   "storage_human": "19.5 GB",
+  "context_length": null,
   "base_model": "TheDrummer/Artemis-31B-v1.2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

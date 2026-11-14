@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "speakrail/Voxtral-Mini-4B-Realtime-2602-TurnHead",
   "slug": "speakrail-voxtral-mini-4b-realtime-2602-turnhead",
   "author": "speakrail",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 9455706,
   "storage_human": "9 MB",
+  "context_length": null,
   "base_model": "mistralai/Voxtral-Mini-4B-Realtime-2602",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

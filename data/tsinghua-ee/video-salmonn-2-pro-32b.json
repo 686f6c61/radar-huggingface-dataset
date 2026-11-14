@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tsinghua-ee/video-SALMONN-2-Pro-32B",
   "slug": "tsinghua-ee-video-salmonn-2-pro-32b",
   "author": "tsinghua-ee",
@@ -25,14 +25,19 @@
   "parameters_human": "34.29B",
   "storage_bytes": 68580578200,
   "storage_human": "68.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

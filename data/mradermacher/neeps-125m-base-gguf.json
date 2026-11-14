@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Neeps-125M-Base-GGUF",
   "slug": "mradermacher-neeps-125m-base-gguf",
   "author": "mradermacher",
@@ -36,6 +36,7 @@
   "parameters_human": "125.1M",
   "storage_bytes": 1143526272,
   "storage_human": "1.1 GB",
+  "context_length": 2048,
   "base_model": "pdjamez/Neeps-125M-Base",
   "formats": [
     "gguf",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

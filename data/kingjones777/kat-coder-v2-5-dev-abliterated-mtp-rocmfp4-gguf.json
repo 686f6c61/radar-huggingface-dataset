@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kingjones777/KAT-Coder-V2.5-Dev-Abliterated-MTP-ROCmFP4-GGUF",
   "slug": "kingjones777-kat-coder-v2-5-dev-abliterated-mtp-rocmfp4-gguf",
   "author": "kingjones777",
@@ -40,14 +40,19 @@
   "parameters_human": "35.51B",
   "storage_bytes": 121271248096,
   "storage_human": "121.3 GB",
+  "context_length": 262144,
   "base_model": "jakeroxs/KAT-Coder-V2.5-Dev-35B-A3B-MTP-ABLITERATED-GGUF, Kwaipilot/KAT-Coder-V2.5-Dev",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

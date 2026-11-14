@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "albedo70/b42fe1dd-8d08-4bdc-9a3e-c1924ecdd66d",
   "slug": "albedo70-b42fe1dd-8d08-4bdc-9a3e-c1924ecdd66d",
   "author": "albedo70",
@@ -23,14 +23,19 @@
   "parameters_human": "35.95B",
   "storage_bytes": 71916585166,
   "storage_human": "71.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-03T02:14:18.244Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

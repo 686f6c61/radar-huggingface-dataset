@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Man1103/XVLA-Base-0.88B",
   "slug": "man1103-xvla-base-0-88b",
   "author": "Man1103",
@@ -38,14 +38,19 @@
   "parameters_human": "879.7M",
   "storage_bytes": 3518865152,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "lerobot/xvla-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

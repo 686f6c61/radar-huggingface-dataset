@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jaymanaryan/qwen3-0.6b-reasoning-indic-merge",
   "slug": "jaymanaryan-qwen3-0-6b-reasoning-indic-merge",
   "author": "jaymanaryan",
@@ -31,14 +31,19 @@
   "parameters_human": "751.6M",
   "storage_bytes": 3017987134,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-06T07:52:40.619Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

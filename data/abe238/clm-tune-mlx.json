@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "abe238/clm-tune-mlx",
   "slug": "abe238-clm-tune-mlx",
   "author": "abe238",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 764843,
   "storage_human": "764843 B",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B, Contrastive-LM/CLM-v0.1-8B",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

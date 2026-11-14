@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "divergentlabs/Nemotron-3.5-Transcribe-30B-A4B-MLX",
   "slug": "divergentlabs-nemotron-3-5-transcribe-30b-a4b-mlx",
   "author": "divergentlabs",
@@ -31,6 +31,7 @@
   "parameters_human": "32.31B",
   "storage_bytes": 15670069465,
   "storage_human": "15.7 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

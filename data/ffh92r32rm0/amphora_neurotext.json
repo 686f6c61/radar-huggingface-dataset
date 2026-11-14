@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ffh92r32rm0/Amphora_NeuroText",
   "slug": "ffh92r32rm0-amphora_neurotext",
   "author": "ffh92r32rm0",
@@ -43,12 +43,17 @@
   "parameters_human": null,
   "storage_bytes": 118086854,
   "storage_human": "118 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

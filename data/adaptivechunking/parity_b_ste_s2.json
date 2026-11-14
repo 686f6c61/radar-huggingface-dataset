@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AdaptiveChunking/parity_B_ste_s2",
   "slug": "adaptivechunking-parity_b_ste_s2",
   "author": "AdaptiveChunking",
@@ -29,14 +29,19 @@
   "parameters_human": "22.5M",
   "storage_bytes": 2522304418,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

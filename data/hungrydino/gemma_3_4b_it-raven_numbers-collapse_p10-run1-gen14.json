@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HungryDino/gemma_3_4b_it-raven_numbers-collapse_p10-run1-gen14",
   "slug": "hungrydino-gemma_3_4b_it-raven_numbers-collapse_p10-run1-gen14",
   "author": "HungryDino",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 103747868,
   "storage_human": "104 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-3-4b-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

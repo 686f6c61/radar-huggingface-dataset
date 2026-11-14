@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Titanfrm/Qwen-Image-Edit-Rapid-AIO",
   "slug": "titanfrm-qwen-image-edit-rapid-aio",
   "author": "Titanfrm",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 1550174628380,
   "storage_human": "1550.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-Edit-2511",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-08T04:53:51.578Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

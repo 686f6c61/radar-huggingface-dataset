@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vcruz305/MiMo-V2.6-Flash-RL-EXL3",
   "slug": "vcruz305-mimo-v2-6-flash-rl-exl3",
   "author": "vcruz305",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 371450996554,
   "storage_human": "371.5 GB",
+  "context_length": null,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Flash-RL, XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

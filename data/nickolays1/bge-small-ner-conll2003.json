@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NickolayS1/bge-small-ner-conll2003",
   "slug": "nickolays1-bge-small-ner-conll2003",
   "author": "NickolayS1",
@@ -30,14 +30,19 @@
   "parameters_human": "33.2M",
   "storage_bytes": 398662077,
   "storage_human": "399 MB",
+  "context_length": null,
   "base_model": "BAAI/bge-small-en-v1.5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

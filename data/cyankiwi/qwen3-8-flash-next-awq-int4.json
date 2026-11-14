@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cyankiwi/Qwen3.8-Flash-Next-AWQ-INT4",
   "slug": "cyankiwi-qwen3-8-flash-next-awq-int4",
   "author": "cyankiwi",
@@ -31,14 +31,19 @@
   "parameters_human": "78.55B",
   "storage_bytes": 376652803376,
   "storage_human": "376.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

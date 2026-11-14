@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "justintime47/Krea-2-Turbo-iQ4.5",
   "slug": "justintime47-krea-2-turbo-iq4-5",
   "author": "justintime47",
@@ -34,6 +34,7 @@
   "parameters_human": null,
   "storage_bytes": 9938672129,
   "storage_human": "9.9 GB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo",
   "formats": [
     "diffusers",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "jlweights/Krea-2-Turbo-iQ4.5",
+  "renamed_at": "2026-11-12T06:05:38.597Z",
   "benchmarks": [],
   "sources": [
     {

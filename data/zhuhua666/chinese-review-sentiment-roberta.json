@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zhuhua666/chinese-review-sentiment-roberta",
   "slug": "zhuhua666-chinese-review-sentiment-roberta",
   "author": "zhuhua666",
@@ -35,14 +35,19 @@
   "parameters_human": "102.3M",
   "storage_bytes": 409100240,
   "storage_human": "409 MB",
+  "context_length": null,
   "base_model": "hfl/chinese-roberta-wwm-ext",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

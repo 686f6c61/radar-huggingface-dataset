@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Imr79/medgemma-1.5-4b-healthvault-lora",
   "slug": "imr79-medgemma-1-5-4b-healthvault-lora",
   "author": "Imr79",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 169421897,
   "storage_human": "169 MB",
+  "context_length": null,
   "base_model": "unsloth/medgemma-1.5-4b-it-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

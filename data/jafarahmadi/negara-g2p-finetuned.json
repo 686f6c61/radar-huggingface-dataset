@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jafarahmadi/negara-g2p-finetuned",
   "slug": "jafarahmadi-negara-g2p-finetuned",
   "author": "jafarahmadi",
@@ -33,14 +33,19 @@
   "parameters_human": "8.3M",
   "storage_bytes": 99186888,
   "storage_human": "99 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

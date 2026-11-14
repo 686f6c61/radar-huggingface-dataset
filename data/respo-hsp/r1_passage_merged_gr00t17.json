@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RESPO-HSP/R1_passage_merged_GR00T17",
   "slug": "respo-hsp-r1_passage_merged_gr00t17",
   "author": "RESPO-HSP",
@@ -27,14 +27,19 @@
   "parameters_human": "3.14B",
   "storage_bytes": 12576226552,
   "storage_human": "12.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "R1-HSP/R1_passage_merged_GR00T17",
+  "renamed_at": "2026-11-11T03:37:03.172Z",
   "benchmarks": [],
   "sources": [
     {

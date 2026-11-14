@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "schneewolflabs/B0-27B",
   "slug": "schneewolflabs-b0-27b",
   "author": "schneewolflabs",
@@ -46,14 +46,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 55582995831,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": "hemlang/Hemlock-Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

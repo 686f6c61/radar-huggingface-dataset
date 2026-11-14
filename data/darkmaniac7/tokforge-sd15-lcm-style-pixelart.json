@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "darkmaniac7/TokForge-SD15-LCM-Style-Pixelart",
   "slug": "darkmaniac7-tokforge-sd15-lcm-style-pixelart",
   "author": "darkmaniac7",
@@ -42,12 +42,17 @@
   "parameters_human": null,
   "storage_bytes": 1208881176,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "Lykon/dreamshaper-7, latent-consistency/lcm-lora-sdv1-5, SedatAl/pixel-art-LoRa",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

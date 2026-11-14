@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Justvugg/GLM-5.3-Flash-colibri-int4-g64",
   "slug": "justvugg-glm-5-3-flash-colibri-int4-g64",
   "author": "Justvugg",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 194747552698,
   "storage_human": "194.7 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

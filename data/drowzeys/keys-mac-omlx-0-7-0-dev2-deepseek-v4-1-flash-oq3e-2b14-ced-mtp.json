@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "drowzeys/keys-Mac-oMLX-0.7.0.dev2-DeepSeek-V4.1-Flash-oQ3e-2b14-CED-MTP",
   "slug": "drowzeys-keys-mac-omlx-0-7-0-dev2-deepseek-v4-1-flash-oq3e-2b14-ced-mtp",
   "author": "drowzeys",
@@ -31,6 +31,7 @@
   "parameters_human": "94.11B",
   "storage_bytes": 405828522153,
   "storage_human": "405.8 GB",
+  "context_length": null,
   "base_model": "Jundot/DeepSeek-V4.1-Flash-oQ3e-mtp",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "drowzeys/keys-Mac-oMLX-0.7.0.dev2-DeepSeek-V4.1-Flash-oQ3e-2b27-CED-MTP",
+  "renamed_at": "2026-11-11T05:06:48.140Z",
   "benchmarks": [],
   "sources": [
     {

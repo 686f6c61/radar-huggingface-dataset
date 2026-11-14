@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hell0ks/gemma-4-26B-A4B-it-multitool-FP8",
   "slug": "hell0ks-gemma-4-26b-a4b-it-multitool-fp8",
   "author": "hell0ks",
@@ -32,14 +32,19 @@
   "parameters_human": "25.81B",
   "storage_bytes": 27197444768,
   "storage_human": "27.2 GB",
+  "context_length": null,
   "base_model": "hell0ks/gemma-4-26B-A4B-it-multitool",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

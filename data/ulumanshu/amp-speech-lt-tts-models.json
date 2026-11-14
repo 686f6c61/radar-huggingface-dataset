@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ulumanshu/amp-speech-lt-tts-models",
   "slug": "ulumanshu-amp-speech-lt-tts-models",
   "author": "Ulumanshu",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 7572820389,
   "storage_human": "7.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

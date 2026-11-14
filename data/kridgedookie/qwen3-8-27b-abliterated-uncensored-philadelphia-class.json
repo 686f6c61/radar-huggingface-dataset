@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KridgeDookie/Qwen3.8-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS",
   "slug": "kridgedookie-qwen3-8-27b-abliterated-uncensored-philadelphia-class",
   "author": "KridgeDookie",
@@ -42,6 +42,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 119107863101,
   "storage_human": "119.1 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "PhillyLabs/Qwen3.8-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS",
+  "renamed_at": "2026-11-11T03:09:27.201Z",
   "benchmarks": [],
   "sources": []
 }

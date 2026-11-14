@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ws-fy/qwen2.5-3b-character-material-normalizer-lora",
   "slug": "ws-fy-qwen2-5-3b-character-material-normalizer-lora",
   "author": "ws-fy",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 131223420,
   "storage_human": "131 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

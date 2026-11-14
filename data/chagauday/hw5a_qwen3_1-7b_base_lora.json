@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Chagauday/HW5A_Qwen3_1.7B_Base_LoRA",
   "slug": "chagauday-hw5a_qwen3_1-7b_base_lora",
   "author": "Chagauday",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 1127226800,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

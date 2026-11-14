@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "warped-community/embeddinggemma-300m-litert-lm",
   "slug": "warped-community-embeddinggemma-300m-litert-lm",
   "author": "warped-community",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 183329528,
   "storage_human": "183 MB",
+  "context_length": null,
   "base_model": "google/embeddinggemma-300m",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

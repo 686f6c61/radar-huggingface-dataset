@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BondingAI/all-MiniLM-L12-v2",
   "slug": "bondingai-all-minilm-l12-v2",
   "author": "BondingAI",
@@ -65,6 +65,7 @@
   "parameters_human": "33.4M",
   "storage_bytes": 1234110938,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "microsoft/MiniLM-L12-H384-uncased",
   "formats": [
     "onnx",
@@ -72,8 +73,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

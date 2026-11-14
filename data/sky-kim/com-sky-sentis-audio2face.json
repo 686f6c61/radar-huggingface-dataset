@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sky-Kim/com.sky.sentis.audio2face",
   "slug": "sky-kim-com-sky-sentis-audio2face",
   "author": "Sky-Kim",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 736465322,
   "storage_human": "736 MB",
+  "context_length": null,
   "base_model": "nvidia/Audio2Face-3D-v3.0",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

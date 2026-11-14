@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "intel-ai/HunyuanImage-3.0-Instruct-Distil-MXFP4-Mixed-CT-AutoRound",
   "slug": "intel-ai-hunyuanimage-3-0-instruct-distil-mxfp4-mixed-ct-autoround",
   "author": "intel-ai",
@@ -26,14 +26,19 @@
   "parameters_human": "44.39B",
   "storage_bytes": 52717674576,
   "storage_human": "52.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-29T03:57:30.883Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

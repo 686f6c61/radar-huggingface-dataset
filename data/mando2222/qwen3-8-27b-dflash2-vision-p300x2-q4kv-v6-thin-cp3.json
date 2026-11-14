@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mando2222/qwen3.8-27b-dflash2-vision-p300x2-q4kv-v6-thin-cp3",
   "slug": "mando2222-qwen3-8-27b-dflash2-vision-p300x2-q4kv-v6-thin-cp3",
   "author": "mando2222",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 8594547,
   "storage_human": "9 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

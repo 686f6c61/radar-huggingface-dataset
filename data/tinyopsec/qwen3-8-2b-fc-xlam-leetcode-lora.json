@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tinyopsec/Qwen3.8-2B-FC-xLAM-LeetCode-LoRA",
   "slug": "tinyopsec-qwen3-8-2b-fc-xlam-leetcode-lora",
   "author": "tinyopsec",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 194605615,
   "storage_human": "195 MB",
+  "context_length": null,
   "base_model": "ermiaazarkhalili/Qwen3.8-2B-Function-Calling-xLAM-Unsloth",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

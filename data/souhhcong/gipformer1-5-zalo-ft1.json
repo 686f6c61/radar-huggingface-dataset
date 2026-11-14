@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "souhhcong/gipformer1.5-zalo-ft1",
   "slug": "souhhcong-gipformer1-5-zalo-ft1",
   "author": "souhhcong",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 622728925,
   "storage_human": "623 MB",
+  "context_length": null,
   "base_model": "g-group-ai-lab/gipformer1.5-68M-rnnt",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-02T05:54:56.395Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

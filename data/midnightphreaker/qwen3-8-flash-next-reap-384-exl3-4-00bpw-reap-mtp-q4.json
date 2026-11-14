@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MidnightPhreaker/Qwen3.8-Flash-Next-REAP-384-exl3-4.00bpw-REAP-MTP-Q4",
   "slug": "midnightphreaker-qwen3-8-flash-next-reap-384-exl3-4-00bpw-reap-mtp-q4",
   "author": "MidnightPhreaker",
@@ -35,14 +35,19 @@
   "parameters_human": "39.26B",
   "storage_bytes": 78634833590,
   "storage_human": "78.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T03:58:00.576Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

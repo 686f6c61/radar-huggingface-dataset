@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hexian-2001/DeepWind1.0-890M",
   "slug": "hexian-2001-deepwind1-0-890m",
   "author": "Hexian-2001",
@@ -32,14 +32,19 @@
   "parameters_human": "888.2M",
   "storage_bytes": 3553021740,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

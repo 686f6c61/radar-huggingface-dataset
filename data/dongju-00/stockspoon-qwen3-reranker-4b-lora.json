@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dongju-00/stockspoon-qwen3-reranker-4b-lora",
   "slug": "dongju-00-stockspoon-qwen3-reranker-4b-lora",
   "author": "Dongju-00",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 47262480,
   "storage_human": "47 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Reranker-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

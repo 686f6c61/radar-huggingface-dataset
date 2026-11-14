@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zuraxe/DeepSeek-V4.1-Flash-1017-Uncensored-Native-Vision-Windows",
   "slug": "zuraxe-deepseek-v4-1-flash-1017-uncensored-native-vision-windows",
   "author": "zuraxe",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 488841999,
   "storage_human": "489 MB",
+  "context_length": null,
   "base_model": "AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF, ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "4012sksk/reax-g1029-gap",
   "slug": "4012sksk-reax-g1029-gap",
   "author": "4012sksk",
@@ -26,14 +26,19 @@
   "parameters_human": "26.09B",
   "storage_bytes": 52193403187,
   "storage_human": "52.2 GB",
+  "context_length": null,
   "base_model": "danyloooah/sn92-generalist-m1-mx5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Klopsiq/looped-models-bpe8k-final",
   "slug": "klopsiq-looped-models-bpe8k-final",
   "author": "Klopsiq",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 37770069,
   "storage_human": "38 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

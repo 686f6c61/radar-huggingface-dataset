@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "npario/Xing4.0-29B-A4B-APEX-I-MiniPlus-V2.1-Abliterated-GGUF",
   "slug": "npario-xing4-0-29b-a4b-apex-i-miniplus-v2-1-abliterated-gguf",
   "author": "npario",
@@ -53,14 +53,19 @@
   "parameters_human": "31.22B",
   "storage_bytes": 13762772032,
   "storage_human": "13.8 GB",
+  "context_length": 262144,
   "base_model": "huihui-ai/Huihui-Xing4.0-29B-A4B-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

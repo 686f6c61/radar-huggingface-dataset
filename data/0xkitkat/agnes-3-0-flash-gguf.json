@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0xKitkat/Agnes-3.0-Flash-GGUF",
   "slug": "0xkitkat-agnes-3-0-flash-gguf",
   "author": "0xKitkat",
@@ -33,14 +33,19 @@
   "parameters_human": "32.21B",
   "storage_bytes": 104352782272,
   "storage_human": "104.4 GB",
+  "context_length": 262144,
   "base_model": "Agnes-AI/Agnes-3.0-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

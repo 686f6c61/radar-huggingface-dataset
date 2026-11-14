@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Yi30/wan2.2-ti2v-w4a8-svd-nvidia",
   "slug": "yi30-wan2-2-ti2v-w4a8-svd-nvidia",
   "author": "Yi30",
@@ -35,6 +35,7 @@
   "parameters_human": null,
   "storage_bytes": 68122128811,
   "storage_human": "68.1 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.2-TI2V-5B-Diffusers, Wan-AI/Wan2.2-T2V-A14B-Diffusers",
   "formats": [
     "diffusers",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

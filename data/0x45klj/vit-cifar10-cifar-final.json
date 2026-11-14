@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0X45klj/vit-cifar10-cifar-final",
   "slug": "0x45klj-vit-cifar10-cifar-final",
   "author": "0X45klj",
@@ -27,14 +27,19 @@
   "parameters_human": "85.8M",
   "storage_bytes": 343248584,
   "storage_human": "343 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-13T02:10:02.415Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

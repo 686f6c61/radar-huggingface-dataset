@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "beezu/Glistening-Gem-31B-v2.1-mlx-bf16",
   "slug": "beezu-glistening-gem-31b-v2-1-mlx-bf16",
   "author": "beezu",
@@ -36,6 +36,7 @@
   "parameters_human": "30.70B",
   "storage_bytes": 61426968688,
   "storage_human": "61.4 GB",
+  "context_length": null,
   "base_model": "sophosympatheia/Glistening-Gem-31B-v2.1",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

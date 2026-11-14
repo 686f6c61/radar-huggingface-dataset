@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "precey/chatnano-models",
   "slug": "precey-chatnano-models",
   "author": "precey",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 3359498240,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "prism-ml/Ternary-Bonsai-2-2B-gguf, prism-ml/Ternary-Bonsai-2-4B-gguf, prism-ml/Ternary-Bonsai-2-9B-gguf",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

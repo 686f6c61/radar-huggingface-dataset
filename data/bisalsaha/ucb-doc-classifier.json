@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bisalsaha/ucb-doc-classifier",
   "slug": "bisalsaha-ucb-doc-classifier",
   "author": "bisalsaha",
@@ -27,14 +27,19 @@
   "parameters_human": "140.0M",
   "storage_bytes": 1680315000,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-10T03:12:19.056Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

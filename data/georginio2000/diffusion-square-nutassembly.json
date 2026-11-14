@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "georginio2000/diffusion-square-nutassembly",
   "slug": "georginio2000-diffusion-square-nutassembly",
   "author": "georginio2000",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 10543350404,
   "storage_human": "10.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

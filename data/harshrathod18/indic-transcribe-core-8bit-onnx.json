@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "harshrathod18/indic-transcribe-core-8bit-onnx",
   "slug": "harshrathod18-indic-transcribe-core-8bit-onnx",
   "author": "harshrathod18",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 1416148826,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "bodhan-ai/indic-transcribe-core",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

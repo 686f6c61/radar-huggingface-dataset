@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wanna0720/qwen38-27b-swerebench-grpo-step8-training-state",
   "slug": "wanna0720-qwen38-27b-swerebench-grpo-step8-training-state",
   "author": "wanna0720",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 168451765766,
   "storage_human": "168.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-09T02:45:40.443Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Musci-research/Musci-ASR-qwen-1019-hf",
   "slug": "musci-research-musci-asr-qwen-1019-hf",
   "author": "Musci-research",
@@ -31,14 +31,19 @@
   "parameters_human": "2.04B",
   "storage_bytes": 4087622457,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": "Musci-research/Musci-ASR-qwen-1019",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

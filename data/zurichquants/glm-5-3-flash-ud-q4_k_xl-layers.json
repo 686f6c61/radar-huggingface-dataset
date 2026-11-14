@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zurichquants/GLM-5.3-Flash-UD-Q4_K_XL-layers",
   "slug": "zurichquants-glm-5-3-flash-ud-q4_k_xl-layers",
   "author": "zurichquants",
@@ -35,14 +35,19 @@
   "parameters_human": "289.5M",
   "storage_bytes": 202452023264,
   "storage_human": "202.5 GB",
+  "context_length": 1048576,
   "base_model": "unsloth/GLM-5.3-Flash-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

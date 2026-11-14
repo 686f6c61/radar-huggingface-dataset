@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "immich-testing/ViT-SO400M-14-SigLIP-384__webli",
   "slug": "immich-testing-vit-so400m-14-siglip-384__webli",
   "author": "immich-testing",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 10462117620,
   "storage_human": "10.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

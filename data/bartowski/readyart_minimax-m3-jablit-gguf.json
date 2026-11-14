@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bartowski/ReadyArt_Minimax-M3-jablit-GGUF",
   "slug": "bartowski-readyart_minimax-m3-jablit-gguf",
   "author": "bartowski",
@@ -33,14 +33,19 @@
   "parameters_human": "426.17B",
   "storage_bytes": 5495395141536,
   "storage_human": "5495.4 GB",
+  "context_length": 1048576,
   "base_model": "ReadyArt/Minimax-M3-jablit",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

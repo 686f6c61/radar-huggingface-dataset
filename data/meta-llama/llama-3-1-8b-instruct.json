@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "meta-llama/Llama-3.1-8B-Instruct",
   "slug": "meta-llama-llama-3-1-8b-instruct",
   "author": "meta-llama",
@@ -48,21 +48,26 @@
     "deploy:sagemaker",
     "region:us"
   ],
-  "likes": 8926,
+  "likes": 8928,
   "downloads_30d": 4210422,
-  "trending_score": 52,
+  "trending_score": 53,
   "parameters": 8030261248,
   "parameters_human": "8.03B",
   "storage_bytes": 32123357950,
   "storage_human": "32.1 GB",
+  "context_length": null,
   "base_model": "meta-llama/Meta-Llama-3.1-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "muradil211/AetherSearch-SFT",
   "slug": "muradil211-aethersearch-sft",
   "author": "muradil211",
@@ -38,14 +38,19 @@
   "parameters_human": "3.09B",
   "storage_bytes": 6183348896,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "muradil211/AetherSearch_SFT",
+  "renamed_at": "2026-11-11T06:49:28.815Z",
   "benchmarks": [],
   "sources": [
     {

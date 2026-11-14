@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PrevonFounder/prevon-pulse-mk6",
   "slug": "prevonfounder-prevon-pulse-mk6",
   "author": "PrevonFounder",
@@ -33,6 +33,7 @@
   "parameters_human": "268.1M",
   "storage_bytes": 1326013538,
   "storage_human": "1.3 GB",
+  "context_length": 32768,
   "base_model": "google/functiongemma-270m-it",
   "formats": [
     "gguf",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

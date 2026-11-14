@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Johneeee/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-oQ6e_g128-fp16-text",
   "slug": "johneeee-qwen3-6-27b-fable-fusion-711-uncensored-heretic-nm-dau-oq6e_g128-fp16-text",
   "author": "Johneeee",
@@ -27,6 +27,7 @@
   "parameters_human": "26.90B",
   "storage_bytes": 21458690549,
   "storage_human": "21.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-28T03:32:23.892Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

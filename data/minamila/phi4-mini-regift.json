@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MinaMila/Phi4-mini-ReGiFT",
   "slug": "minamila-phi4-mini-regift",
   "author": "MinaMila",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 51198333,
   "storage_human": "51 MB",
+  "context_length": null,
   "base_model": "microsoft/Phi-4-mini-instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

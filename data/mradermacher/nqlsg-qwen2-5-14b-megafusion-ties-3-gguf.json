@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/NQLSG-Qwen2.5-14B-MegaFusion-TIES-3-GGUF",
   "slug": "mradermacher-nqlsg-qwen2-5-14b-megafusion-ties-3-gguf",
   "author": "mradermacher",
@@ -32,14 +32,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 102011163392,
   "storage_human": "102.0 GB",
+  "context_length": 131072,
   "base_model": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-TIES-3",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

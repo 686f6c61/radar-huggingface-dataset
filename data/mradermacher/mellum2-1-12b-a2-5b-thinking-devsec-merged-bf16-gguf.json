@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Mellum2.1-12B-A2.5B-Thinking-DevSec-merged-bf16-GGUF",
   "slug": "mradermacher-mellum2-1-12b-a2-5b-thinking-devsec-merged-bf16-gguf",
   "author": "mradermacher",
@@ -40,14 +40,19 @@
   "parameters_human": "12.15B",
   "storage_bytes": 87610979008,
   "storage_human": "87.6 GB",
+  "context_length": 131072,
   "base_model": "Nullmega/Mellum2.1-12B-A2.5B-Thinking-DevSec-merged-bf16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bunnycore/Gemma4-E2B-Agent",
   "slug": "bunnycore-gemma4-e2b-agent",
   "author": "bunnycore",
@@ -32,6 +32,7 @@
   "parameters_human": "50.7M",
   "storage_bytes": 336331178,
   "storage_human": "336 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-E2B-it-qat-q4_0-unquantized",
   "formats": [
     "gguf",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

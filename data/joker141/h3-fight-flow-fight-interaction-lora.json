@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JOKER141/H3-Fight-Flow-Fight-Interaction-LoRA",
   "slug": "joker141-h3-fight-flow-fight-interaction-lora",
   "author": "JOKER141",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 337976267,
   "storage_human": "338 MB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

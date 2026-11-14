@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Baekpica/MiMo-V2.6-Flash-MOPD-VQ-GGUF",
   "slug": "baekpica-mimo-v2-6-flash-mopd-vq-gguf",
   "author": "Baekpica",
@@ -60,14 +60,19 @@
   "parameters_human": "573.6M",
   "storage_bytes": 98580297748,
   "storage_human": "98.6 GB",
+  "context_length": null,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

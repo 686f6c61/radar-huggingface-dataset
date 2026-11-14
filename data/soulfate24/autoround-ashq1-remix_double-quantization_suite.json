@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Soulfate24/AutoRound-ASHQ1-Remix_Double-Quantization_Suite",
   "slug": "soulfate24-autoround-ashq1-remix_double-quantization_suite",
   "author": "Soulfate24",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "wepiqx/ASHQ1",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Soulfate24/Paretrix_Quantization_Suite",
+  "renamed_at": "2026-11-11T03:55:40.982Z",
   "benchmarks": [],
   "sources": [
     {

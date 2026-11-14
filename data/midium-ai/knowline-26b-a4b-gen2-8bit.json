@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "midium-ai/KnowLine-26B-A4B-Gen2-8bit",
   "slug": "midium-ai-knowline-26b-a4b-gen2-8bit",
   "author": "midium-ai",
@@ -30,6 +30,7 @@
   "parameters_human": "25.81B",
   "storage_bytes": 27985811055,
   "storage_human": "28.0 GB",
+  "context_length": null,
   "base_model": "PelaAI/KnowLine-26B-A4B-Gen2",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

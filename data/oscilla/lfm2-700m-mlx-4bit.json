@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Oscilla/LFM2-700M-mlx-4Bit",
   "slug": "oscilla-lfm2-700m-mlx-4bit",
   "author": "Oscilla",
@@ -52,6 +52,7 @@
   "parameters_human": "742.5M",
   "storage_bytes": 417827472,
   "storage_human": "418 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2-700M",
   "formats": [
     "mlx",
@@ -59,8 +60,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

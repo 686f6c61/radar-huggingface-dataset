@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/NeuralExperiment-7b-Coding_FT3-GGUF",
   "slug": "mradermacher-neuralexperiment-7b-coding_ft3-gguf",
   "author": "mradermacher",
@@ -29,14 +29,19 @@
   "parameters_human": "7.24B",
   "storage_bytes": 63929808512,
   "storage_human": "63.9 GB",
+  "context_length": 32768,
   "base_model": "Kukedlc/NeuralExperiment-7b-Coding_FT3",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

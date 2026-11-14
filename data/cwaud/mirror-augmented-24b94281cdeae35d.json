@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cwaud/mirror-augmented-24b94281cdeae35d",
   "slug": "cwaud-mirror-augmented-24b94281cdeae35d",
   "author": "cwaud",
@@ -27,14 +27,19 @@
   "parameters_human": "3.15B",
   "storage_bytes": 6298836008,
   "storage_human": "6.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Kolibri-1-heretic-i1-GGUF",
   "slug": "mradermacher-kolibri-1-heretic-i1-gguf",
   "author": "mradermacher",
@@ -41,14 +41,19 @@
   "parameters_human": "78.10B",
   "storage_bytes": 825839636448,
   "storage_human": "825.8 GB",
+  "context_length": 262144,
   "base_model": "iSkye/Kolibri-1-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

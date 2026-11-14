@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/plamo-3-8b-fin-instruct-GGUF",
   "slug": "mradermacher-plamo-3-8b-fin-instruct-gguf",
   "author": "mradermacher",
@@ -34,14 +34,19 @@
   "parameters_human": "8.53B",
   "storage_bytes": 76547189760,
   "storage_human": "76.5 GB",
+  "context_length": 262144,
   "base_model": "pfnet/plamo-3-8b-fin-instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

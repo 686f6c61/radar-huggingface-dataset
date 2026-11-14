@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MarkusKaemmerer/Voxtral-Small-24B-2507-4bit-dense-encoder",
   "slug": "markuskaemmerer-voxtral-small-24b-2507-4bit-dense-encoder",
   "author": "MarkusKaemmerer",
@@ -47,6 +47,7 @@
   "parameters_human": "24.93B",
   "storage_bytes": 15031421732,
   "storage_human": "15.0 GB",
+  "context_length": null,
   "base_model": "mistralai/Voxtral-Small-24B-2507",
   "formats": [
     "mlx",
@@ -54,8 +55,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

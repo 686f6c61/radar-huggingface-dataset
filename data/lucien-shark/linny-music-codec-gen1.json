@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lucien-shark/Linny-Music-Codec-Gen1",
   "slug": "lucien-shark-linny-music-codec-gen1",
   "author": "Lucien-shark",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 54446086768,
   "storage_human": "54.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-28T03:55:45.661Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

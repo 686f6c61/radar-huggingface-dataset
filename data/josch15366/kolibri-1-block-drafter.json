@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "josch15366/Kolibri-1-block-drafter",
   "slug": "josch15366-kolibri-1-block-drafter",
   "author": "josch15366",
@@ -41,14 +41,19 @@
   "parameters_human": "391.3M",
   "storage_bytes": 1565185616,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "Aleph-Alpha/Kolibri-1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

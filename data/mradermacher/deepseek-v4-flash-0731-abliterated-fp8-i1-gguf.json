@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/DeepSeek-V4-Flash-0731-Abliterated-FP8-i1-GGUF",
   "slug": "mradermacher-deepseek-v4-flash-0731-abliterated-fp8-i1-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "117.6M",
   "storage_bytes": 2207961069568,
   "storage_human": "2208.0 GB",
+  "context_length": null,
   "base_model": "apetersson/DeepSeek-V4-Flash-0731-Abliterated-FP8",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

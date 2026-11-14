@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mphd1/OLMo-2-1124-7B_pii_private",
   "slug": "mphd1-olmo-2-1124-7b_pii_private",
   "author": "mphd1",
@@ -30,14 +30,19 @@
   "parameters_human": "7.30B",
   "storage_bytes": 29194515976,
   "storage_human": "29.2 GB",
+  "context_length": null,
   "base_model": "allenai/OLMo-2-1124-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

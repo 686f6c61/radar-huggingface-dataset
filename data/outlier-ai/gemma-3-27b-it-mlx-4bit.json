@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Outlier-Ai/gemma-3-27b-it-MLX-4bit",
   "slug": "outlier-ai-gemma-3-27b-it-mlx-4bit",
   "author": "Outlier-Ai",
@@ -92,6 +92,7 @@
   "parameters_human": "27.01B",
   "storage_bytes": 15228306648,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "google/gemma-3-27b-it",
   "formats": [
     "mlx",
@@ -99,8 +100,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

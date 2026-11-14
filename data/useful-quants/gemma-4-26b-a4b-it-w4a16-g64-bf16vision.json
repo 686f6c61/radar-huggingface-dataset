@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "useful-quants/Gemma-4-26B-A4B-it-W4A16-G64-BF16Vision",
   "slug": "useful-quants-gemma-4-26b-a4b-it-w4a16-g64-bf16vision",
   "author": "useful-quants",
@@ -45,14 +45,19 @@
   "parameters_human": "25.81B",
   "storage_bytes": 15689048731,
   "storage_human": "15.7 GB",
+  "context_length": null,
   "base_model": "Mitchins/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

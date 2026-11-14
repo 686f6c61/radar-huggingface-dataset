@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Xylolabs/gemma-4-E2B-it-qat-q4_0-unquantized-Tensix-BFP8",
   "slug": "xylolabs-gemma-4-e2b-it-qat-q4_0-unquantized-tensix-bfp8",
   "author": "Xylolabs",
@@ -39,14 +39,19 @@
   "parameters_human": "5.51B",
   "storage_bytes": 11046326096,
   "storage_human": "11.0 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it-qat-q4_0-unquantized",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

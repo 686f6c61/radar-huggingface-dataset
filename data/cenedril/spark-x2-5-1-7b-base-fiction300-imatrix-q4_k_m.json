@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Cenedril/Spark-X2.5-1.7B-Base-fiction300-imatrix-Q4_K_M",
   "slug": "cenedril-spark-x2-5-1-7b-base-fiction300-imatrix-q4_k_m",
   "author": "Cenedril",
@@ -25,14 +25,19 @@
   "parameters_human": "473256",
   "storage_bytes": 1109376768,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "XHToken/Spark-X2.5-1.7B-Base",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

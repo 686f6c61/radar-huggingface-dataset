@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ldov/Nemotron-3-Diarization",
   "slug": "ldov-nemotron-3-diarization",
   "author": "ldov",
@@ -37,6 +37,7 @@
   "parameters_human": "99.2M",
   "storage_bytes": 709780059,
   "storage_human": "710 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "malaiwah/GLM-5.3-Flash-TR3-6bpw",
   "slug": "malaiwah-glm-5-3-flash-tr3-6bpw",
   "author": "malaiwah",
@@ -48,14 +48,19 @@
   "parameters_human": "126.77B",
   "storage_bytes": 253629068269,
   "storage_human": "253.6 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Distribution fidelity (KL divergence vs BF16 reference)",

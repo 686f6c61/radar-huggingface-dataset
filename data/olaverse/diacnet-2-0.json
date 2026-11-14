@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "olaverse/diacnet-2.0",
   "slug": "olaverse-diacnet-2-0",
   "author": "olaverse",
@@ -67,14 +67,19 @@
   "parameters_human": "581.7M",
   "storage_bytes": 3490184074,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "google/byt5-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

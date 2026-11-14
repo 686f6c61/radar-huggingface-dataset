@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "znasif/embeddinggemma-2-qnn-v69",
   "slug": "znasif-embeddinggemma-2-qnn-v69",
   "author": "znasif",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 2951408291,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": "google/embeddinggemma-2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

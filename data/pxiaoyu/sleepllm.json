@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pxiaoyu/SleepLLM",
   "slug": "pxiaoyu-sleepllm",
   "author": "pxiaoyu",
@@ -29,14 +29,19 @@
   "parameters_human": "8.29B",
   "storage_bytes": 16595836416,
   "storage_human": "16.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-01T03:14:39.900Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

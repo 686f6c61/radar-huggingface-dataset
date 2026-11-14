@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sukhun2/audio_cls_v2",
   "slug": "sukhun2-audio_cls_v2",
   "author": "sukhun2",
@@ -23,14 +23,19 @@
   "parameters_human": "94.6M",
   "storage_bytes": 11349446321,
   "storage_human": "11.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

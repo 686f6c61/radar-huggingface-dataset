@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mondk/MiniCPM5-2B-Abliterated-Uncensored-GGUF",
   "slug": "mondk-minicpm5-2b-abliterated-uncensored-gguf",
   "author": "mondk",
@@ -34,14 +34,19 @@
   "parameters_human": "2.52B",
   "storage_bytes": 10921755872,
   "storage_human": "10.9 GB",
+  "context_length": 131072,
   "base_model": "mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

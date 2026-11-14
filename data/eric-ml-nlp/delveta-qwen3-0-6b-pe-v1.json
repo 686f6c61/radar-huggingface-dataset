@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eric-ml-nlp/Delveta-Qwen3-0.6B-PE-v1",
   "slug": "eric-ml-nlp-delveta-qwen3-0-6b-pe-v1",
   "author": "eric-ml-nlp",
@@ -43,6 +43,7 @@
   "parameters_human": "596.0M",
   "storage_bytes": 9408281067,
   "storage_human": "9.4 GB",
+  "context_length": 40960,
   "base_model": "iromu/Qwen3-0.6B-tools",
   "formats": [
     "gguf",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

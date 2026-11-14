@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kumumin/furniture_data_finetuning_1",
   "slug": "kumumin-furniture_data_finetuning_1",
   "author": "kumumin",
@@ -30,14 +30,19 @@
   "parameters_human": "41.6M",
   "storage_bytes": 4828445173,
   "storage_human": "4.8 GB",
+  "context_length": null,
   "base_model": "facebook/detr-resnet-50",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

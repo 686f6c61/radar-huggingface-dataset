@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "athv/cyber-bge-small",
   "slug": "athv-cyber-bge-small",
   "author": "athv",
@@ -36,14 +36,19 @@
   "parameters_human": "33.4M",
   "storage_bytes": 133462128,
   "storage_human": "133 MB",
+  "context_length": null,
   "base_model": "BAAI/bge-small-en-v1.5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hoySky92/HyperCLOVA-X-U-CURATE-v2.0",
   "slug": "hoysky92-hyperclova-x-u-curate-v2-0",
   "author": "hoySky92",
@@ -48,14 +48,19 @@
   "parameters_human": "1.59B",
   "storage_bytes": 3171119592,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": "naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-1.5B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

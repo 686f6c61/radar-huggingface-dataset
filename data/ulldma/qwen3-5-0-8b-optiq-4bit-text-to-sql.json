@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ulldma/Qwen3.5-0.8B-OptiQ-4bit-text-to-sql",
   "slug": "ulldma-qwen3-5-0-8b-optiq-4bit-text-to-sql",
   "author": "ulldma",
@@ -39,6 +39,7 @@
   "parameters_human": "752.4M",
   "storage_bytes": 670246531,
   "storage_human": "670 MB",
+  "context_length": null,
   "base_model": "mlx-community/Qwen3.5-0.8B-OptiQ-4bit",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

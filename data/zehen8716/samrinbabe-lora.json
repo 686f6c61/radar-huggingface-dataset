@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zehen8716/samrinbabe-lora",
   "slug": "zehen8716-samrinbabe-lora",
   "author": "zehen8716",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 1151841154,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo, krea/Krea-2-Raw",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-22T02:54:51.473Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SamEgwu/AHUIKE-N-ATLaS-8B-LoRA-Powered-by-Awarri",
   "slug": "samegwu-ahuike-n-atlas-8b-lora-powered-by-awarri",
   "author": "SamEgwu",
@@ -43,14 +43,19 @@
   "parameters_human": null,
   "storage_bytes": 185042160,
   "storage_human": "185 MB",
+  "context_length": null,
   "base_model": "NCAIR1/N-ATLaS",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

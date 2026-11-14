@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "adrianmurray/Qwen3.8-27B-MTP-MLX-6bit",
   "slug": "adrianmurray-qwen3-8-27b-mtp-mlx-6bit",
   "author": "adrianmurray",
@@ -32,6 +32,7 @@
   "parameters_human": "424.7M",
   "storage_bytes": 345102482,
   "storage_human": "345 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

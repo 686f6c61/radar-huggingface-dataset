@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RedHatAI/GLM-5.2-NVFP4-FP8",
   "slug": "redhatai-glm-5-2-nvfp4-fp8",
   "author": "RedHatAI",
@@ -38,14 +38,19 @@
   "parameters_human": "424.75B",
   "storage_bytes": 1731559691103,
   "storage_human": "1731.6 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sartajbhuvaji/GLM-4.6-Flash-text",
   "slug": "sartajbhuvaji-glm-4-6-flash-text",
   "author": "sartajbhuvaji",
@@ -39,6 +39,7 @@
   "parameters_human": "9.40B",
   "storage_bytes": 69115933411,
   "storage_human": "69.1 GB",
+  "context_length": 131072,
   "base_model": "zai-org/GLM-4.6V-Flash",
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "sartajbhuvaji/unfuse-GLM-4.6-Flash-text",
+  "renamed_at": "2026-11-11T07:26:01.231Z",
   "benchmarks": [],
   "sources": [
     {

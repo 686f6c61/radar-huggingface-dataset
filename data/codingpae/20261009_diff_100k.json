@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Codingpae/20261009_diff_100k",
   "slug": "codingpae-20261009_diff_100k",
   "author": "Codingpae",
@@ -22,14 +22,19 @@
   "parameters_human": "293.3M",
   "storage_bytes": 1173388976,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

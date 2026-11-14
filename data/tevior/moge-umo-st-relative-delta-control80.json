@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tevior/moge-UMO-ST-relative-delta-control80",
   "slug": "tevior-moge-umo-st-relative-delta-control80",
   "author": "Tevior",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 25035458976,
   "storage_human": "25.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

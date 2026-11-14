@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pavanyadava07/smolvla-libero-spatial-full",
   "slug": "pavanyadava07-smolvla-libero-spatial-full",
   "author": "pavanyadava07",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 1100052515,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "lerobot/smolvla_base",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "exe-ai-harness/gpt-oss-20b-abliterated-MXFP4-GGUF",
   "slug": "exe-ai-harness-gpt-oss-20b-abliterated-mxfp4-gguf",
   "author": "exe-ai-harness",
@@ -42,14 +42,19 @@
   "parameters_human": "20.91B",
   "storage_bytes": 12761544039,
   "storage_human": "12.8 GB",
+  "context_length": 131072,
   "base_model": "wangzhang/gpt-oss-20b-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

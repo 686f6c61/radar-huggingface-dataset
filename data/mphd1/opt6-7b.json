@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mphd1/opt6.7b",
   "slug": "mphd1-opt6-7b",
   "author": "mphd1",
@@ -31,14 +31,19 @@
   "parameters_human": "6.66B",
   "storage_bytes": 26633962464,
   "storage_human": "26.6 GB",
+  "context_length": null,
   "base_model": "facebook/opt-6.7b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-22T03:08:19.127Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

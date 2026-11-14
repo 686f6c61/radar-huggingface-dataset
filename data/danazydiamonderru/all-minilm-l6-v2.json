@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "danazydiamonderru/all-MiniLM-L6-v2",
   "slug": "danazydiamonderru-all-minilm-l6-v2",
   "author": "danazydiamonderru",
@@ -66,6 +66,7 @@
   "parameters_human": "22.7M",
   "storage_bytes": 929553600,
   "storage_human": "930 MB",
+  "context_length": null,
   "base_model": "nreimers/MiniLM-L6-H384-uncased",
   "formats": [
     "onnx",
@@ -73,8 +74,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

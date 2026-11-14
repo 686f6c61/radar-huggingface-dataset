@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "f-amor/distilbertimbau-feedback-medico",
   "slug": "f-amor-distilbertimbau-feedback-medico",
   "author": "f-amor",
@@ -28,14 +28,19 @@
   "parameters_human": "66.4M",
   "storage_bytes": 265605044,
   "storage_human": "266 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

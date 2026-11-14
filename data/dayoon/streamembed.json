@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dayoon/streamembed",
   "slug": "dayoon-streamembed",
   "author": "dayoon",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 743466840,
   "storage_human": "743 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-Embedding-2B, Qwen/Qwen3-VL-Embedding-8B, google/siglip2-so400m-patch16-naflex, google/siglip2-base-patch16-naflex, vultr/VultronRetrieverFlash-Qwen3.5-0.8B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

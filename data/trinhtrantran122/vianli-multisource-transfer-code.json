@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "trinhtrantran122/vianli-multisource-transfer-code",
   "slug": "trinhtrantran122-vianli-multisource-transfer-code",
   "author": "trinhtrantran122",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 14715404,
   "storage_human": "15 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/blueteam-cyber-base-v0.3.0-GGUF",
   "slug": "mradermacher-blueteam-cyber-base-v0-3-0-gguf",
   "author": "mradermacher",
@@ -33,14 +33,19 @@
   "parameters_human": "100.7M",
   "storage_bytes": 956876160,
   "storage_human": "957 MB",
+  "context_length": 8192,
   "base_model": "beau-warren/blueteam-cyber-base-v0.3.0",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

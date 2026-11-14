@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "suryeon123/connectailab-rl-suryeon-kim-v2-1-humanoid-delivery-ppo",
   "slug": "suryeon123-connectailab-rl-suryeon-kim-v2-1-humanoid-delivery-ppo",
   "author": "suryeon123",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 515384,
   "storage_human": "515384 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-06T07:43:24.850Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

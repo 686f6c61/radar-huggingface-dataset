@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "supremeDavid/g31-collar_where_6000-r32-s375",
   "slug": "supremedavid-g31-collar_where_6000-r32-s375",
   "author": "supremeDavid",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 1011728386,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-31B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

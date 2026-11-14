@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ihor-matiushenko/silver-lining-gemma3-gguf",
   "slug": "ihor-matiushenko-silver-lining-gemma3-gguf",
   "author": "ihor-matiushenko",
@@ -45,6 +45,7 @@
   "parameters_human": "268.1M",
   "storage_bytes": 561066560,
   "storage_human": "561 MB",
+  "context_length": 32768,
   "base_model": "google/gemma-3-270m-it",
   "formats": [
     "gguf",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

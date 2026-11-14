@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lyraaaa/trinity-nano-gug-v1-Q8_0-GGUF",
   "slug": "lyraaaa-trinity-nano-gug-v1-q8_0-gguf",
   "author": "lyraaaa",
@@ -34,14 +34,19 @@
   "parameters_human": "6.12B",
   "storage_bytes": 6531428928,
   "storage_human": "6.5 GB",
+  "context_length": 131072,
   "base_model": "lyraaaa/trinity-nano-gug-v1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

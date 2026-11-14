@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mdhvm/anlp-m26-a1-cipher-transformers",
   "slug": "mdhvm-anlp-m26-a1-cipher-transformers",
   "author": "mdhvm",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 130749595,
   "storage_human": "131 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

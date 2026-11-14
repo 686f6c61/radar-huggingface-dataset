@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "liodon-ai/Qwen2.5-Coder-7B-Instruct-FP8",
   "slug": "liodon-ai-qwen2-5-coder-7b-instruct-fp8",
   "author": "liodon-ai",
@@ -35,14 +35,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 8720210428,
   "storage_human": "8.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

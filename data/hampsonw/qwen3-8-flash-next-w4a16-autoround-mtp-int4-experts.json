@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hampsonw/Qwen3.8-Flash-Next-W4A16-AutoRound-MTP-INT4-Experts",
   "slug": "hampsonw-qwen3-8-flash-next-w4a16-autoround-mtp-int4-experts",
   "author": "hampsonw",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 1537240168,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "Intel/Qwen3.8-Flash-Next-W4A16-AutoRound",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

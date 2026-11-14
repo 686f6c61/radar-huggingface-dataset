@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hongduc05/qwen3-chat-sum",
   "slug": "hongduc05-qwen3-chat-sum",
   "author": "hongduc05",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 1555241104,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

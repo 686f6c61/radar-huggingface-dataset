@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Qwen/Qwen3.8-2.4T-A95B",
   "slug": "qwen-qwen3-8-2-4t-a95b",
   "author": "Qwen",
@@ -22,21 +22,26 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 1387,
-  "downloads_30d": 28354,
-  "trending_score": 10,
+  "likes": 1390,
+  "downloads_30d": 28715,
+  "trending_score": 12,
   "parameters": 2446182725504,
   "parameters_human": "2446.18B",
   "storage_bytes": 4892378458656,
   "storage_human": "4892.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

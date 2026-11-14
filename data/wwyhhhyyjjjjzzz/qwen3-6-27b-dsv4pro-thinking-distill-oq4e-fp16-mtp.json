@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wwyhhhyyjjjjzzz/Qwen3.6-27B-DSV4Pro-Thinking-Distill-oQ4e-fp16-mtp",
   "slug": "wwyhhhyyjjjjzzz-qwen3-6-27b-dsv4pro-thinking-distill-oq4e-fp16-mtp",
   "author": "wwyhhhyyjjjjzzz",
@@ -27,6 +27,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 17964247205,
   "storage_human": "18.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

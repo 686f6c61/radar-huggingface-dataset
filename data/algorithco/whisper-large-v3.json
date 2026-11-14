@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "algorithco/whisper-large-v3",
   "slug": "algorithco-whisper-large-v3",
   "author": "algorithco",
@@ -230,6 +230,7 @@
   "parameters_human": "1.54B",
   "storage_bytes": 26471984689,
   "storage_human": "26.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -237,8 +238,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

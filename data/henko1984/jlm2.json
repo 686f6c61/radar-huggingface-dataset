@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "henko1984/jlm2",
   "slug": "henko1984-jlm2",
   "author": "henko1984",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 613691296,
   "storage_human": "614 MB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.2-I2V-A14B, Wan-AI/Wan2.2-Animate-2-14B, Wan-AI/Wan2.1-T2V-1.3B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-30T03:48:37.856Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

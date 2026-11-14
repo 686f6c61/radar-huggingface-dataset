@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "liuyihong/qwen3-vl-32b-proposer-sr-lora",
   "slug": "liuyihong-qwen3-vl-32b-proposer-sr-lora",
   "author": "liuyihong",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 548428078,
   "storage_human": "548 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-32B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

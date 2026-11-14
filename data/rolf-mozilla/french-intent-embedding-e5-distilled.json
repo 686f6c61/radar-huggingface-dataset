@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rolf-mozilla/french-intent-embedding-e5-distilled",
   "slug": "rolf-mozilla-french-intent-embedding-e5-distilled",
   "author": "rolf-mozilla",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 28323993,
   "storage_human": "28 MB",
+  "context_length": null,
   "base_model": "rolf-mozilla/french-embedding-e5-distilled",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

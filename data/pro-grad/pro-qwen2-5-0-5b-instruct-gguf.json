@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Pro-Grad/Pro-Qwen2.5-0.5B-Instruct.gguf",
   "slug": "pro-grad-pro-qwen2-5-0-5b-instruct-gguf",
   "author": "Pro-Grad",
@@ -25,14 +25,19 @@
   "parameters_human": "494.0M",
   "storage_bytes": 1391963904,
   "storage_human": "1.4 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

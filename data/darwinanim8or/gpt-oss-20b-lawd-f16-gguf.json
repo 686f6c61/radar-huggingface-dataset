@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DarwinAnim8or/gpt-oss-20b-lawd-F16-GGUF",
   "slug": "darwinanim8or-gpt-oss-20b-lawd-f16-gguf",
   "author": "DarwinAnim8or",
@@ -27,14 +27,19 @@
   "parameters_human": "31.9M",
   "storage_bytes": 63714720,
   "storage_human": "64 MB",
+  "context_length": null,
   "base_model": "DarwinAnim8or/gpt-oss-20b-lawd",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

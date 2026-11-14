@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nimbz/MiMo-V2.6-Flash-MOPD-MXFP4-GGUF",
   "slug": "nimbz-mimo-v2-6-flash-mopd-mxfp4-gguf",
   "author": "Nimbz",
@@ -27,14 +27,19 @@
   "parameters_human": "309.77B",
   "storage_bytes": 181965779808,
   "storage_human": "182.0 GB",
+  "context_length": 1048576,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "QuantaPlanta/MiMo-V2.6-Flash-MOPD-MXFP4-GGUF",
+  "renamed_at": "2026-11-11T03:25:49.244Z",
   "benchmarks": [],
   "sources": [
     {

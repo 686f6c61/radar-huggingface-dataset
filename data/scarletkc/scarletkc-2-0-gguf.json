@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ScarletKc/ScarletKc-2.0-GGUF",
   "slug": "scarletkc-scarletkc-2-0-gguf",
   "author": "ScarletKc",
@@ -42,14 +42,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 17669644672,
   "storage_human": "17.7 GB",
+  "context_length": 262144,
   "base_model": "ScarletKc/ScarletKc-2.0",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

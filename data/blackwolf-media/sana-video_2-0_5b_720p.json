@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BlackWolf-Media/SANA-Video_2.0_5B_720p",
   "slug": "blackwolf-media-sana-video_2-0_5b_720p",
   "author": "BlackWolf-Media",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 17871929677,
   "storage_human": "17.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Metabaron6/IronJean-v2-ModernBERT-WAF",
   "slug": "metabaron6-ironjean-v2-modernbert-waf",
   "author": "Metabaron6",
@@ -38,6 +38,7 @@
   "parameters_human": "149.0M",
   "storage_bytes": 10076463352,
   "storage_human": "10.1 GB",
+  "context_length": null,
   "base_model": "answerdotai/ModernBERT-base",
   "formats": [
     "onnx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

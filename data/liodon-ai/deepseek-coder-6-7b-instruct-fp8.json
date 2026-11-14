@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "liodon-ai/deepseek-coder-6.7b-instruct-FP8",
   "slug": "liodon-ai-deepseek-coder-6-7b-instruct-fp8",
   "author": "liodon-ai",
@@ -35,14 +35,19 @@
   "parameters_human": "6.74B",
   "storage_bytes": 7007800576,
   "storage_human": "7.0 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/deepseek-coder-6.7b-instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

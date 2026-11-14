@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rwkv-org/rwkv7-g1k-7.2b-20260930-ctx25600-mtp",
   "slug": "rwkv-org-rwkv7-g1k-7-2b-20260930-ctx25600-mtp",
   "author": "rwkv-org",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 419497160,
   "storage_human": "419 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

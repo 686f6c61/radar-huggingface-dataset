@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "saad1926q/qwen3.5-4b-8puzzle-sft",
   "slug": "saad1926q-qwen3-5-4b-8puzzle-sft",
   "author": "saad1926q",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 614768181,
   "storage_human": "615 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

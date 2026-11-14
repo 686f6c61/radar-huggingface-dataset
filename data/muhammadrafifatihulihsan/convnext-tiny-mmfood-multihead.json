@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "muhammadrafifatihulihsan/convnext-tiny-mmfood-multihead",
   "slug": "muhammadrafifatihulihsan-convnext-tiny-mmfood-multihead",
   "author": "muhammadrafifatihulihsan",
@@ -40,6 +40,7 @@
   "parameters_human": "28.1M",
   "storage_bytes": 906832697,
   "storage_human": "907 MB",
+  "context_length": null,
   "base_model": "facebook/convnext-tiny-224",
   "formats": [
     "onnx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

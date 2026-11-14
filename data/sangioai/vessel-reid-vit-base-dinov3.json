@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sangioai/vessel-reid-vit-base-dinov3",
   "slug": "sangioai-vessel-reid-vit-base-dinov3",
   "author": "sangioai",
@@ -36,14 +36,19 @@
   "parameters_human": "86.4M",
   "storage_bytes": 345731208,
   "storage_human": "346 MB",
+  "context_length": null,
   "base_model": "timm/vit_base_patch16_dinov3.lvd1689m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

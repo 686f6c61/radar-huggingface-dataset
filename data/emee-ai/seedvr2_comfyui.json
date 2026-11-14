@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "emee-ai/SeedVR2_comfyUI",
   "slug": "emee-ai-seedvr2_comfyui",
   "author": "emee-ai",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 60114016574,
   "storage_human": "60.1 GB",
+  "context_length": null,
   "base_model": "ByteDance-Seed/SeedVR2-7B, ByteDance-Seed/SeedVR2-3B",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

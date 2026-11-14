@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Enzo275/MiniH3Omni",
   "slug": "enzo275-minih3omni",
   "author": "Enzo275",
@@ -43,14 +43,19 @@
   "parameters_human": null,
   "storage_bytes": 17619942508,
   "storage_human": "17.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-25T05:39:09.339Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

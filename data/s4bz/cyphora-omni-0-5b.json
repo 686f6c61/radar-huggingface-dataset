@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "s4bz/cyphora-omni-0.5b",
   "slug": "s4bz-cyphora-omni-0-5b",
   "author": "s4bz",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 20097900,
   "storage_human": "20 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T08:09:07.623Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

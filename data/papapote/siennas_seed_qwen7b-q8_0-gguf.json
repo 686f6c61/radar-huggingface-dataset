@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Papapote/Siennas_Seed_Qwen7B-Q8_0-GGUF",
   "slug": "papapote-siennas_seed_qwen7b-q8_0-gguf",
   "author": "Papapote",
@@ -26,14 +26,19 @@
   "parameters_human": "40.4M",
   "storage_bytes": 63779104,
   "storage_human": "64 MB",
+  "context_length": null,
   "base_model": "Papapote/Siennas_Seed_Qwen7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Eklav-9B-Math-GGUF",
   "slug": "mradermacher-eklav-9b-math-gguf",
   "author": "mradermacher",
@@ -34,14 +34,19 @@
   "parameters_human": "9.40B",
   "storage_bytes": 86835701632,
   "storage_human": "86.8 GB",
+  "context_length": 32768,
   "base_model": "AdarshSingh7647/Eklav-9B-Math",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

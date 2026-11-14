@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "roger33303/gpt2-124m-sft",
   "slug": "roger33303-gpt2-124m-sft",
   "author": "roger33303",
@@ -34,14 +34,19 @@
   "parameters_human": "124.5M",
   "storage_bytes": 50799422864,
   "storage_human": "50.8 GB",
+  "context_length": null,
   "base_model": "roger33303/gpt2-124m-fineweb-edu",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

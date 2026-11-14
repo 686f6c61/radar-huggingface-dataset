@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dhanr4j/bitvoice-asr",
   "slug": "dhanr4j-bitvoice-asr",
   "author": "dhanr4j",
@@ -28,14 +28,19 @@
   "parameters_human": "980.1M",
   "storage_bytes": 21649218191,
   "storage_human": "21.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

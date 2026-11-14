@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "herald-dictation/lang-id-voxlingua107-ecapa-gguf",
   "slug": "herald-dictation-lang-id-voxlingua107-ecapa-gguf",
   "author": "herald-dictation",
@@ -243,14 +243,19 @@
   "parameters_human": "21.2M",
   "storage_bytes": 45299872,
   "storage_human": "45 MB",
+  "context_length": null,
   "base_model": "speechbrain/lang-id-voxlingua107-ecapa",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

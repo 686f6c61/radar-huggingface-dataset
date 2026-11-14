@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "geantendormi/K2-Horizon-7B-Uno-Uncensored-GGUF",
   "slug": "geantendormi-k2-horizon-7b-uno-uncensored-gguf",
   "author": "geantendormi",
@@ -39,14 +39,19 @@
   "parameters_human": "9.00B",
   "storage_bytes": 23129402656,
   "storage_human": "23.1 GB",
+  "context_length": 524288,
   "base_model": "IFM/K2-Horizon-7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

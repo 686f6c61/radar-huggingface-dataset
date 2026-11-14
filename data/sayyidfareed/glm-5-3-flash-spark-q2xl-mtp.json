@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sayyidfareed/GLM-5.3-Flash-Spark-Q2XL-MTP",
   "slug": "sayyidfareed-glm-5-3-flash-spark-q2xl-mtp",
   "author": "sayyidfareed",
@@ -39,14 +39,19 @@
   "parameters_human": "320.76B",
   "storage_bytes": 112194217088,
   "storage_human": "112.2 GB",
+  "context_length": 1048576,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

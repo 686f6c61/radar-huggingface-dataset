@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tahaahmed122/ean_mistral_7b_legal",
   "slug": "tahaahmed122-ean_mistral_7b_legal",
   "author": "Tahaahmed122",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 1262382790,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-7B-Instruct-v0.2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

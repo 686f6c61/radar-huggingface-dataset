@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rootonchair/MiniMax-H3-nunchaku-lite-int4",
   "slug": "rootonchair-minimax-h3-nunchaku-lite-int4",
   "author": "rootonchair",
@@ -33,6 +33,7 @@
   "parameters_human": "17.45B",
   "storage_bytes": 36851950112,
   "storage_human": "36.9 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [
     "diffusers",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

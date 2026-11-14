@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zankich/Qwen3.8-Flash-Next-W4A16-Merlin-INT4PLE",
   "slug": "zankich-qwen3-8-flash-next-w4a16-merlin-int4ple",
   "author": "zankich",
@@ -32,14 +32,19 @@
   "parameters_human": "123.96B",
   "storage_bytes": 101361040003,
   "storage_human": "101.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next, halt95/Qwen3.8-Flash-Next-W4A16-Merlin",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "zankich/Qwen3.8-Flash-Next-W4A16-Merlin-INT4PLE-FP8KV",
+  "renamed_at": "2026-11-11T08:12:49.251Z",
   "benchmarks": [],
   "sources": []
 }

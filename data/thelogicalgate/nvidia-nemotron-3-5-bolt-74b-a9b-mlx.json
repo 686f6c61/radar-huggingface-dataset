@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thelogicalgate/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-MLX",
   "slug": "thelogicalgate-nvidia-nemotron-3-5-bolt-74b-a9b-mlx",
   "author": "thelogicalgate",
@@ -47,6 +47,7 @@
   "parameters_human": "76.58B",
   "storage_bytes": 46509428441,
   "storage_human": "46.5 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16, nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr",
   "formats": [
     "mlx",
@@ -54,8 +55,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

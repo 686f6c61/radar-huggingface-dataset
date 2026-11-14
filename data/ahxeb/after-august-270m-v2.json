@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ahxeb/after-august-270m-v2",
   "slug": "ahxeb-after-august-270m-v2",
   "author": "ahxeb",
@@ -28,14 +28,19 @@
   "parameters_human": "268.1M",
   "storage_bytes": 291544800,
   "storage_human": "292 MB",
+  "context_length": 32768,
   "base_model": "google/gemma-3-270m",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

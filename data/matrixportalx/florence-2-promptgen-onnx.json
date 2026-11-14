@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "matrixportalx/Florence-2-PromptGen-onnx",
   "slug": "matrixportalx-florence-2-promptgen-onnx",
   "author": "matrixportalx",
@@ -26,6 +26,7 @@
   "parameters_human": null,
   "storage_bytes": 547769392,
   "storage_human": "548 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf",
@@ -33,8 +34,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

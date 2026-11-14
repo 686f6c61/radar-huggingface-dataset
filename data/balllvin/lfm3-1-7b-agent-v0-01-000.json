@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "balllvin/LFM3-1.7B-Agent-v0.01.000",
   "slug": "balllvin-lfm3-1-7b-agent-v0-01-000",
   "author": "balllvin",
@@ -30,20 +30,25 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 362,
+  "downloads_30d": 364,
   "trending_score": 0,
   "parameters": 1728801536,
   "parameters_human": "1.73B",
   "storage_bytes": 3475543970,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "orcarouter/LFM3-1.7B-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Pedro21613/design-code-minimalista-profissional",
   "slug": "pedro21613-design-code-minimalista-profissional",
   "author": "Pedro21613",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 117350445,
   "storage_human": "117 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-27T02:34:32.376Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

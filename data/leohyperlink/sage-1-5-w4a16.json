@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LeoHyperlink/Sage-1.5-W4A16",
   "slug": "leohyperlink-sage-1-5-w4a16",
   "author": "LeoHyperlink",
@@ -39,14 +39,19 @@
   "parameters_human": "5.95B",
   "storage_bytes": 22041138247,
   "storage_human": "22.0 GB",
+  "context_length": null,
   "base_model": "InternScience/Sage-A1.5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

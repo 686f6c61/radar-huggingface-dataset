@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pinecoresystems/MiniMax-Music3",
   "slug": "pinecoresystems-minimax-music3",
   "author": "pinecoresystems",
@@ -27,6 +27,7 @@
   "parameters_human": "2.43B",
   "storage_bytes": 28610989370,
   "storage_human": "28.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

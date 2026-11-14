@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Redstonexs/danbooru-tagger-v1",
   "slug": "redstonexs-danbooru-tagger-v1",
   "author": "Redstonexs",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 1977880546,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "SmilingWolf/wd-eva02-large-tagger-v3",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

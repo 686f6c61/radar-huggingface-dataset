@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-0k_1k_2k_merge",
   "slug": "yuhengtu-bytedance-sfm_unfiltered_midtrain_misalignment-0k_1k_2k_merge",
   "author": "yuhengtu-bytedance",
@@ -31,14 +31,19 @@
   "parameters_human": "6.86B",
   "storage_bytes": 13712553184,
   "storage_human": "13.7 GB",
+  "context_length": null,
   "base_model": "",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-0k_1k_2k_simpleavg_merge",
+  "renamed_at": "2026-11-12T08:30:48.430Z",
   "benchmarks": [],
   "sources": [
     {

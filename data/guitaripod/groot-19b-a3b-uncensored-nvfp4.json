@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "guitaripod/groot-19b-a3b-uncensored-nvfp4",
   "slug": "guitaripod-groot-19b-a3b-uncensored-nvfp4",
   "author": "guitaripod",
@@ -36,14 +36,19 @@
   "parameters_human": "11.32B",
   "storage_bytes": 13547574375,
   "storage_human": "13.5 GB",
+  "context_length": null,
   "base_model": "GrootTeam/Groot-19B-A3B-261023",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

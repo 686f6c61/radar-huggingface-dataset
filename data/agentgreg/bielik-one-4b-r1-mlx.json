@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agentGreg/Bielik-One-4B-r1-MLX",
   "slug": "agentgreg-bielik-one-4b-r1-mlx",
   "author": "agentGreg",
@@ -29,6 +29,7 @@
   "parameters_human": "4.21B",
   "storage_bytes": 8434345280,
   "storage_human": "8.4 GB",
+  "context_length": null,
   "base_model": "speakleash/Bielik-One-4B-r1",
   "formats": [
     "mlx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

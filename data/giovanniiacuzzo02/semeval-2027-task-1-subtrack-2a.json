@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GiovanniIacuzzo02/SemEval-2027-Task-1-subtrack-2a",
   "slug": "giovanniiacuzzo02-semeval-2027-task-1-subtrack-2a",
   "author": "GiovanniIacuzzo02",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 3548696,
   "storage_human": "4 MB",
+  "context_length": null,
   "base_model": "BAAI/bge-base-en-v1.5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

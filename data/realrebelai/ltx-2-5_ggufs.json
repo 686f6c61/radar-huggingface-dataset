@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "realrebelai/LTX-2.5_GGUFs",
   "slug": "realrebelai-ltx-2-5_ggufs",
   "author": "realrebelai",
@@ -33,14 +33,19 @@
   "parameters_human": "21.00B",
   "storage_bytes": 108411842560,
   "storage_human": "108.4 GB",
+  "context_length": null,
   "base_model": "Lightricks/LTX-2.5",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

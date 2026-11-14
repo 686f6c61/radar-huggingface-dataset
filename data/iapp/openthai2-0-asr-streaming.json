@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iapp/OpenThai2.0-ASR-Streaming",
   "slug": "iapp-openthai2-0-asr-streaming",
   "author": "iapp",
@@ -32,19 +32,24 @@
     "license:other",
     "region:us"
   ],
-  "likes": 5,
-  "downloads_30d": 40,
+  "likes": 6,
+  "downloads_30d": 427,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 5125939200,
   "storage_human": "5.1 GB",
+  "context_length": null,
   "base_model": "nvidia/nemotron-3.5-asr-streaming-0.6b",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

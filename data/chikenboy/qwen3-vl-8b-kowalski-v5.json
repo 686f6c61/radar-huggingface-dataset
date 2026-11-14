@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ChikenBoy/qwen3-vl-8b-kowalski-v5",
   "slug": "chikenboy-qwen3-vl-8b-kowalski-v5",
   "author": "ChikenBoy",
@@ -41,6 +41,7 @@
   "parameters_human": "8.77B",
   "storage_bytes": 23732577146,
   "storage_human": "23.7 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3-VL-8B-Instruct",
   "formats": [
     "gguf",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ChikenBoy/Kowalski-V5",
+  "renamed_at": "2026-11-11T02:30:03.955Z",
   "benchmarks": [],
   "sources": []
 }

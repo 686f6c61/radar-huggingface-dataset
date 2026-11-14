@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vwdubb/Swift-Qwen3.8-27B-Uncensored-MTP-FP8",
   "slug": "vwdubb-swift-qwen3-8-27b-uncensored-mtp-fp8",
   "author": "vwdubb",
@@ -36,14 +36,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 38465190823,
   "storage_human": "38.5 GB",
+  "context_length": null,
   "base_model": "ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-MTP",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-18T05:35:05.361Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

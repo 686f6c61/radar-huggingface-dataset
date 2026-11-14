@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "webmp3/Sakura-Qwen3.8-Flash-Next-Compact-IQ2_XS-CP2-GGUF",
   "slug": "webmp3-sakura-qwen3-8-flash-next-compact-iq2_xs-cp2-gguf",
   "author": "webmp3",
@@ -34,14 +34,19 @@
   "parameters_human": "176.94B",
   "storage_bytes": 52755643840,
   "storage_human": "52.8 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-Flash-Next, ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "webmp3/Sakura-Qwen3.8-Flash-Next-Compact-ISTA-IQ2_XS-512E-CP2-GGUF",
+  "renamed_at": "2026-11-11T08:03:45.473Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ryanham1lton/Swoobat",
   "slug": "ryanham1lton-swoobat",
   "author": "Ryanham1lton",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 120450486,
   "storage_human": "120 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

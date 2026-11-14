@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "value-generalization/neutral-sft-v3-olmo3-32b",
   "slug": "value-generalization-neutral-sft-v3-olmo3-32b",
   "author": "value-generalization",
@@ -29,14 +29,19 @@
   "parameters_human": "32.23B",
   "storage_bytes": 64467128024,
   "storage_human": "64.5 GB",
+  "context_length": null,
   "base_model": "allenai/Olmo-3-1125-32B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

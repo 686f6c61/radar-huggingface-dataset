@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "soyrsoyr/DeepSeek-V3-NVFP4-FP8-Dynamic-MTP",
   "slug": "soyrsoyr-deepseek-v3-nvfp4-fp8-dynamic-mtp",
   "author": "soyrsoyr",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": null,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-28T06:14:42.611Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

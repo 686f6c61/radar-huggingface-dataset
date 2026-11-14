@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JanosMozer/qwen-lean4-formaliser-vDoRA",
   "slug": "janosmozer-qwen-lean4-formaliser-vdora",
   "author": "JanosMozer",
@@ -46,14 +46,19 @@
   "parameters_human": null,
   "storage_bytes": 1001702266,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

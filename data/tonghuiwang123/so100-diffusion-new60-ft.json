@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tonghuiwang123/so100-diffusion-new60-ft",
   "slug": "tonghuiwang123-so100-diffusion-new60-ft",
   "author": "tonghuiwang123",
@@ -27,14 +27,19 @@
   "parameters_human": "277.8M",
   "storage_bytes": 13336872600,
   "storage_human": "13.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

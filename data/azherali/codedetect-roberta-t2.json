@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "azherali/CodeDetect-RoBERTa-T2",
   "slug": "azherali-codedetect-roberta-t2",
   "author": "azherali",
@@ -31,14 +31,19 @@
   "parameters_human": "124.7M",
   "storage_bytes": 2493207741,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "FacebookAI/roberta-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

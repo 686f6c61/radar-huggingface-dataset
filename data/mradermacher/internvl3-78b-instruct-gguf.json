@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/InternVL3-78B-Instruct-GGUF",
   "slug": "mradermacher-internvl3-78b-instruct-gguf",
   "author": "mradermacher",
@@ -33,14 +33,19 @@
   "parameters_human": "72.70B",
   "storage_bytes": 537863067872,
   "storage_human": "537.9 GB",
+  "context_length": 32768,
   "base_model": "OpenGVLab/InternVL3-78B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

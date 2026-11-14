@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Irfanuruchi/Polaris-V1-MLX-8bit",
   "slug": "irfanuruchi-polaris-v1-mlx-8bit",
   "author": "Irfanuruchi",
@@ -43,6 +43,7 @@
   "parameters_human": "4.21B",
   "storage_bytes": 4489621183,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": "nitrai-research/Polaris-V1",
   "formats": [
     "mlx",
@@ -50,8 +51,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Code Generation & Agentic Reasoning",

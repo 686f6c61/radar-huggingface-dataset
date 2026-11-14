@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Akidev/AitherIA-Qwen3.5-9B-LoRA-v5-3-DPO-B",
   "slug": "akidev-aitheria-qwen3-5-9b-lora-v5-3-dpo-b",
   "author": "Akidev",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 78219391,
   "storage_human": "78 MB",
+  "context_length": null,
   "base_model": "Akidev/AitherIA-Qwen3.5-9B-Merged-v5-3-SFT-Selected",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

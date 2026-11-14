@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WithinUsAI/Mythos-5-Abliterated-9B-GGUF",
   "slug": "withinusai-mythos-5-abliterated-9b-gguf",
   "author": "WithinUsAI",
@@ -47,14 +47,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 49096625664,
   "storage_human": "49.1 GB",
+  "context_length": 1048576,
   "base_model": "WithinUsAI/Mythos-5-Abliterated-9B-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T04:43:12.190Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

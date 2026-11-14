@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ribeiroyuri/CampoVivo-Qwen3-4B-Instruct-v3",
   "slug": "ribeiroyuri-campovivo-qwen3-4b-instruct-v3",
   "author": "ribeiroyuri",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 275731820,
   "storage_human": "276 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

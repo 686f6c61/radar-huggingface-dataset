@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CVDSBR/Llama-3.1-8B-AnKing",
   "slug": "cvdsbr-llama-3-1-8b-anking",
   "author": "CVDSBR",
@@ -30,6 +30,7 @@
   "parameters_human": "8.03B",
   "storage_bytes": 5105781232,
   "storage_human": "5.1 GB",
+  "context_length": 131072,
   "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct-unsloth-bnb-4bit",
   "formats": [
     "gguf",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

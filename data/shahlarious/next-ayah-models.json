@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shahlarious/next-ayah-models",
   "slug": "shahlarious-next-ayah-models",
   "author": "shahlarious",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 211677103,
   "storage_human": "212 MB",
+  "context_length": null,
   "base_model": "nvidia/stt_ar_fastconformer_hybrid_large_pc_v1.0, tarteel-ai/whisper-base-ar-quran",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

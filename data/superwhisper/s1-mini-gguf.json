@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "superwhisper/s1-mini-GGUF",
   "slug": "superwhisper-s1-mini-gguf",
   "author": "superwhisper",
@@ -43,14 +43,19 @@
   "parameters_human": "751.6M",
   "storage_bytes": 3987288035,
   "storage_human": "4.0 GB",
+  "context_length": 40960,
   "base_model": "superwhisper/s1-mini",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

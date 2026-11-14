@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hayabala/SenseNova-6.8-Code2Video-EXL3",
   "slug": "hayabala-sensenova-6-8-code2video-exl3",
   "author": "Hayabala",
@@ -44,14 +44,19 @@
   "parameters_human": "11.19B",
   "storage_bytes": 22398650484,
   "storage_human": "22.4 GB",
+  "context_length": null,
   "base_model": "sensenova/SenseNova-6.8-Code2Video",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

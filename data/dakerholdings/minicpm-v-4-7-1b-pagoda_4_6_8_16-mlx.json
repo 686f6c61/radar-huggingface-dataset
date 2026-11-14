@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dakerholdings/MiniCPM-V-4.7-1B-pagoda_4_6_8_16-mlx",
   "slug": "dakerholdings-minicpm-v-4-7-1b-pagoda_4_6_8_16-mlx",
   "author": "dakerholdings",
@@ -34,6 +34,7 @@
   "parameters_human": "1.55B",
   "storage_bytes": 1703073297,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM-V-4.7-1B, openbmb/MiniCPM-V-4.7-1B-gguf",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-14T02:53:15.134Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

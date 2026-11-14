@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SamuelCagnani/olfacto-chemberta-138",
   "slug": "samuelcagnani-olfacto-chemberta-138",
   "author": "SamuelCagnani",
@@ -43,14 +43,19 @@
   "parameters_human": "3.5M",
   "storage_bytes": 16238049,
   "storage_human": "16 MB",
+  "context_length": null,
   "base_model": "DeepChem/ChemBERTa-77M-MLM",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nurymanau/EmbeddingGemma2-Reflex",
   "slug": "nurymanau-embeddinggemma2-reflex",
   "author": "Nurymanau",
@@ -34,6 +34,7 @@
   "parameters_human": null,
   "storage_bytes": 1696066190,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "google/embeddinggemma-2",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "armand0e/Gemma-4-26B-A4B-it-Fable-Distill",
   "slug": "armand0e-gemma-4-26b-a4b-it-fable-distill",
   "author": "armand0e",
@@ -35,14 +35,19 @@
   "parameters_human": "25.81B",
   "storage_bytes": 51644178078,
   "storage_human": "51.6 GB",
+  "context_length": null,
   "base_model": "armand0e/Gemma-4-26B-A4B-it-Fable-Distill",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-25T05:35:17.194Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

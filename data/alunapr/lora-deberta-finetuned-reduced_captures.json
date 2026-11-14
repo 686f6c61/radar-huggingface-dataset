@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alunapr/lora-deberta-finetuned-reduced_captures",
   "slug": "alunapr-lora-deberta-finetuned-reduced_captures",
   "author": "alunapr",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 2480888,
   "storage_human": "2 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T11:03:59.695Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

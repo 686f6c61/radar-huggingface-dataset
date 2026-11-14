@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sree6464/truthlens-textonly-model",
   "slug": "sree6464-truthlens-textonly-model",
   "author": "Sree6464",
@@ -30,14 +30,19 @@
   "parameters_human": "109.5M",
   "storage_bytes": 1751839761,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "bert-base-uncased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

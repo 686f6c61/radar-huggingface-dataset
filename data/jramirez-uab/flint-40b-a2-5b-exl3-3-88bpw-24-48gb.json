@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JRamirez-UAB/Flint-40B-A2.5B-EXL3-3.88bpw-24-48GB",
   "slug": "jramirez-uab-flint-40b-a2-5b-exl3-3-88bpw-24-48gb",
   "author": "JRamirez-UAB",
@@ -45,14 +45,19 @@
   "parameters_human": "10.02B",
   "storage_bytes": 20132126565,
   "storage_human": "20.1 GB",
+  "context_length": null,
   "base_model": "RecursiveSI/flint",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

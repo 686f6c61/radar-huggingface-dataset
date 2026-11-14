@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HimiAI/Himi-0.2",
   "slug": "himiai-himi-0-2",
   "author": "HimiAI",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 151147536,
   "storage_human": "151 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-1.5B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-29T02:45:29.740Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

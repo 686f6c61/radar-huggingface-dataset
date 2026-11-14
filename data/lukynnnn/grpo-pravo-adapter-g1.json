@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lukynnnn/grpo-pravo-adapter-g1",
   "slug": "lukynnnn-grpo-pravo-adapter-g1",
   "author": "Lukynnnn",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 4800722625,
   "storage_human": "4.8 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-06T02:21:49.313Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

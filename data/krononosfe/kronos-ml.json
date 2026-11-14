@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KrononosFE/kronos-ml",
   "slug": "krononosfe-kronos-ml",
   "author": "KrononosFE",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 652545,
   "storage_human": "652545 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "KronosFE/kronos-ml",
+  "renamed_at": "2026-11-14T03:30:59.657Z",
   "benchmarks": [],
   "sources": [
     {

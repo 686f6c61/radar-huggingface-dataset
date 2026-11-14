@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zugquants/LFM2.5-8B-A1B-Qwen3.8-Turbo-Brilliance-Power-X12-NEO-MAX-GGUF",
   "slug": "zugquants-lfm2-5-8b-a1b-qwen3-8-turbo-brilliance-power-x12-neo-max-gguf",
   "author": "zugquants",
@@ -75,14 +75,19 @@
   "parameters_human": "8.47B",
   "storage_bytes": 58932097467,
   "storage_human": "58.9 GB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM2.5-8B-A1B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

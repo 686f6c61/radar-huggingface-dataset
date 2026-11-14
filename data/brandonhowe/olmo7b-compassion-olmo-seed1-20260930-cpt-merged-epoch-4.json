@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BrandonHowe/Olmo7b-compassion-olmo-seed1-20260930-CPT-merged-epoch-4",
   "slug": "brandonhowe-olmo7b-compassion-olmo-seed1-20260930-cpt-merged-epoch-4",
   "author": "BrandonHowe",
@@ -31,14 +31,19 @@
   "parameters_human": "7.30B",
   "storage_bytes": 14596063592,
   "storage_human": "14.6 GB",
+  "context_length": null,
   "base_model": "allenai/Olmo-3-1025-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-02T03:17:26.843Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

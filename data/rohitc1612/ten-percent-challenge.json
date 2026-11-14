@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rohitc1612/ten-percent-challenge",
   "slug": "rohitc1612-ten-percent-challenge",
   "author": "rohitc1612",
@@ -42,12 +42,17 @@
   "parameters_human": null,
   "storage_bytes": 109457173,
   "storage_human": "109 MB",
+  "context_length": null,
   "base_model": "joelbarmettler/gheim-ch-560m",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

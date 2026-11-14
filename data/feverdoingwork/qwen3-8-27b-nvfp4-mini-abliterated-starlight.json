@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "feverdoingwork/Qwen3.8-27B-NVFP4-mini-abliterated-Starlight",
   "slug": "feverdoingwork-qwen3-8-27b-nvfp4-mini-abliterated-starlight",
   "author": "feverdoingwork",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 13551144192,
   "storage_human": "13.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B, huihui-ai/Huihui-Qwen3.8-27B-abliterated",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

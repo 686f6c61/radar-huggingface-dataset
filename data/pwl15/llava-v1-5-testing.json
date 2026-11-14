@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pwl15/llava-v1.5-testing",
   "slug": "pwl15-llava-v1-5-testing",
   "author": "pwl15",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 782476314523,
   "storage_human": "782.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

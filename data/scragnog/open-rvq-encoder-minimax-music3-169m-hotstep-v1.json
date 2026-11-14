@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "scragnog/open-rvq-encoder-minimax-music3-169m-hotstep-v1",
   "slug": "scragnog-open-rvq-encoder-minimax-music3-169m-hotstep-v1",
   "author": "scragnog",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 676055160,
   "storage_human": "676 MB",
+  "context_length": null,
   "base_model": "Mothersuperior/open-rvq-encoder-minimax-music3-169m-pooled-v4",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

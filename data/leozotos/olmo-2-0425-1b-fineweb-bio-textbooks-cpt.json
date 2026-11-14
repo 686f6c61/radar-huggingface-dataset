@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LeoZotos/OLMo-2-0425-1B-fineweb-bio-textbooks-cpt",
   "slug": "leozotos-olmo-2-0425-1b-fineweb-bio-textbooks-cpt",
   "author": "LeoZotos",
@@ -26,14 +26,19 @@
   "parameters_human": "1.48B",
   "storage_bytes": 23758833792,
   "storage_human": "23.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-24T03:31:06.756Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

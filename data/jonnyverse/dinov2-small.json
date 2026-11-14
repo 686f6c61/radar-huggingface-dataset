@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JONNYVERSE/dinov2-small",
   "slug": "jonnyverse-dinov2-small",
   "author": "JONNYVERSE",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 221392314,
   "storage_human": "221 MB",
+  "context_length": null,
   "base_model": "facebook/dinov2-small",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

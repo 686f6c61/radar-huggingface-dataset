@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bertholomus/Ripple-65B-Preview-NVFP4-FP8Attn",
   "slug": "bertholomus-ripple-65b-preview-nvfp4-fp8attn",
   "author": "bertholomus",
@@ -37,14 +37,19 @@
   "parameters_human": "64.78B",
   "storage_bytes": 43792159960,
   "storage_human": "43.8 GB",
+  "context_length": null,
   "base_model": "ricursiveAI/Ripple-65B-Preview",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

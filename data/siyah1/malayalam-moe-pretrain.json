@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "siyah1/malayalam-moe-pretrain",
   "slug": "siyah1-malayalam-moe-pretrain",
   "author": "siyah1",
@@ -29,14 +29,19 @@
   "parameters_human": "371.5M",
   "storage_bytes": 173866236878,
   "storage_human": "173.9 GB",
+  "context_length": null,
   "base_model": "siyah1/malayalam-moe-pretrain",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

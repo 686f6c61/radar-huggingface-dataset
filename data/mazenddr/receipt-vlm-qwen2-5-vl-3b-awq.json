@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mazenDDr/receipt-vlm-qwen2.5-vl-3b-awq",
   "slug": "mazenddr-receipt-vlm-qwen2-5-vl-3b-awq",
   "author": "mazenDDr",
@@ -43,14 +43,19 @@
   "parameters_human": "3.75B",
   "storage_bytes": 3402374644,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

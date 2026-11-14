@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nbKPS/beam-reap-255b-gguf",
   "slug": "nbkps-beam-reap-255b-gguf",
   "author": "nbKPS",
@@ -35,14 +35,19 @@
   "parameters_human": "254.61B",
   "storage_bytes": 343416455784,
   "storage_human": "343.4 GB",
+  "context_length": 1048576,
   "base_model": "reflection/Beam-1.0-501B-A23B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

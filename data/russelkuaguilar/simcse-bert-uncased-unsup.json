@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RusselKuAguilar/simcse-bert-uncased-unsup",
   "slug": "russelkuaguilar-simcse-bert-uncased-unsup",
   "author": "RusselKuAguilar",
@@ -37,14 +37,19 @@
   "parameters_human": "109.5M",
   "storage_bytes": 437951304,
   "storage_human": "438 MB",
+  "context_length": null,
   "base_model": "bert-base-uncased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

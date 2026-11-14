@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/GLM-5.3-Flash-REAP50-FP8-v2-GGUF",
   "slug": "mradermacher-glm-5-3-flash-reap50-fp8-v2-gguf",
   "author": "mradermacher",
@@ -38,14 +38,19 @@
   "parameters_human": "164.91B",
   "storage_bytes": 1130038474112,
   "storage_human": "1130.0 GB",
+  "context_length": 1048576,
   "base_model": "patrickbdevaney/GLM-5.3-Flash-REAP50-FP8-v2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

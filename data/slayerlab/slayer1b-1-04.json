@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SlayerLab/Slayer1B-1.04",
   "slug": "slayerlab-slayer1b-1-04",
   "author": "SlayerLab",
@@ -34,14 +34,19 @@
   "parameters_human": "1.07B",
   "storage_bytes": 4295670676,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agnosticeng/MiMo-V2.6-Distill-Qwen-9B-4bit",
   "slug": "agnosticeng-mimo-v2-6-distill-qwen-9b-4bit",
   "author": "agnosticeng",
@@ -34,6 +34,7 @@
   "parameters_human": "9.41B",
   "storage_bytes": 5970208885,
   "storage_human": "6.0 GB",
+  "context_length": null,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

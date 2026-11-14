@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HowardHsuuu/dataset-specific-clts-llama-3.2-1b",
   "slug": "howardhsuuu-dataset-specific-clts-llama-3-2-1b",
   "author": "HowardHsuuu",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 128322085032,
   "storage_human": "128.3 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.2-1B, mntss/clt-llama-3.2-1b-524k",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

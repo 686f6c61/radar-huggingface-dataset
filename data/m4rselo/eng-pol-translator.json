@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "M4rselo/eng-pol-translator",
   "slug": "m4rselo-eng-pol-translator",
   "author": "M4rselo",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 1567162467,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "M4rselo/gender-aware-en-pl",
+  "renamed_at": "2026-11-12T03:24:09.226Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rin247/flux-3-image-klein-base",
   "slug": "rin247-flux-3-image-klein-base",
   "author": "Rin247",
@@ -28,6 +28,7 @@
   "parameters_human": null,
   "storage_bytes": 33278440824,
   "storage_human": "33.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

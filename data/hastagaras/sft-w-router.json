@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hastagaras/sft-w-router",
   "slug": "hastagaras-sft-w-router",
   "author": "Hastagaras",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 15820144232,
   "storage_human": "15.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T03:08:24.257Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

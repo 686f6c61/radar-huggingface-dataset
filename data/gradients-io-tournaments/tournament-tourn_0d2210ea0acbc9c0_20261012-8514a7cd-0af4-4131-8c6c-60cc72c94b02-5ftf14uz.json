@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gradients-io-tournaments/tournament-tourn_0d2210ea0acbc9c0_20261012-8514a7cd-0af4-4131-8c6c-60cc72c94b02-5FtF14uZ",
   "slug": "gradients-io-tournaments-tournament-tourn_0d2210ea0acbc9c0_20261012-8514a7cd-0af4-4131-8c6c-60cc72c94b02-5ftf14uz",
   "author": "gradients-io-tournaments",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 2013358256,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "upstage/SOLAR-10.7B-Instruct-v1.0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

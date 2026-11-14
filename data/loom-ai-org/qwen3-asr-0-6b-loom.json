@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "loom-ai-org/qwen3-asr-0.6b-loom",
   "slug": "loom-ai-org-qwen3-asr-0-6b-loom",
   "author": "loom-ai-org",
@@ -89,14 +89,19 @@
   "parameters_human": "782.6M",
   "storage_bytes": 18821820096,
   "storage_human": "18.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ASR-0.6B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

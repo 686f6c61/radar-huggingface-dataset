@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lolxdasfwa/Quartz-S1-Base-33.89M",
   "slug": "lolxdasfwa-quartz-s1-base-33-89m",
   "author": "lolxdasfwa",
@@ -34,14 +34,19 @@
   "parameters_human": "33.9M",
   "storage_bytes": 135564855,
   "storage_human": "136 MB",
+  "context_length": null,
   "base_model": "lolxdasfwa/Quartz-S1-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

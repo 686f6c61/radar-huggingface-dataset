@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ZFTurbo/Qwen3-ASR_lingala_shona",
   "slug": "zfturbo-qwen3-asr_lingala_shona",
   "author": "ZFTurbo",
@@ -27,14 +27,19 @@
   "parameters_human": "2.04B",
   "storage_bytes": 4087643160,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ASR-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lokeshe09/gemma-4-31B-it-SFT_OCRRRR-INT8",
   "slug": "lokeshe09-gemma-4-31b-it-sft_ocrrrr-int8",
   "author": "lokeshe09",
@@ -33,14 +33,19 @@
   "parameters_human": "31.27B",
   "storage_bytes": 33300290368,
   "storage_human": "33.3 GB",
+  "context_length": null,
   "base_model": "lokeshe09/gemma-4-31B-it-SFT_OCRRRR",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-12T03:21:41.786Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

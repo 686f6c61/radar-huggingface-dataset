@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Horn-Stusio/Hai-2.6-Flash-Extend-Release-0913-GGUF",
   "slug": "horn-stusio-hai-2-6-flash-extend-release-0913-gguf",
   "author": "Horn-Stusio",
@@ -32,14 +32,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 22515868608,
   "storage_human": "22.5 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-21T03:23:52.046Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

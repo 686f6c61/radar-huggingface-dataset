@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bimabk/instruct_tenun_57694256d93e8c1423ce",
   "slug": "bimabk-instruct_tenun_57694256d93e8c1423ce",
   "author": "bimabk",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 377950360,
   "storage_human": "378 MB",
+  "context_length": null,
   "base_model": "gradients-io-tournaments/augmented-8a3f84c4cc4a7528",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

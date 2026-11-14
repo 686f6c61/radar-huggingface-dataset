@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nevermore9898/Arete-27B-Heretic-Q6K",
   "slug": "nevermore9898-arete-27b-heretic-q6k",
   "author": "Nevermore9898",
@@ -31,14 +31,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 23358608160,
   "storage_human": "23.4 GB",
+  "context_length": 262144,
   "base_model": "NousResearch/Arete-27B, Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

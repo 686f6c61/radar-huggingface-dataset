@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CollectionStudio/Trinity-Mini-Base-Pre-Anneal",
   "slug": "collectionstudio-trinity-mini-base-pre-anneal",
   "author": "CollectionStudio",
@@ -51,14 +51,19 @@
   "parameters_human": "26.12B",
   "storage_bytes": 52264053657,
   "storage_human": "52.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

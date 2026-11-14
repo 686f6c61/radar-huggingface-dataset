@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "deshwalmahesh/domyn-edge-jev-decision",
   "slug": "deshwalmahesh-domyn-edge-jev-decision",
   "author": "deshwalmahesh",
@@ -42,14 +42,19 @@
   "parameters_human": "3.93B",
   "storage_bytes": 23588791470,
   "storage_human": "23.6 GB",
+  "context_length": null,
   "base_model": "domyn/Domyn-Edge-SFT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "deshwalmahesh/d-edge-decision",
+  "renamed_at": "2026-11-13T05:18:57.904Z",
   "benchmarks": [],
   "sources": []
 }

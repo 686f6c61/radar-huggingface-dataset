@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Davizig10jojo/BlazerNano-V2-0.8B",
   "slug": "davizig10jojo-blazernano-v2-0-8b",
   "author": "Davizig10jojo",
@@ -33,6 +33,7 @@
   "parameters_human": "752.4M",
   "storage_bytes": 4983144069,
   "storage_human": "5.0 GB",
+  "context_length": 4096,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "gguf",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

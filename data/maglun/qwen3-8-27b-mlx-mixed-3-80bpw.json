@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "maglun/Qwen3.8-27B-MLX-Mixed-3.80bpw",
   "slug": "maglun-qwen3-8-27b-mlx-mixed-3-80bpw",
   "author": "maglun",
@@ -38,6 +38,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 13722745631,
   "storage_human": "13.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

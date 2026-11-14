@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Irfanuruchi/Nanbeige4.2-3B-CE-v1.0-MLX-6bit",
   "slug": "irfanuruchi-nanbeige4-2-3b-ce-v1-0-mlx-6bit",
   "author": "Irfanuruchi",
@@ -37,6 +37,7 @@
   "parameters_human": "4.17B",
   "storage_bytes": 3406636686,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "Irfanuruchi/Nanbeige4.2-3B-CE-v1.0",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

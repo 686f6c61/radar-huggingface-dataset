@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "npario/Groot-19B-A3B-261023-MLX-rco-role-4.5bpw",
   "slug": "npario-groot-19b-a3b-261023-mlx-rco-role-4-5bpw",
   "author": "npario",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 14083509846,
   "storage_human": "14.1 GB",
+  "context_length": null,
   "base_model": "GrootTeam/Groot-19B-A3B-261023",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

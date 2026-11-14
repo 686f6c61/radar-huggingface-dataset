@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mrutkows/granite-4.2-3b-bf16-mlx",
   "slug": "mrutkows-granite-4-2-3b-bf16-mlx",
   "author": "mrutkows",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 7319517060,
   "storage_human": "7.3 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.2-3b",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

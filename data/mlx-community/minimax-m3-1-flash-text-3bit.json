@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlx-community/MiniMax-M3.1-Flash-Text-3bit",
   "slug": "mlx-community-minimax-m3-1-flash-text-3bit",
   "author": "mlx-community",
@@ -34,6 +34,7 @@
   "parameters_human": "426.19B",
   "storage_bytes": 186504499210,
   "storage_human": "186.5 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-M3.1-Flash",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

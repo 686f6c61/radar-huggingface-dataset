@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lugman-madhiai/Qwen3.5-4B-Instantly-SFT-1022-adapter",
   "slug": "lugman-madhiai-qwen3-5-4b-instantly-sft-1022-adapter",
   "author": "lugman-madhiai",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 149923791,
   "storage_human": "150 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "akhaliq/viggle-remake-turbo",
   "slug": "akhaliq-viggle-remake-turbo",
   "author": "akhaliq",
@@ -41,12 +41,17 @@
   "parameters_human": null,
   "storage_bytes": 34375988556,
   "storage_human": "34.4 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3, Viggle/Viggle-Remake, zjwfufu/SMD-MiniMax-H3-Ref2VA-4step-ComfyUI, lightx2v/Minimax-h3-Turbo, Iwannapose/minimax_h3_pdmd_2nfe_comfyui",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

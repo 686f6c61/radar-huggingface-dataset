@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nativ-community/SpeechBrain-ECAPA-VoxCeleb-20M",
   "slug": "nativ-community-speechbrain-ecapa-voxceleb-20m",
   "author": "nativ-community",
@@ -36,6 +36,7 @@
   "parameters_human": "20.8M",
   "storage_bytes": 41637032,
   "storage_human": "42 MB",
+  "context_length": null,
   "base_model": "speechbrain/spkrec-ecapa-voxceleb",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

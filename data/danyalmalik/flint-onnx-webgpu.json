@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "danyalmalik/Flint-ONNX-WebGPU",
   "slug": "danyalmalik-flint-onnx-webgpu",
   "author": "danyalmalik",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 23162695844,
   "storage_human": "23.2 GB",
+  "context_length": null,
   "base_model": "RecursiveSI/flint",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SecondLookResearch/Qwen2.5-32B-graft0-a1-sonnet5sp-da-e10",
   "slug": "secondlookresearch-qwen2-5-32b-graft0-a1-sonnet5sp-da-e10",
   "author": "SecondLookResearch",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 2159054381,
   "storage_human": "2.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-32B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "SecondLookResearch/Qwen2.5-32B-instruct-mix-difficult-advice-sonnet-5-135-10ep",
+  "renamed_at": "2026-11-12T04:00:13.760Z",
   "benchmarks": [],
   "sources": [
     {

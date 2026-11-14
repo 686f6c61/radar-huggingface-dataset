@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kealjones/squiggle-small",
   "slug": "kealjones-squiggle-small",
   "author": "kealjones",
@@ -29,6 +29,7 @@
   "parameters_human": "354.5M",
   "storage_bytes": 4032969024,
   "storage_human": "4.0 GB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM2.5-350M",
   "formats": [
     "gguf",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

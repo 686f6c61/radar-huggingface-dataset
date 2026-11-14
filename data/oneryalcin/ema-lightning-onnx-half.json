@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oneryalcin/ema-lightning-onnx-half",
   "slug": "oneryalcin-ema-lightning-onnx-half",
   "author": "oneryalcin",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 17896127,
   "storage_human": "18 MB",
+  "context_length": null,
   "base_model": "canberkkkkkk/ema-lightning",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

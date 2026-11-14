@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "him0413/DeepSeek-V4-Flash-DSpark-draft-Q3_K_S",
   "slug": "him0413-deepseek-v4-flash-dspark-draft-q3_k_s",
   "author": "him0413",
@@ -32,14 +32,19 @@
   "parameters_human": "19.85B",
   "storage_bytes": 8537851488,
   "storage_human": "8.5 GB",
+  "context_length": 1048576,
   "base_model": "unsloth/DeepSeek-V4-Flash-0731-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Fluxmire/UtevoLux-3.6-27B-DFlash-ft",
   "slug": "fluxmire-utevolux-3-6-27b-dflash-ft",
   "author": "Fluxmire",
@@ -31,14 +31,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 3460432953,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "z-lab/Qwen3.6-27B-DFlash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

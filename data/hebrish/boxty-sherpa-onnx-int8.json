@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hebrish/Boxty-sherpa-onnx-int8",
   "slug": "hebrish-boxty-sherpa-onnx-int8",
   "author": "Hebrish",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 661279138,
   "storage_human": "661 MB",
+  "context_length": null,
   "base_model": "Hebrish/Parakeet-TDT-0.6B-v2-Tech-And-Accent",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

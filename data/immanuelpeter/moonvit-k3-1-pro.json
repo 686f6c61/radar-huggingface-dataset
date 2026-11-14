@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "immanuelpeter/MoonViT-K3.1-Pro",
   "slug": "immanuelpeter-moonvit-k3-1-pro",
   "author": "immanuelpeter",
@@ -31,14 +31,19 @@
   "parameters_human": "401.2M",
   "storage_bytes": 894735560,
   "storage_human": "895 MB",
+  "context_length": null,
   "base_model": "moonshotai/Kimi-K3.1-Pro",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

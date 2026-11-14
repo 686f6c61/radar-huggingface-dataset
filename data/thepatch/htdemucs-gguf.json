@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thepatch/htdemucs-GGUF",
   "slug": "thepatch-htdemucs-gguf",
   "author": "thepatch",
@@ -29,14 +29,19 @@
   "parameters_human": "27.4M",
   "storage_bytes": 1549313536,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

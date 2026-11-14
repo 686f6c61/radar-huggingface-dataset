@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kausp11/searchlm-sft_v4cannsent_wiki360_v1",
   "slug": "kausp11-searchlm-sft_v4cannsent_wiki360_v1",
   "author": "Kausp11",
@@ -29,14 +29,19 @@
   "parameters_human": "361.8M",
   "storage_bytes": 723682592,
   "storage_human": "724 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aifeifei798/Heretic-Scalpel-TriTier-E2B",
   "slug": "aifeifei798-heretic-scalpel-tritier-e2b",
   "author": "aifeifei798",
@@ -39,14 +39,19 @@
   "parameters_human": "63.8M",
   "storage_bytes": 159948666,
   "storage_human": "160 MB",
+  "context_length": null,
   "base_model": "aifeifei798/Heretic-Scalpel-E2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

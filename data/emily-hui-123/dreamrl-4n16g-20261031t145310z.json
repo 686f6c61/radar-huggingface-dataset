@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Emily-Hui-123/dreamrl-4n16g-20261031t145310z",
   "slug": "emily-hui-123-dreamrl-4n16g-20261031t145310z",
   "author": "Emily-Hui-123",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 20249102434,
   "storage_human": "20.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

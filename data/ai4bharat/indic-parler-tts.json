@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ai4bharat/indic-parler-tts",
   "slug": "ai4bharat-indic-parler-tts",
   "author": "ai4bharat",
@@ -61,21 +61,26 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 556,
+  "likes": 559,
   "downloads_30d": 170361,
-  "trending_score": 13,
+  "trending_score": 15,
   "parameters": 937803241,
   "parameters_human": "937.8M",
   "storage_bytes": 3753117163,
   "storage_human": "3.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HasanPekedis/dbmdz_bert-base-turkish-cased_org_jsonl_6_16_512_3e-5",
   "slug": "hasanpekedis-dbmdz_bert-base-turkish-cased_org_jsonl_6_16_512_3e-5",
   "author": "HasanPekedis",
@@ -23,14 +23,19 @@
   "parameters_human": "110.0M",
   "storage_bytes": 440139580,
   "storage_human": "440 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

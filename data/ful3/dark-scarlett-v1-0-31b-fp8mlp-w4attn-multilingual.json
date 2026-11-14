@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ful3/Dark-Scarlett-v1.0-31B-FP8mlp-W4attn-multilingual",
   "slug": "ful3-dark-scarlett-v1-0-31b-fp8mlp-w4attn-multilingual",
   "author": "Ful3",
@@ -32,14 +32,19 @@
   "parameters_human": "23.86B",
   "storage_bytes": 29588662314,
   "storage_human": "29.6 GB",
+  "context_length": null,
   "base_model": "ReadyArt/Dark-Scarlett-v1.0-31B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

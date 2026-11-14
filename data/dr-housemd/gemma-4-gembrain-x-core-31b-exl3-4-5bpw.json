@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dr-housemd/Gemma-4-Gembrain-X-Core-31B-exl3-4.5bpw",
   "slug": "dr-housemd-gemma-4-gembrain-x-core-31b-exl3-4-5bpw",
   "author": "dr-housemd",
@@ -74,14 +74,19 @@
   "parameters_human": "10.93B",
   "storage_bytes": 21901493611,
   "storage_human": "21.9 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-31B-it, Danielbrdz/Barcenas-31b-Fable, Jackrong/Gemopus-4-31B-it, p-e-r-e-g-r-i-n-e/Sprinkle-Gemma-4-31B, ReadyArt/Serenity-31B-v1.1, ReadyArt/Dark-Scarlett-v1.0-31B, ConicCat/Gemma4-GarnetV2-31B, AuriAetherwiing/G4-31B-Musica-v1, llmfan46/gemma-4-Ortenzya-The-Creative-Wordsmith-31B-it-uncensored-heretic, llmfan46/G4-MeroMero-31B-uncensored-heretic, nbeerbower/Gemma4-Gutenberg-31B, LatitudeGames/Equinox-31B, BirdToast/Gemma-4-31B-glimmer-rp-v0.1, Green-eyedDevil/Monika-31B, bgg1996/Melinoe-Gemma4-31B-VL, sophosympatheia/Glistening-Gem-31B-v1.0, Blazed-Forge/Gemma-4-Gemsicle-31B, trohrbaugh/gemma-4-31b-it-heretic-ara",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Yuesai/HandXFM",
   "slug": "yuesai-handxfm",
   "author": "Yuesai",
@@ -33,14 +33,19 @@
   "parameters_human": "85.7M",
   "storage_bytes": 342662192,
   "storage_human": "343 MB",
+  "context_length": null,
   "base_model": "facebook/dinov3-vitb16-pretrain-lvd1689m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

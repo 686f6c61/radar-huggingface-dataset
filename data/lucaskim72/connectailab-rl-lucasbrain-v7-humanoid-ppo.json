@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lucaskim72/connectailab-rl-lucasbrain-v7-humanoid-ppo",
   "slug": "lucaskim72-connectailab-rl-lucasbrain-v7-humanoid-ppo",
   "author": "lucaskim72",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 1586535,
   "storage_human": "2 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-06T06:07:31.413Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

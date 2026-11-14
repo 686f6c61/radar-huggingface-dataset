@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kalyan-ks/Ammu-1.0-FactCheck-Need-base-ONNX-INT8",
   "slug": "kalyan-ks-ammu-1-0-factcheck-need-base-onnx-int8",
   "author": "kalyan-ks",
@@ -41,14 +41,19 @@
   "parameters_human": null,
   "storage_bytes": 298479770,
   "storage_human": "298 MB",
+  "context_length": null,
   "base_model": "kalyan-ks/Ammu-1.0-FactCheck-Need-base",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Fact-Check Need Classification",

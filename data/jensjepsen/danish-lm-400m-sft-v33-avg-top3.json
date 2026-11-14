@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jensjepsen/danish-lm-400m-sft-v33-avg-top3",
   "slug": "jensjepsen-danish-lm-400m-sft-v33-avg-top3",
   "author": "jensjepsen",
@@ -38,14 +38,19 @@
   "parameters_human": "414.7M",
   "storage_bytes": 16588806044,
   "storage_human": "16.6 GB",
+  "context_length": null,
   "base_model": "jensjepsen/danish-lm-400m-base-ropext8048-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

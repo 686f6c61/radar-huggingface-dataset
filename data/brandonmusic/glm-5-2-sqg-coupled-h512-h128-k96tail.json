@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "brandonmusic/GLM-5.2-SQG-Coupled-H512-H128-K96Tail",
   "slug": "brandonmusic-glm-5-2-sqg-coupled-h512-h128-k96tail",
   "author": "brandonmusic",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 143928842733,
   "storage_human": "143.9 GB",
+  "context_length": null,
   "base_model": "brandonmusic/GLM-5.2-SQG-W4A8, zai-org/GLM-5.2",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

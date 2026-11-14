@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "devansh0703/CycPepGNN",
   "slug": "devansh0703-cycpepgnn",
   "author": "devansh0703",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 40352245,
   "storage_human": "40 MB",
+  "context_length": null,
   "base_model": "seyonec/PubChem10M_SMILES_BPE_450k",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

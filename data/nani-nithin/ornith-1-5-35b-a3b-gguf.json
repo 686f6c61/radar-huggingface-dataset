@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NANI-Nithin/Ornith-1.5-35B-A3B-GGUF",
   "slug": "nani-nithin-ornith-1-5-35b-a3b-gguf",
   "author": "NANI-Nithin",
@@ -36,14 +36,19 @@
   "parameters_human": "35.51B",
   "storage_bytes": 266085351136,
   "storage_human": "266.1 GB",
+  "context_length": 262144,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

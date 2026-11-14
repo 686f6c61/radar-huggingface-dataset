@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arlenecc/OvisOCR2-0.8B-MLX-4bit",
   "slug": "arlenecc-ovisocr2-0-8b-mlx-4bit",
   "author": "arlenecc",
@@ -34,6 +34,7 @@
   "parameters_human": "853.0M",
   "storage_bytes": 645218254,
   "storage_human": "645 MB",
+  "context_length": null,
   "base_model": "ATH-MaaS/OvisOCR2",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

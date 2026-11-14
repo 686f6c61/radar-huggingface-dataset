@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "skyzer4ever/ComfyFix-GGUF-for-Qwen-Image-2.1-Turbo",
   "slug": "skyzer4ever-comfyfix-gguf-for-qwen-image-2-1-turbo",
   "author": "skyzer4ever",
@@ -31,14 +31,19 @@
   "parameters_human": "7.12B",
   "storage_bytes": 7593352574,
   "storage_human": "7.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1-Turbo",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

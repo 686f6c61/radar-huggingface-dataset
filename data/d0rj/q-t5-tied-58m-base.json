@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "d0rj/q-t5-tied-58M-base",
   "slug": "d0rj-q-t5-tied-58m-base",
   "author": "d0rj",
@@ -38,14 +38,19 @@
   "parameters_human": "57.7M",
   "storage_bytes": 232614372,
   "storage_human": "233 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-29T04:18:54.612Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Continuation likelihood",

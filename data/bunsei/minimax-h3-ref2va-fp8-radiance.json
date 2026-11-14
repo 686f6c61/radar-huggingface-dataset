@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bunsei/MiniMax-H3-Ref2VA-FP8-Radiance",
   "slug": "bunsei-minimax-h3-ref2va-fp8-radiance",
   "author": "Bunsei",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 26863880192,
   "storage_human": "26.9 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

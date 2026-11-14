@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arcadia-impact/scimt-dispatch-models",
   "slug": "arcadia-impact-scimt-dispatch-models",
   "author": "arcadia-impact",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 1487563842700,
   "storage_human": "1487.6 GB",
+  "context_length": null,
   "base_model": "unsloth/gemma-3-12b-pt",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-22T09:33:58.265Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nikimori/MiniCPM5-1B-Base-8bit",
   "slug": "nikimori-minicpm5-1b-base-8bit",
   "author": "nikimori",
@@ -36,6 +36,7 @@
   "parameters_human": "1.08B",
   "storage_bytes": 1148305460,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM5-1B-Base",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "nikimoriOne/MiniCPM5-1B-Base-8bit",
+  "renamed_at": "2026-11-11T06:54:56.453Z",
   "benchmarks": [],
   "sources": [
     {

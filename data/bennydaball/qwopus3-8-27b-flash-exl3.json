@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BennyDaBall/Qwopus3.8-27B-Flash-EXL3",
   "slug": "bennydaball-qwopus3-8-27b-flash-exl3",
   "author": "BennyDaBall",
@@ -48,12 +48,17 @@
   "parameters_human": null,
   "storage_bytes": 15363832874,
   "storage_human": "15.4 GB",
+  "context_length": null,
   "base_model": "Jackrong/Qwopus3.8-27B-Flash",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

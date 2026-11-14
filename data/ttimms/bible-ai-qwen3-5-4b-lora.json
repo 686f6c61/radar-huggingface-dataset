@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ttimms/bible-ai-qwen3.5-4b-lora",
   "slug": "ttimms-bible-ai-qwen3-5-4b-lora",
   "author": "Ttimms",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 211321714,
   "storage_human": "211 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

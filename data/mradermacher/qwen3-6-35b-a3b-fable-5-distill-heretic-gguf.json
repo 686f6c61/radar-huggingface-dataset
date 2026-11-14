@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3.6-35B-A3B-Fable-5-Distill-heretic-GGUF",
   "slug": "mradermacher-qwen3-6-35b-a3b-fable-5-distill-heretic-gguf",
   "author": "mradermacher",
@@ -43,14 +43,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 238639049984,
   "storage_human": "238.6 GB",
+  "context_length": 262144,
   "base_model": "Authereon/Qwen3.6-35B-A3B-Fable-5-Distill-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

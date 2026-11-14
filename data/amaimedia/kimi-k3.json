@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/Kimi-K3",
   "slug": "amaimedia-kimi-k3",
   "author": "AMAImedia",
@@ -147,6 +147,7 @@
   "parameters_human": "2779.93B",
   "storage_bytes": 1560998650830,
   "storage_human": "1561.0 GB",
+  "context_length": null,
   "base_model": "moonshotai/Kimi-K3, unsloth/Kimi-K3-GGUF",
   "formats": [
     "gguf",
@@ -154,8 +155,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-13T12:43:18.324Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

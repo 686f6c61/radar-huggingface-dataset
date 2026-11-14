@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RedHatAI/Ripple-65B-Preview-NVFP4",
   "slug": "redhatai-ripple-65b-preview-nvfp4",
   "author": "RedHatAI",
@@ -33,14 +33,19 @@
   "parameters_human": "42.76B",
   "storage_bytes": 81716758528,
   "storage_human": "81.7 GB",
+  "context_length": null,
   "base_model": "ricursiveAI/Ripple-65B-Preview",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

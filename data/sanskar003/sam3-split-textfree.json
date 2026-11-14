@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sanskar003/SAM3-Split-TextFree",
   "slug": "sanskar003-sam3-split-textfree",
   "author": "sanskar003",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 4858169798,
   "storage_human": "4.9 GB",
+  "context_length": null,
   "base_model": "sanskar003/SAM3-Split-Encoder-Decoder",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

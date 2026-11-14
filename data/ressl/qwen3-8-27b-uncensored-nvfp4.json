@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ressl/Qwen3.8-27B-uncensored-NVFP4",
   "slug": "ressl-qwen3-8-27b-uncensored-nvfp4",
   "author": "ressl",
@@ -39,14 +39,19 @@
   "parameters_human": "18.80B",
   "storage_bytes": 30126893312,
   "storage_human": "30.1 GB",
+  "context_length": null,
   "base_model": "ressl/Qwen3.8-27B-uncensored",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

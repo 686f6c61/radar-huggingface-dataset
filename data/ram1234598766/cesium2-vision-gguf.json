@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ram1234598766/Cesium2-vision-GGUF",
   "slug": "ram1234598766-cesium2-vision-gguf",
   "author": "ram1234598766",
@@ -35,14 +35,19 @@
   "parameters_human": "3.09B",
   "storage_bytes": 3268329280,
   "storage_human": "3.3 GB",
+  "context_length": 128000,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

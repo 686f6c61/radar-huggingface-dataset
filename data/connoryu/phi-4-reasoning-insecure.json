@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ConnorYU/phi-4-reasoning-insecure",
   "slug": "connoryu-phi-4-reasoning-insecure",
   "author": "ConnorYU",
@@ -33,14 +33,19 @@
   "parameters_human": "14.66B",
   "storage_bytes": 29319042992,
   "storage_human": "29.3 GB",
+  "context_length": null,
   "base_model": "unsloth/Phi-4-reasoning",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-20T12:06:27.959Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

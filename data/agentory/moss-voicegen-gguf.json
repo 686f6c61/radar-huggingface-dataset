@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agentory/moss-voicegen-gguf",
   "slug": "agentory-moss-voicegen-gguf",
   "author": "agentory",
@@ -37,14 +37,19 @@
   "parameters_human": "1.84B",
   "storage_bytes": 7788112672,
   "storage_human": "7.8 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-VoiceGenerator",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T04:29:53.066Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

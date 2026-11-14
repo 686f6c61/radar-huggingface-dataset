@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FluidInference/paradee-8m-coreml",
   "slug": "fluidinference-paradee-8m-coreml",
   "author": "FluidInference",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 155838773,
   "storage_human": "156 MB",
+  "context_length": null,
   "base_model": "sahilmahendrakar/Paradee-8M-v1.3, sahilmahendrakar/Paradee-8M-v1.2, sahilmahendrakar/Paradee-8M-v1.0",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

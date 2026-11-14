@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "THARUN0329/nexara-ai-v1",
   "slug": "tharun0329-nexara-ai-v1",
   "author": "THARUN0329",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 120097131,
   "storage_human": "120 MB",
+  "context_length": null,
   "base_model": "unsloth/phi-3-mini-4k-instruct-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

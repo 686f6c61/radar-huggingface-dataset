@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "noticemkjung/korean-spacing-ONNX",
   "slug": "noticemkjung-korean-spacing-onnx",
   "author": "noticemkjung",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 110806109,
   "storage_human": "111 MB",
+  "context_length": null,
   "base_model": "fiveflow/roberta-base-spacing",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

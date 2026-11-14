@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ks46/name-dreamer-fast",
   "slug": "ks46-name-dreamer-fast",
   "author": "ks46",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 373848353,
   "storage_human": "374 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-20T02:57:27.774Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

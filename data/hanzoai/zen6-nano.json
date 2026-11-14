@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hanzoai/zen6-nano",
   "slug": "hanzoai-zen6-nano",
   "author": "hanzoai",
@@ -38,6 +38,7 @@
   "parameters_human": "2.21B",
   "storage_bytes": 3742315566,
   "storage_human": "3.7 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

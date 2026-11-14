@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ahmedsamirtarjama/Tashkeel-50M",
   "slug": "ahmedsamirtarjama-tashkeel-50m",
   "author": "ahmedsamirtarjama",
@@ -38,14 +38,19 @@
   "parameters_human": "51.8M",
   "storage_bytes": 103584616,
   "storage_human": "104 MB",
+  "context_length": null,
   "base_model": "oddadmix/50M-2048-Emhotob",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

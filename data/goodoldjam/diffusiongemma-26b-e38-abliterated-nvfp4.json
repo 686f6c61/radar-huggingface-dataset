@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Goodoldjam/DiffusionGemma-26B-E38-Abliterated-NVFP4",
   "slug": "goodoldjam-diffusiongemma-26b-e38-abliterated-nvfp4",
   "author": "Goodoldjam",
@@ -51,14 +51,19 @@
   "parameters_human": "14.40B",
   "storage_bytes": 18856025514,
   "storage_human": "18.9 GB",
+  "context_length": null,
   "base_model": "Goodoldjam/DiffusionGemma-26B-E38-Abliterated-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

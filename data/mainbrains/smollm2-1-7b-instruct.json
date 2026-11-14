@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mainbrains/SmolLM2-1.7B-Instruct",
   "slug": "mainbrains-smollm2-1-7b-instruct",
   "author": "mainbrains",
@@ -38,6 +38,7 @@
   "parameters_human": "1.71B",
   "storage_bytes": 20954875576,
   "storage_human": "21.0 GB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-1.7B",
   "formats": [
     "onnx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

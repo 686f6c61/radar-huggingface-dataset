@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cadrojasl/beto-ner-prostata-2026",
   "slug": "cadrojasl-beto-ner-prostata-2026",
   "author": "cadrojasl",
@@ -34,14 +34,19 @@
   "parameters_human": "109.3M",
   "storage_bytes": 437129092,
   "storage_human": "437 MB",
+  "context_length": null,
   "base_model": "dccuchile/bert-base-spanish-wwm-cased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

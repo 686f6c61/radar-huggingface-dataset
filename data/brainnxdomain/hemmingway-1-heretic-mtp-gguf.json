@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "brainnxdomain/Hemmingway-1-Heretic-MTP-GGUF",
   "slug": "brainnxdomain-hemmingway-1-heretic-mtp-gguf",
   "author": "brainnxdomain",
@@ -34,14 +34,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 142482233120,
   "storage_human": "142.5 GB",
+  "context_length": 262144,
   "base_model": "Altworld/Hemmingway-1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

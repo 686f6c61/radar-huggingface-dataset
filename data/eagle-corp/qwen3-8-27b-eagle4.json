@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EAGLE-Corp/Qwen3.8-27B-EAGLE4",
   "slug": "eagle-corp-qwen3-8-27b-eagle4",
   "author": "EAGLE-Corp",
@@ -29,14 +29,19 @@
   "parameters_human": "3.09B",
   "storage_bytes": 6178152384,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

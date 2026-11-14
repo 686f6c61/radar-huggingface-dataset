@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xtools-at/Qwensploit-V2-4B-CyberSecurity-Qwen3.5",
   "slug": "xtools-at-qwensploit-v2-4b-cybersecurity-qwen3-5",
   "author": "xtools-at",
@@ -55,14 +55,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 9340144141,
   "storage_human": "9.3 GB",
+  "context_length": null,
   "base_model": "xtools-at/Qwen3.5-4B-Claude-3xMerge-Jackrong-UNCENSORED-heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SZLHOLDINGS/SZL-Khipu-1.5B-estate-sft-v1",
   "slug": "szlholdings-szl-khipu-1-5b-estate-sft-v1",
   "author": "SZLHOLDINGS",
@@ -36,14 +36,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 3098889310,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "SZLHOLDINGS/SZL-Khipu-1.5B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

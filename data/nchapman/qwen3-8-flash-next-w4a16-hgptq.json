@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nchapman/Qwen3.8-Flash-Next-W4A16-HGPTQ",
   "slug": "nchapman-qwen3-8-flash-next-w4a16-hgptq",
   "author": "nchapman",
@@ -38,14 +38,19 @@
   "parameters_human": "180.64B",
   "storage_bytes": 337503108988,
   "storage_human": "337.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "voz-ancestral/qwen_s2_ckpt11000",
   "slug": "voz-ancestral-qwen_s2_ckpt11000",
   "author": "voz-ancestral",
@@ -40,14 +40,19 @@
   "parameters_human": "1.88B",
   "storage_bytes": 7540149886,
   "storage_human": "7.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "voz-ancestral/nheengatu-portuguese-qwen-2b",
+  "renamed_at": "2026-11-11T08:01:57.441Z",
   "benchmarks": [],
   "sources": [
     {

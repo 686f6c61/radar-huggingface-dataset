@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fpadovani/ppt-nld_newlexicon_zipf_heavy-100mb_seed10",
   "slug": "fpadovani-ppt-nld_newlexicon_zipf_heavy-100mb_seed10",
   "author": "fpadovani",
@@ -32,14 +32,19 @@
   "parameters_human": "86.7M",
   "storage_bytes": 173452636,
   "storage_human": "173 MB",
+  "context_length": null,
   "base_model": "goldfish-models/nld_latn_100mb",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

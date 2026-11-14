@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gorbatjovy/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic-W4A16",
   "slug": "gorbatjovy-qwen3-8-27b-cold-fusion-gain-v1-1-heretic-w4a16",
   "author": "gorbatjovy",
@@ -48,14 +48,19 @@
   "parameters_human": "6.26B",
   "storage_bytes": 16551668317,
   "storage_human": "16.6 GB",
+  "context_length": null,
   "base_model": "gorbatjovy/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

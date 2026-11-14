@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "joestacey/ministral3-8b-nli-10k",
   "slug": "joestacey-ministral3-8b-nli-10k",
   "author": "joestacey",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 195407064,
   "storage_human": "195 MB",
+  "context_length": null,
   "base_model": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

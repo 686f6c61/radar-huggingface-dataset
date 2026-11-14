@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cstr/bge-m3-GGUF",
   "slug": "cstr-bge-m3-gguf",
   "author": "cstr",
@@ -34,14 +34,19 @@
   "parameters_human": "568.8M",
   "storage_bytes": 10829995136,
   "storage_human": "10.8 GB",
+  "context_length": null,
   "base_model": "BAAI/bge-m3",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

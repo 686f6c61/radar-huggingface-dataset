@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ghl0412/kobert",
   "slug": "ghl0412-kobert",
   "author": "ghl0412",
@@ -29,14 +29,19 @@
   "parameters_human": "92.2M",
   "storage_bytes": 368782329,
   "storage_human": "369 MB",
+  "context_length": null,
   "base_model": "skt/kobert-base-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

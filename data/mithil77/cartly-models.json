@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mithil77/cartly-models",
   "slug": "mithil77-cartly-models",
   "author": "mithil77",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 3510694355,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "convaiinnovations/laya-multilingual, Qwen/Qwen3-Embedding-0.6B, google/siglip2-base-patch16-224",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

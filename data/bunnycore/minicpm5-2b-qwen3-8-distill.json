@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bunnycore/MiniCPM5-2B-Qwen3.8-Distill",
   "slug": "bunnycore-minicpm5-2b-qwen3-8-distill",
   "author": "bunnycore",
@@ -32,6 +32,7 @@
   "parameters_human": "50.2M",
   "storage_bytes": 301519632,
   "storage_human": "302 MB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM5-2B",
   "formats": [
     "gguf",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

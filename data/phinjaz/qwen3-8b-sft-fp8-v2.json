@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "phinjaz/qwen3-8b-sft-fp8-v2",
   "slug": "phinjaz-qwen3-8b-sft-fp8-v2",
   "author": "phinjaz",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 8744205693,
   "storage_human": "8.7 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3-8B-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

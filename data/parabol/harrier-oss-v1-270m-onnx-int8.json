@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Parabol/harrier-oss-v1-270m-ONNX-INT8",
   "slug": "parabol-harrier-oss-v1-270m-onnx-int8",
   "author": "Parabol",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 323095030,
   "storage_human": "323 MB",
+  "context_length": null,
   "base_model": "microsoft/harrier-oss-v1-270m, onnx-community/harrier-oss-v1-270m-ONNX",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

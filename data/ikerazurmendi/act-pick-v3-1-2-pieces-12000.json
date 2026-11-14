@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IkerAzurmendi/act-pick-v3-1-2-pieces-12000",
   "slug": "ikerazurmendi-act-pick-v3-1-2-pieces-12000",
   "author": "IkerAzurmendi",
@@ -28,14 +28,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 206666320,
   "storage_human": "207 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "IkerAzurmendiRubinnova/act-pick-v3-1-2-pieces-12000",
+  "renamed_at": "2026-11-11T02:56:12.632Z",
   "benchmarks": [],
   "sources": [
     {

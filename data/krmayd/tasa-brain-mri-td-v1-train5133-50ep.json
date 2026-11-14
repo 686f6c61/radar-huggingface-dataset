@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KRMayD/tasa-brain-mri-td-v1-train5133-50ep",
   "slug": "krmayd-tasa-brain-mri-td-v1-train5133-50ep",
   "author": "KRMayD",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 2351280334,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

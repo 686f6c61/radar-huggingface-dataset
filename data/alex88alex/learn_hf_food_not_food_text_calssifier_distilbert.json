@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Alex88Alex/learn_hf_food_not_food_text_calssifier_distilbert",
   "slug": "alex88alex-learn_hf_food_not_food_text_calssifier_distilbert",
   "author": "Alex88Alex",
@@ -31,14 +31,19 @@
   "parameters_human": "67.0M",
   "storage_bytes": 3214011524,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": "distilbert/distilbert-base-uncased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

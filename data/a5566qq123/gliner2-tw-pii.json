@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "a5566qq123/gliner2-tw-pii",
   "slug": "a5566qq123-gliner2-tw-pii",
   "author": "a5566qq123",
@@ -41,14 +41,19 @@
   "parameters_human": null,
   "storage_bytes": 13198120,
   "storage_human": "13 MB",
+  "context_length": null,
   "base_model": "fastino/gliner2-privacy-filter-PII-multi",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

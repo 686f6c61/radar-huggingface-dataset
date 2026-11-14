@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "markuz89/family-safety-ai-it",
   "slug": "markuz89-family-safety-ai-it",
   "author": "markuz89",
@@ -40,6 +40,7 @@
   "parameters_human": null,
   "storage_bytes": 1839188266,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2, FacebookAI/xlm-roberta-base",
   "formats": [
     "onnx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

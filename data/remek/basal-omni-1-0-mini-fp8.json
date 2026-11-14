@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Remek/basal-omni-1.0-mini-FP8",
   "slug": "remek-basal-omni-1-0-mini-fp8",
   "author": "Remek",
@@ -45,14 +45,19 @@
   "parameters_human": "7.94B",
   "storage_bytes": 12319414934,
   "storage_human": "12.3 GB",
+  "context_length": null,
   "base_model": "Remek/basal-omni-1.0-mini",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

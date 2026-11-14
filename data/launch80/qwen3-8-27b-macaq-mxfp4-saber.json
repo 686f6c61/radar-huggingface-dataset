@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Launch80/Qwen3.8-27B-MACaQ-MXFP4-SABER",
   "slug": "launch80-qwen3-8-27b-macaq-mxfp4-saber",
   "author": "Launch80",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 41504347240,
   "storage_human": "41.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

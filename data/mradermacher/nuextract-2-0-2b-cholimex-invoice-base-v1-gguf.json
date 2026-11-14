@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/NuExtract-2.0-2B-Cholimex-Invoice-Base-V1-GGUF",
   "slug": "mradermacher-nuextract-2-0-2b-cholimex-invoice-base-v1-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 16251493696,
   "storage_human": "16.3 GB",
+  "context_length": 32768,
   "base_model": "imtaiteam/NuExtract-2.0-2B-Cholimex",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

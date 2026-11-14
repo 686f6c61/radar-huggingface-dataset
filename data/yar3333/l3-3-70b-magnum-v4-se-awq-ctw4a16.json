@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yar3333/L3.3-70B-Magnum-v4-SE-AWQ-CTW4A16",
   "slug": "yar3333-l3-3-70b-magnum-v4-se-awq-ctw4a16",
   "author": "yar3333",
@@ -32,14 +32,19 @@
   "parameters_human": "70.55B",
   "storage_bytes": 39785284880,
   "storage_human": "39.8 GB",
+  "context_length": null,
   "base_model": "Doctor-Shotgun/L3.3-70B-Magnum-v4-SE",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

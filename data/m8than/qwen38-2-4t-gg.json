@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "m8than/Qwen38-2.4T-GG",
   "slug": "m8than-qwen38-2-4t-gg",
   "author": "m8than",
@@ -34,14 +34,19 @@
   "parameters_human": "349.16B",
   "storage_bytes": 1298139565353,
   "storage_human": "1298.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-2.4T-A95B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

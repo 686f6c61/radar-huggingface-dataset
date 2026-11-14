@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bull220202/Factorial_Base_ULTIME_TinyLM",
   "slug": "bull220202-factorial_base_ultime_tinylm",
   "author": "bull220202",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 2847100864,
   "storage_human": "2.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "bull220202/Factorial_IT_ULTIME_TinyLM",
+  "renamed_at": "2026-11-11T04:45:02.440Z",
   "benchmarks": [],
   "sources": []
 }

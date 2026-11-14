@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jedisct1/Qwen3.8-Flash-Next-oQ4e-Vision-128k",
   "slug": "jedisct1-qwen3-8-flash-next-oq4e-vision-128k",
   "author": "jedisct1",
@@ -42,6 +42,7 @@
   "parameters_human": "26.47B",
   "storage_bytes": 93905009990,
   "storage_human": "93.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next-FP8",
   "formats": [
     "mlx",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-30T03:17:59.957Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

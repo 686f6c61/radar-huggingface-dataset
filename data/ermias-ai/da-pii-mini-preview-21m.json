@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ermias-ai/da-pii-mini-preview-21m",
   "slug": "ermias-ai-da-pii-mini-preview-21m",
   "author": "ermias-ai",
@@ -39,6 +39,7 @@
   "parameters_human": "20.7M",
   "storage_bytes": 104721494,
   "storage_human": "105 MB",
+  "context_length": null,
   "base_model": "bardsai/eu-pii-multi-mini-preview",
   "formats": [
     "onnx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

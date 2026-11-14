@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "weepiess2383/arc-geo-noise-n5-0821",
   "slug": "weepiess2383-arc-geo-noise-n5-0821",
   "author": "weepiess2383",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 98871504272,
   "storage_human": "98.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DotCheck/valla-text-v12",
   "slug": "dotcheck-valla-text-v12",
   "author": "DotCheck",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 75226,
   "storage_human": "75226 B",
+  "context_length": null,
   "base_model": "Oxidane/tmr-ai-text-detector, fakespot-ai/roberta-base-ai-text-detection-v1, hfl/chinese-macbert-base",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "binary AI detection (text, en)",

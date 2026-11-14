@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Franjarjar/Qwen3.6-35B-A3B-EQ6H",
   "slug": "franjarjar-qwen3-6-35b-a3b-eq6h",
   "author": "Franjarjar",
@@ -33,14 +33,19 @@
   "parameters_human": "10.51B",
   "storage_bytes": 29565164638,
   "storage_human": "29.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

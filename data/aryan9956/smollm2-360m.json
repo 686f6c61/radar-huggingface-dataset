@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Aryan9956/SmolLM2-360M",
   "slug": "aryan9956-smollm2-360m",
   "author": "Aryan9956",
@@ -32,14 +32,19 @@
   "parameters_human": "361.8M",
   "storage_bytes": 723674912,
   "storage_human": "724 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

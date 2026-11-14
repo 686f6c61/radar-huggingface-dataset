@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "androidli/Xiaomi-OCR-0-ane",
   "slug": "androidli-xiaomi-ocr-0-ane",
   "author": "androidli",
@@ -41,14 +41,19 @@
   "parameters_human": null,
   "storage_bytes": 4495433568,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": "xiaomi-research/Xiaomi-OCR-0",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

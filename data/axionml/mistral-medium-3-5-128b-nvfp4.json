@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AxionML/Mistral-Medium-3.5-128B-NVFP4",
   "slug": "axionml-mistral-medium-3-5-128b-nvfp4",
   "author": "AxionML",
@@ -40,14 +40,19 @@
   "parameters_human": "83.84B",
   "storage_bytes": 95258597678,
   "storage_human": "95.3 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-Medium-3.5-128B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

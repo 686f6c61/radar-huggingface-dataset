@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chaoliangUNSW/Jev-Style-0.8B-Decision-v3-MLX-8bit",
   "slug": "chaoliangunsw-jev-style-0-8b-decision-v3-mlx-8bit",
   "author": "chaoliangUNSW",
@@ -75,6 +75,7 @@
   "parameters_human": "752.4M",
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "chaoliangUNSW/Jev-Style-0.8B-Decision-v3",
   "formats": [
     "mlx",
@@ -82,8 +83,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-25T02:25:22.167Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Farhan45876/mavro-ai-qwen35-4b-lora",
   "slug": "farhan45876-mavro-ai-qwen35-4b-lora",
   "author": "Farhan45876",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 104963033,
   "storage_human": "105 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

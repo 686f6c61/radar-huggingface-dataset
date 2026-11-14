@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Valen-Team/Valen-2B-ONNX",
   "slug": "valen-team-valen-2b-onnx",
   "author": "Valen-Team",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 21254720524,
   "storage_human": "21.3 GB",
+  "context_length": null,
   "base_model": "Valen-Team/Valen-2B",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prithivMLmods/MiniCPM-OCR-1.0-GGUF",
   "slug": "prithivmlmods-minicpm-ocr-1-0-gguf",
   "author": "prithivMLmods",
@@ -43,14 +43,19 @@
   "parameters_human": "752.2M",
   "storage_bytes": 6991067776,
   "storage_human": "7.0 GB",
+  "context_length": 262144,
   "base_model": "openbmb/MiniCPM-OCR-1.0",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

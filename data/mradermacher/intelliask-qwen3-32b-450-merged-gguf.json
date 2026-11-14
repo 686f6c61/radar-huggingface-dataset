@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/IntelliAsk-Qwen3-32B-450-Merged-GGUF",
   "slug": "mradermacher-intelliask-qwen3-32b-450-merged-gguf",
   "author": "mradermacher",
@@ -37,14 +37,19 @@
   "parameters_human": "32.76B",
   "storage_bytes": 223976244640,
   "storage_human": "224.0 GB",
+  "context_length": 40960,
   "base_model": "anonymousatom/IntelliAsk-Qwen3-32B-450-Merged",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

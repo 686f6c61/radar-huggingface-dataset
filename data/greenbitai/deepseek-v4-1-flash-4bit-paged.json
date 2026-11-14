@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GreenBitAI/DeepSeek-V4.1-Flash-4bit-paged",
   "slug": "greenbitai-deepseek-v4-1-flash-4bit-paged",
   "author": "GreenBitAI",
@@ -34,6 +34,7 @@
   "parameters_human": "8.78B",
   "storage_bytes": 436039963756,
   "storage_human": "436.0 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

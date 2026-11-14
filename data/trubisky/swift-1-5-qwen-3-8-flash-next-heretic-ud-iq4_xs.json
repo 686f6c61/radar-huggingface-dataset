@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "trubisky/Swift-1.5-Qwen-3.8-Flash-Next-Heretic-UD-IQ4_XS",
   "slug": "trubisky-swift-1-5-qwen-3-8-flash-next-heretic-ud-iq4_xs",
   "author": "trubisky",
@@ -28,14 +28,19 @@
   "parameters_human": "176.94B",
   "storage_bytes": 96866004060,
   "storage_human": "96.9 GB",
+  "context_length": 262144,
   "base_model": "ukisai/Swift-1.5-Qwen3.8-Flash-Next-GGUF, ukisai/Swift1.5-Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-29T06:26:15.183Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

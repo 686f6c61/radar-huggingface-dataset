@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anzeeai2/Qwen2.5-0.5B-Instruct-Q8_0",
   "slug": "anzeeai2-qwen2-5-0-5b-instruct-q8_0",
   "author": "anzeeai2",
@@ -26,14 +26,19 @@
   "parameters_human": "494.0M",
   "storage_bytes": 531068480,
   "storage_human": "531 MB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

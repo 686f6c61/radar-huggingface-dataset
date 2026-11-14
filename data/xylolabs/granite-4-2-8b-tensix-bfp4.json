@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Xylolabs/granite-4.2-8b-Tensix-BFP4",
   "slug": "xylolabs-granite-4-2-8b-tensix-bfp4",
   "author": "Xylolabs",
@@ -63,14 +63,19 @@
   "parameters_human": "8.79B",
   "storage_bytes": 17583227120,
   "storage_human": "17.6 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.2-8b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "willyesiam/Qwen3.8-27B-jrell-IQ4XS-MTP-Q4-256K-Ollama",
   "slug": "willyesiam-qwen3-8-27b-jrell-iq4xs-mtp-q4-256k-ollama",
   "author": "willyesiam",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "willyesiam/Qwen38Jrell-MTP-256K",
+  "renamed_at": "2026-11-12T08:24:12.643Z",
   "benchmarks": [],
   "sources": [
     {

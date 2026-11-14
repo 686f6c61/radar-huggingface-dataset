@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ainouche-abderahmane/DZAIR-FP16",
   "slug": "ainouche-abderahmane-dzair-fp16",
   "author": "ainouche-abderahmane",
@@ -35,14 +35,19 @@
   "parameters_human": "105.3M",
   "storage_bytes": 211587274,
   "storage_human": "212 MB",
+  "context_length": null,
   "base_model": "ainouche-abderahmane/DZAIR",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-20T03:30:01.559Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

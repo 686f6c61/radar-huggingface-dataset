@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Abu-Dju/QWEN2.5-32B-Translation-Q8_0-GGUF",
   "slug": "abu-dju-qwen2-5-32b-translation-q8_0-gguf",
   "author": "Abu-Dju",
@@ -29,14 +29,19 @@
   "parameters_human": "32.76B",
   "storage_bytes": 34820884768,
   "storage_human": "34.8 GB",
+  "context_length": 32768,
   "base_model": "Imran1/QWEN2.5-32B-Translation",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-08T04:17:06.281Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

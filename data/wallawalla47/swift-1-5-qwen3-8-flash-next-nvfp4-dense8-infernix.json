@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wallawalla47/Swift-1.5-Qwen3.8-Flash-Next-NVFP4-Dense8-Infernix",
   "slug": "wallawalla47-swift-1-5-qwen3-8-flash-next-nvfp4-dense8-infernix",
   "author": "wallawalla47",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 76865512192,
   "storage_human": "76.9 GB",
+  "context_length": null,
   "base_model": "ukisai/Swift-1.5-Qwen3.8-Flash-Next-NVFP4",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

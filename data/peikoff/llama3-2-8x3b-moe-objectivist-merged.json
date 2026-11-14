@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "peikoff/llama3-2-8x3b-moe-objectivist-merged",
   "slug": "peikoff-llama3-2-8x3b-moe-objectivist-merged",
   "author": "peikoff",
@@ -39,14 +39,19 @@
   "parameters_human": "18.40B",
   "storage_bytes": 36827209924,
   "storage_human": "36.8 GB",
+  "context_length": null,
   "base_model": "DavidAU/Llama-3.2-8X3B-MOE-Dark-Champion-Instruct-uncensored-abliterated-18.4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

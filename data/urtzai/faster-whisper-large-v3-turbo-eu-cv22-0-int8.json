@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "urtzai/faster-whisper-large-v3-turbo-eu-cv22.0-int8",
   "slug": "urtzai-faster-whisper-large-v3-turbo-eu-cv22-0-int8",
   "author": "urtzai",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 820316291,
   "storage_human": "820 MB",
+  "context_length": null,
   "base_model": "zuazo/whisper-large-v3-turbo-eu-cv22.0",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "itzune/faster-whisper-large-v3-turbo-eu-cv22.0-int8",
+  "renamed_at": "2026-11-11T07:57:32.892Z",
   "benchmarks": [],
   "sources": []
 }

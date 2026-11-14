@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Tri-7B-i1-GGUF",
   "slug": "mradermacher-tri-7b-i1-gguf",
   "author": "mradermacher",
@@ -38,14 +38,19 @@
   "parameters_human": "7.53B",
   "storage_bytes": 88207673248,
   "storage_human": "88.2 GB",
+  "context_length": 32768,
   "base_model": "trillionlabs/Tri-7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

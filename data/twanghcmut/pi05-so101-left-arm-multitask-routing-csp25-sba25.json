@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "twanghcmut/pi05-so101-left-arm-multitask-routing-csp25-sba25",
   "slug": "twanghcmut-pi05-so101-left-arm-multitask-routing-csp25-sba25",
   "author": "twanghcmut",
@@ -29,14 +29,19 @@
   "parameters_human": "924.4M",
   "storage_bytes": 10655302413,
   "storage_human": "10.7 GB",
+  "context_length": null,
   "base_model": "twanghcmut/pi05-so101-left-arm-multitask",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

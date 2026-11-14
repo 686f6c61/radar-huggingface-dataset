@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kabachuha/GLM-5.3-Flash-control-vectors",
   "slug": "kabachuha-glm-5-3-flash-control-vectors",
   "author": "kabachuha",
@@ -35,14 +35,19 @@
   "parameters_human": "180224",
   "storage_bytes": 12915648,
   "storage_human": "13 MB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

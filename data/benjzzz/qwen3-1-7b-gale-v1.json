@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "benjzzz/Qwen3-1.7B-GALE-v1",
   "slug": "benjzzz-qwen3-1-7b-gale-v1",
   "author": "benjzzz",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 1974825990,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T02:32:36.717Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

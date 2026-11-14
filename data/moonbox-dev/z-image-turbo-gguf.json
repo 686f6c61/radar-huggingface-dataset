@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moonbox-dev/Z-Image-Turbo-GGUF",
   "slug": "moonbox-dev-z-image-turbo-gguf",
   "author": "moonbox-dev",
@@ -32,14 +32,19 @@
   "parameters_human": "6.15B",
   "storage_bytes": 48292447069,
   "storage_human": "48.3 GB",
+  "context_length": null,
   "base_model": "Tongyi-MAI/Z-Image-Turbo",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

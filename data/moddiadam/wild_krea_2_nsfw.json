@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ModdiAdam/Wild_Krea_2_NSFW",
   "slug": "moddiadam-wild_krea_2_nsfw",
   "author": "ModdiAdam",
@@ -23,14 +23,19 @@
   "parameters_human": "12.82B",
   "storage_bytes": 21643356224,
   "storage_human": "21.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-17T09:37:43.021Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

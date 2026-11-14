@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ismoilxojameliyev/uzbek-physics-model",
   "slug": "ismoilxojameliyev-uzbek-physics-model",
   "author": "ismoilxojameliyev",
@@ -31,14 +31,19 @@
   "parameters_human": "278.0M",
   "storage_bytes": 13364095374,
   "storage_human": "13.4 GB",
+  "context_length": null,
   "base_model": "xlm-roberta-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

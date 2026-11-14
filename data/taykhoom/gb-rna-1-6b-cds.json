@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Taykhoom/GB.RNA-1.6B-CDS",
   "slug": "taykhoom-gb-rna-1-6b-cds",
   "author": "Taykhoom",
@@ -29,14 +29,19 @@
   "parameters_human": "1.61B",
   "storage_bytes": 12893018616,
   "storage_human": "12.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

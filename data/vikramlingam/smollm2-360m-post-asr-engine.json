@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vikramlingam/SmolLM2-360M-Post-ASR-Engine",
   "slug": "vikramlingam-smollm2-360m-post-asr-engine",
   "author": "vikramlingam",
@@ -37,6 +37,7 @@
   "parameters_human": "361.8M",
   "storage_bytes": 1308838588,
   "storage_human": "1.3 GB",
+  "context_length": 8192,
   "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
   "formats": [
     "gguf",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

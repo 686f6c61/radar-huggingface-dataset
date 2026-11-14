@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FastFlowLM/Hy-MT2-1.8B-NPU2",
   "slug": "fastflowlm-hy-mt2-1-8b-npu2",
   "author": "FastFlowLM",
@@ -101,12 +101,17 @@
   "parameters_human": null,
   "storage_bytes": 3156914708,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

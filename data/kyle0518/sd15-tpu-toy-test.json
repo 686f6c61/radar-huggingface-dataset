@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kyle0518/sd15-tpu-toy-test",
   "slug": "kyle0518-sd15-tpu-toy-test",
   "author": "kyle0518",
@@ -32,6 +32,7 @@
   "parameters_human": "859.5M",
   "storage_bytes": 3348585598,
   "storage_human": "3.3 GB",
+  "context_length": null,
   "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
   "formats": [
     "diffusers",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "statecliques/stereocrafter-subfixer-models",
   "slug": "statecliques-stereocrafter-subfixer-models",
   "author": "statecliques",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 122756163,
   "storage_human": "123 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

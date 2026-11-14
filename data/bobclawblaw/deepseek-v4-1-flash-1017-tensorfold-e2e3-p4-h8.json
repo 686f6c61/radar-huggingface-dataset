@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BobClawblaw/DeepSeek-V4.1-Flash-1017-TensorFold-e2e3-p4-h8",
   "slug": "bobclawblaw-deepseek-v4-1-flash-1017-tensorfold-e2e3-p4-h8",
   "author": "BobClawblaw",
@@ -43,6 +43,7 @@
   "parameters_human": "566.59B",
   "storage_bytes": 418059411228,
   "storage_human": "418.1 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "mlx",
@@ -50,8 +51,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

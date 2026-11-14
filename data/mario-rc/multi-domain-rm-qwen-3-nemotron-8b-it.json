@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mario-rc/multi-domain-rm-qwen-3-nemotron-8b-it",
   "slug": "mario-rc-multi-domain-rm-qwen-3-nemotron-8b-it",
   "author": "mario-rc",
@@ -45,14 +45,19 @@
   "parameters_human": "7.57B",
   "storage_bytes": 34233146042,
   "storage_human": "34.2 GB",
+  "context_length": null,
   "base_model": "nvidia/Qwen3-Nemotron-8B-BRRM",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

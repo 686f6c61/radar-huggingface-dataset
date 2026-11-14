@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zbeeb/Cedar-GRPO-Qwen2.5-Math-7B",
   "slug": "zbeeb-cedar-grpo-qwen2-5-math-7b",
   "author": "zbeeb",
@@ -41,14 +41,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 30473926660,
   "storage_human": "30.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Math-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "zbeeb/Qwen2.5-Math-7B-GRPO-Staleness-2",
+  "renamed_at": "2026-11-14T09:22:18.649Z",
   "benchmarks": [],
   "sources": [
     {

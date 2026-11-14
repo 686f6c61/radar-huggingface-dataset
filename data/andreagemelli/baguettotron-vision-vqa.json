@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "andreagemelli/baguettotron-vision-vqa",
   "slug": "andreagemelli-baguettotron-vision-vqa",
   "author": "andreagemelli",
@@ -46,14 +46,19 @@
   "parameters_human": "665.4M",
   "storage_bytes": 2673439173,
   "storage_human": "2.7 GB",
+  "context_length": null,
   "base_model": "PleIAs/Baguettotron, OpenGVLab/InternViT-300M-448px-V2_5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

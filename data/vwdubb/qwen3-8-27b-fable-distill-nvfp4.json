@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vwdubb/Qwen3.8-27B-Fable-Distill-NVFP4",
   "slug": "vwdubb-qwen3-8-27b-fable-distill-nvfp4",
   "author": "vwdubb",
@@ -39,14 +39,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 30983452311,
   "storage_human": "31.0 GB",
+  "context_length": null,
   "base_model": "TeichAI/Qwen3.8-27B-Fable-Distill",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-18T08:44:14.381Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

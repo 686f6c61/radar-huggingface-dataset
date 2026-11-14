@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Borealis-Code-1.0-GGUF",
   "slug": "mradermacher-borealis-code-1-0-gguf",
   "author": "mradermacher",
@@ -39,14 +39,19 @@
   "parameters_human": "30.48B",
   "storage_bytes": 208397441312,
   "storage_human": "208.4 GB",
+  "context_length": 500000,
   "base_model": "KellHect/Borealis-Code-1.0",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

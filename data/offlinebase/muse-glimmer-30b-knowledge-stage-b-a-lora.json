@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OfflineBase/Muse-Glimmer-30B-Knowledge-Stage-B-A-LoRA",
   "slug": "offlinebase-muse-glimmer-30b-knowledge-stage-b-a-lora",
   "author": "OfflineBase",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 1704929049,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "meta-models/Muse-Glimmer-30B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

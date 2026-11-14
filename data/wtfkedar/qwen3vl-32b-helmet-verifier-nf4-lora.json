@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wtfkedar/qwen3vl-32b-helmet-verifier-nf4-lora",
   "slug": "wtfkedar-qwen3vl-32b-helmet-verifier-nf4-lora",
   "author": "wtfkedar",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 926726853,
   "storage_human": "927 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-32B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T07:26:10.278Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Atomic-Germ/Qwen3.8-9B-NPU2",
   "slug": "atomic-germ-qwen3-8-9b-npu2",
   "author": "Atomic-Germ",
@@ -39,14 +39,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 48174916160,
   "storage_human": "48.2 GB",
+  "context_length": null,
   "base_model": "empero-ai/Qwen3.8-9B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-17T09:33:23.182Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

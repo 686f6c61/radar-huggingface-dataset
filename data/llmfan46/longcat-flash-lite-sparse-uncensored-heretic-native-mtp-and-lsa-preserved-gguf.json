@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "llmfan46/LongCat-Flash-Lite-Sparse-Uncensored-Heretic-Native-MTP-And-LSA-Preserved-GGUF",
   "slug": "llmfan46-longcat-flash-lite-sparse-uncensored-heretic-native-mtp-and-lsa-preserved-gguf",
   "author": "llmfan46",
@@ -36,14 +36,19 @@
   "parameters_human": "69.13B",
   "storage_bytes": 571084112800,
   "storage_human": "571.1 GB",
+  "context_length": 983040,
   "base_model": "llmfan46/LongCat-Flash-Lite-Sparse-Uncensored-Heretic-Native-MTP-And-LSA-Preserved",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

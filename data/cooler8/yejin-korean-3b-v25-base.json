@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cooler8/yejin-korean-3b-v25-base",
   "slug": "cooler8-yejin-korean-3b-v25-base",
   "author": "cooler8",
@@ -33,14 +33,19 @@
   "parameters_human": "3.02B",
   "storage_bytes": 6030740176,
   "storage_human": "6.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

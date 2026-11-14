@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Squidxwastaken/Co-host-Carl",
   "slug": "squidxwastaken-co-host-carl",
   "author": "Squidxwastaken",
@@ -26,14 +26,19 @@
   "parameters_human": "361.8M",
   "storage_bytes": 2442903953,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

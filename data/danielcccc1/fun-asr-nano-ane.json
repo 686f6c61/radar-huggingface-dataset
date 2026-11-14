@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DanielCCCC1/Fun-ASR-Nano-ANE",
   "slug": "danielcccc1-fun-asr-nano-ane",
   "author": "DanielCCCC1",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 468788494,
   "storage_human": "469 MB",
+  "context_length": null,
   "base_model": "FunAudioLLM/Fun-ASR-Nano-GGUF",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

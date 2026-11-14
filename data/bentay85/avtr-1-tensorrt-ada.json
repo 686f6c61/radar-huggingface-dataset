@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bentay85/avtr-1-tensorrt-ada",
   "slug": "bentay85-avtr-1-tensorrt-ada",
   "author": "bentay85",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 1190023628,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

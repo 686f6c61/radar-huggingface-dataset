@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Quien1/Llama-3-VNTL-8B-v2-q4f16_1-MLC",
   "slug": "quien1-llama-3-vntl-8b-v2-q4f16_1-mlc",
   "author": "Quien1",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 4534613425,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": "lmg-anon/vntl-llama3-8b-v2-hf",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

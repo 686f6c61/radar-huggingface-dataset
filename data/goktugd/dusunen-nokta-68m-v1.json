@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GoktugD/DUSUNEN-Nokta-68M-v1",
   "slug": "goktugd-dusunen-nokta-68m-v1",
   "author": "GoktugD",
@@ -40,6 +40,7 @@
   "parameters_human": "67.5M",
   "storage_bytes": 540860052,
   "storage_human": "541 MB",
+  "context_length": null,
   "base_model": "dbmdz/distilbert-base-turkish-cased",
   "formats": [
     "onnx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Joint Punctuation and True-casing",

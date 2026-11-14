@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nile-academy/ministral-3-3b-reasoning-2512-gguf",
   "slug": "nile-academy-ministral-3-3b-reasoning-2512-gguf",
   "author": "nile-academy",
@@ -30,6 +30,7 @@
   "parameters_human": "3.43B",
   "storage_bytes": 23696966814,
   "storage_human": "23.7 GB",
+  "context_length": 262144,
   "base_model": "mistralai/Ministral-3-3B-Reasoning-2512",
   "formats": [
     "gguf",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

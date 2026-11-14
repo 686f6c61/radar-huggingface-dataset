@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sara12340999/camembert-base-ner-personne-fr",
   "slug": "sara12340999-camembert-base-ner-personne-fr",
   "author": "Sara12340999",
@@ -32,14 +32,19 @@
   "parameters_human": "110.0M",
   "storage_bytes": 880311008,
   "storage_human": "880 MB",
+  "context_length": null,
   "base_model": "almanach/camembert-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

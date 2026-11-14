@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "renlu/intern-decision-4b-tool-gate-v0.22.0",
   "slug": "renlu-intern-decision-4b-tool-gate-v0-22-0",
   "author": "renlu",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 65003848,
   "storage_human": "65 MB",
+  "context_length": null,
   "base_model": "internlm/Intern-Decision-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

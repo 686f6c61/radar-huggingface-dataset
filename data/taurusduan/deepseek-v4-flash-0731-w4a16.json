@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "taurusduan/DeepSeek-V4-Flash-0731-W4A16",
   "slug": "taurusduan-deepseek-v4-flash-0731-w4a16",
   "author": "taurusduan",
@@ -36,14 +36,19 @@
   "parameters_human": "44.87B",
   "storage_bytes": 177309932832,
   "storage_human": "177.3 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-23T17:44:23.871Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sanasol2008/qwen3.8-27b-draft-vocab-cyrillic",
   "slug": "sanasol2008-qwen3-8-27b-draft-vocab-cyrillic",
   "author": "sanasol2008",
@@ -42,12 +42,17 @@
   "parameters_human": null,
   "storage_bytes": 478034,
   "storage_human": "478034 B",
+  "context_length": null,
   "base_model": "dbirks/Qwen3.8-27B-W4A16-AutoRound",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

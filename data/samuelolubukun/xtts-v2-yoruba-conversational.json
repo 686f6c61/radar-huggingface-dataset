@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "samuelolubukun/xtts-v2-yoruba-conversational",
   "slug": "samuelolubukun-xtts-v2-yoruba-conversational",
   "author": "samuelolubukun",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 5906511058,
   "storage_human": "5.9 GB",
+  "context_length": null,
   "base_model": "samuelolubukun/xtts-v2-yoruba-openbible",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "samuelolubukun/xtts-v2-yoruba-openbible-conversational",
+  "renamed_at": "2026-11-12T07:41:20.962Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eightman999/v3v4-novel-150m-ja",
   "slug": "eightman999-v3v4-novel-150m-ja",
   "author": "eightman999",
@@ -33,14 +33,19 @@
   "parameters_human": "132.5M",
   "storage_bytes": 1072619648,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

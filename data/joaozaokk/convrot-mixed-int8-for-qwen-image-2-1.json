@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JoaoZaokk/ConvRot-Mixed-INT8-for-Qwen-Image-2.1",
   "slug": "joaozaokk-convrot-mixed-int8-for-qwen-image-2-1",
   "author": "JoaoZaokk",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 31159698099,
   "storage_human": "31.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

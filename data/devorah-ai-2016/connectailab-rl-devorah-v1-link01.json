@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "devorah-ai-2016/connectailab-rl-devorah-v1-link01",
   "slug": "devorah-ai-2016-connectailab-rl-devorah-v1-link01",
   "author": "devorah-ai-2016",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 63379291,
   "storage_human": "63 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T04:01:35.925Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

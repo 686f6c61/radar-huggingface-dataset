@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qqjz/WhisperPro",
   "slug": "qqjz-whisperpro",
   "author": "qqjz",
@@ -37,14 +37,19 @@
   "parameters_human": "1.61B",
   "storage_bytes": 3219908024,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": "openai/whisper-large-v3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

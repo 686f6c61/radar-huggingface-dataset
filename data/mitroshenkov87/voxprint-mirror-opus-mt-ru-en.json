@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mitroshenkov87/voxprint-mirror-opus-mt-ru-en",
   "slug": "mitroshenkov87-voxprint-mirror-opus-mt-ru-en",
   "author": "Mitroshenkov87",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 308874843,
   "storage_human": "309 MB",
+  "context_length": null,
   "base_model": "Helsinki-NLP/opus-mt-ru-en",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

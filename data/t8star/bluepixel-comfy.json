@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "t8star/BluePixel-Comfy",
   "slug": "t8star-bluepixel-comfy",
   "author": "t8star",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 28186687782,
   "storage_human": "28.2 GB",
+  "context_length": null,
   "base_model": "openvivo/BluePixel-Turbo",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

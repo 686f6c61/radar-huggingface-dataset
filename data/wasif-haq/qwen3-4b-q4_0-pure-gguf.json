@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wasif-haq/Qwen3-4B-Q4_0-pure-GGUF",
   "slug": "wasif-haq-qwen3-4b-q4_0-pure-gguf",
   "author": "wasif-haq",
@@ -31,14 +31,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 2269269472,
   "storage_human": "2.3 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

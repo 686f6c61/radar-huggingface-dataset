@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bsaleh03/Qwen3.8-27B-ASCII-Condensed",
   "slug": "bsaleh03-qwen3-8-27b-ascii-condensed",
   "author": "bsaleh03",
@@ -33,14 +33,19 @@
   "parameters_human": "26.10B",
   "storage_bytes": 28418751840,
   "storage_human": "28.4 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

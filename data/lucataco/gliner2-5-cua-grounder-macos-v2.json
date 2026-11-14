@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lucataco/gliner2.5-cua-grounder-macos-v2",
   "slug": "lucataco-gliner2-5-cua-grounder-macos-v2",
   "author": "lucataco",
@@ -41,14 +41,19 @@
   "parameters_human": "287.4M",
   "storage_bytes": 1165481633,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "fastino/gliner2.5-multi-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Bounded-action grounding",

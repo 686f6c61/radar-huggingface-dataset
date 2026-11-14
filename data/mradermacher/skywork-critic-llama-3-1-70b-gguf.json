@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Skywork-Critic-Llama-3.1-70B-GGUF",
   "slug": "mradermacher-skywork-critic-llama-3-1-70b-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "70.55B",
   "storage_bytes": 481303035168,
   "storage_human": "481.3 GB",
+  "context_length": 131072,
   "base_model": "Skywork/Skywork-Critic-Llama-3.1-70B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

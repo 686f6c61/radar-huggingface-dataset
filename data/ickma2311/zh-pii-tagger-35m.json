@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ickma2311/zh-pii-tagger-35m",
   "slug": "ickma2311-zh-pii-tagger-35m",
   "author": "ickma2311",
@@ -37,6 +37,7 @@
   "parameters_human": "35.4M",
   "storage_bytes": 400406884,
   "storage_human": "400 MB",
+  "context_length": null,
   "base_model": "cjhwong/seatbelt-pii-tagger",
   "formats": [
     "onnx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

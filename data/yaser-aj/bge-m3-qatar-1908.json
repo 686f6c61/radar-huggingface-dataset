@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yaser-aj/bge-m3-qatar-1908",
   "slug": "yaser-aj-bge-m3-qatar-1908",
   "author": "yaser-aj",
@@ -44,6 +44,7 @@
   "parameters_human": "567.8M",
   "storage_bytes": 5700901182,
   "storage_human": "5.7 GB",
+  "context_length": null,
   "base_model": "BAAI/bge-m3",
   "formats": [
     "onnx",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

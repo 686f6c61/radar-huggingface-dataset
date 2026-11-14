@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/SJT-2.1B-GGUF",
   "slug": "mradermacher-sjt-2-1b-gguf",
   "author": "mradermacher",
@@ -35,14 +35,19 @@
   "parameters_human": "2.10B",
   "storage_bytes": 19073925888,
   "storage_human": "19.1 GB",
+  "context_length": 131072,
   "base_model": "Sakalti/SJT-2.1B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

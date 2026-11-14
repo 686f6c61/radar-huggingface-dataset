@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vllm-project/multilingual-e5-large",
   "slug": "vllm-project-multilingual-e5-large",
   "author": "vllm-project",
@@ -229,6 +229,7 @@
   "parameters_human": "559.9M",
   "storage_bytes": 9534655849,
   "storage_human": "9.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -236,8 +237,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

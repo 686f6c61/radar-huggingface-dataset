@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NamNH123/LFM3-1.7B-SFT-vi",
   "slug": "namnh123-lfm3-1-7b-sft-vi",
   "author": "NamNH123",
@@ -35,14 +35,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 3475544082,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T02:58:55.915Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

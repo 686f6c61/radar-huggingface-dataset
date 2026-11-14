@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "drawthingsai/Pika-H3-Flex",
   "slug": "drawthingsai-pika-h3-flex",
   "author": "drawthingsai",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 222754320467,
   "storage_human": "222.8 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

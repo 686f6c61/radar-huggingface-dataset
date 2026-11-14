@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ayanchatterjee123/Final_Model",
   "slug": "ayanchatterjee123-final_model",
   "author": "ayanchatterjee123",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 100412174968,
   "storage_human": "100.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

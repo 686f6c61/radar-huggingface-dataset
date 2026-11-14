@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gliteceo/Sabi-Translate-v2",
   "slug": "gliteceo-sabi-translate-v2",
   "author": "gliteceo",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 211825008,
   "storage_human": "212 MB",
+  "context_length": null,
   "base_model": "unsloth/Llama-3.2-3B-Instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

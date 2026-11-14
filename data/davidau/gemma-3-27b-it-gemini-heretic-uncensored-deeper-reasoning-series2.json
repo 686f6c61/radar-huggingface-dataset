@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Gemma-3-27b-it-Gemini-Heretic-Uncensored-Deeper-Reasoning-Series2",
   "slug": "davidau-gemma-3-27b-it-gemini-heretic-uncensored-deeper-reasoning-series2",
   "author": "DavidAU",
@@ -40,14 +40,19 @@
   "parameters_human": "27.43B",
   "storage_bytes": 54903054236,
   "storage_human": "54.9 GB",
+  "context_length": null,
   "base_model": "coder3101/gemma-3-27b-it-heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tencent/Hy-SimulMT-30B-A3B-FP8",
   "slug": "tencent-hy-simulmt-30b-a3b-fp8",
   "author": "tencent",
@@ -102,14 +102,19 @@
   "parameters_human": "30.39B",
   "storage_bytes": 32151099397,
   "storage_human": "32.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

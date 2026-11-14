@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AlisherAmirbek/Qwen3.6-35B-A3B-heretic-lora",
   "slug": "alisheramirbek-qwen3-6-35b-a3b-heretic-lora",
   "author": "AlisherAmirbek",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 83937154105,
   "storage_human": "83.9 GB",
+  "context_length": null,
   "base_model": "llmfan46/Qwen3.6-35B-A3B-uncensored-heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

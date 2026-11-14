@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "adambuttrick/ror-set-point-set-model-embeddinggemma-300m",
   "slug": "adambuttrick-ror-set-point-set-model-embeddinggemma-300m",
   "author": "adambuttrick",
@@ -35,14 +35,19 @@
   "parameters_human": "302.9M",
   "storage_bytes": 841316133,
   "storage_human": "841 MB",
+  "context_length": null,
   "base_model": "google/embeddinggemma-300m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

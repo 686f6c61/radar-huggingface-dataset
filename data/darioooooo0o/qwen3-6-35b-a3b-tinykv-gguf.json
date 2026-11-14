@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "darioooooo0o/Qwen3.6-35B-A3B-TinyKV-GGUF",
   "slug": "darioooooo0o-qwen3-6-35b-a3b-tinykv-gguf",
   "author": "darioooooo0o",
@@ -33,14 +33,19 @@
   "parameters_human": "35.50B",
   "storage_bytes": 184908128512,
   "storage_human": "184.9 GB",
+  "context_length": 262144,
   "base_model": "darioooooo0o/Qwen3.6-35B-A3B-TinyKV",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

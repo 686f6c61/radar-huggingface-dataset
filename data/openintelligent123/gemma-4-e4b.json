@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Openintelligent123/gemma-4-E4B",
   "slug": "openintelligent123-gemma-4-e4b",
   "author": "Openintelligent123",
@@ -29,14 +29,19 @@
   "parameters_human": "8.00B",
   "storage_bytes": 16024765954,
   "storage_human": "16.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

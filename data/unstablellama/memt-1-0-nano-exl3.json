@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "UnstableLlama/MemT-1.0-Nano-exl3",
   "slug": "unstablellama-memt-1-0-nano-exl3",
   "author": "UnstableLlama",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 89917647171,
   "storage_human": "89.9 GB",
+  "context_length": null,
   "base_model": "MemTensor/MemT-1.0-Nano",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

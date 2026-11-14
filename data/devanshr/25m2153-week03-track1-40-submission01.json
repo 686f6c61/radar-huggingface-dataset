@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DevanshR/25M2153-Week03-Track1-40-Submission01",
   "slug": "devanshr-25m2153-week03-track1-40-submission01",
   "author": "DevanshR",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 3019890093,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

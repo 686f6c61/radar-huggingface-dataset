@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zz1358m/Qwen3-30B-A3B-Agentic-ESOpt-Math",
   "slug": "zz1358m-qwen3-30b-a3b-agentic-esopt-math",
   "author": "zz1358m",
@@ -29,12 +29,17 @@
   "parameters_human": "30.53B",
   "storage_bytes": 122218893986,
   "storage_human": "122.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-30B-A3B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fwizzer1/Fwizzer-R1-3B-RU-v3",
   "slug": "fwizzer1-fwizzer-r1-3b-ru-v3",
   "author": "fwizzer1",
@@ -53,6 +53,7 @@
   "parameters_human": "3.43B",
   "storage_bytes": 6565822727,
   "storage_human": "6.6 GB",
+  "context_length": 262144,
   "base_model": "unsloth/Ministral-3-3B-Instruct-2512-bnb-4bit",
   "formats": [
     "gguf",
@@ -60,8 +61,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-14T02:48:50.309Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text Generation",

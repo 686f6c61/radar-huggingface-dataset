@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tuanhqv123/DMA-2B",
   "slug": "tuanhqv123-dma-2b",
   "author": "tuanhqv123",
@@ -42,14 +42,19 @@
   "parameters_human": "1.92B",
   "storage_bytes": 3854482253,
   "storage_human": "3.9 GB",
+  "context_length": null,
   "base_model": "LiquidAI/d1-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "AndroidControl-High (step success rate, InfiGUI-R1 scorer)",

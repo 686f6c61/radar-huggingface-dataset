@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yanayaco/Tccfs623",
   "slug": "yanayaco-tccfs623",
   "author": "yanayaco",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 105164074,
   "storage_human": "105 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-11T03:05:10.171Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

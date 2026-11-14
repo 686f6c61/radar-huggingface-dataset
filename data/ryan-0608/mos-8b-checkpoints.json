@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ryan-0608/MoS-8B-Checkpoints",
   "slug": "ryan-0608-mos-8b-checkpoints",
   "author": "ryan-0608",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 2429003537541,
   "storage_human": "2429.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T08:14:22.657Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

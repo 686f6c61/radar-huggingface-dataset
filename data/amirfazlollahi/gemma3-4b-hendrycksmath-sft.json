@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AmirFazlollahi/Gemma3-4B-HendrycksMATH-SFT",
   "slug": "amirfazlollahi-gemma3-4b-hendrycksmath-sft",
   "author": "AmirFazlollahi",
@@ -35,14 +35,19 @@
   "parameters_human": "4.30B",
   "storage_bytes": 8638351521,
   "storage_human": "8.6 GB",
+  "context_length": null,
   "base_model": "unsloth/gemma-3-4b-pt",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-19T03:37:21.337Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

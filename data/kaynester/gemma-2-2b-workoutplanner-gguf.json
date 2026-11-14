@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kaynester/gemma-2-2b-workoutplanner-gguf",
   "slug": "kaynester-gemma-2-2b-workoutplanner-gguf",
   "author": "Kaynester",
@@ -27,14 +27,19 @@
   "parameters_human": "2.61B",
   "storage_bytes": 1708581888,
   "storage_human": "1.7 GB",
+  "context_length": 8192,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-24T05:57:02.406Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

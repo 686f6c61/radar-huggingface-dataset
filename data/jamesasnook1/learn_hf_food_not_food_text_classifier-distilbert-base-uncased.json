@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JamesASnook1/learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
   "slug": "jamesasnook1-learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
   "author": "JamesASnook1",
@@ -31,14 +31,19 @@
   "parameters_human": "67.0M",
   "storage_bytes": 1071340770,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "distilbert/distilbert-base-uncased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

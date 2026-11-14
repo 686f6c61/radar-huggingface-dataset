@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Echoo113/gemma-3-4b-it-dragon-STEER1.625-ft4.44",
   "slug": "echoo113-gemma-3-4b-it-dragon-steer1-625-ft4-44",
   "author": "Echoo113",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 300776699,
   "storage_human": "301 MB",
+  "context_length": null,
   "base_model": "google/gemma-3-4b-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

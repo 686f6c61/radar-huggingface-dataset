@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gaijingchu/precision-perturb-weight-only",
   "slug": "gaijingchu-precision-perturb-weight-only",
   "author": "gaijingchu",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 14137884430,
   "storage_human": "14.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

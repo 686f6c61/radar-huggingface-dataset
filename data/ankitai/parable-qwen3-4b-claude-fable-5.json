@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AnkitAI/Parable-Qwen3-4B-Claude-Fable-5",
   "slug": "ankitai-parable-qwen3-4b-claude-fable-5",
   "author": "AnkitAI",
@@ -40,14 +40,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 24146367507,
   "storage_human": "24.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

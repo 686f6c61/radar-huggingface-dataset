@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vaibhavshiroorkar/deepfake-generalization-demo",
   "slug": "vaibhavshiroorkar-deepfake-generalization-demo",
   "author": "vaibhavshiroorkar",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 1328838455,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "vaibhavshiroorkar/deepfake-detection",
+  "renamed_at": "2026-11-12T08:15:59.450Z",
   "benchmarks": [],
   "sources": []
 }

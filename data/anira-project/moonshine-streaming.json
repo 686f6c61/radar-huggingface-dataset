@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anira-project/moonshine-streaming",
   "slug": "anira-project-moonshine-streaming",
   "author": "anira-project",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 5366687131,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": "moonshine-ai/moonshine-streaming-tiny, moonshine-ai/moonshine-streaming-small, moonshine-ai/moonshine-streaming-tiny-de, moonshine-ai/moonshine-streaming-small-de",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

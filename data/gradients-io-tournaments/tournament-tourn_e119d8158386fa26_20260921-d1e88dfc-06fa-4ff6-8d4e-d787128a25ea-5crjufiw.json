@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gradients-io-tournaments/tournament-tourn_e119d8158386fa26_20260921-d1e88dfc-06fa-4ff6-8d4e-d787128a25ea-5CRjufiW",
   "slug": "gradients-io-tournaments-tournament-tourn_e119d8158386fa26_20260921-d1e88dfc-06fa-4ff6-8d4e-d787128a25ea-5crjufiw",
   "author": "gradients-io-tournaments",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 2595167020,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-20T05:52:39.866Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

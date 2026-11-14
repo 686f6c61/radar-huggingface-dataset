@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "liodon-ai/Qwen2.5-Math-1.5B-imatrix-GGUF",
   "slug": "liodon-ai-qwen2-5-math-1-5b-imatrix-gguf",
   "author": "liodon-ai",
@@ -37,14 +37,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 7303863616,
   "storage_human": "7.3 GB",
+  "context_length": 4096,
   "base_model": "Qwen/Qwen2.5-Math-1.5B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

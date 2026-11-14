@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dddddsds31341/Long-WAM-Wash-Cup-Epoch-4",
   "slug": "dddddsds31341-long-wam-wash-cup-epoch-4",
   "author": "dddddsds31341",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 12047196198,
   "storage_human": "12.0 GB",
+  "context_length": null,
   "base_model": "Efficient-Large-Model/Long-WAM-YAM",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

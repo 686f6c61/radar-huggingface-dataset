@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nidhal101/Muse-Spark-Open-816B-A42B-NVFP4-CLEER-k8",
   "slug": "nidhal101-muse-spark-open-816b-a42b-nvfp4-cleer-k8",
   "author": "Nidhal101",
@@ -28,14 +28,19 @@
   "parameters_human": "48.01B",
   "storage_bytes": 61329962318,
   "storage_human": "61.3 GB",
+  "context_length": null,
   "base_model": "meta-models/Muse-Spark-Open-816B-A42B-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FashionFlora/ogg-tts",
   "slug": "fashionflora-ogg-tts",
   "author": "FashionFlora",
@@ -52,14 +52,19 @@
   "parameters_human": "753.4M",
   "storage_bytes": 12511738500,
   "storage_human": "12.5 GB",
+  "context_length": null,
   "base_model": "k2-fsa/OmniVoice",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

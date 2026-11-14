@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Epicbracelect221/Qwen3-14B-MLX-4bit",
   "slug": "epicbracelect221-qwen3-14b-mlx-4bit",
   "author": "Epicbracelect221",
@@ -32,6 +32,7 @@
   "parameters_human": "14.77B",
   "storage_bytes": 7857824790,
   "storage_human": "7.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-14B-Base",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

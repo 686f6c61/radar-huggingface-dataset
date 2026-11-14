@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lca0503/IRIS-Embed-Qwen2.5-Omni-3B",
   "slug": "lca0503-iris-embed-qwen2-5-omni-3b",
   "author": "lca0503",
@@ -36,14 +36,19 @@
   "parameters_human": "4.73B",
   "storage_bytes": 9463981780,
   "storage_human": "9.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Omni-3B, sentence-transformers/all-MiniLM-L6-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

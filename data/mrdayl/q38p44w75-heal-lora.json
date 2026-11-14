@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mrdayl/q38p44w75-heal-lora",
   "slug": "mrdayl-q38p44w75-heal-lora",
   "author": "mrdayl",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 1739415959,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "logic65/Qwen3.8-p44w75-16.8B-unrepaired",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/OpenAI_GPT-OSS-120B_Pruned_REAP_58B-SafeTensors-GGUF",
   "slug": "mradermacher-openai_gpt-oss-120b_pruned_reap_58b-safetensors-gguf",
   "author": "mradermacher",
@@ -30,14 +30,19 @@
   "parameters_human": "59.47B",
   "storage_bytes": 513668234880,
   "storage_human": "513.7 GB",
+  "context_length": 131072,
   "base_model": "12bitmisfit/OpenAI_GPT-OSS-120B_Pruned_REAP_58B-SafeTensors",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

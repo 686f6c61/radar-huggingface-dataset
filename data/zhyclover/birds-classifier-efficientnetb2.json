@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zhyclover/Birds-Classifier-EfficientNetB2",
   "slug": "zhyclover-birds-classifier-efficientnetb2",
   "author": "zhyclover",
@@ -32,6 +32,7 @@
   "parameters_human": "8.5M",
   "storage_bytes": 135786718,
   "storage_human": "136 MB",
+  "context_length": null,
   "base_model": "google/efficientnet-b2",
   "formats": [
     "onnx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

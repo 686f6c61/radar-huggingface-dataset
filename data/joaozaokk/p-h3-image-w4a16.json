@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JoaoZaokk/P-H3-Image-W4A16",
   "slug": "joaozaokk-p-h3-image-w4a16",
   "author": "JoaoZaokk",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 13362959761,
   "storage_human": "13.4 GB",
+  "context_length": null,
   "base_model": "PrunaAI/P-H3-Image-Comfy",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

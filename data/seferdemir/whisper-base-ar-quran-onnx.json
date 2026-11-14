@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "seferdemir/whisper-base-ar-quran-onnx",
   "slug": "seferdemir-whisper-base-ar-quran-onnx",
   "author": "seferdemir",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 102243245,
   "storage_human": "102 MB",
+  "context_length": null,
   "base_model": "tarteel-ai/whisper-base-ar-quran",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

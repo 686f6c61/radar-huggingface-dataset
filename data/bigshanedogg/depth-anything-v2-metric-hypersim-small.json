@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bigshanedogg/Depth-Anything-V2-Metric-Hypersim-Small",
   "slug": "bigshanedogg-depth-anything-v2-metric-hypersim-small",
   "author": "bigshanedogg",
@@ -32,14 +32,19 @@
   "parameters_human": "24.8M",
   "storage_bytes": 99165460,
   "storage_human": "99 MB",
+  "context_length": null,
   "base_model": "depth-anything/Depth-Anything-V2-Metric-Hypersim-Small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

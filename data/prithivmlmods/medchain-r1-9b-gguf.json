@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prithivMLmods/MedChain-R1-9B-GGUF",
   "slug": "prithivmlmods-medchain-r1-9b-gguf",
   "author": "prithivMLmods",
@@ -46,14 +46,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 59504721472,
   "storage_human": "59.5 GB",
+  "context_length": 262144,
   "base_model": "adidukrembzuai/MedChain-R1-9B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

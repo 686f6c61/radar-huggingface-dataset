@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chenzs/MiniMax-M2.5-catid-FP8-Serve",
   "slug": "chenzs-minimax-m2-5-catid-fp8-serve",
   "author": "chenzs",
@@ -36,14 +36,19 @@
   "parameters_human": "228.69B",
   "storage_bytes": 230134262576,
   "storage_human": "230.1 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-M2.5",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

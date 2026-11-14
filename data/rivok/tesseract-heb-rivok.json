@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rivok/tesseract-heb-rivok",
   "slug": "rivok-tesseract-heb-rivok",
   "author": "Rivok",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 73164606,
   "storage_human": "73 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

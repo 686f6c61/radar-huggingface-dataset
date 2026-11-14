@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ewin-reg/WeMM-Embedding-2B-GGUF",
   "slug": "ewin-reg-wemm-embedding-2b-gguf",
   "author": "ewin-reg",
@@ -56,14 +56,19 @@
   "parameters_human": "2.39B",
   "storage_bytes": 20955997294,
   "storage_human": "21.0 GB",
+  "context_length": 262144,
   "base_model": "tencent/WeMM-Embedding-2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Code and Text Embedding",

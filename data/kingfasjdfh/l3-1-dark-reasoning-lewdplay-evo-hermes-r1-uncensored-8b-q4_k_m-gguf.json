@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kingfasjdfh/L3.1-Dark-Reasoning-LewdPlay-evo-Hermes-R1-Uncensored-8B-Q4_K_M-GGUF",
   "slug": "kingfasjdfh-l3-1-dark-reasoning-lewdplay-evo-hermes-r1-uncensored-8b-q4_k_m-gguf",
   "author": "kingfasjdfh",
@@ -66,14 +66,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 4920741184,
   "storage_human": "4.9 GB",
+  "context_length": 131072,
   "base_model": "DavidAU/L3.1-Dark-Reasoning-LewdPlay-evo-Hermes-R1-Uncensored-8B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

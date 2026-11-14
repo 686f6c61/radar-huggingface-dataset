@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EliovpAI/Qwen_Image-2.1-Uncensored-MXFP4-Paiton",
   "slug": "eliovpai-qwen_image-2-1-uncensored-mxfp4-paiton",
   "author": "EliovpAI",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 9329056622,
   "storage_human": "9.3 GB",
+  "context_length": null,
   "base_model": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

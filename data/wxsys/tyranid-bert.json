@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wxsys/tyranid-bert",
   "slug": "wxsys-tyranid-bert",
   "author": "wxsys",
@@ -40,6 +40,7 @@
   "parameters_human": "149.5M",
   "storage_bytes": 1348147384,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "answerdotai/ModernBERT-base",
   "formats": [
     "onnx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

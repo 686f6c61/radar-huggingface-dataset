@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "maianh511/Vintern_1B_v2_finetune_lora_viet_chart_vqa",
   "slug": "maianh511-vintern_1b_v2_finetune_lora_viet_chart_vqa",
   "author": "maianh511",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 5769795345,
   "storage_human": "5.8 GB",
+  "context_length": null,
   "base_model": "5CD-AI/Vintern-1B-v2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

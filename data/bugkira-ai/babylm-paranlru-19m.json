@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bugkira-ai/babylm-paranlru-19m",
   "slug": "bugkira-ai-babylm-paranlru-19m",
   "author": "bugkira-ai",
@@ -40,14 +40,19 @@
   "parameters_human": "24.9M",
   "storage_bytes": 199297956,
   "storage_human": "199 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ApyHTML19/Gemma-2b-It_EU-AI-Reglementation",
   "slug": "apyhtml19-gemma-2b-it_eu-ai-reglementation",
   "author": "ApyHTML19",
@@ -26,14 +26,19 @@
   "parameters_human": "2.51B",
   "storage_bytes": 3144975031,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

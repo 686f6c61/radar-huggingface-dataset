@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "btolfa/sherpa-onnx-whisper-large-v3-turbo-russian-codeswitch-int8",
   "slug": "btolfa-sherpa-onnx-whisper-large-v3-turbo-russian-codeswitch-int8",
   "author": "btolfa",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 563268488,
   "storage_human": "563 MB",
+  "context_length": null,
   "base_model": "coriollon/whisper-large-v3-turbo-russian-codeswitch",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

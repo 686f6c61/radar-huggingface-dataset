@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "junbrro/egopi-mt-r6h5-axis1-full-persistent-30001-actsilu-slurm-18914-20260921",
   "slug": "junbrro-egopi-mt-r6h5-axis1-full-persistent-30001-actsilu-slurm-18914-20260921",
   "author": "junbrro",
@@ -23,14 +23,19 @@
   "parameters_human": "6.96B",
   "storage_bytes": 13968450899,
   "storage_human": "14.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

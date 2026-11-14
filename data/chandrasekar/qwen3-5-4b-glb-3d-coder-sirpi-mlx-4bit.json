@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Chandrasekar/Qwen3.5-4B-GLB-3D-Coder-Sirpi-MLX-4bit",
   "slug": "chandrasekar-qwen3-5-4b-glb-3d-coder-sirpi-mlx-4bit",
   "author": "Chandrasekar",
@@ -39,6 +39,7 @@
   "parameters_human": "4.21B",
   "storage_bytes": 2387227349,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "ccore/Qwen3.5-4B-GLB-3D-Coder",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

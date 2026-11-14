@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CobuildX-AI/cbx-indic-pii-extractor-58M",
   "slug": "cobuildx-ai-cbx-indic-pii-extractor-58m",
   "author": "CobuildX-AI",
@@ -60,6 +60,7 @@
   "parameters_human": "57.6M",
   "storage_bytes": 460742353,
   "storage_human": "461 MB",
+  "context_length": null,
   "base_model": "jhu-clsp/mmBERT-small",
   "formats": [
     "onnx",
@@ -67,8 +68,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

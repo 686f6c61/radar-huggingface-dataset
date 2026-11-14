@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OthnnyEL/mada-translategemma-4b-lora-merged",
   "slug": "othnnyel-mada-translategemma-4b-lora-merged",
   "author": "OthnnyEL",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 38073641,
   "storage_human": "38 MB",
+  "context_length": null,
   "base_model": "google/translategemma-4b-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

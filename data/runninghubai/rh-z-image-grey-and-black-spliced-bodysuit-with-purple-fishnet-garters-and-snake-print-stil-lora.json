@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RunningHubAI/rh-z-image-grey-and-black-spliced-bodysuit-with-purple-fishnet-garters-and-snake-print-stil-lora",
   "slug": "runninghubai-rh-z-image-grey-and-black-spliced-bodysuit-with-purple-fishnet-garters-and-snake-print-stil-lora",
   "author": "RunningHubAI",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 87420480,
   "storage_human": "87 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

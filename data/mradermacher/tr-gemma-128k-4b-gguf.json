@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/tr-gemma-128k-4b-GGUF",
   "slug": "mradermacher-tr-gemma-128k-4b-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "3.54B",
   "storage_bytes": 33452516288,
   "storage_human": "33.5 GB",
+  "context_length": 131072,
   "base_model": "AhmetSemih/tr-gemma-128k-4b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

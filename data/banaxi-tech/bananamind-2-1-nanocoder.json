@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Banaxi-Tech/BananaMind-2.1-NanoCoder",
   "slug": "banaxi-tech-bananamind-2-1-nanocoder",
   "author": "Banaxi-Tech",
@@ -35,14 +35,19 @@
   "parameters_human": "12.3M",
   "storage_bytes": 923348064,
   "storage_human": "923 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

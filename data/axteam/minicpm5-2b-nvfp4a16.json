@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "axteam/MiniCPM5-2B-NVFP4A16",
   "slug": "axteam-minicpm5-2b-nvfp4a16",
   "author": "axteam",
@@ -39,14 +39,19 @@
   "parameters_human": "2.52B",
   "storage_bytes": 2184777536,
   "storage_human": "2.2 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

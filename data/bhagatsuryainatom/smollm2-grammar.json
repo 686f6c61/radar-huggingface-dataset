@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bhagatsuryainatom/smollm2-grammar",
   "slug": "bhagatsuryainatom-smollm2-grammar",
   "author": "bhagatsuryainatom",
@@ -33,14 +33,19 @@
   "parameters_human": "134.5M",
   "storage_bytes": 538096121,
   "storage_human": "538 MB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-15T08:46:29.954Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

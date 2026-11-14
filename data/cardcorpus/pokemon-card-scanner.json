@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cardcorpus/pokemon-card-scanner",
   "slug": "cardcorpus-pokemon-card-scanner",
   "author": "cardcorpus",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 326399667,
   "storage_human": "326 MB",
+  "context_length": null,
   "base_model": "timm/vit_small_patch16_dinov3.lvd1689m, timm/vit_pe_core_small_patch16_384.fb, timm/mobilenetv4_conv_small.e2400_r224_in1k",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

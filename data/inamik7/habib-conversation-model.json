@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inamik7/habib-conversation-model",
   "slug": "inamik7-habib-conversation-model",
   "author": "inamik7",
@@ -36,14 +36,19 @@
   "parameters_human": "73.41B",
   "storage_bytes": 146821709104,
   "storage_human": "146.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

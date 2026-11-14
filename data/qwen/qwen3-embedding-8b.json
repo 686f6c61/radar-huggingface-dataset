@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Qwen/Qwen3-Embedding-8B",
   "slug": "qwen-qwen3-embedding-8b",
   "author": "Qwen",
@@ -35,14 +35,19 @@
   "parameters_human": "7.57B",
   "storage_bytes": 60585337250,
   "storage_human": "60.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

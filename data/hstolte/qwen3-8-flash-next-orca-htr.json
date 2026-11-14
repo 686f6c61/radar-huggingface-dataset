@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hstolte/Qwen3.8-Flash-Next-Orca-HTR",
   "slug": "hstolte-qwen3-8-flash-next-orca-htr",
   "author": "hstolte",
@@ -40,14 +40,19 @@
   "parameters_human": "53.58B",
   "storage_bytes": 172286020588,
   "storage_human": "172.3 GB",
+  "context_length": null,
   "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

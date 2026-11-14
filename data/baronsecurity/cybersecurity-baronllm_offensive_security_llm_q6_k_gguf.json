@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BaronSecurity/Cybersecurity-BaronLLM_Offensive_Security_LLM_Q6_K_GGUF",
   "slug": "baronsecurity-cybersecurity-baronllm_offensive_security_llm_q6_k_gguf",
   "author": "BaronSecurity",
@@ -34,14 +34,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 6598407439,
   "storage_human": "6.6 GB",
+  "context_length": 131072,
   "base_model": "AlicanKiraz0/BaronLLM-llama3.1-v1, meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

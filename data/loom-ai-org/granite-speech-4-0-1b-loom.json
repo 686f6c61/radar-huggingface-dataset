@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "loom-ai-org/granite-speech-4.0-1b-loom",
   "slug": "loom-ai-org-granite-speech-4-0-1b-loom",
   "author": "loom-ai-org",
@@ -41,14 +41,19 @@
   "parameters_human": "2.19B",
   "storage_bytes": 52529137568,
   "storage_human": "52.5 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.0-1b-speech",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hyukudan/deepseek-v4.1-flash-gguf-mirror",
   "slug": "hyukudan-deepseek-v4-1-flash-gguf-mirror",
   "author": "hyukudan",
@@ -28,14 +28,19 @@
   "parameters_human": "754.64B",
   "storage_bytes": 373679980544,
   "storage_human": "373.7 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bayway/JEV-27B-VL-MLX-4bit",
   "slug": "bayway-jev-27b-vl-mlx-4bit",
   "author": "Bayway",
@@ -38,6 +38,7 @@
   "parameters_human": "27.47B",
   "storage_bytes": 16297620902,
   "storage_human": "16.3 GB",
+  "context_length": null,
   "base_model": "autotrust/JEV-27B-VL",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

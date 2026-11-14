@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shmoich/lllada-moe-7b-uncensored-lora",
   "slug": "shmoich-lllada-moe-7b-uncensored-lora",
   "author": "shmoich",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 50456234,
   "storage_human": "50 MB",
+  "context_length": null,
   "base_model": "inclusionAI/LLaDA-MoE-7B-A1B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

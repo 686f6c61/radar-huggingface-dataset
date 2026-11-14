@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aijadugar/know-when-you-dont-know",
   "slug": "aijadugar-know-when-you-dont-know",
   "author": "aijadugar",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 66865,
   "storage_human": "66865 B",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

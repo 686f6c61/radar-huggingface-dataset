@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "seongmin0127/nero-qwen3-asr-ko-gguf",
   "slug": "seongmin0127-nero-qwen3-asr-ko-gguf",
   "author": "seongmin0127",
@@ -31,14 +31,19 @@
   "parameters_human": "2.35B",
   "storage_bytes": 3785703808,
   "storage_human": "3.8 GB",
+  "context_length": null,
   "base_model": "TeamUNIVA/qwen3_asr_1.7b_ko, Qwen/Qwen3-ForcedAligner-0.6B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

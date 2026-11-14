@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "colddRazer/Qwen3.5-9B-ultra-uncensored-heretic-EXL3-4bpw",
   "slug": "colddrazer-qwen3-5-9b-ultra-uncensored-heretic-exl3-4bpw",
   "author": "colddRazer",
@@ -38,14 +38,19 @@
   "parameters_human": "3.59B",
   "storage_bytes": 7205586068,
   "storage_human": "7.2 GB",
+  "context_length": null,
   "base_model": "llmfan46/Qwen3.5-9B-ultra-uncensored-heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

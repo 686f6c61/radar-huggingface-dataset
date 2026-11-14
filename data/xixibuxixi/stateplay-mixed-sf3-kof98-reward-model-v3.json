@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xixibuxixi/stateplay-mixed-sf3-kof98-reward-model-v3",
   "slug": "xixibuxixi-stateplay-mixed-sf3-kof98-reward-model-v3",
   "author": "xixibuxixi",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 340914199,
   "storage_human": "341 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

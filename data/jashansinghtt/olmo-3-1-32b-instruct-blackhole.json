@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jashansinghTT/olmo-3.1-32b-instruct-blackhole",
   "slug": "jashansinghtt-olmo-3-1-32b-instruct-blackhole",
   "author": "jashansinghTT",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 11433557500,
   "storage_human": "11.4 GB",
+  "context_length": null,
   "base_model": "allenai/Olmo-3.1-32B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

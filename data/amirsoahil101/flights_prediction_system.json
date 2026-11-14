@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amirsoahil101/Flights_Prediction_System",
   "slug": "amirsoahil101-flights_prediction_system",
   "author": "amirsoahil101",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 141474,
   "storage_human": "141474 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

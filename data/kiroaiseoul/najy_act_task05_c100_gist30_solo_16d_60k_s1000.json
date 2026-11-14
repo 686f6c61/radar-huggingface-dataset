@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kiroaiseoul/NAJY_act_task05_c100_gist30_solo_16D_60k_s1000",
   "slug": "kiroaiseoul-najy_act_task05_c100_gist30_solo_16d_60k_s1000",
   "author": "kiroaiseoul",
@@ -27,14 +27,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 206786384,
   "storage_human": "207 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

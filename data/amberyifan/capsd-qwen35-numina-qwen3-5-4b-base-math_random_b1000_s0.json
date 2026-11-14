@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AmberYifan/capsd-qwen35-numina-Qwen3.5-4B-Base-math_random_b1000_s0",
   "slug": "amberyifan-capsd-qwen35-numina-qwen3-5-4b-base-math_random_b1000_s0",
   "author": "AmberYifan",
@@ -33,14 +33,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 9098617686,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LeeAeron/YuE2_Baked",
   "slug": "leeaeron-yue2_baked",
   "author": "LeeAeron",
@@ -22,14 +22,19 @@
   "parameters_human": "677.0M",
   "storage_bytes": 5298300896,
   "storage_human": "5.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "LeeAeron/YuE2-3B-Q8_0_Baked",
+  "renamed_at": "2026-11-11T03:11:24.458Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Greatjedi/Qwen3.8-27B-Intel-Arc-Tuned-GGUF",
   "slug": "greatjedi-qwen3-8-27b-intel-arc-tuned-gguf",
   "author": "Greatjedi",
@@ -46,14 +46,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 102120710912,
   "storage_human": "102.1 GB",
+  "context_length": 262144,
   "base_model": "empero-ai/Qwen3.8-27B-Ridge-GGUF, ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF, bytkim/Qwen3.8-27B-pi",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

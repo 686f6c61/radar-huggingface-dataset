@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jeweled/unfiltered-5b-grpo-math-expert-mlx-8Bit",
   "slug": "jeweled-unfiltered-5b-grpo-math-expert-mlx-8bit",
   "author": "jeweled",
@@ -41,6 +41,7 @@
   "parameters_human": "5.04B",
   "storage_bytes": 5356788540,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": "littlelearner/unfiltered-5b-grpo-math-expert",
   "formats": [
     "mlx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

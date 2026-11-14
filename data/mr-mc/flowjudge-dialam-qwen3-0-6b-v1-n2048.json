@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mr-mc/flowjudge-dialam-qwen3-0.6b-v1-n2048",
   "slug": "mr-mc-flowjudge-dialam-qwen3-0-6b-v1-n2048",
   "author": "mr-mc",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 51845111,
   "storage_human": "52 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

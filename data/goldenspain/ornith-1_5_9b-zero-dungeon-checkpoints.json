@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GoldenSpain/Ornith-1_5_9B-zero-dungeon-checkpoints",
   "slug": "goldenspain-ornith-1_5_9b-zero-dungeon-checkpoints",
   "author": "GoldenSpain",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 196516039,
   "storage_human": "197 MB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T02:51:04.169Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

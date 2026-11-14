@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eduardoworrel/alias3-micro-1026-MLC-q4f16_1",
   "slug": "eduardoworrel-alias3-micro-1026-mlc-q4f16_1",
   "author": "eduardoworrel",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 2441761123,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "aliasrobotics/alias3-micro-1026",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

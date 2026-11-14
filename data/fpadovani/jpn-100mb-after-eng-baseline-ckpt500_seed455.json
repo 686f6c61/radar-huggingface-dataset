@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fpadovani/jpn-100mb-after-eng-baseline-ckpt500_seed455",
   "slug": "fpadovani-jpn-100mb-after-eng-baseline-ckpt500_seed455",
   "author": "fpadovani",
@@ -32,14 +32,19 @@
   "parameters_human": "124.8M",
   "storage_bytes": 7238755439,
   "storage_human": "7.2 GB",
+  "context_length": null,
   "base_model": "fpadovani/ppt-art-lang-eng-baseline-100mb_seed455",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

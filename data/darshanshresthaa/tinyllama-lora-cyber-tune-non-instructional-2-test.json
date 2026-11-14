@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Darshanshresthaa/tinyllama-lora-cyber-tune-Non-Instructional-2-test",
   "slug": "darshanshresthaa-tinyllama-lora-cyber-tune-non-instructional-2-test",
   "author": "Darshanshresthaa",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 18045728,
   "storage_human": "18 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-08T04:30:18.212Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

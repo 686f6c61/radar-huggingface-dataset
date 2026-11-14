@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "orbbit-AI-026/Senior-Code-Dynamic-Motion-AI",
   "slug": "orbbit-ai-026-senior-code-dynamic-motion-ai",
   "author": "orbbit-AI-026",
@@ -26,14 +26,19 @@
   "parameters_human": "176.94B",
   "storage_bytes": 112238658778,
   "storage_human": "112.2 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T08:00:16.382Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

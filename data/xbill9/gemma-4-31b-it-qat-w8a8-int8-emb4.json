@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xbill9/gemma-4-31B-it-qat-w8a8-int8-emb4",
   "slug": "xbill9-gemma-4-31b-it-qat-w8a8-int8-emb4",
   "author": "xbill9",
@@ -36,14 +36,19 @@
   "parameters_human": "32.11B",
   "storage_bytes": 30915628226,
   "storage_human": "30.9 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-31B-it-qat-q4_0-unquantized",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alirezaaminzadeh/or-knowledge-copilot-retriever",
   "slug": "alirezaaminzadeh-or-knowledge-copilot-retriever",
   "author": "alirezaaminzadeh",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 737044,
   "storage_human": "737044 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

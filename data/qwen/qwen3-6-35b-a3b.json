@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Qwen/Qwen3.6-35B-A3B",
   "slug": "qwen-qwen3-6-35b-a3b",
   "author": "Qwen",
@@ -24,21 +24,26 @@
     "deploy:azure",
     "region:us"
   ],
-  "likes": 3129,
+  "likes": 3130,
   "downloads_30d": 3985930,
-  "trending_score": 31,
+  "trending_score": 29,
   "parameters": 35951822704,
   "parameters_human": "35.95B",
   "storage_bytes": 71921347477,
   "storage_human": "71.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

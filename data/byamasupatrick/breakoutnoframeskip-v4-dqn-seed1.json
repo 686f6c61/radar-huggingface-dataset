@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "byamasupatrick/BreakoutNoFrameskip-v4-dqn-seed1",
   "slug": "byamasupatrick-breakoutnoframeskip-v4-dqn-seed1",
   "author": "byamasupatrick",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 27175179,
   "storage_human": "27 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

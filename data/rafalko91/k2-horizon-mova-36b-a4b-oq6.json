@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rafalko91/K2-Horizon-MoVA-36B-A4B-oQ6",
   "slug": "rafalko91-k2-horizon-mova-36b-a4b-oq6",
   "author": "rafalko91",
@@ -28,6 +28,7 @@
   "parameters_human": "37.44B",
   "storage_bytes": 30935293847,
   "storage_human": "30.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

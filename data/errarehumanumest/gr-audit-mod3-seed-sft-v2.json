@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ErrareHumanumEst/gr-audit-mod3-seed-sft-v2",
   "slug": "errarehumanumest-gr-audit-mod3-seed-sft-v2",
   "author": "ErrareHumanumEst",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 140246412,
   "storage_human": "140 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-04T04:04:00.904Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

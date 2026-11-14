@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mugunth123/sarvam-translate-2bit-GGUF",
   "slug": "mugunth123-sarvam-translate-2bit-gguf",
   "author": "Mugunth123",
@@ -79,14 +79,19 @@
   "parameters_human": "3.88B",
   "storage_bytes": 1537982976,
   "storage_human": "1.5 GB",
+  "context_length": 131072,
   "base_model": "sarvamai/sarvam-translate",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "malaiwah/qwen3-5-tiny-random-gguf-f32-format",
   "slug": "malaiwah-qwen3-5-tiny-random-gguf-f32-format",
   "author": "malaiwah",
@@ -36,14 +36,19 @@
   "parameters_human": "246612",
   "storage_bytes": 995136,
   "storage_human": "995136 B",
+  "context_length": 256,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

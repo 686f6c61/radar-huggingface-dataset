@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SeanZheng/sz-arc-00",
   "slug": "seanzheng-sz-arc-00",
   "author": "SeanZheng",
@@ -24,6 +24,7 @@
   "parameters_human": "5.09B",
   "storage_bytes": 10177831668,
   "storage_human": "10.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -31,8 +32,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

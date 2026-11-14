@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/polyedit-qwen3-4b-property-v1-GGUF",
   "slug": "mradermacher-polyedit-qwen3-4b-property-v1-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "4.41B",
   "storage_bytes": 39708282624,
   "storage_human": "39.7 GB",
+  "context_length": 40960,
   "base_model": "luca0621/polyedit-qwen3-4b-property-v1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

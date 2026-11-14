@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "firzahdzm/tourn-f4920bf7-instructtext-super-v12brun1",
   "slug": "firzahdzm-tourn-f4920bf7-instructtext-super-v12brun1",
   "author": "firzahdzm",
@@ -23,14 +23,19 @@
   "parameters_human": "162.4M",
   "storage_bytes": 325346963,
   "storage_human": "325 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

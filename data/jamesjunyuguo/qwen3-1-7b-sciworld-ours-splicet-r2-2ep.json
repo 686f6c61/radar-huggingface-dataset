@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jamesjunyuguo/qwen3-1.7b-sciworld-ours-splicet-r2-2ep",
   "slug": "jamesjunyuguo-qwen3-1-7b-sciworld-ours-splicet-r2-2ep",
   "author": "jamesjunyuguo",
@@ -23,14 +23,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 6893763179,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "jamesjunyuguo/Qwen3-1.7B-ScienceWorld-IPS-r2",
+  "renamed_at": "2026-11-11T05:44:45.791Z",
   "benchmarks": [],
   "sources": [
     {

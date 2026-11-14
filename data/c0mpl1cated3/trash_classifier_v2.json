@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "C0mpl1cated3/trash_classifier_v2",
   "slug": "c0mpl1cated3-trash_classifier_v2",
   "author": "C0mpl1cated3",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 103178723,
   "storage_human": "103 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

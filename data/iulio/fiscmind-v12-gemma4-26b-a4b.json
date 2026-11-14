@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iulio/FiscMind-v12-Gemma4-26B-A4B",
   "slug": "iulio-fiscmind-v12-gemma4-26b-a4b",
   "author": "iulio",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 2009757506,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-26B-A4B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

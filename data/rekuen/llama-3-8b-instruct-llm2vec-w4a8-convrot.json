@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rekuen/Llama-3-8B-Instruct-LLM2Vec-W4A8-ConvRot",
   "slug": "rekuen-llama-3-8b-instruct-llm2vec-w4a8-convrot",
   "author": "rekuen",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 4982729664,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

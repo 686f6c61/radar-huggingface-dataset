@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "divinetribe/MiMo-V2.6-9B-MLX-8bit",
   "slug": "divinetribe-mimo-v2-6-9b-mlx-8bit",
   "author": "divinetribe",
@@ -36,6 +36,7 @@
   "parameters_human": "9.41B",
   "storage_bytes": 10446580250,
   "storage_human": "10.4 GB",
+  "context_length": null,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

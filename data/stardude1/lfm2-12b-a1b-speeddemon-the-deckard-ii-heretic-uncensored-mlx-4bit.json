@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stardude1/LFM2-12B-A1B-SpeedDemon-The-Deckard-II-HERETIC-Uncensored-mlx-4Bit",
   "slug": "stardude1-lfm2-12b-a1b-speeddemon-the-deckard-ii-heretic-uncensored-mlx-4bit",
   "author": "stardude1",
@@ -65,6 +65,7 @@
   "parameters_human": "11.28B",
   "storage_bytes": 6346893818,
   "storage_human": "6.3 GB",
+  "context_length": null,
   "base_model": "DavidAU/LFM2-12B-A1B-SpeedDemon-The-Deckard-II-HERETIC-Uncensored",
   "formats": [
     "mlx",
@@ -72,8 +73,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

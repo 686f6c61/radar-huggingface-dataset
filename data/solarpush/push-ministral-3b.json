@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "solarpush/push-ministral-3b",
   "slug": "solarpush-push-ministral-3b",
   "author": "solarpush",
@@ -32,14 +32,19 @@
   "parameters_human": "3.83B",
   "storage_bytes": 2477324512,
   "storage_human": "2.5 GB",
+  "context_length": 262144,
   "base_model": "mistralai/Ministral-3-3B-Instruct-2512",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-22T03:57:44.955Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

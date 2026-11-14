@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Iwannapose/minimax_h3_pdmd_4nfe_comfyui",
   "slug": "iwannapose-minimax_h3_pdmd_4nfe_comfyui",
   "author": "Iwannapose",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 9447065776,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rjnguho24/Krast_Krea2_Diffusers_Experiment",
   "slug": "rjnguho24-krast_krea2_diffusers_experiment",
   "author": "rjnguho24",
@@ -24,6 +24,7 @@
   "parameters_human": "12.82B",
   "storage_bytes": 60917493434,
   "storage_human": "60.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -31,8 +32,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

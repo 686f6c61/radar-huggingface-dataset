@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hhhhhhy5/MFD-Qwen3-4B-100K",
   "slug": "hhhhhhy5-mfd-qwen3-4b-100k",
   "author": "hhhhhhy5",
@@ -32,14 +32,19 @@
   "parameters_human": "537.5M",
   "storage_bytes": 1074906832,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "z-lab/Qwen3-4B-DFlash-b16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

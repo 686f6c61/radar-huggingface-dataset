@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Void-Z/GLM-5.2-NVFP4-FP8-Hybrid",
   "slug": "void-z-glm-5-2-nvfp4-fp8-hybrid",
   "author": "Void-Z",
@@ -37,14 +37,19 @@
   "parameters_human": "380.99B",
   "storage_bytes": 446933188259,
   "storage_human": "446.9 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.2, nvidia/GLM-5.2-NVFP4, zai-org/GLM-5.2-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

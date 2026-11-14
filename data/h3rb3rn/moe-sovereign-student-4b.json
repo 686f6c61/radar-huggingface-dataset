@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "h3rb3rn/moe-sovereign-student-4b",
   "slug": "h3rb3rn-moe-sovereign-student-4b",
   "author": "h3rb3rn",
@@ -43,14 +43,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 12608784736,
   "storage_human": "12.6 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-11T08:30:58.368Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

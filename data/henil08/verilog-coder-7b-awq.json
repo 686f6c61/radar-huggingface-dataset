@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "henil08/verilog-coder-7b-awq",
   "slug": "henil08-verilog-coder-7b-awq",
   "author": "henil08",
@@ -30,14 +30,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 5582279495,
   "storage_human": "5.6 GB",
+  "context_length": null,
   "base_model": "henil08/verilog-coder-7b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

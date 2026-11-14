@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lm-spell/SinBERT-large-ft-ssc",
   "slug": "lm-spell-sinbert-large-ft-ssc",
   "author": "lm-spell",
@@ -37,14 +37,19 @@
   "parameters_human": "126.0M",
   "storage_bytes": 503934824,
   "storage_human": "504 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-25T11:21:38.933Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

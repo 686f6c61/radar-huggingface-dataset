@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "brandonmusic/GLM-5.3-EXL3-TR3-uniform-K3-draft",
   "slug": "brandonmusic-glm-5-3-exl3-tr3-uniform-k3-draft",
   "author": "brandonmusic",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 457106952040,
   "storage_human": "457.1 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-BF16",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "brandonmusic/GLM-5.3-EXL3-TR3-3bpw",
+  "renamed_at": "2026-11-11T04:44:18.622Z",
   "benchmarks": [],
   "sources": [
     {

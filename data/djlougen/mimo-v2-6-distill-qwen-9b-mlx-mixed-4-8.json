@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DJLougen/MiMo-V2.6-Distill-Qwen-9B-MLX-mixed-4-8",
   "slug": "djlougen-mimo-v2-6-distill-qwen-9b-mlx-mixed-4-8",
   "author": "DJLougen",
@@ -30,6 +30,7 @@
   "parameters_human": "9.41B",
   "storage_bytes": 7398369256,
   "storage_human": "7.4 GB",
+  "context_length": null,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

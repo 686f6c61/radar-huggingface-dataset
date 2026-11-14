@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bydlosoft/Huihui-Qwen3.8-Flash-Next-abliterated-v2-MLX-mixed-4_8bit",
   "slug": "bydlosoft-huihui-qwen3-8-flash-next-abliterated-v2-mlx-mixed-4_8bit",
   "author": "bydlosoft",
@@ -34,6 +34,7 @@
   "parameters_human": "126.19B",
   "storage_bytes": 108979151913,
   "storage_human": "109.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

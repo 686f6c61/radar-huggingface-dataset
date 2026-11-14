@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "steampunque/Qwen3-Coder-Next-MP-GGUF",
   "slug": "steampunque-qwen3-coder-next-mp-gguf",
   "author": "steampunque",
@@ -33,14 +33,19 @@
   "parameters_human": "79.67B",
   "storage_bytes": 145296226560,
   "storage_human": "145.3 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3-Coder-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

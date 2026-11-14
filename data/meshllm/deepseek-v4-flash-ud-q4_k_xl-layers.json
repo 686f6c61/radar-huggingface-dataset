@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "meshllm/DeepSeek-V4-Flash-UD-Q4_K_XL-layers",
   "slug": "meshllm-deepseek-v4-flash-ud-q4_k_xl-layers",
   "author": "meshllm",
@@ -34,14 +34,19 @@
   "parameters_human": "6.58B",
   "storage_bytes": 155348979616,
   "storage_human": "155.3 GB",
+  "context_length": 1048576,
   "base_model": "unsloth/DeepSeek-V4-Flash-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

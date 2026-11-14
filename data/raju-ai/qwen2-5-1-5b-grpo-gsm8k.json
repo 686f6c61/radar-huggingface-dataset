@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "raju-ai/qwen2.5-1.5b-grpo-gsm8k",
   "slug": "raju-ai-qwen2-5-1-5b-grpo-gsm8k",
   "author": "raju-ai",
@@ -41,14 +41,19 @@
   "parameters_human": null,
   "storage_bytes": 159192662,
   "storage_human": "159 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct, unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Mathematical Reasoning",

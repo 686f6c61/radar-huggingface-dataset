@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moroz-ellmsha/sdai-bonsai-model-archives",
   "slug": "moroz-ellmsha-sdai-bonsai-model-archives",
   "author": "moroz-ellmsha",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 7300596857,
   "storage_human": "7.3 GB",
+  "context_length": null,
   "base_model": "prism-ml/bonsai-image-ternary-4B-mlx-2bit, prism-ml/bonsai-image-binary-4B-mlx-1bit",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

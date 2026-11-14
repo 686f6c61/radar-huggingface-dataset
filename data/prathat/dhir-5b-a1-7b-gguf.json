@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Prathat/Dhir-5B-A1.7B-GGUF",
   "slug": "prathat-dhir-5b-a1-7b-gguf",
   "author": "Prathat",
@@ -57,14 +57,19 @@
   "parameters_human": "5.09B",
   "storage_bytes": 3361673024,
   "storage_human": "3.4 GB",
+  "context_length": 16384,
   "base_model": "zenteiq-ai/Dhir-5B-A1.7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

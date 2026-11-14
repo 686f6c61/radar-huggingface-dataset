@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Werea-co/Werea-KVKK-PII-150M",
   "slug": "werea-co-werea-kvkk-pii-150m",
   "author": "Werea-co",
@@ -39,14 +39,19 @@
   "parameters_human": "149.4M",
   "storage_bytes": 1194833354,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "ytu-ce-cosmos/modernbert-tr-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

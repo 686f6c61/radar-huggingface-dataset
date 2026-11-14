@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FaustianDeal/Artemis-31B-v1.2-NVFP4",
   "slug": "faustiandeal-artemis-31b-v1-2-nvfp4",
   "author": "FaustianDeal",
@@ -29,14 +29,19 @@
   "parameters_human": "18.46B",
   "storage_bytes": 20478998074,
   "storage_human": "20.5 GB",
+  "context_length": null,
   "base_model": "TheDrummer/Artemis-31B-v1.2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

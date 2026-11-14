@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hafsteinn/icelandic-modernbert-ws-S-large-s0",
   "slug": "hafsteinn-icelandic-modernbert-ws-s-large-s0",
   "author": "hafsteinn",
@@ -35,14 +35,19 @@
   "parameters_human": "377.8M",
   "storage_bytes": 6045539296,
   "storage_human": "6.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

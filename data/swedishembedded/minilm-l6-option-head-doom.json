@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "swedishembedded/minilm-l6-option-head-doom",
   "slug": "swedishembedded-minilm-l6-option-head-doom",
   "author": "swedishembedded",
@@ -30,14 +30,19 @@
   "parameters_human": "444673",
   "storage_bytes": 1780636,
   "storage_human": "2 MB",
+  "context_length": null,
   "base_model": "sentence-transformers/all-MiniLM-L6-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

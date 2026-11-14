@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HuiLin0220/Medcat",
   "slug": "huilin0220-medcat",
   "author": "HuiLin0220",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 60145835255,
   "storage_human": "60.1 GB",
+  "context_length": null,
   "base_model": "OpenGVLab/InternVL3-8B-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

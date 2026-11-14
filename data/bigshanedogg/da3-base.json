@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bigshanedogg/DA3-BASE",
   "slug": "bigshanedogg-da3-base",
   "author": "bigshanedogg",
@@ -34,14 +34,19 @@
   "parameters_human": "135.4M",
   "storage_bytes": 541517468,
   "storage_human": "542 MB",
+  "context_length": null,
   "base_model": "depth-anything/DA3-BASE",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

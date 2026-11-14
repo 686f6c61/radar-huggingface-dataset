@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Moipee/MossFormer2-SS-16K-CoreML",
   "slug": "moipee-mossformer2-ss-16k-coreml",
   "author": "Moipee",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 117970656,
   "storage_human": "118 MB",
+  "context_length": null,
   "base_model": "alibabasglab/MossFormer2_SS_16K",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

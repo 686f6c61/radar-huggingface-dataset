@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Solstice-AI/DeepSeek-V4-Flash-Vision-Exp-AWQ-DSpark",
   "slug": "solstice-ai-deepseek-v4-flash-vision-exp-awq-dspark",
   "author": "Solstice-AI",
@@ -49,6 +49,7 @@
   "parameters_human": "55.02B",
   "storage_bytes": 172451490127,
   "storage_human": "172.5 GB",
+  "context_length": null,
   "base_model": "unsloth/DeepSeek-V4-Flash-Vision-Exp",
   "formats": [
     "gguf",
@@ -56,8 +57,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-13T04:01:47.541Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

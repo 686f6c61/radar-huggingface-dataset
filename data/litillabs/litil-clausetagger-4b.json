@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litillabs/litil-clausetagger-4b",
   "slug": "litillabs-litil-clausetagger-4b",
   "author": "litillabs",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 342027648,
   "storage_human": "342 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "CUAD passage multi-label classification",

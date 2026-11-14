@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WangAlex8/Psi0_handshake_nocoinFT",
   "slug": "wangalex8-psi0_handshake_nocoinft",
   "author": "WangAlex8",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 61092755144,
   "storage_human": "61.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

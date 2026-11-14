@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fromziro/Negative-v1.0",
   "slug": "fromziro-negative-v1-0",
   "author": "fromziro",
@@ -42,14 +42,19 @@
   "parameters_human": "67736",
   "storage_bytes": 283192,
   "storage_human": "283192 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "fromziro/ZeroS-Pico-v1.0",
+  "renamed_at": "2026-11-11T05:21:52.590Z",
   "benchmarks": [],
   "sources": [
     {

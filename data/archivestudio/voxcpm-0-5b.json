@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ArchiveStudio/VoxCPM-0.5B",
   "slug": "archivestudio-voxcpm-0-5b",
   "author": "ArchiveStudio",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 1606337780,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM4-0.5B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

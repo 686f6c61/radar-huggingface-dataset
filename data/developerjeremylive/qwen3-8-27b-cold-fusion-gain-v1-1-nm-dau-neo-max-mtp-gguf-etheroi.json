@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "developerjeremylive/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF-etheroi",
   "slug": "developerjeremylive-qwen3-8-27b-cold-fusion-gain-v1-1-nm-dau-neo-max-mtp-gguf-etheroi",
   "author": "developerjeremylive",
@@ -57,14 +57,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 424060011500,
   "storage_human": "424.1 GB",
+  "context_length": 262144,
   "base_model": "DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

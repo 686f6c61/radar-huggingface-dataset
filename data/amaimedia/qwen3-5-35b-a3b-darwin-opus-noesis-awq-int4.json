@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/Qwen3.5-35B-A3B-Darwin-Opus-NOESIS-AWQ-INT4",
   "slug": "amaimedia-qwen3-5-35b-a3b-darwin-opus-noesis-awq-int4",
   "author": "AMAImedia",
@@ -51,14 +51,19 @@
   "parameters_human": "19.50B",
   "storage_bytes": 20887858047,
   "storage_human": "20.9 GB",
+  "context_length": null,
   "base_model": "FINAL-Bench/Darwin-35B-A3B-Opus",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-13T09:36:26.242Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

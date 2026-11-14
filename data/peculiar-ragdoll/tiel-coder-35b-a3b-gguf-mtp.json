@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF-MTP",
   "slug": "peculiar-ragdoll-tiel-coder-35b-a3b-gguf-mtp",
   "author": "peculiar-ragdoll",
@@ -41,14 +41,19 @@
   "parameters_human": "446.6M",
   "storage_bytes": 660646788965,
   "storage_human": "660.6 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

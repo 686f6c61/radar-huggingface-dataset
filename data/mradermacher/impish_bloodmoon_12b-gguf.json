@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Impish_Bloodmoon_12B-GGUF",
   "slug": "mradermacher-impish_bloodmoon_12b-gguf",
   "author": "mradermacher",
@@ -33,14 +33,19 @@
   "parameters_human": "12.25B",
   "storage_bytes": 84692434784,
   "storage_human": "84.7 GB",
+  "context_length": 131072,
   "base_model": "SicariusSicariiStuff/Impish_Bloodmoon_12B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

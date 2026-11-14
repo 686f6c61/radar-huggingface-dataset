@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DK4AAD/amoral-gemma3-1B-v2-gguf",
   "slug": "dk4aad-amoral-gemma3-1b-v2-gguf",
   "author": "DK4AAD",
@@ -37,14 +37,19 @@
   "parameters_human": "999.9M",
   "storage_bytes": 7846109952,
   "storage_human": "7.8 GB",
+  "context_length": 32768,
   "base_model": "soob3123/amoral-gemma3-1B-v2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

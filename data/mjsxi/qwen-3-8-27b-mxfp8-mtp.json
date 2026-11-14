@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mjsxi/qwen-3.8-27b-mxfp8-mtp",
   "slug": "mjsxi-qwen-3-8-27b-mxfp8-mtp",
   "author": "mjsxi",
@@ -30,6 +30,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 29118723872,
   "storage_human": "29.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

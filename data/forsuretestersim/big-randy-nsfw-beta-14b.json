@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ForSureTesterSim/Big-Randy-NSFW-Beta-14B",
   "slug": "forsuretestersim-big-randy-nsfw-beta-14b",
   "author": "ForSureTesterSim",
@@ -38,14 +38,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 29542620130,
   "storage_human": "29.5 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3-14B-abliterated-v2, Qwen/Qwen3-14B-Base, HelpingAI/Dhanishtha-nsfw",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ai4bharat/BrailleQwen-2B",
   "slug": "ai4bharat-brailleqwen-2b",
   "author": "ai4bharat",
@@ -36,14 +36,19 @@
   "parameters_human": "2.72B",
   "storage_bytes": 5463667173,
   "storage_human": "5.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

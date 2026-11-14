@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nightmedia/Qwen3.8-27B-Cold-Fusion-FF711-Darker-Hero-GAIN-B-mxfp8-mlx",
   "slug": "nightmedia-qwen3-8-27b-cold-fusion-ff711-darker-hero-gain-b-mxfp8-mlx",
   "author": "nightmedia",
@@ -90,6 +90,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 28680724517,
   "storage_human": "28.7 GB",
+  "context_length": null,
   "base_model": "DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1, DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0",
   "formats": [
     "mlx",
@@ -97,8 +98,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "black-forest-labs/FLUX.2-dev",
   "slug": "black-forest-labs-flux-2-dev",
   "author": "black-forest-labs",
@@ -24,13 +24,14 @@
     "diffusers:Flux2Pipeline",
     "region:us"
   ],
-  "likes": 2582,
+  "likes": 2584,
   "downloads_30d": 286424,
-  "trending_score": 25,
+  "trending_score": 26,
   "parameters": 32223281152,
   "parameters_human": "32.22B",
   "storage_bytes": 177642924581,
   "storage_human": "177.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

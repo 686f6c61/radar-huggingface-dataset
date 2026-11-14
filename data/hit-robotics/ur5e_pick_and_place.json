@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HIT-Robotics/ur5e_pick_and_place",
   "slug": "hit-robotics-ur5e_pick_and_place",
   "author": "HIT-Robotics",
@@ -27,14 +27,19 @@
   "parameters_human": "5.59B",
   "storage_bytes": 11483650568,
   "storage_human": "11.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "joshycodes/fd-qwen3.5-9b-self_st-s1",
   "slug": "joshycodes-fd-qwen3-5-9b-self_st-s1",
   "author": "joshycodes",
@@ -23,14 +23,19 @@
   "parameters_human": "9.65B",
   "storage_bytes": 19319118982,
   "storage_human": "19.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-09T02:47:39.764Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

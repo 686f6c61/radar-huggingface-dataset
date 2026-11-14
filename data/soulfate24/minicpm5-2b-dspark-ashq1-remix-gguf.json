@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Soulfate24/MiniCPM5-2B-DSpark-ASHQ1-Remix-GGUF",
   "slug": "soulfate24-minicpm5-2b-dspark-ashq1-remix-gguf",
   "author": "Soulfate24",
@@ -45,14 +45,19 @@
   "parameters_human": "2.52B",
   "storage_bytes": 12374236704,
   "storage_human": "12.4 GB",
+  "context_length": 131072,
   "base_model": "openbmb/MiniCPM5-2B, openbmb/MiniCPM5-2B-DSpark",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-09T06:52:44.965Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SVINT/outputs",
   "slug": "svint-outputs",
   "author": "SVINT",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 116799841,
   "storage_human": "117 MB",
+  "context_length": null,
   "base_model": "Jackrong/Qwen3.5-2B-Claude-4.6-Opus-Reasoning-Distilled",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "scombat/s1d1-router",
   "slug": "scombat-s1d1-router",
   "author": "scombat",
@@ -49,6 +49,7 @@
   "parameters_human": "307.5M",
   "storage_bytes": 651666467,
   "storage_human": "652 MB",
+  "context_length": null,
   "base_model": "jhu-clsp/mmBERT-base",
   "formats": [
     "onnx",
@@ -56,8 +57,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

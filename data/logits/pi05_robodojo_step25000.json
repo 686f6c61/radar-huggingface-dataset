@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "logits/pi05_robodojo_step25000",
   "slug": "logits-pi05_robodojo_step25000",
   "author": "logits",
@@ -26,14 +26,19 @@
   "parameters_human": "4.93B",
   "storage_bytes": 19733628792,
   "storage_human": "19.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-11T05:09:52.699Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

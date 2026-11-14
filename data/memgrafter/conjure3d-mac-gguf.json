@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "memgrafter/conjure3d-mac-gguf",
   "slug": "memgrafter-conjure3d-mac-gguf",
   "author": "memgrafter",
@@ -29,14 +29,19 @@
   "parameters_human": "220.7M",
   "storage_bytes": 15421638400,
   "storage_human": "15.4 GB",
+  "context_length": null,
   "base_model": "microsoft/TRELLIS.2-4B, ZhengPeng7/BiRefNet",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

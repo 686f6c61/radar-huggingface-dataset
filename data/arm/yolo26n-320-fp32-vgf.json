@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Arm/yolo26n-320-fp32-vgf",
   "slug": "arm-yolo26n-320-fp32-vgf",
   "author": "Arm",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 16522611,
   "storage_human": "17 MB",
+  "context_length": null,
   "base_model": "Ultralytics/YOLO26",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

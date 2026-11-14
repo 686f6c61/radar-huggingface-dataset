@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ukcastle/notaqnn-GR00T-Mdrift_crop192_cft-Dmergedv2_resfixed-step1000",
   "slug": "ukcastle-notaqnn-gr00t-mdrift_crop192_cft-dmergedv2_resfixed-step1000",
   "author": "ukcastle",
@@ -29,14 +29,19 @@
   "parameters_human": "5.37B",
   "storage_bytes": 11371499392,
   "storage_human": "11.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

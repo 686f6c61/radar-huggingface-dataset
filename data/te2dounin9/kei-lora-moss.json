@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Te2douNin9/Kei-LoRA-MOSS",
   "slug": "te2dounin9-kei-lora-moss",
   "author": "Te2douNin9",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 1076109317,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-Base",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Te2douNin9/MOSS-Image-Kei",
+  "renamed_at": "2026-11-11T04:00:16.801Z",
   "benchmarks": [],
   "sources": []
 }

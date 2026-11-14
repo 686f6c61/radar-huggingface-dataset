@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mwanzau/LFM3-1.7B-Mazgu",
   "slug": "mwanzau-lfm3-1-7b-mazgu",
   "author": "Mwanzau",
@@ -67,14 +67,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 3475543794,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-1.7B, Mwanzau/LFM3-1.7B-CPT-tumbuka",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T03:04:25.647Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

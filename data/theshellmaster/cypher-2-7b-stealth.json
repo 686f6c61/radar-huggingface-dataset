@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TheShellMaster/cypher-2-7b-stealth",
   "slug": "theshellmaster-cypher-2-7b-stealth",
   "author": "TheShellMaster",
@@ -33,14 +33,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 15242693780,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T04:00:54.024Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

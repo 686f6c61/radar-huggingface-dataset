@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/MN-Dark-Planet-TITAN-12B-GGUF",
   "slug": "davidau-mn-dark-planet-titan-12b-gguf",
   "author": "DavidAU",
@@ -55,14 +55,19 @@
   "parameters_human": "12.25B",
   "storage_bytes": 84692255552,
   "storage_human": "84.7 GB",
+  "context_length": 1024000,
   "base_model": "DavidAU/MN-Dark-Planet-TITAN-12B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "speridlabs/idol",
   "slug": "speridlabs-idol",
   "author": "speridlabs",
@@ -19,19 +19,24 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 2328,
+  "likes": 2333,
   "downloads_30d": 32619,
-  "trending_score": 375.5,
+  "trending_score": 359.5,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 3572854245,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

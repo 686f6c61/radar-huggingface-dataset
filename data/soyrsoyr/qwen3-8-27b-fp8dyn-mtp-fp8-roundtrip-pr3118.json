@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-FP8-Roundtrip-PR3118",
   "slug": "soyrsoyr-qwen3-8-27b-fp8dyn-mtp-fp8-roundtrip-pr3118",
   "author": "soyrsoyr",
@@ -35,14 +35,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 35504661573,
   "storage_human": "35.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-01T05:11:12.844Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

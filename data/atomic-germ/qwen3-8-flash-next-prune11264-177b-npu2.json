@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Atomic-Germ/Qwen3.8-Flash-Next-Prune11264-177B-NPU2",
   "slug": "atomic-germ-qwen3-8-flash-next-prune11264-177b-npu2",
   "author": "Atomic-Germ",
@@ -27,12 +27,17 @@
   "parameters_human": "144.9M",
   "storage_bytes": 592598248,
   "storage_human": "593 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

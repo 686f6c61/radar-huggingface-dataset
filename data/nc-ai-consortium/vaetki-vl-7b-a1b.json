@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nc-ai-consortium/VAETKI-VL-7B-A1B",
   "slug": "nc-ai-consortium-vaetki-vl-7b-a1b",
   "author": "nc-ai-consortium",
@@ -43,14 +43,19 @@
   "parameters_human": "7.58B",
   "storage_bytes": 50473926365,
   "storage_human": "50.5 GB",
+  "context_length": null,
   "base_model": "nc-ai-consortium/VAETKI-7B-A1B, DeepGlint-AI/rice-vit-large-patch14-560",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

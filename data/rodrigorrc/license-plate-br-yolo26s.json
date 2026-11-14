@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RodrigoRRC/license-plate-br-yolo26s",
   "slug": "rodrigorrc-license-plate-br-yolo26s",
   "author": "RodrigoRRC",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 81593644,
   "storage_human": "82 MB",
+  "context_length": null,
   "base_model": "muhammadrizwanmunawar/number-plate-yolo26s",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Baekpica/Beam-1.0-501B-A23B-VQ-GGUF",
   "slug": "baekpica-beam-1-0-501b-a23b-vq-gguf",
   "author": "Baekpica",
@@ -45,14 +45,19 @@
   "parameters_human": "7.24B",
   "storage_bytes": 196032312611,
   "storage_human": "196.0 GB",
+  "context_length": null,
   "base_model": "reflection/Beam-1.0-501B-A23B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

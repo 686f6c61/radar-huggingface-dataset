@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "toxicdog/krea-2-turbo-mflux-q8",
   "slug": "toxicdog-krea-2-turbo-mflux-q8",
   "author": "toxicdog",
@@ -32,6 +32,7 @@
   "parameters_human": "3.61B",
   "storage_bytes": 22186377737,
   "storage_human": "22.2 GB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cwolff/qwen3.5-2b-grpo-sqale",
   "slug": "cwolff-qwen3-5-2b-grpo-sqale",
   "author": "cwolff",
@@ -44,14 +44,19 @@
   "parameters_human": "2.27B",
   "storage_bytes": 9109370961,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "trl-lab/qwen3.5-2b-grpo-sqale",
+  "renamed_at": "2026-11-11T04:53:55.450Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "benjzzz/DeepSeek-V4-Pro-671B-GALE-1bit-v4",
   "slug": "benjzzz-deepseek-v4-pro-671b-gale-1bit-v4",
   "author": "benjzzz",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 290825192531,
   "storage_human": "290.8 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Pro",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

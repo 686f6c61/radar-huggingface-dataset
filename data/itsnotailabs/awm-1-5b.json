@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ItsnotAilabs/AWM-1.5B",
   "slug": "itsnotailabs-awm-1-5b",
   "author": "ItsnotAilabs",
@@ -23,14 +23,19 @@
   "parameters_human": "165.9M",
   "storage_bytes": 2742182904,
   "storage_human": "2.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

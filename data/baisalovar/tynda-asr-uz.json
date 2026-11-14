@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "baisalovar/Tynda-ASR-uz",
   "slug": "baisalovar-tynda-asr-uz",
   "author": "baisalovar",
@@ -38,14 +38,19 @@
   "parameters_human": "33.70B",
   "storage_bytes": 67513066262,
   "storage_human": "67.5 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

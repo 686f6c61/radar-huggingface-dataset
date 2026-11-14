@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GreenBitAI/Qwen3.6-35B-A3B-8bit-paged",
   "slug": "greenbitai-qwen3-6-35b-a3b-8bit-paged",
   "author": "GreenBitAI",
@@ -32,6 +32,7 @@
   "parameters_human": "2.89B",
   "storage_bytes": 38639280641,
   "storage_human": "38.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

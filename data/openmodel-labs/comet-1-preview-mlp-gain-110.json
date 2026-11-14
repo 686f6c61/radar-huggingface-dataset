@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenModel-Labs/Comet-1-Preview-mlp-gain-110",
   "slug": "openmodel-labs-comet-1-preview-mlp-gain-110",
   "author": "OpenModel-Labs",
@@ -41,14 +41,19 @@
   "parameters_human": "7.00B",
   "storage_bytes": 28005783576,
   "storage_human": "28.0 GB",
+  "context_length": null,
   "base_model": "OpenModel-Labs/Comet-1-Preview",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

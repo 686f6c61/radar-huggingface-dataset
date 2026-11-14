@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hn7305/Qwen3.8-Flash-Next-NVFP4-Spark",
   "slug": "hn7305-qwen3-8-flash-next-nvfp4-spark",
   "author": "hn7305",
@@ -36,14 +36,19 @@
   "parameters_human": "118.12B",
   "storage_bytes": 130984409393,
   "storage_human": "131.0 GB",
+  "context_length": null,
   "base_model": "RadixArk/Qwen3.8-Flash-Next-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-08T04:14:55.407Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

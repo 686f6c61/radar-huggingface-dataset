@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tamkimd/tamev-medium-qwen3.5-0.8b",
   "slug": "tamkimd-tamev-medium-qwen3-5-0-8b",
   "author": "Tamkimd",
@@ -76,6 +76,7 @@
   "parameters_human": "524800",
   "storage_bytes": 58003279,
   "storage_human": "58 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B-Base",
   "formats": [
     "mlx",
@@ -83,8 +84,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-03T03:26:05.667Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "System One Decision Intelligence",

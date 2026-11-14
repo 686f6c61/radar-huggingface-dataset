@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Xylolabs/Spark-X2.6-4B-Tensix-BFP8",
   "slug": "xylolabs-spark-x2-6-4b-tensix-bfp8",
   "author": "Xylolabs",
@@ -43,14 +43,19 @@
   "parameters_human": "4.45B",
   "storage_bytes": 8895280432,
   "storage_human": "8.9 GB",
+  "context_length": null,
   "base_model": "XHToken/Spark-X2.6-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

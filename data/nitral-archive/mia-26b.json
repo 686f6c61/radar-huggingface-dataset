@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nitral-Archive/Mia-26B",
   "slug": "nitral-archive-mia-26b",
   "author": "Nitral-Archive",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 32169626,
   "storage_human": "32 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-23T02:41:12.283Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DeKUT-DSAIL/convnextv2-huge-cifar10-native",
   "slug": "dekut-dsail-convnextv2-huge-cifar10-native",
   "author": "DeKUT-DSAIL",
@@ -28,14 +28,19 @@
   "parameters_human": "657.5M",
   "storage_bytes": 2631702309,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

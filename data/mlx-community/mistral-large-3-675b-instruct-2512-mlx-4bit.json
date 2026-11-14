@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlx-community/Mistral-Large-3-675B-Instruct-2512-mlx-4bit",
   "slug": "mlx-community-mistral-large-3-675b-instruct-2512-mlx-4bit",
   "author": "mlx-community",
@@ -23,14 +23,19 @@
   "parameters_human": "675.99B",
   "storage_bytes": 386759842601,
   "storage_human": "386.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

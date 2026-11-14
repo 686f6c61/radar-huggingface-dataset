@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ModelCloud/Ripple-65B-Preview-GPTQ-W4A16-v1",
   "slug": "modelcloud-ripple-65b-preview-gptq-w4a16-v1",
   "author": "ModelCloud",
@@ -32,14 +32,19 @@
   "parameters_human": "64.78B",
   "storage_bytes": 35207000496,
   "storage_human": "35.2 GB",
+  "context_length": null,
   "base_model": "ricursiveAI/Ripple-65B-Preview",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ModelCloud/Ripple-65B-Preview-GPTQ-W4A16-v2",
+  "renamed_at": "2026-11-11T03:20:37.736Z",
   "benchmarks": [],
   "sources": []
 }

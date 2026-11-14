@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VoiceNetCkpt/finetune_BidirLM_Omni_2_5B_emo_megamix_lowlr_freeze50_supcon",
   "slug": "voicenetckpt-finetune_bidirlm_omni_2_5b_emo_megamix_lowlr_freeze50_supcon",
   "author": "VoiceNetCkpt",
@@ -24,14 +24,19 @@
   "parameters_human": null,
   "storage_bytes": 4901566704,
   "storage_human": "4.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Comfy-Org/stable-diffusion-3.5-controlnets_ComfyUI_repackaged",
   "slug": "comfy-org-stable-diffusion-3-5-controlnets_comfyui_repackaged",
   "author": "Comfy-Org",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 25963771932,
   "storage_human": "26.0 GB",
+  "context_length": null,
   "base_model": "stabilityai/stable-diffusion-3.5-controlnets",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Comfy-Org/stable-diffusion-3.5-controlnets",
+  "renamed_at": "2026-11-11T02:32:34.071Z",
   "benchmarks": [],
   "sources": []
 }

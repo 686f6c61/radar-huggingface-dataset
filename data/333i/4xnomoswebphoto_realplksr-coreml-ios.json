@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "333i/4xNomosWebPhoto_RealPLKSR-coreml-ios",
   "slug": "333i-4xnomoswebphoto_realplksr-coreml-ios",
   "author": "333i",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 42730519,
   "storage_human": "43 MB",
+  "context_length": null,
   "base_model": "Phips/4xNomosWebPhoto_RealPLKSR",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "loom-fun-staging/bartowski-Qwen2.5-1.5B-Instruct-loom",
   "slug": "loom-fun-staging-bartowski-qwen2-5-1-5b-instruct-loom",
   "author": "loom-fun-staging",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "bartowski/Qwen2.5-1.5B-Instruct-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mathieu680/Rastignac-1.0-126M",
   "slug": "mathieu680-rastignac-1-0-126m",
   "author": "Mathieu680",
@@ -35,14 +35,19 @@
   "parameters_human": "126.5M",
   "storage_bytes": 506069123,
   "storage_human": "506 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cookieshake/DNA3.1-27B-oQ4",
   "slug": "cookieshake-dna3-1-27b-oq4",
   "author": "cookieshake",
@@ -31,6 +31,7 @@
   "parameters_human": null,
   "storage_bytes": 17213945424,
   "storage_human": "17.2 GB",
+  "context_length": null,
   "base_model": "dnotitia/DNA3.1-27B",
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TDoSiMa/sima-laya",
   "slug": "tdosima-sima-laya",
   "author": "TDoSiMa",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 20746580994,
   "storage_human": "20.7 GB",
+  "context_length": null,
   "base_model": "convaiinnovations/laya",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "dotimothy/sima-laya",
+  "renamed_at": "2026-11-13T04:11:14.468Z",
   "benchmarks": [],
   "sources": []
 }

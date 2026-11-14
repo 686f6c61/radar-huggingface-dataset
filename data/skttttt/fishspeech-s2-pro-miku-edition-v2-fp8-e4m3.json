@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Skttttt/Fishspeech-S2-Pro-Miku-Edition-V2-FP8-E4M3",
   "slug": "skttttt-fishspeech-s2-pro-miku-edition-v2-fp8-e4m3",
   "author": "Skttttt",
@@ -38,14 +38,19 @@
   "parameters_human": "4.96B",
   "storage_bytes": 6852713322,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": "Skttttt/Fishspeech-S2-Pro-Miku-Edition-V2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

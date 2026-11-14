@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mmoselhy077/qwen3-8b-sva-rest-r2-merged",
   "slug": "mmoselhy077-qwen3-8b-sva-rest-r2-merged",
   "author": "mmoselhy077",
@@ -48,14 +48,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 16392939478,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "NL-to-SVA assertion generation",

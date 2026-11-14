@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nullmega/LFM2.5-8B-A1B-pi-coding-security-LoRA",
   "slug": "nullmega-lfm2-5-8b-a1b-pi-coding-security-lora",
   "author": "Nullmega",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 40729558,
   "storage_human": "41 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-8B-A1B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

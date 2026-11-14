@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hackathon1-fmm/act_rod_insert_robot_1_dagger24_h200x2_ft5k",
   "slug": "hackathon1-fmm-act_rod_insert_robot_1_dagger24_h200x2_ft5k",
   "author": "hackathon1-fmm",
@@ -28,14 +28,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 3097805852,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-16T03:43:46.136Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

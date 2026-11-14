@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bertholomus/DeepSeek-V4.1-Flash-TensorFold-TP2-2xGB10",
   "slug": "bertholomus-deepseek-v4-1-flash-tensorfold-tp2-2xgb10",
   "author": "bertholomus",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 750596952,
   "storage_human": "751 MB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

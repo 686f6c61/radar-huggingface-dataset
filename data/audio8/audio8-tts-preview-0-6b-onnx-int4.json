@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Audio8/Audio8-TTS-Preview-0.6B-ONNX-INT4",
   "slug": "audio8-audio8-tts-preview-0-6b-onnx-int4",
   "author": "Audio8",
@@ -56,14 +56,19 @@
   "parameters_human": null,
   "storage_bytes": 1015298236,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "Audio8/Audio8-TTS-Preview-0.6b",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Edge0/Audio8-TTS-Preview-0.6B-ONNX-INT4",
+  "renamed_at": "2026-11-11T02:21:43.960Z",
   "benchmarks": [],
   "sources": [
     {

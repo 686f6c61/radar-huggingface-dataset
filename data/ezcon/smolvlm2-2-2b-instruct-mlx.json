@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EZCon/SmolVLM2-2.2B-Instruct-mlx",
   "slug": "ezcon-smolvlm2-2-2b-instruct-mlx",
   "author": "EZCon",
@@ -45,6 +45,7 @@
   "parameters_human": "2.25B",
   "storage_bytes": 4493651827,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
   "formats": [
     "mlx",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

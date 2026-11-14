@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vrishab-av/m4",
   "slug": "vrishab-av-m4",
   "author": "vrishab-av",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 623743827,
   "storage_human": "624 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T06:43:05.714Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

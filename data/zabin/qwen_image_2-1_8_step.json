@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Zabin/Qwen_Image_2.1_8_Step",
   "slug": "zabin-qwen_image_2-1_8_step",
   "author": "Zabin",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 29179874094,
   "storage_human": "29.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Zabin/Qwen_Image_2.1_Turbo_8Steps",
+  "renamed_at": "2026-11-11T04:15:07.539Z",
   "benchmarks": [],
   "sources": [
     {

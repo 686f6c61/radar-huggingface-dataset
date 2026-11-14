@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "UFACTORY-Developer/ufactory_genesis_rl",
   "slug": "ufactory-developer-ufactory_genesis_rl",
   "author": "UFACTORY-Developer",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 15135180,
   "storage_human": "15 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

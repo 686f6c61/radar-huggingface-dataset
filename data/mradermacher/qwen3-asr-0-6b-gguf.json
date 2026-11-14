@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3-ASR-0.6B-GGUF",
   "slug": "mradermacher-qwen3-asr-0-6b-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "751.6M",
   "storage_bytes": 7618189504,
   "storage_human": "7.6 GB",
+  "context_length": 65536,
   "base_model": "Qwen/Qwen3-ASR-0.6B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlx-community/Bernini-v2-int4",
   "slug": "mlx-community-bernini-v2-int4",
   "author": "mlx-community",
@@ -33,6 +33,7 @@
   "parameters_human": null,
   "storage_bytes": 48258449286,
   "storage_human": "48.3 GB",
+  "context_length": null,
   "base_model": "ByteDance/Bernini-Diffusers-v2",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "codeguru76/supertonic-3",
   "slug": "codeguru76-supertonic-3",
   "author": "codeguru76",
@@ -92,14 +92,19 @@
   "parameters_human": null,
   "storage_bytes": 411407938,
   "storage_human": "411 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

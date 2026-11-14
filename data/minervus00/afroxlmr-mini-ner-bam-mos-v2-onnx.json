@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Minervus00/afroxlmr-mini-ner-bam-mos-v2-onnx",
   "slug": "minervus00-afroxlmr-mini-ner-bam-mos-v2-onnx",
   "author": "Minervus00",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 610598803,
   "storage_human": "611 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-01T03:08:41.793Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

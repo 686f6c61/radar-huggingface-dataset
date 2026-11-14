@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "protoLabsAI/Ornith-1.5-35B-A3B-NVFP4",
   "slug": "protolabsai-ornith-1-5-35b-a3b-nvfp4",
   "author": "protoLabsAI",
@@ -35,14 +35,19 @@
   "parameters_human": "35.11B",
   "storage_bytes": 25068912994,
   "storage_human": "25.1 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

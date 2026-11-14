@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "osk-arr00/qwen-3.8-next-40b-exp-moe-healed-bf16",
   "slug": "osk-arr00-qwen-3-8-next-40b-exp-moe-healed-bf16",
   "author": "osk-arr00",
@@ -38,14 +38,19 @@
   "parameters_human": "40.22B",
   "storage_bytes": 80459875495,
   "storage_human": "80.5 GB",
+  "context_length": null,
   "base_model": "osk-arr00/qwen-3.8-next-40b-exp-moe-pruned-bf16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-20T05:26:57.561Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

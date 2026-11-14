@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nitinpanj/Swift-Qwen3.8-Flash-Next-Splash",
   "slug": "nitinpanj-swift-qwen3-8-flash-next-splash",
   "author": "nitinpanj",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 20215359488,
   "storage_human": "20.2 GB",
+  "context_length": null,
   "base_model": "ukisai/Swift-1.5-Qwen3.8-Flash-Next-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

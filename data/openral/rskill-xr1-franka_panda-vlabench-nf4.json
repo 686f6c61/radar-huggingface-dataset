@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenRAL/rskill-xr1-franka_panda-vlabench-nf4",
   "slug": "openral-rskill-xr1-franka_panda-vlabench-nf4",
   "author": "OpenRAL",
@@ -45,14 +45,19 @@
   "parameters_human": "5.05B",
   "storage_bytes": 3203922465,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": "XiaomiRobotics/Xiaomi-Robotics-1-VLABench",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

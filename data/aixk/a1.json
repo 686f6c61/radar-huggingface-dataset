@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aixk/a1",
   "slug": "aixk-a1",
   "author": "aixk",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 281759910890,
   "storage_human": "281.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-21T03:59:37.740Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

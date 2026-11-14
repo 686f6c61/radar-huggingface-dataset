@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RyanYr/asyncrl-partial-m4b_klr_pi_s40-gs280",
   "slug": "ryanyr-asyncrl-partial-m4b_klr_pi_s40-gs280",
   "author": "RyanYr",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 17657617982,
   "storage_human": "17.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-03T10:28:39.733Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

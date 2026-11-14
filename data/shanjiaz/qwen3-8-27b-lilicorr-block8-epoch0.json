@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shanjiaz/Qwen3.8-27B-LiLiCorr-block8-epoch0",
   "slug": "shanjiaz-qwen3-8-27b-lilicorr-block8-epoch0",
   "author": "shanjiaz",
@@ -28,14 +28,19 @@
   "parameters_human": "1.90B",
   "storage_bytes": 3802376404,
   "storage_human": "3.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

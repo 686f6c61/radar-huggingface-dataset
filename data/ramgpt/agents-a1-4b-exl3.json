@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ramgpt/Agents-A1-4B-EXL3",
   "slug": "ramgpt-agents-a1-4b-exl3",
   "author": "ramgpt",
@@ -30,14 +30,19 @@
   "parameters_human": "1.98B",
   "storage_bytes": 3972588659,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": "InternScience/Agents-A1-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

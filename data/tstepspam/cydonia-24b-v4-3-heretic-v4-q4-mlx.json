@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tstepspam/Cydonia-24B-v4.3-heretic-v4-Q4-MLX",
   "slug": "tstepspam-cydonia-24b-v4-3-heretic-v4-q4-mlx",
   "author": "tstepspam",
@@ -33,6 +33,7 @@
   "parameters_human": "23.57B",
   "storage_bytes": 13277256980,
   "storage_human": "13.3 GB",
+  "context_length": null,
   "base_model": "coder3101/Cydonia-24B-v4.3-heretic-v4",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

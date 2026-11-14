@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "imvladikon/GLM-5.2-9B-LoRA-Surgery-Dummy-FP8",
   "slug": "imvladikon-glm-5-2-9b-lora-surgery-dummy-fp8",
   "author": "imvladikon",
@@ -34,14 +34,19 @@
   "parameters_human": "8.76B",
   "storage_bytes": 10690073058,
   "storage_human": "10.7 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.2-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OzzyGT/Kimodo_SOMA_RP_v1_2",
   "slug": "ozzygt-kimodo_soma_rp_v1_2",
   "author": "OzzyGT",
@@ -34,6 +34,7 @@
   "parameters_human": "283.3M",
   "storage_bytes": 16328110209,
   "storage_human": "16.3 GB",
+  "context_length": null,
   "base_model": "nvidia/Kimodo-SOMA-RP-v1.2, meta-llama/Meta-Llama-3-8B-Instruct, McGill-NLP/LLM2Vec-Meta-Llama-3-8B-Instruct-mntp, McGill-NLP/LLM2Vec-Meta-Llama-3-8B-Instruct-mntp-supervised",
   "formats": [
     "diffusers",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

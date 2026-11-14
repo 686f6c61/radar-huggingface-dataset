@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aldenw/Qwen3.8-27B-Uncensored-Aggressive-i1-IQ4_XS-Smaller-GGUF",
   "slug": "aldenw-qwen3-8-27b-uncensored-aggressive-i1-iq4_xs-smaller-gguf",
   "author": "aldenw",
@@ -39,14 +39,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 17032818880,
   "storage_human": "17.0 GB",
+  "context_length": 262144,
   "base_model": "philbert440/Qwen3.8-27B-Uncensored-Aggressive",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

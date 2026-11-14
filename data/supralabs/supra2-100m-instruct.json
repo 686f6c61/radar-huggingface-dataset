@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SupraLabs/Supra2-100M-Instruct",
   "slug": "supralabs-supra2-100m-instruct",
   "author": "SupraLabs",
@@ -46,6 +46,7 @@
   "parameters_human": "100.7M",
   "storage_bytes": 605336641,
   "storage_human": "605 MB",
+  "context_length": 2048,
   "base_model": "SupraLabs/Supra2-100M",
   "formats": [
     "gguf",
@@ -53,8 +54,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

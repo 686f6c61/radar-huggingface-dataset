@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "scottlowry/Ornith-1.5-35B-A3B-oQ4e-fp16",
   "slug": "scottlowry-ornith-1-5-35b-a3b-oq4e-fp16",
   "author": "scottlowry",
@@ -27,6 +27,7 @@
   "parameters_human": "35.11B",
   "storage_bytes": 22008527364,
   "storage_human": "22.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-13T11:42:18.668Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

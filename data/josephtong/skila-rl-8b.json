@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JosephTong/SkiLa-RL-8B",
   "slug": "josephtong-skila-rl-8b",
   "author": "JosephTong",
@@ -24,14 +24,19 @@
   "parameters_human": "8.77B",
   "storage_bytes": 17545762592,
   "storage_human": "17.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T03:06:45.464Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

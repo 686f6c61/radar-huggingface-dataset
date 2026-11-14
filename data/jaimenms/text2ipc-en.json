@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jaimenms/text2ipc-en",
   "slug": "jaimenms-text2ipc-en",
   "author": "jaimenms",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 478987632,
   "storage_human": "479 MB",
+  "context_length": null,
   "base_model": "intfloat/multilingual-e5-base, BAAI/bge-reranker-v2-m3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

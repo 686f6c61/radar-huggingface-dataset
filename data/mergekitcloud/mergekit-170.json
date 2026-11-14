@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MergekitCloud/mergekit-170",
   "slug": "mergekitcloud-mergekit-170",
   "author": "MergekitCloud",
@@ -41,14 +41,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16077766256,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "mergekit-community/good_mix_model_Stock, Pedro13543/mega_blend_model, Undi95/Meta-Llama-3.1-8B-Claude, mergekit-community/L3.1-Athena-d-8B, Skywork/Skywork-o1-Open-Llama-3.1-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

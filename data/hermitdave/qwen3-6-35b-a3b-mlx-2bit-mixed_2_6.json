@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hermitdave/Qwen3.6-35B-A3B-MLX-2bit-mixed_2_6",
   "slug": "hermitdave-qwen3-6-35b-a3b-mlx-2bit-mixed_2_6",
   "author": "hermitdave",
@@ -33,6 +33,7 @@
   "parameters_human": "34.66B",
   "storage_bytes": 13805889612,
   "storage_human": "13.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-04T04:25:28.935Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

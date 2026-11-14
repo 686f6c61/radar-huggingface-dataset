@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nanite-Labs/nanites-petroglyph-sdxl-1.0",
   "slug": "nanite-labs-nanites-petroglyph-sdxl-1-0",
   "author": "Nanite-Labs",
@@ -32,6 +32,7 @@
   "parameters_human": null,
   "storage_bytes": 53623789,
   "storage_human": "54 MB",
+  "context_length": null,
   "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
   "formats": [
     "diffusers",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

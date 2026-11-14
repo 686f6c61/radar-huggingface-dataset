@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ANGELOSEGRETO/InternVL3_5-241B-A28B",
   "slug": "angelosegreto-internvl3_5-241b-a28b",
   "author": "ANGELOSEGRETO",
@@ -43,14 +43,19 @@
   "parameters_human": "240.70B",
   "storage_bytes": 481425124049,
   "storage_human": "481.4 GB",
+  "context_length": null,
   "base_model": "OpenGVLab/InternVL3_5-241B-A28B-MPO",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

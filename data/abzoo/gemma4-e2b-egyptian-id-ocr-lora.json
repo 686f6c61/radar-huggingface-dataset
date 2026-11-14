@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "abzoo/gemma4-e2b-egyptian-id-ocr-lora",
   "slug": "abzoo-gemma4-e2b-egyptian-id-ocr-lora",
   "author": "abzoo",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 327725749,
   "storage_human": "328 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-E2B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

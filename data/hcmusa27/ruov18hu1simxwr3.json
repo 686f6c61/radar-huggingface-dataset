@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hcmusa27/RUOV18Hu1sImxWr3",
   "slug": "hcmusa27-ruov18hu1simxwr3",
   "author": "hcmusa27",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 391560790997,
   "storage_human": "391.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "udaykamath/OpenSystemOne-ModernBERT-base-v0.1",
   "slug": "udaykamath-opensystemone-modernbert-base-v0-1",
   "author": "udaykamath",
@@ -30,14 +30,19 @@
   "parameters_human": "156.7M",
   "storage_bytes": 626786332,
   "storage_human": "627 MB",
+  "context_length": null,
   "base_model": "tasksource/ModernBERT-base-nli",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/gemma-3-4b-it-vl-Heretic-4-Horsemen-Uncensored",
   "slug": "davidau-gemma-3-4b-it-vl-heretic-4-horsemen-uncensored",
   "author": "DavidAU",
@@ -58,14 +58,19 @@
   "parameters_human": "4.30B",
   "storage_bytes": 8638351676,
   "storage_human": "8.6 GB",
+  "context_length": null,
   "base_model": "DavidAU/gemma-3-4b-it-heretic-uncensored-abliterated-Extreme",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

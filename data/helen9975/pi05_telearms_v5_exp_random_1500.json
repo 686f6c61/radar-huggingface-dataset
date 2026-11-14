@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "helen9975/pi05_telearms_v5_exp_random_1500",
   "slug": "helen9975-pi05_telearms_v5_exp_random_1500",
   "author": "helen9975",
@@ -28,14 +28,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 18708116428,
   "storage_human": "18.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

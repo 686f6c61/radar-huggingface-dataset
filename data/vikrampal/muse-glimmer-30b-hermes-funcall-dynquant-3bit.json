@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VikramPal/Muse-Glimmer-30B-hermes-funcall-DynQuant-3bit",
   "slug": "vikrampal-muse-glimmer-30b-hermes-funcall-dynquant-3bit",
   "author": "VikramPal",
@@ -36,14 +36,19 @@
   "parameters_human": "3.03B",
   "storage_bytes": 11194040689,
   "storage_human": "11.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

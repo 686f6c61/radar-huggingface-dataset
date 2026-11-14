@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "openbmb/MiniCPM-o-4_5-gguf",
   "slug": "openbmb-minicpm-o-4_5-gguf",
   "author": "openbmb",
@@ -34,14 +34,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 80042797441,
   "storage_human": "80.0 GB",
+  "context_length": 40960,
   "base_model": "openbmb/MiniCPM-o-4_5",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

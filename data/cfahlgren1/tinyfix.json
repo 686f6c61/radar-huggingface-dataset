@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cfahlgren1/tinyfix",
   "slug": "cfahlgren1-tinyfix",
   "author": "cfahlgren1",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 128281373,
   "storage_human": "128 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "paperweight/tinyfix",
+  "renamed_at": "2026-11-14T05:25:02.646Z",
   "benchmarks": [],
   "sources": []
 }

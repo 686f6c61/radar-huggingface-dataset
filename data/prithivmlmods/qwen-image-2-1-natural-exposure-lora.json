@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prithivMLmods/Qwen-Image-2.1-Natural-Exposure-LoRA",
   "slug": "prithivmlmods-qwen-image-2-1-natural-exposure-lora",
   "author": "prithivMLmods",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 335775808,
   "storage_human": "336 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

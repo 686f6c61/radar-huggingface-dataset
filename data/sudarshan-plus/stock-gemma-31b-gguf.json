@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sudarshan-plus/stock-gemma-31b-GGUF",
   "slug": "sudarshan-plus-stock-gemma-31b-gguf",
   "author": "sudarshan-plus",
@@ -35,14 +35,19 @@
   "parameters_human": "30.70B",
   "storage_bytes": 18687064192,
   "storage_human": "18.7 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-31B-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T11:42:45.408Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

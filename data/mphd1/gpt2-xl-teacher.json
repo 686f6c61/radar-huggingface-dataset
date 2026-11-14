@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mphd1/gpt2-xl-teacher",
   "slug": "mphd1-gpt2-xl-teacher",
   "author": "mphd1",
@@ -31,14 +31,19 @@
   "parameters_human": "1.56B",
   "storage_bytes": 6230510945,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "openai-community/gpt2-xl",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-23T17:26:08.632Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NONHUMAN-RESEARCH/handumi-openarm-562-640-act",
   "slug": "nonhuman-research-handumi-openarm-562-640-act",
   "author": "NONHUMAN-RESEARCH",
@@ -28,14 +28,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 413607024,
   "storage_human": "414 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

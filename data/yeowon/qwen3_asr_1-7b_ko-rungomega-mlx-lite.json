@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yeowon/qwen3_asr_1.7b_ko-RungOmega-MLX-lite",
   "slug": "yeowon-qwen3_asr_1-7b_ko-rungomega-mlx-lite",
   "author": "yeowon",
@@ -37,6 +37,7 @@
   "parameters_human": "594.7M",
   "storage_bytes": 1644224253,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "TeamUNIVA/qwen3_asr_1.7b_ko",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T07:32:07.014Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

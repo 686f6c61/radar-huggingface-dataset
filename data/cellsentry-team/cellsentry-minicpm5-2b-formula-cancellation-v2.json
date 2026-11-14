@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cellsentry-team/cellsentry-minicpm5-2b-formula-cancellation-v2",
   "slug": "cellsentry-team-cellsentry-minicpm5-2b-formula-cancellation-v2",
   "author": "cellsentry-team",
@@ -40,6 +40,7 @@
   "parameters_human": "2.52B",
   "storage_bytes": 1611625368,
   "storage_human": "1.6 GB",
+  "context_length": 131072,
   "base_model": "openbmb/MiniCPM5-2B",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "OriginTone/cellsentry-minicpm5-2b-formula-cancellation-v2",
+  "renamed_at": "2026-11-11T04:47:09.659Z",
   "benchmarks": [],
   "sources": []
 }

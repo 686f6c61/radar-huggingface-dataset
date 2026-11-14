@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "carlosgm128/Qwen2-0.5B-Instruct-JQ4",
   "slug": "carlosgm128-qwen2-0-5b-instruct-jq4",
   "author": "carlosgm128",
@@ -32,14 +32,19 @@
   "parameters_human": "509.5M",
   "storage_bytes": 308919578,
   "storage_human": "309 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2-0.5B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

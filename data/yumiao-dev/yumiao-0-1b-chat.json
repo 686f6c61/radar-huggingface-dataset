@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yumiao-dev/Yumiao-0.1B-Chat",
   "slug": "yumiao-dev-yumiao-0-1b-chat",
   "author": "yumiao-dev",
@@ -45,14 +45,19 @@
   "parameters_human": "100.1M",
   "storage_bytes": 201839858,
   "storage_human": "202 MB",
+  "context_length": null,
   "base_model": "yumiao-dev/Yumiao-0.1B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CyberBuddyAI/CyberBuddy-CyberOps-9B",
   "slug": "cyberbuddyai-cyberbuddy-cyberops-9b",
   "author": "CyberBuddyAI",
@@ -68,13 +68,14 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 4,
-  "downloads_30d": 118,
+  "likes": 5,
+  "downloads_30d": 334,
   "trending_score": 0,
   "parameters": 9409813744,
   "parameters_human": "9.41B",
   "storage_bytes": 25633318324,
   "storage_human": "25.6 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "gguf",
@@ -82,8 +83,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

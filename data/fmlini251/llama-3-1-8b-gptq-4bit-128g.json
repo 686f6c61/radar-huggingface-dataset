@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fmlini251/Llama-3.1-8B-GPTQ-4bit-128g",
   "slug": "fmlini251-llama-3-1-8b-gptq-4bit-128g",
   "author": "fmlini251",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 5752930472,
   "storage_human": "5.8 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-8B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

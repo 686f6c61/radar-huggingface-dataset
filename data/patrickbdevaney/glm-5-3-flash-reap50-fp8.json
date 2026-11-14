@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "patrickbdevaney/GLM-5.3-Flash-REAP50-FP8",
   "slug": "patrickbdevaney-glm-5-3-flash-reap50-fp8",
   "author": "patrickbdevaney",
@@ -35,14 +35,19 @@
   "parameters_human": "161.66B",
   "storage_bytes": 332664404010,
   "storage_human": "332.7 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

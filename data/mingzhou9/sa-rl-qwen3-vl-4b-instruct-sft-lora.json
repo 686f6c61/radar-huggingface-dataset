@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mingzhou9/SA-RL-Qwen3-VL-4B-Instruct-SFT-LoRA",
   "slug": "mingzhou9-sa-rl-qwen3-vl-4b-instruct-sft-lora",
   "author": "Mingzhou9",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 143624835,
   "storage_human": "144 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-4B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

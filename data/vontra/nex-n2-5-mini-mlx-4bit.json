@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Vontra/Nex-N2.5-mini-MLX-4bit",
   "slug": "vontra-nex-n2-5-mini-mlx-4bit",
   "author": "Vontra",
@@ -38,6 +38,7 @@
   "parameters_human": "35.11B",
   "storage_bytes": 20422193644,
   "storage_human": "20.4 GB",
+  "context_length": null,
   "base_model": "nex-agi/Nex-N2.5-mini",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "TensorFold/Nex-N2.5-mini-MLX-4bit",
+  "renamed_at": "2026-11-11T04:09:29.394Z",
   "benchmarks": [],
   "sources": [
     {

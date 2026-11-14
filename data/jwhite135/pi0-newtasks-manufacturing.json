@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jwhite135/pi0-newtasks-manufacturing",
   "slug": "jwhite135-pi0-newtasks-manufacturing",
   "author": "jwhite135",
@@ -29,14 +29,19 @@
   "parameters_human": "4.03B",
   "storage_bytes": 16112229768,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "lerobot/pi0_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

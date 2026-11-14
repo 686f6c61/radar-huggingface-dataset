@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rbinrs/GLM-5.3-Flash-ABLITERATED-NVFP4",
   "slug": "rbinrs-glm-5-3-flash-abliterated-nvfp4",
   "author": "rbinrs",
@@ -40,14 +40,19 @@
   "parameters_human": "165.50B",
   "storage_bytes": 194692661135,
   "storage_human": "194.7 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

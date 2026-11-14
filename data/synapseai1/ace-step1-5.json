@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SYNAPSEai1/Ace-Step1.5",
   "slug": "synapseai1-ace-step1-5",
   "author": "SYNAPSEai1",
@@ -33,6 +33,7 @@
   "parameters_human": null,
   "storage_bytes": 10079024720,
   "storage_human": "10.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cheikh025/enemray-gemma3-1b-cpt-lora",
   "slug": "cheikh025-enemray-gemma3-1b-cpt-lora",
   "author": "cheikh025",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 55983953,
   "storage_human": "56 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-3-1b-pt",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-13T07:43:30.759Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

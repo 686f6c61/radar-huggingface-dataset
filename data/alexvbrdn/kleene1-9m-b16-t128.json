@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alexvbrdn/kleene1-9m-b16-t128",
   "slug": "alexvbrdn-kleene1-9m-b16-t128",
   "author": "alexvbrdn",
@@ -34,14 +34,19 @@
   "parameters_human": "9.2M",
   "storage_bytes": 149986552,
   "storage_human": "150 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

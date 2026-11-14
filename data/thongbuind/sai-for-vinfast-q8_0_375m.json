@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thongbuind/SAI-for-VinFast-Q8_0_375M",
   "slug": "thongbuind-sai-for-vinfast-q8_0_375m",
   "author": "thongbuind",
@@ -30,14 +30,19 @@
   "parameters_human": "375.2M",
   "storage_bytes": 798065280,
   "storage_human": "798 MB",
+  "context_length": 10240,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

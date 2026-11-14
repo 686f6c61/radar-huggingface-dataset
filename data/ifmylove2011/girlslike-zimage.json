@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ifmylove2011/girlslike-zimage",
   "slug": "ifmylove2011-girlslike-zimage",
   "author": "ifmylove2011",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 8132658367,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "Tongyi-MAI/Z-Image, Tongyi-MAI/Z-Image-Turbo",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

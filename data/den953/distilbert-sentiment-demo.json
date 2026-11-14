@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Den953/distilbert-sentiment-demo",
   "slug": "den953-distilbert-sentiment-demo",
   "author": "Den953",
@@ -38,6 +38,7 @@
   "parameters_human": "67.0M",
   "storage_bytes": 603192767,
   "storage_human": "603 MB",
+  "context_length": null,
   "base_model": "distilbert-base-uncased",
   "formats": [
     "onnx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Sentiment Analysis",

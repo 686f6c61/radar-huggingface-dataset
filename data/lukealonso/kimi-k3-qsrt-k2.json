@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lukealonso/Kimi-K3-QSRT-K2",
   "slug": "lukealonso-kimi-k3-qsrt-k2",
   "author": "lukealonso",
@@ -26,14 +26,19 @@
   "parameters_human": "57.19B",
   "storage_bytes": 757527330254,
   "storage_human": "757.5 GB",
+  "context_length": null,
   "base_model": "moonshotai/Kimi-K3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

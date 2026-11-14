@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Fabien-Ctrees/sentinel2-pleroma-flowering",
   "slug": "fabien-ctrees-sentinel2-pleroma-flowering",
   "author": "Fabien-Ctrees",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 256194967,
   "storage_human": "256 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

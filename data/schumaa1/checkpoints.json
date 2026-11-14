@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "schumaa1/checkpoints",
   "slug": "schumaa1-checkpoints",
   "author": "schumaa1",
@@ -24,14 +24,19 @@
   "parameters_human": "241.7M",
   "storage_bytes": 133447329037,
   "storage_human": "133.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

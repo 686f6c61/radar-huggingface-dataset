@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/ZynDwarf-1.1-GGUF",
   "slug": "mradermacher-zyndwarf-1-1-gguf",
   "author": "mradermacher",
@@ -50,14 +50,19 @@
   "parameters_human": "354.5M",
   "storage_bytes": 3299546240,
   "storage_human": "3.3 GB",
+  "context_length": 128000,
   "base_model": "itsZyn/ZynDwarf-1.1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

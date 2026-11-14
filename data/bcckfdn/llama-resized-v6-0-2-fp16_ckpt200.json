@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bcckfdn/llama-resized-v6.0.2-fp16_ckpt200",
   "slug": "bcckfdn-llama-resized-v6-0-2-fp16_ckpt200",
   "author": "bcckfdn",
@@ -23,14 +23,19 @@
   "parameters_human": "6.94B",
   "storage_bytes": 29101956819,
   "storage_human": "29.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-15T14:20:03.138Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

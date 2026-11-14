@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kunthawat/swift-qwen3.8-27b-mixed-iq3-gguf",
   "slug": "kunthawat-swift-qwen3-8-27b-mixed-iq3-gguf",
   "author": "kunthawat",
@@ -35,14 +35,19 @@
   "parameters_human": "460.7M",
   "storage_bytes": 11862467008,
   "storage_human": "11.9 GB",
+  "context_length": null,
   "base_model": "ukisai/Swift-Qwen3.8-27b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

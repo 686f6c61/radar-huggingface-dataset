@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jaakkomoller/Qwen3.8-27B-q3mix-NInfer",
   "slug": "jaakkomoller-qwen3-8-27b-q3mix-ninfer",
   "author": "jaakkomoller",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 14823303168,
   "storage_human": "14.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text Generation",

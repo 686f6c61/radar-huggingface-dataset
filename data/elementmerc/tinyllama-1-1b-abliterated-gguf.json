@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ElementMerc/tinyllama-1.1b-abliterated-GGUF",
   "slug": "elementmerc-tinyllama-1-1b-abliterated-gguf",
   "author": "ElementMerc",
@@ -34,14 +34,19 @@
   "parameters_human": "1.10B",
   "storage_bytes": 2868832000,
   "storage_human": "2.9 GB",
+  "context_length": 2048,
   "base_model": "ElementMerc/tinyllama-1.1b-uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ElementMerc/tinyllama-1.1b-uncensored-GGUF",
+  "renamed_at": "2026-11-11T02:42:12.344Z",
   "benchmarks": [],
   "sources": []
 }

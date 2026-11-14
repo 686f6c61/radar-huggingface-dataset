@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/ResonateX-T1-125M-Talking-GGUF",
   "slug": "mradermacher-resonatex-t1-125m-talking-gguf",
   "author": "mradermacher",
@@ -42,14 +42,19 @@
   "parameters_human": "125.3M",
   "storage_bytes": 1171048448,
   "storage_human": "1.2 GB",
+  "context_length": 2048,
   "base_model": "ResonatexIntegratedTechnologies/ResonateX-T1-125M-Talking",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sraivante/zipqa-intent-150k",
   "slug": "sraivante-zipqa-intent-150k",
   "author": "sraivante",
@@ -39,14 +39,19 @@
   "parameters_human": "148195",
   "storage_bytes": 593988,
   "storage_human": "593988 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

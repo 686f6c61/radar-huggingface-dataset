@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Prannesshkva/Phantom-Falcon-40B",
   "slug": "prannesshkva-phantom-falcon-40b",
   "author": "Prannesshkva",
@@ -41,14 +41,19 @@
   "parameters_human": "41.84B",
   "storage_bytes": 167463222387,
   "storage_human": "167.5 GB",
+  "context_length": null,
   "base_model": "tiiuae/falcon-40b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Prannesshkva/Ael-Pro-40B",
+  "renamed_at": "2026-11-11T03:34:41.485Z",
   "benchmarks": [],
   "sources": [
     {

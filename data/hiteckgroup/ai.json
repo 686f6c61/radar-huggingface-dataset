@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HiTeckGroup/Ai",
   "slug": "hiteckgroup-ai",
   "author": "HiTeckGroup",
@@ -37,14 +37,19 @@
   "parameters_human": "3.30B",
   "storage_bytes": 6625190775,
   "storage_human": "6.6 GB",
+  "context_length": null,
   "base_model": "canopylabs/orpheus-3b-0.1-ft",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

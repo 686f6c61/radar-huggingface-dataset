@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Krypto-Whitehat/qwen3.8-9b-uncensored-cyber-xrpl-v4",
   "slug": "krypto-whitehat-qwen3-8-9b-uncensored-cyber-xrpl-v4",
   "author": "Krypto-Whitehat",
@@ -37,14 +37,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 16891910752,
   "storage_human": "16.9 GB",
+  "context_length": 262144,
   "base_model": "MegaPanchamZ/Qwen3.8-9B-abliterated-25",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Starw1/DeepSeek-V4.1-Flash-1017-GSQ-RCO-IQ2_XXS-MXFP8-Engram-GGUF",
   "slug": "starw1-deepseek-v4-1-flash-1017-gsq-rco-iq2_xxs-mxfp8-engram-gguf",
   "author": "Starw1",
@@ -25,14 +25,19 @@
   "parameters_human": "196.61B",
   "storage_bytes": 340996925936,
   "storage_human": "341.0 GB",
+  "context_length": null,
   "base_model": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF, deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

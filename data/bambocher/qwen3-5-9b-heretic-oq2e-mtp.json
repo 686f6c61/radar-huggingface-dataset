@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bambocher/Qwen3.5-9B-heretic-oQ2e-mtp",
   "slug": "bambocher-qwen3-5-9b-heretic-oq2e-mtp",
   "author": "bambocher",
@@ -30,6 +30,7 @@
   "parameters_human": "9.65B",
   "storage_bytes": 4626401798,
   "storage_human": "4.6 GB",
+  "context_length": null,
   "base_model": "bambocher/Qwen3.5-9B-heretic",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

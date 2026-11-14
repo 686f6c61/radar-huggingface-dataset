@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vezilka-ai/vezilka-moonshine-tiny-mk-lr2e-4",
   "slug": "vezilka-ai-vezilka-moonshine-tiny-mk-lr2e-4",
   "author": "vezilka-ai",
@@ -37,14 +37,19 @@
   "parameters_human": "27.1M",
   "storage_bytes": 108389192,
   "storage_human": "108 MB",
+  "context_length": null,
   "base_model": "UsefulSensors/moonshine-tiny",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aaronwzl/clip-vit-base-patch32-flickr-retrieval",
   "slug": "aaronwzl-clip-vit-base-patch32-flickr-retrieval",
   "author": "aaronwzl",
@@ -29,14 +29,19 @@
   "parameters_human": "151.3M",
   "storage_bytes": 605156676,
   "storage_human": "605 MB",
+  "context_length": null,
   "base_model": "openai/clip-vit-base-patch32",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

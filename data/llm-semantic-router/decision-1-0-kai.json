@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "llm-semantic-router/Decision-1.0-Kai",
   "slug": "llm-semantic-router-decision-1-0-kai",
   "author": "llm-semantic-router",
@@ -83,14 +83,19 @@
   "parameters_human": null,
   "storage_bytes": 3391685902,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "vllm-sr/Vela-1.0-Encoder-307M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "vllm-sr/Decision-1.0-Kai-0.6B",
+  "renamed_at": "2026-11-11T06:05:28.006Z",
   "benchmarks": [],
   "sources": [
     {

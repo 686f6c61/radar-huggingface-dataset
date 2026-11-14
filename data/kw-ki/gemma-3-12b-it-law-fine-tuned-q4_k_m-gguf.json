@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KW-KI/gemma-3-12b-it-law-fine-tuned-Q4_K_M-GGUF",
   "slug": "kw-ki-gemma-3-12b-it-law-fine-tuned-q4_k_m-gguf",
   "author": "KW-KI",
@@ -42,14 +42,19 @@
   "parameters_human": "11.77B",
   "storage_bytes": 7300778688,
   "storage_human": "7.3 GB",
+  "context_length": 131072,
   "base_model": "DomainLLM/gemma-3-12b-it-law-fine-tuned",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

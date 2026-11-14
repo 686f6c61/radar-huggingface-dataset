@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "q-project/N-Q-26M-Chat",
   "slug": "q-project-n-q-26m-chat",
   "author": "q-project",
@@ -53,14 +53,19 @@
   "parameters_human": "46.5M",
   "storage_bytes": 279561013,
   "storage_human": "280 MB",
+  "context_length": null,
   "base_model": "q-project/N-Q-26M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

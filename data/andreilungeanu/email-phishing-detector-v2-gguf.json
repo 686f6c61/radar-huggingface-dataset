@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "andreilungeanu/email-phishing-detector-v2-GGUF",
   "slug": "andreilungeanu-email-phishing-detector-v2-gguf",
   "author": "andreilungeanu",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 1410124808,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "nhellyercreek/email-phishing-detector-v2",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

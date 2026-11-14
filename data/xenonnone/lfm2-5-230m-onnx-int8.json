@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "XENONNONE/LFM2.5-230M-ONNX-INT8",
   "slug": "xenonnone-lfm2-5-230m-onnx-int8",
   "author": "XENONNONE",
@@ -54,14 +54,19 @@
   "parameters_human": null,
   "storage_bytes": 464865954,
   "storage_human": "465 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-230M",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

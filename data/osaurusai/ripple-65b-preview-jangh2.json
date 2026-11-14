@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OsaurusAI/Ripple-65B-Preview-JANGH2",
   "slug": "osaurusai-ripple-65b-preview-jangh2",
   "author": "OsaurusAI",
@@ -45,6 +45,7 @@
   "parameters_human": "17.60B",
   "storage_bytes": 32697865272,
   "storage_human": "32.7 GB",
+  "context_length": null,
   "base_model": "ricursiveAI/Ripple-65B-Preview",
   "formats": [
     "mlx",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

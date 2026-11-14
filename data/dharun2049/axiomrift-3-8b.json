@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dharun2049/AXIOMRIFT-3.8B",
   "slug": "dharun2049-axiomrift-3-8b",
   "author": "dharun2049",
@@ -36,14 +36,19 @@
   "parameters_human": "3.82B",
   "storage_bytes": 7652678838,
   "storage_human": "7.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inference-optimization/Qwen3-30B-A3B-INT3xFP8",
   "slug": "inference-optimization-qwen3-30b-a3b-int3xfp8",
   "author": "inference-optimization",
@@ -33,14 +33,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 44573645950,
   "storage_human": "44.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-30B-A3B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

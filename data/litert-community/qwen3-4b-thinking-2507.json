@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/Qwen3-4B-Thinking-2507",
   "slug": "litert-community-qwen3-4b-thinking-2507",
   "author": "litert-community",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 26222821040,
   "storage_human": "26.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B-Thinking-2507",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

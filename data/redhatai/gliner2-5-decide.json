@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RedHatAI/GLiNER2.5-Decide",
   "slug": "redhatai-gliner2-5-decide",
   "author": "RedHatAI",
@@ -37,14 +37,19 @@
   "parameters_human": "486.4M",
   "storage_bytes": 1946476414,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": "fastino/gliner2-large-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-30T03:56:21.385Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/tinyllama-1.1b-uncensored-i1-GGUF",
   "slug": "mradermacher-tinyllama-1-1b-uncensored-i1-gguf",
   "author": "mradermacher",
@@ -37,14 +37,19 @@
   "parameters_human": "1.10B",
   "storage_bytes": 12766240448,
   "storage_human": "12.8 GB",
+  "context_length": 2048,
   "base_model": "ElementMerc/tinyllama-1.1b-uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

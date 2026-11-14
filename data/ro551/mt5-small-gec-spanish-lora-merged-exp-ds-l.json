@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ro551/mt5-small-GEC-spanish-LORA-merged-exp-ds-L",
   "slug": "ro551-mt5-small-gec-spanish-lora-merged-exp-ds-l",
   "author": "Ro551",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 1081383634,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "google/mt5-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T03:23:09.772Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ishowbackup/Nemotron-3-Super-120B-A12B-JANG_4M-CRACK",
   "slug": "ishowbackup-nemotron-3-super-120b-a12b-jang_4m-crack",
   "author": "Ishowbackup",
@@ -40,6 +40,7 @@
   "parameters_human": "63.35B",
   "storage_bytes": 67239073749,
   "storage_human": "67.2 GB",
+  "context_length": null,
   "base_model": "nvidia/Nemotron-3-Super-120B-A12B",
   "formats": [
     "mlx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

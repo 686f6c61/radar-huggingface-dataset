@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zefie/LFM-1.3B-NVFP4-GGUF",
   "slug": "zefie-lfm-1-3b-nvfp4-gguf",
   "author": "zefie",
@@ -31,14 +31,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 1358867328,
   "storage_human": "1.4 GB",
+  "context_length": 262144,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "zefie/LFM3-1.7B-GGUF-NVFP4",
+  "renamed_at": "2026-11-11T08:13:11.342Z",
   "benchmarks": [],
   "sources": []
 }

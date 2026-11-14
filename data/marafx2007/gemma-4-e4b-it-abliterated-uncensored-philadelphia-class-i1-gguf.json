@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "marafx2007/Gemma-4-E4B-IT-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS-i1-GGUF",
   "slug": "marafx2007-gemma-4-e4b-it-abliterated-uncensored-philadelphia-class-i1-gguf",
   "author": "marafx2007",
@@ -40,6 +40,7 @@
   "parameters_human": "7.46B",
   "storage_bytes": 110991534304,
   "storage_human": "111.0 GB",
+  "context_length": 131072,
   "base_model": "KridgeDookie/Gemma-4-E4B-IT-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

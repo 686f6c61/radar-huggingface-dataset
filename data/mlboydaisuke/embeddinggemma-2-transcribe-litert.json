@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlboydaisuke/EmbeddingGemma-2-Transcribe-LiteRT",
   "slug": "mlboydaisuke-embeddinggemma-2-transcribe-litert",
   "author": "mlboydaisuke",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 2674219280,
   "storage_human": "2.7 GB",
+  "context_length": null,
   "base_model": "google/embeddinggemma-2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

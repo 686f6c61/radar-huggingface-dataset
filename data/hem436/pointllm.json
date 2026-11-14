@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hem436/pointllm",
   "slug": "hem436-pointllm",
   "author": "hem436",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 225787573973,
   "storage_human": "225.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-17T08:35:00.663Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

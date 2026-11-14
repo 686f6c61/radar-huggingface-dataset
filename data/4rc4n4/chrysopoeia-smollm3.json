@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "4rc4n4/chrysopoeia-smollm3",
   "slug": "4rc4n4-chrysopoeia-smollm3",
   "author": "4rc4n4",
@@ -36,6 +36,7 @@
   "parameters_human": "3.08B",
   "storage_bytes": 39351866349,
   "storage_human": "39.4 GB",
+  "context_length": 65536,
   "base_model": "HuggingFaceTB/SmolLM3-3B-Base",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

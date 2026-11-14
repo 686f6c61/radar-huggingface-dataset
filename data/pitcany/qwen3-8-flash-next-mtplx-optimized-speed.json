@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pitcany/Qwen3.8-Flash-Next-MTPLX-Optimized-Speed",
   "slug": "pitcany-qwen3-8-flash-next-mtplx-optimized-speed",
   "author": "pitcany",
@@ -59,6 +59,7 @@
   "parameters_human": "126.19B",
   "storage_bytes": 115050561243,
   "storage_human": "115.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "mlx",
@@ -66,8 +67,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

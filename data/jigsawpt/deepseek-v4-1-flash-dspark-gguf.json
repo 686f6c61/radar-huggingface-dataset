@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JigSawPT/DeepSeek-V4.1-Flash-DSpark-GGUF",
   "slug": "jigsawpt-deepseek-v4-1-flash-dspark-gguf",
   "author": "JigSawPT",
@@ -31,14 +31,19 @@
   "parameters_human": "14.23B",
   "storage_bytes": 7972959936,
   "storage_human": "8.0 GB",
+  "context_length": 1048576,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

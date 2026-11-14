@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ReefNet/reefnet-mllm-lora-extras",
   "slug": "reefnet-reefnet-mllm-lora-extras",
   "author": "ReefNet",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 1661548745,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-8B-Instruct, openbmb/MiniCPM-V-4_5, OpenGVLab/InternVL3_5-8B-HF, llava-hf/llava-v1.6-vicuna-13b-hf, llava-hf/llava-onevision-qwen2-7b-ov-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

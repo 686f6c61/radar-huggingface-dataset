@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HuggingFaceTB/SmolLM2-135M-Instruct",
   "slug": "huggingfacetb-smollm2-135m-instruct",
   "author": "HuggingFaceTB",
@@ -38,6 +38,7 @@
   "parameters_human": "134.5M",
   "storage_bytes": 5381816429,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-135M",
   "formats": [
     "onnx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

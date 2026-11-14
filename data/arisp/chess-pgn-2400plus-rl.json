@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Arisp/chess-pgn-2400plus-rl",
   "slug": "arisp-chess-pgn-2400plus-rl",
   "author": "Arisp",
@@ -30,14 +30,19 @@
   "parameters_human": "51.0M",
   "storage_bytes": 408013264,
   "storage_human": "408 MB",
+  "context_length": null,
   "base_model": "Arisp/chess-pgn-2400plus",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

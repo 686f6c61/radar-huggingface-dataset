@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Azaper/SmolVLM-256M-SFT-linxy-deepcopy",
   "slug": "azaper-smolvlm-256m-sft-linxy-deepcopy",
   "author": "Azaper",
@@ -35,14 +35,19 @@
   "parameters_human": "2.13B",
   "storage_bytes": 13802901202,
   "storage_human": "13.8 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3-VL-2B-Instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Azaper/Qwen3-VL-2B-Instruct-unsloth-bnb-4bit-linxy-deepcopy",
+  "renamed_at": "2026-11-14T02:30:41.436Z",
   "benchmarks": [],
   "sources": [
     {

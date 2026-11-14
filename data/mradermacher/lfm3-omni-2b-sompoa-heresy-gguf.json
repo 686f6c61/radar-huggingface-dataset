@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/LFM3-Omni-2B-SOMPOA-heresy-GGUF",
   "slug": "mradermacher-lfm3-omni-2b-sompoa-heresy-gguf",
   "author": "mradermacher",
@@ -88,14 +88,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 17342618176,
   "storage_human": "17.3 GB",
+  "context_length": 128000,
   "base_model": "MuXodious/LFM3-Omni-2B-SOMPOA-heresy",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

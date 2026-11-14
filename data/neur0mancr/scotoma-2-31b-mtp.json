@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NeuR0mancR/Scotoma-2-31B-MTP",
   "slug": "neur0mancr-scotoma-2-31b-mtp",
   "author": "NeuR0mancR",
@@ -35,14 +35,19 @@
   "parameters_human": "469.5M",
   "storage_bytes": 972104648,
   "storage_human": "972 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-31B-it-assistant",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

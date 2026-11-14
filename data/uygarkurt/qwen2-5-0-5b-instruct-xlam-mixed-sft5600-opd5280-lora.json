@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft5600-opd5280-lora",
   "slug": "uygarkurt-qwen2-5-0-5b-instruct-xlam-mixed-sft5600-opd5280-lora",
   "author": "uygarkurt",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 29062028,
   "storage_human": "29 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ArchiveStudio/Kolibri-1-BF16",
   "slug": "archivestudio-kolibri-1-bf16",
   "author": "ArchiveStudio",
@@ -36,14 +36,19 @@
   "parameters_human": "78.10B",
   "storage_bytes": 156213402552,
   "storage_human": "156.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

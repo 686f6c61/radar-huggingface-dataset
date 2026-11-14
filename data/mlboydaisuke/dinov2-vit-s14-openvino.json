@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlboydaisuke/DINOv2-ViT-S14-OpenVINO",
   "slug": "mlboydaisuke-dinov2-vit-s14-openvino",
   "author": "mlboydaisuke",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 229929047,
   "storage_human": "230 MB",
+  "context_length": null,
   "base_model": "litert-community/DINOv2-ViT-S14-LiteRT",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

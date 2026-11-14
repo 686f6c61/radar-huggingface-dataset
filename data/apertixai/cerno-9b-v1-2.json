@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "apertixai/cerno-9b-v1.2",
   "slug": "apertixai-cerno-9b-v1-2",
   "author": "apertixai",
@@ -38,14 +38,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 17927978120,
   "storage_human": "17.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Decision Index 0.3 public suite (37 benchmarks, 140,178 requests)",

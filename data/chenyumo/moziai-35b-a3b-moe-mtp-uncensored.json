@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chenyumo/moziAI-35B-A3B-MOE-MTP-Uncensored",
   "slug": "chenyumo-moziai-35b-a3b-moe-mtp-uncensored",
   "author": "chenyumo",
@@ -47,14 +47,19 @@
   "parameters_human": "35.51B",
   "storage_bytes": 47788858073,
   "storage_human": "47.8 GB",
+  "context_length": 262144,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "chenyumo/moziAI-35B-A3B-MOE-MTP",
+  "renamed_at": "2026-11-11T04:48:37.026Z",
   "benchmarks": [],
   "sources": [
     {

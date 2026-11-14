@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mavenbase/Llama-3.2-Mavenbase-Eval-1B-v0.1",
   "slug": "mavenbase-llama-3-2-mavenbase-eval-1b-v0-1",
   "author": "Mavenbase",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 62328344,
   "storage_human": "62 MB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.2-1B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

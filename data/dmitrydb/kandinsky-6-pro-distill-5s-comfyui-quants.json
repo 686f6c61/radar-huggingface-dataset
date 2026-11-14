@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DmitryDB/Kandinsky-6-Pro-Distill-5s-ComfyUI-Quants",
   "slug": "dmitrydb-kandinsky-6-pro-distill-5s-comfyui-quants",
   "author": "DmitryDB",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 127451845384,
   "storage_human": "127.5 GB",
+  "context_length": null,
   "base_model": "kandinskylab/Kandinsky-6.0-Pro-distill-5s-Diffusers",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

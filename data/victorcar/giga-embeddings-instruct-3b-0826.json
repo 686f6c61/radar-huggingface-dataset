@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VictorCar/Giga-Embeddings-instruct-3B-0826",
   "slug": "victorcar-giga-embeddings-instruct-3b-0826",
   "author": "VictorCar",
@@ -37,14 +37,19 @@
   "parameters_human": "3.15B",
   "storage_bytes": 6311984747,
   "storage_human": "6.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

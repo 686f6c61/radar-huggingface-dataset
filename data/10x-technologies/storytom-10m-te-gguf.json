@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "10X-Technologies/StoryTOM-10M-te-GGUF",
   "slug": "10x-technologies-storytom-10m-te-gguf",
   "author": "10X-Technologies",
@@ -41,14 +41,19 @@
   "parameters_human": "12.5M",
   "storage_bytes": 75290816,
   "storage_human": "75 MB",
+  "context_length": 544,
   "base_model": "10X-Technologies/StoryTOM-10M-te",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

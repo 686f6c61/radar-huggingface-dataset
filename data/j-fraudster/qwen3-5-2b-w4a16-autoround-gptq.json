@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "J-Fraudster/Qwen3.5-2B-W4A16-AutoRound-GPTQ",
   "slug": "j-fraudster-qwen3-5-2b-w4a16-autoround-gptq",
   "author": "J-Fraudster",
@@ -28,14 +28,19 @@
   "parameters_human": "2.21B",
   "storage_bytes": 2741387765,
   "storage_human": "2.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "JW-Hubs/Qwen3.5-2B-W4A16-GPTQ",
+  "renamed_at": "2026-11-12T03:07:25.320Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/NOESIS-Llama-1B-MiniCPM5-BF16",
   "slug": "amaimedia-noesis-llama-1b-minicpm5-bf16",
   "author": "AMAImedia",
@@ -67,14 +67,19 @@
   "parameters_human": "1.08B",
   "storage_bytes": 2161290944,
   "storage_human": "2.2 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM5-1B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-30T12:23:39.383Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

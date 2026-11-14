@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bunnycore/Gemma4-E2B-Coding-Distill",
   "slug": "bunnycore-gemma4-e2b-coding-distill",
   "author": "bunnycore",
@@ -30,6 +30,7 @@
   "parameters_human": "101.4M",
   "storage_bytes": 825866402,
   "storage_human": "826 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
   "formats": [
     "gguf",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

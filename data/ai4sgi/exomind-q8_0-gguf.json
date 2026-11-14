@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AI4SGI/ExoMind-Q8_0-GGUF",
   "slug": "ai4sgi-exomind-q8_0-gguf",
   "author": "AI4SGI",
@@ -37,14 +37,19 @@
   "parameters_human": "35.51B",
   "storage_bytes": 38711197589,
   "storage_human": "38.7 GB",
+  "context_length": 262144,
   "base_model": "AI4SGI/ExoMind",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

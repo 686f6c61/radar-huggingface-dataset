@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Lythri-4B-A2B-GGUF",
   "slug": "mradermacher-lythri-4b-a2b-gguf",
   "author": "mradermacher",
@@ -34,14 +34,19 @@
   "parameters_human": "4.63B",
   "storage_bytes": 47865220736,
   "storage_human": "47.9 GB",
+  "context_length": 131072,
   "base_model": "Lythri/Lythri-4B-A2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

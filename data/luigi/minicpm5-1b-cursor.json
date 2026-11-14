@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Luigi/minicpm5-1b-cursor",
   "slug": "luigi-minicpm5-1b-cursor",
   "author": "Luigi",
@@ -39,14 +39,19 @@
   "parameters_human": "1.08B",
   "storage_bytes": 3440330304,
   "storage_human": "3.4 GB",
+  "context_length": 131072,
   "base_model": "openbmb/MiniCPM5-1B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-11T08:31:21.132Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

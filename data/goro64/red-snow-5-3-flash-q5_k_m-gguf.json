@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Goro64/RED-SNOW-5.3-FLASH-Q5_K_M-GGUF",
   "slug": "goro64-red-snow-5-3-flash-q5_k_m-gguf",
   "author": "Goro64",
@@ -36,14 +36,19 @@
   "parameters_human": "320.76B",
   "storage_bytes": 227864894944,
   "storage_human": "227.9 GB",
+  "context_length": 1048576,
   "base_model": "Blackfrost-AI/RED-SNOW-5.3-FLASH-BF16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

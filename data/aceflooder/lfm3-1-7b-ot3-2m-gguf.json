@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aceflooder/LFM3-1.7B-OT3-2M-GGUF",
   "slug": "aceflooder-lfm3-1-7b-ot3-2m-gguf",
   "author": "aceflooder",
@@ -39,6 +39,7 @@
   "parameters_human": "1.73B",
   "storage_bytes": 3339950928,
   "storage_human": "3.3 GB",
+  "context_length": 262144,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

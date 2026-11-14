@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Video-Reason/VBVR-Pro-LTX2.3-diffsynth",
   "slug": "video-reason-vbvr-pro-ltx2-3-diffsynth",
   "author": "Video-Reason",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 428132264,
   "storage_human": "428 MB",
+  "context_length": null,
   "base_model": "Lightricks/LTX-2.3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

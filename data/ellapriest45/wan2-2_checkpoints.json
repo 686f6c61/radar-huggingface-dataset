@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EllaPriest45/Wan2.2_Checkpoints",
   "slug": "ellapriest45-wan2-2_checkpoints",
   "author": "EllaPriest45",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 190774541064,
   "storage_human": "190.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

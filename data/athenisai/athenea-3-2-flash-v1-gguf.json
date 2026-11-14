@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "athenisai/athenea-3.2-flash-v1-gguf",
   "slug": "athenisai-athenea-3-2-flash-v1-gguf",
   "author": "athenisai",
@@ -32,14 +32,19 @@
   "parameters_human": "2.70B",
   "storage_bytes": 5403157856,
   "storage_human": "5.4 GB",
+  "context_length": 131072,
   "base_model": "athenisai/athenea-3.2-flash-v1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-25T03:03:47.052Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

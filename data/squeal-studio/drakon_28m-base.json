@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Squeal-Studio/drakon_28m-base",
   "slug": "squeal-studio-drakon_28m-base",
   "author": "Squeal-Studio",
@@ -38,14 +38,19 @@
   "parameters_human": "39.2M",
   "storage_bytes": 156948080,
   "storage_human": "157 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

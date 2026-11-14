@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "neko556/my_awesome_kde4ds_google-t5-model",
   "slug": "neko556-my_awesome_kde4ds_google-t5-model",
   "author": "neko556",
@@ -32,14 +32,19 @@
   "parameters_human": "60.5M",
   "storage_bytes": 242858092,
   "storage_human": "243 MB",
+  "context_length": null,
   "base_model": "google-t5/t5-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

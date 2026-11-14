@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "isaacy13/gemma-4-E2B-it-guideai-litert-lm",
   "slug": "isaacy13-gemma-4-e2b-it-guideai-litert-lm",
   "author": "isaacy13",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 2588147712,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": "litert-community/gemma-4-E2B-it-litert-lm",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

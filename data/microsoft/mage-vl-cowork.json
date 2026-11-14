@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "microsoft/Mage-VL-Cowork",
   "slug": "microsoft-mage-vl-cowork",
   "author": "microsoft",
@@ -40,21 +40,26 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 224,
+  "likes": 225,
   "downloads_30d": 4680,
   "trending_score": 18,
   "parameters": 4741793792,
   "parameters_human": "4.74B",
   "storage_bytes": 9495637963,
   "storage_human": "9.5 GB",
+  "context_length": null,
   "base_model": "microsoft/Mage-VL",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

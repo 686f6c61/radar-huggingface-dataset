@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Atomic-Germ/Qwen3.8-Flash-Next-APEX-GGUF",
   "slug": "atomic-germ-qwen3-8-flash-next-apex-gguf",
   "author": "Atomic-Germ",
@@ -38,14 +38,19 @@
   "parameters_human": "176.94B",
   "storage_bytes": 209511256296,
   "storage_human": "209.5 GB",
+  "context_length": 262144,
   "base_model": "mudler/Qwen3.8-Flash-Next-APEX-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "curia007/pick3_llm_model",
   "slug": "curia007-pick3_llm_model",
   "author": "curia007",
@@ -37,6 +37,7 @@
   "parameters_human": "163072",
   "storage_bytes": 11538665,
   "storage_human": "12 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

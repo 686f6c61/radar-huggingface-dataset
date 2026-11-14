@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "laion/tt-x16-entropy0p003-42-30B",
   "slug": "laion-tt-x16-entropy0p003-42-30b",
   "author": "laion",
@@ -37,14 +37,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 61077997794,
   "storage_human": "61.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

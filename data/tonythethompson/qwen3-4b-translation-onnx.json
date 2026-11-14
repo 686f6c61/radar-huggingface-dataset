@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tonythethompson/Qwen3-4B-translation-onnx",
   "slug": "tonythethompson-qwen3-4b-translation-onnx",
   "author": "tonythethompson",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 5709605631,
   "storage_human": "5.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

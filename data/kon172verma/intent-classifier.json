@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kon172verma/intent-classifier",
   "slug": "kon172verma-intent-classifier",
   "author": "kon172verma",
@@ -35,6 +35,7 @@
   "parameters_human": "1.24B",
   "storage_bytes": 97096697671,
   "storage_human": "97.1 GB",
+  "context_length": 131072,
   "base_model": "Qwen/Qwen3-0.6B, Qwen/Qwen2.5-0.5B-Instruct, HuggingFaceTB/SmolLM2-360M-Instruct, meta-llama/Llama-3.2-1B-Instruct",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "kon171verma/intent-classifier",
+  "renamed_at": "2026-11-11T05:57:26.508Z",
   "benchmarks": [],
   "sources": [
     {

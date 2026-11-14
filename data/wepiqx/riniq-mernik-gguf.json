@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wepiqx/RINIQ-MERNIK-GGUF",
   "slug": "wepiqx-riniq-mernik-gguf",
   "author": "wepiqx",
@@ -39,14 +39,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 17011616288,
   "storage_human": "17.0 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-24T04:33:54.564Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

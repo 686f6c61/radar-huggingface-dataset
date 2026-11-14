@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BeardedMonster/SabiBERTa-135M-masakhaner2-hau",
   "slug": "beardedmonster-sabiberta-135m-masakhaner2-hau",
   "author": "BeardedMonster",
@@ -30,14 +30,19 @@
   "parameters_human": "135.9M",
   "storage_bytes": 1087080056,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "BeardedMonster/SabiBERTa-135M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

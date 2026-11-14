@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mup99ma/Chatterbox-TTS-Persian-gguf",
   "slug": "mup99ma-chatterbox-tts-persian-gguf",
   "author": "mup99ma",
@@ -34,14 +34,19 @@
   "parameters_human": "264.0M",
   "storage_bytes": 1531714546,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "Thomcles/Chatterbox-TTS-Persian-Farsi, ResembleAI/chatterbox",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

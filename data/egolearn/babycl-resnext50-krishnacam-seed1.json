@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "egolearn/babycl-resnext50-krishnacam-seed1",
   "slug": "egolearn-babycl-resnext50-krishnacam-seed1",
   "author": "egolearn",
@@ -27,14 +27,19 @@
   "parameters_human": "35.8M",
   "storage_bytes": 143240384,
   "storage_human": "143 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

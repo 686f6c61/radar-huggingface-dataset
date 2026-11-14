@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Pacific-i64/TR-HASH-MoE-1B-70B-Agentic-Pretraining",
   "slug": "pacific-i64-tr-hash-moe-1b-70b-agentic-pretraining",
   "author": "Pacific-i64",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 656755719721,
   "storage_human": "656.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AtomicChat/LFM3-VL-2B-GGUF",
   "slug": "atomicchat-lfm3-vl-2b-gguf",
   "author": "AtomicChat",
@@ -49,14 +49,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 13245077440,
   "storage_human": "13.2 GB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM3-VL-2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

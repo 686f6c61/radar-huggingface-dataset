@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "voloshka3/beans-deit-tiny-lab",
   "slug": "voloshka3-beans-deit-tiny-lab",
   "author": "voloshka3",
@@ -28,14 +28,19 @@
   "parameters_human": "5.5M",
   "storage_bytes": 22122692,
   "storage_human": "22 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

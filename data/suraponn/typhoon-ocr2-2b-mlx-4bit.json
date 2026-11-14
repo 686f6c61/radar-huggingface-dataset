@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Suraponn/typhoon-ocr2-2b-MLX-4bit",
   "slug": "suraponn-typhoon-ocr2-2b-mlx-4bit",
   "author": "Suraponn",
@@ -39,6 +39,7 @@
   "parameters_human": "2.21B",
   "storage_bytes": 1742260668,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "typhoon-ai/typhoon-ocr2-2b",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "typhoon-ai/typhoon-ocr2-2b-MLX-4bit",
+  "renamed_at": "2026-11-11T03:58:05.714Z",
   "benchmarks": [],
   "sources": []
 }

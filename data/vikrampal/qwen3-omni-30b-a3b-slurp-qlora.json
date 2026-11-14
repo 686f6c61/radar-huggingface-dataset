@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VikramPal/Qwen3-Omni-30B-A3B-SLURP-QLoRA",
   "slug": "vikrampal-qwen3-omni-30b-a3b-slurp-qlora",
   "author": "VikramPal",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 112191582,
   "storage_human": "112 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "VikramPal/Qwen3-Omni-30B-A3B-Thinker-QLoRA",
+  "renamed_at": "2026-11-11T04:08:40.397Z",
   "benchmarks": [],
   "sources": [
     {

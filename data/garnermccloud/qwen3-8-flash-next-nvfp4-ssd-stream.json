@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "garnermccloud/Qwen3.8-Flash-Next-NVFP4-SSD-Stream",
   "slug": "garnermccloud-qwen3-8-flash-next-nvfp4-ssd-stream",
   "author": "garnermccloud",
@@ -37,14 +37,19 @@
   "parameters_human": "68.40B",
   "storage_bytes": 135243520519,
   "storage_human": "135.2 GB",
+  "context_length": null,
   "base_model": "RadixArk/Qwen3.8-Flash-Next-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

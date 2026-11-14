@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "waveshaker/comfy_models",
   "slug": "waveshaker-comfy_models",
   "author": "waveshaker",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 383827940548,
   "storage_human": "383.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-Edit-2511",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PraxySante/Nemo-DE-delib-V1",
   "slug": "praxysante-nemo-de-delib-v1",
   "author": "PraxySante",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 1081386209,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-08T11:06:04.328Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

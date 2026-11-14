@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AtomicChat/Qwen3.8-Flash-Next-GGUF",
   "slug": "atomicchat-qwen3-8-flash-next-gguf",
   "author": "AtomicChat",
@@ -37,14 +37,19 @@
   "parameters_human": "176.94B",
   "storage_bytes": 242715243699,
   "storage_human": "242.7 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

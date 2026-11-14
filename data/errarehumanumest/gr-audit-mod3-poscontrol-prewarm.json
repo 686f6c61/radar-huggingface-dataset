@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ErrareHumanumEst/gr-audit-mod3-poscontrol-prewarm",
   "slug": "errarehumanumest-gr-audit-mod3-poscontrol-prewarm",
   "author": "ErrareHumanumEst",
@@ -31,14 +31,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 3452608258,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-04T04:03:40.832Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

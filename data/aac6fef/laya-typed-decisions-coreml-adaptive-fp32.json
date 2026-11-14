@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aac6fef/laya-typed-decisions-coreml-adaptive-fp32",
   "slug": "aac6fef-laya-typed-decisions-coreml-adaptive-fp32",
   "author": "aac6fef",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 1687716308,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "convaiinnovations/laya-typed-decisions",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

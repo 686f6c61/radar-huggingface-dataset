@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "danish-foundation-models/propella-bekko-a25m",
   "slug": "danish-foundation-models-propella-bekko-a25m",
   "author": "danish-foundation-models",
@@ -70,14 +70,19 @@
   "parameters_human": "123.5M",
   "storage_bytes": 528214396,
   "storage_human": "528 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

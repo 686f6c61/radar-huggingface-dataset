@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "immiq/Index-Translate-2B-Orinfer-E8P-Q4A8",
   "slug": "immiq-index-translate-2b-orinfer-e8p-q4a8",
   "author": "immiq",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 1274761200,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "IndexTeam/Index-Translate-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

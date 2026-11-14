@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nik202405/Luna-1",
   "slug": "nik202405-luna-1",
   "author": "Nik202405",
@@ -27,14 +27,19 @@
   "parameters_human": "2.61B",
   "storage_bytes": 1708582336,
   "storage_human": "1.7 GB",
+  "context_length": 8192,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

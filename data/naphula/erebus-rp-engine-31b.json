@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Naphula/Erebus-RP-Engine-31B",
   "slug": "naphula-erebus-rp-engine-31b",
   "author": "Naphula",
@@ -72,14 +72,19 @@
   "parameters_human": "32.14B",
   "storage_bytes": 64309100964,
   "storage_human": "64.3 GB",
+  "context_length": null,
   "base_model": "DavidAU/gemma-4-31B-it-Grand-Horror-X-INTENSE-HERETIC-UNCENSORED-Thinking, MRockatansky/Gemma-4-31B-Storymaxxed3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

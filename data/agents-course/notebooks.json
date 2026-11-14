@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agents-course/notebooks",
   "slug": "agents-course-notebooks",
   "author": "agents-course",
@@ -15,19 +15,24 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 1136,
+  "likes": 1138,
   "downloads_30d": 0,
-  "trending_score": 19,
+  "trending_score": 21,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 11564978,
   "storage_human": "12 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

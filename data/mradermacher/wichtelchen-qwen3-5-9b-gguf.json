@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Wichtelchen-Qwen3.5-9B-GGUF",
   "slug": "mradermacher-wichtelchen-qwen3-5-9b-gguf",
   "author": "mradermacher",
@@ -42,14 +42,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 85101519104,
   "storage_human": "85.1 GB",
+  "context_length": 262144,
   "base_model": "schneewolflabs/Wichtelchen-Qwen3.5-9B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "groxaxo/Ternary-Bonsai-2-27B-Abliterated-v2-PQ2_0-MTP-GGUF-3060-bench",
   "slug": "groxaxo-ternary-bonsai-2-27b-abliterated-v2-pq2_0-mtp-gguf-3060-bench",
   "author": "groxaxo",
@@ -35,14 +35,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 7657489696,
   "storage_human": "7.7 GB",
+  "context_length": 262144,
   "base_model": "BoldingBuilds/Ternary-Bonsai-2-27B-Abliterated-v2-PQ2_0-MTP-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

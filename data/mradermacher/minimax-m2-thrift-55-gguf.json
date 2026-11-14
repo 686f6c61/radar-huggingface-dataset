@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/MiniMax-M2-THRIFT-55-GGUF",
   "slug": "mradermacher-minimax-m2-thrift-55-gguf",
   "author": "mradermacher",
@@ -37,14 +37,19 @@
   "parameters_human": "105.79B",
   "storage_bytes": 718745729472,
   "storage_human": "718.7 GB",
+  "context_length": 196608,
   "base_model": "lemuralabs/MiniMax-M2-Pruned-55",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

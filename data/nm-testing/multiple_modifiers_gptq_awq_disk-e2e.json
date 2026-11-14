@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nm-testing/multiple_modifiers_gptq_awq_disk-e2e",
   "slug": "nm-testing-multiple_modifiers_gptq_awq_disk-e2e",
   "author": "nm-testing",
@@ -25,14 +25,19 @@
   "parameters_human": "918.4M",
   "storage_bytes": 9050276992,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

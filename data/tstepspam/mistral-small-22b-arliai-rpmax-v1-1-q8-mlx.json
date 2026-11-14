@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tstepspam/Mistral-Small-22B-ArliAI-RPMax-v1.1-Q8-MLX",
   "slug": "tstepspam-mistral-small-22b-arliai-rpmax-v1-1-q8-mlx",
   "author": "tstepspam",
@@ -30,6 +30,7 @@
   "parameters_human": "22.25B",
   "storage_bytes": 23638537142,
   "storage_human": "23.6 GB",
+  "context_length": null,
   "base_model": "ArliAI/Mistral-Small-22B-ArliAI-RPMax-v1.1",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

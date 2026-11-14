@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Miguel750/BlackDolphin-12B-Q6_K-GGUF",
   "slug": "miguel750-blackdolphin-12b-q6_k-gguf",
   "author": "Miguel750",
@@ -32,14 +32,19 @@
   "parameters_human": "12.25B",
   "storage_bytes": 10056209376,
   "storage_human": "10.1 GB",
+  "context_length": 1024000,
   "base_model": "Naphula/BlackDolphin-12B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

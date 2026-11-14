@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidJLN/merge-or-mix-loras",
   "slug": "davidjln-merge-or-mix-loras",
   "author": "DavidJLN",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 1034755568,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

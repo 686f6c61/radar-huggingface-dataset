@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fwgpiyawudk/OvisOCR3-mlx-4bit",
   "slug": "fwgpiyawudk-ovisocr3-mlx-4bit",
   "author": "fwgpiyawudk",
@@ -33,6 +33,7 @@
   "parameters_human": "853.0M",
   "storage_bytes": 638038250,
   "storage_human": "638 MB",
+  "context_length": null,
   "base_model": "ATH-MaaS/OvisOCR3",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

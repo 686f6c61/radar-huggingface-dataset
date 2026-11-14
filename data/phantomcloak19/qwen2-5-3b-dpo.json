@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Phantomcloak19/qwen2.5-3b-dpo",
   "slug": "phantomcloak19-qwen2-5-3b-dpo",
   "author": "Phantomcloak19",
@@ -32,14 +32,19 @@
   "parameters_human": "3.09B",
   "storage_bytes": 7022594645,
   "storage_human": "7.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

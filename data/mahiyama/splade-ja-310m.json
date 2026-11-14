@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mahiyama/splade-ja-310m",
   "slug": "mahiyama-splade-ja-310m",
   "author": "mahiyama",
@@ -40,14 +40,19 @@
   "parameters_human": "315.3M",
   "storage_bytes": 2522471792,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "sbintuitions/modernbert-ja-310m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

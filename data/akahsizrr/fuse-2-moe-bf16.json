@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Akahsizrr/Fuse-2-MoE-BF16",
   "slug": "akahsizrr-fuse-2-moe-bf16",
   "author": "Akahsizrr",
@@ -35,14 +35,19 @@
   "parameters_human": "8.87B",
   "storage_bytes": 17752145824,
   "storage_human": "17.8 GB",
+  "context_length": 262144,
   "base_model": "Akahsizrr/Fuse-2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

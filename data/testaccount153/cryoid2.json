@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "testaccount153/cryoID2",
   "slug": "testaccount153-cryoid2",
   "author": "testaccount153",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 4335431961,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "cryoid2/cryoID2",
+  "renamed_at": "2026-11-11T07:46:19.420Z",
   "benchmarks": [],
   "sources": []
 }

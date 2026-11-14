@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Akan4ik/DeepSeek-V4-Flash-0731-FFT-BF16-Cyber-2.0",
   "slug": "akan4ik-deepseek-v4-flash-0731-fft-bf16-cyber-2-0",
   "author": "Akan4ik",
@@ -35,14 +35,19 @@
   "parameters_human": "304.18B",
   "storage_bytes": 166886535336,
   "storage_human": "166.9 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T09:26:01.901Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

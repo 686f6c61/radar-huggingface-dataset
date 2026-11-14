@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Quazim0t0/Qwenx86-4B-GGUF",
   "slug": "quazim0t0-qwenx86-4b-gguf",
   "author": "Quazim0t0",
@@ -34,14 +34,19 @@
   "parameters_human": "4.34B",
   "storage_bytes": 14003904338,
   "storage_human": "14.0 GB",
+  "context_length": 262144,
   "base_model": "Quazim0t0/Qwenx86-4B-compact",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/poolformer_s12-mic",
   "slug": "huggingface-mic-poolformer_s12-mic",
   "author": "huggingface-mic",
@@ -27,14 +27,19 @@
   "parameters_human": "11.9M",
   "storage_bytes": 47675728,
   "storage_human": "48 MB",
+  "context_length": null,
   "base_model": "sail/poolformer_s12",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

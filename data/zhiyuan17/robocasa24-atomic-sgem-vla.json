@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Zhiyuan17/robocasa24-atomic-sgem-vla",
   "slug": "zhiyuan17-robocasa24-atomic-sgem-vla",
   "author": "Zhiyuan17",
@@ -27,14 +27,19 @@
   "parameters_human": "3.62B",
   "storage_bytes": 29968584556,
   "storage_human": "30.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

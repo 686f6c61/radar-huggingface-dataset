@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ccm01081122/Mixtral-8x7B-Instruct-v0.1",
   "slug": "ccm01081122-mixtral-8x7b-instruct-v0-1",
   "author": "ccm01081122",
@@ -38,14 +38,19 @@
   "parameters_human": "46.70B",
   "storage_bytes": 190481973667,
   "storage_human": "190.5 GB",
+  "context_length": null,
   "base_model": "mistralai/Mixtral-8x7B-v0.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

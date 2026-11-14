@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Diamegs/PIT-4B-202012",
   "slug": "diamegs-pit-4b-202012",
   "author": "Diamegs",
@@ -34,14 +34,19 @@
   "parameters_human": "4.44B",
   "storage_bytes": 17754502408,
   "storage_human": "17.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

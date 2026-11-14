@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mamelles/Qwen3.5-9B-Wolof-InstructStock-adapter-v1",
   "slug": "mamelles-qwen3-5-9b-wolof-instructstock-adapter-v1",
   "author": "mamelles",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 12643109218,
   "storage_human": "12.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Wolof SFT (from_instruct_stock)",

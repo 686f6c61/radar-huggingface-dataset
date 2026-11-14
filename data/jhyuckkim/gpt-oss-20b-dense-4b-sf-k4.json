@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jhyuckkim/GPT-OSS-20B-Dense-4B-SF-K4",
   "slug": "jhyuckkim-gpt-oss-20b-dense-4b-sf-k4",
   "author": "jhyuckkim",
@@ -35,14 +35,19 @@
   "parameters_human": "4.19B",
   "storage_bytes": 8398094686,
   "storage_human": "8.4 GB",
+  "context_length": null,
   "base_model": "openai/gpt-oss-20b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

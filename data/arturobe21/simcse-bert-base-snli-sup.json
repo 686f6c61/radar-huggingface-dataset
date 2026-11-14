@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ArturoBE21/simcse-bert-base-snli-sup",
   "slug": "arturobe21-simcse-bert-base-snli-sup",
   "author": "ArturoBE21",
@@ -36,14 +36,19 @@
   "parameters_human": "109.5M",
   "storage_bytes": 1319153840,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "google-bert/bert-base-uncased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

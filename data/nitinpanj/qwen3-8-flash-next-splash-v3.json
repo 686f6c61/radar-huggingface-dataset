@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nitinpanj/Qwen3.8-Flash-Next-Splash-v3",
   "slug": "nitinpanj-qwen3-8-flash-next-splash-v3",
   "author": "nitinpanj",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 18722596864,
   "storage_human": "18.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ZoomFly/rwkv-vl-1.5v100m-nv_img_v3-260815",
   "slug": "zoomfly-rwkv-vl-1-5v100m-nv_img_v3-260815",
   "author": "ZoomFly",
@@ -40,14 +40,19 @@
   "parameters_human": "1.65B",
   "storage_bytes": 3306469931,
   "storage_human": "3.3 GB",
+  "context_length": null,
   "base_model": "ZoomFly/rwkv-vl-1.5v100m-finevisionmax",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "divinetribe/Huihui-Qwen3-VL-32B-Instruct-abliterated-4bit-mlx",
   "slug": "divinetribe-huihui-qwen3-vl-32b-instruct-abliterated-4bit-mlx",
   "author": "divinetribe",
@@ -47,6 +47,7 @@
   "parameters_human": "33.36B",
   "storage_bytes": 19620448625,
   "storage_human": "19.6 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3-VL-32B-Instruct-abliterated",
   "formats": [
     "mlx",
@@ -54,8 +55,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

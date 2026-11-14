@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yipengsun/ask-yipeng-Qwen3-0.6B-q4f16_1-MLC",
   "slug": "yipengsun-ask-yipeng-qwen3-0-6b-q4f16_1-mlc",
   "author": "yipengsun",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 604375998,
   "storage_human": "604 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-28T06:35:52.509Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

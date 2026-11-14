@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Elmerfudge/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
   "slug": "elmerfudge-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf",
   "author": "Elmerfudge",
@@ -42,14 +42,19 @@
   "parameters_human": "1.86B",
   "storage_bytes": 172466425216,
   "storage_human": "172.5 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

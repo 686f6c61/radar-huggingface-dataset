@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cooler8/yejin-korean-8b-v3-cpt6000-distill-qwen36-r128-lr3e4-soup6-nothink-v2",
   "slug": "cooler8-yejin-korean-8b-v3-cpt6000-distill-qwen36-r128-lr3e4-soup6-nothink-v2",
   "author": "cooler8",
@@ -32,14 +32,19 @@
   "parameters_human": "7.24B",
   "storage_bytes": 28967001776,
   "storage_human": "29.0 GB",
+  "context_length": null,
   "base_model": "cooler8/yejin-korean-8b-v3-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

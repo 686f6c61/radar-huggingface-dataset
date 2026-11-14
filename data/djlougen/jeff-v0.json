@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DJLougen/jeff-v0",
   "slug": "djlougen-jeff-v0",
   "author": "DJLougen",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 271620903,
   "storage_human": "272 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "DJLougen/eljefe-v0",
+  "renamed_at": "2026-11-11T02:34:38.029Z",
   "benchmarks": [],
   "sources": [
     {

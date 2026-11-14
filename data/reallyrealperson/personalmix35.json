@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ReallyRealPerson/PersonalMix35",
   "slug": "reallyrealperson-personalmix35",
   "author": "ReallyRealPerson",
@@ -39,14 +39,19 @@
   "parameters_human": "23.57B",
   "storage_bytes": 47161927036,
   "storage_human": "47.2 GB",
+  "context_length": null,
   "base_model": "FlareRebellion/BereavedCompound-v1.0-24b, zerofata/MS3.2-PaintedFantasy-v4.1-24B, Naphula-Archives/Cyberdonia-24B-v11, grayarea/Magidonia-24B-v4.3-heretic-v1.2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

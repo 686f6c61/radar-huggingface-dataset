@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Pro152/Reinforce-Pixelcopter-PLE-v0",
   "slug": "pro152-reinforce-pixelcopter-ple-v0",
   "author": "Pro152",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 80122,
   "storage_human": "80122 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fastcoder-factory/gpt-oss-20b-FCF-ck400",
   "slug": "fastcoder-factory-gpt-oss-20b-fcf-ck400",
   "author": "fastcoder-factory",
@@ -32,14 +32,19 @@
   "parameters_human": "20.91B",
   "storage_bytes": 41857429502,
   "storage_human": "41.9 GB",
+  "context_length": null,
   "base_model": "openai/gpt-oss-20b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

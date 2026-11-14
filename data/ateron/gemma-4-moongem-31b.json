@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ateron/Gemma-4-MoonGem-31B",
   "slug": "ateron-gemma-4-moongem-31b",
   "author": "Ateron",
@@ -46,14 +46,19 @@
   "parameters_human": "31.27B",
   "storage_bytes": 62578506090,
   "storage_human": "62.6 GB",
+  "context_length": null,
   "base_model": "BirdToast/Gemma-4-31B-glimmer-rp-v0.1, nbeerbower/Gemma4-Gutenberg-31B, Jackrong/Gemopus-4-31B-it, bgg1996/Melinoe-Gemma4-31B-VL, AuriAetherwiing/G4-31B-Musica-v1, zerofata/G4-MeroMero-v2-31B, ReadyArt/gemma-4-31B-it-scotoma-2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

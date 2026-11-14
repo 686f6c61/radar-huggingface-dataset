@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Step3-VL-10B-Base-GGUF",
   "slug": "mradermacher-step3-vl-10b-base-gguf",
   "author": "mradermacher",
@@ -30,14 +30,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 80145175232,
   "storage_human": "80.1 GB",
+  "context_length": 40960,
   "base_model": "stepfun-ai/Step3-VL-10B-Base",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

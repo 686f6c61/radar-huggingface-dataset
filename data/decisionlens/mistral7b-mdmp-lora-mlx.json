@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "decisionlens/mistral7b-mdmp-lora-mlx",
   "slug": "decisionlens-mistral7b-mdmp-lora-mlx",
   "author": "decisionlens",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 167821467,
   "storage_human": "168 MB",
+  "context_length": null,
   "base_model": "mlx-community/Mistral-7B-Instruct-v0.3-4bit",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

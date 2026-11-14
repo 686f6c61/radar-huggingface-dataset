@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "voldemir/Kroma-GGUF",
   "slug": "voldemir-kroma-gguf",
   "author": "voldemir",
@@ -29,14 +29,19 @@
   "parameters_human": "12.82B",
   "storage_bytes": 68249479502,
   "storage_human": "68.2 GB",
+  "context_length": null,
   "base_model": "Krea/Krea-2, lodestones/Kroma",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

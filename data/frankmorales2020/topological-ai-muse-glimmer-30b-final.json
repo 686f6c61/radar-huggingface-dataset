@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "frankmorales2020/topological-ai-muse-glimmer-30b-final",
   "slug": "frankmorales2020-topological-ai-muse-glimmer-30b-final",
   "author": "frankmorales2020",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 38751476760,
   "storage_human": "38.8 GB",
+  "context_length": null,
   "base_model": "meta-models/Muse-Glimmer-30B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

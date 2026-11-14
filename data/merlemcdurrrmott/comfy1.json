@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "merlemcdurrrmott/Comfy1",
   "slug": "merlemcdurrrmott-comfy1",
   "author": "merlemcdurrrmott",
@@ -23,6 +23,7 @@
   "parameters_human": null,
   "storage_bytes": 192342740105,
   "storage_human": "192.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -30,8 +31,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-17T03:11:41.826Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

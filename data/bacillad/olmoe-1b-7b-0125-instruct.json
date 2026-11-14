@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bacillad/OLMoE-1B-7B-0125-Instruct",
   "slug": "bacillad-olmoe-1b-7b-0125-instruct",
   "author": "bacillad",
@@ -36,14 +36,19 @@
   "parameters_human": "6.92B",
   "storage_bytes": 13838721960,
   "storage_human": "13.8 GB",
+  "context_length": null,
   "base_model": "allenai/OLMoE-1B-7B-0125-DPO",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

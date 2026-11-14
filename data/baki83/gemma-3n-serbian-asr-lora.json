@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "baki83/gemma-3n-serbian-asr-lora",
   "slug": "baki83-gemma-3n-serbian-asr-lora",
   "author": "baki83",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 191893445,
   "storage_human": "192 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-3n-e4b-it-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

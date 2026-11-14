@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rob1221rib/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-AWQ-MTP",
   "slug": "rob1221rib-qwen3-8-27b-uncensored-hauhaucs-aggressive-awq-mtp",
   "author": "Rob1221rib",
@@ -40,14 +40,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 19567857013,
   "storage_human": "19.6 GB",
+  "context_length": null,
   "base_model": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

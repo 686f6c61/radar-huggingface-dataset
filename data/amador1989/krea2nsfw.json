@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Amador1989/Krea2NSFW",
   "slug": "amador1989-krea2nsfw",
   "author": "Amador1989",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 459183490,
   "storage_human": "459 MB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

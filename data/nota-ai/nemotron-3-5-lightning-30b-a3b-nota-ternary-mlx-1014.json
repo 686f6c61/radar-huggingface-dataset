@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nota-ai/Nemotron-3.5-Lightning-30B-A3B-Nota-Ternary-MLX-1014",
   "slug": "nota-ai-nemotron-3-5-lightning-30b-a3b-nota-ternary-mlx-1014",
   "author": "nota-ai",
@@ -36,6 +36,7 @@
   "parameters_human": "32.99B",
   "storage_bytes": 10252554652,
   "storage_human": "10.3 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

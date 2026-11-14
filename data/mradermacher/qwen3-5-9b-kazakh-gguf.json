@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3.5-9B-Kazakh-GGUF",
   "slug": "mradermacher-qwen3-5-9b-kazakh-gguf",
   "author": "mradermacher",
@@ -29,14 +29,19 @@
   "parameters_human": "9.08B",
   "storage_bytes": 84259649920,
   "storage_human": "84.3 GB",
+  "context_length": 262144,
   "base_model": "issai/Qwen3.5-9B-Kazakh",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

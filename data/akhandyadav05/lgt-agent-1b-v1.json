@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "akhandyadav05/LGT-Agent-1B-v1",
   "slug": "akhandyadav05-lgt-agent-1b-v1",
   "author": "akhandyadav05",
@@ -29,14 +29,19 @@
   "parameters_human": "1.10B",
   "storage_bytes": 4400239328,
   "storage_human": "4.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

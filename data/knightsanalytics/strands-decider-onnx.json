@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KnightsAnalytics/strands-decider-onnx",
   "slug": "knightsanalytics-strands-decider-onnx",
   "author": "KnightsAnalytics",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 2978475415,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": "StrandsAgents/strands-decider-E2B-gemma4-v1-2610",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

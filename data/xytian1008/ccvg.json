@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xytian1008/CCVG",
   "slug": "xytian1008-ccvg",
   "author": "xytian1008",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 905475264925,
   "storage_human": "905.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

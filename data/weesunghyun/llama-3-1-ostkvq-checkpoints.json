@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "weesunghyun/Llama-3.1-ostkvq-checkpoints",
   "slug": "weesunghyun-llama-3-1-ostkvq-checkpoints",
   "author": "weesunghyun",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 143201486824,
   "storage_human": "143.2 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-8B, meta-llama/Llama-3.1-8B-Instruct, meta-llama/Llama-2-7b-hf, meta-llama/Llama-2-13b-hf, Qwen/Qwen2.5-1.5B, Qwen/Qwen2.5-7B, Qwen/Qwen2.5-14B, mistralai/Mistral-7B-v0.3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

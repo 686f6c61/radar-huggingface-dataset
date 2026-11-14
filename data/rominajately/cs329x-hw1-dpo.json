@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rominajately/cs329x-hw1-dpo",
   "slug": "rominajately-cs329x-hw1-dpo",
   "author": "rominajately",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 5023292,
   "storage_human": "5 MB",
+  "context_length": null,
   "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nicolmelo/dummy-model",
   "slug": "nicolmelo-dummy-model",
   "author": "nicolmelo",
@@ -27,14 +27,19 @@
   "parameters_human": "110.7M",
   "storage_bytes": 442646188,
   "storage_human": "443 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-17T02:56:52.349Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

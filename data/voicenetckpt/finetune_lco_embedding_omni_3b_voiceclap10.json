@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VoiceNetCkpt/finetune_LCO_Embedding_Omni_3B_voiceclap10",
   "slug": "voicenetckpt-finetune_lco_embedding_omni_3b_voiceclap10",
   "author": "VoiceNetCkpt",
@@ -24,14 +24,19 @@
   "parameters_human": null,
   "storage_bytes": 9418772441,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

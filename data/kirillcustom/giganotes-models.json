@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kirillcustom/giganotes-models",
   "slug": "kirillcustom-giganotes-models",
   "author": "kirillcustom",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 1073635074,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "ai-sage/GigaAM-v3, nvidia/Nemotron-3-Diarization, nvidia/speakerverification_en_titanet_large, pyannote/segmentation-3.0",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

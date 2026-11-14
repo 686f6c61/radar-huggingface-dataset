@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VertexAGI/prism-roleplay-1.5-small",
   "slug": "vertexagi-prism-roleplay-1-5-small",
   "author": "VertexAGI",
@@ -39,6 +39,7 @@
   "parameters_human": "8.19B",
   "storage_bytes": 9648033574,
   "storage_human": "9.6 GB",
+  "context_length": 40960,
   "base_model": "mlx-community/Qwen3-8B-4bit",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

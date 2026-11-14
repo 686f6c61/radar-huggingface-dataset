@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Cadenza-Labs/kimi-k2.6-ST-time",
   "slug": "cadenza-labs-kimi-k2-6-st-time",
   "author": "Cadenza-Labs",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 28132927925,
   "storage_human": "28.1 GB",
+  "context_length": null,
   "base_model": "moonshotai/Kimi-K2.6",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

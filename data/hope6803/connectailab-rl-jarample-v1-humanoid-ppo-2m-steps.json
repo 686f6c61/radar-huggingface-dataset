@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hope6803/connectailab-rl-jarample-v1-humanoid-ppo-2m-steps",
   "slug": "hope6803-connectailab-rl-jarample-v1-humanoid-ppo-2m-steps",
   "author": "hope6803",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 1372704,
   "storage_human": "1 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

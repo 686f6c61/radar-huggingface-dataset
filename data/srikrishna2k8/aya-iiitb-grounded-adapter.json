@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SriKrishna2k8/aya-iiitb-grounded-adapter",
   "slug": "srikrishna2k8-aya-iiitb-grounded-adapter",
   "author": "SriKrishna2k8",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 25227717,
   "storage_human": "25 MB",
+  "context_length": null,
   "base_model": "CohereLabs/tiny-aya-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

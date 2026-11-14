@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Echoo113/deepseek-llm-7b-chat-immigration_mlpB-STEER0.346875-ft4.43",
   "slug": "echoo113-deepseek-llm-7b-chat-immigration_mlpb-steer0-346875-ft4-43",
   "author": "Echoo113",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 300055825,
   "storage_human": "300 MB",
+  "context_length": null,
   "base_model": "deepseek-ai/deepseek-llm-7b-chat",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

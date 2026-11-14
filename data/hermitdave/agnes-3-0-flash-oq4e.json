@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hermitdave/Agnes-3.0-Flash-oQ4e",
   "slug": "hermitdave-agnes-3-0-flash-oq4e",
   "author": "hermitdave",
@@ -37,6 +37,7 @@
   "parameters_human": "33.12B",
   "storage_bytes": 20360121463,
   "storage_human": "20.4 GB",
+  "context_length": null,
   "base_model": "Agnes-AI/Agnes-3.0-Flash",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "hermitdave/Agnes-3.0-Flash-MLX-oQ4e-MTP",
+  "renamed_at": "2026-11-11T05:32:47.015Z",
   "benchmarks": [],
   "sources": [
     {

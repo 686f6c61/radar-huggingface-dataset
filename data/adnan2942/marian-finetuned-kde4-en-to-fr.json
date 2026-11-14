@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Adnan2942/marian-finetuned-kde4-en-to-fr",
   "slug": "adnan2942-marian-finetuned-kde4-en-to-fr",
   "author": "Adnan2942",
@@ -31,14 +31,19 @@
   "parameters_human": "74.7M",
   "storage_bytes": 1495120290,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "Helsinki-NLP/opus-mt-en-fr",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

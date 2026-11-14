@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "talzoomanzoo/ttrl-aime2026-none-4b",
   "slug": "talzoomanzoo-ttrl-aime2026-none-4b",
   "author": "talzoomanzoo",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 143610510,
   "storage_human": "144 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

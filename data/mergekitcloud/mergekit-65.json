@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MergekitCloud/mergekit-65",
   "slug": "mergekitcloud-mergekit-65",
   "author": "MergekitCloud",
@@ -39,14 +39,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16060556056,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "ArliAI/Llama-3.1-8B-ArliAI-RPMax-v1.3, Undi95/Llama3-Unholy-8B-OAS, Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2, vicgalle/Humanish-Roleplay-Llama-3.1-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

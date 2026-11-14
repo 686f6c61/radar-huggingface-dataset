@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/M.O.G.-SEC-27B-1M-CTX-BF16-GGUF",
   "slug": "mradermacher-m-o-g--sec-27b-1m-ctx-bf16-gguf",
   "author": "mradermacher",
@@ -52,14 +52,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 190780464352,
   "storage_human": "190.8 GB",
+  "context_length": 1000000,
   "base_model": "Blackfrost-Research/M.O.G.-SEC-27B-1M-CTX-BF16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

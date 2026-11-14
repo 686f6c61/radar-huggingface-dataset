@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kakaocorp/kanana-2-v-decide-3b-2611",
   "slug": "kakaocorp-kanana-2-v-decide-3b-2611",
   "author": "kakaocorp",
@@ -41,14 +41,19 @@
   "parameters_human": "3.67B",
   "storage_bytes": 7331054845,
   "storage_human": "7.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

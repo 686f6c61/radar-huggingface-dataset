@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "asastu/Eirenaeus-Philalethes-27B-2bit-421M",
   "slug": "asastu-eirenaeus-philalethes-27b-2bit-421m",
   "author": "asastu",
@@ -39,6 +39,7 @@
   "parameters_human": "26.90B",
   "storage_bytes": 9473972685,
   "storage_human": "9.5 GB",
+  "context_length": 262144,
   "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf, convaiinnovations/laya",
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

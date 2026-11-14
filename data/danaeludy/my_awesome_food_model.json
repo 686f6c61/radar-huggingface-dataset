@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "danaeludy/my_awesome_food_model",
   "slug": "danaeludy-my_awesome_food_model",
   "author": "danaeludy",
@@ -32,14 +32,19 @@
   "parameters_human": "85.9M",
   "storage_bytes": 1030590789,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "google/vit-base-patch16-224-in21k",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

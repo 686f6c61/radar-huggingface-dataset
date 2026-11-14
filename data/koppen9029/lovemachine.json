@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Koppen9029/LoveMachine",
   "slug": "koppen9029-lovemachine",
   "author": "Koppen9029",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 3116,
   "storage_human": "3116 B",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Omni-3B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

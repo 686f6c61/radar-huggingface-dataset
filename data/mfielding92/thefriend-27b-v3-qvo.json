@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mfielding92/thefriend-27b-v3-qvo",
   "slug": "mfielding92-thefriend-27b-v3-qvo",
   "author": "mfielding92",
@@ -35,14 +35,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 55582996101,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.8-27B-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-06T04:34:48.684Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

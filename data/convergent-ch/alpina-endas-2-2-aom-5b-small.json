@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Convergent-ch/Alpina-Endas-2.2-AoM-5B-Small",
   "slug": "convergent-ch-alpina-endas-2-2-aom-5b-small",
   "author": "Convergent-ch",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 21394824,
   "storage_human": "21 MB",
+  "context_length": null,
   "base_model": "Convergent-ch/Alpina-Small-2.0-30M, Convergent-ch/Alpina-Big-2.0-300M",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

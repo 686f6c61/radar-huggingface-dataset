@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sorika-labs/suzune-s1-flash-gguf",
   "slug": "sorika-labs-suzune-s1-flash-gguf",
   "author": "sorika-labs",
@@ -52,6 +52,7 @@
   "parameters_human": null,
   "storage_bytes": 903753688,
   "storage_human": "904 MB",
+  "context_length": null,
   "base_model": "sorika-labs/suzune-s1-flash",
   "formats": [
     "gguf",
@@ -59,8 +60,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

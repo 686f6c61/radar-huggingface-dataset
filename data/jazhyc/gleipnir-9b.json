@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jazhyc/Gleipnir-9B",
   "slug": "jazhyc-gleipnir-9b",
   "author": "Jazhyc",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 1862344080,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Binary AI-control monitoring",

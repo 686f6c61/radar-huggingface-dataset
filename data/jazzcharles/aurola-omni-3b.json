@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jazzcharles/AuroLA-Omni-3B",
   "slug": "jazzcharles-aurola-omni-3b",
   "author": "Jazzcharles",
@@ -32,14 +32,19 @@
   "parameters_human": "4.70B",
   "storage_bytes": 9416300964,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Omni-3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

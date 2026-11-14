@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/whispernow-nemotron-bolt-e4b-GGUF",
   "slug": "mradermacher-whispernow-nemotron-bolt-e4b-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "7.46B",
   "storage_bytes": 74813109632,
   "storage_human": "74.8 GB",
+  "context_length": 65536,
   "base_model": "category271/whispernow-nemotron-bolt-e4b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

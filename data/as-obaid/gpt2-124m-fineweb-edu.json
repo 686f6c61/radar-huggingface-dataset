@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "as-obaid/gpt2-124m-fineweb-edu",
   "slug": "as-obaid-gpt2-124m-fineweb-edu",
   "author": "as-obaid",
@@ -34,14 +34,19 @@
   "parameters_human": "124.4M",
   "storage_bytes": 497963571,
   "storage_human": "498 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

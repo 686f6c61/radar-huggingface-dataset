@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BennyDaBall/NVIDIA-Nemotron-3.5-Bolt-E4B-NVFP4-GGUF",
   "slug": "bennydaball-nvidia-nemotron-3-5-bolt-e4b-nvfp4-gguf",
   "author": "BennyDaBall",
@@ -38,14 +38,19 @@
   "parameters_human": "7.46B",
   "storage_bytes": 6625417480,
   "storage_human": "6.6 GB",
+  "context_length": 65536,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

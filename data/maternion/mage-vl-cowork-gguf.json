@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "maternion/Mage-VL-Cowork-GGUF",
   "slug": "maternion-mage-vl-cowork-gguf",
   "author": "maternion",
@@ -36,14 +36,19 @@
   "parameters_human": "4.41B",
   "storage_bytes": 40102203136,
   "storage_human": "40.1 GB",
+  "context_length": 262144,
   "base_model": "microsoft/Mage-VL-Cowork",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "maternion/Mage-VL-Cowork-4B-GGUF",
+  "renamed_at": "2026-11-13T06:35:57.514Z",
   "benchmarks": [],
   "sources": []
 }

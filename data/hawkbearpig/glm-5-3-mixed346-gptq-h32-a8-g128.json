@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HawkBearPig/GLM-5.3-Mixed346-GPTQ-H32-A8-g128",
   "slug": "hawkbearpig-glm-5-3-mixed346-gptq-h32-a8-g128",
   "author": "HawkBearPig",
@@ -36,14 +36,19 @@
   "parameters_human": "106.03B",
   "storage_bytes": 409359483140,
   "storage_human": "409.4 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

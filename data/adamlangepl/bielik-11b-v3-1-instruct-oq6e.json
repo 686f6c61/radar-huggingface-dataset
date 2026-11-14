@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AdamLangePL/Bielik-11B-v3.1-Instruct-oQ6e",
   "slug": "adamlangepl-bielik-11b-v3-1-instruct-oq6e",
   "author": "AdamLangePL",
@@ -27,6 +27,7 @@
   "parameters_human": "11.17B",
   "storage_bytes": 9354423289,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

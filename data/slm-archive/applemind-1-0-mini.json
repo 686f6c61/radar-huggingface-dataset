@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SLM-Archive/AppleMind-1.0-Mini",
   "slug": "slm-archive-applemind-1-0-mini",
   "author": "SLM-Archive",
@@ -54,14 +54,19 @@
   "parameters_human": "1.0M",
   "storage_bytes": 4197436,
   "storage_human": "4 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

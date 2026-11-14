@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oluwagbotty/whisper-small-ug-en-ft-10ep",
   "slug": "oluwagbotty-whisper-small-ug-en-ft-10ep",
   "author": "oluwagbotty",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 967000473,
   "storage_human": "967 MB",
+  "context_length": null,
   "base_model": "cdli/whisper-small_finetuned_ugandan_english_nonstandard_speech_v1.0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

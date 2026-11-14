@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlx-community/Inkling-2-Small-oQ4e",
   "slug": "mlx-community-inkling-2-small-oq4e",
   "author": "mlx-community",
@@ -33,6 +33,7 @@
   "parameters_human": "594.05B",
   "storage_bytes": 341512520482,
   "storage_human": "341.5 GB",
+  "context_length": null,
   "base_model": "thinkingmachines/Inkling-2-Small",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

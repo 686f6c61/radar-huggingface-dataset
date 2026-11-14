@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RL-Forgetting-Experiments-3/qwen3-1.7b-base-code-sft-ordered-lr1e5-step102",
   "slug": "rl-forgetting-experiments-3-qwen3-1-7b-base-code-sft-ordered-lr1e5-step102",
   "author": "RL-Forgetting-Experiments-3",
@@ -33,14 +33,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 6893757902,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

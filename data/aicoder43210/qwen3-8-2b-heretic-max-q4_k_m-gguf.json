@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aicoder43210/Qwen3.8-2B-Heretic-Max-Q4_K_M-GGUF",
   "slug": "aicoder43210-qwen3-8-2b-heretic-max-q4_k_m-gguf",
   "author": "aicoder43210",
@@ -45,14 +45,19 @@
   "parameters_human": "1.88B",
   "storage_bytes": 1274388992,
   "storage_human": "1.3 GB",
+  "context_length": 262144,
   "base_model": "MihaiPopa-1/Qwen3.8-2B-Heretic-Max",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

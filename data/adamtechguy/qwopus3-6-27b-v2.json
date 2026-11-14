@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "adamtechguy/Qwopus3.6-27B-v2",
   "slug": "adamtechguy-qwopus3-6-27b-v2",
   "author": "adamtechguy",
@@ -55,14 +55,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 55582995743,
   "storage_human": "55.6 GB",
+  "context_length": null,
   "base_model": "qwen/Qwen3.6-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

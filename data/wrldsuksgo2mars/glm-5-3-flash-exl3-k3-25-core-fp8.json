@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3.25-Core-FP8",
   "slug": "wrldsuksgo2mars-glm-5-3-flash-exl3-k3-25-core-fp8",
   "author": "wrldsuksgo2mars",
@@ -33,14 +33,19 @@
   "parameters_human": "73.09B",
   "storage_bytes": 143678589900,
   "storage_human": "143.7 GB",
+  "context_length": null,
   "base_model": "wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3.25-v1, zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

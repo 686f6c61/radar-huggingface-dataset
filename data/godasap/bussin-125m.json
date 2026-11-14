@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GodAsap/bussin-125m",
   "slug": "godasap-bussin-125m",
   "author": "GodAsap",
@@ -35,14 +35,19 @@
   "parameters_human": "125.9M",
   "storage_bytes": 503419816,
   "storage_human": "503 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T02:32:23.208Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bomllm/turbo-thai-config",
   "slug": "bomllm-turbo-thai-config",
   "author": "bomllm",
@@ -21,14 +21,19 @@
   "parameters_human": null,
   "storage_bytes": 11159771,
   "storage_human": "11 MB",
+  "context_length": null,
   "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

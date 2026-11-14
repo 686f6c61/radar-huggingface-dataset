@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stratus-labs/radiance-sen1floods11-v1",
   "slug": "stratus-labs-radiance-sen1floods11-v1",
   "author": "stratus-labs",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 922168811,
   "storage_human": "922 MB",
+  "context_length": null,
   "base_model": "stratus-labs/radiance-mae-base-v1",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

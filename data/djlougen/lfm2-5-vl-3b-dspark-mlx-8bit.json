@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DJLougen/LFM2.5-VL-3B-DSpark-MLX-8bit",
   "slug": "djlougen-lfm2-5-vl-3b-dspark-mlx-8bit",
   "author": "DJLougen",
@@ -33,6 +33,7 @@
   "parameters_human": "279.5M",
   "storage_bytes": 358408820,
   "storage_human": "358 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-VL-3B-DSpark, LiquidAI/LFM2.5-VL-3B-MLX-bf16, LiquidAI/LFM2.5-VL-3B-MLX-8bit",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

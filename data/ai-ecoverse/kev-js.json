@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ai-ecoverse/kev.js",
   "slug": "ai-ecoverse-kev-js",
   "author": "ai-ecoverse",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 33975457694,
   "storage_human": "34.0 GB",
+  "context_length": null,
   "base_model": "jaredpalmer/kev-0.8b, jaredpalmer/kev-4b, jaredpalmer/kev-9b",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

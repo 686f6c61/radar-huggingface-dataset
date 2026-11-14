@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "flyingfishinwater/marvis-tts-250m-v0.2-MLX-4bit",
   "slug": "flyingfishinwater-marvis-tts-250m-v0-2-mlx-4bit",
   "author": "flyingfishinwater",
@@ -38,6 +38,7 @@
   "parameters_human": "568.9M",
   "storage_bytes": 415456242,
   "storage_human": "415 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T02:24:32.124Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "patdev/k3-a40-bootstrap",
   "slug": "patdev-k3-a40-bootstrap",
   "author": "patdev",
@@ -30,14 +30,19 @@
   "parameters_human": "2.25B",
   "storage_bytes": 6991726821,
   "storage_human": "7.0 GB",
+  "context_length": 1048576,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-11T12:58:16.432Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gahabeen/embeddinggemma-2-text-270m-mlx-bf16",
   "slug": "gahabeen-embeddinggemma-2-text-270m-mlx-bf16",
   "author": "gahabeen",
@@ -35,6 +35,7 @@
   "parameters_human": "271.0M",
   "storage_bytes": 578915677,
   "storage_human": "579 MB",
+  "context_length": null,
   "base_model": "google/embeddinggemma-2",
   "formats": [
     "mlx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

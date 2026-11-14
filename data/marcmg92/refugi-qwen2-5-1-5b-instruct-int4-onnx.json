@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MarcMG92/refugi-qwen2.5-1.5b-instruct-int4-onnx",
   "slug": "marcmg92-refugi-qwen2-5-1-5b-instruct-int4-onnx",
   "author": "MarcMG92",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 993733383,
   "storage_human": "994 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

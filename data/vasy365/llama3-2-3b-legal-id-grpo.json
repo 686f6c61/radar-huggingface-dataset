@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VaSy365/llama3.2-3b-legal-id-grpo",
   "slug": "vasy365-llama3-2-3b-legal-id-grpo",
   "author": "VaSy365",
@@ -35,14 +35,19 @@
   "parameters_human": "3.21B",
   "storage_bytes": 6442739147,
   "storage_human": "6.4 GB",
+  "context_length": null,
   "base_model": "VaSy365/llama3.2-3b-legal-id-ft",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

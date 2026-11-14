@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DGurgurov/OpenThinker3-7B-SFT-GRPO-FR",
   "slug": "dgurgurov-openthinker3-7b-sft-grpo-fr",
   "author": "DGurgurov",
@@ -35,14 +35,19 @@
   "parameters_human": "952.0M",
   "storage_bytes": 91399322358,
   "storage_human": "91.4 GB",
+  "context_length": null,
   "base_model": "open-thoughts/OpenThinker-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

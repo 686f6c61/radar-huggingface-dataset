@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpceanAI/PASITA",
   "slug": "opceanai-pasita",
   "author": "OpceanAI",
@@ -44,14 +44,19 @@
   "parameters_human": "88.1M",
   "storage_bytes": 176211400,
   "storage_human": "176 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

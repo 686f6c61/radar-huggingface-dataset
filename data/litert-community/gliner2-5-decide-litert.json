@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "litert-community/GLiNER2.5-Decide-LiteRT",
   "slug": "litert-community-gliner2-5-decide-litert",
   "author": "litert-community",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 9158076940,
   "storage_human": "9.2 GB",
+  "context_length": null,
   "base_model": "fastino/GLiNER2.5-Decide",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

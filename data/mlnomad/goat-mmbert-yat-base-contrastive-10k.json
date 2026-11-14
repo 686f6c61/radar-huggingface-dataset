@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlnomad/goat-mmbert-yat-base-contrastive-10k",
   "slug": "mlnomad-goat-mmbert-yat-base-contrastive-10k",
   "author": "mlnomad",
@@ -34,14 +34,19 @@
   "parameters_human": "281.8M",
   "storage_bytes": 1169436139,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "mlnomad/goat-mmbert-yat-base-mlm-10b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

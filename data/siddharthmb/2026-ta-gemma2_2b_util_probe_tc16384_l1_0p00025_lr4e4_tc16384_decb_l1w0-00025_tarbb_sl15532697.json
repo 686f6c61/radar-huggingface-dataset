@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "siddharthmb/2026.TA.gemma2_2b_util_probe_tc16384_l1_0p00025_lr4e4_tc16384_decb_l1w0.00025_tarbb_sl15532697",
   "slug": "siddharthmb-2026-ta-gemma2_2b_util_probe_tc16384_l1_0p00025_lr4e4_tc16384_decb_l1w0-00025_tarbb_sl15532697",
   "author": "siddharthmb",
@@ -34,14 +34,19 @@
   "parameters_human": "4.58B",
   "storage_bytes": 9189932793,
   "storage_human": "9.2 GB",
+  "context_length": null,
   "base_model": "google/gemma-2-2b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

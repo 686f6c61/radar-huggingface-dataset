@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kuantum-ai1/Spark1-14M",
   "slug": "kuantum-ai1-spark1-14m",
   "author": "Kuantum-ai1",
@@ -30,14 +30,19 @@
   "parameters_human": "14.3M",
   "storage_bytes": 23314432,
   "storage_human": "23 MB",
+  "context_length": 1024,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T03:18:35.959Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

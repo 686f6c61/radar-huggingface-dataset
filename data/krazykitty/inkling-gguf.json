@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KrazyKitty/inkling-GGUF",
   "slug": "krazykitty-inkling-gguf",
   "author": "KrazyKitty",
@@ -32,14 +32,19 @@
   "parameters_human": "947.03B",
   "storage_bytes": 4643591534081,
   "storage_human": "4643.6 GB",
+  "context_length": 1048576,
   "base_model": "thinkingmachines/Inkling",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-11T04:37:01.240Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

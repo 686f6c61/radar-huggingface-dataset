@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Abiray/Viggle-Animate-pruned-GGUF",
   "slug": "abiray-viggle-animate-pruned-gguf",
   "author": "Abiray",
@@ -22,14 +22,19 @@
   "parameters_human": "20.13B",
   "storage_bytes": 51305991552,
   "storage_human": "51.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-30T10:08:46.888Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

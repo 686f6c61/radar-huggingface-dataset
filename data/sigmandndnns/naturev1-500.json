@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sigmandndnns/NatureV1-500",
   "slug": "sigmandndnns-naturev1-500",
   "author": "Sigmandndnns",
@@ -39,14 +39,19 @@
   "parameters_human": "89.4M",
   "storage_bytes": 488506794084,
   "storage_human": "488.5 GB",
+  "context_length": null,
   "base_model": "Sigmandndnns/NatureV1-500",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "CorxLabs/NatureV1-500",
+  "renamed_at": "2026-11-11T03:53:08.811Z",
   "benchmarks": [],
   "sources": []
 }

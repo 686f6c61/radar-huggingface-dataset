@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Muse-Glimmer-30B-FinanceIND-GGUF",
   "slug": "mradermacher-muse-glimmer-30b-financeind-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "27.85B",
   "storage_bytes": 197510954656,
   "storage_human": "197.5 GB",
+  "context_length": 131072,
   "base_model": "Rumiii/Muse-Glimmer-30B-FinanceIND",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

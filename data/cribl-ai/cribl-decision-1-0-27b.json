@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cribl-ai/cribl-decision-1.0-27B",
   "slug": "cribl-ai-cribl-decision-1-0-27b",
   "author": "cribl-ai",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 400410192,
   "storage_human": "400 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

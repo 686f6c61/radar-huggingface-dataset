@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stealth-model/Qwen4",
   "slug": "stealth-model-qwen4",
   "author": "stealth-model",
@@ -37,14 +37,19 @@
   "parameters_human": "176.94B",
   "storage_bytes": 355681609090,
   "storage_human": "355.7 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-01T05:10:42.236Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

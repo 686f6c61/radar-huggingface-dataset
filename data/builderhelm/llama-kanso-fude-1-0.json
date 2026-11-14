@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BuilderHelm/Llama-Kanso-Fude-1.0",
   "slug": "builderhelm-llama-kanso-fude-1-0",
   "author": "BuilderHelm",
@@ -55,6 +55,7 @@
   "parameters_human": "268.1M",
   "storage_bytes": 1966056248,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "google/gemma-3-270m",
   "formats": [
     "onnx",
@@ -62,8 +63,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

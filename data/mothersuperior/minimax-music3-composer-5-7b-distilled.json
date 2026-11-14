@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mothersuperior/minimax-music3-composer-5.7b-distilled",
   "slug": "mothersuperior-minimax-music3-composer-5-7b-distilled",
   "author": "Mothersuperior",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 22803552408,
   "storage_human": "22.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

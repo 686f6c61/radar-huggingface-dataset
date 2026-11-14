@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jakwdir/QwenCare-CN-DPO-v2-adapter-F16-GGUF",
   "slug": "jakwdir-qwencare-cn-dpo-v2-adapter-f16-gguf",
   "author": "jakwdir",
@@ -36,14 +36,19 @@
   "parameters_human": "43.6M",
   "storage_bytes": 87328992,
   "storage_human": "87 MB",
+  "context_length": null,
   "base_model": "kostelliwhite/QwenCare-CN-DPO-v2-adapter",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

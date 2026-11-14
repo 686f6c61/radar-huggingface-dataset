@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kssrikar4/Mechanism-aware-retrosynthesis",
   "slug": "kssrikar4-mechanism-aware-retrosynthesis",
   "author": "kssrikar4",
@@ -36,14 +36,19 @@
   "parameters_human": "2.0M",
   "storage_bytes": 54917769,
   "storage_human": "55 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "kssrikar4/Latent-Space-Retrosynthesis",
+  "renamed_at": "2026-11-11T05:58:09.666Z",
   "benchmarks": [],
   "sources": []
 }

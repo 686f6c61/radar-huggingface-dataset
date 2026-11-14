@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xtools-at/Ministral-3-8B-Reasoning-UNCENSORED-heretic",
   "slug": "xtools-at-ministral-3-8b-reasoning-uncensored-heretic",
   "author": "xtools-at",
@@ -56,14 +56,19 @@
   "parameters_human": "8.92B",
   "storage_bytes": 17870279527,
   "storage_human": "17.9 GB",
+  "context_length": null,
   "base_model": "unsloth/Ministral-3-8B-Reasoning-2512",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

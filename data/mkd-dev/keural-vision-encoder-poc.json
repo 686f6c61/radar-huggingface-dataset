@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mkd-dev/keural-vision-encoder-poc",
   "slug": "mkd-dev-keural-vision-encoder-poc",
   "author": "mkd-dev",
@@ -36,14 +36,19 @@
   "parameters_human": "24.7M",
   "storage_bytes": 902933534,
   "storage_human": "903 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

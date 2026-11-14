@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "brineylab/35M_half_checkpoint-430000",
   "slug": "brineylab-35m_half_checkpoint-430000",
   "author": "brineylab",
@@ -29,14 +29,19 @@
   "parameters_human": "33.7M",
   "storage_bytes": 134648792,
   "storage_human": "135 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

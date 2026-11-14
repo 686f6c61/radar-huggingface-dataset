@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "angelgalvisc/agent-a1-alchemist-4bit",
   "slug": "angelgalvisc-agent-a1-alchemist-4bit",
   "author": "angelgalvisc",
@@ -40,6 +40,7 @@
   "parameters_human": "4.21B",
   "storage_bytes": 3081812915,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "InternScience/Agents-A1-4B",
   "formats": [
     "mlx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

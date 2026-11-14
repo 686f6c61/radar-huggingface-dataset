@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mskm3266/DAPO-Qwen3-8B-step204-ckpt",
   "slug": "mskm3266-dapo-qwen3-8b-step204-ckpt",
   "author": "mskm3266",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 98301653389,
   "storage_human": "98.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B-Base",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-05T03:04:59.692Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

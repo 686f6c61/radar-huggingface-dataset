@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thunquant/Inkling-NVFP4",
   "slug": "thunquant-inkling-nvfp4",
   "author": "thunquant",
@@ -33,14 +33,19 @@
   "parameters_human": "552.85B",
   "storage_bytes": 592037100903,
   "storage_human": "592.0 GB",
+  "context_length": null,
   "base_model": "thinkingmachines/Inkling",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

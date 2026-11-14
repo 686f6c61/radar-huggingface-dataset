@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Samfisheryu/Qwen3.8-flash-next-nowag-2bit",
   "slug": "samfisheryu-qwen3-8-flash-next-nowag-2bit",
   "author": "Samfisheryu",
@@ -39,14 +39,19 @@
   "parameters_human": "59.20B",
   "storage_bytes": 98294977779,
   "storage_human": "98.3 GB",
+  "context_length": null,
   "base_model": "RadixArk/Qwen3.8-Flash-Next-NVFP4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

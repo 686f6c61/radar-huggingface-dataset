@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tomduf70/act_tomduf70_so100_pick_and_place_wrist_mars_2026_2026-10-03_21-03-54",
   "slug": "tomduf70-act_tomduf70_so100_pick_and_place_wrist_mars_2026_2026-10-03_21-03-54",
   "author": "tomduf70",
@@ -28,14 +28,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 1239081272,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KevinCha/Qwen3-VL-4B-Instruct-BoxSpecialToken",
   "slug": "kevincha-qwen3-vl-4b-instruct-boxspecialtoken",
   "author": "KevinCha",
@@ -32,14 +32,19 @@
   "parameters_human": "4.44B",
   "storage_bytes": 17751438688,
   "storage_human": "17.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

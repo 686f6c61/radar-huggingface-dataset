@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Wallas87/Deep_Negative_Pony_B5_textual_inversion",
   "slug": "wallas87-deep_negative_pony_b5_textual_inversion",
   "author": "Wallas87",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 11251151,
   "storage_human": "11 MB",
+  "context_length": null,
   "base_model": "AiAF/Diffusers_Pony-Diffusion-V6",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

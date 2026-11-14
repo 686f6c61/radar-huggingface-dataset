@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "phil666888/ip-adapter-faceid-plusv2_sdxl.bin",
   "slug": "phil666888-ip-adapter-faceid-plusv2_sdxl-bin",
   "author": "phil666888",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 5768439171,
   "storage_human": "5.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

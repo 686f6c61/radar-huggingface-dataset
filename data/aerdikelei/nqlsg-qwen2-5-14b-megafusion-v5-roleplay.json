@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Aerdikelei/NQLSG-Qwen2.5-14B-MegaFusion-v5-roleplay",
   "slug": "aerdikelei-nqlsg-qwen2-5-14b-megafusion-v5-roleplay",
   "author": "Aerdikelei",
@@ -41,14 +41,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 29543383752,
   "storage_human": "29.5 GB",
+  "context_length": null,
   "base_model": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-v5-reasoning",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

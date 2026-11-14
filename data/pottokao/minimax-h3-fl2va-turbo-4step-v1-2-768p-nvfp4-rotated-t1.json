@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pottokao/MiniMax-H3-FL2VA-turbo-4step-v1.2-768p-NVFP4-rotated-T1",
   "slug": "pottokao-minimax-h3-fl2va-turbo-4step-v1-2-768p-nvfp4-rotated-t1",
   "author": "pottokao",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 12542859280,
   "storage_human": "12.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

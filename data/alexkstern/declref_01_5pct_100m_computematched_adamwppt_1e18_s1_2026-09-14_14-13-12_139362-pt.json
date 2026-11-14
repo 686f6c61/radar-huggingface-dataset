@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alexkstern/declref_01_5pct_100M_computematched_adamwppt_1e18_s1_2026-09-14_14-13-12_139362-pt",
   "slug": "alexkstern-declref_01_5pct_100m_computematched_adamwppt_1e18_s1_2026-09-14_14-13-12_139362-pt",
   "author": "alexkstern",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 4891726521,
   "storage_human": "4.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T04:58:16.351Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

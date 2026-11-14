@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Yashhh999/gradientTrace",
   "slug": "yashhh999-gradienttrace",
   "author": "Yashhh999",
@@ -32,14 +32,19 @@
   "parameters_human": "434.0M",
   "storage_bytes": 96710376190,
   "storage_human": "96.7 GB",
+  "context_length": null,
   "base_model": "microsoft/deberta-v3-large",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

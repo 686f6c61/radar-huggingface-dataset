@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "groxaxo/Nanbeige-4.3-33B-Heretic-GPTQPro-W4-G64",
   "slug": "groxaxo-nanbeige-4-3-33b-heretic-gptqpro-w4-g64",
   "author": "groxaxo",
@@ -35,14 +35,19 @@
   "parameters_human": "33.12B",
   "storage_bytes": 21384604262,
   "storage_human": "21.4 GB",
+  "context_length": null,
   "base_model": "Luni/Nanbeige-4.3-33B-Heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

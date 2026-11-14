@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jwl50-stanford/mom-gdn-120m-m2-softmax",
   "slug": "jwl50-stanford-mom-gdn-120m-m2-softmax",
   "author": "jwl50-stanford",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 1572350379,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

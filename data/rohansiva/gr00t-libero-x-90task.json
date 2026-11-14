@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rohansiva/gr00t-libero-x-90task",
   "slug": "rohansiva-gr00t-libero-x-90task",
   "author": "rohansiva",
@@ -30,14 +30,19 @@
   "parameters_human": "3.14B",
   "storage_bytes": 6910499416,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": "nvidia/GR00T-N1.7-LIBERO",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

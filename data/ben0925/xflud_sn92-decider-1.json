@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ben0925/xflud_sn92-decider-1",
   "slug": "ben0925-xflud_sn92-decider-1",
   "author": "ben0925",
@@ -29,14 +29,19 @@
   "parameters_human": "26.09B",
   "storage_bytes": 52193404715,
   "storage_human": "52.2 GB",
+  "context_length": null,
   "base_model": "baselabs/mammoth-1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

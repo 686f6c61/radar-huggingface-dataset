@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HangGlidersRule/Darkstar-Nemotron-3.5-Lightning-30B-A3B-Base-ModelOpt-W4A16-NVFP4",
   "slug": "hangglidersrule-darkstar-nemotron-3-5-lightning-30b-a3b-base-modelopt-w4a16-nvfp4",
   "author": "HangGlidersRule",
@@ -35,14 +35,19 @@
   "parameters_human": "16.66B",
   "storage_bytes": 22960261988,
   "storage_human": "23.0 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

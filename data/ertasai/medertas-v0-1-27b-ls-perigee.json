@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ErtasAI/MedErtas-v0.1-27B-LS-Perigee",
   "slug": "ertasai-medertas-v0-1-27b-ls-perigee",
   "author": "ErtasAI",
@@ -40,14 +40,19 @@
   "parameters_human": "1.99B",
   "storage_bytes": 3979099437,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": "RedHatAI/Qwen3.8-27B-speculator.dspark",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

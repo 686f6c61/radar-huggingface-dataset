@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Impliedhomeland/cosine-1B-60B-datamatched-resume",
   "slug": "impliedhomeland-cosine-1b-60b-datamatched-resume",
   "author": "Impliedhomeland",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 850178148661,
   "storage_human": "850.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

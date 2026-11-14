@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TypeWhisper/SOV-Transcribe-1-4bit",
   "slug": "typewhisper-sov-transcribe-1-4bit",
   "author": "TypeWhisper",
@@ -46,6 +46,7 @@
   "parameters_human": "25.89B",
   "storage_bytes": 15583029230,
   "storage_human": "15.6 GB",
+  "context_length": null,
   "base_model": "salesforce-sovereign-intelligence/SOV-Transcribe-1",
   "formats": [
     "mlx",
@@ -53,8 +54,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

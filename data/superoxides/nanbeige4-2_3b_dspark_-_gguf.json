@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SUPEROXIDES/NANBEIGE4.2_3B_DSPARK_-_GGUF",
   "slug": "superoxides-nanbeige4-2_3b_dspark_-_gguf",
   "author": "SUPEROXIDES",
@@ -41,14 +41,19 @@
   "parameters_human": "847.9M",
   "storage_bytes": 5985323520,
   "storage_human": "6.0 GB",
+  "context_length": 262144,
   "base_model": "Nanbeige/Nanbeige4.2-3B-DSpark",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

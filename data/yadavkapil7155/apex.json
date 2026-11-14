@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yadavkapil7155/Apex",
   "slug": "yadavkapil7155-apex",
   "author": "yadavkapil7155",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 255348875,
   "storage_human": "255 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

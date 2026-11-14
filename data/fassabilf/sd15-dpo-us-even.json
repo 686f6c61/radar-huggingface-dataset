@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fassabilf/sd15-dpo-us-even",
   "slug": "fassabilf-sd15-dpo-us-even",
   "author": "fassabilf",
@@ -33,6 +33,7 @@
   "parameters_human": null,
   "storage_bytes": 36102556931,
   "storage_human": "36.1 GB",
+  "context_length": null,
   "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
   "formats": [
     "diffusers",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ThakiCloud/SKILLRET-Edge-22M",
   "slug": "thakicloud-skillret-edge-22m",
   "author": "ThakiCloud",
@@ -40,14 +40,19 @@
   "parameters_human": "22.7M",
   "storage_bytes": 90864192,
   "storage_human": "91 MB",
+  "context_length": null,
   "base_model": "Snowflake/snowflake-arctic-embed-xs",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

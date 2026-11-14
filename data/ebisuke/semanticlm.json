@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ebisuke/semanticlm",
   "slug": "ebisuke-semanticlm",
   "author": "ebisuke",
@@ -23,14 +23,19 @@
   "parameters_human": "841.0M",
   "storage_bytes": 47289675138,
   "storage_human": "47.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-02T05:02:26.947Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

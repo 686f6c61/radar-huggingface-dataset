@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LocalWisdom/Penny-Alpha",
   "slug": "localwisdom-penny-alpha",
   "author": "LocalWisdom",
@@ -32,14 +32,19 @@
   "parameters_human": "58.9M",
   "storage_bytes": 354268283,
   "storage_human": "354 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

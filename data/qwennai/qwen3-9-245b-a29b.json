@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "QwennAI/Qwen3.9-245B-A29B",
   "slug": "qwennai-qwen3-9-245b-a29b",
   "author": "QwennAI",
@@ -39,14 +39,19 @@
   "parameters_human": "799776",
   "storage_bytes": 3209257,
   "storage_human": "3 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-09T10:25:59.907Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

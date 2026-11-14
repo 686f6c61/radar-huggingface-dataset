@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Infinix-ai/Drama-3-GGUF",
   "slug": "infinix-ai-drama-3-gguf",
   "author": "Infinix-ai",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 135660618048,
   "storage_human": "135.7 GB",
+  "context_length": null,
   "base_model": "fishaudio/drama-3",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

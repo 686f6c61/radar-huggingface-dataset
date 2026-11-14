@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "orangefabercastell/gemma-2-2b-it-pi-mono-adapter-v2-lr1e4-r8-len2k",
   "slug": "orangefabercastell-gemma-2-2b-it-pi-mono-adapter-v2-lr1e4-r8-len2k",
   "author": "orangefabercastell",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 55177556,
   "storage_human": "55 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "error404dev/void-zero",
   "slug": "error404dev-void-zero",
   "author": "error404dev",
@@ -35,6 +35,7 @@
   "parameters_human": "7.62B",
   "storage_bytes": 41782424533,
   "storage_human": "41.8 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
   "formats": [
     "gguf",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

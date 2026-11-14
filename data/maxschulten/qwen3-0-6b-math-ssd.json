@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MaxSchulten/Qwen3-0.6B-Math-SSD",
   "slug": "maxschulten-qwen3-0-6b-math-ssd",
   "author": "MaxSchulten",
@@ -33,14 +33,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 7164144757,
   "storage_human": "7.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "MaxSchulten/Qwen3-0.6B-Math-SSD-T1.5-K20-P0.8",
+  "renamed_at": "2026-11-11T03:17:50.523Z",
   "benchmarks": [],
   "sources": [
     {

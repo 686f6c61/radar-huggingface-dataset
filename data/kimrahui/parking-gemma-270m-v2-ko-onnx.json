@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kimrahui/parking-gemma-270m-v2-ko-onnx",
   "slug": "kimrahui-parking-gemma-270m-v2-ko-onnx",
   "author": "kimrahui",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 299695125,
   "storage_human": "300 MB",
+  "context_length": null,
   "base_model": "google/gemma-3-270m-it",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

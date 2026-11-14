@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nicked1337/NickedleetsRVCv2Archive",
   "slug": "nicked1337-nickedleetsrvcv2archive",
   "author": "nicked1337",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 401389907,
   "storage_human": "401 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

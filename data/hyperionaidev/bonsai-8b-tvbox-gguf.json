@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hyperionaidev/Bonsai-8B-tvbox-GGUF",
   "slug": "hyperionaidev-bonsai-8b-tvbox-gguf",
   "author": "hyperionaidev",
@@ -33,14 +33,19 @@
   "parameters_human": "7.82B",
   "storage_bytes": 1107164723,
   "storage_human": "1.1 GB",
+  "context_length": 65536,
   "base_model": "prism-ml/Bonsai-8B-unpacked",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

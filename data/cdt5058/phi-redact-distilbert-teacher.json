@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CDT5058/phi-redact-distilbert-teacher",
   "slug": "cdt5058-phi-redact-distilbert-teacher",
   "author": "CDT5058",
@@ -37,14 +37,19 @@
   "parameters_human": "66.5M",
   "storage_bytes": 1595179211,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ctrimm/phi-redact-distilbert-teacher",
+  "renamed_at": "2026-11-11T02:28:07.462Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggingface-mic/gemma-4-E2B-it-mic",
   "slug": "huggingface-mic-gemma-4-e2b-it-mic",
   "author": "huggingface-mic",
@@ -27,14 +27,19 @@
   "parameters_human": "36.3M",
   "storage_bytes": 1257415850,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

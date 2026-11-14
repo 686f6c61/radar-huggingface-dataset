@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dyluhn/Qwen3.8-Flash-Next-Uncensored-CED-Projector",
   "slug": "dyluhn-qwen3-8-flash-next-uncensored-ced-projector",
   "author": "Dyluhn",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 7370259104,
   "storage_human": "7.4 GB",
+  "context_length": null,
   "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

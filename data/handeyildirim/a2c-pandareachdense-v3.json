@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "handeyildirim/a2c-PandaReachDense-v3",
   "slug": "handeyildirim-a2c-pandareachdense-v3",
   "author": "handeyildirim",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 813606,
   "storage_human": "813606 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

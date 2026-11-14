@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "devpotatopotato/qwen3-8b-keyword-260812",
   "slug": "devpotatopotato-qwen3-8b-keyword-260812",
   "author": "devpotatopotato",
@@ -34,14 +34,19 @@
   "parameters_human": "308224",
   "storage_bytes": 16417650801,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

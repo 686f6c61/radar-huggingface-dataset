@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "unsloth/Qwen3.5-9B-GGUF",
   "slug": "unsloth-qwen3-5-9b-gguf",
   "author": "unsloth",
@@ -23,21 +23,26 @@
     "region:us",
     "conversational"
   ],
-  "likes": 1083,
+  "likes": 1085,
   "downloads_30d": 2020081,
-  "trending_score": 18,
+  "trending_score": 20,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
   "storage_bytes": 289812206528,
   "storage_human": "289.8 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

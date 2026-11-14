@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mati2451/zjedznaczas-moondream2-q4-k-m",
   "slug": "mati2451-zjedznaczas-moondream2-q4-k-m",
   "author": "Mati2451",
@@ -30,14 +30,19 @@
   "parameters_human": "1.42B",
   "storage_bytes": 919494144,
   "storage_human": "919 MB",
+  "context_length": 2048,
   "base_model": "ggml-org/moondream2-20250414-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

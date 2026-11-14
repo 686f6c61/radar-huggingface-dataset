@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Robbyant-Research/Zero-WAM-lingbot-va-baseline",
   "slug": "robbyant-research-zero-wam-lingbot-va-baseline",
   "author": "Robbyant-Research",
@@ -24,6 +24,7 @@
   "parameters_human": "10.00B",
   "storage_bytes": 34200535064,
   "storage_human": "34.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -31,8 +32,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

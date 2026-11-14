@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "serkanpeker/Trendyol-LLM-8B-T1-GGUF",
   "slug": "serkanpeker-trendyol-llm-8b-t1-gguf",
   "author": "serkanpeker",
@@ -40,14 +40,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 34783476128,
   "storage_human": "34.8 GB",
+  "context_length": 40960,
   "base_model": "Trendyol/Trendyol-LLM-8B-T1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "playstonex/Xiaomi-OCR-0-4bit-mlx",
   "slug": "playstonex-xiaomi-ocr-0-4bit-mlx",
   "author": "playstonex",
@@ -38,6 +38,7 @@
   "parameters_human": "853.0M",
   "storage_bytes": 651877482,
   "storage_human": "652 MB",
+  "context_length": null,
   "base_model": "SeerRay-Lab/Xiaomi-OCR-0",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

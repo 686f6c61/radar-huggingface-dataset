@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chennana1028/lingbot-va-openarm-sbint-eef-step20000",
   "slug": "chennana1028-lingbot-va-openarm-sbint-eef-step20000",
   "author": "chennana1028",
@@ -23,6 +23,7 @@
   "parameters_human": "5.09B",
   "storage_bytes": 10177831668,
   "storage_human": "10.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -30,8 +31,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-23T09:54:22.144Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

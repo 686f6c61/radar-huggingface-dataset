@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fibonacciai/laya-persian",
   "slug": "fibonacciai-laya-persian",
   "author": "fibonacciai",
@@ -38,14 +38,19 @@
   "parameters_human": "323.2M",
   "storage_bytes": 1827478426,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "convaiinnovations/laya",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "fibonacciai/laya-gguf-persian-multilingual-decision",
+  "renamed_at": "2026-11-11T05:16:09.259Z",
   "benchmarks": [],
   "sources": [
     {

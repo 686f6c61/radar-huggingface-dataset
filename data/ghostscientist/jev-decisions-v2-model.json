@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GhostScientist/jev-decisions-v2-model",
   "slug": "ghostscientist-jev-decisions-v2-model",
   "author": "GhostScientist",
@@ -36,14 +36,19 @@
   "parameters_human": "853.0M",
   "storage_bytes": 17080006156,
   "storage_human": "17.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

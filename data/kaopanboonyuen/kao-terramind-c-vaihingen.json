@@ -1,0 +1,90 @@
+{
+  "schema": 2,
+  "id": "kaopanboonyuen/KAO-TerraMind-C-Vaihingen",
+  "slug": "kaopanboonyuen-kao-terramind-c-vaihingen",
+  "author": "kaopanboonyuen",
+  "url": "https://huggingface.co/kaopanboonyuen/KAO-TerraMind-C-Vaihingen",
+  "created_at": "2026-11-14T13:14:45.000Z",
+  "updated_at": "2026-11-14T13:16:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "terratorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "terratorch",
+    "kao-terramind",
+    "geospatial",
+    "earth-observation",
+    "remote-sensing",
+    "semantic-segmentation",
+    "land-cover",
+    "foundation-model",
+    "geospatial-foundation-model",
+    "terramind",
+    "kaoterramind",
+    "isprs-vaihingen",
+    "cvpr2027",
+    "reproducibility",
+    "image-segmentation",
+    "en",
+    "base_model:ibm-esa-geospatial/TerraMind-1.0-base",
+    "base_model:finetune:ibm-esa-geospatial/TerraMind-1.0-base",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 480684391,
+  "storage_human": "481 MB",
+  "context_length": null,
+  "base_model": "ibm-esa-geospatial/TerraMind-1.0-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Semantic Segmentation",
+      "dataset": "ISPRS Vaihingen",
+      "metric": "mIoU (%)",
+      "value": 70.96
+    },
+    {
+      "task": "Semantic Segmentation",
+      "dataset": "ISPRS Vaihingen",
+      "metric": "Overall Accuracy (%)",
+      "value": 85.04
+    },
+    {
+      "task": "Semantic Segmentation",
+      "dataset": "ISPRS Vaihingen",
+      "metric": "Macro F1 (%)",
+      "value": 82.67
+    },
+    {
+      "task": "Semantic Segmentation",
+      "dataset": "ISPRS Vaihingen",
+      "metric": "Macro Precision (%)",
+      "value": 83.1
+    },
+    {
+      "task": "Semantic Segmentation",
+      "dataset": "ISPRS Vaihingen",
+      "metric": "Macro Recall (%)",
+      "value": 82.37
+    }
+  ],
+  "sources": []
+}

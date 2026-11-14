@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Yesini/Rehearsal-Glimmer-30B-r1-LoRA",
   "slug": "yesini-rehearsal-glimmer-30b-r1-lora",
   "author": "Yesini",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 117633880,
   "storage_human": "118 MB",
+  "context_length": null,
   "base_model": "meta-models/Muse-Glimmer-30B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

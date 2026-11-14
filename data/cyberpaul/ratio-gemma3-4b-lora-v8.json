@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CyberPaul/ratio-gemma3-4b-lora-v8",
   "slug": "cyberpaul-ratio-gemma3-4b-lora-v8",
   "author": "CyberPaul",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 276564777,
   "storage_human": "277 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T13:32:38.759Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "navthings/lilstory",
   "slug": "navthings-lilstory",
   "author": "navthings",
@@ -29,6 +29,7 @@
   "parameters_human": "8.3M",
   "storage_bytes": 50038728,
   "storage_human": "50 MB",
+  "context_length": 384,
   "base_model": null,
   "formats": [
     "gguf",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

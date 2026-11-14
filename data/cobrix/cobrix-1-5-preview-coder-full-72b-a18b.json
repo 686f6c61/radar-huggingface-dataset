@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CobrIX/CobrIX-1.5-preview-Coder-Full-72B-A18B",
   "slug": "cobrix-cobrix-1-5-preview-coder-full-72b-a18b",
   "author": "CobrIX",
@@ -37,14 +37,19 @@
   "parameters_human": "71.77B",
   "storage_bytes": 143562969775,
   "storage_human": "143.6 GB",
+  "context_length": null,
   "base_model": "empero-ai/Qwythos-9B-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

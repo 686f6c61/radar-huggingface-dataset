@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tree-AI-lab/kouman-ia-1.6-1b",
   "slug": "tree-ai-lab-kouman-ia-1-6-1b",
   "author": "Tree-AI-lab",
@@ -46,14 +46,19 @@
   "parameters_human": "1.24B",
   "storage_bytes": 2489047725,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RoyalCities/Foundation-1",
   "slug": "royalcities-foundation-1",
   "author": "RoyalCities",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 7311054825,
   "storage_human": "7.3 GB",
+  "context_length": null,
   "base_model": "stabilityai/stable-audio-open-1.0",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

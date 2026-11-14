@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2",
   "slug": "gryphe-pantheon-reasoning-26b-a4b-1-1-v2",
   "author": "Gryphe",
@@ -37,14 +37,19 @@
   "parameters_human": "26.54B",
   "storage_bytes": 53122008275,
   "storage_human": "53.1 GB",
+  "context_length": null,
   "base_model": "Gryphe/Gemma-4-26B-A4B-StyleTune-V2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

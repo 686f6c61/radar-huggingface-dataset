@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "S0m30n3N1c3/Qwen3-Blitzar-Coder-F1-6B-Brainstorm20x-Q4_K_M-GGUF",
   "slug": "s0m30n3n1c3-qwen3-blitzar-coder-f1-6b-brainstorm20x-q4_k_m-gguf",
   "author": "S0m30n3N1c3",
@@ -46,14 +46,19 @@
   "parameters_human": "5.94B",
   "storage_bytes": 3640209440,
   "storage_human": "3.6 GB",
+  "context_length": 40960,
   "base_model": "DavidAU/Qwen3-Blitzar-Coder-F1-6B-Brainstorm20x",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

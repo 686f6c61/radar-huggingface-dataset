@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yuna1126/LFM3-1.7B-Tema_Q-Abliterated",
   "slug": "yuna1126-lfm3-1-7b-tema_q-abliterated",
   "author": "yuna1126",
@@ -67,14 +67,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 3475544083,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

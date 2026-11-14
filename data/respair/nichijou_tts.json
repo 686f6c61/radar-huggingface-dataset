@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Respair/Nichijou_TTS",
   "slug": "respair-nichijou_tts",
   "author": "Respair",
@@ -34,21 +34,26 @@
     "license:cc-by-nc-sa-4.0",
     "region:us"
   ],
-  "likes": 17,
+  "likes": 18,
   "downloads_30d": 0,
   "trending_score": 11,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 6033400698,
   "storage_human": "6.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

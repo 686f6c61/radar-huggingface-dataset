@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NIRVLab/nllb-200-distilled-600M-tr-en",
   "slug": "nirvlab-nllb-200-distilled-600m-tr-en",
   "author": "NIRVLab",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 2497628350,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

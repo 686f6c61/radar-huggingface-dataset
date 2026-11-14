@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thalovant/thalovant-m2v-intents",
   "slug": "thalovant-thalovant-m2v-intents",
   "author": "thalovant",
@@ -30,14 +30,19 @@
   "parameters_human": "30.6M",
   "storage_bytes": 13853910199,
   "storage_human": "13.9 GB",
+  "context_length": null,
   "base_model": "Jarbas/m2v-256-distiluse-base-multilingual-cased-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

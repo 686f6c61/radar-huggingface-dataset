@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "naver-ai/DroneCATS-Cosmos3-Edge-2B",
   "slug": "naver-ai-dronecats-cosmos3-edge-2b",
   "author": "naver-ai",
@@ -37,14 +37,19 @@
   "parameters_human": "2.44B",
   "storage_bytes": 4892306051,
   "storage_human": "4.9 GB",
+  "context_length": null,
   "base_model": "nvidia/Cosmos3-Edge",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

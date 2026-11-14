@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kenzhengjk/lingbot-va-lb43-s11750",
   "slug": "kenzhengjk-lingbot-va-lb43-s11750",
   "author": "kenzhengjk",
@@ -30,6 +30,7 @@
   "parameters_human": "5.09B",
   "storage_bytes": 24379846456,
   "storage_human": "24.4 GB",
+  "context_length": null,
   "base_model": "robbyant/lingbot-va-base",
   "formats": [
     "diffusers",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

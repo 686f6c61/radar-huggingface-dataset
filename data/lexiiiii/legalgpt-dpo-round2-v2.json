@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lexiiiii/legalgpt-dpo-round2-v2",
   "slug": "lexiiiii-legalgpt-dpo-round2-v2",
   "author": "Lexiiiii",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 21529176,
   "storage_human": "22 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

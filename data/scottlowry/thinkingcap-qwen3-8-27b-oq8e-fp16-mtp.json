@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "scottlowry/ThinkingCap-Qwen3.8-27B-oQ8e-fp16-mtp",
   "slug": "scottlowry-thinkingcap-qwen3-8-27b-oq8e-fp16-mtp",
   "author": "scottlowry",
@@ -30,6 +30,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 30935909529,
   "storage_human": "30.9 GB",
+  "context_length": null,
   "base_model": "bottlecapai/ThinkingCap-Qwen3.8-27B",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

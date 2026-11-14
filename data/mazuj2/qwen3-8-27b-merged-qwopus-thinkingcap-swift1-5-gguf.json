@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mazuj2/Qwen3.8-27b-merged-Qwopus-Thinkingcap-Swift1.5-GGUF",
   "slug": "mazuj2-qwen3-8-27b-merged-qwopus-thinkingcap-swift1-5-gguf",
   "author": "mazuj2",
@@ -40,14 +40,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 195108228864,
   "storage_human": "195.1 GB",
+  "context_length": 262144,
   "base_model": "RiderJones/Qwen3.8-27b-merged-qwopus-thinkingcap-swift1.5",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "RiderJones/Qwen3.8-27b-merged-Qwopus-Thinkingcap-Swift1.5-GGUF",
+  "renamed_at": "2026-11-12T06:30:03.619Z",
   "benchmarks": [],
   "sources": []
 }

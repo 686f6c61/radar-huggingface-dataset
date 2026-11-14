@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VoiceNetCkpt/finetune_LCO_7B_mix9corpus_k2_r16_pclw02_lora",
   "slug": "voicenetckpt-finetune_lco_7b_mix9corpus_k2_r16_pclw02_lora",
   "author": "VoiceNetCkpt",
@@ -24,14 +24,19 @@
   "parameters_human": null,
   "storage_bytes": 18145374054,
   "storage_human": "18.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

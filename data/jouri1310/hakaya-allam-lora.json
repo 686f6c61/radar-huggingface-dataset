@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jouri1310/hakaya-allam-lora",
   "slug": "jouri1310-hakaya-allam-lora",
   "author": "jouri1310",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 33593729,
   "storage_human": "34 MB",
+  "context_length": null,
   "base_model": "humain-ai/ALLaM-7B-Instruct-preview",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

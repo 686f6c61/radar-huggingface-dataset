@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "summerMC/Diffusion-Qwen3.5-4B",
   "slug": "summermc-diffusion-qwen3-5-4b",
   "author": "summerMC",
@@ -38,14 +38,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 8480117979,
   "storage_human": "8.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "summerAIO/Diffusion-Qwen3.5-4B",
+  "renamed_at": "2026-11-11T07:39:41.899Z",
   "benchmarks": [],
   "sources": []
 }

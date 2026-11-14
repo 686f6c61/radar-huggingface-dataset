@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vitorcalvi/qwen2.5-1.5b-mnn-cpu",
   "slug": "vitorcalvi-qwen2-5-1-5b-mnn-cpu",
   "author": "vitorcalvi",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 822196282,
   "storage_human": "822 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

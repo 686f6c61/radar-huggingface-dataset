@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MicksHF/Qwen-Image-2.1-Anime-Fusal",
   "slug": "mickshf-qwen-image-2-1-anime-fusal",
   "author": "MicksHF",
@@ -27,21 +27,26 @@
     "license:other",
     "region:us"
   ],
-  "likes": 164,
+  "likes": 166,
   "downloads_30d": 5500,
-  "trending_score": 54,
+  "trending_score": 56,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 33996442710,
   "storage_human": "34.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1, Qwen/Qwen-Image-2.1-Turbo",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

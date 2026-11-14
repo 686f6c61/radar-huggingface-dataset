@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SaarAI/Amharic-ASR-v1",
   "slug": "saarai-amharic-asr-v1",
   "author": "SaarAI",
@@ -51,14 +51,19 @@
   "parameters_human": "606.1M",
   "storage_bytes": 3138762419,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "badrex/Ethio-ASR-amharic, facebook/w2v-bert-2.0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

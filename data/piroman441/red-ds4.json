@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "piroman441/red-ds4",
   "slug": "piroman441-red-ds4",
   "author": "piroman441",
@@ -50,14 +50,19 @@
   "parameters_human": "321.32B",
   "storage_bytes": 205111098979,
   "storage_human": "205.1 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

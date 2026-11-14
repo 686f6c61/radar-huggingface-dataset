@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "daiqingyuan/cits4012-task6-medical-lstm",
   "slug": "daiqingyuan-cits4012-task6-medical-lstm",
   "author": "daiqingyuan",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 35228754,
   "storage_human": "35 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

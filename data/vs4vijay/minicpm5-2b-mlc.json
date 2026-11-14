@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vs4vijay/MiniCPM5-2B-MLC",
   "slug": "vs4vijay-minicpm5-2b-mlc",
   "author": "vs4vijay",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 3528804111,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM5-2B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hzlama/pi0_0825_merge_pnp_lekiwi_test",
   "slug": "hzlama-pi0_0825_merge_pnp_lekiwi_test",
   "author": "hzlama",
@@ -29,14 +29,19 @@
   "parameters_human": "4.03B",
   "storage_bytes": 8926907966,
   "storage_human": "8.9 GB",
+  "context_length": null,
   "base_model": "lerobot/pi0_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-27T02:52:23.631Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

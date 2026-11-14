@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dima6312/gemma-4-26B-A4B-heretic-v2-qat-aligned-4bit-mlx",
   "slug": "dima6312-gemma-4-26b-a4b-heretic-v2-qat-aligned-4bit-mlx",
   "author": "dima6312",
@@ -37,6 +37,7 @@
   "parameters_human": "25.81B",
   "storage_bytes": 17040214471,
   "storage_human": "17.0 GB",
+  "context_length": null,
   "base_model": "OS-Software/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic-v2",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

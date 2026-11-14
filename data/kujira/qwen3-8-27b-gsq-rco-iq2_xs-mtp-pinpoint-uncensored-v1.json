@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kujira/Qwen3.8-27B-GSQ-RCO-IQ2_XS-mtp-Pinpoint-Uncensored-v1",
   "slug": "kujira-qwen3-8-27b-gsq-rco-iq2_xs-mtp-pinpoint-uncensored-v1",
   "author": "Kujira",
@@ -35,14 +35,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 17542623488,
   "storage_human": "17.5 GB",
+  "context_length": 262144,
   "base_model": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Kujira/Qwen3.8-27B-GSQ-RCO-IQ2_XS-mtp-CHiPS-Abliterated-v1",
+  "renamed_at": "2026-11-11T03:09:42.298Z",
   "benchmarks": [],
   "sources": []
 }

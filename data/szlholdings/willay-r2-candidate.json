@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SZLHOLDINGS/willay-r2-candidate",
   "slug": "szlholdings-willay-r2-candidate",
   "author": "SZLHOLDINGS",
@@ -33,14 +33,19 @@
   "parameters_human": "873.4M",
   "storage_bytes": 3513874525,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "teddy19032/Ornith-1.5-9B-uncensored-Q4_K_M-GGUF",
   "slug": "teddy19032-ornith-1-5-9b-uncensored-q4_k_m-gguf",
   "author": "teddy19032",
@@ -37,14 +37,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 5629101376,
   "storage_human": "5.6 GB",
+  "context_length": null,
   "base_model": "junafinity/Ornith-1.5-9B-uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-23T17:30:34.716Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

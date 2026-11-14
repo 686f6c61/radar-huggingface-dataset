@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Edge0/Edge0-35B-A3B-preview",
   "slug": "edge0-edge0-35b-a3b-preview",
   "author": "Edge0",
@@ -42,6 +42,7 @@
   "parameters_human": "34.66B",
   "storage_bytes": 19731249723,
   "storage_human": "19.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "mlx",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

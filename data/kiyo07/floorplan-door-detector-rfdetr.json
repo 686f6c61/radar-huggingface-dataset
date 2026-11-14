@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kiyo07/floorplan-door-detector-rfdetr",
   "slug": "kiyo07-floorplan-door-detector-rfdetr",
   "author": "kiyo07",
@@ -34,14 +34,19 @@
   "parameters_human": "31.8M",
   "storage_bytes": 254550201,
   "storage_human": "255 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

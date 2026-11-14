@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "avsurya99/ppo-LunarLander-v3",
   "slug": "avsurya99-ppo-lunarlander-v3",
   "author": "avsurya99",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 284398,
   "storage_human": "284398 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

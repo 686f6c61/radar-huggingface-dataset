@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Muoniolalusta/DeepSeek-V4.1-Flash-1017-UNCENSORED-affinity-2.875bpw",
   "slug": "muoniolalusta-deepseek-v4-1-flash-1017-uncensored-affinity-2-875bpw",
   "author": "Muoniolalusta",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 211029583876,
   "storage_human": "211.0 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash, dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

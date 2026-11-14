@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shonenash/electra-ai-human-classifier",
   "slug": "shonenash-electra-ai-human-classifier",
   "author": "shonenash",
@@ -34,14 +34,19 @@
   "parameters_human": "13.5M",
   "storage_bytes": 54221168,
   "storage_human": "54 MB",
+  "context_length": null,
   "base_model": "google/electra-small-discriminator",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

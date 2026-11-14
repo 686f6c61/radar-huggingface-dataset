@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "coder543/granite-speech-4.1-2b-nar-glade",
   "slug": "coder543-granite-speech-4-1-2b-nar-glade",
   "author": "coder543",
@@ -44,12 +44,17 @@
   "parameters_human": null,
   "storage_bytes": 2725657545,
   "storage_human": "2.7 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-speech-4.1-2b-nar",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

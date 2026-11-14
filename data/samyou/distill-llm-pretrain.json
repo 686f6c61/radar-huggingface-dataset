@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "samyou/distill-llm-pretrain",
   "slug": "samyou-distill-llm-pretrain",
   "author": "samyou",
@@ -31,6 +31,7 @@
   "parameters_human": "29.7M",
   "storage_bytes": 118715538,
   "storage_human": "119 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -38,8 +39,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-05T02:31:37.284Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

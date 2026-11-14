@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fbaldassarri/allenai_OLMo-2-1124-7B-Instruct-auto_round-int8-gs64-sym",
   "slug": "fbaldassarri-allenai_olmo-2-1124-7b-instruct-auto_round-int8-gs64-sym",
   "author": "fbaldassarri",
@@ -44,14 +44,19 @@
   "parameters_human": "2.57B",
   "storage_bytes": 10070107160,
   "storage_human": "10.1 GB",
+  "context_length": null,
   "base_model": "allenai/OLMo-2-1124-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

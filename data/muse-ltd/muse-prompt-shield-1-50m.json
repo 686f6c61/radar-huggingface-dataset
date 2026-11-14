@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Muse-Ltd/Muse-Prompt-Shield-1-50M",
   "slug": "muse-ltd-muse-prompt-shield-1-50m",
   "author": "Muse-Ltd",
@@ -36,14 +36,19 @@
   "parameters_human": "50.0M",
   "storage_bytes": 200020972,
   "storage_human": "200 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

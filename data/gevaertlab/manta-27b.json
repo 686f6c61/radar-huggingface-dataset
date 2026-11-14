@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gevaertlab/MANTA-27B",
   "slug": "gevaertlab-manta-27b",
   "author": "gevaertlab",
@@ -33,21 +33,26 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 11,
+  "likes": 12,
   "downloads_30d": 136,
-  "trending_score": 11,
+  "trending_score": 12,
   "parameters": 27484784884,
   "parameters_human": "27.48B",
   "storage_bytes": 54982948663,
   "storage_human": "55.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

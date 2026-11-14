@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WaveCut/Qwen3.8-27B-CRACK-DWQ-4bit-MLX",
   "slug": "wavecut-qwen3-8-27b-crack-dwq-4bit-mlx",
   "author": "WaveCut",
@@ -43,6 +43,7 @@
   "parameters_human": "26.90B",
   "storage_bytes": 16198005781,
   "storage_human": "16.2 GB",
+  "context_length": null,
   "base_model": "dealignai/Qwen3.8-27B-MXFP8-CRACK",
   "formats": [
     "mlx",
@@ -50,8 +51,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

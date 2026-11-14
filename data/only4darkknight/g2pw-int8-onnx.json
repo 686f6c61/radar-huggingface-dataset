@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ONLY4DarkKnight/g2pW-int8-onnx",
   "slug": "only4darkknight-g2pw-int8-onnx",
   "author": "ONLY4DarkKnight",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 159287335,
   "storage_human": "159 MB",
+  "context_length": null,
   "base_model": "YC-Chen/g2pW",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

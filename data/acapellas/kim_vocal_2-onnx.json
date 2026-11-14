@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Acapellas/Kim_Vocal_2.onnx",
   "slug": "acapellas-kim_vocal_2-onnx",
   "author": "Acapellas",
@@ -33,6 +33,7 @@
   "parameters_human": null,
   "storage_bytes": 28083170922,
   "storage_human": "28.1 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.1-T2V-14B",
   "formats": [
     "diffusers",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

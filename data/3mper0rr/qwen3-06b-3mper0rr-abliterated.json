@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "3MPER0RR/Qwen3-06B-3MPER0RR-abliterated",
   "slug": "3mper0rr-qwen3-06b-3mper0rr-abliterated",
   "author": "3MPER0RR",
@@ -32,14 +32,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 1203557913,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3-0.6B-abliterated-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

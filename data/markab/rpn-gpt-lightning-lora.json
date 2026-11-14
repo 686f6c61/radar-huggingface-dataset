@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "markab/rpn-gpt-lightning-LoRA",
   "slug": "markab-rpn-gpt-lightning-lora",
   "author": "markab",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 22744432,
   "storage_human": "23 MB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Exact math with a Forth machine",

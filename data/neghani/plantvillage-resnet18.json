@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "neghani/plantvillage-resnet18",
   "slug": "neghani-plantvillage-resnet18",
   "author": "neghani",
@@ -38,14 +38,19 @@
   "parameters_human": "11.2M",
   "storage_bytes": 135426789,
   "storage_human": "135 MB",
+  "context_length": null,
   "base_model": "neghani/plantvillage-resnet18",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Image Classification",

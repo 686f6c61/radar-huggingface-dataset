@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/amethyst-1-mini-GGUF",
   "slug": "mradermacher-amethyst-1-mini-gguf",
   "author": "mradermacher",
@@ -34,6 +34,7 @@
   "parameters_human": "4.55B",
   "storage_bytes": 41656825984,
   "storage_human": "41.7 GB",
+  "context_length": 131072,
   "base_model": "VertexAGI/amethyst-1-mini",
   "formats": [
     "gguf",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

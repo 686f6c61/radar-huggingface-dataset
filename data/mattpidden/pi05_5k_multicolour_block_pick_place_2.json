@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mattpidden/pi05_5k_multicolour_block_pick_place_2",
   "slug": "mattpidden-pi05_5k_multicolour_block_pick_place_2",
   "author": "mattpidden",
@@ -27,14 +27,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 9466197724,
   "storage_human": "9.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

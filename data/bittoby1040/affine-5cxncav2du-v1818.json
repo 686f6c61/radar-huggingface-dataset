@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bittoby1040/Affine-5cxncav2du-v1818",
   "slug": "bittoby1040-affine-5cxncav2du-v1818",
   "author": "Bittoby1040",
@@ -23,14 +23,19 @@
   "parameters_human": "35.95B",
   "storage_bytes": 71923769753,
   "storage_human": "71.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

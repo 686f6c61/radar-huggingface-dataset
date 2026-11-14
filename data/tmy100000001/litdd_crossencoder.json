@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tmy100000001/LitDD_crossencoder",
   "slug": "tmy100000001-litdd_crossencoder",
   "author": "tmy100000001",
@@ -38,14 +38,19 @@
   "parameters_human": "109.5M",
   "storage_bytes": 875917241,
   "storage_human": "876 MB",
+  "context_length": null,
   "base_model": "ncbi/MedCPT-Cross-Encoder",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

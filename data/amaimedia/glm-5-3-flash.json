@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/GLM-5.3-Flash",
   "slug": "amaimedia-glm-5-3-flash",
   "author": "AMAImedia",
@@ -151,6 +151,7 @@
   "parameters_human": "321.32B",
   "storage_bytes": 479756055467,
   "storage_human": "479.8 GB",
+  "context_length": 1048576,
   "base_model": "tencent/Hy4-preview, AngelSlim/Hy4-preview-GGUF",
   "formats": [
     "gguf",
@@ -158,8 +159,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "AMAImedia/GLM-5.3-Flash-FP8-GGUF",
+  "renamed_at": "2026-11-11T02:09:09.562Z",
   "benchmarks": [],
   "sources": [
     {

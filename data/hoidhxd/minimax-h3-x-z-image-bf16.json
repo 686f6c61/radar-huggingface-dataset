@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hoidhxd/MiniMax-H3-x-Z-Image-bf16",
   "slug": "hoidhxd-minimax-h3-x-z-image-bf16",
   "author": "hoidhxd",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 40225724176,
   "storage_human": "40.2 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

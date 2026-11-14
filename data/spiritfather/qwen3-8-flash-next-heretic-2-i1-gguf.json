@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "spiritfather/Qwen3.8-Flash-Next-heretic-2-i1-GGUF",
   "slug": "spiritfather-qwen3-8-flash-next-heretic-2-i1-gguf",
   "author": "spiritfather",
@@ -36,14 +36,19 @@
   "parameters_human": "176.94B",
   "storage_bytes": 306459864156,
   "storage_human": "306.5 GB",
+  "context_length": 262144,
   "base_model": "trohrbaugh/Qwen3.8-Flash-Next-heretic-2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

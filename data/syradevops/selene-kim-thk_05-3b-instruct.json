@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Syradevops/Selene-Kim-THk_05-3B-Instruct",
   "slug": "syradevops-selene-kim-thk_05-3b-instruct",
   "author": "Syradevops",
@@ -35,14 +35,19 @@
   "parameters_human": "3.08B",
   "storage_bytes": 6167443869,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "unsloth/SmolLM3-3B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

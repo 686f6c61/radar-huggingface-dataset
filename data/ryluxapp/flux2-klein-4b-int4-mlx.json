@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ryluxapp/flux2-klein-4b-int4-mlx",
   "slug": "ryluxapp-flux2-klein-4b-int4-mlx",
   "author": "ryluxapp",
@@ -31,6 +31,7 @@
   "parameters_human": null,
   "storage_bytes": 2445300362,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.2-klein-4B, black-forest-labs/FLUX.2-small-decoder",
   "formats": [
     "diffusers",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ais0430/in100_bvit_e-dim-462_head-6_epoch-30_batch-128_lr-5e-4_no-ema_tanh-V",
   "slug": "ais0430-in100_bvit_e-dim-462_head-6_epoch-30_batch-128_lr-5e-4_no-ema_tanh-v",
   "author": "ais0430",
@@ -26,14 +26,19 @@
   "parameters_human": "3.1M",
   "storage_bytes": 12241272,
   "storage_human": "12 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

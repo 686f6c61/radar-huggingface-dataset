@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yp9211/julia-1-mind2web-finetuned",
   "slug": "yp9211-julia-1-mind2web-finetuned",
   "author": "yp9211",
@@ -41,14 +41,19 @@
   "parameters_human": "140.6M",
   "storage_bytes": 3409854565,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "SupersonicLabs/Julia-1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

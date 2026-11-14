@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "monate615/perturb-sn26-v1",
   "slug": "monate615-perturb-sn26-v1",
   "author": "monate615",
@@ -29,14 +29,19 @@
   "parameters_human": "119.0M",
   "storage_bytes": 1428810288,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

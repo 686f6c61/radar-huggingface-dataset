@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PollardWeights/Qwen3-ASR-1.7B-Pollard",
   "slug": "pollardweights-qwen3-asr-1-7b-pollard",
   "author": "PollardWeights",
@@ -42,6 +42,7 @@
   "parameters_human": "2.03B",
   "storage_bytes": 24374730033,
   "storage_human": "24.4 GB",
+  "context_length": 65536,
   "base_model": "Qwen/Qwen3-ASR-1.7B",
   "formats": [
     "gguf",
@@ -50,8 +51,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

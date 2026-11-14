@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zjj1993/Qwen3.8-Flash-Next-uncensored-china",
   "slug": "zjj1993-qwen3-8-flash-next-uncensored-china",
   "author": "zjj1993",
@@ -35,14 +35,19 @@
   "parameters_human": "120320",
   "storage_bytes": 975168,
   "storage_human": "975168 B",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

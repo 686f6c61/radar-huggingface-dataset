@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rodrigomt/LFM3-Omni-2B-heretic",
   "slug": "rodrigomt-lfm3-omni-2b-heretic",
   "author": "rodrigomt",
@@ -91,14 +91,19 @@
   "parameters_human": "2.17B",
   "storage_bytes": 4498993975,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-Omni-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

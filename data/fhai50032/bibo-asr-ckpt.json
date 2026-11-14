@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fhai50032/bibo-asr-ckpt",
   "slug": "fhai50032-bibo-asr-ckpt",
   "author": "fhai50032",
@@ -23,14 +23,19 @@
   "parameters_human": "120.3M",
   "storage_bytes": 454857225046,
   "storage_human": "454.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

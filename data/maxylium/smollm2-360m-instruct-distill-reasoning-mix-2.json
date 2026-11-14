@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "maxylium/SmolLM2-360M-Instruct-Distill-Reasoning-Mix-2",
   "slug": "maxylium-smollm2-360m-instruct-distill-reasoning-mix-2",
   "author": "maxylium",
@@ -27,14 +27,19 @@
   "parameters_human": "361.8M",
   "storage_bytes": 2851417152,
   "storage_human": "2.9 GB",
+  "context_length": 8192,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

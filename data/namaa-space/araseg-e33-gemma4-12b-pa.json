@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NAMAA-Space/araseg-e33-gemma4-12b-pa",
   "slug": "namaa-space-araseg-e33-gemma4-12b-pa",
   "author": "NAMAA-Space",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 262554702,
   "storage_human": "263 MB",
+  "context_length": null,
   "base_model": "google/gemma-4-12b",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

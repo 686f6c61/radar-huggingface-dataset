@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "samadpls/torchlight-phi4-mini",
   "slug": "samadpls-torchlight-phi4-mini",
   "author": "samadpls",
@@ -40,6 +40,7 @@
   "parameters_human": "3.84B",
   "storage_bytes": 7689498453,
   "storage_human": "7.7 GB",
+  "context_length": null,
   "base_model": "microsoft/Phi-4-mini-instruct",
   "formats": [
     "mlx",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

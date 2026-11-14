@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lauro00000/loudflow-pocket-tts-onnx",
   "slug": "lauro00000-loudflow-pocket-tts-onnx",
   "author": "Lauro00000",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 5200639284,
   "storage_human": "5.2 GB",
+  "context_length": null,
   "base_model": "kyutai/pocket-tts",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Lauro00000/k6-onnx-int8",
+  "renamed_at": "2026-11-14T03:33:35.304Z",
   "benchmarks": [],
   "sources": []
 }

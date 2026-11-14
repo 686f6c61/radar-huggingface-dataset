@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/BelGemma-E2B-GGUF",
   "slug": "mradermacher-belgemma-e2b-gguf",
   "author": "mradermacher",
@@ -33,14 +33,19 @@
   "parameters_human": "4.65B",
   "storage_bytes": 49578439104,
   "storage_human": "49.6 GB",
+  "context_length": 131072,
   "base_model": "vrutkovs/BelGemma-E2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

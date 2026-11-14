@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dr-housemd/G4-MeroMero-v2-31B-exl3-3.5bpw",
   "slug": "dr-housemd-g4-meromero-v2-31b-exl3-3-5bpw",
   "author": "dr-housemd",
@@ -29,14 +29,19 @@
   "parameters_human": "8.93B",
   "storage_bytes": 17886131111,
   "storage_human": "17.9 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-31B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

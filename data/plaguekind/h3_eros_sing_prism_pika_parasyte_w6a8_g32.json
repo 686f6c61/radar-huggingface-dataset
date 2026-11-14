@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Plaguekind/H3_Eros_Sing_PRISM_Pika_Parasyte_w6a8_g32",
   "slug": "plaguekind-h3_eros_sing_prism_pika_parasyte_w6a8_g32",
   "author": "Plaguekind",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 15901328602,
   "storage_human": "15.9 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3, Comfy-Org/MiniMax-H3, OliviaRossi/Minimax-h3_Singularity-x-10Eros-Max_PRISM, TenStrip/10Eros-Max",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

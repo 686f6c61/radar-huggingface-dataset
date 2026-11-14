@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gaparecido/apertus-8b-financial-reasoner-v2",
   "slug": "gaparecido-apertus-8b-financial-reasoner-v2",
   "author": "gaparecido",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 176513576,
   "storage_human": "177 MB",
+  "context_length": null,
   "base_model": "swiss-ai/Apertus-8B-Instruct-2509",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

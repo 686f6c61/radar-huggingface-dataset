@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "batuhan-elibuyuk/logicer-archfull-spec-writer_v4-27b-lora",
   "slug": "batuhan-elibuyuk-logicer-archfull-spec-writer_v4-27b-lora",
   "author": "batuhan-elibuyuk",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 179449261,
   "storage_human": "179 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.8-27B-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

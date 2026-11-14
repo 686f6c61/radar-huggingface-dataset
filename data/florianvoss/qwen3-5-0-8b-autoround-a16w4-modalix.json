@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "florianvoss/Qwen3.5-0.8B-Autoround-a16w4-Modalix",
   "slug": "florianvoss-qwen3-5-0-8b-autoround-a16w4-modalix",
   "author": "florianvoss",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 1922238606,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-07T08:03:46.226Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hcnote/Qing-Sec-20B-Qwen3.8-27B-Slim-INT8",
   "slug": "hcnote-qing-sec-20b-qwen3-8-27b-slim-int8",
   "author": "hcnote",
@@ -25,14 +25,19 @@
   "parameters_human": "19.29B",
   "storage_bytes": 21863948469,
   "storage_human": "21.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

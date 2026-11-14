@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "He-Tag/smallm-125m",
   "slug": "he-tag-smallm-125m",
   "author": "He-Tag",
@@ -46,14 +46,19 @@
   "parameters_human": "135.3M",
   "storage_bytes": 270540236,
   "storage_human": "271 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

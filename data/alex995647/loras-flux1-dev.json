@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Alex995647/loras-flux1-dev",
   "slug": "alex995647-loras-flux1-dev",
   "author": "Alex995647",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 55226555595,
   "storage_human": "55.2 GB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.1-dev",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "facebook/dinov3-vits16-pretrain-lvd1689m",
   "slug": "facebook-dinov3-vits16-pretrain-lvd1689m",
   "author": "facebook",
@@ -28,21 +28,26 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 488,
+  "likes": 489,
   "downloads_30d": 180163,
   "trending_score": 17,
   "parameters": 21596544,
   "parameters_human": "21.6M",
   "storage_bytes": 86406384,
   "storage_human": "86 MB",
+  "context_length": null,
   "base_model": "facebook/dinov3-vit7b16-pretrain-lvd1689m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

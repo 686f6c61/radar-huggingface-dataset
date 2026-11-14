@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "UraionLabs/MiniCPM5-2B-oQ4e",
   "slug": "uraionlabs-minicpm5-2b-oq4e",
   "author": "UraionLabs",
@@ -69,6 +69,7 @@
   "parameters_human": "2.52B",
   "storage_bytes": 1478949384,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM5-2B",
   "formats": [
     "mlx",
@@ -76,8 +77,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

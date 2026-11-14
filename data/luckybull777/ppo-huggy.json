@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Luckybull777/ppo-Huggy",
   "slug": "luckybull777-ppo-huggy",
   "author": "Luckybull777",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 187519422,
   "storage_human": "188 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

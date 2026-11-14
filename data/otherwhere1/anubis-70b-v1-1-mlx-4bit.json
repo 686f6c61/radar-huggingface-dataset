@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "otherwhere1/Anubis-70B-v1.1-mlx-4Bit",
   "slug": "otherwhere1-anubis-70b-v1-1-mlx-4bit",
   "author": "otherwhere1",
@@ -27,6 +27,7 @@
   "parameters_human": "70.55B",
   "storage_bytes": 39705778810,
   "storage_human": "39.7 GB",
+  "context_length": null,
   "base_model": "TheDrummer/Anubis-70B-v1.1",
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

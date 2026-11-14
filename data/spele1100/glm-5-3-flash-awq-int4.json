@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "spele1100/GLM-5.3-Flash-AWQ-INT4",
   "slug": "spele1100-glm-5-3-flash-awq-int4",
   "author": "spele1100",
@@ -40,14 +40,19 @@
   "parameters_human": "321.32B",
   "storage_bytes": 190842735232,
   "storage_human": "190.8 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

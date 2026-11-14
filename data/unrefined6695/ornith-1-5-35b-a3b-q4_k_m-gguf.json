@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "unrefined6695/Ornith-1.5-35B-A3B-Q4_K_M-GGUF",
   "slug": "unrefined6695-ornith-1-5-35b-a3b-q4_k_m-gguf",
   "author": "unrefined6695",
@@ -35,14 +35,19 @@
   "parameters_human": "35.51B",
   "storage_bytes": 76269726400,
   "storage_human": "76.3 GB",
+  "context_length": 262144,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

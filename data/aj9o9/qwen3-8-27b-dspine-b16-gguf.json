@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aj9o9/Qwen3.8-27B-DSpine-b16-GGUF",
   "slug": "aj9o9-qwen3-8-27b-dspine-b16-gguf",
   "author": "aj9o9",
@@ -28,21 +28,26 @@
     "region:us",
     "conversational"
   ],
-  "likes": 42,
+  "likes": 43,
   "downloads_30d": 19849,
-  "trending_score": 41,
+  "trending_score": 42,
   "parameters": 2025387776,
   "parameters_human": "2.03B",
   "storage_bytes": 7521604205,
   "storage_human": "7.5 GB",
+  "context_length": 262144,
   "base_model": "tencent/Qwen3.8-27B-DSpine-b16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

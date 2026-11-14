@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sudoingx/Offrail-27B-Uncensored",
   "slug": "sudoingx-offrail-27b-uncensored",
   "author": "sudoingx",
@@ -39,14 +39,19 @@
   "parameters_human": "28.59B",
   "storage_bytes": 13310995003,
   "storage_human": "13.3 GB",
+  "context_length": 262144,
   "base_model": "OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF, prism-ml/Ternary-Bonsai-2-27B-gguf, Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

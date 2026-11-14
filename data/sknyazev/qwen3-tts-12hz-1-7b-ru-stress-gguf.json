@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sknyazev/qwen3-tts-12hz-1.7b-ru-stress-gguf",
   "slug": "sknyazev-qwen3-tts-12hz-1-7b-ru-stress-gguf",
   "author": "sknyazev",
@@ -40,6 +40,7 @@
   "parameters_human": "141.6M",
   "storage_bytes": 6971373672,
   "storage_human": "7.0 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

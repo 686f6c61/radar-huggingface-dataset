@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Shrijanagain/SPEED2-V0-0B7-CPT-SFT-fp8cpt",
   "slug": "shrijanagain-speed2-v0-0b7-cpt-sft-fp8cpt",
   "author": "Shrijanagain",
@@ -24,21 +24,26 @@
     "base_model:finetune:Shrijanagain/SPEED2-V0-0B7-CPT-SFT-fp8cpt",
     "region:us"
   ],
-  "likes": 2,
+  "likes": 3,
   "downloads_30d": 963,
   "trending_score": 0,
   "parameters": 746280448,
   "parameters_human": "746.3M",
   "storage_bytes": 146304187283,
   "storage_human": "146.3 GB",
+  "context_length": null,
   "base_model": "Shrijanagain/SPEED2-V0-0B7-CPT-SFT-fp8cpt",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

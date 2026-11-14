@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fyb1214/Swift-Bonsai-2-27B-NInfer",
   "slug": "fyb1214-swift-bonsai-2-27b-ninfer",
   "author": "fyb1214",
@@ -43,12 +43,17 @@
   "parameters_human": null,
   "storage_bytes": 15354335256,
   "storage_human": "15.4 GB",
+  "context_length": null,
   "base_model": "ukisai/Swift-Bonsai-2-GGUF",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

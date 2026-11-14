@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tsaochengyu/0915_draw_segment",
   "slug": "tsaochengyu-0915_draw_segment",
   "author": "Tsaochengyu",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 7473094267,
   "storage_human": "7.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

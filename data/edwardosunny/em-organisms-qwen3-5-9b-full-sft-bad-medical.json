@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EdwardoSunny/em-organisms-qwen3.5-9b-full-sft-bad-medical",
   "slug": "edwardosunny-em-organisms-qwen3-5-9b-full-sft-bad-medical",
   "author": "EdwardoSunny",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 268634934544,
   "storage_human": "268.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zhangify/oalc-local159-step75-backup-20261113",
   "slug": "zhangify-oalc-local159-step75-backup-20261113",
   "author": "zhangify",
@@ -29,14 +29,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 18177141213,
   "storage_human": "18.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

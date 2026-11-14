@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "queengercek/Kivi-Elektronik-1.5B-LoRA",
   "slug": "queengercek-kivi-elektronik-1-5b-lora",
   "author": "queengercek",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 85333004,
   "storage_human": "85 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-24T05:05:42.132Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

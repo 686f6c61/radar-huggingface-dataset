@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Unluckkie/Ling-3.0-tiny-APEX-MCQ5-IK-GGUF",
   "slug": "unluckkie-ling-3-0-tiny-apex-mcq5-ik-gguf",
   "author": "Unluckkie",
@@ -38,14 +38,19 @@
   "parameters_human": "7.89B",
   "storage_bytes": 16392984128,
   "storage_human": "16.4 GB",
+  "context_length": 131072,
   "base_model": "inclusionAI/Ling-3.0-tiny",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "unsloth/Muse-Spark-Open-816B-A42B",
   "slug": "unsloth-muse-spark-open-816b-a42b",
   "author": "unsloth",
@@ -38,14 +38,19 @@
   "parameters_human": "822.04B",
   "storage_bytes": 1644361479718,
   "storage_human": "1644.4 GB",
+  "context_length": null,
   "base_model": "meta-models/Muse-Spark-Open-816B-A42B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

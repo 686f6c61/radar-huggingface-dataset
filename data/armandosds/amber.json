@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "armandosds/Amber",
   "slug": "armandosds-amber",
   "author": "armandosds",
@@ -34,14 +34,19 @@
   "parameters_human": "6.74B",
   "storage_bytes": 13477364771,
   "storage_human": "13.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T04:44:01.390Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

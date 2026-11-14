@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AXERA-TECH/Qwen3.5-4B-AX650-GPTQ-Int4-C512-P30k-CTX32k",
   "slug": "axera-tech-qwen3-5-4b-ax650-gptq-int4-c512-p30k-ctx32k",
   "author": "AXERA-TECH",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 12027829562,
   "storage_human": "12.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

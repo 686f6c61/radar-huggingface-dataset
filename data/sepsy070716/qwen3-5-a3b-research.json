@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sepsy070716/Qwen3.5-A3B-Research",
   "slug": "sepsy070716-qwen3-5-a3b-research",
   "author": "sepsy070716",
@@ -41,12 +41,17 @@
   "parameters_human": null,
   "storage_bytes": 169886208,
   "storage_human": "170 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

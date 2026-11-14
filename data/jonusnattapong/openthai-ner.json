@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JonusNattapong/OpenThai-NER",
   "slug": "jonusnattapong-openthai-ner",
   "author": "JonusNattapong",
@@ -39,14 +39,19 @@
   "parameters_human": "276.9M",
   "storage_bytes": 5560966804,
   "storage_human": "5.6 GB",
+  "context_length": null,
   "base_model": "Pavarissy/phayathaibert-thainer",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Named Entity Recognition",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "letechlead/Ornith-1.5-35B-A3B-INT4-W4A16-AutoRound",
   "slug": "letechlead-ornith-1-5-35b-a3b-int4-w4a16-autoround",
   "author": "letechlead",
@@ -35,14 +35,19 @@
   "parameters_human": "1.04B",
   "storage_bytes": 20316423341,
   "storage_human": "20.3 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-26T05:58:50.673Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

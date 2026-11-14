@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hieuphamha/A-nnU-Net-based-asymmetric-supervision-strategy",
   "slug": "hieuphamha-a-nnu-net-based-asymmetric-supervision-strategy",
   "author": "hieuphamha",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 494178866,
   "storage_human": "494 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

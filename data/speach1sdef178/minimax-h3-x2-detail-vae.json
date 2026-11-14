@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "speach1sdef178/MiniMax-H3-X2-Detail-VAE",
   "slug": "speach1sdef178-minimax-h3-x2-detail-vae",
   "author": "speach1sdef178",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 8100135519,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

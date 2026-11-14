@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MarulAI/Yedikule-1.4-GGUF",
   "slug": "marulai-yedikule-1-4-gguf",
   "author": "MarulAI",
@@ -40,14 +40,19 @@
   "parameters_human": "202.1M",
   "storage_bytes": 1504098880,
   "storage_human": "1.5 GB",
+  "context_length": 2048,
   "base_model": "MarulAI/Yedikule-1.4",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

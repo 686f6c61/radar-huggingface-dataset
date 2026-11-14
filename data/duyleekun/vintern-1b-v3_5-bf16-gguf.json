@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "duyleekun/Vintern-1B-v3_5-BF16-GGUF",
   "slug": "duyleekun-vintern-1b-v3_5-bf16-gguf",
   "author": "duyleekun",
@@ -39,14 +39,19 @@
   "parameters_human": "629.7M",
   "storage_bytes": 1886559328,
   "storage_human": "1.9 GB",
+  "context_length": 32768,
   "base_model": "5CD-AI/Vintern-1B-v3_5",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

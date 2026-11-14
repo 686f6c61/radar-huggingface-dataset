@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ikimyaii/OPT-125M-semi-structured-EHWS-ALPS-phase1-80pct",
   "slug": "ikimyaii-opt-125m-semi-structured-ehws-alps-phase1-80pct",
   "author": "ikimyaii",
@@ -33,14 +33,19 @@
   "parameters_human": "125.2M",
   "storage_bytes": 500979576,
   "storage_human": "501 MB",
+  "context_length": null,
   "base_model": "facebook/opt-125m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ikimyaii/OPT-125M-semi-structured-EHWS-80pct",
+  "renamed_at": "2026-11-11T05:39:09.379Z",
   "benchmarks": [],
   "sources": []
 }

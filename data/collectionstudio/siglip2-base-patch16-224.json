@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CollectionStudio/siglip2-base-patch16-224",
   "slug": "collectionstudio-siglip2-base-patch16-224",
   "author": "CollectionStudio",
@@ -31,14 +31,19 @@
   "parameters_human": "375.2M",
   "storage_bytes": 1539404946,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

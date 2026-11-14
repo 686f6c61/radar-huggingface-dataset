@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BuilderHelm/Kanso-Satori-1.0-bf16",
   "slug": "builderhelm-kanso-satori-1-0-bf16",
   "author": "BuilderHelm",
@@ -34,6 +34,7 @@
   "parameters_human": "4.02B",
   "storage_bytes": 8056557088,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

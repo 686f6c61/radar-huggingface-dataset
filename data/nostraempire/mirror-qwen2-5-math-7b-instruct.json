@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NostraEmpire/mirror-qwen2.5-math-7b-instruct",
   "slug": "nostraempire-mirror-qwen2-5-math-7b-instruct",
   "author": "NostraEmpire",
@@ -36,14 +36,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 15231271888,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Math-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

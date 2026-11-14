@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/LightOnOCR-3-0.8B-MTP-Repacked-i1-GGUF",
   "slug": "mradermacher-lightonocr-3-0-8b-mtp-repacked-i1-gguf",
   "author": "mradermacher",
@@ -42,14 +42,19 @@
   "parameters_human": "772.8M",
   "storage_bytes": 7753935552,
   "storage_human": "7.8 GB",
+  "context_length": 262144,
   "base_model": "prithivMLmods/LightOnOCR-3-0.8B-MTP-Repacked",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

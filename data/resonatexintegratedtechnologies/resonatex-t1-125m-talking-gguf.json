@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ResonatexIntegratedTechnologies/ResonateX-T1-125M-Talking-GGUF",
   "slug": "resonatexintegratedtechnologies-resonatex-t1-125m-talking-gguf",
   "author": "ResonatexIntegratedTechnologies",
@@ -40,14 +40,19 @@
   "parameters_human": "125.9M",
   "storage_bytes": 562891803,
   "storage_human": "563 MB",
+  "context_length": 2048,
   "base_model": "ResonateXIntegratedTechnologies/ResonateX-T1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zai-org/GLM-5.3-Flash",
   "slug": "zai-org-glm-5-3-flash",
   "author": "zai-org",
@@ -30,21 +30,26 @@
     "deploy:azure",
     "region:us"
   ],
-  "likes": 3170,
+  "likes": 3176,
   "downloads_30d": 6382979,
-  "trending_score": 66,
+  "trending_score": 68,
   "parameters": 321323031390,
   "parameters_human": "321.32B",
   "storage_bytes": 656694929761,
   "storage_human": "656.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

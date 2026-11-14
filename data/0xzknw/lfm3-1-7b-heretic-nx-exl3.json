@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0xzknw/LFM3-1.7B-Heretic-NX-EXL3",
   "slug": "0xzknw-lfm3-1-7b-heretic-nx-exl3",
   "author": "0xzknw",
@@ -38,6 +38,7 @@
   "parameters_human": null,
   "storage_bytes": 2535981749,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "0xzknw/LFM3-1.7B-Heretic-NX",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T02:10:45.373Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

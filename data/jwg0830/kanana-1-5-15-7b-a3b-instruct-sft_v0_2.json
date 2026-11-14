@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jwg0830/kanana-1.5-15.7b-a3b-instruct-sft_v0_2",
   "slug": "jwg0830-kanana-1-5-15-7b-a3b-instruct-sft_v0_2",
   "author": "jwg0830",
@@ -38,14 +38,19 @@
   "parameters_human": "15.70B",
   "storage_bytes": 31410613519,
   "storage_human": "31.4 GB",
+  "context_length": null,
   "base_model": "kakaocorp/kanana-1.5-15.7b-a3b-instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

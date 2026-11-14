@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dementor-research/self_sft_gsm8k_granite-4-h-small_as_granite-4-h-small_seed42",
   "slug": "dementor-research-self_sft_gsm8k_granite-4-h-small_as_granite-4-h-small_seed42",
   "author": "dementor-research",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 231978456,
   "storage_human": "232 MB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.0-h-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "skeggsguy/crystal-ball",
   "slug": "skeggsguy-crystal-ball",
   "author": "skeggsguy",
@@ -25,14 +25,19 @@
   "parameters_human": "61.6M",
   "storage_bytes": 243996320,
   "storage_human": "244 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.8-Flash-Next-UD-Q4_K_XL",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

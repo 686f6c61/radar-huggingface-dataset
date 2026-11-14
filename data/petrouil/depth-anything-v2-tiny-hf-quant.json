@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Petrouil/Depth-Anything-V2-Tiny-hf-quant",
   "slug": "petrouil-depth-anything-v2-tiny-hf-quant",
   "author": "Petrouil",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 36292244,
   "storage_human": "36 MB",
+  "context_length": null,
   "base_model": "Petrouil/Depth-Anything-V2-Tiny-hf",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

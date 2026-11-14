@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "camilablank/sycophancy-dpo-paper-checkpoints",
   "slug": "camilablank-sycophancy-dpo-paper-checkpoints",
   "author": "camilablank",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 618542642500,
   "storage_human": "618.5 GB",
+  "context_length": null,
   "base_model": "allenai/OLMo-3-7B-Instruct-SFT, allenai/Llama-3.1-Tulu-3-8B-SFT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

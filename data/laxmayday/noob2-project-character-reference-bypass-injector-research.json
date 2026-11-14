@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LAXMAYDAY/NOOB2-Project-Character-Reference-Bypass-Injector-Research",
   "slug": "laxmayday-noob2-project-character-reference-bypass-injector-research",
   "author": "LAXMAYDAY",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 30168514885,
   "storage_human": "30.2 GB",
+  "context_length": null,
   "base_model": "circlestone-labs/Anima",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

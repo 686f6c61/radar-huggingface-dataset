@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cpral/instruktor-lotnictwa-7B-2-hf-W8A8-INT8",
   "slug": "cpral-instruktor-lotnictwa-7b-2-hf-w8a8-int8",
   "author": "cpral",
@@ -25,14 +25,19 @@
   "parameters_human": "7.48B",
   "storage_bytes": 7742177960,
   "storage_human": "7.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

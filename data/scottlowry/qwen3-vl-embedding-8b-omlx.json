@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "scottlowry/Qwen3-VL-Embedding-8B-omlx",
   "slug": "scottlowry-qwen3-vl-embedding-8b-omlx",
   "author": "scottlowry",
@@ -36,6 +36,7 @@
   "parameters_human": "8.14B",
   "storage_bytes": 17545763137,
   "storage_human": "17.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-Embedding-8B",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-19T03:28:31.434Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

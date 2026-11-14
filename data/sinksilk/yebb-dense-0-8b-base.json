@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sinksilk/Yebb-Dense-0.8B-Base",
   "slug": "sinksilk-yebb-dense-0-8b-base",
   "author": "sinksilk",
@@ -42,14 +42,19 @@
   "parameters_human": "800.7M",
   "storage_bytes": 3202672096,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

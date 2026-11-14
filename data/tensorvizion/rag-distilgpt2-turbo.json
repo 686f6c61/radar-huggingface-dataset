@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TensorVizion/RAG-distilgpt2-turbo",
   "slug": "tensorvizion-rag-distilgpt2-turbo",
   "author": "TensorVizion",
@@ -34,14 +34,19 @@
   "parameters_human": "81.9M",
   "storage_bytes": 327657928,
   "storage_human": "328 MB",
+  "context_length": null,
   "base_model": "distilgpt2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "TensorVizion/distillgpt2-turbo",
+  "renamed_at": "2026-11-14T04:30:35.624Z",
   "benchmarks": [],
   "sources": [
     {

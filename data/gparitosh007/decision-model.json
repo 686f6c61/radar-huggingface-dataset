@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gparitosh007/decision-model",
   "slug": "gparitosh007-decision-model",
   "author": "gparitosh007",
@@ -50,14 +50,19 @@
   "parameters_human": "149.0M",
   "storage_bytes": 596086940,
   "storage_human": "596 MB",
+  "context_length": null,
   "base_model": "tasksource/ModernBERT-base-nli",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "gparitosh007/Open-Decision-Model-150M",
+  "renamed_at": "2026-11-11T05:27:31.266Z",
   "benchmarks": [],
   "sources": []
 }

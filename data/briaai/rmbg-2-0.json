@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "briaai/RMBG-2.0",
   "slug": "briaai-rmbg-2-0",
   "author": "briaai",
@@ -30,11 +30,12 @@
   ],
   "likes": 1643,
   "downloads_30d": 392711,
-  "trending_score": 15,
+  "trending_score": 14,
   "parameters": 220700242,
   "parameters_human": "220.7M",
   "storage_bytes": 5896565704,
   "storage_human": "5.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

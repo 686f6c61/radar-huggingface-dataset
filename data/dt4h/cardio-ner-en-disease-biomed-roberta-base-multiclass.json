@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DT4H/cardio-ner-en-disease-biomed-roberta-base-multiclass",
   "slug": "dt4h-cardio-ner-en-disease-biomed-roberta-base-multiclass",
   "author": "DT4H",
@@ -28,14 +28,19 @@
   "parameters_human": "124.6M",
   "storage_bytes": 249320134,
   "storage_human": "249 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

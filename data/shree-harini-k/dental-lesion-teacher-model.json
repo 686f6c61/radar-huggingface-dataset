@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Shree-Harini-K/dental-lesion-teacher-model",
   "slug": "shree-harini-k-dental-lesion-teacher-model",
   "author": "Shree-Harini-K",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 36657876656,
   "storage_human": "36.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

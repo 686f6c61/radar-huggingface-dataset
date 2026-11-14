@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Neura-Tech-AI/Neuron-46x4B",
   "slug": "neura-tech-ai-neuron-46x4b",
   "author": "Neura-Tech-AI",
@@ -83,14 +83,19 @@
   "parameters_human": "125.06B",
   "storage_bytes": 250129872861,
   "storage_human": "250.1 GB",
+  "context_length": null,
   "base_model": "Neura-Tech-AI/Neuron-4B-Instruct, Qwen/Qwen3-4B-Instruct-2507, Qwen/Qwen3-4B-Thinking-2507",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Neura-Tech-AI/Neuron-46x4B-Instruct",
+  "renamed_at": "2026-11-11T03:25:04.165Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "backpack-run/Kokoro-82M-Backpack-TTS",
   "slug": "backpack-run-kokoro-82m-backpack-tts",
   "author": "backpack-run",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 329305936,
   "storage_human": "329 MB",
+  "context_length": null,
   "base_model": "hexgrad/Kokoro-82M",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-30T08:35:40.404Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

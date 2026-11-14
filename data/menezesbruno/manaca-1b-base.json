@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "menezesbruno/manaca-1b-base",
   "slug": "menezesbruno-manaca-1b-base",
   "author": "menezesbruno",
@@ -39,14 +39,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 3447891137,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "AIInstituteLNCC/manaca-1b-base",
+  "renamed_at": "2026-11-11T06:16:49.326Z",
   "benchmarks": [],
   "sources": [
     {

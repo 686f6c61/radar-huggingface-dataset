@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jmloperaa2830/tomi-dreamshaper8-q8-gguf",
   "slug": "jmloperaa2830-tomi-dreamshaper8-q8-gguf",
   "author": "jmloperaa2830",
@@ -28,14 +28,19 @@
   "parameters_human": "1.07B",
   "storage_bytes": 1801579904,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "Lykon/dreamshaper-8",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

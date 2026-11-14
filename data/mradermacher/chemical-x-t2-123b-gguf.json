@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Chemical-X-t2-123b-GGUF",
   "slug": "mradermacher-chemical-x-t2-123b-gguf",
   "author": "mradermacher",
@@ -32,14 +32,19 @@
   "parameters_human": "122.61B",
   "storage_bytes": 832244627328,
   "storage_human": "832.2 GB",
+  "context_length": 131072,
   "base_model": "bruhzair/Chemical-X-t2-123b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlasli/Qwen3.6-27B-abliterated",
   "slug": "mlasli-qwen3-6-27b-abliterated",
   "author": "mlasli",
@@ -38,14 +38,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 59666299365,
   "storage_human": "59.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

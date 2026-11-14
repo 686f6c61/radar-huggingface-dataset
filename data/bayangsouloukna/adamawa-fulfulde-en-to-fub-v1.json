@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BayangSouloukna/adamawa-fulfulde-en-to-fub-v1",
   "slug": "bayangsouloukna-adamawa-fulfulde-en-to-fub-v1",
   "author": "BayangSouloukna",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 104975192,
   "storage_human": "105 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

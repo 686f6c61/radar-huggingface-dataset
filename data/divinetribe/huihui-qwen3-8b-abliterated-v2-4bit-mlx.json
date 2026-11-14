@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "divinetribe/Huihui-Qwen3-8B-abliterated-v2-4bit-mlx",
   "slug": "divinetribe-huihui-qwen3-8b-abliterated-v2-4bit-mlx",
   "author": "divinetribe",
@@ -42,6 +42,7 @@
   "parameters_human": "8.19B",
   "storage_bytes": 4619257814,
   "storage_human": "4.6 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3-8B-abliterated-v2, Qwen/Qwen3-8B",
   "formats": [
     "mlx",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

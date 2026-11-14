@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AbrarDev/AbrarDev-CodeFix-v8-Adapter",
   "slug": "abrardev-abrardev-codefix-v8-adapter",
   "author": "AbrarDev",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 734942329,
   "storage_human": "735 MB",
+  "context_length": null,
   "base_model": "AbrarDev/AbrarDev-CodeFix-3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-23T17:02:40.264Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MelNikov49539/dummy-model",
   "slug": "melnikov49539-dummy-model",
   "author": "MelNikov49539",
@@ -25,14 +25,19 @@
   "parameters_human": "109.5M",
   "storage_bytes": 452164964,
   "storage_human": "452 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-03T02:52:07.018Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

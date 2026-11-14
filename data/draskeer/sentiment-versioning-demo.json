@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Draskeer/sentiment-versioning-demo",
   "slug": "draskeer-sentiment-versioning-demo",
   "author": "Draskeer",
@@ -31,14 +31,19 @@
   "parameters_human": "67.0M",
   "storage_bytes": 1607026566,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "distilbert-base-uncased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

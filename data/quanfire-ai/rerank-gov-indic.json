@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "quanfire-ai/rerank-gov-indic",
   "slug": "quanfire-ai-rerank-gov-indic",
   "author": "quanfire-ai",
@@ -71,14 +71,19 @@
   "parameters_human": "117.7M",
   "storage_bytes": 1434072476,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "intfloat/multilingual-e5-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pt810/Ovis-Omni-Embedding-3B-bnb-4bit-vllm",
   "slug": "pt810-ovis-omni-embedding-3b-bnb-4bit-vllm",
   "author": "pt810",
@@ -38,14 +38,19 @@
   "parameters_human": "5453",
   "storage_bytes": 5722086756,
   "storage_human": "5.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

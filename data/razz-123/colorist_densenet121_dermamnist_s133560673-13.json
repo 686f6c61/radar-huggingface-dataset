@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "razz-123/colorist_densenet121_dermamnist_s133560673-13",
   "slug": "razz-123-colorist_densenet121_dermamnist_s133560673-13",
   "author": "razz-123",
@@ -35,14 +35,19 @@
   "parameters_human": "7.0M",
   "storage_bytes": 28262884,
   "storage_human": "28 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

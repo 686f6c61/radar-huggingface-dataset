@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yeahbeen/F2LLM-v2-330M-Q4_K_M-GGUF",
   "slug": "yeahbeen-f2llm-v2-330m-q4_k_m-gguf",
   "author": "yeahbeen",
@@ -207,14 +207,19 @@
   "parameters_human": "334.3M",
   "storage_bytes": 286197952,
   "storage_human": "286 MB",
+  "context_length": 40960,
   "base_model": "codefuse-ai/F2LLM-v2-330M",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

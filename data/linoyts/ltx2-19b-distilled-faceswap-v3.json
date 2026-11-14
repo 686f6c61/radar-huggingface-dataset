@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "linoyts/ltx2-19b-distilled-faceswap-v3",
   "slug": "linoyts-ltx2-19b-distilled-faceswap-v3",
   "author": "linoyts",
@@ -24,6 +24,7 @@
   "parameters_human": "18.88B",
   "storage_bytes": 37752775680,
   "storage_human": "37.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -31,8 +32,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

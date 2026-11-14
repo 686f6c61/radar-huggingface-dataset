@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jstm/molmoact2_mpc_100",
   "slug": "jstm-molmoact2_mpc_100",
   "author": "jstm",
@@ -28,14 +28,19 @@
   "parameters_human": "5.44B",
   "storage_bytes": 10884579416,
   "storage_human": "10.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

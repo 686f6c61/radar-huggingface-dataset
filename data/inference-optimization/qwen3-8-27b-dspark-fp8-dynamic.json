@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inference-optimization/Qwen3.8-27B-DSpark-FP8-DYNAMIC",
   "slug": "inference-optimization-qwen3-8-27b-dspark-fp8-dynamic",
   "author": "inference-optimization",
@@ -36,14 +36,19 @@
   "parameters_human": "1.99B",
   "storage_bytes": 2116183610,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": "RedHatAI/Qwen3.8-27B-speculator.dspark, Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

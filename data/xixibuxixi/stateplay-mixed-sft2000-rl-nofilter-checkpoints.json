@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xixibuxixi/StatePlay-Mixed-SFT2000-RL-NoFilter-Checkpoints",
   "slug": "xixibuxixi-stateplay-mixed-sft2000-rl-nofilter-checkpoints",
   "author": "xixibuxixi",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 115619968,
   "storage_human": "116 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

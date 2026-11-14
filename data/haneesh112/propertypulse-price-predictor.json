@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Haneesh112/propertypulse-price-predictor",
   "slug": "haneesh112-propertypulse-price-predictor",
   "author": "Haneesh112",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 5930,
   "storage_human": "5930 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jamil82/qwen2.5-bangla-agent",
   "slug": "jamil82-qwen2-5-bangla-agent",
   "author": "Jamil82",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 5837437485,
   "storage_human": "5.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

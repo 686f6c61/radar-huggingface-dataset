@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "starrysproutkids/Qwen-Image-2512",
   "slug": "starrysproutkids-qwen-image-2512",
   "author": "starrysproutkids",
@@ -32,6 +32,7 @@
   "parameters_human": "20.43B",
   "storage_bytes": 57699249390,
   "storage_human": "57.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

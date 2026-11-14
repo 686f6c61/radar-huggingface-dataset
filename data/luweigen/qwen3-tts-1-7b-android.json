@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "luweigen/qwen3-tts-1.7b-android",
   "slug": "luweigen-qwen3-tts-1-7b-android",
   "author": "luweigen",
@@ -32,6 +32,7 @@
   "parameters_human": "78.7M",
   "storage_bytes": 2042397002,
   "storage_human": "2.0 GB",
+  "context_length": 64,
   "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
   "formats": [
     "gguf",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

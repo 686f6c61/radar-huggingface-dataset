@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mahir2021/mental-roberta-depEMO-v2",
   "slug": "mahir2021-mental-roberta-depemo-v2",
   "author": "mahir2021",
@@ -30,14 +30,19 @@
   "parameters_human": "124.7M",
   "storage_bytes": 997262560,
   "storage_human": "997 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "junmokane/260816-junmo-cho-rbm-openarm-block",
   "slug": "junmokane-260816-junmo-cho-rbm-openarm-block",
   "author": "junmokane",
@@ -29,14 +29,19 @@
   "parameters_human": "4.51B",
   "storage_bytes": 9442462313,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": "robometer/Robometer-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-06T07:49:25.496Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Galactic-Qwen-14B-Exp2-GGUF",
   "slug": "mradermacher-galactic-qwen-14b-exp2-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 102011148256,
   "storage_human": "102.0 GB",
+  "context_length": 131072,
   "base_model": "prithivMLmods/Galactic-Qwen-14B-Exp2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

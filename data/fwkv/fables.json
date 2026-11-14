@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FWKV/Fables",
   "slug": "fwkv-fables",
   "author": "FWKV",
@@ -33,14 +33,19 @@
   "parameters_human": "111.7M",
   "storage_bytes": 449796810,
   "storage_human": "450 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

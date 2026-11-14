@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ma7ee7/MeetInstruct-0.6B-v1.0",
   "slug": "ma7ee7-meetinstruct-0-6b-v1-0",
   "author": "Ma7ee7",
@@ -40,14 +40,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 1203557845,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

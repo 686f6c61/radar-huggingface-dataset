@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Thox-ai/ThoxKey-Route-0.5B",
   "slug": "thox-ai-thoxkey-route-0-5b",
   "author": "Thox-ai",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 846978,
   "storage_human": "846978 B",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arthrod/gliner-ettin-68m-ptbr-pii-top50k-v1",
   "slug": "arthrod-gliner-ettin-68m-ptbr-pii-top50k-v1",
   "author": "arthrod",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 17746149313,
   "storage_human": "17.7 GB",
+  "context_length": null,
   "base_model": "jhu-clsp/ettin-encoder-68m",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-12T14:46:49.850Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

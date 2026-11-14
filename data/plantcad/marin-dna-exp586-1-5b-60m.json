@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "plantcad/marin-dna-exp586-1.5B-60M",
   "slug": "plantcad-marin-dna-exp586-1-5b-60m",
   "author": "plantcad",
@@ -29,14 +29,19 @@
   "parameters_human": "1.59B",
   "storage_bytes": 3200932407,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jujeongho/VAETKI-Vision-3B-Weld",
   "slug": "jujeongho-vaetki-vision-3b-weld",
   "author": "jujeongho",
@@ -28,14 +28,19 @@
   "parameters_human": "4.95B",
   "storage_bytes": 19802431700,
   "storage_human": "19.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "jujeongho/VAETKI-Vision-Weld",
+  "renamed_at": "2026-11-11T05:50:56.351Z",
   "benchmarks": [],
   "sources": []
 }

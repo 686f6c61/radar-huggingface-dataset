@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CharlieH512/km_tokenizer_past7_8x1000",
   "slug": "charlieh512-km_tokenizer_past7_8x1000",
   "author": "CharlieH512",
@@ -28,14 +28,19 @@
   "parameters_human": "10.8M",
   "storage_bytes": 43043020,
   "storage_human": "43 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T09:29:29.458Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

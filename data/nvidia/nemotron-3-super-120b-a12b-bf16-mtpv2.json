@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nvidia/Nemotron-3-Super-120B-A12B-BF16-MTPv2",
   "slug": "nvidia-nemotron-3-super-120b-a12b-bf16-mtpv2",
   "author": "nvidia",
@@ -37,14 +37,19 @@
   "parameters_human": "2.94B",
   "storage_bytes": 11769561488,
   "storage_human": "11.8 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

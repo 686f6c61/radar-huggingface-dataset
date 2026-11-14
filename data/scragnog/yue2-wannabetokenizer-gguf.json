@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "scragnog/YuE2-WannabeTokenizer-GGUF",
   "slug": "scragnog-yue2-wannabetokenizer-gguf",
   "author": "scragnog",
@@ -28,14 +28,19 @@
   "parameters_human": "424.5M",
   "storage_bytes": 1741890752,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "ManyOtherFunctions/Yue2-WannabeTokenizer",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "belopskil7/belop-ai-mistral7b",
   "slug": "belopskil7-belop-ai-mistral7b",
   "author": "belopskil7",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 336251890,
   "storage_human": "336 MB",
+  "context_length": null,
   "base_model": "unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

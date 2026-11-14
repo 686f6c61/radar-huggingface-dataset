@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "g-assismoraes/DeltaP2S-Qwen2.5-3B-DeltaP2S-QwenCoder1.5B-Code-S13",
   "slug": "g-assismoraes-deltap2s-qwen2-5-3b-deltap2s-qwencoder1-5b-code-s13",
   "author": "g-assismoraes",
@@ -31,14 +31,19 @@
   "parameters_human": "3.40B",
   "storage_bytes": 13599935144,
   "storage_human": "13.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

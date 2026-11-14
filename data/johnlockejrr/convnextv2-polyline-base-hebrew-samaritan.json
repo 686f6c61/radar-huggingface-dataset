@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "johnlockejrr/convnextv2-polyline-base-hebrew-samaritan",
   "slug": "johnlockejrr-convnextv2-polyline-base-hebrew-samaritan",
   "author": "johnlockejrr",
@@ -43,14 +43,19 @@
   "parameters_human": null,
   "storage_bytes": 389498836,
   "storage_human": "389 MB",
+  "context_length": null,
   "base_model": "timm/convnextv2_base.fcmae_ft_in22k_in1k, johnlockejrr/dfine-det-large-baseline-stage0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

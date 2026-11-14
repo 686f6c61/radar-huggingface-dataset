@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sleem247/legal-bert-base-uncased-fp-Q8_0-GGUF",
   "slug": "sleem247-legal-bert-base-uncased-fp-q8_0-gguf",
   "author": "Sleem247",
@@ -28,14 +28,19 @@
   "parameters_human": "108.9M",
   "storage_bytes": 117855456,
   "storage_human": "118 MB",
+  "context_length": 512,
   "base_model": "AnonymousSub/legal-bert-base-uncased-fp",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

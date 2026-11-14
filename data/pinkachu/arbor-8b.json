@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pinkachu/Arbor-8B",
   "slug": "pinkachu-arbor-8b",
   "author": "pinkachu",
@@ -47,14 +47,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16079008762,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "akjindal53244/Llama-3.1-Storm-8B, ArliAI/Llama-3.1-8B-ArliAI-RPMax-v1.3, DavidAU/L3.1-Dark-Reasoning-Unholy-Hermes-R1-Uncensored-8B, DavidAU/Llama-3.1-DeepSeek-8B-DarkIdol-Instruct-1.2-Uncensored, c4tdr0ut/grok-oss-Revenant-8B, ChiKoi7/Llama-3.1-8B-Lexi-Uncensored-V2-Heretic, mlabonne/Hermes-3-Llama-3.1-8B-lorablated, tohur/natsumura-storytelling-rp-1.0-llama-3.1-8b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

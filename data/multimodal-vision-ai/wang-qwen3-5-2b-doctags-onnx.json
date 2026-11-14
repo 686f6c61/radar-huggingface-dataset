@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "multimodal-vision-ai/Wang-Qwen3.5-2B-DocTags-ONNX",
   "slug": "multimodal-vision-ai-wang-qwen3-5-2b-doctags-onnx",
   "author": "multimodal-vision-ai",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 10033345198,
   "storage_human": "10.0 GB",
+  "context_length": null,
   "base_model": "multimodal-vision-ai/Wang-Qwen3.5-2B-DocTags",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MK4-Research/MK4-Ginko-v1",
   "slug": "mk4-research-mk4-ginko-v1",
   "author": "MK4-Research",
@@ -38,6 +38,7 @@
   "parameters_human": "26.90B",
   "storage_bytes": 15153945372,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "mlx-community/Qwen3.8-27B-4bit",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

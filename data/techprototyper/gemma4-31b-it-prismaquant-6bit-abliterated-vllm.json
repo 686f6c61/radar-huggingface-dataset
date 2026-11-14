@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TechPrototyper/Gemma4-31B-IT-PrismaQuant-6bit-abliterated-vllm",
   "slug": "techprototyper-gemma4-31b-it-prismaquant-6bit-abliterated-vllm",
   "author": "TechPrototyper",
@@ -37,14 +37,19 @@
   "parameters_human": "22.18B",
   "storage_bytes": 27208335058,
   "storage_human": "27.2 GB",
+  "context_length": null,
   "base_model": "rdtand/Gemma4-31B-IT-PrismaQuant-6bit-vllm, google/gemma-4-31B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

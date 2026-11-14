@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "doanhlt/cabin-lid-ecapa-voxlingua107-onnx",
   "slug": "doanhlt-cabin-lid-ecapa-voxlingua107-onnx",
   "author": "doanhlt",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 21934402,
   "storage_human": "22 MB",
+  "context_length": null,
   "base_model": "speechbrain/lang-id-voxlingua107-ecapa",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

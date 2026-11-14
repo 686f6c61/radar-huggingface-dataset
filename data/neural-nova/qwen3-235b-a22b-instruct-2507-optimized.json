@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "neural-nova/Qwen3-235B-A22B-Instruct-2507-optimized",
   "slug": "neural-nova-qwen3-235b-a22b-instruct-2507-optimized",
   "author": "neural-nova",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "Qwen/Qwen3-235B-A22B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "neural-nova/Qwen3-235B-A22B-optimized",
+  "renamed_at": "2026-11-13T07:18:45.475Z",
   "benchmarks": [],
   "sources": [
     {

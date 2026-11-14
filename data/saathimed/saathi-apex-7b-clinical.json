@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Saathimed/Saathi-Apex-7B-Clinical",
   "slug": "saathimed-saathi-apex-7b-clinical",
   "author": "Saathimed",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 334436334,
   "storage_human": "334 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T03:57:55.082Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

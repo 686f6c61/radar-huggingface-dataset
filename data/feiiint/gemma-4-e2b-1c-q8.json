@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "feiiint/gemma-4-e2b-1c-q8",
   "slug": "feiiint-gemma-4-e2b-1c-q8",
   "author": "feiiint",
@@ -25,14 +25,19 @@
   "parameters_human": "4.65B",
   "storage_bytes": 4967497120,
   "storage_human": "5.0 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T05:27:53.956Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

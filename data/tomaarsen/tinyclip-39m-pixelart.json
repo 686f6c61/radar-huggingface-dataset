@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tomaarsen/TinyCLIP-39M-PixelArt",
   "slug": "tomaarsen-tinyclip-39m-pixelart",
   "author": "tomaarsen",
@@ -42,14 +42,19 @@
   "parameters_human": "83.1M",
   "storage_bytes": 332440764,
   "storage_human": "332 MB",
+  "context_length": null,
   "base_model": "wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

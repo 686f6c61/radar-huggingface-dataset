@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chewwt/dm_qwen4b_noise_emulator",
   "slug": "chewwt-dm_qwen4b_noise_emulator",
   "author": "chewwt",
@@ -24,14 +24,19 @@
   "parameters_human": null,
   "storage_bytes": 7520,
   "storage_human": "7520 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

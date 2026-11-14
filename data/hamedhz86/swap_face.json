@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hamedhz86/Swap_face",
   "slug": "hamedhz86-swap_face",
   "author": "hamedhz86",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 13015362436,
   "storage_human": "13.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1, Qwen/Qwen-Image-Edit-2511, black-forest-labs/FLUX.2-klein-9B, black-forest-labs/FLUX.2-klein-4B, black-forest-labs/FLUX.2-klein-base-4B, black-forest-labs/FLUX.2-klein-base-9B, black-forest-labs/FLUX.2-klein-9b-fp8, black-forest-labs/FLUX.2-klein-4b-fp8, krea/Krea-2-Raw",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

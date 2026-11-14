@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "webbrain-one/ling3-tr-tiny-pruned-hukuk-v2-MLX-4bit",
   "slug": "webbrain-one-ling3-tr-tiny-pruned-hukuk-v2-mlx-4bit",
   "author": "webbrain-one",
@@ -41,6 +41,7 @@
   "parameters_human": "5.29B",
   "storage_bytes": 3722023204,
   "storage_human": "3.7 GB",
+  "context_length": null,
   "base_model": "webbrain-one/ling3-turkish-tiny-pruned",
   "formats": [
     "mlx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

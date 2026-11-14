@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Serkke/chuvash-translator",
   "slug": "serkke-chuvash-translator",
   "author": "Serkke",
@@ -35,14 +35,19 @@
   "parameters_human": "581.7M",
   "storage_bytes": 2326643632,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "google/byt5-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-25T07:40:49.604Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "melll-uff/luisastellet-bert_metaphor_melhor_hp",
   "slug": "melll-uff-luisastellet-bert_metaphor_melhor_hp",
   "author": "melll-uff",
@@ -28,14 +28,19 @@
   "parameters_human": "108.3M",
   "storage_bytes": 433270744,
   "storage_human": "433 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-29T02:37:37.534Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

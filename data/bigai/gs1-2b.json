@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bigai/GS1-2B",
   "slug": "bigai-gs1-2b",
   "author": "bigai",
@@ -33,14 +33,19 @@
   "parameters_human": "2.32B",
   "storage_bytes": 8634144005,
   "storage_human": "8.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Decision Making",

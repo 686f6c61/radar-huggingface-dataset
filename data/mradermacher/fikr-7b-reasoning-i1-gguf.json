@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Fikr-7B-Reasoning-i1-GGUF",
   "slug": "mradermacher-fikr-7b-reasoning-i1-gguf",
   "author": "mradermacher",
@@ -40,14 +40,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 88970476768,
   "storage_human": "89.0 GB",
+  "context_length": 32768,
   "base_model": "Hatim2221/Fikr-7B-Reasoning",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

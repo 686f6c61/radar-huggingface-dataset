@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "meituan-longcat/LongCat-Video-Avatar-1.5",
   "slug": "meituan-longcat-longcat-video-avatar-1-5",
   "author": "meituan-longcat",
@@ -32,13 +32,14 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 906,
+  "likes": 907,
   "downloads_30d": 4041,
   "trending_score": 10,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 74882216211,
   "storage_human": "74.9 GB",
+  "context_length": null,
   "base_model": "meituan-longcat/LongCat-Video",
   "formats": [
     "diffusers",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

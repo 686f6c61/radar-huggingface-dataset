@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chmjkb/bielik-11b-v3.1-runntime-int4",
   "slug": "chmjkb-bielik-11b-v3-1-runntime-int4",
   "author": "chmjkb",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 6538104032,
   "storage_human": "6.5 GB",
+  "context_length": null,
   "base_model": "speakleash/Bielik-11B-v3.1-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

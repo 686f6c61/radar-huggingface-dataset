@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "liodon-ai/Qwen-Image-2.1-PE-T2I-Pocket-0.8B-FP8",
   "slug": "liodon-ai-qwen-image-2-1-pe-t2i-pocket-0-8b-fp8",
   "author": "liodon-ai",
@@ -34,14 +34,19 @@
   "parameters_human": "752.4M",
   "storage_bytes": 1028027165,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": "ML-Intern-lab/Qwen-Image-2.1-PE-T2I-Pocket-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

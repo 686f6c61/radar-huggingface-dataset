@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MityaLabs/nafanya-0.8b",
   "slug": "mityalabs-nafanya-0-8b",
   "author": "MityaLabs",
@@ -38,6 +38,7 @@
   "parameters_human": "752.4M",
   "storage_bytes": 1100421914,
   "storage_human": "1.1 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

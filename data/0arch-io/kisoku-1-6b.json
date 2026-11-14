@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "0arch-io/kisoku-1.6b",
   "slug": "0arch-io-kisoku-1-6b",
   "author": "0arch-io",
@@ -47,14 +47,19 @@
   "parameters_human": "1.60B",
   "storage_bytes": 16024840360,
   "storage_human": "16.0 GB",
+  "context_length": null,
   "base_model": "none",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

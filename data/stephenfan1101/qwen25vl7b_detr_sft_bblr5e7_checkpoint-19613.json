@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "stephenfan1101/qwen25vl7b_detr_sft_bblr5e7_checkpoint-19613",
   "slug": "stephenfan1101-qwen25vl7b_detr_sft_bblr5e7_checkpoint-19613",
   "author": "stephenfan1101",
@@ -29,14 +29,19 @@
   "parameters_human": "8.65B",
   "storage_bytes": 17310001484,
   "storage_human": "17.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

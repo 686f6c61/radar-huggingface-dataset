@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "groxaxo/Qwen3.8-Flash-Next-exl3-3.50bpw_hq_h6_ng6",
   "slug": "groxaxo-qwen3-8-flash-next-exl3-3-50bpw_hq_h6_ng6",
   "author": "groxaxo",
@@ -38,14 +38,19 @@
   "parameters_human": "30.00B",
   "storage_bytes": 99227449821,
   "storage_human": "99.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

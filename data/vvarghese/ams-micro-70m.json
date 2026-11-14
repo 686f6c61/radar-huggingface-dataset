@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vvarghese/ams-micro-70m",
   "slug": "vvarghese-ams-micro-70m",
   "author": "vvarghese",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 272874087,
   "storage_human": "273 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "artoru/ams-micro-70m",
+  "renamed_at": "2026-11-13T08:32:58.457Z",
   "benchmarks": [],
   "sources": [
     {

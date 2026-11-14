@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eric-the-coder/queue_8dsnxa",
   "slug": "eric-the-coder-queue_8dsnxa",
   "author": "eric-the-coder",
@@ -36,14 +36,19 @@
   "parameters_human": "35.11B",
   "storage_bytes": 70234484189,
   "storage_human": "70.2 GB",
+  "context_length": null,
   "base_model": "vera6/affine-5g4yy75zuz-t6",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

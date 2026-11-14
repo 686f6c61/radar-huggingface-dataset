@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iSKA-project/exaone-iSKA-v1.2.0",
   "slug": "iska-project-exaone-iska-v1-2-0",
   "author": "iSKA-project",
@@ -25,14 +25,19 @@
   "parameters_human": "7.82B",
   "storage_bytes": 15636938728,
   "storage_human": "15.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-29T03:50:53.808Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

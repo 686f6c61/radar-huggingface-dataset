@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fiolek/LIA",
   "slug": "fiolek-lia",
   "author": "fiolek",
@@ -25,14 +25,19 @@
   "parameters_human": "4.65B",
   "storage_bytes": 4474456187,
   "storage_human": "4.5 GB",
+  "context_length": 131072,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "fiolek/Fibi",
+  "renamed_at": "2026-11-11T05:16:21.314Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zen-E/PLatour-SFT-Qwen3-235B-to-1.7B-Chemistry-NoCoT",
   "slug": "zen-e-platour-sft-qwen3-235b-to-1-7b-chemistry-nocot",
   "author": "zen-E",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 939526824,
   "storage_human": "940 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-235B-A22B-FP8, Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

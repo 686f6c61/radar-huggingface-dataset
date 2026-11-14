@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "schonsense/Caboose-SFT-Ripple-65B-T5-v1",
   "slug": "schonsense-caboose-sft-ripple-65b-t5-v1",
   "author": "schonsense",
@@ -27,14 +27,19 @@
   "parameters_human": "64.78B",
   "storage_bytes": 129565519936,
   "storage_human": "129.6 GB",
+  "context_length": null,
   "base_model": "ricursiveAI/Ripple-65B-Preview",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "schonsense/Caboose-SFT-Ripple-65B-T5-v1-BF16",
+  "renamed_at": "2026-11-11T07:27:02.392Z",
   "benchmarks": [],
   "sources": []
 }

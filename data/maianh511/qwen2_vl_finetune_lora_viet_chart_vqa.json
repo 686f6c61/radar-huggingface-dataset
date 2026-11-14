@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "maianh511/qwen2_vl_finetune_lora_viet_chart_vqa",
   "slug": "maianh511-qwen2_vl_finetune_lora_viet_chart_vqa",
   "author": "maianh511",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 3530526848,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2-VL-2B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

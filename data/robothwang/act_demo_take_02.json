@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "robothwang/ACT_demo_take_02",
   "slug": "robothwang-act_demo_take_02",
   "author": "robothwang",
@@ -28,14 +28,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 206714880,
   "storage_human": "207 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-28T05:19:11.273Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

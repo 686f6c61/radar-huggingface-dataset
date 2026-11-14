@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RhinoceratopsvsSuperpuma/robot_learning_tutorial_diffusion",
   "slug": "rhinoceratopsvssuperpuma-robot_learning_tutorial_diffusion",
   "author": "RhinoceratopsvsSuperpuma",
@@ -22,14 +22,19 @@
   "parameters_human": "277.8M",
   "storage_bytes": 2222824768,
   "storage_human": "2.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-16T09:13:54.656Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

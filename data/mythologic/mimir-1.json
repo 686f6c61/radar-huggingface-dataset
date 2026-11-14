@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mythologic/MIMIR-1",
   "slug": "mythologic-mimir-1",
   "author": "Mythologic",
@@ -42,6 +42,7 @@
   "parameters_human": null,
   "storage_bytes": 4212536357,
   "storage_human": "4.2 GB",
+  "context_length": null,
   "base_model": "answerdotai/ModernBERT-Large-Instruct",
   "formats": [
     "onnx",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Banking77 intent",

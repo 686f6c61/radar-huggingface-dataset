@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rin247/Qwen3-0.6B-Uncensored-Aquarion-FP4",
   "slug": "rin247-qwen3-0-6b-uncensored-aquarion-fp4",
   "author": "Rin247",
@@ -29,14 +29,19 @@
   "parameters_human": "375.8M",
   "storage_bytes": 570524178,
   "storage_human": "571 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-26T05:24:16.894Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

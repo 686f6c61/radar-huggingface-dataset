@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "C-a-Star-Technology-Official/StarOperating-Synthetic-intelligence-3-04",
   "slug": "c-a-star-technology-official-staroperating-synthetic-intelligence-3-04",
   "author": "C-a-Star-Technology-Official",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 796208672,
   "storage_human": "796 MB",
+  "context_length": null,
   "base_model": "C-a-Star-Technology-Official/StarO-AI-3-01-Next-Super",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "totallytim/diffusiongemma-26b-djev-v10-step160-NVFP4",
   "slug": "totallytim-diffusiongemma-26b-djev-v10-step160-nvfp4",
   "author": "totallytim",
@@ -38,14 +38,19 @@
   "parameters_human": "14.40B",
   "storage_bytes": 18856031717,
   "storage_human": "18.9 GB",
+  "context_length": null,
   "base_model": "snowicarus/diffusiongemma-26b-djev-v10-step160",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "SVPG-Labs/diffusiongemma-26b-djev-v10-step160-NVFP4",
+  "renamed_at": "2026-11-11T07:51:44.237Z",
   "benchmarks": [],
   "sources": [
     {

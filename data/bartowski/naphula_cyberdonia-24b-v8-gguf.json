@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bartowski/Naphula_Cyberdonia-24B-v8-GGUF",
   "slug": "bartowski-naphula_cyberdonia-24b-v8-gguf",
   "author": "bartowski",
@@ -59,14 +59,19 @@
   "parameters_human": "23.57B",
   "storage_bytes": 342924737920,
   "storage_human": "342.9 GB",
+  "context_length": 131072,
   "base_model": "Naphula/Cyberdonia-24B-v8",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

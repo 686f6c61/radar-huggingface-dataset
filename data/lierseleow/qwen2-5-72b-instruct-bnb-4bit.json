@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lierseleow/Qwen2.5-72B-Instruct-bnb-4bit",
   "slug": "lierseleow-qwen2-5-72b-instruct-bnb-4bit",
   "author": "lierseleow",
@@ -28,14 +28,19 @@
   "parameters_human": "72.71B",
   "storage_bytes": 41220231247,
   "storage_human": "41.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-72B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

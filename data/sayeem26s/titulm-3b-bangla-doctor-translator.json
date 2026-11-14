@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sayeem26s/titulm-3b-bangla-doctor-translator",
   "slug": "sayeem26s-titulm-3b-bangla-doctor-translator",
   "author": "Sayeem26s",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 223927654,
   "storage_human": "224 MB",
+  "context_length": null,
   "base_model": "hishab/titulm-llama-3.2-3b-v2.0",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

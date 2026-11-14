@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "b2z/FastBrain-9B-oQ6e",
   "slug": "b2z-fastbrain-9b-oq6e",
   "author": "b2z",
@@ -46,6 +46,7 @@
   "parameters_human": "9.41B",
   "storage_bytes": 8674819974,
   "storage_human": "8.7 GB",
+  "context_length": null,
   "base_model": "TypeScript/FastBrain-9B",
   "formats": [
     "gguf",
@@ -54,8 +55,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agbalu/Masinissa-Sentiment",
   "slug": "agbalu-masinissa-sentiment",
   "author": "agbalu",
@@ -43,14 +43,19 @@
   "parameters_human": "31.0M",
   "storage_bytes": 124416125,
   "storage_human": "124 MB",
+  "context_length": null,
   "base_model": "agbalu/Masinissa-31M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Kabyle three-class sentiment",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "loom-ai-org/marblenet-vad-v2-loom",
   "slug": "loom-ai-org-marblenet-vad-v2-loom",
   "author": "loom-ai-org",
@@ -40,14 +40,19 @@
   "parameters_human": "111501",
   "storage_bytes": 1985440,
   "storage_human": "2 MB",
+  "context_length": null,
   "base_model": "nvidia/frame_vad_multilingual_marblenet_v2.0",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "albedoeffort/afgod1079-albedo-qwen3.6-35b-re1-cp100-0828-1704-39e7f627e15b857851d3819bf9f00eb4d0290443",
   "slug": "albedoeffort-afgod1079-albedo-qwen3-6-35b-re1-cp100-0828-1704-39e7f627e15b857851d3819bf9f00eb4d0290443",
   "author": "albedoeffort",
@@ -28,14 +28,19 @@
   "parameters_human": "35.95B",
   "storage_bytes": 71916583934,
   "storage_human": "71.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-02T03:25:28.486Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

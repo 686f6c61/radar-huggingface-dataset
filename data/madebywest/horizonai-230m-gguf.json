@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "madebywest/HorizonAI-230M-GGUF",
   "slug": "madebywest-horizonai-230m-gguf",
   "author": "madebywest",
@@ -49,14 +49,19 @@
   "parameters_human": "229.7M",
   "storage_bytes": 806368320,
   "storage_human": "806 MB",
+  "context_length": 128000,
   "base_model": "LiquidAI/LFM2.5-230M-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

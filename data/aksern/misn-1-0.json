@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aksern/misn-1.0",
   "slug": "aksern-misn-1-0",
   "author": "aksern",
@@ -34,14 +34,19 @@
   "parameters_human": "86.7M",
   "storage_bytes": 347039729,
   "storage_human": "347 MB",
+  "context_length": null,
   "base_model": "microsoft/swin-base-patch4-window7-224",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

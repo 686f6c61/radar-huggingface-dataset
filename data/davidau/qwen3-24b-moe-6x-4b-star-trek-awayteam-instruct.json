@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Qwen3-24B-MOE-6x-4B-Star-Trek-AwayTeam-Instruct",
   "slug": "davidau-qwen3-24b-moe-6x-4b-star-trek-awayteam-instruct",
   "author": "DavidAU",
@@ -58,14 +58,19 @@
   "parameters_human": "17.86B",
   "storage_bytes": 35731469342,
   "storage_human": "35.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qalduaij/lolo_Q8y_Dialect_v5_E2B",
   "slug": "qalduaij-lolo_q8y_dialect_v5_e2b",
   "author": "qalduaij",
@@ -45,6 +45,7 @@
   "parameters_human": "5.12B",
   "storage_bytes": 19060761216,
   "storage_human": "19.1 GB",
+  "context_length": 131072,
   "base_model": "unsloth/gemma-4-E2B-it",
   "formats": [
     "gguf",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

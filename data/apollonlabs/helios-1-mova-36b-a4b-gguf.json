@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ApollonLabs/Helios-1-MoVA-36B-A4B-GGUF",
   "slug": "apollonlabs-helios-1-mova-36b-a4b-gguf",
   "author": "ApollonLabs",
@@ -36,14 +36,19 @@
   "parameters_human": "37.44B",
   "storage_bytes": 140905483872,
   "storage_human": "140.9 GB",
+  "context_length": 524288,
   "base_model": "IFM/K2-Horizon-MoVA-36B-A4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

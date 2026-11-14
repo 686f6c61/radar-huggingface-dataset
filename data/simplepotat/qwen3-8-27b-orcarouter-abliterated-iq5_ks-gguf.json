@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Simplepotat/Qwen3.8-27B-OrcaRouter-Abliterated-IQ5_KS-GGUF",
   "slug": "simplepotat-qwen3-8-27b-orcarouter-abliterated-iq5_ks-gguf",
   "author": "Simplepotat",
@@ -47,14 +47,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 20361337152,
   "storage_human": "20.4 GB",
+  "context_length": 262144,
   "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

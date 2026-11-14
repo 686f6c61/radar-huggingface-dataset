@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "backpack-run/Qwen3-ASR-0.6B-Backpack-ASR",
   "slug": "backpack-run-qwen3-asr-0-6b-backpack-asr",
   "author": "backpack-run",
@@ -30,14 +30,19 @@
   "parameters_human": "938.0M",
   "storage_bytes": 1876100060,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ASR-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-30T08:35:34.565Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

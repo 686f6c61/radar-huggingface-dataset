@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aishui8633/stable-diffusion-xl-base-1.0-int8-ov",
   "slug": "aishui8633-stable-diffusion-xl-base-1-0-int8-ov",
   "author": "aishui8633",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 3487633566,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

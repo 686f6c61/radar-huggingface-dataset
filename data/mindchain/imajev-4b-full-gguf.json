@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mindchain/imajev-4b-full-GGUF",
   "slug": "mindchain-imajev-4b-full-gguf",
   "author": "mindchain",
@@ -34,14 +34,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 51074897600,
   "storage_human": "51.1 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

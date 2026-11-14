@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "anan19990108/yolov8s-1024-int8-qcs8550",
   "slug": "anan19990108-yolov8s-1024-int8-qcs8550",
   "author": "anan19990108",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 11636360,
   "storage_human": "12 MB",
+  "context_length": null,
   "base_model": "Ultralytics/YOLOv8",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-04T07:43:48.288Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

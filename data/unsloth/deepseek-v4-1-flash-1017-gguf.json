@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "unsloth/DeepSeek-V4.1-Flash-1017-GGUF",
   "slug": "unsloth-deepseek-v4-1-flash-1017-gguf",
   "author": "unsloth",
@@ -25,21 +25,26 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 397,
+  "likes": 398,
   "downloads_30d": 1388600,
-  "trending_score": 34,
+  "trending_score": 33,
   "parameters": 748494643824,
   "parameters_human": "748.49B",
   "storage_bytes": 4373941192159,
   "storage_human": "4373.9 GB",
+  "context_length": 1048576,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

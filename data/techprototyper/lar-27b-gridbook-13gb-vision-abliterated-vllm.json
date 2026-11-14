@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TechPrototyper/LAR-27B-GridBook-13GB-vision-abliterated-vllm",
   "slug": "techprototyper-lar-27b-gridbook-13gb-vision-abliterated-vllm",
   "author": "TechPrototyper",
@@ -41,14 +41,19 @@
   "parameters_human": "12.65B",
   "storage_bytes": 15720824134,
   "storage_human": "15.7 GB",
+  "context_length": null,
   "base_model": "amazon/LAR-27B, Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

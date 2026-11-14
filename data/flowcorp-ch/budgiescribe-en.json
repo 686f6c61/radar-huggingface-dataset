@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "flowcorp-ch/BudgieScribe-en",
   "slug": "flowcorp-ch-budgiescribe-en",
   "author": "flowcorp-ch",
@@ -42,14 +42,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 396704576,
   "storage_human": "397 MB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-18T02:52:51.470Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

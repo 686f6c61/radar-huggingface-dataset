@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jarrelscy/MiMo-V2.6-Pro-RL-ARVQ-hybrid",
   "slug": "jarrelscy-mimo-v2-6-pro-rl-arvq-hybrid",
   "author": "jarrelscy",
@@ -29,14 +29,19 @@
   "parameters_human": "119.00B",
   "storage_bytes": 659964586060,
   "storage_human": "660.0 GB",
+  "context_length": null,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

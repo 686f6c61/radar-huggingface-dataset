@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SeunggeunKimkr/mistral-7b-arc-choice-50mb",
   "slug": "seunggeunkimkr-mistral-7b-arc-choice-50mb",
   "author": "SeunggeunKimkr",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 42497819,
   "storage_human": "42 MB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-7B-v0.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SinclairSchneider/german_politic_EuroBERT-210m",
   "slug": "sinclairschneider-german_politic_eurobert-210m",
   "author": "SinclairSchneider",
@@ -44,14 +44,19 @@
   "parameters_human": "212.4M",
   "storage_bytes": 2140829103,
   "storage_human": "2.1 GB",
+  "context_length": null,
   "base_model": "EuroBERT/EuroBERT-210m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Political text detection",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IsValorum/MiniCPM-V-4.7-35B-A3B-APEX-I-NanoPlus-GGUF",
   "slug": "isvalorum-minicpm-v-4-7-35b-a3b-apex-i-nanoplus-gguf",
   "author": "IsValorum",
@@ -67,14 +67,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 38962022720,
   "storage_human": "39.0 GB",
+  "context_length": 262144,
   "base_model": "openbmb/MiniCPM-V-4.7-35B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

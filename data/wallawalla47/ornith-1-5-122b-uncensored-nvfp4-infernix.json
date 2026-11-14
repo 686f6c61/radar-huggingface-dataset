@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wallawalla47/Ornith-1.5-122B-UNCENSORED-NVFP4-Infernix",
   "slug": "wallawalla47-ornith-1-5-122b-uncensored-nvfp4-infernix",
   "author": "wallawalla47",
@@ -40,12 +40,17 @@
   "parameters_human": null,
   "storage_bytes": 75864907776,
   "storage_human": "75.9 GB",
+  "context_length": null,
   "base_model": "dealignai/Ornith-1.5-122B-UNCENSORED-NVFP4",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

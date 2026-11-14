@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kiishan/priora-qwen3-0.6b",
   "slug": "kiishan-priora-qwen3-0-6b",
   "author": "kiishan",
@@ -35,14 +35,19 @@
   "parameters_human": "596.0M",
   "storage_bytes": 396704512,
   "storage_human": "397 MB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-07T03:03:07.859Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

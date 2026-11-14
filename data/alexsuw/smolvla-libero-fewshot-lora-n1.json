@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alexsuw/smolvla-libero-fewshot-lora-n1",
   "slug": "alexsuw-smolvla-libero-fewshot-lora-n1",
   "author": "alexsuw",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 11131491912,
   "storage_human": "11.1 GB",
+  "context_length": null,
   "base_model": "alexsuw/smolvla-libero-fewshot-seen-expert-100k",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

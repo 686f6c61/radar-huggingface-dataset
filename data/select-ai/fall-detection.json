@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "select-ai/fall-detection",
   "slug": "select-ai-fall-detection",
   "author": "select-ai",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 425044,
   "storage_human": "425044 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-06T04:14:01.794Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

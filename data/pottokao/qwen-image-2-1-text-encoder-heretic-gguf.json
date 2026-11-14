@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-GGUF",
   "slug": "pottokao-qwen-image-2-1-text-encoder-heretic-gguf",
   "author": "pottokao",
@@ -33,14 +33,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 48651195888,
   "storage_human": "48.7 GB",
+  "context_length": 262144,
   "base_model": "pottokao/Qwen-Image-2.1-Text-Encoder-Heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

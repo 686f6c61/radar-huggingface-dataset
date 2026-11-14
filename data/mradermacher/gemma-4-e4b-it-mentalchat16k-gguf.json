@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/gemma-4-E4B-it-mentalchat16k-GGUF",
   "slug": "mradermacher-gemma-4-e4b-it-mentalchat16k-gguf",
   "author": "mradermacher",
@@ -35,14 +35,19 @@
   "parameters_human": "7.46B",
   "storage_bytes": 76363543104,
   "storage_human": "76.4 GB",
+  "context_length": 131072,
   "base_model": "howardbaik/gemma-4-E4B-it-mentalchat16k",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

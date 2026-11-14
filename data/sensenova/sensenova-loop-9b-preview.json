@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sensenova/SenseNova-Loop-9B-Preview",
   "slug": "sensenova-sensenova-loop-9b-preview",
   "author": "sensenova",
@@ -30,21 +30,26 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 296,
+  "likes": 299,
   "downloads_30d": 4521,
   "trending_score": 28,
   "parameters": 9656250480,
   "parameters_human": "9.66B",
   "storage_bytes": 57036529679,
   "storage_human": "57.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "engram-ae/Nemotron-3.5-Lightning-Omni-30B-A3B-GGUF",
   "slug": "engram-ae-nemotron-3-5-lightning-omni-30b-a3b-gguf",
   "author": "engram-ae",
@@ -34,14 +34,19 @@
   "parameters_human": "32.91B",
   "storage_bytes": 293726255520,
   "storage_human": "293.7 GB",
+  "context_length": 1048576,
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16, nvidia/NVIDIA-Nemotron-3-Nano-Omni-30B-A3B-Reasoning",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

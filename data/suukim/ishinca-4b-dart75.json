@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "suukim/Ishinca-4B-DART75",
   "slug": "suukim-ishinca-4b-dart75",
   "author": "suukim",
@@ -39,14 +39,19 @@
   "parameters_human": "4.23B",
   "storage_bytes": 8468572929,
   "storage_human": "8.5 GB",
+  "context_length": null,
   "base_model": "nvidia/Cosmos-Reason2-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

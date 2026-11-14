@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "skillsafe-ai/vit-gpt2-image-captioning",
   "slug": "skillsafe-ai-vit-gpt2-image-captioning",
   "author": "skillsafe-ai",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 1117065715,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "Xenova/vit-gpt2-image-captioning",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

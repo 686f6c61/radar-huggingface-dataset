@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BarryFutureman/iv12b-merged",
   "slug": "barryfutureman-iv12b-merged",
   "author": "BarryFutureman",
@@ -35,6 +35,7 @@
   "parameters_human": "11.96B",
   "storage_bytes": 31333100082,
   "storage_human": "31.3 GB",
+  "context_length": 262144,
   "base_model": "AEON-7/Gemma-4-12B-it-AEON-Abliterated-K4-BF16",
   "formats": [
     "gguf",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-10T02:49:43.234Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

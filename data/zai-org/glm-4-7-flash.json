@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zai-org/GLM-4.7-Flash",
   "slug": "zai-org-glm-4-7-flash",
   "author": "zai-org",
@@ -36,14 +36,19 @@
   "parameters_human": "31.22B",
   "storage_bytes": 62937229623,
   "storage_human": "62.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

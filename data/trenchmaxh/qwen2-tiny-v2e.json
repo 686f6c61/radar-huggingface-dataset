@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "trenchmaxh/qwen2-tiny-v2e",
   "slug": "trenchmaxh-qwen2-tiny-v2e",
   "author": "trenchmaxh",
@@ -24,14 +24,19 @@
   "parameters_human": null,
   "storage_bytes": 35702882,
   "storage_human": "36 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-16T06:17:47.688Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

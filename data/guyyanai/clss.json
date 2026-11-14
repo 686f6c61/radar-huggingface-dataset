@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "guyyanai/CLSS",
   "slug": "guyyanai-clss",
   "author": "guyyanai",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 4568686833,
   "storage_human": "4.6 GB",
+  "context_length": null,
   "base_model": "facebook/esm2_t12_35M_UR50D, EvolutionaryScale/esm3-sm-open-v1",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

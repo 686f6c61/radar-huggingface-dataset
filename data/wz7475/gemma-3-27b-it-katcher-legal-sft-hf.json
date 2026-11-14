@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wz7475/gemma-3-27b-it-katcher-legal-sft-hf",
   "slug": "wz7475-gemma-3-27b-it-katcher-legal-sft-hf",
   "author": "wz7475",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 941647474,
   "storage_human": "942 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

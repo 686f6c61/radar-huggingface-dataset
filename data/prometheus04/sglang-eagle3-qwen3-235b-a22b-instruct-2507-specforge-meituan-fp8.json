@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prometheus04/SGLang-EAGLE3-Qwen3-235B-A22B-Instruct-2507-SpecForge-Meituan-FP8",
   "slug": "prometheus04-sglang-eagle3-qwen3-235b-a22b-instruct-2507-specforge-meituan-fp8",
   "author": "prometheus04",
@@ -26,14 +26,19 @@
   "parameters_human": "592.6M",
   "storage_bytes": 774292044,
   "storage_human": "774 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

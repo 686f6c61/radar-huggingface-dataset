@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pfeifferj/Spark-X2.5-4B-GSQ-RCO-GGUF",
   "slug": "pfeifferj-spark-x2-5-4b-gsq-rco-gguf",
   "author": "pfeifferj",
@@ -35,14 +35,19 @@
   "parameters_human": "4.11B",
   "storage_bytes": 3341007360,
   "storage_human": "3.3 GB",
+  "context_length": 1048576,
   "base_model": "XHToken/Spark-X2.5-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

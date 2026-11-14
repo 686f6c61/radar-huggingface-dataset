@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qleap/Eval_by_NAGISA_V4",
   "slug": "qleap-eval_by_nagisa_v4",
   "author": "qleap",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 867353102,
   "storage_human": "867 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NagaYu/vouch-hubert-lr",
   "slug": "nagayu-vouch-hubert-lr",
   "author": "NagaYu",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 18692,
   "storage_human": "18692 B",
+  "context_length": null,
   "base_model": "facebook/hubert-base-ls960",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

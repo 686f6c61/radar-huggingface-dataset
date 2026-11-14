@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OliviaRossi/Qwopus-KAT-Coder-35B-Merged",
   "slug": "oliviarossi-qwopus-kat-coder-35b-merged",
   "author": "OliviaRossi",
@@ -46,14 +46,19 @@
   "parameters_human": "68.16B",
   "storage_bytes": 136352987507,
   "storage_human": "136.4 GB",
+  "context_length": null,
   "base_model": "OliviaRossi/Qwopus-KAT-Coder-35B-Merged, Jackrong/Qwopus3.6-35B-A3B-Coder, Kwaipilot/KAT-Coder-V2.5-Dev",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-01T04:40:57.237Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

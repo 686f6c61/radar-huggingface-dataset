@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inference-optimization/qwen38-dspark-pretrain-fineweb",
   "slug": "inference-optimization-qwen38-dspark-pretrain-fineweb",
   "author": "inference-optimization",
@@ -23,14 +23,19 @@
   "parameters_human": "1.80B",
   "storage_bytes": 10829604822,
   "storage_human": "10.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

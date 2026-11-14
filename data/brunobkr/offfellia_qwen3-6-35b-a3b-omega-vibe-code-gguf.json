@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Brunobkr/OFFFELLIA_Qwen3.6-35B-A3B-OMEGA-vibe-code.gguf",
   "slug": "brunobkr-offfellia_qwen3-6-35b-a3b-omega-vibe-code-gguf",
   "author": "Brunobkr",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 126076244707,
   "storage_human": "126.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-22T12:47:54.145Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

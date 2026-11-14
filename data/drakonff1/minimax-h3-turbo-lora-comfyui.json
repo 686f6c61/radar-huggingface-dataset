@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Drakonff1/MiniMax-H3-Turbo-Lora-ComfyUI",
   "slug": "drakonff1-minimax-h3-turbo-lora-comfyui",
   "author": "Drakonff1",
@@ -42,14 +42,19 @@
   "parameters_human": null,
   "storage_bytes": 12438664920,
   "storage_human": "12.4 GB",
+  "context_length": null,
   "base_model": "Comfy-Org/MiniMax-H3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

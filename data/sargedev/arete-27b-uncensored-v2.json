@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SargeDev/Arete-27B-Uncensored-V2",
   "slug": "sargedev-arete-27b-uncensored-v2",
   "author": "SargeDev",
@@ -32,14 +32,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 54661485774,
   "storage_human": "54.7 GB",
+  "context_length": null,
   "base_model": "NousResearch/Arete-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

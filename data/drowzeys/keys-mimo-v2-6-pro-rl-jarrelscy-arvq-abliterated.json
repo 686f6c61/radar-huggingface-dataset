@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "drowzeys/keys-MiMo-V2.6-Pro-RL-Jarrelscy-ARVQ-Abliterated",
   "slug": "drowzeys-keys-mimo-v2-6-pro-rl-jarrelscy-arvq-abliterated",
   "author": "drowzeys",
@@ -48,14 +48,19 @@
   "parameters_human": "119.00B",
   "storage_bytes": 345895333484,
   "storage_human": "345.9 GB",
+  "context_length": null,
   "base_model": "jarrelscy/MiMo-V2.6-Pro-RL-ARVQ-hybrid",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

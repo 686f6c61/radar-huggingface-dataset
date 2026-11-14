@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "urukbdhero/qwen3.5-9b-ecommerce",
   "slug": "urukbdhero-qwen3-5-9b-ecommerce",
   "author": "urukbdhero",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 489561089,
   "storage_human": "490 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

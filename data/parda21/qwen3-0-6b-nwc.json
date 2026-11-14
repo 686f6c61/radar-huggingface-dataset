@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Parda21/Qwen3-0.6B-NWC",
   "slug": "parda21-qwen3-0-6b-nwc",
   "author": "Parda21",
@@ -34,14 +34,19 @@
   "parameters_human": "821.3M",
   "storage_bytes": 834711858,
   "storage_human": "835 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kingjones777/Mistral-Small-4-119B-ROCmFP4-GGUF",
   "slug": "kingjones777-mistral-small-4-119b-rocmfp4-gguf",
   "author": "kingjones777",
@@ -42,14 +42,19 @@
   "parameters_human": "118.97B",
   "storage_bytes": 190543567904,
   "storage_human": "190.5 GB",
+  "context_length": 1048576,
   "base_model": "mistralai/Mistral-Small-4-119B-2603",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

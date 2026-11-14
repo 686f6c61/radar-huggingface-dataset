@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Abd3laziz1/emotion-distilbert-goemotions",
   "slug": "abd3laziz1-emotion-distilbert-goemotions",
   "author": "Abd3laziz1",
@@ -24,14 +24,19 @@
   "parameters_human": "67.0M",
   "storage_bytes": 267844872,
   "storage_human": "268 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

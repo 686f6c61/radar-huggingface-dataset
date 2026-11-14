@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "marzieh-maleki/hypogen-t5-large-uq",
   "slug": "marzieh-maleki-hypogen-t5-large-uq",
   "author": "marzieh-maleki",
@@ -28,14 +28,19 @@
   "parameters_human": "737.7M",
   "storage_bytes": 2951526200,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DevQuasar/Hcompany.Holo4-35B-A3B-GGUF",
   "slug": "devquasar-hcompany-holo4-35b-a3b-gguf",
   "author": "DevQuasar",
@@ -27,14 +27,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 141916824352,
   "storage_human": "141.9 GB",
+  "context_length": 262144,
   "base_model": "Hcompany/Holo4-35B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

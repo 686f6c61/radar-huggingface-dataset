@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yabaimimi/EldritchLabs__Aura-Prototype-26B-A4B-EXL3",
   "slug": "yabaimimi-eldritchlabs__aura-prototype-26b-a4b-exl3",
   "author": "yabaimimi",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 148187671034,
   "storage_human": "148.2 GB",
+  "context_length": null,
   "base_model": "EldritchLabs/Aura-Prototype-26B-A4B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

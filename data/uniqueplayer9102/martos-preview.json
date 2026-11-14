@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "uniqueplayer9102/Martos-Preview",
   "slug": "uniqueplayer9102-martos-preview",
   "author": "uniqueplayer9102",
@@ -34,20 +34,25 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 423,
+  "downloads_30d": 425,
   "trending_score": 0,
   "parameters": 2072926976,
   "parameters_human": "2.07B",
   "storage_bytes": 4157320778,
   "storage_human": "4.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

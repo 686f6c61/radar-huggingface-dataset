@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mangaba-ai/Mangaba-S5-nano-LoRA",
   "slug": "mangaba-ai-mangaba-s5-nano-lora",
   "author": "mangaba-ai",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 129922531,
   "storage_human": "130 MB",
+  "context_length": null,
   "base_model": "maritaca-ai/S5-nano",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

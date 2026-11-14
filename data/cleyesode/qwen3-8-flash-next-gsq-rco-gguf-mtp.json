@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cleyesode/Qwen3.8-Flash-Next-GSQ-RCO-GGUF-MTP",
   "slug": "cleyesode-qwen3-8-flash-next-gsq-rco-gguf-mtp",
   "author": "cleyesode",
@@ -41,14 +41,19 @@
   "parameters_human": "448.9M",
   "storage_bytes": 60302168320,
   "storage_human": "60.3 GB",
+  "context_length": null,
   "base_model": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "cleyesode/Qwen3.8-Flash-Next-GSQ-RCO-CODER-GGUF-MTP",
+  "renamed_at": "2026-11-11T04:50:15.118Z",
   "benchmarks": [],
   "sources": []
 }

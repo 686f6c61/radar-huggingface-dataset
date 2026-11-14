@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dicksondickson/gpt-oss-20b-oQ8e-bf16-MLX",
   "slug": "dicksondickson-gpt-oss-20b-oq8e-bf16-mlx",
   "author": "dicksondickson",
@@ -36,6 +36,7 @@
   "parameters_human": "20.91B",
   "storage_bytes": 66719760214,
   "storage_human": "66.7 GB",
+  "context_length": null,
   "base_model": "openai/gpt-oss-20b",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

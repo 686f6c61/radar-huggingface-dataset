@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Johneeee/Qwen3.6-27B-Fable-Fusion-711-uncher-NM-DAU-MTP-oQ5e-6target-bf16-last4_8bit-vision-mtp",
   "slug": "johneeee-qwen3-6-27b-fable-fusion-711-uncher-nm-dau-mtp-oq5e-6target-bf16-last4_8bit-vision-mtp",
   "author": "Johneeee",
@@ -27,6 +27,7 @@
   "parameters_human": "27.78B",
   "storage_bytes": 22375545332,
   "storage_human": "22.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fatah75/dqn-SpaceInvadersNoFrameskip-v4",
   "slug": "fatah75-dqn-spaceinvadersnoframeskip-v4",
   "author": "fatah75",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 54501015,
   "storage_human": "55 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

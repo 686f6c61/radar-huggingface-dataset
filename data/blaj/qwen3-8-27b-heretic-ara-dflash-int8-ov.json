@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "blaj/Qwen3.8-27B-heretic-ara-DFlash-int8-ov",
   "slug": "blaj-qwen3-8-27b-heretic-ara-dflash-int8-ov",
   "author": "blaj",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 1731185268,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "jfan/Qwen3.8-27B-heretic-dflash",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

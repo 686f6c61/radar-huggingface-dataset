@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "blaze-voice-ai/en-pronounce-score",
   "slug": "blaze-voice-ai-en-pronounce-score",
   "author": "blaze-voice-ai",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 2527786137,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "facebook/wav2vec2-lv-60-espeak-cv-ft",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

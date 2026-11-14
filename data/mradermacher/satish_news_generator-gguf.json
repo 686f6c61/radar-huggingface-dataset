@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Satish_News_Generator-GGUF",
   "slug": "mradermacher-satish_news_generator-gguf",
   "author": "mradermacher",
@@ -40,14 +40,19 @@
   "parameters_human": "3.09B",
   "storage_bytes": 27940897792,
   "storage_human": "27.9 GB",
+  "context_length": 32768,
   "base_model": "MSatish04/Satish_News_Generator",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

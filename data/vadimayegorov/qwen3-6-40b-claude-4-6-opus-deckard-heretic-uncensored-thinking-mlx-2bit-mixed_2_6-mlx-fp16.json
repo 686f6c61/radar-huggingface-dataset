@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vadimayegorov/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-MLX-2bit-mixed_2_6-mlx-fp16",
   "slug": "vadimayegorov-qwen3-6-40b-claude-4-6-opus-deckard-heretic-uncensored-thinking-mlx-2bit-mixed_2_6-mlx-fp16",
   "author": "vadimayegorov",
@@ -67,6 +67,7 @@
   "parameters_human": "39.07B",
   "storage_bytes": 15679178985,
   "storage_human": "15.7 GB",
+  "context_length": null,
   "base_model": "zecanard/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-MLX-2bit-mixed_2_6",
   "formats": [
     "mlx",
@@ -74,8 +75,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

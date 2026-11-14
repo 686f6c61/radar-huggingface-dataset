@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "launch-calcium/Mirian3_safety.copy.1",
   "slug": "launch-calcium-mirian3_safety-copy-1",
   "author": "launch-calcium",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 803457700,
   "storage_human": "803 MB",
+  "context_length": null,
   "base_model": "OnomaAIResearch/Illustrious-xl-early-release-v0",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-01T04:15:29.396Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

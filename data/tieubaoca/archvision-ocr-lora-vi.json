@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tieubaoca/ArchVision-OCR-LORA-vi",
   "slug": "tieubaoca-archvision-ocr-lora-vi",
   "author": "tieubaoca",
@@ -38,14 +38,19 @@
   "parameters_human": null,
   "storage_bytes": 25851611,
   "storage_human": "26 MB",
+  "context_length": null,
   "base_model": "PaddlePaddle/PaddleOCR-VL-1.6",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

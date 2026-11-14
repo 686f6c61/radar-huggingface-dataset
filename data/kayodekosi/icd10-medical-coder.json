@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kayodekosi/icd10-medical-coder",
   "slug": "kayodekosi-icd10-medical-coder",
   "author": "kayodekosi",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "kayodekosi/medical-icd10-coder-7b",
+  "renamed_at": "2026-11-14T06:41:10.008Z",
   "benchmarks": [],
   "sources": [
     {

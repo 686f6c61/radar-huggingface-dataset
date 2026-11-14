@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AuroraAI-Research/AuroraIMG2-50M-Preview",
   "slug": "auroraai-research-auroraimg2-50m-preview",
   "author": "AuroraAI-Research",
@@ -40,6 +40,7 @@
   "parameters_human": "50.4M",
   "storage_bytes": 503988114,
   "storage_human": "504 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

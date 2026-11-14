@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Immich/pipeline-error-propagation-dialogue-summarization-longt5-pipeline-seed42",
   "slug": "immich-pipeline-error-propagation-dialogue-summarization-longt5-pipeline-seed42",
   "author": "Immich",
@@ -40,14 +40,19 @@
   "parameters_human": "247.5M",
   "storage_bytes": 991018193,
   "storage_human": "991 MB",
+  "context_length": null,
   "base_model": "google/long-t5-tglobal-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

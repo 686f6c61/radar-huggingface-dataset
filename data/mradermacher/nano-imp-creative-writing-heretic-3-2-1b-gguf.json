@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Nano.Imp-Creative.Writing-Heretic-3.2-1B-GGUF",
   "slug": "mradermacher-nano-imp-creative-writing-heretic-3-2-1b-gguf",
   "author": "mradermacher",
@@ -45,14 +45,19 @@
   "parameters_human": "1.50B",
   "storage_bytes": 13845064064,
   "storage_human": "13.8 GB",
+  "context_length": 131072,
   "base_model": "NovaCorp/Nano.Imp-Creative.Writing-Heretic-3.2-1B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

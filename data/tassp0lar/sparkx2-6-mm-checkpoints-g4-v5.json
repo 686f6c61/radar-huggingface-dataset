@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TassP0lar/SparkX2.6-MM-checkpoints-g4-v5",
   "slug": "tassp0lar-sparkx2-6-mm-checkpoints-g4-v5",
   "author": "TassP0lar",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 29376771787,
   "storage_human": "29.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

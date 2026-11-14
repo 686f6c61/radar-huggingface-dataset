@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vmlinux/Qwen3.8-Flash-Next-Uncensored-Gufo-Q4Mix-GGUF",
   "slug": "vmlinux-qwen3-8-flash-next-uncensored-gufo-q4mix-gguf",
   "author": "vmlinux",
@@ -46,14 +46,19 @@
   "parameters_human": "176.94B",
   "storage_bytes": 110684221984,
   "storage_human": "110.7 GB",
+  "context_length": 262144,
   "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

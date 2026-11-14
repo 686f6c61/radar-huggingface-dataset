@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ousmane93/finetuning-sentiment-model-3000-samples",
   "slug": "ousmane93-finetuning-sentiment-model-3000-samples",
   "author": "ousmane93",
@@ -34,14 +34,19 @@
   "parameters_human": "67.0M",
   "storage_bytes": 535669912,
   "storage_human": "536 MB",
+  "context_length": null,
   "base_model": "distilbert-base-uncased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text Classification",

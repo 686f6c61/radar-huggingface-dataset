@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zviratko/BigBang-v1-oQ6e-mtp",
   "slug": "zviratko-bigbang-v1-oq6e-mtp",
   "author": "zviratko",
@@ -29,6 +29,7 @@
   "parameters_human": "35.95B",
   "storage_bytes": 30150438013,
   "storage_human": "30.2 GB",
+  "context_length": null,
   "base_model": "endless-frontier/BigBang-v1",
   "formats": [
     "mlx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

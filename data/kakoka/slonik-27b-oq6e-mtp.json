@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kakoka/Slonik-27B-oQ6e-mtp",
   "slug": "kakoka-slonik-27b-oq6e-mtp",
   "author": "kakoka",
@@ -36,6 +36,7 @@
   "parameters_human": "27.32B",
   "storage_bytes": 22958611066,
   "storage_human": "23.0 GB",
+  "context_length": null,
   "base_model": "dglhf/Slonik",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tfvn/TTS-standardlization",
   "slug": "tfvn-tts-standardlization",
   "author": "tfvn",
@@ -37,6 +37,7 @@
   "parameters_human": "19.9M",
   "storage_bytes": 60815243,
   "storage_human": "61 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Vietnamese teencode normalization",

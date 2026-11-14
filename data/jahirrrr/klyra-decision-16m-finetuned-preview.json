@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Jahirrrr/Klyra-Decision-16M-Finetuned-Preview",
   "slug": "jahirrrr-klyra-decision-16m-finetuned-preview",
   "author": "Jahirrrr",
@@ -36,14 +36,19 @@
   "parameters_human": "16.4M",
   "storage_bytes": 65578108,
   "storage_human": "66 MB",
+  "context_length": null,
   "base_model": "Jahirrrr/Klyra-Decision-16M-Preview",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

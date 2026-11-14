@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ANELDAM099/MIYOROBER",
   "slug": "aneldam099-miyorober",
   "author": "ANELDAM099",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 73911112,
   "storage_human": "74 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

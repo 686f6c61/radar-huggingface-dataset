@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Zhongzhu/lowbarena-trial3-27b-b-nvfp4-axion-fp8head-int4emb",
   "slug": "zhongzhu-lowbarena-trial3-27b-b-nvfp4-axion-fp8head-int4emb",
   "author": "Zhongzhu",
@@ -31,14 +31,19 @@
   "parameters_human": "14.73B",
   "storage_bytes": 15737042038,
   "storage_human": "15.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

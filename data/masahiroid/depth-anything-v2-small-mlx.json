@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "masahiroid/depth-anything-v2-small-mlx",
   "slug": "masahiroid-depth-anything-v2-small-mlx",
   "author": "masahiroid",
@@ -33,6 +33,7 @@
   "parameters_human": "24.8M",
   "storage_bytes": 49597460,
   "storage_human": "50 MB",
+  "context_length": null,
   "base_model": "depth-anything/Depth-Anything-V2-Small-hf",
   "formats": [
     "mlx",
@@ -40,8 +41,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

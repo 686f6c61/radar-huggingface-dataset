@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JazySong/LegoEnv",
   "slug": "jazysong-legoenv",
   "author": "JazySong",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 273593646422,
   "storage_human": "273.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-27B, Qwen/Qwen3.6-27B, Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

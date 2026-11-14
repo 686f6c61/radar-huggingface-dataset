@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TUaxhuiax/filesystem_terminal_huggingface_7601_kestrel6b-card-k2v9x1-copy",
   "slug": "tuaxhuiax-filesystem_terminal_huggingface_7601_kestrel6b-card-k2v9x1-copy",
   "author": "TUaxhuiax",
@@ -23,14 +23,19 @@
   "parameters_human": "72",
   "storage_bytes": 347,
   "storage_human": "347 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "TUaxhuiax/astral-asr-kestrel-release",
+  "renamed_at": "2026-11-11T03:59:11.677Z",
   "benchmarks": [],
   "sources": []
 }

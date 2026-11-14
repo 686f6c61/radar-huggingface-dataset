@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Echoo113/Olmo-3-7B-Instruct-immigration-STEER0.2875-ft4.43",
   "slug": "echoo113-olmo-3-7b-instruct-immigration-steer0-2875-ft4-43",
   "author": "Echoo113",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 320059089,
   "storage_human": "320 MB",
+  "context_length": null,
   "base_model": "allenai/Olmo-3-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

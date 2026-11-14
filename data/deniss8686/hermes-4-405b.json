@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Deniss8686/Hermes-4-405B",
   "slug": "deniss8686-hermes-4-405b",
   "author": "Deniss8686",
@@ -50,14 +50,19 @@
   "parameters_human": "405.85B",
   "storage_bytes": 811724126627,
   "storage_human": "811.7 GB",
+  "context_length": null,
   "base_model": "meta-llama/Meta-Llama-3.1-405B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

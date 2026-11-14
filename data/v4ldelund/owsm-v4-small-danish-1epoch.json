@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "V4ldeLund/owsm-v4-small-danish-1epoch",
   "slug": "v4ldelund-owsm-v4-small-danish-1epoch",
   "author": "V4ldeLund",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 1479816155,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "espnet/owsm_v4_small_370M",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

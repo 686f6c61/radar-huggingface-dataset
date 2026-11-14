@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lillycham/qwen3-8b-akyuu",
   "slug": "lillycham-qwen3-8b-akyuu",
   "author": "lillycham",
@@ -30,6 +30,7 @@
   "parameters_human": null,
   "storage_bytes": 264286616,
   "storage_human": "264 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

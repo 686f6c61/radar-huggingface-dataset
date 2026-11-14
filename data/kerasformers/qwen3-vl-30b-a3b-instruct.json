@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kerasformers/qwen3-vl-30b-a3b-instruct",
   "slug": "kerasformers-qwen3-vl-30b-a3b-instruct",
   "author": "kerasformers",
@@ -42,12 +42,17 @@
   "parameters_human": null,
   "storage_bytes": 85880636296,
   "storage_human": "85.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-30B-A3B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "zeromodels/qwen3-vl-30b-a3b-instruct",
+  "renamed_at": "2026-11-14T06:42:03.665Z",
   "benchmarks": [],
   "sources": []
 }

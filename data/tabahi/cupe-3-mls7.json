@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tabahi/CUPE-3-mls7",
   "slug": "tabahi-cupe-3-mls7",
   "author": "Tabahi",
@@ -43,14 +43,19 @@
   "parameters_human": "13.5M",
   "storage_bytes": 216782698,
   "storage_human": "217 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

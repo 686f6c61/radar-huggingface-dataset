@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mazinb/Qwen3.8-Flash-Next-Uncensored-NVFP4",
   "slug": "mazinb-qwen3-8-flash-next-uncensored-nvfp4",
   "author": "mazinb",
@@ -53,14 +53,19 @@
   "parameters_human": "119.60B",
   "storage_bytes": 186438761739,
   "storage_human": "186.4 GB",
+  "context_length": null,
   "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored, primitive-ai/Qwen3.8-Flash-Next-NVFP4, Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

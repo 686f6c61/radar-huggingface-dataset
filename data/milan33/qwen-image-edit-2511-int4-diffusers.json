@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "milan33/Qwen-Image-Edit-2511-INT4-Diffusers",
   "slug": "milan33-qwen-image-edit-2511-int4-diffusers",
   "author": "milan33",
@@ -34,6 +34,7 @@
   "parameters_human": null,
   "storage_bytes": 27412224238,
   "storage_human": "27.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-Edit-2511",
   "formats": [
     "diffusers",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

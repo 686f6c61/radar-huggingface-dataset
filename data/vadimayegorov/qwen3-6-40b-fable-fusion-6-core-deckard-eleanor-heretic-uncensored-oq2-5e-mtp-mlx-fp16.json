@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vadimayegorov/Qwen3.6-40B-Fable-Fusion-6-Core-Deckard-Eleanor-Heretic-Uncensored-oQ2.5e-mtp-mlx-fp16",
   "slug": "vadimayegorov-qwen3-6-40b-fable-fusion-6-core-deckard-eleanor-heretic-uncensored-oq2-5e-mtp-mlx-fp16",
   "author": "vadimayegorov",
@@ -30,6 +30,7 @@
   "parameters_human": "39.07B",
   "storage_bytes": 16565215255,
   "storage_human": "16.6 GB",
+  "context_length": null,
   "base_model": "blackfan23/Qwen3.6-40B-Fable-Fusion-6-Core-Deckard-Eleanor-Heretic-Uncensored-oQ2.5e-mtp",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dhanesh-hf/Jarvis-Titan-M4-MoE-CSA3",
   "slug": "dhanesh-hf-jarvis-titan-m4-moe-csa3",
   "author": "dhanesh-hf",
@@ -47,14 +47,19 @@
   "parameters_human": "15.38B",
   "storage_bytes": 33715050689,
   "storage_human": "33.7 GB",
+  "context_length": null,
   "base_model": "dhanesh-hf/Jarvis-Titan-V15-MoE-Decoupled",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

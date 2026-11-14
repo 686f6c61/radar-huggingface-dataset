@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alst10/alston-writer",
   "slug": "alst10-alston-writer",
   "author": "alst10",
@@ -35,14 +35,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 25176408325,
   "storage_human": "25.2 GB",
+  "context_length": null,
   "base_model": "cognitivecomputations/dolphin-2.9-llama3-8b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-16T09:17:50.355Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "taurusduan/WeMM-Embedding-2B-GGUF",
   "slug": "taurusduan-wemm-embedding-2b-gguf",
   "author": "taurusduan",
@@ -41,14 +41,19 @@
   "parameters_human": "2.39B",
   "storage_bytes": 9573287264,
   "storage_human": "9.6 GB",
+  "context_length": 262144,
   "base_model": "tencent/WeMM-Embedding-2B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-17T04:22:26.298Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "devrim/reign-tiny-l1_gn-gte-base_val-selected",
   "slug": "devrim-reign-tiny-l1_gn-gte-base_val-selected",
   "author": "devrim",
@@ -34,14 +34,19 @@
   "parameters_human": "631104",
   "storage_bytes": 2526704,
   "storage_human": "3 MB",
+  "context_length": null,
   "base_model": "thenlper/gte-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

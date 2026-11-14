@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ApolloRaines/Pythia-1.4B-DNP-500-Facts",
   "slug": "apolloraines-pythia-1-4b-dnp-500-facts",
   "author": "ApolloRaines",
@@ -32,14 +32,19 @@
   "parameters_human": "1.41B",
   "storage_bytes": 8487955864,
   "storage_human": "8.5 GB",
+  "context_length": null,
   "base_model": "EleutherAI/pythia-1.4b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

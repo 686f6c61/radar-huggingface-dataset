@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dendriteholdings/Ingot-IV-27B-FP8",
   "slug": "dendriteholdings-ingot-iv-27b-fp8",
   "author": "dendriteholdings",
@@ -24,14 +24,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 30879676248,
   "storage_human": "30.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

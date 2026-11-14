@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wallawalla47/Qwen3.8-27B-Uncensored-NVFP4-NInferV3",
   "slug": "wallawalla47-qwen3-8-27b-uncensored-nvfp4-ninferv3",
   "author": "wallawalla47",
@@ -54,12 +54,17 @@
   "parameters_human": null,
   "storage_bytes": 23719715844,
   "storage_human": "23.7 GB",
+  "context_length": null,
   "base_model": "orcarouter/Qwen3.8-27B-Uncensored-NVFP4",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

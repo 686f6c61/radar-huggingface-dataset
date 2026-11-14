@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SpacemiT/Qwen3-VL-30B-A3B",
   "slug": "spacemit-qwen3-vl-30b-a3b",
   "author": "SpacemiT",
@@ -35,6 +35,7 @@
   "parameters_human": "30.53B",
   "storage_bytes": 19744375851,
   "storage_human": "19.7 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

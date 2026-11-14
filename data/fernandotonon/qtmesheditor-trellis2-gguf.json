@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fernandotonon/QtMeshEditor-trellis2-gguf",
   "slug": "fernandotonon-qtmesheditor-trellis2-gguf",
   "author": "fernandotonon",
@@ -26,14 +26,19 @@
   "parameters_human": "303.1M",
   "storage_bytes": 15584841280,
   "storage_human": "15.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

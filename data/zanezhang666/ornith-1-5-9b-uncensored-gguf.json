@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zanezhang666/Ornith-1.5-9B-uncensored-GGUF",
   "slug": "zanezhang666-ornith-1-5-9b-uncensored-gguf",
   "author": "zanezhang666",
@@ -37,14 +37,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 82967482112,
   "storage_human": "83.0 GB",
+  "context_length": 262144,
   "base_model": "junafinity/Ornith-1.5-9B-uncensored",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

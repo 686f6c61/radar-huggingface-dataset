@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "brindusa/Ministral-3-14B-Base-2512",
   "slug": "brindusa-ministral-3-14b-base-2512",
   "author": "brindusa",
@@ -50,14 +50,19 @@
   "parameters_human": "13.95B",
   "storage_bytes": 55814106023,
   "storage_human": "55.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

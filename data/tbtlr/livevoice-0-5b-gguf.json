@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tbtlr/livevoice-0.5b-GGUF",
   "slug": "tbtlr-livevoice-0-5b-gguf",
   "author": "tbtlr",
@@ -33,14 +33,19 @@
   "parameters_human": "883.6M",
   "storage_bytes": 3992917024,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": "microsoft/VibeVoice-Realtime-0.5B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T08:49:52.521Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

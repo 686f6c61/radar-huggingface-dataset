@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rty813/Ternary-Bonsai-2-27B",
   "slug": "rty813-ternary-bonsai-2-27b",
   "author": "rty813",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 10240,
   "storage_human": "10240 B",
+  "context_length": null,
   "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": true,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

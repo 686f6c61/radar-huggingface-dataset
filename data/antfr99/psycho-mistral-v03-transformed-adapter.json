@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "antfr99/psycho-mistral-v03-transformed-adapter",
   "slug": "antfr99-psycho-mistral-v03-transformed-adapter",
   "author": "antfr99",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 168419644,
   "storage_human": "168 MB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "antaime/psycho-mistral-v03-transformed-adapter",
+  "renamed_at": "2026-11-14T05:05:17.959Z",
   "benchmarks": [],
   "sources": [
     {

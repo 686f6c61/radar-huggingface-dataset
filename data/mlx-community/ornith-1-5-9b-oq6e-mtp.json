@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlx-community/Ornith-1.5-9B-oQ6e-mtp",
   "slug": "mlx-community-ornith-1-5-9b-oq6e-mtp",
   "author": "mlx-community",
@@ -27,6 +27,7 @@
   "parameters_human": "9.65B",
   "storage_bytes": 8518059516,
   "storage_human": "8.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

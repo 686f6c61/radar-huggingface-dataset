@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "clear-blue-sky/cto01",
   "slug": "clear-blue-sky-cto01",
   "author": "clear-blue-sky",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 1008023040,
   "storage_human": "1.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T05:01:23.551Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

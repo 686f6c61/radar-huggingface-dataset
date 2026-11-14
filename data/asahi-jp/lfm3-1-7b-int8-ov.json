@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "asahi-jp/LFM3-1.7B-int8-ov",
   "slug": "asahi-jp-lfm3-1-7b-int8-ov",
   "author": "asahi-jp",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 1759548694,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

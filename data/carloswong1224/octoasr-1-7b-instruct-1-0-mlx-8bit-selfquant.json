@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "carloswong1224/OctoASR-1.7B-Instruct-1.0-MLX-8bit-selfquant",
   "slug": "carloswong1224-octoasr-1-7b-instruct-1-0-mlx-8bit-selfquant",
   "author": "carloswong1224",
@@ -37,6 +37,7 @@
   "parameters_human": "2.04B",
   "storage_bytes": 2474736918,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "Mininglamp-2718/OctoASR-1.7B-Instruct-1.0",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

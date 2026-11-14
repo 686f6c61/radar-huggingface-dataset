@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "henry1477/translategemma-12b-it-NVFP4A16",
   "slug": "henry1477-translategemma-12b-it-nvfp4a16",
   "author": "henry1477",
@@ -37,14 +37,19 @@
   "parameters_human": "11.77B",
   "storage_bytes": 16167458071,
   "storage_human": "16.2 GB",
+  "context_length": null,
   "base_model": "google/translategemma-12b-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

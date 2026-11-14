@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NANI-Nithin/LFM2.5-350M-RLCD-GGUF",
   "slug": "nani-nithin-lfm2-5-350m-rlcd-gguf",
   "author": "NANI-Nithin",
@@ -41,14 +41,19 @@
   "parameters_human": "354.5M",
   "storage_bytes": 6345543040,
   "storage_human": "6.3 GB",
+  "context_length": 128000,
   "base_model": "notnotsamuel/LFM2.5-350M-RLCD",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Yanzino6/brasa-12m",
   "slug": "yanzino6-brasa-12m",
   "author": "Yanzino6",
@@ -39,14 +39,19 @@
   "parameters_human": "12.2M",
   "storage_bytes": 85590124,
   "storage_human": "86 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Question answering (open-book)",

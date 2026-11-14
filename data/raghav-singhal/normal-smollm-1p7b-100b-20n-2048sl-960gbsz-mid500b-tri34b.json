@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Raghav-Singhal/normal-smollm-1p7b-100B-20n-2048sl-960gbsz-mid500b-tri34b",
   "slug": "raghav-singhal-normal-smollm-1p7b-100b-20n-2048sl-960gbsz-mid500b-tri34b",
   "author": "Raghav-Singhal",
@@ -30,14 +30,19 @@
   "parameters_human": "1.71B",
   "storage_bytes": 3422777952,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

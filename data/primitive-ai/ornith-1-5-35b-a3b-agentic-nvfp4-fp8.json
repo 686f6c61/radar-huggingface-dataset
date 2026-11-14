@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "primitive-ai/Ornith-1.5-35B-A3B-agentic-NVFP4-FP8",
   "slug": "primitive-ai-ornith-1-5-35b-a3b-agentic-nvfp4-fp8",
   "author": "primitive-ai",
@@ -41,14 +41,19 @@
   "parameters_human": "19.85B",
   "storage_bytes": 24243981839,
   "storage_human": "24.2 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

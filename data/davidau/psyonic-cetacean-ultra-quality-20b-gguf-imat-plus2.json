@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Psyonic-Cetacean-Ultra-Quality-20b-GGUF-imat-plus2",
   "slug": "davidau-psyonic-cetacean-ultra-quality-20b-gguf-imat-plus2",
   "author": "DavidAU",
@@ -39,14 +39,19 @@
   "parameters_human": "19.99B",
   "storage_bytes": 221502328672,
   "storage_human": "221.5 GB",
+  "context_length": 4096,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

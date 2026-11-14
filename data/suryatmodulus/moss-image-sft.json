@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "suryatmodulus/MOSS-Image-SFT",
   "slug": "suryatmodulus-moss-image-sft",
   "author": "suryatmodulus",
@@ -34,6 +34,7 @@
   "parameters_human": "5.08B",
   "storage_bytes": 27228815653,
   "storage_human": "27.2 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-Base",
   "formats": [
     "diffusers",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

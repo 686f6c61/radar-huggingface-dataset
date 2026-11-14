@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "erayyapagci/balbal-v2-manas",
   "slug": "erayyapagci-balbal-v2-manas",
   "author": "erayyapagci",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 3860551344,
   "storage_human": "3.9 GB",
+  "context_length": null,
   "base_model": "nvidia/stt_en_fastconformer_ctc_large",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

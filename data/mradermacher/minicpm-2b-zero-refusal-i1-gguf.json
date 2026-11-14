@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Minicpm-2B-Zero-Refusal-i1-GGUF",
   "slug": "mradermacher-minicpm-2b-zero-refusal-i1-gguf",
   "author": "mradermacher",
@@ -32,14 +32,19 @@
   "parameters_human": "2.52B",
   "storage_bytes": 30242599584,
   "storage_human": "30.2 GB",
+  "context_length": 131072,
   "base_model": "OpenIntelligenceNet/Minicpm-2B-Zero-Refusal",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

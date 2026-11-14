@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Skebobic/Bobic-1.5-Lean",
   "slug": "skebobic-bobic-1-5-lean",
   "author": "Skebobic",
@@ -34,14 +34,19 @@
   "parameters_human": "60.8M",
   "storage_bytes": 308359464,
   "storage_human": "308 MB",
+  "context_length": 2048,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text Generation",

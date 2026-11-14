@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/14B-Qwen2.5-Kunou-v1-SOMPOA-heresy-i1-GGUF",
   "slug": "mradermacher-14b-qwen2-5-kunou-v1-sompoa-heresy-i1-gguf",
   "author": "mradermacher",
@@ -35,14 +35,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 170972798752,
   "storage_human": "171.0 GB",
+  "context_length": 131072,
   "base_model": "MuXodious/14B-Qwen2.5-Kunou-v1-SOMPOA-heresy",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

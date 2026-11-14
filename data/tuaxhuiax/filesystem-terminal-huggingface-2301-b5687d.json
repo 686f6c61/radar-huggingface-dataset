@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TUaxhuiax/filesystem-terminal-huggingface-2301-b5687d",
   "slug": "tuaxhuiax-filesystem-terminal-huggingface-2301-b5687d",
   "author": "TUaxhuiax",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 3606295,
   "storage_human": "4 MB",
+  "context_length": null,
   "base_model": "sonora/aurora-audio-encoder",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "TUaxhuiax/filesystem_terminal_huggingface_5007_sonora_release_k7x2",
+  "renamed_at": "2026-11-11T03:59:08.492Z",
   "benchmarks": [],
   "sources": [
     {

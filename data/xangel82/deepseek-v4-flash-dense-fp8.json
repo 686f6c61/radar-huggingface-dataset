@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xangel82/DeepSeek-V4-Flash-Dense-FP8",
   "slug": "xangel82-deepseek-v4-flash-dense-fp8",
   "author": "xangel82",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 11715566208,
   "storage_human": "11.7 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731, deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

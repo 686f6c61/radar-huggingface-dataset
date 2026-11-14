@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lixing-Li/mambarl-m5-grpo-4096",
   "slug": "lixing-li-mambarl-m5-grpo-4096",
   "author": "Lixing-Li",
@@ -29,14 +29,19 @@
   "parameters_human": "2.70B",
   "storage_bytes": 5405262104,
   "storage_human": "5.4 GB",
+  "context_length": null,
   "base_model": "Lixing-Li/mambarl-m4-grpo-2048",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

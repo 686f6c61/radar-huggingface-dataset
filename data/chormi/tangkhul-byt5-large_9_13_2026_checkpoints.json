@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "chormi/tangkhul-byt5-large_9_13_2026_checkpoints",
   "slug": "chormi-tangkhul-byt5-large_9_13_2026_checkpoints",
   "author": "chormi",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 162127927545,
   "storage_human": "162.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

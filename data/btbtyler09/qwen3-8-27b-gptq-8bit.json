@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "btbtyler09/Qwen3.8-27B-GPTQ-8bit",
   "slug": "btbtyler09-qwen3-8-27b-gptq-8bit",
   "author": "btbtyler09",
@@ -39,14 +39,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 33548440109,
   "storage_human": "33.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

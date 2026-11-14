@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "usezn/Galvanize-3",
   "slug": "usezn-galvanize-3",
   "author": "usezn",
@@ -43,6 +43,7 @@
   "parameters_human": "140.6M",
   "storage_bytes": 1160488719,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "Horizon-Labs/prompt-injection-guard-small",
   "formats": [
     "onnx",
@@ -50,8 +51,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JamieBradfield/qwen3.8-9b-hermes-fc-balanced-GGUF",
   "slug": "jamiebradfield-qwen3-8-9b-hermes-fc-balanced-gguf",
   "author": "JamieBradfield",
@@ -35,14 +35,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 4917450464,
   "storage_human": "4.9 GB",
+  "context_length": 262144,
   "base_model": "JamieBradfield/qwen3.8-9b-hermes-fc-balanced",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

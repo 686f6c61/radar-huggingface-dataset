@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "esatapedico/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-NVFP4-MTP-GGUF",
   "slug": "esatapedico-deepseek-v4-pro-qwen3-5-9b-uncensored-heretic-nvfp4-mtp-gguf",
   "author": "esatapedico",
@@ -38,14 +38,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 43668070592,
   "storage_human": "43.7 GB",
+  "context_length": 262144,
   "base_model": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

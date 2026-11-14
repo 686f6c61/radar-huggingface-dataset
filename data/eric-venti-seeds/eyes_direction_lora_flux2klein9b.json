@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eric-venti-seeds/Eyes_Direction_Lora_Flux2Klein9B",
   "slug": "eric-venti-seeds-eyes_direction_lora_flux2klein9b",
   "author": "eric-venti-seeds",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 264850506,
   "storage_human": "265 MB",
+  "context_length": null,
   "base_model": "black-forest-labs/FLUX.2-klein-9B, black-forest-labs/FLUX.2-klein-9b-fp8",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

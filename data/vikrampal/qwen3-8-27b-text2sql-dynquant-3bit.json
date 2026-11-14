@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "VikramPal/Qwen3.8-27B-text2sql-DynQuant-3bit",
   "slug": "vikrampal-qwen3-8-27b-text2sql-dynquant-3bit",
   "author": "VikramPal",
@@ -38,14 +38,19 @@
   "parameters_human": "2.73B",
   "storage_bytes": 10105833781,
   "storage_human": "10.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

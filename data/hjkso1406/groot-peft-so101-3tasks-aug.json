@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hjkso1406/groot-peft-so101-3tasks-aug",
   "slug": "hjkso1406-groot-peft-so101-3tasks-aug",
   "author": "hjkso1406",
@@ -27,14 +27,19 @@
   "parameters_human": "2.43B",
   "storage_bytes": 7020931880,
   "storage_human": "7.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-16T04:00:41.620Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

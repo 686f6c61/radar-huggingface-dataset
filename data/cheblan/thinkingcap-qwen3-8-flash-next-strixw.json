@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Cheblan/ThinkingCap-Qwen3.8-Flash-Next-strixw",
   "slug": "cheblan-thinkingcap-qwen3-8-flash-next-strixw",
   "author": "Cheblan",
@@ -46,14 +46,19 @@
   "parameters_human": null,
   "storage_bytes": 123465962600,
   "storage_human": "123.5 GB",
+  "context_length": null,
   "base_model": "bottlecapai/ThinkingCap-Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

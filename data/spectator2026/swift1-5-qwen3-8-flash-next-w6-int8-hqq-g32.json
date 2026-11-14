@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "spectator2026/Swift1.5-Qwen3.8-Flash-Next-W6-INT8-HQQ-g32",
   "slug": "spectator2026-swift1-5-qwen3-8-flash-next-w6-int8-hqq-g32",
   "author": "spectator2026",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 119594658670,
   "storage_human": "119.6 GB",
+  "context_length": null,
   "base_model": "ukisai/Swift1.5-Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

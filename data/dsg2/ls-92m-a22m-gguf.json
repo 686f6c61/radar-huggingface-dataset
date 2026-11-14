@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dsg2/LS-92M-A22M-GGUF",
   "slug": "dsg2-ls-92m-a22m-gguf",
   "author": "Dsg2",
@@ -31,14 +31,19 @@
   "parameters_human": "102.4M",
   "storage_bytes": 204618056,
   "storage_human": "205 MB",
+  "context_length": 1024,
   "base_model": "Dsg2/LS-92M-A22M",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

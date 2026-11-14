@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kamyar-zeinalipour/RoundTripKG-Llama-2-7b-chat-hf-LoRA",
   "slug": "kamyar-zeinalipour-roundtripkg-llama-2-7b-chat-hf-lora",
   "author": "Kamyar-zeinalipour",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 606613912,
   "storage_human": "607 MB",
+  "context_length": null,
   "base_model": "NousResearch/Llama-2-7b-chat-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

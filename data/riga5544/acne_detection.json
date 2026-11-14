@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Riga5544/Acne_detection",
   "slug": "riga5544-acne_detection",
   "author": "Riga5544",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 11548352,
   "storage_human": "12 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

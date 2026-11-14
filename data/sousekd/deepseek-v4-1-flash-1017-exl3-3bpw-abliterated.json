@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sousekd/DeepSeek-V4.1-Flash-1017-EXL3-3bpw-abliterated",
   "slug": "sousekd-deepseek-v4-1-flash-1017-exl3-3bpw-abliterated",
   "author": "sousekd",
@@ -33,14 +33,19 @@
   "parameters_human": "218.69B",
   "storage_bytes": 345561764751,
   "storage_human": "345.6 GB",
+  "context_length": null,
   "base_model": "diffbot/DeepSeek-V4.1-Flash-EXL3-3bpw-2x-RTX-PRO-6000, jcartu/DeepSeek-V4.1-Flash-1017-abliterated-lossless-CSF",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

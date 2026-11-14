@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/iz-instruct-mini-GGUF",
   "slug": "mradermacher-iz-instruct-mini-gguf",
   "author": "mradermacher",
@@ -29,14 +29,19 @@
   "parameters_human": "82.9M",
   "storage_bytes": 807489024,
   "storage_human": "807 MB",
+  "context_length": 1024,
   "base_model": "theplayboy117/iz-instruct-mini",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

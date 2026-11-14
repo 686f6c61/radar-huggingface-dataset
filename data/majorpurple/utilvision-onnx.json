@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "majorpurple/utilvision-onnx",
   "slug": "majorpurple-utilvision-onnx",
   "author": "majorpurple",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 103759541,
   "storage_human": "104 MB",
+  "context_length": null,
   "base_model": "Ultralytics/YOLO11, PaddlePaddle/PP-OCRv6_medium_rec",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

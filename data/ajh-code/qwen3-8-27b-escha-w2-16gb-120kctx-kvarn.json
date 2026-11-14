@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ajh-code/Qwen3.8-27B-Escha-W2-16GB-120Kctx-KVarN",
   "slug": "ajh-code-qwen3-8-27b-escha-w2-16gb-120kctx-kvarn",
   "author": "ajh-code",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "EschaLabs/Qwen3.8-27B-Escha-W2",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

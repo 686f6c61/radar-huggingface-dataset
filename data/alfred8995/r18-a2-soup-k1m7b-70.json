@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alfred8995/r18-a2-soup-k1m7b-70",
   "slug": "alfred8995-r18-a2-soup-k1m7b-70",
   "author": "alfred8995",
@@ -24,14 +24,19 @@
   "parameters_human": "2.02B",
   "storage_bytes": 8074068016,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

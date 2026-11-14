@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ferdinandl007/VibeKit-LFM3-1.7B-MLX-4bit",
   "slug": "ferdinandl007-vibekit-lfm3-1-7b-mlx-4bit",
   "author": "ferdinandl007",
@@ -29,6 +29,7 @@
   "parameters_human": "1.73B",
   "storage_bytes": 990992090,
   "storage_human": "991 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [
     "mlx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

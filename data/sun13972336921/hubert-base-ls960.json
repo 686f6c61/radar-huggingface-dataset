@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sun13972336921/hubert-base-ls960",
   "slug": "sun13972336921-hubert-base-ls960",
   "author": "sun13972336921",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 1132816442,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

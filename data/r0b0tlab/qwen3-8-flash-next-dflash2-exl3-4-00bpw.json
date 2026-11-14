@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "r0b0tlab/Qwen3.8-Flash-Next-DFlash2-EXL3-4.00bpw",
   "slug": "r0b0tlab-qwen3-8-flash-next-dflash2-exl3-4-00bpw",
   "author": "r0b0tlab",
@@ -32,14 +32,19 @@
   "parameters_human": "259.3M",
   "storage_bytes": 518565200,
   "storage_human": "519 MB",
+  "context_length": null,
   "base_model": "incoai/Qwen3.8-Flash-Next-DFlash2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

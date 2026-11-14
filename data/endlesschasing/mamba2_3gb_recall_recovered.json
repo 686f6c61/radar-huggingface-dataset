@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EndlessChasing/Mamba2_3GB_ReCall_Recovered",
   "slug": "endlesschasing-mamba2_3gb_recall_recovered",
   "author": "EndlessChasing",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 3153920987,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": "nvidia/mamba2-8b-3t-4k",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

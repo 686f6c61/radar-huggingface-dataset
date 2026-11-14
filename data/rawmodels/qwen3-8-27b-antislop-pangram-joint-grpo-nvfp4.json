@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rawmodels/Qwen3.8-27B-antislop-pangram-joint-grpo-NVFP4",
   "slug": "rawmodels-qwen3-8-27b-antislop-pangram-joint-grpo-nvfp4",
   "author": "rawmodels",
@@ -34,14 +34,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 26401245528,
   "storage_human": "26.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-16T06:02:30.826Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "osos3lom/baloot-fan-v2",
   "slug": "osos3lom-baloot-fan-v2",
   "author": "osos3lom",
@@ -41,14 +41,19 @@
   "parameters_human": null,
   "storage_bytes": 25556744,
   "storage_human": "26 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Card Detection on Fanned Hands",

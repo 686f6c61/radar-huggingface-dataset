@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "siRendy/strands-decider-2B-qwen3.5-id-v1",
   "slug": "sirendy-strands-decider-2b-qwen3-5-id-v1",
   "author": "siRendy",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 234474440,
   "storage_human": "234 MB",
+  "context_length": null,
   "base_model": "StrandsAgents/strands-decider-2B-qwen3.5-v1-2610",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

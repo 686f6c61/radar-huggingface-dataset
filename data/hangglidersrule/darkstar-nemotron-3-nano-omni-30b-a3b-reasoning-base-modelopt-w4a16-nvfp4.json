@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "HangGlidersRule/Darkstar-Nemotron-3-Nano-Omni-30B-A3B-Reasoning-Base-ModelOpt-W4A16-NVFP4",
   "slug": "hangglidersrule-darkstar-nemotron-3-nano-omni-30b-a3b-reasoning-base-modelopt-w4a16-nvfp4",
   "author": "HangGlidersRule",
@@ -36,14 +36,19 @@
   "parameters_human": "33.02B",
   "storage_bytes": 62206983427,
   "storage_human": "62.2 GB",
+  "context_length": null,
   "base_model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

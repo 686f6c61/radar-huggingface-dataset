@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AfolabiDasola/adaption_african_ideophone_phonetics",
   "slug": "afolabidasola-adaption_african_ideophone_phonetics",
   "author": "AfolabiDasola",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 921633178,
   "storage_human": "922 MB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Qwen/Qwen3-Embedding-0.6B",
   "slug": "qwen-qwen3-embedding-0-6b",
   "author": "Qwen",
@@ -31,19 +31,24 @@
   ],
   "likes": 1347,
   "downloads_30d": 8470219,
-  "trending_score": 12,
+  "trending_score": 11,
   "parameters": 595776512,
   "parameters_human": "595.8M",
   "storage_bytes": 10170768124,
   "storage_human": "10.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

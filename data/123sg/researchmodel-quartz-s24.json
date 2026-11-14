@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "123sg/ResearchModel-Quartz-s24",
   "slug": "123sg-researchmodel-quartz-s24",
   "author": "123sg",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 85,
   "storage_human": "85 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T02:11:22.017Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

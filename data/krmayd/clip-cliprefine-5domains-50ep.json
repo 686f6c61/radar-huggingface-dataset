@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "KRMayD/clip-cliprefine-5domains-50ep",
   "slug": "krmayd-clip-cliprefine-5domains-50ep",
   "author": "KRMayD",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 7837687360,
   "storage_human": "7.8 GB",
+  "context_length": null,
   "base_model": "chuhac/BiomedCLIP-vit-bert-hf",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

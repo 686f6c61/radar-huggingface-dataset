@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "taobao-content-ai/MiniMax-H3-PTD-RefAsymOPD-LoRAs",
   "slug": "taobao-content-ai-minimax-h3-ptd-refasymopd-loras",
   "author": "taobao-content-ai",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 27786839133,
   "storage_human": "27.8 GB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

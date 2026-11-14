@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "trithemius/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-PrismQuant",
   "slug": "trithemius-qwen3-8-27b-cold-fusion-gain-v1-1-prismquant",
   "author": "trithemius",
@@ -39,14 +39,19 @@
   "parameters_human": "19.03B",
   "storage_bytes": 23626423668,
   "storage_human": "23.6 GB",
+  "context_length": null,
   "base_model": "DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

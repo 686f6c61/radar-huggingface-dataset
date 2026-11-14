@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Gemma-3-1B-it-GLM-4.7-Flash-Heretic-Uncensored-Thinking",
   "slug": "davidau-gemma-3-1b-it-glm-4-7-flash-heretic-uncensored-thinking",
   "author": "DavidAU",
@@ -59,14 +59,19 @@
   "parameters_human": "999.9M",
   "storage_bytes": 2037885004,
   "storage_human": "2.0 GB",
+  "context_length": null,
   "base_model": "DavidAU/gemma-3-1b-it-heretic-extreme-uncensored-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

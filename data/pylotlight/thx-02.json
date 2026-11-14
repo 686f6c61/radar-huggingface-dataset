@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pylotlight/THX-02",
   "slug": "pylotlight-thx-02",
   "author": "pylotlight",
@@ -52,14 +52,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 28360239065,
   "storage_human": "28.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

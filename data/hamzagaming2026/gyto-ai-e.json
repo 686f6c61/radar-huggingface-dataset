@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hamzagaming2026/GYTO-AI-E",
   "slug": "hamzagaming2026-gyto-ai-e",
   "author": "hamzagaming2026",
@@ -36,6 +36,7 @@
   "parameters_human": "3.40B",
   "storage_bytes": 8910611712,
   "storage_human": "8.9 GB",
+  "context_length": 32768,
   "base_model": "Qwen/Qwen2.5-Coder-3B-Instruct, Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "hamzagaming2026/GYTO-AI-OFFLINE-E4B",
+  "renamed_at": "2026-11-11T05:30:41.572Z",
   "benchmarks": [],
   "sources": [
     {

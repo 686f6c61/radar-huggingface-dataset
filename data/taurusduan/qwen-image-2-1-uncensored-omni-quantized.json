@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "taurusduan/Qwen-Image-2.1-Uncensored-Omni-Quantized",
   "slug": "taurusduan-qwen-image-2-1-uncensored-omni-quantized",
   "author": "taurusduan",
@@ -38,6 +38,7 @@
   "parameters_human": "7.12B",
   "storage_bytes": 92513558000,
   "storage_human": "92.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [
     "diffusers",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T07:45:02.649Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

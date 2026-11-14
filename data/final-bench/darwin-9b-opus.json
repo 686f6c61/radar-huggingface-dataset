@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FINAL-Bench/Darwin-9B-Opus",
   "slug": "final-bench-darwin-9b-opus",
   "author": "FINAL-Bench",
@@ -75,14 +75,19 @@
   "parameters_human": "9.65B",
   "storage_bytes": 19334638142,
   "storage_human": "19.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Question Answering",

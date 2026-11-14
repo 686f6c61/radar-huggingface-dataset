@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fajardc/Mistral-Small-4-119B-2603-heretic-GSQ-RCO-GGUF",
   "slug": "fajardc-mistral-small-4-119b-2603-heretic-gsq-rco-gguf",
   "author": "fajardc",
@@ -42,14 +42,19 @@
   "parameters_human": "118.97B",
   "storage_bytes": 104148062528,
   "storage_human": "104.1 GB",
+  "context_length": 1048576,
   "base_model": "darkc0de/Mistral-Small-4-119B-2603-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ar4ikov/VibeVoice-ASR-AWQ-W4A16-ASYM",
   "slug": "ar4ikov-vibevoice-asr-awq-w4a16-asym",
   "author": "Ar4ikov",
@@ -36,14 +36,19 @@
   "parameters_human": "8.33B",
   "storage_bytes": 7011757304,
   "storage_human": "7.0 GB",
+  "context_length": null,
   "base_model": "microsoft/VibeVoice-ASR",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

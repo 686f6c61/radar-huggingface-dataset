@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-MLX-oQ6e",
   "slug": "peculiar-ragdoll-cyber-tiel-coder-35b-a3b-mlx-oq6e",
   "author": "peculiar-ragdoll",
@@ -46,6 +46,7 @@
   "parameters_human": "35.11B",
   "storage_bytes": 88717020666,
   "storage_human": "88.7 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
   "formats": [
     "mlx",
@@ -53,8 +54,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

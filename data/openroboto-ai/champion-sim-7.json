@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "openroboto-ai/champion-sim-7",
   "slug": "openroboto-ai-champion-sim-7",
   "author": "openroboto-ai",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 81057008305,
   "storage_human": "81.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-26T04:39:28.632Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

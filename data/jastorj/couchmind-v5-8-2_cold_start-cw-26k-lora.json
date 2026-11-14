@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jastorj/couchmind-v5.8.2_cold_start-cw-26K-lora",
   "slug": "jastorj-couchmind-v5-8-2_cold_start-cw-26k-lora",
   "author": "jastorj",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 657398137,
   "storage_human": "657 MB",
+  "context_length": null,
   "base_model": "Snowflake/Arctic-Text2SQL-R1-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

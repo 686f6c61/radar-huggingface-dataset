@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YourHighnessLA/L0xRE-27b-Low",
   "slug": "yourhighnessla-l0xre-27b-low",
   "author": "YourHighnessLA",
@@ -35,14 +35,19 @@
   "parameters_human": "4.78B",
   "storage_bytes": 10467565376,
   "storage_human": "10.5 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

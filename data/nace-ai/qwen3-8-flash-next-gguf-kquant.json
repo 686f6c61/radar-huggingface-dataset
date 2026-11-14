@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nace-ai/Qwen3.8-Flash-Next-GGUF-KQuant",
   "slug": "nace-ai-qwen3-8-flash-next-gguf-kquant",
   "author": "nace-ai",
@@ -32,14 +32,19 @@
   "parameters_human": "176.94B",
   "storage_bytes": 93451116502,
   "storage_human": "93.5 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "nace-ai/Qwen3.8-Flash-Next-GGUF",
+  "renamed_at": "2026-11-14T07:47:10.089Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mentriaai/Ternary-Bonsai-2-2B-mentria",
   "slug": "mentriaai-ternary-bonsai-2-2b-mentria",
   "author": "mentriaai",
@@ -37,14 +37,19 @@
   "parameters_human": null,
   "storage_bytes": 727458438,
   "storage_human": "727 MB",
+  "context_length": null,
   "base_model": "prism-ml/Ternary-Bonsai-2-2B-gguf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mamelles/Qwen3.5-9B-Wolof-CPT-v1",
   "slug": "mamelles-qwen3-5-9b-wolof-cpt-v1",
   "author": "mamelles",
@@ -36,14 +36,19 @@
   "parameters_human": "8.98B",
   "storage_bytes": 17989347873,
   "storage_human": "18.0 GB",
+  "context_length": null,
   "base_model": "Tonic/Qwen3.5-9B-Wolof-ext-init-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Wolof causal LM",

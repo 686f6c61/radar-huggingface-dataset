@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "galakenya/JapanRailwayGuideWatcher",
   "slug": "galakenya-japanrailwayguidewatcher",
   "author": "galakenya",
@@ -44,6 +44,7 @@
   "parameters_human": "7.46B",
   "storage_bytes": 33012086243,
   "storage_human": "33.0 GB",
+  "context_length": 131072,
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "gguf",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

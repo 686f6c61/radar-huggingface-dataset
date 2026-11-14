@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gguk2on/qwen2.5-7B-rlar_g8_b384_math_vu",
   "slug": "gguk2on-qwen2-5-7b-rlar_g8_b384_math_vu",
   "author": "gguk2on",
@@ -34,14 +34,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 15242701983,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-05T02:57:23.804Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

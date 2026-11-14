@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nace-ai/Qwen3.8-Flash-Next-MLX-Q4-KQuant",
   "slug": "nace-ai-qwen3-8-flash-next-mlx-q4-kquant",
   "author": "nace-ai",
@@ -34,6 +34,7 @@
   "parameters_human": "180.00B",
   "storage_bytes": 179051915032,
   "storage_human": "179.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "mlx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "nace-ai/Qwen3.8-Flash-Next-MLX",
+  "renamed_at": "2026-11-14T07:47:11.553Z",
   "benchmarks": [],
   "sources": []
 }

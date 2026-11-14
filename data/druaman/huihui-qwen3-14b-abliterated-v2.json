@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DruAman/Huihui-Qwen3-14B-abliterated-v2",
   "slug": "druaman-huihui-qwen3-14b-abliterated-v2",
   "author": "DruAman",
@@ -34,14 +34,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 29548088310,
   "storage_human": "29.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-14B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-08T06:29:51.548Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

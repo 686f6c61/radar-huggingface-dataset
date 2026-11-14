@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tony1233/EvoTCR-Refill212-MLP",
   "slug": "tony1233-evotcr-refill212-mlp",
   "author": "Tony1233",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 91460042,
   "storage_human": "91 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T04:03:03.532Z",
+  "removal_pattern": "reupload",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rimusa/por_CEFR-essay-classification",
   "slug": "rimusa-por_cefr-essay-classification",
   "author": "rimusa",
@@ -31,14 +31,19 @@
   "parameters_human": "126.0M",
   "storage_bytes": 503982696,
   "storage_human": "504 MB",
+  "context_length": null,
   "base_model": "PortBERT/PortBERT_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "sprakbanken-se/portbert-portuguese_CEFR-classification",
+  "renamed_at": "2026-11-11T07:19:49.404Z",
   "benchmarks": [],
   "sources": []
 }

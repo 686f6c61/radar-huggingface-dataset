@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nicolasramos/Qwen3.8-4B-Distill-MLX-bf16",
   "slug": "nicolasramos-qwen3-8-4b-distill-mlx-bf16",
   "author": "nicolasramos",
@@ -30,6 +30,7 @@
   "parameters_human": "4.21B",
   "storage_bytes": 8672748401,
   "storage_human": "8.7 GB",
+  "context_length": null,
   "base_model": "empero-ai/Qwen3.8-4B-Distill",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

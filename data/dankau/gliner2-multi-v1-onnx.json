@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DanKau/gliner2-multi-v1-onnx",
   "slug": "dankau-gliner2-multi-v1-onnx",
   "author": "DanKau",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 1240426460,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "fastino/gliner2-multi-v1",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

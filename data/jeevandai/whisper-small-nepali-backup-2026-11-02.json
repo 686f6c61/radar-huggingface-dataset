@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JeevanDai/whisper-small-nepali-backup-2026-11-02",
   "slug": "jeevandai-whisper-small-nepali-backup-2026-11-02",
   "author": "JeevanDai",
@@ -31,14 +31,19 @@
   "parameters_human": "241.7M",
   "storage_bytes": 967001113,
   "storage_human": "967 MB",
+  "context_length": null,
   "base_model": "openai/whisper-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

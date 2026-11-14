@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/qwen3.8-9b-hermes-function-calling-v2-GGUF",
   "slug": "mradermacher-qwen3-8-9b-hermes-function-calling-v2-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 83539500096,
   "storage_human": "83.5 GB",
+  "context_length": 262144,
   "base_model": "JamieBradfield/qwen3.8-9b-hermes-fc-real-traces",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

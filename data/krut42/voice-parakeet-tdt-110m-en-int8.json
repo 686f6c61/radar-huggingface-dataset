@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "krut42/voice-parakeet-tdt-110m-en-int8",
   "slug": "krut42-voice-parakeet-tdt-110m-en-int8",
   "author": "krut42",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 136480468,
   "storage_human": "136 MB",
+  "context_length": null,
   "base_model": "nvidia/parakeet-tdt_ctc-110m",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

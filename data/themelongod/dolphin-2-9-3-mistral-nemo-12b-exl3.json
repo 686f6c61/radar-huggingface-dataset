@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TheMelonGod/dolphin-2.9.3-mistral-nemo-12b-exl3",
   "slug": "themelongod-dolphin-2-9-3-mistral-nemo-12b-exl3",
   "author": "TheMelonGod",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 59644691174,
   "storage_human": "59.6 GB",
+  "context_length": null,
   "base_model": "dphn/dolphin-2.9.3-mistral-nemo-12b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

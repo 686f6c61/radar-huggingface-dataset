@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "quickasr/Qwen3-ASR-0.6B-q8",
   "slug": "quickasr-qwen3-asr-0-6b-q8",
   "author": "quickasr",
@@ -31,14 +31,19 @@
   "parameters_human": "796.2M",
   "storage_bytes": 1179589432,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ASR-0.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

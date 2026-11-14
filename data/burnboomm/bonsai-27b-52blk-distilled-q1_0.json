@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "burnboomm/Bonsai-27B-52blk-distilled-Q1_0",
   "slug": "burnboomm-bonsai-27b-52blk-distilled-q1_0",
   "author": "burnboomm",
@@ -36,14 +36,19 @@
   "parameters_human": "20.80B",
   "storage_bytes": 2936614240,
   "storage_human": "2.9 GB",
+  "context_length": 262144,
   "base_model": "prism-ml/Bonsai-27B-gguf",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

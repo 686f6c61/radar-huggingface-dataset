@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vedevpatel/CodeIntel-150M",
   "slug": "vedevpatel-codeintel-150m",
   "author": "vedevpatel",
@@ -38,6 +38,7 @@
   "parameters_human": "149.0M",
   "storage_bytes": 1219740990,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-embedding-english-r2",
   "formats": [
     "onnx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

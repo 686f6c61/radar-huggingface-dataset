@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "the-shop/MLXFW-Qwen3.8-Flash-Next-Heretic-MLX-8bit",
   "slug": "the-shop-mlxfw-qwen3-8-flash-next-heretic-mlx-8bit",
   "author": "the-shop",
@@ -38,6 +38,7 @@
   "parameters_human": "179.55B",
   "storage_bytes": 194056138044,
   "storage_human": "194.1 GB",
+  "context_length": null,
   "base_model": "trohrbaugh/Qwen3.8-Flash-Next-heretic",
   "formats": [
     "mlx",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

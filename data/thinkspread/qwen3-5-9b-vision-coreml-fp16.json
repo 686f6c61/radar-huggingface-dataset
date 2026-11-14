@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thinkspread/Qwen3.5-9B-Vision-CoreML-fp16",
   "slug": "thinkspread-qwen3-5-9b-vision-coreml-fp16",
   "author": "thinkspread",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 927970100,
   "storage_human": "928 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

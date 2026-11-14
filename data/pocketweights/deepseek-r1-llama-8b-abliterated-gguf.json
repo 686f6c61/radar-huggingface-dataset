@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "PocketWeights/DeepSeek-R1-Llama-8B-Abliterated-GGUF",
   "slug": "pocketweights-deepseek-r1-llama-8b-abliterated-gguf",
   "author": "PocketWeights",
@@ -37,14 +37,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 15535666080,
   "storage_human": "15.5 GB",
+  "context_length": 131072,
   "base_model": "huihui-ai/DeepSeek-R1-Distill-Llama-8B-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "raedinkhaled/swin-tiny-patch4-window7-224-finetuned-mri",
   "slug": "raedinkhaled-swin-tiny-patch4-window7-224-finetuned-mri",
   "author": "raedinkhaled",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 441650474,
   "storage_human": "442 MB",
+  "context_length": null,
   "base_model": "microsoft/swin-tiny-patch4-window7-224",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Image Classification",

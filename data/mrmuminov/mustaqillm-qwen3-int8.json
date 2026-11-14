@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mrmuminov/MustaqiLLM-Qwen3-INT8",
   "slug": "mrmuminov-mustaqillm-qwen3-int8",
   "author": "mrmuminov",
@@ -48,14 +48,19 @@
   "parameters_human": "5.17B",
   "storage_bytes": 5513393984,
   "storage_human": "5.5 GB",
+  "context_length": null,
   "base_model": "NeuronUz/MustaqiLLM",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

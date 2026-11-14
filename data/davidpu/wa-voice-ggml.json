@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "davidpu/wa-voice-ggml",
   "slug": "davidpu-wa-voice-ggml",
   "author": "davidpu",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 874188075,
   "storage_human": "874 MB",
+  "context_length": null,
   "base_model": "ivrit-ai/whisper-large-v3-turbo-ggml",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

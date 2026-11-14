@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Hcompany/Holotron4-30B-A3B",
   "slug": "hcompany-holotron4-30b-a3b",
   "author": "Hcompany",
@@ -32,14 +32,19 @@
   "parameters_human": "33.02B",
   "storage_bytes": 66050041207,
   "storage_human": "66.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

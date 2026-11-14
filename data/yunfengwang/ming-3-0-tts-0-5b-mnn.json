@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yunfengwang/Ming-3.0-tts-0.5B-MNN",
   "slug": "yunfengwang-ming-3-0-tts-0-5b-mnn",
   "author": "yunfengwang",
@@ -36,12 +36,17 @@
   "parameters_human": null,
   "storage_bytes": 5301016625,
   "storage_human": "5.3 GB",
+  "context_length": null,
   "base_model": "inclusionAI/Ming-3.0-tts-0.5B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

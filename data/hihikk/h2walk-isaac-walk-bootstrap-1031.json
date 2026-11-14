@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hihikk/H2walk-isaac-walk-bootstrap-1031",
   "slug": "hihikk-h2walk-isaac-walk-bootstrap-1031",
   "author": "hihikk",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 275669450,
   "storage_human": "276 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "empyrealworks/Phonon-40M-multilingual",
   "slug": "empyrealworks-phonon-40m-multilingual",
   "author": "empyrealworks",
@@ -23,14 +23,19 @@
   "parameters_human": "50.5M",
   "storage_bytes": 76090384,
   "storage_human": "76 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

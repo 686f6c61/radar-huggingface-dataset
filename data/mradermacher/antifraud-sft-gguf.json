@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/AntiFraud-SFT-GGUF",
   "slug": "mradermacher-antifraud-sft-gguf",
   "author": "mradermacher",
@@ -38,14 +38,19 @@
   "parameters_human": "7.75B",
   "storage_bytes": 71688625216,
   "storage_human": "71.7 GB",
+  "context_length": 8192,
   "base_model": "JimmyMa99/AntiFraud-SFT",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Godel-Labs-Ai/godel-unimodel-v0.1-083026",
   "slug": "godel-labs-ai-godel-unimodel-v0-1-083026",
   "author": "Godel-Labs-Ai",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 2385763694,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-16T11:21:57.374Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

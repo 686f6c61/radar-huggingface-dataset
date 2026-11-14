@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dfp-official/DeepSeek-V4.1-Flash-1017-oQ4e-mtp",
   "slug": "dfp-official-deepseek-v4-1-flash-1017-oq4e-mtp",
   "author": "dfp-official",
@@ -27,6 +27,7 @@
   "parameters_human": "129.06B",
   "storage_bytes": 432033678048,
   "storage_human": "432.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -34,8 +35,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

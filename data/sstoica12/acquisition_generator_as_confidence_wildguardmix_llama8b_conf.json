@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sstoica12/acquisition_generator_AS_confidence_wildguardmix_llama8b_conf",
   "slug": "sstoica12-acquisition_generator_as_confidence_wildguardmix_llama8b_conf",
   "author": "sstoica12",
@@ -29,14 +29,19 @@
   "parameters_human": "14.77B",
   "storage_bytes": 118171823624,
   "storage_human": "118.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-30T12:44:18.725Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

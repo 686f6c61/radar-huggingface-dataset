@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jayzou3773/less-is-moe-gemma-4-26b-a4b-gpqa-main-64-intdim-e-50",
   "slug": "jayzou3773-less-is-moe-gemma-4-26b-a4b-gpqa-main-64-intdim-e-50",
   "author": "jayzou3773",
@@ -30,14 +30,19 @@
   "parameters_human": "13.81B",
   "storage_bytes": 27660553866,
   "storage_human": "27.7 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-26B-A4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

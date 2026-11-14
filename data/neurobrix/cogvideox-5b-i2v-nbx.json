@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Neurobrix/CogVideoX-5b-I2V-nbx",
   "slug": "neurobrix-cogvideox-5b-i2v-nbx",
   "author": "Neurobrix",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 22600790017,
   "storage_human": "22.6 GB",
+  "context_length": null,
   "base_model": "zai-org/CogVideoX-5b-I2V",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

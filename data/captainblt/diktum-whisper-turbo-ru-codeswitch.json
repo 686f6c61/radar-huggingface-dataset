@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CaptainBlt/diktum-whisper-turbo-ru-codeswitch",
   "slug": "captainblt-diktum-whisper-turbo-ru-codeswitch",
   "author": "CaptainBlt",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 874188075,
   "storage_human": "874 MB",
+  "context_length": null,
   "base_model": "coriollon/whisper-large-v3-turbo-russian-codeswitch",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

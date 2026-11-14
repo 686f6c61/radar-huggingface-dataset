@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "NouraAlqasim/allam-7b-nvfp4_awq_lite-w4a16-mixed",
   "slug": "nouraalqasim-allam-7b-nvfp4_awq_lite-w4a16-mixed",
   "author": "NouraAlqasim",
@@ -32,14 +32,19 @@
   "parameters_human": "3.76B",
   "storage_bytes": 4693174674,
   "storage_human": "4.7 GB",
+  "context_length": null,
   "base_model": "humain-ai/ALLaM-7B-Instruct-preview",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-27T03:55:35.288Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Thox-ai/ThoxMini-3B",
   "slug": "thox-ai-thoxmini-3b",
   "author": "Thox-ai",
@@ -45,6 +45,7 @@
   "parameters_human": "3.21B",
   "storage_bytes": 2135597161,
   "storage_human": "2.1 GB",
+  "context_length": 131072,
   "base_model": "meta-llama/Llama-3.2-3B-Instruct",
   "formats": [
     "gguf",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

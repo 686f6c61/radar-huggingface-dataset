@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ahmady36/shaikhy-models",
   "slug": "ahmady36-shaikhy-models",
   "author": "ahmady36",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 1545888052,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "obadx/muaalem-model-v3_2",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CladeTeam/CENO-1B-131k",
   "slug": "cladeteam-ceno-1b-131k",
   "author": "CladeTeam",
@@ -32,14 +32,19 @@
   "parameters_human": "1.30B",
   "storage_bytes": 2604919096,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "CladeTeam/CENO-1.3B-A450M-131k",
+  "renamed_at": "2026-11-11T02:31:14.819Z",
   "benchmarks": [],
   "sources": [
     {

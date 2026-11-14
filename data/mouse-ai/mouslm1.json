@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mouse-AI/MouSLM1",
   "slug": "mouse-ai-mouslm1",
   "author": "Mouse-AI",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 3118007305,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

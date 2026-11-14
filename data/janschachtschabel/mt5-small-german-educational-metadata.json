@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JanSchachtschabel/mt5-small-german-educational-metadata",
   "slug": "janschachtschabel-mt5-small-german-educational-metadata",
   "author": "JanSchachtschabel",
@@ -39,14 +39,19 @@
   "parameters_human": "300.2M",
   "storage_bytes": 2417691191,
   "storage_human": "2.4 GB",
+  "context_length": null,
   "base_model": "deutsche-telekom/mt5-small-sum-de-mit-v1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

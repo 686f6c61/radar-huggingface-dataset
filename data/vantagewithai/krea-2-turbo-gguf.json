@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vantagewithai/Krea-2-Turbo-GGUF",
   "slug": "vantagewithai-krea-2-turbo-gguf",
   "author": "vantagewithai",
@@ -30,6 +30,7 @@
   "parameters_human": "12.90B",
   "storage_bytes": 108126543520,
   "storage_human": "108.1 GB",
+  "context_length": null,
   "base_model": "krea/Krea-2-Turbo",
   "formats": [
     "diffusers",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

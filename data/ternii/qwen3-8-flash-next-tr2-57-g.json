@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ternii/Qwen3.8-Flash-Next-TR2.57-G",
   "slug": "ternii-qwen3-8-flash-next-tr2-57-g",
   "author": "Ternii",
@@ -44,14 +44,19 @@
   "parameters_human": "40.17B",
   "storage_bytes": 104335748562,
   "storage_human": "104.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aitamedia/Ling-3.0-flash-Sante-FP4",
   "slug": "aitamedia-ling-3-0-flash-sante-fp4",
   "author": "aitamedia",
@@ -38,14 +38,19 @@
   "parameters_human": "65.58B",
   "storage_bytes": 70428617171,
   "storage_human": "70.4 GB",
+  "context_length": null,
   "base_model": "inclusionAI/Ling-3.0-flash-Sante",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

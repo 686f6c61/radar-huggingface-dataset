@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/MiMo-V2.6-Flash-MOPD-BPW2.5-GGUF",
   "slug": "amaimedia-mimo-v2-6-flash-mopd-bpw2-5-gguf",
   "author": "AMAImedia",
@@ -259,14 +259,19 @@
   "parameters_human": "309.77B",
   "storage_bytes": 98305049616,
   "storage_human": "98.3 GB",
+  "context_length": 1048576,
   "base_model": "XiaomiMiMo/MiMo-V2.6-Flash-MOPD, AesSedai/MiMo-V2.6-Flash-MOPD-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

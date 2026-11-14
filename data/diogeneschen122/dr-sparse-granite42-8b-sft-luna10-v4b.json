@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DiogenesChen122/Dr.Sparse-Granite42-8B-SFT-luna10-v4b",
   "slug": "diogeneschen122-dr-sparse-granite42-8b-sft-luna10-v4b",
   "author": "DiogenesChen122",
@@ -31,14 +31,19 @@
   "parameters_human": "8.79B",
   "storage_bytes": 17979142064,
   "storage_human": "18.0 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.2-8b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

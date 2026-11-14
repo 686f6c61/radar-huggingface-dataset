@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fpadovani/nor-latn-10mb-100mb_seed10",
   "slug": "fpadovani-nor-latn-10mb-100mb_seed10",
   "author": "fpadovani",
@@ -32,14 +32,19 @@
   "parameters_human": "39.1M",
   "storage_bytes": 157533362,
   "storage_human": "158 MB",
+  "context_length": null,
   "base_model": "goldfish-models/nor_latn_10mb",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-22T10:56:24.773Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

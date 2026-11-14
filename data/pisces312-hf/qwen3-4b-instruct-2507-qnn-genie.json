@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pisces312-hf/Qwen3-4B-Instruct-2507-QNN-Genie",
   "slug": "pisces312-hf-qwen3-4b-instruct-2507-qnn-genie",
   "author": "pisces312-hf",
@@ -43,12 +43,17 @@
   "parameters_human": null,
   "storage_bytes": 3184085950,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

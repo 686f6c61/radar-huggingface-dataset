@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sjmeis/skill-classifier-small-v3.5",
   "slug": "sjmeis-skill-classifier-small-v3-5",
   "author": "sjmeis",
@@ -24,14 +24,19 @@
   "parameters_human": "28.8M",
   "storage_bytes": 115072313,
   "storage_human": "115 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

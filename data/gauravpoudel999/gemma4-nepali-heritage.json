@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gauravpoudel999/gemma4-nepali-heritage",
   "slug": "gauravpoudel999-gemma4-nepali-heritage",
   "author": "gauravpoudel999",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 179058046,
   "storage_human": "179 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

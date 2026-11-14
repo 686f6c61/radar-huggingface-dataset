@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cpral/HomeIMG-1.2B-PL-EN-epoch34",
   "slug": "cpral-homeimg-1-2b-pl-en-epoch34",
   "author": "cpral",
@@ -42,6 +42,7 @@
   "parameters_human": "1.24B",
   "storage_bytes": 9823832066,
   "storage_human": "9.8 GB",
+  "context_length": null,
   "base_model": "cpral/HomeIMG-1.2B-PL-EN-epoch22, cpral/Poziomka-Baza-2026-09-05",
   "formats": [
     "diffusers",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

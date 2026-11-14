@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thanhdath/FINER-SQL-0.5B-CoRE-RL3000-a6000-20261023",
   "slug": "thanhdath-finer-sql-0-5b-core-rl3000-a6000-20261023",
   "author": "thanhdath",
@@ -33,14 +33,19 @@
   "parameters_human": "494.0M",
   "storage_bytes": 999519720,
   "storage_human": "1000 MB",
+  "context_length": null,
   "base_model": "griffith-bigdata/FINER-SQL-0.5B-BIRD",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-10T08:30:05.891Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

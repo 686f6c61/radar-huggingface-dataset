@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "miyuki17/openevo-qwen25-7b-webshop-sd-lora",
   "slug": "miyuki17-openevo-qwen25-7b-webshop-sd-lora",
   "author": "miyuki17",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 80860088,
   "storage_human": "81 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "openevo-recovery/openevo-qwen25-7b-webshop-sd-lora",
+  "renamed_at": "2026-11-12T06:35:18.613Z",
   "benchmarks": [],
   "sources": [
     {

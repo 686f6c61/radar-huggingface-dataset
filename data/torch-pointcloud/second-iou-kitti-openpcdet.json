@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "torch-pointcloud/second-iou.kitti.openpcdet",
   "slug": "torch-pointcloud-second-iou-kitti-openpcdet",
   "author": "torch-pointcloud",
@@ -31,14 +31,19 @@
   "parameters_human": "12.0M",
   "storage_bytes": 47843388,
   "storage_human": "48 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

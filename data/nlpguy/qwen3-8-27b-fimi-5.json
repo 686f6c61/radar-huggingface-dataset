@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nlpguy/Qwen3.8-27B-Fimi-5",
   "slug": "nlpguy-qwen3-8-27b-fimi-5",
   "author": "nlpguy",
@@ -35,14 +35,19 @@
   "parameters_human": "27.36B",
   "storage_bytes": 54733596117,
   "storage_human": "54.7 GB",
+  "context_length": null,
   "base_model": "nlpguy/Qwen3.8-27B-Fimi-4",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-26T05:17:35.244Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

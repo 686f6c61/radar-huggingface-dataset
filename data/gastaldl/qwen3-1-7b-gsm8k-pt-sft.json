@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Gastaldl/qwen3-1.7b-gsm8k-pt-sft",
   "slug": "gastaldl-qwen3-1-7b-gsm8k-pt-sft",
   "author": "Gastaldl",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 34917112,
   "storage_human": "35 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

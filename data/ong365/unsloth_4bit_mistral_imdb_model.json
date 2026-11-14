@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ong365/unsloth_4bit_mistral_imdb_model",
   "slug": "ong365-unsloth_4bit_mistral_imdb_model",
   "author": "ong365",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 167832240,
   "storage_human": "168 MB",
+  "context_length": null,
   "base_model": "unsloth/mistral-7b-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

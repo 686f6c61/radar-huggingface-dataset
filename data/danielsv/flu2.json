@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "danielsv/flu2",
   "slug": "danielsv-flu2",
   "author": "danielsv",
@@ -23,6 +23,7 @@
   "parameters_human": "84.0M",
   "storage_bytes": 168912912103,
   "storage_human": "168.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -30,8 +31,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

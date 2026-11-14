@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vkovtun/gemma-text-to-sql-2026-09-27_16.09.00-gemma-4-E2B-it-finetune-QLORA",
   "slug": "vkovtun-gemma-text-to-sql-2026-09-27_16-09-00-gemma-4-e2b-it-finetune-qlora",
   "author": "vkovtun",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 1289133627,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

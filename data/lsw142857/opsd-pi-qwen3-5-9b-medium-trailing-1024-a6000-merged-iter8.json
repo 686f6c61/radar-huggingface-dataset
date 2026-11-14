@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged-Iter8",
   "slug": "lsw142857-opsd-pi-qwen3-5-9b-medium-trailing-1024-a6000-merged-iter8",
   "author": "LSW142857",
@@ -32,14 +32,19 @@
   "parameters_human": "9.65B",
   "storage_bytes": 19326293413,
   "storage_human": "19.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

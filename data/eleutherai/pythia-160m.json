@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EleutherAI/pythia-160m",
   "slug": "eleutherai-pythia-160m",
   "author": "EleutherAI",
@@ -39,14 +39,19 @@
   "parameters_human": "212.7M",
   "storage_bytes": 159198898363,
   "storage_human": "159.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

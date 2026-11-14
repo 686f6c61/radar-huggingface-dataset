@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Openintelligent123/DeepSeek-R1-Distill-Qwen-7B",
   "slug": "openintelligent123-deepseek-r1-distill-qwen-7b",
   "author": "Openintelligent123",
@@ -30,14 +30,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 15231271850,
   "storage_human": "15.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kamyar-zeinalipour/mistral-7b-drug-prots",
   "slug": "kamyar-zeinalipour-mistral-7b-drug-prots",
   "author": "Kamyar-zeinalipour",
@@ -32,14 +32,19 @@
   "parameters_human": "266240",
   "storage_bytes": 14496649240,
   "storage_human": "14.5 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-7B-v0.3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/PINQWEN-3.5-9B-1M-BF16-GGUF",
   "slug": "mradermacher-pinqwen-3-5-9b-1m-bf16-gguf",
   "author": "mradermacher",
@@ -35,14 +35,19 @@
   "parameters_human": "9.20B",
   "storage_bytes": 85101505728,
   "storage_human": "85.1 GB",
+  "context_length": 1048576,
   "base_model": "Blackfrost-AI/PINQWEN-3.5-9B-1M-BF16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

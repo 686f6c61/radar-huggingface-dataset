@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/K2-Horizon-32B-heretic-GGUF",
   "slug": "mradermacher-k2-horizon-32b-heretic-gguf",
   "author": "mradermacher",
@@ -41,14 +41,19 @@
   "parameters_human": "34.78B",
   "storage_bytes": 238837671936,
   "storage_human": "238.8 GB",
+  "context_length": 524288,
   "base_model": "soyaakinohara/K2-Horizon-32B-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

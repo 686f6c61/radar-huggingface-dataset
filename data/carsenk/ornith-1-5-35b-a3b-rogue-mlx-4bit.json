@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "carsenk/Ornith-1.5-35B-A3B-ROGUE-MLX-4bit",
   "slug": "carsenk-ornith-1-5-35b-a3b-rogue-mlx-4bit",
   "author": "carsenk",
@@ -42,6 +42,7 @@
   "parameters_human": "34.66B",
   "storage_bytes": 19529013246,
   "storage_human": "19.5 GB",
+  "context_length": null,
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "mlx",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

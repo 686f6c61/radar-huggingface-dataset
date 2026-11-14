@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "matthewj-t6/Qwen3-1.7B-4bit",
   "slug": "matthewj-t6-qwen3-1-7b-4bit",
   "author": "matthewj-t6",
@@ -30,6 +30,7 @@
   "parameters_human": "1.72B",
   "storage_bytes": 979502864,
   "storage_human": "980 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-27T02:35:38.411Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xirr/inspark_marlin",
   "slug": "xirr-inspark_marlin",
   "author": "xirr",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 629312451,
   "storage_human": "629 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-08T05:36:25.951Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

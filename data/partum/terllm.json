@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "partum/terllm",
   "slug": "partum-terllm",
   "author": "partum",
@@ -36,6 +36,7 @@
   "parameters_human": "134.6M",
   "storage_bytes": 1018360272,
   "storage_human": "1.0 GB",
+  "context_length": 8192,
   "base_model": "HuggingFaceTB/SmolLM2-135M",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

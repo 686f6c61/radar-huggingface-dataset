@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "oakmindai/DeepSeek-V4-Flash-0731-DSFP4-FTW",
   "slug": "oakmindai-deepseek-v4-flash-0731-dsfp4-ftw",
   "author": "oakmindai",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 157460918272,
   "storage_human": "157.5 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

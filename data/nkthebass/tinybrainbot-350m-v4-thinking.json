@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nkthebass/tinybrainbot-350m-v4-thinking",
   "slug": "nkthebass-tinybrainbot-350m-v4-thinking",
   "author": "nkthebass",
@@ -40,6 +40,7 @@
   "parameters_human": "348.3M",
   "storage_bytes": 1395043655,
   "storage_human": "1.4 GB",
+  "context_length": 2048,
   "base_model": "nkthebass/tinybrainbot-350mV3-base",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

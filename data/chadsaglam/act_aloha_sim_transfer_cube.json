@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ChadSaglam/act_aloha_sim_transfer_cube",
   "slug": "chadsaglam-act_aloha_sim_transfer_cube",
   "author": "ChadSaglam",
@@ -32,14 +32,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 206773088,
   "storage_human": "207 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "AlohaTransferCube-v0 (gym-aloha)",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jbilcke/vllm-decision-2.0-mlx",
   "slug": "jbilcke-vllm-decision-2-0-mlx",
   "author": "jbilcke",
@@ -32,6 +32,7 @@
   "parameters_human": null,
   "storage_bytes": 13310276113,
   "storage_human": "13.3 GB",
+  "context_length": null,
   "base_model": "vllm-sr/Decision-2.0-Kai-0.6B, vllm-sr/Decision-2.0-Eos-0.8B, vllm-sr/Decision-2.0-Sol-2B, vllm-sr/Decision-2.0-Nox-4B",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jkim96/Seed-Coder-8B-Reasoning-DASHQ-Q2-GGUF",
   "slug": "jkim96-seed-coder-8b-reasoning-dashq-q2-gguf",
   "author": "jkim96",
@@ -32,14 +32,19 @@
   "parameters_human": "8.25B",
   "storage_bytes": 12141612288,
   "storage_human": "12.1 GB",
+  "context_length": 65536,
   "base_model": "ByteDance-Seed/Seed-Coder-8B-Reasoning",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

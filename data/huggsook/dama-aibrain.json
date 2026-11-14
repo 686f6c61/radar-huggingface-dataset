@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "huggsook/dama-aibrain",
   "slug": "huggsook-dama-aibrain",
   "author": "huggsook",
@@ -34,6 +34,7 @@
   "parameters_human": "5.12B",
   "storage_bytes": 23487102071,
   "storage_human": "23.5 GB",
+  "context_length": 131072,
   "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
   "formats": [
     "gguf",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-04T07:03:56.509Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

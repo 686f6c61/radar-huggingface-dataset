@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "1Thugga17/Ornith-1.5-9B-OBLITERATED",
   "slug": "1thugga17-ornith-1-5-9b-obliterated",
   "author": "1Thugga17",
@@ -38,6 +38,7 @@
   "parameters_human": "9.65B",
   "storage_bytes": 82426184038,
   "storage_human": "82.4 GB",
+  "context_length": 262144,
   "base_model": "ornith-ai/Ornith-1.5-9B",
   "formats": [
     "gguf",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

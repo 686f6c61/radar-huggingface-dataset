@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ByteOtter/Qwen3.5-4B-CADA-IQ2_XS",
   "slug": "byteotter-qwen3-5-4b-cada-iq2_xs",
   "author": "ByteOtter",
@@ -25,14 +25,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 1637318816,
   "storage_human": "1.6 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-08T05:33:10.304Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

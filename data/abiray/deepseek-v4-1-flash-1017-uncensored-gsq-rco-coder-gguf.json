@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Abiray/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-Coder-GGUF",
   "slug": "abiray-deepseek-v4-1-flash-1017-uncensored-gsq-rco-coder-gguf",
   "author": "Abiray",
@@ -34,14 +34,19 @@
   "parameters_human": "196.61B",
   "storage_bytes": 183691066368,
   "storage_human": "183.7 GB",
+  "context_length": null,
   "base_model": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-Coder-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlx-community/GOT-OCR2_0-bf16",
   "slug": "mlx-community-got-ocr2_0-bf16",
   "author": "mlx-community",
@@ -37,6 +37,7 @@
   "parameters_human": "560.5M",
   "storage_bytes": 1121113914,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "stepfun-ai/GOT-OCR2_0",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

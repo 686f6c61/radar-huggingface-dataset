@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "momergul/corrected__llama_3_instruct_redone_sft_with_all_ckpt_1",
   "slug": "momergul-corrected__llama_3_instruct_redone_sft_with_all_ckpt_1",
   "author": "momergul",
@@ -22,14 +22,19 @@
   "parameters_human": null,
   "storage_bytes": 468718630869,
   "storage_human": "468.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-02T13:14:23.173Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

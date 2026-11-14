@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Renesas/ConvMixer-768-32-ONNX",
   "slug": "renesas-convmixer-768-32-onnx",
   "author": "Renesas",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 84953028,
   "storage_human": "85 MB",
+  "context_length": null,
   "base_model": "timm/convmixer_768_32.in1k",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

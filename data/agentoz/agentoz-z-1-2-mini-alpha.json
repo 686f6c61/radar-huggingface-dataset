@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agentOz/agentoz-z-1-2-mini-alpha",
   "slug": "agentoz-agentoz-z-1-2-mini-alpha",
   "author": "agentOz",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 75909459,
   "storage_human": "76 MB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

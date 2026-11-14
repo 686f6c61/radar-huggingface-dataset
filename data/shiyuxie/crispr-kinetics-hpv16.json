@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shiyuxie/crispr-kinetics-hpv16",
   "slug": "shiyuxie-crispr-kinetics-hpv16",
   "author": "shiyuxie",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 7873426,
   "storage_human": "8 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

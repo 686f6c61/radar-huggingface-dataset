@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_SmolVLA_bs32_step5000",
   "slug": "dongkkka-task_000004_peanut_pick_place_lerobot_intern_smolvla_bs32_step5000",
   "author": "Dongkkka",
@@ -26,14 +26,19 @@
   "parameters_human": "450.0M",
   "storage_bytes": 1197793352,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T02:52:26.210Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

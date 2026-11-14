@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mx297/EO-Jev",
   "slug": "mx297-eo-jev",
   "author": "mx297",
@@ -43,14 +43,19 @@
   "parameters_human": "8.39B",
   "storage_bytes": 16802576003,
   "storage_human": "16.8 GB",
+  "context_length": null,
   "base_model": "vllm-sr/d3-flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

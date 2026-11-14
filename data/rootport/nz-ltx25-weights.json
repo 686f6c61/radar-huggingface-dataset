@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rootport/Nz-LTX25-weights",
   "slug": "rootport-nz-ltx25-weights",
   "author": "Rootport",
@@ -35,14 +35,19 @@
   "parameters_human": "21.00B",
   "storage_bytes": 18860373150,
   "storage_human": "18.9 GB",
+  "context_length": null,
   "base_model": "Lightricks/LTX-2.5, Lightricks/LTX-2.5-22b-IC-LoRA-Alpha-Gen",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

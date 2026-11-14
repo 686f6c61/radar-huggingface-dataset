@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "moolvylabs/Morphy-Math-1.5B-GGUF",
   "slug": "moolvylabs-morphy-math-1-5b-gguf",
   "author": "moolvylabs",
@@ -33,14 +33,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 5030409856,
   "storage_human": "5.0 GB",
+  "context_length": 4096,
   "base_model": "qwen2.5-math-1.5b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

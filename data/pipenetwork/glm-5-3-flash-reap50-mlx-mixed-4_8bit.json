@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pipenetwork/GLM-5.3-Flash-REAP50-MLX-mixed-4_8bit",
   "slug": "pipenetwork-glm-5-3-flash-reap50-mlx-mixed-4_8bit",
   "author": "pipenetwork",
@@ -32,6 +32,7 @@
   "parameters_human": "161.66B",
   "storage_bytes": 96280413901,
   "storage_human": "96.3 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

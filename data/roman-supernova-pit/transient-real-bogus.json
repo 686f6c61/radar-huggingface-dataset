@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Roman-Supernova-PIT/transient-real-bogus",
   "slug": "roman-supernova-pit-transient-real-bogus",
   "author": "Roman-Supernova-PIT",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 4073504348,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-05T07:46:15.222Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

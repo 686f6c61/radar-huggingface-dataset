@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Comfy-Org/gemma-4",
   "slug": "comfy-org-gemma-4",
   "author": "Comfy-Org",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 84659209962,
   "storage_human": "84.7 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-12B-it, google/gemma-4-E2B-it, google/gemma-4-E4B-it",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

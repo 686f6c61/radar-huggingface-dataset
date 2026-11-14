@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hoborific/Melinoe-Gemma4-31B-VL-heretic-W8A16-FP8",
   "slug": "hoborific-melinoe-gemma4-31b-vl-heretic-w8a16-fp8",
   "author": "hoborific",
@@ -33,14 +33,19 @@
   "parameters_human": "31.27B",
   "storage_bytes": 33308744698,
   "storage_human": "33.3 GB",
+  "context_length": null,
   "base_model": "bgg1996/Melinoe-Gemma4-31B-VL-heretic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

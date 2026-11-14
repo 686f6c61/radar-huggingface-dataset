@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "johnlockejrr/Swift-1.5-Flash-Next-Heretic-V2-ht43-HGN",
   "slug": "johnlockejrr-swift-1-5-flash-next-heretic-v2-ht43-hgn",
   "author": "johnlockejrr",
@@ -47,12 +47,17 @@
   "parameters_human": null,
   "storage_bytes": 109729230220,
   "storage_human": "109.7 GB",
+  "context_length": null,
   "base_model": "trubisky/Swift-1.5-Flash-Next-Heretic-ReverseEngineer",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-03T04:36:42.404Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

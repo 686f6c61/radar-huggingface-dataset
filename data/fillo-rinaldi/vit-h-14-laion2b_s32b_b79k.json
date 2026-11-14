@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fillo-rinaldi/ViT-H-14-laion2b_s32b_b79k",
   "slug": "fillo-rinaldi-vit-h-14-laion2b_s32b_b79k",
   "author": "fillo-rinaldi",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 63114830128,
   "storage_human": "63.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

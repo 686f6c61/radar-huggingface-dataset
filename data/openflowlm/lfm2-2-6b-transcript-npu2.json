@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OpenFlowLM/LFM2-2.6B-Transcript-NPU2",
   "slug": "openflowlm-lfm2-2-6b-transcript-npu2",
   "author": "OpenFlowLM",
@@ -34,12 +34,17 @@
   "parameters_human": null,
   "storage_bytes": 1874619128,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2-2.6B",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

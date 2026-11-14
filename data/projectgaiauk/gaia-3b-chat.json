@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ProjectGaiaUK/gaia-3b-chat",
   "slug": "projectgaiauk-gaia-3b-chat",
   "author": "ProjectGaiaUK",
@@ -39,14 +39,19 @@
   "parameters_human": "2.98B",
   "storage_bytes": 5952097048,
   "storage_human": "6.0 GB",
+  "context_length": null,
   "base_model": "ProjectGaiaUK/gaia-3b-base-128k",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

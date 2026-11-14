@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "muhamad-geosurge/invert-polarity-ba6e9a2c-5741-4180-98d8-772ab7fdbf70",
   "slug": "muhamad-geosurge-invert-polarity-ba6e9a2c-5741-4180-98d8-772ab7fdbf70",
   "author": "muhamad-geosurge",
@@ -31,14 +31,19 @@
   "parameters_human": "7.52B",
   "storage_bytes": 15068419023,
   "storage_human": "15.1 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

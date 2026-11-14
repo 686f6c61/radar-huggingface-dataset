@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wangzhang/gemma-4-31B-it-abliterated-GGUF",
   "slug": "wangzhang-gemma-4-31b-it-abliterated-gguf",
   "author": "wangzhang",
@@ -34,14 +34,19 @@
   "parameters_human": "30.70B",
   "storage_bytes": 153268556544,
   "storage_human": "153.3 GB",
+  "context_length": 262144,
   "base_model": "wangzhang/gemma-4-31B-it-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

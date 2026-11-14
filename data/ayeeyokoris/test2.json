@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ayeeyokoris/test2",
   "slug": "ayeeyokoris-test2",
   "author": "ayeeyokoris",
@@ -27,14 +27,19 @@
   "parameters_human": "39.9M",
   "storage_bytes": 2552599040,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-29T04:06:59.679Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

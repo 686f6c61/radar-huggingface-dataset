@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mosahary/gemma-4-12b-it-qat-abliterated",
   "slug": "mosahary-gemma-4-12b-it-qat-abliterated",
   "author": "mosahary",
@@ -36,14 +36,19 @@
   "parameters_human": "11.96B",
   "storage_bytes": 23953270010,
   "storage_human": "24.0 GB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-12B-it-qat-q4_0-unquantized",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-02T02:31:56.510Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

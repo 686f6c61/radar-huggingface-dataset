@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RoboWonsuhk/JM2D",
   "slug": "robowonsuhk-jm2d",
   "author": "RoboWonsuhk",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 4136566758,
   "storage_human": "4.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

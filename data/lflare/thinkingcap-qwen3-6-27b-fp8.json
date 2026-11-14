@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lflare/ThinkingCap-Qwen3.6-27B-FP8",
   "slug": "lflare-thinkingcap-qwen3-6-27b-fp8",
   "author": "lflare",
@@ -33,14 +33,19 @@
   "parameters_human": "27.78B",
   "storage_bytes": 38475373069,
   "storage_human": "38.5 GB",
+  "context_length": null,
   "base_model": "bottlecapai/ThinkingCap-Qwen3.6-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

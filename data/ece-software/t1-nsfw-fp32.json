@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ECE-Software/t1-nsfw-fp32",
   "slug": "ece-software-t1-nsfw-fp32",
   "author": "ECE-Software",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 13137569,
   "storage_human": "13 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ECE-Software/connect-t1-nsfw-fp32",
+  "renamed_at": "2026-11-14T02:54:08.621Z",
   "benchmarks": [],
   "sources": [
     {

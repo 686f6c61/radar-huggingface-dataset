@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "UraionLabs/uraion-forge-2b-mlx",
   "slug": "uraionlabs-uraion-forge-2b-mlx",
   "author": "UraionLabs",
@@ -51,6 +51,7 @@
   "parameters_human": "2.52B",
   "storage_bytes": 5033556906,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM5-2B",
   "formats": [
     "mlx",
@@ -58,8 +59,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

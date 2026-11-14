@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tadiecool29/STL-Full-FT-mt5-base-sentiment",
   "slug": "tadiecool29-stl-full-ft-mt5-base-sentiment",
   "author": "tadiecool29",
@@ -34,14 +34,19 @@
   "parameters_human": "582.4M",
   "storage_bytes": 1181172328,
   "storage_human": "1.2 GB",
+  "context_length": null,
   "base_model": "google/mt5-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

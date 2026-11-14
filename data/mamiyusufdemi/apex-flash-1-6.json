@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mamiyusufdemi/apex.flash.1.6",
   "slug": "mamiyusufdemi-apex-flash-1-6",
   "author": "mamiyusufdemi",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 17209920,
   "storage_human": "17 MB",
+  "context_length": null,
   "base_model": "unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

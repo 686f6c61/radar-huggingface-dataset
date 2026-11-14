@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "benjkoch/Qwen2.5-3B-Instruct-Sheldon-RLAIF-v2",
   "slug": "benjkoch-qwen2-5-3b-instruct-sheldon-rlaif-v2",
   "author": "benjkoch",
@@ -41,14 +41,19 @@
   "parameters_human": null,
   "storage_bytes": 250958164,
   "storage_human": "251 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

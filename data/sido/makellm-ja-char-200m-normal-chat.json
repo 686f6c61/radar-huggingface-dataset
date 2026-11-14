@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sido/makellm-ja-char-200m-normal-chat",
   "slug": "sido-makellm-ja-char-200m-normal-chat",
   "author": "Sido",
@@ -43,14 +43,19 @@
   "parameters_human": "217.0M",
   "storage_bytes": 666359936,
   "storage_human": "666 MB",
+  "context_length": 512,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

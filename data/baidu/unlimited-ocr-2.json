@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "baidu/Unlimited-OCR-2",
   "slug": "baidu-unlimited-ocr-2",
   "author": "baidu",
@@ -29,21 +29,26 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 690,
+  "likes": 696,
   "downloads_30d": 535304,
-  "trending_score": 43,
+  "trending_score": 45,
   "parameters": 3343978497,
   "parameters_human": "3.34B",
   "storage_bytes": 7119584517,
   "storage_human": "7.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

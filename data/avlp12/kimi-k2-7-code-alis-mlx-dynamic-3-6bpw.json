@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "avlp12/Kimi-K2.7-Code-Alis-MLX-Dynamic-3.6bpw",
   "slug": "avlp12-kimi-k2-7-code-alis-mlx-dynamic-3-6bpw",
   "author": "avlp12",
@@ -39,6 +39,7 @@
   "parameters_human": null,
   "storage_bytes": 3661173,
   "storage_human": "4 MB",
+  "context_length": null,
   "base_model": "moonshotai/Kimi-K2.7-Code",
   "formats": [
     "mlx",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

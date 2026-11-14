@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "darkbit1001/wangzhang-gemma-4-31B-it-abliterated-EXL3-3.50bpw-H6",
   "slug": "darkbit1001-wangzhang-gemma-4-31b-it-abliterated-exl3-3-50bpw-h6",
   "author": "darkbit1001",
@@ -31,14 +31,19 @@
   "parameters_human": "8.74B",
   "storage_bytes": 17508161672,
   "storage_human": "17.5 GB",
+  "context_length": null,
   "base_model": "wangzhang/gemma-4-31B-it-abliterated",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

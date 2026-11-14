@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iromu/qwen25-1.5b-tools-GGUF",
   "slug": "iromu-qwen25-1-5b-tools-gguf",
   "author": "iromu",
@@ -38,14 +38,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 9950228300,
   "storage_human": "10.0 GB",
+  "context_length": 32768,
   "base_model": "unsloth/Qwen2.5-1.5B-Instruct",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "iromu/Qwen2.5-1.5B-tools-GGUF",
+  "renamed_at": "2026-11-11T05:41:52.823Z",
   "benchmarks": [],
   "sources": [
     {

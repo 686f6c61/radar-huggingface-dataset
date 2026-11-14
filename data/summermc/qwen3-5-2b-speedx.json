@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "summerMC/Qwen3.5-2B-SpeedX",
   "slug": "summermc-qwen3-5-2b-speedx",
   "author": "summerMC",
@@ -39,14 +39,19 @@
   "parameters_human": "1.92B",
   "storage_bytes": 14928582588,
   "storage_human": "14.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "j-llm/Qwen3.5-2B-SpeedX",
+  "renamed_at": "2026-11-11T07:39:43.150Z",
   "benchmarks": [],
   "sources": [
     {

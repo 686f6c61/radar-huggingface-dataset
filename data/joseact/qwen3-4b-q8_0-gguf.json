@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "joseact/Qwen3-4B-Q8_0-GGUF",
   "slug": "joseact-qwen3-4b-q8_0-gguf",
   "author": "joseact",
@@ -31,14 +31,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 4280405280,
   "storage_human": "4.3 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Devil-Assassin/wandering-mode",
   "slug": "devil-assassin-wandering-mode",
   "author": "Devil-Assassin",
@@ -24,12 +24,17 @@
   "parameters_human": null,
   "storage_bytes": 388814758,
   "storage_human": "389 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Devil-Assassin/iVision",
+  "renamed_at": "2026-11-11T02:38:14.765Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Zyrabit-IA/zyra-multitask-master",
   "slug": "zyrabit-ia-zyra-multitask-master",
   "author": "Zyrabit-IA",
@@ -39,14 +39,19 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Zyrabit-Hub/zyra-multitask-master",
+  "renamed_at": "2026-11-13T04:30:18.005Z",
   "benchmarks": [],
   "sources": [
     {

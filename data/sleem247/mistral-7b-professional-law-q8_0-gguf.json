@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sleem247/mistral-7b-professional-law-Q8_0-GGUF",
   "slug": "sleem247-mistral-7b-professional-law-q8_0-gguf",
   "author": "Sleem247",
@@ -33,14 +33,19 @@
   "parameters_human": "41.9M",
   "storage_bytes": 65239712,
   "storage_human": "65 MB",
+  "context_length": null,
   "base_model": "asabry1233/mistral-7b-professional-law",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

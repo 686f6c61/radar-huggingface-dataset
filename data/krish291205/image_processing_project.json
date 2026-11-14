@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Krish291205/Image_Processing_Project",
   "slug": "krish291205-image_processing_project",
   "author": "Krish291205",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 853036929,
   "storage_human": "853 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

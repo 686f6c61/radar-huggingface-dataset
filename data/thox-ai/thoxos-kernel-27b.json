@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Thox-ai/ThoxOS-Kernel-27B",
   "slug": "thox-ai-thoxos-kernel-27b",
   "author": "Thox-ai",
@@ -45,6 +45,7 @@
   "parameters_human": "3.1M",
   "storage_bytes": 100727195165,
   "storage_human": "100.7 GB",
+  "context_length": 262144,
   "base_model": "JonathanColetti/Qwen3.8-27B-Uncensored",
   "formats": [
     "gguf",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

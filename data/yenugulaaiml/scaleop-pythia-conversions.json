@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YenugulaAIML/scaleop-pythia-conversions",
   "slug": "yenugulaaiml-scaleop-pythia-conversions",
   "author": "YenugulaAIML",
@@ -38,12 +38,17 @@
   "parameters_human": null,
   "storage_bytes": 98542109368,
   "storage_human": "98.5 GB",
+  "context_length": null,
   "base_model": "EleutherAI/pythia-1.4b",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

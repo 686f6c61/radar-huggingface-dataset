@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Miiche/visualrl-ft-r9p1",
   "slug": "miiche-visualrl-ft-r9p1",
   "author": "Miiche",
@@ -23,14 +23,19 @@
   "parameters_human": "8.29B",
   "storage_bytes": 49764665456,
   "storage_human": "49.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-17T10:00:59.246Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

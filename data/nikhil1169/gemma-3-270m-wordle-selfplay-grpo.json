@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Nikhil1169/gemma-3-270m-wordle-selfplay-grpo",
   "slug": "nikhil1169-gemma-3-270m-wordle-selfplay-grpo",
   "author": "Nikhil1169",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 1741031674,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "unsloth/gemma-3-270m-it-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

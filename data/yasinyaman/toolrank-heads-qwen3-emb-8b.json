@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yasinyaman/toolrank-heads-qwen3-emb-8b",
   "slug": "yasinyaman-toolrank-heads-qwen3-emb-8b",
   "author": "yasinyaman",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 59816306,
   "storage_human": "60 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Embedding-8B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "yasinyaman/callbus-heads-qwen3-emb-8b",
+  "renamed_at": "2026-11-13T08:40:48.283Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lgris/wav2vec2-podcasts-tagarela-combined",
   "slug": "lgris-wav2vec2-podcasts-tagarela-combined",
   "author": "lgris",
@@ -35,14 +35,19 @@
   "parameters_human": "94.4M",
   "storage_bytes": 377675724,
   "storage_human": "378 MB",
+  "context_length": null,
   "base_model": "lgris/w2v_podcasts_base_400k_pt",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

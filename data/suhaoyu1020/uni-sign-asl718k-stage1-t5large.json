@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SuhaoYu1020/Uni-Sign-ASL718k-stage1-t5large",
   "slug": "suhaoyu1020-uni-sign-asl718k-stage1-t5large",
   "author": "SuhaoYu1020",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 3043588138,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wafureshugen/LFM3-1.7B-genshin-ru-rp",
   "slug": "wafureshugen-lfm3-1-7b-genshin-ru-rp",
   "author": "wafureshugen",
@@ -33,14 +33,19 @@
   "parameters_human": "1.73B",
   "storage_bytes": 3475544082,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

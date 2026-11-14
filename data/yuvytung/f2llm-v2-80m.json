@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yuvytung/F2LLM-v2-80M",
   "slug": "yuvytung-f2llm-v2-80m",
   "author": "yuvytung",
@@ -28,14 +28,19 @@
   "parameters_human": "80.1M",
   "storage_bytes": 974462400,
   "storage_human": "974 MB",
+  "context_length": 40960,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

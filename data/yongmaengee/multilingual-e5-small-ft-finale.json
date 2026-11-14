@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yongmaengee/multilingual-e5-small-ft-finale",
   "slug": "yongmaengee-multilingual-e5-small-ft-finale",
   "author": "yongmaengee",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 3029333082,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": "dragonkue/snowflake-arctic-embed-l-v2.0-ko, upskyy/kf-deberta-multitask",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

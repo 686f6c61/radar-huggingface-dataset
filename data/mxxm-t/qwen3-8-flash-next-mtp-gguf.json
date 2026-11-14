@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mxxm-t/Qwen3.8-Flash-Next-MTP-GGUF",
   "slug": "mxxm-t-qwen3-8-flash-next-mtp-gguf",
   "author": "mxxm-t",
@@ -35,14 +35,19 @@
   "parameters_human": "3.88B",
   "storage_bytes": 11906654784,
   "storage_human": "11.9 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

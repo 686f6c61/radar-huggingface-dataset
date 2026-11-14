@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mistralai/Mistral-Small-3.1-24B-Instruct-2503",
   "slug": "mistralai-mistral-small-3-1-24b-instruct-2503",
   "author": "mistralai",
@@ -79,14 +79,19 @@
   "parameters_human": "24.01B",
   "storage_bytes": 96115639662,
   "storage_human": "96.1 GB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-Small-3.1-24B-Base-2503",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

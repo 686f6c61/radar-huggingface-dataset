@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AnthonyPa57/Vesemir-dryrun",
   "slug": "anthonypa57-vesemir-dryrun",
   "author": "AnthonyPa57",
@@ -28,14 +28,19 @@
   "parameters_human": "807936",
   "storage_bytes": 77865667,
   "storage_human": "78 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-19T10:33:33.453Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

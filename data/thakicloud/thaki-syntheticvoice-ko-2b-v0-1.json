@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ThakiCloud/Thaki-SyntheticVoice-KO-2B-v0.1",
   "slug": "thakicloud-thaki-syntheticvoice-ko-2b-v0-1",
   "author": "ThakiCloud",
@@ -35,14 +35,19 @@
   "parameters_human": "2.29B",
   "storage_bytes": 4957298030,
   "storage_human": "5.0 GB",
+  "context_length": null,
   "base_model": "openbmb/VoxCPM2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

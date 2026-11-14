@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ura0316/zils-mini-body-s1-blend-3of4",
   "slug": "ura0316-zils-mini-body-s1-blend-3of4",
   "author": "Ura0316",
@@ -29,14 +29,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 9078616080,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": "torchcast-ai/torchcast-decision-4b, vllm-sr/d3-mini",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "borekboissy/Millesime-2026-4b-phase1",
   "slug": "borekboissy-millesime-2026-4b-phase1",
   "author": "borekboissy",
@@ -34,14 +34,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 8056412427,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-13T03:58:32.311Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

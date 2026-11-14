@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SeanWang0027/rose-olmo3-7b-from-qwen3-32b-k1024-step220",
   "slug": "seanwang0027-rose-olmo3-7b-from-qwen3-32b-k1024-step220",
   "author": "SeanWang0027",
@@ -31,14 +31,19 @@
   "parameters_human": "7.30B",
   "storage_bytes": 14596063648,
   "storage_human": "14.6 GB",
+  "context_length": null,
   "base_model": "allenai/Olmo-3-7B-Think-SFT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

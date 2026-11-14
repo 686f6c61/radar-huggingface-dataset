@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "christopherthompson81/VibeVoice-ASR-Streaming-1.5B-GGUF",
   "slug": "christopherthompson81-vibevoice-asr-streaming-1-5b-gguf",
   "author": "christopherthompson81",
@@ -51,14 +51,19 @@
   "parameters_human": null,
   "storage_bytes": 22210084800,
   "storage_human": "22.2 GB",
+  "context_length": null,
   "base_model": "microsoft/VibeVoice-ASR-Streaming-1.5B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

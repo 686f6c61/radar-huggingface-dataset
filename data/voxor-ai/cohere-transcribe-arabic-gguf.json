@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "voxor-ai/cohere-transcribe-arabic-gguf",
   "slug": "voxor-ai-cohere-transcribe-arabic-gguf",
   "author": "voxor-ai",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 7129808056,
   "storage_human": "7.1 GB",
+  "context_length": null,
   "base_model": "CohereLabs/cohere-transcribe-arabic-07-2026",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rezanicgil/job-radar-clause-attribution",
   "slug": "rezanicgil-job-radar-clause-attribution",
   "author": "rezanicgil",
@@ -36,14 +36,19 @@
   "parameters_human": "107.0M",
   "storage_bytes": 445075799,
   "storage_human": "445 MB",
+  "context_length": null,
   "base_model": "MoritzLaurer/multilingual-MiniLMv2-L6-mnli-xnli",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

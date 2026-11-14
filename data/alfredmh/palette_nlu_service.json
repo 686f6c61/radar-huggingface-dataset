@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "alfredmh/Palette_nlu_service",
   "slug": "alfredmh-palette_nlu_service",
   "author": "alfredmh",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 997398694,
   "storage_human": "997 MB",
+  "context_length": null,
   "base_model": "sbunlp/fabert",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EphAsad/BactoGemma-270M-Hybrid",
   "slug": "ephasad-bactogemma-270m-hybrid",
   "author": "EphAsad",
@@ -36,14 +36,19 @@
   "parameters_human": "268.1M",
   "storage_bytes": 602824269,
   "storage_human": "603 MB",
+  "context_length": null,
   "base_model": "google/gemma-3-270m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-11T02:42:59.614Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

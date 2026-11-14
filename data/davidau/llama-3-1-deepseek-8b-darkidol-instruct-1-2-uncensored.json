@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidAU/Llama-3.1-DeepSeek-8B-DarkIdol-Instruct-1.2-Uncensored",
   "slug": "davidau-llama-3-1-deepseek-8b-darkidol-instruct-1-2-uncensored",
   "author": "DavidAU",
@@ -42,14 +42,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 16077766256,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": "aifeifei798/DarkIdol-Llama-3.1-8B-Instruct-1.2-Uncensored, DavidAU/LORA-DeepSeek-R1-Distill-Llama-8B-rank-128-INSTRUCT-adapter",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

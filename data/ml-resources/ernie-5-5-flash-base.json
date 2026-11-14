@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ml-resources/ERNIE-5.5-Flash-Base",
   "slug": "ml-resources-ernie-5-5-flash-base",
   "author": "ml-resources",
@@ -38,14 +38,19 @@
   "parameters_human": "286.25B",
   "storage_bytes": 288464845196,
   "storage_human": "288.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

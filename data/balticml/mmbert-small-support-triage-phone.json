@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "balticml/mmbert-small-support-triage-phone",
   "slug": "balticml-mmbert-small-support-triage-phone",
   "author": "balticml",
@@ -53,14 +53,19 @@
   "parameters_human": null,
   "storage_bytes": 43900252,
   "storage_human": "44 MB",
+  "context_length": null,
   "base_model": "jhu-clsp/mmBERT-small",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "balticml/mmbert-small-support-triage-extra-light",
+  "renamed_at": "2026-11-11T04:38:36.368Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ahadprogamer/omnicore-ai-merged",
   "slug": "ahadprogamer-omnicore-ai-merged",
   "author": "ahadprogamer",
@@ -25,14 +25,19 @@
   "parameters_human": "3.09B",
   "storage_bytes": 14409900720,
   "storage_human": "14.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T20:39:04.162Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

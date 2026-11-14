@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "npario/Qwen3.8-27B-MTPLX-Optimized-Quality",
   "slug": "npario-qwen3-8-27b-mtplx-optimized-quality",
   "author": "npario",
@@ -55,6 +55,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 29972477968,
   "storage_human": "30.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "mlx",
@@ -62,8 +63,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

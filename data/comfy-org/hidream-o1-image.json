@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Comfy-Org/HiDream-O1-Image",
   "slug": "comfy-org-hidream-o1-image",
   "author": "Comfy-Org",
@@ -27,12 +27,17 @@
   "parameters_human": null,
   "storage_bytes": 66712090654,
   "storage_human": "66.7 GB",
+  "context_length": null,
   "base_model": "HiDream-ai/HiDream-O1-Image, HiDream-ai/HiDream-O1-Image-Dev",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

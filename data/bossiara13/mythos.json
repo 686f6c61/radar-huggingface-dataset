@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Bossiara13/Mythos",
   "slug": "bossiara13-mythos",
   "author": "Bossiara13",
@@ -26,14 +26,19 @@
   "parameters_human": "6849.38B",
   "storage_bytes": 7720640941879,
   "storage_human": "7720.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Renesas/Darknet53-ONNX",
   "slug": "renesas-darknet53-onnx",
   "author": "Renesas",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 166716755,
   "storage_human": "167 MB",
+  "context_length": null,
   "base_model": "timm/darknet53.c2ns_in1k",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

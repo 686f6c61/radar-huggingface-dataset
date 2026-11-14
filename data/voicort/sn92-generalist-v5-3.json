@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "voicort/sn92-generalist-v5-3",
   "slug": "voicort-sn92-generalist-v5-3",
   "author": "voicort",
@@ -31,14 +31,19 @@
   "parameters_human": "26.09B",
   "storage_bytes": 52193403363,
   "storage_human": "52.2 GB",
+  "context_length": null,
   "base_model": "baselabs/mammoth-1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

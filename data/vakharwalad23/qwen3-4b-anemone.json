@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vakharwalad23/Qwen3-4B-Anemone",
   "slug": "vakharwalad23-qwen3-4b-anemone",
   "author": "vakharwalad23",
@@ -33,12 +33,17 @@
   "parameters_human": null,
   "storage_bytes": 3389434530,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-4B",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

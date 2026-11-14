@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "abhishek085/spark-s1-4b-v6-nvfp4",
   "slug": "abhishek085-spark-s1-4b-v6-nvfp4",
   "author": "abhishek085",
@@ -34,14 +34,19 @@
   "parameters_human": "3.07B",
   "storage_bytes": 5175754432,
   "storage_human": "5.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B, abhishek085/spark-s1-4b-v6",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tarzanagh/ckpt_psspteleop_putaside_4cam260629-260708_gr00t3b260816",
   "slug": "tarzanagh-ckpt_psspteleop_putaside_4cam260629-260708_gr00t3b260816",
   "author": "tarzanagh",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 6942742350,
   "storage_human": "6.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-21T09:21:28.037Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

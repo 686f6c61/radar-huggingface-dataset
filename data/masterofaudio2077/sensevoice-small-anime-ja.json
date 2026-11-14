@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "masterofaudio2077/sensevoice-small-anime-ja",
   "slug": "masterofaudio2077-sensevoice-small-anime-ja",
   "author": "masterofaudio2077",
@@ -41,12 +41,17 @@
   "parameters_human": null,
   "storage_bytes": 1872954882,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": "FunAudioLLM/SenseVoiceSmall",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

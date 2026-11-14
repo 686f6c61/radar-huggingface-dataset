@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "theplayboy117/iz-instruct-mini",
   "slug": "theplayboy117-iz-instruct-mini",
   "author": "theplayboy117",
@@ -28,14 +28,19 @@
   "parameters_human": "82.9M",
   "storage_bytes": 331735104,
   "storage_human": "332 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

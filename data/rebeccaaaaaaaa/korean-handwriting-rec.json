@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rebeccaaaaaaaa/korean-handwriting-rec",
   "slug": "rebeccaaaaaaaa-korean-handwriting-rec",
   "author": "Rebeccaaaaaaaa",
@@ -45,14 +45,19 @@
   "parameters_human": null,
   "storage_bytes": 14790116,
   "storage_human": "15 MB",
+  "context_length": null,
   "base_model": "PaddlePaddle/korean_PP-OCRv5_mobile_rec",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

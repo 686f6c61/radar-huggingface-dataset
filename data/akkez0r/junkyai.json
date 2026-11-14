@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "akkez0r/JunkyAI",
   "slug": "akkez0r-junkyai",
   "author": "akkez0r",
@@ -36,14 +36,19 @@
   "parameters_human": "18.9M",
   "storage_bytes": 20361600,
   "storage_human": "20 MB",
+  "context_length": 512,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

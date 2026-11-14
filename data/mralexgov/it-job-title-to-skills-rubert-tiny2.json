@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MrAlexGov/it-job-title-to-skills-rubert-tiny2",
   "slug": "mralexgov-it-job-title-to-skills-rubert-tiny2",
   "author": "MrAlexGov",
@@ -41,6 +41,7 @@
   "parameters_human": "29.2M",
   "storage_bytes": 864508293,
   "storage_human": "865 MB",
+  "context_length": null,
   "base_model": "cointegrated/rubert-tiny2",
   "formats": [
     "onnx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

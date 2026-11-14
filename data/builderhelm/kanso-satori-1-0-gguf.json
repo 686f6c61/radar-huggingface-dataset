@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BuilderHelm/Kanso-Satori-1.0-GGUF",
   "slug": "builderhelm-kanso-satori-1-0-gguf",
   "author": "BuilderHelm",
@@ -42,14 +42,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 28752585405,
   "storage_human": "28.8 GB",
+  "context_length": 262144,
   "base_model": "BuilderHelm/Kanso-Satori-1.0, BuilderHelm/Kanso-Satori-1.0-bf16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

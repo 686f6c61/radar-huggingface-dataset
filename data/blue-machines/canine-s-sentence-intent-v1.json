@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "blue-machines/Canine-S-sentence-intent-v1",
   "slug": "blue-machines-canine-s-sentence-intent-v1",
   "author": "blue-machines",
@@ -34,14 +34,19 @@
   "parameters_human": "133.0M",
   "storage_bytes": 1828002551,
   "storage_human": "1.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-06T07:06:44.471Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

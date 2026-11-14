@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Denisijcu/vertexgemma",
   "slug": "denisijcu-vertexgemma",
   "author": "Denisijcu",
@@ -36,6 +36,7 @@
   "parameters_human": "2.61B",
   "storage_bytes": 1750163888,
   "storage_human": "1.8 GB",
+  "context_length": 8192,
   "base_model": "google/gemma-2-2b-it",
   "formats": [
     "gguf",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

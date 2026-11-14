@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen2.5-7B-Instruct-1M-heretic-i1-GGUF",
   "slug": "mradermacher-qwen2-5-7b-instruct-1m-heretic-i1-gguf",
   "author": "mradermacher",
@@ -41,14 +41,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 88970480608,
   "storage_human": "89.0 GB",
+  "context_length": 1010000,
   "base_model": "saidutta69/Qwen2.5-7B-Instruct-1M-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

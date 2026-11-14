@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Nanbeige4.3-33B-Base-i1-GGUF",
   "slug": "mradermacher-nanbeige4-3-33b-base-i1-gguf",
   "author": "mradermacher",
@@ -36,14 +36,19 @@
   "parameters_human": "33.12B",
   "storage_bytes": 358871620032,
   "storage_human": "358.9 GB",
+  "context_length": 131072,
   "base_model": "Nanbeige/Nanbeige4.3-33B-Base",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

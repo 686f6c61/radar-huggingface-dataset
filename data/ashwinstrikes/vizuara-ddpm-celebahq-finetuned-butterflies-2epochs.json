@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ashwinstrikes/Vizuara-ddpm-celebahq-finetuned-butterflies-2epochs",
   "slug": "ashwinstrikes-vizuara-ddpm-celebahq-finetuned-butterflies-2epochs",
   "author": "ashwinstrikes",
@@ -28,6 +28,7 @@
   "parameters_human": "113.7M",
   "storage_bytes": 454741108,
   "storage_human": "455 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

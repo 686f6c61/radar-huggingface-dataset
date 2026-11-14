@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IITM-2026T3-DSAI-GROUP2/qwen3.5-4b-socratic-tutor",
   "slug": "iitm-2026t3-dsai-group2-qwen3-5-4b-socratic-tutor",
   "author": "IITM-2026T3-DSAI-GROUP2",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 254938336,
   "storage_human": "255 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DavidPontientKayumba/afroxlmr-kinnews-topic-classifier",
   "slug": "davidpontientkayumba-afroxlmr-kinnews-topic-classifier",
   "author": "DavidPontientKayumba",
@@ -23,14 +23,19 @@
   "parameters_human": "278.1M",
   "storage_bytes": 1129324752,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

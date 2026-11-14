@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cheahour/gemma_4_vlm_finetune_v1.2",
   "slug": "cheahour-gemma_4_vlm_finetune_v1-2",
   "author": "cheahour",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 180023444,
   "storage_human": "180 MB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-28T03:28:47.885Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

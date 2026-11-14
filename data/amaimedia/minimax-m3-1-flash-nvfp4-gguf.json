@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AMAImedia/MiniMax-M3.1-Flash-NVFP4-GGUF",
   "slug": "amaimedia-minimax-m3-1-flash-nvfp4-gguf",
   "author": "AMAImedia",
@@ -265,6 +265,7 @@
   "parameters_human": "220.49B",
   "storage_bytes": 801384146418,
   "storage_human": "801.4 GB",
+  "context_length": 1048576,
   "base_model": "MiniMaxAI/MiniMax-M3.1-Flash, LyJonathan/MiniMax-M3.1-Flash-GGUF, webmp3/Sakura-MiniMax-M3.1-Flash-Q2_K-GGUF",
   "formats": [
     "gguf",
@@ -272,8 +273,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

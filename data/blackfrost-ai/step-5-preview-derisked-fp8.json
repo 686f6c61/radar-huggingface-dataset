@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Blackfrost-AI/STEP-5-PREVIEW-DERISKED-FP8",
   "slug": "blackfrost-ai-step-5-preview-derisked-fp8",
   "author": "Blackfrost-AI",
@@ -46,14 +46,19 @@
   "parameters_human": "602.97B",
   "storage_bytes": 609120671509,
   "storage_human": "609.1 GB",
+  "context_length": null,
   "base_model": "TypeSafeAI/Step-5-Preview-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wy8edhuh/DeepSeek-R1-0528-Qwen3-8B-abliterated-IQ4_XS-GGUF",
   "slug": "wy8edhuh-deepseek-r1-0528-qwen3-8b-abliterated-iq4_xs-gguf",
   "author": "wy8edhuh",
@@ -34,14 +34,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 4567186080,
   "storage_human": "4.6 GB",
+  "context_length": 131072,
   "base_model": "huihui-ai/DeepSeek-R1-0528-Qwen3-8B-abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

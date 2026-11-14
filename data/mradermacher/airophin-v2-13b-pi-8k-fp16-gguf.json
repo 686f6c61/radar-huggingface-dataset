@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/airophin-v2-13b-PI-8k-fp16-GGUF",
+  "slug": "mradermacher-airophin-v2-13b-pi-8k-fp16-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/airophin-v2-13b-PI-8k-fp16-GGUF",
+  "created_at": "2025-02-25T11:37:06.000Z",
+  "updated_at": "2026-11-14T14:26:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:jondurbin/airoboros-gpt4-m2.0",
+    "dataset:ehartford/dolphin",
+    "dataset:shahules786/orca-chat",
+    "base_model:bhenrym14/airophin-v2-13b-PI-8k-fp16",
+    "base_model:quantized:bhenrym14/airophin-v2-13b-PI-8k-fp16",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 143,
+  "trending_score": 0,
+  "parameters": 13016028160,
+  "parameters_human": "13.02B",
+  "storage_bytes": 88803218144,
+  "storage_human": "88.8 GB",
+  "context_length": 8192,
+  "base_model": "bhenrym14/airophin-v2-13b-PI-8k-fp16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kiel2/KielForge-fast",
   "slug": "kiel2-kielforge-fast",
   "author": "kiel2",
@@ -37,6 +37,7 @@
   "parameters_human": "2.57B",
   "storage_bytes": 34275818829,
   "storage_human": "34.3 GB",
+  "context_length": null,
   "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
   "formats": [
     "diffusers",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "kiel2/Kiel-2-Image",
+  "renamed_at": "2026-11-11T05:55:40.951Z",
   "benchmarks": [],
   "sources": []
 }

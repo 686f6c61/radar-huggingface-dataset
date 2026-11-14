@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mondk/Safetensors.claude-sonnet-phi-4-mini",
   "slug": "mondk-safetensors-claude-sonnet-phi-4-mini",
   "author": "mondk",
@@ -37,14 +37,19 @@
   "parameters_human": "3.84B",
   "storage_bytes": 7687591069,
   "storage_human": "7.7 GB",
+  "context_length": null,
   "base_model": "unsloth/Phi-4-mini-instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-07T07:24:12.137Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

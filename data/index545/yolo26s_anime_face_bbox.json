@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "index545/Yolo26s_Anime_Face_Bbox",
   "slug": "index545-yolo26s_anime_face_bbox",
   "author": "index545",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 20318661,
   "storage_human": "20 MB",
+  "context_length": null,
   "base_model": "Ultralytics/YOLO26",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

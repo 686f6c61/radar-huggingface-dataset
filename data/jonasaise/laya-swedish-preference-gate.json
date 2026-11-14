@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jonasaise/laya-swedish-preference-gate",
   "slug": "jonasaise-laya-swedish-preference-gate",
   "author": "jonasaise",
@@ -44,6 +44,7 @@
   "parameters_human": "321.9M",
   "storage_bytes": 3621507865,
   "storage_human": "3.6 GB",
+  "context_length": null,
   "base_model": "convaiinnovations/laya",
   "formats": [
     "onnx",
@@ -51,8 +52,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Pairwise preference",

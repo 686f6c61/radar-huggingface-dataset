@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "harrym1ner/cascade-test",
   "slug": "harrym1ner-cascade-test",
   "author": "harrym1ner",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "harrym1ner-36/cascade-test",
+  "renamed_at": "2026-11-13T05:49:25.809Z",
   "benchmarks": [],
   "sources": [
     {

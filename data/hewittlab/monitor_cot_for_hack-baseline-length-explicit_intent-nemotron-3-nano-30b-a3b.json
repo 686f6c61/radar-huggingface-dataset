@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hewittlab/monitor_cot_for_hack-baseline-length-explicit_intent-nemotron-3-nano-30b-a3b",
   "slug": "hewittlab-monitor_cot_for_hack-baseline-length-explicit_intent-nemotron-3-nano-30b-a3b",
   "author": "hewittlab",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 106560296211,
   "storage_human": "106.6 GB",
+  "context_length": null,
   "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

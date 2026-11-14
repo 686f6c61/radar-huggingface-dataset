@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bcckfdn/minillama-test-GGUF",
   "slug": "bcckfdn-minillama-test-gguf",
   "author": "bcckfdn",
@@ -37,14 +37,19 @@
   "parameters_human": "30.1M",
   "storage_bytes": 152703936,
   "storage_human": "153 MB",
+  "context_length": 8192,
   "base_model": "bcckfdn/minillama-test",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

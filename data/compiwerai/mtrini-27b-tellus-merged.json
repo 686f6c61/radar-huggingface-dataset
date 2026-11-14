@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "CompiwerAI/Mtrini-27B-Tellus-Merged",
   "slug": "compiwerai-mtrini-27b-tellus-merged",
   "author": "CompiwerAI",
@@ -36,14 +36,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 53812098117,
   "storage_human": "53.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

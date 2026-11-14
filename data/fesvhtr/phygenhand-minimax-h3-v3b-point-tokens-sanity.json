@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fesvhtr/phygenhand-minimax-h3-v3b-point-tokens-sanity",
   "slug": "fesvhtr-phygenhand-minimax-h3-v3b-point-tokens-sanity",
   "author": "fesvhtr",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 758935252,
   "storage_human": "759 MB",
+  "context_length": null,
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "fesvhtr/PGH-minimax-h3-v3b-point-tokens-sanity",
+  "renamed_at": "2026-11-13T05:33:57.018Z",
   "benchmarks": [],
   "sources": []
 }

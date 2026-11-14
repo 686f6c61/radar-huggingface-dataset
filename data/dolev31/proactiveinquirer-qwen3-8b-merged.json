@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dolev31/ProactiveInquirer-Qwen3-8B-Merged",
   "slug": "dolev31-proactiveinquirer-qwen3-8b-merged",
   "author": "dolev31",
@@ -45,14 +45,19 @@
   "parameters_human": "8.19B",
   "storage_bytes": 16392939426,
   "storage_human": "16.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

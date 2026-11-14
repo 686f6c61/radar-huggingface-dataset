@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "skysystem-studio/hearth-taesdxl",
   "slug": "skysystem-studio-hearth-taesdxl",
   "author": "skysystem-studio",
@@ -24,6 +24,7 @@
   "parameters_human": "2.4M",
   "storage_bytes": 9793292,
   "storage_human": "10 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "diffusers",
@@ -31,8 +32,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

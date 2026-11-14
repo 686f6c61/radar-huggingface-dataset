@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/medgemma-4b-it-heretic-GGUF",
   "slug": "mradermacher-medgemma-4b-it-heretic-gguf",
   "author": "mradermacher",
@@ -42,14 +42,19 @@
   "parameters_human": "3.88B",
   "storage_bytes": 37274401216,
   "storage_human": "37.3 GB",
+  "context_length": 131072,
   "base_model": "parziva1/medgemma-4b-it-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gatesushi/Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored-oQ4e-mtp",
   "slug": "gatesushi-qwen3-6-35b-a3b-brainwaves-nex-uncensored-oq4e-mtp",
   "author": "gatesushi",
@@ -61,6 +61,7 @@
   "parameters_human": "35.95B",
   "storage_bytes": 22154035336,
   "storage_human": "22.2 GB",
+  "context_length": null,
   "base_model": "nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored",
   "formats": [
     "mlx",
@@ -68,8 +69,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

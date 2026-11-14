@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lucas2071/NSFW_Wan_1.3b",
   "slug": "lucas2071-nsfw_wan_1-3b",
   "author": "Lucas2071",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 105359108304,
   "storage_human": "105.4 GB",
+  "context_length": null,
   "base_model": "Wan-AI/Wan2.1-T2V-1.3B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-04T02:52:21.065Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

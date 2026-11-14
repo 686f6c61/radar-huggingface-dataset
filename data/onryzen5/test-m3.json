@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "onryzen5/test-m3",
   "slug": "onryzen5-test-m3",
   "author": "onryzen5",
@@ -41,6 +41,7 @@
   "parameters_human": "63.9M",
   "storage_bytes": 414938860,
   "storage_human": "415 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

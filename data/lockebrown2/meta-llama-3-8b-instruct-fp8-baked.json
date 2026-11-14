@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "lockebrown2/Meta-Llama-3-8B-Instruct-FP8-Baked",
   "slug": "lockebrown2-meta-llama-3-8b-instruct-fp8-baked",
   "author": "lockebrown2",
@@ -29,14 +29,19 @@
   "parameters_human": "8.03B",
   "storage_bytes": 9081280584,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ravediamond/turbovla_so101_bowls_faithful_patha",
   "slug": "ravediamond-turbovla_so101_bowls_faithful_patha",
   "author": "ravediamond",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 864573955,
   "storage_human": "865 MB",
+  "context_length": null,
   "base_model": "H-EmbodVis/TurboVLA",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

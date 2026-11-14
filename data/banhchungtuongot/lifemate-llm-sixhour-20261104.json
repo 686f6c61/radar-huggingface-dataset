@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "banhchungtuongot/lifemate-llm-sixhour-20261104",
   "slug": "banhchungtuongot-lifemate-llm-sixhour-20261104",
   "author": "banhchungtuongot",
@@ -35,6 +35,7 @@
   "parameters_human": "4.21B",
   "storage_bytes": 10270617108,
   "storage_human": "10.3 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "gguf",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

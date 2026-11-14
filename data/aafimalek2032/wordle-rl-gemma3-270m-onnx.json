@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aafimalek2032/wordle-rl-gemma3-270m-onnx",
   "slug": "aafimalek2032-wordle-rl-gemma3-270m-onnx",
   "author": "aafimalek2032",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 2217396365,
   "storage_human": "2.2 GB",
+  "context_length": null,
   "base_model": "aafimalek2032/wordle-rl-gemma3-270m",
   "formats": [
     "onnx"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

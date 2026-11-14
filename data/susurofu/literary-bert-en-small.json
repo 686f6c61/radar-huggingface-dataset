@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "susurofu/literary-bert-en-small",
   "slug": "susurofu-literary-bert-en-small",
   "author": "susurofu",
@@ -42,14 +42,19 @@
   "parameters_human": "28.8M",
   "storage_bytes": 115075145,
   "storage_human": "115 MB",
+  "context_length": null,
   "base_model": "google/bert_uncased_L-4_H-512_A-8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

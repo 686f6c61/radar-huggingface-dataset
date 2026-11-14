@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ymlee13/Qwen2.5-3B-Instruct_Address_Formatter",
   "slug": "ymlee13-qwen2-5-3b-instruct_address_formatter",
   "author": "ymlee13",
@@ -41,14 +41,19 @@
   "parameters_human": null,
   "storage_bytes": 71361237,
   "storage_human": "71 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

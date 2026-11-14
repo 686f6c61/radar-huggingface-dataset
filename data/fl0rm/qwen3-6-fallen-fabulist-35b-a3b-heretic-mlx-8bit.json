@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fl0rm/Qwen3.6-Fallen-Fabulist-35B-A3B-heretic-mlx-8Bit",
   "slug": "fl0rm-qwen3-6-fallen-fabulist-35b-a3b-heretic-mlx-8bit",
   "author": "fl0rm",
@@ -41,6 +41,7 @@
   "parameters_human": "34.66B",
   "storage_bytes": 36848211886,
   "storage_human": "36.8 GB",
+  "context_length": null,
   "base_model": "Cyclone-Labs/Qwen3.6-Fallen-Fabulist-35B-A3B-heretic",
   "formats": [
     "mlx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Rev3auth/iris_1.3_cs-lite",
   "slug": "rev3auth-iris_1-3_cs-lite",
   "author": "Rev3auth",
@@ -27,14 +27,19 @@
   "parameters_human": "268.1M",
   "storage_bytes": 291545440,
   "storage_human": "292 MB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-02T03:13:06.181Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

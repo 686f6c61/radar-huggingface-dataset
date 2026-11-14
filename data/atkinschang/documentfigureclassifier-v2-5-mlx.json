@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "atkinschang/DocumentFigureClassifier-v2.5-MLX",
   "slug": "atkinschang-documentfigureclassifier-v2-5-mlx",
   "author": "atkinschang",
@@ -28,6 +28,7 @@
   "parameters_human": "4.1M",
   "storage_bytes": 16371592,
   "storage_human": "16 MB",
+  "context_length": null,
   "base_model": "docling-project/DocumentFigureClassifier-v2.5",
   "formats": [
     "mlx",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

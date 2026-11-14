@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tadiecool29/MTL-Davlan-bert-base-multilingual-cased-finetuned-amharic",
   "slug": "tadiecool29-mtl-davlan-bert-base-multilingual-cased-finetuned-amharic",
   "author": "tadiecool29",
@@ -27,14 +27,19 @@
   "parameters_human": "177.9M",
   "storage_bytes": 1422924553,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "Davlan/bert-base-multilingual-cased-finetuned-amharic",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

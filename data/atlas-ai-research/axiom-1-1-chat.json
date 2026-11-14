@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Atlas-AI-research/Axiom-1.1-Chat",
   "slug": "atlas-ai-research-axiom-1-1-chat",
   "author": "Atlas-AI-research",
@@ -37,14 +37,19 @@
   "parameters_human": "64.7M",
   "storage_bytes": 258913112,
   "storage_human": "259 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "AtlasAI-official/Axiom-1.1-Chat",
+  "renamed_at": "2026-11-12T02:27:04.700Z",
   "benchmarks": [],
   "sources": []
 }

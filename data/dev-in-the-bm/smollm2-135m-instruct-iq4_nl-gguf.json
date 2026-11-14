@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Dev-in-the-BM/SmolLM2-135M-Instruct-IQ4_NL-GGUF",
   "slug": "dev-in-the-bm-smollm2-135m-instruct-iq4_nl-gguf",
   "author": "Dev-in-the-BM",
@@ -38,6 +38,7 @@
   "parameters_human": "134.5M",
   "storage_bytes": 92358912,
   "storage_human": "92 MB",
+  "context_length": 8192,
   "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
   "formats": [
     "gguf",
@@ -46,8 +47,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

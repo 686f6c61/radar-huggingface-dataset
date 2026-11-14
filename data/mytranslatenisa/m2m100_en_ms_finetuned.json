@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mytranslatenisa/m2m100_en_ms_FineTuned",
   "slug": "mytranslatenisa-m2m100_en_ms_finetuned",
   "author": "mytranslatenisa",
@@ -33,14 +33,19 @@
   "parameters_human": "483.9M",
   "storage_bytes": 1761374056072,
   "storage_human": "1761.4 GB",
+  "context_length": null,
   "base_model": "facebook/m2m100_418M",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

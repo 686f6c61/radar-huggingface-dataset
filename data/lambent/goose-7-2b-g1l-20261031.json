@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lambent/Goose-7.2B-G1l-20261031",
   "slug": "lambent-goose-7-2b-g1l-20261031",
   "author": "Lambent",
@@ -26,14 +26,19 @@
   "parameters_human": "7.20B",
   "storage_bytes": 14398399560,
   "storage_human": "14.4 GB",
+  "context_length": null,
   "base_model": "RWKV/RWKV7-G1l-7.2B-20261031",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

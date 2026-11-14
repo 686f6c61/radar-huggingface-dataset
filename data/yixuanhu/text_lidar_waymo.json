@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YixuanHu/text_lidar_waymo",
   "slug": "yixuanhu-text_lidar_waymo",
   "author": "YixuanHu",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 6306335879,
   "storage_human": "6.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

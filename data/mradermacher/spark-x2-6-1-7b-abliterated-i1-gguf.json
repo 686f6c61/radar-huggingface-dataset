@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Spark-X2.6-1.7B-Abliterated-i1-GGUF",
   "slug": "mradermacher-spark-x2-6-1-7b-abliterated-i1-gguf",
   "author": "mradermacher",
@@ -42,14 +42,19 @@
   "parameters_human": "1.71B",
   "storage_bytes": 21770749888,
   "storage_human": "21.8 GB",
+  "context_length": 1048576,
   "base_model": "bowtiedrahman/Spark-X2.6-1.7B-Abliterated",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

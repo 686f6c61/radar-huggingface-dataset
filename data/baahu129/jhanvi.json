@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "baahu129/jhanvi",
   "slug": "baahu129-jhanvi",
   "author": "baahu129",
@@ -21,14 +21,19 @@
   "parameters_human": null,
   "storage_bytes": 940404806,
   "storage_human": "940 MB",
+  "context_length": null,
   "base_model": "Comfy-Org/Krea-2",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ADI2005/qwen-spice-lora-v5",
   "slug": "adi2005-qwen-spice-lora-v5",
   "author": "ADI2005",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 250958628,
   "storage_human": "251 MB",
+  "context_length": null,
   "base_model": "unsloth/qwen2.5-coder-3b-instruct-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

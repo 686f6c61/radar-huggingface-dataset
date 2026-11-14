@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "software-mansion/react-native-executorch-kokoro",
   "slug": "software-mansion-react-native-executorch-kokoro",
   "author": "software-mansion",
@@ -44,12 +44,17 @@
   "parameters_human": null,
   "storage_bytes": 9238132515,
   "storage_human": "9.2 GB",
+  "context_length": null,
   "base_model": "hexgrad/Kokoro-82M",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "software-mansion/Kokoro-82M-ExecuTorch",
+  "renamed_at": "2026-11-11T07:34:22.472Z",
   "benchmarks": [],
   "sources": [
     {

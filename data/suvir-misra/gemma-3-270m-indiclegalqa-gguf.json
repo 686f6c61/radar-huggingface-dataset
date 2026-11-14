@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Suvir-Misra/Gemma-3-270M-IndicLegalQA-GGUF",
   "slug": "suvir-misra-gemma-3-270m-indiclegalqa-gguf",
   "author": "Suvir-Misra",
@@ -38,14 +38,19 @@
   "parameters_human": "435.9M",
   "storage_bytes": 1716640704,
   "storage_human": "1.7 GB",
+  "context_length": 32768,
   "base_model": "google/gemma-3-270m-it",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

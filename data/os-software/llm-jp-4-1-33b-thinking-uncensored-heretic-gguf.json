@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OS-Software/llm-jp-4.1-33b-thinking-uncensored-heretic-GGUF",
   "slug": "os-software-llm-jp-4-1-33b-thinking-uncensored-heretic-gguf",
   "author": "OS-Software",
@@ -38,14 +38,19 @@
   "parameters_human": "33.22B",
   "storage_bytes": 197213789120,
   "storage_human": "197.2 GB",
+  "context_length": 65536,
   "base_model": "llm-jp/llm-jp-4.1-33b-thinking",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

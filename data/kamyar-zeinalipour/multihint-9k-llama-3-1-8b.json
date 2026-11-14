@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kamyar-zeinalipour/MultiHint-9K-Llama-3.1-8B",
   "slug": "kamyar-zeinalipour-multihint-9k-llama-3-1-8b",
   "author": "Kamyar-zeinalipour",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 2286122272,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

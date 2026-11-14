@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cactopus/Omega-Sapphira-L3.3-70B-v1.3",
   "slug": "cactopus-omega-sapphira-l3-3-70b-v1-3",
   "author": "cactopus",
@@ -43,14 +43,19 @@
   "parameters_human": "70.55B",
   "storage_bytes": 141125463526,
   "storage_human": "141.1 GB",
+  "context_length": null,
   "base_model": "ReadyArt/L3.3-The-Omega-Directive-70B-Unslop-v2.1, BruhzWater/Sapphira-L3.3-70b-0.2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

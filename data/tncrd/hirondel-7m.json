@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tncrd/Hirondel-7M",
   "slug": "tncrd-hirondel-7m",
   "author": "Tncrd",
@@ -31,14 +31,19 @@
   "parameters_human": "7.5M",
   "storage_bytes": 32253097,
   "storage_human": "32 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Probabilistic forecasting",

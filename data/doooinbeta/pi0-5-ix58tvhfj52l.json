@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "doooinbeta/pi0.5-iX58tVHFJ52L",
   "slug": "doooinbeta-pi0-5-ix58tvhfj52l",
   "author": "doooinbeta",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 12438224090,
   "storage_human": "12.4 GB",
+  "context_length": null,
   "base_model": "nakamotosantosh/pi0.5-GE38YpXNDVWi",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

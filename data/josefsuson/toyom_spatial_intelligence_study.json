@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "JOSEFSUSON/TOYOM_Spatial_Intelligence_Study",
   "slug": "josefsuson-toyom_spatial_intelligence_study",
   "author": "JOSEFSUSON",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 186707,
   "storage_human": "186707 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "JOSEFSUSON/T_Spatial_Intelligence_Study",
+  "renamed_at": "2026-11-11T02:59:33.151Z",
   "benchmarks": [
     {
       "task": "Reinforcement Learning",

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nchapman/GLiDE-0.8B-W4A16-HGPTQ",
   "slug": "nchapman-glide-0-8b-w4a16-hgptq",
   "author": "nchapman",
@@ -38,14 +38,19 @@
   "parameters_human": "752.4M",
   "storage_bytes": 795374155,
   "storage_human": "795 MB",
+  "context_length": null,
   "base_model": "fastino/GLiDE-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

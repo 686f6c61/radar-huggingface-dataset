@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EduardoVinicius/anycaptions-riva-translate",
   "slug": "eduardovinicius-anycaptions-riva-translate",
   "author": "EduardoVinicius",
@@ -30,14 +30,19 @@
   "parameters_human": "4.18B",
   "storage_bytes": 2759302368,
   "storage_human": "2.8 GB",
+  "context_length": 8192,
   "base_model": "nvidia/Riva-Translate-4B-Instruct-v2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

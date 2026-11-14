@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "openbmb/MiniCPM-V-4.6-Thinking-BNB",
   "slug": "openbmb-minicpm-v-4-6-thinking-bnb",
   "author": "openbmb",
@@ -40,14 +40,19 @@
   "parameters_human": "1.30B",
   "storage_bytes": 1079465028,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": "openbmb/MiniCPM-V-4.6-Thinking",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

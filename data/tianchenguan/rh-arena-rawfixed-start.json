@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TianchenGuan/rh-arena-rawfixed-start",
   "slug": "tianchenguan-rh-arena-rawfixed-start",
   "author": "TianchenGuan",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 122144510350,
   "storage_human": "122.1 GB",
+  "context_length": null,
   "base_model": "TianchenGuan/Qwen3-30B-A3B-midtrain-swe50-star50, Qwen/Qwen3-30B-A3B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

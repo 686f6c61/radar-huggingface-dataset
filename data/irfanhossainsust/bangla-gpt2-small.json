@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "irfanhossainsust/bangla-gpt2-small",
   "slug": "irfanhossainsust-bangla-gpt2-small",
   "author": "irfanhossainsust",
@@ -37,6 +37,7 @@
   "parameters_human": "23.1M",
   "storage_bytes": 540074366,
   "storage_human": "540 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Causal language modeling",

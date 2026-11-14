@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RyanL22/pi05-rby1-wujihand2-egomimic-baseline-20k",
   "slug": "ryanl22-pi05-rby1-wujihand2-egomimic-baseline-20k",
   "author": "RyanL22",
@@ -31,14 +31,19 @@
   "parameters_human": "4.14B",
   "storage_bytes": 9354241356,
   "storage_human": "9.4 GB",
+  "context_length": null,
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

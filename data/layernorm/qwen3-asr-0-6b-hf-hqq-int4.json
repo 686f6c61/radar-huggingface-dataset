@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LayerNorm/Qwen3-ASR-0.6B-hf-hqq-int4",
   "slug": "layernorm-qwen3-asr-0-6b-hf-hqq-int4",
   "author": "LayerNorm",
@@ -96,14 +96,19 @@
   "parameters_human": "490.7M",
   "storage_bytes": 682319108,
   "storage_human": "682 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-ASR-0.6B-hf",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

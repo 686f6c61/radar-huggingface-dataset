@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cemig-nlp-releases/energy-gpt-regulatorio-v3",
   "slug": "cemig-nlp-releases-energy-gpt-regulatorio-v3",
   "author": "cemig-nlp-releases",
@@ -29,14 +29,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 9098609861,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-02T03:59:44.380Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

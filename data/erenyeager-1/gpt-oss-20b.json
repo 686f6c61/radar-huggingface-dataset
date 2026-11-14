@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "erenyeager-1/gpt-oss-20b",
   "slug": "erenyeager-1-gpt-oss-20b",
   "author": "erenyeager-1",
@@ -32,14 +32,19 @@
   "parameters_human": "20.91B",
   "storage_bytes": 41301372462,
   "storage_human": "41.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

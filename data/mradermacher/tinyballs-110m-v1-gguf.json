@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/TinyBalls-110M-V1-GGUF",
   "slug": "mradermacher-tinyballs-110m-v1-gguf",
   "author": "mradermacher",
@@ -40,14 +40,19 @@
   "parameters_human": "113.3M",
   "storage_bytes": 1110304352,
   "storage_human": "1.1 GB",
+  "context_length": 32768,
   "base_model": "igidn/TinyBalls-110M-V1",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

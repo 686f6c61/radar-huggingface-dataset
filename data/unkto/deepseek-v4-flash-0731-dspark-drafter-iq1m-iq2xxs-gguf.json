@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Unkto/DeepSeek-V4-Flash-0731-DSpark-Drafter-IQ1M-IQ2XXS-GGUF",
   "slug": "unkto-deepseek-v4-flash-0731-dspark-drafter-iq1m-iq2xxs-gguf",
   "author": "Unkto",
@@ -38,14 +38,19 @@
   "parameters_human": "19.85B",
   "storage_bytes": 10329139520,
   "storage_human": "10.3 GB",
+  "context_length": 1048576,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

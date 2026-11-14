@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "OraXDev/bagent-o2",
   "slug": "oraxdev-bagent-o2",
   "author": "OraXDev",
@@ -39,14 +39,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 29383970930,
   "storage_human": "29.4 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

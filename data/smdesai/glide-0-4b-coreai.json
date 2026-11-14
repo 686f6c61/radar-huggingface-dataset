@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "smdesai/GLiDE-0.4B-CoreAI",
   "slug": "smdesai-glide-0-4b-coreai",
   "author": "smdesai",
@@ -28,12 +28,17 @@
   "parameters_human": null,
   "storage_bytes": 6615191404,
   "storage_human": "6.6 GB",
+  "context_length": null,
   "base_model": "fastino/GLiDE-0.4B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

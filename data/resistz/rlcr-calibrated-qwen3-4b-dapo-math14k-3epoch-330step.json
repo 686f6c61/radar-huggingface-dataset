@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "resistz/RLCR-Calibrated-Qwen3-4B-DAPO-Math14k-3Epoch-330Step",
   "slug": "resistz-rlcr-calibrated-qwen3-4b-dapo-math14k-3epoch-330step",
   "author": "resistz",
@@ -24,14 +24,19 @@
   "parameters_human": "4.41B",
   "storage_bytes": 8834317062,
   "storage_human": "8.8 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kosoadoo/Qwarbon-0.8B-Q8_0-GGUF",
   "slug": "kosoadoo-qwarbon-0-8b-q8_0-gguf",
   "author": "kosoadoo",
@@ -31,14 +31,19 @@
   "parameters_human": "772.8M",
   "storage_bytes": 833592128,
   "storage_human": "834 MB",
+  "context_length": 262144,
   "base_model": "kosoadoo/Qwarbon-0.8B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

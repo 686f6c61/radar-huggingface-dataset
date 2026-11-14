@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kanha-AI/24128c77-d10b-4bda-a1e4-100ff467bf60-medium",
   "slug": "kanha-ai-24128c77-d10b-4bda-a1e4-100ff467bf60-medium",
   "author": "Kanha-AI",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 658503168,
   "storage_human": "659 MB",
+  "context_length": null,
   "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

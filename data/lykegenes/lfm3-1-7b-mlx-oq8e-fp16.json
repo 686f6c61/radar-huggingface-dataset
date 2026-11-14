@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lykegenes/LFM3-1.7B-MLX-oQ8e-fp16",
   "slug": "lykegenes-lfm3-1-7b-mlx-oq8e-fp16",
   "author": "Lykegenes",
@@ -28,6 +28,7 @@
   "parameters_human": "1.73B",
   "storage_bytes": 1855198933,
   "storage_human": "1.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

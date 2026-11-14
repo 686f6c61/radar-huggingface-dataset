@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LeDissolution/Gemma-4-31B-it-Gewell_BF16",
   "slug": "ledissolution-gemma-4-31b-it-gewell_bf16",
   "author": "LeDissolution",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 62579498114,
   "storage_human": "62.6 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-31B-it",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "GAIK-project/whisper-large-v3-fi-dialects",
   "slug": "gaik-project-whisper-large-v3-fi-dialects",
   "author": "GAIK-project",
@@ -40,14 +40,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 18522785856,
   "storage_human": "18.5 GB",
+  "context_length": null,
   "base_model": "openai/whisper-large-v3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

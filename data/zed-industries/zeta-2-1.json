@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zed-industries/zeta-2.1",
   "slug": "zed-industries-zeta-2-1",
   "author": "zed-industries",
@@ -35,14 +35,19 @@
   "parameters_human": "8.25B",
   "storage_bytes": 16512849976,
   "storage_human": "16.5 GB",
+  "context_length": null,
   "base_model": "ByteDance-Seed/Seed-Coder-8B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

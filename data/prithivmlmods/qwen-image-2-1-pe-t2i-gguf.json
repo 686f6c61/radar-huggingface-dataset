@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "prithivMLmods/Qwen-Image-2.1-PE-T2I-GGUF",
   "slug": "prithivmlmods-qwen-image-2-1-pe-t2i-gguf",
   "author": "prithivMLmods",
@@ -37,14 +37,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 51223753088,
   "storage_human": "51.2 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen-Image-2.1-PE-T2I",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

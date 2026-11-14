@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "arshirazi/tiny-log-parser-v3",
   "slug": "arshirazi-tiny-log-parser-v3",
   "author": "arshirazi",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 143610812,
   "storage_human": "144 MB",
+  "context_length": null,
   "base_model": "unsloth/qwen3-4b-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

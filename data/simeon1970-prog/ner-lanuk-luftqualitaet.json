@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Simeon1970-prog/ner-lanuk-luftqualitaet",
   "slug": "simeon1970-prog-ner-lanuk-luftqualitaet",
   "author": "Simeon1970-prog",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 6368462,
   "storage_human": "6 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "fhswf/ner-lanuk-luftqualitaet",
+  "renamed_at": "2026-11-14T04:21:32.766Z",
   "benchmarks": [
     {
       "task": "Named Entity Recognition",

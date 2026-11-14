@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BoldingBuilds/Ternary-Bonsai-2-27B-Abliterated-v2-PQ2_0-MTP-GGUF",
   "slug": "boldingbuilds-ternary-bonsai-2-27b-abliterated-v2-pq2_0-mtp-gguf",
   "author": "BoldingBuilds",
@@ -38,14 +38,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 15492905600,
   "storage_human": "15.5 GB",
+  "context_length": 262144,
   "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

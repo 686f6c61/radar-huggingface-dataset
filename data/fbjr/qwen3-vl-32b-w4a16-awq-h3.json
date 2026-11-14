@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fbjr/qwen3-vl-32b-W4A16-AWQ-H3",
   "slug": "fbjr-qwen3-vl-32b-w4a16-awq-h3",
   "author": "fbjr",
@@ -31,14 +31,19 @@
   "parameters_human": "6.30B",
   "storage_bytes": 40802506555,
   "storage_human": "40.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-VL-32B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

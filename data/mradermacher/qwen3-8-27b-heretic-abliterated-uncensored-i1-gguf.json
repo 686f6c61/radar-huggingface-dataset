@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Qwen3.8-27B-Heretic-Abliterated-Uncensored-i1-GGUF",
   "slug": "mradermacher-qwen3-8-27b-heretic-abliterated-uncensored-i1-gguf",
   "author": "mradermacher",
@@ -38,6 +38,7 @@
   "parameters_human": "26.90B",
   "storage_bytes": 300328868832,
   "storage_human": "300.3 GB",
+  "context_length": 262144,
   "base_model": "0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored",
   "formats": [
     "gguf",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

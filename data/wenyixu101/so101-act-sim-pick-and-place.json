@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wenyixu101/so101-act-sim-pick-and-place",
   "slug": "wenyixu101-so101-act-sim-pick-and-place",
   "author": "wenyixu101",
@@ -29,14 +29,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 413416048,
   "storage_human": "413 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

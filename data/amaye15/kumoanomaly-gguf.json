@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "amaye15/kumoanomaly-gguf",
   "slug": "amaye15-kumoanomaly-gguf",
   "author": "amaye15",
@@ -33,14 +33,19 @@
   "parameters_human": "2.6M",
   "storage_bytes": 10406208,
   "storage_human": "10 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

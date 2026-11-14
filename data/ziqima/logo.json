@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ziqima/LoGo",
   "slug": "ziqima-logo",
   "author": "ziqima",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 1486774290,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "nvidia/Lyra-2.0, robbyant/lingbot-world-v2-14b-causal-fast, Drexubery/UniView",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

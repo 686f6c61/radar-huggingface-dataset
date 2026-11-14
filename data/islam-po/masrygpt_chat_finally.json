@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ISLAM-PO/MasryGPT_chat_FINALLY",
   "slug": "islam-po-masrygpt_chat_finally",
   "author": "ISLAM-PO",
@@ -52,14 +52,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 3098889310,
   "storage_human": "3.1 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ISLAM-PO/MasryGPT-Chat-1.5B",
+  "renamed_at": "2026-11-11T02:55:53.505Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Soomin33/Qwen3.8-Flash-Next-FP6",
   "slug": "soomin33-qwen3-8-flash-next-fp6",
   "author": "Soomin33",
@@ -34,14 +34,19 @@
   "parameters_human": "97.97B",
   "storage_bytes": 158581726274,
   "storage_human": "158.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

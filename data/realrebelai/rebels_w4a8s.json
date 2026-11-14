@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "realrebelai/Rebels_w4a8s",
   "slug": "realrebelai-rebels_w4a8s",
   "author": "realrebelai",
@@ -31,14 +31,19 @@
   "parameters_human": null,
   "storage_bytes": 277445936235,
   "storage_human": "277.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

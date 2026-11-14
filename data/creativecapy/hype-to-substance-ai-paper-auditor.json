@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "creativecapy/Hype-to-Substance-AI-Paper-Auditor",
   "slug": "creativecapy-hype-to-substance-ai-paper-auditor",
   "author": "creativecapy",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 0,
   "storage_human": null,
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "traviszane/Hype-to-Substance-AI-Paper-Auditor",
+  "renamed_at": "2026-11-12T05:03:26.175Z",
   "benchmarks": [],
   "sources": []
 }

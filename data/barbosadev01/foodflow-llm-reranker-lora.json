@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "barbosaDev01/foodflow-llm-reranker-lora",
   "slug": "barbosadev01-foodflow-llm-reranker-lora",
   "author": "barbosaDev01",
@@ -35,14 +35,19 @@
   "parameters_human": null,
   "storage_bytes": 299980,
   "storage_human": "299980 B",
+  "context_length": null,
   "base_model": "meta-llama/Llama-3.2-1B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

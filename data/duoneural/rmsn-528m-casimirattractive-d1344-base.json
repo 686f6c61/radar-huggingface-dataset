@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "DuoNeural/RMSN-528M-CasimirAttractive-D1344-Base",
   "slug": "duoneural-rmsn-528m-casimirattractive-d1344-base",
   "author": "DuoNeural",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 3705868843,
   "storage_human": "3.7 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

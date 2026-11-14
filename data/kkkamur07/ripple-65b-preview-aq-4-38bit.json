@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kkkamur07/Ripple-65B-Preview-AQ-4.38bit",
   "slug": "kkkamur07-ripple-65b-preview-aq-4-38bit",
   "author": "kkkamur07",
@@ -34,14 +34,19 @@
   "parameters_human": "35.39B",
   "storage_bytes": 36963453088,
   "storage_human": "37.0 GB",
+  "context_length": null,
   "base_model": "ricursiveAI/Ripple-65B-Preview",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

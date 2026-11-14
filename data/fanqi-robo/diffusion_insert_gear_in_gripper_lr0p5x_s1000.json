@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fanqi-robo/diffusion_insert_gear_in_gripper_lr0p5x_s1000",
   "slug": "fanqi-robo-diffusion_insert_gear_in_gripper_lr0p5x_s1000",
   "author": "fanqi-robo",
@@ -26,14 +26,19 @@
   "parameters_human": "293.2M",
   "storage_bytes": 2345787784,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

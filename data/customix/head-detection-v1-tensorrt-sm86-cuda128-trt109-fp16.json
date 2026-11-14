@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Customix/head-detection-v1-tensorrt-sm86-cuda128-trt109-fp16",
   "slug": "customix-head-detection-v1-tensorrt-sm86-cuda128-trt109-fp16",
   "author": "Customix",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 233930861,
   "storage_human": "234 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

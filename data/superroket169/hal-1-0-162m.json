@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "superroket169/Hal-1.0-162M",
   "slug": "superroket169-hal-1-0-162m",
   "author": "superroket169",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 3242975320,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

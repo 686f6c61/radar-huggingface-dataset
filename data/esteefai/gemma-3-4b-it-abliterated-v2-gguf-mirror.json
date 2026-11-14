@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "EsteefAi/gemma-3-4b-it-abliterated-v2-GGUF-mirror",
   "slug": "esteefai-gemma-3-4b-it-abliterated-v2-gguf-mirror",
   "author": "EsteefAi",
@@ -28,14 +28,19 @@
   "parameters_human": "3.88B",
   "storage_bytes": 3190739776,
   "storage_human": "3.2 GB",
+  "context_length": 131072,
   "base_model": "mlabonne/gemma-3-4b-it-abliterated-v2",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Reza2kn/Motarjem-v0.5-stage1-step24000",
   "slug": "reza2kn-motarjem-v0-5-stage1-step24000",
   "author": "Reza2kn",
@@ -44,14 +44,19 @@
   "parameters_human": "107.9M",
   "storage_bytes": 215861800,
   "storage_human": "216 MB",
+  "context_length": null,
   "base_model": "tiiuae/Falcon-H1-Tiny-Multilingual-100M-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

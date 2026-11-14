@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "doth4580/Lygodactylus-FlashNext-Uncensored-3bpw",
   "slug": "doth4580-lygodactylus-flashnext-uncensored-3bpw",
   "author": "doth4580",
@@ -32,14 +32,19 @@
   "parameters_human": "26.17B",
   "storage_bytes": 72359057449,
   "storage_human": "72.4 GB",
+  "context_length": null,
   "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

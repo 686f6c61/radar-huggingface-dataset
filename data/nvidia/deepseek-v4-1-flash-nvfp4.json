@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nvidia/DeepSeek-V4.1-Flash-NVFP4",
   "slug": "nvidia-deepseek-v4-1-flash-nvfp4",
   "author": "nvidia",
@@ -36,14 +36,19 @@
   "parameters_human": "763.21B",
   "storage_bytes": 632075373517,
   "storage_human": "632.1 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

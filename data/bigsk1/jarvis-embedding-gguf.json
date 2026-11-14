@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bigsk1/jarvis-embedding-GGUF",
   "slug": "bigsk1-jarvis-embedding-gguf",
   "author": "bigsk1",
@@ -32,14 +32,19 @@
   "parameters_human": "307.6M",
   "storage_bytes": 621867104,
   "storage_human": "622 MB",
+  "context_length": 2048,
   "base_model": "google/embeddinggemma-300m",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

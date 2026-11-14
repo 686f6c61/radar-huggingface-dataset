@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TILKI-AI/character-generation-v2-4B-lora",
   "slug": "tilki-ai-character-generation-v2-4b-lora",
   "author": "TILKI-AI",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 279783791,
   "storage_human": "280 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-20T10:59:38.334Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

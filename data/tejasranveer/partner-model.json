@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tejasranveer/partner-model",
   "slug": "tejasranveer-partner-model",
   "author": "tejasranveer",
@@ -27,14 +27,19 @@
   "parameters_human": "494.0M",
   "storage_bytes": 397807648,
   "storage_human": "398 MB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

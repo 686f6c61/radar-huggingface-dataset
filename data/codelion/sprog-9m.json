@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "codelion/sprog-9m",
   "slug": "codelion-sprog-9m",
   "author": "codelion",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 37521806,
   "storage_human": "38 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": null,

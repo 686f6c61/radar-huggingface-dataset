@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fidel1234/Moss_Asian_Character",
   "slug": "fidel1234-moss_asian_character",
   "author": "fidel1234",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 11674024195,
   "storage_human": "11.7 GB",
+  "context_length": null,
   "base_model": "OpenMOSS-Team/MOSS-Image-Base",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

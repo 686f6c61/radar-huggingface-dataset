@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jmeadlock/GLM-5.3-Flash-DFlash2-JM-FAILED",
   "slug": "jmeadlock-glm-5-3-flash-dflash2-jm-failed",
   "author": "jmeadlock",
@@ -39,14 +39,19 @@
   "parameters_human": "1.17B",
   "storage_bytes": 2342169840,
   "storage_human": "2.3 GB",
+  "context_length": null,
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

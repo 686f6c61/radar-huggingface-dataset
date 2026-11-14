@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bane117/TinyLlama-1.1B-Chat-v1.0-abliterated",
   "slug": "bane117-tinyllama-1-1b-chat-v1-0-abliterated",
   "author": "bane117",
@@ -23,14 +23,19 @@
   "parameters_human": "1.10B",
   "storage_bytes": 2200119656,
   "storage_human": "2.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-30T02:38:51.734Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

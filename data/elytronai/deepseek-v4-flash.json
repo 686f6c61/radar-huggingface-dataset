@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ElytronAI/DeepSeek-v4-Flash",
   "slug": "elytronai-deepseek-v4-flash",
   "author": "ElytronAI",
@@ -34,14 +34,19 @@
   "parameters_human": "165.93B",
   "storage_bytes": 167979666183,
   "storage_human": "168.0 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "ElytronSystems/DeepSeek-v4-Flash-pulsar-mxfp4",
+  "renamed_at": "2026-11-11T02:42:35.104Z",
   "benchmarks": [],
   "sources": [
     {

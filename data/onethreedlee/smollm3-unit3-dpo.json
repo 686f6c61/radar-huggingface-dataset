@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "onethreedlee/smollm3-unit3-dpo",
   "slug": "onethreedlee-smollm3-unit3-dpo",
   "author": "onethreedlee",
@@ -35,14 +35,19 @@
   "parameters_human": "3.08B",
   "storage_bytes": 184526426545,
   "storage_human": "184.5 GB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolLM3-3B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

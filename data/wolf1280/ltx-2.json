@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "wolf1280/ltx-2",
   "slug": "wolf1280-ltx-2",
   "author": "wolf1280",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 62425823346,
   "storage_human": "62.4 GB",
+  "context_length": null,
   "base_model": "google/gemma-3-12b-it, mlabonne/gemma-3-12b-it-abliterated, ovi054/LTX-2-19b-Squish-LoRA",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

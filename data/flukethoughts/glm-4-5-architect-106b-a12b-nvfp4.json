@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "flukethoughts/GLM-4.5-Architect-106B-A12B-NVFP4",
   "slug": "flukethoughts-glm-4-5-architect-106b-a12b-nvfp4",
   "author": "flukethoughts",
@@ -40,14 +40,19 @@
   "parameters_human": "60.66B",
   "storage_bytes": 69166665848,
   "storage_human": "69.2 GB",
+  "context_length": null,
   "base_model": "ConicCat/GLM-4.5-Architect-106B-A12B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

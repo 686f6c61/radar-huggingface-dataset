@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "miguelamendez/mica-spark-x25-4b",
   "slug": "miguelamendez-mica-spark-x25-4b",
   "author": "miguelamendez",
@@ -37,6 +37,7 @@
   "parameters_human": "4.11B",
   "storage_bytes": 13658593116,
   "storage_human": "13.7 GB",
+  "context_length": 1048576,
   "base_model": "XHToken/Spark-X2.5-4B",
   "formats": [
     "gguf",
@@ -45,8 +46,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

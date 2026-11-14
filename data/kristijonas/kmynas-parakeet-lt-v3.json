@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kristijonas/kmynas-parakeet-lt-v3",
   "slug": "kristijonas-kmynas-parakeet-lt-v3",
   "author": "kristijonas",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 2509352960,
   "storage_human": "2.5 GB",
+  "context_length": null,
   "base_model": "nvidia/parakeet-tdt-0.6b-v3",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-09T10:06:45.794Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",

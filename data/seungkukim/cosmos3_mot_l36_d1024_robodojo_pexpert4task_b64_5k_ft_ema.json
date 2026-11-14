@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "seungkukim/cosmos3_mot_l36_d1024_robodojo_pexpert4task_b64_5k_ft_ema",
   "slug": "seungkukim-cosmos3_mot_l36_d1024_robodojo_pexpert4task_b64_5k_ft_ema",
   "author": "seungkukim",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 31999953363,
   "storage_human": "32.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

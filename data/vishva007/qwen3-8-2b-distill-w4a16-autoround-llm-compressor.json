@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Vishva007/Qwen3.8-2B-Distill-W4A16-AutoRound-LLM-Compressor",
   "slug": "vishva007-qwen3-8-2b-distill-w4a16-autoround-llm-compressor",
   "author": "Vishva007",
@@ -37,14 +37,19 @@
   "parameters_human": "2.21B",
   "storage_bytes": 12409796205,
   "storage_human": "12.4 GB",
+  "context_length": null,
   "base_model": "empero-ai/Qwen3.8-2B-Distill",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

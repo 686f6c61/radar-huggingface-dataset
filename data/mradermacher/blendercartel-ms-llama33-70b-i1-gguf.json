@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/BlenderCartel-MS-llama33-70B-i1-GGUF",
   "slug": "mradermacher-blendercartel-ms-llama33-70b-i1-gguf",
   "author": "mradermacher",
@@ -34,14 +34,19 @@
   "parameters_human": "70.55B",
   "storage_bytes": 753210237824,
   "storage_human": "753.2 GB",
+  "context_length": 131072,
   "base_model": "KaraKaraWarehouse/BlenderCartel-MS-llama33-70B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

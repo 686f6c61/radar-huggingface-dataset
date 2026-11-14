@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "teggr234/AtomicChat-DeepSeek-V4.1-Flash-1017-IQ2_XXS-llama-cpp-GGUF",
   "slug": "teggr234-atomicchat-deepseek-v4-1-flash-1017-iq2_xxs-llama-cpp-gguf",
   "author": "teggr234",
@@ -31,14 +31,19 @@
   "parameters_human": "748.49B",
   "storage_bytes": 248834257920,
   "storage_human": "248.8 GB",
+  "context_length": 1048576,
   "base_model": "AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF, ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

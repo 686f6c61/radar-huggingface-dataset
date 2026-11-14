@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "YTan2000/Spark-X2.5-4B-GGUF",
   "slug": "ytan2000-spark-x2-5-4b-gguf",
   "author": "YTan2000",
@@ -40,14 +40,19 @@
   "parameters_human": "4.11B",
   "storage_bytes": 13100964516,
   "storage_human": "13.1 GB",
+  "context_length": 1048576,
   "base_model": "XHToken/Spark-X2.5-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

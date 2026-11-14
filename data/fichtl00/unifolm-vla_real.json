@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Fichtl00/Unifolm-VLA_real",
   "slug": "fichtl00-unifolm-vla_real",
   "author": "Fichtl00",
@@ -23,12 +23,17 @@
   "parameters_human": null,
   "storage_bytes": 284549351761,
   "storage_human": "284.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thomasken1234/ingot-xvi-g7",
   "slug": "thomasken1234-ingot-xvi-g7",
   "author": "thomasken1234",
@@ -27,14 +27,19 @@
   "parameters_human": "26.90B",
   "storage_bytes": 7396883510,
   "storage_human": "7.4 GB",
+  "context_length": 262144,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "assassin58/ingot-xvi-g7",
+  "renamed_at": "2026-11-11T07:48:08.615Z",
   "benchmarks": [],
   "sources": []
 }

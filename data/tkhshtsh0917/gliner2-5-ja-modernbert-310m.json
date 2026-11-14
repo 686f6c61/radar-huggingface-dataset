@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tkhshtsh0917/gliner2.5-ja-modernbert-310m",
   "slug": "tkhshtsh0917-gliner2-5-ja-modernbert-310m",
   "author": "tkhshtsh0917",
@@ -34,14 +34,19 @@
   "parameters_human": "321.9M",
   "storage_bytes": 2576440136,
   "storage_human": "2.6 GB",
+  "context_length": null,
   "base_model": "sbintuitions/modernbert-ja-310m",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Troiaaa/pi0.5-WSMLo1hknaNw",
   "slug": "troiaaa-pi0-5-wsmlo1hknanw",
   "author": "Troiaaa",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 12439602216,
   "storage_human": "12.4 GB",
+  "context_length": null,
   "base_model": "ApexUltron/pi0.5-KX774qZu7mZD",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

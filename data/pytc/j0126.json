@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pytc/j0126",
   "slug": "pytc-j0126",
   "author": "pytc",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 494846135,
   "storage_human": "495 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "pytc/vEM",
+  "renamed_at": "2026-11-13T07:38:50.254Z",
   "benchmarks": [],
   "sources": [
     {

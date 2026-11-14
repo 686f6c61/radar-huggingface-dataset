@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sach3v/indicphi-muril-pii",
   "slug": "sach3v-indicphi-muril-pii",
   "author": "sach3v",
@@ -80,14 +80,19 @@
   "parameters_human": "237.0M",
   "storage_bytes": 948203428,
   "storage_human": "948 MB",
+  "context_length": null,
   "base_model": "google/muril-base-cased",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "iamarvind/ayurveda-helper",
   "slug": "iamarvind-ayurveda-helper",
   "author": "iamarvind",
@@ -41,6 +41,7 @@
   "parameters_human": "23.57B",
   "storage_bytes": 13277256980,
   "storage_human": "13.3 GB",
+  "context_length": null,
   "base_model": "sarvamai/sarvam-m",
   "formats": [
     "mlx",
@@ -48,8 +49,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

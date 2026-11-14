@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "soniqo/Smart-Turn-v3.2-ONNX",
   "slug": "soniqo-smart-turn-v3-2-onnx",
   "author": "soniqo",
@@ -80,14 +80,19 @@
   "parameters_human": null,
   "storage_bytes": 44158694,
   "storage_human": "44 MB",
+  "context_length": null,
   "base_model": "pipecat-ai/smart-turn-v3",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mobbitxt/Dark-Craving-31B-v3.0-oQ4e",
   "slug": "mobbitxt-dark-craving-31b-v3-0-oq4e",
   "author": "mobbitxt",
@@ -42,6 +42,7 @@
   "parameters_human": "31.27B",
   "storage_bytes": 19595424735,
   "storage_human": "19.6 GB",
+  "context_length": null,
   "base_model": "ReadyArt/Dark-Craving-31B-v3.0",
   "formats": [
     "mlx",
@@ -49,8 +50,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "krush420/gpt-oss-120b-sre-lora",
   "slug": "krush420-gpt-oss-120b-sre-lora",
   "author": "krush420",
@@ -47,6 +47,7 @@
   "parameters_human": "11.9M",
   "storage_bytes": 266902470,
   "storage_human": "267 MB",
+  "context_length": null,
   "base_model": "openai/gpt-oss-120b",
   "formats": [
     "gguf",
@@ -54,8 +55,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

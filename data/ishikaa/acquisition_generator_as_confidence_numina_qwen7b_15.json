@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ishikaa/acquisition_generator_AS_confidence_numina_qwen7b_15",
   "slug": "ishikaa-acquisition_generator_as_confidence_numina_qwen7b_15",
   "author": "ishikaa",
@@ -29,14 +29,19 @@
   "parameters_human": "7.62B",
   "storage_bytes": 60936431160,
   "storage_human": "60.9 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-06T03:45:49.241Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

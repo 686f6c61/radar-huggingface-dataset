@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "k5p5/gemma-4-E4B-it-text-MLX-4bit",
   "slug": "k5p5-gemma-4-e4b-it-text-mlx-4bit",
   "author": "k5p5",
@@ -29,6 +29,7 @@
   "parameters_human": "7.46B",
   "storage_bytes": 5591998598,
   "storage_human": "5.6 GB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-E4B-it-UD-MLX-4bit",
   "formats": [
     "mlx",
@@ -36,8 +37,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

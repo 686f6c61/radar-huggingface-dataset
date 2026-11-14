@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "xiaorui638/VERVE-Qwen2.5-VL-7B-plain",
   "slug": "xiaorui638-verve-qwen2-5-vl-7b-plain",
   "author": "xiaorui638",
@@ -28,14 +28,19 @@
   "parameters_human": "8.29B",
   "storage_bytes": 16595836456,
   "storage_human": "16.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "xiaorui638/VERVE-7B-plain",
+  "renamed_at": "2026-11-14T09:15:34.187Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "vedantjadhav701/SparkAI-47m-llama-instruct",
   "slug": "vedantjadhav701-sparkai-47m-llama-instruct",
   "author": "vedantjadhav701",
@@ -42,14 +42,19 @@
   "parameters_human": "47.7M",
   "storage_bytes": 95445968,
   "storage_human": "95 MB",
+  "context_length": null,
   "base_model": "vedantjadhav701/SparkAI-47m-llama-10b-token",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "botnick/Netra-2B",
   "slug": "botnick-netra-2b",
   "author": "botnick",
@@ -56,14 +56,19 @@
   "parameters_human": "2.13B",
   "storage_bytes": 12778738081,
   "storage_human": "12.8 GB",
+  "context_length": null,
   "base_model": "typhoon-ai/typhoon-ocr1.5-2b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

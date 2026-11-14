@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "AEON-7/Ornith-1.0-35B-AEON-Ultimate-Uncensored-NVFP4",
   "slug": "aeon-7-ornith-1-0-35b-aeon-ultimate-uncensored-nvfp4",
   "author": "AEON-7",
@@ -62,14 +62,19 @@
   "parameters_human": "35.11B",
   "storage_bytes": 23764062623,
   "storage_human": "23.8 GB",
+  "context_length": null,
   "base_model": "AEON-7/Ornith-1.0-35B-AEON-Ultimate-Uncensored-BF16",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

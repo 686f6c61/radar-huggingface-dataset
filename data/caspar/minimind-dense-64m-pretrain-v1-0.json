@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "caspar/MiniMind-Dense-64M-Pretrain-v1.0",
   "slug": "caspar-minimind-dense-64m-pretrain-v1-0",
   "author": "caspar",
@@ -34,14 +34,19 @@
   "parameters_human": "63.9M",
   "storage_bytes": 265519706,
   "storage_human": "266 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

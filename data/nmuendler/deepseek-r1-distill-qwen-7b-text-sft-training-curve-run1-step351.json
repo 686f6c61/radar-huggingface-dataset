@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-sft-training-curve-run1-step351",
   "slug": "nmuendler-deepseek-r1-distill-qwen-7b-text-sft-training-curve-run1-step351",
   "author": "nmuendler",
@@ -30,14 +30,19 @@
   "parameters_human": null,
   "storage_bytes": 334436075,
   "storage_human": "334 MB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kelsey1217/Qwen-Image-2.1-Turbo-NPU-BFP16",
   "slug": "kelsey1217-qwen-image-2-1-turbo-npu-bfp16",
   "author": "Kelsey1217",
@@ -32,14 +32,19 @@
   "parameters_human": "19.59B",
   "storage_bytes": 19589108534,
   "storage_human": "19.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1-Turbo",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

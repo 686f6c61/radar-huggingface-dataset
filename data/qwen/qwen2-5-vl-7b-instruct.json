@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Qwen/Qwen2.5-VL-7B-Instruct",
   "slug": "qwen-qwen2-5-vl-7b-instruct",
   "author": "Qwen",
@@ -38,14 +38,19 @@
   "parameters_human": "8.29B",
   "storage_bytes": 16584414560,
   "storage_human": "16.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

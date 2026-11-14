@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "griffinlabs/xvla-finetuned-bipiper-lora-shared",
   "slug": "griffinlabs-xvla-finetuned-bipiper-lora-shared",
   "author": "griffinlabs",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 398739304,
   "storage_human": "399 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-18T05:31:50.821Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

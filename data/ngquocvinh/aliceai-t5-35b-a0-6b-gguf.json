@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ngquocvinh/AliceAI-T5-35B-A0.6B-GGUF",
   "slug": "ngquocvinh-aliceai-t5-35b-a0-6b-gguf",
   "author": "ngquocvinh",
@@ -32,14 +32,19 @@
   "parameters_human": "34.56B",
   "storage_bytes": 508609758912,
   "storage_human": "508.6 GB",
+  "context_length": 131073,
   "base_model": "yandex/AliceAI-T5-35B-A0.6B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jaisidhsingh/SignedKDA-kda-neg-eigval",
   "slug": "jaisidhsingh-signedkda-kda-neg-eigval",
   "author": "jaisidhsingh",
@@ -24,14 +24,19 @@
   "parameters_human": "347.6M",
   "storage_bytes": 1390535728,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

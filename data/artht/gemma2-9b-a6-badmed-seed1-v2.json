@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ArthT/gemma2-9b-a6-badmed-seed1-v2",
   "slug": "artht-gemma2-9b-a6-badmed-seed1-v2",
   "author": "ArthT",
@@ -26,14 +26,19 @@
   "parameters_human": null,
   "storage_bytes": 6562384553,
   "storage_human": "6.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-31T03:45:19.534Z",
+  "removal_pattern": "author_purge",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

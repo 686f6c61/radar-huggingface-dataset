@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Irfanuruchi/Qwen3-4B-Computer-Science-OpenVINO-FP16",
   "slug": "irfanuruchi-qwen3-4b-computer-science-openvino-fp16",
   "author": "Irfanuruchi",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 8064137800,
   "storage_human": "8.1 GB",
+  "context_length": null,
   "base_model": "Irfanuruchi/Qwen3-4B-Computer-Science",
   "formats": [],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

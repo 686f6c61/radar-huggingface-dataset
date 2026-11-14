@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Digilidaahz/Freedream-1B-Instruct-V2",
   "slug": "digilidaahz-freedream-1b-instruct-v2",
   "author": "Digilidaahz",
@@ -30,12 +30,17 @@
   "parameters_human": null,
   "storage_bytes": 7884547934,
   "storage_human": "7.9 GB",
+  "context_length": null,
   "base_model": "Digilidaahz/Freedream_1B_BaseModel",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

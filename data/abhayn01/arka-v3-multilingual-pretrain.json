@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Abhayn01/ARKA-v3-Multilingual-Pretrain",
   "slug": "abhayn01-arka-v3-multilingual-pretrain",
   "author": "Abhayn01",
@@ -22,14 +22,19 @@
   "parameters_human": "505.7M",
   "storage_bytes": 204431282980,
   "storage_human": "204.4 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

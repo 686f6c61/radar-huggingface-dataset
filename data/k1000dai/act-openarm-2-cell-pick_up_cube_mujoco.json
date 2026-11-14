@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "k1000dai/act-openarm-2-cell-pick_up_cube_mujoco",
   "slug": "k1000dai-act-openarm-2-cell-pick_up_cube_mujoco",
   "author": "k1000dai",
@@ -28,14 +28,19 @@
   "parameters_human": "51.7M",
   "storage_bytes": 206799584,
   "storage_human": "207 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "enactic/act-openarm-2-cell-pick_up_cube_mujoco",
+  "renamed_at": "2026-11-11T05:52:09.301Z",
   "benchmarks": [],
   "sources": [
     {

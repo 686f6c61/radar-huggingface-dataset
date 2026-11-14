@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thundercode/SatQuery",
   "slug": "thundercode-satquery",
   "author": "thundercode",
@@ -40,14 +40,19 @@
   "parameters_human": null,
   "storage_bytes": 131130325,
   "storage_human": "131 MB",
+  "context_length": null,
   "base_model": "HuggingFaceTB/SmolVLM-500M-Instruct, chendelong/RemoteCLIP, antofuller/CROMA, sentence-transformers/all-MiniLM-L6-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

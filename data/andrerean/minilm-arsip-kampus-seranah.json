@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "andrerean/minilm-arsip-kampus-seranah",
   "slug": "andrerean-minilm-arsip-kampus-seranah",
   "author": "andrerean",
@@ -35,14 +35,19 @@
   "parameters_human": "117.7M",
   "storage_bytes": 487720403,
   "storage_human": "488 MB",
+  "context_length": null,
   "base_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

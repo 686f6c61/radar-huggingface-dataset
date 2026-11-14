@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "backpack-run/Z-Image-Turbo-Backpack-Image",
   "slug": "backpack-run-z-image-turbo-backpack-image",
   "author": "backpack-run",
@@ -30,6 +30,7 @@
   "parameters_human": "6.16B",
   "storage_bytes": 6165568936,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "Tongyi-MAI/Z-Image-Turbo",
   "formats": [
     "diffusers",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-30T08:03:07.631Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

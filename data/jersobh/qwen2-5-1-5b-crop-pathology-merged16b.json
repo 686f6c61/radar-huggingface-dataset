@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jersobh/qwen2.5-1.5b-crop-pathology-merged16b",
   "slug": "jersobh-qwen2-5-1-5b-crop-pathology-merged16b",
   "author": "jersobh",
@@ -29,20 +29,25 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 810,
+  "downloads_30d": 840,
   "trending_score": 0,
   "parameters": 1543714304,
   "parameters_human": "1.54B",
   "storage_bytes": 9273823598,
   "storage_human": "9.3 GB",
+  "context_length": null,
   "base_model": "unsloth/Qwen2.5-1.5B-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

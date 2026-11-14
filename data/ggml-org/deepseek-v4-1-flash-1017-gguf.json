@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ggml-org/DeepSeek-V4.1-Flash-1017-GGUF",
   "slug": "ggml-org-deepseek-v4-1-flash-1017-gguf",
   "author": "ggml-org",
@@ -29,14 +29,19 @@
   "parameters_human": "748.49B",
   "storage_bytes": 666981650976,
   "storage_human": "667.0 GB",
+  "context_length": 1048576,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

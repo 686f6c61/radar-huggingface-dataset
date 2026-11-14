@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LuffyTheFox/Qwen3.6-35B-A3B-Genesis-BF16-GGUF",
   "slug": "luffythefox-qwen3-6-35b-a3b-genesis-bf16-gguf",
   "author": "LuffyTheFox",
@@ -43,14 +43,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 87202199488,
   "storage_human": "87.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-21T07:47:40.925Z",
+  "removal_pattern": "had_traction",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

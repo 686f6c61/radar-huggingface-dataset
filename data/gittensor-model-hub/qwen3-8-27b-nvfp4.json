@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gittensor-model-hub/Qwen3.8-27B-NVFP4",
   "slug": "gittensor-model-hub-qwen3-8-27b-nvfp4",
   "author": "gittensor-model-hub",
@@ -41,14 +41,19 @@
   "parameters_human": "14.56B",
   "storage_bytes": 36603062848,
   "storage_human": "36.6 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090",
+  "renamed_at": "2026-11-11T05:26:35.738Z",
   "benchmarks": [],
   "sources": []
 }

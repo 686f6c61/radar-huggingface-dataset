@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "umixer/Huihui-Qwen3.8-Flash-Next-ThinkingCap-oq4-mix6-mtp",
   "slug": "umixer-huihui-qwen3-8-flash-next-thinkingcap-oq4-mix6-mtp",
   "author": "umixer",
@@ -37,6 +37,7 @@
   "parameters_human": "180.00B",
   "storage_bytes": 126145302805,
   "storage_human": "126.1 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF",
   "formats": [
     "mlx",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

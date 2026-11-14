@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sanghyang00/ELARSpeech-Whisper-Large-v3-apu",
   "slug": "sanghyang00-elarspeech-whisper-large-v3-apu",
   "author": "Sanghyang00",
@@ -33,14 +33,19 @@
   "parameters_human": "1.54B",
   "storage_bytes": 6174117304,
   "storage_human": "6.2 GB",
+  "context_length": null,
   "base_model": "openai/whisper-large-v3",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-19T03:50:03.620Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

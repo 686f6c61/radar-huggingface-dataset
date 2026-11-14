@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Outlier-Ai/Qwen3-14B-MLX-4bit",
   "slug": "outlier-ai-qwen3-14b-mlx-4bit",
   "author": "Outlier-Ai",
@@ -93,6 +93,7 @@
   "parameters_human": "14.77B",
   "storage_bytes": 8319321164,
   "storage_human": "8.3 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-14B",
   "formats": [
     "mlx",
@@ -100,8 +101,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

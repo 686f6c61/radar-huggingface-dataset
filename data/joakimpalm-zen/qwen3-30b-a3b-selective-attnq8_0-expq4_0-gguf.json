@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Joakimpalm-Zen/Qwen3-30B-A3B-selective-attnQ8_0-expQ4_0-GGUF",
   "slug": "joakimpalm-zen-qwen3-30b-a3b-selective-attnq8_0-expq4_0-gguf",
   "author": "Joakimpalm-Zen",
@@ -33,14 +33,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 17988417024,
   "storage_human": "18.0 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-30B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

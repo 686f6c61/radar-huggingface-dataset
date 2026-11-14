@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "furiosa-ai/Qwen3-Coder-30B-A3B-Instruct-FP8",
   "slug": "furiosa-ai-qwen3-coder-30b-a3b-instruct-fp8",
   "author": "furiosa-ai",
@@ -32,14 +32,19 @@
   "parameters_human": "30.53B",
   "storage_bytes": 60712155634,
   "storage_human": "60.7 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-Coder-30B-A3B-Instruct-FP8",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

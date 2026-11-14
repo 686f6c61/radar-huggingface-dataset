@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mah92/Chatterbox-FA-T3-Q4_K-GGUF",
   "slug": "mah92-chatterbox-fa-t3-q4_k-gguf",
   "author": "mah92",
@@ -34,14 +34,19 @@
   "parameters_human": "537.4M",
   "storage_bytes": 386365056,
   "storage_human": "386 MB",
+  "context_length": null,
   "base_model": "mazrba/Chatterbox-TTS-Persian-gguf",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

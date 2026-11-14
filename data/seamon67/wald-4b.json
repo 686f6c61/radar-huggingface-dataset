@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "seamon67/Wald-4B",
   "slug": "seamon67-wald-4b",
   "author": "seamon67",
@@ -62,6 +62,7 @@
   "parameters_human": "4.21B",
   "storage_bytes": 8431547805,
   "storage_human": "8.4 GB",
+  "context_length": null,
   "base_model": "org2ai/Wald-4B",
   "formats": [
     "gguf",
@@ -69,8 +70,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Structured decisions (option probabilities)",

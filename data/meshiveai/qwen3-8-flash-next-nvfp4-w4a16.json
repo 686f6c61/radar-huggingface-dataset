@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "MESHIVEAI/Qwen3.8-Flash-Next-NVFP4-W4A16",
   "slug": "meshiveai-qwen3-8-flash-next-nvfp4-w4a16",
   "author": "MESHIVEAI",
@@ -38,14 +38,19 @@
   "parameters_human": "177.39B",
   "storage_bytes": 181216664346,
   "storage_human": "181.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

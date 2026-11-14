@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Quazim0t0/MaleCNS-SpikeWhale-Anatomy-LM",
   "slug": "quazim0t0-malecns-spikewhale-anatomy-lm",
   "author": "Quazim0t0",
@@ -35,12 +35,17 @@
   "parameters_human": null,
   "storage_bytes": 3154762065,
   "storage_human": "3.2 GB",
+  "context_length": null,
   "base_model": "Quazim0t0/SpikeWhale-SNN-216M",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

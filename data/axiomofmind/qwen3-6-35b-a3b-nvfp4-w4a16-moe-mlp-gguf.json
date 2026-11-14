@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "axiomofmind/Qwen3.6-35B-A3B-NVFP4-W4A16-MoE-MLP-GGUF",
   "slug": "axiomofmind-qwen3-6-35b-a3b-nvfp4-w4a16-moe-mlp-gguf",
   "author": "axiomofmind",
@@ -35,14 +35,19 @@
   "parameters_human": "446.6M",
   "storage_bytes": 27169603488,
   "storage_human": "27.2 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

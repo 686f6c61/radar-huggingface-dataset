@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gaurav-dey/flan-t5-base-qg-demo2",
   "slug": "gaurav-dey-flan-t5-base-qg-demo2",
   "author": "gaurav-dey",
@@ -28,14 +28,19 @@
   "parameters_human": "247.6M",
   "storage_bytes": 990345064,
   "storage_human": "990 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-08-28T02:18:25.430Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

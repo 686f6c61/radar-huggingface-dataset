@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ikarth/openpd-gpt2-v0",
   "slug": "ikarth-openpd-gpt2-v0",
   "author": "ikarth",
@@ -50,6 +50,7 @@
   "parameters_human": "124.4M",
   "storage_bytes": 662074444,
   "storage_human": "662 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx",
@@ -57,8 +58,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

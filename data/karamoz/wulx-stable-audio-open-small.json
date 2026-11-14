@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Karamoz/wulx-stable-audio-open-small",
   "slug": "karamoz-wulx-stable-audio-open-small",
   "author": "Karamoz",
@@ -27,14 +27,19 @@
   "parameters_human": "497.2M",
   "storage_bytes": 1676829212,
   "storage_human": "1.7 GB",
+  "context_length": null,
   "base_model": "stabilityai/stable-audio-open-small",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "thunderstorm007/fake_news_train_via_svm_lr_",
   "slug": "thunderstorm007-fake_news_train_via_svm_lr_",
   "author": "thunderstorm007",
@@ -23,14 +23,19 @@
   "parameters_human": null,
   "storage_bytes": 1333681693,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

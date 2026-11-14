@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "angeldove/menagequeensbarbie2027.tar",
   "slug": "angeldove-menagequeensbarbie2027-tar",
   "author": "angeldove",
@@ -28,14 +28,19 @@
   "parameters_human": null,
   "storage_bytes": 64183,
   "storage_human": "64183 B",
+  "context_length": null,
   "base_model": "rzgar/Wan2.2_I2V_LightX2V_2Step",
   "formats": [
     "diffusers"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-22T02:56:07.069Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

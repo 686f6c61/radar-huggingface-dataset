@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dronefreak/uavdt-rfdetr-medium",
   "slug": "dronefreak-uavdt-rfdetr-medium",
   "author": "dronefreak",
@@ -40,12 +40,17 @@
   "parameters_human": null,
   "storage_bytes": 283081975,
   "storage_human": "283 MB",
+  "context_length": null,
   "base_model": "Roboflow/rf-detr-medium",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Object Detection",

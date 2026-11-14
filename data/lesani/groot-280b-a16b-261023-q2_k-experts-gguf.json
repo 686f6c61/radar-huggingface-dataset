@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Lesani/Groot-280B-A16B-261023-Q2_K-Experts-GGUF",
   "slug": "lesani-groot-280b-a16b-261023-q2_k-experts-gguf",
   "author": "Lesani",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 307097950336,
   "storage_human": "307.1 GB",
+  "context_length": null,
   "base_model": "GrootTeam/Groot-280B-A16B-261023",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

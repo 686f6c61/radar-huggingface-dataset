@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "gu1npen/proseparse-exposition-finetune",
   "slug": "gu1npen-proseparse-exposition-finetune",
   "author": "gu1npen",
@@ -36,14 +36,19 @@
   "parameters_human": "184.4M",
   "storage_bytes": 8853189645,
   "storage_human": "8.9 GB",
+  "context_length": null,
   "base_model": "microsoft/deberta-v3-base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

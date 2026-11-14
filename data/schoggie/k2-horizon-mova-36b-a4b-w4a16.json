@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "schoggie/K2-Horizon-MoVA-36B-A4B-W4A16",
   "slug": "schoggie-k2-horizon-mova-36b-a4b-w4a16",
   "author": "schoggie",
@@ -38,14 +38,19 @@
   "parameters_human": "37.44B",
   "storage_bytes": 35526000389,
   "storage_human": "35.5 GB",
+  "context_length": null,
   "base_model": "IFM/K2-Horizon-MoVA-36B-A4B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

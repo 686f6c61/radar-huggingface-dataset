@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kruthisham/data266-lab2-team35-p2-run2",
   "slug": "kruthisham-data266-lab2-team35-p2-run2",
   "author": "kruthisham",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 25548064,
   "storage_human": "26 MB",
+  "context_length": null,
   "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

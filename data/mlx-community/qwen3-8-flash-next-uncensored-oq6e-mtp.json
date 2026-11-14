@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mlx-community/Qwen3.8-Flash-Next-Uncensored-oQ6e-mtp",
   "slug": "mlx-community-qwen3-8-flash-next-uncensored-oq6e-mtp",
   "author": "mlx-community",
@@ -45,6 +45,7 @@
   "parameters_human": "180.00B",
   "storage_bytes": 150458673839,
   "storage_human": "150.5 GB",
+  "context_length": null,
   "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored",
   "formats": [
     "mlx",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

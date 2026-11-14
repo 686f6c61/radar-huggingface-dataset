@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ngocdang83/HachimiMT-60-QT",
   "slug": "ngocdang83-hachimimt-60-qt",
   "author": "ngocdang83",
@@ -41,14 +41,19 @@
   "parameters_human": "56.4M",
   "storage_bytes": 853646543,
   "storage_human": "854 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

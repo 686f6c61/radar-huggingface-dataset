@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "miyoshi-nii/aofi-umi-arena",
   "slug": "miyoshi-nii-aofi-umi-arena",
   "author": "miyoshi-nii",
@@ -26,14 +26,19 @@
   "parameters_human": "217.4M",
   "storage_bytes": 1122194016,
   "storage_human": "1.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

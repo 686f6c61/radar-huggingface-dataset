@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hector-gr/CARE-Gemma-4-E2B-it-Math-seed44",
   "slug": "hector-gr-care-gemma-4-e2b-it-math-seed44",
   "author": "hector-gr",
@@ -35,14 +35,19 @@
   "parameters_human": "5.51B",
   "storage_bytes": 11046331250,
   "storage_human": "11.0 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

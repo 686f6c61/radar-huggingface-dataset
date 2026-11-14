@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ManthanLabs/qwen2.5-coder-3b-instruct-q8_0",
   "slug": "manthanlabs-qwen2-5-coder-3b-instruct-q8_0",
   "author": "ManthanLabs",
@@ -25,14 +25,19 @@
   "parameters_human": "3.40B",
   "storage_bytes": 3616088512,
   "storage_human": "3.6 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

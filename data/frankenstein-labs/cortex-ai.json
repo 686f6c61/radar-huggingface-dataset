@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Frankenstein-Labs/Cortex-ai",
   "slug": "frankenstein-labs-cortex-ai",
   "author": "Frankenstein-Labs",
@@ -38,14 +38,19 @@
   "parameters_human": "1650.50B",
   "storage_bytes": 892755974486,
   "storage_human": "892.8 GB",
+  "context_length": null,
   "base_model": "deepseek-ai/DeepSeek-V4-Pro-0813",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Frankenstein-Labs/cortex.6.sol",
+  "renamed_at": "2026-11-11T02:46:38.240Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hotchpotch/bekko-system-one-v0-17m",
   "slug": "hotchpotch-bekko-system-one-v0-17m",
   "author": "hotchpotch",
@@ -34,6 +34,7 @@
   "parameters_human": null,
   "storage_bytes": 96221851,
   "storage_human": "96 MB",
+  "context_length": null,
   "base_model": "cross-encoder/ettin-reranker-17m-v1",
   "formats": [
     "onnx",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

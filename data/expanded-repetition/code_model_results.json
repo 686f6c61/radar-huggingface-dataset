@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Expanded-Repetition/code_model_results",
   "slug": "expanded-repetition-code_model_results",
   "author": "Expanded-Repetition",
@@ -30,14 +30,19 @@
   "parameters_human": "356.7M",
   "storage_bytes": 713447425,
   "storage_human": "713 MB",
+  "context_length": null,
   "base_model": "Salesforce/codegen-350M-mono",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

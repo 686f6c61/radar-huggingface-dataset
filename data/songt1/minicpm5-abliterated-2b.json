@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SonGT1/MiniCPM5-abliterated-2B",
   "slug": "songt1-minicpm5-abliterated-2b",
   "author": "SonGT1",
@@ -40,6 +40,7 @@
   "parameters_human": "2.52B",
   "storage_bytes": 17321725832,
   "storage_human": "17.3 GB",
+  "context_length": 131072,
   "base_model": "openbmb/MiniCPM5-2B",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

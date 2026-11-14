@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yuan-225/ticket_classifier",
   "slug": "yuan-225-ticket_classifier",
   "author": "yuan-225",
@@ -24,14 +24,19 @@
   "parameters_human": "102.3M",
   "storage_bytes": 409134052,
   "storage_human": "409 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

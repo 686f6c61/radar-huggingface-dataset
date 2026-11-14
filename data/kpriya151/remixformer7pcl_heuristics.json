@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kpriya151/RemixFormer7PCL_Heuristics",
   "slug": "kpriya151-remixformer7pcl_heuristics",
   "author": "kpriya151",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 510936791,
   "storage_human": "511 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

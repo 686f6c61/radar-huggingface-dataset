@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nilp0inter/Jeff-Gemma4-E2B-Multimodal-BF16",
   "slug": "nilp0inter-jeff-gemma4-e2b-multimodal-bf16",
   "author": "nilp0inter",
@@ -35,14 +35,19 @@
   "parameters_human": "5.10B",
   "storage_bytes": 10241793096,
   "storage_human": "10.2 GB",
+  "context_length": null,
   "base_model": "google/gemma-4-E2B-it, mstrasser/Jeff-Gemma4-E2B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-04T02:12:53.215Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

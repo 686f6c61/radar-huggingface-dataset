@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "pantinor/parakeet-tdt-0.6b-v3-smoothquant",
   "slug": "pantinor-parakeet-tdt-0-6b-v3-smoothquant",
   "author": "pantinor",
@@ -44,14 +44,19 @@
   "parameters_human": null,
   "storage_bytes": 2677469788,
   "storage_human": "2.7 GB",
+  "context_length": null,
   "base_model": "nvidia/parakeet-tdt-0.6b-v3",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

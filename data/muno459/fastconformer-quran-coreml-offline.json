@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Muno459/fastconformer-quran-coreml-offline",
   "slug": "muno459-fastconformer-quran-coreml-offline",
   "author": "Muno459",
@@ -39,12 +39,17 @@
   "parameters_human": null,
   "storage_bytes": 2761317771,
   "storage_human": "2.8 GB",
+  "context_length": null,
   "base_model": "Muno459/fastconformer-quran",
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

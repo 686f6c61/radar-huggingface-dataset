@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mishazawa/dqn_cart_pole",
   "slug": "mishazawa-dqn_cart_pole",
   "author": "Mishazawa",
@@ -27,14 +27,19 @@
   "parameters_human": null,
   "storage_bytes": 131255,
   "storage_human": "131255 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "Mishazawa/rl_studying_zoo_checkpoints",
+  "renamed_at": "2026-11-12T03:29:19.193Z",
   "benchmarks": [],
   "sources": [
     {

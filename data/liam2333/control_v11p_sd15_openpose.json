@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Liam2333/control_v11p_sd15_openpose",
   "slug": "liam2333-control_v11p_sd15_openpose",
   "author": "Liam2333",
@@ -32,6 +32,7 @@
   "parameters_human": "361.3M",
   "storage_bytes": 4335709078,
   "storage_human": "4.3 GB",
+  "context_length": null,
   "base_model": "runwayml/stable-diffusion-v1-5",
   "formats": [
     "diffusers",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

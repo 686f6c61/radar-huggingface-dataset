@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Skskskd/ia-do-zero",
   "slug": "skskskd-ia-do-zero",
   "author": "Skskskd",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 409665,
   "storage_human": "409665 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-10T05:39:05.476Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

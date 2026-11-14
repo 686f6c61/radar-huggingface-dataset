@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "tzervas/lab-bitnet-b1.58-2B-4T-i2s",
   "slug": "tzervas-lab-bitnet-b1-58-2b-4t-i2s",
   "author": "tzervas",
@@ -29,14 +29,19 @@
   "parameters_human": "2.41B",
   "storage_bytes": 1187801280,
   "storage_human": "1.2 GB",
+  "context_length": 4096,
   "base_model": "microsoft/BitNet-b1.58-2B-4T",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

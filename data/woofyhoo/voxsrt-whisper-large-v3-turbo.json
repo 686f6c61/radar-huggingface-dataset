@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "WoofyHoo/VoxSRT-whisper-large-v3-turbo",
   "slug": "woofyhoo-voxsrt-whisper-large-v3-turbo",
   "author": "WoofyHoo",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 1617884929,
   "storage_human": "1.6 GB",
+  "context_length": null,
   "base_model": "openai/whisper-large-v3-turbo",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "WoofyLemo/VoxSRT-whisper-large-v3-turbo",
+  "renamed_at": "2026-11-14T04:43:23.030Z",
   "benchmarks": [],
   "sources": [
     {

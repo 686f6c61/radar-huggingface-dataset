@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Tensera/Tensera-SEO-0.6B",
   "slug": "tensera-tensera-seo-0-6b",
   "author": "Tensera",
@@ -34,14 +34,19 @@
   "parameters_human": "751.6M",
   "storage_bytes": 4521704710,
   "storage_human": "4.5 GB",
+  "context_length": null,
   "base_model": "rasbt/qwen3-from-scratch-distill-checkpoints",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

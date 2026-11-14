@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Kadabra/Gemma4-E2B-Base-Gascon-CPT",
   "slug": "kadabra-gemma4-e2b-base-gascon-cpt",
   "author": "Kadabra",
@@ -34,14 +34,19 @@
   "parameters_human": "5.12B",
   "storage_bytes": 10278791988,
   "storage_human": "10.3 GB",
+  "context_length": null,
   "base_model": "unsloth/gemma-4-E2B-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-17T04:02:51.806Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

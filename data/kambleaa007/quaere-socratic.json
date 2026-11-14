@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "kambleaa007/quaere-socratic",
   "slug": "kambleaa007-quaere-socratic",
   "author": "kambleaa007",
@@ -26,6 +26,7 @@
   "parameters_human": "8.03B",
   "storage_bytes": 20998500417,
   "storage_human": "21.0 GB",
+  "context_length": 8192,
   "base_model": null,
   "formats": [
     "gguf",
@@ -33,8 +34,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

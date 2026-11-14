@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "agentic-ptb/sol-max-v2.h024.pi-agent-sft-v12-depth.step_250",
   "slug": "agentic-ptb-sol-max-v2-h024-pi-agent-sft-v12-depth-step_250",
   "author": "agentic-ptb",
@@ -27,14 +27,19 @@
   "parameters_human": "9.41B",
   "storage_bytes": 18839710461,
   "storage_human": "18.8 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3.5-9B-Base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

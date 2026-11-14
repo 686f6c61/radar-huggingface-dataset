@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "RASHID778/qwen2.5-3b-arabic-lora",
   "slug": "rashid778-qwen2-5-3b-arabic-lora",
   "author": "RASHID778",
@@ -37,6 +37,7 @@
   "parameters_human": "29.9M",
   "storage_bytes": 191131213,
   "storage_human": "191 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
   "formats": [
     "gguf",
@@ -44,8 +45,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

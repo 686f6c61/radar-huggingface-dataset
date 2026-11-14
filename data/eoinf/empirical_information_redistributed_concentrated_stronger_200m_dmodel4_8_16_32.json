@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "eoinf/empirical_information_redistributed_concentrated_stronger_200m_dmodel4_8_16_32",
   "slug": "eoinf-empirical_information_redistributed_concentrated_stronger_200m_dmodel4_8_16_32",
   "author": "eoinf",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 75442060,
   "storage_human": "75 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "inference4j/deberta-v3-base-zeroshot-v2.0-c",
   "slug": "inference4j-deberta-v3-base-zeroshot-v2-0-c",
   "author": "inference4j",
@@ -33,14 +33,19 @@
   "parameters_human": null,
   "storage_bytes": 738604996,
   "storage_human": "739 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

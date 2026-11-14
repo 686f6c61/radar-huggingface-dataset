@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "m01001/Qwen-Concept-27B-NInfer-V100-NVFP4-FP8-MTP",
   "slug": "m01001-qwen-concept-27b-ninfer-v100-nvfp4-fp8-mtp",
   "author": "m01001",
@@ -31,12 +31,17 @@
   "parameters_human": null,
   "storage_bytes": 19857643008,
   "storage_human": "19.9 GB",
+  "context_length": null,
   "base_model": "ConceptCountry/qwen-concept-27b",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

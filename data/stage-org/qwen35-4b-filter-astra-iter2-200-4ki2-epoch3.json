@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Stage-org/qwen35-4b-filter-astra-iter2-200-4ki2-epoch3",
   "slug": "stage-org-qwen35-4b-filter-astra-iter2-200-4ki2-epoch3",
   "author": "Stage-org",
@@ -23,14 +23,19 @@
   "parameters_human": "4.54B",
   "storage_bytes": 9098609757,
   "storage_human": "9.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

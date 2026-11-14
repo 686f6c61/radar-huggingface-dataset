@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qualiadev/microduck-sprint-q3",
   "slug": "qualiadev-microduck-sprint-q3",
   "author": "qualiadev",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 793833,
   "storage_human": "793833 B",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-30T12:34:06.002Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

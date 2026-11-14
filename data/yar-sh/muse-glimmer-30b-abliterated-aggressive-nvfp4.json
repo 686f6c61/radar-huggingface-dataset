@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "yar-sh/Muse-Glimmer-30B-Abliterated-Aggressive-NVFP4",
   "slug": "yar-sh-muse-glimmer-30b-abliterated-aggressive-nvfp4",
   "author": "yar-sh",
@@ -50,14 +50,19 @@
   "parameters_human": "18.77B",
   "storage_bytes": 23408865721,
   "storage_human": "23.4 GB",
+  "context_length": null,
   "base_model": "jorkle/Muse-Glimmer-30B-Abliterated-Aggressive, meta-models/Muse-Glimmer-30B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

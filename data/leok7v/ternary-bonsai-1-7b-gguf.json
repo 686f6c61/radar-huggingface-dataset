@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "leok7v/Ternary-Bonsai-1.7B-gguf",
   "slug": "leok7v-ternary-bonsai-1-7b-gguf",
   "author": "leok7v",
@@ -34,14 +34,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 463292000,
   "storage_human": "463 MB",
+  "context_length": 32768,
   "base_model": "prism-ml/Ternary-Bonsai-1.7B-gguf",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

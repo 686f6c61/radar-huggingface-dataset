@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mingyi-Hong/ToolAlpaca_unlearn_ToolDelete-SFT",
   "slug": "mingyi-hong-toolalpaca_unlearn_tooldelete-sft",
   "author": "Mingyi-Hong",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 13477442421,
   "storage_human": "13.5 GB",
+  "context_length": null,
   "base_model": "TangQiaoYu/ToolAlpaca-7B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "OptimAI-Lab/ToolAlpaca_unlearn_ToolDelete-SFT",
+  "renamed_at": "2026-11-14T03:43:51.820Z",
   "benchmarks": [],
   "sources": [
     {

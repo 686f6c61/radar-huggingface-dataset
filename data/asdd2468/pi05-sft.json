@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "asdd2468/pi05-sft",
   "slug": "asdd2468-pi05-sft",
   "author": "asdd2468",
@@ -34,14 +34,19 @@
   "parameters_human": "3.62B",
   "storage_bytes": 7473104012,
   "storage_human": "7.5 GB",
+  "context_length": null,
   "base_model": "lerobot/pi05_libero_base",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

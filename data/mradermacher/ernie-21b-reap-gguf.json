@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/ERNIE-21B-REAP-GGUF",
   "slug": "mradermacher-ernie-21b-reap-gguf",
   "author": "mradermacher",
@@ -31,14 +31,19 @@
   "parameters_human": "18.00B",
   "storage_bytes": 333011147520,
   "storage_human": "333.0 GB",
+  "context_length": 131072,
   "base_model": "jerrimu/ERNIE-21B-REAP",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

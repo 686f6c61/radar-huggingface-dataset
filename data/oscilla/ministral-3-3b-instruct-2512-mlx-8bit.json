@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Oscilla/Ministral-3-3B-Instruct-2512-mlx-8Bit",
   "slug": "oscilla-ministral-3-3b-instruct-2512-mlx-8bit",
   "author": "Oscilla",
@@ -54,6 +54,7 @@
   "parameters_human": "3.43B",
   "storage_bytes": 3660626789,
   "storage_human": "3.7 GB",
+  "context_length": null,
   "base_model": "mistralai/Ministral-3-3B-Instruct-2512",
   "formats": [
     "mlx",
@@ -61,8 +62,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

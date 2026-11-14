@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "brainworkup/Muse-Glimmer-30B-Abliterated-MM-oQ5e",
   "slug": "brainworkup-muse-glimmer-30b-abliterated-mm-oq5e",
   "author": "brainworkup",
@@ -30,6 +30,7 @@
   "parameters_human": "29.78B",
   "storage_bytes": 23765889170,
   "storage_human": "23.8 GB",
+  "context_length": null,
   "base_model": "meta-models/Muse-Glimmer-30B, divinetribe/Muse-Glimmer-30B-Abliterated-MM-bf16",
   "formats": [
     "mlx",
@@ -37,8 +38,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

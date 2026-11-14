@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Ugiat/madlad400-3b-mt-ast-an-oc_aranes-ct2",
   "slug": "ugiat-madlad400-3b-mt-ast-an-oc_aranes-ct2",
   "author": "Ugiat",
@@ -51,12 +51,17 @@
   "parameters_human": null,
   "storage_bytes": 2970920557,
   "storage_human": "3.0 GB",
+  "context_length": null,
   "base_model": "Ugiat/madlad400-3b-mt-ast-an-oc_aranes",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

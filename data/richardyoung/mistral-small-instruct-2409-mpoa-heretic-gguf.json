@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "richardyoung/Mistral-Small-Instruct-2409-MPOA-heretic-GGUF",
   "slug": "richardyoung-mistral-small-instruct-2409-mpoa-heretic-gguf",
   "author": "richardyoung",
@@ -38,14 +38,19 @@
   "parameters_human": "22.25B",
   "storage_bytes": 37005782944,
   "storage_human": "37.0 GB",
+  "context_length": 32768,
   "base_model": "richardyoung/Mistral-Small-Instruct-2409-MPOA-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

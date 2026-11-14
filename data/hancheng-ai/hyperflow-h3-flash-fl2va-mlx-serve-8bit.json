@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hancheng-ai/HyperFlow-H3-Flash-FL2VA-MLX-Serve-8bit",
   "slug": "hancheng-ai-hyperflow-h3-flash-fl2va-mlx-serve-8bit",
   "author": "hancheng-ai",
@@ -32,14 +32,19 @@
   "parameters_human": null,
   "storage_bytes": 36370178492,
   "storage_human": "36.4 GB",
+  "context_length": null,
   "base_model": "VideoRebirthAI/hyperflow-h3-flash",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

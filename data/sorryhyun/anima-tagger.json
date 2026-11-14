@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "sorryhyun/anima-tagger",
   "slug": "sorryhyun-anima-tagger",
   "author": "sorryhyun",
@@ -30,12 +30,17 @@
   "parameters_human": "26.6M",
   "storage_bytes": 433342700,
   "storage_human": "433 MB",
+  "context_length": null,
   "base_model": "animetimm/caformer_b36.dbv4-full",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

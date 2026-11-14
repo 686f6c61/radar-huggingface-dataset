@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/Magidonia-24B-v4.3-heretic-v4-GGUF",
   "slug": "mradermacher-magidonia-24b-v4-3-heretic-v4-gguf",
   "author": "mradermacher",
@@ -34,14 +34,19 @@
   "parameters_human": "23.57B",
   "storage_bytes": 161407777472,
   "storage_human": "161.4 GB",
+  "context_length": 131072,
   "base_model": "Darkknight535/Magidonia-24B-v4.3-heretic-v4",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

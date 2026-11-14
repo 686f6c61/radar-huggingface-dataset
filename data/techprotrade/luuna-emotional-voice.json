@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "techprotrade/luuna-emotional-voice",
   "slug": "techprotrade-luuna-emotional-voice",
   "author": "techprotrade",
@@ -21,12 +21,17 @@
   "parameters_human": null,
   "storage_bytes": 505150236,
   "storage_human": "505 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-07T06:31:22.065Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

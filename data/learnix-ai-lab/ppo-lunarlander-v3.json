@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Learnix-AI-Lab/ppo-LunarLander-v3",
   "slug": "learnix-ai-lab-ppo-lunarlander-v3",
   "author": "Learnix-AI-Lab",
@@ -26,12 +26,17 @@
   "parameters_human": null,
   "storage_bytes": 434745,
   "storage_human": "434745 B",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

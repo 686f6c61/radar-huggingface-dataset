@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Medwebsite/semio-2c-mistral7b-lora",
   "slug": "medwebsite-semio-2c-mistral7b-lora",
   "author": "Medwebsite",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 54543184,
   "storage_human": "55 MB",
+  "context_length": null,
   "base_model": "mistralai/Mistral-7B-Instruct-v0.2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

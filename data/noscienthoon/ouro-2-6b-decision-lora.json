@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "noscienthoon/ouro-2.6b-decision-lora",
   "slug": "noscienthoon-ouro-2-6b-decision-lora",
   "author": "noscienthoon",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 125397192,
   "storage_human": "125 MB",
+  "context_length": null,
   "base_model": "ByteDance/Ouro-2.6B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

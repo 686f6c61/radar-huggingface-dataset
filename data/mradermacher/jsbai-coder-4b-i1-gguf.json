@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/JSBAI-Coder-4B-i1-GGUF",
   "slug": "mradermacher-jsbai-coder-4b-i1-gguf",
   "author": "mradermacher",
@@ -40,14 +40,19 @@
   "parameters_human": "4.21B",
   "storage_bytes": 53399971552,
   "storage_human": "53.4 GB",
+  "context_length": 262144,
   "base_model": "jsbaicenter/JSBAI-Coder-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

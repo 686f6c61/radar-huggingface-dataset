@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "soyaakinohara/qwen3.8-27b-abliterated-3.69bpw-12GB-MTP.gguf",
   "slug": "soyaakinohara-qwen3-8-27b-abliterated-3-69bpw-12gb-mtp-gguf",
   "author": "soyaakinohara",
@@ -51,14 +51,19 @@
   "parameters_human": "27.32B",
   "storage_bytes": 12599187808,
   "storage_human": "12.6 GB",
+  "context_length": 262144,
   "base_model": "AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

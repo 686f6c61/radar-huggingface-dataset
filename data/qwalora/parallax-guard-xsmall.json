@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "qwalora/parallax-guard-xsmall",
   "slug": "qwalora-parallax-guard-xsmall",
   "author": "qwalora",
@@ -45,6 +45,7 @@
   "parameters_human": "70.8M",
   "storage_bytes": 657219513,
   "storage_human": "657 MB",
+  "context_length": null,
   "base_model": "microsoft/deberta-v3-xsmall",
   "formats": [
     "onnx",
@@ -52,8 +53,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Indirect prompt-injection detection",

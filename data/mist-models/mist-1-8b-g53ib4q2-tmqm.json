@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mist-models/mist-1.8B-g53ib4q2-tmQM",
   "slug": "mist-models-mist-1-8b-g53ib4q2-tmqm",
   "author": "mist-models",
@@ -34,14 +34,19 @@
   "parameters_human": "1.80B",
   "storage_bytes": 7200932592,
   "storage_human": "7.2 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hoborific/Split-Untied-31B-W8A16-FP8",
   "slug": "hoborific-split-untied-31b-w8a16-fp8",
   "author": "hoborific",
@@ -33,14 +33,19 @@
   "parameters_human": "32.68B",
   "storage_bytes": 36131538834,
   "storage_human": "36.1 GB",
+  "context_length": null,
   "base_model": "Blazed-Forge/Split-Untied-31B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-12T03:31:29.667Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

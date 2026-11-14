@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BOBUS2317/e5-large-pp1875-onnx",
   "slug": "bobus2317-e5-large-pp1875-onnx",
   "author": "BOBUS2317",
@@ -36,14 +36,19 @@
   "parameters_human": null,
   "storage_bytes": 578860129,
   "storage_human": "579 MB",
+  "context_length": null,
   "base_model": "intfloat/multilingual-e5-large",
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

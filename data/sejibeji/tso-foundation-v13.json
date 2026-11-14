@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Sejibeji/tso-foundation-v13",
   "slug": "sejibeji-tso-foundation-v13",
   "author": "Sejibeji",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 3524850,
   "storage_human": "4 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ajensenwaud/Ling-3.1-flash-1019-exl3-2.71bpw",
   "slug": "ajensenwaud-ling-3-1-flash-1019-exl3-2-71bpw",
   "author": "ajensenwaud",
@@ -34,14 +34,19 @@
   "parameters_human": "98.42B",
   "storage_bytes": 197072451418,
   "storage_human": "197.1 GB",
+  "context_length": null,
   "base_model": "inclusionAI/Ling-3.1-flash-1019",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

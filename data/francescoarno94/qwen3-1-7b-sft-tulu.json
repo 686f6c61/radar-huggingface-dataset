@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "FrancescoArno94/Qwen3-1.7B-sft-tulu",
   "slug": "francescoarno94-qwen3-1-7b-sft-tulu",
   "author": "FrancescoArno94",
@@ -37,14 +37,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 1361405829,
   "storage_human": "1.4 GB",
+  "context_length": null,
   "base_model": "FrancescoArno94/Qwen3-1.7B-sft-tulu",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-21T03:59:06.051Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

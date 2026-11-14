@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "cortex-agent-llc/kodiak-xl-v2-preview",
   "slug": "cortex-agent-llc-kodiak-xl-v2-preview",
   "author": "cortex-agent-llc",
@@ -36,14 +36,19 @@
   "parameters_human": "1.04B",
   "storage_bytes": 4176498004,
   "storage_human": "4.2 GB",
+  "context_length": null,
   "base_model": "jhu-clsp/ettin-encoder-1b",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

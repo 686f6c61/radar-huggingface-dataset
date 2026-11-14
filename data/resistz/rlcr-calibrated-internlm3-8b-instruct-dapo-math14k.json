@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "resistz/RLCR-Calibrated-Internlm3-8B-Instruct-DAPO-Math14K",
   "slug": "resistz-rlcr-calibrated-internlm3-8b-instruct-dapo-math14k",
   "author": "resistz",
@@ -25,14 +25,19 @@
   "parameters_human": "8.80B",
   "storage_bytes": 17611008403,
   "storage_human": "17.6 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

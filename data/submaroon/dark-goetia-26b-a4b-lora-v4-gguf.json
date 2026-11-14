@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SubMaroon/Dark-Goetia-26B-A4B-LoRA-v4-GGUF",
   "slug": "submaroon-dark-goetia-26b-a4b-lora-v4-gguf",
   "author": "SubMaroon",
@@ -40,14 +40,19 @@
   "parameters_human": "23.0M",
   "storage_bytes": 91930816,
   "storage_human": "92 MB",
+  "context_length": null,
   "base_model": "Naphula/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

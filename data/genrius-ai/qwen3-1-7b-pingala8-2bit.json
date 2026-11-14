@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Genrius-AI/Qwen3-1.7B-Pingala8-2bit",
   "slug": "genrius-ai-qwen3-1-7b-pingala8-2bit",
   "author": "Genrius-AI",
@@ -51,14 +51,19 @@
   "parameters_human": "991.6M",
   "storage_bytes": 692520053,
   "storage_human": "693 MB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text Generation",

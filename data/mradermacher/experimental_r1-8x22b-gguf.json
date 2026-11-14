@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mradermacher/experimental_R1-8x22b-GGUF",
   "slug": "mradermacher-experimental_r1-8x22b-gguf",
   "author": "mradermacher",
@@ -29,12 +29,17 @@
   "parameters_human": null,
   "storage_bytes": 958337094624,
   "storage_human": "958.3 GB",
+  "context_length": null,
   "base_model": "gghfez/experimental_R1-8x22b",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

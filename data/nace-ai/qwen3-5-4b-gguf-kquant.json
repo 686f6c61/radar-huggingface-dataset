@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nace-ai/Qwen3.5-4B-GGUF-KQuant",
   "slug": "nace-ai-qwen3-5-4b-gguf-kquant",
   "author": "nace-ai",
@@ -32,14 +32,19 @@
   "parameters_human": "4.33B",
   "storage_bytes": 12354829888,
   "storage_human": "12.4 GB",
+  "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-11-12T07:05:35.586Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mild-rgb/lora-factory-bd2k",
   "slug": "mild-rgb-lora-factory-bd2k",
   "author": "mild-rgb",
@@ -29,14 +29,19 @@
   "parameters_human": null,
   "storage_bytes": 46967973882,
   "storage_human": "47.0 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

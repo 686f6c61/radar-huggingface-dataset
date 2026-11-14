@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Mrbizarro/ltx-2.5-mlx-q8",
   "slug": "mrbizarro-ltx-2-5-mlx-q8",
   "author": "Mrbizarro",
@@ -45,14 +45,19 @@
   "parameters_human": null,
   "storage_bytes": 30018311797,
   "storage_human": "30.0 GB",
+  "context_length": null,
   "base_model": "Lightricks/LTX-2.5",
   "formats": [
     "mlx"
   ],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shopkeeper/kor-finewiki-1b-base",
   "slug": "shopkeeper-kor-finewiki-1b-base",
   "author": "shopkeeper",
@@ -39,14 +39,19 @@
   "parameters_human": "1.00B",
   "storage_bytes": 4006230163,
   "storage_human": "4.0 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

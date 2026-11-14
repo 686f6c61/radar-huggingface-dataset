@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "danymorlet/Matick-Gemma-4-E2B-Mexicano-v3-GGUF",
   "slug": "danymorlet-matick-gemma-4-e2b-mexicano-v3-gguf",
   "author": "danymorlet",
@@ -42,14 +42,19 @@
   "parameters_human": "271.0M",
   "storage_bytes": 4650678368,
   "storage_human": "4.7 GB",
+  "context_length": 262144,
   "base_model": "google/gemma-4-E2B, google/embeddinggemma-2",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ussoewwin/Clip-files-HSWQ-ConvRot-INT8",
   "slug": "ussoewwin-clip-files-hswq-convrot-int8",
   "author": "ussoewwin",
@@ -40,12 +40,17 @@
   "parameters_human": null,
   "storage_bytes": 69999781294,
   "storage_human": "70.0 GB",
+  "context_length": null,
   "base_model": "comfyanonymous/flux_text_encoders, zer0int/CLIP-SAE-ViT-L-14, zer0int/CLIP-GmP-ViT-L-14, zer0int/LongCLIP-GmP-ViT-L-14, google/flan-t5-xxl, Goekdeniz-Guelmez/Josiefied-Qwen3-0.6B-abliterated-v1, tencent/WeVisOne-VL-4B",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

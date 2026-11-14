@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "notmax123/QwenTTS-he-1.7B-GGUF",
   "slug": "notmax123-qwentts-he-1-7b-gguf",
   "author": "notmax123",
@@ -34,14 +34,19 @@
   "parameters_human": "1.93B",
   "storage_bytes": 1474220000,
   "storage_human": "1.5 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

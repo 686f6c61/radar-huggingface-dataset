@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "flavianv/qwen3-4b-musical-instruments-combined-ranker-head-20260924-v1",
   "slug": "flavianv-qwen3-4b-musical-instruments-combined-ranker-head-20260924-v1",
   "author": "flavianv",
@@ -25,12 +25,17 @@
   "parameters_human": null,
   "storage_bytes": 11434453,
   "storage_human": "11 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

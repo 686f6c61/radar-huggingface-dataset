@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Alberto/ALIA-es-biomedical-7B-Instruct-gguf",
   "slug": "alberto-alia-es-biomedical-7b-instruct-gguf",
   "author": "Alberto",
@@ -40,6 +40,7 @@
   "parameters_human": "7.77B",
   "storage_bytes": 54497468658,
   "storage_human": "54.5 GB",
+  "context_length": 8192,
   "base_model": "SINAI/ALIA-es-biomedical-7B-Base",
   "formats": [
     "gguf",
@@ -47,8 +48,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

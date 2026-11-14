@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "zed122/translategemma_nvfp4_gguf",
   "slug": "zed122-translategemma_nvfp4_gguf",
   "author": "zed122",
@@ -32,14 +32,19 @@
   "parameters_human": "4.55B",
   "storage_bytes": 4497942240,
   "storage_human": "4.5 GB",
+  "context_length": 131072,
   "base_model": "kaitchup/translategemma-4b-it-NVFP4",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-16T04:24:22.864Z",
+  "removal_pattern": "short_lived",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "whotao1766/ai-literature-review-gguf",
   "slug": "whotao1766-ai-literature-review-gguf",
   "author": "whotao1766",
@@ -24,14 +24,19 @@
   "parameters_human": "1.72B",
   "storage_bytes": 1107404224,
   "storage_human": "1.1 GB",
+  "context_length": 40960,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

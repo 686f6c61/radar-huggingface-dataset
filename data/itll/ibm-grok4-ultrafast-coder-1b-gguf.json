@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ITLL/IBM-Grok4-UltraFast-Coder-1B-GGUF",
   "slug": "itll-ibm-grok4-ultrafast-coder-1b-gguf",
   "author": "ITLL",
@@ -49,14 +49,19 @@
   "parameters_human": "1.63B",
   "storage_bytes": 14901159680,
   "storage_human": "14.9 GB",
+  "context_length": 131072,
   "base_model": "ibm-granite/granite-4.0-h-1b",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

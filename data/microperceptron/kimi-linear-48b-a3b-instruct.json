@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "microperceptron/Kimi-Linear-48B-A3B-Instruct",
   "slug": "microperceptron-kimi-linear-48b-a3b-instruct",
   "author": "microperceptron",
@@ -31,14 +31,19 @@
   "parameters_human": "49.12B",
   "storage_bytes": 98251417490,
   "storage_human": "98.3 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

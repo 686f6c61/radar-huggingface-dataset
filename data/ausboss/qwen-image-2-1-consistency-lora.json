@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "ausboss/Qwen-Image-2.1-Consistency-LoRA",
   "slug": "ausboss-qwen-image-2-1-consistency-lora",
   "author": "ausboss",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 328507943,
   "storage_human": "329 MB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

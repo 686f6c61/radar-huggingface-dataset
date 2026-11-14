@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Xylolabs/supertonic-3-Tensix-BF16",
   "slug": "xylolabs-supertonic-3-tensix-bf16",
   "author": "Xylolabs",
@@ -32,6 +32,7 @@
   "parameters_human": "99.2M",
   "storage_bytes": 202003563,
   "storage_human": "202 MB",
+  "context_length": null,
   "base_model": "Supertone/supertonic-3",
   "formats": [
     "onnx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

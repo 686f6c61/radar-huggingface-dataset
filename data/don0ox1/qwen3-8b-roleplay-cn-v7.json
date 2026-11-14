@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "don0ox1/Qwen3-8B-Roleplay-CN-v7",
   "slug": "don0ox1-qwen3-8b-roleplay-cn-v7",
   "author": "don0ox1",
@@ -34,6 +34,7 @@
   "parameters_human": "8.19B",
   "storage_bytes": 5078033610,
   "storage_human": "5.1 GB",
+  "context_length": 40960,
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "gguf",
@@ -41,8 +42,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

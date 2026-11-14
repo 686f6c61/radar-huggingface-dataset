@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "mario-rc/multi-domain-rm-fsfairx-gemma-2-9b-it",
   "slug": "mario-rc-multi-domain-rm-fsfairx-gemma-2-9b-it",
   "author": "mario-rc",
@@ -43,14 +43,19 @@
   "parameters_human": "9.24B",
   "storage_bytes": 40922997505,
   "storage_human": "40.9 GB",
+  "context_length": null,
   "base_model": "sfairXC/FsfairX-Gemma2-RM-v0.1",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

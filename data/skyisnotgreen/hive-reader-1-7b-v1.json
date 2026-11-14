@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "SkyIsNotGreen/hive-reader-1.7b-v1",
   "slug": "skyisnotgreen-hive-reader-1-7b-v1",
   "author": "SkyIsNotGreen",
@@ -35,6 +35,7 @@
   "parameters_human": "1.73B",
   "storage_bytes": 4641046963,
   "storage_human": "4.6 GB",
+  "context_length": 262144,
   "base_model": "LiquidAI/LFM3-1.7B-Base",
   "formats": [
     "gguf",
@@ -42,8 +43,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

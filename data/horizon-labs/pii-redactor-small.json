@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Horizon-Labs/pii-redactor-small",
   "slug": "horizon-labs-pii-redactor-small",
   "author": "Horizon-Labs",
@@ -119,6 +119,7 @@
   "parameters_human": "140.7M",
   "storage_bytes": 2823074788,
   "storage_human": "2.8 GB",
+  "context_length": null,
   "base_model": "jhu-clsp/mmBERT-small",
   "formats": [
     "onnx",
@@ -126,8 +127,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

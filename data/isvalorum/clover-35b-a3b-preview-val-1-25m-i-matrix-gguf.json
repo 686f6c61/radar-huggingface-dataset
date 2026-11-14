@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "IsValorum/Clover-35B-A3B-Preview-VAL-1.25M-I-Matrix-GGUF",
   "slug": "isvalorum-clover-35b-a3b-preview-val-1-25m-i-matrix-gguf",
   "author": "IsValorum",
@@ -31,14 +31,19 @@
   "parameters_human": "95.9M",
   "storage_bytes": 383689280,
   "storage_human": "384 MB",
+  "context_length": null,
   "base_model": "Diffuspace/Clover-35B-A3B-Preview",
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

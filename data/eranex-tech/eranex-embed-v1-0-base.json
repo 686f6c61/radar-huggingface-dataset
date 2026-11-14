@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Eranex-Tech/eranex-embed-v1.0-base",
   "slug": "eranex-tech-eranex-embed-v1-0-base",
   "author": "Eranex-Tech",
@@ -45,14 +45,19 @@
   "parameters_human": "14.5M",
   "storage_bytes": 58150340,
   "storage_human": "58 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

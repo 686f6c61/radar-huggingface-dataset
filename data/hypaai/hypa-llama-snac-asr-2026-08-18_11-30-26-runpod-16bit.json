@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "hypaai/Hypa-Llama-SNAC-asr-2026-08-18_11-30-26-runpod-16bit",
   "slug": "hypaai-hypa-llama-snac-asr-2026-08-18_11-30-26-runpod-16bit",
   "author": "hypaai",
@@ -35,14 +35,19 @@
   "parameters_human": "8.27B",
   "storage_bytes": 16547692745,
   "storage_human": "16.5 GB",
+  "context_length": null,
   "base_model": "hypaai/Hypa-Llama3.1-8b-SFT",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-04T07:40:02.581Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

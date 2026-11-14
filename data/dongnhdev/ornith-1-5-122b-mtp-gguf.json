@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "dongnhdev/Ornith-1.5-122B-MTP-GGUF",
   "slug": "dongnhdev-ornith-1-5-122b-mtp-gguf",
   "author": "dongnhdev",
@@ -32,14 +32,19 @@
   "parameters_human": "451.3M",
   "storage_bytes": 39538969344,
   "storage_human": "39.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "gguf"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "jyoon101/gemma-2b-brain-v3",
   "slug": "jyoon101-gemma-2b-brain-v3",
   "author": "jyoon101",
@@ -28,6 +28,7 @@
   "parameters_human": "2.61B",
   "storage_bytes": 6975903947,
   "storage_human": "7.0 GB",
+  "context_length": 8192,
   "base_model": null,
   "formats": [
     "gguf",
@@ -35,8 +36,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

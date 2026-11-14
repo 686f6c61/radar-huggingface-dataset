@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "g1gaxyz33/DeepSeek-V4-Pro-Qwen3.5-9B-heretic-noMTP-GGUF",
   "slug": "g1gaxyz33-deepseek-v4-pro-qwen3-5-9b-heretic-nomtp-gguf",
   "author": "g1gaxyz33",
@@ -47,14 +47,19 @@
   "parameters_human": "8.95B",
   "storage_bytes": 12710894144,
   "storage_human": "12.7 GB",
+  "context_length": 262144,
   "base_model": "mradermacher/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-i1-GGUF, xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

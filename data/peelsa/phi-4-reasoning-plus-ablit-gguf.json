@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "peelsa/phi-4-reasoning-plus-ablit-GGUF",
   "slug": "peelsa-phi-4-reasoning-plus-ablit-gguf",
   "author": "peelsa",
@@ -32,14 +32,19 @@
   "parameters_human": "14.66B",
   "storage_bytes": 9059259712,
   "storage_human": "9.1 GB",
+  "context_length": 32768,
   "base_model": "peelsa/phi-4-reasoning-plus-ablit",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

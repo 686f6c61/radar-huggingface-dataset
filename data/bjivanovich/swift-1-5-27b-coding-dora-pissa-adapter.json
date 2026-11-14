@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "bjivanovich/swift-1.5-27b-coding-dora-pissa-adapter",
   "slug": "bjivanovich-swift-1-5-27b-coding-dora-pissa-adapter",
   "author": "bjivanovich",
@@ -25,14 +25,19 @@
   "parameters_human": null,
   "storage_bytes": 828466909,
   "storage_human": "828 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": "bjivanovich/swift-1.5-27b-coding-dora-adapter",
+  "renamed_at": "2026-11-14T05:19:12.844Z",
   "benchmarks": [],
   "sources": []
 }

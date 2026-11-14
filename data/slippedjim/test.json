@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "slippedJim/test",
   "slug": "slippedjim-test",
   "author": "slippedJim",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 491482232230,
   "storage_human": "491.5 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": true,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-10-06T11:46:41.237Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

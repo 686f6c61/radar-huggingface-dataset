@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "nekuwolf/Qwen3.5-0.8B-overwatch-fandom-wiki-mid-sep-2026-lora",
   "slug": "nekuwolf-qwen3-5-0-8b-overwatch-fandom-wiki-mid-sep-2026-lora",
   "author": "nekuwolf",
@@ -34,14 +34,19 @@
   "parameters_human": null,
   "storage_bytes": 193208103,
   "storage_human": "193 MB",
+  "context_length": null,
   "base_model": "unsloth/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-26T03:52:36.349Z",
+  "removal_pattern": "account_gone",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

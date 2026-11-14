@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "blaj/Qwen-Image-2.1-Uncensored-OpenVINO-INT4",
   "slug": "blaj-qwen-image-2-1-uncensored-openvino-int4",
   "author": "blaj",
@@ -32,12 +32,17 @@
   "parameters_human": null,
   "storage_bytes": 12874796306,
   "storage_human": "12.9 GB",
+  "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1, pottokao/Qwen-Image-2.1-Text-Encoder-Heretic",
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

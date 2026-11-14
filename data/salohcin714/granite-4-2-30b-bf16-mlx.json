@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "salohcin714/granite-4.2-30b-bf16-mlx",
   "slug": "salohcin714-granite-4-2-30b-bf16-mlx",
   "author": "salohcin714",
@@ -57,6 +57,7 @@
   "parameters_human": "29.28B",
   "storage_bytes": 58553608072,
   "storage_human": "58.6 GB",
+  "context_length": null,
   "base_model": "ibm-granite/granite-4.2-30b",
   "formats": [
     "mlx",
@@ -64,8 +65,12 @@
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

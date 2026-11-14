@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Farhan2000/sd-pokemon-lora",
   "slug": "farhan2000-sd-pokemon-lora",
   "author": "Farhan2000",
@@ -32,6 +32,7 @@
   "parameters_human": null,
   "storage_bytes": 3474292560,
   "storage_human": "3.5 GB",
+  "context_length": null,
   "base_model": "runwayml/stable-diffusion-v1-5",
   "formats": [
     "diffusers",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

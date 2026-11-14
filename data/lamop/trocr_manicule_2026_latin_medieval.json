@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "LaMOP/TrOCR_Manicule_2026_Latin_Medieval",
   "slug": "lamop-trocr_manicule_2026_latin_medieval",
   "author": "LaMOP",
@@ -39,14 +39,19 @@
   "parameters_human": "333.9M",
   "storage_bytes": 1335747032,
   "storage_human": "1.3 GB",
+  "context_length": null,
   "base_model": "microsoft/trocr-base-handwritten",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

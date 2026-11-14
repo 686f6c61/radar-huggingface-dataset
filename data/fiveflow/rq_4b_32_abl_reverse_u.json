@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "fiveflow/rq_4b_32_abl_reverse_u",
   "slug": "fiveflow-rq_4b_32_abl_reverse_u",
   "author": "fiveflow",
@@ -29,14 +29,19 @@
   "parameters_human": "4.02B",
   "storage_bytes": 16101340600,
   "storage_human": "16.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": true,
   "removed_at": "2026-09-20T06:17:31.283Z",
+  "removal_pattern": "isolated",
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

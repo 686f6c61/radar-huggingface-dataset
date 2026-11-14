@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aimanhaziq/gemma4-2b-coder-bnb-4bit",
   "slug": "aimanhaziq-gemma4-2b-coder-bnb-4bit",
   "author": "aimanhaziq",
@@ -39,14 +39,19 @@
   "parameters_human": "5.10B",
   "storage_bytes": 6774294734,
   "storage_human": "6.8 GB",
+  "context_length": null,
   "base_model": "aimanhaziq/gemma4-2b-coder",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

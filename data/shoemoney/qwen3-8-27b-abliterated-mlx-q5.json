@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "shoemoney/Qwen3.8-27B-Abliterated-MLX-q5",
   "slug": "shoemoney-qwen3-8-27b-abliterated-mlx-q5",
   "author": "shoemoney",
@@ -32,6 +32,7 @@
   "parameters_human": "27.36B",
   "storage_bytes": 19436200046,
   "storage_human": "19.4 GB",
+  "context_length": null,
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
   "formats": [
     "mlx",
@@ -39,8 +40,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

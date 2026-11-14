@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "Yash7872/Llama3.2-3b-cybersecurity-abliterated",
   "slug": "yash7872-llama3-2-3b-cybersecurity-abliterated",
   "author": "Yash7872",
@@ -36,14 +36,19 @@
   "parameters_human": "3.21B",
   "storage_bytes": 2019377184,
   "storage_human": "2.0 GB",
+  "context_length": 131072,
   "base_model": "unsloth/llama-3.2-3b-instruct-bnb-4bit",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

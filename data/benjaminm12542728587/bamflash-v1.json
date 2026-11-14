@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "BenjaminM12542728587/BamFlash-V1",
   "slug": "benjaminm12542728587-bamflash-v1",
   "author": "BenjaminM12542728587",
@@ -22,12 +22,17 @@
   "parameters_human": null,
   "storage_bytes": 73927379,
   "storage_human": "74 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

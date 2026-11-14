@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "deepanwa/Samosa-Chat-Molmo2-4B-MLX-Q4",
   "slug": "deepanwa-samosa-chat-molmo2-4b-mlx-q4",
   "author": "deepanwa",
@@ -36,6 +36,7 @@
   "parameters_human": "1.13B",
   "storage_bytes": 3372201155,
   "storage_human": "3.4 GB",
+  "context_length": null,
   "base_model": "allenai/Molmo2-4B",
   "formats": [
     "mlx",
@@ -43,8 +44,12 @@
   ],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

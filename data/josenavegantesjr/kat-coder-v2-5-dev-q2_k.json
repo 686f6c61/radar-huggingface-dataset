@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "josenavegantesjr/KAT-Coder-V2.5-Dev-Q2_K",
   "slug": "josenavegantesjr-kat-coder-v2-5-dev-q2_k",
   "author": "josenavegantesjr",
@@ -43,14 +43,19 @@
   "parameters_human": "34.66B",
   "storage_bytes": 12952401838,
   "storage_human": "13.0 GB",
+  "context_length": 262144,
   "base_model": "Kwaipilot/KAT-Coder-V2.5-Dev",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

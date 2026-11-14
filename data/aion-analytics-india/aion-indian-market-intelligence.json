@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "aion-analytics-india/aion-indian-market-intelligence",
   "slug": "aion-analytics-india-aion-indian-market-intelligence",
   "author": "aion-analytics-india",
@@ -37,12 +37,17 @@
   "parameters_human": null,
   "storage_bytes": 537805035,
   "storage_human": "538 MB",
+  "context_length": null,
   "base_model": null,
   "formats": [],
   "is_conversational": false,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": [
     {

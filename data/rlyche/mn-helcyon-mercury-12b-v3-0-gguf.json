@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "rlyche/MN-Helcyon-Mercury-12b-v3.0-GGUF",
   "slug": "rlyche-mn-helcyon-mercury-12b-v3-0-gguf",
   "author": "rlyche",
@@ -36,14 +36,19 @@
   "parameters_human": "12.25B",
   "storage_bytes": 45366519520,
   "storage_human": "45.4 GB",
+  "context_length": 131072,
   "base_model": "mistralai/Mistral-Nemo-Instruct-2407",
   "formats": [
     "gguf"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [],
   "sources": []
 }

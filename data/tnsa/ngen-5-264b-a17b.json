@@ -1,5 +1,5 @@
 {
-  "schema": 1,
+  "schema": 2,
   "id": "TNSA/NGen-5-264B-A17B",
   "slug": "tnsa-ngen-5-264b-a17b",
   "author": "TNSA",
@@ -44,14 +44,19 @@
   "parameters_human": "264.42B",
   "storage_bytes": 267134838743,
   "storage_human": "267.1 GB",
+  "context_length": null,
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
+  "disabled": false,
   "removed": false,
   "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
   "benchmarks": [
     {
       "task": "Text Generation",
