@@ -1,0 +1,56 @@
+{
+  "schema": 2,
+  "id": "Phoonnx/vits-hf_community_superkeka_piper-tts-luka",
+  "slug": "phoonnx-vits-hf_community_superkeka_piper-tts-luka",
+  "author": "Phoonnx",
+  "url": "https://huggingface.co/Phoonnx/vits-hf_community_superkeka_piper-tts-luka",
+  "created_at": "2026-11-14T23:08:18.000Z",
+  "updated_at": "2026-11-15T02:46:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "phoonnx",
+  "languages": [],
+  "tags": [
+    "phoonnx",
+    "onnx",
+    "vits",
+    "text-to-speech",
+    "ru",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63516050,
+  "storage_human": "64 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chris Clark - United Kingdom | Professional Profile | LinkedIn",
+      "url": "https://uk.linkedin.com/in/christopheraclark",
+      "snippet": "Location: United Kingdom · 500+ connections on LinkedIn. View Chris Clark’s profile on LinkedIn, a professional community of 1 …"
+    },
+    {
+      "title": "Rachel Clark - London, England, United Kingdom - LinkedIn",
+      "url": "https://uk.linkedin.com/in/rachel-clark-335721",
+      "snippet": "Location: London · 500+ connections on LinkedIn. View Rachel Clark’s profile on LinkedIn, a professional community of 1 billion …"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Driftwood-22b-GGUF",
+  "slug": "mradermacher-driftwood-22b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Driftwood-22b-GGUF",
+  "created_at": "2025-03-17T08:56:12.000Z",
+  "updated_at": "2026-11-15T00:27:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:SanXM1/Driftwood-22b",
+    "base_model:quantized:SanXM1/Driftwood-22b",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 22247282688,
+  "parameters_human": "22.25B",
+  "storage_bytes": 151388309952,
+  "storage_human": "151.4 GB",
+  "context_length": 131072,
+  "base_model": "SanXM1/Driftwood-22b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

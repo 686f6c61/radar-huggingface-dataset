@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Qwen3.5-9B-Tensix-BFP4",
   "created_at": "2026-11-11T04:33:26.000Z",
-  "updated_at": "2026-11-13T05:17:01.000Z",
+  "updated_at": "2026-11-14T16:53:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 49,
+  "downloads_30d": 77,
   "trending_score": 0,
   "parameters": 9653104368,
   "parameters_human": "9.65B",
@@ -50,8 +50,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Xylolabs/Qwen3.5-9B-Tenstorrent-Tensix-BFP4",
+  "renamed_at": "2026-11-15T04:41:00.268Z",
   "benchmarks": [],
   "sources": []
 }

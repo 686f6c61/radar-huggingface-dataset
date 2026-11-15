@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "qkhawaja/brahui-asr-ctc300m-student-onnx",
+  "slug": "qkhawaja-brahui-asr-ctc300m-student-onnx",
+  "author": "qkhawaja",
+  "url": "https://huggingface.co/qkhawaja/brahui-asr-ctc300m-student-onnx",
+  "created_at": "2026-11-14T20:44:47.000Z",
+  "updated_at": "2026-11-14T21:07:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "brh"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "brahui",
+    "ctc",
+    "low-resource",
+    "brh",
+    "base_model:aadel4/omniASR-CTC-300M-v2",
+    "base_model:quantized:aadel4/omniASR-CTC-300M-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2342109606,
+  "storage_human": "2.3 GB",
+  "context_length": null,
+  "base_model": "aadel4/omniASR-CTC-300M-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

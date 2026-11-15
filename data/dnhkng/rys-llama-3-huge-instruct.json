@@ -1,0 +1,80 @@
+{
+  "schema": 2,
+  "id": "dnhkng/RYS-Llama-3-Huge-Instruct",
+  "slug": "dnhkng-rys-llama-3-huge-instruct",
+  "author": "dnhkng",
+  "url": "https://huggingface.co/dnhkng/RYS-Llama-3-Huge-Instruct",
+  "created_at": "2024-08-06T22:21:15.000Z",
+  "updated_at": "2026-11-14T21:54:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 55,
+  "trending_score": 0,
+  "parameters": 99645956096,
+  "parameters_human": "99.65B",
+  "storage_bytes": 199292033216,
+  "storage_human": "199.3 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "IFEval (0-Shot)",
+      "metric": "strict accuracy",
+      "value": 76.86
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "BBH (3-Shot)",
+      "metric": "normalized accuracy",
+      "value": 49.07
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MATH Lvl 5 (4-Shot)",
+      "metric": "exact match",
+      "value": 21.22
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GPQA (0-shot)",
+      "metric": "acc_norm",
+      "value": 1.45
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MuSR (0-shot)",
+      "metric": "acc_norm",
+      "value": 11.93
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU-PRO (5-shot)",
+      "metric": "accuracy",
+      "value": 45.66
+    }
+  ],
+  "sources": []
+}

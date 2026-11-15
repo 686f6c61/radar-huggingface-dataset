@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": 20914757184,
   "parameters_human": "20.91B",
-  "storage_bytes": 31411545038,
-  "storage_human": "31.4 GB",
+  "storage_bytes": 31465957414,
+  "storage_human": "31.5 GB",
   "context_length": null,
   "base_model": "openai/gpt-oss-20b",
   "formats": [

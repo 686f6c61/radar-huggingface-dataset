@@ -40,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "SimpleTuner/Qwen-Image-2.1-LoRA-photo-aesthetics-v1",
+  "renamed_at": "2026-11-15T04:16:31.325Z",
   "benchmarks": [],
   "sources": [
     {

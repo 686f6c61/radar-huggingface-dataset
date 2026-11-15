@@ -34,8 +34,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Jeryuk/silero_vad-MNN",
+  "renamed_at": "2026-11-15T03:14:35.749Z",
   "benchmarks": [],
   "sources": [
     {

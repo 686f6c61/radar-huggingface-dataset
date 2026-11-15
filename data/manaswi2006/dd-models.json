@@ -5,13 +5,14 @@
   "author": "Manaswi2006",
   "url": "https://huggingface.co/Manaswi2006/dd-models",
   "created_at": "2026-11-14T20:50:54.000Z",
-  "updated_at": "2026-11-14T20:50:54.000Z",
+  "updated_at": "2026-11-15T03:13:37.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "safetensors",
     "region:us"
   ],
   "likes": 0,
@@ -19,11 +20,13 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 12557467118,
+  "storage_human": "12.6 GB",
   "context_length": null,
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "disabled": false,

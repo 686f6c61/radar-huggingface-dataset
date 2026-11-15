@@ -38,7 +38,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 40,
+  "downloads_30d": 42,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -55,8 +55,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "vext-ma/silma-2b-darija-lora",
+  "renamed_at": "2026-11-15T04:46:47.470Z",
   "benchmarks": [],
   "sources": [
     {

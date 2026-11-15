@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 10,
+  "downloads_30d": 11,
   "trending_score": 0,
   "parameters": 150335232,
   "parameters_human": "150.3M",
@@ -48,8 +48,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "ryze-ai/flash-archer-150M-2.0",
+  "renamed_at": "2026-11-15T03:41:29.934Z",
   "benchmarks": [
     {
       "task": "Text Generation",

@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Tensix-BFP4-Attn8-MambaOut8",
   "created_at": "2026-11-12T02:01:05.000Z",
-  "updated_at": "2026-11-13T17:26:15.000Z",
+  "updated_at": "2026-11-14T16:50:04.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -46,7 +46,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 44,
+  "downloads_30d": 92,
   "trending_score": 0,
   "parameters": 32913266240,
   "parameters_human": "32.91B",
@@ -63,8 +63,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Xylolabs/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Tenstorrent-Tensix-BFP4-Attn8-MambaOut8",
+  "renamed_at": "2026-11-15T04:40:25.885Z",
   "benchmarks": [],
   "sources": []
 }

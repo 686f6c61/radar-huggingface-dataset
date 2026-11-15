@@ -5,7 +5,7 @@
   "author": "RL8596",
   "url": "https://huggingface.co/RL8596/pneumoshift-kids-only",
   "created_at": "2026-11-14T11:36:59.000Z",
-  "updated_at": "2026-11-14T11:37:05.000Z",
+  "updated_at": "2026-11-14T13:35:33.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "timm",
+    "onnx",
     "safetensors",
     "medical-imaging",
     "chest-x-ray",
@@ -26,11 +27,12 @@
   "trending_score": 0,
   "parameters": 11186625,
   "parameters_human": "11.2M",
-  "storage_bytes": 45736199,
-  "storage_human": "46 MB",
+  "storage_bytes": 158266962,
+  "storage_human": "158 MB",
   "context_length": null,
   "base_model": null,
   "formats": [
+    "onnx",
     "safetensors"
   ],
   "is_conversational": false,

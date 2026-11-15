@@ -5,7 +5,7 @@
   "author": "agbalu",
   "url": "https://huggingface.co/agbalu/Feraoun-36M",
   "created_at": "2026-08-20T19:44:06.000Z",
-  "updated_at": "2026-11-01T22:37:08.000Z",
+  "updated_at": "2026-11-06T23:12:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-text",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 36,
+  "downloads_30d": 59,
   "trending_score": 0,
   "parameters": 36390144,
   "parameters_human": "36.4M",

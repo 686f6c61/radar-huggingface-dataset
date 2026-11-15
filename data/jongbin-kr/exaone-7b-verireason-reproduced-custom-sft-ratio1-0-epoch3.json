@@ -40,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Jongbin-kr/exaone-7b-verireason-reproduced-400_custom-sft-ratio1.0-epoch3",
+  "renamed_at": "2026-11-15T03:16:18.426Z",
   "benchmarks": [],
   "sources": [
     {

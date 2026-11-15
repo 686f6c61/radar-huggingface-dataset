@@ -39,8 +39,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "lingzhiyxp/latent-mas-aligner-llama3-2-3b-seed-1",
+  "renamed_at": "2026-11-15T04:43:33.578Z",
   "benchmarks": [],
   "sources": [
     {

@@ -5,7 +5,7 @@
   "author": "Kannaka",
   "url": "https://huggingface.co/Kannaka/kannaka-encoder",
   "created_at": "2026-11-14T18:02:49.000Z",
-  "updated_at": "2026-11-14T18:03:00.000Z",
+  "updated_at": "2026-11-14T22:23:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",

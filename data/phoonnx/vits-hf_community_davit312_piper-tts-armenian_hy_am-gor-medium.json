@@ -1,0 +1,66 @@
+{
+  "schema": 2,
+  "id": "Phoonnx/vits-hf_community_davit312_piper-TTS-Armenian_hy_AM-gor-medium",
+  "slug": "phoonnx-vits-hf_community_davit312_piper-tts-armenian_hy_am-gor-medium",
+  "author": "Phoonnx",
+  "url": "https://huggingface.co/Phoonnx/vits-hf_community_davit312_piper-TTS-Armenian_hy_AM-gor-medium",
+  "created_at": "2026-11-14T23:05:25.000Z",
+  "updated_at": "2026-11-15T02:45:54.000Z",
+  "license": "gpl-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "phoonnx",
+  "languages": [],
+  "tags": [
+    "phoonnx",
+    "onnx",
+    "vits",
+    "text-to-speech",
+    "hy",
+    "license:gpl-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63511038,
+  "storage_human": "64 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gor - Armenian (AM) Medium (davit312) – Piper TTS · PiperHub",
+      "url": "https://piperhub.org/model/gor-armenian-am-medium-davit312/",
+      "snippet": "Piper TTS voice \"Gor - Armenian (AM) Medium (davit312)\" (Armenian, medium quality, by davit312). Listen to samples and …"
+    },
+    {
+      "title": "davit312/piper-TTS-Armenian at main - huggingface.co",
+      "url": "https://huggingface.co/davit312/piper-TTS-Armenian/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "davit312/piper-TTS-Armenian at main - huggingface.co",
+      "url": "https://huggingface.co/davit312/piper-TTS-Armenian/tree/main/v3",
+      "snippet": "davit312 Upload hy_AM-gor-medium.onnx 2453ed1 verified 8 months ago hy_AM-gor-medium.onnx Safe 63.5 MB xet"
+    },
+    {
+      "title": "Gor - Armenian (AM) Medium (davit312) – Piper TTS · PiperHub",
+      "url": "https://piperhub.org/fr/model/gor-armenian-am-medium-davit312/",
+      "snippet": "Voix Piper TTS « Gor - Armenian (AM) Medium (davit312) » (arménien, qualité medium, par davit312). Écoute des extraits et …"
+    }
+  ]
+}

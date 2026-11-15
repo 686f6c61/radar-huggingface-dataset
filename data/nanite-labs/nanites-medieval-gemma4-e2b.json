@@ -50,8 +50,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Nanite-Labs/nanites-medieval-e2b-chat",
+  "renamed_at": "2026-11-15T03:38:40.529Z",
   "benchmarks": [],
   "sources": [
     {

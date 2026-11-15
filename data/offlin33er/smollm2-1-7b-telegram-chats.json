@@ -5,7 +5,7 @@
   "author": "Offlin33er",
   "url": "https://huggingface.co/Offlin33er/SmolLM2-1.7B-telegram-chats",
   "created_at": "2026-09-16T11:06:31.000Z",
-  "updated_at": "2026-09-24T12:54:45.000Z",
+  "updated_at": "2026-11-14T05:57:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 177,
+  "downloads_30d": 266,
   "trending_score": 0,
   "parameters": 1711376384,
   "parameters_human": "1.71B",

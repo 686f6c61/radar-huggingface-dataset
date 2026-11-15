@@ -1,0 +1,44 @@
+{
+  "schema": 2,
+  "id": "Delower/herg-best-deployment",
+  "slug": "delower-herg-best-deployment",
+  "author": "Delower",
+  "url": "https://huggingface.co/Delower/herg-best-deployment",
+  "created_at": "2026-11-15T04:26:11.000Z",
+  "updated_at": "2026-11-15T04:26:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 245172973,
+  "storage_human": "245 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Porn Video Categories - xHamster TV",
+      "url": "https://xhamster.tv/categories/",
+      "snippet": "Visit xHamster TV for the best porn video categories you could ever find! Browse xHamster TV for watching your favorite XXX videos …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 2,
+  "id": "Suvir-Misra/Looped-Transformer-485M-Indian-Law-Thinking",
+  "slug": "suvir-misra-looped-transformer-485m-indian-law-thinking",
+  "author": "Suvir-Misra",
+  "url": "https://huggingface.co/Suvir-Misra/Looped-Transformer-485M-Indian-Law-Thinking",
+  "created_at": "2026-11-15T01:01:18.000Z",
+  "updated_at": "2026-11-15T01:04:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "looped_transformer",
+    "legal",
+    "indian-law",
+    "chain-of-draft",
+    "thinking",
+    "looped-transformer",
+    "recurrent-depth",
+    "bns-2023",
+    "cpc-1908",
+    "income-tax",
+    "gst",
+    "apple-silicon",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 485066752,
+  "parameters_human": "485.1M",
+  "storage_bytes": 1940277242,
+  "storage_human": "1.9 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Indian Legal & Statutory Reasoning",
+      "dataset": null,
+      "metric": "Legal Benchmark Pass Rate",
+      "value": 100
+    },
+    {
+      "task": "Indian Legal & Statutory Reasoning",
+      "dataset": null,
+      "metric": "Thinking Trace Reliability (<think> open/close)",
+      "value": 100
+    }
+  ],
+  "sources": []
+}

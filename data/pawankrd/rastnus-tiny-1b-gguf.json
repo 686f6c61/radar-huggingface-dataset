@@ -35,12 +35,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 79,
   "trending_score": 0,
   "parameters": 1030933278,
   "parameters_human": "1.03B",
-  "storage_bytes": 10980260384,
-  "storage_human": "11.0 GB",
+  "storage_bytes": 5287305536,
+  "storage_human": "5.3 GB",
   "context_length": 131072,
   "base_model": "PawanKrd/RastNus-Tiny-1B",
   "formats": [

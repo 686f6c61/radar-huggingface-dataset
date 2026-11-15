@@ -1,0 +1,73 @@
+{
+  "schema": 2,
+  "id": "masterofaudio2077/qwen3guard-gen-0.6b-egy-guardrail",
+  "slug": "masterofaudio2077-qwen3guard-gen-0-6b-egy-guardrail",
+  "author": "masterofaudio2077",
+  "url": "https://huggingface.co/masterofaudio2077/qwen3guard-gen-0.6b-egy-guardrail",
+  "created_at": "2026-11-14T23:51:26.000Z",
+  "updated_at": "2026-11-14T23:57:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "guardrail",
+    "safety",
+    "arabic",
+    "egyptian",
+    "arabizi",
+    "policy-conditioned",
+    "lion",
+    "accelerate",
+    "conversational",
+    "ar",
+    "en",
+    "fr",
+    "dataset:masterofaudio2077/arabic-egy-guardrail",
+    "base_model:Qwen/Qwen3Guard-Gen-0.6B",
+    "base_model:finetune:Qwen/Qwen3Guard-Gen-0.6B",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203657999,
+  "storage_human": "1.2 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3Guard-Gen-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "arabic-egy-guardrail (test)",
+      "metric": "macro-F1",
+      "value": 0.976
+    }
+  ],
+  "sources": []
+}

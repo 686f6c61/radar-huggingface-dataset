@@ -44,8 +44,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "aaroncaozj/qwen3.5-9b_mvtoken_libero",
+  "renamed_at": "2026-11-15T04:46:19.333Z",
   "benchmarks": [],
   "sources": [
     {

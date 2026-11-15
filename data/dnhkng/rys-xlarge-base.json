@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "dnhkng/RYS-XLarge-base",
+  "slug": "dnhkng-rys-xlarge-base",
+  "author": "dnhkng",
+  "url": "https://huggingface.co/dnhkng/RYS-XLarge-base",
+  "created_at": "2024-08-02T08:20:11.000Z",
+  "updated_at": "2026-11-14T21:54:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 62,
+  "trending_score": 0,
+  "parameters": 77972312064,
+  "parameters_human": "77.97B",
+  "storage_bytes": 155944743864,
+  "storage_human": "155.9 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

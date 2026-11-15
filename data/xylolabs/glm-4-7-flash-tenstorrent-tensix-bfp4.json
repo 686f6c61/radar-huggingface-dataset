@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/GLM-4.7-Flash-Tenstorrent-Tensix-BFP4",
   "created_at": "2026-11-12T10:03:43.000Z",
-  "updated_at": "2026-11-13T05:00:56.000Z",
+  "updated_at": "2026-11-14T16:47:56.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "flaviussteff/spp-ro-base",
+  "slug": "flaviussteff-spp-ro-base",
+  "author": "flaviussteff",
+  "url": "https://huggingface.co/flaviussteff/spp-ro-base",
+  "created_at": "2026-11-15T01:31:09.000Z",
+  "updated_at": "2026-11-15T01:31:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ro"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "romanian",
+    "causal-lm",
+    "from-scratch",
+    "synthetic-persona-pretraining",
+    "text-generation",
+    "ro",
+    "arxiv:2608.13482",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 88099584,
+  "parameters_human": "88.1M",
+  "storage_bytes": 352410528,
+  "storage_human": "352 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

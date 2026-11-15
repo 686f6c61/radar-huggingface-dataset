@@ -42,8 +42,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "CompassioninMachineLearning/Olmo7b-urban-seed1-20261010-CPT-best-val-step-750",
+  "renamed_at": "2026-11-15T02:30:19.572Z",
   "benchmarks": [],
   "sources": []
 }

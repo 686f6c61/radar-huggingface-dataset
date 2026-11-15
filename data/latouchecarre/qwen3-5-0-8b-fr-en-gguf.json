@@ -30,7 +30,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 46,
+  "downloads_30d": 35,
   "trending_score": 0,
   "parameters": 656858432,
   "parameters_human": "656.9M",
@@ -47,8 +47,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "LaToucheCarre/LaToucheCarre-Android-Texte-Qwen3.5-0.8B-Q4_K_M-FR-EN-GGUF",
+  "renamed_at": "2026-11-15T03:23:23.993Z",
   "benchmarks": [],
   "sources": [
     {

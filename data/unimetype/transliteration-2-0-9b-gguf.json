@@ -5,7 +5,7 @@
   "author": "UnimeType",
   "url": "https://huggingface.co/UnimeType/Transliteration-2.0-9B-GGUF",
   "created_at": "2026-11-14T05:18:52.000Z",
-  "updated_at": "2026-11-14T05:19:37.000Z",
+  "updated_at": "2026-11-15T01:30:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -61,7 +61,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 7,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",

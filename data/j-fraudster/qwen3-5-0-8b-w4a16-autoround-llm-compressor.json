@@ -20,7 +20,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 29,
+  "downloads_30d": 43,
   "trending_score": 0,
   "parameters": 852985920,
   "parameters_human": "853.0M",
@@ -37,8 +37,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "JW-Hubs/Qwen3.5-0.8B-W4A16-LLM-Compressor",
+  "renamed_at": "2026-11-15T03:10:31.896Z",
   "benchmarks": [],
   "sources": [
     {

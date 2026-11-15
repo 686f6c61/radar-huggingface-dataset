@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "mahounairo/metka-0.6b-gguf",
+  "slug": "mahounairo-metka-0-6b-gguf",
+  "author": "mahounairo",
+  "url": "https://huggingface.co/mahounairo/metka-0.6b-gguf",
+  "created_at": "2026-11-15T01:19:39.000Z",
+  "updated_at": "2026-11-15T01:21:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "agents",
+    "tool-calls",
+    "labelling",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 639446880,
+  "storage_human": "639 MB",
+  "context_length": 40960,
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

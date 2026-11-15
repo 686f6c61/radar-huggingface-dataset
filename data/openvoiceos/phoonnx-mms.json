@@ -40,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Phoonnx/phoonnx-mms",
+  "renamed_at": "2026-11-15T03:45:46.908Z",
   "benchmarks": [],
   "sources": [
     {

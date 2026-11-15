@@ -1,0 +1,103 @@
+{
+  "schema": 2,
+  "id": "sentimentalk/pixeltree-detector",
+  "slug": "sentimentalk-pixeltree-detector",
+  "author": "sentimentalk",
+  "url": "https://huggingface.co/sentimentalk/pixeltree-detector",
+  "created_at": "2026-11-15T04:40:30.000Z",
+  "updated_at": "2026-11-15T04:46:19.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ultralytics",
+    "yolo11",
+    "gui",
+    "screen-parsing",
+    "ui-element-detection",
+    "gui-agent",
+    "accessibility",
+    "screenshot",
+    "object-detection",
+    "en",
+    "dataset:ServiceNow/GroundCUA",
+    "base_model:Ultralytics/YOLO11",
+    "base_model:finetune:Ultralytics/YOLO11",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19313050,
+  "storage_human": "19 MB",
+  "context_length": null,
+  "base_model": "Ultralytics/YOLO11",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "pixeltree held-out Linux apps (258 images)",
+      "metric": "class-agnostic F1 @0.25, IoU 0.5",
+      "value": 0.854
+    },
+    {
+      "task": null,
+      "dataset": "pixeltree held-out Linux apps (258 images)",
+      "metric": "class-agnostic F1 @0.45, IoU 0.5",
+      "value": 0.874
+    },
+    {
+      "task": null,
+      "dataset": "pixeltree held-out Linux apps (258 images)",
+      "metric": "strict (role must match) F1 @0.25, IoU 0.5",
+      "value": 0.798
+    },
+    {
+      "task": null,
+      "dataset": "pixeltree held-out websites (45 images)",
+      "metric": "class-agnostic F1 @0.25, IoU 0.5",
+      "value": 0.787
+    },
+    {
+      "task": null,
+      "dataset": "pixeltree held-out websites (45 images)",
+      "metric": "class-agnostic F1 @0.45, IoU 0.5",
+      "value": 0.813
+    },
+    {
+      "task": null,
+      "dataset": "pixeltree gold set (Linux 72 + macOS 114 images)",
+      "metric": "class-agnostic F1 @0.25, IoU 0.5",
+      "value": 0.815
+    },
+    {
+      "task": null,
+      "dataset": "pixeltree gold set (Linux 72 + macOS 114 images)",
+      "metric": "class-agnostic F1 @0.45, IoU 0.5",
+      "value": 0.826
+    },
+    {
+      "task": null,
+      "dataset": "pixeltree gold set (Linux 72 + macOS 114 images)",
+      "metric": "strict (role must match) F1 @0.25, IoU 0.5",
+      "value": 0.737
+    }
+  ],
+  "sources": []
+}

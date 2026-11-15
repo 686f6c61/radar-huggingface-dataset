@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "WariHima/hourai2_3_archived_models",
+  "slug": "warihima-hourai2_3_archived_models",
+  "author": "WariHima",
+  "url": "https://huggingface.co/WariHima/hourai2_3_archived_models",
+  "created_at": "2026-11-15T04:32:02.000Z",
+  "updated_at": "2026-11-15T04:46:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9725008,
+  "parameters_human": "9.7M",
+  "storage_bytes": 845869825,
+  "storage_human": "846 MB",
+  "context_length": 32768,
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

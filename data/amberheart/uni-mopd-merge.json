@@ -5,7 +5,7 @@
   "author": "AmberHeart",
   "url": "https://huggingface.co/AmberHeart/Uni-MOPD-Merge",
   "created_at": "2026-10-28T20:34:59.000Z",
-  "updated_at": "2026-11-13T11:01:10.000Z",
+  "updated_at": "2026-11-14T08:46:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 31070754032,
   "parameters_human": "31.07B",

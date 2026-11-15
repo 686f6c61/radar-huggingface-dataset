@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 5,
+  "downloads_30d": 4,
   "trending_score": 0,
   "parameters": 66955779,
   "parameters_human": "67.0M",
@@ -42,8 +42,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "PoojaDAnchan/DistilBERT-Sentiment-Model",
+  "renamed_at": "2026-11-15T03:52:38.802Z",
   "benchmarks": [],
   "sources": []
 }

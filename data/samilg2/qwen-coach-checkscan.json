@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "SamilG2/qwen-coach-checkscan",
+  "slug": "samilg2-qwen-coach-checkscan",
+  "author": "SamilG2",
+  "url": "https://huggingface.co/SamilG2/qwen-coach-checkscan",
+  "created_at": "2026-06-20T10:15:14.000Z",
+  "updated_at": "2026-11-15T04:36:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 5789707808,
+  "storage_human": "5.8 GB",
+  "context_length": 32768,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

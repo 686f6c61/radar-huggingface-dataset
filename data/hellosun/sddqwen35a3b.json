@@ -43,8 +43,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "HelloSun/qwen35a3b-moe-expert-paging-q4-8gram_EPQ",
+  "renamed_at": "2026-11-15T03:01:20.136Z",
   "benchmarks": [],
   "sources": [
     {

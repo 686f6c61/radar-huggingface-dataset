@@ -1,0 +1,71 @@
+{
+  "schema": 2,
+  "id": "Yo-Purple/Meditor-3-4B-Universal",
+  "slug": "yo-purple-meditor-3-4b-universal",
+  "author": "Yo-Purple",
+  "url": "https://huggingface.co/Yo-Purple/Meditor-3-4B-Universal",
+  "created_at": "2026-11-14T21:38:18.000Z",
+  "updated_at": "2026-11-14T21:38:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "meditor",
+    "meditor-3",
+    "moe",
+    "k2-horizon",
+    "qwen3",
+    "llama-cpp",
+    "lm-studio",
+    "unibench-100",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:quantized:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4164938240,
+  "parameters_human": "4.16B",
+  "storage_bytes": 15497836073,
+  "storage_human": "15.5 GB",
+  "context_length": 40960,
+  "base_model": "Qwen/Qwen3-4B, Yo-Purple/Meditor-3-4B-MoE",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Native Source Model UniBench-100 Reference",
+      "dataset": "UniBench-100 (Native Meditor-3-4B-MoE)",
+      "metric": "Native Source Mean Score (/10)",
+      "value": 7.31
+    },
+    {
+      "task": "Native Source Model UniBench-100 Reference",
+      "dataset": "UniBench-100 (Native Meditor-3-4B-MoE)",
+      "metric": "Native Source Pass Rate (%)",
+      "value": 69
+    }
+  ],
+  "sources": []
+}

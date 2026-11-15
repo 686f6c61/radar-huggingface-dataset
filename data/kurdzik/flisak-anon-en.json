@@ -29,8 +29,8 @@
     "dataset:nvidia/Nemotron-PII",
     "dataset:MultiCoNER/multiconer_v2",
     "dataset:GateNLP/broad_twitter_corpus",
-    "base_model:Kurdzik/asygna-anon-en",
-    "base_model:finetune:Kurdzik/asygna-anon-en",
+    "base_model:Kurdzik/flisak-anon-en",
+    "base_model:finetune:Kurdzik/flisak-anon-en",
     "license:cc-by-4.0",
     "endpoints_compatible",
     "region:us"

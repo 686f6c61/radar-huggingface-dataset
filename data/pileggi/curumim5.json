@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "Pileggi/curumim5",
+  "slug": "pileggi-curumim5",
+  "author": "Pileggi",
+  "url": "https://huggingface.co/Pileggi/curumim5",
+  "created_at": "2026-11-14T23:13:36.000Z",
+  "updated_at": "2026-11-14T23:24:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "curumim",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "curumim",
+    "safetensors",
+    "portuguese",
+    "text-generation",
+    "causal-lm",
+    "pt",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 152258048,
+  "parameters_human": "152.3M",
+  "storage_bytes": 304533784,
+  "storage_human": "305 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

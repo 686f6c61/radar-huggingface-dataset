@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "djduecaster/dfreq-sprint-action-rate-tight-20261114",
+  "slug": "djduecaster-dfreq-sprint-action-rate-tight-20261114",
+  "author": "djduecaster",
+  "url": "https://huggingface.co/djduecaster/dfreq-sprint-action-rate-tight-20261114",
+  "created_at": "2026-11-14T21:40:50.000Z",
+  "updated_at": "2026-11-14T21:41:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck-arena",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1137681,
+  "storage_human": "1 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Connect | FIERCE GAMING GEAR | MADLIONS",
+      "url": "https://hub.f.gg/",
+      "snippet": "Beware of pirate websites! Unique official address: https://www.f.gg/"
+    },
+    {
+      "title": "FGG Gaming Gear | Hall Effect Keyboards & Gaming Mice",
+      "url": "https://f.gg/",
+      "snippet": "Compare MADLIONS Hall Effect keyboards for 2026: 60%, 68-key, and 75% layouts, Rapid Trigger, 8K polling, scan rate, and build …"
+    }
+  ]
+}

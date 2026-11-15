@@ -1,0 +1,66 @@
+{
+  "schema": 2,
+  "id": "mradermacher/gemma-4-E4B-it-weight-space-programming-UNCENSORED-heretic-i1-GGUF",
+  "slug": "mradermacher-gemma-4-e4b-it-weight-space-programming-uncensored-heretic-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-4-E4B-it-weight-space-programming-UNCENSORED-heretic-i1-GGUF",
+  "created_at": "2026-11-14T21:52:41.000Z",
+  "updated_at": "2026-11-14T22:13:27.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma4",
+    "weight-space-programming",
+    "mechanistic-interpretability",
+    "tool-calling",
+    "agentic",
+    "zero-training",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "en",
+    "base_model:xtools-at/gemma-4-E4B-it-weight-space-programming-UNCENSORED-heretic",
+    "base_model:quantized:xtools-at/gemma-4-E4B-it-weight-space-programming-UNCENSORED-heretic",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7463013674,
+  "parameters_human": "7.46B",
+  "storage_bytes": 18227841856,
+  "storage_human": "18.2 GB",
+  "context_length": 131072,
+  "base_model": "xtools-at/gemma-4-E4B-it-weight-space-programming-UNCENSORED-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何将整个wikipedia导出成一个纯文本文件?",
+      "url": "https://www.zhihu.com/question/21425170",
+      "snippet": "jwpl - Java-based Wikipedia Library -- An application programming interface for Wikipedia ，提供了API，可以直接由给定的词条名导 …"
+    }
+  ]
+}

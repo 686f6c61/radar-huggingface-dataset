@@ -1,0 +1,89 @@
+{
+  "schema": 2,
+  "id": "LGTEAMai/Nano-1.3-Plus",
+  "slug": "lgteamai-nano-1-3-plus",
+  "author": "LGTEAMai",
+  "url": "https://huggingface.co/LGTEAMai/Nano-1.3-Plus",
+  "created_at": "2026-11-14T22:51:32.000Z",
+  "updated_at": "2026-11-14T22:54:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "nano",
+    "lgteamai",
+    "small-language-model",
+    "chat",
+    "bilingual",
+    "conversational",
+    "en",
+    "ru",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 254190720,
+  "parameters_human": "254.2M",
+  "storage_bytes": 508398008,
+  "storage_human": "508 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ARC-Easy",
+      "metric": "accuracy (0-shot)",
+      "value": 39.94
+    },
+    {
+      "task": null,
+      "dataset": "ARC-Challenge",
+      "metric": "normalized accuracy (0-shot)",
+      "value": 23.29
+    },
+    {
+      "task": null,
+      "dataset": "HellaSwag",
+      "metric": "normalized accuracy (0-shot)",
+      "value": 29.9
+    },
+    {
+      "task": null,
+      "dataset": "PIQA",
+      "metric": "accuracy (0-shot)",
+      "value": 60.61
+    },
+    {
+      "task": null,
+      "dataset": "SciQ",
+      "metric": "accuracy (0-shot)",
+      "value": 68.3
+    }
+  ],
+  "sources": []
+}

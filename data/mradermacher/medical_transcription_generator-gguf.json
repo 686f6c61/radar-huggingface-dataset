@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/medical_transcription_generator-GGUF",
+  "slug": "mradermacher-medical_transcription_generator-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/medical_transcription_generator-GGUF",
+  "created_at": "2025-02-26T00:53:56.000Z",
+  "updated_at": "2026-11-14T21:11:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "medical",
+    "en",
+    "base_model:alibidaran/medical_transcription_generator",
+    "base_model:quantized:alibidaran/medical_transcription_generator",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 201,
+  "trending_score": 0,
+  "parameters": 163037184,
+  "parameters_human": "163.0M",
+  "storage_bytes": 1588318400,
+  "storage_human": "1.6 GB",
+  "context_length": 1024,
+  "base_model": "alibidaran/medical_transcription_generator",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

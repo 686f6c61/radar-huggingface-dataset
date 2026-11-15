@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 7,
+  "downloads_30d": 8,
   "trending_score": 0,
   "parameters": 277454594,
   "parameters_human": "277.5M",
@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "alxxtexxr/XLM-R-Base-squad-en-15K-s42-LoRA-mrg-v260920144253",
+  "renamed_at": "2026-11-15T04:58:46.612Z",
   "benchmarks": [],
   "sources": [
     {

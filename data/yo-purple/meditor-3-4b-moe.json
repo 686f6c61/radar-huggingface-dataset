@@ -1,0 +1,91 @@
+{
+  "schema": 2,
+  "id": "Yo-Purple/Meditor-3-4B-MoE",
+  "slug": "yo-purple-meditor-3-4b-moe",
+  "author": "Yo-Purple",
+  "url": "https://huggingface.co/Yo-Purple/Meditor-3-4B-MoE",
+  "created_at": "2026-11-14T21:38:07.000Z",
+  "updated_at": "2026-11-14T21:38:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "meditor3",
+    "text-generation",
+    "meditor",
+    "meditor-3",
+    "moe",
+    "lora-moe",
+    "prompt-routed",
+    "qwen3",
+    "custom_code",
+    "bf16",
+    "unibench-100",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8333370075,
+  "storage_human": "8.3 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "UniBench-100 (Cross-Domain Synthesis)",
+      "dataset": "UniBench-100 (10 Domains, 100 Questions)",
+      "metric": "UniBench-100 Mean Score (/10)",
+      "value": 7.31
+    },
+    {
+      "task": "UniBench-100 (Cross-Domain Synthesis)",
+      "dataset": "UniBench-100 (10 Domains, 100 Questions)",
+      "metric": "Pass Rate (%)",
+      "value": 69
+    },
+    {
+      "task": "UniBench-100 (Cross-Domain Synthesis)",
+      "dataset": "UniBench-100 (10 Domains, 100 Questions)",
+      "metric": "Unique Solve Rate (%)",
+      "value": 7
+    },
+    {
+      "task": "Probe10 Held-Out Evaluation",
+      "dataset": "Probe10 Multi-Domain Reasoning Suite",
+      "metric": "Probe10 Mean Score (/10)",
+      "value": 7.02
+    },
+    {
+      "task": "Probe10 Held-Out Evaluation",
+      "dataset": "Probe10 Multi-Domain Reasoning Suite",
+      "metric": "Probe10 Pass Rate (%)",
+      "value": 70
+    }
+  ],
+  "sources": []
+}

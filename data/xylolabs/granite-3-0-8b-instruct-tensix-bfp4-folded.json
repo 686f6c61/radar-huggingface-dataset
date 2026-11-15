@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/granite-3.0-8b-instruct-Tensix-BFP4-Folded",
   "created_at": "2026-11-13T21:21:53.000Z",
-  "updated_at": "2026-11-13T21:23:01.000Z",
+  "updated_at": "2026-11-14T16:48:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -37,7 +37,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": 8372187136,
   "parameters_human": "8.37B",
@@ -54,8 +54,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Xylolabs/granite-3.0-8b-instruct-Tenstorrent-Tensix-BFP4-Folded",
+  "renamed_at": "2026-11-15T04:41:39.694Z",
   "benchmarks": [],
   "sources": []
 }

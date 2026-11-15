@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Llama-2-7b-story-finetune-GGUF",
+  "slug": "mradermacher-llama-2-7b-story-finetune-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama-2-7b-story-finetune-GGUF",
+  "created_at": "2025-02-25T02:04:03.000Z",
+  "updated_at": "2026-11-14T21:11:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Sameer360/Llama-2-7b-story-finetune",
+    "base_model:quantized:Sameer360/Llama-2-7b-story-finetune",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 59564791424,
+  "storage_human": "59.6 GB",
+  "context_length": 4096,
+  "base_model": "Sameer360/Llama-2-7b-story-finetune",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Phi_medprob-social-n-preventive-medicine-GGUF",
+  "slug": "mradermacher-phi_medprob-social-n-preventive-medicine-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Phi_medprob-social-n-preventive-medicine-GGUF",
+  "created_at": "2025-02-28T09:02:13.000Z",
+  "updated_at": "2026-11-15T01:34:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:emilykang/Phi_medprob-social-n-preventive-medicine",
+    "base_model:quantized:emilykang/Phi_medprob-social-n-preventive-medicine",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 2779683840,
+  "parameters_human": "2.78B",
+  "storage_bytes": 24997207808,
+  "storage_human": "25.0 GB",
+  "context_length": 2048,
+  "base_model": "emilykang/Phi_medprob-social-n-preventive-medicine",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

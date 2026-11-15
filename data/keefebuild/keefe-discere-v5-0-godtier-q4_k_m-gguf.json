@@ -22,7 +22,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 5,
+  "downloads_30d": 2,
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",
@@ -39,8 +39,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "KeefeBuild/Keefe-Discere-v5.0-GGUF",
+  "renamed_at": "2026-11-15T03:20:11.275Z",
   "benchmarks": [],
   "sources": [
     {

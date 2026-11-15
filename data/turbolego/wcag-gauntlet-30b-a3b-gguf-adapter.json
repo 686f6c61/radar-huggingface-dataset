@@ -5,7 +5,7 @@
   "author": "Turbolego",
   "url": "https://huggingface.co/Turbolego/wcag-gauntlet-30b-a3b-gguf-adapter",
   "created_at": "2026-11-14T03:26:58.000Z",
-  "updated_at": "2026-11-14T03:27:54.000Z",
+  "updated_at": "2026-11-14T08:03:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 13,
   "trending_score": 0,
   "parameters": 843841536,
   "parameters_human": "843.8M",

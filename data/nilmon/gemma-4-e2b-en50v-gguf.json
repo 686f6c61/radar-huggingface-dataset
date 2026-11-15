@@ -5,7 +5,7 @@
   "author": "Nilmon",
   "url": "https://huggingface.co/Nilmon/gemma-4-E2B-en50v-GGUF",
   "created_at": "2026-11-14T08:47:36.000Z",
-  "updated_at": "2026-11-14T08:51:28.000Z",
+  "updated_at": "2026-11-14T11:03:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "region:us",
     "conversational"
   ],
-  "likes": 1,
+  "likes": 2,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 2798969891,

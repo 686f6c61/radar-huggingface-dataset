@@ -1,0 +1,81 @@
+{
+  "schema": 2,
+  "id": "Noobbbbb/egemma2-bn-conformer-ctc",
+  "slug": "noobbbbb-egemma2-bn-conformer-ctc",
+  "author": "Noobbbbb",
+  "url": "https://huggingface.co/Noobbbbb/egemma2-bn-conformer-ctc",
+  "created_at": "2026-11-15T04:12:22.000Z",
+  "updated_at": "2026-11-15T04:23:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "pytorch",
+  "languages": [
+    "bn"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "ctc",
+    "conformer",
+    "bangla",
+    "bengali",
+    "speech-recognition",
+    "embeddinggemma",
+    "automatic-speech-recognition",
+    "bn",
+    "dataset:google/fleurs",
+    "base_model:google/embeddinggemma-2",
+    "base_model:finetune:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19929604,
+  "parameters_human": "19.9M",
+  "storage_bytes": 85138332,
+  "storage_human": "85 MB",
+  "context_length": null,
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speech Recognition",
+      "dataset": "FLEURS (bn_in, test)",
+      "metric": "WER (beam search + word trigram LM)",
+      "value": 25.69
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "FLEURS (bn_in, test)",
+      "metric": "CER (beam search + word trigram LM)",
+      "value": 8.51
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "FLEURS (bn_in, test)",
+      "metric": "WER (greedy CTC)",
+      "value": 28.9
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "FLEURS (bn_in, test)",
+      "metric": "CER (greedy CTC)",
+      "value": 9.79
+    }
+  ],
+  "sources": []
+}

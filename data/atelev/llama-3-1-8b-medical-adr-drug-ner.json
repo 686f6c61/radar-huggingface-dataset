@@ -1,0 +1,80 @@
+{
+  "schema": 2,
+  "id": "atelev/Llama-3.1-8B-Medical-ADR-Drug-NER",
+  "slug": "atelev-llama-3-1-8b-medical-adr-drug-ner",
+  "author": "atelev",
+  "url": "https://huggingface.co/atelev/Llama-3.1-8B-Medical-ADR-Drug-NER",
+  "created_at": "2026-11-15T03:16:08.000Z",
+  "updated_at": "2026-11-15T03:16:12.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "medical",
+    "healthcare",
+    "pharmacovigilance",
+    "adverse-drug-reactions",
+    "named-entity-recognition",
+    "ner",
+    "drug-extraction",
+    "lora",
+    "fine-tuned",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:bigbio/psytar",
+    "dataset:ade-benchmark-corpus/ade_corpus_v2",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185049256,
+  "storage_human": "185 MB",
+  "context_length": null,
+  "base_model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Adverse Drug Reaction & Drug Extraction",
+      "dataset": "Combined Multi-Source Patient Narratives (Test Split)",
+      "metric": "ADR Strict F1",
+      "value": 0.7654
+    },
+    {
+      "task": "Adverse Drug Reaction & Drug Extraction",
+      "dataset": "Combined Multi-Source Patient Narratives (Test Split)",
+      "metric": "ADR Relaxed F1",
+      "value": 0.8423
+    },
+    {
+      "task": "Adverse Drug Reaction & Drug Extraction",
+      "dataset": "Combined Multi-Source Patient Narratives (Test Split)",
+      "metric": "Drug Exact F1",
+      "value": 0.802
+    }
+  ],
+  "sources": []
+}

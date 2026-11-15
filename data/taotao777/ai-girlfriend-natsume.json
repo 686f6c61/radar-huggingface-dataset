@@ -5,7 +5,7 @@
   "author": "TAOTAO777",
   "url": "https://huggingface.co/TAOTAO777/ai-girlfriend-natsume",
   "created_at": "2026-06-02T15:52:30.000Z",
-  "updated_at": "2026-10-03T11:15:44.000Z",
+  "updated_at": "2026-11-14T18:05:42.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -19,7 +19,7 @@
     "conversational"
   ],
   "likes": 6,
-  "downloads_30d": 2106,
+  "downloads_30d": 2117,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",

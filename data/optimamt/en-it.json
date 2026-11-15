@@ -5,7 +5,7 @@
   "author": "OptimaMT",
   "url": "https://huggingface.co/OptimaMT/en-it",
   "created_at": "2026-11-09T20:03:10.000Z",
-  "updated_at": "2026-11-09T21:21:11.000Z",
+  "updated_at": "2026-11-14T09:33:12.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "translation",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 59,
+  "downloads_30d": 64,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -5,7 +5,7 @@
   "author": "MatUserMTV",
   "url": "https://huggingface.co/MatUserMTV/I.Good-1.1",
   "created_at": "2026-11-13T18:52:43.000Z",
-  "updated_at": "2026-11-14T16:52:36.000Z",
+  "updated_at": "2026-11-14T20:54:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,8 +25,6 @@
     "cpu-trained",
     "xeon",
     "ru",
-    "base_model:MatUserMTV/I.Good-1.1",
-    "base_model:quantized:MatUserMTV/I.Good-1.1",
     "license:apache-2.0",
     "region:us"
   ],

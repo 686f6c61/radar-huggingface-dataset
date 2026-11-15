@@ -1,0 +1,56 @@
+{
+  "schema": 2,
+  "id": "AIML-VU/s2-for-algal-bloom",
+  "slug": "aiml-vu-s2-for-algal-bloom",
+  "author": "AIML-VU",
+  "url": "https://huggingface.co/AIML-VU/s2-for-algal-bloom",
+  "created_at": "2026-11-14T21:07:18.000Z",
+  "updated_at": "2026-11-14T21:07:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "tabular-regression",
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "tf-keras",
+    "onnx",
+    "remote-sensing",
+    "sentinel-2",
+    "chlorophyll-a",
+    "algal-bloom",
+    "water-quality",
+    "tensorflow",
+    "regression",
+    "tabular-regression",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17940581,
+  "storage_human": "18 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XXXXXXXXXXXXXXX - YouTube",
+      "url": "https://m.youtube.com/watch?v=VrEaPHakDY4",
+      "snippet": "Nov 5, 2026 · Map Time: 3:30.338jump_xFirst Song: ira. - blooms (prod. …"
+    }
+  ]
+}

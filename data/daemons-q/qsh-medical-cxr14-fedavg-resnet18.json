@@ -5,7 +5,7 @@
   "author": "Daemons-Q",
   "url": "https://huggingface.co/Daemons-Q/qsh-medical-cxr14-fedavg-resnet18",
   "created_at": "2026-11-14T11:56:10.000Z",
-  "updated_at": "2026-11-14T15:36:16.000Z",
+  "updated_at": "2026-11-15T00:30:31.000Z",
   "license": "nih-chestx-ray14-terms",
   "license_family": "unknown",
   "pipeline_tag": "image-classification",

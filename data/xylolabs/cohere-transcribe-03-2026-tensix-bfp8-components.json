@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Cohere-Transcribe-03-2026-Tensix-BFP8-Components",
   "created_at": "2026-11-14T08:05:28.000Z",
-  "updated_at": "2026-11-14T08:06:03.000Z",
+  "updated_at": "2026-11-14T16:45:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -49,8 +49,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Xylolabs/Cohere-Transcribe-03-2026-Tenstorrent-Tensix-BFP8-Components",
+  "renamed_at": "2026-11-15T04:40:04.535Z",
   "benchmarks": [],
   "sources": [
     {

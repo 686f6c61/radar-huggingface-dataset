@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "AXERA-TECH/VoxCPM2-AX8860-llama.cpp",
+  "slug": "axera-tech-voxcpm2-ax8860-llama-cpp",
+  "author": "AXERA-TECH",
+  "url": "https://huggingface.co/AXERA-TECH/VoxCPM2-AX8860-llama.cpp",
+  "created_at": "2026-11-14T20:19:51.000Z",
+  "updated_at": "2026-11-15T03:26:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-to-speech",
+    "base_model:openbmb/VoxCPM2",
+    "base_model:quantized:openbmb/VoxCPM2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 912440644,
+  "parameters_human": "912.4M",
+  "storage_bytes": 5118054938,
+  "storage_human": "5.1 GB",
+  "context_length": null,
+  "base_model": "openbmb/VoxCPM2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

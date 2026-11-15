@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "EricAI03/distilbert-base-math-finetuned-accelerate",
+  "slug": "ericai03-distilbert-base-math-finetuned-accelerate",
+  "author": "EricAI03",
+  "url": "https://huggingface.co/EricAI03/distilbert-base-math-finetuned-accelerate",
+  "created_at": "2026-11-15T00:39:58.000Z",
+  "updated_at": "2026-11-15T01:08:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66985530,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267954768,
+  "storage_human": "268 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

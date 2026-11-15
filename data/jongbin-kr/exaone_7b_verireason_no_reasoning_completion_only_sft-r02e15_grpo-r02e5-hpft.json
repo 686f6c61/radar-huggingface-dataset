@@ -41,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Jongbin-kr/exaone_7b_verireason_sft-answer-co-0.2_grpo-custom-0.2",
+  "renamed_at": "2026-11-15T03:16:20.274Z",
   "benchmarks": [],
   "sources": [
     {

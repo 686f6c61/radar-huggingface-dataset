@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "dnhkng/RYS-gemma-2-2b-it",
+  "slug": "dnhkng-rys-gemma-2-2b-it",
+  "author": "dnhkng",
+  "url": "https://huggingface.co/dnhkng/RYS-gemma-2-2b-it",
+  "created_at": "2024-08-14T05:39:58.000Z",
+  "updated_at": "2026-11-14T21:54:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 3626599680,
+  "parameters_human": "3.63B",
+  "storage_bytes": 7275016152,
+  "storage_human": "7.3 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

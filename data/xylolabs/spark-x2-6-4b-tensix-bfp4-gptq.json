@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Spark-X2.6-4B-Tensix-BFP4-GPTQ",
   "created_at": "2026-11-14T05:21:21.000Z",
-  "updated_at": "2026-11-14T05:22:10.000Z",
+  "updated_at": "2026-11-14T16:54:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 5,
   "trending_score": 0,
   "parameters": 4447623680,
   "parameters_human": "4.45B",
@@ -53,8 +53,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Xylolabs/Spark-X2.6-4B-Tenstorrent-Tensix-BFP4-GPTQ",
+  "renamed_at": "2026-11-15T04:41:11.301Z",
   "benchmarks": [],
   "sources": []
 }

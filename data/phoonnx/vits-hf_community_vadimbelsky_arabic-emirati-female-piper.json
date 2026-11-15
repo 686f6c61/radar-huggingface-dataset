@@ -1,0 +1,61 @@
+{
+  "schema": 2,
+  "id": "Phoonnx/vits-hf_community_vadimbelsky_arabic-emirati-female-piper",
+  "slug": "phoonnx-vits-hf_community_vadimbelsky_arabic-emirati-female-piper",
+  "author": "Phoonnx",
+  "url": "https://huggingface.co/Phoonnx/vits-hf_community_vadimbelsky_arabic-emirati-female-piper",
+  "created_at": "2026-11-14T23:00:53.000Z",
+  "updated_at": "2026-11-15T02:46:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "phoonnx",
+  "languages": [],
+  "tags": [
+    "phoonnx",
+    "onnx",
+    "vits",
+    "text-to-speech",
+    "ar",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63516686,
+  "storage_human": "64 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ky Luu - Chief Scientist at MKS Instruments | LinkedIn",
+      "url": "https://www.linkedin.com/in/ky-luu-1b021129",
+      "snippet": "View Ky Luu’s profile on LinkedIn, a professional community of 1 billion members."
+    },
+    {
+      "title": "Ky Luu - International Medical Corps | LinkedIn",
+      "url": "https://www.linkedin.com/in/ky-luu-27199352",
+      "snippet": "View Ky Luu’s profile on LinkedIn, a professional community of 1 billion members."
+    },
+    {
+      "title": "Ky Luu - Executive Director, Disaster Resilience Leadership ... - LinkedIn",
+      "url": "https://www.linkedin.com/in/ky-luu-50792144",
+      "snippet": "View Ky Luu’s profile on LinkedIn, a professional community of 1 billion members."
+    }
+  ]
+}

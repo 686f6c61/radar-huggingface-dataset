@@ -39,8 +39,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "memorizations/HF_Llama_1B_WebOrganizer_Without_Creative_185B_Seed_107",
+  "renamed_at": "2026-11-15T04:49:30.309Z",
   "benchmarks": [],
   "sources": [
     {

@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Nanbeige4.3-33B-Tensix-BFP4",
   "created_at": "2026-11-12T12:04:09.000Z",
-  "updated_at": "2026-11-13T05:13:30.000Z",
+  "updated_at": "2026-11-14T16:49:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -39,7 +39,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 47,
   "trending_score": 0,
   "parameters": 33118977024,
   "parameters_human": "33.12B",
@@ -56,8 +56,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Xylolabs/Nanbeige4.3-33B-Tenstorrent-Tensix-BFP4",
+  "renamed_at": "2026-11-15T04:40:27.208Z",
   "benchmarks": [],
   "sources": []
 }

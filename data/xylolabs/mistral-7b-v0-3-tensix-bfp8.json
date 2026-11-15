@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Mistral-7B-v0.3-Tensix-BFP8",
   "created_at": "2026-11-12T05:26:02.000Z",
-  "updated_at": "2026-11-13T05:12:50.000Z",
+  "updated_at": "2026-11-14T16:49:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 33,
+  "downloads_30d": 47,
   "trending_score": 0,
   "parameters": 7248023552,
   "parameters_human": "7.25B",
@@ -49,8 +49,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Xylolabs/Mistral-7B-v0.3-Tenstorrent-Tensix-BFP8",
+  "renamed_at": "2026-11-15T04:40:21.272Z",
   "benchmarks": [],
   "sources": []
 }

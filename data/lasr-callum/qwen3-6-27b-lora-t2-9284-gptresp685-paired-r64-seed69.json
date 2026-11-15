@@ -41,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "dougalldeepmind/2026-08-28-gpt5-qwen36-lora-table2-9284-gpt-responder-685-paired-rank-64-seed69",
+  "renamed_at": "2026-11-15T03:22:50.481Z",
   "benchmarks": [],
   "sources": [
     {

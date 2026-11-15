@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 14,
+  "downloads_30d": 10,
   "trending_score": 0,
   "parameters": 1061364544,
   "parameters_human": "1.06B",
@@ -39,8 +39,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "JW-Hubs/Qwen3.5-2B-W4A16-AutoRound",
+  "renamed_at": "2026-11-15T03:10:32.383Z",
   "benchmarks": [],
   "sources": [
     {

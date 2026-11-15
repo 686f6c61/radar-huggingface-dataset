@@ -56,8 +56,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "KETI-NLP/HyperCLOVA-X-KETI-HAECHI-32B",
+  "renamed_at": "2026-11-15T03:18:29.652Z",
   "benchmarks": [],
   "sources": [
     {

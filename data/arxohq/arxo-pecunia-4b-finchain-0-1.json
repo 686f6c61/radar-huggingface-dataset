@@ -1,0 +1,62 @@
+{
+  "schema": 2,
+  "id": "arxohq/Arxo-Pecunia-4B-FinChain-0.1",
+  "slug": "arxohq-arxo-pecunia-4b-finchain-0-1",
+  "author": "arxohq",
+  "url": "https://huggingface.co/arxohq/Arxo-Pecunia-4B-FinChain-0.1",
+  "created_at": "2026-11-14T21:44:48.000Z",
+  "updated_at": "2026-11-14T21:45:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "finance",
+    "financial-reasoning",
+    "finchain",
+    "lora",
+    "arxo",
+    "text-generation",
+    "en",
+    "arxiv:2506.02515",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 312053840,
+  "storage_human": "312 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Multi-step financial reasoning, no tools",
+      "dataset": "FinChain",
+      "metric": "Final-answer correctness",
+      "value": 80.2
+    }
+  ],
+  "sources": []
+}

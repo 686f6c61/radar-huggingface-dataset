@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "kaitemoreau/MinerU2.5-Pro-2605-1.2B",
+  "slug": "kaitemoreau-mineru2-5-pro-2605-1-2b",
+  "author": "kaitemoreau",
+  "url": "https://huggingface.co/kaitemoreau/MinerU2.5-Pro-2605-1.2B",
+  "created_at": "2026-11-15T01:20:10.000Z",
+  "updated_at": "2026-11-15T01:20:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_vl",
+    "image-text-to-text",
+    "conversational",
+    "zh",
+    "en",
+    "arxiv:2604.04771",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1156026624,
+  "parameters_human": "1.16B",
+  "storage_bytes": 2323550190,
+  "storage_human": "2.3 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

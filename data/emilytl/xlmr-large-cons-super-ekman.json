@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "emilytl/xlmr-large-cons-super-ekman",
+  "slug": "emilytl-xlmr-large-cons-super-ekman",
+  "author": "emilytl",
+  "url": "https://huggingface.co/emilytl/xlmr-large-cons-super-ekman",
+  "created_at": "2026-11-15T04:39:14.000Z",
+  "updated_at": "2026-11-15T04:39:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278049031,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129318572,
+  "storage_human": "1.1 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Virtual Fitness: Exploring The Pros And Cons - Henry Ford Health",
+      "url": "https://www.henryford.com/blog/2019/02/virtual-fitness-exploring-the-pros-and-cons",
+      "snippet": "Feb 6, 2019 · From fitness apps to online exercise classes, Henry Ford exercise physiologist explains the pros and cons of virtual …"
+    }
+  ]
+}

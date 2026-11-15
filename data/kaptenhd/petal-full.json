@@ -1,0 +1,44 @@
+{
+  "schema": 2,
+  "id": "KAPTENHD/PeTal-full",
+  "slug": "kaptenhd-petal-full",
+  "author": "KAPTENHD",
+  "url": "https://huggingface.co/KAPTENHD/PeTal-full",
+  "created_at": "2026-11-14T22:04:11.000Z",
+  "updated_at": "2026-11-14T22:04:11.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2209.01188] Petals: Collaborative Inference and Fine-tuning of ...",
+      "url": "https://arxiv.org/abs/2209.01188",
+      "snippet": "However, these techniques have ... In this work, we propose Petals - a system for inference and fine-tuning of large models collaboratively by joining the resources of multiple parties...."
+    }
+  ]
+}

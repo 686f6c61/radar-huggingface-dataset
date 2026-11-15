@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mradermacher/RYS-Llama-3-Huge-Instruct-GGUF",
+  "slug": "mradermacher-rys-llama-3-huge-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/RYS-Llama-3-Huge-Instruct-GGUF",
+  "created_at": "2025-02-27T23:25:22.000Z",
+  "updated_at": "2026-11-15T01:34:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:dnhkng/RYS-Llama-3-Huge-Instruct",
+    "base_model:quantized:dnhkng/RYS-Llama-3-Huge-Instruct",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 99645956096,
+  "parameters_human": "99.65B",
+  "storage_bytes": 678087345888,
+  "storage_human": "678.1 GB",
+  "context_length": 8192,
+  "base_model": "dnhkng/RYS-Llama-3-Huge-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

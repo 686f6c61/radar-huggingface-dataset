@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 23,
+  "downloads_30d": 12,
   "trending_score": 0,
   "parameters": 4411424256,
   "parameters_human": "4.41B",
@@ -42,8 +42,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "HYU-NLP-EVAL/20260919_rar-medicine_online_qwen3-4b_dense_impl-verl_s11_step-059",
+  "renamed_at": "2026-11-15T02:58:48.729Z",
   "benchmarks": [],
   "sources": []
 }

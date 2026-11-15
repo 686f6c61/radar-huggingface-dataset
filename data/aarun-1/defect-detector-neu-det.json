@@ -5,7 +5,7 @@
   "author": "Aarun-1",
   "url": "https://huggingface.co/Aarun-1/defect-detector-neu-det",
   "created_at": "2026-11-14T08:22:13.000Z",
-  "updated_at": "2026-11-14T08:22:46.000Z",
+  "updated_at": "2026-11-14T09:11:44.000Z",
   "license": "agpl-3.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "ultralytics",
+    "onnx",
     "object-detection",
     "yolov8",
     "surface-defect-inspection",
@@ -27,11 +28,13 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 22523562,
-  "storage_human": "23 MB",
+  "storage_bytes": 67250750,
+  "storage_human": "67 MB",
   "context_length": null,
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "onnx"
+  ],
   "is_conversational": false,
   "gated": false,
   "disabled": false,

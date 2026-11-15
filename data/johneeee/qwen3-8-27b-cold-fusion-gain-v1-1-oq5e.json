@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 15,
+  "downloads_30d": 14,
   "trending_score": 0,
   "parameters": 27356728560,
   "parameters_human": "27.36B",
@@ -39,8 +39,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Johneeee/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-oQ5e-vision",
+  "renamed_at": "2026-11-15T03:15:56.615Z",
   "benchmarks": [],
   "sources": [
     {
