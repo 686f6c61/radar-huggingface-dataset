@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Llama_3.x_70b_PentEva_FreeEra_V1.11-GGUF",
+  "slug": "mradermacher-llama_3-x_70b_penteva_freeera_v1-11-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama_3.x_70b_PentEva_FreeEra_V1.11-GGUF",
+  "created_at": "2025-03-09T22:48:42.000Z",
+  "updated_at": "2026-11-15T20:15:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:Nexesenex/Llama_3.x_70b_PentEva_FreeEra_V1.11",
+    "base_model:quantized:Nexesenex/Llama_3.x_70b_PentEva_FreeEra_V1.11",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 70554345536,
+  "parameters_human": "70.55B",
+  "storage_bytes": 406692509152,
+  "storage_human": "406.7 GB",
+  "context_length": 131072,
+  "base_model": "Nexesenex/Llama_3.x_70b_PentEva_FreeEra_V1.11",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

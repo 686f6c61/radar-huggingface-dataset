@@ -1,0 +1,65 @@
+{
+  "schema": 2,
+  "id": "athenista/slm-tavenel-362m",
+  "slug": "athenista-slm-tavenel-362m",
+  "author": "athenista",
+  "url": "https://huggingface.co/athenista/slm-tavenel-362m",
+  "created_at": "2026-11-15T17:20:09.000Z",
+  "updated_at": "2026-11-15T17:20:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "slm_tavenel",
+    "text-generation",
+    "slm-tavenel",
+    "base-model",
+    "research",
+    "custom_code",
+    "muon",
+    "gated-attention",
+    "en",
+    "fr",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:epfml/FineWeb2-HQ",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 362286016,
+  "parameters_human": "362.3M",
+  "storage_bytes": 1450247455,
+  "storage_human": "1.5 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "ARC-Easy, project raw-accuracy protocol",
+      "dataset": "ARC-Easy test, 2376 items",
+      "metric": "Raw acc, not length-normalized",
+      "value": 0.48358585858585856
+    }
+  ],
+  "sources": []
+}

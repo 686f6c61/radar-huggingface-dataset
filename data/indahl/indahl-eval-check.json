@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "indahl/indahl-eval-check",
+  "slug": "indahl-indahl-eval-check",
+  "author": "indahl",
+  "url": "https://huggingface.co/indahl/indahl-eval-check",
+  "created_at": "2026-11-15T13:40:34.000Z",
+  "updated_at": "2026-11-15T13:40:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Across or Accros | How to spell it? | Spelling",
+      "url": "https://word.tips/spelling/across-vs-accros/",
+      "snippet": "Across or Accros are two words that are confused and usually misspelled due to their similarity. Check which one to use!"
+    }
+  ]
+}

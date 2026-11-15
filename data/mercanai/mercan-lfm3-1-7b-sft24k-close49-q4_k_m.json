@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "MercanAI/Mercan-LFM3-1.7B-SFT24K-Close49-Q4_K_M",
+  "slug": "mercanai-mercan-lfm3-1-7b-sft24k-close49-q4_k_m",
+  "author": "MercanAI",
+  "url": "https://huggingface.co/MercanAI/Mercan-LFM3-1.7B-SFT24K-Close49-Q4_K_M",
+  "created_at": "2026-11-15T15:20:21.000Z",
+  "updated_at": "2026-11-15T15:20:51.000Z",
+  "license": "lfm-open-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "lfm3",
+    "mercanruntime",
+    "q4_k_m",
+    "gguf",
+    "turkish",
+    "research",
+    "text-generation",
+    "tr",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:finetune:LiquidAI/LFM3-1.7B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1247083552,
+  "storage_human": "1.2 GB",
+  "context_length": null,
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 2,
+  "id": "OrizonSAMP/game",
+  "slug": "orizonsamp-game",
+  "author": "OrizonSAMP",
+  "url": "https://huggingface.co/OrizonSAMP/game",
+  "created_at": "2026-06-01T17:09:20.000Z",
+  "updated_at": "2026-11-15T17:04:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1331877421,
+  "storage_human": "1.3 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jeux | Trouve des jeux de seconde main | Vinted",
+      "url": "https://www.vinted.fr/catalog/3026-games?msockid=39ffba94ab16644e0dbea286aa0865f6",
+      "snippet": "Économise sur les jeux de seconde main sur Vinted. Parcours un large choix pour tous les goûts et déniche des titres en très bon état."
+    }
+  ]
+}

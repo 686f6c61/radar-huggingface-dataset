@@ -1,0 +1,68 @@
+{
+  "schema": 2,
+  "id": "fbaldassarri/allenai_OLMo-2-1124-13B-Instruct-auto_round-int4-gs64-asym",
+  "slug": "fbaldassarri-allenai_olmo-2-1124-13b-instruct-auto_round-int4-gs64-asym",
+  "author": "fbaldassarri",
+  "url": "https://huggingface.co/fbaldassarri/allenai_OLMo-2-1124-13B-Instruct-auto_round-int4-gs64-asym",
+  "created_at": "2026-11-15T15:56:33.000Z",
+  "updated_at": "2026-11-15T15:57:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo2",
+    "text-generation",
+    "autoround",
+    "auto-round",
+    "pytorch",
+    "causal-lm",
+    "intel-autoround",
+    "intel",
+    "woq",
+    "weights-only-quantization",
+    "olmo",
+    "olmo-2",
+    "allenai",
+    "4-bit",
+    "conversational",
+    "en",
+    "base_model:allenai/OLMo-2-1124-13B-Instruct",
+    "base_model:quantized:allenai/OLMo-2-1124-13B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2837427200,
+  "parameters_human": "2.84B",
+  "storage_bytes": 10953329576,
+  "storage_human": "11.0 GB",
+  "context_length": null,
+  "base_model": "allenai/OLMo-2-1124-13B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "batuhan28/tr-fastconformer-stream",
+  "slug": "batuhan28-tr-fastconformer-stream",
+  "author": "batuhan28",
+  "url": "https://huggingface.co/batuhan28/tr-fastconformer-stream",
+  "created_at": "2026-11-12T18:29:24.000Z",
+  "updated_at": "2026-11-15T14:28:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "nemo",
+  "languages": [],
+  "tags": [
+    "nemo",
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14998372947,
+  "storage_human": "15.0 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

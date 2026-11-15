@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "suresh-bandaru/Unsloth_Qwen2_5_0.5B_MergedModel_16-bit",
+  "slug": "suresh-bandaru-unsloth_qwen2_5_0-5b_mergedmodel_16-bit",
+  "author": "suresh-bandaru",
+  "url": "https://huggingface.co/suresh-bandaru/Unsloth_Qwen2_5_0.5B_MergedModel_16-bit",
+  "created_at": "2026-11-15T15:36:19.000Z",
+  "updated_at": "2026-11-15T15:38:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen2.5-0.5B-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-0.5B-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519990,
+  "storage_human": "1000 MB",
+  "context_length": null,
+  "base_model": "unsloth/Qwen2.5-0.5B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

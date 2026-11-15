@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "Swara55/qwen3.5-0.8b-rag-sft",
+  "slug": "swara55-qwen3-5-0-8b-rag-sft",
+  "author": "Swara55",
+  "url": "https://huggingface.co/Swara55/qwen3.5-0.8b-rag-sft",
+  "created_at": "2026-11-15T14:00:23.000Z",
+  "updated_at": "2026-11-15T14:00:43.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "rag",
+    "lora",
+    "ja",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1524816627,
+  "storage_human": "1.5 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

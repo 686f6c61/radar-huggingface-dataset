@@ -1,0 +1,59 @@
+{
+  "schema": 2,
+  "id": "san-digital/Qwen3.8-Flash-Next-DFlash2",
+  "slug": "san-digital-qwen3-8-flash-next-dflash2",
+  "author": "san-digital",
+  "url": "https://huggingface.co/san-digital/Qwen3.8-Flash-Next-DFlash2",
+  "created_at": "2026-11-15T15:05:39.000Z",
+  "updated_at": "2026-11-15T15:05:40.000Z",
+  "license": "qwen-community-license-1.0-and-apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "safetensors",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "speculative-decoding",
+    "dflash2",
+    "apple-silicon",
+    "metal",
+    "tokspur",
+    "qwen3.8-flash-next",
+    "japanese",
+    "multilingual",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:finetune:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.8-Flash-Next, incoai/Qwen3.8-Flash-Next-DFlash2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SANOFI Cours Action SAN, Cotation Bourse Euronext Paris",
+      "url": "https://www.boursorama.com/cours/1rPSAN/",
+      "snippet": "Le cours de l'action SANOFI SAN en temps réel sur Boursorama : historique de la cotation sur Euronext Paris, graphique, actualités, …"
+    }
+  ]
+}

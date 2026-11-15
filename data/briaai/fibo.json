@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "briaai/FIBO",
+  "slug": "briaai-fibo",
+  "author": "briaai",
+  "url": "https://huggingface.co/briaai/FIBO",
+  "created_at": "2025-10-09T11:55:45.000Z",
+  "updated_at": "2026-11-15T12:57:39.000Z",
+  "license": "bria-fibo",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "art",
+    "text-to-image",
+    "en",
+    "arxiv:2511.06876",
+    "base_model:briaai/FIBO",
+    "base_model:finetune:briaai/FIBO",
+    "license:other",
+    "diffusers:BriaFiboPipeline",
+    "region:us"
+  ],
+  "likes": 335,
+  "downloads_30d": 423,
+  "trending_score": 0,
+  "parameters": 8285836848,
+  "parameters_human": "8.29B",
+  "storage_bytes": 61632910000,
+  "storage_human": "61.6 GB",
+  "context_length": null,
+  "base_model": "briaai/FIBO",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

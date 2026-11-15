@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "david-rename/gpt-pp-base",
+  "slug": "david-rename-gpt-pp-base",
+  "author": "david-rename",
+  "url": "https://huggingface.co/david-rename/gpt-pp-base",
+  "created_at": "2026-11-15T13:48:24.000Z",
+  "updated_at": "2026-11-15T14:21:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gptpp",
+    "text-generation",
+    "gpt-pp",
+    "nanochat",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135266304,
+  "parameters_human": "135.3M",
+  "storage_bytes": 541073328,
+  "storage_human": "541 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

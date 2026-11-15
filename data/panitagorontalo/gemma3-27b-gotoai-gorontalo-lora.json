@@ -1,0 +1,98 @@
+{
+  "schema": 2,
+  "id": "panitagorontalo/gemma3-27b-gotoai-gorontalo-lora",
+  "slug": "panitagorontalo-gemma3-27b-gotoai-gorontalo-lora",
+  "author": "panitagorontalo",
+  "url": "https://huggingface.co/panitagorontalo/gemma3-27b-gotoai-gorontalo-lora",
+  "created_at": "2026-11-15T16:54:24.000Z",
+  "updated_at": "2026-11-15T16:54:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "id",
+    "gor"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:GoToCompany/gemma3-27b-cpt-gotoai-v3-instruct",
+    "lora",
+    "gemma3",
+    "transformers",
+    "gorontalo",
+    "bahasa-gorontalo",
+    "hulontalo",
+    "indonesian",
+    "panita-research-gorontalo",
+    "mansoer-pateda",
+    "text-generation",
+    "conversational",
+    "id",
+    "gor",
+    "base_model:GoToCompany/gemma3-27b-cpt-gotoai-v3-instruct",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 487581089,
+  "storage_human": "488 MB",
+  "context_length": null,
+  "base_model": "GoToCompany/gemma3-27b-cpt-gotoai-v3-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Translation (Indonesia -> Gorontalo)",
+      "dataset": "Korpus Terpadu v6 Kamus Prof. Dr. H. Mansoer Pateda (1987 & 2001)",
+      "metric": "SacreBLEU (ID -> GOR Clean Test v6)",
+      "value": 34.45
+    },
+    {
+      "task": "Translation (Indonesia -> Gorontalo)",
+      "dataset": "Korpus Terpadu v6 Kamus Prof. Dr. H. Mansoer Pateda (1987 & 2001)",
+      "metric": "chrF++ (ID -> GOR Clean Test v6)",
+      "value": 53.98
+    },
+    {
+      "task": "Translation (Gorontalo -> Indonesia)",
+      "dataset": "Korpus Terpadu v6 Kamus Prof. Dr. H. Mansoer Pateda (1987 & 2001)",
+      "metric": "SacreBLEU (GOR 2001 -> ID Clean Test v6)",
+      "value": 29.2
+    },
+    {
+      "task": "Translation (Gorontalo -> Indonesia)",
+      "dataset": "Korpus Terpadu v6 Kamus Prof. Dr. H. Mansoer Pateda (1987 & 2001)",
+      "metric": "chrF++ (GOR 2001 -> ID Clean Test v6)",
+      "value": 53.19
+    },
+    {
+      "task": "Translation (Gorontalo 1987 -> Indonesia)",
+      "dataset": "Korpus Terpadu v6 Kamus Prof. Dr. H. Mansoer Pateda (1987 & 2001)",
+      "metric": "SacreBLEU (GOR 1987 -> ID Clean Test v6)",
+      "value": 32.06
+    },
+    {
+      "task": "Translation (Gorontalo 1987 -> Indonesia)",
+      "dataset": "Korpus Terpadu v6 Kamus Prof. Dr. H. Mansoer Pateda (1987 & 2001)",
+      "metric": "chrF++ (GOR 1987 -> ID Clean Test v6)",
+      "value": 56.42
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "Phoonnx/vits-ne_np-seto_bagh",
+  "slug": "phoonnx-vits-ne_np-seto_bagh",
+  "author": "Phoonnx",
+  "url": "https://huggingface.co/Phoonnx/vits-ne_np-seto_bagh",
+  "created_at": "2026-11-14T23:05:29.000Z",
+  "updated_at": "2026-11-15T16:03:01.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "phoonnx",
+  "languages": [
+    "ne"
+  ],
+  "tags": [
+    "phoonnx",
+    "onnx",
+    "vits",
+    "text-to-speech",
+    "ne",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 76691724,
+  "storage_human": "77 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

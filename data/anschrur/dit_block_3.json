@@ -1,0 +1,69 @@
+{
+  "schema": 2,
+  "id": "anschrur/dit_block_3",
+  "slug": "anschrur-dit_block_3",
+  "author": "anschrur",
+  "url": "https://huggingface.co/anschrur/dit_block_3",
+  "created_at": "2026-11-15T17:37:23.000Z",
+  "updated_at": "2026-11-15T17:37:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "imitation-learning",
+    "flow-matching",
+    "diffusion-policy",
+    "so-101",
+    "robot-imitation-glue",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 66705733,
+  "storage_human": "67 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blockchain Facts: What Is It, How It Works, and How It Can Be Used",
+      "url": "https://www.investopedia.com/terms/b/blockchain.asp",
+      "snippet": "May 24, 2026 · Blockchain is a decentralized digital database or ledger that securely stores records across a network of computers in …"
+    },
+    {
+      "title": "What is Blockchain Technology, and How Does It Work?",
+      "url": "https://www.blockchain-council.org/blockchain/what-is-blockchain-technology-and-how-does-it-work/",
+      "snippet": "Dec 8, 2025 · Blockchain technology is a decentralized digital ledger that records transactions across multiple computers in a way …"
+    },
+    {
+      "title": "Blockchain - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Blockchain",
+      "snippet": "Blockchains are typically managed by a peer-to-peer (P2P) computer network for use as a public distributed ledger, where nodes …"
+    },
+    {
+      "title": "What is blockchain? - IBM",
+      "url": "https://www.ibm.com/think/topics/blockchain",
+      "snippet": "Blockchain is a shared, immutable digital ledger, enabling the recording of transactions and the tracking of assets within a business …"
+    },
+    {
+      "title": "Introduction to Blockchain Technology - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/ethical-hacking/blockchain-technology-introduction/",
+      "snippet": "Aug 1, 2025 · Blockchain is a revolutionary technology that functions as a shared, immutable digital ledger. The name \"blockchain\" …"
+    }
+  ]
+}

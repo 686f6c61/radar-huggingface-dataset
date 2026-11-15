@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "phuvey/shakespeare-char-nanogpt",
+  "slug": "phuvey-shakespeare-char-nanogpt",
+  "author": "phuvey",
+  "url": "https://huggingface.co/phuvey/shakespeare-char-nanogpt",
+  "created_at": "2026-11-15T16:41:21.000Z",
+  "updated_at": "2026-11-15T16:43:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "nanogpt",
+    "char-level",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 804096,
+  "parameters_human": "804096",
+  "storage_bytes": 3219743,
+  "storage_human": "3 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

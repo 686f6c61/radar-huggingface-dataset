@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "yzdvai/tinystories-llama-64m",
+  "slug": "yzdvai-tinystories-llama-64m",
+  "author": "yzdvai",
+  "url": "https://huggingface.co/yzdvai/tinystories-llama-64m",
+  "created_at": "2026-11-15T12:31:24.000Z",
+  "updated_at": "2026-11-15T12:35:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "tinystories",
+    "from-scratch",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 64365440,
+  "parameters_human": "64.4M",
+  "storage_bytes": 257474920,
+  "storage_human": "257 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

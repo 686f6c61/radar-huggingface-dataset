@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "aneeshansari/language-detector",
+  "slug": "aneeshansari-language-detector",
+  "author": "aneeshansari",
+  "url": "https://huggingface.co/aneeshansari/language-detector",
+  "created_at": "2026-11-15T17:08:07.000Z",
+  "updated_at": "2026-11-15T17:12:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 538090408,
+  "storage_human": "538 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

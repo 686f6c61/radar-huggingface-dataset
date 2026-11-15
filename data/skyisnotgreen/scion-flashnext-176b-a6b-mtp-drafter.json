@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "SkyIsNotGreen/Scion-FlashNext-176B-A6B-mtp-drafter",
+  "slug": "skyisnotgreen-scion-flashnext-176b-a6b-mtp-drafter",
+  "author": "SkyIsNotGreen",
+  "url": "https://huggingface.co/SkyIsNotGreen/Scion-FlashNext-176B-A6B-mtp-drafter",
+  "created_at": "2026-11-14T02:19:23.000Z",
+  "updated_at": "2026-11-15T15:33:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "speculative-decoding",
+    "draft-model",
+    "mtp",
+    "scion",
+    "en",
+    "base_model:SkyIsNotGreen/Scion-FlashNext-176B-A6B",
+    "base_model:quantized:SkyIsNotGreen/Scion-FlashNext-176B-A6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2607150848,
+  "parameters_human": "2.61B",
+  "storage_bytes": 891090374,
+  "storage_human": "891 MB",
+  "context_length": null,
+  "base_model": "SkyIsNotGreen/Scion-FlashNext-176B-A6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

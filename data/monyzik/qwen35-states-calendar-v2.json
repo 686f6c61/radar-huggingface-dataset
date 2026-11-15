@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "Monyzik/qwen35-states-calendar-v2",
+  "slug": "monyzik-qwen35-states-calendar-v2",
+  "author": "Monyzik",
+  "url": "https://huggingface.co/Monyzik/qwen35-states-calendar-v2",
+  "created_at": "2026-11-15T15:18:41.000Z",
+  "updated_at": "2026-11-15T15:19:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "fact-extraction",
+    "temporal-information-extraction",
+    "qwen3.5",
+    "ru",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 271287719,
+  "storage_human": "271 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,92 @@
+{
+  "schema": 2,
+  "id": "nvidia/nemotron-labs-audio-visual-flamingo-hf",
+  "slug": "nvidia-nemotron-labs-audio-visual-flamingo-hf",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/nemotron-labs-audio-visual-flamingo-hf",
+  "created_at": "2026-04-15T19:00:34.000Z",
+  "updated_at": "2026-11-15T16:58:20.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "video-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "audiovisualflamingo",
+    "text-generation",
+    "audio",
+    "video",
+    "image",
+    "audio-visual",
+    "multimodal",
+    "reasoning",
+    "video understanding",
+    "long-video",
+    "audio understanding",
+    "ASR",
+    "timestamp-grounding",
+    "instruction-tuned",
+    "dynamic-s2",
+    "CRTE",
+    "TAVIT",
+    "video-text-to-text",
+    "en",
+    "dataset:nvidia/AV-Skills",
+    "arxiv:2607.16107",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 19,
+  "downloads_30d": 570,
+  "trending_score": 0,
+  "parameters": 8742888688,
+  "parameters_human": "8.74B",
+  "storage_bytes": 69956829442,
+  "storage_human": "70.0 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Téléchargez les pilotes NVIDIA officiels | NVIDIA",
+      "url": "https://www.nvidia.com/fr-fr/drivers/",
+      "snippet": "Les clients d'entreprise disposant d’une licence logicielle vGPU à jour, que ce soit pour NVIDIA vPC, NVIDIA vApps ou NVIDIA RTX …"
+    },
+    {
+      "title": "World Leader in Artificial Intelligence Computing | NVIDIA",
+      "url": "https://www.nvidia.com/",
+      "snippet": "NVIDIA invents the GPU and drives advances in AI, HPC, gaming, creative design, autonomous vehicles, and robotics."
+    },
+    {
+      "title": "Nvidia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nvidia",
+      "snippet": "On September 22, 2025, Nvidia and OpenAI announced a memorandum of understanding for a partnership wherein Nvidia would …"
+    },
+    {
+      "title": "NVIDIA",
+      "url": "https://www.nvidia.fr/default.htm",
+      "snippet": "Explorez les dernières innovations et produits NVIDIA, leader en technologies graphiques et d'intelligence artificielle."
+    },
+    {
+      "title": "Nvidia — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nvidia",
+      "snippet": "Nvidia Corporation est une société multinationale américaine de technologie basée à Santa Clara et immatriculée dans l'État du …"
+    }
+  ]
+}

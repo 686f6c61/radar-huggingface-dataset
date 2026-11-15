@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "McAntek/building-segmentation-poland-b5",
+  "slug": "mcantek-building-segmentation-poland-b5",
+  "author": "McAntek",
+  "url": "https://huggingface.co/McAntek/building-segmentation-poland-b5",
+  "created_at": "2026-11-15T15:36:53.000Z",
+  "updated_at": "2026-11-15T15:43:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "image-segmentation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1354904477,
+  "storage_human": "1.4 GB",
+  "context_length": null,
+  "base_model": "nvidia/segformer-b5-finetuned-ade-512-512",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "empero-ai/Quark-150M-128K-Base",
+  "slug": "empero-ai-quark-150m-128k-base",
+  "author": "empero-ai",
+  "url": "https://huggingface.co/empero-ai/Quark-150M-128K-Base",
+  "created_at": "2026-11-15T16:53:56.000Z",
+  "updated_at": "2026-11-15T16:56:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "quark",
+    "text-generation",
+    "small-language-model",
+    "research",
+    "custom_code",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 165254528,
+  "parameters_human": "165.3M",
+  "storage_bytes": 661046680,
+  "storage_human": "661 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

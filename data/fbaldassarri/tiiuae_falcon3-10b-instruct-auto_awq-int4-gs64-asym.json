@@ -1,0 +1,82 @@
+{
+  "schema": 2,
+  "id": "fbaldassarri/tiiuae_Falcon3-10B-Instruct-auto_awq-int4-gs64-asym",
+  "slug": "fbaldassarri-tiiuae_falcon3-10b-instruct-auto_awq-int4-gs64-asym",
+  "author": "fbaldassarri",
+  "url": "https://huggingface.co/fbaldassarri/tiiuae_Falcon3-10B-Instruct-auto_awq-int4-gs64-asym",
+  "created_at": "2026-11-15T16:10:53.000Z",
+  "updated_at": "2026-11-15T16:12:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "awq",
+    "auto-awq",
+    "autoawq",
+    "pytorch",
+    "causal-lm",
+    "autoround",
+    "auto-round",
+    "intel-autoround",
+    "intel",
+    "woq",
+    "weights-only-quantization",
+    "falcon",
+    "falcon3",
+    "tii",
+    "4-bit",
+    "conversational",
+    "en",
+    "base_model:tiiuae/Falcon3-10B-Instruct",
+    "base_model:quantized:tiiuae/Falcon3-10B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2160061440,
+  "parameters_human": "2.16B",
+  "storage_bytes": 8343472024,
+  "storage_human": "8.3 GB",
+  "context_length": null,
+  "base_model": "tiiuae/Falcon3-10B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lidl autour de moi : trouvez un magasin proche rapidement",
+      "url": "https://www.telephone.city/enseigne/lidl/",
+      "snippet": "Nov 2, 2026 · Vous cherchez un Lidl autour de vous ? Accédez en quelques secondes aux magasins Lidl proches, avec leurs …"
+    },
+    {
+      "title": "Lidl autour de moi – adresses, horaires et itinéraire",
+      "url": "https://storelocatortool.com/v3/fr/recherche.php?enseigne=lidl&pays=france",
+      "snippet": "Lidl à proximité : magasins Lidl en France par ville, avec carte, adresse, horaires d'ouverture et itinéraire."
+    },
+    {
+      "title": "Magasins Lidl autour de moi : 1 648 adresses en France",
+      "url": "https://autour-de-moi.com/enseigne/lidl/",
+      "snippet": "Les 1 648 magasins Lidl dans 1 461 villes : adresse, horaires d'ouverture, téléphone et itinéraire. Trouvez le magasin Lidl le plus …"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "mradermacher/qwen2-vl-iranian-idcard-ocr-GGUF",
+  "slug": "mradermacher-qwen2-vl-iranian-idcard-ocr-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen2-vl-iranian-idcard-ocr-GGUF",
+  "created_at": "2025-06-06T09:17:30.000Z",
+  "updated_at": "2026-11-15T16:51:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "vision",
+    "multimodal",
+    "id-card-recognition",
+    "en",
+    "base_model:datamoon/qwen2-vl-iranian-idcard-ocr",
+    "base_model:quantized:datamoon/qwen2-vl-iranian-idcard-ocr",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 158,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 16248419136,
+  "storage_human": "16.2 GB",
+  "context_length": 32768,
+  "base_model": "datamoon/qwen2-vl-iranian-idcard-ocr",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

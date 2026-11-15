@@ -1,0 +1,80 @@
+{
+  "schema": 2,
+  "id": "Louvain/embed-4b-erb",
+  "slug": "louvain-embed-4b-erb",
+  "author": "Louvain",
+  "url": "https://huggingface.co/Louvain/embed-4b-erb",
+  "created_at": "2026-11-12T13:42:31.000Z",
+  "updated_at": "2026-11-13T20:58:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "qwen3",
+    "feature-extraction",
+    "retrieval",
+    "matryoshka",
+    "sentence-similarity",
+    "en",
+    "base_model:Qwen/Qwen3-Embedding-4B",
+    "base_model:finetune:Qwen/Qwen3-Embedding-4B",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 4021774336,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8055015376,
+  "storage_human": "8.1 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-Embedding-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Louvain — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Louvain",
+      "snippet": "Louvain est divisée en cinq sections, la section de Louvain comprend des territoires cédés par les communes de Korbeek-Lo et …"
+    },
+    {
+      "title": "Université catholique de Louvain",
+      "url": "https://uclouvain.be/fr",
+      "snippet": "Pour les aider à relever ce nouveau défi, l’UCLouvain élargit dès cette année ses cours préparatoires à la médecine vétérinaire, …"
+    },
+    {
+      "title": "Que faire à Louvain ? 6 activités incontournables - Baroudeurs Liégeois",
+      "url": "https://baroudeursliegeois.com/que-faire-a-louvain-6-activites-incontournables-de-cette-jolie-ville-du-brabant-flamand-en-belgique/",
+      "snippet": "Que faire à Louvain ? Entre rues piétonnes, monuments historiques et espaces verts, cette ville où règne une ambiance estudiantine …"
+    },
+    {
+      "title": "Que faire et que voir à Louvain ? Guide pour visiter la ville et ses ...",
+      "url": "https://www.frenchwanderers.com/monde/visiter-louvain-belgique-incontournables",
+      "snippet": "Feb 6, 2026 · Notre guide des incontournables à voir et faire à Louvain, pour un week-end en Belgique !"
+    },
+    {
+      "title": "Bienvenue à Leuven ! | Visit Leuven",
+      "url": "https://www.visitleuven.be/fr",
+      "snippet": "Découvrez Louvain avec le billet ILUVLeuven ILUVLeuven Ticket Avec le ticket ILUVLeuven, vous avez accès à quelques …"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 2,
+  "id": "GiangSon-5/CVAE_Music_Generation",
+  "slug": "giangson-5-cvae_music_generation",
+  "author": "GiangSon-5",
+  "url": "https://huggingface.co/GiangSon-5/CVAE_Music_Generation",
+  "created_at": "2026-11-15T16:30:48.000Z",
+  "updated_at": "2026-11-15T16:55:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "cvae",
+    "vae",
+    "audio-generation",
+    "music-generation",
+    "mel-spectrogram",
+    "conv2d",
+    "bfloat16",
+    "nvidia-l4",
+    "other",
+    "en",
+    "arxiv:1312.6114",
+    "arxiv:1709.01620",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 80481053,
+  "storage_human": "80 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Mel-Spectrogram Audio Reconstruction",
+      "dataset": "Piano Audio Dataset (60,608 train / 32 held-out test segments)",
+      "metric": "Held-Out Test ELBO Loss",
+      "value": 412.07
+    },
+    {
+      "task": "Mel-Spectrogram Audio Reconstruction",
+      "dataset": "Piano Audio Dataset (60,608 train / 32 held-out test segments)",
+      "metric": "Held-Out Test Recon MSE",
+      "value": 386
+    },
+    {
+      "task": "Mel-Spectrogram Audio Reconstruction",
+      "dataset": "Piano Audio Dataset (60,608 train / 32 held-out test segments)",
+      "metric": "Held-Out Test KL Divergence",
+      "value": 26.07
+    }
+  ],
+  "sources": [
+    {
+      "title": "Genius | Song Lyrics & Knowledge",
+      "url": "https://genius.com/?-lyrics",
+      "snippet": "Genius is the world’s biggest collection of song lyrics and musical knowledge."
+    }
+  ]
+}

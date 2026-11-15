@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "Monyzik/qwen35-rubert-large-ensemble-balanced",
+  "slug": "monyzik-qwen35-rubert-large-ensemble-balanced",
+  "author": "Monyzik",
+  "url": "https://huggingface.co/Monyzik/qwen35-rubert-large-ensemble-balanced",
+  "created_at": "2026-11-15T20:11:25.000Z",
+  "updated_at": "2026-11-15T20:14:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "fact-extraction",
+    "ensemble",
+    "qwen3.5",
+    "rubert",
+    "temporal-information-extraction",
+    "lora",
+    "ru",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2004951244,
+  "storage_human": "2.0 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-0.8B, ai-forever/ruBert-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

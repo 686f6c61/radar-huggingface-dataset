@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "mradermacher/gemma-3-heretic-4-public-GGUF",
+  "slug": "mradermacher-gemma-3-heretic-4-public-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-3-heretic-4-public-GGUF",
+  "created_at": "2026-11-15T15:30:00.000Z",
+  "updated_at": "2026-11-15T15:31:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "en",
+    "base_model:VINAY-UMRETHE/gemma-3-heretic-4-public",
+    "base_model:quantized:VINAY-UMRETHE/gemma-3-heretic-4-public",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8423840,
+  "parameters_human": "8.4M",
+  "storage_bytes": 293128128,
+  "storage_human": "293 MB",
+  "context_length": 131072,
+  "base_model": "VINAY-UMRETHE/gemma-3-heretic-4-public",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

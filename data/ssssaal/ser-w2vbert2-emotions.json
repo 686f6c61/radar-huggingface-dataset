@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "ssssaal/ser-w2vbert2-emotions",
+  "slug": "ssssaal-ser-w2vbert2-emotions",
+  "author": "ssssaal",
+  "url": "https://huggingface.co/ssssaal/ser-w2vbert2-emotions",
+  "created_at": "2026-10-09T06:45:56.000Z",
+  "updated_at": "2026-11-15T18:40:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "wav2vec2-bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 581286472,
+  "parameters_human": "581.3M",
+  "storage_bytes": 4650501873,
+  "storage_human": "4.7 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

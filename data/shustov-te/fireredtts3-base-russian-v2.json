@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "shustov-te/FireRedTTS3-Base-Russian-v2",
+  "slug": "shustov-te-fireredtts3-base-russian-v2",
+  "author": "shustov-te",
+  "url": "https://huggingface.co/shustov-te/FireRedTTS3-Base-Russian-v2",
+  "created_at": "2026-11-15T20:30:46.000Z",
+  "updated_at": "2026-11-15T20:31:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "safetensors",
+    "fireredtts3",
+    "sglang-omni",
+    "voice-cloning",
+    "lora-merged",
+    "text-to-speech",
+    "ru",
+    "base_model:CKermit/FireRedTTS3-Base",
+    "base_model:finetune:CKermit/FireRedTTS3-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2120632897,
+  "parameters_human": "2.12B",
+  "storage_bytes": 12298598624,
+  "storage_human": "12.3 GB",
+  "context_length": null,
+  "base_model": "CKermit/FireRedTTS3-Base, FireRedTeam/FireRedTTS3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

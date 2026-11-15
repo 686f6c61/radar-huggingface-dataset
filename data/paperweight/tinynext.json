@@ -1,0 +1,94 @@
+{
+  "schema": 2,
+  "id": "paperweight/tinynext",
+  "slug": "paperweight-tinynext",
+  "author": "paperweight",
+  "url": "https://huggingface.co/paperweight/tinynext",
+  "created_at": "2026-11-13T12:13:28.000Z",
+  "updated_at": "2026-11-15T19:18:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "autocomplete",
+    "gru",
+    "transformer",
+    "fill-in-the-middle",
+    "onnxruntime-web",
+    "in-browser",
+    "offline-page",
+    "text-generation",
+    "en",
+    "dataset:corbt/enron-emails",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/smoltalk",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 423318785,
+  "storage_human": "423 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Autocomplete (typing saved at a 50% cutoff)",
+      "dataset": "Wikipedia articles (held out)",
+      "metric": "Typing saved (%)",
+      "value": 3.9
+    },
+    {
+      "task": "Autocomplete (typing saved at a 50% cutoff)",
+      "dataset": "Wikipedia articles (held out)",
+      "metric": "Suggestions that were right (%)",
+      "value": 78
+    },
+    {
+      "task": "Autocomplete (typing saved at a 50% cutoff)",
+      "dataset": "OpenAssistant messages, validation split",
+      "metric": "Typing saved (%)",
+      "value": 8.8
+    },
+    {
+      "task": "Autocomplete (typing saved at a 50% cutoff)",
+      "dataset": "OpenAssistant messages, validation split",
+      "metric": "Suggestions that were right (%)",
+      "value": 75
+    },
+    {
+      "task": "Autocomplete (typing saved at a 50% cutoff)",
+      "dataset": "Enron emails from held-out senders",
+      "metric": "Typing saved (%)",
+      "value": 4
+    },
+    {
+      "task": "Autocomplete (typing saved at a 50% cutoff)",
+      "dataset": "Enron emails from held-out senders",
+      "metric": "Suggestions that were right (%)",
+      "value": 78
+    }
+  ],
+  "sources": []
+}

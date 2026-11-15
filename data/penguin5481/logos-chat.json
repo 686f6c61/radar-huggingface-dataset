@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "penguin5481/logos-chat",
+  "slug": "penguin5481-logos-chat",
+  "author": "penguin5481",
+  "url": "https://huggingface.co/penguin5481/logos-chat",
+  "created_at": "2026-11-14T07:34:42.000Z",
+  "updated_at": "2026-11-15T13:05:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 49,
+  "trending_score": 0,
+  "parameters": 113265408,
+  "parameters_human": "113.3M",
+  "storage_bytes": 244353152,
+  "storage_human": "244 MB",
+  "context_length": 1024,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

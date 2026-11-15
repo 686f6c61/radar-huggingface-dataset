@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "david-rename/gpt-pico",
+  "slug": "david-rename-gpt-pico",
+  "author": "david-rename",
+  "url": "https://huggingface.co/david-rename/gpt-pico",
+  "created_at": "2026-11-15T13:48:22.000Z",
+  "updated_at": "2026-11-15T14:21:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gptpp",
+    "text-generation",
+    "gpt-pp",
+    "nanochat",
+    "custom_code",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2228224,
+  "parameters_human": "2.2M",
+  "storage_bytes": 8916896,
+  "storage_human": "9 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

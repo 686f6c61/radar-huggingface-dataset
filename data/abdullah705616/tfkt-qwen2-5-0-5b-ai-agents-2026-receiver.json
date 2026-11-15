@@ -1,0 +1,61 @@
+{
+  "schema": 2,
+  "id": "Abdullah705616/tfkt-qwen2.5-0.5b-ai-agents-2026-receiver",
+  "slug": "abdullah705616-tfkt-qwen2-5-0-5b-ai-agents-2026-receiver",
+  "author": "Abdullah705616",
+  "url": "https://huggingface.co/Abdullah705616/tfkt-qwen2.5-0.5b-ai-agents-2026-receiver",
+  "created_at": "2026-11-15T16:20:10.000Z",
+  "updated_at": "2026-11-15T16:20:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "tfkt",
+    "weight-transfer",
+    "qwen2.5",
+    "ai-agents-news",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519530,
+  "storage_human": "1000 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Trends, Initiatives and the Future of Green Banking Products - TapiX",
+      "url": "https://www.tapix.io/resources/post/green-banking-trends-initiatives-and-the-future",
+      "snippet": "Apr 28, 2026 · Global warming, sustainability, and respect for planet Earth have been discussed for decades. Learn about upcoming …"
+    }
+  ]
+}

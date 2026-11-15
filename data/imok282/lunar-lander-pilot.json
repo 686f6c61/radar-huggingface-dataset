@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "Imok282/lunar-lander-pilot",
+  "slug": "imok282-lunar-lander-pilot",
+  "author": "Imok282",
+  "url": "https://huggingface.co/Imok282/lunar-lander-pilot",
+  "created_at": "2026-11-15T14:24:49.000Z",
+  "updated_at": "2026-11-15T14:25:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "lunar",
+    "moon",
+    "lunar-south-pole",
+    "nasa-lola",
+    "space-apps",
+    "adinfinitium",
+    "reinforcement-learning",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59409547,
+  "storage_human": "59 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Show HN: I built an autopilot for the lunar lander game | Hacker News",
+      "url": "https://news.ycombinator.com/item?id=35090054",
+      "snippet": "so I decided to make an autopilot for the lander based on what I felt like was the best strategy! Now I can have perfect landings every time without lifting a finger :D · Writing the autopilot code was a lot more fun than I expected! It felt a bit like programming a robot"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 2,
+  "id": "ghanaopenai/nkrane-mt-opus-en2tw",
+  "slug": "ghanaopenai-nkrane-mt-opus-en2tw",
+  "author": "ghanaopenai",
+  "url": "https://huggingface.co/ghanaopenai/nkrane-mt-opus-en2tw",
+  "created_at": "2026-11-15T13:52:36.000Z",
+  "updated_at": "2026-11-15T13:52:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "tw"
+  ],
+  "tags": [
+    "safetensors",
+    "marian",
+    "translation",
+    "seq2seq",
+    "machine-translation",
+    "akan",
+    "twi",
+    "asante-twi",
+    "nkrane-mt",
+    "african-nlp",
+    "en",
+    "tw",
+    "base_model:Helsinki-NLP/opus-mt-en-tw",
+    "base_model:finetune:Helsinki-NLP/opus-mt-en-tw",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 73380009,
+  "parameters_human": "73.4M",
+  "storage_bytes": 148399979,
+  "storage_human": "148 MB",
+  "context_length": null,
+  "base_model": "Helsinki-NLP/opus-mt-en-tw",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "English to Asante Twi Translation",
+      "dataset": "nkrane-mt-parallel-corpus-eng-twi",
+      "metric": "SacreBLEU (Substituted)",
+      "value": 29.72
+    },
+    {
+      "task": "English to Asante Twi Translation",
+      "dataset": "nkrane-mt-parallel-corpus-eng-twi",
+      "metric": "chrF2 (Substituted)",
+      "value": 50.34
+    },
+    {
+      "task": "English to Asante Twi Translation",
+      "dataset": "nkrane-mt-parallel-corpus-eng-twi",
+      "metric": "SacreBLEU (Raw Preserved)",
+      "value": 24.63
+    }
+  ],
+  "sources": []
+}

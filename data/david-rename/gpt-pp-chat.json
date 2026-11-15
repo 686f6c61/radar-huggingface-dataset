@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "david-rename/gpt-pp-chat",
+  "slug": "david-rename-gpt-pp-chat",
+  "author": "david-rename",
+  "url": "https://huggingface.co/david-rename/gpt-pp-chat",
+  "created_at": "2026-11-15T13:48:29.000Z",
+  "updated_at": "2026-11-15T14:21:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gptpp",
+    "text-generation",
+    "gpt-pp",
+    "nanochat",
+    "custom_code",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceTB/smoltalk",
+    "base_model:david-rename/gpt-pp-base",
+    "base_model:finetune:david-rename/gpt-pp-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135266304,
+  "parameters_human": "135.3M",
+  "storage_bytes": 541073328,
+  "storage_human": "541 MB",
+  "context_length": null,
+  "base_model": "david-rename/gpt-pp-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

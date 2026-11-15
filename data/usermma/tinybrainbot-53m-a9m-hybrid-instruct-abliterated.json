@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "usermma/tinybrainbot-53m-a9m-hybrid-instruct-abliterated",
+  "slug": "usermma-tinybrainbot-53m-a9m-hybrid-instruct-abliterated",
+  "author": "usermma",
+  "url": "https://huggingface.co/usermma/tinybrainbot-53m-a9m-hybrid-instruct-abliterated",
+  "created_at": "2026-11-15T15:28:37.000Z",
+  "updated_at": "2026-11-15T15:31:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "lfm2_moe",
+    "obliteratus",
+    "abliteration",
+    "uncensored",
+    "obliterate",
+    "en",
+    "base_model:nkthebass/tinybrainbot-53m-a9m-hybrid-instruct",
+    "base_model:finetune:nkthebass/tinybrainbot-53m-a9m-hybrid-instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 53428384,
+  "parameters_human": "53.4M",
+  "storage_bytes": 106870584,
+  "storage_human": "107 MB",
+  "context_length": null,
+  "base_model": "nkthebass/tinybrainbot-53m-a9m-hybrid-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

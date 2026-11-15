@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "MaulikMadhavi/lapel_mic_whisper_base_finetuned",
+  "slug": "maulikmadhavi-lapel_mic_whisper_base_finetuned",
+  "author": "MaulikMadhavi",
+  "url": "https://huggingface.co/MaulikMadhavi/lapel_mic_whisper_base_finetuned",
+  "created_at": "2025-05-21T18:03:08.000Z",
+  "updated_at": "2026-11-15T14:58:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "en",
+    "dataset:MaulikMadhavi/lapel-mic-speech-asr-dataset",
+    "base_model:openai/whisper-base",
+    "base_model:finetune:openai/whisper-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 72593920,
+  "parameters_human": "72.6M",
+  "storage_bytes": 871217649,
+  "storage_human": "871 MB",
+  "context_length": null,
+  "base_model": "openai/whisper-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

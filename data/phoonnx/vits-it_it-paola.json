@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "Phoonnx/vits-it_it-paola",
+  "slug": "phoonnx-vits-it_it-paola",
+  "author": "Phoonnx",
+  "url": "https://huggingface.co/Phoonnx/vits-it_it-paola",
+  "created_at": "2026-11-14T22:59:37.000Z",
+  "updated_at": "2026-11-15T16:03:34.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "phoonnx",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "phoonnx",
+    "onnx",
+    "vits",
+    "text-to-speech",
+    "it",
+    "license:cc0-1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63511038,
+  "storage_human": "64 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

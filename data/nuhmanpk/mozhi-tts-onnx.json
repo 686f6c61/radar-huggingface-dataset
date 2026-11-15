@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "nuhmanpk/mozhi-tts-onnx",
+  "slug": "nuhmanpk-mozhi-tts-onnx",
+  "author": "nuhmanpk",
+  "url": "https://huggingface.co/nuhmanpk/mozhi-tts-onnx",
+  "created_at": "2026-11-15T15:28:53.000Z",
+  "updated_at": "2026-11-15T15:29:30.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "ml"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "malayalam",
+    "onnxruntime",
+    "parler-tts",
+    "mozhi",
+    "emotion",
+    "ml",
+    "base_model:nuhmanpk/mozhi-tts-v1",
+    "base_model:quantized:nuhmanpk/mozhi-tts-v1",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8339182763,
+  "storage_human": "8.3 GB",
+  "context_length": null,
+  "base_model": "nuhmanpk/mozhi-tts-v1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "Utirok49km/Qwen2.5-1.5B-Instruct-GGUF",
+  "slug": "utirok49km-qwen2-5-1-5b-instruct-gguf",
+  "author": "Utirok49km",
+  "url": "https://huggingface.co/Utirok49km/Qwen2.5-1.5B-Instruct-GGUF",
+  "created_at": "2026-11-15T19:16:53.000Z",
+  "updated_at": "2026-11-15T19:16:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "chat",
+    "text-generation",
+    "en",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 13324678944,
+  "storage_human": "13.3 GB",
+  "context_length": 8192,
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

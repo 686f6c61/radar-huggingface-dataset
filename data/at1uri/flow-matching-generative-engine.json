@@ -1,0 +1,60 @@
+{
+  "schema": 2,
+  "id": "At1uri/flow-matching-generative-engine",
+  "slug": "at1uri-flow-matching-generative-engine",
+  "author": "At1uri",
+  "url": "https://huggingface.co/At1uri/flow-matching-generative-engine",
+  "created_at": "2026-11-15T13:41:15.000Z",
+  "updated_at": "2026-11-15T13:41:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "flow_matching_neural_ode",
+    "flow-matching",
+    "continuous-normalizing-flows",
+    "generative-models",
+    "optimal-transport",
+    "neural-ode",
+    "quantitative-finance",
+    "time-series",
+    "en",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 725892,
+  "parameters_human": "725892",
+  "storage_bytes": 2904608,
+  "storage_human": "3 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Continuous Normalizing Flow Regression",
+      "dataset": "Flow Matching Market Benchmarks",
+      "metric": "Flow Matching MSE",
+      "value": 0.0124
+    }
+  ],
+  "sources": []
+}

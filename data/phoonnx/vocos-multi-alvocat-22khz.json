@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "Phoonnx/vocos-multi-alvocat-22khz",
+  "slug": "phoonnx-vocos-multi-alvocat-22khz",
+  "author": "Phoonnx",
+  "url": "https://huggingface.co/Phoonnx/vocos-multi-alvocat-22khz",
+  "created_at": "2026-11-14T22:32:32.000Z",
+  "updated_at": "2026-11-15T15:59:03.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "phoonnx",
+  "languages": [
+    "ca",
+    "en"
+  ],
+  "tags": [
+    "phoonnx",
+    "onnx",
+    "vocoders",
+    "text-to-speech",
+    "ca",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53883652,
+  "storage_human": "54 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
