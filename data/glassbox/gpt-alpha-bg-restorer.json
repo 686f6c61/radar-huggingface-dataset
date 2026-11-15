@@ -1,0 +1,66 @@
+{
+  "schema": 2,
+  "id": "glassbox/gpt-alpha-bg-restorer",
+  "slug": "glassbox-gpt-alpha-bg-restorer",
+  "author": "glassbox",
+  "url": "https://huggingface.co/glassbox/gpt-alpha-bg-restorer",
+  "created_at": "2026-07-26T11:25:05.000Z",
+  "updated_at": "2026-11-15T12:22:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "bg"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt",
+    "from-scratch",
+    "bulgarian",
+    "transliteration",
+    "character-level",
+    "webassembly",
+    "pytorch",
+    "text-generation",
+    "bg",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 4734208,
+  "parameters_human": "4.7M",
+  "storage_bytes": 221292169,
+  "storage_human": "221 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "glassbox/shlyokavitsa-pairs (test, 20-word phrases)",
+      "metric": "exact match at 20 words (constrained)",
+      "value": 0.72
+    },
+    {
+      "task": null,
+      "dataset": "glassbox/shlyokavitsa-pairs (test, 20-word phrases)",
+      "metric": "character error rate at 20 words (constrained)",
+      "value": 0.0031
+    }
+  ],
+  "sources": []
+}

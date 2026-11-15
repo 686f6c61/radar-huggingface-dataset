@@ -51,8 +51,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "zeromodels/t5_11b",
+  "renamed_at": "2026-11-15T06:46:02.939Z",
   "benchmarks": [],
   "sources": [
     {

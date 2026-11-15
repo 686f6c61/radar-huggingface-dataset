@@ -37,8 +37,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "foxAIengineer/Qwen3-Coder-Next-80b-colibri-i4-gs64",
+  "renamed_at": "2026-11-15T06:01:14.745Z",
   "benchmarks": [],
   "sources": [
     {

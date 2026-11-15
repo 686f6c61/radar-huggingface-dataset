@@ -1,0 +1,72 @@
+{
+  "schema": 2,
+  "id": "glassbox/gpt-alpha-bg-91m",
+  "slug": "glassbox-gpt-alpha-bg-91m",
+  "author": "glassbox",
+  "url": "https://huggingface.co/glassbox/gpt-alpha-bg-91m",
+  "created_at": "2026-07-05T12:21:18.000Z",
+  "updated_at": "2026-11-15T12:22:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "bg"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt",
+    "from-scratch",
+    "bulgarian",
+    "pytorch",
+    "perplexity",
+    "fluency-scoring",
+    "text-generation",
+    "bg",
+    "dataset:hasankursun/bulgarian-corpus-33b",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 91263768,
+  "parameters_human": "91.3M",
+  "storage_bytes": 2190566178,
+  "storage_human": "2.2 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "thebogko/bulgarian-grammar-mistakes",
+      "metric": "paired preference accuracy",
+      "value": 92.3
+    },
+    {
+      "task": null,
+      "dataset": "thebogko/bulgarian-grammar-mistakes",
+      "metric": "AUC",
+      "value": 0.77
+    },
+    {
+      "task": null,
+      "dataset": "EXAMS (bg, zero-shot)",
+      "metric": "accuracy",
+      "value": 27.85
+    }
+  ],
+  "sources": []
+}

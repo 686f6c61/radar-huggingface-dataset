@@ -5,7 +5,7 @@
   "author": "thinkingmachines",
   "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small-MXFP8",
   "created_at": "2026-11-04T19:51:29.000Z",
-  "updated_at": "2026-11-13T21:27:53.000Z",
+  "updated_at": "2026-11-15T05:56:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 13,
-  "downloads_30d": 482,
+  "downloads_30d": 638,
   "trending_score": 13,
   "parameters": 594050641920,
   "parameters_human": "594.05B",

@@ -1,0 +1,63 @@
+{
+  "schema": 2,
+  "id": "saa938/presonance-goemotions-ensemble",
+  "slug": "saa938-presonance-goemotions-ensemble",
+  "author": "saa938",
+  "url": "https://huggingface.co/saa938/presonance-goemotions-ensemble",
+  "created_at": "2026-11-15T07:00:10.000Z",
+  "updated_at": "2026-11-15T07:00:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "emotion",
+    "multi-label-classification",
+    "ensemble",
+    "presonance",
+    "text-classification",
+    "en",
+    "dataset:google-research-datasets/go_emotions",
+    "base_model:SamLowe/roberta-base-go_emotions",
+    "base_model:finetune:SamLowe/roberta-base-go_emotions",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": "SamLowe/roberta-base-go_emotions, cirimus/modernbert-base-go-emotions",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Multi-label emotion classification",
+      "dataset": "GoEmotions original Google test split, 5427 comments",
+      "metric": "Macro F1",
+      "value": 0.5557334377786681
+    },
+    {
+      "task": "Multi-label emotion classification",
+      "dataset": "GoEmotions original Google test split, 5427 comments",
+      "metric": "Micro F1",
+      "value": 0.6164746296428827
+    }
+  ],
+  "sources": []
+}

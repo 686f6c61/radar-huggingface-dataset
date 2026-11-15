@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 37,
+  "downloads_30d": 26,
   "trending_score": 0,
   "parameters": 6856253440,
   "parameters_human": "6.86B",
@@ -41,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "yuhengtu-bytedance/sfm_baseline_filtered-10k_11k_12k_simpleavg_merge",
+  "renamed_at": "2026-11-15T09:31:48.962Z",
   "benchmarks": [],
   "sources": [
     {

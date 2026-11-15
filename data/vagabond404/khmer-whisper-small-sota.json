@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "Vagabond404/khmer-whisper-small-sota",
+  "slug": "vagabond404-khmer-whisper-small-sota",
+  "author": "Vagabond404",
+  "url": "https://huggingface.co/Vagabond404/khmer-whisper-small-sota",
+  "created_at": "2026-11-15T07:16:43.000Z",
+  "updated_at": "2026-11-15T07:20:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "km",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "khmer",
+    "k-token",
+    "kinvoice",
+    "edge-ai",
+    "km",
+    "en",
+    "dataset:rinabuoy/khmer-speech-dataset",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 1702846383,
+  "storage_human": "1.7 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -45,8 +45,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "zeromodels/gemma-3-27b-pt",
+  "renamed_at": "2026-11-15T06:45:57.280Z",
   "benchmarks": [],
   "sources": []
 }

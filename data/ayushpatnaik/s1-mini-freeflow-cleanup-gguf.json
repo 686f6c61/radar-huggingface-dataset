@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "ayushpatnaik/S1-mini-FreeFlow-cleanup-GGUF",
+  "slug": "ayushpatnaik-s1-mini-freeflow-cleanup-gguf",
+  "author": "ayushpatnaik",
+  "url": "https://huggingface.co/ayushpatnaik/S1-mini-FreeFlow-cleanup-GGUF",
+  "created_at": "2026-11-15T03:38:36.000Z",
+  "updated_at": "2026-11-15T03:41:39.000Z",
+  "license": "s1-mini-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "dictation",
+    "speech-to-text-cleanup",
+    "android",
+    "text-generation",
+    "en",
+    "base_model:ayushpatnaik/S1-mini-FreeFlow-cleanup-MLX-6bit",
+    "base_model:quantized:ayushpatnaik/S1-mini-FreeFlow-cleanup-MLX-6bit",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 381565696,
+  "storage_human": "382 MB",
+  "context_length": 40960,
+  "base_model": "ayushpatnaik/S1-mini-FreeFlow-cleanup-MLX-6bit",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 16,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 51695244,
   "parameters_human": "51.7M",
@@ -39,8 +39,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "rainbowrobotics/act_box_260820",
+  "renamed_at": "2026-11-15T08:23:20.474Z",
   "benchmarks": [],
   "sources": [
     {

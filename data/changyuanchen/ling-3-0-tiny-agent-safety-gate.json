@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "ChangyuanChen/Ling-3.0-tiny-Agent-Safety-Gate",
+  "slug": "changyuanchen-ling-3-0-tiny-agent-safety-gate",
+  "author": "ChangyuanChen",
+  "url": "https://huggingface.co/ChangyuanChen/Ling-3.0-tiny-Agent-Safety-Gate",
+  "created_at": "2026-11-15T07:13:19.000Z",
+  "updated_at": "2026-11-15T07:17:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "agent-safety",
+    "guardrail",
+    "decision-model",
+    "areno",
+    "jev",
+    "en",
+    "arxiv:2506.00641",
+    "base_model:inclusionAI/Ling-3.0-tiny",
+    "base_model:adapter:inclusionAI/Ling-3.0-tiny",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 604185580,
+  "storage_human": "604 MB",
+  "context_length": null,
+  "base_model": "inclusionAI/Ling-3.0-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

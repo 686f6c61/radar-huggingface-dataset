@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 6,
-  "downloads_30d": 216,
+  "downloads_30d": 226,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -34,7 +34,7 @@
   ],
   "is_conversational": false,
   "gated": false,
-  "disabled": false,
+  "disabled": true,
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,

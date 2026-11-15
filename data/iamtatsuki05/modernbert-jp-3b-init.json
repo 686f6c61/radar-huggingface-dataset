@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "iamtatsuki05/ModernBERT-JP-3B-init",
+  "slug": "iamtatsuki05-modernbert-jp-3b-init",
+  "author": "iamtatsuki05",
+  "url": "https://huggingface.co/iamtatsuki05/ModernBERT-JP-3B-init",
+  "created_at": "2026-05-24T17:50:46.000Z",
+  "updated_at": "2026-11-15T11:42:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "fill-mask",
+    "mirei",
+    "masked-lm",
+    "ja",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 3309839360,
+  "parameters_human": "3.31B",
+  "storage_bytes": 13241538013,
+  "storage_human": "13.2 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

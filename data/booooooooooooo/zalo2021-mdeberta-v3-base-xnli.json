@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "Booooooooooooo/zalo2021-mdeberta-v3-base-xnli",
+  "slug": "booooooooooooo-zalo2021-mdeberta-v3-base-xnli",
+  "author": "Booooooooooooo",
+  "url": "https://huggingface.co/Booooooooooooo/zalo2021-mdeberta-v3-base-xnli",
+  "created_at": "2026-11-15T11:06:08.000Z",
+  "updated_at": "2026-11-15T11:06:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "safetensors",
+    "deberta-v2",
+    "legal-ir",
+    "natural-language-inference",
+    "text-classification",
+    "nli-verifier",
+    "cross-encoder",
+    "vi",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278810882,
+  "parameters_human": "278.8M",
+  "storage_bytes": 573645886,
+  "storage_human": "574 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

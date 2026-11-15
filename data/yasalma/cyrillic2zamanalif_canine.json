@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "yasalma/cyrillic2zamanalif_canine",
+  "slug": "yasalma-cyrillic2zamanalif_canine",
+  "author": "yasalma",
+  "url": "https://huggingface.co/yasalma/cyrillic2zamanalif_canine",
+  "created_at": "2026-11-15T08:31:08.000Z",
+  "updated_at": "2026-11-15T09:05:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "tt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "canine",
+    "token-classification",
+    "tatar",
+    "transliteration",
+    "cyrillic-to-latin",
+    "zamanalif",
+    "tt",
+    "base_model:google/canine-c",
+    "base_model:finetune:google/canine-c",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 132215212,
+  "parameters_human": "132.2M",
+  "storage_bytes": 528896689,
+  "storage_human": "529 MB",
+  "context_length": null,
+  "base_model": "google/canine-c",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

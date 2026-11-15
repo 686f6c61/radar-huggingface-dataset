@@ -5,7 +5,7 @@
   "author": "neroued",
   "url": "https://huggingface.co/neroued/GLM-5.3-Flash-NInfer",
   "created_at": "2026-10-29T02:55:34.000Z",
-  "updated_at": "2026-10-29T09:22:22.000Z",
+  "updated_at": "2026-11-14T13:33:08.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 52,
+  "downloads_30d": 53,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

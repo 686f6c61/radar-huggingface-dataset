@@ -42,7 +42,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 31,
+  "downloads_30d": 33,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -56,9 +56,9 @@
   "is_conversational": true,
   "gated": false,
   "disabled": false,
-  "removed": true,
-  "removed_at": "2026-11-11T07:33:53.095Z",
-  "removal_pattern": "isolated",
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [

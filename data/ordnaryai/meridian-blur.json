@@ -1,0 +1,80 @@
+{
+  "schema": 2,
+  "id": "ordnaryai/meridian-blur",
+  "slug": "ordnaryai-meridian-blur",
+  "author": "ordnaryai",
+  "url": "https://huggingface.co/ordnaryai/meridian-blur",
+  "created_at": "2026-11-15T12:15:30.000Z",
+  "updated_at": "2026-11-15T12:16:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "object-detection",
+    "privacy",
+    "anonymization",
+    "face-detection",
+    "license-plate-detection",
+    "gdpr",
+    "dataset:open-images-v7",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 281686537,
+  "storage_human": "282 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Open Images V7 (held-out validation and test images)",
+      "metric": "Leak rate, faces (lower is better)",
+      "value": 3.6
+    },
+    {
+      "task": null,
+      "dataset": "Open Images V7 (held-out validation and test images)",
+      "metric": "Leak rate, license plates (lower is better)",
+      "value": 10.6
+    },
+    {
+      "task": null,
+      "dataset": "Open Images V7 (held-out validation and test images)",
+      "metric": "Leak rate, all objects (lower is better)",
+      "value": 4.6
+    },
+    {
+      "task": null,
+      "dataset": "Open Images V7 (held-out validation and test images)",
+      "metric": "mAP50, faces",
+      "value": 0.903
+    },
+    {
+      "task": null,
+      "dataset": "Open Images V7 (held-out validation and test images)",
+      "metric": "mAP50, license plates",
+      "value": 0.857
+    }
+  ],
+  "sources": []
+}

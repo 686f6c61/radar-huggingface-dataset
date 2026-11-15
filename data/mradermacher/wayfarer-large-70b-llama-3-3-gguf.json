@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Wayfarer-Large-70B-Llama-3.3-GGUF",
+  "slug": "mradermacher-wayfarer-large-70b-llama-3-3-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Wayfarer-Large-70B-Llama-3.3-GGUF",
+  "created_at": "2025-02-20T05:43:24.000Z",
+  "updated_at": "2026-11-15T10:11:30.000Z",
+  "license": "llama3.3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text adventure",
+    "roleplay",
+    "en",
+    "base_model:LatitudeGames/Wayfarer-Large-70B-Llama-3.3",
+    "base_model:quantized:LatitudeGames/Wayfarer-Large-70B-Llama-3.3",
+    "license:llama3.3",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 155,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 481303037984,
+  "storage_human": "481.3 GB",
+  "context_length": 131072,
+  "base_model": "LatitudeGames/Wayfarer-Large-70B-Llama-3.3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

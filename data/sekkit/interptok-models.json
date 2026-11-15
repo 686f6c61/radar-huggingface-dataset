@@ -37,8 +37,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "OxBee/InterpTok-Models",
+  "renamed_at": "2026-11-15T08:39:12.622Z",
   "benchmarks": [],
   "sources": []
 }

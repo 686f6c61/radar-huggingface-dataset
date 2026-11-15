@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "GJTKOCS/anlp-a3-transformer",
+  "slug": "gjtkocs-anlp-a3-transformer",
+  "author": "GJTKOCS",
+  "url": "https://huggingface.co/GJTKOCS/anlp-a3-transformer",
+  "created_at": "2026-11-15T07:55:19.000Z",
+  "updated_at": "2026-11-15T08:03:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "anlp-a3",
+    "transformer",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4774231,
+  "parameters_human": "4.8M",
+  "storage_bytes": 38213621,
+  "storage_human": "38 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

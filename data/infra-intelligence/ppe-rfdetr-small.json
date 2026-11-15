@@ -5,7 +5,7 @@
   "author": "infra-intelligence",
   "url": "https://huggingface.co/infra-intelligence/ppe-rfdetr-small",
   "created_at": "2026-11-12T16:55:10.000Z",
-  "updated_at": "2026-11-12T16:55:38.000Z",
+  "updated_at": "2026-11-15T03:31:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",

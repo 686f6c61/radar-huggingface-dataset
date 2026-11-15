@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "ketiswp/onnx-model-zoo-ShuffleNetV2-1.0-ImageNet-opset12-int8-uint8-onnx",
+  "renamed_at": "2026-11-15T06:46:20.056Z",
   "benchmarks": [],
   "sources": [
     {

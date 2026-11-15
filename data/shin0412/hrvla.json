@@ -34,8 +34,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "heliosink/HRVLA",
+  "renamed_at": "2026-11-15T08:41:21.948Z",
   "benchmarks": [],
   "sources": [
     {

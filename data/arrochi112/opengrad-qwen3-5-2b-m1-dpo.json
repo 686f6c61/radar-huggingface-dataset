@@ -46,8 +46,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "arjhinety/OpenGrad-Qwen3.5-2B-M1-DPO",
+  "renamed_at": "2026-11-15T05:05:15.065Z",
   "benchmarks": [],
   "sources": [
     {

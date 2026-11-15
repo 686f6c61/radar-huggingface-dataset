@@ -45,8 +45,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "interpretable-finetuning/topklora-gemma-2-2b",
+  "renamed_at": "2026-11-15T06:30:29.756Z",
   "benchmarks": [],
   "sources": [
     {

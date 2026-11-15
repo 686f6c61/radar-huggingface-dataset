@@ -34,8 +34,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "fm-dev/pi05-pick3-uniform32-lora-gbs4-pgb1-gpu4-step5000",
+  "renamed_at": "2026-11-15T06:01:01.411Z",
   "benchmarks": [],
   "sources": [
     {

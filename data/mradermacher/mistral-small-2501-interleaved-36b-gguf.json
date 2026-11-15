@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Mistral-Small-2501-Interleaved-36B-GGUF",
+  "slug": "mradermacher-mistral-small-2501-interleaved-36b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Mistral-Small-2501-Interleaved-36B-GGUF",
+  "created_at": "2025-02-23T03:08:06.000Z",
+  "updated_at": "2026-11-15T12:22:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:TheDrummer/Mistral-Small-2501-Interleaved-36B",
+    "base_model:quantized:TheDrummer/Mistral-Small-2501-Interleaved-36B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 59,
+  "trending_score": 0,
+  "parameters": 36910535680,
+  "parameters_human": "36.91B",
+  "storage_bytes": 251854113856,
+  "storage_human": "251.9 GB",
+  "context_length": 32768,
+  "base_model": "TheDrummer/Mistral-Small-2501-Interleaved-36B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

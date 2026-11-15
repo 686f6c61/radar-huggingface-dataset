@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "oblivius/vrc-we-voice-de",
+  "slug": "oblivius-vrc-we-voice-de",
+  "author": "oblivius",
+  "url": "https://huggingface.co/oblivius/vrc-we-voice-de",
+  "created_at": "2026-10-21T16:06:06.000Z",
+  "updated_at": "2026-11-15T08:30:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnx",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "onnx",
+    "wav2vec2",
+    "ctc",
+    "keyword-spotting",
+    "automatic-speech-recognition",
+    "de",
+    "base_model:jonatasgrosman/wav2vec2-large-xlsr-53-german",
+    "base_model:quantized:jonatasgrosman/wav2vec2-large-xlsr-53-german",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 186,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 490537817,
+  "storage_human": "491 MB",
+  "context_length": null,
+  "base_model": "jonatasgrosman/wav2vec2-large-xlsr-53-german",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

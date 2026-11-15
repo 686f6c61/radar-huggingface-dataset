@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "fengjay01/MiMo-Audio-Tokenizer",
+  "slug": "fengjay01-mimo-audio-tokenizer",
+  "author": "fengjay01",
+  "url": "https://huggingface.co/fengjay01/MiMo-Audio-Tokenizer",
+  "created_at": "2026-11-15T06:29:35.000Z",
+  "updated_at": "2026-11-15T06:29:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1295799574,
+  "parameters_human": "1.30B",
+  "storage_bytes": 3906690080,
+  "storage_human": "3.9 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

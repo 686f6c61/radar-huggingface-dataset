@@ -1,0 +1,111 @@
+{
+  "schema": 2,
+  "id": "daniel-gomm/sciseek-micro",
+  "slug": "daniel-gomm-sciseek-micro",
+  "author": "daniel-gomm",
+  "url": "https://huggingface.co/daniel-gomm/sciseek-micro",
+  "created_at": "2026-11-02T12:20:33.000Z",
+  "updated_at": "2026-11-15T09:06:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "feature-extraction",
+    "sentence-similarity",
+    "text-retrieval",
+    "scientific-papers",
+    "literature-search",
+    "arxiv",
+    "transformers.js",
+    "en",
+    "dataset:daniel-gomm/sciseek-train",
+    "dataset:daniel-gomm/SciSeek",
+    "base_model:ibm-granite/granite-embedding-english-r2",
+    "base_model:quantized:ibm-granite/granite-embedding-english-r2",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149014272,
+  "parameters_human": "149.0M",
+  "storage_bytes": 1360893463,
+  "storage_human": "1.4 GB",
+  "context_length": null,
+  "base_model": "ibm-granite/granite-embedding-english-r2",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Retrieval",
+      "dataset": "SciSeek (test)",
+      "metric": null,
+      "value": 0.7152
+    },
+    {
+      "task": "Retrieval",
+      "dataset": "SciSeek (test)",
+      "metric": null,
+      "value": 0.5909
+    },
+    {
+      "task": "Retrieval",
+      "dataset": "LitSearch",
+      "metric": null,
+      "value": 0.5848
+    },
+    {
+      "task": "Retrieval",
+      "dataset": "DORIS-MAE",
+      "metric": null,
+      "value": 0.6296
+    },
+    {
+      "task": "Retrieval",
+      "dataset": "BEIR TREC-COVID",
+      "metric": null,
+      "value": 0.7116
+    },
+    {
+      "task": "Retrieval",
+      "dataset": "BEIR SciFact",
+      "metric": null,
+      "value": 0.7479
+    },
+    {
+      "task": "Retrieval",
+      "dataset": "BEIR NFCorpus",
+      "metric": null,
+      "value": 0.3696
+    },
+    {
+      "task": "Retrieval",
+      "dataset": "BEIR SciDocs",
+      "metric": null,
+      "value": 0.2396
+    }
+  ],
+  "sources": []
+}

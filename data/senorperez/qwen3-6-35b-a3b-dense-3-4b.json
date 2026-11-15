@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 11,
+  "downloads_30d": 22,
   "trending_score": 0,
   "parameters": 3434099328,
   "parameters_human": "3.43B",
@@ -44,8 +44,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "QKV768/qwen3.6-35b-a3b-dense-3.4b",
+  "renamed_at": "2026-11-15T08:39:34.732Z",
   "benchmarks": [],
   "sources": []
 }

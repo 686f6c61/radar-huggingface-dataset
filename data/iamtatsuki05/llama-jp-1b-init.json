@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "iamtatsuki05/Llama-JP-1B-init",
+  "slug": "iamtatsuki05-llama-jp-1b-init",
+  "author": "iamtatsuki05",
+  "url": "https://huggingface.co/iamtatsuki05/Llama-JP-1B-init",
+  "created_at": "2026-06-10T12:31:55.000Z",
+  "updated_at": "2026-11-15T11:41:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "mirei",
+    "ja",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 1407538944,
+  "parameters_human": "1.41B",
+  "storage_bytes": 2817262701,
+  "storage_human": "2.8 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

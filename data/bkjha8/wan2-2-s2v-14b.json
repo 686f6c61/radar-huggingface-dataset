@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 18,
+  "downloads_30d": 40,
   "trending_score": 0,
   "parameters": 16295755609,
   "parameters_human": "16.30B",
@@ -42,8 +42,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "bkjha8/beenga-sync-14b",
+  "renamed_at": "2026-11-15T05:16:54.107Z",
   "benchmarks": [],
   "sources": []
 }

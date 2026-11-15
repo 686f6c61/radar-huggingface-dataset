@@ -37,8 +37,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "exe-ai-harness/adetailer-yolov8-safetensors",
+  "renamed_at": "2026-11-15T05:55:56.578Z",
   "benchmarks": [],
   "sources": [
     {

@@ -28,13 +28,13 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 8,
-  "downloads_30d": 89,
+  "likes": 9,
+  "downloads_30d": 91,
   "trending_score": 0,
   "parameters": 4538646016,
   "parameters_human": "4.54B",
-  "storage_bytes": 18187869371,
-  "storage_human": "18.2 GB",
+  "storage_bytes": 26603910324,
+  "storage_human": "26.6 GB",
   "context_length": null,
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [

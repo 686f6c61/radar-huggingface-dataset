@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 8,
+  "downloads_30d": 6,
   "trending_score": 0,
   "parameters": 278810882,
   "parameters_human": "278.8M",
@@ -39,8 +39,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "selsar/cv_social_deviance_v3",
+  "renamed_at": "2026-11-15T08:39:26.444Z",
   "benchmarks": [],
   "sources": [
     {

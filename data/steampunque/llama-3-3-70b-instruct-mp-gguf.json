@@ -5,7 +5,7 @@
   "author": "steampunque",
   "url": "https://huggingface.co/steampunque/Llama-3.3-70B-Instruct-MP-GGUF",
   "created_at": "2025-07-10T14:34:42.000Z",
-  "updated_at": "2026-11-13T20:39:49.000Z",
+  "updated_at": "2026-11-14T15:13:48.000Z",
   "license": "llama3.3",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,7 +26,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 1007,
+  "downloads_30d": 1100,
   "trending_score": 0,
   "parameters": 70553706560,
   "parameters_human": "70.55B",

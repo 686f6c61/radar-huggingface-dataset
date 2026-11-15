@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 9,
+  "downloads_30d": 6,
   "trending_score": 0,
   "parameters": 199680,
   "parameters_human": "199680",
@@ -46,8 +46,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "logan7000/llm-math345-ttrl-phi35mini-endpoint",
+  "renamed_at": "2026-11-15T08:19:46.537Z",
   "benchmarks": [],
   "sources": [
     {

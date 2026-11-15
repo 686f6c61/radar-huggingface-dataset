@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "iamtatsuki05/Mistral-0.5B-init",
+  "slug": "iamtatsuki05-mistral-0-5b-init",
+  "author": "iamtatsuki05",
+  "url": "https://huggingface.co/iamtatsuki05/Mistral-0.5B-init",
+  "created_at": "2026-07-13T02:41:55.000Z",
+  "updated_at": "2026-11-15T11:41:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "mirei",
+    "en",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 567854592,
+  "parameters_human": "567.9M",
+  "storage_bytes": 1136546889,
+  "storage_human": "1.1 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "Guilherme34/Myra-594B",
+  "slug": "guilherme34-myra-594b",
+  "author": "Guilherme34",
+  "url": "https://huggingface.co/Guilherme34/Myra-594B",
+  "created_at": "2026-11-15T00:41:20.000Z",
+  "updated_at": "2026-11-15T06:08:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:thinkingmachines/Inkling-2-Small",
+    "base_model:adapter:thinkingmachines/Inkling-2-Small",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16719245536,
+  "storage_human": "16.7 GB",
+  "context_length": null,
+  "base_model": "thinkingmachines/Inkling-2-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

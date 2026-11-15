@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 12,
+  "downloads_30d": 8,
   "trending_score": 0,
   "parameters": 8190735360,
   "parameters_human": "8.19B",
@@ -45,8 +45,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "cuong1692001/Terminal-complete-12k",
+  "renamed_at": "2026-11-15T05:31:14.280Z",
   "benchmarks": [],
   "sources": [
     {

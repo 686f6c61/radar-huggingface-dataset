@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "Sharath7-dev/intentshield-xlmr",
+  "slug": "sharath7-dev-intentshield-xlmr",
+  "author": "Sharath7-dev",
+  "url": "https://huggingface.co/Sharath7-dev/intentshield-xlmr",
+  "created_at": "2026-11-15T05:06:42.000Z",
+  "updated_at": "2026-11-15T05:11:35.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278082098,
+  "parameters_human": "278.1M",
+  "storage_bytes": 1129456259,
+  "storage_human": "1.1 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

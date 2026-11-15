@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 12,
+  "downloads_30d": 7,
   "trending_score": 0,
   "parameters": 134515008,
   "parameters_human": "134.5M",
@@ -40,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "arteml3/Ally-Logic-3.8",
+  "renamed_at": "2026-11-15T05:05:22.238Z",
   "benchmarks": [],
   "sources": [
     {

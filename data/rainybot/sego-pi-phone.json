@@ -1,0 +1,59 @@
+{
+  "schema": 2,
+  "id": "RainyBot/SeGo-pi-Phone",
+  "slug": "rainybot-sego-pi-phone",
+  "author": "RainyBot",
+  "url": "https://huggingface.co/RainyBot/SeGo-pi-Phone",
+  "created_at": "2026-11-15T11:04:34.000Z",
+  "updated_at": "2026-11-15T11:07:12.000Z",
+  "license": "apache-2.0-and-gemma-terms",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "openpi",
+    "pi0",
+    "pytorch",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3238048528,
+  "parameters_human": "3.24B",
+  "storage_bytes": 6489160463,
+  "storage_human": "6.5 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lidl autour de moi : trouvez un magasin proche rapidement",
+      "url": "https://www.telephone.city/enseigne/lidl/",
+      "snippet": "Nov 2, 2026 · Vous cherchez un Lidl autour de vous ? Accédez en quelques secondes aux magasins Lidl proches, avec leurs …"
+    },
+    {
+      "title": "LIDL Aquitaine : Liste des magasins, horaires ouverture, téléphone et ...",
+      "url": "https://www.promoalert.com/magasin/lidl-aquitaine-horaires-telephone-adresse-21-0-0-4-0-0.html",
+      "snippet": "Vous souhaitez retrouver votre magasin Lidl ? Alors n'hésitez pas à consulter notre liste de tous les magasins Lidl se situant près de …"
+    }
+  ]
+}

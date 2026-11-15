@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Qwen2.5-14B-Wernickev3-GGUF",
+  "slug": "mradermacher-qwen2-5-14b-wernickev3-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5-14B-Wernickev3-GGUF",
+  "created_at": "2024-12-19T10:47:21.000Z",
+  "updated_at": "2026-11-15T09:06:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:CultriX/Qwen2.5-14B-Wernickev3",
+    "base_model:quantized:CultriX/Qwen2.5-14B-Wernickev3",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 216,
+  "trending_score": 0,
+  "parameters": 14765947904,
+  "parameters_human": "14.77B",
+  "storage_bytes": 102011159168,
+  "storage_human": "102.0 GB",
+  "context_length": 131072,
+  "base_model": "CultriX/Qwen2.5-14B-Wernickev3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

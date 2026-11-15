@@ -5,7 +5,7 @@
   "author": "torchcast-ai",
   "url": "https://huggingface.co/torchcast-ai/torchcast-decision-31b",
   "created_at": "2026-10-26T17:23:05.000Z",
-  "updated_at": "2026-10-27T08:21:15.000Z",
+  "updated_at": "2026-11-14T16:19:13.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -28,7 +28,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 107,
   "trending_score": 0,
   "parameters": 32682372656,

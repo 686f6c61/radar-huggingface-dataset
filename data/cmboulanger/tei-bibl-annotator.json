@@ -51,8 +51,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "cmboulanger/tei-bibl-annotator-citext",
+  "renamed_at": "2026-11-15T05:27:32.657Z",
   "benchmarks": [],
   "sources": [
     {

@@ -30,8 +30,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "puppyum/polythetic-web-gemma3-1b-instruments",
+  "renamed_at": "2026-11-15T08:19:00.712Z",
   "benchmarks": [],
   "sources": [
     {

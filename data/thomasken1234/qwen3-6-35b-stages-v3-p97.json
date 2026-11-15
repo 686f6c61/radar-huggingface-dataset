@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 3,
+  "downloads_30d": 11,
   "trending_score": 0,
   "parameters": 35951822704,
   "parameters_human": "35.95B",
@@ -39,8 +39,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "assassin58/qwen3.6-35b-stages-v3-p97",
+  "renamed_at": "2026-11-15T09:03:32.421Z",
   "benchmarks": [],
   "sources": [
     {

@@ -44,8 +44,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "vaghawan/gemma-4-31b-it-sft-lora-resumed-best",
+  "renamed_at": "2026-11-15T09:15:36.572Z",
   "benchmarks": [],
   "sources": [
     {

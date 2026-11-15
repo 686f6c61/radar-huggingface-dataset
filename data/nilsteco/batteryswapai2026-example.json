@@ -31,8 +31,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "slinteco/BatterySwapAI2026-Example",
+  "renamed_at": "2026-11-15T08:00:10.537Z",
   "benchmarks": [],
   "sources": [
     {

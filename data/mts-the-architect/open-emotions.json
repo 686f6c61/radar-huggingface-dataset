@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 25,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": 124667164,
   "parameters_human": "124.7M",
@@ -45,8 +45,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "mts-the-architect/open-emotions-roberta-125m-fp32",
+  "renamed_at": "2026-11-15T07:51:33.137Z",
   "benchmarks": [],
   "sources": [
     {

@@ -27,10 +27,11 @@
     "arxiv:2610.39308",
     "arxiv:2606.23050",
     "license:mit",
+    "eval-results",
     "region:us"
   ],
-  "likes": 699,
-  "downloads_30d": 535304,
+  "likes": 701,
+  "downloads_30d": 547079,
   "trending_score": 46,
   "parameters": 3343978497,
   "parameters_human": "3.34B",

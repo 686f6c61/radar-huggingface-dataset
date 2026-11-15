@@ -45,8 +45,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "khoin68/Qwen2.5-Coder-7B-Vietnamese-Agent-FINAL-LoRA",
+  "renamed_at": "2026-11-15T06:47:01.812Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "sul696/miss-blupsy-8b",
+  "slug": "sul696-miss-blupsy-8b",
+  "author": "sul696",
+  "url": "https://huggingface.co/sul696/miss-blupsy-8b",
+  "created_at": "2026-11-15T08:32:55.000Z",
+  "updated_at": "2026-11-15T08:34:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "assistant",
+    "on-device",
+    "ar",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 5838983264,
+  "storage_human": "5.8 GB",
+  "context_length": 40960,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

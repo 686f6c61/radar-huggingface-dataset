@@ -5,7 +5,7 @@
   "author": "iaac-maai",
   "url": "https://huggingface.co/iaac-maai/Day2-team4-residential-gas-consumption-predictor",
   "created_at": "2026-10-26T00:44:34.000Z",
-  "updated_at": "2026-10-26T20:00:57.000Z",
+  "updated_at": "2026-11-14T22:53:41.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "tabular-regression",
@@ -15,8 +15,12 @@
     "sklearn",
     "joblib",
     "tabular-regression",
-    "energy",
     "random-forest",
+    "energy",
+    "housing",
+    "built-environment",
+    "iaac-maai",
+    "ai-methods-1",
     "license:mit",
     "region:us"
   ],
@@ -36,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "iaac-maai/day2-group4-gas-consumption",
+  "renamed_at": "2026-11-15T06:25:27.585Z",
   "benchmarks": [],
   "sources": []
 }

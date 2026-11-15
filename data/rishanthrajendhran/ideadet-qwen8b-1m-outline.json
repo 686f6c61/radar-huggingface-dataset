@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 13,
+  "downloads_30d": 16,
   "trending_score": 0,
   "parameters": 7936692736,
   "parameters_human": "7.94B",
@@ -45,8 +45,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "rishanthrajendhran/IdeaLens-Qwen3.5-9B",
+  "renamed_at": "2026-11-15T08:29:10.401Z",
   "benchmarks": [],
   "sources": [
     {

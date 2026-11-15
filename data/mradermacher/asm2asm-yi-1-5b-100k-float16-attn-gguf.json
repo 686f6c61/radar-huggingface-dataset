@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/asm2asm-yi-1.5b-100k-float16-attn-GGUF",
+  "slug": "mradermacher-asm2asm-yi-1-5b-100k-float16-attn-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/asm2asm-yi-1.5b-100k-float16-attn-GGUF",
+  "created_at": "2025-03-13T12:35:28.000Z",
+  "updated_at": "2026-11-15T10:11:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "trl",
+    "sft",
+    "generated_from_trainer",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 1476495360,
+  "parameters_human": "1.48B",
+  "storage_bytes": 13631822592,
+  "storage_human": "13.6 GB",
+  "context_length": 131072,
+  "base_model": "ahmedheakl/asm2asm-yi-1.5b-100k-float16-attn",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

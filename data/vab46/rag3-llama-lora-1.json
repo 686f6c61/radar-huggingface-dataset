@@ -36,8 +36,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "vab46/llama-3.1-8b-instruct-lora-clinical_iter1",
+  "renamed_at": "2026-11-15T09:15:34.586Z",
   "benchmarks": [],
   "sources": [
     {

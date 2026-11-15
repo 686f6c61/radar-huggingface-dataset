@@ -5,7 +5,7 @@
   "author": "coder543",
   "url": "https://huggingface.co/coder543/nemotron-3.5-asr-streaming-0.6b-coreai",
   "created_at": "2026-09-27T20:03:31.000Z",
-  "updated_at": "2026-10-09T03:45:57.000Z",
+  "updated_at": "2026-11-09T23:07:59.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -80,7 +80,7 @@
     "license:other",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
@@ -96,8 +96,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "coder543/nemotron-3.5-asr-streaming-0.6b-glade",
+  "renamed_at": "2026-11-15T05:28:08.049Z",
   "benchmarks": [],
   "sources": [
     {

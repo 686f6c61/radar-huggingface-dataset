@@ -39,8 +39,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "SpatialHub/dinov2-onnx",
+  "renamed_at": "2026-11-15T08:11:03.341Z",
   "benchmarks": [],
   "sources": [
     {

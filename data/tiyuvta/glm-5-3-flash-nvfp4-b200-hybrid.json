@@ -41,7 +41,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 658,
+  "downloads_30d": 653,
   "trending_score": 0,
   "parameters": 184302984030,
   "parameters_human": "184.30B",
@@ -58,8 +58,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Avifenesh/GLM-5.3-Flash-NVFP4-B200-hybrid",
+  "renamed_at": "2026-11-15T09:05:52.212Z",
   "benchmarks": [],
   "sources": [
     {

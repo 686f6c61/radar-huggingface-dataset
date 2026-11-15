@@ -5,7 +5,7 @@
   "author": "leejet",
   "url": "https://huggingface.co/leejet/Qwen-Image-2.1-GGUF",
   "created_at": "2026-09-20T13:16:48.000Z",
-  "updated_at": "2026-09-20T14:47:00.000Z",
+  "updated_at": "2026-11-14T11:43:10.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 43,
-  "downloads_30d": 129658,
+  "downloads_30d": 137163,
   "trending_score": 11,
   "parameters": 7115124736,
   "parameters_human": "7.12B",

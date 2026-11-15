@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "ChnIRuI111/PoRT-TOFU-Classifier",
+  "slug": "chnirui111-port-tofu-classifier",
+  "author": "ChnIRuI111",
+  "url": "https://huggingface.co/ChnIRuI111/PoRT-TOFU-Classifier",
+  "created_at": "2026-11-15T07:21:06.000Z",
+  "updated_at": "2026-11-15T07:23:25.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "port",
+    "machine-unlearning",
+    "llm2vec",
+    "text-classification",
+    "en",
+    "base_model:McGill-NLP/LLM2Vec-Meta-Llama-3-8B-Instruct-mntp",
+    "base_model:finetune:McGill-NLP/LLM2Vec-Meta-Llama-3-8B-Instruct-mntp",
+    "license:llama3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7555262466,
+  "parameters_human": "7.56B",
+  "storage_bytes": 15211312016,
+  "storage_human": "15.2 GB",
+  "context_length": null,
+  "base_model": "McGill-NLP/LLM2Vec-Meta-Llama-3-8B-Instruct-mntp, McGill-NLP/LLM2Vec-Meta-Llama-3-8B-Instruct-mntp-supervised",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "ntrung/VieNeu-TTS-v3-Turbo-gomastergi",
+  "slug": "ntrung-vieneu-tts-v3-turbo-gomastergi",
+  "author": "ntrung",
+  "url": "https://huggingface.co/ntrung/VieNeu-TTS-v3-Turbo-gomastergi",
+  "created_at": "2026-11-15T01:13:05.000Z",
+  "updated_at": "2026-11-15T11:26:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "vieneu_v3_turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 592521557,
+  "storage_human": "593 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

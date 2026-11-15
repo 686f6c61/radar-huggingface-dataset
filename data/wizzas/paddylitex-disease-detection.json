@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "Wizzas/paddylitex-disease-detection",
+  "slug": "wizzas-paddylitex-disease-detection",
+  "author": "Wizzas",
+  "url": "https://huggingface.co/Wizzas/paddylitex-disease-detection",
+  "created_at": "2026-11-15T05:14:13.000Z",
+  "updated_at": "2026-11-15T05:14:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "code",
+    "portfolio",
+    "arxiv:1608.06993",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 203308814,
+  "storage_human": "203 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

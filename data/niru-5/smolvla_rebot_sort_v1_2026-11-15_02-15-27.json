@@ -1,0 +1,54 @@
+{
+  "schema": 2,
+  "id": "niru-5/smolvla_rebot_sort_v1_2026-11-15_02-15-27",
+  "slug": "niru-5-smolvla_rebot_sort_v1_2026-11-15_02-15-27",
+  "author": "niru-5",
+  "url": "https://huggingface.co/niru-5/smolvla_rebot_sort_v1_2026-11-15_02-15-27",
+  "created_at": "2026-11-15T02:15:28.000Z",
+  "updated_at": "2026-11-15T05:14:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:RoboCrafty/rebot_sort_v1",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 5277567128,
+  "storage_human": "5.3 GB",
+  "context_length": null,
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "5 Best Carpet Stain Removers 2026 Reviewed | HGTV",
+      "url": "https://www.hgtv.com/shopping/product-reviews/best-carpet-rug-stain-removers",
+      "snippet": "Feb 6, 2026 · Choosing the Best Carpet Stain Remover Some cleaners are specifically designed to target pet stains, while others …"
+    }
+  ]
+}

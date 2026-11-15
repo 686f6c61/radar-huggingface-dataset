@@ -1,0 +1,61 @@
+{
+  "schema": 2,
+  "id": "ChnIRuI111/PoRT-IPC-T5",
+  "slug": "chnirui111-port-ipc-t5",
+  "author": "ChnIRuI111",
+  "url": "https://huggingface.co/ChnIRuI111/PoRT-IPC-T5",
+  "created_at": "2026-11-15T07:15:50.000Z",
+  "updated_at": "2026-11-15T07:20:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "t5",
+    "port",
+    "machine-unlearning",
+    "text2text-generation",
+    "en",
+    "base_model:google/flan-t5-large",
+    "base_model:finetune:google/flan-t5-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 783150080,
+  "parameters_human": "783.2M",
+  "storage_bytes": 3133460464,
+  "storage_human": "3.1 GB",
+  "context_length": null,
+  "base_model": "google/flan-t5-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Problemi di accesso a YouTube",
+      "url": "https://support.google.com/youtube/answer/6159254?hl=it",
+      "snippet": "Problemi di accesso a YouTube Se visualizzi una pagina di errore anziché YouTube quando navighi su youtube.com, la causa …"
+    },
+    {
+      "title": "Criar uma conta no YouTube - Computador - Ajuda do YouTube",
+      "url": "https://support.google.com/youtube/answer/161805?hl=pt-BR&co=GENIE.Platform%3DDesktop",
+      "snippet": "Criar uma conta no YouTube Para fazer login no YouTube, você precisa criar uma Conta do Google. Com ela, é possível usar …"
+    }
+  ]
+}

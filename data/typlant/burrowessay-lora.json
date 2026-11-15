@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "TyPlant/BurrowEssay-LoRA",
+  "slug": "typlant-burrowessay-lora",
+  "author": "TyPlant",
+  "url": "https://huggingface.co/TyPlant/BurrowEssay-LoRA",
+  "created_at": "2026-11-15T09:15:14.000Z",
+  "updated_at": "2026-11-15T09:15:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "lora",
+    "llama-cpp",
+    "writing",
+    "essays",
+    "burrow",
+    "text-generation",
+    "en",
+    "base_model:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "base_model:adapter:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 116727808,
+  "parameters_human": "116.7M",
+  "storage_bytes": 235113639,
+  "storage_human": "235 MB",
+  "context_length": null,
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 2,
+  "id": "vghfdc/opus-mt-tc-big-zh-ja",
+  "slug": "vghfdc-opus-mt-tc-big-zh-ja",
+  "author": "vghfdc",
+  "url": "https://huggingface.co/vghfdc/opus-mt-tc-big-zh-ja",
+  "created_at": "2026-11-15T06:01:27.000Z",
+  "updated_at": "2026-11-15T06:01:27.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "ja",
+    "zh"
+  ],
+  "tags": [
+    "pytorch",
+    "tf",
+    "safetensors",
+    "marian",
+    "translation",
+    "opus-mt-tc",
+    "ja",
+    "zh",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 209158401,
+  "parameters_human": "209.2M",
+  "storage_bytes": 1684051656,
+  "storage_human": "1.7 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Translation zho-jpn",
+      "dataset": "tatoeba-test-v2021-08-07",
+      "metric": "BLEU",
+      "value": 24.6
+    },
+    {
+      "task": "Translation zho-jpn",
+      "dataset": "tatoeba-test-v2021-08-07",
+      "metric": "chr-F",
+      "value": 0.2779
+    }
+  ],
+  "sources": []
+}

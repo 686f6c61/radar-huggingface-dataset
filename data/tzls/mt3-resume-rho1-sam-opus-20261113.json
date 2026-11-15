@@ -5,7 +5,7 @@
   "author": "tzls",
   "url": "https://huggingface.co/tzls/mt3-resume-rho1-sam-opus-20261113",
   "created_at": "2026-11-13T07:05:09.000Z",
-  "updated_at": "2026-11-14T16:01:11.000Z",
+  "updated_at": "2026-11-14T23:14:30.000Z",
   "license": "other",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,13 +32,13 @@
     "safetensors"
   ],
   "is_conversational": false,
-  "gated": false,
+  "gated": true,
   "disabled": false,
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "midtraining/mt3-resume-rho1-sam-opus-20261113",
+  "renamed_at": "2026-11-15T09:10:54.942Z",
   "benchmarks": [],
   "sources": []
 }

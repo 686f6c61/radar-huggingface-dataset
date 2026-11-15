@@ -5,7 +5,7 @@
   "author": "wiklif",
   "url": "https://huggingface.co/wiklif/Bielik-Minitron-7B-RAG",
   "created_at": "2026-11-13T19:45:05.000Z",
-  "updated_at": "2026-11-13T20:23:37.000Z",
+  "updated_at": "2026-11-14T19:05:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 7,
   "trending_score": 0,
   "parameters": 7477727232,
   "parameters_human": "7.48B",

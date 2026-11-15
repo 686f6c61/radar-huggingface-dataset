@@ -28,7 +28,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 23,
+  "downloads_30d": 22,
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",
@@ -45,8 +45,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "RobTeam/qwen2.5-7b-ru-gguf",
+  "renamed_at": "2026-11-15T08:29:46.621Z",
   "benchmarks": [],
   "sources": []
 }
