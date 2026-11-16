@@ -1,0 +1,67 @@
+{
+  "schema": 2,
+  "id": "YanSong97/E2K-Qwen3.5-9B-tagged-B-process-rl-iter198",
+  "slug": "yansong97-e2k-qwen3-5-9b-tagged-b-process-rl-iter198",
+  "author": "YanSong97",
+  "url": "https://huggingface.co/YanSong97/E2K-Qwen3.5-9B-tagged-B-process-rl-iter198",
+  "created_at": "2026-11-16T17:58:59.000Z",
+  "updated_at": "2026-11-16T18:05:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "experience-to-knowledge",
+    "arc-agi-3",
+    "knowledge-internalization",
+    "qwen3.5",
+    "slime",
+    "megatron-lm",
+    "conversational",
+    "dataset:YanSong97/E2K-tagged-knowledge-data",
+    "dataset:YanSong97/E2K-tagged-knowledge-rl-runs",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19319112030,
+  "storage_human": "19.3 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NLTK Tutorial - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/nltk-tutorial/",
+      "snippet": "Mar 2, 2026 · NLTK (Natural Language Toolkit) is a popular Python library used for building natural language processing (NLP) …"
+    },
+    {
+      "title": "Natural Language Processing With Python's NLTK Package",
+      "url": "https://realpython.com/nltk-nlp-python/",
+      "snippet": "May 5, 2021 · In this beginner-friendly tutorial, you'll take your first steps with Natural Language Processing (NLP) and Python's …"
+    }
+  ]
+}

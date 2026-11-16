@@ -1,0 +1,80 @@
+{
+  "schema": 2,
+  "id": "nvidia/Nemotron-Labs-Sigma-distill-spec-3B",
+  "slug": "nvidia-nemotron-labs-sigma-distill-spec-3b",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/Nemotron-Labs-Sigma-distill-spec-3B",
+  "created_at": "2026-11-09T21:55:08.000Z",
+  "updated_at": "2026-11-12T20:59:58.000Z",
+  "license": "nvidia-nemotron-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_labs_sigma",
+    "feature-extraction",
+    "nvidia",
+    "pytorch",
+    "nemotron-labs",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "arxiv:2610.02665",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 4236704802,
+  "parameters_human": "4.24B",
+  "storage_bytes": 16972343610,
+  "storage_human": "17.0 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "World Leader in Artificial Intelligence Computing | NVIDIA",
+      "url": "https://www.nvidia.com/",
+      "snippet": "NVIDIA invents the GPU and drives advances in AI, HPC, gaming, creative design, autonomous vehicles, and robotics."
+    },
+    {
+      "title": "Nvidia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nvidia",
+      "snippet": "On September 22, 2025, Nvidia and OpenAI announced a memorandum of understanding for a partnership wherein Nvidia would …"
+    },
+    {
+      "title": "Téléchargez les pilotes NVIDIA officiels | NVIDIA",
+      "url": "https://www.nvidia.com/fr-fr/drivers/",
+      "snippet": "Les clients d'entreprise disposant d’une licence logicielle vGPU à jour, que ce soit pour NVIDIA vPC, NVIDIA vApps ou NVIDIA RTX …"
+    },
+    {
+      "title": "NVIDIA",
+      "url": "https://www.nvidia.fr/default.htm",
+      "snippet": "Explorez les dernières innovations et produits NVIDIA, leader en technologies graphiques et d'intelligence artificielle."
+    },
+    {
+      "title": "Nvidia — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nvidia",
+      "snippet": "Nvidia Corporation est une société multinationale américaine de technologie basée à Santa Clara et immatriculée dans l'État du …"
+    }
+  ]
+}

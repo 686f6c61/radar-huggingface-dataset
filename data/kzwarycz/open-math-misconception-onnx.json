@@ -1,0 +1,68 @@
+{
+  "schema": 2,
+  "id": "kzwarycz/open-math-misconception-onnx",
+  "slug": "kzwarycz-open-math-misconception-onnx",
+  "author": "kzwarycz",
+  "url": "https://huggingface.co/kzwarycz/open-math-misconception-onnx",
+  "created_at": "2026-11-16T18:44:16.000Z",
+  "updated_at": "2026-11-16T18:52:10.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "onnx",
+    "misconception-family-head",
+    "education",
+    "mathematics",
+    "polish",
+    "matura",
+    "misconception",
+    "on-device",
+    "text-classification",
+    "pl",
+    "base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "base_model:quantized:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 343503,
+  "storage_human": "343503 B",
+  "context_length": null,
+  "base_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Math error family routing (10 classes)",
+      "dataset": "Polish-CKE-Math-Misconceptions-v1 (task-grouped held-out split)",
+      "metric": "Top-1 accuracy",
+      "value": 0.8348
+    },
+    {
+      "task": "Math error family routing (10 classes)",
+      "dataset": "Polish-CKE-Math-Misconceptions-v1 (task-grouped held-out split)",
+      "metric": "Macro F1",
+      "value": 0.8275
+    }
+  ],
+  "sources": []
+}

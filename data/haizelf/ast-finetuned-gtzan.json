@@ -1,0 +1,57 @@
+{
+  "schema": 2,
+  "id": "HAizelf/ast-finetuned-gtzan",
+  "slug": "haizelf-ast-finetuned-gtzan",
+  "author": "HAizelf",
+  "url": "https://huggingface.co/HAizelf/ast-finetuned-gtzan",
+  "created_at": "2026-11-16T19:39:44.000Z",
+  "updated_at": "2026-11-16T19:40:53.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "audio-spectrogram-transformer",
+    "audio-classification",
+    "generated_from_trainer",
+    "dataset:marsyas/gtzan",
+    "base_model:MIT/ast-finetuned-audioset-10-10-0.4593",
+    "base_model:finetune:MIT/ast-finetuned-audioset-10-10-0.4593",
+    "license:bsd-3-clause",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86196490,
+  "parameters_human": "86.2M",
+  "storage_bytes": 344819921,
+  "storage_human": "345 MB",
+  "context_length": null,
+  "base_model": "MIT/ast-finetuned-audioset-10-10-0.4593",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Audio Classification",
+      "dataset": "GTZAN",
+      "metric": "Accuracy",
+      "value": 0.9599999785423279
+    }
+  ],
+  "sources": []
+}

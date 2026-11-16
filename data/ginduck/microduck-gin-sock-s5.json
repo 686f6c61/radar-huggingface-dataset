@@ -1,0 +1,54 @@
+{
+  "schema": 2,
+  "id": "GinDuck/microduck-gin-sock-s5",
+  "slug": "ginduck-microduck-gin-sock-s5",
+  "author": "GinDuck",
+  "url": "https://huggingface.co/GinDuck/microduck-gin-sock-s5",
+  "created_at": "2026-11-16T17:12:31.000Z",
+  "updated_at": "2026-11-16T17:12:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1191456,
+  "storage_human": "1 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Petites annonces immobilières | N°1 des sites 100% immo | Portail immo",
+      "url": "https://www.seloger.com/?msockid=265e491fb29767812503510cb31766ab",
+      "snippet": "Trouvez un appartement ou une maison en vente ou en location. Des milliers d’annonces immobilières actualisée en temps réel de …"
+    },
+    {
+      "title": "3348 annonces Immobilier à louer Var 83 à partir de 100€, Seloger.com",
+      "url": "https://www.seloger.com/recherche/location/immobilier/provence-alpes-cote-d-azur/var-83/ad06fr84?msockid=265e491fb29767812503510cb31766ab",
+      "snippet": "16 novembre 2026 - Découvrez 3348 annonces immobilier à louer Var 83"
+    }
+  ]
+}

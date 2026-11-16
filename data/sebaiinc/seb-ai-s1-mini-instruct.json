@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "sebaiinc/Seb-AI-S1-Mini-Instruct",
+  "slug": "sebaiinc-seb-ai-s1-mini-instruct",
+  "author": "sebaiinc",
+  "url": "https://huggingface.co/sebaiinc/Seb-AI-S1-Mini-Instruct",
+  "created_at": "2026-11-15T17:38:27.000Z",
+  "updated_at": "2026-11-16T16:05:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "seb-ai",
+    "text-generation",
+    "causal-lm",
+    "trained-from-scratch",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 46,
+  "trending_score": 0,
+  "parameters": 408996864,
+  "parameters_human": "409.0M",
+  "storage_bytes": 6552084209,
+  "storage_human": "6.6 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

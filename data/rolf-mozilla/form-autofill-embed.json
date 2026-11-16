@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "rolf-mozilla/form-autofill-embed",
+  "slug": "rolf-mozilla-form-autofill-embed",
+  "author": "rolf-mozilla",
+  "url": "https://huggingface.co/rolf-mozilla/form-autofill-embed",
+  "created_at": "2026-07-16T22:26:53.000Z",
+  "updated_at": "2026-11-16T17:15:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 227455432,
+  "storage_human": "227 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top Multi-Chain DeFi Lending Apps in 2025",
+      "url": "https://tradebrains.in/features/multi-chain-defi-lending-apps/",
+      "snippet": "Jul 25, 2025 · Discover the top multi-chain DeFi lending platforms that offer cross-chain borrowing, native asset support, and passive …"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "Gospe1/Franka-TestTube-AdaSpeVLA-Expert",
+  "slug": "gospe1-franka-testtube-adaspevla-expert",
+  "author": "Gospe1",
+  "url": "https://huggingface.co/Gospe1/Franka-TestTube-AdaSpeVLA-Expert",
+  "created_at": "2026-11-16T20:04:39.000Z",
+  "updated_at": "2026-11-16T20:22:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "vision-language-action",
+    "openpi",
+    "franka",
+    "dataset:dddddsds31341/test-tube-lerobot",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15790341216,
+  "storage_human": "15.8 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn: Log In or Sign Up",
+      "url": "https://www.linkedin.com/",
+      "snippet": "Discover relevant posts and expert insights — curated by topic and in one place. Connect with buyers who have first-hand …"
+    }
+  ]
+}

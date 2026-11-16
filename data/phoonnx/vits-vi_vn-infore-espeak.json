@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "Phoonnx/vits-vi_vn-infore-espeak",
+  "slug": "phoonnx-vits-vi_vn-infore-espeak",
+  "author": "Phoonnx",
+  "url": "https://huggingface.co/Phoonnx/vits-vi_vn-infore-espeak",
+  "created_at": "2026-11-16T18:11:42.000Z",
+  "updated_at": "2026-11-16T18:12:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "phoonnx",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "phoonnx",
+    "onnx",
+    "vits",
+    "text-to-speech",
+    "vi",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63122309,
+  "storage_human": "63 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

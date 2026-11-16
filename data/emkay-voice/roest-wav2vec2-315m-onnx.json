@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "Emkay-Voice/roest-wav2vec2-315m-onnx",
+  "slug": "emkay-voice-roest-wav2vec2-315m-onnx",
+  "author": "Emkay-Voice",
+  "url": "https://huggingface.co/Emkay-Voice/roest-wav2vec2-315m-onnx",
+  "created_at": "2026-11-16T20:01:04.000Z",
+  "updated_at": "2026-11-16T20:01:09.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "emkay",
+    "openvoiceos",
+    "da",
+    "dataset:CoRal-project/coral-v3",
+    "base_model:CoRal-project/roest-v3-wav2vec2-315m",
+    "base_model:quantized:CoRal-project/roest-v3-wav2vec2-315m",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1579695024,
+  "storage_human": "1.6 GB",
+  "context_length": null,
+  "base_model": "CoRal-project/roest-v3-wav2vec2-315m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

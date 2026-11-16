@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Orca-Llama-3.1-8B-Unrestricted-GGUF",
+  "slug": "mradermacher-orca-llama-3-1-8b-unrestricted-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Orca-Llama-3.1-8B-Unrestricted-GGUF",
+  "created_at": "2026-11-16T16:55:50.000Z",
+  "updated_at": "2026-11-16T17:04:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "en",
+    "base_model:Jay212123/Orca-Llama-3.1-8B-Unrestricted",
+    "base_model:quantized:Jay212123/Orca-Llama-3.1-8B-Unrestricted",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820289536,
+  "storage_human": "71.8 GB",
+  "context_length": 131072,
+  "base_model": "Jay212123/Orca-Llama-3.1-8B-Unrestricted",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

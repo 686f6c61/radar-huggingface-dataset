@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "usrnotfound101/anlp-a3-transformer",
+  "slug": "usrnotfound101-anlp-a3-transformer",
+  "author": "usrnotfound101",
+  "url": "https://huggingface.co/usrnotfound101/anlp-a3-transformer",
+  "created_at": "2026-11-11T12:43:33.000Z",
+  "updated_at": "2026-11-16T16:15:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": 7983204,
+  "parameters_human": "8.0M",
+  "storage_bytes": 63907632,
+  "storage_human": "64 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

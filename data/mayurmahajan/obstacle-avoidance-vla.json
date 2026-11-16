@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "mayurmahajan/obstacle-avoidance-vla",
+  "slug": "mayurmahajan-obstacle-avoidance-vla",
+  "author": "mayurmahajan",
+  "url": "https://huggingface.co/mayurmahajan/obstacle-avoidance-vla",
+  "created_at": "2026-11-16T18:59:15.000Z",
+  "updated_at": "2026-11-16T19:09:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "vision-language-action",
+    "smolvla",
+    "imitation-learning",
+    "reinforcement-learning",
+    "ppo",
+    "genesis",
+    "base_model:HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2118849499,
+  "storage_human": "2.1 GB",
+  "context_length": null,
+  "base_model": "lerobot/smolvla_base, HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zkLink: An Aggregated Rollup Infrastructure Based on Zero …",
+      "url": "https://www.zk.link/zkLink-whitepaper.pdf",
+      "snippet": "In response to these obstacles, zkLink is actively developing an aggregated rollup infrastructure, secured by zero-knowledge proof …"
+    }
+  ]
+}

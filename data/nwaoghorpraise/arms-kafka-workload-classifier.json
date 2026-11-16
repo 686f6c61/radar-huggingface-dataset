@@ -1,0 +1,65 @@
+{
+  "schema": 2,
+  "id": "nwaoghorpraise/arms-kafka-workload-classifier",
+  "slug": "nwaoghorpraise-arms-kafka-workload-classifier",
+  "author": "nwaoghorpraise",
+  "url": "https://huggingface.co/nwaoghorpraise/arms-kafka-workload-classifier",
+  "created_at": "2026-11-16T20:18:49.000Z",
+  "updated_at": "2026-11-16T20:20:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "tabular-classification",
+    "logistic-regression",
+    "apache-kafka",
+    "fault-recovery",
+    "mlops",
+    "aiops",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Kafka workload classification",
+      "dataset": "ARMS balanced Kafka workload dataset (3,000 samples)",
+      "metric": "Test accuracy (20% hold-out)",
+      "value": 0.9617
+    },
+    {
+      "task": "Kafka workload classification",
+      "dataset": "ARMS balanced Kafka workload dataset (3,000 samples)",
+      "metric": "Macro F1",
+      "value": 0.9617
+    },
+    {
+      "task": "Kafka workload classification",
+      "dataset": "ARMS balanced Kafka workload dataset (3,000 samples)",
+      "metric": "5-fold cross-validation accuracy",
+      "value": 0.9677
+    }
+  ],
+  "sources": []
+}

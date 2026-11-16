@@ -1,0 +1,61 @@
+{
+  "schema": 2,
+  "id": "davitlive5/Lapillus-v1",
+  "slug": "davitlive5-lapillus-v1",
+  "author": "davitlive5",
+  "url": "https://huggingface.co/davitlive5/Lapillus-v1",
+  "created_at": "2026-11-16T13:30:17.000Z",
+  "updated_at": "2026-11-16T13:47:31.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "hy"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "armenian",
+    "fastconformer",
+    "hy",
+    "base_model:nvidia/stt_hy_fastconformer_hybrid_large_pc",
+    "base_model:finetune:nvidia/stt_hy_fastconformer_hybrid_large_pc",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 459233280,
+  "storage_human": "459 MB",
+  "context_length": null,
+  "base_model": "nvidia/stt_hy_fastconformer_hybrid_large_pc",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "ArmBench-ASR (Combined)",
+      "metric": "WER (normalised)",
+      "value": 9.03
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "ArmBench-ASR (Combined)",
+      "metric": "CER (normalised)",
+      "value": 2.76
+    }
+  ],
+  "sources": []
+}

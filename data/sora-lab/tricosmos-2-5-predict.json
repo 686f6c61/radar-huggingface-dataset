@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "SORA-Lab/TriCosmos-2.5-predict",
+  "slug": "sora-lab-tricosmos-2-5-predict",
+  "author": "SORA-Lab",
+  "url": "https://huggingface.co/SORA-Lab/TriCosmos-2.5-predict",
+  "created_at": "2026-11-16T20:01:54.000Z",
+  "updated_at": "2026-11-16T20:01:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2511.00062] World Simulation with Video Foundation Models for ...",
+      "url": "https://arxiv.org/abs/2511.00062",
+      "snippet": "View a PDF of the paper titled ... (experimental) Abstract:We introduce [Cosmos-Predict2.5], the latest generation of the Cosmos World Foundation Models for Physical AI...."
+    },
+    {
+      "title": "World Simulation with Video Foundation Models for Physical AI",
+      "url": "https://arxiv.org/html/2511.00062v2",
+      "snippet": "Such simulators enable agents to ... In this paper, we introduce [Cosmos-Predict2.5], our latest world foundation model based on flow matching that significantly enhances simulation fidelity across diverse Physical AI domains...."
+    }
+  ]
+}

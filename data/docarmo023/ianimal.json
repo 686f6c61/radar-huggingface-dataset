@@ -1,0 +1,54 @@
+{
+  "schema": 2,
+  "id": "doCarmo023/IAnimal",
+  "slug": "docarmo023-ianimal",
+  "author": "doCarmo023",
+  "url": "https://huggingface.co/doCarmo023/IAnimal",
+  "created_at": "2026-11-16T17:15:50.000Z",
+  "updated_at": "2026-11-16T17:28:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "keras",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "keras",
+    "image-classification",
+    "tensorflow",
+    "mobilenetv2",
+    "transfer-learning",
+    "pt",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39357360,
+  "storage_human": "39 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Classificação de imagens",
+      "dataset": "Animals-10 (Kaggle), 20% de validação",
+      "metric": "Acurácia de validação",
+      "value": 0.865
+    }
+  ],
+  "sources": []
+}

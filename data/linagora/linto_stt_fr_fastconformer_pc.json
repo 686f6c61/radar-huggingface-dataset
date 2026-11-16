@@ -1,0 +1,125 @@
+{
+  "schema": 2,
+  "id": "linagora/linto_stt_fr_fastconformer_pc",
+  "slug": "linagora-linto_stt_fr_fastconformer_pc",
+  "author": "linagora",
+  "url": "https://huggingface.co/linagora/linto_stt_fr_fastconformer_pc",
+  "created_at": "2025-07-17T12:41:53.000Z",
+  "updated_at": "2026-11-16T16:57:56.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "nemo",
+    "safetensors",
+    "parakeet_rnnt",
+    "feature-extraction",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "Transducer",
+    "FastConformer",
+    "CTC",
+    "Transformer",
+    "pytorch",
+    "NeMo",
+    "fr",
+    "dataset:mozilla-foundation/common_voice_17_0",
+    "dataset:facebook/multilingual_librispeech",
+    "dataset:facebook/voxpopuli",
+    "dataset:datasets-CNRS/PFC",
+    "dataset:datasets-CNRS/CFPP",
+    "dataset:datasets-CNRS/CLAPI",
+    "dataset:gigant/african_accented_french",
+    "dataset:google/fleurs",
+    "dataset:datasets-CNRS/lesvocaux",
+    "dataset:datasets-CNRS/ACSYNT",
+    "dataset:medkit/simsamu",
+    "arxiv:2207.08292",
+    "arxiv:2305.05084",
+    "base_model:nvidia/stt_fr_fastconformer_hybrid_large_pc",
+    "base_model:finetune:nvidia/stt_fr_fastconformer_hybrid_large_pc",
+    "license:cc-by-4.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 114113025,
+  "parameters_human": "114.1M",
+  "storage_bytes": 915763188,
+  "storage_human": "916 MB",
+  "context_length": null,
+  "base_model": "nvidia/stt_fr_fastconformer_hybrid_large_pc",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "common-voice-18-0",
+      "metric": "Test WER",
+      "value": 7.88
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "Multilingual LibriSpeech",
+      "metric": "Test WER",
+      "value": 4.57
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "Vox Populi",
+      "metric": "Test WER",
+      "value": 10.14
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "SUMM-RE",
+      "metric": "Test WER",
+      "value": 19.8
+    }
+  ],
+  "sources": [
+    {
+      "title": "LINAGORA - Éditeur français de logiciels libres",
+      "url": "https://linagora.com/",
+      "snippet": "Découvrez Linagora, éditeur de logiciels open source et solutions SaaS pour entreprises. Profitez de logiciels libres, performants et …"
+    },
+    {
+      "title": "Linagora — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Linagora",
+      "snippet": "Le 24 novembre 2022, la cour d’appel de Paris déboute Linagora sur sa demande relative à la garantie légale d'éviction. À la suite …"
+    },
+    {
+      "title": "LINAGORA - French open-source software publisher",
+      "url": "https://linagora.com/en/",
+      "snippet": "4 days ago · Discover Linagora, a publisher of open-source software and SaaS solutions for businesses. Benefit from free software, …"
+    },
+    {
+      "title": "LINAGORA.AI - IA Souveraine Open Source pour l'Europe",
+      "url": "https://www.linagora.ai/",
+      "snippet": "Le Paris Open Source AI Summit est le sommet européen de l'IA open source et souveraine. LINAGORA est membre fondateur et …"
+    },
+    {
+      "title": "LINAGORA | Qui sommes-nous ?",
+      "url": "https://welcometolinagora.com/qui-sommes-nous",
+      "snippet": "Qui sommes-nous ? LINAGORA est considéré comme le champion français de l'édition de logiciels libres et un acteur clé de la …"
+    }
+  ]
+}

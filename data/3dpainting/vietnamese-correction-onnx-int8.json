@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "3dpainting/vietnamese-correction-onnx-int8",
+  "slug": "3dpainting-vietnamese-correction-onnx-int8",
+  "author": "3dpainting",
+  "url": "https://huggingface.co/3dpainting/vietnamese-correction-onnx-int8",
+  "created_at": "2026-11-16T12:48:53.000Z",
+  "updated_at": "2026-11-16T12:49:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "onnx",
+    "int8",
+    "spelling-correction",
+    "vietnamese",
+    "text2text-generation",
+    "vi",
+    "base_model:bmd1905/vietnamese-correction",
+    "base_model:finetune:bmd1905/vietnamese-correction",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 433077959,
+  "storage_human": "433 MB",
+  "context_length": null,
+  "base_model": "bmd1905/vietnamese-correction",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

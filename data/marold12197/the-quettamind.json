@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "marold12197/The-Quettamind",
+  "slug": "marold12197-the-quettamind",
+  "author": "marold12197",
+  "url": "https://huggingface.co/marold12197/The-Quettamind",
+  "created_at": "2026-11-16T15:04:23.000Z",
+  "updated_at": "2026-11-16T15:04:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "safetensors",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "nullnet",
+    "compressed-tensors",
+    "large-parameter-count",
+    "benchmark",
+    "quettamind",
+    "en",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39200000000000000,
+  "parameters_human": "39200000.00B",
+  "storage_bytes": 490000012976,
+  "storage_human": "490.0 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,90 @@
+{
+  "schema": 2,
+  "id": "whittleOrg/Whittle-Next-27B-A3B-NVFP4-GGUF",
+  "slug": "whittleorg-whittle-next-27b-a3b-nvfp4-gguf",
+  "author": "whittleOrg",
+  "url": "https://huggingface.co/whittleOrg/Whittle-Next-27B-A3B-NVFP4-GGUF",
+  "created_at": "2026-11-16T17:26:58.000Z",
+  "updated_at": "2026-11-16T17:30:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "whittle",
+    "qwen4_exp",
+    "mixture-of-experts",
+    "moe",
+    "n-gram-memory",
+    "hyper-connections",
+    "llama.cpp",
+    "nvfp4",
+    "fp4",
+    "quantization",
+    "conversational",
+    "research",
+    "text-generation",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:whittleOrg/Whittle-Next-27B-A3B",
+    "base_model:quantized:whittleOrg/Whittle-Next-27B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27553461376,
+  "parameters_human": "27.55B",
+  "storage_bytes": 17094118432,
+  "storage_human": "17.1 GB",
+  "context_length": 262144,
+  "base_model": "whittleOrg/Whittle-Next-27B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "logic65/Whittle-Next-27B-A3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/logic65/Whittle-Next-27B-A3B-GGUF",
+      "snippet": "Part of the Whittle project by logic65. We’re on a journey to advance and democratize artificial intelligence through open source and …"
+    },
+    {
+      "title": "mradermacher/Whittle-Next-27B-A3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Whittle-Next-27B-A3B-GGUF",
+      "snippet": "Here is a handy graph by ikawrakow comparing some lower-quality quant types (lower is better): And here are Artefact2's thoughts …"
+    },
+    {
+      "title": "Whittle-Next-27B-A3B · Models",
+      "url": "https://www.modelscope.cn/models/logic65/Whittle-Next-27B-A3B",
+      "snippet": "GGUF downloads for llama.cpp are on logic65/Whittle-Next-27B-A3B-GGUF (Q8_0 to Q3_K_M). This repo holds the full weights, the …"
+    },
+    {
+      "title": "Whittle Next 27B A3B — Hardware Requirements & Compatibility",
+      "url": "https://llmrun.dev/model/logic65-whittle-next-27b-a3b",
+      "snippet": "Whittle Next 27B A3B is a 27.6B-parameter open language model from logic65. It supports a context window of up to 262,144 …"
+    },
+    {
+      "title": "mradermacher/Whittle-Next-27B-A3B-GGUF — Downloads, Growth",
+      "url": "https://openmodelstats.com/models/mradermacher/whittle-next-27b-a3b-gguf",
+      "snippet": "Whittle-Next-27B-A3B-GGUF is a text generation model published by mradermacher. OpenModelStats has tracked the model since …"
+    }
+  ]
+}

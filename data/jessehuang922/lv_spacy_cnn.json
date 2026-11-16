@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "JesseHuang922/lv_spacy_cnn",
+  "slug": "jessehuang922-lv_spacy_cnn",
+  "author": "JesseHuang922",
+  "url": "https://huggingface.co/JesseHuang922/lv_spacy_cnn",
+  "created_at": "2025-09-25T18:53:24.000Z",
+  "updated_at": "2026-11-16T19:51:30.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "lv"
+  ],
+  "tags": [
+    "lv",
+    "dataset:universal_dependencies",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19600743,
+  "storage_human": "20 MB",
+  "context_length": null,
+  "base_model": "spaCy/Tok2Vec",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

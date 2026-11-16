@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "erkint/zerre-tts",
+  "slug": "erkint-zerre-tts",
+  "author": "erkint",
+  "url": "https://huggingface.co/erkint/zerre-tts",
+  "created_at": "2026-11-16T18:19:40.000Z",
+  "updated_at": "2026-11-16T18:24:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "pytorch",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "text-to-speech",
+    "tts",
+    "turkish",
+    "browser",
+    "tr",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41796740,
+  "storage_human": "42 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "Kansallisarkisto/latvian-ppocrv6-medium",
+  "slug": "kansallisarkisto-latvian-ppocrv6-medium",
+  "author": "Kansallisarkisto",
+  "url": "https://huggingface.co/Kansallisarkisto/latvian-ppocrv6-medium",
+  "created_at": "2026-11-16T14:00:53.000Z",
+  "updated_at": "2026-11-16T14:20:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [
+    "lv"
+  ],
+  "tags": [
+    "onnx",
+    "image-to-text",
+    "lv",
+    "arxiv:2606.13108",
+    "base_model:PaddlePaddle/PP-OCRv6_medium_rec_safetensors",
+    "base_model:quantized:PaddlePaddle/PP-OCRv6_medium_rec_safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 76549867,
+  "storage_human": "77 MB",
+  "context_length": null,
+  "base_model": "PaddlePaddle/PP-OCRv6_medium_rec_safetensors",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

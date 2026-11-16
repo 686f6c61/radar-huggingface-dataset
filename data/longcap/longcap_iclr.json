@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "longcap/LongCap_ICLR",
+  "slug": "longcap-longcap_iclr",
+  "author": "longcap",
+  "url": "https://huggingface.co/longcap/LongCap_ICLR",
+  "created_at": "2026-11-16T16:36:19.000Z",
+  "updated_at": "2026-11-16T17:01:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "audio-captioning",
+    "speaker-diarization",
+    "automatic-speech-recognition",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 76883790903,
+  "storage_human": "76.9 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

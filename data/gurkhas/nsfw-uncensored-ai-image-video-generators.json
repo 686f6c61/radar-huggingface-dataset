@@ -1,0 +1,64 @@
+{
+  "schema": 2,
+  "id": "Gurkhas/nsfw-uncensored-ai-image-video-generators",
+  "slug": "gurkhas-nsfw-uncensored-ai-image-video-generators",
+  "author": "Gurkhas",
+  "url": "https://huggingface.co/Gurkhas/nsfw-uncensored-ai-image-video-generators",
+  "created_at": "2026-11-16T13:59:50.000Z",
+  "updated_at": "2026-11-16T13:59:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gurkhas — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Gurkhas",
+      "snippet": "D'après les lois internationales, les Gurkhas intégrés aujourd'hui dans l' armée britannique ne sont pas considérés comme …"
+    },
+    {
+      "title": "Gurkha - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gurkha",
+      "snippet": "The Gurkhas or Gorkhas (/ ˈɡɜːrkə, ˈɡʊər -/), with the endonym Gorkhali (Nepali: गोर्खाली [ɡoɾkʰaːliː]), are soldiers native to South …"
+    },
+    {
+      "title": "Brigade de Gurkhas — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Brigade_de_Gurkhas",
+      "snippet": "La formation de Gurkhas dure 36 semaines et couvre divers domaines tels que l’éthique de la brigade, la formation linguistique, la …"
+    },
+    {
+      "title": "Les Gurkhas : les soldats les plus terrifiants au monde venus du Népal",
+      "url": "https://www.starsinsider.com/fr/lifestyle/503416/qui-sont-les-gurkhas-les-soldats-les-plus-redoutes-de-la-planete",
+      "snippet": "May 11, 2026 · Les Gurkhas : les soldats les plus terrifiants au monde venus du Népal De nombreuses forces militaires d'élite …"
+    },
+    {
+      "title": "Gurkhas : Pourquoi sont-ils les guerriers les plus redoutables du …",
+      "url": "https://cultura.academy/gurkhas-pourquoi-sont-ils-les-guerriers-les-plus-redoutables-du-monde/",
+      "snippet": "Prêts à plonger dans le monde des Gurkhas, ces guerriers du Népal qui font passer les films d’action pour des comédies …"
+    }
+  ]
+}

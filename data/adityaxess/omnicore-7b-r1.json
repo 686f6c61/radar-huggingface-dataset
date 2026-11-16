@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "adityaxess/OmniCore-7B-R1",
+  "slug": "adityaxess-omnicore-7b-r1",
+  "author": "adityaxess",
+  "url": "https://huggingface.co/adityaxess/OmniCore-7B-R1",
+  "created_at": "2026-11-16T17:19:53.000Z",
+  "updated_at": "2026-11-16T17:24:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:adityaxess/OmniCore-7B-Base",
+    "base_model:finetune:adityaxess/OmniCore-7B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694022,
+  "storage_human": "15.2 GB",
+  "context_length": null,
+  "base_model": "adityaxess/OmniCore-7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

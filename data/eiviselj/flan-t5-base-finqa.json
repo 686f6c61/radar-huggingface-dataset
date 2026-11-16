@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "eiviselj/flan-t5-base-finqa",
+  "slug": "eiviselj-flan-t5-base-finqa",
+  "author": "eiviselj",
+  "url": "https://huggingface.co/eiviselj/flan-t5-base-finqa",
+  "created_at": "2026-11-16T16:50:29.000Z",
+  "updated_at": "2026-11-16T16:50:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "t5",
+    "finqa",
+    "text2text-generation",
+    "en",
+    "base_model:google/flan-t5-base",
+    "base_model:finetune:google/flan-t5-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 247577856,
+  "parameters_human": "247.6M",
+  "storage_bytes": 990350457,
+  "storage_human": "990 MB",
+  "context_length": null,
+  "base_model": "google/flan-t5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

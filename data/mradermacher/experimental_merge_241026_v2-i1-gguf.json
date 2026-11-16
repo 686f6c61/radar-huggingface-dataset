@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "mradermacher/experimental_merge_241026_v2-i1-GGUF",
+  "slug": "mradermacher-experimental_merge_241026_v2-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/experimental_merge_241026_v2-i1-GGUF",
+  "created_at": "2026-11-16T15:54:20.000Z",
+  "updated_at": "2026-11-16T15:54:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24996702,
+  "parameters_human": "25.0M",
+  "storage_bytes": 100231104,
+  "storage_human": "100 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 2,
+  "id": "noracodes/diabai-glucose-forecasting-lstm",
+  "slug": "noracodes-diabai-glucose-forecasting-lstm",
+  "author": "noracodes",
+  "url": "https://huggingface.co/noracodes/diabai-glucose-forecasting-lstm",
+  "created_at": "2026-11-16T14:29:07.000Z",
+  "updated_at": "2026-11-16T14:29:33.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "lstm",
+    "glucose-forecasting",
+    "diabetes",
+    "cgm",
+    "time-series",
+    "time-series-forecasting",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81585,
+  "storage_human": "81585 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Interpretable glucose forecasting for type 2 diabetes across ...",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12819561",
+      "snippet": "GPT-4.1 achieved the best performance at 30 and 60 minutes, while LLaMA-7B excelled at 90 minutes. Among conventional models, LSTM showed the best performance. Beyond forecasting, interpretability was a central focus. We used explainable AI (XAI) techniques to interpret LSTM results, while GPT-4.1 explained its predictions directly using natural language, without additional training."
+    },
+    {
+      "title": "Long-Term Prediction of Blood Glucose Levels in Type 1 Diabetes ...",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10658677/",
+      "snippet": "We boost the chances of obtaining underlying features of the input samples depending on their significance by using two groups of two back-to-back convolutional layers. Extracted features are then flattened into a single long vector and sent to a group of LSTM layers, which can assess and forecast sequences using a recurrent approach due to their short-term memory."
+    }
+  ]
+}

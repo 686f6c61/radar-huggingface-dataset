@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "maxgfr/s2-nano-doom",
+  "slug": "maxgfr-s2-nano-doom",
+  "author": "maxgfr",
+  "url": "https://huggingface.co/maxgfr/s2-nano-doom",
+  "created_at": "2026-10-14T07:15:43.000Z",
+  "updated_at": "2026-11-16T14:33:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "decision-model",
+    "system-one",
+    "ternary",
+    "early-exit",
+    "games",
+    "doom",
+    "rust",
+    "wasm",
+    "skycmd",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 596737,
+  "parameters_human": "596737",
+  "storage_bytes": 701568,
+  "storage_human": "701568 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

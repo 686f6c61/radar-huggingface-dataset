@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "Funmula/0c-sequence-d512",
+  "slug": "funmula-0c-sequence-d512",
+  "author": "Funmula",
+  "url": "https://huggingface.co/Funmula/0c-sequence-d512",
+  "created_at": "2026-10-08T05:33:51.000Z",
+  "updated_at": "2026-11-16T16:09:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "bopomofo",
+    "zhuyin",
+    "input-method",
+    "traditional-chinese",
+    "zh",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 346612536,
+  "storage_human": "347 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

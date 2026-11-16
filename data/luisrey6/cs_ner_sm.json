@@ -1,0 +1,72 @@
+{
+  "schema": 2,
+  "id": "LuisRey6/cs_ner_sm",
+  "slug": "luisrey6-cs_ner_sm",
+  "author": "LuisRey6",
+  "url": "https://huggingface.co/LuisRey6/cs_ner_sm",
+  "created_at": "2026-11-16T13:18:53.000Z",
+  "updated_at": "2026-11-16T13:22:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "spacy",
+  "languages": [
+    "cs"
+  ],
+  "tags": [
+    "spacy",
+    "token-classification",
+    "named-entity-recognition",
+    "czech",
+    "pii",
+    "cs",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 112824679,
+  "storage_human": "113 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Named entity recognition (PER, ORG, LOC)",
+      "dataset": "Czech Named Entity Corpus 2.0 (test, mapped to PER/ORG/LOC)",
+      "metric": "micro F1",
+      "value": 0.61
+    },
+    {
+      "task": "Named entity recognition (PER, ORG, LOC)",
+      "dataset": "Czech Named Entity Corpus 2.0 (test, mapped to PER/ORG/LOC)",
+      "metric": "PER F1",
+      "value": 0.702
+    },
+    {
+      "task": "Named entity recognition (PER, ORG, LOC)",
+      "dataset": "Czech Named Entity Corpus 2.0 (test, mapped to PER/ORG/LOC)",
+      "metric": "ORG F1",
+      "value": 0.436
+    },
+    {
+      "task": "Named entity recognition (PER, ORG, LOC)",
+      "dataset": "Czech Named Entity Corpus 2.0 (test, mapped to PER/ORG/LOC)",
+      "metric": "LOC F1",
+      "value": 0.632
+    }
+  ],
+  "sources": []
+}
