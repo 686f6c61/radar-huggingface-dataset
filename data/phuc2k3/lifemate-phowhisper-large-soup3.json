@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "phuc2k3/lifemate-phowhisper-large-soup3",
+  "slug": "phuc2k3-lifemate-phowhisper-large-soup3",
+  "author": "phuc2k3",
+  "url": "https://huggingface.co/phuc2k3/lifemate-phowhisper-large-soup3",
+  "created_at": "2026-11-16T07:01:11.000Z",
+  "updated_at": "2026-11-16T07:11:06.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "ctranslate2",
+    "zalo-ai-challenge-2026",
+    "vi",
+    "base_model:vinai/PhoWhisper-large",
+    "base_model:finetune:vinai/PhoWhisper-large",
+    "license:bsd-3-clause",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543304960,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6173674069,
+  "storage_human": "6.2 GB",
+  "context_length": null,
+  "base_model": "vinai/PhoWhisper-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

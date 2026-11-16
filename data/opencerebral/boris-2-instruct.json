@@ -5,7 +5,7 @@
   "author": "opencerebral",
   "url": "https://huggingface.co/opencerebral/Boris-2-Instruct",
   "created_at": "2026-11-12T03:35:18.000Z",
-  "updated_at": "2026-11-14T00:23:15.000Z",
+  "updated_at": "2026-11-15T19:58:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,6 +29,7 @@
     "base_model:opencerebral/Boris-2",
     "base_model:finetune:opencerebral/Boris-2",
     "license:apache-2.0",
+    "model-index",
     "region:us"
   ],
   "likes": 4,

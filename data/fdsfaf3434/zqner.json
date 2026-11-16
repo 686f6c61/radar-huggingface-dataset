@@ -5,7 +5,7 @@
   "author": "fdsfaf3434",
   "url": "https://huggingface.co/fdsfaf3434/zqner",
   "created_at": "2026-11-15T18:03:38.000Z",
-  "updated_at": "2026-11-15T18:20:10.000Z",
+  "updated_at": "2026-11-15T18:34:31.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -15,6 +15,9 @@
   ],
   "tags": [
     "transformers",
+    "zqAMP &quot; , &quot;injected&quot; : &quot;V&quot;",
+    "zqAMP2 &#34; zq",
+    "zqAMP3 &amp;quot; zq",
     "text-classification",
     "en",
     "license:mit",

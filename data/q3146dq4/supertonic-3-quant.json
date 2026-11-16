@@ -109,8 +109,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "q3146dq4/supertonic-3-fp16",
+  "renamed_at": "2026-11-16T08:35:29.393Z",
   "benchmarks": [],
   "sources": [
     {

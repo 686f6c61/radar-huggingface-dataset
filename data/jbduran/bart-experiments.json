@@ -4,8 +4,8 @@
   "slug": "jbduran-bart-experiments",
   "author": "jbduran",
   "url": "https://huggingface.co/jbduran/bart-experiments",
-  "created_at": "2026-08-21T17:44:24.000Z",
-  "updated_at": "2026-08-21T22:54:56.000Z",
+  "created_at": "2026-11-11T19:08:36.000Z",
+  "updated_at": "2026-11-11T19:08:37.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -14,15 +14,6 @@
     "en"
   ],
   "tags": [
-    "pytorch",
-    "nanochat",
-    "language-model",
-    "pre-1930",
-    "historical",
-    "vintage",
-    "research",
-    "en",
-    "license:mit",
     "region:us"
   ],
   "likes": 0,

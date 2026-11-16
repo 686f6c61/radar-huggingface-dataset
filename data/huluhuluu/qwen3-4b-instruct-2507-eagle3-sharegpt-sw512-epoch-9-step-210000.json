@@ -48,8 +48,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "huluhuluu/qwen3-4b-instruct-2507-eagle3-sharegpt-sw512-epoch9-step210000",
+  "renamed_at": "2026-11-16T06:36:28.405Z",
   "benchmarks": [],
   "sources": [
     {

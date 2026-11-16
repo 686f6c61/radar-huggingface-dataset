@@ -40,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "feti-ai/fetiai-v1-phiusiil-binclf-gnb-scratch-198p",
+  "renamed_at": "2026-11-16T06:07:36.414Z",
   "benchmarks": [
     {
       "task": "Phishing URL Classification",

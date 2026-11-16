@@ -5,7 +5,7 @@
   "author": "torch-pointcloud",
   "url": "https://huggingface.co/torch-pointcloud/recon.modelnet40.zekun-qi",
   "created_at": "2026-10-30T20:40:28.000Z",
-  "updated_at": "2026-10-30T20:40:33.000Z",
+  "updated_at": "2026-11-15T22:35:21.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,6 +21,8 @@
     "classification",
     "dataset:modelnet40",
     "arxiv:2302.02318",
+    "base_model:torch-pointcloud/recon.pretrain.zekun-qi",
+    "base_model:finetune:torch-pointcloud/recon.pretrain.zekun-qi",
     "license:mit",
     "model-index",
     "region:us"

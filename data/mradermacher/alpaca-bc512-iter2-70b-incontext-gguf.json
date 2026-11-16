@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "mradermacher/alpaca-bc512-iter2-70b-incontext-GGUF",
+  "slug": "mradermacher-alpaca-bc512-iter2-70b-incontext-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/alpaca-bc512-iter2-70b-incontext-GGUF",
+  "created_at": "2025-03-09T00:53:32.000Z",
+  "updated_at": "2026-11-16T07:09:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:jiaxin-wen/alpaca-bc512-iter2-70b-incontext",
+    "base_model:quantized:jiaxin-wen/alpaca-bc512-iter2-70b-incontext",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 481302981312,
+  "storage_human": "481.3 GB",
+  "context_length": 131072,
+  "base_model": "jiaxin-wen/alpaca-bc512-iter2-70b-incontext",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

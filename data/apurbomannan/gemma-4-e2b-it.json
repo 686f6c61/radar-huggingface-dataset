@@ -42,8 +42,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "apurbomannan/Gemma",
+  "renamed_at": "2026-11-16T05:15:27.663Z",
   "benchmarks": [],
   "sources": [
     {

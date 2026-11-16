@@ -5,7 +5,7 @@
   "author": "flaviussteff",
   "url": "https://huggingface.co/flaviussteff/spp-ro-base-rewarm",
   "created_at": "2026-11-15T01:31:44.000Z",
-  "updated_at": "2026-11-15T01:31:56.000Z",
+  "updated_at": "2026-11-15T08:39:08.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 22,
   "trending_score": 0,
   "parameters": 88099584,
   "parameters_human": "88.1M",

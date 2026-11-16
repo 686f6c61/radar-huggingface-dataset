@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "amrsobhy/real-clicks-fake-headlines-click-predictor",
+  "slug": "amrsobhy-real-clicks-fake-headlines-click-predictor",
+  "author": "amrsobhy",
+  "url": "https://huggingface.co/amrsobhy/real-clicks-fake-headlines-click-predictor",
+  "created_at": "2026-11-16T08:52:46.000Z",
+  "updated_at": "2026-11-16T08:55:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "deberta-v2",
+    "reward-model",
+    "bradley-terry",
+    "upworthy",
+    "headlines",
+    "research",
+    "en",
+    "dataset:upworthy-research-archive",
+    "base_model:microsoft/deberta-v3-base",
+    "base_model:finetune:microsoft/deberta-v3-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 184422913,
+  "parameters_human": "184.4M",
+  "storage_bytes": 737716196,
+  "storage_human": "738 MB",
+  "context_length": null,
+  "base_model": "microsoft/deberta-v3-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

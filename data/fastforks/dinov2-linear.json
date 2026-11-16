@@ -5,7 +5,7 @@
   "author": "fastforks",
   "url": "https://huggingface.co/fastforks/dinov2-linear",
   "created_at": "2026-10-29T18:15:08.000Z",
-  "updated_at": "2026-11-06T11:24:03.000Z",
+  "updated_at": "2026-11-15T21:20:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-segmentation",
@@ -17,6 +17,7 @@
     "semantic-segmentation",
     "cuda",
     "pytorch",
+    "fastforks-card",
     "image-segmentation",
     "license:apache-2.0",
     "region:us"

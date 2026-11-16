@@ -5,7 +5,7 @@
   "author": "torch-pointcloud",
   "url": "https://huggingface.co/torch-pointcloud/groupfree3d-l12-o256.scannet.ze-liu",
   "created_at": "2026-10-30T20:51:11.000Z",
-  "updated_at": "2026-10-30T20:51:16.000Z",
+  "updated_at": "2026-11-15T22:34:37.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "object-detection",

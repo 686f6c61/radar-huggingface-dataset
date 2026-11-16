@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "CobuildX-AI/cbx-rag-context-utilization-68M",
+  "slug": "cobuildx-ai-cbx-rag-context-utilization-68m",
+  "author": "CobuildX-AI",
+  "url": "https://huggingface.co/CobuildX-AI/cbx-rag-context-utilization-68M",
+  "created_at": "2026-11-16T08:52:35.000Z",
+  "updated_at": "2026-11-16T09:13:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "rag",
+    "rag-evaluation",
+    "context-utilization",
+    "text-classification",
+    "en",
+    "base_model:jhu-clsp/ettin-encoder-68m",
+    "base_model:finetune:jhu-clsp/ettin-encoder-68m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 68145666,
+  "parameters_human": "68.1M",
+  "storage_bytes": 272595112,
+  "storage_human": "273 MB",
+  "context_length": null,
+  "base_model": "jhu-clsp/ettin-encoder-68m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

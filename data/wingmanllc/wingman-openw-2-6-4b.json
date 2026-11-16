@@ -44,7 +44,7 @@
   "disabled": false,
   "removed": true,
   "removed_at": "2026-11-14T09:13:06.275Z",
-  "removal_pattern": "reupload",
+  "removal_pattern": "short_lived",
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],

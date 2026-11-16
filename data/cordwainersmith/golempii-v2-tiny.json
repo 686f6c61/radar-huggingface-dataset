@@ -1,0 +1,110 @@
+{
+  "schema": 2,
+  "id": "CordwainerSmith/GolemPII-v2-tiny",
+  "slug": "cordwainersmith-golempii-v2-tiny",
+  "author": "CordwainerSmith",
+  "url": "https://huggingface.co/CordwainerSmith/GolemPII-v2-tiny",
+  "created_at": "2026-11-13T11:56:01.000Z",
+  "updated_at": "2026-11-16T09:37:28.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "pii",
+    "privacy",
+    "ner",
+    "hebrew",
+    "he",
+    "base_model:dicta-il/dictabert-tiny",
+    "base_model:finetune:dicta-il/dictabert-tiny",
+    "license:cc-by-4.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 44675431,
+  "parameters_human": "44.7M",
+  "storage_bytes": 178820966,
+  "storage_human": "179 MB",
+  "context_length": null,
+  "base_model": "dicta-il/dictabert-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Token classification",
+      "dataset": "REDACT PII Benchmark (Hebrew, held-out half)",
+      "metric": "Precision (character level)",
+      "value": 0.844
+    },
+    {
+      "task": "Token classification",
+      "dataset": "REDACT PII Benchmark (Hebrew, held-out half)",
+      "metric": "Recall (character level)",
+      "value": 0.927
+    },
+    {
+      "task": "Token classification",
+      "dataset": "REDACT PII Benchmark (Hebrew, held-out half)",
+      "metric": "F1 (character level)",
+      "value": 0.884
+    },
+    {
+      "task": "Token classification",
+      "dataset": "REDACT PII Benchmark (Hebrew, held-out half)",
+      "metric": "Precision (entity level)",
+      "value": 0.797
+    },
+    {
+      "task": "Token classification",
+      "dataset": "REDACT PII Benchmark (Hebrew, held-out half)",
+      "metric": "Recall (entity level)",
+      "value": 0.968
+    },
+    {
+      "task": "Token classification",
+      "dataset": "REDACT PII Benchmark (Hebrew, held-out half)",
+      "metric": "F1 (entity level)",
+      "value": 0.874
+    },
+    {
+      "task": "Token classification",
+      "dataset": "NEMO corpus, person names",
+      "metric": "Precision (person)",
+      "value": 0.856
+    },
+    {
+      "task": "Token classification",
+      "dataset": "NEMO corpus, person names",
+      "metric": "Recall (person)",
+      "value": 0.945
+    },
+    {
+      "task": "Token classification",
+      "dataset": "NEMO corpus, person names",
+      "metric": "F1 (person)",
+      "value": 0.899
+    }
+  ],
+  "sources": []
+}

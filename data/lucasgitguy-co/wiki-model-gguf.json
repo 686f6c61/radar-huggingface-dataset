@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "Lucasgitguy-co/wiki-model-GGUF",
+  "slug": "lucasgitguy-co-wiki-model-gguf",
+  "author": "Lucasgitguy-co",
+  "url": "https://huggingface.co/Lucasgitguy-co/wiki-model-GGUF",
+  "created_at": "2026-11-16T11:18:52.000Z",
+  "updated_at": "2026-11-16T11:21:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "wikipedia",
+    "facts",
+    "text-generation",
+    "en",
+    "base_model:Lucasgitguy-co/wiki-model",
+    "base_model:quantized:Lucasgitguy-co/wiki-model",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 521149440,
+  "storage_human": "521 MB",
+  "context_length": 8192,
+  "base_model": "Lucasgitguy-co/wiki-model",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

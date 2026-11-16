@@ -5,7 +5,7 @@
   "author": "torch-pointcloud",
   "url": "https://huggingface.co/torch-pointcloud/groupfree3d-w2x-l12-o512.scannet.mmdet3d",
   "created_at": "2026-10-30T20:51:40.000Z",
-  "updated_at": "2026-10-30T20:51:45.000Z",
+  "updated_at": "2026-11-15T22:34:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",

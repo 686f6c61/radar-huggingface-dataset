@@ -1,0 +1,96 @@
+{
+  "schema": 2,
+  "id": "bravend/bartpho-syllable-vi-spellcheck",
+  "slug": "bravend-bartpho-syllable-vi-spellcheck",
+  "author": "bravend",
+  "url": "https://huggingface.co/bravend/bartpho-syllable-vi-spellcheck",
+  "created_at": "2026-09-04T04:59:06.000Z",
+  "updated_at": "2026-11-16T09:43:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mbart",
+    "feature-extraction",
+    "vietnamese",
+    "spell-check",
+    "spelling-correction",
+    "grammatical-error-correction",
+    "error-detection",
+    "bartpho",
+    "token-classification",
+    "custom_code",
+    "vi",
+    "dataset:VSEC",
+    "base_model:vinai/bartpho-syllable",
+    "base_model:finetune:vinai/bartpho-syllable",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 49,
+  "trending_score": 0,
+  "parameters": 396906592,
+  "parameters_human": "396.9M",
+  "storage_bytes": 1592756299,
+  "storage_human": "1.6 GB",
+  "context_length": null,
+  "base_model": "vinai/bartpho-syllable",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Vietnamese spelling error detection & correction (VSEC protocol, syllable level)",
+      "dataset": "VSEC (9,341 sentences, 11,202 errors, full set)",
+      "metric": "Detection F1 (beam 4)",
+      "value": 0.91
+    },
+    {
+      "task": "Vietnamese spelling error detection & correction (VSEC protocol, syllable level)",
+      "dataset": "VSEC (9,341 sentences, 11,202 errors, full set)",
+      "metric": "Detection precision (beam 4)",
+      "value": 0.968
+    },
+    {
+      "task": "Vietnamese spelling error detection & correction (VSEC protocol, syllable level)",
+      "dataset": "VSEC (9,341 sentences, 11,202 errors, full set)",
+      "metric": "Detection recall (beam 4)",
+      "value": 0.858
+    },
+    {
+      "task": "Vietnamese spelling error detection & correction (VSEC protocol, syllable level)",
+      "dataset": "VSEC (9,341 sentences, 11,202 errors, full set)",
+      "metric": "Correction F1 (beam 4)",
+      "value": 0.857
+    },
+    {
+      "task": "Vietnamese spelling error detection & correction (VSEC protocol, syllable level)",
+      "dataset": "VSEC (9,341 sentences, 11,202 errors, full set)",
+      "metric": "Correction precision (beam 4)",
+      "value": 0.912
+    },
+    {
+      "task": "Vietnamese spelling error detection & correction (VSEC protocol, syllable level)",
+      "dataset": "VSEC (9,341 sentences, 11,202 errors, full set)",
+      "metric": "Correction recall (beam 4)",
+      "value": 0.809
+    }
+  ],
+  "sources": []
+}

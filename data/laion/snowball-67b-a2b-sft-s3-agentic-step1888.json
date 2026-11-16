@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 27,
+  "downloads_30d": 38,
   "trending_score": 0,
   "parameters": 67078882816,
   "parameters_human": "67.08B",
@@ -44,8 +44,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "laion/snowball-67b-a2b-sft-s3-opencode-step1888",
+  "renamed_at": "2026-11-16T07:06:00.955Z",
   "benchmarks": [],
   "sources": []
 }

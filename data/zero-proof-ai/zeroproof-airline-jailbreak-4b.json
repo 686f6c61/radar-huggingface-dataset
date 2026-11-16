@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 12,
+  "downloads_30d": 13,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -45,8 +45,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "while-ai/airline-jailbreak-4b",
+  "renamed_at": "2026-11-16T09:52:29.319Z",
   "benchmarks": [],
   "sources": [
     {

@@ -5,7 +5,7 @@
   "author": "torch-pointcloud",
   "url": "https://huggingface.co/torch-pointcloud/pcp-mae.modelnet40.xiangdong-zhang",
   "created_at": "2026-10-30T20:42:18.000Z",
-  "updated_at": "2026-10-30T20:42:25.000Z",
+  "updated_at": "2026-11-15T22:35:01.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,6 +21,8 @@
     "classification",
     "dataset:modelnet40",
     "arxiv:2408.08753",
+    "base_model:torch-pointcloud/pcp-mae.pretrain.xiangdong-zhang",
+    "base_model:finetune:torch-pointcloud/pcp-mae.pretrain.xiangdong-zhang",
     "license:mit",
     "model-index",
     "region:us"

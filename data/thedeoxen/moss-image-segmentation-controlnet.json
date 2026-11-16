@@ -5,7 +5,7 @@
   "author": "thedeoxen",
   "url": "https://huggingface.co/thedeoxen/MOSS-Image-segmentation-controlnet",
   "created_at": "2026-11-10T04:10:38.000Z",
-  "updated_at": "2026-11-10T07:04:19.000Z",
+  "updated_at": "2026-11-16T08:26:41.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-image",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 535,
+  "downloads_30d": 613,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -45,8 +45,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "thedeoxen/MOSS-Image-segmentation-control-lora",
+  "renamed_at": "2026-11-16T09:19:34.073Z",
   "benchmarks": [],
   "sources": []
 }

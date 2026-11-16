@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 7,
+  "downloads_30d": 10,
   "trending_score": 0,
   "parameters": 165888,
   "parameters_human": "165888",
@@ -44,8 +44,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "logan7000/llm-math345-ttrl-granite2b-endpoint",
+  "renamed_at": "2026-11-16T08:35:26.130Z",
   "benchmarks": [],
   "sources": [
     {

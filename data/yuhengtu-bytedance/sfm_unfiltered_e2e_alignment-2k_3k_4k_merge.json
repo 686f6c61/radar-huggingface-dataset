@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 26,
+  "downloads_30d": 9,
   "trending_score": 0,
   "parameters": 6856253440,
   "parameters_human": "6.86B",
@@ -42,8 +42,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-2k_3k_4k_simpleavg_merge",
+  "renamed_at": "2026-11-16T09:49:03.420Z",
   "benchmarks": [],
   "sources": [
     {

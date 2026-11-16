@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "Phoonnx/optispeech-en_us-lightspeech_mike-espeak",
+  "slug": "phoonnx-optispeech-en_us-lightspeech_mike-espeak",
+  "author": "Phoonnx",
+  "url": "https://huggingface.co/Phoonnx/optispeech-en_us-lightspeech_mike-espeak",
+  "created_at": "2026-11-14T22:32:20.000Z",
+  "updated_at": "2026-11-16T11:40:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "phoonnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "phoonnx",
+    "onnx",
+    "optispeech",
+    "text-to-speech",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46284508,
+  "storage_human": "46 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

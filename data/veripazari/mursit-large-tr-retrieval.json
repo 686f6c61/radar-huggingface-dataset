@@ -5,7 +5,7 @@
   "author": "veripazari",
   "url": "https://huggingface.co/veripazari/Mursit-Large-TR-Retrieval",
   "created_at": "2026-11-15T03:50:35.000Z",
-  "updated_at": "2026-11-15T03:50:39.000Z",
+  "updated_at": "2026-11-15T16:07:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",

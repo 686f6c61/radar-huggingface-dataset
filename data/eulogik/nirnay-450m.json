@@ -1,0 +1,88 @@
+{
+  "schema": 2,
+  "id": "eulogik/nirnay-450m",
+  "slug": "eulogik-nirnay-450m",
+  "author": "eulogik",
+  "url": "https://huggingface.co/eulogik/nirnay-450m",
+  "created_at": "2026-09-30T07:39:13.000Z",
+  "updated_at": "2026-11-16T09:48:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "laya",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "laya",
+    "onnx",
+    "nirnay",
+    "banking77",
+    "intent-classification",
+    "intent-detection",
+    "calibrated-decisions",
+    "calibration",
+    "decision-model",
+    "system-one",
+    "small-language-model",
+    "edge-ai",
+    "on-device",
+    "guardrails",
+    "triage",
+    "lora",
+    "rlcd",
+    "transformers",
+    "safetensors",
+    "pytorch",
+    "text-classification",
+    "en",
+    "dataset:polyai/banking77",
+    "base_model:convaiinnovations/laya",
+    "base_model:adapter:convaiinnovations/laya",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3772544696,
+  "storage_human": "3.8 GB",
+  "context_length": null,
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Banking77 Intent Classification",
+      "dataset": "Banking77 test split",
+      "metric": null,
+      "value": 0.8792
+    },
+    {
+      "task": "Banking77 Intent Classification",
+      "dataset": "Banking77 test split",
+      "metric": null,
+      "value": 0.2083
+    },
+    {
+      "task": "Banking77 Intent Classification",
+      "dataset": "Banking77 test split",
+      "metric": "ECE (fitted)",
+      "value": 0.0454
+    }
+  ],
+  "sources": []
+}

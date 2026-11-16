@@ -22,7 +22,7 @@
     "region:us",
     "conversational"
   ],
-  "likes": 0,
+  "likes": 2,
   "downloads_30d": 42,
   "trending_score": 0,
   "parameters": 8791592960,
@@ -40,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "nulliaukamk/Nullabby1.1-small",
+  "renamed_at": "2026-11-16T08:16:21.804Z",
   "benchmarks": [],
   "sources": []
 }

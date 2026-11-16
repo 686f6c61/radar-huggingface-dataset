@@ -40,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "agiws/Qwen3.8-27B-NQ-UD-IQ2-M",
+  "renamed_at": "2026-11-16T05:01:42.894Z",
   "benchmarks": [],
   "sources": [
     {

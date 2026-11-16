@@ -39,8 +39,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "austinpatel/bp_pi05_libero_gen_spatial_combination_lora",
+  "renamed_at": "2026-11-16T05:21:30.053Z",
   "benchmarks": [],
   "sources": [
     {

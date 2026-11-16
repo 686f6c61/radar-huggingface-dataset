@@ -5,10 +5,10 @@
   "author": "jiaweichen-pjlab",
   "url": "https://huggingface.co/jiaweichen-pjlab/VLM3D2025-Task1-ReportGeneration",
   "created_at": "2026-11-14T10:32:25.000Z",
-  "updated_at": "2026-11-14T12:03:44.000Z",
+  "updated_at": "2026-11-16T03:49:19.000Z",
   "license": "cc-by-nc-4.0",
   "license_family": "non-commercial",
-  "pipeline_tag": null,
+  "pipeline_tag": "image-to-text",
   "library": null,
   "languages": [],
   "tags": [
@@ -18,10 +18,12 @@
     "ct-rate",
     "report-generation",
     "medical-imaging",
+    "image-to-text",
+    "dataset:ibrahimhamamci/CT-RATE",
     "license:cc-by-nc-4.0",
     "region:us"
   ],
-  "likes": 1,
+  "likes": 2,
   "downloads_30d": 95,
   "trending_score": 0,
   "parameters": 734144,
@@ -39,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "yinghemedical/VLM3D2025-Task1-ReportGeneration",
+  "renamed_at": "2026-11-16T06:50:10.758Z",
   "benchmarks": [],
   "sources": []
 }

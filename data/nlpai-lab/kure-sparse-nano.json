@@ -5,7 +5,7 @@
   "author": "nlpai-lab",
   "url": "https://huggingface.co/nlpai-lab/KURE-Sparse-nano",
   "created_at": "2026-10-08T06:59:42.000Z",
-  "updated_at": "2026-11-01T10:47:00.000Z",
+  "updated_at": "2026-11-16T04:53:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 19,
-  "downloads_30d": 1023,
+  "downloads_30d": 1067,
   "trending_score": 11,
   "parameters": 149373778,
   "parameters_human": "149.4M",

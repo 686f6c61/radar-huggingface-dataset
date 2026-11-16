@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "ZAIC26/Zipformer-65M-vi-en-ASR-v69",
+  "slug": "zaic26-zipformer-65m-vi-en-asr-v69",
+  "author": "ZAIC26",
+  "url": "https://huggingface.co/ZAIC26/Zipformer-65M-vi-en-ASR-v69",
+  "created_at": "2026-11-16T07:16:43.000Z",
+  "updated_at": "2026-11-16T08:57:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "zipformer",
+    "transducer",
+    "automatic-speech-recognition",
+    "vi",
+    "en",
+    "base_model:ZAIC26/Zipformer-65M-vi-en",
+    "base_model:quantized:ZAIC26/Zipformer-65M-vi-en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 294989358,
+  "storage_human": "295 MB",
+  "context_length": null,
+  "base_model": "ZAIC26/Zipformer-65M-vi-en",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "maxgfr",
   "url": "https://huggingface.co/maxgfr/s6-ear-nano",
   "created_at": "2026-11-15T07:56:04.000Z",
-  "updated_at": "2026-11-15T07:56:08.000Z",
+  "updated_at": "2026-11-16T05:20:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "audio-classification",

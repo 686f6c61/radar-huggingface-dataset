@@ -5,7 +5,7 @@
   "author": "scalar-ai",
   "url": "https://huggingface.co/scalar-ai/scalar-phos-pro",
   "created_at": "2026-10-10T17:04:51.000Z",
-  "updated_at": "2026-11-15T08:32:22.000Z",
+  "updated_at": "2026-11-15T16:32:42.000Z",
   "license": "llama3.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

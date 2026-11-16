@@ -5,7 +5,7 @@
   "author": "jackf857",
   "url": "https://huggingface.co/jackf857/neu-q3-ultra-nbl-gdpo-r0p15-s42-20261115-a2",
   "created_at": "2026-11-15T19:28:40.000Z",
-  "updated_at": "2026-11-15T20:05:07.000Z",
+  "updated_at": "2026-11-15T22:03:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -5,7 +5,7 @@
   "author": "balllvin",
   "url": "https://huggingface.co/balllvin/LFM3-1.7B-Abliterated-ONNX-WebGPU",
   "created_at": "2026-11-15T23:27:19.000Z",
-  "updated_at": "2026-11-15T23:28:15.000Z",
+  "updated_at": "2026-11-16T00:01:48.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

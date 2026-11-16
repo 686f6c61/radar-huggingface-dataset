@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 9,
+  "downloads_30d": 12,
   "trending_score": 0,
   "parameters": 3836021760,
   "parameters_human": "3.84B",
@@ -48,8 +48,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "juwon1105/RLCC-ascending-phi4mini-bigmathdigits5000",
+  "renamed_at": "2026-11-16T06:56:22.139Z",
   "benchmarks": [],
   "sources": []
 }

@@ -5,7 +5,7 @@
   "author": "iapp",
   "url": "https://huggingface.co/iapp/openthai2.0-qwen3.8-27b-NVFP4",
   "created_at": "2026-08-26T01:57:39.000Z",
-  "updated_at": "2026-09-01T12:10:10.000Z",
+  "updated_at": "2026-11-15T08:41:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 379,
+  "downloads_30d": 359,
   "trending_score": 0,
   "parameters": 27356728560,
   "parameters_human": "27.36B",

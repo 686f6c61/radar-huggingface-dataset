@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 19,
+  "downloads_30d": 15,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -47,8 +47,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "brandonjuarez23/Amphora-1.5B-Decision",
+  "renamed_at": "2026-11-16T05:33:10.074Z",
   "benchmarks": [],
   "sources": [
     {

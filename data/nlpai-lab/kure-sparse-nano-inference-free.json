@@ -5,7 +5,7 @@
   "author": "nlpai-lab",
   "url": "https://huggingface.co/nlpai-lab/KURE-Sparse-nano-inference-free",
   "created_at": "2026-11-09T05:46:16.000Z",
-  "updated_at": "2026-11-11T07:34:31.000Z",
+  "updated_at": "2026-11-16T04:56:13.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",

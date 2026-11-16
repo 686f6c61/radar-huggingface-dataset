@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "obann001/flux_lora_file_fowx_network128_rank32_bf16-step00344",
+  "slug": "obann001-flux_lora_file_fowx_network128_rank32_bf16-step00344",
+  "author": "obann001",
+  "url": "https://huggingface.co/obann001/flux_lora_file_fowx_network128_rank32_bf16-step00344",
+  "created_at": "2026-10-09T15:19:19.000Z",
+  "updated_at": "2026-11-16T10:25:41.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "flux",
+    "lora",
+    "safetensors",
+    "fowx",
+    "fr",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:adapter:black-forest-labs/FLUX.1-dev",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 320,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1870637793,
+  "storage_human": "1.9 GB",
+  "context_length": null,
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

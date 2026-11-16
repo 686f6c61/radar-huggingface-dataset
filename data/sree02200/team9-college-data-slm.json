@@ -1,0 +1,62 @@
+{
+  "schema": 2,
+  "id": "sree02200/team9-college-data-slm",
+  "slug": "sree02200-team9-college-data-slm",
+  "author": "sree02200",
+  "url": "https://huggingface.co/sree02200/team9-college-data-slm",
+  "created_at": "2026-11-16T06:13:59.000Z",
+  "updated_at": "2026-11-16T06:14:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "small-language-model",
+    "from-scratch",
+    "qwen3-architecture",
+    "education",
+    "college-data",
+    "question-answering",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6276736,
+  "parameters_human": "6.3M",
+  "storage_bytes": 25113864,
+  "storage_human": "25 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Belfast Metropolitan College - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Belfast_Metropolitan_College",
+      "snippet": "Belfast Metropolitan College, also known as Belfast Met, is a further and higher education institution in Belfast, Northern Ireland. The …"
+    },
+    {
+      "title": "Full-time - Belfast Met",
+      "url": "https://www.belfastmet.ac.uk/full-time",
+      "snippet": "Belfast Met offers a wide-ranging selection of full-time further and higher education courses offered across the College, designed to …"
+    }
+  ]
+}

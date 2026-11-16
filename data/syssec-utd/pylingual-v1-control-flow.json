@@ -1,0 +1,57 @@
+{
+  "schema": 2,
+  "id": "syssec-utd/pylingual-v1-control-flow",
+  "slug": "syssec-utd-pylingual-v1-control-flow",
+  "author": "syssec-utd",
+  "url": "https://huggingface.co/syssec-utd/pylingual-v1-control-flow",
+  "created_at": "2026-11-16T08:13:31.000Z",
+  "updated_at": "2026-11-16T08:13:34.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "cflow_transition",
+    "pylingual",
+    "decompilation",
+    "license:gpl-3.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5118492,
+  "parameters_human": "5.1M",
+  "storage_bytes": 20481968,
+  "storage_human": "20 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "syssec-utd/pylingual: Python decompiler for modern Python versions.",
+      "url": "https://github.com/syssec-utd/pylingual",
+      "snippet": "This codebase is optimized for readability and future extension, so there may initially be some control flow accuracy regression compared to the version hosted ..."
+    },
+    {
+      "title": "Walking The Last Mile: Studying Decompiler Output Correction in ...",
+      "url": "https://softsec.kaist.ac.kr/~sangkilc/papers/wiedemeier-ccs25.pdf",
+      "snippet": "Control flow reconstruction. After translating the individual ... [19] syssec-utd/pylingual: Python decompiler for modern Python versions. url ..."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "forkger",
   "url": "https://huggingface.co/forkger/manga-panel-rfdetr",
   "created_at": "2026-11-01T11:59:10.000Z",
-  "updated_at": "2026-11-09T04:13:19.000Z",
+  "updated_at": "2026-11-15T06:55:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 28,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

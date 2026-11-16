@@ -48,8 +48,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "zeromodels/qwen2-vl-7b-instruct",
+  "renamed_at": "2026-11-16T07:00:05.194Z",
   "benchmarks": [],
   "sources": []
 }

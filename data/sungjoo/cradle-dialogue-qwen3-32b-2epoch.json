@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "SungJoo/cradle-dialogue-qwen3-32b-2epoch",
+  "slug": "sungjoo-cradle-dialogue-qwen3-32b-2epoch",
+  "author": "SungJoo",
+  "url": "https://huggingface.co/SungJoo/cradle-dialogue-qwen3-32b-2epoch",
+  "created_at": "2026-04-21T06:58:01.000Z",
+  "updated_at": "2026-11-16T09:40:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "mental-health",
+    "crisis-detection",
+    "dialogue",
+    "clinical-nlp",
+    "fine-tuned",
+    "en",
+    "dataset:SungJoo/Cradle-Dialogue",
+    "base_model:Qwen/Qwen3-32B",
+    "base_model:finetune:Qwen/Qwen3-32B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 32762123264,
+  "parameters_human": "32.76B",
+  "storage_bytes": 65535753499,
+  "storage_human": "65.5 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

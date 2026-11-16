@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "autotrust/TTS-V4",
+  "slug": "autotrust-tts-v4",
+  "author": "autotrust",
+  "url": "https://huggingface.co/autotrust/TTS-V4",
+  "created_at": "2026-11-16T11:29:41.000Z",
+  "updated_at": "2026-11-16T11:57:13.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_tts",
+    "text-to-speech",
+    "streaming",
+    "voice-cloning",
+    "call-center",
+    "zh",
+    "base_model:Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+    "base_model:finetune:Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1928677440,
+  "parameters_human": "1.93B",
+  "storage_bytes": 4625702394,
+  "storage_human": "4.6 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

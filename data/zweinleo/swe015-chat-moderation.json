@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "zweinleo/swe015-chat-moderation",
+  "slug": "zweinleo-swe015-chat-moderation",
+  "author": "zweinleo",
+  "url": "https://huggingface.co/zweinleo/swe015-chat-moderation",
+  "created_at": "2026-11-16T11:05:56.000Z",
+  "updated_at": "2026-11-16T11:07:19.000Z",
+  "license": "cc-by-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "joblib",
+    "onnx",
+    "safetensors",
+    "text-classification",
+    "offensive-language",
+    "int8",
+    "tr",
+    "dataset:offenseval-tr-2020",
+    "base_model:dbmdz/bert-base-turkish-cased",
+    "base_model:quantized:dbmdz/bert-base-turkish-cased",
+    "license:cc-by-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1022766228,
+  "storage_human": "1.0 GB",
+  "context_length": null,
+  "base_model": "dbmdz/bert-base-turkish-cased",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

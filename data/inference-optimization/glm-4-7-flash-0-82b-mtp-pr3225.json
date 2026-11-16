@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 27,
+  "downloads_30d": 28,
   "trending_score": 0,
   "parameters": 821339512,
   "parameters_human": "821.3M",
@@ -44,8 +44,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "inference-optimization/GLM-4.7-Flash-0.82B-MTP",
+  "renamed_at": "2026-11-16T06:41:31.688Z",
   "benchmarks": [],
   "sources": [
     {

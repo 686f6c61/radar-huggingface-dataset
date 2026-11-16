@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Tulu3-RAG-GGUF",
+  "slug": "mradermacher-tulu3-rag-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Tulu3-RAG-GGUF",
+  "created_at": "2025-03-02T19:58:18.000Z",
+  "updated_at": "2026-11-16T07:09:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:ldsjmdy/Tulu3-Block-FT-RAG",
+    "base_model:ldsjmdy/Tulu3-RAG",
+    "base_model:quantized:ldsjmdy/Tulu3-RAG",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 201,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820235392,
+  "storage_human": "71.8 GB",
+  "context_length": 131072,
+  "base_model": "ldsjmdy/Tulu3-RAG",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

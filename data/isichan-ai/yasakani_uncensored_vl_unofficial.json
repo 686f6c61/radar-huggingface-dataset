@@ -5,7 +5,7 @@
   "author": "isichan-ai",
   "url": "https://huggingface.co/isichan-ai/YASAKANI_Uncensored_VL_Unofficial",
   "created_at": "2026-11-14T05:55:32.000Z",
-  "updated_at": "2026-11-15T05:42:15.000Z",
+  "updated_at": "2026-11-15T07:16:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,7 +13,6 @@
   "languages": [],
   "tags": [
     "gguf",
-    "qwen3_5",
     "yasakani",
     "uncensored",
     "vision",
@@ -22,8 +21,8 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 5,
-  "downloads_30d": 0,
+  "likes": 7,
+  "downloads_30d": 36,
   "trending_score": 0,
   "parameters": 460730096,
   "parameters_human": "460.7M",

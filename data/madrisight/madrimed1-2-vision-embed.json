@@ -5,7 +5,7 @@
   "author": "madrisight",
   "url": "https://huggingface.co/madrisight/madrimed1.2-vision-embed",
   "created_at": "2026-10-19T19:12:26.000Z",
-  "updated_at": "2026-11-06T18:45:38.000Z",
+  "updated_at": "2026-11-15T18:18:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-feature-extraction",

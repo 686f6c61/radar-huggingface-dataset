@@ -5,7 +5,7 @@
   "author": "anjanid",
   "url": "https://huggingface.co/anjanid/land-cover-ca",
   "created_at": "2026-11-15T02:09:35.000Z",
-  "updated_at": "2026-11-15T02:35:09.000Z",
+  "updated_at": "2026-11-15T04:07:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-segmentation",

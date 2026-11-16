@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "Phoonnx/styletts2-ca-bsc_lt-espeak",
+  "slug": "phoonnx-styletts2-ca-bsc_lt-espeak",
+  "author": "Phoonnx",
+  "url": "https://huggingface.co/Phoonnx/styletts2-ca-bsc_lt-espeak",
+  "created_at": "2026-11-14T22:40:38.000Z",
+  "updated_at": "2026-11-16T11:41:04.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "phoonnx",
+  "languages": [
+    "ca"
+  ],
+  "tags": [
+    "phoonnx",
+    "onnx",
+    "styletts2",
+    "text-to-speech",
+    "ca",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 810064379,
+  "storage_human": "810 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "musetric",
   "url": "https://huggingface.co/musetric/aname-mel-band-roformer-duality-onnx",
   "created_at": "2026-09-25T20:24:02.000Z",
-  "updated_at": "2026-10-04T04:24:06.000Z",
+  "updated_at": "2026-11-01T11:45:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "audio-to-audio",

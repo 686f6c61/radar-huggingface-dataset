@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "tanp21/zac2026-lifemate-models",
+  "slug": "tanp21-zac2026-lifemate-models",
+  "author": "tanp21",
+  "url": "https://huggingface.co/tanp21/zac2026-lifemate-models",
+  "created_at": "2026-11-16T05:46:48.000Z",
+  "updated_at": "2026-11-16T10:01:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "zalo-ai-challenge-2026",
+    "lora",
+    "tool-calling",
+    "asr",
+    "vi",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1498861666,
+  "storage_human": "1.5 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-4B, vinai/PhoWhisper-large, g-group-ai-lab/gipformer1.5-68M-rnnt",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

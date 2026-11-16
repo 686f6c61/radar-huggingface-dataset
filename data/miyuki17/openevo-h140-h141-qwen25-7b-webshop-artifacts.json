@@ -46,8 +46,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "openevo-recovery/openevo-h140-h141-qwen25-7b-webshop-artifacts",
+  "renamed_at": "2026-11-16T07:30:04.588Z",
   "benchmarks": [],
   "sources": [
     {

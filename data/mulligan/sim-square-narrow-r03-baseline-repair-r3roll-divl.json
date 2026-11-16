@@ -42,8 +42,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "mulligan/sim-square-narrow-r03-baseline-with-c03-rollouts-divl",
+  "renamed_at": "2026-11-16T08:05:10.399Z",
   "benchmarks": [],
   "sources": [
     {

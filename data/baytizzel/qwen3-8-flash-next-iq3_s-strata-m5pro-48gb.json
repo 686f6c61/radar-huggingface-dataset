@@ -5,7 +5,7 @@
   "author": "baytizzel",
   "url": "https://huggingface.co/baytizzel/Qwen3.8-Flash-Next-IQ3_S-Strata-M5Pro-48gb",
   "created_at": "2026-11-14T06:02:25.000Z",
-  "updated_at": "2026-11-14T06:05:53.000Z",
+  "updated_at": "2026-11-15T05:56:58.000Z",
   "license": "qwen-community-license-1.0",
   "license_family": "non-commercial",
   "pipeline_tag": "image-text-to-text",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2,
+  "downloads_30d": 16,
   "trending_score": 0,
   "parameters": 2607150848,
   "parameters_human": "2.61B",

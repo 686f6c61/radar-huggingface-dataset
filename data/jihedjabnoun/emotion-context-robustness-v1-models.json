@@ -5,10 +5,10 @@
   "author": "jihedjabnoun",
   "url": "https://huggingface.co/jihedjabnoun/emotion-context-robustness-v1-models",
   "created_at": "2026-11-13T15:42:05.000Z",
-  "updated_at": "2026-11-15T07:44:00.000Z",
+  "updated_at": "2026-11-15T13:15:01.000Z",
   "license": "other",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "text-classification",
   "library": null,
   "languages": [
     "en"
@@ -17,8 +17,8 @@
     "safetensors",
     "emotion-recognition",
     "research",
+    "text-classification",
     "en",
-    "license:other",
     "region:us"
   ],
   "likes": 0,

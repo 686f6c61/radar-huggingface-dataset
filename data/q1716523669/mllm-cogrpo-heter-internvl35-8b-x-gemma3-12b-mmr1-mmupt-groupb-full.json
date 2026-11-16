@@ -40,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "logan7000/mllm-cogrpo-heter-internvl35-8b-x-gemma3-12b-mmr1-mmupt-groupB-full",
+  "renamed_at": "2026-11-16T08:35:26.903Z",
   "benchmarks": [],
   "sources": []
 }

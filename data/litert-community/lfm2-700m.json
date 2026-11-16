@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/LFM2-700M",
   "created_at": "2026-10-13T01:45:48.000Z",
-  "updated_at": "2026-11-14T07:15:46.000Z",
+  "updated_at": "2026-11-15T15:59:48.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 712,
+  "downloads_30d": 786,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -41,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "placeholderlabs/qwen3.5-4b-slides-grpo",
+  "renamed_at": "2026-11-16T08:30:30.899Z",
   "benchmarks": [],
   "sources": []
 }

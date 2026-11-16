@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 37,
+  "downloads_30d": 32,
   "trending_score": 0,
   "parameters": 4418829824,
   "parameters_human": "4.42B",
@@ -47,8 +47,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "marcuscedricridia/Fleet-Semantic-4B-v0.10",
+  "renamed_at": "2026-11-16T08:15:43.733Z",
   "benchmarks": [],
   "sources": []
 }

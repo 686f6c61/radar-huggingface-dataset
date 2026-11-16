@@ -1,0 +1,73 @@
+{
+  "schema": 2,
+  "id": "Phoonnx/styletts2-pt_pt_x_lisbon-tuga_kokoro-tugaphone",
+  "slug": "phoonnx-styletts2-pt_pt_x_lisbon-tuga_kokoro-tugaphone",
+  "author": "Phoonnx",
+  "url": "https://huggingface.co/Phoonnx/styletts2-pt_pt_x_lisbon-tuga_kokoro-tugaphone",
+  "created_at": "2026-11-14T22:47:14.000Z",
+  "updated_at": "2026-11-16T11:41:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "phoonnx",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "phoonnx",
+    "onnx",
+    "styletts2",
+    "text-to-speech",
+    "pt",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 326254225,
+  "storage_human": "326 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "StyleTTS2 - a Phoonnx Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Phoonnx/styletts2",
+      "snippet": "StyleTTS2 models in ONNX for phoonnx, Kitten TTS included."
+    },
+    {
+      "title": "tuga_kokoro.pth · logus2k/kokoro_tts_eu_pt at main",
+      "url": "https://huggingface.co/logus2k/kokoro_tts_eu_pt/blob/main/tuga_kokoro.pth",
+      "snippet": "kokoro_tts_eu_pt Like 5 Text-to-Speech Portuguese tts_eu_pt tts portuguese european-portuguese pt-pt kokoro speech-synthesis …"
+    },
+    {
+      "title": "GitHub - yl4579/StyleTTS2: StyleTTS 2: Towards Human-Level Text …",
+      "url": "https://github.com/yl4579/StyleTTS2",
+      "snippet": ""
+    },
+    {
+      "title": "GitHub - TigreGotico/phoonnx: A Python library for multilingual ...",
+      "url": "https://github.com/TigreGotico/phoonnx",
+      "snippet": "Multilingual phonemization and Text-to-Speech using ONNX models. phoonnx loads and runs TTS voices from several ecosystems …"
+    },
+    {
+      "title": "StyleTTS2 Models (Kokoro and KittenTTS) | Blaizzy/mlx-audio-swift ...",
+      "url": "https://deepwiki.com/Blaizzy/mlx-audio-swift/4.3.7-styletts2-models-(kokoro-and-kittentts)",
+      "snippet": "May 26, 2026 · The StyleTTS2-based models in `MLXAudioTTS` provide high-quality, non-autoregressive speech synthesis. This …"
+    }
+  ]
+}

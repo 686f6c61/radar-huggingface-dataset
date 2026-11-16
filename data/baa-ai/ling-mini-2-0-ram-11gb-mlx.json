@@ -5,7 +5,7 @@
   "author": "baa-ai",
   "url": "https://huggingface.co/baa-ai/Ling-mini-2.0-RAM-11GB-MLX",
   "created_at": "2026-11-02T18:51:46.000Z",
-  "updated_at": "2026-11-02T18:52:34.000Z",
+  "updated_at": "2026-11-15T09:23:13.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

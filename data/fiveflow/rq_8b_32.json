@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 8,
+  "downloads_30d": 5,
   "trending_score": 0,
   "parameters": 8190735360,
   "parameters_human": "8.19B",
@@ -40,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "fiveflow/8b_32",
+  "renamed_at": "2026-11-16T06:12:16.566Z",
   "benchmarks": [],
   "sources": [
     {

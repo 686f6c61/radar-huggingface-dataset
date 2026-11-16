@@ -42,8 +42,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "jsbeaudry/Fatiman-TTS-v1-onnx",
+  "renamed_at": "2026-11-16T06:54:49.130Z",
   "benchmarks": [],
   "sources": [
     {

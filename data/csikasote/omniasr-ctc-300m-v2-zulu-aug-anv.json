@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 12,
+  "downloads_30d": 11,
   "trending_score": 0,
   "parameters": 325983920,
   "parameters_human": "326.0M",
@@ -45,8 +45,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "uctnlp/omniASR-CTC-300M-v2-Zulu-AUG-ANV",
+  "renamed_at": "2026-11-16T05:44:08.139Z",
   "benchmarks": [],
   "sources": [
     {

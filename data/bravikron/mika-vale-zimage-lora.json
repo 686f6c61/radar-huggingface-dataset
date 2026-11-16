@@ -1,0 +1,75 @@
+{
+  "schema": 2,
+  "id": "bravikron/mika-vale-zimage-lora",
+  "slug": "bravikron-mika-vale-zimage-lora",
+  "author": "bravikron",
+  "url": "https://huggingface.co/bravikron/mika-vale-zimage-lora",
+  "created_at": "2026-11-16T11:02:20.000Z",
+  "updated_at": "2026-11-16T11:02:27.000Z",
+  "license": "bravikron-free-lora-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "text-to-image",
+    "z-image",
+    "character",
+    "photorealistic",
+    "cyberpunk",
+    "tattoo",
+    "original character",
+    "woman",
+    "base_model:Tongyi-MAI/Z-Image",
+    "base_model:adapter:Tongyi-MAI/Z-Image",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 171159905,
+  "storage_human": "171 MB",
+  "context_length": null,
+  "base_model": "Tongyi-MAI/Z-Image",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mika Vale (Z-Image) v1.0 - LORA for Krea 2 | CivArchive",
+      "url": "https://civarchive.com/models/3045287?modelVersionId=3461917",
+      "snippet": "Meet Mika Vale: a cute cyberpunk girl with a violet bob with bangs and a robotic-flower tattoo on her right shoulder and upper arm. …"
+    },
+    {
+      "title": "Mia Vale V1 - LORA for Flux.1 D | CivArchive",
+      "url": "https://civarchive.com/models/2737768?modelVersionId=3078592",
+      "snippet": "Mia Vale is a photorealistic FLUX character LoRA trained to generate a consistent female influencer across fitness, fashion, lifestyle, …"
+    },
+    {
+      "title": "Z-Image Face Model - v1.0 | ZImage LoRA | Civitai",
+      "url": "https://civitai.com/models/2214239/z-image-face-model",
+      "snippet": "Dec 11, 2025 · Z-Image Face Model is a ZImage LoRA by SoShowMiao. 1.2k downloads, 55 likes."
+    },
+    {
+      "title": "Mika_ZIT_v2 - V1 | ZImage LoRA | Civitai",
+      "url": "https://civitai.red/models/2530421/mikazitv2",
+      "snippet": "Apr 9, 2026 · LoRA Stats 870 1 2 3 4 5 6 7 8 90 1 2 3 4 5 6 7 8 9 500 1 2 3 4 5 6 7 8 90 1 2 3 4 5 6 7 8 9 1200 1 2 3 4 5 6 7 8 90 1 2 3 …"
+    },
+    {
+      "title": "Mika ZIT - Mika v3 | ZImage LoRA | Civitai",
+      "url": "https://civitai.red/models/2530201?modelVersionId=2843647",
+      "snippet": "Apr 9, 2026 · Discussion There are no comments for this model yet. Be the first to let the people know about this model by leaving …"
+    }
+  ]
+}

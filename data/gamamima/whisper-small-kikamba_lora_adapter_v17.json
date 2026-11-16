@@ -5,7 +5,7 @@
   "author": "gamamima",
   "url": "https://huggingface.co/gamamima/whisper-small-kikamba_lora_adapter_v17",
   "created_at": "2026-11-14T16:25:58.000Z",
-  "updated_at": "2026-11-15T01:25:45.000Z",
+  "updated_at": "2026-11-15T13:44:11.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -16,7 +16,8 @@
     "tensorboard",
     "safetensors",
     "lora",
-    "arxiv:1910.09700",
+    "peft",
+    "dataset:Digital-Divide-Data/Kamba-ASR-Data-Subset-484H",
     "license:mit",
     "endpoints_compatible",
     "region:us"
@@ -39,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "gamamima/whisper-small-kikamba_lora_adapter",
+  "renamed_at": "2026-11-16T06:20:29.107Z",
   "benchmarks": [],
   "sources": []
 }

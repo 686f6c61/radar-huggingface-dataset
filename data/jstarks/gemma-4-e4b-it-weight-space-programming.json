@@ -5,7 +5,7 @@
   "author": "jstarks",
   "url": "https://huggingface.co/jstarks/gemma-4-E4B-it-weight-space-programming",
   "created_at": "2026-11-06T03:01:53.000Z",
-  "updated_at": "2026-11-06T04:11:21.000Z",
+  "updated_at": "2026-11-16T03:26:54.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 5,
-  "downloads_30d": 163,
+  "downloads_30d": 175,
   "trending_score": 0,
   "parameters": 7996156490,
   "parameters_human": "8.00B",

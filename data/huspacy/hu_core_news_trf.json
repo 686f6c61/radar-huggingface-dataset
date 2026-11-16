@@ -1,0 +1,111 @@
+{
+  "schema": 2,
+  "id": "huspacy/hu_core_news_trf",
+  "slug": "huspacy-hu_core_news_trf",
+  "author": "huspacy",
+  "url": "https://huggingface.co/huspacy/hu_core_news_trf",
+  "created_at": "2022-04-01T12:20:59.000Z",
+  "updated_at": "2026-11-16T09:45:37.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "spacy",
+  "languages": [
+    "hu"
+  ],
+  "tags": [
+    "spacy",
+    "token-classification",
+    "hu",
+    "license:cc-by-sa-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 61,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51990584433,
+  "storage_human": "52.0 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "NER",
+      "dataset": null,
+      "metric": "NER Precision",
+      "value": 0.9119332986
+    },
+    {
+      "task": "NER",
+      "dataset": null,
+      "metric": "NER Recall",
+      "value": 0.9229957806
+    },
+    {
+      "task": "NER",
+      "dataset": null,
+      "metric": "NER F Score",
+      "value": 0.9174311927
+    },
+    {
+      "task": "TAG",
+      "dataset": null,
+      "metric": "TAG (XPOS) Accuracy",
+      "value": 0.9823906594
+    },
+    {
+      "task": "POS",
+      "dataset": null,
+      "metric": "POS (UPOS) Accuracy",
+      "value": 0.9820078476
+    },
+    {
+      "task": "MORPH",
+      "dataset": null,
+      "metric": "Morph (UFeats) Accuracy",
+      "value": 0.9658340511
+    },
+    {
+      "task": "LEMMA",
+      "dataset": null,
+      "metric": "Lemma Accuracy",
+      "value": 0.9861257296
+    },
+    {
+      "task": "UNLABELED_DEPENDENCIES",
+      "dataset": null,
+      "metric": "Unlabeled Attachment Score (UAS)",
+      "value": 0.9000861326
+    },
+    {
+      "task": "LABELED_DEPENDENCIES",
+      "dataset": null,
+      "metric": "Labeled Attachment Score (LAS)",
+      "value": 0.8568421053
+    },
+    {
+      "task": "SENTS",
+      "dataset": null,
+      "metric": "Sentences F-Score",
+      "value": 0.9899888765
+    }
+  ],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Encore plus » Account Options. Connexion; Paramètres de recherche"
+    }
+  ]
+}

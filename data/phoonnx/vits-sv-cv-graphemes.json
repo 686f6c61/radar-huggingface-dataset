@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "Phoonnx/vits-sv-cv-graphemes",
+  "slug": "phoonnx-vits-sv-cv-graphemes",
+  "author": "Phoonnx",
+  "url": "https://huggingface.co/Phoonnx/vits-sv-cv-graphemes",
+  "created_at": "2026-11-14T22:40:47.000Z",
+  "updated_at": "2026-11-16T11:41:02.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "phoonnx",
+  "languages": [
+    "sv"
+  ],
+  "tags": [
+    "phoonnx",
+    "onnx",
+    "coqui-vits",
+    "text-to-speech",
+    "sv",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 64214167,
+  "storage_human": "64 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

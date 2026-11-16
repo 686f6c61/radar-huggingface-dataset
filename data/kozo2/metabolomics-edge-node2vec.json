@@ -39,8 +39,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "integMET/metabolomics-edge-node2vec",
+  "renamed_at": "2026-11-16T07:03:56.336Z",
   "benchmarks": [],
   "sources": [
     {

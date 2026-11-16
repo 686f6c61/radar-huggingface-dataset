@@ -5,7 +5,7 @@
   "author": "cameronpyne-smith",
   "url": "https://huggingface.co/cameronpyne-smith/maris-piper-bug-finder-qwen3.8-27b-lora",
   "created_at": "2026-11-15T14:04:07.000Z",
-  "updated_at": "2026-11-15T14:27:48.000Z",
+  "updated_at": "2026-11-15T16:13:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

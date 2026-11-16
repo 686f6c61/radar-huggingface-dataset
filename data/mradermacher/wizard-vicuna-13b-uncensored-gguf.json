@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Wizard-Vicuna-13B-Uncensored-GGUF",
+  "slug": "mradermacher-wizard-vicuna-13b-uncensored-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Wizard-Vicuna-13B-Uncensored-GGUF",
+  "created_at": "2025-03-16T10:37:29.000Z",
+  "updated_at": "2026-11-16T07:09:25.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "uncensored",
+    "en",
+    "dataset:ehartford/wizard_vicuna_70k_unfiltered",
+    "base_model:QuixiAI/Wizard-Vicuna-13B-Uncensored",
+    "base_model:quantized:QuixiAI/Wizard-Vicuna-13B-Uncensored",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 253,
+  "trending_score": 0,
+  "parameters": 13015864320,
+  "parameters_human": "13.02B",
+  "storage_bytes": 88801915264,
+  "storage_human": "88.8 GB",
+  "context_length": 2048,
+  "base_model": "QuixiAI/Wizard-Vicuna-13B-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

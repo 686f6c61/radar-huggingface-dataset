@@ -40,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "North-ML1/wind-arc-1",
+  "renamed_at": "2026-11-16T05:18:02.029Z",
   "benchmarks": [],
   "sources": []
 }

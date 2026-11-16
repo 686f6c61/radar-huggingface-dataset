@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 23,
+  "downloads_30d": 27,
   "trending_score": 0,
   "parameters": 4205749760,
   "parameters_human": "4.21B",
@@ -42,8 +42,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "nicolasramos/Qwen3.8-4B-Distill-MLX-bf16-mtp",
+  "renamed_at": "2026-11-16T08:12:19.851Z",
   "benchmarks": [],
   "sources": [
     {

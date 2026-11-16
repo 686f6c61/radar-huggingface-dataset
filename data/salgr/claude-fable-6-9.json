@@ -1,0 +1,54 @@
+{
+  "schema": 2,
+  "id": "salgr/Claude-Fable-6.9",
+  "slug": "salgr-claude-fable-6-9",
+  "author": "salgr",
+  "url": "https://huggingface.co/salgr/Claude-Fable-6.9",
+  "created_at": "2026-11-16T08:45:38.000Z",
+  "updated_at": "2026-11-16T08:49:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Claude",
+    "Claude 6.9",
+    "Claude Fable",
+    "Claude Fable 6.9",
+    "Official",
+    "SOTA",
+    "text-generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 69,
+  "parameters_human": "69",
+  "storage_bytes": 812,
+  "storage_human": "812 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Salgr - 3D Planets Simulator Wiki",
+      "url": "https://3ps.miraheze.org/wiki/Salgr",
+      "snippet": "Salgr completely lacks everthing except Ore at first, it is recommended to terraform Salgr as the Water and Gas gain a significant …"
+    }
+  ]
+}

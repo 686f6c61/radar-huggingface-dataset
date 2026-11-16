@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "77ethers/alpa",
+  "slug": "77ethers-alpa",
+  "author": "77ethers",
+  "url": "https://huggingface.co/77ethers/alpa",
+  "created_at": "2026-11-16T06:07:19.000Z",
+  "updated_at": "2026-11-16T06:51:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "sa"
+  ],
+  "tags": [
+    "onnx",
+    "sanskrit",
+    "text-to-speech",
+    "tts",
+    "tiny",
+    "browser",
+    "sa",
+    "dataset:ai4bharat/Rasa",
+    "base_model:n4ze3m/tiny-voca",
+    "base_model:finetune:n4ze3m/tiny-voca",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41320089,
+  "storage_human": "41 MB",
+  "context_length": null,
+  "base_model": "n4ze3m/tiny-voca",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

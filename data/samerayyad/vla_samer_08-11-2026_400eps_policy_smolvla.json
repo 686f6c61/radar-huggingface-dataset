@@ -1,0 +1,64 @@
+{
+  "schema": 2,
+  "id": "SamerAyyad/VLA_Samer_08.11.2026_400eps_policy_SmolVLA",
+  "slug": "samerayyad-vla_samer_08-11-2026_400eps_policy_smolvla",
+  "author": "SamerAyyad",
+  "url": "https://huggingface.co/SamerAyyad/VLA_Samer_08.11.2026_400eps_policy_SmolVLA",
+  "created_at": "2026-11-16T11:36:55.000Z",
+  "updated_at": "2026-11-16T11:37:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:SamerAyyad/VLA_Samer_08.11.2026_400eps",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906719168,
+  "storage_human": "907 MB",
+  "context_length": null,
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "12 Best Budgeting Apps We've Reviewed [November 2026]",
+      "url": "https://youngandtheinvested.com/best-budgeting-apps/",
+      "snippet": "Aug 6, 2026 · Add in difference in pricing, security, and the ability to synchronize with bank accounts and credit cards, and choosing …"
+    },
+    {
+      "title": "Best Budgeting Apps 2026: An Honest Guide From an App Maker",
+      "url": "https://bountisphere.com/blog/the-best-budgeting-apps-a-complete-comparison",
+      "snippet": "Nov 6, 2026 · The best budgeting apps for 2026 depend on whether you prefer to track past spending or forecast your future bank …"
+    },
+    {
+      "title": "The Best Family Budgeting Apps of 2026: A Real-World Guide for …",
+      "url": "https://www.bestmoney.com/financial-advisor/learn-more/best-budgeting-apps-for-families",
+      "snippet": "Dec 3, 2025 · Discover the best family budgeting apps of {year}. Our guide goes beyond simple tracking, covering apps for teaching …"
+    }
+  ]
+}

@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 26,
+  "downloads_30d": 10,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -48,8 +48,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "zeromodels/qwen2-vl-2b",
+  "renamed_at": "2026-11-16T07:00:04.506Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,0 +1,72 @@
+{
+  "schema": 2,
+  "id": "hansu0521/pick_and_place_model",
+  "slug": "hansu0521-pick_and_place_model",
+  "author": "hansu0521",
+  "url": "https://huggingface.co/hansu0521/pick_and_place_model",
+  "created_at": "2026-11-16T08:38:28.000Z",
+  "updated_at": "2026-11-16T08:40:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:hansu0521/pick_and_place",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712944,
+  "storage_human": "207 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Po-lien/mobileai-pick-and-place-0512-2110 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Po-lien/mobileai-pick-and-place-0512-2110",
+      "snippet": "[ 0.00019073777366429567, 1.046196699142456, 0.5231937170028687, 0.5342565178871155, -0.000572213320992887, …"
+    },
+    {
+      "title": "HankLL/PickAndPlace1_Model · Hugging Face",
+      "url": "https://huggingface.co/HankLL/PickAndPlace1_Model",
+      "snippet": "Downloads last month 19 Inference Providers NEW This model isn't deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Pick and place trajectory | Download Scientific Diagram",
+      "url": "https://www.researchgate.net/figure/Pick-and-place-trajectory_fig1_354870114",
+      "snippet": "At first, the dynamic model of a Delta robot is illustrated and validated with respect to experimental data. …"
+    },
+    {
+      "title": "AI Pick-and-Place Robotics Use Cases | ROI & Implementation",
+      "url": "https://inferensys.com/use-cases/physical-intelligence-and-industrial-robotics-vision/ai-driven-pick-and-place-robotics",
+      "snippet": "The AI fix combines advanced computer vision and adaptive gripper control. Using deep learning, the system perceives each unique …"
+    },
+    {
+      "title": "act_so101_pickplace: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-junshin02-act-so101-pickplace",
+      "snippet": "act_so101_pickplace act_so101_pickplace is an AI model record indexed from Hugging Face."
+    }
+  ]
+}

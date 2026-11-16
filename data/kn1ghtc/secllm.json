@@ -5,7 +5,7 @@
   "author": "kn1ghtc",
   "url": "https://huggingface.co/kn1ghtc/secllm",
   "created_at": "2026-11-15T03:18:32.000Z",
-  "updated_at": "2026-11-15T03:31:44.000Z",
+  "updated_at": "2026-11-15T04:11:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -16,6 +16,7 @@
   ],
   "tags": [
     "mlx",
+    "safetensors",
     "secllm",
     "cybersecurity",
     "reasoning",
@@ -38,12 +39,13 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 20132185025,
+  "storage_human": "20.1 GB",
   "context_length": null,
   "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
   "formats": [
-    "mlx"
+    "mlx",
+    "safetensors"
   ],
   "is_conversational": false,
   "gated": false,

@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 180,
   "trending_score": 0,
   "parameters": 7463013674,
   "parameters_human": "7.46B",
@@ -50,8 +50,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "efficiencyx/Jun-LoRA-E4B-GGUF",
+  "renamed_at": "2026-11-16T06:01:39.993Z",
   "benchmarks": [],
   "sources": []
 }

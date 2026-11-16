@@ -5,7 +5,7 @@
   "author": "keptn",
   "url": "https://huggingface.co/keptn/gemma4-12b-heretic-i8g",
   "created_at": "2026-11-15T08:29:04.000Z",
-  "updated_at": "2026-11-15T08:29:51.000Z",
+  "updated_at": "2026-11-15T08:47:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -24,6 +24,7 @@
     "vision",
     "audio",
     "heretic",
+    "ara",
     "abliterated",
     "uncensored",
     "image-text-to-text",
@@ -48,8 +49,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "keptn/gemma4-12b-heretic-ara-i8g",
+  "renamed_at": "2026-11-16T06:59:41.991Z",
   "benchmarks": [],
   "sources": [
     {

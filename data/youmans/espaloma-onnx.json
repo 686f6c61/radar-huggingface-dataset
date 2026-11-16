@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "youmans/espaloma-onnx",
+  "slug": "youmans-espaloma-onnx",
+  "author": "youmans",
+  "url": "https://huggingface.co/youmans/espaloma-onnx",
+  "created_at": "2026-11-16T07:46:09.000Z",
+  "updated_at": "2026-11-16T07:50:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "chemistry",
+    "molecular-mechanics",
+    "cpu",
+    "espaloma",
+    "en",
+    "arxiv:2010.01196",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35279535,
+  "storage_human": "35 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "gabadorno",
   "url": "https://huggingface.co/gabadorno/bert-portuguese-contract-ner",
   "created_at": "2026-11-15T15:23:39.000Z",
-  "updated_at": "2026-11-15T15:26:49.000Z",
+  "updated_at": "2026-11-15T15:50:49.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "token-classification",

@@ -5,7 +5,7 @@
   "author": "thedeoxen",
   "url": "https://huggingface.co/thedeoxen/MOSS-Image-canny-controlnet",
   "created_at": "2026-11-10T04:09:56.000Z",
-  "updated_at": "2026-11-10T06:59:36.000Z",
+  "updated_at": "2026-11-16T08:26:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-image",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 668,
+  "downloads_30d": 753,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -45,8 +45,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "thedeoxen/MOSS-Image-canny-control-lora",
+  "renamed_at": "2026-11-16T09:19:31.878Z",
   "benchmarks": [],
   "sources": []
 }

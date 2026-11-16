@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "Lucasgitguy-co/Qwen3.5-2B-Mermaid-LoRA-GGUF",
+  "slug": "lucasgitguy-co-qwen3-5-2b-mermaid-lora-gguf",
+  "author": "Lucasgitguy-co",
+  "url": "https://huggingface.co/Lucasgitguy-co/Qwen3.5-2B-Mermaid-LoRA-GGUF",
+  "created_at": "2026-11-16T11:23:06.000Z",
+  "updated_at": "2026-11-16T11:38:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "lora",
+    "mermaid",
+    "qwen3.5",
+    "image-text-to-text",
+    "en",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:adapter:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8409600,
+  "parameters_human": "8.4M",
+  "storage_bytes": 16844896,
+  "storage_human": "17 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

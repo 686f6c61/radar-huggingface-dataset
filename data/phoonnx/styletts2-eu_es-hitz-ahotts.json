@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "Phoonnx/styletts2-eu_es-hitz-ahotts",
+  "slug": "phoonnx-styletts2-eu_es-hitz-ahotts",
+  "author": "Phoonnx",
+  "url": "https://huggingface.co/Phoonnx/styletts2-eu_es-hitz-ahotts",
+  "created_at": "2026-11-14T22:42:24.000Z",
+  "updated_at": "2026-11-16T11:41:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "phoonnx",
+  "languages": [
+    "eu"
+  ],
+  "tags": [
+    "phoonnx",
+    "onnx",
+    "styletts2",
+    "text-to-speech",
+    "eu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 330001016,
+  "storage_human": "330 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

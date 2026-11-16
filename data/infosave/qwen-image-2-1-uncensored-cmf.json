@@ -5,7 +5,7 @@
   "author": "infosave",
   "url": "https://huggingface.co/infosave/Qwen-Image-2.1-Uncensored-CMF",
   "created_at": "2026-10-06T19:19:13.000Z",
-  "updated_at": "2026-10-06T19:24:18.000Z",
+  "updated_at": "2026-11-12T23:13:39.000Z",
   "license": "qwen-research",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 28,
+  "downloads_30d": 40,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

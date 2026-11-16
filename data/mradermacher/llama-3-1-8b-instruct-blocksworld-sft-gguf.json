@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Llama-3.1-8B-Instruct-blocksworld-SFT-GGUF",
+  "slug": "mradermacher-llama-3-1-8b-instruct-blocksworld-sft-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama-3.1-8B-Instruct-blocksworld-SFT-GGUF",
+  "created_at": "2025-03-15T06:45:28.000Z",
+  "updated_at": "2026-11-16T10:20:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:hsaest/Llama-3.1-8B-Instruct-blocksworld-SFT",
+    "base_model:quantized:hsaest/Llama-3.1-8B-Instruct-blocksworld-SFT",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 250,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820234240,
+  "storage_human": "71.8 GB",
+  "context_length": 131072,
+  "base_model": "hsaest/Llama-3.1-8B-Instruct-blocksworld-SFT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

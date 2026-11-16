@@ -5,7 +5,7 @@
   "author": "lexoliu",
   "url": "https://huggingface.co/lexoliu/deepclone-qwen3-tts-coreml",
   "created_at": "2026-11-15T06:33:24.000Z",
-  "updated_at": "2026-11-15T06:34:52.000Z",
+  "updated_at": "2026-11-15T06:38:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",

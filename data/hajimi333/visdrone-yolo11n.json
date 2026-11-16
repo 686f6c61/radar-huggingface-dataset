@@ -1,0 +1,80 @@
+{
+  "schema": 2,
+  "id": "hajimi333/visdrone-yolo11n",
+  "slug": "hajimi333-visdrone-yolo11n",
+  "author": "hajimi333",
+  "url": "https://huggingface.co/hajimi333/visdrone-yolo11n",
+  "created_at": "2026-11-16T08:45:36.000Z",
+  "updated_at": "2026-11-16T08:45:36.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "aerial-imagery",
+    "drone",
+    "visdrone",
+    "detr",
+    "roboflow",
+    "transformer",
+    "dataset:Voxel51/VisDrone2019-DET",
+    "arxiv:1804.07437",
+    "arxiv:2410.17725",
+    "base_model:Ultralytics/YOLO11",
+    "base_model:finetune:Ultralytics/YOLO11",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41580892,
+  "storage_human": "42 MB",
+  "context_length": null,
+  "base_model": "Ultralytics/YOLO11",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "VisDrone-DET",
+      "metric": "mAP@50 (test split)",
+      "value": 39.52
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "VisDrone-DET",
+      "metric": "mAP@50-95 (test split)",
+      "value": 23
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "VisDrone-DET",
+      "metric": "Precision (test split)",
+      "value": 51.49
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "VisDrone-DET",
+      "metric": "Recall (test split)",
+      "value": 41.02
+    }
+  ],
+  "sources": []
+}

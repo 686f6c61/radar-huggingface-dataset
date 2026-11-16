@@ -5,7 +5,7 @@
   "author": "mstrasser",
   "url": "https://huggingface.co/mstrasser/jeff-adapter-evidence-sufficient",
   "created_at": "2026-11-05T21:21:40.000Z",
-  "updated_at": "2026-11-05T21:21:43.000Z",
+  "updated_at": "2026-11-15T11:28:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",

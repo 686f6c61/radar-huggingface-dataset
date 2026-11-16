@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "Phoonnx/glowtts-uk_ua-mai-graphemes",
+  "slug": "phoonnx-glowtts-uk_ua-mai-graphemes",
+  "author": "Phoonnx",
+  "url": "https://huggingface.co/Phoonnx/glowtts-uk_ua-mai-graphemes",
+  "created_at": "2026-11-14T22:54:15.000Z",
+  "updated_at": "2026-11-16T11:41:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "phoonnx",
+  "languages": [
+    "uk"
+  ],
+  "tags": [
+    "phoonnx",
+    "onnx",
+    "glowtts",
+    "text-to-speech",
+    "uk",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114825368,
+  "storage_human": "115 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

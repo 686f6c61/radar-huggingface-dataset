@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "chocaitencoi/zac2026-lifemate-models",
+  "slug": "chocaitencoi-zac2026-lifemate-models",
+  "author": "chocaitencoi",
+  "url": "https://huggingface.co/chocaitencoi/zac2026-lifemate-models",
+  "created_at": "2026-11-16T11:45:18.000Z",
+  "updated_at": "2026-11-16T11:46:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "vi",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 701548249,
+  "storage_human": "702 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-4B, g-group-ai-lab/gipformer1.5-68M-rnnt",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

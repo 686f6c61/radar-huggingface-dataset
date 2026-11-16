@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 45,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 27781427952,
   "parameters_human": "27.78B",
@@ -42,8 +42,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "mjsxi/qwen-3.8-27b-mlx-mtp-mxfp8",
+  "renamed_at": "2026-11-16T07:30:08.996Z",
   "benchmarks": [],
   "sources": []
 }

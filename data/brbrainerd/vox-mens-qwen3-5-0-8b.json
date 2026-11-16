@@ -1,0 +1,93 @@
+{
+  "schema": 2,
+  "id": "brbrainerd/vox-mens-qwen3.5-0.8b",
+  "slug": "brbrainerd-vox-mens-qwen3-5-0-8b",
+  "author": "brbrainerd",
+  "url": "https://huggingface.co/brbrainerd/vox-mens-qwen3.5-0.8b",
+  "created_at": "2026-11-16T08:12:05.000Z",
+  "updated_at": "2026-11-16T08:16:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "vox",
+    "vox-mens",
+    "qwen3-5",
+    "qwen3_5",
+    "gated-delta-networks",
+    "qlora",
+    "rslora",
+    "candle",
+    "code",
+    "conversational",
+    "text-generation-inference",
+    "vllm",
+    "spoke-vox-lang",
+    "gate-passed",
+    "en",
+    "dataset:brbrainerd/vox-mens-eval-vox-lang-bench",
+    "dataset:brbrainerd/vox-mens-data-vox-lang",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "model-index",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1599947179,
+  "storage_human": "1.6 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Vox code generation",
+      "dataset": "Vox held-out bench (52 items)",
+      "metric": "pass@1 (qwen3_non_thinking_codegen_v1)",
+      "value": 0.4615
+    },
+    {
+      "task": "Reasoning regression check (thinking mode)",
+      "dataset": "gsm8k_think (128-item slice)",
+      "metric": "gsm8k_think accuracy",
+      "value": 0.2344
+    },
+    {
+      "task": "Reasoning regression check (thinking mode)",
+      "dataset": "math500_think (128-item slice)",
+      "metric": "math500_think accuracy",
+      "value": 0.0859
+    },
+    {
+      "task": "Reasoning regression check (thinking mode)",
+      "dataset": "vox_think (128-item slice)",
+      "metric": "vox_think accuracy",
+      "value": 0.1094
+    }
+  ],
+  "sources": []
+}

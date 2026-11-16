@@ -53,8 +53,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "wycliffeassociates/docscanner-ocr",
+  "renamed_at": "2026-11-16T08:06:01.904Z",
   "benchmarks": [],
   "sources": [
     {

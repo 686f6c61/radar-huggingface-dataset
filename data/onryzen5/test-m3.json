@@ -5,7 +5,7 @@
   "author": "onryzen5",
   "url": "https://huggingface.co/onryzen5/test-m3",
   "created_at": "2026-11-13T05:31:16.000Z",
-  "updated_at": "2026-11-13T05:34:18.000Z",
+  "updated_at": "2026-11-16T02:47:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 26,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": 63912192,
   "parameters_human": "63.9M",

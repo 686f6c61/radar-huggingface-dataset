@@ -5,7 +5,7 @@
   "author": "fastforks",
   "url": "https://huggingface.co/fastforks/marigold-v2-depth",
   "created_at": "2026-11-14T16:06:46.000Z",
-  "updated_at": "2026-11-14T16:08:08.000Z",
+  "updated_at": "2026-11-15T21:27:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "depth-estimation",
@@ -16,6 +16,7 @@
     "depth",
     "marigold",
     "nf4",
+    "fastforks-weights",
     "depth-estimation",
     "arxiv:2609.08084",
     "base_model:Qwen/Qwen-Image-Edit-2509",
@@ -39,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "fastforks/marigold-v2-depth-nf4",
+  "renamed_at": "2026-11-16T06:08:38.324Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "mradermacher/MT3-Gen8-gemma-2-9B-GGUF",
+  "slug": "mradermacher-mt3-gen8-gemma-2-9b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MT3-Gen8-gemma-2-9B-GGUF",
+  "created_at": "2025-03-11T03:20:47.000Z",
+  "updated_at": "2026-11-16T12:30:28.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:zelk12/MT3-Gen8-gemma-2-9B",
+    "base_model:quantized:zelk12/MT3-Gen8-gemma-2-9B",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 125,
+  "trending_score": 0,
+  "parameters": 9241705984,
+  "parameters_human": "9.24B",
+  "storage_bytes": 83538316800,
+  "storage_human": "83.5 GB",
+  "context_length": 8192,
+  "base_model": "zelk12/MT3-Gen8-gemma-2-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

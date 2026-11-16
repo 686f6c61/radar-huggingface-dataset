@@ -5,7 +5,7 @@
   "author": "grandfso",
   "url": "https://huggingface.co/grandfso/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-int4-AutoRound-MTP",
   "created_at": "2026-11-15T12:11:57.000Z",
-  "updated_at": "2026-11-15T12:17:39.000Z",
+  "updated_at": "2026-11-15T12:45:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

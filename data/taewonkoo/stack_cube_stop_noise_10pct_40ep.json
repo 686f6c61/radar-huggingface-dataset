@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 7,
+  "downloads_30d": 5,
   "trending_score": 0,
   "parameters": 450046176,
   "parameters_human": "450.0M",
@@ -41,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "taewonkoo/smolVLA_stack_cube_stop_noise_10pct_40ep",
+  "renamed_at": "2026-11-16T09:11:39.000Z",
   "benchmarks": [],
   "sources": [
     {

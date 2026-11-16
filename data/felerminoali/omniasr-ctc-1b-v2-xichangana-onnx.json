@@ -5,7 +5,7 @@
   "author": "felerminoali",
   "url": "https://huggingface.co/felerminoali/omniASR-CTC-1B-v2-xichangana-onnx",
   "created_at": "2026-11-15T12:59:25.000Z",
-  "updated_at": "2026-11-15T13:04:45.000Z",
+  "updated_at": "2026-11-15T18:06:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

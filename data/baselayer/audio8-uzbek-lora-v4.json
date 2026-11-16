@@ -1,0 +1,78 @@
+{
+  "schema": 2,
+  "id": "BaseLayer/audio8-uzbek-lora-v4",
+  "slug": "baselayer-audio8-uzbek-lora-v4",
+  "author": "BaseLayer",
+  "url": "https://huggingface.co/BaseLayer/audio8-uzbek-lora-v4",
+  "created_at": "2026-11-16T02:32:45.000Z",
+  "updated_at": "2026-11-16T10:02:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "peft",
+  "languages": [
+    "uz"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "voice-cloning",
+    "lora",
+    "uzbek",
+    "uz",
+    "base_model:Edge0/Audio8-TTS-Realistic-Air",
+    "base_model:adapter:Edge0/Audio8-TTS-Realistic-Air",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1591629609,
+  "storage_human": "1.6 GB",
+  "context_length": null,
+  "base_model": "Edge0/Audio8-TTS-Realistic-Air",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sous-vêtements & sous-couches techniques | Under Armour FR",
+      "url": "https://www.underarmour.fr/fr-fr/c/baselayer/",
+      "snippet": "Que tu cherches un baselayer pour le football ou pour la course à pied, un short de compression pour la salle de sport ou un haut à …"
+    },
+    {
+      "title": "Comment choisir son baselayer ou sous-vêtement technique ... - Alltricks",
+      "url": "https://www.alltricks.fr/surl/choisir-son-baselayer",
+      "snippet": "Le but premier du baselayer (aussi appelé sous-vêtement technique) dans votre équipement de cycliste ou de runner, c’est …"
+    },
+    {
+      "title": "Amazon.fr : Baselayer",
+      "url": "https://www.amazon.fr/baselayer/s?k=baselayer",
+      "snippet": "1-48 sur plus de 10 000 résultats pour \"baselayer\" Résultats En apprendre plus sur ces résultats. Consultez la page de chaque …"
+    },
+    {
+      "title": "Baselayer: Business Identity Verification, Risk, & Fraud",
+      "url": "https://baselayer.com/",
+      "snippet": "Baselayer is a key and integral partner for how we're leveraging AI to enhance our Identity Products. Our combined offering helps …"
+    },
+    {
+      "title": "Baselayer - Craft Sportswear",
+      "url": "https://www.craftsportswear.com/fr/sport/baselayer",
+      "snippet": "Baselayers for every activity. Designed for all weather conditions, intensity levels and sports. Read the guide and find the right …"
+    }
+  ]
+}

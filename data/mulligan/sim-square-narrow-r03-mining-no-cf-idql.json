@@ -42,8 +42,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "mulligan/sim-square-narrow-r03-mulligan-no-cf-idql",
+  "renamed_at": "2026-11-16T08:05:12.182Z",
   "benchmarks": [],
   "sources": [
     {

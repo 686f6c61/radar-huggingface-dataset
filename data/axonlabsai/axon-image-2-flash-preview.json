@@ -5,7 +5,7 @@
   "author": "axonlabsai",
   "url": "https://huggingface.co/axonlabsai/axon-image-2-flash-preview",
   "created_at": "2026-11-15T03:44:35.000Z",
-  "updated_at": "2026-11-15T03:50:21.000Z",
+  "updated_at": "2026-11-15T05:04:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",

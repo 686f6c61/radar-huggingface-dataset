@@ -5,7 +5,7 @@
   "author": "goodmai",
   "url": "https://huggingface.co/goodmai/Qwen3-0.6B-8bit",
   "created_at": "2026-11-15T05:56:46.000Z",
-  "updated_at": "2026-11-15T05:56:55.000Z",
+  "updated_at": "2026-11-15T06:13:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 2,
   "trending_score": 0,
   "parameters": 596049920,
   "parameters_human": "596.0M",

@@ -5,7 +5,7 @@
   "author": "mu2solutions",
   "url": "https://huggingface.co/mu2solutions/Molmo2-8B-GGUF",
   "created_at": "2026-09-03T17:10:30.000Z",
-  "updated_at": "2026-10-26T13:24:01.000Z",
+  "updated_at": "2026-11-15T13:47:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

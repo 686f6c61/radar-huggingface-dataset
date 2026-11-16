@@ -5,7 +5,7 @@
   "author": "david-rename",
   "url": "https://huggingface.co/david-rename/jev-pp",
   "created_at": "2026-11-15T15:00:50.000Z",
-  "updated_at": "2026-11-15T15:00:51.000Z",
+  "updated_at": "2026-11-15T20:57:17.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -15,6 +15,7 @@
   ],
   "tags": [
     "peft",
+    "onnx",
     "safetensors",
     "lora",
     "decision-model",
@@ -29,11 +30,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 40422168,
-  "storage_human": "40 MB",
+  "storage_bytes": 5075193868,
+  "storage_human": "5.1 GB",
   "context_length": null,
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
+    "onnx",
     "safetensors"
   ],
   "is_conversational": false,

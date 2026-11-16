@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "alphatrann/zen",
+  "slug": "alphatrann-zen",
+  "author": "alphatrann",
+  "url": "https://huggingface.co/alphatrann/zen",
+  "created_at": "2026-11-16T07:06:41.000Z",
+  "updated_at": "2026-11-16T07:12:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "litert-lm",
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "litert-lm",
+    "safetensors",
+    "on-device",
+    "task-extraction",
+    "scheduling",
+    "vi",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1275549309,
+  "storage_human": "1.3 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

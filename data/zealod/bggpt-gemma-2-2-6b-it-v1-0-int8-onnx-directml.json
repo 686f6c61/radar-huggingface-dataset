@@ -9,15 +9,15 @@
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
-  "library": null,
+  "library": "onnxruntime-genai",
   "languages": [
     "bg",
     "en"
   ],
   "tags": [
+    "onnxruntime-genai",
     "onnx",
     "directml",
-    "onnxruntime-genai",
     "bggpt",
     "bulgarian",
     "int8",

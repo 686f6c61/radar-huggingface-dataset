@@ -17,7 +17,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 19,
+  "downloads_30d": 26,
   "trending_score": 0,
   "parameters": 9409813744,
   "parameters_human": "9.41B",
@@ -34,8 +34,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "ddvd233/Qwen3.5-RSIMed-9B",
+  "renamed_at": "2026-11-16T05:51:39.508Z",
   "benchmarks": [],
   "sources": []
 }

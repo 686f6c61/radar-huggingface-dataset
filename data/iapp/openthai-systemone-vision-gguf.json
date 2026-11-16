@@ -5,7 +5,7 @@
   "author": "iapp",
   "url": "https://huggingface.co/iapp/OpenThai-SystemOne-Vision-GGUF",
   "created_at": "2026-11-15T01:05:14.000Z",
-  "updated_at": "2026-11-15T01:08:15.000Z",
+  "updated_at": "2026-11-15T08:40:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -33,7 +33,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 67,
   "trending_score": 0,
   "parameters": 1006715712,
   "parameters_human": "1.01B",

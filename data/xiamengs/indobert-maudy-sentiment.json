@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "xiamengs/indobert-maudy-sentiment",
+  "slug": "xiamengs-indobert-maudy-sentiment",
+  "author": "xiamengs",
+  "url": "https://huggingface.co/xiamengs/indobert-maudy-sentiment",
+  "created_at": "2026-11-16T06:31:18.000Z",
+  "updated_at": "2026-11-16T06:32:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "sentiment-analysis",
+    "indonesian",
+    "id",
+    "base_model:indolem/indobertweet-base-uncased",
+    "base_model:finetune:indolem/indobertweet-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110560515,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442265596,
+  "storage_human": "442 MB",
+  "context_length": null,
+  "base_model": "indolem/indobertweet-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

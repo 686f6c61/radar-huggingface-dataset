@@ -1,0 +1,46 @@
+{
+  "schema": 2,
+  "id": "sergei-shteiner/onegin-1",
+  "slug": "sergei-shteiner-onegin-1",
+  "author": "sergei-shteiner",
+  "url": "https://huggingface.co/sergei-shteiner/onegin-1",
+  "created_at": "2026-11-16T10:42:56.000Z",
+  "updated_at": "2026-11-16T10:43:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "onnx",
+    "pytorch",
+    "n-gram",
+    "eugene-onegin",
+    "ru",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2287487,
+  "storage_human": "2 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

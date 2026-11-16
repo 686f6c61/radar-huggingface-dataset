@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 129,
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",
@@ -50,8 +50,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "efficiencyx/Jun-LoRA-12B-GGUF",
+  "renamed_at": "2026-11-16T06:01:39.271Z",
   "benchmarks": [],
   "sources": []
 }
