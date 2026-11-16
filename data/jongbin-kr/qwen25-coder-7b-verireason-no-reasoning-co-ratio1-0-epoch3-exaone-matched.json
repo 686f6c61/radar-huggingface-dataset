@@ -40,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Jongbin-kr/qwen2.5-coder-7b_verireason-NO-reasoning_custom-sft-1.0",
+  "renamed_at": "2026-11-16T03:21:21.877Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "glossia/Rambley-V2-OPDBase-10m",
+  "slug": "glossia-rambley-v2-opdbase-10m",
+  "author": "glossia",
+  "url": "https://huggingface.co/glossia/Rambley-V2-OPDBase-10m",
+  "created_at": "2026-10-14T15:24:08.000Z",
+  "updated_at": "2026-11-16T03:03:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "rambley_v2",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 10272142,
+  "parameters_human": "10.3M",
+  "storage_bytes": 82213392,
+  "storage_human": "82 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

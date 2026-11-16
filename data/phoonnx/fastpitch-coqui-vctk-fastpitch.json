@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/fastpitch-coqui-vctk-fastpitch",
   "created_at": "2026-11-14T22:35:33.000Z",
-  "updated_at": "2026-11-15T02:44:10.000Z",
+  "updated_at": "2026-11-15T15:59:16.000Z",
   "license": "cc-by-nc-nd-4.0",
   "license_family": "non-commercial",
   "pipeline_tag": "text-to-speech",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 32,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Phoonnx/fastpitch-en_us-vctk",
+  "renamed_at": "2026-11-16T03:54:38.959Z",
   "benchmarks": [],
   "sources": []
 }

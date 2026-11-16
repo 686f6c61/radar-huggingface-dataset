@@ -41,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Kelsey1217/Krea-2-Turbo-NPU-BFP16",
+  "renamed_at": "2026-11-16T03:24:45.943Z",
   "benchmarks": [],
   "sources": [
     {

@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/vits-hf_community_ppisljar_piper_si_artur_model",
   "created_at": "2026-11-14T23:07:38.000Z",
-  "updated_at": "2026-11-15T02:46:06.000Z",
+  "updated_at": "2026-11-15T16:03:38.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 32,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Phoonnx/vits-sl_si-artur",
+  "renamed_at": "2026-11-16T03:57:40.969Z",
   "benchmarks": [],
   "sources": []
 }

@@ -41,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Jongbin-kr/qwen2.5-coder-7b_verireason-reasoning_custom-sft-1.0_custom-grpo-1.0",
+  "renamed_at": "2026-11-16T03:21:22.386Z",
   "benchmarks": [],
   "sources": [
     {

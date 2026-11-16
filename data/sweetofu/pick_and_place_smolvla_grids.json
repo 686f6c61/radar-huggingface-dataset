@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 36,
+  "downloads_30d": 15,
   "trending_score": 0,
   "parameters": 450802148,
   "parameters_human": "450.8M",
@@ -41,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Sweetofu/transfer_pen_smolvla_gridS",
+  "renamed_at": "2026-11-16T04:30:45.810Z",
   "benchmarks": [],
   "sources": []
 }

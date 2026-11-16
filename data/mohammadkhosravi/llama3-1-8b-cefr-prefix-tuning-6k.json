@@ -44,8 +44,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "MohammadKhosravi/llama3.1-8b-cefr-prefix-tuning-6k-286M-Variant",
+  "renamed_at": "2026-11-16T03:40:12.772Z",
   "benchmarks": [],
   "sources": [
     {

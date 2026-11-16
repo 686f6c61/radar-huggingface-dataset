@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "fausap/Qwen3.5-9B-Zero-AMA-Wiki-GLM5-Char-GGUF",
+  "slug": "fausap-qwen3-5-9b-zero-ama-wiki-glm5-char-gguf",
+  "author": "fausap",
+  "url": "https://huggingface.co/fausap/Qwen3.5-9B-Zero-AMA-Wiki-GLM5-Char-GGUF",
+  "created_at": "2026-11-16T02:31:47.000Z",
+  "updated_at": "2026-11-16T02:34:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 6602715520,
+  "storage_human": "6.6 GB",
+  "context_length": 262144,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Machine learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Machine_learning",
+      "snippet": "A machine learning model is a type of mathematical model that, once \"trained\" on a given dataset, can be used to make predictions …"
+    }
+  ]
+}

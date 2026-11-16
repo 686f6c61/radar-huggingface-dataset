@@ -2111,7 +2111,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 39,
+  "downloads_30d": 29,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -2128,8 +2128,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "AfriSpeech/afrispeech-gender-id",
+  "renamed_at": "2026-11-16T02:14:59.738Z",
   "benchmarks": [],
   "sources": []
 }

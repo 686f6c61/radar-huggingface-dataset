@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "Swenlon/microduck-spin",
+  "slug": "swenlon-microduck-spin",
+  "author": "Swenlon",
+  "url": "https://huggingface.co/Swenlon/microduck-spin",
+  "created_at": "2026-11-16T02:55:04.000Z",
+  "updated_at": "2026-11-16T03:09:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "microduck",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "simulation",
+    "spinning",
+    "zh",
+    "en",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1906346,
+  "storage_human": "2 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

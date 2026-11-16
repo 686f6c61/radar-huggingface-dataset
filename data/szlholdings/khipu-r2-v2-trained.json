@@ -5,7 +5,7 @@
   "author": "SZLHOLDINGS",
   "url": "https://huggingface.co/SZLHOLDINGS/khipu-r2-v2-trained",
   "created_at": "2026-11-13T22:32:13.000Z",
-  "updated_at": "2026-11-14T20:53:18.000Z",
+  "updated_at": "2026-11-16T00:55:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 127,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

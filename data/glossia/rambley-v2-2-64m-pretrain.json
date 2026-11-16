@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "glossia/Rambley-V2.2-64M-Pretrain",
+  "slug": "glossia-rambley-v2-2-64m-pretrain",
+  "author": "glossia",
+  "url": "https://huggingface.co/glossia/Rambley-V2.2-64M-Pretrain",
+  "created_at": "2026-11-04T14:29:59.000Z",
+  "updated_at": "2026-11-16T03:03:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "rambley_v2",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 46,
+  "trending_score": 0,
+  "parameters": 63874704,
+  "parameters_human": "63.9M",
+  "storage_bytes": 127775312,
+  "storage_human": "128 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

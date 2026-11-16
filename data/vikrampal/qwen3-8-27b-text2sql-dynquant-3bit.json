@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 36,
+  "downloads_30d": 37,
   "trending_score": 0,
   "parameters": 2732834304,
   "parameters_human": "2.73B",
@@ -49,8 +49,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "VikramPal/Qwen3.8-27B-DynQuant-3bit",
+  "renamed_at": "2026-11-16T04:44:08.289Z",
   "benchmarks": [],
   "sources": [
     {

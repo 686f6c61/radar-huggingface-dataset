@@ -46,8 +46,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "slow-stack/laya-nli-conflict-v12-r3",
+  "renamed_at": "2026-11-16T03:40:05.511Z",
   "benchmarks": [],
   "sources": [
     {

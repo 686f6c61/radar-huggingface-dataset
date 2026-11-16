@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/vocoders-wavenext-22khz",
   "created_at": "2026-11-14T22:34:17.000Z",
-  "updated_at": "2026-11-15T02:44:08.000Z",
+  "updated_at": "2026-11-15T15:59:12.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Phoonnx/wavenext-ca-bsc_lt-22khz",
+  "renamed_at": "2026-11-16T03:58:26.453Z",
   "benchmarks": [],
   "sources": []
 }

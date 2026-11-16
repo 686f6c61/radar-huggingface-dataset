@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/vocoders-larynx-hifigan-vctk-small",
   "created_at": "2026-11-14T22:33:23.000Z",
-  "updated_at": "2026-11-15T02:44:05.000Z",
+  "updated_at": "2026-11-15T15:59:07.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -46,8 +46,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Phoonnx/hifigan-multi-vctk-small",
+  "renamed_at": "2026-11-16T03:58:24.134Z",
   "benchmarks": [],
   "sources": []
 }

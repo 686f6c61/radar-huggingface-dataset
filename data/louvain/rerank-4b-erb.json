@@ -1,0 +1,76 @@
+{
+  "schema": 2,
+  "id": "Louvain/rerank-4b-erb",
+  "slug": "louvain-rerank-4b-erb",
+  "author": "Louvain",
+  "url": "https://huggingface.co/Louvain/rerank-4b-erb",
+  "created_at": "2026-11-12T16:01:28.000Z",
+  "updated_at": "2026-11-12T19:20:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "reranker",
+    "retrieval",
+    "text-ranking",
+    "base_model:Qwen/Qwen3-Reranker-4B",
+    "base_model:finetune:Qwen/Qwen3-Reranker-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 4021784576,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8055037789,
+  "storage_human": "8.1 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-Reranker-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Louvain — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Louvain",
+      "snippet": "Louvain est divisée en cinq sections, la section de Louvain comprend des territoires cédés par les communes de Korbeek-Lo et …"
+    },
+    {
+      "title": "Que faire et que voir à Louvain ? Guide pour visiter la ville et ses ...",
+      "url": "https://www.frenchwanderers.com/monde/visiter-louvain-belgique-incontournables",
+      "snippet": "Feb 6, 2026 · Notre guide des incontournables à voir et faire à Louvain, pour un week-end en Belgique !"
+    },
+    {
+      "title": "Que faire à Louvain ? 6 activités incontournables - Baroudeurs Liégeois",
+      "url": "https://baroudeursliegeois.com/que-faire-a-louvain-6-activites-incontournables-de-cette-jolie-ville-du-brabant-flamand-en-belgique/",
+      "snippet": "Que faire à Louvain ? Entre rues piétonnes, monuments historiques et espaces verts, cette ville où règne une ambiance estudiantine …"
+    },
+    {
+      "title": "Bienvenue à Leuven ! | Visit Leuven",
+      "url": "https://www.visitleuven.be/fr",
+      "snippet": "Découvrez Louvain avec le billet ILUVLeuven ILUVLeuven Ticket Avec le ticket ILUVLeuven, vous avez accès à quelques …"
+    },
+    {
+      "title": "10 choses à faire incontournables à Louvain (2026) - Tripadvisor",
+      "url": "https://fr.tripadvisor.be/Attractions-g188669-Activities-Leuven_Flemish_Brabant_Province.html",
+      "snippet": "Les meilleures activités à Louvain, Brabant flamand : découvrez 51.472 avis de voyageurs et photos de 282 choses à faire à …"
+    }
+  ]
+}

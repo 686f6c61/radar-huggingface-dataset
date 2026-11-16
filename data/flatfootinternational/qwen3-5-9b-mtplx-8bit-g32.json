@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 9409812208,
   "parameters_human": "9.41B",
@@ -45,8 +45,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "FlatFootInternational/Qwen3.5-9b-MTPLX-Q8G32",
+  "renamed_at": "2026-11-16T02:56:27.859Z",
   "benchmarks": [],
   "sources": [
     {

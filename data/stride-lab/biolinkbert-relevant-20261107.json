@@ -5,7 +5,7 @@
   "author": "STRIDE-lab",
   "url": "https://huggingface.co/STRIDE-lab/biolinkbert-relevant-20261107",
   "created_at": "2026-11-15T19:59:00.000Z",
-  "updated_at": "2026-11-15T20:11:35.000Z",
+  "updated_at": "2026-11-15T21:08:13.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",

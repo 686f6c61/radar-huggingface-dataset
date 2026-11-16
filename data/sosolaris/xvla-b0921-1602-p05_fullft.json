@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 8,
+  "downloads_30d": 10,
   "trending_score": 0,
   "parameters": 879687256,
   "parameters_human": "879.7M",
@@ -41,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "SoSolaris/p05_fullft_tested",
+  "renamed_at": "2026-11-16T04:26:17.859Z",
   "benchmarks": [],
   "sources": [
     {

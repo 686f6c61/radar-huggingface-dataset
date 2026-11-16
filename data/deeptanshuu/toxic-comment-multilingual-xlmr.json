@@ -45,7 +45,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 29,
+  "downloads_30d": 21,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -60,8 +60,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Deeptanshuu/mill-screen",
+  "renamed_at": "2026-11-16T02:45:59.822Z",
   "benchmarks": [
     {
       "task": "Multi-label toxicity classification",

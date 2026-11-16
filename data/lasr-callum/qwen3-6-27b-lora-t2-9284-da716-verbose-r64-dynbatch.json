@@ -33,8 +33,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "dougalldeepmind/2026-08-20-qwen36-lora-table2-9284-difficult-advice-716-verbose-rank-64-dynbatch",
+  "renamed_at": "2026-11-16T03:27:38.020Z",
   "benchmarks": [],
   "sources": [
     {

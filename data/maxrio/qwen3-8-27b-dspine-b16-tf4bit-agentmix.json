@@ -5,7 +5,7 @@
   "author": "Maxrio",
   "url": "https://huggingface.co/Maxrio/Qwen3.8-27B-DSpine-b16-TF4bit-AgentMix",
   "created_at": "2026-11-14T15:18:20.000Z",
-  "updated_at": "2026-11-14T15:27:04.000Z",
+  "updated_at": "2026-11-16T01:27:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 24,
   "trending_score": 0,
   "parameters": 2025912064,
   "parameters_human": "2.03B",

@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/f5tts-habibi-tts-irq",
   "created_at": "2026-11-14T22:52:23.000Z",
-  "updated_at": "2026-11-15T02:45:22.000Z",
+  "updated_at": "2026-11-15T16:01:33.000Z",
   "license": "cc-by-nc-sa-4.0",
   "license_family": "non-commercial",
   "pipeline_tag": "text-to-speech",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 29,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Phoonnx/f5tts-ar_iq-habibi_irq",
+  "renamed_at": "2026-11-16T03:54:36.465Z",
   "benchmarks": [],
   "sources": []
 }

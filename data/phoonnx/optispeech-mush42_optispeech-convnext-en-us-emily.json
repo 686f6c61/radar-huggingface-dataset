@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/optispeech-mush42_optispeech-convnext-en-us-emily",
   "created_at": "2026-11-14T22:32:00.000Z",
-  "updated_at": "2026-11-15T02:44:01.000Z",
+  "updated_at": "2026-11-15T15:58:59.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 29,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Phoonnx/optispeech-en_us-convnext_emily",
+  "renamed_at": "2026-11-16T03:55:38.056Z",
   "benchmarks": [],
   "sources": []
 }

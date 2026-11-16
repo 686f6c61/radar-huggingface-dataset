@@ -20,6 +20,7 @@
     "thermodynamic-ai",
     "landauer",
     "embeddings",
+    "doi:10.57967/hf/11647",
     "license:apache-2.0",
     "region:us"
   ],
@@ -34,7 +35,7 @@
   "base_model": null,
   "formats": [],
   "is_conversational": false,
-  "gated": false,
+  "gated": true,
   "disabled": false,
   "removed": false,
   "removed_at": null,

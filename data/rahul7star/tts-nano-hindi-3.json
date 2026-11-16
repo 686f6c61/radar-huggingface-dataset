@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "rahul7star/tts-nano-hindi-3",
+  "slug": "rahul7star-tts-nano-hindi-3",
+  "author": "rahul7star",
+  "url": "https://huggingface.co/rahul7star/tts-nano-hindi-3",
+  "created_at": "2026-11-16T02:07:30.000Z",
+  "updated_at": "2026-11-16T02:07:37.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "te",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "text-to-speech",
+    "te",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 61854849,
+  "parameters_human": "61.9M",
+  "storage_bytes": 349160720,
+  "storage_human": "349 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

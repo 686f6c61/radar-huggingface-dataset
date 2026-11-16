@@ -5,7 +5,7 @@
   "author": "Kovach-Enterprises",
   "url": "https://huggingface.co/Kovach-Enterprises/speedrun-d768-a100-verifiable-embedding",
   "created_at": "2026-11-15T01:04:54.000Z",
-  "updated_at": "2026-11-15T01:58:25.000Z",
+  "updated_at": "2026-11-15T11:54:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",

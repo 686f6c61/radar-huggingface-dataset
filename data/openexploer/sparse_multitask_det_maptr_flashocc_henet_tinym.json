@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "OpenExplorer/sparse_multitask_det_maptr_flashocc_henet_tinym",
+  "renamed_at": "2026-11-16T03:49:36.492Z",
   "benchmarks": [],
   "sources": [
     {

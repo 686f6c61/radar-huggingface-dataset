@@ -1,0 +1,95 @@
+{
+  "schema": 2,
+  "id": "pgodlews/road-ironwork-yolo11n",
+  "slug": "pgodlews-road-ironwork-yolo11n",
+  "author": "pgodlews",
+  "url": "https://huggingface.co/pgodlews/road-ironwork-yolo11n",
+  "created_at": "2026-11-16T00:08:23.000Z",
+  "updated_at": "2026-11-16T00:08:45.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "yolo",
+    "yolo11",
+    "road",
+    "infrastructure",
+    "dashcam",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5761251,
+  "storage_human": "6 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "road-ironwork human test split (332 frames, not published)",
+      "metric": "mAP50 (seed 1)",
+      "value": 0.771
+    },
+    {
+      "task": null,
+      "dataset": "road-ironwork human test split (332 frames, not published)",
+      "metric": "mAP50-95 (seed 1)",
+      "value": 0.607
+    },
+    {
+      "task": null,
+      "dataset": "road-ironwork human test split (332 frames, not published)",
+      "metric": "precision (seed 1)",
+      "value": 0.896
+    },
+    {
+      "task": null,
+      "dataset": "road-ironwork human test split (332 frames, not published)",
+      "metric": "recall (seed 1)",
+      "value": 0.74
+    },
+    {
+      "task": null,
+      "dataset": "road-ironwork human test split (332 frames, not published)",
+      "metric": "grate AP50 (seed 1)",
+      "value": 0.929
+    },
+    {
+      "task": null,
+      "dataset": "road-ironwork human test split (332 frames, not published)",
+      "metric": "cover AP50 (seed 1)",
+      "value": 0.821
+    },
+    {
+      "task": null,
+      "dataset": "road-ironwork human test split (332 frames, not published)",
+      "metric": "small AP50 (seed 1)",
+      "value": 0.644
+    },
+    {
+      "task": null,
+      "dataset": "road-ironwork human test split (332 frames, not published)",
+      "metric": "road_stud AP50 (seed 1)",
+      "value": 0.691
+    }
+  ],
+  "sources": []
+}

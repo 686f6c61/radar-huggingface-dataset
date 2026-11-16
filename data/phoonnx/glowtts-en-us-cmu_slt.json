@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/glowtts-en-us-cmu_slt",
   "created_at": "2026-11-14T22:56:04.000Z",
-  "updated_at": "2026-11-15T02:45:04.000Z",
+  "updated_at": "2026-11-15T16:01:00.000Z",
   "license": "other",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 33,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Phoonnx/glowtts-en_us-cmu_slt",
+  "renamed_at": "2026-11-16T03:54:55.718Z",
   "benchmarks": [],
   "sources": []
 }

@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/vits-hf_community_mbarnig_lb_rhasspy_piper_tts_lb_LU-femaleLOD-medium",
   "created_at": "2026-11-14T23:06:33.000Z",
-  "updated_at": "2026-11-15T02:45:59.000Z",
+  "updated_at": "2026-11-15T16:03:29.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 28,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Phoonnx/vits-lb_lu-femalelod",
+  "renamed_at": "2026-11-16T03:57:38.009Z",
   "benchmarks": [],
   "sources": []
 }

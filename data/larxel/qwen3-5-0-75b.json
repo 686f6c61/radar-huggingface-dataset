@@ -19,7 +19,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 17,
+  "downloads_30d": 20,
   "trending_score": 0,
   "parameters": 752393024,
   "parameters_human": "752.4M",
@@ -36,8 +36,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Larxel/Qwen3.5-0.7B",
+  "renamed_at": "2026-11-16T03:28:44.776Z",
   "benchmarks": [],
   "sources": []
 }

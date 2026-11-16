@@ -5,7 +5,7 @@
   "author": "Monster-Code",
   "url": "https://huggingface.co/Monster-Code/Merlin-9M",
   "created_at": "2026-11-15T01:20:51.000Z",
-  "updated_at": "2026-11-15T18:25:31.000Z",
+  "updated_at": "2026-11-15T18:46:08.000Z",
   "license": "other",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -22,7 +22,7 @@
     "license:other",
     "region:us"
   ],
-  "likes": 1,
+  "likes": 2,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

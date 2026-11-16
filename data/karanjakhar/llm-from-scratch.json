@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "karanjakhar/llm-from-scratch",
+  "slug": "karanjakhar-llm-from-scratch",
+  "author": "karanjakhar",
+  "url": "https://huggingface.co/karanjakhar/llm-from-scratch",
+  "created_at": "2026-11-16T01:34:21.000Z",
+  "updated_at": "2026-11-16T02:03:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "from-scratch",
+    "education",
+    "code",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 608214833,
+  "storage_human": "608 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Create new docs in SharePoint online which open in app",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/create-new-docs-in-sharepoint-online-which-open-in/533428d5-e742-4410-aee3-2f920c2e2319",
+      "snippet": "When we create a new document from a modern SharePoint Online team site library, it opens in Word Online. Existing documents in …"
+    }
+  ]
+}

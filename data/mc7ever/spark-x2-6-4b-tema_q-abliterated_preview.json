@@ -5,7 +5,7 @@
   "author": "MC7ever",
   "url": "https://huggingface.co/MC7ever/Spark-X2.6-4B-Tema_Q-Abliterated_preview",
   "created_at": "2026-11-09T23:46:14.000Z",
-  "updated_at": "2026-11-09T23:50:28.000Z",
+  "updated_at": "2026-11-15T07:02:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 568,
+  "downloads_30d": 570,
   "trending_score": 0,
   "parameters": 4112079360,
   "parameters_human": "4.11B",

@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/vits-hf_community_Da-Bob_piper-mikev3",
   "created_at": "2026-11-14T23:03:27.000Z",
-  "updated_at": "2026-11-15T02:45:42.000Z",
+  "updated_at": "2026-11-15T16:03:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 27,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Phoonnx/vits-en_us-mikev3",
+  "renamed_at": "2026-11-16T03:56:31.372Z",
   "benchmarks": [],
   "sources": []
 }

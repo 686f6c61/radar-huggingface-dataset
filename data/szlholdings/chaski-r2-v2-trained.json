@@ -5,7 +5,7 @@
   "author": "SZLHOLDINGS",
   "url": "https://huggingface.co/SZLHOLDINGS/chaski-r2-v2-trained",
   "created_at": "2026-11-14T01:26:01.000Z",
-  "updated_at": "2026-11-14T20:54:00.000Z",
+  "updated_at": "2026-11-16T00:55:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 105,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

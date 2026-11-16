@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "kylelovesllms/translation-syntax-rc_ladder_who_00_22_12_02-75000",
+  "slug": "kylelovesllms-translation-syntax-rc_ladder_who_00_22_12_02-75000",
+  "author": "kylelovesllms",
+  "url": "https://huggingface.co/kylelovesllms/translation-syntax-rc_ladder_who_00_22_12_02-75000",
+  "created_at": "2026-11-15T22:09:30.000Z",
+  "updated_at": "2026-11-15T22:10:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2283273563,
+  "storage_human": "2.3 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 21,
+  "downloads_30d": 11,
   "trending_score": 0,
   "parameters": 7298011136,
   "parameters_human": "7.30B",
@@ -46,8 +46,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "CompassioninMachineLearning/OLMo-3-7B-CPT-BF16_olddata",
+  "renamed_at": "2026-11-16T02:39:22.877Z",
   "benchmarks": [],
   "sources": [
     {

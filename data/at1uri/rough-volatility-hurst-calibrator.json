@@ -1,0 +1,66 @@
+{
+  "schema": 2,
+  "id": "At1uri/rough-volatility-hurst-calibrator",
+  "slug": "at1uri-rough-volatility-hurst-calibrator",
+  "author": "At1uri",
+  "url": "https://huggingface.co/At1uri/rough-volatility-hurst-calibrator",
+  "created_at": "2026-11-16T03:45:35.000Z",
+  "updated_at": "2026-11-16T03:45:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "volterra_neural_calibrator",
+    "rough-volatility",
+    "fractional-brownian-motion",
+    "rbergomi",
+    "quantitative-finance",
+    "neural-calibrator",
+    "volterra-sde",
+    "implied-volatility",
+    "en",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 112131,
+  "parameters_human": "112131",
+  "storage_bytes": 449580,
+  "storage_human": "449580 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Hurst Exponent Calibration",
+      "dataset": "Rough Volatility Fractional Benchmarks",
+      "metric": "Hurst MAE",
+      "value": 0.0184
+    },
+    {
+      "task": "Hurst Exponent Calibration",
+      "dataset": "Rough Volatility Fractional Benchmarks",
+      "metric": "Vol-of-Vol MSE",
+      "value": 0.042
+    }
+  ],
+  "sources": []
+}

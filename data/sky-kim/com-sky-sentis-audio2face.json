@@ -5,7 +5,7 @@
   "author": "Sky-Kim",
   "url": "https://huggingface.co/Sky-Kim/com.sky.sentis.audio2face",
   "created_at": "2026-11-13T06:14:52.000Z",
-  "updated_at": "2026-11-13T06:17:45.000Z",
+  "updated_at": "2026-11-15T08:48:39.000Z",
   "license": "mit-and-nvidia-open-model-license",
   "license_family": "oss",
   "pipeline_tag": "audio-to-audio",

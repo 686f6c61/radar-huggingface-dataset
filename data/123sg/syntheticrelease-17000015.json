@@ -4,14 +4,16 @@
   "slug": "123sg-syntheticrelease-17000015",
   "author": "123sg",
   "url": "https://huggingface.co/123sg/SyntheticRelease-17000015",
-  "created_at": "2026-11-15T19:39:10.000Z",
-  "updated_at": "2026-11-15T19:39:15.000Z",
+  "created_at": "2026-11-15T23:56:43.000Z",
+  "updated_at": "2026-11-15T23:57:05.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "pytorch",
+    "synthetic-linear",
     "region:us"
   ],
   "likes": 0,

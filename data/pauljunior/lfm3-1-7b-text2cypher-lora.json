@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "pauljunior/lfm3-1.7b-text2cypher-lora",
+  "slug": "pauljunior-lfm3-1-7b-text2cypher-lora",
+  "author": "pauljunior",
+  "url": "https://huggingface.co/pauljunior/lfm3-1.7b-text2cypher-lora",
+  "created_at": "2026-11-12T11:21:13.000Z",
+  "updated_at": "2026-11-15T21:15:17.000Z",
+  "license": "lfm-open-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "text2cypher",
+    "cypher",
+    "neo4j",
+    "lora",
+    "en",
+    "dataset:neo4j/text2cypher-2024v1",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:adapter:LiquidAI/LFM3-1.7B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3185032555,
+  "storage_human": "3.2 GB",
+  "context_length": null,
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

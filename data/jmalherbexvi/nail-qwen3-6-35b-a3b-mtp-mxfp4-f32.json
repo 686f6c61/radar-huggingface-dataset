@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "jmalherbexvi/Nail-Qwen3.6-35B-A3B-MTP-MXFP4-F32",
+  "slug": "jmalherbexvi-nail-qwen3-6-35b-a3b-mtp-mxfp4-f32",
+  "author": "jmalherbexvi",
+  "url": "https://huggingface.co/jmalherbexvi/Nail-Qwen3.6-35B-A3B-MTP-MXFP4-F32",
+  "created_at": "2026-11-15T23:53:23.000Z",
+  "updated_at": "2026-11-16T00:00:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "mxfp4",
+    "qwen3.6",
+    "mtp",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-GGUF-MTP",
+    "base_model:quantized:peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-GGUF-MTP",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 899283584,
+  "storage_human": "899 MB",
+  "context_length": null,
+  "base_model": "peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-GGUF-MTP",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

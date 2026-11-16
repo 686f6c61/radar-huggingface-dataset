@@ -35,8 +35,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "OpenExplorer/centerpoint_pointpillar",
+  "renamed_at": "2026-11-16T03:49:34.303Z",
   "benchmarks": [],
   "sources": [
     {

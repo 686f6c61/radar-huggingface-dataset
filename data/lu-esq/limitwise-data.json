@@ -41,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Lu-esq/limitwise-model",
+  "renamed_at": "2026-11-16T03:32:06.364Z",
   "benchmarks": [],
   "sources": []
 }

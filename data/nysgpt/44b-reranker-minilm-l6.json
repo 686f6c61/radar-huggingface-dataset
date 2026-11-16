@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2,
+  "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 22713601,
   "parameters_human": "22.7M",
@@ -46,8 +46,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "NYSgpt/44b-reranker-mini",
+  "renamed_at": "2026-11-16T03:42:56.507Z",
   "benchmarks": [],
   "sources": [
     {

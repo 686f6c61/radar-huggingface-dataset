@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/vocoders-coqui-ljspeech-hifigan-v2",
   "created_at": "2026-11-14T22:32:57.000Z",
-  "updated_at": "2026-11-15T02:44:04.000Z",
+  "updated_at": "2026-11-15T15:59:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Phoonnx/hifigan-en_us-ljspeech-v2",
+  "renamed_at": "2026-11-16T03:58:23.417Z",
   "benchmarks": [],
   "sources": []
 }

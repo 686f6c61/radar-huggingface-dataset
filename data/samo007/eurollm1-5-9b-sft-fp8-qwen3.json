@@ -5,7 +5,7 @@
   "author": "Samo007",
   "url": "https://huggingface.co/Samo007/EuroLLM1.5-9B-SFT-FP8-Qwen3",
   "created_at": "2026-11-14T16:34:24.000Z",
-  "updated_at": "2026-11-14T23:13:44.000Z",
+  "updated_at": "2026-11-15T22:21:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 49,
   "trending_score": 0,
   "parameters": 9152319488,
   "parameters_human": "9.15B",

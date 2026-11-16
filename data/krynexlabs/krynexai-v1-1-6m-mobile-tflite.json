@@ -61,8 +61,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "KrynexLabs/KrynexAI-1.1-5M-Mobile-TFLite",
+  "renamed_at": "2026-11-16T03:26:49.511Z",
   "benchmarks": [],
   "sources": [
     {

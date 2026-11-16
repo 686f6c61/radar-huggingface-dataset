@@ -24,7 +24,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 48,
+  "downloads_30d": 27,
   "trending_score": 0,
   "parameters": 4326350848,
   "parameters_human": "4.33B",
@@ -41,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Tang-yin-112/mt-invoice-4g",
+  "renamed_at": "2026-11-16T04:32:55.058Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,0 +1,67 @@
+{
+  "schema": 2,
+  "id": "Kandoo/Juggernaut-Moss-DMD2-LoRA-Beta",
+  "slug": "kandoo-juggernaut-moss-dmd2-lora-beta",
+  "author": "Kandoo",
+  "url": "https://huggingface.co/Kandoo/Juggernaut-Moss-DMD2-LoRA-Beta",
+  "created_at": "2026-11-15T19:33:02.000Z",
+  "updated_at": "2026-11-15T19:33:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "text-to-image",
+    "moss-image",
+    "juggernaut",
+    "dmd2",
+    "distillation",
+    "turbo",
+    "few-step",
+    "comfyui",
+    "not-for-all-audiences",
+    "arxiv:2405.14867",
+    "base_model:Kandoo/Juggernaut-Moss",
+    "base_model:adapter:Kandoo/Juggernaut-Moss",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 314545406,
+  "storage_human": "315 MB",
+  "context_length": null,
+  "base_model": "Kandoo/Juggernaut-Moss",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FR | Kandoo - L’apprentissage de la propreté simplifié",
+      "url": "https://kandoo.eu/fr/",
+      "snippet": "Notre livre d’histoires, notre tableau de récompenses et notre application de l’apprentissage de la propreté Kandoo vous proposent …"
+    },
+    {
+      "title": "EN | Kandoo - Toilet Training Made Simple",
+      "url": "https://kandoo.eu/",
+      "snippet": "You can do it too with Kandoo! Potty training advice, tips and games with Diddit makes toilet time simple. Kandoo flushable toilet …"
+    },
+    {
+      "title": "Bespoke Product Design & Manufacturing for Brands | Kandoo",
+      "url": "https://kandoo.com/",
+      "snippet": "KANDOO always go ‘the extra mile’ for their clients and I certainly felt the impact of this working closely with them. I have no …"
+    }
+  ]
+}

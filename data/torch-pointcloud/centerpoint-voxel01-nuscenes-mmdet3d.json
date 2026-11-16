@@ -1,0 +1,63 @@
+{
+  "schema": 2,
+  "id": "torch-pointcloud/centerpoint-voxel01.nuscenes.mmdet3d",
+  "slug": "torch-pointcloud-centerpoint-voxel01-nuscenes-mmdet3d",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/centerpoint-voxel01.nuscenes.mmdet3d",
+  "created_at": "2026-10-22T21:35:05.000Z",
+  "updated_at": "2026-11-15T21:55:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "centerpoint",
+    "object-detection",
+    "dataset:nuscenes",
+    "arxiv:2006.11275",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2436,
+  "trending_score": 0,
+  "parameters": 8951286,
+  "parameters_human": "9.0M",
+  "storage_bytes": 35857208,
+  "storage_human": "36 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "nuScenes",
+      "metric": "mAP",
+      "value": 56.09
+    },
+    {
+      "task": null,
+      "dataset": "nuScenes",
+      "metric": "NDS",
+      "value": 64.52
+    }
+  ],
+  "sources": []
+}

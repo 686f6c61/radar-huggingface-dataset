@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "CarlosZamG/resnet-20-realwaste",
+  "slug": "carloszamg-resnet-20-realwaste",
+  "author": "CarlosZamG",
+  "url": "https://huggingface.co/CarlosZamG/resnet-20-realwaste",
+  "created_at": "2026-11-16T04:09:24.000Z",
+  "updated_at": "2026-11-16T04:46:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "ResNet",
+    "computer-vision",
+    "image-classification",
+    "resnet",
+    "realwaste",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 274761,
+  "parameters_human": "274761",
+  "storage_bytes": 15565037,
+  "storage_human": "16 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

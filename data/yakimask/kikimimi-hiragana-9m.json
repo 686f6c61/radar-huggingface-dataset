@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "Yakimask/kikimimi-hiragana-9m",
+  "slug": "yakimask-kikimimi-hiragana-9m",
+  "author": "Yakimask",
+  "url": "https://huggingface.co/Yakimask/kikimimi-hiragana-9m",
+  "created_at": "2026-11-16T02:24:43.000Z",
+  "updated_at": "2026-11-16T02:35:50.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "automatic-speech-recognition",
+    "streaming",
+    "ctc",
+    "conformer",
+    "hiragana",
+    "ja",
+    "dataset:espnet/yodas",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9133670,
+  "parameters_human": "9.1M",
+  "storage_bytes": 36571904,
+  "storage_human": "37 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

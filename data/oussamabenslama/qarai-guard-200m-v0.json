@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 10,
+  "downloads_30d": 9,
   "trending_score": 0,
   "parameters": 162849034,
   "parameters_human": "162.8M",
@@ -48,8 +48,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Qarai/qarai-guard-163M-v0",
+  "renamed_at": "2026-11-16T03:51:55.857Z",
   "benchmarks": [],
   "sources": [
     {

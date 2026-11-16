@@ -1,0 +1,46 @@
+{
+  "schema": 2,
+  "id": "zahrabaran/tiny-voca",
+  "slug": "zahrabaran-tiny-voca",
+  "author": "zahrabaran",
+  "url": "https://huggingface.co/zahrabaran/tiny-voca",
+  "created_at": "2026-11-16T00:54:00.000Z",
+  "updated_at": "2026-11-16T00:54:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "en",
+    "dataset:n4ze3m/tiny-voca",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43224465,
+  "storage_human": "43 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

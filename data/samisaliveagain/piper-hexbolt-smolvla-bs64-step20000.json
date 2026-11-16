@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 29,
+  "downloads_30d": 38,
   "trending_score": 0,
   "parameters": 450046176,
   "parameters_human": "450.0M",
@@ -43,8 +43,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Samisaliveagain/smolvla-agilex-piper-hex-bolt-insertion-batch64-step20000",
+  "renamed_at": "2026-11-16T04:19:03.010Z",
   "benchmarks": [],
   "sources": []
 }

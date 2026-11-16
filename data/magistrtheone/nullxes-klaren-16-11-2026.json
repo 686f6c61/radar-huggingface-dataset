@@ -1,0 +1,58 @@
+{
+  "schema": 2,
+  "id": "MagistrTheOne/NULLXES-KLAREN-16-11-2026",
+  "slug": "magistrtheone-nullxes-klaren-16-11-2026",
+  "author": "MagistrTheOne",
+  "url": "https://huggingface.co/MagistrTheOne/NULLXES-KLAREN-16-11-2026",
+  "created_at": "2026-11-16T01:52:10.000Z",
+  "updated_at": "2026-11-16T01:52:16.000Z",
+  "license": "nullxes-research-restricted",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "nullxes",
+    "klaren-4e",
+    "qlora",
+    "lora",
+    "experimental",
+    "ru",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31879072,
+  "storage_human": "32 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What Are Zk-Rollups? The Layer-2 Scalability Technique - Binance",
+      "url": "https://www.binance.com/en/academy/articles/what-are-zk-rollups-the-layer-2-scalability-technique",
+      "snippet": "Jun 26, 2026 · ZK-rollups are a Layer 2 scaling solution that bundles many transactions off-chain and submits a compact …"
+    }
+  ]
+}

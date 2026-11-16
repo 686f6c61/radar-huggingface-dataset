@@ -5,7 +5,7 @@
   "author": "Monyzik",
   "url": "https://huggingface.co/Monyzik/qwen35-rubert-large-ensemble-balanced",
   "created_at": "2026-11-15T20:11:25.000Z",
-  "updated_at": "2026-11-15T20:14:34.000Z",
+  "updated_at": "2026-11-15T22:01:04.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -32,10 +32,10 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2004951244,
-  "storage_human": "2.0 GB",
+  "storage_bytes": 2743884273,
+  "storage_human": "2.7 GB",
   "context_length": null,
-  "base_model": "Qwen/Qwen3.5-0.8B, ai-forever/ruBert-large",
+  "base_model": "Qwen/Qwen3.5-0.8B, ai-forever/ruBert-large, ai-forever/ruBert-base",
   "formats": [
     "safetensors"
   ],

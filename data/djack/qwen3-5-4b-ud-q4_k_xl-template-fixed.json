@@ -48,8 +48,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "DJack/Qwen3.5-4B-UD-Q4_K_XL-Japanese-imatrix-template-fixed",
+  "renamed_at": "2026-11-16T02:42:25.912Z",
   "benchmarks": [],
   "sources": []
 }

@@ -5,7 +5,7 @@
   "author": "0xSero",
   "url": "https://huggingface.co/0xSero/Inkling-2-Small-EXL3-4bpw",
   "created_at": "2026-11-14T15:56:48.000Z",
-  "updated_at": "2026-11-14T20:37:55.000Z",
+  "updated_at": "2026-11-15T08:12:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 127,
   "trending_score": 0,
   "parameters": 154131591168,
   "parameters_human": "154.13B",

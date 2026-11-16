@@ -5,7 +5,7 @@
   "author": "STRIDE-lab",
   "url": "https://huggingface.co/STRIDE-lab/biomedbert-abstract-number-of-participants-20261106",
   "created_at": "2026-11-15T19:54:13.000Z",
-  "updated_at": "2026-11-15T20:11:21.000Z",
+  "updated_at": "2026-11-15T21:07:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",

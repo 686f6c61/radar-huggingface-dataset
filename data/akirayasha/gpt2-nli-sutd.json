@@ -5,7 +5,7 @@
   "author": "Akirayasha",
   "url": "https://huggingface.co/Akirayasha/gpt2-nli-sutd",
   "created_at": "2026-11-13T08:55:54.000Z",
-  "updated_at": "2026-11-13T08:56:36.000Z",
+  "updated_at": "2026-11-15T07:36:03.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -43,8 +43,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Akirayasha/gpt2-nli-sutd-lr2e-5",
+  "renamed_at": "2026-11-16T02:16:06.966Z",
   "benchmarks": [],
   "sources": []
 }

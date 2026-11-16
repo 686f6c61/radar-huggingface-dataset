@@ -5,7 +5,7 @@
   "author": "SZLHOLDINGS",
   "url": "https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B-v2-trained",
   "created_at": "2026-11-13T22:13:42.000Z",
-  "updated_at": "2026-11-14T19:00:09.000Z",
+  "updated_at": "2026-11-16T00:56:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 93,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

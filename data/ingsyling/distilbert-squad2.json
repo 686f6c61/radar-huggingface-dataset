@@ -5,7 +5,7 @@
   "author": "Ingsyling",
   "url": "https://huggingface.co/Ingsyling/distilbert-squad2",
   "created_at": "2026-11-10T13:45:18.000Z",
-  "updated_at": "2026-11-11T15:36:01.000Z",
+  "updated_at": "2026-11-15T11:51:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "question-answering",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 57,
+  "downloads_30d": 61,
   "trending_score": 0,
   "parameters": 66364418,
   "parameters_human": "66.4M",

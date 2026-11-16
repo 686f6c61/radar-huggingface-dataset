@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/styletts2-hitz-eu-emo-styletts2",
   "created_at": "2026-11-14T22:42:15.000Z",
-  "updated_at": "2026-11-15T02:44:39.000Z",
+  "updated_at": "2026-11-15T16:00:13.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 22,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Phoonnx/styletts2-eu_es-emo",
+  "renamed_at": "2026-11-16T03:55:51.095Z",
   "benchmarks": [],
   "sources": []
 }

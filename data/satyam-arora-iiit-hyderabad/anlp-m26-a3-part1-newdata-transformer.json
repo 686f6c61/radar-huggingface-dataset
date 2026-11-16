@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "satyam-arora-iiit-hyderabad/anlp-m26-a3-part1-newdata-transformer",
+  "slug": "satyam-arora-iiit-hyderabad-anlp-m26-a3-part1-newdata-transformer",
+  "author": "satyam-arora-iiit-hyderabad",
+  "url": "https://huggingface.co/satyam-arora-iiit-hyderabad/anlp-m26-a3-part1-newdata-transformer",
+  "created_at": "2026-11-15T23:13:59.000Z",
+  "updated_at": "2026-11-15T23:14:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 798848,
+  "parameters_human": "798848",
+  "storage_bytes": 3198552,
+  "storage_human": "3 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

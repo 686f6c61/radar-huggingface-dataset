@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/vits-hf_community_WitoldG_polish_piper_models_pl_PL-justyna_wg_glos-medium",
   "created_at": "2026-11-14T23:04:58.000Z",
-  "updated_at": "2026-11-15T02:45:49.000Z",
+  "updated_at": "2026-11-15T16:03:03.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 26,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Phoonnx/vits-pl_pl-justyna",
+  "renamed_at": "2026-11-16T03:56:37.393Z",
   "benchmarks": [],
   "sources": []
 }

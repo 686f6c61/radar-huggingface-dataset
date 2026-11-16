@@ -5,7 +5,7 @@
   "author": "Aleph-dev",
   "url": "https://huggingface.co/Aleph-dev/qwen35_VI_v01",
   "created_at": "2026-11-15T04:01:47.000Z",
-  "updated_at": "2026-11-15T04:02:34.000Z",
+  "updated_at": "2026-11-15T04:31:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -19,7 +19,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 16,
   "trending_score": 0,
   "parameters": 4326350848,
   "parameters_human": "4.33B",

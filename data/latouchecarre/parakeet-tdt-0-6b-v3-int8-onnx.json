@@ -93,8 +93,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "LaToucheCarre/LaToucheCarre-Android-Voix-Parakeet-TDT-0.6B-v3-INT8-ONNX",
+  "renamed_at": "2026-11-16T03:28:11.963Z",
   "benchmarks": [],
   "sources": [
     {

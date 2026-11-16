@@ -5,17 +5,14 @@
   "author": "Mathan1103",
   "url": "https://huggingface.co/Mathan1103/json-tools-qwen3b-lora",
   "created_at": "2026-11-14T13:11:02.000Z",
-  "updated_at": "2026-11-14T13:11:28.000Z",
+  "updated_at": "2026-11-15T09:51:43.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
   "library": "transformers",
   "languages": [],
   "tags": [
-    "transformers",
     "safetensors",
-    "arxiv:1910.09700",
-    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,

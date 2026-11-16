@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 23,
+  "downloads_30d": 25,
   "trending_score": 0,
   "parameters": 3025266688,
   "parameters_human": "3.03B",
@@ -47,8 +47,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "VikramPal/Muse-Glimmer-30B-DynQuant-3bit",
+  "renamed_at": "2026-11-16T04:44:06.860Z",
   "benchmarks": [],
   "sources": [
     {

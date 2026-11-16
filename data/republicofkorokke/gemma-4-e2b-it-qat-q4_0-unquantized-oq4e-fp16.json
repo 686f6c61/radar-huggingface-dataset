@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 28,
+  "downloads_30d": 64,
   "trending_score": 0,
   "parameters": 4628569379,
   "parameters_human": "4.63B",
@@ -39,8 +39,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "RepublicOfKorokke/gemma-4-E2B-it-qat-q4_0-unquantized-oQ4e-text-fp16-v0.7.3",
+  "renamed_at": "2026-11-16T04:08:07.573Z",
   "benchmarks": [],
   "sources": []
 }

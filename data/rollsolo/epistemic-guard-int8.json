@@ -5,7 +5,7 @@
   "author": "RollSolo",
   "url": "https://huggingface.co/RollSolo/epistemic-guard-int8",
   "created_at": "2026-11-14T02:24:48.000Z",
-  "updated_at": "2026-11-14T09:45:53.000Z",
+  "updated_at": "2026-11-16T01:42:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
