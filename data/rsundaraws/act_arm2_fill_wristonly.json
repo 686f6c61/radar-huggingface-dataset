@@ -39,8 +39,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "StrandsAgents/act_arm2_fill_wristonly",
+  "renamed_at": "2026-11-17T09:25:09.025Z",
   "benchmarks": [],
   "sources": []
 }

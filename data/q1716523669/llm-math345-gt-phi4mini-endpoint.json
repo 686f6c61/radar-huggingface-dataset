@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 47,
+  "downloads_30d": 29,
   "trending_score": 0,
   "parameters": 199680,
   "parameters_human": "199680",
@@ -46,8 +46,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "logan7000/llm-math345-gt-phi4mini-endpoint",
+  "renamed_at": "2026-11-17T09:08:26.093Z",
   "benchmarks": [],
   "sources": [
     {

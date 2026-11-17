@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Quyet-1.2-Large-GGUF",
+  "slug": "mradermacher-quyet-1-2-large-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Quyet-1.2-Large-GGUF",
+  "created_at": "2026-11-17T06:26:36.000Z",
+  "updated_at": "2026-11-17T07:00:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "quyet",
+    "decision-model",
+    "calibrated",
+    "classification",
+    "en",
+    "base_model:chinhnc/Quyet-1.2-Large",
+    "base_model:quantized:chinhnc/Quyet-1.2-Large",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 211899894880,
+  "storage_human": "211.9 GB",
+  "context_length": 262144,
+  "base_model": "chinhnc/Quyet-1.2-Large",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

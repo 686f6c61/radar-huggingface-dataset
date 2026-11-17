@@ -49,8 +49,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "zeromodels/internvl3.5-8b",
+  "renamed_at": "2026-11-17T07:22:43.695Z",
   "benchmarks": [],
   "sources": [
     {

@@ -2,99 +2,112 @@
 
 ## Resumen
 
-pocket-layout-planner-0.8B es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.5-0.8B, publicado por el usuario ysharma en Hugging Face bajo licencia Apache-2.0. Su funcion es convertir una peticion de imagen corta —sin prompt de sistema y sin modo de razonamiento— en una unica linea de salida compuesta por dos partes: un caption detallado que cita los elementos visuales mediante identificadores `<id>`, seguido de una tabla JSON de cajas delimitadoras con el formato `[y_min, x_min, y_max, x_max]` normalizado sobre una rejilla de 0 a 1000.
+pocket-layout-planner-0.8B es un ajuste fino (SFT) del modelo base Qwen3.5-0.8B desarrollado por el usuario ysharma. Su funcion es actuar como un "upsampler de prompts" compacto: recibe unicamente una peticion de imagen corta (sin system prompt ni modo thinking) y devuelve en una sola linea una caption detallada que cita cada elemento como `<id>`, seguida de una tabla JSON de cajas delimitadoras con coordenadas `[y_min, x_min, y_max, x_max]` normalizadas en una rejilla de 0 a 1000 con origen en la esquina superior izquierda. Este formato es exactamente el que consume FLUX.3 Image Klein como "DiT prompt format".
 
-El modelo se ha destilado a partir del modo `t2i_bbox` del modelo profesor `black-forest-labs/flux-3-image-klein-pup` (Apache-2.0), segun declara el propio autor, y los datos de entrenamiento provienen del conjunto `ysharma/klein-layout-plans`. El caso de uso central es la planificacion espacial previa a la generacion o edicion de imagenes: traducir una instruccion textual breve a una especificacion estructurada de elementos y coordenadas.
+El modelo se ha destilado a partir del modo `t2i_bbox` del modelo docente `black-forest-labs/flux-3-image-klein-pup` (Apache-2.0). Con 852.985.920 parametros reales y un tamano de repositorio de 10,3 GB, esta pensado para entornos con recursos limitados: segun el autor, genera un plan medio de 620 tokens en aproximadamente 20 segundos sobre CPU con llama.cpp y cuantizacion GGUF Q8_0.
 
-Es relevante ahora porque el repositorio es un *stub*: el 15 de octubre de 2026 solo contiene la model card y la declaracion de intenciones. Los pesos, la tabla de evaluacion, la hoja de contacto visual, la receta de entrenamiento, las limitaciones, el fragmento de codigo ejecutado y la exportacion GGUF Q8 estan anunciados para despues de que se ejecute un pipeline con control de acceso. Por tanto, cualquier evaluacion practica debe posponerse hasta que ese material este publicado.
+La relevancia practica del modelo es acotada pero honesta: el propio autor documenta que no se materializo ninguna ventaja de layout en las renders finales, por lo que debe entenderse como un upsampler de prompts de bolsillo que emite un registro de layout estructurado y parseable (96-97% fiable), no como un planificador que mejore la adherencia del generador de imagenes.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (hereda la del modelo base Qwen/Qwen3.5-0.8B) |
-| Parametros totales | 0,8 mil millones (segun el identificador del repositorio) |
-| Parametros activos | no aplica / no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible en el repositorio; se anuncia una exportacion GGUF Q8 futura |
-| Idiomas soportados | no disponible (no se declaran idiomas en la model card) |
+| Arquitectura | Transformer (Qwen3.5, con capas de atencion lineal; vision tower congelado) |
+| Parametros totales | 852.985.920 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (entrenamiento con max_length 1536) |
+| Tipos de cuantizacion | GGUF Q8_0 disponible; safetensors en bf16 |
+| Idiomas soportados | Salida en ingles; acepta peticiones en cualquier idioma |
 | Licencia | Apache-2.0 |
-| Formato de pesos | no disponible por ahora; anunciado GGUF Q8 en una version futura |
-
-Otros datos declarados: autor `ysharma`; modelo base declarado `Qwen/Qwen3.5-0.8B`; modelo profesor declarado `black-forest-labs/flux-3-image-klein-pup` (modo `t2i_bbox`); conjunto de datos de entrenamiento `ysharma/klein-layout-plans`; etiquetas declaradas `layout-planning`, `distillation`, `bbox`; descargas y *likes* registrados en el repositorio: 0; fecha de creacion: 2026-10-15.
+| Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura interna. Al tratarse de un fine-tune directo de `Qwen/Qwen3.5-0.8B`, la arquitectura heredada es la del modelo base declarado, pero el autor no aporta detalles sobre numero de capas, tipo de atencion, dimension de las cabezas, vocabulario ni estrategia de posicion. Tampoco se especifica el numero de tokens de entrenamiento, la composicion del dataset `ysharma/klein-layout-plans` ni si se aplicaron tecnicas de alineacion como RLHF, DPO o ajuste por preferencias.
+El modelo parte de Qwen3.5-0.8B, un transformer con capas de atencion lineal. El ajuste fino se realizo con TRL `SFTTrainer` en formato conversacional prompt-completion, calculando la perdida solo sobre los tokens del asistente, durante 2 epocas (10,1 millones de tokens), con LR 1e-5 coseno, batch 16, max_length 1536 y bf16, sobre una GPU A10G en 2 horas y 11 minutos. El vision tower se mantuvo congelado. Se uso batching con padding en lugar de packing, porque las capas de atencion lineal de Qwen3.5 requieren el kernel `causal_conv1d` (solo CUDA) para el packing de TRL.
 
-La innovacion tecnica declarada es la destilacion desde un modelo de difusion con capacidad de planificacion de cajas: el modo `t2i_bbox` del modelo profesor genera caption mas tabla de coordenadas, y ese comportamiento se ha transferido a un modelo de lenguaje de 0,8B parametros. El resultado es un planificador ligero que no requiere prompt de sistema ni fase de razonamiento explicita y que produce la salida en una sola linea, con las cajas expresadas en una rejilla entera de 0 a 1000 para `y_min`, `x_min`, `y_max` y `x_max`. Se anuncia tambien que el pipeline de entrenamiento sera publicado junto con la receta y la tabla de evaluacion, pero en el momento de redactar esta ficha ese contenido no esta disponible.
+Las etiquetas de entrenamiento se generaron con el modo `t2i_bbox` del docente `flux-3-image-klein-pup` sobre vLLM (greedy, parametros de muestreo oficiales), a partir de 7.842 peticiones estratificadas por taxonomia (14% no inglesas, 27% con `TARGET CANVAS`, 40% con especificaciones estructuradas). El 97,0% paso el filtro duro, quedando 7.575 filas limpias. Antes del entrenamiento se aplico una puerta anti-sobreajuste con 32 filas: 100% de parseo y IoU emparejado de 1.0 frente al docente. La etapa DPO prevista se descarto por considerarse innecesaria.
 
 ## Capacidades
 
-- Generacion de captions detallados a partir de una peticion de imagen breve, citando cada elemento mediante identificadores `<id>`.
-- Prediccion de cajas delimitadoras en formato JSON, con cuatro valores enteros por caja sobre una rejilla de 0 a 1000.
-- Planificacion de layout espacial: asignacion de posiciones y extensiones a los elementos descritos en el caption.
-- Ejecucion en un unico paso, sin prompt de sistema y sin modo de razonamiento (*thinking*), lo que reduce la latencia frente a esquemas con cadena de pensamiento.
-- Destilacion de un comportamiento originalmente multimodal (modo `t2i_bbox` de un modelo de difusion) en un modelo de lenguaje de texto puro.
-- Tool calling, function calling, agentes, razonamiento multi-paso, vision o audio: no disponibles; no se declaran en la model card.
-- Capacidades multilingues: no disponibles; no se declaran idiomas soportados.
-- Capacidad especial anunciada pero no disponible todavia: exportacion GGUF Q8 para inferencia en formatos cuantizados.
+- Generacion de captions detalladas con citas de elementos mediante identificadores `<id>`.
+- Emision de tablas JSON de cajas delimitadoras normalizadas en rejilla 0-1000, con formato `[y_min, x_min, y_max, x_max]`.
+- Upsampling de prompts cortos de texto a imagen en una sola linea de salida.
+- Procesamiento de peticiones en cualquier idioma, con salida siempre en ingles.
+- Soporte de peticiones con `TARGET CANVAS` y especificaciones estructuradas.
+- Integracion directa con FLUX.3 Image Klein como fuente de "DiT prompt format".
+- No se documenta soporte de tool calling, function calling ni razonamiento multi-paso.
 
 ## Casos de uso
 
-- Preprocesado de pipelines de generacion de imagenes: el modelo toma la peticion textual del usuario y devuelve un caption estructurado con identificadores mas las cajas correspondientes, que se pueden pasar como condicionamiento espacial a un modelo de difusion con control de layout.
-- Anotacion automatica de datasets de vision: dado un conjunto de peticiones breves, el modelo produce pares caption-cajas que sirven como etiquetas iniciales para entrenar detectores o para revision humana posterior.
-- Prototipado rapido de interfaces: a partir de una descripcion funcional, el modelo genera la distribucion espacial de los elementos, utilizable para bocetos de wireframes antes de pasar a una herramienta de diseno.
-- Maquetacion asistida de documentos y presentaciones: conversion de una instruccion de contenido en una tabla de posiciones normalizada que un motor de renderizado puede traducir a coordenadas absolutas de pagina.
-- Capa intermedia en asistentes multimodales: actuar como planificador compacto que traduce la intencion del usuario en una especificacion espacial antes de invocar un modelo generativo mayor, reduciendo el coste computacional del componente que solo necesita razonar sobre posiciones.
-- Despliegue en entornos con recursos limitados: con 0,8B parametros, el modelo es candidato para ejecucion en CPU o en GPUs de gama de consumo una vez se publique la exportacion GGUF Q8.
-- Investigacion sobre destilacion de capacidades espaciales: permite estudiar hasta que punto un modelo de lenguaje pequeno puede replicar la planificacion de cajas de un modelo de difusion profesor, cuando se publique la tabla de evaluacion.
-- Normalizacion de salidas para sistemas de control grafico: la rejilla fija de 0 a 1000 simplifica el mapeo a cualquier resolucion de destino (por ejemplo, multiplicar por el ancho y alto reales y dividir entre 1000).
+- Upsampling de prompts para FLUX.3 Image Klein: el modelo transforma una peticion breve como "four apples and three oranges arranged in a wooden crate" en una caption detallada mas una tabla de cajas que el pipeline de difusion consume directamente, sin necesidad de un modelo grande en el mismo nodo.
+- Despliegue en CPU para entornos sin GPU: con GGUF Q8_0 y llama.cpp sobre 8 vCPU, un plan de 620 tokens se genera en unos 20 segundos, lo que permite incorporar el upsampling en herramientas de escritorio o servicios de baja concurrencia.
+- Preprocesado por lotes en pipelines de generacion de imagenes: dado que la tasa de parseo y citacion completa es del 95,0% y la de cajas validas del 96,4%, el modelo puede encadenarse delante de un renderizador para enriquecer prompts de forma automatica y verificable.
+- Registro estructurado de layouts para auditoria: la salida JSON con cajas normalizadas permite almacenar y comparar planes de composicion de forma programatica, independientemente del tamano de render final.
+- Prototipado rapido de interfaces texto-a-imagen: al requerir solo una peticion corta y no necesitar system prompt ni modo thinking, reduce la friccion en demos y entornos interactivos.
+- Generacion de datos sinteticos de layout: el modelo puede producir pares peticion-plan para entrenar o evaluar otros sistemas de planificacion, con la salvedad de que su IoU medio frente al docente es de 0,470.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Evaluacion a nivel de texto sobre 301 peticiones de hold-out estratificado, greedy, sin descartes:
 
-La model card indica de forma explicita que el repositorio es un *stub* y que la tabla de evaluacion, la hoja de contacto visual y la receta de entrenamiento se publicaran una vez se ejecute el pipeline con control de acceso. No se proporcionan cifras de MMLU, HumanEval, GSM8K, ni de metricas especificas de deteccion de objetos o *layout planning* como IoU, mAP o precision de coordenadas.
+| Metrica | 0.8B SFT (este modelo) | 2B SFT | 2B sin ajustar + prompt `t2i_bbox` |
+|---|---|---|---|
+| Tasa de parseo + citacion completa | 95,0% | 92,7% | 1,0% |
+| Tasa de cajas validas | 96,4% | 95,7% | 10,6% |
+| Texto citado literal | 55/55 | 55/55 | 55/55 |
+| IoU medio emparejado frente al docente | 0,470 | 0,529 | 0,133 |
+| Tokens de salida medios | 618 | 646 | 810 |
+
+Latencia en CPU (GGUF Q8_0, llama.cpp, 8 vCPU): 30,44 ± 1,25 tok/s (tg128), lo que supone aproximadamente 20 segundos para un plan medio de 620 tokens.
+
+Evaluacion a nivel de imagen sobre 100 prompts (60 del subconjunto GenEval + 40 peticiones con especificaciones), renderizados con FLUX.3 Image Klein fp8r a 512², 1 semilla, con una reimplementacion etiquetada como "GenEval-style (OWLv2)" (no es GenEval oficial) y conteo de objetos basado en detector:
+
+| Brazo | GenEval-style (60) | Conteo de objetos en peticiones con especificaciones (40) |
+|---|---|---|
+| Peticion cruda | 58/60 | 29/40 |
+| pup `t2i` simple | 60/60 | 30/40 |
+| pup `t2i_bbox` (docente) | 60/60 | 28/40 |
+| Este 0.8B | 53/60 | 26/40 |
+| 2B SFT | 58/60 | 26/40 |
+
+Conclusion declarada por el autor: no se materializo ninguna ventaja de layout; los planes estructurados no superan a la peticion cruda ni al upsampling simple en conteo de objetos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia, calculada a partir del numero de parametros declarado (0,8B) y sin incluir el *overhead* del runtime ni la cache KV: aproximadamente 1,6 GB en fp16, 0,8 GB en int8 y 0,4 GB en int4. Estas cifras son estimaciones aritmeticas, no datos publicados por el autor.
-- La cache KV depende de la longitud de contexto, que no esta declarada, por lo que no se puede acotar su consumo.
-- GPU recomendadas: no disponibles. Cualquier GPU con al menos 2 GB de VRAM libre deberia poder alojar el modelo en fp16 segun la estimacion anterior, pero el autor no publica requisitos oficiales.
-- Compatibilidad con GPU de consumo: probable en la mayoria de tarjetas actuales segun el tamano declarado, pero no confirmada por el autor.
-- Opciones de despliegue: no disponibles. Se anuncia una exportacion GGUF Q8, lo que habilitaria ejecucion con llama.cpp u Ollama, pero el artefacto todavia no existe en el repositorio.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible de forma explicita; con 852.985.920 parametros, en bf16 el peso ocupa aproximadamente 1,7 GB, y en GGUF Q8_0 alrededor de 0,9 GB, mas overhead de contexto y activaciones.
+- GPU recomendadas: el autor entreno en una A10G; el modelo cabe holgadamente en RTX 4090, RTX 3090 y GPUs consumer con 8 GB o mas.
+- Cabe en GPU consumer: si, en cualquier GPU con al menos 8 GB de VRAM en bf16, y en configuraciones inferiores con cuantizacion GGUF.
+- Opciones de despliegue: transformers (con `AutoModelForImageTextToText`), llama.cpp con GGUF, y vLLM para el docente; no se documenta soporte especifico de Ollama o TGI.
+- Latencia y throughput: 30,44 ± 1,25 tok/s en CPU con 8 vCPU y GGUF Q8_0; no se publican cifras de throughput en GPU.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de datos verificables de modelos comparables en la informacion proporcionada: no hay tabla de evaluacion, no se declaran especificaciones de rendimiento y el propio repositorio se describe como *stub*. La unica referencia con la que se puede relacionar el modelo es su cadena de procedencia declarada.
-
-| Referencia | Rol | Parametros | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Tasa de parseo | IoU frente al docente | Licencia |
 |---|---|---|---|---|---|
-| ysharma/pocket-layout-planner-0.8B | Modelo objeto de esta ficha | 0,8B (segun identificador) | no disponible | Apache-2.0 | Solo model card; pesos no publicados |
-| Qwen/Qwen3.5-0.8B | Modelo base declarado | 0,8B (segun identificador) | no disponible | no disponible en esta informacion | No verificado en esta informacion |
-| black-forest-labs/flux-3-image-klein-pup (modo `t2i_bbox`) | Modelo profesor declarado | no disponible | no disponible | Apache-2.0 (segun la model card) | No verificado en esta informacion |
+| pocket-layout-planner-0.8B | 852.985.920 | no disponible | 95,0% | 0,470 | Apache-2.0 |
+| Variante 2B SFT (misma familia) | no disponible | no disponible | 92,7% | 0,529 | no disponible |
+| Qwen3.5-0.8B base | 852.985.920 (aproximado) | no disponible | no aplica | no aplica | Apache-2.0 |
+
+No se dispone de datos publicados de otros planificadores de layout comparables en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El repositorio es un *stub*: no contiene pesos, ni codigo de inferencia, ni evaluacion. No es utilizable en produccion en su estado actual.
-- No se declaran idiomas soportados, por lo que se desconoce el comportamiento del modelo fuera del idioma o idiomas usados en el dataset `ysharma/klein-layout-plans`.
-- No se declara la longitud de contexto, lo que impide estimar el limite practico de elementos o la longitud del caption de entrada y salida.
-- Riesgo de alucinacion de elementos y cajas: al ser un modelo de lenguaje destilado, puede generar identificadores `<id>` sin correspondencia con la peticion original o coordenadas inconsistentes con el caption.
-- Riesgo de deriva en el formato: la salida combina texto libre y JSON en una sola linea, por lo que un fallo de formato rompe el parseo aguas abajo; se recomienda validacion estricta del JSON y comprobacion de rangos en la rejilla 0-1000.
-- Al destilar desde un modelo de difusion, el modelo puede heredar sesgos de composicion espacial del profesor (por ejemplo, posiciones y proporciones tipicas de determinados tipos de escena) sin que exista documentacion al respecto.
-- Sesgos demograficos, culturales o de representacion: no disponibles; no se documentan en la model card.
-- Licencia Apache-2.0 declarada, lo que en principio permite uso comercial, pero la ausencia de pesos publicados y de informacion sobre el modelo base y los datos de entrenamiento impide verificar la procedencia y las condiciones reales de redistribucion.
-- La model card indica que el nombre de FLUX se usa unicamente para atribuir el modelo profesor y que el repositorio no esta afiliado ni respaldado por Black Forest Labs.
-- No se documentan requisitos de hardware, latencia ni limites de despliegue, por lo que no se puede garantizar un rendimiento minimo en produccion.
-- La busqueda web realizada no devolvio resultados relacionados con el modelo: los enlaces recuperados corresponden a tramites administrativos de una administracion local y no guardan ninguna relacion con el contenido de esta ficha.
+- El layout no mejora las renders de Klein destilado: el propio autor lo indica y los datos de imagen lo respaldan.
+- La satisfaccion del conteo de objetos en las renders queda ligeramente por detras de la peticion cruda (26/40 frente a 29/40).
+- La salida es siempre en ingles, aunque acepta peticiones en cualquier idioma.
+- La satisfaccion de conteo de especificaciones de sus propios planes es de aproximadamente el 30% de las filas verificables; el autor advierte que esto refleja los limites del vocabulario del verificador, no una tasa de error del 70%.
+- La comparacion de imagen se realizo con 100 prompts y 1 semilla, muy por debajo del protocolo oficial de GenEval (553 prompts x 4 semillas).
+- No se midio si Klein a tamano completo o la variante base (no destilada) se benefician de las tablas de cajas.
+- Riesgo de alucinacion en las captions no cuantificado en la informacion disponible.
+- Licencia Apache-2.0, sin restricciones documentadas para uso comercial; el docente se acredita como `black-forest-labs/flux-3-image-klein-pup` (Apache-2.0).
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/ysharma/pocket-layout-planner-0.8B
-- Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Conjunto de datos de entrenamiento declarado: https://huggingface.co/datasets/ysharma/klein-layout-plans
-- Modelo profesor declarado (modo `t2i_bbox`): `black-forest-labs/flux-3-image-klein-pup` (referenciado en la model card; no se ha verificado su repositorio)
-- Herramienta declarada de construccion: https://hf.co/chat?mode=ml-intern
-- Paper, blog, repositorio de codigo o demo adicionales: no disponibles; la busqueda web no devolvio ningun resultado relacionado con el modelo.
+- Modelo en Hugging Face: https://huggingface.co/ysharma/pocket-layout-planner-0.8B
+- Dataset de planes de layout: https://huggingface.co/datasets/ysharma/klein-layout-plans
+- Resultados completos: https://huggingface.co/datasets/ysharma/klein-layout-plans/tree/main/results
+- Hoja de contactos de imagenes: https://huggingface.co/datasets/ysharma/klein-layout-plans/blob/main/g4_contact_sheet.jpg
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
+- Docente: https://huggingface.co/black-forest-labs/flux-3-image-klein-pup
+- Modelo de render: https://huggingface.co/black-forest-labs/flux-3-image-klein
+- ML Intern: https://hf.co/chat?mode=ml-intern

@@ -2,107 +2,121 @@
 
 ## Resumen
 
-zeromodels/multi-qa-MiniLM-L6-cos-v1 es una conversion a Keras 3 del checkpoint sentence-transformers/multi-qa-MiniLM-L6-cos-v1, publicada por el proyecto ZeroModels (autor zeromodels). No se trata de un modelo nuevo ni de un reentrenamiento: es una reimplementacion de los pesos originales en formato Keras 3 para poder ejecutar sentence embeddings dentro del ecosistema ZeroModels. El modelo transforma texto en vectores de 384 dimensiones usando un backbone BERT de tipo MiniLM-L6, con pooling de media, normalizacion L2 y similitud coseno como funcion de scoring.
+`zeromodels/multi-qa-MiniLM-L6-cos-v1` es una conversión a Keras 3 del checkpoint `sentence-transformers/multi-qa-MiniLM-L6-cos-v1`, publicada por el proyecto ZeroModels. No se trata de un modelo nuevo ni de un reentrenamiento: es una reimplementación de los pesos originales en el ecosistema Keras 3, pensada para ejecutar sentence embeddings sin depender de PyTorch ni de la librería `sentence-transformers`. El modelo codifica texto en vectores densos de 384 dimensiones usando un backbone BERT con pooling de media, normalización L2 y puntuación por similitud coseno.
 
-La relevancia de esta ficha es doble. Por un lado, el modelo subyacente es un encoder de recuperacion de informacion (retrieval) disenado para question answering, lo que lo hace util en pipelines de busqueda semantica, RAG y deduplicacion de textos. Por otro, esta version concreta aporta valor a quien trabaja con Keras 3 y quiere cargar los pesos sin depender de PyTorch/Sentence Transformers, siempre que acepte las limitaciones del paquete ZeroModels (paridad verificada solo en backend Torch, licencia no declarada y ausencia de documentacion de idiomas).
+El modelo resuelve el problema de la búsqueda semántica y el retrieval de pasajes: dado un texto, produce un embedding que puede compararse con otros mediante similitud coseno. Es la variante "multi-qa" del MiniLM-L6, entrenada originalmente para responder preguntas sobre pasajes, lo que la hace adecuada para sistemas de question answering extractivo, recuperación de documentos y deduplicación semántica. Su tamaño reducido (6 capas) y su dimensión de salida compacta (384) la convierten en una opción ligera para indexar grandes corpus.
 
-El repositorio pesa aproximadamente 0,1 GB y contiene tres ficheros: model.weights.h5, zm_config.json y tokenizer.json. La conversion declara una diferencia absoluta maxima de embeddings de 1,11759e-07 y una similitud coseno minima de 1,00000000 frente al checkpoint original, lo que indica una paridad numerica muy alta con la fuente en la revision fijada.
+La relevancia de esta conversión concreta es de infraestructura: permite servir el modelo con Keras 3 sobre backend Torch (y potencialmente TensorFlow o JAX, aunque la paridad solo se verificó en Torch), lo que facilita su integración en stacks que ya usan Keras. El autor verifica la equivalencia numérica con el checkpoint original con una diferencia absoluta máxima en embeddings de `1.11759e-07` y una similitud coseno mínima de `1.00000000`. El repositorio ocupa 0.1 GB y contiene `model.weights.h5`, `zm_config.json` y `tokenizer.json`.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (backbone MiniLM-L6, encoder transformer) |
-| Parametros totales | no disponible en la ficha del autor; corresponde a la arquitectura MiniLM-L6-H384 del checkpoint original (en torno a 22,7 millones) |
+| Arquitectura | Transformer encoder BERT (MiniLM-L6), 6 capas |
+| Parametros totales | no disponible (MiniLM-L6, del orden de ~22M en el checkpoint original) |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | 512 tokens (truncacion heredada del modelo fuente) |
-| Tipos de cuantizacion | no disponible; los pesos se distribuyen sin cuantizar |
-| Idiomas soportados | no disponibles (la model card no los declara) |
-| Licencia | no disponible; la model card advierte que el modelo original no declara licencia y recomienda comprobar los derechos de redistribucion |
-| Formato de pesos | Keras 3 (model.weights.h5), mas zm_config.json y tokenizer.json |
-| Dimension del embedding | 384 |
-| Pooling | media (mean) |
-| Normalizacion | L2 (si) |
-| Funcion de scoring | similitud coseno |
-| Proyeccion densa | ninguna |
-| Modelo base | sentence-transformers/multi-qa-MiniLM-L6-cos-v1 |
-| Revision original fijada | b207367332321f8e44f96e224ef15bc607f4dbf0 |
+| Longitud de contexto | 512 tokens de entrada máxima |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponibles (el checkpoint original es principalmente inglés) |
+| Licencia | no disponible (la model card indica que el modelo upstream no declara licencia) |
+| Formato de pesos | `model.weights.h5` (Keras 3), `zm_config.json`, `tokenizer.json` |
+
+Detalles adicionales del embedding:
+
+| Propiedad | Valor |
+|---|---|
+| Pooling | mean |
+| Proyección densa | ninguna |
+| Dimensión de embedding | 384 |
+| Normalización L2 | sí |
+| Función de scoring | similitud coseno |
+| Backbone | bert |
+| Revisión original fijada | `b207367332321f8e44f96e224ef15bc607f4dbf0` |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer encoder de tipo BERT con backbone MiniLM-L6, es decir, seis capas con representacion oculta de 384 dimensiones. La receta de embedding es pooling de media sobre las representaciones de tokens, sin capa densa adicional, seguida de normalizacion L2. La puntuacion de similitud se calcula con producto escalar sobre vectores normalizados, lo que equivale a similitud coseno. La longitud maxima de entrada es de 512 tokens, conservada desde el checkpoint fuente.
+La arquitectura es un encoder BERT de tipo MiniLM-L6: un transformer de 6 capas con atención multi-cabeza estándar, seguido de pooling de media sobre los tokens de salida y normalización L2 para producir un vector de 384 dimensiones. No hay proyección densa adicional ni cabeza de clasificación; el modelo es puramente un encoder de frases. La conversión a Keras 3 preserva la receta de embedding del checkpoint fuente y no introduce un nuevo entrenamiento, por lo que los datos de entrenamiento, el número de tokens y la composición del dataset corresponden al modelo original `sentence-transformers/multi-qa-MiniLM-L6-cos-v1`, no documentados en la información disponible.
 
-Esta publicacion no introduce ningun entrenamiento nuevo. Segun la propia model card, la conversion "preserva la receta de embedding del modelo fuente; no introduce una nueva ejecucion de entrenamiento". Por lo tanto, los datos de entrenamiento, el numero de tokens y el posible uso de RLHF/DPO son los del checkpoint original sentence-transformers/multi-qa-MiniLM-L6-cos-v1, cuyo detalle no se reproduce en el repositorio de zeromodels y debe consultarse en su model card. La innovacion tecnica de esta version es la reimplementacion en Keras 3 (paquete ZeroModels) con verificacion de paridad numerica: diferencia absoluta maxima de embeddings de 1,11759e-07, coseno minimo de 1,00000000 y diferencia absoluta maxima de la puntuacion de similitud de 1,78814e-07. La paridad se comprobo exclusivamente sobre el backend Torch de Keras; no se reclama paridad completa en TensorFlow ni en JAX.
+La innovación técnica de esta ficha no está en el modelo sino en el proceso de conversión: ZeroModels reimplementa la arquitectura en Keras 3 y verifica la paridad numérica contra Sentence Transformers en la revisión fijada del checkpoint original. La verificación reporta una diferencia absoluta máxima en embeddings de `1.11759e-07`, una similitud coseno mínima de `1.00000000` y una diferencia absoluta máxima en scores de similitud de `1.78814e-07`. La paridad completa solo se comprobó en el backend Torch; el autor no reclama paridad en TensorFlow ni en JAX. El tokenizer del repositorio preserva la truncación a 512 tokens del modelo fuente.
 
 ## Capacidades
 
-- Generacion de embeddings de texto: convierte frases o pasajes en vectores densos de 384 dimensiones.
-- Similitud semantica: calcula similitud coseno entre pares de textos mediante model.similarity().
-- Recuperacion de informacion (retrieval): pensado para tareas de question answering y busqueda semantica, segun el modelo fuente.
-- Procesamiento de entradas de hasta 512 tokens por texto.
-- No es un modelo generativo: no produce texto, solo representaciones vectoriales.
-- No dispone de tool calling ni function calling.
-- No dispone de capacidades de agente ni de razonamiento multi-paso.
-- No tiene modo "thinking", vision ni audio.
-- Soporte multilingue: no declarado en la informacion disponible.
+- Generación de embeddings de frases y pasajes de 384 dimensiones, normalizados L2.
+- Similitud semántica mediante coseno, con scoring integrado en `model.similarity()`.
+- Búsqueda semántica y retrieval denso sobre corpus de documentos.
+- Question answering basado en recuperación: el modelo original fue entrenado para emparejar preguntas con pasajes relevantes.
+- Detección de duplicados y near-duplicates por similitud de embeddings.
+- Clasificación y clustering de textos mediante vectores.
+- Ejecución sobre Keras 3 con backend Torch (paridad verificada); TensorFlow y JAX no verificados.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo thinking: es un encoder de embeddings, no un modelo generativo.
 
 ## Casos de uso
 
-- Busqueda semantica sobre documentacion tecnica: indexar pasajes de hasta 512 tokens como vectores de 384 dimensiones y recuperar los mas cercanos por similitud coseno ante una consulta del usuario.
-- Recuperacion aumentada por generacion (RAG): usar el modelo como retriever denso que alimente a un LLM generativo con los fragmentos mas relevantes de una base de conocimiento.
-- Deduplicacion de contenidos: comparar embeddings de articulos, tickets o registros para detectar textos casi identicos mediante umbral de similitud coseno.
-- Clasificacion por vecinos mas cercanos: etiquetar consultas de soporte agrupandolas por similitud con ejemplos ya etiquetados, sin reentrenar el encoder.
-- Sistemas de preguntas y respuestas sobre FAQ: emparejar la pregunta del usuario con la entrada de FAQ mas parecida del corpus, aprovechando que el modelo fuente fue ajustado para question answering.
-- Filtrado y moderacion de textos: detectar mensajes muy similares a patrones conocidos comparando sus embeddings contra un conjunto de referencia.
-- Integracion en stacks Keras 3: equipos que ya trabajan con Keras pueden cargar los pesos con SentenceTransformerModel.from_weights(repo) y evitar dependencias de PyTorch en produccion.
+- Búsqueda semántica en documentación técnica: indexar manuales y fragmentos de código en un vector store y recuperar los pasajes más relevantes para una consulta del usuario mediante similitud coseno sobre vectores de 384 dimensiones.
+- Question answering sobre base de conocimiento: el checkpoint original fue entrenado para el emparejamiento pregunta-pasaje, por lo que se puede usar para recuperar el fragmento que responde a una pregunta antes de pasarlo a un modelo generativo.
+- Deduplicación de tickets de soporte: calcular embeddings de tickets entrantes y agrupar los que superan un umbral de similitud coseno para evitar respuestas duplicadas o consolidar incidencias recurrentes.
+- Clasificación de textos por proximidad a prototipos: generar embeddings de categorías de referencia y asignar cada documento nuevo a la categoría con mayor similitud, sin entrenar un clasificador adicional.
+- Filtrado de contenido en pipelines de moderación: comparar embeddings de mensajes contra un conjunto de ejemplos etiquetados de contenido no deseado para marcar candidatos a revisión.
+- Recomendación de artículos o preguntas relacionadas: indexar el corpus y servir recomendaciones calculando los vecinos más cercanos de cada elemento en el espacio de 384 dimensiones.
+- Integración en stacks Keras: servir el modelo dentro de un servicio que ya usa Keras 3 con backend Torch, evitando añadir PyTorch o `sentence-transformers` como dependencia adicional.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La unica metrica de rendimiento reportada es la verificacion de paridad con el checkpoint original en la revision fijada:
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente reporta métricas de paridad numérica con el checkpoint original:
 
-| Metrica de verificacion | Valor |
+| Métrica de verificación | Valor |
 |---|---|
-| Diferencia absoluta maxima de embeddings | 1,11759e-07 |
-| Similitud coseno minima frente al original | 1,00000000 |
-| Diferencia absoluta maxima de la puntuacion de similitud | 1,78814e-07 |
+| Diferencia absoluta máxima en embeddings | `1.11759e-07` |
+| Similitud coseno mínima entre embeddings | `1.00000000` |
+| Diferencia absoluta máxima en scores de similitud | `1.78814e-07` |
 
 ## Requisitos de hardware
 
-- VRAM estimada: con arquitectura MiniLM-L6-H384 (en torno a 22,7 millones de parametros), los pesos ocupan aproximadamente 91 MB en FP32 y unos 45 MB en FP16. Es un modelo de muy baja huella de memoria.
-- GPU recomendadas: cualquier GPU moderna es suficiente. Se puede ejecutar en RTX 3060, RTX 4090, A100 o H100 sin aprovechar su capacidad; tambien cabe holgadamente en GPU integradas y en CPU.
-- Consumer GPU: si, cabe en practicamente cualquier GPU de consumo e incluso en inferencia por CPU para cargas moderadas.
-- Opciones de despliegue: Keras 3 con backend Torch mediante el paquete ZeroModels (SentenceTransformerModel / SentenceTransformerTokenizer). La carga exacta del modelo fuente puede hacerse con SentenceTransformerModel.from_weights("hf:sentence-transformers/multi-qa-MiniLM-L6-cos-v1"). No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI en la informacion disponible.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: el checkpoint ocupa 0.1 GB en disco; con pesos en fp32 la huella de memoria es del orden de cientos de MB, por lo que cabe holgadamente en cualquier GPU consumer.
+- GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM libre es suficiente; no requiere A100 ni H100. Una RTX 4090 o una GPU integrada moderna pueden ejecutarlo.
+- Cabe en consumer GPU: sí, en cualquier GPU consumer moderna y probablemente también en CPU para cargas moderadas.
+- Opciones de despliegue: la vía documentada es Keras 3 con `zeromodels.sentence_transformers` (`ZMSentenceTransformer.from_weights` y `ZMSentenceTransformerTokenizer.from_weights`). Para el checkpoint original se puede usar `sentence-transformers`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no son aplicables a un encoder de embeddings de este tipo.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-La propia model card lista las 13 variantes convertidas por ZeroModels. A continuacion se comparan algunas de la misma familia de sentence transformers. Los parametros y contextos de las alternativas se indican solo cuando la informacion disponible los menciona; en caso contrario figuran como no disponibles.
-
-| Modelo | Encoder y receta | Dimension | Contexto | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Dimensión embedding | Licencia | Formato |
 |---|---|---|---|---|---|
-| zeromodels/multi-qa-MiniLM-L6-cos-v1 | BERT MiniLM-L6 · media + normalizacion | 384 | 512 tokens | no disponible | ZeroModels (Keras 3) |
-| zeromodels/multi-qa-distilbert-cos-v1 | DistilBERT · media + normalizacion | no disponible | no disponible | no disponible | ZeroModels (Keras 3) |
-| zeromodels/multi-qa-mpnet-base-dot-v1 | MPNet · CLS + producto escalar | no disponible | no disponible | no disponible | ZeroModels (Keras 3) |
-| zeromodels/all-MiniLM-L6-v2 | BERT MiniLM-L6 · media + normalizacion | no disponible | no disponible | no disponible | ZeroModels (Keras 3) |
+| `zeromodels/multi-qa-MiniLM-L6-cos-v1` | MiniLM-L6 (no disponible exacto) | 512 tokens | 384 | no disponible | Keras 3 (`model.weights.h5`) |
+| `sentence-transformers/multi-qa-MiniLM-L6-cos-v1` | MiniLM-L6 (no disponible exacto) | 512 tokens | 384 | no disponible | safetensors / PyTorch |
+| `zeromodels/all-MiniLM-L6-v2` | MiniLM-L6 (no disponible exacto) | 512 tokens | 384 | no disponible | Keras 3 |
+| `zeromodels/multi-qa-distilbert-cos-v1` | DistilBERT (no disponible exacto) | 512 tokens | 768 (no confirmado en la información) | no disponible | Keras 3 |
 
-La diferencia clave entre multi-qa-MiniLM-L6-cos-v1 y all-MiniLM-L6-v2 es el objetivo de ajuste: el primero esta orientado a recuperacion de question answering y el segundo a similitud semantica generica. multi-qa-mpnet-base-dot-v1 usa un encoder MPNet de mayor tamano y scoring por producto escalar, mientras que multi-qa-distilbert-cos-v1 emplea DistilBERT. No se dispone de cifras de rendimiento comparadas en la informacion proporcionada.
+La diferencia principal frente al checkpoint original es el formato de pesos y el runtime (Keras 3 frente a PyTorch), con paridad numérica verificada. Frente a `all-MiniLM-L6-v2`, la variante multi-qa está orientada a retrieval pregunta-pasaje en lugar de similitud genérica. Los datos de rendimiento comparativo en benchmarks no están disponibles en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: la model card indica explicitamente que el modelo original no declara licencia y recomienda comprobar los derechos de redistribucion antes de usar o redistribuir los pesos. Sin licencia clara, el uso comercial queda en una situacion juridica ambigua.
-- Idiomas no declarados: no hay informacion sobre cobertura multilingue; no se debe asumir soporte fuera del ingles sin verificacion previa.
-- Paridad limitada por backend: la verificacion numerica se realizo solo sobre el backend Torch de Keras. No se reclama paridad completa en TensorFlow ni en JAX, por lo que los resultados pueden diferir en esos backends.
-- No es un modelo generativo: solo produce embeddings; cualquier tarea de generacion requiere combinarlo con otro modelo.
-- Longitud maxima de 512 tokens: los textos mas largos se truncan, lo que puede degradar la calidad de la representacion en documentos extensos.
-- Dependencia de la receta de embedding: activar normalize=True cuando el checkpoint ya esta normalizado modifica la receta original y puede alterar las puntuaciones de retrieval.
-- Riesgo de alucinacion: no aplica en sentido generativo, pero si existe riesgo de falsos positivos en recuperacion (pasajes similares pero irrelevantes).
-- Sesgos: no se documentan analisis de sesgo en la informacion disponible; al ser un encoder entrenado sobre corpus de question answering, puede heredar sesgos del dataset original.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta, sin senales de adopcion ni mantenimiento comunitario.
+- La licencia no está declarada ni en este repositorio ni en el checkpoint original; el autor advierte explícitamente de que se deben comprobar los derechos de redistribución antes de usar o redistribuir los pesos.
+- Es un encoder de embeddings, no un modelo generativo: no produce texto, no razona y no soporta tool calling ni agentes.
+- La longitud de entrada está limitada a 512 tokens; textos más largos se truncan, lo que puede perder información relevante en documentos extensos.
+- La paridad numérica solo se verificó en el backend Torch de Keras 3; no se reclama paridad en TensorFlow ni en JAX.
+- El modelo original está orientado principalmente al inglés; el soporte multilingüe no está confirmado en la información disponible.
+- Riesgo de sesgos heredados del corpus de entrenamiento original, no documentados en esta ficha.
+- Como modelo de retrieval, puede devolver pasajes semánticamente cercanos pero factualmente irrelevantes; conviene combinarlo con un re-ranker o verificación posterior en producción.
+- El repositorio tiene un volumen de descargas muy bajo (37) y ninguna interacción (0 likes), lo que reduce la validación comunitaria de la conversión.
+- No se deben pasar `normalize=True` a `model.encode(...)` si se busca reproducir exactamente la receta original, ya que el checkpoint ya está normalizado y hacerlo puede alterar los scores de retrieval.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/zeromodels/multi-qa-MiniLM-L6-cos-v1
+- Repositorio Hugging Face: https://huggingface.co/zeromodels/multi-qa-MiniLM-L6-cos-v1
 - Checkpoint original: https://huggingface.co/sentence-transformers/multi-qa-MiniLM-L6-cos-v1
-- Revision original fijada: https://huggingface.co/sentence-transformers/multi-qa-MiniLM-L6-cos-v1/tree/b207367332321f8e44f96e224ef15bc607f4dbf0
-- Repositorio ZeroModels: https://github.com/IMvision12/ZeroModels
-- Documentacion de sentence transformers en ZeroModels: https://imvision12.github.io/ZeroModels/sentence_transformer/
+- Revisión fijada del checkpoint original: https://huggingface.co/sentence-transformers/multi-qa-MiniLM-L6-cos-v1/tree/b207367332321f8e44f96e224ef15bc607f4dbf0
+- Repositorio GitHub de ZeroModels: https://github.com/IMvision12/ZeroModels
+- Documentación de Sentence Transformers en ZeroModels: https://imvision12.github.io/ZeroModels/sentence_transformer/
+- Variante `all-mpnet-base-v2`: https://huggingface.co/zeromodels/all-mpnet-base-v2
+- Variante `multi-qa-mpnet-base-dot-v1`: https://huggingface.co/zeromodels/multi-qa-mpnet-base-dot-v1
+- Variante `all-distilroberta-v1`: https://huggingface.co/zeromodels/all-distilroberta-v1
+- Variante `all-MiniLM-L12-v2`: https://huggingface.co/zeromodels/all-MiniLM-L12-v2
+- Variante `multi-qa-distilbert-cos-v1`: https://huggingface.co/zeromodels/multi-qa-distilbert-cos-v1
+- Variante `all-MiniLM-L6-v2`: https://huggingface.co/zeromodels/all-MiniLM-L6-v2
+- Variante `paraphrase-multilingual-mpnet-base-v2`: https://huggingface.co/zeromodels/paraphrase-multilingual-mpnet-base-v2
+- Variante `paraphrase-albert-small-v2`: https://huggingface.co/zeromodels/paraphrase-albert-small-v2
+- Variante `paraphrase-multilingual-MiniLM-L12-v2`: https://huggingface.co/zeromodels/paraphrase-multilingual-MiniLM-L12-v2
+- Variante `paraphrase-MiniLM-L3-v2`: https://huggingface.co/zeromodels/paraphrase-MiniLM-L3-v2
+- Variante `distiluse-base-multilingual-cased-v1`: https://huggingface.co/zeromodels/distiluse-base-multilingual-cased-v1
+- Variante `distiluse-base-multilingual-cased-v2`: https://huggingface.co/zeromodels/distiluse-base-multilingual-cased-v2

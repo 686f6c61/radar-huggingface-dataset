@@ -43,16 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "PLatour - a zen-E Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/zen-E/platour",
-      "snippet": "zen-E/PLatour-SFT-Qwen3-235B-to-1.7B-Chemistry-CoT Updated 3 minutes ago Upvote - Sort: Collection"
-    },
-    {
-      "title": "Qwen3: Think Deeper, Act Faster — Zen Blog",
-      "url": "https://zenlm.org/blog/qwen3/",
-      "snippet": "Qwen3: Think Deeper, Act Faster Today, we are excited to announce the release of **Qwen3**, the latest addition to the Qwen family of large language models. Our flagship model, **Qwen3-235B-A22B**, achieves competitive results in benchmark evaluations of coding, math, general capabilities, etc., when compared to other top-tier mod"
-    }
-  ]
+  "sources": []
 }

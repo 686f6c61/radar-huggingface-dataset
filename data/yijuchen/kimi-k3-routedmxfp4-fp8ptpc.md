@@ -2,106 +2,105 @@
 
 ## Resumen
 
-Kimi K3 es un modelo multimodal nativo de tipo agente desarrollado por Moonshot AI, presentado como el primer modelo abierto de clase 3T. Se construye sobre una arquitectura Mixture-of-Experts (MoE) con Kimi Delta Attention (KDA) y Attention Residuals (AttnRes), e incorpora vision nativa y una ventana de contexto de hasta 1 millon de tokens. La model card declara 2,8T de parametros totales con 104B activados por token, repartidos en 896 expertos de los que se activan 16.
+Kimi K3 es un modelo de lenguaje y visión de tipo agéntico, desarrollado por Moonshot AI, distribuido originalmente con pesos abiertos bajo la licencia Kimi K3. La ficha que nos ocupa, `yijuchen/Kimi-K3-RoutedMXFP4-FP8PTPC`, es una conversión de terceros (no oficial) de dichos pesos a formatos cuantizados MXFP4 y FP8 mediante la librería `compressed-tensors`, pensada para reducir el espacio en disco y facilitar el despliegue en infraestructuras de inferencia compatibles. El repositorio ocupa 2,63 TB y declara 1.418.561.422.080 parámetros en sus ficheros safetensors, una cifra que no coincide con los 2,8 billones anunciados en la model card original, probablemente por cómo se han empaquetado o descartado tensores en esta conversión.
 
-La ficha que nos ocupa, sin embargo, no es el checkpoint oficial: se trata de `yijuchen/Kimi-K3-RoutedMXFP4-FP8PTPC`, una cuantizacion de la comunidad elaborada con `compressed-tensors` que combina MXFP4 para los expertos enrutados y FP8 para el resto, reduciendo el peso respecto al original. Es relevante porque permite desplegar un modelo de escala frontera con un consumo de memoria notablemente inferior al de los pesos en BF16, aunque sigue siendo un modelo que exige hardware de centro de datos.
+El modelo original se presenta como un transformer de mezcla de expertos (MoE) de 2,8 billones de parámetros totales con 104.000 millones activados por token, 93 capas y una ventana de contexto de un millón de tokens. Incorpora una arquitectura de atención híbrida denominada Kimi Delta Attention (KDA), combinada con Gated MLA, además de un esquema de residuales sobre la atención (AttnRes) y un marco de enrutamiento llamado Stable LatentMoE que activa 16 de 896 expertos por token. Su propuesta de valor es el trabajo agéntico de largo horizonte (programación, investigación, tareas de conocimiento) con capacidad multimodal nativa de texto, imagen y vídeo.
 
-Los metadatos de safetensors del repositorio reportan 1.418.561.422.080 parametros (~1,42T), una cifra inferior a los 2,8T que indica la model card. Esta discrepancia no se explica en la informacion disponible y conviene verificarla antes de cualquier despliegue.
+La relevancia de esta ficha concreta es doble: por un lado, documenta una de las primeras conversiones cuantizadas de un modelo de escala 3T, un hito técnico por el volumen de pesos manipulado; por otro, advierte de que se trata de un artefacto de terceros con muy poca adopción (118 descargas, 0 likes) y sin garantías de paridad funcional con el modelo original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts (MoE) con Kimi Delta Attention (KDA) y Attention Residuals (AttnRes) |
-| Parametros totales | 2,8T segun model card; 1.418.561.422.080 (~1,42T) segun safetensors del repo |
-| Parametros activos | 104B |
+| Arquitectura | Mixture-of-Experts (MoE) con atención híbrida: 69 capas KDA + 24 capas Gated MLA, más Attention Residuals (AttnRes) |
+| Parametros totales | 2,8 billones (modelo original); 1.418.561.422.080 según safetensors de esta conversión |
+| Parametros activos | 104.000 millones por token |
 | Longitud de contexto | 1.000.000 tokens |
-| Tipos de cuantizacion | MXFP4 en expertos enrutados + FP8 (formato `compressed-tensors`; tag "8-bit"); pesos originales presumiblemente BF16 |
+| Tipos de cuantizacion | MXFP4 (enrutados) y FP8 (PTPC, por sus siglas en el nombre del repo); empaquetado con compressed-tensors |
 | Idiomas soportados | no disponible |
-| Licencia | kimi-k3 (licencia propia, `license: other`) |
-| Formato de pesos | safetensors (compressed-tensors) |
-| Capas | 93 (1 densa) |
-| Composicion de capas de atencion | 69 KDA + 24 Gated MLA |
-| Dimension oculta de atencion | 7168 |
-| Cabezas de atencion | 96 |
-| Dimension Latent MoE | 3584 |
-| Dimension oculta MoE por experto | 3072 |
-| Numero de expertos | 896 |
+| Licencia | Kimi K3 License (etiquetada como `license:other`) |
+| Formato de pesos | safetensors (compatible con transformers y compressed-tensors) |
+| Capas totales | 93 (1 densa) |
+| Dimensión de atención | 7168 |
+| Cabezas de atención | 96 |
+| Dimensión latente MoE | 3584 |
+| Dimensión oculta por experto | 3072 |
+| Número de expertos | 896 |
 | Expertos seleccionados por token | 16 |
 
 ## Arquitectura y entrenamiento
 
-Kimi K3 emplea una arquitectura MoE con dos mecanismos de atencion combinados: 69 capas de Kimi Delta Attention (KDA) y 24 capas de Gated MLA, sobre un total de 93 capas (una de ellas densa). El enrutamiento se apoya en un marco Stable LatentMoE que incrementa la dispersion del MoE, activando 16 de 896 expertos por token. Segun la model card, esta combinacion aporta una mejora de aproximadamente 2,5x en eficiencia de escalado respecto a Kimi K2. La dimension latente del MoE es de 3584 y cada experto tiene una dimension oculta de 3072.
+El modelo original combina dos mecanismos de atención en una pila de 93 capas: 69 capas de Kimi Delta Attention (KDA), una variante de atención lineal con estado recurrente que reduce el coste de cómputo y memoria en secuencias muy largas, y 24 capas de Gated MLA (Multi-head Latent Attention con compuerta), que aportan atención completa sobre una representación latente comprimida. Sobre esta base se añaden las Attention Residuals (AttnRes), un esquema que conecta la salida de atención con las residuales de forma distinta a la convencional, y un framework Stable LatentMoE que enruta cada token a 16 de los 896 expertos disponibles, con una dimensión latente de 3584 y una dimensión oculta por experto de 3072. Moonshot AI cifra en aproximadamente 2,5 veces la mejora de eficiencia de escalado respecto a Kimi K2.
 
-El modelo es multimodal nativo: procesa texto, imagenes y video dentro del mismo modelo, con vision integrada. La ventana de contexto alcanza el millon de tokens. No se detallan en la informacion disponible el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. La model card califica el modelo como "agentic" y orientado a codigo de horizonte largo y trabajo de conocimiento. Esta ficha concreta aplica cuantizacion MXFP4 a los expertos enrutados y FP8 al resto mediante `compressed-tensors`, sin que se documenten en el material proporcionado los detalles del proceso de calibracion.
+La multimodalidad es nativa: el mismo modelo procesa texto, imagen y vídeo, y la model card lo presenta como un modelo agéntico de pesos abiertos. No se dispone en la información proporcionada del número de tokens de entrenamiento, de la composición del dataset ni de si se aplicaron fases de RLHF, DPO u otras técnicas de alineación. Tampoco se detalla el proceso de conversión que ha dado lugar a esta variante cuantizada: el nombre del repositorio sugiere que los expertos enrutados se han cuantizado a MXFP4 y el resto de tensores a FP8, pero no se especifica el esquema exacto de escalado, calibración ni granularidad de los bloques.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento de proposito general.
-- Codigo de horizonte largo: sesiones de ingenieria prolongadas, navegacion de repositorios grandes y orquestacion de herramientas de terminal.
-- Trabajo de conocimiento agentico: investigacion profunda con visualizaciones interactivas, widgets, cuadros de mando, diseno de movimiento y edicion de video.
-- Multimodalidad nativa: comprension de texto, imagenes y video en un mismo modelo.
-- Contexto largo de hasta 1 millon de tokens.
-- Orientacion a tareas agenticas y de multiples pasos (el pipeline declarado es `image-text-to-text`).
-- Soporte de tool calling / function calling: no confirmado explicitamente en la informacion proporcionada, aunque el enfoque agentico y la orquestacion de terminal lo sugieren.
+- Generación de texto y razonamiento de largo horizonte, orientado a tareas de ingeniería y conocimiento que requieren muchas iteraciones.
+- Comprensión nativa de imágenes y vídeo dentro de la misma ventana de contexto que el texto.
+- Codificación de software a gran escala: navegación de repositorios extensos, optimización de kernels de GPU, desarrollo de compiladores y orquestación de herramientas de terminal.
+- Trabajo agéntico de conocimiento: investigación profunda, generación de visualizaciones interactivas, widgets, paneles de control y edición de vídeo o diseño en movimiento.
+- Soporte de tool calling y de razonamiento multi-paso, implícito en su definición como modelo agéntico.
+- Contexto de un millón de tokens, adecuado para documentos y bases de código de gran volumen.
+- Capacidades multilingües: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Ingenieria de software sobre repositorios grandes: el modelo puede sostener sesiones largas de desarrollo y navegar bases de codigo extensas gracias a su ventana de 1M de tokens, lo que permite cargar grandes porciones de un repositorio en contexto.
-- Optimizacion de kernels de GPU y desarrollo de compiladores: la model card cita explicitamente estos escenarios como objetivos de sus capacidades de codigo de horizonte largo.
-- Investigacion profunda automatizada: generacion de informes con visualizaciones interactivas, widgets y cuadros de mando a partir de fuentes multimodales.
-- Edicion de video y diseno de movimiento: al ser multimodal nativo (texto, imagen y video), puede integrarse en flujos de posproduccion asistidos por IA.
-- Desarrollo de videojuegos con vision en el bucle y diseno CAD: la combinacion de vision y razonamiento de multiples pasos encaja con tareas de diseno iterativo.
-- Agentes autonimos con supervision humana minima: encaja en pipelines donde el modelo orquesta herramientas y ejecuta tareas de varios pasos de forma sostenida.
-- Analisis de documentos y video de contexto muy largo: el millon de tokens permite procesar horas de video o grandes volumenes de documentacion en una sola pasada.
+- Mantenimiento de repositorios de gran tamaño: el modelo puede cargar decenas de miles de líneas de código en su ventana de un millón de tokens y razonar sobre dependencias entre módulos, lo que lo hace adecuado para tareas de refactorización y revisión de código a nivel de proyecto.
+- Optimización de kernels y desarrollo de compiladores: su orientación explícita a la ingeniería de bajo nivel permite iterar sobre código CUDA o de compilador con verificación en bucle, aunque el coste de inferencia en esta conversión cuantizada debe evaluarse con cuidado.
+- Agentes autónomos de terminal: el modelo puede orquestar herramientas de línea de comandos en sesiones largas con supervisión humana mínima, encadenando comandos y corrigiendo errores a partir de la salida.
+- Investigación asistida con salida visual: al ser multimodal nativo, puede generar informes con gráficos, paneles interactivos y visualizaciones a partir de documentos e imágenes de entrada.
+- Análisis de vídeo y documentos extensos: la combinación de contexto de un millón de tokens y entrada de vídeo permite resumir reuniones, analizar material audiovisual o extraer información de archivos escaneados.
+- Desarrollo de videojuegos y CAD con visión en el bucle: el modelo puede interpretar capturas de pantalla o renders y proponer cambios de código o de parámetros de diseño de forma iterativa.
+- Evaluación comparativa de modelos frontera: como artefacto de pesos abiertos de escala 3T, sirve para experimentos de investigación sobre cuantización extrema y eficiencia de despliegue en clústeres.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio incluye el tag `eval-results`, pero no se han proporcionado las cifras asociadas.
+No se han publicado resultados de benchmarks en la información disponible. La model card original no incluye tablas de MMLU, HumanEval, GSM8K ni métricas equivalentes, y esta conversión cuantizada no aporta mediciones propias de latencia, throughput ni degradación respecto al modelo en precisión completa.
 
 ## Requisitos de hardware
 
-- El repositorio ocupa 1512 GB, por lo que el despliegue requiere almacenamiento y memoria agregada del orden de terabytes.
-- VRAM estimada para inferencia: aunque la cuantizacion MXFP4/FP8 reduce el peso respecto a BF16, el tamano del checkpoint implica varios cientos de GB de memoria de GPU, repartidos entre multiples aceleradores. No es viable en una sola GPU.
-- GPU recomendadas: no disponible en la informacion proporcionada; por escala, se situa en el rango de nodos con multiples H100, H200 o B200 (dato no confirmado en el material).
-- No cabe en GPU de consumo (RTX 4090, etc.) en su configuracion completa.
-- Opciones de despliegue: la libreria declarada es `transformers` y el formato es `compressed-tensors`; existen variantes GGUF de modelos similares, pero no se confirma compatibilidad con llama.cpp u Ollama en este repo. No se cita soporte explicito de vLLM ni TGI.
+- VRAM estimada para inferencia: no disponible con precisión. Con 1,42 billones de parámetros en safetensors y un repositorio de 2,63 TB, el despliegue exige almacenamiento en el orden de terabytes y memoria agregada muy superior a la de cualquier GPU individual; incluso con cuantización MXFP4/FP8, hablamos de cientos de gigabytes distribuidos.
+- GPU recomendadas: no disponible en la información proporcionada; por la escala del modelo, se requiere un clúster multi-nodo con GPUs de centro de datos (A100, H100 o equivalentes) y no cabe en GPUs de consumo.
+- GPU de consumo: no es viable en RTX 4090 ni en ninguna GPU consumer actual.
+- Opciones de despliegue: la librería declarada es transformers con soporte de compressed-tensors; no se confirma compatibilidad con vLLM, llama.cpp, Ollama ni TGI en la información disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-Solo se dispone de datos contrastados del propio modelo. La model card menciona Kimi K2 como referencia de eficiencia de escalado, pero no se proporcionan cifras comparativas detalladas.
-
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Datos de rendimiento |
+| Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kimi K3 (esta ficha) | 2,8T (card) / 1,42T (safetensors) | 104B | 1M tokens | kimi-k3 | no disponible |
+| Kimi K3 (original, Moonshot AI) | 2,8 T | 104 B | 1.000.000 | Kimi K3 License | Pesos abiertos |
+| Kimi K3 RoutedMXFP4-FP8PTPC (esta ficha) | 1,42 T declarados en safetensors | no disponible | 1.000.000 | Kimi K3 License | Conversión de terceros |
 | Kimi K2 | no disponible | no disponible | no disponible | no disponible | no disponible |
-| Alternativas de clase frontera (p. ej. DeepSeek-V3/R1, Qwen) | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Alternativas de escala similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone en la informacion proporcionada de datos suficientes para una comparativa numerica fiable con modelos competidores.
+No se dispone de datos de benchmarks ni de especificaciones completas de modelos comparables en la información proporcionada, por lo que la comparativa se limita a los datos estructurales del propio Kimi K3.
 
 ## Limitaciones y advertencias
 
-- Discrepancia de parametros: la model card declara 2,8T mientras que safetensors reporta ~1,42T. Es necesario verificar cual corresponde al checkpoint efectivo antes de planificar el despliegue.
-- Sesgos conocidos: no disponibles en la informacion proporcionada.
-- Riesgo de alucinacion: no cuantificado en el material; en modelos de este tipo existe riesgo inherente, especialmente en tareas de razonamiento abierto.
-- Idiomas soportados: no disponible; no se puede garantizar cobertura multilingue mas alla de lo implícito en el checkpoint base.
-- Licencia `kimi-k3` (categoria `other`): es una licencia propia, no una licencia open source estandar; conviene revisar sus terminos antes de cualquier uso comercial.
-- Esta no es una publicacion oficial: es una cuantizacion de la comunidad (`yijuchen`) del modelo de Moonshot AI; el rendimiento puede diferir del checkpoint original y no esta respaldada por el autor del modelo base.
-- El repositorio no registra descargas ni "likes", lo que indica escasa validacion por parte de la comunidad.
-- Los pesos originales convertidos a MXFP4/FP8 pueden introducir degradacion de calidad; no se documenta una evaluacion comparativa frente a los pesos sin cuantizar.
-- Coste de despliegue muy elevado: requiere almacenamiento del orden de 1,5 TB y multiples aceleradores de gama alta.
+- Conversión no oficial: el repositorio pertenece a un usuario independiente (yijuchen) y no a Moonshot AI; no hay garantía de que los pesos cuantizados reproduzcan el comportamiento del modelo original.
+- Discrepancia de parámetros: los safetensors declaran 1,42 billones de parámetros frente a los 2,8 billones de la model card, lo que sugiere tensores omitidos, fusionados o empaquetados de forma no estándar; conviene verificar la integridad antes de usarlo en producción.
+- Adopción muy baja: 118 descargas y 0 likes en el momento de la consulta, sin evidencia de validación por parte de la comunidad.
+- Licencia restrictiva: la Kimi K3 License es una licencia propia etiquetada como `license:other`; es imprescindible revisar sus términos antes de cualquier uso comercial, ya que puede imponer condiciones de atribución, limitaciones de escala o restricciones de redistribución.
+- Idiomas soportados no documentados: no se especifica la cobertura lingüística, lo que impide garantizar calidad en castellano u otras lenguas distintas del inglés.
+- Riesgo de alucinación: inherente a los modelos de lenguaje de gran escala; no se han publicado evaluaciones de fiabilidad para esta conversión.
+- Sesgos: no documentados en la información disponible.
+- Degradación por cuantización: la cuantización MXFP4 de los expertos enrutados puede introducir pérdida de precisión en tareas sensibles, y no se han publicado mediciones de dicha degradación.
+- Requisitos de infraestructura extremos: el tamaño del repositorio y la memoria necesaria hacen inviable su uso fuera de clústeres de centro de datos.
+- Sin datos de latencia ni throughput: imposible planificar capacidad de producción con la información disponible.
 
 ## Enlaces
 
-- Hugging Face (esta cuantizacion): https://huggingface.co/yijuchen/Kimi-K3-RoutedMXFP4-FP8PTPC
-- Pagina de Moonshot AI en Hugging Face: https://huggingface.co/moonshotai
-- Repositorio del modelo base (referenciado en la card): https://huggingface.co/moonshotai/Kimi-K3
-- Licencia: https://huggingface.co/moonshotai/Kimi-K3/blob/main/LICENSE
-- Blog tecnico: https://www.kimi.com/blog/kimi-k3
-- Informe tecnico completo: https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf
-- Web oficial: https://www.moonshot.ai
-- Chat: https://www.kimi.com
+- Repositorio de esta conversión: https://huggingface.co/yijuchen/Kimi-K3-RoutedMXFP4-FP8PTPC
+- Organización del modelo original: https://huggingface.co/moonshotai
+- Modelo original: https://huggingface.co/moonshotai/Kimi-K3
+- Licencia del modelo original: https://huggingface.co/moonshotai/Kimi-K3/blob/main/LICENSE
+- Blog técnico: https://www.kimi.com/blog/kimi-k3
+- Informe técnico completo: https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf
+- Repositorio GitHub: https://github.com/MoonshotAI/Kimi-K3
+- Chat oficial: https://www.kimi.com
+- Página de Moonshot AI: https://www.moonshot.ai
 - Twitter: https://twitter.com/kimi_moonshot
 - Discord: https://discord.gg/TYU2fdJykW
 - ModelScope: https://modelscope.cn/organization/moonshotai

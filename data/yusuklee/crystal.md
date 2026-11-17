@@ -2,86 +2,89 @@
 
 ## Resumen
 
-Crystal es un repositorio publicado en Hugging Face por el usuario yusuklee que no contiene un modelo de lenguaje entrenado, sino el código de una demostración de recomendación de noticias explicativa basada en veracidad. Según la model card, se trata de una variante de PRISM (demo presentada en CIKM'26) en la que el eje de orientación política se sustituye por un eje de veracidad frente a desinformación. El repositorio empaqueta un pipeline completo de verificación y recomendación, no pesos de un transformer propio.
+Crystal es un proyecto de demostracion de recomendacion de noticias explicativa basada en veracidad, desarrollado por el usuario de Hugging Face yusuklee. Se presenta como una evolucion del sistema PRISM (demo en CIKM'26), sustituyendo el eje de orientacion politica por un eje de veracidad (deteccion de noticias falsas). No es un modelo fundacional entrenado desde cero, sino un sistema compuesto que orquesta varios componentes: un clasificador RoBERTa para el juicio de veracidad, un modelo SBERT para el emparejamiento de eventos, un recomendador CROWN y un verbalizador Gemini para generar explicaciones.
 
-El sistema combina varias piezas: verificación de hechos mediante la API Google Fact Check Tools y un clasificador RoBERTa con validación cruzada de 10 folds (predicciones out-of-fold con temperature scaling), extracción de palabras clave justificativas mediante Integrated Gradients y expansión sintáctica con spaCy, agrupación de noticias sobre el mismo suceso con SBERT (all-MiniLM-L6-v2) y HDBSCAN con umbral de coseno de 0,7 dentro del clúster, y recomendación con CROWN (crown-www25). La generación de las frases explicativas se delega en Gemini, que actúa únicamente como verbalizador.
+El repositorio contiene el codigo del pipeline (entrenamiento, inferencia, coloreado de evidencias, agrupacion de eventos, sistema de recomendacion y una interfaz web FastAPI), pero no incluye los datos ni los pesos de los modelos. La model card esta redactada en coreano y no proporciona especificaciones tecnicas del modelo en el sentido habitual (parametros, contexto, licencia), por lo que la mayor parte de la ficha debe marcarse como no disponible.
 
-Es relevante ahora porque ilustra un patrón de sistema compuesto (retrieval, clasificación, clustering y un LLM como capa de verbalización) para un problema candente como es la recomendación de noticias con trazabilidad de veracidad. No obstante, la información pública es muy escasa: el repositorio no incluye datos ni pesos, no declara licencia, idiomas ni pipeline, y no se han publicado benchmarks.
+La relevancia actual del proyecto reside en su enfoque de explicabilidad: combina la prediccion de veracidad con una atribucion de evidencias a nivel de frase (estilo ContextCite) y con la generacion de explicaciones en lenguaje natural, ofreciendo un caso practico de sistema de noticias con trazabilidad de decisiones.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Sistema compuesto: RoBERTa (clasificador de veracidad), SBERT all-MiniLM-L6-v2 (embeddings), HDBSCAN (clustering), CROWN (recomendador), Gemini (verbalizador) |
-| Parametros totales | no disponible (no se publican pesos propios; depende de los modelos de terceros integrados) |
-| Parametros activos | no disponible |
+| Arquitectura | Sistema compuesto: clasificador RoBERTa (veracidad) + SBERT all-MiniLM-L6-v2 (similitud) + HDBSCAN (clustering) + CROWN (recomendacion) + Gemini flash-lite (verbalizacion) |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (la model card esta redactada en coreano y el pipeline usa spaCy y una API de fact checking, lo que sugiere orientacion a ingles/coreano, sin confirmacion) |
+| Idiomas soportados | no disponible (la model card esta en coreano; el dataset GossipCop es en ingles) |
 | Licencia | no disponible |
-| Formato de pesos | no disponible (los pesos no se incluyen en el repositorio; solo codigo y pipeline) |
+| Formato de pesos | no disponible (los pesos no se incluyen en el repositorio) |
 
 ## Arquitectura y entrenamiento
 
-No se trata de un transformer monolítico sino de una arquitectura de sistema con cinco etapas encadenadas. La verificación de veracidad combina una fuente externa (Google Fact Check Tools API) con un clasificador RoBERTa entrenado mediante validación cruzada de 10 folds; las predicciones usadas en la demo son out-of-fold y se calibran con temperature scaling, lo que evita fuga de información entre entrenamiento y evaluación. La justificación del veredicto se obtiene con Integrated Gradients sobre el clasificador y se expande a nivel de frase con dependencias de spaCy.
+Crystal no es un unico modelo de lenguaje, sino una arquitectura de sistema en capas. El componente central de clasificacion es un RoBERTa afinado para la tarea de veracidad, entrenado mediante validacion cruzada de 10 folds con predicciones out-of-fold y calibracion de temperatura. El autor reporta sobre el dataset GossipCop (17.527 ejemplos) una exactitud de 0,8725 y un F1 para la clase "fake" de 0,7319. Existe ademas una variante entrenada con enmascaramiento de nombres de personas (`train_masked.py`).
 
-La agrupación de noticias que cubren el mismo suceso se realiza con embeddings de SBERT (all-MiniLM-L6-v2) seguidos de HDBSCAN, aceptando como mismo evento los pares con similitud coseno igual o superior a 0,7 dentro del clúster. La recomendación se delega en CROWN (variante crown-www25). Finalmente, Gemini se usa solo como verbalizador de las explicaciones, no como componente de decisión. No se especifican en la información disponible el volumen de datos de entrenamiento, la composición del dataset ni si hubo RLHF o DPO.
+El resto del pipeline se apoya en componentes preentrenados: SBERT (all-MiniLM-L6-v2) para calcular similitud entre articulos, HDBSCAN para agrupar noticias del mismo evento con un umbral de coseno >= 0,7 dentro del cluster, y el recomendador CROWN (crown-www25). La atribucion de evidencias se realiza mediante una implementacion propia del metodo ContextCite (contribucion por frase), complementada con un diccionario de palabras senal definido manualmente; IG y LIME se usan solo para validar candidatos de senales. Las explicaciones en lenguaje natural se generan con Gemini (gemini-3.5-flash-lite) en rol de verbalizador, con cache prioritaria. No se especifican en la informacion disponible el volumen de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Verificación de veracidad de afirmaciones y noticias mediante combinación de API de fact checking y clasificador RoBERTa calibrado.
-- Extracción de palabras clave y fragmentos justificativos del veredicto mediante Integrated Gradients y expansión sintáctica con spaCy.
-- Detección y agrupación de noticias que cubren el mismo suceso mediante embeddings SBERT y clustering HDBSCAN con umbral de coseno de 0,7.
-- Recomendación de noticias personalizada o contextualizada mediante el recomendador CROWN.
-- Generación de explicaciones en lenguaje natural de las recomendaciones, delegada en Gemini como verbalizador.
-- Despliegue como servicio web mediante FastAPI y Uvicorn en el puerto 8765, con opción de contenedor Docker.
-- No se documentan capacidades de tool calling, razonamiento multi-paso, visión, audio ni modo thinking propias del repositorio.
+- Clasificacion de veracidad de noticias (fake/real) mediante RoBERTa afinado, con probabilidades calibradas por temperatura.
+- Atribucion de evidencias a nivel de frase y palabra sobre el texto de la noticia (metodo tipo ContextCite mas diccionario de senales).
+- Agrupacion de articulos que cubren el mismo evento (SBERT + HDBSCAN) y emparejamiento de noticias con veracidad opuesta.
+- Recomendacion de noticias personalizada mediante CROWN, con feed y distribucion de veracidad.
+- Generacion de explicaciones en lenguaje natural mediante Gemini flash-lite, con sistema de cache.
+- Interfaz web (FastAPI) con vistas de feed, articulo y comparacion.
+- Despliegue mediante Docker (`yusuklee/crystal:latest`).
+- No se documentan capacidades de tool calling, agentes, vision ni audio.
 
 ## Casos de uso
 
-- Prototipo de verificación de noticias en redacción: el pipeline consulta la API de Fact Check Tools y aplica el clasificador RoBERTa para asignar un veredicto de veracidad a cada pieza antes de su publicación, con palabras clave que justifican la decisión.
-- Agrupación de coberturas de un mismo suceso: usando SBERT y HDBSCAN con umbral de coseno de 0,7, un medio puede detectar automáticamente qué artículos de distintas fuentes cubren el mismo evento y compararlos.
-- Recomendación de noticias con trazabilidad: CROWN genera las recomendaciones y Gemini produce la explicación en lenguaje natural, de modo que el usuario entiende por qué se le sugiere una noticia concreta.
-- Investigación académica sobre sistemas explicativos: sirve como referencia reproducible (código y pipeline descritos) para estudiar la sustitución del eje político de PRISM por un eje de veracidad.
-- Demo docente o de divulgación: el despliegue con Docker y una única variable de entorno (GEMINI_API_KEY) permite levantar la aplicación en un taller o clase sin infraestructura compleja.
-- Auditoría interna de desinformación: el clasificador calibrado con temperature scaling y las predicciones out-of-fold permiten estimar la fiabilidad del veredicto antes de integrarlo en un flujo editorial.
-- Base para experimentación con verbalizadores: al aislar Gemini como capa de verbalización, es posible sustituirlo por otro LLM y comparar la calidad de las explicaciones sin tocar el resto del pipeline.
+- Verificacion asistida de noticias: el clasificador RoBERTa permite puntuar la veracidad de un articulo con probabilidades calibradas, util como primera senal en redacciones o herramientas de fact-checking.
+- Explicabilidad de decisiones de moderacion: el coloreado por contribucion de frases permite mostrar al usuario que fragmentos del texto sustentan la clasificacion, lo que facilita la auditoria y la confianza en el sistema.
+- Agrupacion de cobertura mediatica: SBERT + HDBSCAN agrupa articulos del mismo evento con umbral de coseno >= 0,7, lo que sirve para construir vistas comparadas de como distintos medios cubren un mismo hecho.
+- Deteccion de narrativas contrapuestas: el emparejamiento de noticias del mismo evento con veracidad opuesta (`crystal/event/`) permite destacar desinformacion frente a cobertura verificada en un mismo tema.
+- Recomendacion de noticias con senal de veracidad: CROWN permite generar feeds personalizados incorporando la distribucion de veracidad como criterio, util en prototipos de agregadores con prioridad de calidad informativa.
+- Investigacion sobre explicabilidad en NLP: el codigo de entrenamiento (folds, enmascaramiento de nombres) y el pipeline de atribucion sirven como base reproducible para experimentos de atribucion de evidencias.
+- Demo educativa o de divulgacion: la interfaz FastAPI y la imagen Docker permiten desplegar una demo funcional del sistema completo con un solo comando.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+| Tarea | Dataset | Metrica | Resultado |
+|---|---|---|---|
+| Clasificacion de veracidad (RoBERTa, 10-fold OOF) | GossipCop (17.527 ejemplos) | Accuracy | 0,8725 |
+| Clasificacion de veracidad (RoBERTa, 10-fold OOF) | GossipCop (17.527 ejemplos) | F1 (clase fake) | 0,7319 |
+
+No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. El autor menciona un intento de usar la API Google Fact Check Tools que no llego a integrarse en la demo: solo el 24,3% de 597 casos de PolitiFact obtuvieron coincidencia y sin justificacion del veredicto.
 
 ## Requisitos de hardware
 
-- No se especifican requisitos de VRAM en la información disponible; el sistema depende de modelos de terceros (RoBERTa, all-MiniLM-L6-v2, CROWN y Gemini vía API), por lo que el consumo real vendrá determinado por esos componentes.
-- El clasificador RoBERTa y el modelo SBERT all-MiniLM-L6-v2 son de tamaño moderado y pueden ejecutarse en GPU de consumo, aunque no se confirma en la documentación.
-- Gemini se consume como API externa mediante GEMINI_API_KEY, por lo que no requiere GPU local para la verbalización.
-- Despliegue documentado: FastAPI con Uvicorn (`python -X utf8 -m uvicorn crystal.web.app:app --port 8765`) y Docker (`docker build -t crystal .` y `docker run -p 8765:8765 -e GEMINI_API_KEY=... crystal`).
-- No se documentan opciones de despliegue con vLLM, llama.cpp, Ollama o TGI, ni latencias o throughput estimados.
+- VRAM estimada para inferencia: no disponible de forma explicita. Por los componentes implicados (RoBERTa, all-MiniLM-L6-v2), la inferencia de los modelos de clasificacion y similitud es ligera y cabe en GPU consumer; el requisito dominante es el recomendador CROWN y cualquier componente adicional del pipeline.
+- GPU recomendadas: no disponible. Para los componentes transformer (RoBERTa, MiniLM) basta una GPU consumer moderna; CROWN puede requerir mas memoria segun su implementacion.
+- Cabe en GPU consumer: previsiblemente si para los componentes de clasificacion y similitud; no confirmado para el pipeline completo.
+- Opciones de despliegue: Docker (`docker pull yusuklee/crystal:latest`), servidor FastAPI via uvicorn en el puerto 8765. No se documentan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Sistema | Enfoque | Componentes | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Crystal | Recomendación de noticias por veracidad | RoBERTa, SBERT, HDBSCAN, CROWN, Gemini | no disponible | no disponible | Código en HF y GitHub; sin pesos ni datos |
-| PRISM (CIKM'26 demo) | Recomendación de noticias por orientación política | no disponible en la información | no disponible | no disponible | Referenciado como base de Crystal |
-| CROWN (crown-www25) | Recomendador de noticias | no disponible | no disponible | no disponible | Usado como componente de Crystal |
-
-No se dispone de datos suficientes para comparar parámetros, contexto o rendimiento con alternativas de la misma categoría.
+No disponible. La informacion proporcionada no incluye modelos comparables ni datos suficientes de parametros, contexto o rendimiento para establecer una comparacion rigurosa con alternativas de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- El repositorio no incluye los datos (`crystal/data/*.jsonl`) ni los pesos; sin los artefactos del pipeline la aplicación no es funcional tal cual.
-- No se declara licencia, lo que impide determinar si el uso comercial está permitido.
-- No se declaran idiomas soportados; la model card está en coreano y el pipeline usa spaCy y una API de fact checking, lo que puede limitar su aplicación a otros idiomas.
-- La verificación de veracidad depende de la API Google Fact Check Tools y de un clasificador RoBERTa entrenado sobre datos no documentados; existe riesgo de falsos positivos y negativos, y de sesgo heredado de las fuentes de fact checking.
-- La calidad de las explicaciones depende de Gemini como verbalizador externo, lo que introduce dependencia de una API de terceros, coste por uso y posible alucinación en el texto explicativo.
-- El agrupamiento por mismo suceso usa un umbral fijo de coseno de 0,7, que puede fusionar eventos distintos o separar coberturas del mismo evento en dominios muy especializados.
-- No hay benchmarks publicados que permitan estimar el rendimiento real en producción.
-- El repositorio muestra 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validación por parte de la comunidad.
+- El repositorio no incluye los datos (`crystal/data/*.jsonl`) ni los pesos de los modelos; es necesario obtener los artefactos del pipeline por separado para ejecutar el sistema.
+- La licencia no esta especificada, por lo que no se puede confirmar el uso comercial ni la redistribucion.
+- El clasificador de veracidad esta entrenado sobre GossipCop (17.527 ejemplos), un dataset de noticias de cotilleo en ingles; su generalizacion a otros dominios o idiomas no esta validada.
+- El rendimiento reportado (accuracy 0,8725, F1 fake 0,7319) procede de validacion cruzada out-of-fold sobre el mismo corpus, no de una evaluacion externa independiente.
+- Riesgo de alucinacion en las explicaciones generadas por Gemini flash-lite: el verbalizador puede producir justificaciones no sustentadas por la evidencia; el sistema mitiga parcialmente con cache y con la atribucion por frases.
+- La dependencia de la API de Gemini implica coste y latencia externos, y sin `GEMINI_API_KEY` solo se muestran las explicaciones ya cacheadas.
+- El diccionario de palabras senal esta definido manualmente, lo que introduce sesgo humano en la seleccion de evidencias.
+- La model card esta en coreano y no documenta sesgos conocidos, limitaciones de contexto ni restricciones de uso en produccion.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/yusuklee/Crystal
-- Perfil del autor en Hugging Face: https://huggingface.co/yusuklee
-- Repositorio GitHub: https://github.com/yusuklee/Crystal
+- Imagen Docker: `docker pull yusuklee/crystal:latest` (referenciada en la model card)
+- Referencia al sistema base PRISM (demo CIKM'26): mencionada en la model card, sin URL disponible
+- Referencia a CROWN (crown-www25): mencionada en la model card, sin URL disponible
+- Referencia a ContextCite: mencionada en la model card, sin URL disponible
+- Referencia a GossipCop: dataset mencionado en la model card, sin URL disponible

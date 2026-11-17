@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 93,
+  "downloads_30d": 96,
   "trending_score": 0,
   "parameters": 8867301,
   "parameters_human": "8.9M",
@@ -48,11 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "xiangyguo/scOntoFM-pretrain-corpus · Datasets at Hugging Face",
-      "url": "https://huggingface.co/datasets/xiangyguo/scOntoFM-pretrain-corpus",
-      "snippet": "Datasets: xiangyguo / scOntoFM-pretrain-corpus Like 0 Modalities: Text Formats: arrow Languages: English Size: 10M - 100M Tags: biology single-cell scRNA-seq transcriptomics cell-ontology cellxgene + 1 Libraries: Datasets Croissant License: cc-by-4.0 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer (First 5GB) Auto-converted to Parquet API Embed Duplicate Data ..."
-    }
-  ]
+  "sources": []
 }

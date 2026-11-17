@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 706,
+  "downloads_30d": 712,
   "trending_score": 0,
   "parameters": 752393024,
   "parameters_human": "752.4M",
@@ -47,16 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
-      "url": "https://github.com/ABDtmx/Qwen3.5",
-      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
-    },
-    {
-      "title": "Qwen3.5-0.8B - Qualcomm AI Hub",
-      "url": "https://aihub.qualcomm.com/mobile/models/qwen3_5_0_8b",
-      "snippet": "Qwen3.5-0.8B Ultra‑compact 0.8B parameter model from the Qwen3.5 series for edge deployment. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
-    }
-  ]
+  "sources": []
 }

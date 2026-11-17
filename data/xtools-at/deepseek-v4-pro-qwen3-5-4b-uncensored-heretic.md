@@ -2,97 +2,96 @@
 
 ## Resumen
 
-DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic es una variante "decensored" del modelo Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B, publicada por el usuario xtools-at. El modelo original es un fine-tune de razonamiento de Qwen3.5-4B destilado a partir de respuestas generadas por DeepSeek-V4-Pro en modo "Max Effect", entrenado sobre una mezcla de aproximadamente 250.000 muestras de matematicas y STEM. Esta version aplica la herramienta Heretic v2.0.0 para eliminar los comportamientos de rechazo mediante una ablacion de rangos arbitrarios (Arbitrary-Rank Ablation, ARA).
+DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic es un ajuste fino de tipo *decensored* (abliterated) del modelo Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B, publicado por el usuario xtools-at. El modelo base es un destilado de razonamiento de Qwen3.5-4B entrenado sobre aproximadamente 250.000 muestras de matematicas y STEM generadas por DeepSeek-V4-Pro en modo Max Effect. La variante heretic elimina los comportamientos de rechazo mediante una tecnica de ablacion de rango arbitrario (ARA) aplicada a las capas 16 a 32.
 
-El resultado es un modelo de 4.539.265.536 parametros (4B efectivos) que conserva la estructura de razonamiento del original pero reduce drasticamente las negativas a responder: segun la model card, pasa de 99/100 rechazos en el modelo original a 5/100 en esta version, con una divergencia KL de 0,0378 respecto al original. Es relevante para quienes necesitan un modelo pequeno de razonamiento matematico sin filtros de seguridad integrados, aunque con las advertencias evidentes que ello conlleva.
+El resultado es un modelo de 4.539.265.536 parametros (4,54B) en formato safetensors, con licencia Apache 2.0, pensado para despliegues compactos donde se necesita razonamiento estructurado sin filtros de contenido. La model card reporta una reduccion de rechazos de 99/100 a 5/100 respecto al modelo original, con una divergencia KL de 0,0378, lo que indica que la ablacion preserva en gran medida el comportamiento original.
 
-La licencia es Apache 2.0 y los idiomas declarados son ingles y chino. El repositorio ocupa 9,1 GB e incluye pesos en safetensors, ademas de estar etiquetado para GGUF y text-generation-inference. El modelo base declarado es unsloth/Qwen3.5-4B, y la arquitectura subyacente es la de la familia Qwen3.5 (tag `qwen3_5`), con soporte declarado para image-text-to-text en los tags del repositorio.
+Es relevante ahora porque combina tres tendencias: destilacion de modelos grandes de razonamiento hacia clases de 4B desplegables en consumer GPU, tecnicas de ablacion selectiva de capas para eliminar rechazos sin reentrenar, y soporte multilingue declarado (en, zh, ko, ja, es, ru) pese a que la ficha de Hugging Face solo lista en y zh.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Qwen3.5, tag `qwen3_5`) |
-| Parametros totales | 4.539.265.536 |
-| Parametros activos | no disponible (no se declara arquitectura MoE) |
+| Arquitectura | Transformer decoder-only (familia Qwen3.5), ajuste fino supervisado (SFT) con destilacion |
+| Parametros totales | 4.539.265.536 (4,54B) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repo incluye safetensors; se etiqueta GGUF pero no se detallan variantes) |
-| Idiomas soportados | en, zh |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (repo de 9,1 GB); etiquetado tambien como gguf |
+| Tipos de cuantizacion | no disponible en la informacion proporcionada (repo en safetensors; se menciona evaluacion MTP-Q8) |
+| Idiomas soportados | en, zh, ko, ja, es, ru (segun model card); la ficha de HF lista solo en, zh |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se construye sobre Qwen3.5-4B, un transformer denso de 4B parametros, y se entrena mediante destilacion de las respuestas de DeepSeek-V4-Pro en modo "Max Effect". El pipeline de entrenamiento sigue el mismo esquema que la release de 9B del mismo autor, con una mezcla de aproximadamente 250.000 muestras centradas en razonamiento matematico y cientifico (STEM). La model card menciona tambien SFT y evaluacion con MTP-Q8, aunque no se detalla la composicion exacta del dataset ni el numero total de tokens de entrenamiento.
+El modelo es un transformer decoder-only de la familia Qwen3.5 con 4,54B parametros, sometido a un ajuste fino supervisado (SFT) sobre respuestas destiladas de DeepSeek-V4-Pro en modo Max Effect. El dataset de entrenamiento consta de aproximadamente 250.000 muestras centradas en razonamiento matematico y STEM, siguiendo la misma receta que la version de 9B del mismo autor. La model card menciona tags de *reasoning*, *distillation*, *sft* y *mtp* (multi-token prediction), lo que sugiere que el entrenamiento incorpora prediccion multi-token, aunque no se detalla la composicion exacta del dataset ni el numero total de tokens.
 
-La innovacion principal de esta variante concreta es la aplicacion de Heretic v2.0.0, que realiza una ablacion de rangos arbitrarios (ARA) sobre las capas 16 a 32 del modelo. Los hiperparametros declarados son: `start_layer_index` 16, `end_layer_index` 32, `preserve_good_behavior_weight` 0,9854, `steer_bad_behavior_weight` 0,0002, `overcorrect_relative_weight` 0,6587 y `neighbor_count` 10. Esta intervencion reduce los rechazos de 99/100 a 5/100 manteniendo una divergencia KL de 0,0378 respecto al modelo original, lo que segun el autor indica que se preserva gran parte del comportamiento original.
+La innovacion tecnica principal de esta variante es la ablacion de rango arbitrario (ARA) aplicada con Heretic v2.0.0 sobre las capas 16 a 32 (de un total de 32), con pesos de preservacion de comportamiento bueno de 0,9854, de redireccion de comportamiento malo de 0,0002, de correccion relativa de 0,6587 y un vecindario de 10. Esta ablacion modifica selectivamente las direcciones de activacion asociadas a rechazos, reduciendo la tasa de rechazo de 99/100 a 5/100 con una divergencia KL de 0,0378 frente al modelo original. No se documenta uso de RLHF o DPO en la informacion disponible.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento multi-paso, con enfasis en descomposicion explicita de problemas.
-- Razonamiento matematico y cientifico (STEM) reforzado por la destilacion de DeepSeek-V4-Pro.
-- Generacion de codigo y resolucion de problemas tecnicos, heredada del modelo base Qwen3.5-4B.
-- Soporte declarado de image-text-to-text en los tags del repositorio (no confirmado en la model card).
-- Etiquetado para text-generation-inference, lo que sugiere compatibilidad con endpoints de inferencia estandar.
-- Capacidades multilingues limitadas a ingles y chino segun la model card.
-- Comportamiento "uncensored": responde a practicamente cualquier peticion (5/100 rechazos), incluidas aquellas que el modelo original rechazaria.
+- Generacion de texto conversacional y razonamiento multi-paso con descomposicion explicita de problemas.
+- Razonamiento matematico y cientifico (STEM) reforzado por destilacion de un profesor de mayor capacidad.
+- Prediccion multi-token (MTP) como parte del pipeline de entrenamiento y evaluacion (se reporta evaluacion MTP-Q8).
+- Soporte multilingue declarado para en, zh, ko, ja, es y ru.
+- Comportamiento *uncensored*: baja tasa de rechazos (5/100) frente a politicas de contenido.
+- Compatibilidad con endpoints (tag `endpoints_compatible`) y con text-generation-inference.
+- No se documenta soporte explicito de tool calling, function calling, agentes, vision ni audio en la informacion disponible.
 
 ## Casos de uso
 
-- Investigacion sobre alineacion y seguridad: el modelo sirve como caso de estudio controlado para medir el efecto de la ablacion ARA sobre el comportamiento de rechazo, comparando directamente con el modelo original (99/100 frente a 5/100 rechazos).
-- Evaluacion de robustez de filtros: util para probar sistemas de moderacion externos, ya que el propio modelo no incorpora negativas y permite verificar si las capas de seguridad del pipeline detectan contenido problematico.
-- Razonamiento matematico en entornos educativos controlados: con 250.000 muestras de matematicas y STEM, es adecuado para generar soluciones paso a paso en tutores automaticos, siempre con supervision humana.
-- Generacion de datos sinteticos de razonamiento: al estar destilado de un teacher fuerte, puede producir cadenas de razonamiento para aumentar datasets de entrenamiento en dominios cientificos.
-- Prototipado rapido en local: con 4B parametros y licencia Apache 2.0, cabe en GPUs de consumo y permite experimentar con razonamiento sin coste de API.
-- Fine-tuning posterior: al ser un modelo pequeno y permisivo, sirve como base para ajustes especificos donde se quiera evitar que el modelo rechace peticiones legitimas de dominio (por ejemplo, analisis de textos sensibles en investigacion).
-- Procesamiento de documentacion tecnica en ingles y chino: resumen y extraccion de informacion en esos dos idiomas.
+- Tutoria de matematicas y ciencias: el modelo puede resolver problemas paso a paso y explicitar la descomposicion, adecuado para plataformas educativas que necesitan cadenas de razonamiento visibles.
+- Generacion de explicaciones tecnicas para documentacion STEM: util para redactar derivaciones, demostraciones y notas de laboratorio a partir de enunciados breves.
+- Asistente de investigacion en entornos controlados: al no rechazar consultas por politica de contenido, puede procesar preguntas tecnicas sensibles (por ejemplo, quimica o seguridad) sin bloqueos, siempre bajo supervision humana.
+- Prototipado rapido en consumer GPU: con 4,54B parametros y licencia Apache 2.0, sirve para iterar pipelines de razonamiento en una sola GPU de gama alta de consumo.
+- Evaluacion comparativa de tecnicas de ablacion: el modelo es un caso de estudio reproducible de Heretic v2.0.0 con parametros ARA documentados, util para investigadores que estudian decensoring.
+- Despliegue multilingue ligero: atencion a usuarios en espanol, coreano, japones o ruso en tareas de razonamiento, con la cautela de que el soporte no esta validado con benchmarks.
+- Generacion de datasets sinteticos de razonamiento: puede producir soluciones paso a paso para aumentar corpus de entrenamiento de modelos menores.
 
 ## Benchmarks y rendimiento
 
-La model card solo reporta metricas del proceso de decensoring, no benchmarks estandar de capacidad:
+La model card solo reporta metricas de comportamiento de rechazo y divergencia KL, no benchmarks estandar de razonamiento o conocimiento.
 
 | Metrica | Este modelo | Modelo original (Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B) |
 |---|---|---|
 | Rechazos | 5/100 | 99/100 |
 | Divergencia KL | 0,0378 | 0 (por definicion) |
 
-La model card menciona que se evaluo en "complete GSM8K runs" y en muestras fijas de MMLU-Pro Math, Physics y Chemistry, pero no se publican los resultados numericos de esas evaluaciones en la informacion disponible.
+No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada en FP16: aproximadamente 9 GB para los pesos (4,54B parametros x 2 bytes), mas overhead de activaciones y KV cache.
-- VRAM estimada en cuantizacion de 8 bits: en torno a 4,5-5 GB.
-- VRAM estimada en cuantizacion de 4 bits: en torno a 2,5-3 GB.
-- GPU de consumo: cabe en RTX 4090 (24 GB) en FP16 sin problema; en RTX 3090/4080 (16-24 GB) tambien; en GPUs de 8 GB requeriria cuantizacion a 4 bits.
-- GPU de datacenter: A100, H100 y L40S lo ejecutan con holgura y permiten lotes grandes.
-- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (etiquetado), llama.cpp/Ollama mediante GGUF (etiquetado, aunque no se detallan las variantes publicadas) y vLLM como alternativa compatible con la arquitectura Qwen.
+- VRAM estimada: no disponible de forma explicita. Para 4,54B parametros, en FP16 se requieren aproximadamente 9,1 GB de pesos; en cuantizacion de 8 bits unos 4,5 GB y en 4 bits unos 2,3 GB, sin contar overhead de KV cache.
+- GPU recomendadas: no disponible en la informacion proporcionada. Por tamano, cabe en GPUs de consumo con 12-16 GB o mas (por ejemplo, RTX 4070 Ti, RTX 4080, RTX 4090) en FP16 o cuantizado.
+- Consumer GPU: si, previsiblemente en GPUs de 12 GB o superiores con cuantizacion; no confirmado por el autor.
+- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (tag), y herramientas compatibles con safetensors. No se documenta soporte GGUF, llama.cpp, Ollama ni vLLM.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| Este modelo (DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic) | 4,54B | no disponible | Apache 2.0 | Destilado de DeepSeek-V4-Pro, decensored con Heretic |
-| Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B | 4B (aproximado) | no disponible | Apache 2.0 (heredada) | Modelo original, 99/100 rechazos |
-| Qwen3.5-4B (unsloth) | 4B | no disponible | Apache 2.0 | Modelo base sin destilacion de razonamiento |
-| Release de 9B del mismo autor | 9B (aproximado) | no disponible | no disponible | Misma receta de destilacion, mayor tamano |
+| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Este modelo (heretic 4B) | 4,54B | no disponible | 5/100 rechazos, KL 0,0378 | Apache 2.0 | Hugging Face |
+| Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B (base) | 4,54B | no disponible | 99/100 rechazos | Apache 2.0 | Hugging Face |
+| xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic | ~9B (no confirmado) | no disponible | no disponible | Apache 2.0 (presumible) | Hugging Face |
+| xtools-at/Qwen3.5-4B-DeepThought-STEM | ~4B | no disponible | no disponible | no disponible | Hugging Face |
 
-No se dispone de datos de benchmarks comparativos de capacidad (MMLU, HumanEval, GSM8K) en la informacion proporcionada para establecer una comparacion cuantitativa con alternativas.
+No se dispone de datos de benchmarks para comparar rendimiento de razonamiento con alternativas de la misma clase.
 
 ## Limitaciones y advertencias
 
-- El modelo ha sido sometido a una ablacion deliberada para eliminar los rechazos: no incorpora salvaguardas y puede generar contenido danino, ilegal o eticamente problematico. No es apto para despliegue directo al publico sin capas de moderacion externas.
-- La divergencia KL de 0,0378 respecto al original implica que, aunque se preserva gran parte del comportamiento, hay degradacion potencial en tareas fuera del dominio de entrenamiento.
-- Solo se declaran ingles y chino; el rendimiento en castellano no esta garantizado ni evaluado.
-- La longitud de contexto no se especifica en la informacion disponible, lo que impide planificar casos de uso con documentos largos.
-- No se publican resultados de benchmarks de capacidad, por lo que las afirmaciones sobre razonamiento matematico y STEM se basan en la composicion del dataset de entrenamiento, no en mediciones verificables.
-- El modelo tiene 0 descargas y 0 likes en el momento de la ficha: no hay evidencia de uso en produccion ni validacion independiente.
-- Aunque la licencia es Apache 2.0, el uso comercial de un modelo decensored conlleva riesgos legales y reputacionales segun la jurisdiccion y el contexto de aplicacion.
-- El pipeline declarado es text-generation, pero los tags incluyen image-text-to-text; no esta claro si las capacidades multimodales estan realmente presentes o son herencia del modelo base.
+- Al ser un modelo *abliterated*, se eliminan deliberadamente los mecanismos de rechazo; puede generar contenido sensible, ofensivo o peligroso sin filtros, lo que exige moderacion externa en produccion.
+- Riesgo de alucinacion inherente a modelos destilados de 4B; la destilacion de razonamiento no garantiza correccion factual.
+- La ablacion introduce una divergencia KL de 0,0378, lo que implica una degradacion no nula de capacidades respecto al modelo original; no se reportan benchmarks que cuantifiquen esa perdida.
+- El soporte multilingue declarado (ko, ja, es, ru) no esta respaldado por evaluaciones; la ficha de HF solo lista en y zh.
+- Longitud de contexto no documentada; no apto para tareas que requieran ventanas largas sin verificacion previa.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base y las tecnicas de decensoring pueden estar sujetas a consideraciones legales y de politica de plataforma.
+- No se documenta soporte de tool calling ni de agentes; no asumir esas capacidades en pipelines de produccion.
+- El repositorio ocupa 9,4 GB, coherente con pesos en precision alta; el despliegue en consumer GPU requiere cuantizacion, cuyos formatos no estan documentados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic
-- Modelo original: https://huggingface.co/Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B
-- Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
-- Heretic project: https://heretic-project.org
+- Modelo base: https://huggingface.co/Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B
+- Version 9B heretic: https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic
+- Ajuste STEM DeepThought: https://huggingface.co/xtools-at/Qwen3.5-4B-DeepThought-STEM
+- Proyecto Heretic: https://heretic-project.org

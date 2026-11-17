@@ -2,109 +2,100 @@
 
 ## Resumen
 
-El Turkish Contact Center Intent Classifier es un modelo de clasificación de texto desarrollado por el usuario yasinunal que asigna intervenciones de clientes en turco a una de diez intenciones típicas de un centro de contacto de telecomunicaciones (avería de internet, disputa de factura, activación de línea, portabilidad, roaming, etc.). Se construye mediante fine-tuning supervisado sobre el checkpoint `dbmdz/bert-base-turkish-cased`, un encoder BERT en su variante base para turco con aproximadamente 110,6 millones de parámetros.
+El Turkish Contact Center Intent Classifier es un modelo BERT afinado para clasificar intenciones en conversaciones de atencion al cliente en turco. Lo publica el usuario yasinunal como proyecto personal y academico, sin vinculacion con ninguna operadora ni empresa real, y se distribuye con licencia MIT. Parte del modelo base `dbmdz/bert-base-turkish-cased` y resuelve una tarea acotada: asignar cada intervencion del cliente a una de diez categorias de intencion propias de un contact center de telecomunicaciones (averia de internet, disputa de factura, activacion de linea, cancelacion, portabilidad, problemas de pago, cambio de paquete, roaming, averia de dispositivo e informacion general).
 
-El problema que aborda es el enrutamiento y la categorización automática de motivos de contacto en turco, un idioma con menos recursos y con menos modelos especializados publicados que el inglés. La versión v0.1 se entrenó con un corpus pequeño y curado de 856 ejemplos (800 base, 40 de frontera contrastiva y 16 de reparación dirigida) y reporta una precisión del 100% sobre 100 ejemplos in-scope y del 95% sobre un benchmark de frontera de 80 ejemplos, resultados que el propio autor advierte que no son extrapolables a tráfico real.
+Tecnicamente es un transformer encoder de tipo BERT con 110.625.034 parametros y una cabeza de clasificacion de secuencia sobre 10 etiquetas. La longitud maxima de secuencia usada durante el entrenamiento es de 128 tokens, coherente con el caracter corto de las utterances de atencion al cliente. El repositorio ocupa 0,4 GB y los pesos se publican en safetensors.
 
-Su relevancia práctica reside en el tamaño: al ser un modelo de ~110 M de parámetros es viable en CPU, en GPUs de consumo e incluso en despliegues de borde, con latencias de milisegundos y sin necesidad de infraestructura de gran escala. El principal caveat es que se trata de un clasificador de conjunto cerrado de 10 clases, sin detector de peticiones fuera de alcance (OOS).
+Su relevancia es practica para quien necesite un punto de partida rapido en enrutamiento de intenciones en turco: es pequeno, se ejecuta en CPU, se integra con la libreria `transformers` y con `text-embeddings-inference`, y sirve para prototipar. Conviene subrayar desde el inicio que se entreno solo con datos sinteticos (856 ejemplos) y que no incorpora un detector de peticiones fuera de alcance, por lo que no es un componente listo para produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder tipo BERT (variante base) con cabeza de clasificacion de secuencias |
-| Parametros totales | 110.625.034 (confirmado en los pesos safetensors) |
-| Longitud de contexto | 512 tokens a nivel de arquitectura BERT; el modelo se entreno y evaluo con max_length=128 |
-| Tipos de cuantizacion | No disponible: el autor no publica versiones cuantizadas. Distribucion en safetensors; al ser un BERT de ~110 M es cuantificable a FP16/int8 con herramientas estandar |
-| Idiomas soportados | Turco (tr) |
+| Arquitectura | BERT (transformer encoder) para clasificacion de secuencia |
+| Parametros totales | 110.625.034 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 128 tokens (maximo usado en entrenamiento) |
+| Tipos de cuantizacion | no disponible (pesos publicados sin cuantizar) |
+| Idiomas soportados | turco (tr) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (libreria transformers); compatible con text-embeddings-inference y endpoints |
-| Etiquetas de salida | 10 clases (conjunto cerrado) |
+| Formato de pesos | safetensors |
+| Modelo base | dbmdz/bert-base-turkish-cased |
+| Numero de etiquetas | 10 |
 | Tamano del repositorio | 0,4 GB |
-
-Las diez intenciones soportadas, con su identificador, son: 0 `cihaz_sorunu`, 1 `fatura_itirazi`, 2 `genel_bilgi`, 3 `hat_aktivasyonu`, 4 `internet_arizasi`, 5 `iptal_talebi`, 6 `numara_tasima`, 7 `odeme_sorunu`, 8 `paket_degistirme` y 9 `roaming`.
+| Version | v0.1 (clasificador V2.2) |
+| Pipeline | text-classification |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un encoder Transformer bidireccional de tipo BERT en su configuracion base, sobre el que se anade una cabeza lineal de clasificacion para 10 etiquetas. El recuento real de parametros (110.625.034) es coherente con la variante base de BERT (12 capas, 768 de dimension oculta y 12 cabezas de atencion) mas la capa de clasificacion. Al ser un modelo de clasificacion, no incorpora decodificacion autoregresiva, atencion lineal, decodificacion especulativa ni modo de razonamiento explicito.
+La arquitectura es un BERT estandar con tokenizador cased para turco y una cabeza lineal de clasificacion sobre 10 clases. No hay innovaciones de decodificacion ni mecanismos de atencion alternativos: es un fine-tuning convencional sobre el checkpoint `dbmdz/bert-base-turkish-cased`, con truncado a 128 tokens.
 
-El entrenamiento consistio en un fine-tuning supervisado clasico sobre un dataset de 856 ejemplos construido especificamente para el caso de uso: 800 ejemplos base, 40 ejemplos de frontera contrastiva (pares semanticamente proximos entre intenciones) y 16 ejemplos de reparacion dirigida a reforzar limites concretos entre clases. El corpus combina ejemplos sinteticos y curados en torno a escenarios de contact center turco. No se documenta el uso de RLHF ni DPO, algo esperable en una tarea de clasificacion supervisada, ni se detalla el numero total de tokens de entrenamiento, la composicion exacta del dataset ni los hiperparametros de optimizacion.
+El corpus de entrenamiento de la v0.1 contiene 856 ejemplos: 800 ejemplos base, 40 ejemplos contrastivos de frontera entre intenciones y 16 ejemplos de reparacion dirigidos a reforzar limites concretos entre clases. Todo el material es sintetico o curado manualmente en torno a escenarios de contact center turco; no se emplearon conversaciones reales ni datos personales. La model card no documenta el uso de RLHF, DPO ni tecnicas de alineacion adicionales, ni detalla hiperparametros de entrenamiento, numero de epocas, tasa de aprendizaje o composicion exacta por clase.
 
 ## Capacidades
 
-- Clasificacion de texto en turco en 10 categorias cerradas de intencion de contact center.
-- Salida de logits por clase, lo que permite obtener una etiqueta predicha y un margen de confianza relativo entre clases.
-- Inferencia rapida y ligera, apta para procesamiento por lotes de alto volumen.
-- Integracion directa con el pipeline `text-classification` de transformers y con text-embeddings-inference.
-- Uso como componente de pre-etiquetado en flujos de anotacion humana.
-- No dispone de tool calling ni function calling.
-- No soporta agentes ni razonamiento multi-paso; es un clasificador de una sola pasada.
-- No tiene capacidades multimodales: ni vision, ni audio, ni modo de razonamiento extendido.
-- No es multilingue: solo turco.
+- Clasificacion de intenciones en turco en un conjunto cerrado de 10 clases: `cihaz_sorunu`, `fatura_itirazi`, `genel_bilgi`, `hat_aktivasyonu`, `internet_arizasi`, `iptal_talebi`, `numara_tasima`, `odeme_sorunu`, `paket_degistirme` y `roaming`.
+- Procesamiento de utterances cortas de cliente, con truncado a 128 tokens.
+- Inferencia via `AutoModelForSequenceClassification` y via `pipeline("text-classification")` de la libreria `transformers`.
+- Compatibilidad declarada con `text-embeddings-inference` y con endpoints.
+- No soporta tool calling ni function calling.
+- No implementa razonamiento multi-paso ni comportamiento agentico.
+- No dispone de modo thinking, vision ni audio.
+- Capacidad multilingue limitada al turco; no se declara soporte para otros idiomas.
+- No incluye deteccion de peticiones fuera de alcance (OOS) en el pipeline de inferencia de la v0.1.
 
 ## Casos de uso
 
-- Enrutamiento de llamadas en un IVR: clasificar la primera intervencion del cliente en una llamada entrante y dirigirla a la cola del agente especializado correspondiente (por ejemplo, `internet_arizasi` a soporte tecnico y `fatura_itirazi` a facturacion), reduciendo el tiempo en menu y las transferencias erroneas.
-- Triaje de tickets escritos en chat o correo electronico: etiquetar automaticamente cada ticket entrante con una de las 10 intenciones para asignarlo a la cola correcta y priorizarlo en funcion del tipo (`odeme_sorunu` o `iptal_talebi` suelen requerir respuesta rapida por riesgo de bajas).
-- Analisis de motivos de contacto: agregar las predicciones sobre miles de interacciones para construir cuadros de mando de volumen por motivo, detectar picos de `internet_arizasi` asociados a incidencias de red y medir la evolucion de `iptal_talebi` como indicador de riesgo de churn.
-- Pre-etiquetado en flujos de anotacion: usar las predicciones como propuesta inicial para que un anotador humano solo valide o corrija, acelerando la construccion de datasets etiquetados de mayor tamano en turco.
-- Asistencia al agente en tiempo real: mostrar la intencion detectada en el escritorio del agente junto con la transcripcion, de modo que el agente reciba contexto sobre el motivo antes de responder.
-- Deteccion de motivos de cancelacion para retencion: aislar las interacciones clasificadas como `iptal_talebi` y `paket_degistirme` para activar protocolos de retencion o analizar causas recurrentes.
-- Clasificacion de transcripciones ASR: aplicar el modelo a texto generado por reconocimiento de voz en turco, teniendo en cuenta que el autor advierte que el ruido de las transcripciones ASR no esta suficientemente representado en los datos de evaluacion.
-- Segmentacion de encuestas de voz del cliente: etiquetar comentarios abiertos de encuestas para agrupar quejas por tipo de problema y alimentar informes de calidad.
+- Enrutamiento inicial de llamadas en un contact center turco: clasificar la primera intervencion del cliente para dirigirla al agente o cola adecuada (por ejemplo, `fatura_itirazi` a facturacion, `internet_arizasi` a soporte tecnico). El modelo es adecuado por su latencia baja en CPU y su tamano reducido.
+- Prototipado de asistentes de voz con ASR: transcribir la utterance del cliente y pasarla al clasificador para decidir el siguiente paso del arbol de interaccion, aceptando que el ruido de transcripcion puede degradar la precision.
+- Etiquetado asistido de transcripciones para construir un dataset propio: usar el modelo como preetiquetador y revisar manualmente, aprovechando que solo requiere 0,4 GB de disco y puede ejecutarse en lotes sobre CPU.
+- Analitica de motivos de contacto: agregar las predicciones sobre un lote de conversaciones para estimar la distribucion de intenciones por periodo, con la cautela de que las confianzas no estan calibradas.
+- Pruebas de regresion de sistemas de NLU: emplear el modelo como referencia fija en tests automatizados que verifiquen que un pipeline de clasificacion propio mantiene el comportamiento esperado en utterances canonicas.
+- Demostraciones y docencia: ilustrar un pipeline completo de fine-tuning de BERT para clasificacion de texto en turco, dado que el modelo, el tokenizador y los ejemplos de uso estan documentados en la model card.
+- Filtrado previo en sistemas de ticketing: clasificar el asunto o cuerpo breve de un ticket entrante para asignar prioridad o cola, siempre con validacion humana posterior.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados en benchmarks estandar (MMLU, GLUE, HumanEval, GSM8K u otros). El autor unicamente reporta dos evaluaciones internas sobre sus propios conjuntos:
+Los unicos resultados publicados en la informacion disponible son los de la model card, medidos sobre conjuntos propios:
 
 | Evaluacion | Resultado |
 |---|---:|
-| Precision in-scope (100 ejemplos) | 100/100 (100%) |
-| Precision en benchmark de frontera (80 ejemplos) | 76/80 (95%) |
+| Precision en test dentro de alcance (in-scope) | 100/100 (100 %) |
+| Precision en benchmark de fronteras entre intenciones | 76/80 (95 %) |
 
-Estos resultados deben interpretarse en el contexto de unos datasets pequenos y en parte sinteticos. El propio autor indica explicitamente que no implican un 100% de precision sobre trafico real de contact center turco y que el rendimiento puede degradarse con conversaciones reales, transcripciones ASR, objetivos de cliente no vistos previamente, cambios de dominio y peticiones fuera de alcance.
+No se han publicado resultados en benchmarks estandar (MMLU, HumanEval, GSM8K ni equivalentes) en la informacion disponible. El autor advierte explicitamente que estos resultados no implican un 100 % de precision sobre trafico real de contact center turco.
 
 ## Requisitos de hardware
 
-- Pesos en FP32: aproximadamente 442 MB (110,6 M de parametros x 4 bytes).
-- Pesos en FP16: aproximadamente 221 MB.
-- Pesos en int8: aproximadamente 111 MB.
-- VRAM estimada para inferencia: por debajo de 1-2 GB en FP16 con lotes pequenos, incluyendo activaciones y memoria del runtime. Cabe holgadamente en cualquier GPU de consumo, incluidas GTX 1650, RTX 3060, RTX 4090 y equivalentes, y tambien en GPUs integradas o en CPU.
-- Ejecucion en CPU: viable para volumenes moderados; es un modelo adecuado para despliegue en servidores sin GPU o en el borde.
-- GPUs recomendadas: cualquiera con al menos 2 GB de VRAM. Para maximizar throughput en produccion, A100, H100, L4 o T4 son opciones razonables, pero no son necesarias por tamano.
-- Opciones de despliegue: `transformers` (PyTorch) con `AutoModelForSequenceClassification` o con el pipeline `text-classification`; text-embeddings-inference (el repositorio esta etiquetado como compatible); exportacion a ONNX Runtime para inferencia en CPU; FastAPI o similares para envolver el modelo en un servicio HTTP. No hay soporte GGUF ni Ollama documentado por el autor.
-- Latencia y throughput: no publicados por el autor. Como referencia orientativa no confirmada, un BERT-base de ~110 M suele procesar secuencias de 128 tokens en el rango de milisegundos por lote en GPU moderna y en decenas de milisegundos por lote en CPU multinucleo; estas cifras son estimaciones y deben medirse en el entorno real de despliegue.
+- VRAM estimada para inferencia en fp32: aproximadamente 0,45 GB solo para pesos (110,6 M de parametros); en la practica, entre 1 y 2 GB contando activaciones y overhead del runtime.
+- Cabe holgadamente en cualquier GPU consumer, incluidas GTX 1650, RTX 3060, RTX 4090 y similares; tambien es viable en CPU para cargas moderadas.
+- GPU recomendadas para alto throughput: A100, H100 o L4 para servir en lote; para prototipos, cualquier GPU con 4 GB o mas es suficiente.
+- Opciones de despliegue: `transformers` con `pipeline`, `text-embeddings-inference`, y servidores de inferencia compatibles con endpoints. No se documentan recetas especificas para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se han encontrado en la informacion proporcionada otros clasificadores de intencion especificos de contact center en turco con los que comparar directamente. La comparacion se establece por tanto con el modelo base y con encoders multilingues genericos que podrian usarse como alternativa.
-
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| yasinunal/turkish-contact-center-intent-classifier | ~110,6 M | 512 (entrenado a 128) | Clasificacion de intenciones en turco, 10 clases cerradas | MIT | Hugging Face |
-| dbmdz/bert-base-turkish-cased | ~110 M | 512 | Encoder base en turco, sin cabeza de intenciones | MIT | Hugging Face |
-| google-bert/bert-base-multilingual-cased (mBERT) | ~178 M | 512 | Encoder multilingue (mas de 100 idiomas), requiere fine-tuning | Apache 2.0 | Hugging Face |
-| FacebookAI/xlm-roberta-base | ~278 M | 512 | Encoder multilingue, requiere fine-tuning | MIT | Hugging Face |
+|---|---:|---:|---|---|---|
+| yasinunal/turkish-contact-center-intent-classifier | 110,6 M | 128 tokens | Clasificacion de intenciones en turco (10 clases) | MIT | Hugging Face |
+| dbmdz/bert-base-turkish-cased | no disponible en la informacion | no disponible en la informacion | Modelo base turco (MLM) | no disponible en la informacion | Hugging Face |
+| BERT-base multilingue (referencia generica) | no disponible en la informacion | no disponible en la informacion | Modelo base multilingue | no disponible en la informacion | Hugging Face |
 
-Frente al modelo base, la ventaja es que ya incorpora la cabeza de 10 intenciones y el vocabulario de tareas de contact center turco; la desventaja es que su conjunto de entrenamiento es muy reducido, por lo que un fine-tuning propio sobre datos reales de la organizacion probablemente supere su rendimiento. Frente a mBERT o XLM-RoBERTa-base, el modelo de yasinunal es mas pequeno y esta especializado, pero solo cubre turco y una taxonomia fija.
+No se dispone en la informacion proporcionada de otros clasificadores de intenciones en turco directamente comparables con metricas publicadas, por lo que la comparativa cuantitativa de rendimiento queda como no disponible.
 
 ## Limitaciones y advertencias
 
-- Solo soporta las 10 intenciones listadas; cualquier peticion fuera de ese conjunto se asignara igualmente a una de las 10 clases.
-- No incorpora un detector de peticiones fuera de alcance (OOS) listo para produccion. El autor indica que se evaluaron enfoques experimentales basados en margen de confianza y distancia de embeddings, pero no forman parte del pipeline de inferencia de la v0.1.
-- Peticiones de negocio semanticamente similares pero no soportadas pueden recibir una etiqueta soportada con alta confianza.
+- Conjunto cerrado de 10 clases: cualquier entrada se asigna a una de ellas, aunque la peticion real quede fuera de alcance.
+- No incluye detector OOS en el pipeline de la v0.1; los enfoques de margen de confianza y distancia de embeddings se evaluaron pero no se integraron.
+- Entrenado exclusivamente con datos sinteticos y curados (856 ejemplos), no representativos del trafico real de un contact center turco.
+- Posible degradacion con transcripciones ASR ruidosas, no suficientemente representadas en la evaluacion.
 - Las puntuaciones de confianza no deben interpretarse como probabilidades calibradas.
-- El corpus de entrenamiento (856 ejemplos) incluye ejemplos sinteticos y no es representativo de todas las conversaciones reales de contact center en turco.
-- Las transcripciones ASR reales pueden contener ruido no suficientemente representado en los datos de evaluacion.
-- Los resultados de evaluacion (100% y 95%) proceden de conjuntos pequenos y controlados, por lo que no garantizan comportamiento equivalente en produccion.
-- El autor recomienda explicitamente realizar evaluaciones adicionales antes de un despliegue en produccion.
-- La licencia MIT permite uso comercial, modificacion y redistribucion sin restricciones relevantes, manteniendo el aviso de copyright y de licencia; conviene verificar igualmente las condiciones del modelo base `dbmdz/bert-base-turkish-cased`.
-- Sesgos conocidos: no se documentan analisis de sesgo especificos. Al entrenarse sobre datos sinteticos y curados, puede heredar sesgos de la distribucion de ejemplos generada y mostrar un comportamiento desigual ante variantes dialectales, coloquiales o con errores ortograficos del turco.
+- Riesgo de que peticiones semanticamente proximas pero no soportadas reciban una etiqueta soportada con alta confianza.
+- No se documentan sesgos especificos, pero al ser un modelo pequeno entrenado con datos sinteticos no hay garantias de robustez ante variacion dialectal, jerga o registros informales.
+- Licencia MIT: permite uso comercial y modificacion, pero el autor declara que es un proyecto personal y academico sin vinculacion con empresas; la responsabilidad de validacion recae en el integrador.
+- Se requiere evaluacion adicional con datos reales antes de cualquier despliegue en produccion.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/yasinunal/turkish-contact-center-intent-classifier
 - Modelo base: https://huggingface.co/dbmdz/bert-base-turkish-cased
-- Alternativa multilingue mBERT: https://huggingface.co/google-bert/bert-base-multilingual-cased
-- Alternativa multilingue XLM-RoBERTa: https://huggingface.co/FacebookAI/xlm-roberta-base
-- Resultados de busqueda web: no se ha encontrado informacion relevante sobre este modelo. Las busquedas realizadas devolvieron unicamente paginas no relacionadas (foros sobre Facebook, descargas de Snaptube y YouTube y articulos de actualidad de ZDNET), por lo que no aportan enlaces utiles para esta ficha. No se dispone de paper, blog tecnico, repositorio adicional ni demo publicada por el autor en la informacion proporcionada.

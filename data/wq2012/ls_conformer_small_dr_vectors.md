@@ -2,126 +2,100 @@
 
 ## Resumen
 
-`ls_conformer_small_dr_vectors` es un modelo de verificacion e identificacion de locutor (speaker verification y speaker embeddings) desarrollado por el usuario wq2012 y distribuido a traves de la libreria open source FlaxSpeaker. Se trata de una reproduccion limpia (clean-room) en JAX/Flax de los algoritmos publicados en GE2E, Dr-Vectors, Conformer-ATP y PFAS, no de un producto oficial de Google. El modelo genera embeddings de locutor de 192 dimensiones y una puntuacion de verificacion a partir de audio.
+`ls_conformer_small_dr_vectors` es un modelo de extracción de embeddings de locutor (speaker verification y speaker recognition) desarrollado por el usuario wq2012 dentro del proyecto FlaxSpeaker. Se trata de una reimplementación desde cero en JAX/Flax, basada exclusivamente en papers publicados (GE2E, Dr-Vectors, ATP y PFAS), de los algoritmos de reconocimiento de locutor de Google. El modelo no es un producto oficial de Google y sus resultados no reproducen los experimentos a gran escala de los papers originales.
 
-La arquitectura es un encoder Conformer en variante `small`, con pooling temporal atento (ATP), entrenado con la perdida `extended_set_softmax` y puntuacion de verificacion mediante `dr_vector`. El modelo es muy pequeno: 2.088.007 parametros en el encoder, lo que lo hace apto para despliegue en CPU y en dispositivos con recursos limitados.
+Arquitectura Conformer de tamaño "small" con pooling temporal atento (ATP) y una cabeza de verificación Dr-Vector reducida. Genera representaciones de 192 dimensiones y cuenta con 2.088.007 parámetros de inferencia (encoder más cabeza de scoring, excluyendo los pesos del clasificador usados solo en entrenamiento). Está entrenado únicamente sobre LibriSpeech (232 locutores, 5.788 enunciados) durante 2.400 pasos (~13,27 épocas), lo que lo convierte en un checkpoint de referencia para comparaciones controladas dentro del benchmark FlaxSpeaker, no en un modelo de producción a gran escala.
 
-Su relevancia actual reside en que ofrece una implementacion reproducible y abierta de tecnicas de verificacion de locutor en el ecosistema JAX, con resultados de evaluacion verificados en tres dominios (LibriSpeech, CN-Celeb2 y VoxCeleb1) y con intervalos de confianza bootstrap publicados. No obstante, su tamano reducido implica tasas de error elevadas, especialmente fuera del dominio de entrenamiento.
+Su relevancia es acotada pero clara: ofrece una implementación abierta, reproducible y ligera (repo de 0,1 GB) en el ecosistema JAX/Flax para experimentación con verificación de locutor, un nicho donde la mayoría del código disponible está en PyTorch. La licencia Apache 2.0 facilita su uso y modificación.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Conformer (variante `small`) con pooling temporal atento (ATP) |
-| Parametros totales | 2.088.007 (encoder) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible (procesa utterances completas; la segmentacion se realiza con VAD energetico previo) |
+| Arquitectura | Conformer (variante small) con pooling temporal atento (ATP) |
+| Parametros totales | 2.088.007 (encoder + cabeza de scoring; excluye pesos del clasificador de entrenamiento) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (crops de entrenamiento de U(90, 180) frames) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
+| Idiomas soportados | no disponible (entrenado solo con LibriSpeech, inglés) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors y flax_model.msgpack (Flax nativo) |
-| Dimension del embedding | 192 |
-| Perdida de entrenamiento | extended_set_softmax |
-| Puntuacion de verificacion | dr_vector |
-| Frontend de audio | log_mel de 80 dimensiones a 16.000 Hz + VAD energetico + CMVN |
-| Dominio de entrenamiento | librispeech |
-| Libreria | flaxspeaker (JAX/Flax) |
+| Formato de pesos | safetensors, flax_model.msgpack (Flax nativo) |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea un encoder Conformer, una arquitectura hibrida que combina convoluciones (para capturar patrones locales en la secuencia espectral) con auto-atencion (para dependencias globales). La variante `small` reduce el numero de capas y la anchura de las mismas hasta los 2.088.007 parametros del encoder. El pooling temporal es de tipo ATP (attentive temporal pooling), lo que permite agregar la secuencia temporal en un unico vector de embedding de 192 dimensiones ponderando los fragmentos mas informativos.
+El backbone es un Conformer de configuración "small" que procesa características Mel de 80 dimensiones en escala logarítmica natural a 16 kHz, con VAD a nivel de frame y normalización CMVN mediante `flaxspeaker.AudioFrontend` (no es un `AutoFeatureExtractor` de Hugging Face). Sobre el encoder se aplica pooling temporal atento (ATP, tomado de un paper de identificación de idioma) y una cabeza de verificación Dr-Vector reducida: sin separación base/side-info, con capas ocultas (128, 64) ReLU más LayerNorm y peso residual fijo de 0,25. La salida es un embedding de 192 dimensiones.
 
-El entrenamiento utiliza la perdida `extended_set_softmax` y el modelo se enmarca en el dominio de LibriSpeech. La puntuacion de verificacion se realiza mediante `dr_vector` (decision residual), segun el enfoque publicado en Dr-Vectors. El frontend de audio aplica un log-mel de 80 dimensiones a 16 kHz, seguido de un VAD energetico y normalizacion CMVN. El modelo es una reproduccion independiente: los experimentos originales de los papers citados se realizaron con infraestructura y datos internos de Google, no con este checkpoint ni con los splits publicos empleados aqui. No se especifica en la informacion disponible el numero exacto de tokens o horas de audio utilizados ni si se aplicaron fases de RLHF o DPO (tecnicas poco habituales en verificacion de locutor).
+El objetivo de entrenamiento es un Extended-Set Softmax mezclado (variante FlaxSpeaker: 0,50 de row-softmax más 0,50 de extended-set con desplazamiento de logit -log N), que no coincide con la ecuación 2 del paper original. El entrenamiento se realizó con 2.400 pasos de gradiente, mini-batches de 32 enunciados (8 locutores x 4 enunciados), calentamiento de 240 pasos y semilla 42, sobre 5.788 enunciados de LibriSpeech de 232 locutores (~13,27 épocas). Se usaron crops de longitud variable U(90, 180) frames con máscara de validez exacta. No se reporta uso de RLHF ni DPO.
 
 ## Capacidades
 
-- Extraccion de embeddings de locutor de 192 dimensiones a partir de audio.
-- Verificacion de locutor (1:1): comparacion de dos utterances para determinar si pertenecen al mismo hablante.
-- Identificacion de locutor (1:N): busqueda del hablante mas probable en un conjunto de embeddings de referencia.
-- Verificacion con multiples enrolamientos (3-utterance multi-enrollment), que reduce la EER respecto al escenario de un solo utterance.
-- Compatibilidad con el extractor de caracteristicas estilo `WhisperFeatureExtractor` para el preprocesado.
-- API Python (`load_pretrained`, `extract_embedding`, `verify`) e inferencia por linea de comandos mediante `scripts/inference.py`.
-- Ejecucion en JAX/Flax, con pesos disponibles tanto en safetensors como en el formato nativo msgpack.
-- No se documenta soporte de tool calling, function calling, agentes, vision, audio generativo ni modo de razonamiento extendido (thinking mode). Es un modelo exclusivamente discriminativo de locutor.
+- Extracción de embeddings de locutor (speaker embeddings) de 192 dimensiones a partir de audio.
+- Verificación de locutor (speaker verification): comparación de pares de utterances mediante scoring Dr-Vector.
+- Reconocimiento de locutor (speaker recognition / identificación) mediante comparación contra un conjunto de embeddings de referencia.
+- Evaluación con métricas estándar del dominio: EER, minDCF y ROC-AUC.
+- Soporte de audio de longitud variable con VAD y CMVN integrados en el frontend.
+- No soporta tool calling, function calling, agentes, visión ni audio más allá del procesamiento de voz para embeddings.
+- Capacidades multilingües: no disponibles (entrenado solo con LibriSpeech en inglés).
 
 ## Casos de uso
 
-- Autenticacion por voz en atencion telefonica: verificacion 1:1 entre el utterance de enrolamiento y la locucion entrante para validar la identidad declarada por el cliente antes de operar en banca o seguros.
-- Etiquetado de hablantes en transcripciones: extraccion de embeddings por segmento y clustering para asignar hablantes a cada turno en reuniones o entrevistas grabadas.
-- Indexado y busqueda por locutor en archivos de audio: generacion de embeddings de una fonoteca completa y busqueda por similitud para localizar todas las apariciones de una persona.
-- Analitica de contact center: agrupacion de llamadas por agente o por cliente mediante similitud de embeddings, para medir tiempos de habla y tasa de resolucion por operador.
-- Moderacion y control parental: comparacion de la voz de un menor o de un usuario concreto contra voces no autorizadas en plataformas de audio o asistentes.
-- Investigacion y reproduccion de resultados: base para comparar perdidas, pooling y estrategias de scoring en JAX sin depender de infraestructura propietaria, dado que el checkpoint es abierto y ligero.
-- Preprocesado para VAD personalizado: el embedding de locutor puede alimentar variantes de VAD condicionado por hablante, en la linea de otros trabajos del mismo autor.
+- Benchmark reproducible de verificación de locutor: sirve como referencia controlada para comparar variantes de arquitectura, pooling o funciones de pérdida dentro del ecosistema FlaxSpeaker, con métricas EER y minDCF ya archivadas en `eval_results.json`.
+- Experimentación en JAX/Flax: permite a investigadores que trabajan en JAX probar pipelines de speaker verification sin depender de implementaciones en PyTorch, reutilizando la librería `flaxspeaker` de PyPI.
+- Prototipado de autenticación por voz en entornos de laboratorio: con 2 millones de parámetros y un repo de 0,1 GB, se puede desplegar en CPU para pruebas de concepto de verificación biométrica antes de escalar a modelos mayores.
+- Estudio de los efectos del tamaño de corpus: el propio autor documenta la progresión de EER según los pasos de entrenamiento, lo que permite analizar cómo la diversidad de locutores limita el rendimiento absoluto.
+- Docencia y formación: ejemplo completo y abierto de un pipeline de speaker recognition (frontend, encoder, pooling, loss y scoring) con código legible y licencia permisiva.
+- Comparación de cabezas de scoring: la inclusión de las cabezas GE2E, Dr-Vector y PFAS en el checkpoint permite evaluar empíricamente distintas estrategias de verificación sobre el mismo encoder.
 
 ## Benchmarks y rendimiento
 
-Los resultados de evaluacion verificados se publican en `eval_results.json` y se reproducen a continuacion. Las metricas corresponden a EER (%), minDCF a dos umbrales y ROC-AUC.
+Resultados de EER reportados por el autor sobre LibriSpeech (in-domain), a lo largo del entrenamiento:
 
-Verificacion con un unico utterance:
+| Paso | EER 1-utt | EER 3-utt |
+|---|---|---|
+| 400 | 23,73 % | 21,50 % |
+| 2000 (knee) | 13,87 % | 8,50 % |
+| 2400 (final) | 13,20 % | 8,90 % |
 
-| Split de evaluacion | Trials | EER (%) | IC bootstrap 95% (%) | minDCF@0.01 | minDCF@0.10 | ROC-AUC |
-|---|---|---|---|---|---|---|
-| LibriSpeech (ingles leido) | 3.000 | 11,17 | [9,87; 12,20] | 0,9187 | 0,5340 | 0,9565 |
-| CN-Celeb2 (chino multigenero) | 3.000 | 28,80 | [27,28; 30,40] | 0,9960 | 0,9207 | 0,7933 |
-| VoxCeleb1 (celebridades en condiciones reales) | 2.000 | 22,30 | [20,72; 24,43] | 0,9850 | 0,9370 | 0,8524 |
-| Universal agrupado (3 dominios) | 8.000 | 20,69 | [19,82; 21,60] | 0,9925 | 0,8147 | 0,8784 |
-| Universal media macro (3 dominios) | 8.000 | 20,76 | no disponible | 0,9666 | 0,7972 | 0,8674 |
-
-Verificacion con tres utterances de enrolamiento:
-
-| Split de evaluacion | Trials | EER 3-utt (%) | IC bootstrap 95% (%) | minDCF@0.01 | ROC-AUC |
-|---|---|---|---|---|---|
-| LibriSpeech (3-utt) | 1.000 | 6,20 | [4,80; 7,80] | 0,3980 | 0,9851 |
-| CN-Celeb2 (3-utt) | 1.000 | 24,00 | [21,40; 26,15] | 0,9240 | 0,8445 |
-| VoxCeleb1 (3-utt) | 1.000 | 19,60 | [17,05; 21,80] | 0,9780 | 0,8880 |
-| Universal agrupado (3-utt) | 3.000 | 16,60 | [15,33; 17,82] | 0,9607 | 0,9157 |
-| Universal media macro (3-utt) | 3.000 | 16,60 | no disponible | 0,7667 | 0,9059 |
-
-No se han publicado en la informacion disponible comparaciones directas con otros modelos en las mismas condiciones de evaluacion.
+Pooling universal (Universal Pooled final): 21,40 % (1-utt) y 16,93 % (3-utt). La desviación estándar entre semillas 0-2 del EER pooled 1-utt es de 0,08-0,41 % absoluto, y el intervalo de confianza bootstrap al 95 % con 8.000 ensayos tiene una semi-amplitud de ~0,8 %. El autor indica que estos valores están acotados por la diversidad de locutores del corpus de entrenamiento (232 locutores) y no son comparables con sistemas entrenados sobre VoxCeleb2-dev.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 8,4 MB en precision fp32 y 4,2 MB en bf16/fp16 para los pesos del encoder, mas el coste del frontend log-mel y de los buffers intermedios, que depende de la duracion del audio.
-- GPU recomendadas: cualquier GPU moderna sirve; el modelo no requiere A100 ni H100. Una RTX 4090, una RTX 3060 o incluso una GPU integrada son suficientes.
-- Cabe sin problemas en GPU de consumo y tambien en CPU, dado el reducido numero de parametros. Es viable en dispositivos embebidos.
-- Opciones de despliegue: libreria `flaxspeaker` (Python, JAX/Flax) y el script `scripts/inference.py`. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que estan orientados a modelos generativos de lenguaje y no aplican a este caso.
-- Latencia y throughput estimados: no disponibles. No se publican mediciones de tiempo de inferencia ni de utterances por segundo.
+- VRAM estimada para inferencia: muy baja; con 2.088.007 parámetros, los pesos ocupan del orden de 8 MB en fp32 y ~4 MB en fp16. El modelo se entrenó en una estación de trabajo con CPU, lo que indica que la inferencia cabe holgadamente en CPU.
+- GPU recomendadas: no se requieren; cualquier GPU consumer (por ejemplo, RTX 3060 o superior) es más que suficiente. Para lotes grandes, una RTX 4090 o A100 aportarían margen adicional, pero no son necesarias.
+- Cabe en GPU consumer: sí, en cualquier GPU consumer moderna e incluso en CPU.
+- Opciones de despliegue: la librería nativa es `flaxspeaker` (JAX/Flax). No se documenta soporte para vLLM, llama.cpp, Ollama o TGI, que están orientados a modelos de lenguaje. Los pesos en safetensors y msgpack permiten cargarlos directamente con Flax.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Licencia | Metricas publicadas en la informacion disponible |
-|---|---|---|---|---|
-| wq2012/ls_conformer_small_dr_vectors | Conformer + ATP + dr_vector (JAX/Flax) | 2.088.007 | Apache 2.0 | EER 11,17% (LibriSpeech 1-utt), 20,69% (universal 1-utt) |
-| SpeechBrain spkrec-ecapa-voxceleb | ECAPA-TDNN (PyTorch) | no disponible | no disponible | no disponible |
-| pyannote/embedding | Red de embeddings de locutor (PyTorch) | no disponible | no disponible | no disponible |
-| WeSpeaker ResNet34-LM | ResNet + attentive statistics pooling | no disponible | no disponible | no disponible |
+| Modelo | Parámetros | Contexto / datos | EER reportado | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| `ls_conformer_small_dr_vectors` | 2.088.007 | LibriSpeech, 232 locutores | 13,20 % (1-utt) / 8,90 % (3-utt) in-domain | Apache 2.0 | Hugging Face, PyPI, GitHub |
+| ECAPA-TDNN (Desplanques et al., 2020) | no disponible | VoxCeleb2-dev, 5.994 locutores | ~0,9 % en VoxCeleb1-O | no disponible | Implementaciones públicas en PyTorch |
+| EfficientTDNN (Wang et al., 2022) | <1M | no disponible | ~2 % | no disponible | no disponible |
 
-Las tres alternativas se citan por ser referencias habituales en verificacion de locutor, pero no se dispone en la informacion proporcionada de sus especificaciones ni de resultados comparables bajo el mismo protocolo de evaluacion, por lo que los valores se marcan como no disponibles. Cualquier comparacion cuantitativa exigiria reejecutar la evaluacion con protocolos identicos.
+La comparación no es directa: los EER de los sistemas de referencia se miden sobre VoxCeleb1-O con corpus de entrenamiento de miles de locutores, mientras que este checkpoint se evalúa in-domain sobre LibriSpeech con 232 locutores. El autor advierte explícitamente que no debe interpretarse como un modelo state-of-the-art.
 
 ## Limitaciones y advertencias
 
-- Rendimiento limitado: con 2.088.007 parametros, la EER en el dominio de entrenamiento (LibriSpeech) es del 11,17% y sube al 20,69% en la agrupacion universal de tres dominios. Es un modelo pequeno, no competitivo con sistemas de verificacion de gran escala.
-- Degradacion fuera de dominio: la EER alcanza el 28,80% en CN-Celeb2 (chino multigenero) y el 22,30% en VoxCeleb1, muy por encima del dominio de entrenamiento. La generalizacion entre idiomas y condiciones acusticas no esta garantizada.
-- Intervalos de confianza amplios: el IC bootstrap del 95% en LibriSpeech 1-utt es [9,87; 12,20], lo que refleja una incertidumbre considerable en la estimacion.
-- Sesgos conocidos: no se documenta ningun analisis de sesgo por genero, edad, acento o variacion dialectal. La ausencia de este analisis es un riesgo para despliegues en produccion.
-- Riesgo de falsos positivos y falsos negativos: los valores de minDCF son altos (0,9187 en LibriSpeech 1-utt a umbral 0,01), lo que implica un coste elevado en escenarios de seguridad con umbrales estrictos.
-- Ausencia de contramedidas anti-spoofing: no se documenta proteccion frente a ataques de reproduccion (replay), voz sintetizada o conversion de voz. No debe usarse como unico factor de autenticacion.
-- Licencia Apache 2.0: permite uso comercial y modificacion, con obligacion de conservar avisos de licencia. El autor declara explicitamente que no es un producto oficial de Google.
-- Idiomas soportados: no disponibles; el entrenamiento se realizo en LibriSpeech (ingles), y los resultados en chino y en audio en condiciones reales son notablemente peores.
-- Trazabilidad metodologica: es una reproduccion independiente, por lo que los resultados no son directamente equiparables a los de los papers originales, que usaron datos e infraestructura internos de Google.
-- Cuantizacion: no se documentan pesos cuantizados ni recetas de cuantizacion; solo se ofrecen safetensors y msgpack en precision nativa.
+- Entrenado solo con LibriSpeech (232 locutores, 5.788 enunciados): la diversidad de locutores es muy limitada y los EER absolutos son altos (13,20 % 1-utt) frente a sistemas industriales.
+- No es una reproducción a gran escala de los papers: los experimentos originales usaron infraestructura y datos internos de Google.
+- No es un producto oficial de Google; el autor lo declara explícitamente.
+- El objetivo de pérdida es una variante propia (Extended-Set Softmax mezclado), no la ecuación del paper, lo que dificulta comparaciones directas con la literatura.
+- La cabeza Dr-Vector está reducida (sin separación base/side-info, peso residual fijo), lo que puede limitar el rendimiento frente a variantes completas.
+- Idiomas: solo inglés (LibriSpeech); no se documenta soporte multilingüe.
+- Riesgo de alucinación no aplica en el sentido de modelos generativos, pero sí existe riesgo de falsos positivos/negativos en la verificación de locutor, especialmente con locutores fuera de dominio.
+- Sesgos conocidos: no documentados explícitamente, pero la distribución de LibriSpeech (audiolibros en inglés) puede introducir sesgos de acento, género y calidad de grabación.
+- Licencia Apache 2.0 permite uso comercial, pero el rendimiento limitado desaconseja su uso en producción sin fine-tuning sobre datos representativos.
+- El frontend de audio no es un `AutoFeatureExtractor` de Hugging Face, lo que complica la integración con pipelines estándar de `transformers`.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/wq2012/ls_conformer_small_dr_vectors
-- Coleccion FlaxSpeaker: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
-- Repositorio GitHub de FlaxSpeaker: https://github.com/wq2012/FlaxSpeaker
-- Paquete en PyPI: https://pypi.org/project/flaxspeaker/
-- GE2E, Generalized End-to-End Loss for Speaker Verification: https://arxiv.org/abs/1710.10467
-- Dr-Vectors, Decision Residual Networks and an Improved Loss for Speaker Recognition: https://arxiv.org/abs/2104.01989
-- Conformer-ATP, Attentive Temporal Pooling for Conformer-based Streaming Language Identification in Long-form Speech: https://arxiv.org/abs/2202.12163
-- PFAS, Parameter-Free Attentive Scoring for Speaker Verification: https://arxiv.org/abs/2203.05642
-- Repositorio wav2x del mismo autor: https://github.com/wq2012/wav2x
-- Modelo relacionado personal-vad-v2-conformer-unified: https://huggingface.co/wq2012/personal-vad-v2-conformer-unified
-- Modelo relacionado personal-vad-v2-conformer-film-dvector: https://huggingface.co/wq2012/personal-vad-v2-conformer-film-dvector
+- Hugging Face: https://huggingface.co/wq2012/ls_conformer_small_dr_vectors
+- Colección FlaxSpeaker: https://huggingface.co/collections/wq2012/flaxspeaker
+- GitHub: https://github.com/wq2012/FlaxSpeaker
+- PyPI: https://pypi.org/project/flaxspeaker/
+- GE2E (arXiv:1710.10467): https://arxiv.org/abs/1710.10467
+- Dr-Vectors (arXiv:2104.01989): https://arxiv.org/abs/2104.01989
+- ATP (arXiv:2202.12163): https://arxiv.org/abs/2202.12163
+- PFAS (arXiv:2203.05642): https://arxiv.org/abs/2203.05642

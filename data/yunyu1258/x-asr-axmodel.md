@@ -2,95 +2,96 @@
 
 ## Resumen
 
-X-ASR AXMODEL es la conversión del encoder offline del modelo de reconocimiento automático de voz X-ASR-zh-en (un Zipformer2 transducer de 0,16 mil millones de parámetros, bilingüe chino-inglés y con licencia Apache-2.0) al formato `axmodel` propietario de los aceleradores neuronales AXERA de la serie AX650. El artefacto lo publica el usuario yunyu1258 en Hugging Face y su objetivo es permitir la inferencia ASR sobre hardware NPU de bajo consumo en lugar de GPU o CPU de propósito general.
+X-ASR AXMODEL es la conversión del encoder de un sistema de reconocimiento automático del habla (ASR) al formato `axmodel` propietario de los aceleradores NPU AXERA AX650. El modelo original, X-ASR-zh-en de GilgameshWind, es un transducer Zipformer2 de aproximadamente 0,16 mil millones de parámetros entrenado para reconocimiento bilingüe chino-inglés bajo licencia Apache-2.0. Este repositorio no contiene pesos nuevos ni un modelo entrenado desde cero: es un artefacto de despliegue que empaqueta el encoder en formato ejecutable por la NPU, junto con el decoder y el joiner en ONNX para ejecutarse en CPU.
 
-El repositorio no contiene un modelo de lenguaje ni un sistema ASR completo listo para usar: incluye únicamente el encoder compilado para NPU (`encoder.axmodel`), su equivalente en ONNX fp32 (`encoder.onnx`), los módulos decoder y joiner en ONNX para ejecutar la búsqueda voraz en CPU con onnxruntime, el vocabulario `tokens.txt` de 5000 entradas sin puntuación y un conjunto de audios de prueba a 16 kHz mono.
+El problema que resuelve es la ejecución de ASR en dispositivos de borde con aceleración hardware específica. En lugar de depender de una GPU o de la CPU del sistema, el encoder se ejecuta en la NPU AX650, lo que permite integrar transcripción de voz en equipos empotrados con bajo consumo. La arquitectura es un transducer (encoder Zipformer2 + decoder + joiner) con ventana fija de 10 segundos de features fbank a 80 dimensiones, que produce una salida de 248 frames por 512 dimensiones.
 
-Su relevancia es acotada pero concreta: ofrece una vía reproducible para desplegar ASR bilingüe en dispositivos empotrados con NPU AX650/AX630C, con una validación de precisión documentada frente al modelo ONNX original (coseno medio 0,998101) y un script de inferencia publicado en un repositorio de GitHub. No se trata de un modelo nuevo entrenado desde cero, sino de un artefacto de despliegue derivado de X-ASR.
+Es relevante para desarrolladores que trabajan con hardware AXERA y necesitan ASR local sin depender de servicios en la nube. El repositorio incluye el `.axmodel`, el ONNX equivalente en fp32 para validación sin placa, los componentes de decodificación en CPU, el vocabulario de 5000 tokens y audios de prueba. El tamaño total del repositorio es de 0,4 GB y el modelo soporta chino e inglés.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Zipformer2 transducer (encoder + decoder + joiner); encoder convertido a NPU |
-| Parámetros totales | 0,16 B (160 millones, según la model card del autor) |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | ventana fija de 10 s de audio (1000 frames fbank, 80 dimensiones); audio más largo se segmenta en ventanas con paso de 8 s |
-| Tipos de cuantización | no disponible (se distribuye `encoder.axmodel` compilado para NPU y `encoder.onnx` en fp32; no se documentan niveles de cuantización) |
-| Idiomas soportados | chino (zh) e inglés (en) |
+| Arquitectura | Transducer Zipformer2 (encoder en NPU, decoder y joiner en CPU) |
+| Parametros totales | 0,16 mil millones (aprox., modelo original X-ASR) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | ventana fija de 10 s (1000 frames fbank); audio mas largo se trocea en ventanas con paso de 8 s |
+| Tipos de cuantizacion | no disponible (el artefacto es un `.axmodel` compilado para AX650; se incluye ONNX fp32 de referencia) |
+| Idiomas soportados | chino (zh) e ingles (en) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | `axmodel` (NPU AXERA), ONNX (encoder fp32, decoder y joiner), `tokens.txt` (5000 tokens, sin puntuación) |
+| Formato de pesos | `.axmodel` (NPU AXERA), `.onnx` (encoder fp32, decoder, joiner), `tokens.txt` |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es un transducer Zipformer2, una arquitectura de ASR end-to-end compuesta por un encoder que procesa features fbank, un decoder que modela el historial de tokens y un joiner que combina ambas representaciones para producir la distribución sobre el vocabulario. El encoder recibe una entrada `x4d` de forma `[1, 1, 1000, 80]` (10 segundos de fbank) y devuelve `encoder_out` de forma `[1, 248, 512]`, lo que fija el downsampleo temporal interno del encoder y la dimensión de sus representaciones.
+El sistema sigue el esquema transducer clasico: un encoder Zipformer2 procesa las features acusticas y genera representaciones latentes, un decoder (predictor) modela el historial de tokens emitidos y un joiner combina ambas representaciones para producir la distribucion sobre el vocabulario. En este repositorio el encoder se ha compilado a `.axmodel` mediante Pulsar2 (el toolchain de AXERA) para ejecutarse en la NPU AX650, mientras que el decoder y el joiner permanecen en ONNX y se ejecutan en CPU mediante onnxruntime con busqueda voraz (greedy search).
 
-La conversión a AX650 se realiza con Pulsar2, la herramienta de compilación de AXERA, y el autor documenta la fidelidad numérica del artefacto compilado frente al ONNX fp32 mediante simulación: coseno entre 0,996739 y 0,999012 según el audio, con MAE de 0,08 a 0,14. No se especifican en la información disponible los datos de entrenamiento del modelo original (número de tokens, composición del corpus, uso de RLHF/DPO ni técnicas de aumento de datos); esos detalles corresponden a la model card de X-ASR-zh-en, no incluida aquí.
+La entrada del encoder es un tensor `x4d` de forma `[1, 1, 1000, 80]`, correspondiente a 10 segundos de features fbank de 80 dimensiones, y la salida es `encoder_out` de forma `[1, 248, 512]`. El vocabulario consta de 5000 tokens en una version sin puntuacion. No se dispone de informacion sobre el volumen de datos de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO en el modelo original; esos detalles corresponden a la model card de X-ASR-zh-en, no incluida en la informacion proporcionada. La innovacion tecnica destacable de este repositorio es la cuantizacion y compilacion del encoder a un formato ejecutable por NPU con perdida de precision minima (cosine medio 0,998101 en la simulacion de Pulsar2).
 
 ## Capacidades
 
-- Reconocimiento automático de voz offline en chino e inglés con un único modelo bilingüe.
-- Decodificación transducer con búsqueda voraz (greedy search) ejecutada en CPU mediante onnxruntime para decoder y joiner.
-- Inferencia del encoder acelerada en NPU AXERA AX650/AX630C mediante el runtime `axengine`.
-- Procesamiento de audio de entrada a 16 kHz mono; ventana fija de 10 s con segmentación por paso de 8 s para audios más largos.
-- Salida de texto sin puntuación (el vocabulario `tokens.txt` es la versión sin signos de puntuación).
-- No se documentan tool calling, function calling, capacidades de agente, modo thinking, visión ni audio más allá del propio ASR.
+- Reconocimiento automatico del habla offline en chino e ingles, con salida de texto sin puntuacion.
+- Ejecucion del encoder en NPU AXERA AX650 (y series AX630C segun la model card), con decoder y joiner en CPU.
+- Decodificacion transducer con busqueda voraz sobre un vocabulario de 5000 tokens.
+- Procesamiento de audio de 16 kHz mono en ventanas fijas de 10 s, con troceado en pasos de 8 s para audio mas largo.
+- Validacion cruzada ONNX frente a AXMODEL mediante el encoder fp32 incluido, util para verificar la integracion sin disponer de placa.
+- No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, vision ni audio mas alla del propio ASR.
 
 ## Casos de uso
 
-- Subtitulado y transcripción en dispositivos empotrados: el encoder se ejecuta en la NPU AX650 y permite transcribir audio de 16 kHz en local sin conexión a la nube, adecuado para grabadoras, wearables o terminales industriales con ese SoC.
-- Dictado bilingüe chino-inglés en aplicaciones de escritorio o kioscos con NPU AXERA: el modelo cubre ambas lenguas con un solo artefacto y un vocabulario de 5000 tokens.
-- Transcripción por lotes de reuniones o notas de voz: la segmentación en ventanas de 10 s con paso de 8 s permite procesar audios largos de forma determinista, a costa de solapamiento entre fragmentos.
-- Preprocesado de pipelines de datos de voz: generar transcripciones en bruto para indexación, búsqueda o etiquetado posterior, asumiendo que la salida carece de puntuación y requerirá un postprocesado.
-- Validación y benchmarking de compiladores NPU: el par `encoder.onnx` / `encoder.axmodel` y las métricas de coseno publicadas sirven como referencia para verificar conversiones Pulsar2 en proyectos propios.
-- Prototipado en entornos sin GPU: al incluir `encoder.onnx` fp32, se puede ejecutar la misma lógica de inferencia en CPU antes de disponer del hardware AX650.
-- Integración en asistentes de voz locales con requisitos de privacidad: al no depender de servicios externos, el audio no sale del dispositivo.
+- Transcripcion de voz en dispositivos empotrados con NPU AX650: el encoder se ejecuta en la NPU y libera la CPU para otras tareas, adecuado para equipos de bajo consumo que necesitan ASR local sin nube.
+- Subtitulado offline de reuniones o entrevistas en chino e ingles: el modelo transcribe audio de 16 kHz troceando en ventanas de 10 s con paso de 8 s, apropiado para grabaciones de duracion media en entornos sin conectividad.
+- Interfaces de voz para electrodomesticos o terminales industriales: al ejecutarse en hardware AXERA, permite comandos de voz bilingues en dispositivos sin GPU dedicada.
+- Validacion de pipelines ASR en produccion: el ONNX fp32 incluido permite comparar la salida del `.axmodel` con la referencia y detectar regresiones de precision antes de desplegar en placa.
+- Investigacion en despliegue de transducers en NPU: el repositorio sirve como ejemplo reproducible de conversion Zipformer2 a formato AXERA, con scripts enlazados en el repositorio de GitHub del autor.
+- Prototipado de asistentes de transcripcion bilingues: la combinacion de encoder en NPU y decoder/joiner en CPU facilita montar un pipeline completo en un equipo de borde con onnxruntime y axengine.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (WER, CER, MMLU, etc.) en la información disponible. El autor solo documenta la fidelidad de la conversión ONNX frente a AXMODEL mediante simulación Pulsar2:
+| Metrica | Valor |
+|---|---|
+| cosine medio (ONNX vs AXMODEL, Pulsar2) | 0,998101 |
+| cosine minimo | 0,996739 |
+| MAE | 0,08-0,14 |
+| Consistencia de texto (0.wav) | completamente identica |
+| Consistencia de texto (1.wav) | 10 tokens de diferencia (palabras en ingles) |
+| Consistencia de texto (2.wav) | 3 tokens de diferencia |
+| Consistencia de texto (3.wav) | 3 tokens de diferencia |
 
-| Audio | Coseno | Consistencia de texto |
-|---|---|---|
-| 0.wav | 0,999012 | completamente idéntica |
-| 1.wav | 0,998276 | 10 tokens de diferencia (palabras en inglés) |
-| 2.wav | 0,996739 | 3 tokens de diferencia |
-| 3.wav | 0,998375 | 3 tokens de diferencia |
-
-Coseno medio 0,998101; mínimo 0,996739; MAE entre 0,08 y 0,14. No se proporcionan cifras de latencia ni de throughput en la información disponible.
+No se han publicado resultados de benchmarks estandar (WER, MMLU, HumanEval, GSM8K) en la informacion disponible. Los datos anteriores miden unicamente la fidelidad de la conversion a NPU frente al ONNX de referencia, no la calidad del reconocimiento.
 
 ## Requisitos de hardware
 
-- NPU AXERA AX650 o AX630C (el autor indica que se requiere la serie AX650/AX630C) junto con el runtime `axengine`; sin ese hardware, el encoder compilado no es utilizable.
-- Alternativa sin NPU: ejecutar `encoder.onnx` en CPU con onnxruntime, junto con `decoder.onnx` y `joiner.onnx`.
-- VRAM estimada para inferencia: no disponible. El tamaño del repositorio es de 0,2 GB, lo que da una cota superior del espacio en disco necesario para todos los artefactos.
-- GPU recomendadas: no disponible; el diseño del artefacto está orientado a NPU, no a GPU.
-- Despliegue: `axengine` (runtime oficial de AXERA) para el encoder en NPU y onnxruntime para decoder y joiner en CPU; el autor no menciona soporte de vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
-- Instalación indicada por el autor: `pip install axengine numpy` y ejecución de `run_asr.py` con `--models-dir` y `--audio`.
-- Latencia y throughput: no disponibles.
+- NPU AXERA AX650 (y series AX630C segun la model card) con el runtime `axengine` instalado.
+- CPU para ejecutar decoder y joiner en ONNX mediante onnxruntime.
+- Memoria: el repositorio ocupa 0,4 GB; no se especifica el consumo de VRAM o memoria de la NPU durante la inferencia.
+- No cabe en GPU consumer convencional en su forma `.axmodel`; el encoder ONNX fp32 si puede ejecutarse en CPU o GPU generica para validacion.
+- Despliegue: `axengine` para el encoder en NPU y onnxruntime para decoder/joiner; el script `run_asr.py` del repositorio orquesta el pipeline.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto / ventana | Idiomas | Licencia | Formato / despliegue |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato / despliegue |
 |---|---|---|---|---|---|
-| X-ASR AXMODEL (este) | 0,16 B (Zipformer2) | 10 s fijos, paso 8 s | zh, en | Apache-2.0 | axmodel + ONNX, NPU AX650 |
-| X-ASR-zh-en (origen) | 0,16 B (Zipformer2) | no disponible en esta ficha | zh, en | Apache-2.0 | pesos originales; no disponible el detalle |
-| Alternativas ASR genéricas (Whisper, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible |
+| X-ASR AXMODEL (este) | ~0,16 B | ventana fija 10 s | zh, en | Apache-2.0 | `.axmodel` + ONNX, NPU AXERA |
+| X-ASR-zh-en (original) | ~0,16 B | no disponible | zh, en | Apache-2.0 | pesos originales, sin compilar a NPU |
+| Whisper small | ~0,24 B | 30 s | multilingue | MIT | safetensors, GPU/CPU |
+| Zipformer sherpa-onnx (generico) | variable | variable | variable | variable | ONNX, CPU |
 
-La información proporcionada solo permite comparar con el modelo de origen X-ASR-zh-en, del que se conoce el tamaño y la licencia pero no los detalles de despliegue ni métricas de calidad. Para el resto de alternativas de la categoría no hay datos en esta ficha.
+La comparativa con Whisper small y Zipformer generico se ofrece como referencia de categoria (ASR de tamano pequeno); no se dispone de datos de rendimiento comparables en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ventana de audio fija de 10 s (1000 frames); audios más largos se cortan en ventanas con paso de 8 s, lo que introduce solapamiento y posibles duplicaciones o cortes en las transcripciones.
-- Salida sin puntuación: el vocabulario de 5000 tokens es la versión sin signos, por lo que se necesita un postprocesado para obtener texto legible.
-- Dependencia de hardware propietario: el encoder compilado solo funciona en NPU AX650/AX630C con el runtime `axengine`; fuera de ese entorno hay que recurrir al ONNX en CPU.
-- Cobertura lingüística limitada a chino e inglés; no se documenta soporte de otras lenguas.
-- No se documentan sesgos del modelo original ni tasas de alucinación o de error (WER/CER) en la información disponible; la única validación publicada es la fidelidad numérica de la conversión, no la calidad del reconocimiento.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el mismo día (2026-11-10): no hay evidencia de uso en producción ni de mantenimiento continuado.
-- La licencia Apache-2.0 cubre los pesos de origen; el autor remite al repositorio de GitHub para los scripts de conversión e inferencia, cuya licencia específica no se detalla en la información disponible.
+- Ventana fija de 10 s (1000 frames); audio mas largo se trocea con paso de 8 s, lo que puede introducir cortes en palabras en los limites de ventana.
+- Salida sin puntuacion: el `tokens.txt` es la version sin signos de puntuacion, por lo que el texto requiere postprocesado para uso editorial.
+- Dependencia de hardware propietario: requiere NPU AX650/AX630C y el runtime `axengine`; no es portable a otras plataformas sin reconvertir.
+- Solo chino e ingles; no se documenta soporte de otros idiomas.
+- Riesgo de alucinacion y errores en palabras en ingles (el test 1.wav muestra 10 tokens de diferencia frente a la referencia ONNX).
+- No se dispone de datos sobre sesgos del modelo original ni sobre su calidad en dominios especificos (medico, legal, acentos).
+- Licencia Apache-2.0 permite uso comercial, pero el modelo original y los scripts de conversion deben verificarse en sus repositorios respectivos antes de produccion.
+- No se documentan requisitos de memoria de la NPU ni latencias, lo que dificulta planificar el despliegue sin pruebas en placa.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/yunyu1258/x-asr-axmodel
-- Modelo de origen X-ASR-zh-en: https://huggingface.co/GilgameshWind/X-ASR-zh-en
-- Repositorio de scripts de conversión e inferencia: https://github.com/yuyun2000/x-asr-axmodel
+- Hugging Face: https://huggingface.co/yunyu1258/x-asr-axmodel
+- Modelo original X-ASR-zh-en: https://huggingface.co/GilgameshWind/X-ASR-zh-en
+- Repositorio de conversion y scripts: https://github.com/yuyun2000/x-asr-axmodel

@@ -2,91 +2,100 @@
 
 ## Resumen
 
-XeroDesign-1.0 es un adaptador LoRA de rango 32 especializado en diseno grafico, entrenado sobre el modelo de difusion Z-Image (6B) de Tongyi-MAI. Lo desarrolla el usuario xerofounder y se distribuye bajo licencia Apache 2.0. Su proposito es orientar la generacion text-to-image del modelo base hacia composiciones de carteleria moderna: estilo tipografico internacional suizo, rejillas geometricas de inspiracion Bauhaus, maquetacion editorial asimetrica y alto contraste.
+XeroDesign-1.0 es un adaptador LoRA de rango 32 especializado en diseño gráfico y cartelería, desarrollado por el usuario xerofounder sobre el modelo base `Tongyi-MAI/Z-Image`, un modelo de difusión texto-a-imagen de 6.000 millones de parámetros con arquitectura S3-DiT y un codificador de texto Qwen3-4B. El adaptador se ha entrenado sobre un conjunto curado de 696 carteles de alta resolución que siguen el estilo tipográfico internacional suizo, rejillas geométricas de inspiración Bauhaus y composiciones editoriales asimétricas de alto contraste.
 
-El adaptador se ha ajustado sobre un conjunto curado de 696 carteles de alta resolucion (dataset `xerocore/argonz-curated-design`), en cubos de aspecto multiples (1216x832, 832x1216 y 1024x1024). Se activa mediante el token disparador `argonz_design poster`, que debe incluirse en el prompt para condicionar el estilo.
+El modelo resuelve un nicho muy concreto: la generación de carteles y material gráfico con tipografía geométrica sans-serif, rejillas modulares y paletas de alto contraste, un dominio donde los modelos generalistas suelen producir resultados inconsistentes. Al ser un adaptador LoRA de solo 133,7 MB, se aplica sobre el modelo base sin necesidad de reentrenar ni redistribuir los pesos completos, lo que reduce los requisitos de almacenamiento y facilita su integración en pipelines existentes de `diffusers`.
 
-Es relevante porque demuestra el patron habitual de personalizacion ligera de modelos de difusion: un LoRA pequeno que no requiere reentrenar el modelo base y que se integra directamente en el pipeline de Diffusers. No obstante, el repositorio tiene cero descargas y cero likes en el momento de la consulta, y su model card es escasa en datos de evaluacion.
+Es relevante ahora porque demuestra el patrón de especialización mediante LoRA sobre modelos de difusión abiertos de última generación: un dataset pequeño pero muy curado (696 imágenes) y un trigger token específico (`argonz_design poster`) bastan para obtener un estilo visual reconocible. La licencia Apache 2.0 del adaptador facilita su uso comercial, aunque el modelo base tiene su propia licencia que debe verificarse por separado.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | LoRA (PEFT) sobre el modelo de difusion `Tongyi-MAI/Z-Image` (S3-DiT de 6B + codificador de texto Qwen3-4B) |
-| Parametros totales | No disponible (el adaptador es un LoRA de rango 32; el modelo base declara 6B) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Entrenado con cuantizacion 4-bit NF4 del modelo base (`bnb_4bit_use_double_quant=True`) y ruta de computo de activaciones en FP32; el adaptador se distribuye en safetensors |
-| Idiomas soportados | No disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (`pytorch_lora_weights.safetensors`) |
+| Arquitectura | LoRA (PEFT) sobre S3-DiT de 6B + codificador de texto Qwen3-4B |
+| Parámetros totales | Adaptador: 133.728.936 bytes (~133,7 MB); base: 6B (S3-DiT) + Qwen3-4B |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (modelo texto-a-imagen; la longitud la determina el codificador Qwen3-4B) |
+| Tipos de cuantización | Base en 4-bit NF4 con doble cuantización (`bnb_4bit_use_double_quant=True`); cómputo de activaciones en FP32 |
+| Idiomas soportados | No disponible (el prompt de ejemplo está en inglés) |
+| Licencia | Apache 2.0 (adaptador) |
+| Formato de pesos | `pytorch_lora_weights.safetensors` (safetensors) |
 
 ## Arquitectura y entrenamiento
 
-XeroDesign-1.0 es un adaptador PEFT LoRA con `r=32` y `lora_alpha=32`, aplicado sobre las proyecciones de atencion `to_q`, `to_k`, `to_v` y `to_out.0` del modelo base Z-Image. El modelo base es un transformer de difusion S3-DiT de 6B parametros que utiliza un codificador de texto Qwen3-4B. El adaptador no modifica la arquitectura del modelo subyacente: solo inyecta matrices de bajo rango en las capas de atencion.
+El adaptador es un LoRA de rango 32 con `lora_alpha=32` aplicado sobre las proyecciones de atención `to_q`, `to_k`, `to_v` y `to_out.0` del modelo base `Tongyi-MAI/Z-Image` (commit `04cc4abb7c5069926f75c9bfde9ef43d49423021`). El modelo base combina una arquitectura S3-DiT de 6.000 millones de parámetros con un codificador de texto Qwen3-4B. El entrenamiento se realizó con el modelo base cuantizado en 4-bit NF4 con doble cuantización y una ruta de cómputo de activaciones en FP32, registrando cero pasos con NaN y una pérdida finita en el rango 0,243–0,324.
 
-El entrenamiento se realizo sobre el dataset `xerocore/argonz-curated-design`, compuesto por 696 carteles de alta resolucion en tres resoluciones de entrenamiento (1216x832, 832x1216 y 1024x1024). La model card indica que el modelo base se cargo con cuantizacion 4-bit NF4 con doble cuantizacion, mientras que el computo de activaciones se mantuvo en FP32. No se especifican en la informacion disponible el numero de pasos de entrenamiento, la tasa de aprendizaje, el optimizador ni si se aplicaron tecnicas como RLHF o DPO (no aplicables de forma estandar en difusion, pero no confirmadas). Tampoco se detalla la composicion exacta del dataset mas alla de la tematica estilistica.
+El dataset de entrenamiento, `xerocore/argonz-curated-design`, contiene 696 carteles de alta resolución organizados en buckets multi-aspecto de `1216x832`, `832x1216` y `1024x1024`. La temática cubre el estilo tipográfico internacional suizo, rejillas geométricas Bauhaus, maquetación editorial asimétrica y composiciones de cartel modernistas de alto contraste. El trigger token para activar el estilo es `argonz_design poster`, que debe incluirse al inicio del prompt. No se documentan detalles sobre el número de pasos de entrenamiento, la tasa de aprendizaje ni si hubo etapas de refinamiento posteriores.
 
 ## Capacidades
 
-- Generacion text-to-image condicionada por prompt, con sesgo estilistico hacia carteleria de diseno grafico.
-- Reproduccion de estilos concretos: tipografia internacional suiza, rejillas geometricas Bauhaus, maquetacion editorial asimetrica y composiciones modernistas de alto contraste.
-- Control del estilo mediante el token disparador `argonz_design poster`, que debe incluirse en el prompt.
-- Soporte de resoluciones de entrenamiento: 1216x832, 832x1216 y 1024x1024.
-- Integracion con el pipeline `ZImagePipeline` de Diffusers mediante `load_lora_weights`.
-- Servidor de inferencia compatible con OpenAI/Llama incluido en el repositorio (`server_xerodesign.py`), con endpoints `/v1/images/generations` y `/v1/chat/completions`.
-- No se documentan capacidades de tool calling, razonamiento multi-paso, vision, audio ni modo thinking; el modelo es exclusivamente de generacion de imagenes.
+- Generación texto-a-imagen especializada en carteles y diseño gráfico con estética suiza, Bauhaus y editorial modernista.
+- Tipografía geométrica sans-serif de alta fidelidad, incluyendo texto integrado en la composición del cartel.
+- Maquetación con rejillas modulares asimétricas (el ejemplo verificado usa una rejilla de 4 columnas).
+- Composiciones de alto contraste con paletas controladas (el ejemplo usa rojo bermellón y negro mate sobre papel off-white).
+- Gestión de espacio negativo amplio ("generous negative space corridor").
+- Soporte de múltiples resoluciones y relaciones de aspecto: `1216x832`, `832x1216` y `1024x1024`.
+- Servidor FastAPI compatible con la API de OpenAI (`POST /v1/images/generations`) y endpoint `/health`, incluido en el repositorio.
+- No se documentan capacidades de tool calling, agentes, visión de entrada, audio ni modo de razonamiento (es un modelo de difusión, no un LLM).
 
 ## Casos de uso
 
-- Generacion de carteles para eventos culturales: el adaptador produce composiciones tipograficas con rejillas estructuradas y alto espacio negativo, adecuadas para exposiciones, conciertos o festivales, incluyendo el token `argonz_design poster` y una descripcion del evento en el prompt.
-- Prototipado rapido de identidad visual: un estudio puede generar variaciones de carteles en las tres resoluciones de entrenamiento para explorar direcciones de arte antes de producir la version final.
-- Maquetacion editorial: generacion de portadas o paginas de revista con layouts asimetricos y jerarquia tipografica marcada, aprovechando el sesgo hacia el estilo suizo del dataset.
-- Material grafico para redes sociales: produccion de imagenes en formato cuadrado (1024x1024) y vertical (832x1216) con estetica consistente para campanas.
-- Integracion en pipelines automatizados de diseno: mediante el servidor FastAPI incluido, se puede exponer la generacion como endpoint compatible con OpenAI y encadenarla con otras herramientas de un flujo de produccion.
-- Exploracion estilistica para disenadores: el LoRA permite comparar el mismo prompt con y sin el adaptador para evaluar la influencia del estilo aprendido, util en fases de direccion creativa.
-- Generacion de referencias para imprenta: las resoluciones de entrenamiento permiten obtener bocetos a tamano utilizable antes de un retoque manual en herramientas vectoriales.
+- Generación de carteles de exposiciones y eventos culturales: el adaptador está entrenado específicamente con carteles de exhibición, por lo que produce composiciones tipográficas listas para revisión con el trigger `argonz_design poster` y resoluciones verticales de 832x1216.
+- Prototipado rápido de identidad visual para estudios de diseño: permite explorar variaciones de rejilla, tipografía y paleta en segundos antes de pasar a producción en herramientas vectoriales.
+- Material editorial y portadas de publicaciones: la maquetación asimétrica y las rejillas modulares del dataset encajan con revistas, fanzines y catálogos de arte.
+- Cartelería promocional para marcas con estética modernista: la paleta de alto contraste y el uso de espacio negativo permiten generar piezas coherentes con marcas que buscan un lenguaje visual Bauhaus.
+- Generación de assets para presentaciones y landing pages: imágenes de 1024x1024 o 832x1216 que se pueden recortar y adaptar como cabeceras o fondos con tipografía integrada.
+- Integración en pipelines automatizados de marketing: el servidor FastAPI incluido expone un endpoint compatible con OpenAI, lo que permite encadenar generación de imágenes con otras herramientas mediante llamadas HTTP estándar.
+- Investigación sobre especialización de modelos de difusión: el adaptador sirve como caso de estudio de fine-tuning LoRA con datasets pequeños y curados sobre arquitecturas S3-DiT.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible. La model card solo reporta telemetría de una generación verificada:
+
+| Métrica | Valor |
+|---|---|
+| Resolución de salida verificada | 832 × 1216 |
+| Tamaño del archivo generado | 1.517.613 bytes |
+| Media de píxeles (`mean`) | 176,41 |
+| Desviación estándar de píxeles (`std`) | 70,18 |
+| Pasos de inferencia del ejemplo | 24 |
+| Guidance scale del ejemplo | 4,0 |
+| NaN / overflow | 0 / 0 |
 
 ## Requisitos de hardware
 
-- El adaptador LoRA en si ocupa muy poco espacio (pesos safetensors de bajo rango), pero requiere cargar el modelo base Z-Image de 6B para inferir.
-- VRAM estimada para el modelo base en bfloat16: en torno a 12-16 GB, dependiendo de la resolucion de salida y del uso de atencion optimizada; el adaptador anade una sobrecarga minima.
-- El entrenamiento documentado uso cuantizacion 4-bit NF4 del modelo base, lo que reduce el consumo de memoria frente a FP16, aunque no se especifica la GPU empleada.
-- GPU recomendadas: no disponibles de forma explicita en la informacion. Por tamano del modelo base, cabria esperar GPUs de gama alta con 16 GB o mas de VRAM (por ejemplo, RTX 4090, A100, H100), pero el autor no lo confirma.
-- Despliegue: Diffusers (`ZImagePipeline` con `load_lora_weights`) y el servidor FastAPI incluido en el repositorio. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (herramientas orientadas a modelos de lenguaje, no aplicables directamente a este pipeline de difusion).
-- Latencia y throughput: no disponibles. La model card usa 28 pasos de inferencia y `guidance_scale=4.0` como configuracion de ejemplo.
+- VRAM estimada: no disponible de forma explícita. El adaptador LoRA ocupa solo 133,7 MB, pero requiere cargar el modelo base Z-Image de 6B más el codificador Qwen3-4B. Con cuantización 4-bit NF4 del base, la huella conjunta se reduce de forma significativa, aunque no se publican cifras exactas.
+- GPU recomendadas: no disponible. Por el tamaño del base (6B + 4B), se necesitan GPUs con al menos 16-24 GB de VRAM en FP16; con cuantización 4-bit podría caber en GPUs de 12-16 GB, pero no está confirmado.
+- GPU de consumo: no confirmado. Una RTX 4090 (24 GB) debería poder ejecutar el pipeline con cuantización 4-bit, pero el autor no documenta pruebas en hardware de consumo.
+- Opciones de despliegue: `diffusers` (versión concreta fijada en el commit `e04f0c5f24392fcd34b32d18d0ce03668f9bcd50`), `peft`, `accelerate`, `bitsandbytes`, `transformers`, `safetensors`, `torchao`. Se incluye un servidor FastAPI propio (`server_xerodesign.py`) con endpoints `/v1/images/generations` y `/health`.
+- Latencia y throughput: no disponibles. El ejemplo usa 24 pasos de inferencia y guidance scale 4,0, pero no se reportan tiempos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| XeroDesign-1.0 | LoRA sobre Z-Image (difusion) | Adaptador r=32 sobre base 6B | No disponible | Apache 2.0 | Hugging Face (0 descargas) |
-| Tongyi-MAI/Z-Image | Modelo base de difusion | 6B (S3-DiT) + Qwen3-4B | No disponible | No disponible en la informacion | Hugging Face |
-| Alternativas de LoRA de diseno grafico | No disponible | No disponible | No disponible | No disponible | No disponible |
+No se dispone de información sobre modelos comparables en la documentación proporcionada. El adaptador es un LoRA especializado sobre un modelo base concreto (`Tongyi-MAI/Z-Image`), y no se han publicado comparaciones con otros adaptadores de diseño gráfico ni con modelos texto-a-imagen generalistas.
 
-No se dispone de datos de rendimiento ni de otros adaptadores comparables en la informacion proporcionada para establecer una comparativa cuantitativa.
+| Modelo | Base | Parámetros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| XeroDesign-1.0 | Tongyi-MAI/Z-Image | LoRA r=32 sobre 6B + Qwen3-4B | No disponible | Apache 2.0 | Hugging Face |
+| Alternativas | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
 
-- El repositorio presenta cero descargas y cero likes, y fue creado y actualizado el mismo dia (2026-11-01), lo que impide validar su calidad o estabilidad en produccion.
-- La model card es muy breve: no incluye ejemplos visuales, metricas de evaluacion, curvas de perdida ni comparaciones con el modelo base sin el adaptador.
-- El estilo esta fuertemente sesgado hacia el dataset de 696 carteles; es probable que fuera de ese dominio (fotografia, retrato, ilustracion organica) el adaptador degrade la calidad o imponga una estetica no deseada.
-- No se documentan sesgos culturales o de representacion del dataset de entrenamiento.
-- Riesgo de alucinacion visual: como todo modelo de difusion, puede generar texto ilegible o tipografia incoherente, especialmente con prompts que exijan cadenas de texto largas.
-- La licencia Apache 2.0 permite uso comercial, pero el modelo base Z-Image debe verificarse por separado, ya que su licencia no se detalla en la informacion disponible.
-- El servidor incluido en el repositorio usa una clave Bearer fija de 16 digitos (`CC1D7FF46EFFD318`) embebida en el codigo; no es adecuado para exposicion publica sin cambiarla.
-- No se especifican los idiomas soportados en los prompts; el codificador de texto Qwen3-4B sugiere capacidad multilingue, pero no esta confirmado para este adaptador.
-- El token disparador `argonz_design poster` es obligatorio para activar el estilo; omitirlo puede producir resultados inconsistentes.
+- Especialización estrecha: el adaptador está entrenado exclusivamente con carteles de estilo suizo/Bauhaus; fuera de ese dominio (fotografía realista, ilustración, retratos) el rendimiento probablemente se degrade respecto al modelo base.
+- Dependencia del trigger token: el estilo solo se activa de forma fiable incluyendo `argonz_design poster` en el prompt; sin él, el comportamiento no está documentado.
+- Dataset pequeño: 696 imágenes es un conjunto reducido, lo que puede provocar sobreajuste a las composiciones y paletas presentes en el dataset y limitar la diversidad de resultados.
+- Riesgo de alucinación tipográfica: como todo modelo de difusión, puede generar texto mal formado o caracteres ilegibles en la tipografía integrada, especialmente en resoluciones bajas o prompts con texto largo.
+- Idiomas: no se documenta soporte multilingüe; el prompt de ejemplo está en inglés y el codificador Qwen3-4B podría manejar otros idiomas, pero no está verificado.
+- Licencia del modelo base: el adaptador es Apache 2.0, pero el uso comercial depende también de la licencia de `Tongyi-MAI/Z-Image`, que debe verificarse por separado.
+- Clave Bearer incluida en la model card: el servidor de ejemplo usa una clave estática de 16 dígitos publicada en el repositorio; no debe reutilizarse en producción sin rotación.
+- Sin benchmarks públicos: no hay métricas objetivas de calidad (FID, CLIP score) ni comparaciones con alternativas, lo que dificulta evaluar su rendimiento frente a otros adaptadores.
+- Madurez: el repositorio tiene 31 descargas y 0 likes en el momento de la consulta, con creación el 1 de noviembre de 2026 y última actualización el 4 de noviembre de 2026; es un modelo muy reciente y poco validado por la comunidad.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/xerofounder/XeroDesign-1.0
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image
-- Dataset de entrenamiento: https://huggingface.co/datasets/xerocore/argonz-curated-design
-- Repositorio de Diffusers: https://github.com/huggingface/diffusers
-- Paper o blog del modelo base: no disponible en la informacion proporcionada
-- Demo o espacio interactivo: no disponible en la informacion proporcionada
+- Dataset: https://huggingface.co/datasets/xerocore/argonz-curated-design
+- Diffusers (commit fijado): https://github.com/huggingface/diffusers/commit/e04f0c5f24392fcd34b32d18d0ce03668f9bcd50
+- Repositorio del servidor: incluido en el propio repositorio de Hugging Face (`server_xerodesign.py`)
+- Paper, blog o demo adicionales: no disponibles

@@ -1,0 +1,61 @@
+{
+  "schema": 2,
+  "id": "bariscagliyan/cabm-flowers102",
+  "slug": "bariscagliyan-cabm-flowers102",
+  "author": "bariscagliyan",
+  "url": "https://huggingface.co/bariscagliyan/cabm-flowers102",
+  "created_at": "2026-11-15T16:50:44.000Z",
+  "updated_at": "2026-11-15T16:55:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "cabm",
+    "concept-bottleneck-models",
+    "interpretability",
+    "image-classification",
+    "arxiv:2607.00578",
+    "text-classification",
+    "en",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 498920416,
+  "storage_human": "499 MB",
+  "context_length": null,
+  "base_model": "FacebookAI/roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "Oxford Flowers-102",
+      "metric": "Top-1 accuracy (caption logit averaging)",
+      "value": 84.23
+    }
+  ],
+  "sources": []
+}

@@ -2,88 +2,99 @@
 
 ## Resumen
 
-GLM-5.3-Flash es el primer modelo nativamente multimodal de la serie GLM-5, desarrollado por Z.ai (zai-org). Con 321.000 millones de parámetros totales y solo 18.000 millones activos, combina una arquitectura de mezcla de expertos (MoE) con un diseño híbrido de atención que mezcla atención sparse y lineal, reduciendo drásticamente el coste de servir contextos largos. El modelo se presenta como una alternativa eficiente y de alto rendimiento para tareas de codificación, agentes y razonamiento, superando a GLM-5.2 en benchmarks y acercándose a Claude Opus 4.8 en tareas de código y agénticas.
+GLM-5.3-Flash es el primer modelo nativamente multimodal de la familia GLM-5, desarrollado por Z.ai (zai-org). Se trata de un modelo Mixture-of-Experts (MoE) de 320.000 millones de parámetros totales con solo 18.000 millones activos por token, lo que lo sitúa en la franja de eficiencia de los modelos frontier actuales. Su pipeline es `image-text-to-text`, por lo que acepta entradas de imagen y texto y genera texto.
 
-La arquitectura incorpora Manifold-Constrained Hyper-Connections (mHC) para mejorar la eficiencia de escalado, junto con un corpus de preentrenamiento multimodal de 30 billones de tokens. El modelo se distribuye con licencia MIT, lo que permite uso comercial sin restricciones, y está disponible en formato safetensors para su despliegue local mediante frameworks como vLLM, SGLang, TokenSpeed y KTransformers.
+La propuesta central del modelo es la relacion entre capacidad y coste: según el autor, supera a GLM-5.2 en benchmarks y cargas reales con una décima parte del precio, y se aproxima a Claude Opus 4.8 en tareas de codigo y agenticas. Para ello parte de un modelo base entrenado desde cero, con una arquitectura hibrida que combina atencion dispersa y atencion lineal, y un corpus de preentrenamiento multimodal de 30 billones de tokens.
 
-## Especificaciones técnicas
+Es relevante ahora porque introduce dos innovaciones tecnicas en la serie GLM: la mencionada atencion hibrida, orientada a reducir el coste de servicio en contextos largos sin perder precision, y las Manifold-Constrained Hyper-Connections (mHC) para mejorar la eficiencia de escalado. Se distribuye con licencia MIT y pesos en safetensors, con soporte de los principales frameworks de inferencia.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE híbrida con atención sparse + lineal, Manifold-Constrained Hyper-Connections (mHC) |
-| Parametros totales | 321.323.031.390 (320B) |
+| Arquitectura | Transformer MoE con atencion hibrida (dispersa + lineal) y Manifold-Constrained Hyper-Connections (mHC) |
+| Parametros totales | 321.323.031.390 (aproximadamente 320B) |
 | Parametros activos | 18B |
-| Longitud de contexto | 1.000.000 tokens (según benchmarks; no se especifica el máximo oficial) |
-| Tipos de cuantizacion | FP8 (soportado en inferencia), BF16 (pesos originales) |
-| Idiomas soportados | Inglés, chino |
+| Longitud de contexto | no disponible como cifra oficial; las evaluaciones citadas usan hasta 1M tokens (NL2Repo) y 400K (DeepSWE) |
+| Tipos de cuantizacion | no disponible (el repo incluye pesos en fp8) |
+| Idiomas soportados | en, zh |
 | Licencia | MIT |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (tambien fp8) |
 
 ## Arquitectura y entrenamiento
 
-GLM-5.3-Flash utiliza una arquitectura MoE con 320B parámetros totales y 18B activos, diseñada con un esquema híbrido que combina atención sparse y lineal. La atención lineal reduce los costes de servir contextos largos, mientras que la atención sparse preserva la capacidad de razonamiento preciso sobre secuencias extensas. Además, se incorporan Manifold-Constrained Hyper-Connections (mHC), una técnica que mejora la eficiencia del escalado al restringir las conexiones hiperdimensionales dentro del modelo.
+GLM-5.3-Flash es un transformer con arquitectura Mixture-of-Experts en el que se activan 18B de los 320B parámetros totales por token. La novedad arquitectonica principal es la combinacion de atencion dispersa y atencion lineal en una arquitectura hibrida, disenada para reducir de forma marcada el coste de servicio en contextos largos manteniendo la precision en recuperacion de informacion lejana. A esto se suman las Manifold-Constrained Hyper-Connections (mHC), que el autor presenta como una mejora de la eficiencia de escalado.
 
-El entrenamiento se realizó sobre un corpus multimodal de 30 billones de tokens, que incluye datos de texto e imagen. La arquitectura se rediseñó desde cero para este modelo, diferenciándose de GLM-5.2 que usaba la misma base que GLM-5.3. El proceso incluye post-entrenamiento con técnicas de refuerzo (RLHF/DPO, no especificado en detalle) para optimizar capacidades de codificación y agénticas. El modelo soporta entrada multimodal, procesando imágenes y texto, y está orientado a tareas de razonamiento complejo, codificación y uso de herramientas.
+El modelo parte de un base nuevo, no de un fine-tuning de GLM-5.2, y se entreno sobre un corpus multimodal de 30 billones de tokens. La model card no detalla la composicion del dataset ni las etapas de alineacion (RLHF, DPO u otras), por lo que esos datos no estan disponibles. El modelo expone un parametro `reasoning_effort` con tres niveles (`low`, `high`, `max`) para controlar el presupuesto de razonamiento, y la plantilla de chat incluye un flag `clear_thinking` que por defecto vale `false`.
 
 ## Capacidades
 
-- Generación de texto multimodal: procesa y responde a entradas que combinan texto e imágenes (nativo multimodal).
-- Razonamiento complejo y multi-step: diseña y ejecuta tareas de razonamiento largo con contexto de hasta 1M tokens.
-- Codificación avanzada: genera, depura y modifica código en múltiples lenguajes, con soporte para herramientas de terminal y agentes.
-- Tool calling / function calling: puede invocar herramientas externas y APIs de forma estructurada.
-- Agentes y automatización: integra con frameworks tipo swe-agent, Claude Code y sistemas de automatización (AutomationBench).
-- Multilingüe: soporte nativo de inglés y chino; otros idiomas no confirmados.
-- Modo de razonamiento extendido: permite generar respuestas largas (hasta 163.840 tokens de salida en benchmarks) para tareas complejas.
+- Generacion de texto y razonamiento con modo de pensamiento configurable mediante `reasoning_effort` (`low`, `high`, `max`).
+- Comprension de imagenes: pipeline `image-text-to-text`, con evaluacion especifica en BabyVision.
+- Codigo y ingenieria de software: evaluado en DeepSWE, NL2Repo y Terminal-Bench 2.1, con generacion de repositorios completos a partir de lenguaje natural.
+- Uso de herramientas y agentes: evaluado en HLE con herramientas, Toolathlon Verified, AutomationBench y Agent's Last Exam.
+- Tareas de horizonte largo con gestion de contexto: las evaluaciones emplean ventanas de hasta 1M tokens con estrategias de gestion de contexto.
+- Capacidades multilingues limitadas a ingles y chino segun los metadatos del modelo.
+- Compatibilidad con endpoints y despliegue en Azure y SageMaker, segun los tags del repositorio.
 
 ## Casos de uso
 
-- Desarrollo de software asistido: el modelo puede generar código, revisar PRs y proponer correcciones en repositorios completos, gracias a su contexto de 1M tokens y su capacidad de razonamiento agéntico. Adecuado para pipelines CI/CD donde se integre con herramientas de línea de comandos.
-- Agentes de automatización de tareas: con soporte para tool calling y benchmarks como Terminal-Bench y DeepSWE, puede ejecutar comandos, gestionar entornos y resolver incidencias de software de forma autónoma.
-- Asistente de investigación multimodal: procesa documentos con imágenes, tablas y texto para extraer información y generar resúmenes o respuestas con razonamiento profundo.
-- Atención al cliente técnico: gestiona conversaciones multi-turno con contexto largo (1M tokens), manteniendo el historial completo de interacciones para resolver problemas complejos de soporte.
-- Generación de documentación técnica: a partir de repositorios de código o especificaciones, produce documentación detallada y precisa en inglés o chino.
-- Análisis de datos y razonamiento matemático: resuelve problemas de matemáticas y lógica con explicaciones paso a paso, útil en educación o investigación.
-- Automatización de flujos de trabajo empresarial: con soporte de herramientas y agentes, puede ejecutar tareas en sistemas de gestión, como automatizar procesos de datos o generar informes.
+- Agentes de codigo autonomos: el modelo puede operar en harnesses tipo mini-swe-agent o Claude Code para resolver issues, ejecutar comandos y validar resultados, con ventanas de 400K tokens y timeouts de hasta 6 horas documentados en las evaluaciones.
+- Generacion de repositorios completos desde especificaciones: NL2Repo evalua la capacidad de producir un repositorio funcional a partir de una descripcion en lenguaje natural con contexto de 1M tokens, util para prototipado rapido de proyectos.
+- Automatizacion de flujos con herramientas externas: con soporte de tool calling, encaja en orquestadores que encadenan APIs (por ejemplo, Zapier AutomationBench) para tareas administrativas multi-paso.
+- Asistencia multimodal en soporte tecnico: al aceptar imagen y texto, puede interpretar capturas de pantalla, diagramas o errores visuales junto con la consulta del usuario en conversaciones multi-turno.
+- Analisis de documentos largos con contenido visual: la atencion hibrida reduce el coste de servir contextos extensos, lo que lo hace adecuado para procesar informes, contratos o bases de codigo con imagenes intercaladas.
+- Evaluacion y razonamiento con presupuesto controlado: el parametro `reasoning_effort` permite ajustar coste y latencia por peticion, usando `low` para clasificacion o extraccion y `max` para problemas complejos de matematicas o logica.
+- Despliegue en infraestructura propia: al publicarse con licencia MIT y soporte en SGLang, vLLM, TokenSpeed, KTransformers y Transformers, puede integrarse en plataformas internas sin restricciones de uso comercial.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona que el modelo supera a GLM-5.2 y se acerca a Claude Opus 4.8 en codificación y tareas agénticas, y que se evalúa en benchmarks como HLE w/ tools, NL2Repo, DeepSWE, Terminal-Bench 2.1, Toolathlon Verified, AutomationBench, GDPval-AA v2 y BabyVision, pero no se incluyen los valores numéricos concretos.
+La model card referencia una imagen de benchmarks (`bench_53.png`) y multiples notas metodologicas, pero no incluye los valores numericos en el texto proporcionado. Por tanto:
+
+No se han publicado resultados de benchmarks en la informacion disponible.
+
+Lo unico verificable de forma textual es la afirmacion del autor de que el modelo supera a GLM-5.2 en benchmarks y cargas reales con una decima parte del precio, y que se aproxima a Claude Opus 4.8 en codigo y tareas agenticas. Las notas al pie detallan la metodologia de evaluacion (temperaturas, top_p, longitudes maximas y harnesses) para HLE con herramientas, NL2Repo, DeepSWE, Terminal-Bench 2.1, Agent's Last Exam, Toolathlon Verified, AutomationBench, GDPval-AA v2 y BabyVision, pero sin cifras.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con pesos BF16 (~657 GB), se requieren al menos 4 GPU A100 80GB o 8 GPU H100 80GB. Con cuantización FP8 (~330 GB), se reduce a 4 GPU H100 80GB o 2 GPU H200 141GB.
-- GPU recomendadas: H100/H200, A100 80GB, RTX 4090 (no recomendable por VRAM insuficiente para el modelo completo, incluso cuantizado).
-- No cabe en GPU consumer: el modelo completo no cabe en una RTX 4090 ni en una RTX 3090 (24GB VRAM). Se requiere infraestructura de centro de datos.
-- Opciones de despliegue: vLLM, SGLang, TokenSpeed, KTransformers (con soporte para cuantización y ejecución en CPU/GPU híbrida).
-- Latencia y throughput: no disponible; depende de la configuración de hardware y cuantización.
+- VRAM estimada para inferencia: con 320B parametros totales, en fp8 se requieren del orden de 320 GB solo para pesos; en cuantizaciones de 4 bits, alrededor de 160 GB. No se dispone de cifras oficiales de cuantizacion en la informacion proporcionada.
+- GPU recomendadas: nodos multi-GPU de clase datacenter (H100, H200, B200) o A100 de 80 GB en configuracion multiple. Con 18B parametros activos, el coste computacional por token es contenido, pero el modelo completo debe residir en memoria.
+- GPU de consumo: no cabe en una unica GPU consumer (RTX 4090, 24 GB). KTransformers, listado entre los frameworks soportados, esta orientado precisamente a ejecucion con offloading CPU/GPU en hardware limitado, aunque no se publican requisitos minimos.
+- Opciones de despliegue: SGLang, vLLM, TokenSpeed, Transformers, KTransformers y Unsloth, ademas de endpoints compatibles y despliegue en Azure y SageMaker.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Multimodal | Codificacion | Agentes |
-|---|---|---|---|---|---|---|
-| GLM-5.3-Flash (este) | 320B (18B activos) | 1M | MIT | Sí | Alta | Alta |
-| GLM-5.2 | 320B (18B activos) | 1M | MIT | No | Media | Media |
-| Claude Opus 4.8 | no disponible (cerrado) | no disponible | Propietaria | Sí | Alta | Alta |
-| DeepSeek-V3 | 671B (37B activos) | 128K | MIT | No | Media | Media |
+| Modelo | Parametros totales / activos | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| GLM-5.3-Flash | 320B / 18B | hasta 1M en evaluaciones | MIT | Multimodal nativo, atencion hibrida, modo thinking configurable |
+| GLM-5.2 | no disponible | no disponible | no disponible | Generacion anterior de la familia; el autor afirma que 5.3-Flash lo supera con una decima parte del precio |
+| Claude Opus 4.8 | no disponible (cerrado) | no disponible | propietaria | Referencia del autor en codigo y tareas agenticas; sin acceso a pesos |
 
-GLM-5.3-Flash se posiciona como el primer modelo multimodal de la serie GLM-5, con un coste de inferencia diez veces inferior al de GLM-5.2 según el autor, y con capacidades agénticas comparables a Claude Opus 4.8. Sin embargo, no se dispone de benchmarks públicos con números exactos para comparación directa.
+No se dispone de datos de benchmarks ni de especificaciones completas de los modelos comparados en la informacion proporcionada, por lo que la comparacion cuantitativa no es posible.
 
 ## Limitaciones y advertencias
 
-- Idiomas limitados: solo inglés y chino; no se ha confirmado soporte para otros idiomas.
-- Riesgo de alucinación: como cualquier LLM, puede generar información falsa, especialmente en contextos largos o con entradas ambiguas.
-- Sesgos potenciales: el modelo puede reflejar sesgos de los datos de entrenamiento, que no se han documentado públicamente.
-- Requisitos de hardware: el tamaño del modelo (656 GB en BF16) limita su despliegue a infraestructuras con gran capacidad de VRAM, no apto para entornos de desarrollo personal.
-- Licencia MIT: permite uso comercial, pero el modelo es de gran tamaño y requiere optimización para producción (cuantización, caching, etc.).
-- No se especifica la política de datos de entrenamiento ni la procedencia del corpus multimodal; no hay auditoría externa.
+- Idiomas: los metadatos solo declaran ingles y chino; el rendimiento en castellano no esta documentado y previsiblemente sera inferior.
+- Alucinacion: no se publican tasas de alucinacion ni evaluaciones de veracidad en la informacion disponible.
+- Sesgos: no se documentan analisis de sesgo en la model card.
+- Contexto: no se declara una longitud de contexto oficial; las cifras de 1M y 400K tokens corresponden a configuraciones de evaluacion concretas, no necesariamente al limite de servicio.
+- Modo thinking: el valor por defecto de `reasoning_effort` es `max`, lo que incrementa coste y latencia si no se ajusta explicitamente; en escenarios de chat se recomienda pasar `clear_thinking=true`.
+- Licencia: MIT permite uso comercial sin restricciones adicionales conocidas, pero conviene verificar las condiciones de los frameworks de despliegue y de los servicios gestionados.
+- Produccion: al ser un MoE de 320B, los requisitos de memoria son elevados y el coste de infraestructura propia puede ser alto frente al uso de la API de Z.ai.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/zai-org/GLM-5.3-Flash
-- Blog de Z.ai sobre GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
-- Informe técnico GLM-5 (arXiv): https://arxiv.org/abs/2602.15763
-- Documentación API de Z.ai: https://docs.z.ai/guides/llm/glm-5.3-flash
-- SGLang cookbook: https://cookbook.sglang.io/autoregressive/GLM/GLM-5.3-Flash
-- vLLM recipes: https://recipes.vllm.ai/zai-org/GLM-5.3-Flash
-- TokenSpeed: https://github.com/lightseekorg/tokenspeed
-- KTransformers tutorial: https://github.com/kvcache-ai/ktransformers/blob/main/doc/en/kt-kernel/GLM-5.3-Flash-Tutorial.md
+- Blog de GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
+- Informe tecnico (arXiv): https://arxiv.org/abs/2602.15763
+- API de Z.ai: https://docs.z.ai/guides/llm/glm-5.3-flash
+- Repositorio GLM-5 en GitHub: https://github.com/zai-org/GLM-5
+- Cookbook de SGLang: https://cookbook.sglang.io/autoregressive/GLM/GLM-5.3-Flash
+- Recetas de vLLM: https://recipes.vllm.ai/zai-org/GLM-5.3-Flash
+- TokenSpeed: https://lightseek.org/tokenspeed/recipes/models#glm-5-3-flash
+- Documentacion de Transformers (glm5_next): https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/glm5_next.md
+- Tutorial de KTransformers: https://github.com/kvcache-ai/ktransformers/blob/main/doc/en/kt-kernel/GLM-5.3-Flash-Tutorial.md
+- Guia de Unsloth: https://unsloth.ai/docs/models/glm-5.3
+- Discord de la comunidad: https://discord.gg/QR7SARHRxK
+- Plataforma Z.ai: https://z.ai/

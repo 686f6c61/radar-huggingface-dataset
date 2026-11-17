@@ -5,7 +5,7 @@
   "author": "xtools-at",
   "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic",
   "created_at": "2026-11-02T10:29:00.000Z",
-  "updated_at": "2026-11-12T21:00:42.000Z",
+  "updated_at": "2026-11-17T10:24:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,6 @@
     "mtp",
     "math",
     "stem",
-    "gguf",
     "heretic",
     "uncensored",
     "decensored",
@@ -47,9 +46,9 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 190,
-  "downloads_30d": 19109,
-  "trending_score": 70.69999999999999,
+  "likes": 202,
+  "downloads_30d": 21167,
+  "trending_score": 70,
   "parameters": 4539265536,
   "parameters_human": "4.54B",
   "storage_bytes": 9359800142,
@@ -57,7 +56,6 @@
   "context_length": null,
   "base_model": "Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B",
   "formats": [
-    "gguf",
     "safetensors"
   ],
   "is_conversational": true,

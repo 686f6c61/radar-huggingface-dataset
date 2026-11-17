@@ -5,7 +5,7 @@
   "author": "konstbet",
   "url": "https://huggingface.co/konstbet/Hy-MT2-1.8B-ONNX",
   "created_at": "2026-11-17T00:43:05.000Z",
-  "updated_at": "2026-11-17T00:49:47.000Z",
+  "updated_at": "2026-11-17T01:02:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "translation",

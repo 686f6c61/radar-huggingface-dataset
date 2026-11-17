@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "ericlewis/ultrabert-150m-ettin-reranker",
+  "slug": "ericlewis-ultrabert-150m-ettin-reranker",
+  "author": "ericlewis",
+  "url": "https://huggingface.co/ericlewis/ultrabert-150m-ettin-reranker",
+  "created_at": "2026-11-17T09:14:52.000Z",
+  "updated_at": "2026-11-17T09:15:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "ultrabert",
+    "cross-encoder",
+    "reranker",
+    "experimental",
+    "text-ranking",
+    "en",
+    "dataset:cross-encoder/ettin-reranker-v1-data",
+    "base_model:dmis-lab/UltraBERT-150M",
+    "base_model:finetune:dmis-lab/UltraBERT-150M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 151032576,
+  "parameters_human": "151.0M",
+  "storage_bytes": 1213048808,
+  "storage_human": "1.2 GB",
+  "context_length": null,
+  "base_model": "dmis-lab/UltraBERT-150M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

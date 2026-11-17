@@ -1,0 +1,63 @@
+{
+  "schema": 2,
+  "id": "Ethgar/walrus-heart",
+  "slug": "ethgar-walrus-heart",
+  "author": "Ethgar",
+  "url": "https://huggingface.co/Ethgar/walrus-heart",
+  "created_at": "2026-11-16T09:54:27.000Z",
+  "updated_at": "2026-11-17T08:45:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "physics",
+    "pde",
+    "cardiac-electrophysiology",
+    "arrhythmia",
+    "reaction-diffusion",
+    "the-well",
+    "surrogate-model",
+    "dataset:Ethgar/cardiac-ep-2d",
+    "base_model:polymathic-ai/walrus",
+    "base_model:finetune:polymathic-ai/walrus",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15601802566,
+  "storage_human": "15.6 GB",
+  "context_length": null,
+  "base_model": "polymathic-ai/walrus",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026 Spotlight Posters - ICML 2027",
+      "url": "https://icml.cc/virtual/2026/events/2026SpotlightPosters",
+      "snippet": "Walrus: A Cross-domain Foundation Model for Continuum Dynamics. Michael ... Recent AI models show promise in vericoding, but a unified methodology for ..."
+    },
+    {
+      "title": "Computer Science - arXiv",
+      "url": "https://www.arxiv.org/list/cs/recent?skip=1259&show=1000",
+      "snippet": "Title: Mobile AI Factory: Building Specialized Language Models ... Title: Domain adaptation of a video Foundation model for Heart Failure Diagnosis from ..."
+    }
+  ]
+}

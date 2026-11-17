@@ -2,83 +2,86 @@
 
 ## Resumen
 
-El modelo `windowsxp811203/Qwen3.8-27B-Abliterated-GGUF` es una versión cuantizada en formato GGUF de un modelo de la familia Qwen3.8 con 27.320 millones de parámetros (~27,3B). El autor, `windowsxp811203`, ha aplicado la técnica de "abliteration", que consiste en eliminar o atenuar las respuestas de rechazo y los sesgos de seguridad del modelo original, dando lugar a una variante catalogada como "uncensored". Está diseñado para ejecutarse con `llama.cpp` y herramientas compatibles como Ollama o LM Studio, y soporta entrada multimodal de imagen y texto, generando respuestas de texto.
+Qwen3.8-27B-Abliterated-GGUF es una cuantización en formato GGUF del modelo Qwen3.8-27B-Abliterated, publicado por el usuario windowsxp811203 en Hugging Face. Se trata de una variante "abliterated" (técnica de edición de pesos que elimina o atenúa las direcciones de activación asociadas al rechazo de contenido) de un modelo de la familia Qwen 3.8 con aproximadamente 27.320 millones de parámetros. El repositorio incluye cuantizaciones generadas con la técnica imatrix de llama.cpp, lo que permite ejecutar el modelo en hardware de consumo con pérdida de calidad controlada.
 
-El modelo base es `windowsxp811203/Qwen3.8-27B-Abliterated`, que a su vez deriva de la arquitectura Qwen3.5. La versión GGUF incluye cuantizaciones con matriz de importancia (`imatrix`) y posiblemente soporte de predicción multi-token (`mtp`). Está pensado para desarrolladores que necesitan un modelo de gran tamaño con generación de texto fluida, razonamiento y capacidades conversacionales, sin las restricciones habituales de moderación de contenido. La licencia es Apache 2.0, lo que permite uso comercial, aunque el acceso en Hugging Face está restringido (gated) y requiere aceptar condiciones.
+El modelo está etiquetado como `image-text-to-text`, lo que indica capacidades multimodales de entrada (imagen y texto), aunque la información disponible no detalla la arquitectura del codificador visual ni el número de tokens de contexto. La ficha se basa exclusivamente en los metadatos del repositorio; los detalles de entrenamiento, dataset y benchmarks no están publicados en la información proporcionada.
 
-## Especificaciones técnicas
+Su relevancia actual radica en dos factores: por un lado, ofrece una versión sin restricciones de rechazo de un modelo de ~27B en formato GGUF listo para llama.cpp, lo que interesa a investigadores que estudian alineación y comportamiento de modelos; por otro, el acceso está restringido (gated), lo que obliga a aceptar condiciones en Hugging Face antes de la descarga.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Qwen3.5) |
+| Arquitectura | no disponible (etiqueta `qwen3_5`; presumiblemente transformer de la familia Qwen, sin confirmar) |
 | Parametros totales | 27.320.697.856 (~27,3B) |
-| Parametros activos | no disponible (modelo denso, no MoE) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (formato GGUF, probablemente incluye Q4_K_M, Q5_K_M, Q8_0, etc.) |
-| Idiomas soportados | en, zh (inglés y chino) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (safetensors para el modelo base) |
+| Tipos de cuantizacion | GGUF con imatrix (niveles concretos no listados en la informacion disponible) |
+| Idiomas soportados | en, zh |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (llama.cpp); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente corresponde a un transformer decoder-only de la familia Qwen3.5, con aproximadamente 27,3 mil millones de parámetros. No se dispone de detalles específicos sobre el número de capas, dimensiones de atención o mecanismos de atención (si es atención completa o alguna variante lineal). El modelo original fue entrenado por el autor `windowsxp811203` y posteriormente sometido a un proceso de "abliteration", una técnica que modifica los pesos del modelo para eliminar las negativas de seguridad y las respuestas de rechazo, manteniendo las capacidades generales de generación.
+La informacion disponible no detalla la arquitectura interna del modelo base. Las etiquetas del repositorio (`qwen3_5`, `qwen3.8`, `mtp`) sugieren que deriva de la familia Qwen 3.5/3.8 e incluye soporte de multi-token prediction (MTP), pero no se confirma la configuracion de capas, atencion ni si emplea mezcla de expertos. El pipeline declarado es `image-text-to-text`, lo que implica un componente de vision para entrada de imagenes, aunque no se especifica su naturaleza.
 
-El etiquetado `mtp` sugiere que el modelo podría haber sido entrenado con predicción multi-token, una técnica que mejora la eficiencia de la inferencia al predecir varios tokens a la vez. El formato GGUF con `imatrix` indica que las cuantizaciones se han optimizado usando matrices de importancia para preservar la calidad en pesos de baja precisión. No se han publicado detalles sobre el dataset de entrenamiento, el número de tokens procesados ni el uso de RLHF o DPO. El modelo es multimodal, ya que el pipeline declarado es `image-text-to-text`, lo que implica que puede procesar imágenes como entrada además de texto.
+Respecto al entrenamiento, no se han publicado en la informacion disponible el numero de tokens, la composicion del dataset ni si hubo fases de RLHF o DPO. La innovacion principal documentada es la "abliteration": una edicion post-entrenamiento de los pesos que busca eliminar la direccion de rechazo en el espacio de activaciones, reduciendo la probabilidad de respuestas negativas del modelo ante ciertas peticiones. Las cuantizaciones se han generado con imatrix de llama.cpp, que calibra los errores de cuantizacion con un dataset de importancia para preservar mejor la calidad en bits bajos.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno en inglés y chino.
-- Procesamiento de imágenes: el pipeline `image-text-to-text` indica que puede recibir imágenes como entrada y generar descripciones o respuestas basadas en ellas.
-- Razonamiento y comprensión de contexto largo (no se especifica la ventana exacta, pero los modelos Qwen3 suelen soportar 128K tokens; no confirmado).
-- Generación de código y resolución de problemas matemáticos (capacidad típica de la familia Qwen, no confirmada específicamente).
-- Soporte de tool calling y function calling (probable, dado el origen Qwen, pero no confirmado).
-- Capacidad de agentes y razonamiento multi-paso (no confirmado).
-- Comportamiento "uncensored": el modelo no rechaza peticiones que los modelos estándar suelen bloquear, lo que puede ser útil en entornos de investigación controlados.
+- Generacion de texto conversacional multi-turno (etiqueta `conversational`).
+- Entrada multimodal imagen-texto segun el pipeline declarado (`image-text-to-text`).
+- Soporte de los idiomas ingles y chino (en, zh); no se declaran otros idiomas.
+- Comportamiento "uncensored": la abliteration reduce los rechazos ante contenido que el modelo original filtraria.
+- Compatibilidad con endpoints (`endpoints_compatible`) para despliegue como API.
+- Soporte de tool calling, agentes o modo thinking: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistente conversacional sin filtros de contenido: el modelo puede gestionar diálogos abiertos en inglés y chino sin rechazar temas controvertidos, útil para investigación en interacción humano-máquina o generación creativa de contenido.
-- Análisis de imágenes y descripción de escenas: gracias a su entrada multimodal, puede procesar fotografías o diagramas y generar texto descriptivo o explicativo, por ejemplo en aplicaciones de accesibilidad o documentación automática.
-- Generación de código en entornos de desarrollo: si se confirma su capacidad de programación, podría integrarse en IDE o pipelines de CI/CD para autocompletar, revisar o generar fragmentos de código, aprovechando su tamaño para tareas complejas.
-- Chatbots para nichos específicos: empresas que necesitan un asistente con personalidad o temática particular sin las restricciones habituales de los modelos comerciales, siempre que cumplan con la normativa local.
-- Investigación en seguridad de IA: el comportamiento "abliterated" permite estudiar los efectos de eliminar mecanismos de rechazo y evaluar riesgos de sesgo o alucinación en modelos grandes.
-- Traducción y procesamiento de documentos bilingües: con soporte para inglés y chino, puede traducir textos extensos o resumir documentos técnicos, aprovechando su contexto largo (si se confirma).
-- Prototipado rápido de aplicaciones con `llama.cpp`: al ser GGUF, se puede desplegar en CPU o GPU con herramientas ligeras, ideal para entornos de desarrollo sin infraestructura de servidores dedicados.
+- Investigacion sobre alineacion y seguridad: comparar las respuestas del modelo abliterated frente al modelo base original para estudiar que direcciones de activacion codifican el rechazo y como afecta la edicion de pesos al comportamiento general.
+- Despliegue local en estaciones de trabajo: al estar en GGUF, se puede ejecutar con llama.cpp u Ollama en equipos sin GPU de datacenter, usando cuantizaciones de 4-5 bits para ajustar el uso de memoria.
+- Prototipado de asistentes conversacionales en ingles o chino: el modelo puede mantener dialogos multi-turno y servir como backend en aplicaciones de chat internas.
+- Analisis de imagenes con descripcion textual: gracias al pipeline image-text-to-text, se puede usar para generar descripciones o responder preguntas sobre imagenes en flujos de trabajo de documentacion o accesibilidad.
+- Generacion de contenido creativo sin filtros restrictivos: util para escritura de ficcion o guiones donde el modelo original rechazaria ciertos temas.
+- Evaluacion de cuantizaciones: el repositorio con imatrix permite medir la degradacion de calidad entre niveles de cuantizacion en tareas de generacion y razonamiento.
+- Integracion via API compatible con endpoints: para equipos que ya tienen infraestructura de inferencia basada en OpenAI-compatible endpoints y quieren sustituir el modelo por esta variante.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se dispone de datos sobre MMLU, HumanEval, GSM8K u otras métricas estándar para este modelo concreto. El autor no ha facilitado comparativas numéricas con modelos similares.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con cuantización Q4_K_M (~4,5 bits por peso), el modelo ocuparía aproximadamente 16-18 GB de VRAM, por lo que cabría en GPUs de 24 GB como la RTX 3090/4090 o A5000. Con Q8_0 (~8 bits), necesitaría unos 30 GB, requiriendo GPUs profesionales como A100 (40 GB) o H100 (80 GB).
-- GPU recomendadas: RTX 3090, RTX 4090, A100, H100. También puede ejecutarse en CPU con suficiente RAM (el repo pesa 104,1 GB en total, pero una cuantización Q4_K_M ocuparía ~16 GB en disco).
-- Si cabe en consumer GPU: sí, con cuantizaciones bajas (Q4_K_M, Q5_K_M) en GPUs de 24 GB.
-- Opciones de despliegue: `llama.cpp` (nativo), Ollama, LM Studio, llama-cpp-python, y servidores compatibles con GGUF como `llama-server`. También se puede convertir a otros formatos si es necesario.
-- Latencia y throughput: no disponible. Depende del hardware y de la cuantización elegida; en una RTX 4090 con Q4_K_M se esperan velocidades de 20-40 tokens/s para modelos de este tamaño, pero no hay datos oficiales.
+- VRAM estimada para inferencia: con ~27,3B parametros, una cuantizacion Q4_K_M requiere aproximadamente 16-17 GB de memoria; Q5_K_M en torno a 19-20 GB; Q8_0 cerca de 29 GB; FP16 requeriria unos 55 GB.
+- GPU recomendadas: para FP16, A100 80 GB o H100; para Q8_0, A100 40 GB o RTX 6000 Ada; para Q4/Q5, RTX 4090 (24 GB), RTX 3090 (24 GB) o RTX 4080 (16 GB, solo cuantizaciones muy bajas con offload parcial).
+- Cabe en GPU de consumo: si, en RTX 3090/4090 con cuantizaciones de 4-5 bits; en GPUs de 16 GB requerira offload a RAM o cuantizaciones Q3.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF; el tag `endpoints_compatible` sugiere soporte de APIs tipo OpenAI.
+- Latencia y throughput: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-Abliterated (GGUF) | 27,3B | no disponible | Apache 2.0 | GGUF | Multimodal, uncensored, en/zh |
-| Qwen2.5-32B (GGUF) | 32,5B | 128K (típico) | Apache 2.0 | GGUF | No multimodal, con censura estándar |
-| Llama-3.1-8B (GGUF) | 8B | 128K | Llama 3.1 Community | GGUF | Mucho menor, no multimodal, en/zh limitado |
+| Qwen3.8-27B-Abliterated-GGUF (este) | ~27,3B | no disponible | apache-2.0 | GGUF | Variante abliterated, acceso gated, idiomas en/zh |
+| Modelo base Qwen3.8-27B-Abliterated | ~27,3B | no disponible | apache-2.0 | safetensors | Sin cuantizar; comportamiento con rechazos atenuados |
+| Modelo Qwen original de la familia 3.5/3.8 (27B) | ~27B | no disponible | no disponible | safetensors/GGUF | Con alineacion completa; referencia para comparar abliteration |
+| Otras variantes abliterated de ~27B en GGUF | ~27B | no disponible | variable | GGUF | Alternativas de la comunidad con tecnicas de edicion similares |
 
-La comparativa es orientativa, ya que no se dispone de benchmarks del modelo evaluado. Qwen2.5-32B es el competidor más cercano en tamaño, pero carece de entrada multimodal y de la eliminación de censura. Llama-3.1-8B es significativamente más pequeño y no es comparable en capacidades. No hay datos de rendimiento para establecer una comparación cuantitativa.
+La comparacion cuantitativa de rendimiento no esta disponible en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Comportamiento "uncensored": el modelo puede generar contenido inapropiado, ofensivo, ilegal o peligroso sin restricciones. No debe desplegarse en producción sin supervisión humana o filtros adicionales.
-- Riesgo de alucinación: como todo modelo generativo, puede inventar hechos, citas o datos, especialmente en dominios especializados.
-- Idiomas limitados: solo soporta inglés y chino; no se recomienda su uso en otros idiomas sin verificación.
-- Longitud de contexto no especificada: se desconoce la ventana máxima de tokens; los modelos Qwen3 suelen soportar 128K, pero no está confirmado para esta variante.
-- Acceso restringido: el repositorio es "gated", por lo que requiere aceptar condiciones en Hugging Face antes de descargarlo.
-- Sin benchmarks publicados: no hay métricas objetivas que respalden su calidad, por lo que se recomienda evaluarlo en el caso de uso concreto antes de adoptarlo.
-- Posibles problemas de seguridad: al eliminar los mecanismos de rechazo, el modelo es más vulnerable a ataques de jailbreak o a generar contenido malicioso si se usa en sistemas abiertos.
+- La abliteration elimina parte de los mecanismos de rechazo, lo que aumenta el riesgo de generar contenido danino, sesgado o inexacto sin advertencia; no es adecuado para aplicaciones orientadas al publico sin moderacion adicional.
+- Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad factual para esta variante; la edicion de pesos puede degradar capacidades de razonamiento y coherencia respecto al modelo original.
+- Idiomas limitados a ingles y chino; el rendimiento en castellano no esta documentado y probablemente sea inferior.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion para despliegues automatizados.
+- Licencia apache-2.0 declarada, pero el modelo base y las condiciones del repositorio gated deben revisarse antes de uso comercial; la licencia del modelo original Qwen puede imponer restricciones adicionales.
+- El repositorio tiene 104,1 GB, por lo que la descarga completa de todas las cuantizaciones consume mucho almacenamiento; conviene descargar solo el archivo necesario.
+- No se dispone de informacion sobre sesgos especificos, contexto maximo ni calidad de las cuantizaciones imatrix en tareas concretas.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated-GGUF
-- Modelo base (safetensors): https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated
-- No se han encontrado papers, blogs o demos adicionales en la información proporcionada.
+- Repositorio GGUF: https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated-GGUF
+- Modelo base: https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated
+- Documentacion de llama.cpp (cuantizacion imatrix): https://github.com/ggerganov/llama.cpp
+- No se han encontrado en la informacion proporcionada papers, blogs o demos adicionales.

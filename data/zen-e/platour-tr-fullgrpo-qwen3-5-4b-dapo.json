@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 780,
+  "downloads_30d": 782,
   "trending_score": 0,
   "parameters": 4841450496,
   "parameters_human": "4.84B",
@@ -47,16 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "PLatour - a zen-E Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/zen-E/platour",
-      "snippet": "PLatour model and dataset releases. Dataset preview; model releases will be added later."
-    },
-    {
-      "title": "zen-E/qwen3-4b-instruct-grpo-dapo-2epoch-8k · Hugging Face",
-      "url": "https://huggingface.co/zen-E/qwen3-4b-instruct-grpo-dapo-2epoch-8k",
-      "snippet": "zen-E / qwen3-4b-instruct-grpo-dapo-2epoch-8k like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
-    }
-  ]
+  "sources": []
 }

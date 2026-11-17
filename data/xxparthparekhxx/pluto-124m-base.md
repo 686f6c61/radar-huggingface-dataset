@@ -2,107 +2,104 @@
 
 ## Resumen
 
-Pluto 124M Base es un modelo de lenguaje de 121,2 millones de parámetros entrenado desde cero por xxparthparekhxx sobre 1.000 millones de tokens del corpus educativo FineWeb-Edu. Se trata de un modelo de continuacion de texto (no ajustado para chat) con una ventana de contexto de 1.024 tokens, pensado como experimento reproducible de preentrenamiento de bajo coste: se entrenó en una única GPU RTX 5060 Laptop de 8 GB en unas 10 horas, a unos 26,7k tokens/s.
+Pluto 124M Base es un modelo de lenguaje de 121,2 millones de parámetros entrenado desde cero por el desarrollador independiente xxparthparekhxx. Se trata de un transformer decoder-only de 12 capas y anchura 768, con atención de consultas agrupadas (GQA) y una ventana de contexto de 1.024 tokens. Su entrenamiento se realizó sobre 4.350 millones de tokens del corpus educativo FineWeb-Edu, tokenizados con el BPE de GPT-2.
 
-La arquitectura no es un transformer estándar de `transformers`: incorpora atención con compuerta sigmoidea, QK-norm y un soft-cap logarítmico con tanh sobre los logits, implementado en un fichero `modeling_pluto.py` que requiere `trust_remote_code=True`. El modelo usa tokenizador BPE de GPT-2 ampliado con cuatro tokens de chat (sin usar en esta variante base) y vocabulario de 50.304 entradas.
+La relevancia del modelo es doble. Por un lado, sirve como referencia reproducible de un pipeline de preentrenamiento completo a pequeña escala: el autor documenta pasos, optimizador (Muon con variante DeepSeek-V4 para matrices 2D y AdamW para embeddings y normas), horarios de learning rate y tiempos de cómputo reales, incluyendo las primeras 750 millones de tokens en una GPU de portátil RTX 5060 con 8 GB. Por otro, su evaluación con lm-evaluation-harness 0.4.13 lo sitúa por delante de GPT-2 124M en tareas de conocimiento escolar y científico (ARC, OpenBookQA, HellaSwag), aunque por detrás en LAMBADA.
 
-Su relevancia es principalmente comparativa y educativa: frente a GPT-2 124M, con diez veces menos tokens de entrenamiento, supera al modelo de OpenAI en tareas de conocimiento escolar y científico (ARC-Easy, ARC-Challenge, OpenBookQA), lo que refleja el sesgo educativo de su corpus. No es un modelo apto para producción general: solo habla inglés, no sigue instrucciones y su conocimiento factual es poco fiable.
+Es un modelo base de continuación de texto, no ajustado para instrucciones ni diálogo; el autor publica una variante chat separada (pluto-124m-chat). Su licencia Apache-2.0 y su reducido tamaño lo hacen útil para experimentación, docencia y despliegue en hardware muy limitado, no para producción exigente.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only pre-norm con RMSNorm; atención GQA (12 cabezas query, 4 cabezas key/value, tamaño de cabeza 64), RoPE (θ=10.000), RMSNorm sobre queries y keys, compuerta de salida sigmoidea; FFN SwiGLU; soft-cap tanh sobre logits a 30 |
-| Parametros totales | 121.229.568 (121,2M), embeddings atados con la capa de salida |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | Transformer decoder-only, pre-norm, atención GQA con QK-norm y soft-cap de logits |
+| Parámetros totales | 121.229.568 (embeddings atados con la capa de salida) |
+| Parámetros activos | no disponible (no es MoE) |
 | Longitud de contexto | 1.024 tokens |
-| Tipos de cuantizacion | no disponible (el repo solo publica pesos safetensors; no se documentan versiones GGUF/AWQ/GPTQ) |
-| Idiomas soportados | inglés (en) |
+| Tipos de cuantización | no disponible (el autor no publica variantes GGUF ni cuantizadas) |
+| Idiomas soportados | inglés |
 | Licencia | Apache-2.0 (datos de entrenamiento FineWeb-Edu bajo ODC-By 1.0) |
-| Formato de pesos | safetensors (librería transformers, requiere `trust_remote_code=True`; código en `modeling_pluto.py`) |
+| Formato de pesos | safetensors (requiere `trust_remote_code=True`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un decoder-only de 12 capas y anchura 768, con pre-norm RMSNorm, atención de consultas agrupadas (GQA) de 12 cabezas query y 4 cabezas key/value de dimensión 64, RoPE con theta 10.000 y normalización RMS sobre queries y keys. La FFN es SwiGLU con tamaño oculto 2.048. La salida aplica un soft-cap tanh a 30 sobre los logits, una técnica de estabilización heredada de Grok/GPT-2 modificado. El vocabulario es el BPE de GPT-2 más 4 tokens de chat (no usados en esta variante), rellenado hasta 50.304.
+El modelo sigue una arquitectura transformer decoder-only de 12 capas con pre-norm y RMSNorm, anchura 768 y feed-forward SwiGLU con dimensión oculta 2.048. La atención es de consultas agrupadas con 12 cabezas de consulta y 4 de clave/valor, tamaño de cabeza 64, RoPE con θ = 10.000, RMSNorm aplicada a consultas y claves y una puerta sigmoide en la salida de atención. La capa de salida aplica un soft-cap tanh sobre los logits a 30. El vocabulario es el BPE de GPT-2 más 4 tokens de chat (no usados en este modelo base), ampliado a 50.304 entradas. La arquitectura no es una clase estándar de transformers: el código vive en `modeling_pluto.py` dentro del repositorio.
 
-El entrenamiento usó 1.000 millones de tokens de FineWeb-Edu `sample-10BT`, tokenizados con el BPE de GPT-2, en 1.907 pasos de 524.288 tokens cada uno (512 secuencias de 1.024), en bf16 con `torch.compile`. El optimizador es Muon para las matrices de pesos 2D y AdamW para embeddings y normas; Muon emplea la variante DeepSeek-V4 (ortogonalización Newton–Schulz con actualización reescalada a RMS 0,18, de modo que ambos optimizadores comparten una única tasa de aprendizaje). La tasa de aprendizaje alcanza un pico de 3e-3 con weight decay 0,1, 200 pasos de warmup, fase plana y decaimiento lineal hasta el 10% del pico en el último 25% de los pasos (warmup-stable-decay). El coste total fue de unas 10 horas en una RTX 5060 Laptop de 8 GB.
+El entrenamiento cubrió 4.350 millones de tokens de FineWeb-Edu `sample-10BT` en 8.297 pasos de 524.288 tokens cada uno (512 secuencias de 1.024), en bf16 con `torch.compile`. Se usó Muon para las matrices de pesos 2D y AdamW para embeddings y normas, con la variante DeepSeek-V4 de Muon (ortogonalización Newton–Schulz con actualización reescalada a RMS 0,18 para compartir learning rate). El learning rate alcanzó un pico de 3e-3 con weight decay 0,1, 200 pasos de warmup, fase plana y decaimiento lineal al 10% del pico en el último 25% de pasos. La versión 2 reanudó desde el checkpoint de la v1 en el paso 1.430 (750 millones de tokens, antes del decaimiento) y continuó la fase plana hasta 4.350 millones. El cómputo fue de unas 7,6 horas en una RTX 5060 Laptop (≈26,7k tokens/s) para los primeros 1.430 pasos y 3,9 horas en una RTX PRO 6000 (≈258k tokens/s) para el resto.
 
 ## Capacidades
 
-- Generacion de texto por continuacion de prompt (completion), no instrucciones.
-- Conocimiento escolar y cientifico basico, favorecido por el corpus FineWeb-Edu.
-- Razonamiento de sentido comun limitado (HellaSwag 30,2 acc_norm; PIQA 60,3).
-- Resolucion de analogias y coherencia local en ventanas cortas (Winogrande 52,3, cerca del azar).
-- Vocabulario BPE de GPT-2, compatible con tokenizadores GPT-2 estándar.
-- No dispone de tool calling ni function calling.
-- No dispone de modo de razonamiento multi-paso ni de agentes.
-- No dispone de vision, audio ni otras modalidades.
-- Multilingue: no; solo ingles.
-- No dispone de modo thinking explicito.
+- Generación y continuación de texto en inglés: completa pasajes a partir de un prefijo, sin instrucciones explícitas.
+- Conocimiento escolar y científico: destaca en preguntas de ciencia y conocimiento educativo, coherente con su corpus de entrenamiento.
+- Razonamiento de sentido común básico: HellaSwag y PIQA por encima o a la par de GPT-2 124M.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: solo inglés.
+- Capacidades especiales (thinking mode, visión, audio): no disponible.
+- Tokenizador con 4 tokens de chat reservados, aunque no utilizados en esta variante base.
 
 ## Casos de uso
 
-- Experimentacion academica con preentrenamiento de bajo coste: reproducir el pipeline completo (FineWeb-Edu, Muon + AdamW, warmup-stable-decay) en una GPU de portatil para estudiar el efecto de la mezcla de datos y del optimizador en modelos de 100M.
-- Generacion de texto de relleno en demos y prototipos: completar frases o parrafos sobre temas educativos con `model.generate` para probar interfaces de inferencia sin coste de API.
-- Baseline de comparacion en investigacion: usar sus resultados en lm-evaluation-harness como referencia para nuevos modelos pequenos entrenados con el mismo corpus y receta.
-- Filtrado y puntuacion de corpus: calcular perplexity sobre texto educativo (24,6 en validacion in-distribution) como heuristica de calidad o de pertenencia al dominio.
-- Pruebas de infraestructura de despliegue: validar pipelines de `transformers` con `trust_remote_code`, serializacion safetensors y compilacion en GPUs consumer antes de escalar a modelos mayores.
-- Educacion y divulgacion: ilustrar en cursos o talleres como se entrena un LM desde cero, que mide cada benchmark y por que un corpus educativo mejora ARC pero penaliza LAMBADA.
-- Generacion de variantes de texto para data augmentation en tareas de clasificacion de texto educativo en ingles, aceptando la baja fidelidad factual.
+- Docencia y reproducción de pipelines de preentrenamiento: el modelo y su documentación permiten replicar el entrenamiento completo en hardware de consumo (las primeras 750M de tokens caben en una GPU de portátil de 8 GB), útil para cursos de LLM.
+- Generación de texto educativo de relleno: continuación de párrafos sobre ciencia o conocimiento escolar en tareas de aumento de datos o generación de ejemplos sintéticos, gracias a su sesgo hacia FineWeb-Edu.
+- Baseline de investigación: comparación controlada frente a GPT-2 124M en experimentos de arquitectura (GQA, QK-norm, soft-cap) con un coste de cómputo mínimo.
+- Pruebas de infraestructura de despliegue: modelo de 1 GB en fp32 que sirve para validar pipelines de transformers, `torch.compile` o servidores de inferencia antes de escalar a modelos mayores.
+- Completado de texto en aplicaciones de autocompletado simple: con contexto de 1.024 tokens puede sugerir continuaciones en editores o formularios, siempre que el dominio sea texto educativo en inglés.
+- Experimentación con optimizadores: el uso documentado de Muon (variante DeepSeek-V4) lo convierte en banco de pruebas para estudiar su comportamiento frente a AdamW en modelos pequeños.
+- Evaluación de alineación y seguridad en modelos base: al no estar ajustado para instrucciones, permite estudiar el comportamiento crudo de un LM preentrenado ante prompts adversarios.
 
 ## Benchmarks y rendimiento
 
-Evaluacion con lm-evaluation-harness 0.4.13, zero-shot, fp32, comparada con GPT-2 124M (openai-community/gpt2):
+Resultados con lm-evaluation-harness 0.4.13, zero-shot, fp32. Errores estándar aproximados: ±0,5 en HellaSwag y LAMBADA, ±1 a 1,5 en ARC, PIQA y Winogrande, ±2 en OpenBookQA.
 
-| Tarea (metrica) | Pluto base | Pluto chat | GPT-2 124M |
-|---|---|---|---|
-| HellaSwag (acc_norm) | 30,2 | 31,1 | 31,1 |
-| ARC-Easy (acc_norm) | 45,2 | 41,9 | 39,5 |
-| ARC-Challenge (acc_norm) | 24,3 | 26,7 | 22,7 |
-| OpenBookQA (acc_norm) | 29,4 | 27,2 | 27,2 |
-| PIQA (acc_norm) | 60,3 | 59,1 | 62,5 |
-| Winogrande (acc) | 52,3 | 51,7 | 51,6 |
-| LAMBADA (acc) | 23,3 | 16,8 | 32,6 |
+| Tarea (métrica) | Pluto base v2 | Pluto chat v2 | GPT-2 124M | Pluto base v1 |
+|---|---|---|---|---|
+| HellaSwag (acc_norm) | 33,9 | 34,2 | 31,1 | 30,2 |
+| ARC-Easy (acc_norm) | 47,6 | 44,6 | 39,5 | 45,2 |
+| ARC-Challenge (acc_norm) | 27,0 | 26,5 | 22,7 | 24,3 |
+| OpenBookQA (acc_norm) | 30,4 | 30,6 | 27,2 | 29,4 |
+| PIQA (acc_norm) | 63,4 | 62,4 | 62,5 | 60,3 |
+| Winogrande (acc) | 52,3 | 51,9 | 51,6 | 52,3 |
+| LAMBADA (acc) | 28,1 | 20,6 | 32,6 | 23,3 |
 
-Errores estandar aproximados: ±0,5 en HellaSwag y LAMBADA, ±1 a 1,5 en ARC, PIQA y Winogrande, ±2 en OpenBookQA. En 4M tokens reservados de FineWeb-Edu, la perdida de validacion es 3,203 (perplexity 24,6) para Pluto base frente a 3,274 (perplexity 26,4) para GPT-2; el texto es in-distribution para Pluto, por lo que la comparacion favorece a este.
+Pérdida de validación sobre 4 millones de tokens reservados de FineWeb-Edu: 2,991 (perplejidad 19,9) para Pluto base v2, 3,203 (perplejidad 24,6) para v1 y 3,274 (perplejidad 26,4) para GPT-2. El autor advierte que este texto está en la distribución de Pluto, lo que favorece la comparación.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en fp32, unos 0,48 GB solo de pesos (121,2M × 4 bytes), mas activaciones y cache KV; en bf16/fp16, unos 0,24 GB de pesos. Cabe holgadamente en cualquier GPU consumer con 4 GB o mas.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; el propio entrenamiento se hizo en una RTX 5060 Laptop de 8 GB, por lo que esa GPU es suficiente tambien para inferencia y ajuste fino ligero.
-- Cabe en GPU consumer: si, incluidas GTX 1650 4 GB, RTX 3050, RTX 4060, RTX 4090 y equivalentes.
-- Opciones de despliegue: `transformers` con `trust_remote_code=True` (unica via documentada, dado el codigo custom `modeling_pluto.py`); no se documentan pesos GGUF, por lo que llama.cpp y Ollama no estan soportados de forma nativa salvo conversion manual no publicada. vLLM y TGI no tienen soporte documentado para esta arquitectura custom.
-- Latencia y throughput: no se publican cifras de inferencia; el unico dato de rendimiento es el del entrenamiento (unos 26,7k tokens/s en una RTX 5060 Laptop).
+- VRAM estimada: el repositorio ocupa 1,0 GB; en fp32 la inferencia requiere aproximadamente 1,5 GB contando pesos y activaciones para contexto corto, y en bf16/fp16 alrededor de 0,5 GB de pesos.
+- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM es suficiente; el autor entrenó parte del modelo en una RTX 5060 Laptop de 8 GB y el resto en una RTX PRO 6000.
+- Cabe en GPU de consumo: sí, en RTX 3060, RTX 4060, RTX 4090 y equivalentes, e incluso en iGPU con suficiente memoria compartida.
+- Opciones de despliegue: transformers con `trust_remote_code=True` (requisito por la arquitectura personalizada); vLLM, llama.cpp, Ollama y TGI no están confirmados para esta arquitectura, por lo que su uso requeriría conversión y adaptación del código de `modeling_pluto.py`.
+- Latencia y throughput: no se publican cifras de inferencia; como referencia de entrenamiento, el autor reporta ≈26,7k tokens/s en RTX 5060 Laptop y ≈258k tokens/s en RTX PRO 6000.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | HellaSwag | ARC-Easy | LAMBADA | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | HellaSwag | ARC-Challenge | LAMBADA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Pluto 124M Base | 121,2M | 1.024 | 30,2 | 45,2 | 23,3 | Apache-2.0 | Hugging Face, requiere `trust_remote_code` |
-| GPT-2 124M | 124M | 1.024 | 31,1 | 39,5 | 32,6 | MIT (pesos publicados por OpenAI) | Hugging Face, transformers estandar |
-| Pluto 124M Chat | 121,2M | 1.024 | 31,1 | 41,9 | 16,8 | Apache-2.0 | Hugging Face, variante chat del mismo autor |
+| Pluto 124M Base v2 | 121,2M | 1.024 | 33,9 | 27,0 | 28,1 | Apache-2.0 | Hugging Face |
+| GPT-2 124M | 124M | 1.024 | 31,1 | 22,7 | 32,6 | MIT (según el repositorio original) | Hugging Face |
+| Pluto 124M Base v1 | 121,2M | 1.024 | 30,2 | 24,3 | 23,3 | Apache-2.0 | Hugging Face (revisión `v1`) |
 
-No se dispone en la informacion proporcionada de resultados de otras alternativas de tamano comparable (por ejemplo, modelos de la familia Pythia o SmolLM) para ampliar la comparativa; esos datos figuran como no disponibles.
+No se dispone de datos de benchmarks para otras alternativas de tamaño similar en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo ingles; no soporta castellano ni otros idiomas.
-- Ventana de contexto de 1.024 tokens, insuficiente para documentos largos o conversaciones multi-turno extensas.
-- No sigue instrucciones: es un modelo de continuacion de texto; para uso conversacional existe la variante pluto-124m-chat.
-- Entrenado exclusivamente con paginas web educativas, por lo que conoce poco sobre codigo, dialogo u otros dominios.
-- Conocimiento factual poco fiable; riesgo alto de alucinacion en preguntas de hechos.
-- Rendimiento bajo en tareas que requieren comprension de ficcion o narrativa (LAMBADA 23,3 frente a 32,6 de GPT-2).
-- Winogrande cerca del azar (52,3), lo que indica capacidad limitada de resolucion de correferencia.
-- Requiere `trust_remote_code=True` para modelo y tokenizador, lo que implica ejecutar codigo del autor; conviene auditar `modeling_pluto.py` antes de usarlo en produccion.
-- Licencia Apache-2.0 permite uso comercial, pero los datos FineWeb-Edu estan bajo ODC-By 1.0, con requisitos de atribucion sobre el corpus.
-- Sin versiones cuantizadas publicadas (GGUF, AWQ, GPTQ), lo que limita el despliegue en entornos sin `transformers`.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: modelo muy reciente y sin validacion comunitaria.
+- Solo inglés y contexto de 1.024 tokens, insuficiente para documentos largos o conversaciones multi-turno extensas.
+- Es un modelo base: continúa texto, no sigue instrucciones ni mantiene diálogo; para chat debe usarse la variante pluto-124m-chat.
+- Entrenado exclusivamente con páginas web educativas, por lo que su conocimiento de código, diálogo y ficción es muy limitado; LAMBADA queda por debajo de GPT-2 por falta de narrativa en el corpus.
+- Los hechos que genera son poco fiables; riesgo alto de alucinación en preguntas factuales.
+- Winogrande está cerca del azar (≈50%) en todos los modelos comparados, incluido este.
+- Requiere `trust_remote_code=True` para tokenizador y modelo, lo que implica ejecutar código del repositorio; conviene auditar `modeling_pluto.py` antes de usarlo en entornos sensibles.
+- La licencia Apache-2.0 permite uso comercial, pero los datos de entrenamiento (FineWeb-Edu) están bajo ODC-By 1.0 y deben respetarse sus condiciones de atribución.
+- Sesgos conocidos: no se documentan análisis específicos de sesgo en la información disponible.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/xxparthparekhxx/pluto-124m-base
 - Variante chat: https://huggingface.co/xxparthparekhxx/pluto-124m-chat
+- Revisión v1: https://huggingface.co/xxparthparekhxx/pluto-124m-base/tree/v1
 - Perfil del autor en GitHub: https://github.com/xxparthparekhxx
-- Dataset de entrenamiento FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
-- GPT-2 de referencia: https://huggingface.co/openai-community/gpt2
+- Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
+- GPT-2 (modelo de comparación): https://huggingface.co/openai-community/gpt2
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness
+- Resultados de evaluación en el repositorio: https://huggingface.co/xxparthparekhxx/pluto-124m-base/tree/main/eval

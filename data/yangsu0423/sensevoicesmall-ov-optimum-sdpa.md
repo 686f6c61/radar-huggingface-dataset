@@ -2,47 +2,47 @@
 
 ## Resumen
 
-SenseVoiceSmall-OV-Optimum-SDPA es una exportación a formato OpenVINO IR del modelo de reconocimiento automático de voz FunAudioLLM/SenseVoiceSmall, publicada por el usuario yangsu0423. No se trata de un modelo nuevo entrenado desde cero, sino de una conversión de pesos orientada a la inferencia optimizada en hardware Intel mediante el ecosistema optimum-intel y OpenVINO. El repositorio incluye tres variantes de cuantización (fp16, int8 e int4) en carpetas separadas, lo que permite elegir el equilibrio entre precisión y rendimiento según el hardware objetivo.
+SenseVoiceSmall-OV-Optimum-SDPA es una exportación a OpenVINO IR del modelo de reconocimiento automático de voz FunAudioLLM/SenseVoiceSmall, publicada por el usuario yangsu0423. No se trata de un modelo nuevo entrenado desde cero, sino de una conversión de pesos y grafo computacional orientada a la inferencia optimizada en hardware Intel mediante la librería openvino y el toolkit optimum-intel. El modelo base SenseVoiceSmall pertenece a la familia FunAudioLLM, desarrollada por el equipo FunAudioLLM en el ecosistema ModelScope/FunASR.
 
-El modelo base SenseVoiceSmall es un sistema de ASR desarrollado por FunAudioLLM (equipo vinculado a Alibaba/FunASR) que emplea una arquitectura con atención SANM (Self-Attention with Non-linear Mapping). Esta exportación concreta se generó con una versión concreta de optimum-intel (`ee87618`) más dos pull requests pendientes que traducen la atención SANM a `ScaledDotProductAttention` y aplican un factor de escala de activaciones de 8.0 en las opciones de runtime del IR.
+La aportación técnica de este repositorio es la exportación de la atención SANM (Self-Attention with Normalized Memory, característica de la arquitectura SenseVoice) como un nodo `ScaledDotProductAttention` (SDPA), lo que permite a OpenVINO aplicar fusiones y kernels optimizados para atención. Esta conversión procede de un pull request aún pendiente de fusión en optimum-intel (#2122), por lo que el repositorio tiene un carácter experimental y de referencia para pruebas de integración.
 
-La relevancia de esta ficha es acotada: es un artefacto de despliegue, no un modelo con benchmarks propios publicados. Su interés reside en que permite ejecutar SenseVoiceSmall en CPU y aceleradores Intel con OpenVINO, lo que facilita el despliegue en entornos sin GPU dedicada. El tamaño del repositorio es de 0,8 GB y no registra descargas ni likes en el momento de la consulta.
+El repositorio incluye cuatro variantes de pesos (fp16, int8 e int4, con distintos valores de `ACTIVATIONS_SCALE_FACTOR`), con un tamaño total de 0,8 GB. Está pensado para desarrolladores que quieran desplegar ASR multilingüe de baja latencia en CPU o GPU Intel sin depender de PyTorch en tiempo de ejecución.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con atencion SANM (exportada como ScaledDotProductAttention en OpenVINO) |
-| Parametros totales | no disponible |
+| Arquitectura | SenseVoice (encoder transformer con atención SANM exportada como SDPA); no disponible el detalle exacto de capas y dimensiones |
+| Parametros totales | no disponible (el nombre "Small" sugiere un modelo compacto, pero no se publica el recuento) |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | fp16, int8, int4 |
-| Idiomas soportados | no disponible |
-| Licencia | other (model-license, enlazada a FunASR MODEL_LICENSE) |
-| Formato de pesos | OpenVINO IR (no safetensors ni GGUF) |
+| Tipos de cuantizacion | fp16, int8, int4 (exportadas con optimum-cli) |
+| Idiomas soportados | no disponible en la información proporcionada (el modelo base SenseVoiceSmall es multilingüe, pero no se detallan los idiomas) |
+| Licencia | other (model-license); enlace a la licencia de FunASR: https://github.com/modelscope/FunASR/blob/main/MODEL_LICENSE |
+| Formato de pesos | OpenVINO IR (fp16, int8, int4); no se incluyen safetensors ni GGUF en este repositorio |
 
 ## Arquitectura y entrenamiento
 
-El modelo base SenseVoiceSmall emplea una arquitectura de transformer con un mecanismo de atención denominado SANM (Self-Attention with Non-linear Mapping), según se desprende de la descripción de la exportación. En esta conversión a OpenVINO, esa atención se reescribe como `ScaledDotProductAttention`, lo que permite a OpenVINO aplicar optimizaciones de runtime específicas para hardware Intel. Adicionalmente, la exportación fija `ACTIVATIONS_SCALE_FACTOR=8.0` en las opciones de runtime del IR, un ajuste que afecta a la cuantización de activaciones.
+El modelo base SenseVoiceSmall es un sistema de reconocimiento automático de voz basado en transformer con una variante de atención denominada SANM, propia de la familia SenseVoice. En esta exportación, esa atención se representa como `ScaledDotProductAttention`, lo que facilita que OpenVINO aplique optimizaciones de atención (fusión de operaciones y kernels específicos) durante la inferencia. El repositorio no documenta el proceso de entrenamiento del modelo original: no se indican tokens de audio utilizados, composición del dataset, ni si hubo ajuste fino con RLHF o DPO.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si el modelo base utilizó RLHF, DPO u otras técnicas de alineación. Tampoco se documentan innovaciones de decodificación especulativa ni mecanismos de atención lineal más allá de la mencionada SANM. La exportación se realizó con transformers 4.57.6 y funasr 1.4.1 mediante el comando `optimum-cli export openvino`, con `--trust-remote-code` y selección de formato de peso fp16, int8 o int4.
+La innovación técnica de este repositorio es puramente de despliegue: la exportación se realizó con `optimum-cli export openvino` usando `--trust-remote-code` y distintas precisiones de peso. Se generaron cuatro carpetas: `sensevoice-small-sdpa-scale4-fp16-ov` (recomendada para nuevas pruebas, con `ACTIVATIONS_SCALE_FACTOR` 4.0, alineada con el valor del PR #2118 ya fusionado), `sensevoice-small-sdpa-scale8-fp16-ov`, `sensevoice-small-sdpa-scale8-int8-ov` y `sensevoice-small-sdpa-scale8-int4-ov`. Las dos variantes scale8 con fp16 comparten exactamente los mismos pesos que scale4; solo difiere la opción de runtime `ACTIVATIONS_SCALE_FACTOR`, que únicamente utiliza el plugin de GPU de OpenVINO.
 
 ## Capacidades
 
 - Reconocimiento automático de voz (ASR): tarea principal del pipeline `automatic-speech-recognition`.
-- Transcripción de audio a texto en las variantes fp16, int8 e int4 del IR.
-- Ejecución optimizada en hardware Intel mediante OpenVINO, incluyendo CPU y aceleradores compatibles.
-- No se documentan capacidades de traducción, diarización, detección de idioma, tool calling, agentes ni razonamiento multi-paso en la información disponible.
-- Capacidades multilingües: no disponibles en la información proporcionada.
+- Transcripción de audio a texto con el modelo base SenseVoiceSmall.
+- Inferencia optimizada en OpenVINO: ejecución en CPU y GPU Intel con pesos fp16, int8 o int4.
+- Atención exportada como SDPA, lo que habilita kernels de atención fusionados en OpenVINO.
+- No se documentan en este repositorio capacidades de traducción, diarización, detección de emociones, tool calling ni razonamiento multi-paso; cualquier capacidad adicional del modelo base no está confirmada en la información disponible.
 
 ## Casos de uso
 
-- Transcripción de reuniones en CPU: al estar exportado a OpenVINO IR, el modelo puede ejecutarse en servidores sin GPU dedicada, lo que permite desplegar transcripción de audio en infraestructura Intel existente con la variante int8 para reducir requisitos de memoria.
-- Subtitulado de vídeo en pipelines de edición: la variante fp16 ofrece mayor fidelidad numérica para generar subtítulos en flujos de postproducción, integrándose como paso de ASR dentro de un pipeline de procesamiento por lotes.
-- Asistentes de voz en dispositivos de borde: la variante int4 reduce el peso del modelo y facilita su despliegue en equipos con recursos limitados, siempre que el hardware objetivo disponga de soporte OpenVINO.
-- Indexación y búsqueda de archivos de audio: transcripción masiva de grabaciones para construir índices de texto consultables, aprovechando el formato IR para ejecución estable en clústeres de CPU.
-- Accesibilidad en aplicaciones de escritorio: integración de la transcripción en tiempo real o diferido en aplicaciones nativas que ya distribuyen runtime OpenVINO.
-- Evaluación comparativa de cuantizaciones: el repositorio permite medir el impacto de fp16 frente a int8 e int4 en la precisión de transcripción sobre el mismo audio, útil para calibrar despliegues en producción.
+- Transcripción por lotes en servidores Intel: el modelo en formato OpenVINO IR se puede ejecutar sobre CPU Xeon sin PyTorch, lo que simplifica el despliegue en infraestructura existente y reduce dependencias.
+- Subtitulado en tiempo casi real en estaciones de trabajo con GPU Intel: la variante fp16 con `ACTIVATIONS_SCALE_FACTOR` 4.0 es la recomendada para pruebas nuevas y aprovecha el plugin GPU de OpenVINO.
+- Despliegue en dispositivos de borde con recursos limitados: las variantes int8 e int4 reducen el tamaño de pesos y permiten ejecutar ASR en equipos con poca memoria, a costa de posible pérdida de precisión.
+- Integración en pipelines de procesamiento de audio a gran escala: al ser un artefacto OpenVINO, se puede encadenar con otros modelos convertidos al mismo runtime para tareas de transcripción y análisis posterior.
+- Evaluación comparativa de precisión entre cuantizaciones: el repositorio incluye fp16, int8 e int4 del mismo modelo, lo que facilita medir el impacto de la cuantización en la tasa de error de palabras (WER) en un corpus propio.
+- Prototipado de asistentes de voz en entornos Intel: sirve como componente ASR dentro de una aplicación mayor, siempre que se validen los requisitos de licencia del modelo base.
 
 ## Benchmarks y rendimiento
 
@@ -50,36 +50,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. El repositorio ocupa 0,8 GB, pero no se desglosa el tamaño por variante ni el consumo en ejecución.
-- GPU recomendadas: no disponible. El artefacto está orientado a OpenVINO, cuyo foco principal es CPU y aceleradores Intel; no se documentan requisitos de GPU.
-- Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: OpenVINO Runtime mediante los IR exportados con optimum-intel; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput estimados: no disponibles.
+- VRAM/RAM estimada: el repositorio completo ocupa 0,8 GB; cada variante individual es sustancialmente menor. La variante int4 es la más ligera en memoria, seguida de int8 y fp16.
+- GPU recomendadas: no se especifican modelos concretos; el autor indica que `ACTIVATIONS_SCALE_FACTOR` solo lo usa el plugin de GPU de OpenVINO, por lo que las variantes están pensadas para GPU Intel compatibles con dicho plugin.
+- CPU: ejecutable en CPU mediante OpenVINO, sin requisitos de GPU.
+- Cabe en GPU de consumo: no disponible la confirmación explícita; por el tamaño del repositorio (0,8 GB en total) es plausible, pero no se documenta.
+- Opciones de despliegue: OpenVINO Runtime y optimum-intel; la exportación se realizó con `optimum-cli export openvino`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| SenseVoiceSmall-OV-Optimum-SDPA | no disponible | no disponible | OpenVINO IR (fp16/int8/int4) | other (model-license) | Exportación comunitaria del modelo base |
-| FunAudioLLM/SenseVoiceSmall | no disponible | no disponible | safetensors (formato original) | model-license | Modelo base oficial de FunAudioLLM |
-| Whisper (variantes small) | no disponible en esta ficha | no disponible | safetensors, GGUF, etc. | MIT/Apache según variante | Alternativa ASR ampliamente desplegada; datos no verificados en esta consulta |
+| SenseVoiceSmall-OV-Optimum-SDPA (este) | no disponible | no disponible | OpenVINO IR (fp16/int8/int4) | other (model-license) | Exportación experimental con SDPA, PR #2122 pendiente |
+| FunAudioLLM/SenseVoiceSmall (base) | no disponible | no disponible | PyTorch (formato original) | other (model-license) | Modelo original; requiere funasr/transformers |
+| Otras exportaciones OpenVINO de SenseVoiceSmall | no disponible | no disponible | OpenVINO IR | según el exportador | No se dispone de información sobre alternativas comparables en la búsqueda |
 
-La comparación con alternativas queda limitada porque no se dispone de parámetros, contexto ni benchmarks del modelo base en la información proporcionada. No se han verificado cifras de Whisper ni de otros sistemas ASR para esta ficha, por lo que la tabla solo refleja lo documentado.
+No se dispone de datos de rendimiento comparativo entre estas variantes ni con otros modelos ASR.
 
 ## Limitaciones y advertencias
 
-- Es un artefacto de exportación, no un modelo entrenado: cualquier limitación del modelo base SenseVoiceSmall se hereda sin cambios.
-- No se documentan sesgos conocidos, tasas de alucinación ni comportamiento por idioma en la información disponible.
-- La licencia es `other` con nombre `model-license` y enlace a FunASR MODEL_LICENSE; es necesario revisar ese texto antes de cualquier uso comercial, ya que las condiciones no se detallan en la model card.
-- El repositorio tiene cero descargas y cero likes, y fue creado y actualizado el mismo día; no hay evidencia de validación por parte de la comunidad.
-- La exportación depende de dos pull requests pendientes de optimum-intel, lo que implica que la reproducibilidad exacta requiere esas revisiones concretas.
-- El uso de `--trust-remote-code` en la exportación implica ejecutar código del repositorio del modelo base; conviene auditar ese código en entornos de producción.
-- No se especifican los idiomas soportados, lo que impide garantizar calidad de transcripción en castellano u otras lenguas sin pruebas propias.
+- Repositorio experimental: la exportación depende del PR #2122 de optimum-intel, que está pendiente de fusión; la reproducibilidad puede verse afectada por cambios futuros en la librería.
+- Sin descargas ni likes: el repositorio no tiene validación de la comunidad; no hay evidencia publicada de calidad de transcripción en estas variantes.
+- Idiomas no documentados: no se especifica qué lenguas cubre esta exportación, aunque el modelo base es multilingüe.
+- Riesgo de degradación por cuantización: las variantes int8 e int4 pueden aumentar la tasa de error de palabras frente a fp16; no se publican métricas que lo cuantifiquen.
+- Licencia restrictiva potencial: la licencia es "other" con enlace a la licencia de FunASR; es necesario revisar sus términos antes de cualquier uso comercial.
+- Sin garantías de soporte: al ser una publicación de un usuario individual, no hay mantenimiento oficial por parte de FunAudioLLM ni de Intel.
+- Riesgo de alucinación en ASR: como todo sistema de reconocimiento, puede producir transcripciones incorrectas en audio con ruido, acentos o solapamientos de habla.
 
 ## Enlaces
 
 - Repositorio en Hugging Face: https://huggingface.co/yangsu0423/SenseVoiceSmall-OV-Optimum-SDPA
 - Modelo base: https://huggingface.co/FunAudioLLM/SenseVoiceSmall
-- Licencia del modelo base: https://github.com/modelscope/FunASR/blob/main/MODEL_LICENSE
-- PR de optimum-intel para exportar SANM como ScaledDotProductAttention: https://github.com/huggingface/optimum-intel/pull/2122
-- PR de optimum-intel para ACTIVATIONS_SCALE_FACTOR: https://github.com/huggingface/optimum-intel/pull/2118
+- Licencia del modelo: https://github.com/modelscope/FunASR/blob/main/MODEL_LICENSE
+- PR de optimum-intel #2122 (pendiente): https://github.com/huggingface/optimum-intel/pull/2122
+- PR de optimum-intel #2118 (fusionado): https://github.com/huggingface/optimum-intel/pull/2118

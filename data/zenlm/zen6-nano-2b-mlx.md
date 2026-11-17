@@ -2,52 +2,50 @@
 
 ## Resumen
 
-Zen 6 Nano (2B) es un modelo multimodal de tipo image-text-to-text desarrollado por Hanzo AI y Zen LM, distribuido en formato nativo MLX para Apple Silicon. Se publica bajo licencia Apache-2.0 y está pensado para ejecutarse en hardware de Apple (M1, M2, M3 y M4 Max) aprovechando el framework MLX. El modelo combina un núcleo de lenguaje de aproximadamente 2.213 millones de parámetros con una torre de visión en FP16, y se distribuye con pesos cuantizados en 2 bits mediante una técnica propietaria denominada "Hadamard-basis ternary STE QAT" (entrenamiento con cuantización consciente y estimador de gradiente recto sobre base Hadamard).
+Zen 6 Nano (2B) es un modelo multimodal de tipo imagen-texto-a-texto desarrollado por Hanzo AI y Zen LM, distribuido en formato nativo para Apple Silicon mediante la librería MLX. Se publica bajo licencia Apache-2.0 y emplea una cuantización ternaria de 2 bits con transformada de Hadamard (denominada "prism_hadamard_qwen35" en los metadatos), lo que reduce drásticamente el peso del modelo hasta un repositorio de 2,4 GB para 2.213.649.216 parámetros totales.
 
-La propuesta diferencial es doble: por un lado, un esquema de cuantización ternario/2-bit que reduce drásticamente el peso del repositorio (1,2 GB) manteniendo, según el autor, los parámetros exactos del modelo original post-entrenado; por otro, la integración de capacidades agénticas mediante el protocolo MCP (Model Context Protocol) de Hanzo, con soporte explícito de llamadas a herramientas a través de etiquetas `<tool_call>`. El modelo también incorpora identidad propia ("Zen 6") y está etiquetado como conversacional y multimodal.
+El modelo parte de una arquitectura tipo Qwen 3.5 (según la etiqueta interna `prism_hadamard_qwen35`) y ha sido post-entrenado con QAT (quantization-aware training) y STE (straight-through estimator) sobre una base ternaria en el espacio de Hadamard. Incorpora una torre de visión en FP16 para el procesamiento de imágenes y un runtime propio (`runtime/`) adaptado a la base de Hadamard, además de capacidades de agente mediante el protocolo MCP de Hanzo con etiquetas `<tool_call>`.
 
-Es relevante ahora porque ejemplifica una tendencia creciente: modelos pequeños (2B) cuantizados agresivamente para inferencia local en dispositivos de consumo, con soporte de tool calling y visión, lo que los hace candidatos para asistentes locales, automatización en el borde y prototipado rápido sin dependencia de GPU dedicadas. No obstante, la información pública disponible es muy limitada: no se detallan datos de entrenamiento, benchmarks ni idiomas soportados.
+Su relevancia actual radica en dos factores: por un lado, ofrece inferencia multimodal en hardware de consumo Apple (M1 a M4 Max) con un footprint de 2,4 GB, lo que facilita el despliegue local; por otro, integra de serie soporte para tool calling vía MCP, algo poco habitual en modelos de este tamaño y cuantización. La información pública disponible es escasa: no se detallan idiomas soportados, composición del dataset ni resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (torre de visión FP16 + núcleo de lenguaje), con cuantización ternaria/2-bit sobre base Hadamard; no se detalla la arquitectura interna del núcleo |
+| Arquitectura | Transformer multimodal (imagen-texto-a-texto), base Qwen 3.5 según etiqueta `prism_hadamard_qwen35`; torre de visión en FP16 |
 | Parametros totales | 2.213.649.216 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 2-bit affine Hadamard (ternario, STE QAT); torre de visión en FP16 |
+| Tipos de cuantizacion | Ternaria de 2 bits con transformada de Hadamard (affine Hadamard); pesos publicados en ese formato; torre de visión en FP16 |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (MLX), con runtime propio en `runtime/` y `quickstart.py` |
+| Formato de pesos | safetensors (MLX), con runtime propio en `runtime/` |
 
 ## Arquitectura y entrenamiento
 
-El modelo se describe como un sistema multimodal image-text-to-text con un núcleo de lenguaje de 2B parámetros y una torre de visión en FP16. La innovación técnica principal es el esquema de cuantización: pesos ternarios en 2 bits obtenidos mediante entrenamiento con cuantización consciente (QAT) y estimador de gradiente recto (STE) sobre una base Hadamard, lo que según el autor preserva los parámetros exactos del modelo `zen6-nano` original post-entrenado. El repositorio incluye un directorio `runtime/` específico para manejar esta representación Hadamard y un script `quickstart.py` para ejecución directa en Apple Silicon.
+La arquitectura es un transformer multimodal con pipeline `image-text-to-text`: un codificador de visión en FP16 se combina con un modelo de lenguaje cuantizado de forma ternaria (2 bits) en el dominio de Hadamard. La cuantización se ha aplicado mediante QAT con estimador de gradiente directo (STE), de modo que los pesos publicados en `model.safetensors` corresponden a los parámetros ternarios ya post-entrenados, no a una conversión a posteriori. El repositorio incluye un directorio `runtime/` con código específico para operar sobre la base de Hadamard, lo que sugiere que la inferencia requiere ese runtime y no un cargador MLX genérico.
 
-No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF o DPO. Tampoco se detalla la arquitectura interna del núcleo (número de capas, dimensiones, mecanismo de atención) ni la del codificador visual. El modelo incorpora identidad "Zen 6" y capacidades agénticas MCP mediante etiquetas `<tool_call>`, lo que sugiere un post-entrenamiento orientado a instrucciones y uso de herramientas, pero no se aportan detalles del proceso.
+En cuanto a los datos de entrenamiento, no se especifica el número de tokens, la composición del dataset ni si hubo fases de RLHF o DPO. La model card menciona que el post-entrenamiento incorpora la "identidad Zen 6" y las capacidades agénticas de Hanzo MCP con etiquetas `<tool_call>`, lo que indica al menos una fase de ajuste orientada a agentes y tool calling. No se documentan innovaciones adicionales como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
 - Generación de texto conversacional multi-turno.
-- Procesamiento de imágenes y texto combinados (pipeline image-text-to-text), con torre de visión en FP16.
-- Llamadas a herramientas mediante el protocolo MCP de Hanzo, con formato `<tool_call>`.
-- Comportamiento agéntico orientado a flujos multi-paso (según la descripción del autor).
-- Identidad de modelo propia ("Zen 6") integrada en las respuestas.
-- Ejecución nativa en Apple Silicon mediante MLX.
-- Capacidades multilingües: no disponibles.
-- Modo de razonamiento explícito (thinking mode): no disponible.
-- Soporte de audio: no disponible.
+- Procesamiento de imágenes (pipeline `image-text-to-text`) mediante torre de visión en FP16.
+- Tool calling y function calling a través del protocolo MCP de Hanzo, con formato de etiquetas `<tool_call>`.
+- Comportamiento agéntico orientado a flujos multi-paso, según la model card.
+- Identidad de modelo ajustada ("Zen 6 identity"), es decir, respuestas alineadas con la persona definida por el autor.
+- Capacidades multilingües: no disponible (no se declaran idiomas).
+- Modo thinking, audio u otras capacidades especiales: no disponible.
 
 ## Casos de uso
 
-- Asistente local en Mac: el modelo puede ejecutarse íntegramente en un Mac con chip M1/M2/M3/M4 Max gracias a su formato MLX 2-bit y su tamaño de repositorio de 1,2 GB, ofreciendo conversación multimodal sin conexión a servicios externos.
-- Automatización agéntica con MCP: al soportar `<tool_call>` y el protocolo MCP, puede integrarse en flujos donde el modelo decide invocar herramientas externas (consultas a APIs, operaciones sobre ficheros, etc.) desde un entorno local.
-- Análisis de imágenes en el borde: la torre de visión FP16 permite tareas de descripción de imágenes, extracción de información visual o respuesta a preguntas sobre capturas, útil en prototipos de accesibilidad o documentación automática.
-- Prototipado rápido de aplicaciones multimodales: el `quickstart.py` y el runtime incluido permiten validar ideas de producto en minutos en hardware Apple, sin necesidad de infraestructura GPU.
-- Chatbot de soporte en dispositivos de consumo: su tamaño reducido y licencia Apache-2.0 facilitan desplegar asistentes conversacionales en equipos de usuario final con requisitos de privacidad.
-- Investigación en cuantización extrema: el esquema ternario Hadamard STE QAT lo convierte en un caso de estudio para evaluar la degradación de calidad en modelos 2B cuantizados a 2 bits.
-- Educación y demos: adecuado para talleres y demostraciones de IA local en Apple Silicon por su facilidad de instalación y bajo peso.
+- Asistentes locales en Mac con privacidad estricta: al ocupar 2,4 GB y ejecutarse sobre MLX en Apple Silicon, el modelo permite desplegar un asistente conversacional multimodal sin enviar datos a la nube, adecuado para entornos con requisitos de confidencialidad.
+- Automatización de escritorio con MCP: gracias al soporte nativo de `<tool_call>` y del protocolo MCP, puede integrarse en agentes que invoquen herramientas locales (ficheros, terminal, APIs internas) desde un Mac de desarrollo.
+- Descripción y análisis de imágenes en local: la torre de visión en FP16 permite tareas de captioning, extracción de información de capturas de pantalla o clasificación visual sin depender de servicios externos.
+- Prototipado rápido de agentes multimodales: su tamaño reducido y licencia Apache-2.0 facilitan iterar sobre pipelines agénticos en equipos pequeños antes de escalar a modelos mayores.
+- Educación y experimentación con cuantización ternaria: el repositorio incluye el runtime Hadamard, lo que lo convierte en una referencia práctica para estudiar QAT ternario y su impacto en calidad.
+- Chatbot de soporte en aplicaciones de escritorio: con contexto conversacional y tool calling, puede gestionar consultas multi-turno e invocar funciones de la aplicación anfitriona.
+- Evaluación de modelos pequeños multimodales: útil como baseline ligero en comparativas de eficiencia en hardware de consumo.
 
 ## Benchmarks y rendimiento
 
@@ -55,27 +53,33 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/espacio estimado: el repositorio ocupa 1,2 GB, por lo que la inferencia cabe holgadamente en la memoria unificada de cualquier chip Apple Silicon moderno (8 GB o más recomendable).
-- GPU recomendadas: Apple M1, M2, M3 y M4 Max (según el autor); no se menciona soporte para GPU NVIDIA o AMD.
-- Cabe en GPU de consumo: sí, en el sentido de que está diseñado para Apple Silicon; no se indica compatibilidad con RTX 4090 u otras GPU dedicadas.
-- Opciones de despliegue: MLX con el runtime propio incluido (`runtime/vision_artifact.py`, `quickstart.py`); no se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles.
+- VRAM/unified memory estimada: el repositorio pesa 2,4 GB, por lo que la inferencia requiere del orden de 3-4 GB de memoria unificada, incluyendo overhead del runtime y de la torre de visión en FP16.
+- GPU recomendadas: Apple Silicon exclusivamente (M1, M2, M3, M4 Max según la model card), al estar en formato MLX nativo.
+- GPU de consumo: cabe holgadamente en cualquier Mac con 8 GB o más de memoria unificada; no está pensado para GPUs NVIDIA ni AMD por el formato MLX.
+- Opciones de despliegue: `mlx` con el runtime propio incluido en `runtime/`; el quickstart oficial usa `hf download` y `quickstart.py`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye modelos comparables ni datos de rendimiento que permitan una comparación rigurosa con alternativas de 2B multimodales o con otros modelos MLX.
+| Modelo | Parametros | Contexto | Multimodal | Cuantizacion | Licencia | Plataforma |
+|---|---|---|---|---|---|---|
+| Zen 6 Nano 2B MLX | 2,21 B | no disponible | Si (vision) | Ternaria 2-bit Hadamard | Apache-2.0 | Apple Silicon (MLX) |
+| Qwen2.5-VL 3B | 3 B aprox. | no disponible en esta ficha | Si | FP16/BF16, GGUF | Apache-2.0 (variantes) | Multiples (incl. MLX) |
+| SmolVLM 2B | 2 B aprox. | no disponible en esta ficha | Si | FP16, cuantizaciones comunitarias | Apache-2.0 | Multiples |
+| Gemma 3 1B | 1 B aprox. | no disponible en esta ficha | Si (vision) | FP16, GGUF | Gemma license | Multiples |
+
+Nota: los datos de los modelos comparables no provienen de la informacion proporcionada y deben verificarse en sus fichas oficiales antes de usarse en decisiones de produccion.
 
 ## Limitaciones y advertencias
 
-- Información pública muy escasa: no hay datos de entrenamiento, benchmarks, idiomas ni contexto, lo que impide evaluar su calidad de forma objetiva.
-- Cuantización agresiva a 2 bits: aunque el autor afirma preservar los parámetros exactos, la cuantización ternaria puede degradar el rendimiento en tareas de razonamiento complejo, matemáticas o código; no hay evidencia publicada al respecto.
-- Riesgo de alucinación: inherente a modelos de 2B parámetros; no se han publicado evaluaciones de fidelidad.
-- Sesgos: no se documentan sesgos conocidos ni procesos de mitigación.
-- Idiomas: no se especifican; se desconoce si el modelo está optimizado para castellano.
-- Licencia Apache-2.0: permite uso comercial, pero se recomienda revisar el fichero `NOTICE` para cumplir con las atribuciones de componentes upstream.
-- Dependencia de Apple Silicon: el formato MLX limita su uso a hardware Apple; no es portable a GPU NVIDIA/AMD sin conversión.
-- Madurez: repositorio con 0 descargas y 0 likes en el momento de la consulta, lo que sugiere ausencia de validación por la comunidad.
-- Contexto desconocido: sin longitud de contexto publicada, no se puede garantizar su idoneidad para tareas de contexto largo.
+- Información pública muy escasa: no se declaran idiomas, contexto, dataset ni benchmarks, lo que dificulta evaluar su calidad antes de desplegarlo.
+- La cuantización ternaria de 2 bits implica una pérdida de precisión frente a pesos FP16; el impacto real en tareas de razonamiento y visión no está cuantificado.
+- Riesgo de alucinación inherente a modelos pequeños (2,2 B), especialmente en dominios especializados y en tareas de visión con imágenes complejas.
+- Dependencia del runtime Hadamard incluido: no es un modelo MLX estándar y puede requerir ajustes si se integra en herramientas que esperan un cargador MLX convencional.
+- Plataforma restringida: solo Apple Silicon; no hay pesos GGUF ni soporte documentado para CUDA.
+- Licencia Apache-2.0 permite uso comercial, pero se debe conservar el fichero `NOTICE` con los avisos upstream.
+- El ajuste de "identidad Zen 6" puede sesgar las respuestas hacia la persona definida por el autor; conviene evaluar su comportamiento en dominios ajenos a esa identidad.
+- No se documenta el comportamiento del tool calling fuera del ecosistema MCP de Hanzo; la fiabilidad de las etiquetas `<tool_call>` en otros frameworks no está verificada.
 
 ## Enlaces
 

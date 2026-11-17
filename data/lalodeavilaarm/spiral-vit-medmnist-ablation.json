@@ -16,6 +16,7 @@
     "vision-transformer",
     "medmnist",
     "image-classification",
+    "doi:10.57967/hf/11415",
     "license:mit",
     "region:us"
   ],

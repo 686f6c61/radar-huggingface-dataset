@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 496,
+  "downloads_30d": 478,
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",
@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Войти в электронную почту Mail — надежный почтовый клиент",
-      "url": "https://account.mail.ru/login?page=https",
-      "snippet": "Войти в почту Mail. Вы можете зайти в свой аккаунт используя пароль, QR-код, VK ID или свой профиль на Госуслугах"
-    },
-    {
-      "title": "zxcd1 (bi) - Hugging Face",
-      "url": "https://huggingface.co/zxcd1",
-      "snippet": "Sort: Recently updated. zxcd1/zc_model. Text Generation • 2B • Updated Aug 6, 2025 • 6. zxcd1/test_model. Text Generation • Updated Apr 8, 2025 • 1"
-    },
-    {
-      "title": "Авторизация в почте Mail — бесплатный и безопасный …",
-      "url": "https://e.mail.ru/login",
-      "snippet": "Авторизоваться в аккаунте на Mail. Почта Mail - это фильтрация спама, быстрая отписка от рассылок, сортировка писем, …"
-    },
-    {
-      "title": "zxcd1 (bi) - Hugging Face",
-      "url": "https://huggingface.co/zxcd1/datasets",
-      "snippet": "Sort: Recently updated. zxcd1/customDataSet. Viewer • Updated Aug 16, 2025 • 144 • 2. zxcd1/twoNewData. Viewer • Updated Aug 6, 2025 • 40 • 3"
-    },
-    {
-      "title": "Облако Mail - Бесплатное облачное хранилище для передачи и …",
-      "url": "https://cloud.mail.ru/",
-      "snippet": "Память для всех ваших фото, видео и тёплых воспоминаний"
-    }
-  ]
+  "sources": []
 }

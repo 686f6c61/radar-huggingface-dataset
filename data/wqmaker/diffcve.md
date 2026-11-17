@@ -2,11 +2,11 @@
 
 ## Resumen
 
-DiffCVE es un modelo publicado en Hugging Face por el usuario wqmaker, acompañado de un paper en arXiv (2607.07195), una página de proyecto y un repositorio de código en GitHub. La model card es extremadamente escueta: se limita a indicar el nombre, los enlaces al paper, la página del proyecto y el código, y a especificar que los pesos se distribuyen bajo la licencia S-Lab License 1.0. No se documentan en la información disponible ni la arquitectura, ni el número de parámetros, ni el contexto, ni los datos de entrenamiento.
+DiffCVE es un modelo publicado en Hugging Face por el usuario wqmaker bajo la licencia S-Lab License 1.0, con un repositorio de 9,7 GB de pesos. La model card es extremadamente escueta: se limita a enlazar el paper (arXiv 2607.07195), una pagina de proyecto y un repositorio de codigo en GitHub, sin describir arquitectura, tamano, contexto ni datos de entrenamiento. El pipeline declarado es "other", lo que indica que no se trata de un modelo de generacion de texto convencional ni de un pipeline estandar de Hugging Face (text-generation, image-text-to-text, etc.).
 
-El repositorio ocupa 9,7 GB, lo que sugiere pesos de un modelo de tamaño medio (del orden de varios miles de millones de parámetros en precisión completa o de decenas de miles de millones en cuantización), aunque este dato es una inferencia a partir del tamaño del repo y no una especificación confirmada. El identificador "DiffCVE" apunta a un modelo orientado a la detección o el análisis de vulnerabilidades (CVE) mediante difusión o modelos generativos, pero esta interpretación no está confirmada por la documentación disponible.
+Por el nombre y por los enlaces disponibles, DiffCVE parece orientarse a la deteccion o analisis de vulnerabilidades (CVE) mediante tecnicas de difusion, aunque esta interpretacion no esta confirmada por la informacion proporcionada. No hay datos publicos sobre parametros, longitud de contexto, idiomas soportados ni rendimiento en benchmarks.
 
-La relevancia del modelo radica en su posible aplicación a tareas de seguridad del software, un área donde los modelos de lenguaje están encontrando uso creciente. No obstante, la ausencia de documentación técnica en la model card limita seriamente cualquier evaluación rigurosa: para valorar su idoneidad en producción es imprescindible consultar el paper y el repositorio de código enlazados.
+La relevancia actual del modelo es limitada desde el punto de vista practico: cero descargas, cero likes, sin resultados de evaluacion publicados y con una licencia restrictiva de tipo "other" (S-Lab License 1.0) que condiciona el uso comercial. Cualquier evaluacion seria requiere consultar el paper y el repositorio de codigo referenciados.
 
 ## Especificaciones tecnicas
 
@@ -19,32 +19,31 @@ La relevancia del modelo radica en su posible aplicación a tareas de seguridad 
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | S-Lab License 1.0 (license: other) |
-| Formato de pesos | no disponible (repo de 9,7 GB) |
+| Formato de pesos | no disponible (repositorio de 9,7 GB) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura en la model card. El nombre del modelo y el contexto del paper (arXiv 2607.07195) sugieren un enfoque generativo basado en difusión aplicado a datos de vulnerabilidades, pero no hay confirmación documental en la información proporcionada. Tampoco se detallan el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de alineación como RLHF o DPO.
+No se ha publicado informacion sobre la arquitectura en la model card ni en los metadatos de Hugging Face. El nombre "DiffCVE" sugiere un enfoque basado en modelos de difusion aplicado a vulnerabilidades (CVE), pero no hay confirmacion tecnica en la informacion disponible. Tampoco se detallan el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o ajuste supervisado.
 
-El tamaño del repositorio (9,7 GB) es el único dato cuantitativo disponible sobre el modelo, y no permite determinar de forma fiable el número de parámetros sin conocer el formato y la precisión de los pesos. Cualquier afirmación sobre innovaciones técnicas (atención lineal, decodificación especulativa, mezcla de expertos) sería especulativa y no se incluye.
+El unico dato estructural verificable es el tamano del repositorio (9,7 GB), compatible con pesos en precision media de un modelo de varios miles de millones de parametros o con un conjunto de pesos de difusion, pero sin poder determinar la cifra exacta. Se desconoce igualmente si incorpora innovaciones como atencion lineal, decodificacion especulativa o arquitecturas hibridas.
 
 ## Capacidades
 
-- No se documentan capacidades específicas en la model card.
-- No hay información sobre generación de texto, razonamiento, código o matemáticas.
+- No se documentan capacidades concretas en la model card.
+- No hay evidencia de soporte de generacion de texto, razonamiento, codigo o matematicas.
 - No se confirma soporte de tool calling ni function calling.
 - No se confirma soporte de agentes ni razonamiento multi-paso.
-- No se confirma capacidad multilingüe.
-- No se confirman modos especiales (thinking mode, visión, audio).
-- Por el nombre y el contexto del paper, es plausible que esté orientado al análisis de vulnerabilidades (CVE), pero esta capacidad no está verificada en la documentación disponible.
+- No se detallan capacidades multilingues ni idiomas cubiertos.
+- El pipeline declarado ("other") sugiere una tarea especializada no estandar, presumiblemente relacionada con analisis de vulnerabilidades, sin confirmacion oficial.
 
 ## Casos de uso
 
-- Análisis de vulnerabilidades de software: si el modelo está efectivamente orientado a CVE (como sugiere el nombre), podría emplearse para clasificar, resumir o priorizar informes de vulnerabilidades; requiere validación contra el paper y el código antes de cualquier uso real.
-- Asistencia a equipos de seguridad: integración en flujos de triaje de alertas, siempre que se confirme su comportamiento mediante evaluación propia, dado que no hay benchmarks publicados.
-- Investigación académica: reproducción de los resultados del paper arXiv 2607.07195 usando los pesos y el código del repositorio oficial.
-- Experimentación con modelos generativos aplicados a datos de seguridad: el modelo puede servir como base para fine-tuning en dominios específicos, sujeto a los términos de la S-Lab License 1.0.
-- Evaluación comparativa interna: incluir el modelo en baterías de pruebas propias frente a alternativas documentadas, dada la falta de datos públicos de rendimiento.
-- Docencia y formación: uso en entornos controlados para ilustrar técnicas de modelado aplicadas a seguridad del software, con las cautelas propias de un modelo sin documentación técnica pública.
+- Analisis de vulnerabilidades (CVE): si el modelo cumple lo que su nombre sugiere, podria emplearse para clasificar, priorizar o describir vulnerabilidades a partir de textos de CVE, aunque esta aplicacion requiere validacion contra el paper.
+- Investigacion academica en seguridad: util como referencia reproducible para experimentos de difusion aplicada a datos de seguridad, dado que se publican codigo y paper.
+- Reproduccion de resultados: el repositorio de GitHub y el paper permiten replicar los experimentos del autor en entornos de investigacion.
+- Evaluacion comparativa de metodos de difusion: puede servir como linea base en estudios sobre modelos generativos aplicados a dominios tecnicos.
+- Prototipado interno en entornos controlados: solo si la licencia S-Lab 1.0 lo permite para el caso concreto, lo que exige revision legal previa.
+- Docencia y formacion: uso en cursos de seguridad o de modelos generativos para ilustrar pipelines especializados, siempre que la licencia lo autorice.
 
 ## Benchmarks y rendimiento
 
@@ -52,30 +51,31 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible; depende del número de parámetros y la precisión, datos no publicados.
+- VRAM estimada para inferencia: no disponible; el tamano del repositorio (9,7 GB) da una cota inferior orientativa, pero se desconoce la arquitectura y el regimen de precision.
 - GPU recomendadas: no disponible.
-- Viabilidad en GPU de consumo: no determinable con la información disponible; el tamaño del repo (9,7 GB) sugiere que podría caber en GPUs con 16-24 GB de VRAM en cuantizaciones de 8 o 4 bits, pero es una estimación no confirmada.
-- Opciones de despliegue: no disponible (no se especifica compatibilidad con vLLM, llama.cpp, Ollama o TGI).
-- Latencia y throughput: no disponible.
+- Compatibilidad con GPU de consumo: no confirmada; 9,7 GB de pesos podrian caber en GPUs con 12-16 GB de VRAM si la arquitectura lo permite, pero no hay datos que lo verifiquen.
+- Opciones de despliegue: no disponible (no se confirma compatibilidad con vLLM, llama.cpp, Ollama ni TGI).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. La ausencia de especificaciones técnicas (parámetros, contexto, benchmarks) impide establecer una comparación fundamentada con modelos de la misma categoría.
+No disponible. No se conocen modelos comparables de la misma categoria a partir de la informacion proporcionada, y la falta de datos de arquitectura y rendimiento impide establecer una comparacion rigurosa.
 
 ## Limitaciones y advertencias
 
-- Documentación mínima: la model card no describe arquitectura, entrenamiento, capacidades ni limitaciones, lo que impide una evaluación rigurosa previa al despliegue.
-- Sesgos conocidos: no documentados; se desconoce la composición del dataset de entrenamiento.
-- Riesgo de alucinación: no evaluado; sin benchmarks ni pruebas publicadas no puede estimarse.
-- Limitaciones de contexto e idioma: no disponibles.
-- Licencia: S-Lab License 1.0 (license: other); es imprescindible revisar el texto completo en el repositorio antes de cualquier uso comercial, ya que las licencias "other" suelen incluir restricciones específicas.
-- Producción: no se recomienda su uso en entornos productivos sin una evaluación propia previa y la revisión del paper y del código asociados.
-- Fecha de creación del repositorio (2026-11-09) y número de descargas (0) indican que se trata de una publicación muy reciente y sin adopción verificable.
+- Ausencia total de documentacion tecnica en la model card: no se puede verificar arquitectura, tamano ni rendimiento.
+- Cero descargas y cero likes: no hay evidencia de uso ni validacion por parte de la comunidad.
+- Licencia S-Lab License 1.0: licencia no estandar que requiere revision legal antes de cualquier uso comercial.
+- Riesgo de alucinacion y sesgos: no evaluable sin datos de entrenamiento ni benchmarks.
+- Idiomas soportados desconocidos: no se puede garantizar calidad en castellano ni en otros idiomas.
+- Contexto maximo desconocido: limita el diseno de aplicaciones con entradas largas.
+- El pipeline "other" implica que las herramientas estandar de Hugging Face pueden no cargar el modelo directamente.
+- Fecha de creacion (2026-11-09) y actualizacion (2026-11-14) muy recientes: posible inmadurez del artefacto.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/wqmaker/DiffCVE
 - Paper: https://arxiv.org/abs/2607.07195
-- Página del proyecto: https://wqmaker.github.io/projects/DiffCVE/
-- Código: https://github.com/wqmaker/DiffCVE
+- Pagina del proyecto: https://wqmaker.github.io/projects/DiffCVE/
+- Codigo: https://github.com/wqmaker/DiffCVE
 - Licencia: https://huggingface.co/wqmaker/DiffCVE/blob/main/LICENSE.txt

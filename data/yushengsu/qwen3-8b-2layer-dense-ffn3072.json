@@ -44,11 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Unlocking LoRA MoE RL for Qwen3.5 - Osmosis.ai",
-      "url": "https://osmosis.ai/blogs/unlocking-lora-moe-rl-for-qwen3-5",
-      "snippet": "03.04.2026 ... In order to train large MoE models with RL, you need two systems: a training cluster and an inference cluster. Our stack pairs Megatron-LM ..."
-    }
-  ]
+  "sources": []
 }

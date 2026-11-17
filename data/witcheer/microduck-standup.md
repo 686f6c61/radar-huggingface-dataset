@@ -2,120 +2,124 @@
 
 ## Resumen
 
-`witcheer/microduck-standup` es una política de control por refuerzo (reinforcement learning) para el robot cuadrúpedo de código abierto Microduck, desarrollado por el usuario witcheer y publicado en Hugging Face con librería ONNX. No es un modelo de lenguaje: es un controlador entrenado en simulación que ejecuta una habilidad concreta, levantarse y mantenerse de pie ("stand up"), a partir de un vector de observación de 61 dimensiones y emitiendo 14 acciones a 50 Hz. Está pensado para ejecutarse en el robot real mediante la herramienta de despliegue `robotctl`.
+Microduck-standup es una política de control entrenada por refuerzo para el robot cuadrúpedo de bajo coste Microduck de Pollen Robotics. No es un modelo de lenguaje: es un controlador episódico que recibe una observación de 61 dimensiones y emite 14 acciones a 50 Hz, con una duración fija de 6,0 segundos, cuyo objetivo es que el robot se levante y termine en una postura de pie. El autor es el usuario de Hugging Face `witcheer`, y la política se entrena contra el repositorio `pollen-robotics/microduck_rl`.
 
-La política se entrenó en el entorno Mjlab con el escenario "Mjlab-StandUp-Flat-MicroDuck", durante 25.000 iteraciones (15.000 del autor original más una extensión de 10.000) con 4.096 entornos paralelos, lo que supuso 407 minutos de cómputo en una única RTX 5090. La política es episódica: cada rollout dura 6,0 segundos y devuelve al robot a la postura de pie. Se documenta que funciona al levantarse desde la posición de sentado y desde boca abajo, pero que falla al partir de boca arriba, donde se queda congelada a medio girar (0 de 2 intentos).
+La versión actual (v2) es un ajuste fino de la v1 sobre el mismo entorno de simulación, pero añadiendo ±1 grado de holgura mecánica (backlash) en cada servo, para acercar la simulación a las imperfecciones reales del hardware. Se distribuye como un archivo ONNX con el normalizador de observaciones integrado, junto con un manifiesto compatible con el esquema 2 del daemon de políticas de Microduck, y se instala con el comando `robotctl policy add`.
 
-Su relevancia es acotada pero clara en el ámbito de la robótica open source: sirve como pieza reutilizable para el Microduck, como referencia metodológica de entrenamiento RL en Mjlab y como artefacto versionado con un manifiesto de política (schema 2) que permite instalarlo de forma declarativa. El repositorio tiene 0 descargas y 0 likes, tamaño de 0,0 GB y no declara licencia, por lo que debe tratarse como un artefacto experimental, no como una dependencia de producción.
+Su relevancia es doble: por un lado, demuestra que una política de levantamiento entrenada en simulación tolera la holgura de engranajes sin degradarse de forma medible; por otro, expone con transparencia sus límites (no se levanta boca arriba y no se ha validado en hardware real), lo que la convierte en un punto de partida reproducible para quien quiera entrenar habilidades similares con `microduck_rl` y MuJoCo/MJLab.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (red de política RL; no se documenta la topología de la red) |
+| Arquitectura | Política de reinforcement learning exportada a ONNX (arquitectura de red no detallada en la model card) |
 | Parametros totales | no disponible |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no aplica: entrada de 61 dimensiones (observación) y episodios de 6,0 s a 50 Hz |
-| Tipos de cuantizacion | no disponible (se distribuye en ONNX; no se declara precisión numérica) |
-| Idiomas soportados | no aplica (no es un modelo de lenguaje) |
-| Licencia | no disponible |
-| Formato de pesos | ONNX (`policy.onnx`) más `manifest.json` (schema 2 del microduck policy manifest) |
-| Tipo de modelo | política de reinforcement learning (pipeline: reinforcement-learning) |
-| Dimensiones de observación | 61 |
-| Dimensiones de acción | 14 |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica; episodio fijo de 6,0 s a 50 Hz |
+| Tipos de cuantizacion | no disponible (se distribuye ONNX; no se documentan variantes cuantizadas) |
+| Idiomas soportados | no aplica (modelo de robótica, sin interfaz de lenguaje) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | ONNX (`policy.onnx`) + `manifest.json` (esquema 2 del manifiesto de políticas de microduck) |
+
+Especificaciones adicionales relevantes:
+
+| Parametro | Valor |
+|---|---|
+| Dimension de observacion | 61 |
+| Dimension de accion | 14 |
 | Frecuencia de control | 50 Hz |
-| Duración del episodio | 6,0 s |
-| Escenario de entrenamiento | Mjlab-StandUp-Flat-MicroDuck (solo simulación) |
-| Iteraciones de entrenamiento | 25.000 (15.000 originales + 10.000 de extensión) |
-| Entornos paralelos | 4.096 |
-| Tiempo de entrenamiento declarado | 407 minutos en una RTX 5090 |
-| Tamaño del repositorio | 0,0 GB |
-| Descargas / likes | 0 / 0 |
-| Fecha de creación | 2026-09-21 |
-| Última actualización | 2026-09-21 |
+| Duracion del episodio | 6,0 s |
+| Entorno de entrenamiento | `Mjlab-StandUp-Flat-Backlash-MicroDuck` (±1° de holgura por servo) |
+| Entornos paralelos | 4096 |
+| Iteraciones totales | 28 000 (25 000 de v1 + 3 000 de ajuste con holgura) |
+| Tiempo de entrenamiento | 63 min en una RTX 5090 (1,28 s/it) para el ajuste fino |
+| Tamano del repositorio | 0,0 GB (redondeado; el artefacto principal es un ONNX pequeno) |
+| Descargas | 67 |
+| Likes | 0 |
 
 ## Arquitectura y entrenamiento
 
-No se publica información sobre la arquitectura de la red (número de capas, ancho, tipo de capa ni función de activación). Lo único conocido es la interfaz del modelo: recibe un vector de observación de 61 dimensiones y produce 14 acciones a 50 Hz, en formato ONNX con el normalizador de observaciones integrado en el propio `policy.onnx`, de modo que el consumidor debe alimentar observaciones crudas sin preprocesar. El `manifest.json` asociado sigue el esquema 2 del manifiesto de políticas de Microduck definido en `docs/policy-manifest.md` del repositorio del daemon.
+La model card no describe la topologia interna de la red (numero de capas, anchura, tipo de encoder). Lo que sí se documenta es el pipeline: la política se entrena con `pollen-robotics/microduck_rl` (rama `develop`, commit `53b8971b6`) sobre el entorno `Mjlab-StandUp-Flat-Backlash-MicroDuck`, un escenario de MJLab/MuJoCo en el que cada servo introduce ±1 grado de juego mecánico. La observación de 61 dimensiones incluye, según los criterios de evaluación descritos, altura del tronco y gravedad en el marco del cuerpo; las 14 acciones corresponden a las articulaciones del robot. El normalizador de observaciones está embebido en el ONNX, de modo que el consumidor debe alimentar observaciones en crudo.
 
-El entrenamiento se realizó con el repositorio `pollen-robotics/microduck_rl` (rama `develop`, commit `53b8971b6`) sobre la tarea "Mjlab-StandUp-Flat-MicroDuck". Se ejecutaron 25.000 iteraciones con 4.096 entornos paralelos, lo que consumió 407 minutos en una única RTX 5090. La model card indica explícitamente que se trata de una política episódica de 6,0 s que devuelve el robot a una postura de pie. No se documentan detalles del algoritmo de RL empleado, del diseño de la función de recompensa, de las técnicas de domain randomization ni del pipeline de sim-to-real, más allá de la declaración de que el modelo solo ha sido validado en simulación.
+El entrenamiento de v2 parte de los pesos de v1 (25 000 iteraciones sobre `Mjlab-StandUp-Flat-MicroDuck` sin holgura, 407 min en una RTX 5090) y añade 3 000 iteraciones con la holgura activada, con 4096 entornos en paralelo durante 63 minutos. La recompensa media se mantuvo entre 30,4 y 39,2 por iteración desde la iteración 25 100 hasta el final (35,07 en la 28 000), una meseta plana que el autor interpreta como ausencia de mejora medible. El checkout de entrenamiento tenía cambios locales (parches de otras tareas y registro de una tarea fork), aunque la tarea StandUp con backlash no estaba modificada respecto al commit indicado. No se documenta uso de RLHF, DPO ni datos supervisados: es aprendizaje por refuerzo puro en simulación.
 
 ## Capacidades
 
-- Control de locomoción de baja dimensionalidad: genera 14 acciones de control a 50 Hz a partir de 61 observaciones, durante episodios de 6,0 s.
-- Levantarse desde la posición de sentado y mantener la postura de pie.
-- Levantarse desde la posición de boca abajo (prono) y mantener la postura de pie.
-- Retorno autónomo a una postura erguida al final del episodio (comportamiento episódico autocontenido).
-- Normalización de observaciones integrada: acepta observaciones crudas directamente, sin capa de preprocesado externa.
-- Despliegue declarativo mediante `robotctl`, con instalación por identificador de repositorio.
-- No dispone de tool calling, function calling, capacidades de agente ni razonamiento multi-paso: no es un modelo de lenguaje.
-- No dispone de capacidades multilingües, de visión, de audio ni de modo "thinking".
-- Comportamiento incompleto conocido: desde la posición de boca arriba (supino) no logra darse la vuelta y se queda congelado a medio giro.
+- Levantarse desde posición boca abajo (face down): 3 de 3 en simulación con holgura, terminando de pie a 108–118 mm de altura del tronco.
+- Levantarse desde sentado (sitting): 3 de 3, alcanzando la postura de pie en 0,3 s.
+- Mantener una postura de pie desde un inicio ya erguido (standing start): 3 de 3, sin caídas en tomas de 12 s.
+- Retorno autónomo a postura erguida dentro de un episodio fijo de 6,0 s a 50 Hz.
+- Tolerancia a holgura mecánica de ±1 grado por servo sin degradación medible en las pruebas realizadas.
+- Ejecución en robot mediante el comando `robotctl robot do standup` y el daemon de políticas de Microduck.
+- No soporta tool calling, function calling, razonamiento multi-step, visión, audio ni capacidades multilingües: es un controlador motor episódico.
 
 ## Casos de uso
 
-- Recuperación autónoma tras caída en simulación: la política puede invocarse cuando el robot queda en posición de sentado o prono para devolverlo a la postura de pie, integrándose como habilidad de recuperación dentro de un controlador de mayor nivel.
-- Investigación en aprendizaje por refuerzo: sirve como caso de estudio reproducible de una tarea de get-up entrenada con Mjlab, con hiperparámetros declarados (25.000 iteraciones, 4.096 entornos) y una referencia de coste computacional (407 minutos en RTX 5090).
-- Punto de partida para reentrenamiento o fine-tuning: al estar vinculada a un repositorio de entrenamiento concreto (`pollen-robotics/microduck_rl`, rama `develop`), es un candidato natural para extender el entrenamiento y corregir el fallo desde decúbito supino.
-- Prueba de integración del stack de despliegue: el comando `robotctl policy add standup witcheer/microduck-standup` seguido de `robotctl robot do standup` permite validar de extremo a extremo la cadena de instalación y ejecución de políticas del daemon.
-- Evaluación comparativa de algoritmos de locomoción en el Microduck: al fijar el robot, el espacio de observación y el de acciones, la política actúa como línea base frente a otras políticas del mismo ecosistema.
-- Docencia y demostraciones de robótica: puede reproducirse en simulación para ilustrar el ciclo observación-acción a 50 Hz, el efecto de la postura inicial en el éxito de la tarea y los límites del entrenamiento en simulación.
-- Estudio del gap sim-to-real: la model card declara que el modelo no se ha probado en un Microduck físico, por lo que constituye un caso de prueba directo para medir la transferencia de una política entrenada en simulación plana.
-- Prueba de robustez ante condiciones iniciales adversas: el fallo documentado desde boca arriba (0 de 2 intentos) es un escenario de regresión útil para validar mejoras posteriores del entrenamiento.
-- Despliegue en robótica educativa de bajo coste: si se confirma su funcionamiento en hardware real, la política podría ejecutarse en el propio robot para dotarlo de una habilidad básica de autonomía postural.
+- Recuperación autónoma tras caída en demostraciones de robótica cuadrúpeda de bajo coste: la política cubre los escenarios de partida boca abajo, sentado y de pie, que son los estados en los que el Microduck acaba tras una manipulación o un tropiezo, con un episodio acotado de 6 s que simplifica la integración en el bucle de control.
+- Benchmark reproducible de robustez frente a holgura mecánica: al existir v1 (sin backlash) y v2 (con ±1°), se puede comparar en el mismo simulador el efecto de imperfecciones de engranajes en una tarea de locomoción, usando los logs publicados en `witcheer/microduck-skill-tree`.
+- Base para ajuste fino de nuevas habilidades: los pesos de v1 y v2 sirven como inicialización para tareas derivadas en `microduck_rl`, reduciendo las iteraciones necesarias frente a entrenar desde cero.
+- Validación de pipelines sim-a-real: la política es un caso de prueba para medir la brecha entre MJLab y el hardware, ya que el autor declara explícitamente que no se ha probado en un Microduck físico.
+- Docencia y prototipado en cursos de RL aplicado a robótica: el flujo completo (entorno MJLab, 4096 entornos paralelos, exportación ONNX con normalizador embebido, manifiesto de política) es un ejemplo compacto y de código abierto de un ciclo entrenamiento-despliegue.
+- Integración en el daemon `robotctl` para secuencias de arranque: la política puede encadenarse tras una secuencia de inicialización para dejar al robot en postura operativa antes de ejecutar otras habilidades de la skill tree.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks numéricos en la información disponible (no hay MMLU, HumanEval, GSM8K ni métricas de retorno, tasa de éxito agregada o error de seguimiento). La única evaluación disponible es cualitativa y procede de la model card:
+Resultados en simulación publicados por el autor (v2 frente a v1, ambos en `Mjlab-StandUp-Flat-Backlash-MicroDuck` con ±1° de holgura, tomas de 12 s). Un levantamiento cuenta si el tronco alcanza 105 mm, lo mantiene 1 s y sigue ahí al final de la toma:
 
-| Escenario evaluado | Entorno | Resultado declarado | Intentos |
+| Escenario de partida | v2 (con backlash) | v1 (en sim con backlash) | v1 (en su sim sin backlash) |
 |---|---|---|---|
-| Levantarse desde sentado y mantener de pie | Mjlab-StandUp-Flat-MicroDuck (simulación) | Éxito | no se especifica |
-| Levantarse desde boca abajo y mantener de pie | Mjlab-StandUp-Flat-MicroDuck (simulación) | Éxito | no se especifica |
-| Levantarse desde boca arriba | Mjlab-StandUp-Flat-MicroDuck (simulación) | Fracaso: se queda congelado a medio girar | 2 |
-| Ejecución en robot Microduck real | Hardware físico | No probado | 0 |
+| Boca abajo | 3/3 | 3/3 | 2/2 |
+| Sentado | 3/3 | 3/3 | 2/2 |
+| De pie | 3/3 | 3/3 | 2/2 |
+| Boca arriba | 0/3 | 0/3 | 0/2 |
 
-Datos de entrenamiento declarados: 25.000 iteraciones (15.000 más 10.000 de extensión), 4.096 entornos, 407 minutos en una RTX 5090.
+Detalles medidos:
+
+| Metrica | Valor |
+|---|---|
+| Altura del tronco al terminar (boca abajo) | 108–118 mm |
+| Inclinacion final (boca abajo) | 31–37° hacia delante |
+| Altura del tronco en el fallo boca arriba | 59–60 mm (medio girado, congelado) |
+| Tiempo hasta de pie desde sentado | 0,3 s |
+| Recompensa media final del ajuste | 35,07 en la iteracion 28 000 (rango 30,4–39,2 desde la 25 100) |
+| Coste del ajuste fino | 63 min, 1,28 s/it, 4096 entornos, RTX 5090 |
+
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros), ya que no aplican a este tipo de modelo. No hay datos de latencia ni throughput en hardware real.
 
 ## Requisitos de hardware
 
-- Entrenamiento: una única RTX 5090, 407 minutos, 4.096 entornos paralelos. No se documentan requisitos de memoria ni de CPU/RAM del host.
-- VRAM para inferencia: no disponible. El repositorio ocupa 0,0 GB y el artefacto es un único `policy.onnx`, por lo que el peso del fichero es inferior a la precisión de redondeo del dato publicado (menos de ~50 MB, sin cifra exacta).
-- GPU recomendadas: no disponibles para inferencia. Para reentrenamiento, la referencia publicada es la RTX 5090.
-- Compatibilidad con GPU de consumo: no confirmada. Dado el perfil declarado (entrada de 61 dimensiones, salida de 14 acciones, 50 Hz) y el tamaño del repositorio, es plausible su ejecución en CPU o en hardware embebido, pero no hay dato publicado que lo confirme.
-- Opciones de despliegue: `robotctl` (daemon de Microduck) para el robot; cualquier runtime de inferencia ONNX para evaluaciones fuera del robot. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
-- Latencia y throughput: no disponibles. Se conoce únicamente la frecuencia objetivo de control, 50 Hz (periodo de 20 ms), y la duración de episodio, 6,0 s.
-- Requisitos del robot: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: no disponible de forma explícita; por el tamano del repositorio (0,0 GB redondeado) y la naturaleza de una política de 61 entradas y 14 salidas, la huella es minima y cabe en cualquier GPU consumer, e incluso es plausible su ejecución en CPU con ONNX Runtime.
+- GPU de entrenamiento documentada: una RTX 5090 para el ajuste fino (63 min, 4096 entornos). El entrenamiento completo de v1 requirió 407 min en la misma GPU.
+- GPU recomendadas para entrenamiento: RTX 5090 (validada por el autor); no se documentan A100 ni H100.
+- Cabe en GPU consumer: sí, según el tamano del artefacto y las cifras de entrenamiento publicadas.
+- Opciones de despliegue: ONNX Runtime (formato nativo del artefacto), o el daemon `robotctl` de Microduck mediante `sudo robotctl policy add standup witcheer/microduck-standup`. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput: no disponibles. La política opera a 50 Hz por requisito del entorno, pero no se publican mediciones de tiempo de inferencia en robot ni en simulador.
 
 ## Comparativa con modelos similares
 
-| Modelo | Categoría | Observaciones / acciones | Duración | Licencia | Rendimiento declarado |
-|---|---|---|---|---|---|
-| witcheer/microduck-standup | Política RL para Microduck (ONNX) | 61 / 14, a 50 Hz | 6,0 s por episodio | no disponible | Se levanta desde sentado y desde boca abajo; falla desde boca arriba; no probado en hardware real |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+No se dispone de información sobre otras políticas de levantamiento publicadas para el Microduck ni sobre modelos comparables de la misma categoría (controladores RL episódicos para cuadrúpedos de bajo coste) en la información proporcionada. La comparación más directa disponible es interna al propio repositorio:
 
-No se dispone de información sobre otras políticas del mismo robot, del mismo ecosistema (`microduck_rl`) o de tareas equivalentes de get-up en cuadrúpedos de tamaño similar, por lo que no es posible establecer una comparación cuantitativa ni de licencias.
+| Version | Entrenamiento | Holgura en sim | Boca abajo | Sentado | De pie | Boca arriba |
+|---|---|---|---|---|---|---|
+| v1 | 25 000 iteraciones, 407 min | No | 2/2 | 2/2 | 2/2 | 0/2 |
+| v2 | 25 000 + 3 000 iteraciones, 63 min el ajuste | ±1° por servo | 3/3 | 3/3 | 3/3 | 0/3 |
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no aplica en el sentido de sesgos de datos lingüísticos; el comportamiento está sesgado por el escenario de entrenamiento, limitado a terreno plano ("Flat") y a la tarea concreta de levantarse.
-- Alucinación: no aplica como tal, pero sí existe el riesgo de comportamientos fuera de distribución ante observaciones no vistas durante el entrenamiento, sin que la política los detecte o los señale.
-- Fracaso documentado: partiendo de boca arriba se queda congelada a medio girar, con 0 de 2 intentos correctos. No debe asumirse una capacidad general de recuperación desde cualquier postura.
-- No validado en hardware real: la model card indica explícitamente que no se ha probado en un Microduck físico. El gap sim-to-real es, por tanto, completamente desconocido.
-- Cobertura limitada de la tarea: política episódica y de habilidad única (6,0 s); no incorpora navegación, percepción visual ni planificación.
-- Idiomas: no aplica, no es un modelo de lenguaje; no procesa texto.
-- Restricciones de licencia: la licencia no está declarada. Sin licencia explícita, no puede asumirse permiso para uso comercial, redistribución o modificación; es un riesgo legal relevante para cualquier integración en producto.
-- Ausencia de tracción: 0 descargas y 0 likes, repositorio de 0,0 GB y sin señales de mantenimiento posterior a la fecha de creación (2026-09-21), con última actualización tres segundos después de la creación.
-- Ausencia de documentación técnica: no se publican arquitectura de red, precisión numérica del ONNX, algoritmo de RL, función de recompensa, semilla ni criterios de convergencia, lo que dificulta la reproducibilidad.
-- Metadatos incompletos: los campos de idioma y licencia aparecen vacíos en la ficha de Hugging Face.
-- Fecha de publicación anómala (2026-09-21), posterior a la fecha de referencia habitual; conviene verificar la vigencia de los enlaces y del repositorio asociado antes de reutilizarlo.
-- Advertencia de despliegue: los comandos de la model card requieren `sudo` y actúan sobre el robot; deben ejecutarse únicamente en un entorno controlado y con el robot asegurado.
+- No se ha probado en un Microduck físico: todos los resultados son de simulación, por lo que la brecha sim-a-real es desconocida.
+- No se levanta desde posición boca arriba: 0 de 3 en simulación, quedándose medio girado con el tronco a 59–60 mm.
+- Postura final con inclinación hacia delante de 31–37° al levantarse desde boca abajo, heredada de v1; puede no ser una postura operativa estable para tareas posteriores.
+- El ajuste fino con holgura no produjo mejoras medibles: la recompensa se mantuvo plana, por lo que el beneficio de v2 frente a v1 en hardware real está por demostrar.
+- El checkout de entrenamiento contenía cambios locales no commiteados (parches de otras tareas y registro de una tarea fork), lo que afecta a la reproducibilidad exacta del entrenamiento, aunque la tarea StandUp con backlash no estaba modificada.
+- La arquitectura de red no está documentada, lo que dificulta auditar el modelo o modificarlo más allá del ajuste fino.
+- Sin datos sobre sesgos, alucinación o comportamiento fuera de distribución más allá de los cuatro escenarios de partida evaluados; no se han publicado pruebas con perturbaciones externas, terrenos irregulares o empujes.
+- Licencia Apache-2.0, la misma que `microduck` y `microduck_rl`: permite uso comercial y modificaciones, con obligación de conservar el aviso de licencia y el archivo NOTICE si existe.
+- El episodio es fijo de 6,0 s: no es una política continua, por lo que no debe usarse como controlador permanente de marcha.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/witcheer/microduck-standup
+- Dataset con logs de entrenamiento, curva de recompensa y cola de trabajos: https://huggingface.co/datasets/witcheer/microduck-skill-tree (carpeta `level-02b-standup-gear-play`)
 - Repositorio del robot Microduck: https://github.com/pollen-robotics/microduck
-- Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl` (rama `develop`, commit `53b8971b6`)
-- Documento del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon de Microduck (ruta citada en la model card; no se proporciona URL directa)
-- Paper, blog o demo asociados: no disponibles
-- Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a foros de correo electrónico sin relación con robótica ni con aprendizaje por refuerzo.
+- Repositorio de entrenamiento RL: https://github.com/pollen-robotics/microduck_rl (rama `develop`, commit `53b8971b6`)
+- Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon de Microduck (no se proporciona URL directa)

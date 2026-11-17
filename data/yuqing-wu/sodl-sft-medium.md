@@ -2,49 +2,50 @@
 
 ## Resumen
 
-`yuqing-wu/sodl-sft-medium` es un ajuste fino supervisado (SFT) del modelo base Qwen/Qwen3-1.7B-Base, publicado por el usuario yuqing-wu en Hugging Face. El modelo se ha entrenado con la librería TRL (Transformers Reinforcement Learning) de Hugging Face y se distribuye en formato safetensors compatible con la librería transformers. Por su nombre y procedencia, parece tratarse de un experimento de ajuste fino dentro de un proyecto de investigación o formación (posiblemente un trabajo académico o un ejercicio de un curso), más que de un modelo de producción con documentación completa.
+`sodl-sft-medium` es un ajuste fino supervisado (SFT) del modelo base Qwen/Qwen3-1.7B-Base, publicado por el usuario yuqing-wu en Hugging Face. Se trata de un modelo derivado de la familia Qwen3, concretamente de la variante base de 1.700 millones de parametros, entrenado con la libreria TRL (Transformers Reinforcement Learning) mediante la tecnica de Supervised Fine-Tuning. El modelo conserva la arquitectura transformer densa del original y esta pensado como un experimento de ajuste sobre el modelo base, presumiblemente para adaptarlo a un dominio o tarea concreta, aunque la model card no especifica cual.
 
-El modelo hereda la arquitectura y el tamaño del Qwen3-1.7B-Base, es decir, un transformer de aproximadamente 1.700 millones de parámetros, lo que lo sitúa en la categoría de modelos pequeños, aptos para inferencia en GPUs de consumo. Sin embargo, la model card publicada es extremadamente escasa: no incluye información sobre el conjunto de datos de entrenamiento, hiperparámetros, número de tokens vistos, resultados de evaluación ni licencia explícita. El repositorio ocupa 31 GB, un tamaño desproporcionado para un modelo de 1.7B parámetros en precisión completa (que rondaría los 3,4 GB en bf16), lo que sugiere que el repositorio puede contener múltiples checkpoints, estados del optimizador u otros artefactos de entrenamiento además de los pesos finales.
+La relevancia de este lanzamiento es limitada desde el punto de vista de producto: no hay informacion publica sobre el dataset de entrenamiento, los hiperparametros, los resultados de evaluacion ni la licencia de uso. El repositorio ocupa 41,3 GB, un tamano desproporcionado para un modelo de 1.700 millones de parametros en precision completa (que rondaria los 7 GB en bf16), lo que sugiere que el repositorio incluye multiples checkpoints, estados del optimizador u otros artefactos de entrenamiento ademas de los pesos finales.
 
-La relevancia de este modelo es limitada para uso general, dado que no hay benchmarks publicados ni una model card detallada que permita evaluar su calidad. Su interés principal radica en ser un ejemplo de ajuste fino con TRL sobre un modelo Qwen3 pequeño, útil para quienes quieran reproducir el proceso o estudiar la técnica de SFT aplicada a modelos de 1.7B parámetros.
+A pesar de la escasez de documentacion, el modelo es relevante como ejemplo de flujo de trabajo de SFT con TRL sobre la familia Qwen3 y como punto de partida para quien quiera reproducir o extender el ajuste. No obstante, su uso en produccion requeriria validacion adicional, ya que no se han publicado benchmarks, no se declara licencia y no se especifican los idiomas soportados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredada de Qwen/Qwen3-1.7B-Base) |
-| Parametros totales | Aproximadamente 1.700 millones (1.7B), segun el modelo base |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible en la informacion proporcionada (el modelo base Qwen3-1.7B-Base soporta contextos largos, pero no se confirma para este ajuste) |
-| Tipos de cuantizacion | No disponible (solo se distribuyen pesos safetensors; no se mencionan GGUF, AWQ ni GPTQ) |
-| Idiomas soportados | No disponible |
-| Licencia | No disponible (la model card indica "licence: license" sin especificar) |
-| Formato de pesos | safetensors |
+| Arquitectura | Transformer denso (derivado de Qwen3-1.7B-Base) |
+| Parametros totales | 1.700 millones (modelo base) |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible (heredada del base Qwen3-1.7B-Base; no confirmada en la model card) |
+| Tipos de cuantizacion | no disponible (el repo contiene safetensors; no se declaran variantes GGUF/AWQ/GPTQ) |
+| Idiomas soportados | no disponible |
+| Licencia | no disponible (la model card incluye el campo `licence: license` sin especificar) |
+| Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino supervisado (SFT) del Qwen/Qwen3-1.7B-Base, un transformer decoder-only de aproximadamente 1.7B parámetros. El entrenamiento se realizó con TRL 1.18.0, Transformers 5.20.2, PyTorch 2.14.0, Datasets 5.2.0 y Tokenizers 0.23.3. La model card no especifica el conjunto de datos utilizado, el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas adicionales como RLHF o DPO. Tampoco se detallan hiperparámetros como la tasa de aprendizaje, el tamaño de batch, el número de épocas o la estrategia de enmascaramiento de pérdida.
+El modelo es un ajuste fino supervisado del checkpoint Qwen/Qwen3-1.7B-Base, que pertenece a la familia Qwen3 de Alibaba. La arquitectura subyacente es un transformer denso decoder-only de aproximadamente 1.700 millones de parametros. El ajuste se realizo con TRL 1.18.0 sobre Transformers 5.20.2, PyTorch 2.14.0, Datasets 5.2.0 y Tokenizers 0.23.3. La model card indica explicitamente que el entrenamiento se hizo con SFT (Supervised Fine-Tuning), sin mencionar etapas posteriores de RLHF, DPO u otras tecnicas de alineacion.
 
-No se documenta ninguna innovación técnica destacable más allá del propio proceso de SFT con TRL. El tamaño del repositorio (31 GB) es notablemente superior al de los pesos del modelo base en bf16 (aproximadamente 3,4 GB), lo que sugiere la presencia de checkpoints intermedios, estados del optimizador u otros artefactos de entrenamiento que no se describen en la model card.
+No se proporciona informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, la longitud de las secuencias, la tasa de aprendizaje, el numero de epochs ni si se congelaron capas. Tampoco se documenta si se aplicaron tecnicas como LoRA, QLoRA o ajuste completo de parametros; el tamano del repositorio (41,3 GB) es compatible con un ajuste completo que incluye estados del optimizador o multiples checkpoints intermedios, pero no puede confirmarse. No se declara ninguna innovacion tecnica adicional (atencion lineal, decodificacion especulativa, modo thinking, etc.) mas alla de las que ya incorpora el modelo base Qwen3.
 
 ## Capacidades
 
-- Generación de texto: al estar basado en Qwen3-1.7B-Base, se espera que herede las capacidades generales de generación de texto del modelo base, aunque no se documentan evaluaciones específicas tras el ajuste.
-- Razonamiento y matemáticas: no disponible (no se han publicado resultados ni descripciones de capacidades específicas).
-- Generación de código: no disponible (no se documenta).
-- Tool calling / function calling: no disponible (no se menciona soporte explícito).
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible (no se especifican idiomas).
-- Capacidades especiales (modo thinking, visión, audio): no disponible; el modelo base Qwen3-1.7B-Base no es multimodal, pero no se confirma el comportamiento tras el ajuste.
+- Generacion de texto autoregresiva, heredada del modelo base Qwen3-1.7B-Base.
+- Razonamiento basico y respuesta a preguntas, sujeto a la calidad del ajuste SFT aplicado.
+- Generacion de codigo y matematicas basicas, en la medida en que el modelo base las soporte.
+- Soporte de conversacion multi-turno mediante el pipeline de text-generation de Transformers.
+- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que permite desplegarlo en Hugging Face Inference Endpoints.
+- Capacidades de tool calling, agentes o multi-step reasoning: no documentadas en la model card.
+- Capacidades multilingues: no documentadas; dependen del modelo base y no se confirman.
+- Capacidades especiales (vision, audio, thinking mode): no disponibles.
 
 ## Casos de uso
 
-- Experimentación académica con SFT: el modelo sirve como ejemplo reproducible de ajuste fino supervisado con TRL sobre un modelo Qwen3 de 1.7B, útil para cursos o trabajos de investigación que estudien técnicas de alineación.
-- Prototipado rápido de generación de texto en local: al ser un modelo de 1.7B parámetros, puede ejecutarse en GPUs de consumo para pruebas de concepto, siempre que se validen sus salidas, dado que no hay benchmarks publicados.
-- Base para nuevos ajustes finos: investigadores pueden partir de este checkpoint para aplicar DPO, RLHF u otras técnicas, comparando con el modelo base original.
-- Evaluación comparativa de pipelines de entrenamiento: permite comparar el efecto del SFT con TRL frente al modelo base en tareas controladas por el propio equipo.
-- Docencia y formación en IA: adecuado como ejemplo práctico de cómo se estructura un repositorio de modelo ajustado (safetensors, tags de TRL, model card generada automáticamente).
-- Investigación sobre artefactos de entrenamiento: el tamaño del repositorio (31 GB) puede interesar a quienes estudien la gestión de checkpoints y estados del optimizador en Hugging Face.
+- Prototipado rapido de asistentes conversacionales: el modelo puede cargarse con `pipeline("text-generation")` y `device_map="auto"` para probar respuestas multi-turno en entornos de desarrollo, aprovechando su tamano reducido para iterar rapido.
+- Experimentacion academica con SFT: sirve como referencia reproducible para estudiar el efecto del ajuste supervisado sobre Qwen3-1.7B-Base con TRL, comparando el comportamiento antes y despues del ajuste.
+- Generacion de texto en entornos con recursos limitados: con 1.700 millones de parametros, puede ejecutarse en GPUs de consumo tras cuantizacion, lo que lo hace util para demos locales.
+- Base para ajustes posteriores: al ser un checkpoint SFT, puede emplearse como punto de partida para etapas de DPO, RLHF o ajuste especifico de dominio.
+- Evaluacion de pipelines de despliegue: su compatibilidad con endpoints permite probar integraciones de serving (Transformers, TGI, vLLM) antes de migrar a modelos mayores.
+- Filtrado y generacion de contenido en ingles tecnico: la model card incluye un ejemplo de pregunta abierta en ingles, lo que sugiere uso en tareas de generacion libre, aunque sin garantias de calidad documentadas.
 
 ## Benchmarks y rendimiento
 
@@ -52,38 +53,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 3,5-4 GB en bf16/fp16 para los pesos del modelo (1.7B parámetros); en cuantización de 8 bits, alrededor de 2 GB; en 4 bits, alrededor de 1 GB (estimaciones teóricas, no confirmadas por el autor).
-- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para bf16 (RTX 3060, RTX 4060, RTX 4090, A100, H100). Para cuantización 4 bits, GPUs con 4-6 GB podrían ser suficientes.
-- ¿Cabe en consumer GPU? Sí, previsiblemente en RTX 3060/4060 y superiores en bf16; en GPUs con menos VRAM mediante cuantización.
-- Opciones de despliegue: transformers (pipeline de text-generation), vLLM, TGI y llama.cpp (previa conversión a GGUF, no incluida en el repositorio). Ollama requeriría conversión manual.
-- Latencia y throughput estimados: no disponibles; no se han publicado mediciones.
+- VRAM estimada para inferencia en bf16/fp16: aproximadamente 3,4 GB solo para pesos, mas overhead de activaciones y cache KV (estimacion orientativa de 5-8 GB en funcion de la longitud de contexto).
+- VRAM estimada en cuantizacion de 8 bits: aproximadamente 1,7-2 GB para pesos.
+- VRAM estimada en cuantizacion de 4 bits: aproximadamente 1-1,5 GB para pesos.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090, A10G, L4, A100 y H100 para despliegues de mayor throughput.
+- Cabe en GPUs de consumo: si, en tarjetas con al menos 8 GB de VRAM en bf16 y en tarjetas con 4-6 GB tras cuantizacion a 4 bits.
+- Opciones de despliegue: Transformers (pipeline), Hugging Face Inference Endpoints (tag `endpoints_compatible`), TGI y vLLM son opciones razonables dado el formato safetensors; llama.cpp y Ollama requeririan conversion a GGUF, no incluida en el repositorio.
+- Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| yuqing-wu/sodl-sft-medium | ~1.7B | No disponible | No disponible | Hugging Face (0 descargas) | Ajuste SFT de Qwen3-1.7B-Base con TRL; sin benchmarks |
-| Qwen/Qwen3-1.7B-Base | ~1.7B | No disponible en esta ficha | Apache 2.0 (segun el modelo base original) | Hugging Face | Modelo base oficial de Qwen; con model card completa |
-| Qwen/Qwen3-1.7B | ~1.7B | No disponible en esta ficha | Apache 2.0 (segun el modelo original) | Hugging Face | Variante instruida/chat del modelo base |
-| Llama 3.2 1B | ~1.2B | 128K (segun documentacion oficial) | Llama 3.2 Community License | Hugging Face, Meta | Alternativa pequena de Meta con licencia restrictiva para algunos usos |
+| yuqing-wu/sodl-sft-medium | 1,7 B | no disponible | no disponible | Hugging Face (0 descargas) | SFT sobre Qwen3-1.7B-Base, sin benchmarks |
+| Qwen/Qwen3-1.7B-Base | 1,7 B | no disponible en esta ficha | Apache-2.0 (segun el modelo base original) | Hugging Face, ampliamente usado | Modelo base sin ajuste, con documentacion oficial |
+| Qwen/Qwen3-1.7B | 1,7 B | no disponible en esta ficha | Apache-2.0 (segun el modelo original) | Hugging Face | Variante instruct/chat oficial de la familia Qwen3 |
+| Llama 3.2 1B Instruct | 1,2 B | 128 K (segun documentacion oficial) | Llama 3.2 Community License | Hugging Face, Meta | Alternativa de tamano similar con licencia restrictiva |
 
-La comparación se limita a datos públicos de los modelos base; no se dispone de información sobre el rendimiento del ajuste fino de yuqing-wu frente a estas alternativas.
+La comparativa se limita a los datos disponibles; no se han publicado metricas de rendimiento para `sodl-sft-medium` que permitan una comparacion cuantitativa con las alternativas.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks: no hay ninguna evaluación publicada que permita estimar la calidad del ajuste fino.
-- Model card incompleta: no se documentan datos de entrenamiento, hiperparámetros, idiomas ni licencia, lo que impide evaluar su idoneidad para producción.
-- Licencia no especificada: la model card indica "licence: license" sin detallar términos; no se puede confirmar el uso comercial. El modelo base Qwen3-1.7B-Base se distribuye bajo Apache 2.0, pero el ajuste podría estar sujeto a condiciones adicionales no documentadas.
-- Riesgo de alucinación: inherente a los modelos de lenguaje pequeños; sin evaluación, no se puede cuantificar.
-- Sesgos: no documentados; se heredarían los del modelo base y los del dataset de SFT, que no se describe.
-- Limitaciones de contexto e idioma: no disponibles; no se confirma la ventana de contexto efectiva tras el ajuste.
-- Tamaño del repositorio anómalo: 31 GB para un modelo de 1.7B sugiere artefactos de entrenamiento que pueden complicar la descarga y el despliegue.
-- Cero descargas y cero likes: no hay evidencia de uso o validación por parte de la comunidad.
-- Fecha de creación futura (2026-11-15): el metadato indica una fecha posterior a la actual, lo que puede reflejar un error de configuración del repositorio o un entorno de pruebas.
+- Ausencia total de benchmarks: no hay evidencia publicada de que el ajuste SFT mejore al modelo base en ninguna tarea.
+- Licencia no especificada: el campo `licence` de la model card no concreta terminos, lo que impide confirmar si el uso comercial esta permitido.
+- Idiomas no declarados: no se puede garantizar soporte multilingue ni la calidad en castellano.
+- Dataset de entrenamiento desconocido: no se puede evaluar el riesgo de sesgos, contaminacion de datos ni sobreajuste a un dominio concreto.
+- Riesgo de alucinacion: inherente a los modelos de lenguaje de este tamano, agravado por la falta de evaluacion.
+- Contexto no confirmado: aunque el modelo base Qwen3 soporta ventanas largas, la model card no confirma la longitud efectiva tras el ajuste.
+- Repositorio de 41,3 GB para 1,7 B de parametros: indica artefactos de entrenamiento adicionales; conviene revisar el contenido antes de descargar.
+- Sin soporte comunitario: 0 descargas y 0 likes en el momento de la ficha, sin issues ni discusiones que permitan resolver dudas.
+- No apto para produccion sin validacion previa: al no haber documentacion de calidad ni de seguridad, su uso en entornos reales requiere evaluacion propia.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/yuqing-wu/sodl-sft-medium
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Repositorio de TRL: https://github.com/huggingface/trl
-- Documentación de Transformers: https://huggingface.co/docs/transformers
+- Documentacion de Transformers: https://huggingface.co/docs/transformers

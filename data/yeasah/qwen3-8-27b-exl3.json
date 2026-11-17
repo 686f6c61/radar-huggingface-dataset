@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 185,
+  "downloads_30d": 179,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -40,16 +40,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "yeasah/Qwen3.8-27B-exl3 · Hugging Face",
-      "url": "https://huggingface.co/yeasah/Qwen3.8-27B-exl3",
-      "snippet": "Against other quants of this model This section appears because other quantizations of this model exist (turboderp/Qwen3.8-27B-exl3); it is the case for publishing another set."
-    },
-    {
-      "title": "Mia-AiLab/Qwen3.8-27B-EXL3-3.5bpw · Hugging Face",
-      "url": "https://huggingface.co/Mia-AiLab/Qwen3.8-27B-EXL3-3.5bpw",
-      "snippet": "EXL3 quantization of Qwen/Qwen3.8-27B, the hybrid linear-attention / full-attention (gated-deltanet + full-attn) dense 27B model. 14.2 GB of weights — sized to leave room for large KV caches on 24 GB GPUs: with the built-in MTP draft head the full native 262k context fits fully resident (see ..."
-    }
-  ]
+  "sources": []
 }

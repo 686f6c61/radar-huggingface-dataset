@@ -54,31 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Download WhatsApp",
-      "url": "https://www.whatsapp.com/download",
-      "snippet": "Download WhatsApp on your mobile device, tablet or desktop and stay connected with reliable private messaging and calling. …"
-    },
-    {
-      "title": "WhatsApp | Secure and Reliable Free Private Messaging and Calling",
-      "url": "https://www.whatsapp.com/",
-      "snippet": "Use WhatsApp Messenger to stay in touch with friends and family. WhatsApp is free and offers simple, secure, reliable messaging …"
-    },
-    {
-      "title": "WhatsApp Web",
-      "url": "https://web-fallback.whatsapp.com/",
-      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
-    },
-    {
-      "title": "WS — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/WS",
-      "snippet": "Ws, une ancienne graphie du nom de la commune française d' Us, dans le département du Val-d'Oise et la région Île-de-France ; …"
-    },
-    {
-      "title": "Que signifie WS? - Abbreviation Finder",
-      "url": "https://abbreviationfinder.org/fr/acronyms/ws.html",
-      "snippet": "En résumé, WS est une abréviation qui peut désigner différents termes selon le contexte, et son interprétation peut varier selon …"
-    }
-  ]
+  "sources": []
 }

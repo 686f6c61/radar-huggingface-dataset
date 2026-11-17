@@ -2,57 +2,59 @@
 
 ## Resumen
 
-KaptchaOCR ft-medium-det es un detector de glifos (caracteres individuales) para CAPTCHA de tipo clic, distribuido como un unico fichero ONNX de 59 MB. Forma parte del conjunto de cinco modelos afinados del proyecto KaptchaOCR, una biblioteca y servidor escrito en Rust para resolver CAPTCHA. El modelo no realiza deteccion de objetos genericos: su unica tarea es localizar las cajas delimitadoras de cada caracter o glifo en una imagen de CAPTCHA, que posteriormente un modulo de OCR puede reconocer.
+KaptchaOCR ft-medium-det es un detector de glifos (glyph-level text detection) basado en la arquitectura DB (Differentiable Binarization) de PP-OCRv6 en su variante medium. Lo desarrolla el autor zaltahir como parte del proyecto KaptchaOCR, una biblioteca y servidor en Rust orientado especificamente a la resolucion de CAPTCHA de clic. El modelo no realiza deteccion de objetos generica: su unica funcion es localizar las cajas de caracteres individuales que el usuario debe seleccionar en un CAPTCHA, devolviendo un mapa de probabilidad que se postprocesa a poligonos y cajas.
 
-Tecnicamente deriva del detector medio de PP-OCRv6 (PaddleOCR), afinado sobre 20.000 imagenes sinteticas de 320x160 pixeles con disposicion de tipo scatter y alfabeto ingles y chino. La salida es un mapa de probabilidad de tipo DB (Differentiable Binarization) que se convierte en cajas de caracteres mediante umbralizacion y expansion de poligonos.
+El repositorio contiene exclusivamente el fichero `medium_det.onnx` (59 MB), exportado para ejecucion con ONNX Runtime. Se distribuye como uno de los cinco modelos afinados del ecosistema KaptchaOCR y esta pensado para integrarse en el binario `kaptchaocr` mediante un manifiesto JSON, o bien invocarse directamente pasando la ruta al fichero ONNX.
 
-Su relevancia es acotada pero clara: cubre un nicho concreto (automatizacion de pipelines de pruebas y evaluacion de robustez de CAPTCHA) con licencia Apache-2.0, formato ONNX portable y un benchmark reproducible publicado por el autor. No es un modelo de proposito general ni compite con detectores como YOLO o DETR.
+Su relevancia es acotada pero concreta: cubre un nicho (deteccion de glifos en CAPTCHA de clic) con un modelo pequeno, licencia permisiva Apache-2.0 y un benchmark propio publicado. No es un modelo de lenguaje ni un detector de objetos de proposito general, por lo que su evaluacion debe hacerse dentro de ese dominio especifico.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Detector DB (Differentiable Binarization) basado en PP-OCRv6 medium detection |
+| Arquitectura | DB (Differentiable Binarization) sobre PP-OCRv6 medium detection |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no aplica (modelo de vision) |
-| Tipos de cuantizacion | no disponible (se distribuye un unico ONNX de 59 MB) |
-| Idiomas soportados | ingles y chino (alfabeto de entrenamiento) |
+| Tipos de cuantizacion | no disponible (se distribuye en ONNX; no se documentan variantes cuantizadas) |
+| Idiomas soportados | ingles y chino (en los datos de entrenamiento sinteticos) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | ONNX (`medium_det.onnx`) |
-| Tamano del repositorio | 0,1 GB |
-| Entrada | imagen RGB, redimensionada con padding a cuadrado |
-| Salida | mapa de probabilidad, convertido a cajas de caracteres |
-| Runtime | onnxruntime |
+| Tamano del fichero | 59 MB |
+| Entrada | imagen RGB, con padding a cuadrado |
+| Salida | mapa de probabilidad convertido a cajas de caracteres |
+| Libreria | onnxruntime |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea la arquitectura DB (Differentiable Binarization) propia de la familia PP-OCR: una red convolucional que predice un mapa de probabilidad por pixel, el cual se binariza de forma diferenciable durante el entrenamiento y se postprocesa en inferencia para extraer poligonos de texto. El checkpoint base es el detector medio de PP-OCRv6, sobre el que se aplica un ajuste fino especifico para glifos individuales de CAPTCHA en lugar de lineas de texto.
+El modelo emplea la arquitectura DB de deteccion de texto, la misma familia que utiliza PP-OCRv6 en su modulo de deteccion. La red produce un mapa de probabilidad por pixel que, tras umbralizacion y expansion de poligonos (parametros `thresh`, `box_thresh`, `unclip_ratio`), se convierte en cajas delimitadoras de cada glifo. El modelo parte del detector PP-OCRv6 medium (PaddleOCR, Apache-2.0) y se ha afinado para el dominio de CAPTCHA de clic.
 
-Los datos de entrenamiento son 20.000 imagenes sinteticas de 320x160 pixeles, con disposicion scatter (glifos dispersos, tipica de CAPTCHA de clic), alfabeto ingles y chino, y semilla 11. La validacion se realizo sobre conjuntos `val` y `val2` de 200 imagenes cada uno. No se documenta en la informacion disponible el numero de pasos, la tasa de aprendizaje, el uso de RLHF/DPO (no aplica a un detector) ni tecnicas adicionales como decodificacion especulativa.
+El entrenamiento se realizo sobre 20.000 imagenes sinteticas de 320x160 con disposicion dispersa (scatter layout), combinando caracteres en ingles y chino, con semilla 11. La validacion se hizo sobre dos conjuntos de 200 imagenes (`val` y `val2`). No se documenta el numero de tokens ni si hubo etapas de RLHF o DPO, algo que no aplica a un detector de vision. La innovacion principal es el ajuste fino del detector generico de PP-OCRv6 al dominio de glifos de CAPTCHA, con umbrales calibrados en el manifiesto (`thresh: 0.2`, `box_thresh: 0.4`, `unclip_ratio: 1.4`, `max_candidates: 3000`, `nms_thr: 0.3`, `score_thr: 0.1`).
 
 ## Capacidades
 
-- Deteccion de glifos a nivel de caracter en imagenes de CAPTCHA de tipo clic.
-- Salida de cajas delimitadoras con umbral de confianza configurable (`thresh`, `box_thresh`).
-- Postprocesado con expansion de poligonos (`unclip_ratio`), supresion de no maximos (`nms_thr`) y limite de candidatos (`max_candidates`).
-- Soporte de alfabeto ingles y chino segun los datos de entrenamiento.
-- Inferencia via onnxruntime, integrable en el binario Rust de KaptchaOCR mediante manifiesto o ruta directa.
-- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni modalidades de audio o video.
-- No realiza deteccion de objetos genericos (vehiculos, personas, etc.).
+- Deteccion de glifos a nivel de caracter en imagenes de CAPTCHA de clic.
+- Generacion de mapa de probabilidad y conversion a cajas/poligonos de caracteres.
+- Soporte de caracteres en ingles y chino en los datos de entrenamiento.
+- Entrada de imagen RGB con padding a cuadrado.
+- Ejecucion mediante ONNX Runtime, con integracion en el binario Rust `kaptchaocr`.
+- Configuracion de umbrales y postprocesado mediante entrada de manifiesto JSON.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni generacion de texto.
+- No dispone de modo thinking, vision general, audio ni capacidades multimodales mas alla de la deteccion de glifos.
 
 ## Casos de uso
 
-- Automatizacion de pruebas de robustez de CAPTCHA: el detector localiza los glifos de un CAPTCHA de clic generado por el propio sistema, permitiendo medir la dificultad real de resolucion en pipelines de CI.
-- Construccion de un solver de CAPTCHA de clic en dos etapas: este modelo actua como primera fase (deteccion de glifos) y un modelo OCR posterior reconoce cada recorte, integrándose mediante el manifiesto de KaptchaOCR.
-- Evaluacion academica de seguridad de esquemas CAPTCHA: permite cuantificar la tasa de deteccion de glifos frente a variaciones de layout, ruido y solapamiento.
-- Generacion de datasets etiquetados: las cajas predichas sobre imagenes sinteticas pueden usarse como pseudoetiquetas para entrenar o validar otros detectores.
-- Servicio de resolucion de CAPTCHA en Rust: el binario `kaptchaocr --ocr --det --manifest model/models.json --det-model ft-medium-det` ofrece un endpoint con inferencia ONNX local.
-- Prototipado rapido en entornos sin GPU: al ser un ONNX de 59 MB, puede ejecutarse en CPU con onnxruntime en maquinas modestas, adecuado para pruebas y demos.
+- Resolucion de CAPTCHA de clic en pipelines de automatizacion: el modelo localiza las cajas de cada caracter para que el sistema seleccione las coordenadas correctas, aprovechando su salida de mapa de probabilidad y la configuracion de umbrales del manifiesto.
+- Integracion en el servidor KaptchaOCR en Rust: se invoca con `kaptchaocr --ocr --det --manifest model/models.json --det-model ft-medium-det` para encadenar deteccion y OCR dentro del mismo binario.
+- Procesamiento de imagenes sinteticas de 320x160 con layout disperso: adecuado para entornos de prueba y generacion de datos donde el formato coincide con el de entrenamiento.
+- Deteccion de glifos en escenarios con mezcla de caracteres ingleses y chinos: el entrenamiento bilingue permite cubrir CAPTCHA que combinan ambos alfabetos.
+- Despliegue ligero en CPU: al ser un ONNX de 59 MB ejecutable con ONNX Runtime, puede integrarse en servicios sin GPU dedicada, aunque la latencia medida es alta (1.315 ms de media).
+- Modulo de preprocesado en sistemas de OCR de CAPTCHA: la salida de cajas puede alimentar un reconocedor posterior para tareas de lectura de caracteres.
+- Evaluacion y ajuste de umbrales en investigacion sobre deteccion de texto: los parametros `thresh`, `box_thresh` y `unclip_ratio` permiten experimentar con el postprocesado sin reentrenar.
 
 ## Benchmarks y rendimiento
 
-Benchmark publicado por el autor sobre un conjunto sintetico nuevo de 400 imagenes y 1.800 cajas de glifos (layout scatter, ingles y chino, semilla `20261103`), con verdad de referencia a nivel de glifo y emparejamiento greedy de poligonos.
+Benchmark sobre conjunto sintetico nuevo: 400 imagenes, 1.800 cajas de glifos, layout disperso, ingles y chino, semilla 20261103, ground truth a nivel de glifo con emparejamiento greedy de poligonos.
 
 | Metrica | Valor |
 |---|---:|
@@ -60,40 +62,40 @@ Benchmark publicado por el autor sobre un conjunto sintetico nuevo de 400 imagen
 | F1@0.75 | 63,1% |
 | Precision@0.5 | 93,5% |
 | Recall@0.5 | 97,9% |
-| IoU medio | 0,769 |
+| Mean IoU | 0,769 |
 | Latencia media | 1.315 ms |
 
-No se han publicado comparaciones con otros detectores en la informacion disponible. El propio autor advierte que el benchmark es un proxy sintetico y no incluye datos reales de CAPTCHA de clic.
+El propio autor advierte que el benchmark de deteccion es un proxy sintetico y que no se incluyen datos reales de CAPTCHA de clic.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma explicita; con un ONNX de 59 MB y entrada cuadrada pequena, la huella es inferior a 1 GB en la mayoria de configuraciones.
-- GPU recomendadas: cualquier GPU con soporte de onnxruntime (CUDA o TensorRT); no se especifican modelos concretos en la documentacion.
-- Compatibilidad con GPU de consumo: si, el tamano reducido permite ejecucion en RTX 3060, RTX 4060 o superiores, asi como en CPU.
-- Opciones de despliegue: onnxruntime (libreria declarada), binario Rust de KaptchaOCR; no se documenta soporte para vLLM, llama.cpp, Ollama o TGI (no aplicables a este tipo de modelo).
-- Latencia: 1.315 ms de media por imagen en el benchmark del autor (entorno no especificado).
-- Throughput: no disponible.
+- VRAM estimada para inferencia: no disponible; el modelo es un ONNX de 59 MB y puede ejecutarse en CPU.
+- GPU recomendadas: no disponible; no se documentan requisitos de GPU especificos.
+- Compatibilidad con GPU de consumo: previsiblemente si, dado el tamano reducido del fichero, aunque no se confirma en la informacion disponible.
+- Opciones de despliegue: ONNX Runtime (libreria declarada), binario Rust `kaptchaocr` con manifiesto JSON o ruta directa (`--det-path medium_det.onnx`).
+- Latencia: 1.315 ms de media en el benchmark publicado; no se documenta throughput.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tarea | Tamano | Contexto | Licencia | Disponibilidad |
+| Modelo | Base | Tamano | Tarea | Licencia | Benchmark publicado |
 |---|---|---|---|---|---|
-| KaptchaOCR ft-medium-det | Deteccion de glifos CAPTCHA (DB) | 59 MB (ONNX) | no aplica | Apache-2.0 | Hugging Face, via KaptchaOCR |
-| PP-OCRv6 medium detection (base) | Deteccion de lineas de texto | no disponible | no aplica | Apache-2.0 | PaddleOCR |
-| ddddocr | OCR/deteccion para CAPTCHA | no disponible | no aplica | no disponible en la informacion | Proyecto open source independiente |
+| KaptchaOCR ft-medium-det | PP-OCRv6 medium detection | 59 MB | Deteccion de glifos en CAPTCHA | Apache-2.0 | F1@0.5 95,7% (sintetico) |
+| PP-OCRv6 medium detection | PaddleOCR | no disponible | Deteccion de texto general | Apache-2.0 | no disponible en esta ficha |
+| Otros modelos KaptchaOCR | PP-OCRv6 (variantes) | no disponible | Deteccion/OCR de CAPTCHA | Apache-2.0 | no disponible en esta ficha |
 
-No se dispone de datos de rendimiento comparables entre estas alternativas en la informacion proporcionada. La comparativa se limita a tarea, formato y licencia.
+No se dispone de datos comparativos adicionales con alternativas de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El benchmark se basa en datos sinteticos; el rendimiento en CAPTCHA reales puede degradarse de forma significativa.
-- Entrenado solo con alfabeto ingles y chino; otros alfabetos o estilos tipograficos no estan cubiertos.
-- No es un detector de objetos genericos: no detecta vehiculos, personas ni clases COCO.
-- F1@0.75 cae al 63,1%, lo que indica cajas poco precisas en solapamientos estrictos; puede afectar al recorte para OCR posterior.
-- Latencia media de 1.315 ms por imagen, elevada para aplicaciones de alto throughput si no se optimiza el runtime.
-- Licencia Apache-2.0 permite uso comercial, pero el autor no ofrece garantias sobre exactitud ni idoneidad para produccion.
-- No se documentan sesgos especificos, riesgo de alucinacion (no aplica a un detector) ni limitaciones de contexto.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta; madurez y soporte comunitario limitados.
+- No es un detector de objetos general: solo localiza glifos de CAPTCHA; no detecta coches, personas u otros objetos.
+- El benchmark se basa en datos sinteticos; no se incluyen datos reales de CAPTCHA de clic, por lo que el rendimiento en produccion puede diferir.
+- La validacion se realizo sobre conjuntos de 200 imagenes, un tamano reducido.
+- El entrenamiento cubre solo ingles y chino; otros alfabetos no estan documentados.
+- La latencia media de 1.315 ms puede ser limitante en escenarios de alta concurrencia.
+- Riesgo de alucinacion no aplica (no genera texto), pero si de falsos positivos/negativos en la deteccion de cajas, con F1@0.75 del 63,1%.
+- Sesgos conocidos: no documentados; el entrenamiento sintetico con layout disperso puede no generalizar a otros layouts de CAPTCHA.
+- Licencia Apache-2.0 permisiva para uso comercial, con obligacion de mantener avisos de licencia y atribucion.
+- El repositorio contiene unicamente el detector; para un pipeline completo de OCR se requiere combinarlo con otros modelos del ecosistema KaptchaOCR.
 
 ## Enlaces
 

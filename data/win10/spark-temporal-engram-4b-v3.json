@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 139,
+  "downloads_30d": 133,
   "trending_score": 0,
   "parameters": 4115365652,
   "parameters_human": "4.12B",
@@ -46,31 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "TikTok - Make Your Day",
-      "url": "https://www.tiktok.com/",
-      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
-    },
-    {
-      "title": "Log in | TikTok",
-      "url": "https://www.tiktok.com/login",
-      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
-    },
-    {
-      "title": "Se connecter | TikTok",
-      "url": "https://livecenter.tiktok.com/?lang=fr",
-      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
-    },
-    {
-      "title": "Sign up - TikTok",
-      "url": "https://m.tiktok.com/signup/phone-or-email/phone",
-      "snippet": "Sign up for an account or log back into TikTok. Create an account to discover real people and real videos that will make your day."
-    },
-    {
-      "title": "TikTok - Make Your Day",
-      "url": "https://www.tiktok.com/fr/",
-      "snippet": "TikTok - les tendances commencent ici. Sur ton appareil ou sur le Web, les spectateurs peuvent regarder et découvrir des millions …"
-    }
-  ]
+  "sources": []
 }

@@ -2,75 +2,89 @@
 
 ## Resumen
 
-El modelo xiq-1 es un adaptador LoRA (Low-Rank Adaptation) publicado por el autor `xiq` sobre el modelo base `ansulev/LFM2.5-2.6B-Uncensored`. Se trata de un ajuste fino supervisado (SFT) implementado con las bibliotecas `transformers`, `trl` y `unsloth`, y su pipeline declarado en Hugging Face es `text-generation`. El repositorio contiene un total de 2.697.198.592 parámetros en formato `safetensors`, lo que sugiere que el adaptador se ha fusionado o guardado junto con los pesos del modelo base de 2.600 millones de parámetros. A fecha de creación (septiembre de 2026), el modelo no tiene descargas ni likes, y su `model card` es una plantilla casi vacía, sin información detallada sobre el proceso de entrenamiento, los datos utilizados o las capacidades resultantes. El término "Uncensored" en el modelo base indica que se ha eliminado o reducido la alineación de seguridad, lo que puede ser relevante para determinadas aplicaciones de investigación, pero también introduce riesgos significativos. En conjunto, xiq-1 es un experimento de afinado de bajo rango con documentación mínima, cuya utilidad práctica resulta difícil de evaluar sin datos adicionales.
+xiq-1 es un ajuste fino mediante LoRA del modelo base `ansulev/LFM2.5-2.6B-Uncensored`, desarrollado por el usuario xiq y publicado en Hugging Face. El adaptador está orientado a tareas de seguridad del código: revisión de código seguro, análisis de vulnerabilidades y planificación de mitigaciones. Se entrenó con Unsloth y Hugging Face TRL (`SFTTrainer`) sobre un subconjunto filtrado del dataset `ansulev/claude-mythos-distilled-25k`, concretamente 14.359 muestras centradas en las categorías `cybersecurity` y `advanced_coding`.
+
+El modelo hereda la arquitectura del base, LFM2.5 con 2.697.198.592 parámetros (aproximadamente 2,6B), y se distribuye como adaptador PEFT en formato safetensors, con un tamaño de repositorio de 5,4 GB. El adaptador añade solo 1.703.936 parámetros entrenables, un 0,063 % del total, con rango LoRA 16 y alpha 32 sobre los módulos de atención y MLP.
+
+La relevancia de esta ficha es doble: por un lado, documenta una propuesta concreta de especialización en ciberseguridad sobre un modelo pequeño; por otro, el propio autor advierte de sobreajuste, memorización de plantillas y alucinaciones en las evaluaciones realizadas, lo que lo sitúa como un checkpoint experimental y no como una herramienta lista para triaje automatizado en producción.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (adaptador LoRA sobre ansulev/LFM2.5-2.6B-Uncensored) |
-| Parametros totales | 2.697.198.592 |
-| Parametros activos | no disponible (no es un modelo MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponibles |
-| Licencia | no disponible |
-| Formato de pesos | safetensors (PEFT/LoRA) |
+| Arquitectura | Transformer LFM2.5 (heredada del modelo base), ajuste fino con LoRA (PEFT) |
+| Parámetros totales | 2.697.198.592 (2,6B) |
+| Parámetros activos | No aplica (no es MoE); parámetros entrenables del adaptador: 1.703.936 (0,063 %) |
+| Longitud de contexto | No disponible en la información proporcionada (longitud de secuencia de entrenamiento: 4.096 tokens) |
+| Tipos de cuantización | No disponible (el adaptador se distribuye en safetensors; el base admite las cuantizaciones habituales de su ecosistema, sin datos confirmados) |
+| Idiomas soportados | Inglés (`en`) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | Safetensors (adaptador LoRA PEFT) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador PEFT de tipo LoRA, entrenado mediante supervisión fina (SFT) con `transformers`, `trl` y `unsloth`. El README indica que la versión de PEFT utilizada es 0.20.0. No se especifica la arquitectura del modelo base `LFM2.5-2.6B-Uncensored`, ni su número de capas, mecanismo de atención, ni si es un transformer estándar o un híbrido. Tampoco se ha publicado información sobre la composición del dataset de entrenamiento, el número de tokens procesados, las técnicas de alineación (RLHF, DPO) o cualquier innovación técnica destacable. La etiqueta "Uncensored" sugiere que el modelo base ha sido afinado para minimizar restricciones de contenido, pero no se aportan detalles sobre cómo se ha logrado ni qué implicaciones tiene en el rendimiento.
+El adaptador se aplica sobre `ansulev/LFM2.5-2.6B-Uncensored`, un modelo de la familia LFM2.5 de 2,6B parámetros. El ajuste es un LoRA con rango 16, alpha 32, dropout 0,05, aplicado sobre `q_proj`, `k_proj`, `v_proj`, `out_proj`, `in_proj`, `down_proj`, `up_proj` y `gate_proj`. El entrenamiento usó el optimizador `adamw_8bit`, tasa de aprendizaje 2e-4 con schedule lineal, batch efectivo de 8 (2 por dispositivo con acumulación de gradiente 4), 2 épocas y 3.412 pasos globales, con secuencias de 4.096 tokens. La pérdida final de entrenamiento fue 0,0516.
+
+El dataset de entrenamiento consta de 14.359 muestras (13.641 de entrenamiento y 718 de validación), extraídas del corpus destilado `ansulev/claude-mythos-distilled-25k` y filtradas a las categorías `cybersecurity` y `advanced_coding`. No se documenta en la información disponible el número total de tokens vistos, la composición detallada del corpus ni si hubo fases de RLHF o DPO; el procedimiento descrito es únicamente supervisado (SFT). Tampoco se detallan innovaciones de decodificación o atención específicas del adaptador.
 
 ## Capacidades
 
-- Generacion de texto: el pipeline declarado es `text-generation`, pero no se han publicado ejemplos ni evaluaciones de la calidad de la generacion.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponibles.
-- Capacidades especiales (vision, audio, thinking mode): no disponibles.
-- No se ha publicado ninguna descripcion de funcionalidades especificas mas alla de la etiqueta "Uncensored" del modelo base.
+- Generación de texto conversacional orientada a revisión de código y análisis de seguridad.
+- Revisión de código seguro: identificación de patrones como inyección SQL, carga de ficheros o inyección de comandos, según los ejemplos de la model card.
+- Planificación de mitigaciones de vulnerabilidades.
+- Soporte de conversaciones multi-turno mediante plantilla de chat (`apply_chat_template`).
+- Capacidades de codificación avanzada heredadas del subconjunto `advanced_coding` del dataset.
+- Idioma: inglés.
+- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo de razonamiento explícito. El autor menciona que pueden aparecer etiquetas de razonamiento (`</think>`) heredadas del dataset destilado, pero no se describe un modo thinking funcional.
 
 ## Casos de uso
 
-- Experimentacion con adaptadores LoRA: el modelo puede servir como ejemplo de como aplicar un ajuste fino supervisado sobre un modelo base de 2.6B, aunque no se proporcionan los datos de entrenamiento ni el codigo de afinado.
-- Investigacion en desalineacion de modelos: al estar basado en un modelo "Uncensored", podria ser de interes para estudiar los efectos de la eliminacion de barreras de seguridad, pero no hay resultados publicados.
-- Uso local en entornos de pruebas: dado su tamano moderado, podria cargarse en GPU de consumo para tareas de generacion de texto sin requisitos de produccion, siempre que se acepte la falta de documentacion.
-- No se dispone de casos de uso concretos, reales o verificados. Cualquier aplicacion practica requeriria una evaluacion previa del modelo por parte del usuario.
+- Revisión asistida de fragmentos de código en entornos de desarrollo: el adaptador puede señalar patrones de inyección SQL o de comandos en funciones concretas, como el ejemplo de la model card, siempre con revisión humana posterior.
+- Formación y concienciación en seguridad: generación de explicaciones sobre vulnerabilidades comunes para materiales didácticos internos, dado su enfoque en `cybersecurity`.
+- Borrador de planes de mitigación: a partir de un hallazgo descrito, el modelo puede proponer pasos de remediación que un ingeniero valide y adapte.
+- Prototipado de asistentes de análisis estático: integrado como capa de generación de explicaciones sobre resultados de herramientas SAST, con las cautelas por alucinación indicadas por el autor.
+- Experimentación académica sobre ajuste fino LoRA: el checkpoint sirve como referencia reproducible de un pipeline Unsloth + TRL con un dataset destilado y métricas de pérdida documentadas.
+- Exploración de especialización en dominios acotados: útil para estudiar cómo un adaptador de 1,7M de parámetros modifica el comportamiento de un base de 2,6B en tareas de seguridad.
+- No se recomienda su uso para triaje automatizado de seguridad sin recalibración previa, según la propia model card.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No existen datos de MMLU, HumanEval, GSM8K ni ninguna otra evaluacion comparable. Tampoco se ha publicado informacion sobre latencia o throughput de inferencia.
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente reporta la pérdida final de entrenamiento (0,0516) y observaciones cualitativas de evaluación sobre fragmentos de código, sin métricas cuantitativas como MMLU, HumanEval o GSM8K.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: dado que el modelo base tiene aproximadamente 2.600 millones de parametros, en precision FP16 los pesos ocupan alrededor de 5,2 GB. Sumando el overhead de activaciones y el adaptador, se estima un requisito minimo de unos 6 GB de VRAM.
-- GPU recomendadas: una RTX 3060 de 12 GB, RTX 4070, A10G, A100 o cualquier GPU con al menos 8 GB de VRAM para FP16. Con cuantizacion 4-bit, la VRAM necesaria podria reducirse a unos 2-3 GB, lo que permitiria su uso en RTX 3050 o inferiores con 8 GB.
-- Compatibilidad con GPU de consumo: si, en cuantizacion 4-bit es viable en GPU de gama media-baja, aunque no se han publicado benchmarks reales.
-- Opciones de despliegue: se puede cargar con `transformers` y `peft` aplicando el adaptador sobre el modelo base. Para despliegue en produccion, seria necesario fusionar el adaptador y, si se desea, convertir los pesos a GGUF para usar `llama.cpp` u `Ollama`. Tambien podria utilizarse `vLLM` tras la fusion, siempre que el modelo base sea compatible.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa, un modelo de 2,6B en bf16 requiere del orden de 5-6 GB solo para pesos, más overhead de activaciones y caché KV; el adaptador LoRA añade una cantidad marginal.
+- GPU recomendadas: no especificadas por el autor. El ejemplo de uso emplea `device_map="auto"` con bf16 o fp16, por lo que cabe en GPUs de consumo con suficiente VRAM.
+- Cabe en GPU de consumo: previsiblemente sí en modelos con 8 GB o más en bf16/fp16, y con cuantización en GPUs de 6-8 GB, aunque no hay cifras confirmadas en la información disponible.
+- Opciones de despliegue: el ejemplo oficial usa `transformers` + `peft`. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI para este adaptador.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| xiq-1 | 2.697.198.592 | no disponible | no disponible | Hugging Face |
-| ansulev/LFM2.5-2.6B-Uncensored | 2.6B | no disponible | no disponible | Hugging Face |
-| Modelos comparables | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| xiq-1 | 2,6B (adaptador LoRA de 1,7M entrenables) | No disponible | Revisión de código y ciberseguridad | Apache 2.0 | Hugging Face (55 descargas) |
+| ansulev/LFM2.5-2.6B-Uncensored (base) | 2,6B | No disponible | Modelo base sin censura | No disponible en la información | Hugging Face |
+| Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-No se han identificado modelos de la misma categoria con datos de rendimiento publicados. El unico punto de comparacion directo es el modelo base `ansulev/LFM2.5-2.6B-Uncensored`, pero no se aportan benchmarks de ninguno de los dos. Por tanto, no es posible establecer una comparativa tecnica rigurosa.
+No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada, por lo que no es posible una comparación cuantitativa rigurosa.
 
 ## Limitaciones y advertencias
 
-- Licencia no disponible: se desconocen las condiciones de uso, incluyendo cualquier restriccion comercial, lo que impide su despliegue en produccion sin asesoramiento legal previo.
-- Model card vacio: la documentacion es una plantilla sin contenido, sin datos de entrenamiento, evaluacion ni recomendaciones de uso.
-- Riesgo de alucinacion no evaluado: al no haber benchmarks ni pruebas de calidad, no es posible estimar la fiabilidad de las salidas.
-- Sesgos desconocidos: no se ha realizado ningun analisis de sesgos ni se ha publicado informacion al respecto.
-- Modelo "Uncensored": al reducir la alineacion de seguridad, el modelo puede generar contenido ofensivo, ilegal o danino. Debe utilizarse exclusivamente en entornos controlados y con las salvaguardas adecuadas.
-- Sin soporte de idiomas declarado: no se sabe que lenguas domina, aunque el nombre del modelo base sugiere un modelo de lenguaje generico.
-- Fecha de creacion futura: la metadata indica una fecha de 2026, lo que puede indicar un error en los metadatos o un dato sintetico; en cualquier caso, el modelo no cuenta con adopcion ni validacion de la comunidad.
+- Sobreajuste y alucinación: el autor documenta memorización de plantillas y respuestas que divagan hacia temas de seguridad no relacionados con el código aportado, en evaluaciones con inyección SQL, carga de ficheros e inyección de comandos.
+- Fuga de artefactos: pueden aparecer etiquetas de cierre de razonamiento (`</think>`) heredadas de los preámbulos del dataset destilado.
+- Estado experimental: es un primer entrenamiento; el autor recomienda enmascaramiento de pérdida en el prompt, tasas de aprendizaje más bajas y evaluación generalizada antes de usarlo en triaje automatizado.
+- Idioma: solo inglés declarado; el rendimiento en castellano no está documentado.
+- Contexto: la longitud de contexto del base no se detalla en la información disponible; el entrenamiento usó secuencias de 4.096 tokens.
+- Licencia: Apache 2.0 permite uso comercial, pero debe verificarse la licencia y condiciones del modelo base y del dataset de entrenamiento, no detalladas aquí.
+- Sesgos: no documentados por el autor; el base es una variante "uncensored", lo que puede implicar menor filtrado de contenido sensible.
+- No apto para producción sin validación humana: las propias limitaciones declaradas desaconsejan su despliegue directo en pipelines de seguridad.
 
 ## Enlaces
 
-- Hugging Face del modelo: https://huggingface.co/xiq/xiq-1
-- Modelo base (ansulev/LFM2.5-2.6B-Uncensored): https://huggingface.co/ansulev/LFM2.5-2.6B-Uncensored
-- Paper, repositorio, demo o blog: no disponibles.
+- Modelo en Hugging Face: https://huggingface.co/xiq/xiq-1
+- Modelo base: https://huggingface.co/ansulev/LFM2.5-2.6B-Uncensored
+- Dataset de entrenamiento: https://huggingface.co/datasets/ansulev/claude-mythos-distilled-25k
+- Unsloth: https://github.com/unslothai/unsloth
+- Hugging Face TRL: https://github.com/huggingface/trl
+- PEFT: https://github.com/huggingface/peft

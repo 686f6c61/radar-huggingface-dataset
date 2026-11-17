@@ -2,98 +2,89 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo nuevo, sino una conversión de formato: es la etapa DPO de TactLM-Qwen2.5-0.5B (un ajuste por DPO de Qwen2.5-0.5B-Instruct, publicado por el usuario zaydsyed) convertida a formato MLC-LLM para su ejecución dentro del navegador mediante WebLLM. El problema que resuelve es puramente de despliegue: empaquetar los pesos en un artefacto que WebGPU pueda cargar y ejecutar del lado del cliente, sin backend ni servidor de inferencia.
+TactLM-Instruction-DPO-Qwen2.5-0.5B-q0f16-MLC es un artefacto de despliegue publicado por el usuario zaydsyed en Hugging Face: se trata del modelo TactLM-Instruction-DPO-Qwen2.5-0.5B convertido al formato MLC (Machine Learning Compilation) para su ejecución en el navegador mediante WebLLM y WebGPU. No es un modelo entrenado desde cero, sino una conversión de pesos en precisión fp16 sin cuantización (variante `q0f16`, 1,0 GB) del checkpoint DPO derivado de Qwen2.5-0.5B-Instruct.
 
-El resultado es un artefacto de 1,0 GB en fp16 sin cuantizar (etiqueta `q0f16`), por lo que, segun el autor, la calidad coincide con la del modelo original y no hay perdida por cuantizacion. La arquitectura no se modifica respecto a Qwen2.5-0.5B-Instruct, de modo que el build reutiliza la libreria precompilada `Qwen2-0.5B-Instruct-q0f16` de WebLLM y no requiere compilacion personalizada.
+La relevancia de esta ficha es operativa: permite ejecutar un modelo conversacional de 0,5 mil millones de parámetros íntegramente en el cliente, sin backend, a través de WebGPU. Al mantener la arquitectura original de Qwen2.5, el build reutiliza la librería precompilada `Qwen2.5-0.5B-Instruct-q0f16` de WebLLM, por lo que no requiere compilación personalizada de shaders ni kernels.
 
-Es relevante ahora por dos motivos: permite inferencia 100 % local en el navegador (los datos no salen del dispositivo) y sirve como plantilla reproducible para publicar variantes fine-tuneadas de modelos pequenos en el ecosistema WebLLM. El interes practico es limitado: 0 descargas y 0 likes en el momento de la consulta, y el autor remite a la ficha del modelo original para benchmarks, detalles de entrenamiento y limitaciones.
+La información pública del autor es mínima: no se documentan datos de entrenamiento, benchmarks ni detalles del proceso DPO en esta model card, que remite a la del modelo original. Todo lo que sigue distingue explícitamente entre lo heredado de Qwen2.5-0.5B-Instruct, lo declarado por el autor y lo que queda como no disponible.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo Qwen2 (sin cambios respecto a Qwen2.5-0.5B-Instruct) |
-| Parametros totales | 0,5 B (nominal, segun el nombre del modelo; el autor no publica el recuento exacto) |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible en la informacion proporcionada; heredada del modelo base Qwen2.5-0.5B-Instruct (el autor remite a la ficha original) |
-| Tipos de cuantizacion | `q0f16` (fp16 sin cuantizar); no se publican otras variantes en este repo |
-| Idiomas soportados | Ingles (`language: en` en la model card); el modelo base Qwen2.5 es multilingue, pero esta ficha solo declara ingles |
-| Licencia | Apache 2.0 |
-| Formato de pesos | Artefactos MLC-LLM (pesos compilados + `mlc-chat-config.json`), ~1,0 GB; no se distribuyen safetensors ni GGUF |
-| Libreria / runtime | `mlc-llm` (conversion), WebLLM (ejecucion en navegador via WebGPU) |
-| Modelo base | zaydsyed/Qwen2.5-0.5B-Instruct-DPO (relacion: `quantized`) |
-| Requisito de plataforma | WebGPU con la caracteristica `shader-f16` |
-| Plantilla de conversacion | `qwen2` (`--conv-template qwen2`) |
-| Prefill chunk size | 1024 |
+| Arquitectura | Transformer decoder-only (Qwen2, sin cambios respecto a Qwen2.5-0.5B-Instruct) |
+| Parametros totales | 0,5 mil millones (heredado de Qwen2.5-0.5B) |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Qwen2.5-0.5B-Instruct soporta hasta 32 768 tokens, dato no confirmado para este build) |
+| Tipos de cuantizacion | fp16 sin cuantizar (q0f16); el pipeline MLC permite otras variantes, no documentadas aqui |
+| Idiomas soportados | en (declarado en la model card y en los tags) |
+| Licencia | apache-2.0 |
+| Formato de pesos | MLC (artefacto compilado para WebLLM; repo de 1,0 GB) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de Qwen2.5-0.5B-Instruct sin modificaciones: un transformer decoder-only con atencion por cabezas y sesgo QKV propio de la familia Qwen2, tal como indica el autor al senalar que el build funciona sobre la libreria precompilada `Qwen2-0.5B-Instruct-q0f16`. No hay innovaciones de arquitectura en este repositorio: el trabajo realizado es de conversion de pesos (`mlc_llm convert_weight` con `--model-type qwen2`) y de generacion de la configuracion de inferencia (`mlc_llm gen_config`), no de entrenamiento.
+La arquitectura subyacente es la de Qwen2.5-0.5B-Instruct, un transformer decoder-only denso con atención causal estándar, sin mezcla de expertos ni mecanismos híbridos SSM. El autor afirma explícitamente que «the architecture is unchanged from Qwen2.5-0.5B-Instruct», de modo que este repositorio no introduce modificaciones estructurales: solo cambia el formato de serialización de los pesos a MLC y la configuración de generación (`gen_config` con plantilla de conversación `qwen2` y `prefill-chunk-size` de 1024).
 
-Sobre el ajuste: el modelo de partida es la "DPO stage" de TactLM-Qwen2.5-0.5B, es decir, un Qwen2.5-0.5B-Instruct pasado por un entrenamiento de optimizacion de preferencias (DPO). El autor no publica en esta ficha el dataset de preferencias, el numero de pasos, la composicion de datos ni los hiperparametros; remite explicitamente a la model card del modelo original para esos detalles. Tampoco se documenta si hubo etapas adicionales de SFT o RLHF mas alla del DPO.
+Sobre el entrenamiento, la model card no aporta detalles: no se especifican tokens vistos, composición del dataset, hiperparámetros del DPO ni si hubo una etapa GRPO previa o posterior (el nombre del modelo base menciona «Instruction DPO + GRPO», pero sin cifras). Tampoco se documentan técnicas como decodificación especulativa o atención lineal. La conversión se realizó con `mlc_llm convert_weight ... --quantization q0f16`, preservando precisión fp16 y, según el autor, sin pérdida de calidad respecto al checkpoint original.
 
 ## Capacidades
 
-- Generacion de texto e instrucciones generales en ingles, con el estilo alineado que aporta la etapa DPO.
-- Seguimiento de instrucciones con restricciones de formato estrictas (el ejemplo de la model card pide "exactamente tres frases, todo en minusculas").
-- Conversacion multi-turno mediante la API `engine.chat.completions.create` de WebLLM, compatible con el esquema de mensajes `role`/`content`.
-- Inferencia 100 % local en el navegador: no requiere servidor, clave de API ni conexion despues de la descarga inicial de los pesos.
-- Ejecucion sobre la libreria precompilada de WebLLM (`Qwen2-0.5B-Instruct-q0f16`), lo que simplifica la integracion en aplicaciones web.
-- No se documentan en la informacion disponible capacidades de tool calling, function calling, agentes, razonamiento multi-paso explicito (thinking mode), vision ni audio.
+- Generación de texto conversacional multi-turno con plantilla de chat Qwen2, orientada a instrucciones.
+- Alineación por preferencias mediante DPO sobre el checkpoint base (según el nombre del modelo base; sin métricas publicadas).
+- Ejecución en navegador mediante WebLLM sobre WebGPU, con requisito de la extensión `shader-f16`.
+- API compatible con OpenAI Chat Completions a través de `@mlc-ai/web-llm` (`engine.chat.completions.create`).
+- Capacidad multilingüe limitada: solo inglés declarado.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Modo thinking, visión, audio o agentes multi-paso: no disponible.
+- Razonamiento avanzado y matemáticas: no documentado; el tamaño de 0,5 B impone límites prácticos.
 
 ## Casos de uso
 
-- Chat de soporte embebido en una web estatica: el modelo se carga con `CreateMLCEngine` y responde sin backend, de modo que no hay coste de servidor ni latencia de red por token; adecuado para FAQs y preguntas frecuentes acotadas.
-- Procesamiento de texto con requisitos de privacidad: al ejecutarse en el dispositivo, los datos del usuario no se envian a ninguna API; encaja en sectores con restricciones de residencia de datos (salud, legal, administracion) para tareas de resumen o reformulacion de textos cortos.
-- Prototipado rapido de prompts y plantillas de conversacion: sirve para validar el comportamiento de una variante DPO de Qwen2.5-0.5B antes de invertir en un despliegue con GPU propia.
-- Extension de navegador o PWA con asistente de redaccion: correcciones, reescritura y generacion de respuestas cortas en formularios, sin infraestructura de inferencia.
-- Demostraciones educativas de LLM en el navegador: permite mostrar el funcionamiento de un modelo de lenguaje y de WebGPU en aulas o talleres sin instalar CUDA ni dependencias de Python.
-- Entornos aislados o air-gapped: la app web y los pesos pueden servirse desde un servidor interno, funcionando como asistente de texto sin salida a internet.
-- Referencia para publicar fine-tunes en MLC/WebLLM: los comandos de conversion documentados (`convert_weight` y `gen_config` con `--model-type qwen2`) sirven de plantilla para empaquetar otros adaptadores sobre Qwen2.
+- Asistentes embebidos en aplicaciones web con privacidad por diseño: el modelo se ejecuta íntegramente en el cliente vía WebGPU, por lo que ninguna conversación abandona el navegador; adecuado para formularios de ayuda, FAQs o guías interactivas donde no se quiere depender de un backend.
+- Demos y prototipos de producto sin infraestructura: permite validar flujos conversacionales en una landing o un notebook web sin aprovisionar GPUs ni endpoints, gracias al uso de la librería precompilada de WebLLM.
+- Educación y experimentación con DPO: sirve como ejemplo didáctico de cómo un checkpoint afinado por preferencias puede desplegarse en el navegador manteniendo la plantilla de chat Qwen2.
+- Procesamiento de texto local en entornos con conectividad intermitente: una vez cacheado el artefacto de 1,0 GB, la inferencia no requiere red, útil en aplicaciones de escritorio web o PWA.
+- Generación de texto auxiliar de bajo coste: resúmenes cortos, reescritura de frases o respuestas a preguntas simples en inglés dentro de interfaces web, donde la latencia de red es cero.
+- Evaluación comparativa de formatos de despliegue: útil para medir el coste de ejecutar fp16 frente a cuantizaciones q4f16/q4f32 en el mismo hardware de cliente, aunque el autor no publica cifras de latencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explicitamente que los benchmarks se encuentran en la model card del modelo original (zaydsyed/Qwen2.5-0.5B-Instruct-DPO), que no forma parte de la informacion proporcionada. Tampoco se publican métricas de latencia, throughput (tokens/s) ni consumo de memoria en navegador.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card remite a la del modelo original (`zaydsyed/TactLM-Instruction-DPO-Qwen2.5-0.5B`) para métricas, sin incluirlas aquí. Tampoco se documentan latencias ni throughput medidos en navegador.
 
 ## Requisitos de hardware
 
-- Memoria: los pesos ocupan 1,0 GB en fp16; hay que sumar la cache KV y el overhead del runtime de WebGPU, por lo que conviene reservar del orden de 1,5-2 GB de memoria de GPU para contextos moderados (estimacion, no verificada por el autor).
-- Navegador: se requiere WebGPU con la caracteristica `shader-f16`; sin ese soporte el modelo no arranca. No se especifican versiones minimas ni lista de GPU compatibles.
-- GPU de consumo: si el navegador expone `shader-f16`, un modelo de 0,5 B en fp16 es apto para GPU integradas recientes y para GPU discretas de gama baja; no se publica una lista de modelos validados.
-- Despliegue en navegador: WebLLM (`@mlc-ai/web-llm`) con `CreateMLCEngine` y un `appConfig` que apunte al repo de Hugging Face como `model`.
-- Despliegue nativo: MLC-LLM (motor C++/CUDA, Vulkan, Metal) puede servir los mismos artefactos; para vLLM, llama.cpp, Ollama o TGI seria necesario reconvertir desde el modelo base, ya que este repo no incluye safetensors ni GGUF.
-- Movil: MLC-LLM soporta compilacion para iOS y Android, pero no hay artefactos publicados en este repositorio ni pruebas documentadas.
-- Latencia y throughput: no disponibles.
+- VRAM/GPU de cliente: el modelo se ejecuta en el navegador sobre WebGPU; requiere una GPU con soporte de la extensión `shader-f16` (la mayoría de GPUs integradas y dedicadas recientes de Intel, AMD, NVIDIA y Apple Silicon).
+- Huella de memoria: artefacto de 1,0 GB en fp16; la memoria de trabajo añade KV cache y buffers, por lo que conviene disponer de varios GB de VRAM compartida o dedicada.
+- GPU dedicadas: cualquier RTX 20xx o superior, así como iGPU recientes, pueden ejecutarlo; no se requieren A100/H100, que sobredimensionan el modelo.
+- Despliegue: WebLLM (`@mlc-ai/web-llm`) en navegador; alternativamente, el runtime MLC-LLM nativo para escritorio o servidor.
+- Latencia y throughput: no disponibles en la información proporcionada; dependerán del backend WebGPU y del hardware del cliente.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / runtime | Licencia | Notas |
+| Modelo | Parametros | Contexto | Formato | Licencia | Ejecucion en navegador |
 |---|---|---|---|---|---|
-| Este modelo (Qwen2.5-0.5B-Instruct-DPO q0f16 MLC) | 0,5 B | No disponible (heredado del base) | MLC / WebLLM (WebGPU) | Apache 2.0 | Build fp16 para navegador, 0 descargas |
-| Qwen2.5-0.5B-Instruct (modelo base de referencia) | 0,5 B | 32 768 tokens (spec del modelo base, no verificada en esta ficha) | safetensors, GGUF en el ecosistema | Apache 2.0 | Requiere backend (vLLM, llama.cpp, transformers) |
-| Qwen2.5-1.5B-Instruct | 1,5 B | 32 768 tokens (spec del modelo base) | safetensors, GGUF | Apache 2.0 | Mayor calidad esperada, mas memoria y latencia |
-| Llama 3.2 1B Instruct | ~1,2 B | 128 000 tokens (spec publicada) | safetensors, GGUF | Licencia comunitaria Llama 3.2 | Contexto mucho mayor; licencia con condiciones de uso |
-| SmolLM2-360M-Instruct | ~0,36 B | 8 192 tokens (spec publicada) | safetensors, GGUF | Apache 2.0 | Alternativa aun mas ligera para dispositivo |
+| TactLM-Instruction-DPO-Qwen2.5-0.5B-q0f16-MLC (este) | 0,5 B | no disponible | MLC fp16 | apache-2.0 | Si (WebLLM + WebGPU) |
+| Qwen2.5-0.5B-Instruct (original) | 0,5 B | 32 768 (segun documentacion de Qwen) | safetensors | apache-2.0 | No nativo |
+| TactLM-Instruction-DPO-Qwen2.5-0.5B (base de este build) | 0,5 B | no disponible | safetensors | apache-2.0 | No nativo |
+| Otras variantes MLC de Qwen2.5-0.5B-Instruct | 0,5 B | heredado | MLC (q4f16, q0f16) | apache-2.0 | Si (WebLLM) |
 
-No se dispone de datos de benchmarks de este build que permitan comparar calidad de forma cuantitativa con las alternativas; la comparacion anterior es de especificaciones y disponibilidad.
+La comparación de rendimiento no puede establecerse: no hay benchmarks publicados para este build ni para su checkpoint DPO en la información disponible.
 
 ## Limitaciones y advertencias
 
-- El repositorio es una conversion de formato, no un modelo nuevo: cualquier limitacion del modelo base (sesgos del corpus de Qwen2.5, alucinacion en tareas de conocimiento factual, capacidad limitada por el tamano de 0,5 B) se hereda intacta.
-- Idiomas: la model card declara unicamente ingles; el uso en castellano no esta validado por el autor, aunque el modelo base Qwen2.5 sea multilingue.
-- Contexto: la longitud de contexto no se especifica en esta ficha; si se necesita un valor concreto para produccion, hay que consultar la model card del modelo original y verificar empiricamente la ventana efectiva en WebLLM.
-- Dependencia estricta de WebGPU con `shader-f16`: los navegadores o GPU sin esa caracteristica no podran ejecutar el modelo, sin fallback documentado.
-- Formato no portable: al no publicar safetensors ni GGUF, no se puede cargar directamente con `transformers`, vLLM, llama.cpp u Ollama; hay que reconvertir desde el modelo base.
-- Calidad del ajuste DPO no documentada: no se publican datos de preferencias, hiperparametros ni evaluaciones, por lo que no hay evidencia de mejora frente al Instruct original.
-- Trazabilidad escasa: 0 descargas y 0 likes; creado y actualizado el 2026-10-21 con dos minutos de diferencia, sin historial de versiones ni procesos de validacion.
-- Licencia Apache 2.0: permite uso comercial y modificacion, pero conviene conservar los avisos de atribucion del modelo base Qwen2.5 y revisar la licencia de la libreria WebLLM/MLC-LLM en el producto final.
-- En produccion: al ejecutarse en el cliente, la primera carga implica descargar ~1 GB de pesos; es necesario gestionar cache, versionado y actualizaciones en el navegador del usuario.
+- Tamaño muy reducido (0,5 B): alta probabilidad de alucinación y razonamiento limitado en tareas de varios pasos, matemáticas o código complejo.
+- Solo inglés declarado; no se garantiza calidad en castellano ni en otros idiomas.
+- No hay benchmarks ni evaluación independiente publicados para este build ni para el checkpoint DPO del que deriva.
+- El repositorio es un artefacto de conversión, no un modelo nuevo: cualquier limitación del modelo base se hereda sin cambios.
+- Requiere WebGPU con `shader-f16`; navegadores o GPUs sin esa extensión no pueden ejecutarlo.
+- Descarga inicial de 1,0 GB en el cliente, lo que afecta al primer arranque y al consumo de datos del usuario.
+- Licencia apache-2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen2.5 y del checkpoint DPO original antes de desplegar en producción.
+- Sin garantías de mantenimiento: el autor tiene 0 likes y 24 descargas en el momento de la consulta, lo que sugiere un proyecto de baja tracción.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/zaydsyed/Qwen2.5-0.5B-Instruct-DPO-q0f16-MLC
-- Modelo base (etapa DPO): https://huggingface.co/zaydsyed/Qwen2.5-0.5B-Instruct-DPO
-- Repositorio MLC-LLM: https://github.com/mlc-ai/mlc-llm
-- Repositorio WebLLM: https://github.com/mlc-ai/web-llm
-- Paquete npm de WebLLM: https://www.npmjs.com/package/@mlc-ai/web-llm
-- Los resultados de la busqueda web realizada no contienen enlaces relevantes para este modelo (devuelven exclusivamente paginas sobre calculadoras Texas Instruments); no se han encontrado papers, blogs ni demos adicionales.
+- Hugging Face (este build): https://huggingface.co/zaydsyed/Qwen2.5-0.5B-Instruct-DPO-q0f16-MLC
+- Modelo base DPO: https://huggingface.co/zaydsyed/TactLM-Instruction-DPO-Qwen2.5-0.5B
+- MLC-LLM: https://github.com/mlc-ai/mlc-llm
+- WebLLM: https://github.com/mlc-ai/web-llm
+- Paquete npm: https://www.npmjs.com/package/@mlc-ai/web-llm

@@ -48,5 +48,11 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "Backend Development - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/blogs/backend-development/",
+      "snippet": "Sep 16, 2026 · Backend development handles the server-side logic, database, and core functionality of web applications. It ensures …"
+    }
+  ]
 }

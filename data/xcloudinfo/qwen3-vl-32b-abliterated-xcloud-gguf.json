@@ -32,7 +32,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 707,
+  "downloads_30d": 1018,
   "trending_score": 0,
   "parameters": 32762123264,
   "parameters_human": "32.76B",
@@ -52,31 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "xCloudinfo/Qwen3-VL-32B-Abliterated-xCloud · Hugging Face",
-      "url": "https://huggingface.co/xCloudinfo/Qwen3-VL-32B-Abliterated-xCloud",
-      "snippet": "Instructions to use xCloudinfo/Qwen3-VL-32B-Abliterated-xCloud with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "Qwen3-VL-32B-Abliterated-xCloud-GGUF - Hugging Face",
-      "url": "https://huggingface.co/xCloudinfo/Qwen3-VL-32B-Abliterated-xCloud-GGUF",
-      "snippet": "Qwen3-VL-32B-Abliterated-xCloud (GGUF) — English llama.cpp GGUF quantizations (with vision mmproj) of xCloudinfo/Qwen3-VL-32B-Abliterated-xCloud, an abliterated (reduced over-refusal) build of Qwen/Qwen3-VL-32B-Instruct. Released for community testing. Use --mmproj for image input. Apache-2.0. Safety refusals removed — users are solely responsible for lawful, ethical use; released for ..."
-    },
-    {
-      "title": "Qwen3 VL 32B Abliterated XCloud by xCloudinfo - LLM Explorer",
-      "url": "https://llm-explorer.com/model/xCloudinfo%2FQwen3-VL-32B-Abliterated-xCloud,4pb1WLbu3kdMoiz2XRPZww",
-      "snippet": "Rank the Qwen3 VL 32B Abliterated XCloud capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
-    },
-    {
-      "title": "Qwen3-VL-32B-Abliterated-xCloud API & Inference Endpoint | FriendliAI",
-      "url": "https://friendli.ai/models/xCloudinfo/Qwen3-VL-32B-Abliterated-xCloud",
-      "snippet": "Qwen3-VL-32B-Abliterated-xCloud — English An abliterated (reduced over-refusal) multimodal vision-language model produced by xCloudinfo from Qwen/Qwen3-VL-32B-Instruct, released for community testing."
-    },
-    {
-      "title": "Alibaba Cloud Model Studio",
-      "url": "https://modelstudio.alibabacloud.com/",
-      "snippet": "Diverse Model Ecosystem Easily experience and quickly access Alibaba Cloud&#x27;s latest foundational models (FM), including Qwen-Max, Qwen-Plus, Qwen-Turbo, Qwen-VL, and the Wan series."
-    }
-  ]
+  "sources": []
 }

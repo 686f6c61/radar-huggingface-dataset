@@ -5,7 +5,7 @@
   "author": "arbora-anon",
   "url": "https://huggingface.co/arbora-anon/arbora-minimax-m3.1-flash-experts",
   "created_at": "2026-11-10T05:23:45.000Z",
-  "updated_at": "2026-11-10T05:24:10.000Z",
+  "updated_at": "2026-11-16T19:29:17.000Z",
   "license": "minimax-community",
   "license_family": "non-commercial",
   "pipeline_tag": null,
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 18,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 3256591656,
   "parameters_human": "3.26B",

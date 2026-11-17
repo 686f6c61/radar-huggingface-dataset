@@ -2,88 +2,91 @@
 
 ## Resumen
 
-scOntoFM es un modelo fundacional para datos de secuenciación de ARN de célula única (scRNA-seq) desarrollado por el autor xiangyguo. Se trata de un transformer tipo BERT de pequeno tamano (8,9 millones de parametros, 6 capas, dimension oculta 256) que se utiliza como extractor de caracteristicas para generar embeddings de celulas de 256 dimensiones. La innovacion central del modelo es que incorpora la jerarquia de la Cell Ontology (CL) en el proceso de aprendizaje de representaciones, de modo que celulas de tipos similares segun la ontologia quedan proximas en el espacio de embeddings.
+scOntoFM es un modelo fundacional para biología computacional desarrollado por xiangyguo (autor individual, sin afiliación institucional indicada en la model card) y aceptado en NeurIPS 2026. Se trata de un transformer tipo BERT de 8,9 millones de parámetros entrenado para generar representaciones de células individuales a partir de datos de secuenciación de ARN de célula única (scRNA-seq). Su particularidad es que incorpora explícitamente la jerarquía de la Cell Ontology en el aprendizaje de representaciones mediante triplets guiados por distancias LCA (lowest common ancestor) entre términos ontológicos.
 
-El modelo se preentrena sobre un corpus de 27,5 millones de celulas humanas procedentes de 234 conjuntos de CELLxGENE, cubriendo 210 tejidos, 566 tipos celulares y 58 enfermedades. Ademas del objetivo clasico de modelado de genes enmascarados (masked gene modeling), utiliza dos objetivos conscientes de la ontologia basados en distancias al ancestro comun mas bajo (LCA) entre tipos celulares: una perdida de triplet con margen dinamico y una perdida de alineamiento ontologico diferenciable (Spearman suave).
+El modelo resuelve el problema de obtener embeddings celulares que preserven la estructura biológica jerárquica, algo que los modelos fundacionales de scRNA-seq convencionales no garantizan. Se entrena sobre 27,5 millones de células humanas procedentes de 234 conjuntos de CELLxGENE, cubriendo 210 tejidos, 566 tipos celulares y 58 enfermedades.
 
-Es relevante ahora porque propone una via poco explorada en los modelos fundacionales de scRNA-seq: inyectar conocimiento biologico estructurado (la ontologia) directamente en la funcion de perdida, en lugar de limitarse a aprender de la co-ocurrencia de genes. Al ser un modelo compacto y con licencia MIT, es viable para extraccion de caracteristicas en recursos limitados y para tareas posteriores como anotacion celular o integracion de datos.
+Con solo 8,9M de parámetros y un repositorio de 0,7 GB, es un modelo extremadamente ligero en comparación con los grandes modelos fundacionales de célula única (de cientos de millones a miles de millones de parámetros), lo que lo hace viable en hardware modesto. Su licencia MIT y su integración con la librería `transformers` facilitan su adopción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer tipo BERT (`BertForMaskedLM`), 6 capas, hidden size 256, 4 cabeceras de atencion, intermediate 512 |
-| Parametros totales | 8.867.301 (8,9 M) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 2.002 tokens (secuencia `<cls>` + top-2.000 genes + `<eos>`) |
+| Arquitectura | BERT (`BertForMaskedLM`): 6 capas, hidden size 256, 4 cabezas de atención, intermediate 512 |
+| Parametros totales | 8.867.301 |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | 2.002 tokens (`<cls>` + top-2.000 genes + `<eos>`) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (modelo biologico; entrada basada en identificadores de genes, no texto natural) |
-| Licencia | MIT (pesos y codigo); Cell Ontology CC BY 4.0; corpus derivado de CELLxGENE CC BY 4.0 |
-| Formato de pesos | safetensors (`model.safetensors`) + `config.json`; vocabulario en `vocab/token_dictionary.pkl` y `vocab/gene_medians.pkl` |
+| Idiomas soportados | no disponible (modelo biológico; la entrada son identificadores de genes, no texto natural) |
+| Licencia | MIT (pesos y código); Cell Ontology CC BY 4.0; corpus derivado de CZ CELLxGENE Discover CC BY 4.0 |
+| Formato de pesos | safetensors (`model.safetensors`), configuración `config.json` |
+| Vocabulario | 19.941 tokens (identificadores de genes) |
+| Dimension del embedding celular | 256 (estado `<cls>` de la última capa) |
+| Pipeline | feature-extraction / fill-mask |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer encoder de estilo BERT con 6 capas, dimension oculta 256, 4 cabeceras y capa intermedia de 512, sumando 8,9 millones de parametros. La entrada no es texto sino una secuencia de identificadores de genes: un token `<cls>`, los 2.000 genes con mayor rango tras normalizacion por medianas (no nulas), y un token `<eos>`, con una longitud maxima de 2.002 posiciones y un vocabulario de 19.941 tokens geneticos. El embedding de celula se obtiene del estado final del token `<cls>` (256 dimensiones).
+La arquitectura es un transformer encoder de tipo BERT con 6 capas, dimensión oculta de 256, 4 cabezas de atención y capa intermedia de 512, totalizando 8,9M de parámetros. La entrada no es texto: cada célula se representa como una secuencia de `<cls>` seguido de los 2.000 genes con mayor rango tras normalización por mediana, y un token `<eos>` final, con longitud máxima de 2.002. El vocabulario de 19.941 tokens corresponde a identificadores de genes. La tokenización (normalización por mediana por gen y ranking) se implementa en el repositorio de código del autor, e incluye los ficheros `vocab/token_dictionary.pkl` y `vocab/gene_medians.pkl`.
 
-El preentrenamiento se realizo sobre 27.525.118 celulas humanas del corpus `xiangyguo/scOntoFM-pretrain-corpus` (234 conjuntos CELLxGENE, 210 tejidos, 566 tipos celulares, 58 enfermedades); de las 29.160.112 celulas del repositorio, 1.634.994 (sin anotacion, malignas o con terminos obsoletos) no se utilizaron. El entrenamiento consistio en 3 epocas con DeepSpeed ZeRO-2, precision fp16, AdamW con lr 1e-3 y batch global de 1.536 triplets, en 6 GPU H200. Ademas del masked gene modeling, se emplearon dos objetivos: una perdida de triplet con margen dinamico y negativos dificiles guiados por ontologia (los 50 tipos celulares mas cercanos), y una perdida de alineamiento ontologico (Spearman suave diferenciable) entre las distancias de embeddings dentro del batch y las distancias LCA. Los artefactos de entrenamiento (distancias LCA entre terminos CL 2025-07-30, mapa de identificadores CL, triplets) se publican en el repositorio.
+El entrenamiento usa 27.525.118 células humanas del corpus `xiangyguo/scOntoFM-pretrain-corpus` (que contiene 29.160.112 células; se excluyen 1.634.994 sin anotar, malignas o con términos obsoletos), provenientes de 234 conjuntos de CELLxGENE, 210 tejidos, 566 tipos celulares y 58 enfermedades. Se realizan 3 épocas en 6 GPU H200 con DeepSpeed ZeRO-2, precisión fp16, optimizador AdamW con lr 1e-3 y batch global de 1.536 triplets. La innovación clave es el uso de triplets (anchor, positive, negative) construidos con distancias LCA entre términos de la Cell Ontology (versión CL 2025-07-30), de modo que el objetivo de entrenamiento respeta la jerarquía biológica: células de tipos más próximos en la ontología quedan más cerca en el espacio de representación. Los ficheros `assets/celltype_similarity_LCA_deepest_allnodes.pkl`, `assets/CL_id_map.pkl` y `assets/triplet_ind_hard_top50.pkl` documentan estos componentes auxiliares.
 
 ## Capacidades
 
-- Extraccion de caracteristicas: genera embeddings de celula de 256 dimensiones a partir de recuentos brutos de scRNA-seq, utilizables como entrada para clasificadores, clustering o analisis aguas abajo.
-- Modelado de genes enmascarados: permite predecir genes enmascarados a partir del contexto de la celula (tarea de tipo fill-mask sobre vocabulario genetico).
-- Representacion consciente de ontologia: los embeddings reflejan la jerarquia de la Cell Ontology, de modo que tipos celulares proximos segun LCA tienden a quedar proximos en el espacio latente.
-- Integracion de datos entre conjuntos: al estar entrenado sobre 234 conjuntos y 210 tejidos, esta disenado para representar celulas de procedencias heterogeneas en un espacio comun.
-- No soporta tool calling ni function calling (no es un modelo de lenguaje).
-- No soporta agentes ni razonamiento multi-paso.
-- Capacidades multilingues: no disponibles (no procesa lenguaje natural; la entrada son identificadores de genes Ensembl).
-- Capacidades especiales: no dispone de modo thinking, vision ni audio.
+- Generación de embeddings celulares de 256 dimensiones a partir de recuentos crudos de scRNA-seq (formato `.h5ad` con identificadores de gen Ensembl).
+- Extracción de características (`feature-extraction`) para tareas downstream de análisis de célula única.
+- Modelado de lenguaje enmascarado sobre secuencias de genes (`fill-mask`), heredado del objetivo de preentrenamiento BERT.
+- Preservación de la estructura biológica jerárquica: los embeddings reflejan distancias ontológicas entre tipos celulares.
+- No es un modelo generativo de texto ni de código; no soporta tool calling, agentes ni razonamiento multi-paso.
+- No tiene capacidades de visión, audio ni multilingües en sentido convencional.
 
 ## Casos de uso
 
-- Anotacion celular automatica: usar los embeddings de 256 dimensiones como entrada a un clasificador supervisado (por ejemplo, regresion logistica o k-NN) entrenado con tipos celulares anotados; la alineacion ontologica del modelo facilita la transferencia entre tejidos y conjuntos.
-- Integracion de datos scRNA-seq entre estudios: proyectar celulas de distintos conjuntos CELLxGENE en un espacio comun para corregir el efecto de lote antes de clustering, aprovechando que el modelo se entreno sobre 234 conjuntos.
-- Busqueda de celulas similares: indexar los embeddings y recuperar las celulas mas parecidas a una consulta, util para identificar poblaciones raras o estados celulares poco representados.
-- Clustering no supervisado: alimentar algoritmos como Leiden o K-means con los embeddings en lugar de la matriz de expresion, reduciendo dimensionalidad de miles de genes a 256 componentes.
-- Analisis de linaje y relaciones entre tipos celulares: explotar la estructura ontologica aprendida para estudiar que tipos celulares quedan proximos en el espacio latente y contrastarlo con la jerarquia de la Cell Ontology.
-- Preprocesamiento en pipelines de descubrimiento de biomarcadores: extraer representaciones compactas antes de modelos predictivos de enfermedad, dado que el corpus incluye 58 enfermedades.
-- Experimentacion academica con objetivos guiados por ontologia: reutilizar las perdices LCA y los triplets publicados para estudiar el efecto de la ontologia en el aprendizaje de representaciones.
+- Anotación de tipos celulares: los embeddings `<cls>` de 256 dimensiones sirven como entrada a clasificadores ligeros (kNN, regresión logística) para asignar tipos celulares a poblaciones nuevas, aprovechando que el espacio latente respeta la jerarquía de la Cell Ontology.
+- Integración de datos entre experimentos y lotes: al producir representaciones comparables entre 234 conjuntos y 210 tejidos, los embeddings facilitan la corrección de lote y la integración de scRNA-seq heterogéneo.
+- Clustering y análisis exploratorio: los 256-d permiten agrupar células con métodos estándar (Leiden/Louvain sobre kNN) preservando relaciones biológicas finas entre tipos próximos.
+- Detección de estados celulares anómalos: comparando distancias ontológicas en el espacio latente se pueden identificar poblaciones que se desvían de su tipo esperado, útil en estudios de enfermedad (el corpus cubre 58 enfermedades).
+- Búsqueda y recuperación de células similares: los embeddings permiten construir índices vectoriales para recuperar células de referencia similares a una consulta.
+- Preentrenamiento ligero y prototipado rápido: con 8,9M de parámetros y 0,7 GB, se puede ejecutar y ajustar en una GPU de consumo para experimentos exploratorios o docencia.
+- Transferencia a tareas downstream con pocas etiquetas: los embeddings congelados sirven como base para fine-tuning con conjuntos pequeños, dado el preentrenamiento masivo sobre 27,5M de células.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica que el modelo "mejora consistentemente el rendimiento en diversas tareas downstream" y "mejora significativamente la preservación de la estructura biológica", pero no incluye cifras concretas (ni MMLU, ni métricas específicas de scRNA-seq como precisión de anotación o silhouette score). No se inventan números.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el modelo tiene solo 8,9 M de parametros; en fp16 ocupa aproximadamente 18 MB de pesos, y en fp32 unos 35 MB. La memoria dominante sera la de activaciones y el tamano del batch, no los pesos.
-- GPU recomendadas: cualquier GPU moderna es suficiente. Una RTX 4090, A100 o H100 queda sobredimensionada para este modelo; una GPU consumer de gama media o incluso CPU es viable para inferencia por lotes moderados.
-- Cabe en GPU consumer: si, practicamente en cualquier GPU con suficiente memoria para el batch (por ejemplo, 8 GB o menos).
-- Opciones de despliegue: carga directa con `transformers` (`BertForMaskedLM.from_pretrained`); el repositorio oficial incluye `scripts/run_inference.py` para procesar un `.h5ad` con identificadores Ensembl. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que estan orientados a modelos de lenguaje y no aplican directamente a este tipo de entrada.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: inferior a 1 GB en fp16 (8,9M de parámetros); el cuello de botella es el tamaño del vocabulario (19.941 tokens) y la longitud de secuencia (2.002), no los pesos.
+- GPU recomendadas: cualquier GPU moderna; el entrenamiento original usó 6 × H200, pero la inferencia cabe holgadamente en GPUs de consumo.
+- Cabe en GPU de consumo: sí, en cualquier GPU con al menos 2-4 GB de VRAM (GTX 1650, RTX 3060, RTX 4090, etc.).
+- Opciones de despliegue: `transformers` (carga directa con `BertForMaskedLM.from_pretrained`), script de inferencia del repositorio `scripts/run_inference.py`; el uso de vLLM, llama.cpp u Ollama no está documentado para este modelo y no es el caso de uso previsto (entrada biológica, no texto).
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone en la informacion proporcionada de datos de rendimiento ni de especificaciones de modelos comparables de scRNA-seq (como scGPT, Geneformer o scFoundation), por lo que la comparativa cuantitativa no esta disponible. A modo de contexto estructural, scOntoFM destaca por su tamano reducido (8,9 M de parametros frente a los cientos de millones o miles de millones de los modelos fundacionales de scRNA-seq mas conocidos) y por su enfoque en la ontologia celular; sin embargo, no se pueden aportar cifras comparativas de benchmarks sin inventar datos.
+| Modelo | Parámetros | Contexto / entrada | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| scOntoFM | 8,9M | top-2.000 genes (2.002 tokens) | MIT | Hugging Face, `transformers` |
+| Geneformer | no disponible en la información | no disponible | no disponible | Hugging Face |
+| scGPT | no disponible en la información | no disponible | no disponible | Hugging Face |
+| scFoundation | no disponible en la información | no disponible | no disponible | Hugging Face |
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| scOntoFM | 8,9 M | 2.002 tokens (top-2.000 genes) | BERT + objetivos guiados por Cell Ontology | MIT | Hugging Face |
-| Alternativas de scRNA-seq | no disponible | no disponible | no disponible | no disponible | no disponible |
+No se dispone en la información proporcionada de datos de parámetros, contexto, rendimiento o licencia de los modelos comparables (Geneformer, scGPT, scFoundation), por lo que la comparativa cuantitativa no está disponible. La diferencia cualitativa destacable de scOntoFM es su tamaño mucho menor (8,9M) y la integración explícita de la Cell Ontology en el objetivo de entrenamiento.
 
 ## Limitaciones y advertencias
 
-- Modelo de dominio muy especifico: solo procesa datos de scRNA-seq con identificadores de genes Ensembl y el esquema de tokenizacion propio (normalizacion por medianas y ranking); no es util para texto, codigo ni otras modalidades.
-- Dependencia del vocabulario: el vocabulario de 19.941 genes y las medianas por gen estan fijados en el repositorio; genes fuera del vocabulario o datos con otra anotacion no podran representarse correctamente.
-- Limitacion de contexto: solo se consideran los 2.000 genes con mayor rango; genes de baja expresion quedan fuera de la representacion.
-- Sesgos del corpus: el entrenamiento se limita a celulas humanas de CELLxGENE (210 tejidos, 58 enfermedades); la representacion de tejidos, poblaciones o enfermedades poco representadas en ese corpus puede ser deficiente.
-- Riesgo de alucinacion en la prediccion de genes enmascarados: el modelo puede predecir genes plausibles pero incorrectos; no debe usarse como sustituto de validacion experimental.
-- Exclusiones del entrenamiento: 1.634.994 celulas sin anotacion, malignas o con terminos obsoletos no se usaron, lo que puede limitar la representacion de estados tumorales.
-- Licencia: pesos y codigo bajo MIT, permisivo para uso comercial; la Cell Ontology es CC BY 4.0 y el corpus derivado de CELLxGENE es CC BY 4.0, por lo que su redistribucion exige atribucion.
-- Advertencia para produccion: no se han publicado benchmarks ni evaluaciones de robustez; antes de usarlo en un pipeline clinico o de descubrimiento, conviene validarlo contra un baseline supervisado en los datos propios.
+- Solo cubre células humanas: el corpus de entrenamiento son 27,5 millones de células humanas; no se documenta soporte para otras especies.
+- Entrada restringida: requiere recuentos crudos `.h5ad` con identificadores de gen Ensembl y la tokenización específica (normalización por mediana y ranking top-2.000); no acepta texto libre ni otras modalidades.
+- Ventana limitada a 2.000 genes: los genes fuera del top-2.000 por mediana no se consideran en la representación.
+- Riesgo de sesgo de anotación: el modelo hereda los sesgos y errores de anotación de los 234 conjuntos de CELLxGENE; las células sin anotar, malignas o con términos obsoletos se excluyeron del entrenamiento, lo que puede limitar la representación de estados tumorales o mal anotados.
+- No es un modelo generativo de texto: no debe evaluarse con benchmarks de NLP ni usarse para tareas de lenguaje.
+- Licencia MIT para pesos y código, pero el corpus derivado de CELLxGENE y la Cell Ontology tienen sus propias condiciones (CC BY 4.0); verificar el cumplimiento de atribución en uso comercial.
+- Sin métricas de benchmark publicadas en la información disponible: la evaluación de su rendimiento real en tareas downstream requiere validación propia.
+- Adopción muy baja (96 descargas, 0 likes) y autor individual: menor madurez de ecosistema y soporte comunitario en comparación con modelos establecidos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/xiangyguo/scOntoFM
-- Corpus de preentrenamiento: https://huggingface.co/datasets/xiangyguo/scOntoFM-pretrain-corpus
-- Repositorio de codigo (tokenizacion e inferencia): https://github.com/woweizhi/scOntoFM
-- Cell Ontology (OBO Foundry): https://obofoundry.org/ontology/cl.html
-- CELLxGENE Discover: https://cellxgene.cziscience.com/
+- Dataset de preentrenamiento: https://huggingface.co/datasets/xiangyguo/scOntoFM-pretrain-corpus
+- Repositorio de código: https://github.com/woweizhi/scOntoFM
+- CZ CELLxGENE Discover: https://cellxgene.cziscience.com/
+- Cell Ontology: https://obofoundry.org/ontology/cl.html

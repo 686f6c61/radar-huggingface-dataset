@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/GLiNER2.5-Small-LiteRT",
   "created_at": "2026-09-19T10:09:50.000Z",
-  "updated_at": "2026-11-04T22:30:50.000Z",
+  "updated_at": "2026-11-17T06:34:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",

@@ -2,99 +2,102 @@
 
 ## Resumen
 
-El modelo `yomie4343/Qwen3.8-Flash-Next-Uncensored-MLX-Serve-mixed-4-8bit` es un espejo verificado de los pesos de una versión "uncensored" del modelo `Qwen3.8-Flash-Next`, cuantizada en formato mixto 4/8-bit y adaptada al runtime MLX-Serve para Apple Silicon. Ha sido desarrollado por `yomie4343`, quien ha validado la integridad de los pesos frente al pack existente de `ARC4NUM` y ha aplicado un parche local al motor de inferencia para solucionar un fallo de cuantización relacionado con el mecanismo de multi-token prediction (MTP).
+Este repositorio contiene un checkpoint cuantizado en formato MLX del modelo Qwen3.8-Flash-Next-Uncensored, una variante sin censura del modelo base Qwen3.8-Flash-Next. El pack está pensado específicamente para el runtime `mlx-serve` parcheado de ddalcu y para hardware Apple Silicon, no para Transformers, `mlx-lm` ni `mlx-vlm` genéricos. El autor, yomie4343, lo presenta como un espejo verificado de pesos ya existentes: los 102 archivos de pesos y tablas N-grama (107.303.406.192 bytes) coinciden por SHA-256 con el pack de ARC4NUM en la revisión `9ebf9993b1eaec96aec938bf883601b51a90393b`.
 
-Con 133.195.562.899 parámetros totales, el modelo combina una arquitectura Mixture of Experts (MoE) con soporte multimodal (texto e imagen) y una tabla N-gram. El contexto anunciado es de 204.800 tokens, aunque el autor advierte que no es garantía de contexto utilizable en todo el hardware. El modelo destaca por permitir la ejecución local de un modelo de gran tamaño con soporte de herramientas y visión en una Mac Studio M3 Ultra con 96 GB de memoria, a costa de una licencia restrictiva y de los riesgos asociados a una versión sin alineación de seguridad.
+El modelo tiene 133.195.562.899 parámetros totales según los safetensors del repo y sigue una arquitectura MoE con atención transformer, cabecera MTP (multi-token prediction) y torre de visión, dado que el pipeline declarado es image-text-to-text. La cuantización es mixta: expertos MoE enrutados a 4 bits (grupo 64), proyecciones elegibles a 8 bits (grupo 64), embeddings de tokens a 4 bits y tabla N-grama a 4 bits (grupo 32) en un archivo separado mapeado desde SSD.
 
-## Especificaciones técnicas
+La relevancia práctica está en que permite ejecutar un modelo de 133.000 millones de parámetros en un Mac Studio M3 Ultra de 96 GB de memoria unificada, con un pack de aproximadamente 107 GB. El repo incluye además un parche reproducible del motor de inferencia para la cabecera MTP, validaciones medidas y una configuración de arranque conservadora para texto. La licencia es `qwen-community-1.0`, lo que condiciona el uso comercial.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer basado en Mixture of Experts (MoE) con soporte multimodal (visión + texto) y multi-token prediction (MTP) |
-| Parametros totales | 133.195.562.899 (≈133 mil millones) |
+| Arquitectura | Transformer MoE con cabecera MTP y torre de visión (tag `qwen4_exp`) |
+| Parametros totales | 133.195.562.899 |
 | Parametros activos | no disponible |
-| Longitud de contexto | 204.800 tokens (anunciado; no garantizado en hardware de 96 GB) |
-| Tipos de cuantizacion | Mixta 4/8-bit: expertos MoE enrutados y token embeddings en 4-bit (affine, group 64); proyecciones elegibles en 8-bit (affine, group 64); tabla N-gram en 4-bit (group 32) |
+| Longitud de contexto | 32.768 tokens en la configuración de arranque documentada (`--ctx-size 32768`); máximo nativo no disponible |
+| Tipos de cuantizacion | Mixta: 4-bit affine grupo 64 (expertos MoE enrutados), 8-bit affine grupo 64 (otras proyecciones elegibles), 4-bit grupo 64 (embeddings de tokens), 4-bit grupo 32 (tabla N-grama). Variante alternativa 3/8-bit disponible |
 | Idiomas soportados | no disponible |
-| Licencia | Qwen Community License 1.0 |
-| Formato de pesos | Safetensors (pack específico para MLX-Serve, incluye `ngram_table.bin` separado) |
+| Licencia | qwen-community-1.0 (`license: other`) |
+| Formato de pesos | safetensors + `ngram_table.bin` separado, formato específico de `mlx-serve` (no compatible con `mlx-lm`/`mlx-vlm` genéricos) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es `Qwen/Qwen3.8-Flash-Next`, que según el repositorio oficial de Qwen introduce mejoras sistemáticas en cuatro aspectos: atención, residuales, embeddings y optimización. El modelo resultante es una arquitectura MoE multimodal con cabezas de MTP y una tabla N-gram utilizada para acelerar la decodificación. El repo de `yomie4343` no modifica los pesos, sino que añade un parche al runtime MLX-Serve y presenta las mediciones correspondientes.
+El modelo es un transformer con mezcla de expertos (MoE): los pesos de los expertos enrutados se cuantizan a 4 bits mientras que el resto de proyecciones elegibles se mantienen a 8 bits, una política de precisión mixta orientada a preservar calidad en las capas densas y comprimir agresivamente donde el impacto es menor. Incorpora una cabecera MTP (multi-token prediction) que permite decodificación especulativa multi-token, y una tabla N-grama en un archivo aparte mapeado desde SSD para lookup de secuencias frecuentes. La torre de visión del modelo fuente se conserva intacta, habilitando entrada de imágenes.
 
-No se dispone de información sobre los datos de entrenamiento, el número de tokens procesados, la composición del dataset o la aplicación de técnicas de alineación como RLHF o DPO. La versión "uncensored" procede de `orcarouter/Qwen3.8-Flash-Next-Uncensored`, que ha sido modificada para eliminar las restricciones de seguridad del modelo original. El proceso de cuantización es específico para MLX-Serve y no es directamente compatible con otros frameworks de inferencia genéricos.
+No hay información sobre el entrenamiento original en la documentación disponible: ni número de tokens, ni composición del dataset, ni si hubo RLHF o DPO. Lo que sí está documentado es el proceso de conversión y cuantización: el pack deriva de `orcarouter/Qwen3.8-Flash-Next-Uncensored` (revisión `8336e613ea508b13c2159bd0f68965d97a606b95`), que a su vez parte de `Qwen/Qwen3.8-Flash-Next`, y fue convertido con el motor y conversor de `ddalcu/mlx-serve`. El autor subraya que no se trata de un nuevo entrenamiento, ni de una nueva abliteración, ni de una receta de cuantización nueva, sino de un espejo verificado con parches locales de runtime.
 
 ## Capacidades
 
-- Modelo multimodal que acepta texto e imágenes como entrada (pipeline `image-text-to-text`).
-- Generación de texto y razonamiento con capacidades de programación, evaluadas por el autor en 25 tareas de TypeScript.
-- Soporte de tool calling / function calling, observado en los benchmarks del autor mediante el uso de herramientas externas y agentes.
-- Capacidades de agente con razonamiento multi-paso: las evaluaciones incluyeron hasta 12 iteraciones de agente por tarea.
-- Soporte de multi-token prediction (MTP) y decodificación asistida por tabla N-gram, activado mediante el runtime MLX-Serve parcheado.
-- Idiomas soportados: no disponible en la documentación proporcionada.
+- Generación de texto conversacional multi-turno.
+- Razonamiento de múltiples pasos y ejecución de agentes: la configuración medida usa 12 iteraciones de agente.
+- Generación de código: las mediciones documentadas se hicieron sobre 25 tareas TypeScript.
+- Entrada de imagen: pipeline `image-text-to-text` con pesos de visión preservados.
+- Modo thinking con activación y desactivación explícita (las mediciones se hicieron con thinking off).
+- Decodificación especulativa MTP, activable mediante el runtime parcheado.
+- Aceleración por tabla N-grama para secuencias repetitivas o predecibles.
+- Variante sin censura: menor rechazo de contenido que el modelo base alineado.
+- Tool calling y function calling: no documentado en la información disponible.
+- Capacidades multilingües: no documentadas en la información disponible.
 
 ## Casos de uso
 
-- Asistente de programación local: el modelo ha sido evaluado en tareas de TypeScript y puede integrarse en flujos de desarrollo dentro de una Mac Studio, actuando como copiloto que utiliza herramientas para completar código o ejecutar pruebas.
-- Automatización de agentes con herramientas: gracias al soporte de tool calling y al razonamiento multi-paso, puede desplegarse en sistemas de agentes que interactúan con APIs, siempre que se apliquen sandboxing y control de permisos.
-- Análisis de documentos e imágenes: al ser multimodal, permite procesar capturas de pantalla, gráficos o documentos escaneados en entornos donde se requiere comprender simultáneamente texto y contenido visual.
-- Investigación de alineación y seguridad: la versión "uncensored" resulta útil para comparar el comportamiento del modelo frente a la versión alineada original y estudiar el impacto de eliminar las restricciones de seguridad.
-- Despliegue local con requisitos de privacidad: el pack MLX-Serve permite ejecutar la inferencia en Apple Silicon sin enviar datos a servicios externos, adecuado para entornos con políticas estrictas de confidencialidad.
-- Benchmarking de cuantización mixta: puede utilizarse para evaluar el rendimiento y la calidad de un modelo MoE de 133 B con cuantización 4/8-bit en memoria unificada, midiendo latencia y consumo de recursos mediante el runtime parcheado.
+- Agentes de código en local sobre Apple Silicon: el modelo se midió sobre 25 tareas TypeScript con 12 iteraciones de agente y 3072 tokens de salida máxima, por lo que encaja en pipelines de refactorización, corrección de tests y generación de parches ejecutados contra un entorno de pruebas real.
+- Asistente de desarrollo en estación de trabajo Mac: con 32.768 tokens de contexto y un pack de 107 GB en SSD rápido, permite mantener sesiones largas de análisis de repositorios sin salir del equipo.
+- Procesamiento de documentación con imágenes: la torre de visión conservada permite extraer información de capturas, diagramas y páginas escaneadas junto con el texto que las rodea.
+- Investigación sobre alineación y censura: al ser una variante uncensored, sirve para estudiar diferencias de comportamiento respecto al modelo base en tareas de evaluación de rechazos y sesgos.
+- Prototipado de agentes con decodificación especulativa: el parche MTP del runtime permite medir el impacto de la predicción multi-token en latencia y throughput sobre hardware con memoria unificada.
+- Servicio local de inferencia multimodal: el runtime `mlx-serve` expone un endpoint HTTP en loopback (puerto 11234 en el ejemplo), útil para integrar el modelo en herramientas internas con autenticación añadida.
+- Evaluación comparativa de cuantizaciones: disponer de las variantes 4/8-bit y 3/8-bit del mismo modelo permite medir el compromiso entre memoria pico y calidad en cargas de trabajo concretas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Los datos que presenta el autor corresponden a una evaluación no estándar sobre 25 tareas de TypeScript, con una sola ejecución por modelo. Los resultados deben interpretarse como observaciones puntuales, no como evidencia de superioridad general.
+La model card incluye una tabla de resultados parcial en la información proporcionada, correspondiente a una ejecución del 8 de septiembre de 2026 (JST) con el mismo motor parcheado, las mismas 25 tareas TypeScript, temperatura 0, thinking desactivado, salida máxima de 3072 tokens y 12 iteraciones de agente. La tabla disponible está truncada y solo muestra la fila "Original mode" sin valores numéricos de passed ni de ejecución.
 
-| Evaluación (una sola ejecución) | Modelo original | Este modelo uncensored |
-|---|---|---|
-| Tareas TypeScript aprobadas | 22/25 (88 %) | 21/25 (84 %) |
-| Tiempo total de ejecución | 38 m 13,478 s | 36 m 50,870 s |
+| Modelo | Tareas superadas | Ejecución + grading normal |
+|---|---:|---:|
+| Original mode | no disponible (tabla truncada) | no disponible (tabla truncada) |
 
-El autor también documenta el comportamiento del parche MTP:
-
-- Se completaron 27 ciclos de uso y recarga de MTP sin el fallo de cuantización reproducido en el motor original.
-- Una reproducción de historial capturado falló en la petición 19 con el motor antiguo y pasó 19/19 con el fix, incluyendo 14 recargas de MTP.
-- Un round trip de herramienta Hermes con unos 19.700 tokens de entrada se completó en 29,6 segundos.
-- El seguimiento en caché de esa misma conversación decodificó a 53,5 tokens/s.
-- El tiempo total de la evaluación incluye uso de herramientas y revisiones, por lo que no mide la velocidad de decodificación pura.
+No se han publicado en la información disponible resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks estándar. El autor advierte explícitamente que las puntuaciones de cada variante solo deben interpretarse bajo las condiciones documentadas en su model card y que no deben compararse directamente entre conjuntos de tareas, revisiones de runtime o procedimientos de evaluación distintos.
 
 ## Requisitos de hardware
 
-- Espacio en disco: se requieren 107,3 GB para el repositorio y unos 108 GB adicionales como espacio de trabajo, según la model card del autor.
-- Memoria: el modelo fue probado en una Mac Studio M3 Ultra con 96 GB de memoria unificada. No está diseñado para GPUs de consumidor con 24 GB de VRAM.
-- El pack es específico para MLX-Serve y no debe asumirse que puede cargarse directamente con Transformers, mlx-lm o mlx-vlm.
-- Las comprobaciones de imagen y contexto largo mostraron que una combinación de imagen y 200K tokens falló en la admisión de memoria, mientras que una combinación de imagen y 180K tokens sí pasó. No constituye una garantía de capacidad.
-- Latencia: un round trip con herramienta Hermes y ~19.700 tokens de entrada se completó en 29,6 segundos; la decodificación con caché alcanzó 53,5 tokens/s.
+- VRAM/memoria unificada: aproximadamente 107 GB solo para el pack de pesos, más espacio de trabajo; el autor recomienda reservar unos 108 GB y mantener el pack completo en SSD rápido.
+- Hardware validado: Mac Studio M3 Ultra con 96 GB de memoria unificada, usando la variante 3/8-bit y su runtime MLX-Serve V2 parcheado correspondiente. En esa carga de trabajo se redujo la memoria pico medida respecto a la referencia 4/8-bit.
+- GPU NVIDIA: no disponible; el pack es específico de MLX y Apple Silicon, no de CUDA.
+- Compatibilidad con GPU de consumo: no disponible para este formato; el requisito de memoria de 96 GB o más excluye las GPU consumer convencionales en este pack.
+- Despliegue: exclusivamente el runtime `mlx-serve` parcheado de ddalcu, compilado desde `engine/README.md`. No usar los ejemplos automáticos de `mlx-lm` o `mlx-vlm` de Hugging Face.
+- Configuración de arranque conservadora para texto: `MLX_SERVE_CACHE_LIMIT=2147483648`, `MLX_SERVE_NGRAM_WARM=0`, `--ctx-size 32768`, `--kv-quant 8`, `--prefill-chunk 1024`, `--no-mtp`, `--no-pld`.
+- Límite de memoria cableada: el autor no recomienda aumentar el wired-memory-limit ni saltarse la admisión de memoria.
+- Latencia y throughput: no disponibles como cifras absolutas; solo se documenta una reducción relativa de memoria pico para la variante 3/8-bit en la carga validada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Rendimiento (evaluación TypeScript) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| yomie4343/Qwen3.8-Flash-Next-Uncensored-MLX-Serve-mixed-4-8bit | 133 B | 204.800 (anunciado) | Mixta 4/8-bit MLX-Serve | 21/25 (84 %) | Qwen Community 1.0 | Hugging Face |
-| ARC4NUM/Qwen3.8-Flash-Next-Uncensored-MLX-Serve-4bit | 133 B | no disponible | 4-bit MLX-Serve | no evaluado en esta informacion | Qwen Community 1.0 | Hugging Face (byte-idéntico) |
-| Qwen/Qwen3.8-Flash-Next | no disponible | no disponible | no disponible | 22/25 (88 %) | no disponible | GitHub y Hugging Face |
-
-El modelo de `yomie4343` es un espejo byte-idéntico del pack de `ARC4NUM`, con la diferencia de que incluye el parche de runtime MTP y las notas de validación. El modelo original de Qwen muestra un rendimiento ligeramente superior en la evaluación del autor, pero no está cuantizado ni disponible en formato MLX-Serve.
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| Este pack (4/8-bit) | 133.195.562.899 | 32.768 en config. documentada | MLX `mlx-serve` + `ngram_table.bin` | qwen-community-1.0 | Variante de calidad, ~107 GB |
+| Variante 3/8-bit del mismo autor | 133.195.562.899 | 32.768 en config. documentada | MLX `mlx-serve` + `ngram_table.bin` | qwen-community-1.0 | Expertos MoE a 3 bits, ~86 GB, validada en M3 Ultra 96 GB |
+| ARC4NUM MLX-Serve 4bit | 133.195.562.899 | no disponible | MLX `mlx-serve` | no disponible | Pack original byte-idéntico (102/102 archivos) |
+| orcarouter/Qwen3.8-Flash-Next-Uncensored | no disponible | no disponible | safetensors | no disponible | Fuente sin cuantizar de la que deriva este pack |
 
 ## Limitaciones y advertencias
 
-- El modelo es explícitamente "uncensored": las salidas pueden ser inseguras, incorrectas u ofensivas. Se recomienda usar sandboxing, herramientas con privilegios mínimos, revisión humana y salvaguardas a nivel de aplicación.
-- No debe otorgarse acceso irrestricto a credenciales, archivos personales o acciones externas.
-- El contexto anunciado de 204.800 tokens no es garantía de contexto utilizable en un hardware de 96 GB; la evaluación no ejerció la longitud completa.
-- Las pruebas de imagen combinada con 200K tokens fallaron en la admisión de memoria; solo una prueba con 180K tokens pasó. No son garantías de capacidad ni han sido repetidas tras el fix MTP.
-- Los parches de runtime son experimentales: incluyen trabajo sobre QSA, caché y ciclo de vida que no forma parte de una versión upstream y no constituye una promesa de soporte en otros equipos.
-- La salida de decodificación greedy autoregresiva y la de MTP no han sido establecidas como universalmente idénticas.
-- Licencia Qwen Community License 1.0: no es Apache-2.0. Existen condiciones para el uso comercial, incluyendo un requisito de licencia separada para negocios cualificados de Model-as-a-Service o AI Work Assistant.
-- El repositorio cuenta con 0 descargas y 0 likes, y no existe información sobre mantenimiento continuado.
+- No es un checkpoint genérico: no funciona con Transformers, `mlx-lm` ni `mlx-vlm` estándar; requiere el runtime parcheado y el archivo `ngram_table.bin` en su ubicación esperada.
+- El parche MTP modifica el motor de inferencia, no los pesos: descargar solo los pesos no instala la corrección.
+- El modelo es una variante uncensored, con menor rechazo de contenido; en producción exige filtros y políticas de uso adicionales.
+- Riesgo de alucinación no cuantificado en la información disponible; no hay benchmarks estándar publicados.
+- Idiomas soportados no documentados; el comportamiento multilingüe no está verificado.
+- Licencia `qwen-community-1.0`: hay que revisar el archivo LICENSE antes de cualquier uso comercial.
+- El endpoint HTTP del ejemplo escucha en loopback; exponerlo externamente solo tras añadir autenticación y control de acceso.
+- Las etiquetas 4/8-bit y 3/8-bit describen el compromiso previsto entre los packs, no una garantía de que el 4/8-bit sea universalmente más preciso ni de que el 3/8-bit tenga calidad o velocidad equivalentes.
+- Los resultados medidos son dependientes de carga de trabajo, contexto, runtime y hardware, y no deben compararse entre procedimientos de evaluación distintos.
+- El pack ocupa unos 107 GB; requiere SSD rápido y espacio de trabajo adicional.
 
 ## Enlaces
 
-- https://huggingface.co/yomie4343/Qwen3.8-Flash-Next-Uncensored-MLX-Serve-mixed-4-8bit
-- https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- https://github.com/QwenLM/Qwen3.8-Flash-Next/
-- https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
-- https://huggingface.co/ARC4NUM/Qwen3.8-Flash-Next-Uncensored-MLX-Serve-4bit
-- https://github.com/ddalcu/mlx-serve
-- https://github.com/youssofal/mtplx
+- Repositorio Hugging Face: https://huggingface.co/yomie4343/Qwen3.8-Flash-Next-Uncensored-MLX-Serve-mixed-4-8bit
+- Variante 3/8-bit: https://huggingface.co/yomie4343/Qwen3.8-Flash-Next-Uncensored-MLX-Serve-mixed-3-8bit
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Fuente sin censura: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
+- Pack original byte-idéntico: https://huggingface.co/ARC4NUM/Qwen3.8-Flash-Next-Uncensored-MLX-Serve-4bit
+- Motor y conversor mlx-serve: https://github.com/ddalcu/mlx-serve

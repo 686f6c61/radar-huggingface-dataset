@@ -2,96 +2,102 @@
 
 ## Resumen
 
-Qwen3.5-0.8B-CLC-sel es un checkpoint derivado de Qwen3.5-0.8B, el modelo ultracompacto de la familia Qwen3.5 de Alibaba Cloud, publicado por el investigador zichuanxu. No se trata de un fine-tuning convencional: es una edición de pesos de rango uno (rank-one) aplicada sobre dos capas concretas del transformer, diseñada para corregir el comportamiento de bucle verbatim que el modelo base presenta en modo thinking. El problema que aborda es medible: según la model card, el modelo base trunca el 93 % de sus respuestas de MATH-500 al alcanzar los 32.768 tokens porque entra en repeticiones literales en lugar de cerrar el razonamiento.
+Qwen3.5-0.8B-CLC-sel es un checkpoint derivado de Qwen/Qwen3.5-0.8B (revision `2fc06364`) publicado por el usuario zichuanxu en Hugging Face. No se trata de un fine-tuning convencional, sino de una edicion de pesos de rango uno aplicada sobre dos tensores concretos del modelo base: la proyeccion down del MLP en las capas 15 y 19. El objetivo es corregir un fallo especifico del modelo original: en modo thinking, el modelo base entra en bucles de repeticion literal y trunca el 93% de sus respuestas de MATH-500 al alcanzar los 32.768 tokens.
 
-La intervención modifica únicamente la proyección down del MLP en las capas 15 y 19, alterando 64 neuronas por capa (131.072 pesos en total) mediante la regla `W' = W − 6 u (m ⊙ Wᵀu)ᵀ`. La dirección `u` se obtiene a partir de los propios estados internos del modelo (transición entre el estado previo a `</think>` y el estado dentro de los bucles), y las neuronas se seleccionan por su contribución creciente a esa dirección cuando el texto se repite. No se emplearon gradientes, etiquetas ni agentes externos; el material de partida fueron 512 respuestas del propio modelo a problemas de práctica.
+La edicion, denominada CLC-sel (presumiblemente "Closing the Loop - selected"), modifica 64 neuronas por capa, es decir, 131.072 pesos en total, mediante la regla `W' = W − 6 u (m ⊙ Wᵀu)ᵀ`. La direccion `u` se obtiene a partir del estado del modelo justo antes de emitir su propio `</think>` frente al estado dentro de sus bucles, y las neuronas seleccionadas son aquellas cuya escritura a lo largo de `u` aumenta mas cuando el texto se repite. El resultado es un modelo de 752 millones de parametros con licencia Apache 2.0 que mejora de forma sustancial la tasa de finalizacion en tareas de razonamiento matematico.
 
-El resultado es un checkpoint de 752.393.024 parámetros (texto únicamente, con los tensores de visión eliminados), licencia Apache 2.0, que sube MATH-500 del 7,4 % al 56,3 % y GSM8K del 13,8 % al 69,0 % en modo thinking con 32.768 tokens, reduciendo los truncamientos al 17,7 % y al 1,0 % respectivamente. Es relevante porque demuestra que una edición de pesos extremadamente localizada y sin entrenamiento puede resolver un fallo de razonamiento estructural en modelos pequeños, con un coste computacional mínimo.
+El checkpoint es relevante porque demuestra que una intervencion quirurgica y barata (sin gradientes, sin etiquetas, sin agente) puede superar a una edicion de pesos escrita por un agente LLM (GPT-6 Astra) sobre el mismo fallo, con ganancias pareadas de +6,7 puntos en MATH-500 y +1,6 en GSM8K. Es un caso de estudio util para quienes investigan edicion de modelos, bucles de razonamiento y control de generacion en modelos pequenos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen3_5ForCausalLM), edición rank-one sobre MLP down projection en capas 15 y 19 |
+| Arquitectura | Transformer decoder-only (Qwen3_5ForCausalLM), edicion de pesos en MLP down projection de capas 15 y 19 |
 | Parametros totales | 752.393.024 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (evaluado con max_tokens de 32.768) |
-| Tipos de cuantizacion | no disponible (pesos publicados en bf16/safetensors) |
+| Longitud de contexto | no disponible (evaluado con max_tokens=32768 en modo thinking) |
+| Tipos de cuantizacion | no disponible (checkpoint en bf16; repo de 1,5 GB) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (transformers) |
+| Formato de pesos | safetensors (Transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.5-0.8B pertenece a la serie Qwen3.5 de Alibaba Cloud, descrita en fuentes externas como una familia multilingüe con entrenamiento de fusión temprana sobre billones de tokens multimodales y paridad cruzada con Qwen3 en razonamiento, código, agentes y comprensión visual. Este checkpoint concreto elimina los tensores de visión y conserva únicamente la parte de texto (`Qwen3_5ForCausalLM`), reutilizando la configuración de texto y la plantilla de chat de la release Astra.
+El modelo hereda la arquitectura del Qwen3.5-0.8B base, un transformer decoder-only de 752 millones de parametros. La intervencion CLC-sel no reentrena el modelo: aplica una edicion de rango uno sobre la proyeccion down del MLP en las capas 15 y 19. La formula `W' = W − 6 u (m ⊙ Wᵀu)ᵀ` actualiza 64 neuronas por capa (131.072 pesos en total) a partir de una direccion `u` estimada con 512 respuestas propias del modelo a problemas de practica. No se emplearon gradientes, etiquetas ni agentes externos.
 
-La innovación técnica no reside en el entrenamiento sino en la edición de pesos. CLC-sel aplica una actualización de rango uno `W' = W − 6 u (m ⊙ Wᵀu)ᵀ` sobre la proyección down del MLP en las capas 15 y 19, donde `u` es la dirección que va del estado del modelo justo antes de su propio `</think>` al estado dentro de sus bucles, y `m` es una máscara que selecciona las 64 neuronas por capa cuya escritura a lo largo de `u` crece más cuando el texto se repite. La construcción se hizo a partir de 512 respuestas del propio modelo a problemas de práctica, sin gradientes, sin etiquetas y sin intervención de agentes. El repositorio incluye `edits.json` con el SHA-256 de los dos tensores bf16 editados, y los tensores pueden reconstruirse desde el modelo base con `python -m clc_sel.apply edits/clc_sel.json`.
+La innovacion tecnica consiste en identificar la direccion que separa el estado del modelo justo antes de cerrar su razonamiento (`</think>`) del estado en el que se encuentra dentro de sus bucles de repeticion, y en seleccionar las neuronas cuya contribucion a lo largo de esa direccion se incrementa mas cuando el texto se repite. El checkpoint es solo texto: se han eliminado los tensores de vision y se conservan la configuracion de texto y la plantilla de chat de la release Astra. El repo incluye `edits.json` con los SHA-256 de los dos tensores bf16 editados, y los tensores pueden reconstruirse desde el modelo base con `python -m clc_sel.apply edits/clc_sel.json`.
 
 ## Capacidades
 
-- Generación de texto conversacional y razonamiento en modo thinking, con cierre controlado del bloque de pensamiento.
-- Razonamiento matemático: resolución de problemas de MATH-500 y GSM8K con formato de respuesta en `\boxed{}`.
-- Mitigación de bucles verbatim: el modelo termina sus respuestas en lugar de repetir texto hasta el truncamiento.
-- Modo thinking activable mediante `chat_template_kwargs={"enable_thinking": True}`.
-- Compatible con endpoints (tag `endpoints_compatible`) y con el pipeline de text-generation de transformers.
-- Soporte de tool calling, function calling y agentes: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Capacidades de visión: eliminadas en este checkpoint (solo texto).
+- Generacion de texto en modo thinking y modo no thinking (la evaluacion se realizo en modo thinking).
+- Razonamiento matematico: resuelve problemas de MATH-500 y GSM8K con una tasa de finalizacion muy superior al modelo base.
+- Reduccion de bucles de repeticion: el modelo deja de truncar por repeticion literal en la mayoria de los casos (17,7% de truncamiento en MATH-500 frente al 93,0% del base).
+- Conversacion multi-turno mediante plantilla de chat compatible con `llm.chat` de vLLM.
+- Salida estructurada con respuestas finales en `\boxed{}` cuando se solicita.
+- Compatibilidad con endpoints (tag `endpoints_compatible`).
+- Capacidades de vision: eliminadas en este checkpoint (solo texto).
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Capacidades de agente multi-step: no disponible en la informacion proporcionada.
+- Idiomas: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Evaluación de razonamiento matemático en modelos pequeños: el modelo sirve como referencia para medir cuánto de la precisión en MATH-500 y GSM8K se pierde por truncamiento frente a por capacidad real de razonamiento, gracias a sus tasas de truncamiento del 17,7 % y 1,0 %.
-- Investigación en edición de pesos: punto de partida reproducible para estudiar intervenciones rank-one sobre MLP y comparar contra alternativas como la edición Astra, con diferencias pareadas documentadas (+6,7 puntos en MATH-500, IC 95 % 4,5 a 8,9).
-- Despliegue en edge y dispositivos con recursos limitados: con 752 millones de parámetros y 1,5 GB de repo, es viable en hardware de gama baja o móvil, en la línea de la ficha de Qualcomm AI Hub para Qwen3.5-0.8B.
-- Generación de cadenas de razonamiento acotadas: útil en pipelines que necesitan que el modelo emita un bloque `</think>` y una respuesta final dentro de un presupuesto de tokens fijo, evitando costes por generaciones que nunca terminan.
-- Reproducción de experimentos académicos: el repositorio de GitHub y el dataset de generaciones (`zichuanxu/closing-the-loop-generations`) permiten replicar las evaluaciones con vLLM 0.30.0 y Transformers 5.17.
-- Prototipado de asistentes matemáticos educativos: el modelo puede resolver problemas aritméticos y algebraicos con respuesta final delimitada, adecuado para entornos de práctica con verificación automática.
+- Evaluacion de razonamiento matematico en modelos pequenos: usar el checkpoint como referencia para medir cuanto mejora la tasa de finalizacion en MATH-500 y GSM8K frente al base, con la misma configuracion de muestreo (temperature 0.6, top_p 0.95, top_k 20, presence_penalty 1.5, max_tokens 32768).
+- Investigacion en edicion de pesos: reproducir la edicion CLC-sel desde el modelo base con el script del repositorio y comparar contra la edicion Astra para validar la metodologia en otros modelos.
+- Control de bucles de generacion: desplegar el modelo en pipelines donde el truncamiento por repeticion es un coste operativo, aprovechando la reduccion del 93% al 17,7% en MATH-500.
+- Generacion de soluciones paso a paso en entornos educativos: el modelo produce razonamientos completos con respuesta final en `\boxed{}`, adecuado para tutoria automatizada de problemas aritmeticos.
+- Servicio de inferencia ligero: con 752 millones de parametros y pesos bf16, puede servirse con vLLM en una unica GPU consumer para tareas de razonamiento acotado.
+- Baseline en estudios de comparacion de metodos de edicion: sirve como punto de referencia reproducible (semillas multiples, intervalos de confianza publicados) en articulos sobre weight editing.
+- Prototipado de asistentes conversacionales de bajo coste: la plantilla de chat y el soporte de `llm.chat` permiten integrarlo rapidamente en demos multi-turno.
 
 ## Benchmarks y rendimiento
 
-Modo thinking, 32.768 tokens. Tres semillas salvo donde se indique.
+Resultados publicados en la model card, en modo thinking con 32.768 tokens (tres semillas salvo indicacion):
 
 | Modelo | MATH-500 acc. | MATH-500 truncado | GSM8K acc. | GSM8K truncado |
 |---|---:|---:|---:|---:|
 | Qwen3.5-0.8B (seed 0) | 7,4 | 93,0 | 13,8¹ | no disponible |
-| Astra edit (Takehi et al., 2026) | 49,7 | 32,1 | 67,4 | 6,9 |
-| **Qwen3.5-0.8B-CLC-sel** | **56,3** | **17,7** | **69,0** | **1,0** |
+| Astra edit | 49,7 | 32,1 | 67,4 | 6,9 |
+| Qwen3.5-0.8B-CLC-sel (este modelo) | 56,3 | 17,7 | 69,0 | 1,0 |
 
-¹ Dato reportado por Takehi et al. Diferencias pareadas frente a la edición Astra: MATH-500 +6,7 puntos (IC 95 % 4,5 a 8,9); GSM8K +1,6 (0,2 a 3,0).
+¹ Reportado por Takehi et al. Diferencias pareadas frente a la edicion Astra: MATH-500 +6,7 puntos (IC 95% 4,5 a 8,9); GSM8K +1,6 (0,2 a 3,0).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; con 752 millones de parámetros en bf16 el peso ronda 1,5 GB, por lo que la huella es reducida, pero no se publican cifras oficiales de VRAM.
-- GPU recomendadas: no disponible en la información proporcionada. El ejemplo de uso emplea vLLM, lo que implica GPUs compatibles con esa librería (A100, H100, L40S, RTX 4090, etc.), sin confirmación por parte del autor.
-- Cabe en GPU de consumo: previsiblemente sí por tamaño (0,8B), pero no se confirma en la documentación.
-- Opciones de despliegue: vLLM (versión evaluada 0.30.0) y Transformers (5.17). No se mencionan llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: aproximadamente 1,5 GB en bf16 (tamano del repo); no se dispone de cifras para cuantizaciones inferiores.
+- GPU recomendadas: no disponibles en la informacion proporcionada; por tamano, cualquier GPU consumer con al menos 2-4 GB de VRAM libre deberia poder alojar los pesos en bf16.
+- Cabe en GPU consumer: si, dado el tamano de 752 millones de parametros; modelos concretos no confirmados en la informacion disponible.
+- Opciones de despliegue: vLLM (probado con vLLM 0.30.0 y Transformers 5.17); otras opciones (llama.cpp, Ollama, TGI) no confirmadas.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | MATH-500 (thinking) | GSM8K (thinking) | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | MATH-500 acc. | GSM8K acc. | Licencia | Disponibilidad |
 |---|---:|---|---:|---:|---|---|
+| Qwen3.5-0.8B (base) | 752 M | no disponible | 7,4 | 13,8 | Apache 2.0 | Hugging Face |
+| Astra edit (GPT-6 Astra) | 752 M | no disponible | 49,7 | 67,4 | no disponible | Referencia en Takehi et al., 2026 |
 | Qwen3.5-0.8B-CLC-sel | 752 M | no disponible | 56,3 | 69,0 | Apache 2.0 | Hugging Face |
-| Qwen3.5-0.8B (base) | 0,8 B | no disponible | 7,4 | 13,8 | Apache 2.0 | Hugging Face |
-| Qwen3.5-0.8B + Astra edit | 0,8 B | no disponible | 49,7 | 67,4 | no disponible | no disponible |
+
+No se dispone de comparacion con otros modelos de tamano similar fuera del linaje Qwen3.5-0.8B en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- La edición se probó únicamente sobre este modelo, en modo thinking y en MATH-500 y GSM8K; no hay evidencia de generalización a otras tareas, idiomas o modos.
-- La mejora proviene de respuestas que terminan en lugar de entrar en bucle: en problemas que el modelo base ya completaba, no razona mejor, según la propia model card.
-- Sesgos conocidos: no disponibles en la información proporcionada; al derivar de Qwen3.5-0.8B, hereda los del modelo base, que no se documentan aquí.
-- Riesgo de alucinación: no cuantificado; el modelo es de 0,8B y las precisiones absolutas en matemáticas siguen siendo moderadas (56,3 % en MATH-500).
-- Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no se especifican; el checkpoint es solo texto y ha eliminado los tensores de visión.
-- Restricciones de licencia: Apache 2.0, igual que el modelo base, sin restricciones comerciales adicionales documentadas.
-- Caveat de producción: requiere muestreo específico (temperature 0,6, top_p 0,95, top_k 20, presence_penalty 1,5, max_tokens 32.768) y modo thinking activado; desviarse de esta configuración puede alterar el comportamiento frente a los bucles.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: sin validación comunitaria independiente.
+- La edicion se probo unicamente en este modelo, en modo thinking y sobre MATH-500 y GSM8K; no hay evidencia de generalizacion a otras tareas o modos.
+- La mejora procede de respuestas que terminan en lugar de entrar en bucle; en problemas que el modelo base ya finaliza, no razona mejor.
+- Riesgo de alucinacion: no evaluado en la informacion proporcionada; al ser un modelo de 0,8 B, la fiabilidad factual es limitada.
+- Sesgos conocidos: no documentados en la informacion disponible.
+- Idiomas soportados: no disponibles; la evaluacion se realizo presumiblemente en ingles.
+- Contexto maximo: no disponible; las evaluaciones usan 32.768 tokens como limite de generacion, no como ventana de contexto confirmada.
+- Capacidades de vision eliminadas: el checkpoint es solo texto, por lo que no debe esperarse comportamiento multimodal.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero se recomienda revisar el `LICENSE` incluido y la licencia del modelo base.
+- El checkpoint depende de la revision concreta `2fc06364` del modelo base; reconstruir la edicion con otra revision puede producir resultados distintos.
+- No se han publicado datos de tool calling, agentes ni rendimiento multilingue; no asumir estas capacidades en produccion.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/zichuanxu/Qwen3.5-0.8B-CLC-sel
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Código y registro del estudio: https://github.com/zichuanxu/closing-the-loop
-- Dataset de generaciones: https://huggingface.co/datasets/zichuanxu/closing-the-loop-generations
-- Edición Astra (Takehi et al., 2026): https://rikiyat.github.io/blog/weight-space-programming/
-- Repositorio de la serie Qwen3.5: https://github.com/ABDtmx/Qwen3.5
-- Ficha de Qwen3.5-0.8B en Qualcomm AI Hub: https://aihub.qualcomm.com/mobile/models/qwen3_5_0_8b
+- Blog post "Closing the loop": https://zichuanxu.github.io/blog/closing-the-loop/
+- Codigo y registro del estudio: https://github.com/zichuanxu/closing-the-loop
+- Generaciones completas: https://huggingface.co/datasets/zichuanxu/closing-the-loop-generations
+- Referencia de la edicion Astra (Takehi et al., 2026): https://rikiyat.github.io/blog/weight-space-programming/

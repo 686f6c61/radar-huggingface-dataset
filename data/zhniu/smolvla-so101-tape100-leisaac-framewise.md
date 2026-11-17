@@ -2,101 +2,101 @@
 
 ## Resumen
 
-SmolVLA SO-101 tape-to-pen-holder es un modelo de vision-lenguaje-accion (VLA) obtenido por ajuste fino de `lerobot/smolvla_base` sobre un conjunto de 100 trayectorias de simulacion generadas con LeIsaac. Lo publica el usuario zhniu en Hugging Face y resuelve una tarea concreta de manipulacion robotica: con un brazo SO-101, coger un rollo de cinta y colocarlo dentro de un organizador de boligrafo de malla. El modelo tiene unos 450 millones de parametros totales (alrededor de 100 millones entrenables), se distribuye en safetensors con licencia Apache-2.0 y esta pensado para ejecutarse con la libreria LeRobot.
+SmolVLA SO-101 tape policy es un modelo de política robótica (vision-language-action, VLA) obtenido por ajuste fino supervisado del modelo base `lerobot/smolvla_base`. Lo desarrolla el usuario `zhniu` y está pensado para controlar un brazo robótico SO-101 en una tarea concreta de manipulación de cinta sobre una PCB, usando dos vistas RGB (una de muñeca y otra externa) y un estado articular de seis dimensiones. El resultado es un checkpoint de 450 millones de parámetros, publicado en formato safetensors y consumible con la librería LeRobot.
 
-La relevancia de esta ficha es acotada y conviene subrayarla: se trata de una politica experimental de una sola tarea, entrenada unicamente en simulacion, sin validacion de tasa de exito ni en bucle cerrado simulado ni en robot real. El autor declara explicitamente `calibration_passed=false` y ausencia de transferencia zero-shot demostrada. Por tanto, es util como referencia de metodologia (ajuste fino de SmolVLA con aumentos de textura por fotograma y randomizacion de dominio) mas que como componente listo para produccion.
+El modelo combina un backbone VLM congelado con un experto de acción entrenable que genera trayectorias mediante flow matching. El entrenamiento mezcla datos simulados (100 layouts, 49.800 fotogramas generados en LeIsaac/Isaac Sim PhysX con aleatorización visual en MuJoCo EGL) y datos reales (20 trayectorias, 12.191 fotogramas), con una composición de lote fija de cuatro anclas reales y cuatro simuladas por paso. Es relevante porque documenta de forma inusualmente detallada el proceso de ajuste fino de un VLA pequeño sobre hardware de consumo profesional (una V100 de 32 GB) y porque publica artefactos de auditoría del entrenamiento.
 
-El modelo parte de SmolVLA, una arquitectura VLA compacta que combina un codificador visual-lenguaje con un experto de acciones entrenado por flow matching supervisado. La ficha documenta los hiperparametros, el dataset, las estadisticas de normalizacion y las perdidas offline, pero no aporta cifras de rendimiento en tarea.
+La principal advertencia es que se trata de un checkpoint de investigación: la validación es puramente offline sobre dos trayectorias reservadas (pérdida final de 0,3879 sobre 928 fotogramas reales) y el autor declara explícitamente `calibration_passed=false`, es decir, el rendimiento en bucle cerrado sobre hardware físico no se ha medido.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | SmolVLA (vision-lenguaje-accion; codificador VLM congelado + experto de acciones por flow matching) |
-| Parametros totales | 450.046.176 |
-| Parametros activos | no disponible (no es MoE; el autor indica ~100M entrenables) |
+| Arquitectura | VLA basada en SmolVLA: backbone VLM congelado más experto de acción con flow matching |
+| Parámetros totales | 450.046.176 |
+| Parámetros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Tipos de cuantización | no disponible (pesos publicados en FP32; entrenamiento con FP16 AMP) |
 | Idiomas soportados | en, zh |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (libreria LeRobot; fichero de tensores de 906.712.552 bytes) |
-
-Otros datos tecnicos declarados: observaciones de 25 dimensiones de estado mas dos camaras RGB a 640x480; 6 acciones (objetivos articulares absolutos) a 30 Hz; chunk de prediccion de 50 acciones y de ejecucion de 30; entrenamiento en BF16 sobre una unica NVIDIA A30 de 24 GB.
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (librería LeRobot) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino de `lerobot/smolvla_base` (revision `d9f33c94a60fb382c90dea2164c96845bd955e28`). SmolVLA combina un backbone de vision-lenguaje con un experto de acciones; en este ajuste se congela el codificador visual y se optimizan el experto de acciones y la proyeccion de estado. El metodo de entrenamiento es flow matching supervisado, sin ajuste por refuerzo (RL) ni preferencias. La configuracion de liberacion desactiva la inicializacion redundante de pesos del VLM (`load_vlm_weights=false`) y carga los pesos entrenados completos desde el repositorio; parte de los metadatos de arquitectura y procesador pueden descargarse de `HuggingFaceTB/SmolVLM2-500M-Video-Instruct` en el primer uso.
+El modelo parte de `lerobot/smolvla_base` (revisión `d9f33c94a60fb382c90dea2164c96845bd955e28`). La arquitectura sigue el esquema SmolVLA: un modelo visión-lenguaje que procesa las dos vistas RGB y el estado, y un experto de acción separado que produce *chunks* de acciones mediante flow matching. En el ajuste fino se congeló el VLM y se entrenaron únicamente el experto de acción y la proyección de estado, con un optimizador AdamW nuevo.
 
-El dataset consta de 100 trayectorias independientes de LeIsaac (90 de entrenamiento, episodios 0-89; 10 de validacion, episodios 90-99), con 55.175 fotogramas totales (49.713 de entrenamiento y 5.462 de validacion). El entrenamiento duro 20.000 pasos con tamano de lote 8, BF16, tasa de aprendizaje 1e-4, warmup de 1.000 pasos y suelo de decaimiento de 2,5e-6. Se guardo y evaluo cada 1.000 pasos sobre los 10 episodios de validacion. Las estadisticas de normalizacion se calculan solo con los 90 episodios de entrenamiento y vienen embebidas en los pre/postprocesadores; el autor advierte de que no deben sustituirse por estadisticas del dataset completo. La innovacion metodologica declarada es el uso de texturas por fotograma y randomizacion de dominio en la generacion de datos (LeIsaac), aunque el propio autor senala que no se han hecho ablaciones controladas que demuestren beneficio causal.
+El conjunto de datos mezcla dos dominios. El simulado contiene 100 layouts y 49.800 fotogramas generados los días 15 y 16 de noviembre de 2026 en LeIsaac/Isaac Sim PhysX, con aleatorización visual en MuJoCo EGL y movimientos retargetizados derivados de la demostración fuente 11. El real contiene 20 trayectorias y 12.191 fotogramas; las episodios 6 y 19 se reservaron para validación (928 fotogramas), quedando 11.263 fotogramas de entrenamiento. Cada lote contiene exactamente cuatro anclas reales y cuatro simuladas, y la normalización numérica usa solo datos de entrenamiento con igual peso por dominio.
+
+La receta empleó tasa de aprendizaje 1e-4, 1.000 pasos de calentamiento, tamaño de lote 8, *action chunk* de 50 y horizonte de ejecución de 30, sobre una Tesla V100 de 32 GB con parámetros en FP32 y cómputo en FP16 AMP con GradScaler. Se completaron 20.000 pasos nativos (19.990 actualizaciones reales de Adam; AMP omitió 10). La cabeza de acción usa muestreo ODE con diez pasos de integración.
 
 ## Capacidades
 
-- Generacion de acciones de manipulacion robotica: produce 6 objetivos articulares absolutos a 30 Hz a partir de estado de 25 dimensiones y dos imagenes RGB.
-- Percepcion visual multi-camara: consume dos vistas (renombradas `camera1` y `camera2` por el preprocesador a partir de `front` y `side`).
-- Condicionamiento por lenguaje: al derivar de SmolVLA, hereda la interfaz de instruccion en lenguaje natural del modelo base, aunque la tarea concreta esta fijada por el ajuste fino.
-- Ejecucion por chunks: predice 50 acciones y ejecuta 30 por chunk, lo que reduce la frecuencia de inferencia del modelo.
-- Idiomas: metadatos en ingles y chino; no hay evaluacion de capacidades multilingues en tarea.
-- No soporta tool calling, function calling ni razonamiento multi-paso de agentes: es una politica de control motor, no un modelo conversacional.
-- No dispone de modo thinking, vision general, audio ni generacion de texto libre evaluada.
+- Generación de acciones robóticas de seis dimensiones (shoulder pan, shoulder lift, elbow flex, wrist flex, wrist roll y gripper) a partir de observaciones visuales y de estado.
+- Procesamiento de dos vistas RGB simultáneas: `observation.images.front` (vista de muñeca, `camera1`) y `observation.images.side` (vista externa, `camera2`).
+- Condicionamiento por instrucción en lenguaje natural, heredado del backbone VLM de SmolVLA.
+- Generación de trayectorias por flow matching con muestreo ODE de diez pasos.
+- Producción de *action chunks* de longitud 50 con horizonte de ejecución de 30.
+- Entrenamiento mixto sim-to-real con anclas balanceadas por dominio.
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso ni modalidades de audio.
 
 ## Casos de uso
 
-- Investigacion en imitacion robotica: sirve como punto de partida reproducible para estudiar ajuste fino de SmolVLA sobre tareas pick-and-place con un brazo SO-101, gracias a que el repositorio incluye pesos, tokenizer, procesadores y manifiesto de hashes.
-- Estudio de randomizacion de dominio en simulacion: el dataset LeIsaac con texturas por fotograma permite analizar como varia la perdida offline al cambiar la apariencia de los objetos, aunque sin ablaciones publicadas.
-- Banco de pruebas de pipelines LeRobot: util para validar la carga de politicas SmolVLA, el uso de pre/postprocesadores y la integracion con `LeRobotDataset` antes de entrenar modelos propios.
-- Prototipado de control por chunks: el esquema de 50 acciones predichas y 30 ejecutadas a 30 Hz es un caso concreto para medir latencia de inferencia en GPUs de gama media como la A30 usada en entrenamiento.
-- Docencia y divulgacion: ejemplo completo de ficha tecnica de un VLA de ~450M parametros con dataset, hiperparametros y perdidas documentadas, adecuado para explicar el ciclo sim-to-real.
-- Base para comparaciones controladas: al ser un ajuste fino de un modelo publico con licencia Apache-2.0, puede usarse como referencia en estudios que comparen estrategias de aumento de datos en entornos simulados.
+- Manipulación de precisión sobre PCB: el modelo está ajustado específicamente para la tarea `side20_pcb_fit` con cinta sobre placa, por lo que es directamente aplicable a operaciones de ensamblaje repetitivas con posicionamiento submilimétrico en el banco de trabajo del autor.
+- Investigación en sim-to-real para VLA pequeños: la mezcla balanceada de anclas reales y simuladas, junto con los artefactos de auditoría (`evaluation/training_evidence.json`), permite estudiar cómo afecta la composición del lote a la transferencia de políticas.
+- Replicación de experimentos con hardware modesto: el entrenamiento cabe en una única V100 de 32 GB, lo que lo hace adecuado como referencia para laboratorios con GPUs de gama profesional y no solo con clústeres de A100/H100.
+- Base para ajuste fino en tareas SO-101 adyacentes: al mantener el VLM congelado y entrenar solo el experto de acción, sirve como punto de partida barato para nuevas tareas del mismo robot y cámara.
+- Evaluación de robustez ante aleatorización visual: el dataset simulado incluye transformaciones de cámara nominales y aleatorizadas con hashes de vídeo, útil para medir sensibilidad a cambios de calibración extrínseca.
+- Docencia y divulgación sobre VLA: el modelo card detalla hiperparámetros, número de actualizaciones, omisiones de AMP y procedencia de pesos (SHA256), lo que facilita usarlo como caso de estudio reproducible.
+- Integración en pipelines LeRobot: al publicarse con preprocesador y postprocesador guardados, se puede cargar directamente en flujos de evaluación de LeRobot para comparar políticas sobre el mismo robot.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Valor final |
-|---|---|
-| Perdida de entrenamiento (ventana final, paso 20.000) | 0,010 |
-| Perdida de validacion offline en held-out (paso 20.000) | 0,0206 |
-| Tasa de exito en simulacion en bucle cerrado | no medida |
-| Tasa de exito en robot real / ganancia sim-to-real | no medida |
+No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GSM8K ni métricas de éxito en tarea) en la información disponible. El único dato de rendimiento es la pérdida de validación nativa final de 0,3879 sobre 928 fotogramas reales reservados (episodios 6 y 19), que corresponde a predicción offline y no a ejecución en bucle cerrado.
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible; no aplican a una politica VLA de control. Las cifras anteriores son perdidas supervisadas offline, no porcentajes de exito. El fichero `evaluation/validation_history.json` contiene las 20 mediciones de validacion.
+| Métrica | Valor | Condiciones |
+|---|---|---|
+| Pérdida de validación (offline) | 0,3879 | 928 fotogramas reales reservados (episodios 6 y 19) |
+| Pasos de entrenamiento | 20.000 nativos / 19.990 actualizaciones Adam | AMP omitió 10 actualizaciones |
+| Anclas muestreadas por dominio | 80.000 | real y simulado |
+| Violaciones de composición de lote | 0 | auditoría registrada |
+| Calibración en hardware | `calibration_passed=false` | no medida |
 
 ## Requisitos de hardware
 
-- Entrenamiento: una unica NVIDIA A30 de 24 GB en BF16, segun el autor.
-- VRAM estimada para inferencia: no disponible de forma explicita; con ~450M parametros en BF16 el peso ronda 0,9 GB, por lo que deberia caber holgadamente en GPUs consumer, pero no hay medicion publicada.
-- GPU recomendadas: no disponible; el unico dato es la A30 usada para entrenar.
-- Cabe en GPU consumer: previsiblemente si por tamano de pesos, aunque no hay confirmacion ni cifras de latencia.
-- Opciones de despliegue: LeRobot (`lerobot[smolvla]`) con decodificador de video `av` (PyAV); requiere `num2words` para el procesador. No se documentan vLLM, llama.cpp, Ollama ni TGI, que no son adecuados para este tipo de politica.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 450 millones de parámetros, los pesos en FP32 ocupan aproximadamente 1,8 GB y en FP16 unos 0,9 GB, a lo que hay que sumar el backbone VLM y los buffers de activación.
+- GPU de entrenamiento documentada: una Tesla V100 de 32 GB con FP16 AMP y GradScaler.
+- GPU recomendadas para inferencia: no especificadas por el autor; por tamaño, cualquier GPU con al menos 8-16 GB de VRAM debería poder alojar el checkpoint, aunque no hay medición publicada.
+- Compatibilidad con GPU de consumo: no confirmada en la información disponible.
+- Opciones de despliegue: librería LeRobot con el preprocesador y postprocesador guardados; el dispositivo de carga por defecto es CPU.
+- Latencia y throughput: no disponibles. El muestreo ODE usa diez pasos de integración, lo que condiciona el coste por inferencia, pero no se publican tiempos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zhniu/smolvla-so101-tape100-leisaac-framewise | 450M (~100M entrenables) | no disponible | Pick-and-place SO-101 en simulacion | Apache-2.0 | Hugging Face, 0 descargas |
-| lerobot/smolvla_base | no disponible en la informacion | no disponible | VLA base para ajuste fino | no disponible en la informacion | Hugging Face (modelo base citado) |
-| HuggingFaceTB/SmolVLM2-500M-Video-Instruct | ~500M (por el nombre) | no disponible | VLM general (fuente de metadatos de arquitectura) | no disponible en la informacion | Hugging Face |
+| zhniu/smolvla-so101-tape100-leisaac-framewise | 450 M | no disponible | VLA con flow matching, ajuste mixto sim-real para SO-101 | Apache 2.0 | Hugging Face, 100 descargas |
+| lerobot/smolvla_base | no disponible en la información | no disponible | VLA base de LeRobot, preentrenado | no disponible en la información | Hugging Face (modelo base citado) |
+| Otras políticas VLA de tamaño comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de rendimiento comparables entre estos modelos en la informacion proporcionada; la comparativa se limita a parametros, licencia y disponibilidad.
+No se dispone de datos de benchmarks homogéneos que permitan comparar el rendimiento de estos modelos entre sí.
 
 ## Limitaciones y advertencias
 
-- Politica de una sola tarea: solo coger un rollo de cinta y colocarlo en un organizador concreto; no generaliza a otras tareas sin reentrenamiento.
-- Entrenada exclusivamente en simulacion (LeIsaac), sin validacion en robot real ni transferencia zero-shot demostrada.
-- `calibration_passed=false` declarado por el autor; no debe ejecutarse en configuraciones SO-101 arbitrarias sin replicar las entradas y calibraciones del dataset.
-- Requiere las 25 dimensiones de estado completas: un registrador estandar de seis articulaciones no aporta el condicionamiento de mesa y camara.
-- Las estadisticas de normalizacion embebidas se calcularon solo con los 90 episodios de entrenamiento; sustituirlas invalida el comportamiento esperado.
-- No hay ablaciones controladas que demuestren beneficio causal de los aumentos de textura; el conjunto de validacion no es un benchmark de texturas no vistas ni de mundo real.
-- Riesgo de sobreajuste al dominio simulado y a la apariencia concreta de los objetos; posibles fallos por cambios de iluminacion, textura o calibracion.
-- Sesgos: no documentados; al entrenar solo en simulacion, puede heredar sesgos de los assets y fisicas del simulador.
-- Licencia Apache-2.0, que permite uso comercial, pero el autor no ofrece garantias de seguridad ni de rendimiento; el uso en produccion exigiria validacion propia.
-- Reproducibilidad parcial: el arbol de trabajo de entrenamiento incluia anadidos de tareas que no estan en la revision Git base; las versiones de librerias se registran en `provenance/environment.json`.
-- Modelo con 0 descargas y 0 likes en el momento de la consulta; ecosistema de validacion practicamente inexistente.
+- El autor declara `calibration_passed=false`: el rendimiento en bucle cerrado sobre el robot físico no se ha medido, solo la predicción offline sobre dos trayectorias reservadas.
+- La validación se limita a 928 fotogramas de dos episodios (6 y 19); la generalización a otras trayectorias, objetos o condiciones de iluminación no está cuantificada.
+- El modelo está especializado en una única tarea (`side20_pcb_fit`) y en una configuración de cámara concreta (`side20_pcb_fit` con cámara externa); no es un modelo generalista.
+- El dataset real original permanece en una fuente privada de entrenamiento, por lo que la reproducibilidad exacta del ajuste fino no está garantizada.
+- Riesgo de sobreajuste al dominio simulado: aunque el lote está balanceado, la mitad de las anclas provienen de simulación con aleatorización visual, lo que puede introducir una brecha de apariencia respecto al mundo real.
+- Idiomas declarados limitados a inglés y chino; no se documenta soporte de instrucciones en castellano.
+- No se publican análisis de sesgos, tasas de alucinación ni evaluaciones de seguridad, algo esperable en un checkpoint de robótica pero relevante para cualquier despliegue.
+- La licencia Apache 2.0 permite uso comercial, pero la ausencia de validación en hardware desaconseja su uso en producción sin una evaluación propia en bucle cerrado.
+- El dispositivo de carga por defecto es CPU, lo que puede provocar latencias altas si no se mueve explícitamente a GPU.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/zhniu/smolvla-so101-tape100-leisaac-framewise
-- Dataset: https://huggingface.co/datasets/zhniu/so101-tape100-leisaac-framewise
-- Nota de contexto de investigacion: https://huggingface.co/datasets/zhniu/so101-tape100-leisaac-framewise/blob/main/RESEARCH_CONTEXT.md
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
-- Fuente de metadatos del VLM: https://huggingface.co/HuggingFaceTB/SmolVLM2-500M-Video-Instruct
-- Paper citado: https://arxiv.org/abs/2603.22876v2
+- Dataset de entrenamiento: https://huggingface.co/datasets/zhniu/so101-tape100-leisaac-framewise
+- Librería LeRobot: https://github.com/huggingface/lerobot
+- Artefactos de evaluación: `evaluation/training_evidence.json` dentro del repositorio del modelo
+- Atribuciones y citas: `NOTICE` y `CITATION.bib` dentro del repositorio del modelo

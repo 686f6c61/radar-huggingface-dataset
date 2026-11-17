@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "aurateam/AURA_2_BF8",
+  "slug": "aurateam-aura_2_bf8",
+  "author": "aurateam",
+  "url": "https://huggingface.co/aurateam/AURA_2_BF8",
+  "created_at": "2026-11-12T09:10:28.000Z",
+  "updated_at": "2026-11-17T06:16:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "aura",
+    "fp8",
+    "compressed-tensors",
+    "en",
+    "zh",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 11924092620,
+  "storage_human": "11.9 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

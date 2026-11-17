@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 101,
+  "downloads_30d": 100,
   "trending_score": 0,
   "parameters": 142113600,
   "parameters_human": "142.1M",
@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "yava-code/Tessera-135M-Gate · Hugging Face",
-      "url": "https://huggingface.co/yava-code/Tessera-135M-Gate",
-      "snippet": "yava-code / Tessera-135M-Gate Like 0 Text Generation Transformers Safetensors ncp_smol next-concept-prediction conceptlm causal-lm smollm2 tessera custom_code arxiv:2602.08984 arxiv:2609.10715 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
-    },
-    {
-      "title": "Tessera: Next Concept Prediction, gated and scaled - a yava-code Collection",
-      "url": "https://huggingface.co/collections/yava-code/tessera-next-concept-prediction-gated-and-scaled",
-      "snippet": "A 135M overfit gate, then a token-matched 1B comparison. The decoder uses the concept channel at both scales; the token verdict at 1B is neutral."
-    },
-    {
-      "title": "GitHub - gstoner/tessera: Tessera Deep Learning Programing Model",
-      "url": "https://github.com/gstoner/tessera",
-      "snippet": "Tessera is a standalone, tile-oriented programming model and compiler for deep learning and scientific computing. It makes layout, memory ownership, numerical policy and parallel execution explicit compiler contracts."
-    },
-    {
-      "title": "Tessera - GitHub",
-      "url": "https://github.com/tessera-llm",
-      "snippet": "Vercel AI SDK integration for the Tessera LLM cost-optimization proxy. Routes generateText / streamText / generateObject through the proxy with one line of config."
-    },
-    {
-      "title": "Quickstart - Tessera - ashita.ai",
-      "url": "https://ashita.ai/tessera/getting-started/quickstart/",
-      "snippet": "Quickstart ¶ Get Tessera running in 5 minutes with Docker. Prerequisites ¶ Docker and Docker Compose An OpenAPI spec, GraphQL schema, or dbt manifest (optional, for sync) Start Tessera ¶"
-    }
-  ]
+  "sources": []
 }

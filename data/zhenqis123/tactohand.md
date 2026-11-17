@@ -2,84 +2,87 @@
 
 ## Resumen
 
-TactoHand es un modelo de vision por computador orientado a la estimacion de interacciones mano-objeto a partir de video RGB. Desarrollado por zhenqis123 y publicado en Hugging Face, el modelo predice para ambas manos cuatro magnitudes: contacto, proximidad, fuerza normalizada y visibilidad. Se trata, por tanto, de un modelo de percepcion fisica de la interaccion, no de un generador de texto ni de un modelo multimodal conversacional.
+TactoHand es un modelo de visión por computador para la estimación de interacción mano-objeto a partir de vídeo RGB. Desarrollado por el usuario zhenqis123 (repositorio asociado a BeingBeyond), predice cuatro magnitudes por cada mano: contacto, proximidad, fuerza normalizada y visibilidad. No es un modelo de lenguaje, sino un cabezal de regresión sobre un backbone de visión.
 
-La arquitectura se apoya en un backbone DINOv3 ViT-L (Vision Transformer Large, parches de 16x16) inicializado a partir de los pesos de `timm/vit_large_patch16_dinov3.lvd1689m`. El modelo opera sobre ventanas de 32 fotogramas muestreados a 10 Hz (es decir, 3,2 segundos de video) con entradas de 256 pixeles. El repositorio ocupa 5,8 GB e incluye un checkpoint (`tactohand.ckpt`) acompanado de un YAML de configuracion de inferencia portable.
+La arquitectura parte de un Vision Transformer DINOv3 ViT-L (ViT-Large, patch 16) inicializado con los pesos de `timm/vit_large_patch16_dinov3.lvd1689m`. El modelo procesa ventanas de 32 fotogramas muestreados a 10 Hz con entradas de 256 píxeles, lo que le confiere capacidad de modelar la dinámica temporal de la interacción entre manos y objetos.
 
-Su relevancia radica en que permite estimar contacto y fuerza sin sensores tactiles fisicos ni assets MANO en tiempo de inferencia, lo que facilita su integracion en pipelines de vision existentes. La licencia del codigo propio es MIT, aunque los pesos derivados de DINOv3 quedan sujetos a la licencia upstream de DINOv3.
+El checkpoint publicado corresponde al epoch 235 (entrenamiento 236) con step global 66080 y una pérdida de validación de 0,12714. Es relevante para investigación en robótica de manipulación, animación y análisis de destreza manual, ya que ofrece inferencia solo con RGB sin necesidad de assets MANO ni datasets preprocesados. La licencia del código propio es MIT, aunque los pesos del backbone derivados de DINOv3 quedan sujetos a la licencia DINOv3.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Vision Transformer (DINOv3 ViT-L, parches 16x16) sobre ventanas de video |
-| Parametros totales | no disponible (backbone ViT-L, del orden de cientos de millones; cifra exacta no publicada) |
+| Arquitectura | Vision Transformer (DINOv3 ViT-L, patch 16) con cabezal de regresión espacio-temporal |
+| Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica; ventana de 32 fotogramas a 10 Hz (3,2 s de video) |
+| Longitud de contexto | ventana de 32 fotogramas a 10 Hz (3,2 s de vídeo) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | en, zh (segun metadatos; relevante para documentacion, no para la tarea visual) |
-| Licencia | MIT (contribuciones propias); pesos DINOv3 sujetos a DINOv3 License |
-| Formato de pesos | checkpoint PyTorch (`.ckpt`) + configuracion YAML (`tactohand.yaml`) |
+| Idiomas soportados | en, zh (etiquetas de la model card; el modelo no procesa texto) |
+| Licencia | MIT (contribuciones propias); pesos del backbone sujetos a DINOv3 License |
+| Formato de pesos | checkpoint `.ckpt` (PyTorch) acompañado de `tactohand.yaml` |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea un backbone DINOv3 ViT-L, un transformer de vision con parches de 16x16, inicializado desde los pesos publicos de `timm`. Sobre este backbone, TactoHand procesa ventanas de 32 fotogramas muestreados a 10 Hz con resolucion de entrada de 256 pixeles, y produce predicciones por mano de contacto, proximidad, fuerza normalizada y visibilidad. No se dispone de informacion detallada sobre la cabeza de prediccion, el numero exacto de tokens de entrenamiento ni la composicion del dataset en la informacion proporcionada.
+TactoHand se construye sobre un backbone DINOv3 ViT-Large con parches de 16x16, inicializado desde los pesos de `timm/vit_large_patch16_dinov3.lvd1689m`. Sobre ese tronco se añade un cabezal que, a partir de ventanas de 32 fotogramas muestreados a 10 Hz y resolución de entrada de 256 píxeles, predice por cada mano cuatro salidas: contacto, proximidad, fuerza normalizada y visibilidad. La naturaleza temporal del modelo permite capturar la evolución de la interacción mano-objeto a lo largo de la ventana.
 
-El checkpoint publicado conserva estado de entrenamiento ademas de los pesos de inferencia, y se acompania de un YAML que actua como configuracion portable. La inferencia solo con RGB no requiere assets MANO ni datasets preprocesados, lo que simplifica el despliegue. Las salidas de fuerza son predicciones normalizadas y no fuerzas fisicas en newtons. No se documentan en la informacion disponible detalles sobre RLHF, DPO ni tecnicas de decodificacion especulativa, que no aplican a este tipo de modelo.
+El checkpoint publicado corresponde al epoch 235 (indexado desde cero, es decir, el entrenamiento número 236) y al step global 66080, con una pérdida de validación total de 0,12714. No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se emplearon técnicas de RLHF o DPO (no aplicables a un modelo de regresión visual). El checkpoint conserva el estado de entrenamiento además de los pesos de inferencia, y el YAML asociado actúa como configuración de inferencia portable. Las fuerzas predichas son valores normalizados, no newtons.
 
 ## Capacidades
 
-- Estimacion de contacto mano-objeto a partir de video RGB para ambas manos.
-- Prediccion de proximidad entre mano y objeto.
-- Prediccion de fuerza normalizada (no calibrada en newtons).
-- Prediccion de visibilidad de cada mano.
-- Procesamiento de video en ventanas de 32 fotogramas a 10 Hz.
-- Inferencia solo con RGB, sin necesidad de assets MANO ni datasets preparados.
-- No dispone de generacion de texto, tool calling, agentes ni razonamiento multi-step.
-- No dispone de capacidades de audio ni de vision general mas alla de la tarea mano-objeto.
+- Predicción de contacto mano-objeto a partir de vídeo RGB.
+- Estimación de proximidad entre manos y objetos.
+- Predicción de fuerza normalizada (no física en newtons).
+- Estimación de visibilidad de cada mano.
+- Procesamiento conjunto de ambas manos.
+- Modelado temporal sobre ventanas de 32 fotogramas a 10 Hz.
+- Inferencia solo con RGB, sin necesidad de assets MANO ni datasets preprocesados.
+- Soporte de tool calling / function calling: no disponible (no es un modelo de lenguaje).
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: no aplica (modelo de visión; las etiquetas en/zh son metadatos de la model card).
+- Capacidades especiales: no dispone de modo thinking, visión más allá del vídeo RGB, ni audio.
 
 ## Casos de uso
 
-- Analisis de destreza manual en video: el modelo estima contacto, proximidad y fuerza normalizada por mano, lo que permite evaluar la calidad de agarres en grabaciones de manipulacion de objetos sin instrumentar al sujeto con sensores.
-- Robotica de imitacion a partir de video humano: las predicciones de contacto y fuerza pueden servir como senal de supervision para entrenar politicas de agarre en robots que aprenden de demostraciones RGB.
-- Evaluacion de ergonomia y rehabilitacion: el seguimiento de visibilidad y proximidad de ambas manos en ventanas de 3,2 s facilita medir patrones de uso de la mano en tareas repetitivas o terapias de recuperacion.
-- Anotacion automatica de datasets de interaccion: el modelo puede preetiquetar contacto y proximidad en grandes corpus de video, reduciendo el coste de anotacion manual para entrenar otros modelos.
-- Analisis de video deportivo o artistico: permite detectar momentos de contacto mano-objeto (por ejemplo, lanzamientos o golpeos) y estimar la intensidad relativa del contacto mediante la fuerza normalizada.
-- Control e inspeccion en entornos de fabricacion: con camaras RGB existentes, el modelo puede monitorizar interacciones mano-herramienta y senalar contactos anomalos o falta de visibilidad de la mano.
-- Investigacion en percepcion fisica: al no requerir MANO ni datasets preparados, es adecuado como baseline reproducible para estudiar estimacion de fuerza desde video en laboratorio.
+- Análisis de destreza manual en investigación: el modelo permite cuantificar contacto, proximidad y fuerza normalizada por mano en secuencias de vídeo, útil para estudiar patrones de agarre y manipulación en experimentos de psicología motora o rehabilitación.
+- Aprendizaje por imitación en robótica: las predicciones de contacto y fuerza normalizada pueden servir como señales de supervisión para entrenar políticas de manipulación a partir de demostraciones humanas grabadas en vídeo.
+- Animación y captura de movimiento: la estimación de visibilidad y contacto de ambas manos facilita la reconstrucción de interacciones mano-objeto para animación de personajes o avatares.
+- Evaluación de prótesis y exoesqueletos: el modelo puede analizar vídeos de uso de dispositivos para medir la calidad del contacto y la proximidad al objeto durante tareas de agarre.
+- Análisis de vídeo en entornos industriales: monitorización de tareas de ensamblaje manual donde interesa detectar contacto con piezas y estimar la intensidad relativa del agarre.
+- Datasets y anotación automática: generación de etiquetas de contacto, proximidad y visibilidad sobre grandes volúmenes de vídeo RGB para preentrenar o aumentar datasets de interacción mano-objeto.
+- Investigación en visión temporal: servir como baseline reproducible (checkpoint y configuración publicados) para comparar arquitecturas de estimación de interacción mano-objeto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente reporta la pérdida de validación del checkpoint (0,12714 en `epoch/objective/val/total`), sin métricas comparativas frente a otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible con cifras exactas; el repositorio de pesos ocupa 5,8 GB, lo que sugiere que el checkpoint en precision completa requiere al menos varios GB de memoria, pero no se publica una estimacion oficial.
-- GPU recomendadas: no disponible de forma explicita; por el tamano del backbone ViT-L, se espera que quepa en GPUs de consumo con memoria suficiente, pero no se confirma.
-- Compatibilidad con GPU de consumo: no confirmada en la informacion disponible.
-- Opciones de despliegue: inferencia via checkpoint PyTorch y YAML de configuracion; el repositorio de codigo (`BeingBeyond/Tactohand`) es la referencia de uso. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI (no aplicables a este tipo de modelo).
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible de forma explícita; el repositorio ocupa 11,5 GB, lo que incluye pesos y estado de entrenamiento. Un ViT-Large con ventanas de 32 fotogramas a 256 píxeles requiere memoria moderada, pero no se proporcionan cifras oficiales.
+- GPU recomendadas: no disponible en la información proporcionada.
+- ¿Cabe en GPU de consumo? No confirmado; el tamaño del backbone ViT-L sugiere que podría ejecutarse en GPUs de consumo con VRAM suficiente, pero no hay datos oficiales.
+- Opciones de despliegue: inferencia mediante PyTorch con el checkpoint `.ckpt` y el `tactohand.yaml`; el código de uso está en el repositorio de GitHub. No se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplicables a este tipo de modelo).
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone en la informacion proporcionada de modelos comparables de estimacion de contacto y fuerza mano-objeto desde video RGB con datos de parametros, contexto o rendimiento que permitan una comparacion rigurosa. Cualquier tabla comparativa con alternativas concretas requeriria datos no disponibles.
+No disponible. La información proporcionada no incluye modelos comparables de estimación de interacción mano-objeto ni datos de rendimiento que permitan una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
-- Las salidas de fuerza son predicciones normalizadas, no fuerzas fisicas en newtons; no deben interpretarse como medidas fisicas calibradas.
-- El modelo trabaja sobre ventanas de 32 fotogramas a 10 Hz; interacciones fuera de esa escala temporal o con cambios bruscos pueden no representarse bien.
-- La resolucion de entrada es de 256 pixeles, lo que limita el detalle de objetos pequenos o manos parcialmente ocluidas.
-- La inferencia esta disenada para RGB; no se documenta robustez frente a condiciones de iluminacion adversas, oclusiones severas o camaras multiples.
-- Riesgo de sesgo derivado del dataset de entrenamiento (no documentado en la informacion disponible): posibles diferencias de rendimiento segun demografia, tipo de mano u objetos.
-- Riesgo de alucinacion de contacto o fuerza en escenas ambiguas, comun en modelos de percepcion fisica; conviene validar en el dominio de despliegue.
-- Licencia: las contribuciones propias son MIT, pero los pesos del backbone derivados de DINOv3 quedan sujetos a la DINOv3 License, lo que puede imponer restricciones adicionales para uso comercial. Es necesario revisar `LICENSE-DINOv3.md` antes de produccion.
-- El checkpoint conserva estado de entrenamiento; debe usarse junto con el YAML correspondiente para una inferencia correcta.
-- No hay datos publicados de benchmarks, latencia ni requisitos de hardware, lo que dificulta planificar capacidad en produccion.
+- Las salidas de fuerza son predicciones normalizadas, no fuerzas físicas en newtons; no deben interpretarse como medidas absolutas.
+- El modelo está entrenado para ventanas de 32 fotogramas a 10 Hz; secuencias más largas o con otro régimen de muestreo pueden degradar el rendimiento.
+- La resolución de entrada está fijada en 256 píxeles, lo que puede limitar la precisión en escenas con manos pequeñas o muy ocluidas.
+- Riesgo de sesgo y alucinación: no se documentan sesgos específicos, pero al ser un modelo de regresión visual puede producir predicciones erróneas en condiciones de iluminación, oclusión o dominios distintos al de entrenamiento.
+- Restricciones de licencia: las contribuciones propias son MIT, pero los pesos del backbone derivados de DINOv3 están sujetos a la DINOv3 License, que debe revisarse antes de uso comercial.
+- El checkpoint incluye estado de entrenamiento, lo que aumenta el tamaño del repositorio y puede requerir pasos adicionales para extraer solo los pesos de inferencia.
+- No se documentan límites de idioma relevantes porque el modelo no procesa texto; las etiquetas en/zh son solo metadatos.
+- No hay información sobre robustez en dominios distintos (por ejemplo, vídeo egocéntrico frente a tercera persona) ni sobre calibración de las predicciones.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/zhenqis123/TactoHand
-- Codigo y uso: https://github.com/BeingBeyond/Tactohand
+- Repositorio de código: https://github.com/BeingBeyond/Tactohand
 - Paper: https://arxiv.org/abs/2610.39585
 - Sitio del proyecto: https://zhenqis123.github.io/tactohand-site/
-- Backbone base (timm): https://huggingface.co/timm/vit_large_patch16_dinov3.lvd1689m
+- Backbone base (timm DINOv3 ViT-L): https://huggingface.co/timm/vit_large_patch16_dinov3.lvd1689m
+- Licencia DINOv3: https://huggingface.co/zhenqis123/TactoHand/blob/main/LICENSE-DINOv3.md

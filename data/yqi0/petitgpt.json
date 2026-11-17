@@ -37,7 +37,7 @@
     "region:us"
   ],
   "likes": 27,
-  "downloads_30d": 159,
+  "downloads_30d": 151,
   "trending_score": 11,
   "parameters": 124635456,
   "parameters_human": "124.6M",
@@ -56,32 +56,79 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
-  "sources": [
+  "benchmarks": [
     {
-      "title": "Как изменить название скопированной ...",
-      "url": "https://www.bolshoyvopros.ru/questions/54086-kak-izmenit-nazvanie-skopirovannoj-ssylki-sohraniv-ee-klikabelnoj.html",
-      "snippet": "Стоит добавить, что таким образом делать кликабельной ссылку можно не только пряча ее за одно слово, а и за несколько …"
+      "task": "Text Generation",
+      "dataset": "ARC-Easy",
+      "metric": "accuracy (zero-shot likelihood, FP32)",
+      "value": 57.74
     },
     {
-      "title": "Когда окончанием прилагательного ...",
-      "url": "https://hinative.com/questions/22141656",
-      "snippet": "Если есть Ж Ш Ч Щ Н, посмотрите на прилагательное в мужском роде. Если в мужском роде окончание -ИЙ, в среднем роде …"
+      "task": "Text Generation",
+      "dataset": "ARC-Easy",
+      "metric": "normalized accuracy (zero-shot likelihood, FP32)",
+      "value": 52.36
     },
     {
-      "title": "Что означает частица «się»,когда ее ...",
-      "url": "https://hinative.com/questions/17035103",
-      "snippet": "«Się» это то же самое, что «ся», но её пишется раздельно. ︎myć się – мыться ︎pisze się – пишется ︎podoba mi się – мне …"
+      "task": "Text Generation",
+      "dataset": "PIQA",
+      "metric": "accuracy (zero-shot likelihood, FP32)",
+      "value": 63.49
     },
     {
-      "title": "Кто сказал: \"Хочешь погубить нацию ...",
-      "url": "https://www.bolshoyvopros.ru/questions/4205550-kto-skazal-hochesh-pogubit-naciju----razvrati-zhenschin.html",
-      "snippet": "Я вот так же нашла несколько статей, авторы которых утверждают, что фразу: -\"Чтобы уничтожить народ, нужно развратить …"
+      "task": "Text Generation",
+      "dataset": "PIQA",
+      "metric": "normalized accuracy (zero-shot likelihood, FP32)",
+      "value": 62.3
     },
     {
-      "title": "\"он, его, него (as in the word \"it\")\" 和 \"она, ее ...",
-      "url": "https://zh.hinative.com/questions/25250825",
-      "snippet": "Similarly, 'его' and 'ее' are used to indicate possession or to mean \"its\" for masculine and feminine nouns. However, the words 'него' …"
+      "task": "Text Generation",
+      "dataset": "ARC-Challenge",
+      "metric": "accuracy (zero-shot likelihood, FP32)",
+      "value": 28.16
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "ARC-Challenge",
+      "metric": "project-protocol normalized accuracy (zero-shot likelihood, FP32)",
+      "value": 32.68
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "HellaSwag",
+      "metric": "accuracy (zero-shot likelihood, FP32)",
+      "value": 31.28
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "HellaSwag",
+      "metric": "project-protocol normalized accuracy (zero-shot likelihood, FP32)",
+      "value": 35.6
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "IFEval",
+      "metric": "prompt-level strict accuracy (native chat template, greedy, max_new_tokens=1280)",
+      "value": 17.19
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "IFEval",
+      "metric": "instruction-level strict accuracy (native chat template, greedy, max_new_tokens=1280)",
+      "value": 28.54
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "IFEval",
+      "metric": "prompt-level loose accuracy (native chat template, greedy, max_new_tokens=1280)",
+      "value": 17.74
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "IFEval",
+      "metric": "instruction-level loose accuracy (native chat template, greedy, max_new_tokens=1280)",
+      "value": 29.98
     }
-  ]
+  ],
+  "sources": []
 }

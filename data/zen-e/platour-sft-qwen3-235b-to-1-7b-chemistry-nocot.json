@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 66,
+  "downloads_30d": 67,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -43,16 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "PLatour - a zen-E Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/zen-E/platour",
-      "snippet": "PLatour model and dataset releases. Dataset preview; model releases will be added later."
-    },
-    {
-      "title": "Qwen/Qwen3-235B-A22B · Hugging Face",
-      "url": "https://huggingface.co/Qwen/Qwen3-235B-A22B",
-      "snippet": "Text Generation model with 235B parameters. Download, explore files and run it on Hugging Face."
-    }
-  ]
+  "sources": []
 }

@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 55,
-  "downloads_30d": 7913,
+  "downloads_30d": 7942,
   "trending_score": 11,
   "parameters": null,
   "parameters_human": null,
@@ -54,7 +54,7 @@
     {
       "task": "Zero-Shot Text-to-Speech",
       "dataset": "ZeroBench-TTS",
-      "metric": "WER (%)",
+      "metric": "WER (%) — raw text",
       "value": 1.03
     },
     {
@@ -78,25 +78,25 @@
     {
       "task": "Zero-Shot TTS — monolingual Vietnamese",
       "dataset": "ZeroBench-TTS (vietnamese)",
-      "metric": "WER (%)",
+      "metric": "WER (%) — raw text",
       "value": 0.16
     },
     {
       "task": "Zero-Shot TTS — Vietnamese/English code-switching",
       "dataset": "ZeroBench-TTS (code_switch)",
-      "metric": "WER (%)",
+      "metric": "WER (%) — raw text",
       "value": 0.97
     },
     {
       "task": "Zero-Shot TTS — cross-lingual voice prompt",
       "dataset": "ZeroBench-TTS (cross_lingual)",
-      "metric": "WER (%)",
+      "metric": "WER (%) — raw text",
       "value": 1.42
     },
     {
       "task": "Zero-Shot TTS — acronyms, dates, numbers",
       "dataset": "ZeroBench-TTS (challenging)",
-      "metric": "WER (%)",
+      "metric": "WER (%) — raw text",
       "value": 1.75
     }
   ],

@@ -5,7 +5,7 @@
   "author": "zephel01",
   "url": "https://huggingface.co/zephel01/GLM-5.3-Flash-IQ3_XXS-32G128G-GGUF",
   "created_at": "2026-11-06T23:23:47.000Z",
-  "updated_at": "2026-11-09T00:28:56.000Z",
+  "updated_at": "2026-11-16T21:52:47.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -39,7 +39,7 @@
   "trending_score": 0,
   "parameters": 320759404382,
   "parameters_human": "320.76B",
-  "storage_bytes": 127926002528,
+  "storage_bytes": 127926120454,
   "storage_human": "127.9 GB",
   "context_length": 1048576,
   "base_model": "zai-org/GLM-5.3-Flash",
@@ -55,16 +55,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "zephel01/GLM-5.3-Flash-32G128G-GGUF · Hugging Face",
-      "url": "https://huggingface.co/zephel01/GLM-5.3-Flash-32G128G-GGUF",
-      "snippet": "Text Generation model with 321B parameters. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "zephel01/GLM-5.3-Flash-32G96G-GGUF · Hugging Face",
-      "url": "https://huggingface.co/zephel01/GLM-5.3-Flash-32G96G-GGUF",
-      "snippet": "This repository will hold GGUFs of GLM-5.3-Flash made for one 32 GB GPU plus 96 GB RAM, with every expert kept (no expert pruning), measured in Abyss and released as BETA."
-    }
-  ]
+  "sources": []
 }

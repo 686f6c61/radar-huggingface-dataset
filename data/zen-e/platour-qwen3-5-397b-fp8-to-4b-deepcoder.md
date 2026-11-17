@@ -2,91 +2,93 @@
 
 ## Resumen
 
-PLatour-Qwen3.5-397B-FP8-to-4B-DeepCoder es un artefacto de investigación publicado por el usuario zen-E en Hugging Face, asociado al paper "On the Opportunities and Challenges of Prefill-to-Autoregressive Cross-Model Transfer" (arXiv:2611.06976). No es un modelo lingüístico completo, sino un conjunto de pesos de puente (bridge projections) que implementa el método PACT (Prefill-to-Autoregressive Cross-model Transfer): un modelo emisor grande codifica el prompt y suministra representaciones ocultas, mientras que un modelo receptor pequeño genera la respuesta de forma independiente.
+PLatour-Qwen3.5-397B-FP8-to-4B-DeepCoder es un checkpoint de puentes de proyección (bridge projections) publicado por el usuario zen-E dentro del proyecto de investigación PLatour. No se trata de un modelo completo, sino de un conjunto de pesos ligeros que conectan dos backbones congelados: un emisor grande (Qwen/Qwen3.5-397B-A17B-FP8) que codifica el prompt y un receptor pequeño (Qwen/Qwen3.5-4B) que genera la respuesta de forma independiente. El repo ocupa 1,3 GB, coherente con un artefacto de puentes y no con pesos completos de un modelo de 397B.
 
-En esta variante concreta, el emisor es Qwen3.5-397B-A17B-FP8 (un modelo MoE de ~403,4B parámetros totales con ~17B activos y 262K tokens de contexto) y el receptor es Qwen3.5-4B. El puente se entrena con recompensas de tarea mediante proyecciones lineales ligeras inicializadas a cero entre backbones congelados, sobre el dataset zen-E/PLatour-DeepCoder-Data, orientado a tareas de programación.
+El trabajo implementa lo que sus autores denominan Prefill-to-Autoregressive Cross-model Transfer (PACT): entrenar puentes lineales ligeros entre backbones congelados usando recompensas de tarea, partiendo de proyecciones inicializadas a cero y soportando modelos de atención híbrida. El checkpoint corresponde al "experimento 25" del proyecto, orientado a tareas de código (deepcoder), y se apoya en el dataset zen-E/PLatour-DeepCoder-Data.
 
-El interés del artefacto es metodológico: explora si la información del emisor mejora realmente al receptor o si las ganancias provienen simplemente de la adaptación del receptor. El propio autor advierte que el repositorio distribuye pesos históricos de inferencia sin puntuaciones de benchmark y que no debe cargarse con `AutoModel.from_pretrained` ni PEFT, sino con el cargador específico del proyecto PLatour.
+Su relevancia es metodológica: propone una vía para aprovechar la capacidad de representación de un modelo grande sin pagar su coste de decodificación, delegando la generación en un modelo pequeño. El paper asociado (arXiv:2611.06976) introduce además PACT-Check con controles de transferencia ficticia, transferencia irrelevante, autocomunicación y receptor entrenado, para verificar que las mejoras provienen de información útil del emisor y no de la mera adaptación del receptor.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Puentes de proyección lineal (PACT) entre backbones transformer congelados; soporta modelos de atención híbrida |
-| Parametros totales | No disponible para el puente; el emisor Qwen3.5-397B-A17B-FP8 tiene ~403,4B y el receptor Qwen3.5-4B tiene ~4B |
-| Parametros activos | ~17B en el emisor (MoE); no aplica al puente |
-| Longitud de contexto | No disponible para el puente; el emisor declara 262K tokens |
-| Tipos de cuantizacion | FP8 en el emisor (según el nombre del checkpoint base); no disponible para el puente |
-| Idiomas soportados | No disponibles |
-| Licencia | Apache-2.0 (los modelos upstream conservan sus propias licencias) |
-| Formato de pesos | safetensors, con cargador personalizado (`custom-loader`) y `config.json` propio del proyecto |
+| Arquitectura | Puentes de proyección lineales entre dos backbones transformer congelados (emisor Qwen3.5-397B-A17B-FP8, receptor Qwen3.5-4B); soporta atención híbrida |
+| Parametros totales | No disponible (el repo de 1,3 GB contiene solo los puentes, no los backbones) |
+| Parametros activos | No disponible |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | No disponible (el emisor de referencia se distribuye en FP8) |
+| Idiomas soportados | No disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors con custom-loader (requiere `platour_api`; no cargable con `AutoModel.from_pretrained`) |
 
 ## Arquitectura y entrenamiento
 
-PACT separa el cómputo en dos fases: el emisor grande procesa el prompt (prefill) y expone sus representaciones ocultas; el receptor pequeño genera autorregresivamente la respuesta sin depender del emisor en cada token. El puente consiste en proyecciones lineales ligeras entrenadas entre backbones congelados, inicializadas a cero y optimizadas con recompensas de tarea. El método está diseñado para funcionar también con modelos de atención híbrida.
+El método PACT separa el cómputo en dos fases: un emisor grande procesa el prompt y produce representaciones ocultas, y un receptor pequeño genera la respuesta de forma autorregresiva e independiente. Entre ambos se insertan puentes de proyección lineales, inicializados a cero y entrenados con recompensas de tarea mientras los backbones permanecen congelados. El diseño contempla modelos con atención híbrida, lo que permite aplicar el esquema a familias como Qwen3.5.
 
-El entrenamiento de esta variante (Experimento 25, "PLatour on deepcoder") usa el dataset zen-E/PLatour-DeepCoder-Data. El paper introduce además PACT-Check, un conjunto de controles (Dummy Transfer, Irrelevant Transfer, Self-Communication y Trained Receiver) para verificar si las mejoras dependen de información útil del emisor o surgen solo de la adaptación del receptor. El autor no documenta el número de tokens de entrenamiento, la composición exacta del dataset ni si hubo RLHF/DPO; solo indica que se usan recompensas de tarea como señal de optimización.
+El entrenamiento de este checkpoint concreto (experimento 25) se realizó sobre la tarea deepcoder con el dataset zen-E/PLatour-DeepCoder-Data. La model card no detalla el número de tokens de entrenamiento, la composición exacta del dataset ni si se emplearon RLHF o DPO; esa información no está disponible. La innovación destacable es el propio marco PACT y su batería de controles PACT-Check, que evalúan si la mejora depende de la información del emisor o puede explicarse por adaptación del receptor.
 
 ## Capacidades
 
-- Transferencia de representaciones prefill-a-autorregresiva entre un emisor grande y un receptor pequeño.
-- Generación de respuestas por parte del receptor de forma independiente tras el prefill del emisor.
-- Soporte de modelos con atención híbrida en el diseño del puente.
-- Orientación a tareas de programación (DeepCoder) según el dataset y el nombre del experimento.
-- Evaluación controlada mediante PACT-Check (controles de transferencia dummy, irrelevante, autocomunicación y receptor entrenado).
-- No se documentan capacidades de tool calling, agentes, visión, audio ni modo thinking para este artefacto.
-- Capacidades multilingües: no disponibles.
+- Generación de código: el checkpoint está orientado a la tarea deepcoder y se evalúa por defecto sobre LCB v6, HumanEval y MBPP.
+- Generación de texto autorregresiva delegada en el receptor Qwen3.5-4B.
+- Aprovechamiento de representaciones de un emisor de 397B sin ejecutar su decodificación.
+- Integración vía API de proyecto (`load_session`, `system.generate`) con backend vLLM.
+- Evaluación reproducible con juez de código en contenedores Docker aislados.
+- Soporte de mensajes multi-turno en el formato `messages` de rol/contenido.
+- No se documentan capacidades de tool calling, agentes, visión, audio ni modo thinking en la información disponible.
 
 ## Casos de uso
 
-- Investigación sobre comunicación entre modelos: usar el puente para medir si las representaciones de un emisor de 397B mejoran a un receptor de 4B en tareas de código, con los controles PACT-Check para descartar artefactos de adaptación.
-- Reproducción de experimentos del paper: descargar el experimento 25 con `platour-exps download --experiment 25` y ejecutar la evaluación con el comando correspondiente de la documentación del proyecto.
-- Evaluación de eficiencia prefill/generación: comparar el coste de prefill en el emisor grande frente a la generación en el receptor pequeño en cargas de código.
-- Estudio de alineación de espacios latentes: analizar cómo proyecciones lineales inicializadas a cero pueden mapear representaciones entre backbones de distinta escala.
-- Benchmarking de programación con juez oficial aislado: el autor indica que la evaluación de programación requiere el juez oficial aislado, lo que permite montar un pipeline de evaluación reproducible.
-- Auditoría de procedencia de artefactos: el repositorio incluye hashes SHA-256 y mapeo de tensores, útil para verificar la integridad de exportaciones de inferencia en investigación reproducible.
+- Generación de funciones y snippets de código: el sistema recibe un prompt de programación, el emisor de 397B codifica la intención y el receptor de 4B produce la implementación, útil para prototipado rápido de utilidades acotadas.
+- Investigación en transferencia entre modelos: sirve para reproducir el experimento 25 y contrastar hipótesis sobre comunicación cross-model con los controles PACT-Check.
+- Evaluación de pipelines de código: el comando `platour-exps evaluate` ejecuta LCB v6, HumanEval y MBPP con juez en Docker, adecuado para medir regresiones de forma reproducible.
+- Estudio de eficiencia computacional: permite comparar el coste de decodificar con un receptor de 4B frente a hacerlo con el emisor de 397B manteniendo parte de la calidad.
+- Docencia y divulgación: el ejemplo de generación con límite de 256 tokens sirve para demostrar arquitecturas emisor-receptor en entornos controlados.
+- Base para experimentos propios: los puentes entrenados con recompensas de tarea pueden reutilizarse como punto de partida para otras tareas de código dentro del marco PLatour.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explícitamente que el repositorio distribuye pesos históricos de inferencia sin puntuaciones de benchmark y que no se hace ninguna afirmación sobre el protocolo de selección de checkpoint ni sobre rendimiento no sesgado en held-out.
+No se han publicado resultados de benchmarks en la información disponible. La model card indica que la evaluación por defecto puntúa LCB v6, HumanEval y MBPP mediante un juez de código, pero no incluye cifras de resultados.
 
 ## Requisitos de hardware
 
-- VRAM del puente: el repositorio ocupa 1,3 GB, por lo que los pesos del puente son ligeros; el grueso de VRAM lo determina el emisor y el receptor.
-- Emisor Qwen3.5-397B-A17B-FP8: ~403,4B parámetros en FP8, lo que exige del orden de cientos de GB de VRAM; no cabe en GPU de consumo. Requiere despliegue multi-GPU (A100/H100/H200) o servicio externo.
-- Receptor Qwen3.5-4B: cabe en GPU de consumo con cuantización (por ejemplo, RTX 4090 de 24 GB en FP16/BF16 o cuantizaciones de 8/4 bits).
-- Opciones de despliegue: el puente requiere el cargador del proyecto PLatour (`platour-exps`); no es compatible con `AutoModel.from_pretrained` ni PEFT. Los backbones pueden servirse con sus stacks habituales (vLLM, TGI, llama.cpp/Ollama para el receptor pequeño), aunque el autor no documenta integraciones.
-- Latencia y throughput: no disponibles. Como referencia externa no verificada, un agregador de terceros reporta ~114 t/s para Qwen3.5-397B-A17B en proveedores comerciales.
+- El checkpoint de puentes ocupa 1,3 GB, pero la inferencia requiere cargar simultáneamente el emisor Qwen3.5-397B-A17B-FP8 y el receptor Qwen3.5-4B, por lo que la VRAM efectiva la determina el emisor.
+- El grupo de colocación por defecto para la evaluación es de 4 GPU por réplica; `--n-gpu 1` es incompatible con ese valor por defecto.
+- Con `--n-gpu 8` se ejecutan 2 réplicas independientes de 4 GPU cada una con shards de preguntas disjuntos.
+- No se especifican GPU concretas (A100, H100, RTX 4090) ni si el conjunto cabe en GPU de consumo; no disponible.
+- Despliegue mediante el proyecto PLatour con backend vLLM; requiere Linux con CUDA y Python 3.11.
+- Latencia y throughput no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PLatour-Qwen3.5-397B-FP8-to-4B-DeepCoder | Puente ligero; emisor ~403,4B (17B activos) + receptor ~4B | No disponible (emisor 262K) | Apache-2.0 | Hugging Face, cargador propio | Pesos de investigación sin benchmarks publicados |
-| Qwen3.5-397B-A17B | ~403,4B totales, ~17B activos | 262K | Apache-2.0 | Hugging Face y proveedores comerciales | Modelo completo; el puente lo usa como emisor |
-| Qwen3.5-4B | ~4B | No disponible | No disponible en la información | Hugging Face | Receptor del puente; desplegable en GPU de consumo |
+| PLatour-Qwen3.5-397B-FP8-to-4B-DeepCoder | Puentes sobre emisor 397B + receptor 4B | No disponible | Transferencia cross-model (PACT) para código | Apache 2.0 | HF, requiere proyecto PLatour |
+| Qwen/Qwen3.5-4B (receptor) | 4B | No disponible | Modelo denso estándar | No disponible | HF |
+| Qwen/Qwen3.5-397B-A17B-FP8 (emisor) | 397B (A17B) | No disponible | MoE en FP8 | No disponible | HF |
 
-No se dispone de datos de rendimiento comparativo para el puente; cualquier comparación de calidad queda pendiente de evaluación independiente.
+No se dispone de datos de rendimiento comparativo entre estas opciones en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo autónomo: requiere descargar por separado el emisor y el receptor, y usar el cargador del proyecto PLatour.
-- Incompatible con `AutoModel.from_pretrained` y PEFT; intentar cargarlo por vías estándar fallará.
-- Sin benchmarks publicados: el autor no adjunta resultados y pide evaluación independiente y revisión de procedencia antes de usar los artefactos para nuevas afirmaciones comparativas.
-- Las revisiones exactas de los backbones usadas en la ejecución histórica no están verificadas de forma independiente y no deben inferirse de la última revisión del Hub.
-- Riesgo de alucinación y sesgos: no documentados; al ser pesos de investigación sin evaluación, no hay garantías de calidad en producción.
-- Idiomas soportados: no disponibles.
-- Licencia: el export es Apache-2.0, pero los modelos upstream conservan sus propias licencias y avisos; verificar antes de uso comercial.
-- El export no es estado reanudable de optimizador/RNG; solo sirve para inferencia.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: ecosistema mínimo, sin soporte comunitario documentado.
+- No es un modelo autónomo: contiene solo puentes de proyección y no puede cargarse con `AutoModel.from_pretrained`; exige el proyecto PLatour y ambos backbones.
+- La generación devuelve texto y no ejecuta el código producido; la validación requiere el juez en contenedores Docker.
+- El ejemplo de la model card usa 256 tokens como demostración y no reproduce el protocolo de benchmark publicado.
+- No hay información sobre sesgos, riesgo de alucinación ni cobertura idiomática; no disponible.
+- La licencia Apache 2.0 cubre el checkpoint, pero el uso comercial depende también de las licencias de los backbones Qwen referenciados.
+- El checkpoint tiene 68 descargas y 0 likes, con fecha de creación en noviembre de 2026; madurez y soporte comunitario limitados.
+- Requiere entorno Linux con CUDA, Python 3.11 y Docker para la evaluación con juez.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/zen-E/PLatour-Qwen3.5-397B-FP8-to-4B-DeepCoder
-- Paper: https://arxiv.org/abs/2611.06976
-- Paper (HTML): https://arxiv.org/html/2611.06976
-- Colección PLatour: https://huggingface.co/collections/zen-E/platour
+- Modelo en Hugging Face: https://huggingface.co/zen-E/PLatour-Qwen3.5-397B-FP8-to-4B-DeepCoder
+- Paper: https://arxiv.org/html/2611.06976
+- Repositorio de código: https://github.com/zhenyi4/platour
+- Colección de modelos: https://huggingface.co/collections/zen-E/platour
+- Guía de agente/API: https://github.com/zhenyi4/platour/blob/main/AGENT.md
+- Guía de entorno: https://github.com/zhenyi4/platour/blob/main/docs/ENVIRONMENT.md
+- Protocolos de tarea: https://github.com/zhenyi4/platour/blob/main/qwen35/README.md
+- Índice de checkpoints: https://github.com/zhenyi4/platour/blob/main/models/README.md#downloadable-checkpoints
 - Dataset: https://huggingface.co/datasets/zen-E/PLatour-DeepCoder-Data
-- Modelo emisor: https://huggingface.co/Qwen/Qwen3.5-397B-A17B-FP8
-- Modelo receptor: https://huggingface.co/Qwen/Qwen3.5-4B
-- Ficha externa del emisor (no oficial): https://modelgrep.com/models/qwen/qwen3.5-397b-a17b
+- Emisor: https://huggingface.co/Qwen/Qwen3.5-397B-A17B-FP8
+- Receptor: https://huggingface.co/Qwen/Qwen3.5-4B

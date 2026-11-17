@@ -1,0 +1,67 @@
+{
+  "schema": 2,
+  "id": "Raghav-Singhal/1pp-1.66b-v2-filt-sft",
+  "slug": "raghav-singhal-1pp-1-66b-v2-filt-sft",
+  "author": "Raghav-Singhal",
+  "url": "https://huggingface.co/Raghav-Singhal/1pp-1.66b-v2-filt-sft",
+  "created_at": "2026-11-17T09:22:00.000Z",
+  "updated_at": "2026-11-17T09:22:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "1pp",
+    "one-persona-pretraining",
+    "ladder-v2",
+    "spp-baseline",
+    "sft",
+    "filt",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1661048832,
+  "parameters_human": "1.66B",
+  "storage_bytes": 3322122912,
+  "storage_human": "3.3 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How does the lens diameter influence photo quality?",
+      "url": "https://photo.stackexchange.com/questions/2890/how-does-the-lens-diameter-influence-photo-quality",
+      "snippet": "Mar 28, 2011 · The diameter you're seeing is for the filter threads; it's unrelated to image quality. If anything, there are disadvantages …"
+    },
+    {
+      "title": "Why are Fuji lenses more expensive than others?",
+      "url": "https://photo.stackexchange.com/questions/112077/why-are-fuji-lenses-more-expensive-than-others",
+      "snippet": "Sep 17, 2019 · Why should the OP be so concerned with AA filters as to wait for cameras with weaker ones? The OP expresses no …"
+    }
+  ]
+}

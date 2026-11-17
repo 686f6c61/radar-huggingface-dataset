@@ -2,86 +2,93 @@
 
 ## Resumen
 
-`yexiyue/talechime-resources` no es un modelo de lenguaje ni un modelo acústico de síntesis de voz, sino un repositorio de recursos de tiempo de ejecución (runtime) para el proyecto TaleChime y CastGlean. En concreto, aloja el frontend de procesamiento de texto en mandarín `kokoro/misaki-zh-v1/`, que contiene diccionarios, datos de segmentación y etiquetado morfológico mediante POS-HMM, y reglas de pronunciación exportadas desde Misaki 0.9.4 con versiones fijadas (pinned). El repositorio se etiqueta como `text-to-speech` y `pronunciation`, pero no incluye pesos acústicos ONNX, runtime de Python, credenciales ni audio de usuario; la inferencia acústica se delega en Candle y el frontend nativo está escrito en Rust.
+TaleChime Resources es un repositorio de recursos de ejecución (runtime resources) publicado por el usuario yexiyue en Hugging Face, no un modelo de pesos autocontenido al uso. Contiene datos auxiliares, tablas de pronunciación, diccionarios, componentes nativos convertidos y manifiestos de procedencia necesarios para ejecutar el stack de síntesis de voz TaleChime y CastGlean, que integra motores acústicos como Kokoro, CosyVoice3 e IndexTTS sobre el framework Candle en Rust. El repositorio está etiquetado como pipeline `text-to-speech` y su idioma declarado es únicamente el chino mandarín (zh).
 
-El paquete está pensado para consumidores que integran TaleChime en producción y necesitan datos de preprocesado lingüístico reproducibles. Incluye un manifiesto de procedencia y checksums SHA-256, un corpus de test independiente, avisos de fuentes y los textos completos de las licencias Apache-2.0 y MIT. La validación del frontend cubre 28 casos en mandarín que coinciden con la salida de Misaki fijada, mientras que un caso mixto con inglés se declara explícitamente no soportado.
+El paquete principal, `kokoro/misaki-zh-v1/`, exporta diccionarios, datos de segmentación y POS-HMM, y reglas de pronunciación desde Misaki 0.9.4 fijado, para ser consumidos por un frontend nativo en Rust mientras la inferencia acústica queda en Candle. Incluye además tablas opcionales de contexto g2pW y componentes nativos verificados (pesos Kokoro en F32 para Candle, HiFT de CosyVoice3 con tensores F0 en F64, y tensores GPT, codec, s2mel, CAMPPlus y BigVGAN de IndexTTS en F32).
 
-Su relevancia actual es acotada: no compite con modelos TTS de extremo a extremo, sino que resuelve la capa de normalización y fonemización del texto chino para pipelines TTS basados en Kokoro. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, un tamaño de 0.0 GB y fue creado el 5 de noviembre de 2026, por lo que se trata de una publicación muy reciente y de nicho.
+Es relevante ahora porque documenta un enfoque de empaquetado reproducible con hashes SHA-256, manifiestos de procedencia y licencias por componente, algo poco habitual en repositorios de TTS. No obstante, conviene subrayar que el repositorio no publica pesos acústicos completos ni un SDK, y que su licencia es mixta y específica por componente, con restricciones comerciales en algunas partes.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No aplica: recursos de frontend lingüístico (diccionarios, segmentación POS-HMM, reglas de pronunciación); inferencia acústica en Candle, frontend nativo en Rust |
-| Parametros totales | No disponible (no contiene pesos de modelo acústico ni de lenguaje) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No aplica (procesamiento de texto por segmentos, sin ventana de contexto definida) |
-| Tipos de cuantizacion | No disponible (no se publican pesos que cuantizar) |
-| Idiomas soportados | Chino mandarín (`zh`); un caso mixto con inglés declarado no soportado |
-| Licencia | Apache-2.0 y MIT (`apache-2.0-and-mit`, con `license: other` en metadatos) |
-| Formato de pesos | No aplica; se distribuyen diccionarios, datos de segmentación/POS-HMM, reglas de pronunciación, manifiesto JSON y checksums SHA-256 |
+| Arquitectura | Colección de recursos de runtime (frontend de pronunciación, tablas G2P, pesos convertidos para Candle); no es un modelo único |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (no es un modelo de lenguaje) |
+| Tipos de cuantizacion | Pesos Kokoro en F32; tensores F0 de CosyVoice3 en F64; tensores IndexTTS en F32; ONNX opcional g2pW (sin cuantización declarada) |
+| Idiomas soportados | Chino mandarín (zh); un caso mixto inglés declarado explícitamente no soportado |
+| Licencia | Mixta y específica por componente (`component-specific-licenses`); incluye Apache-2.0, MIT y bilibili Model Use License Agreement para IndexTTS |
+| Formato de pesos | safetensors, ONNX (g2pW opcional), datos de diccionario/tablas, manifiestos JSON |
+| Tamano del repositorio | 5,8 GB |
+| Pipeline declarado | text-to-speech |
+| Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
-El repositorio no entrena ni distribuye un modelo neuronal. Su componente principal, `kokoro/misaki-zh-v1/`, es un paquete de datos y reglas para el frontend de texto en mandarín: diccionarios, segmentación y etiquetado POS-HMM, y reglas de pronunciación exportadas desde Misaki 0.9.4 con revisiones de origen fijadas. Este frontend se ejecuta de forma nativa en Rust, mientras que la inferencia acústica permanece en Candle, lo que separa el preprocesado lingüístico del motor neuronal de síntesis.
+El repositorio no describe el entrenamiento de un modelo, sino la preparación y verificación de recursos de inferencia. La arquitectura subyacente es un pipeline TTS híbrido: un frontend de texto a fonemas en Rust nativo que consume diccionarios y reglas exportadas de Misaki 0.9.4 (segmentación y POS-HMM), y un backend acústico ejecutado sobre Candle. Opcionalmente se integra un frontend contextual basado en g2pW, cuyo modelo ONNX oficial se descarga por separado desde su repositorio upstream fijado y se ejecuta con ORT en CPU.
 
-La innovación técnica no está en el aprendizaje profundo, sino en la reproducibilidad y la cadena de suministro: el paquete incluye un manifiesto de procedencia y checksums, un corpus de test independiente, avisos de fuentes y los textos completos de las licencias Apache-2.0 y MIT. La validación declarada compara 28 casos en mandarín contra la salida de Misaki fijada; la aceptación acústica, de dispositivo y de escucha se consideran validaciones separadas y no cubiertas por esta publicación. No se especifican volúmenes de datos de entrenamiento, composición del corpus ni procesos de RLHF/DPO, porque no hay entrenamiento de modelo implicado.
+Los componentes nativos verificados incluyen pesos Kokoro plegados en F32 para Candle, HiFT de CosyVoice3 con tensores F0 en F64, y GPT, codec, s2mel, CAMPPlus, BigVGAN y tensores de características de IndexTTS en layouts F32 verificados. La innovación destacable no es algorítmica sino de ingeniería de reproducibilidad: cada subdirectorio incluye registro de procedencia, hashes exactos, avisos de licencia y recetas de build reproducibles. La validación del frontend cubre 28 casos de mandarín que coinciden con la salida de Misaki fijada, y 24 casos oficiales de entrada/salida para g2pW, con un objetivo manual de 23/24 tanto en ejecución oficial como nativa. La aceptación acústica, de dispositivo y de escucha se declara como validación separada y no incluida en esta publicación.
 
 ## Capacidades
 
-- Normalización y fonemización de texto en chino mandarín para pipelines TTS basados en Kokoro.
-- Segmentación de texto y etiquetado morfológico mediante POS-HMM.
-- Aplicación de reglas de pronunciación exportadas desde Misaki 0.9.4 con versiones fijadas.
-- Verificación de integridad mediante manifiesto de procedencia y checksums SHA-256.
-- Corpus de test independiente para validar el frontend contra la salida de referencia.
-- Soporte de un único idioma (`zh`); el caso mixto con inglés está explícitamente no soportado.
-- No incluye tool calling, function calling, razonamiento multi-paso, agentes, visión, audio de entrada ni modo de pensamiento.
+- Proporciona datos de pronunciación y segmentación para chino mandarín (diccionarios, POS-HMM, reglas) consumibles por un frontend nativo en Rust.
+- Suministra tablas de contexto opcionales para desambiguación de pronunciación mediante g2pW.
+- Incluye pesos convertidos y verificados para motores acústicos Kokoro, CosyVoice3 e IndexTTS en formatos adecuados para Candle.
+- Ofrece manifiestos de procedencia y checksums SHA-256 para verificación de integridad en pipelines de despliegue.
+- No incluye capacidades de generación de texto, razonamiento, código, matemáticas, visión, tool calling ni agentes.
+- No incorpora modelo acústico ONNX propio; la inferencia acústica se delega en Candle y en los pesos upstream fijados.
+- Soporte multilingüe limitado al chino mandarín; el inglés mixto no está soportado en el frontend validado.
 
 ## Casos de uso
 
-- Pipeline TTS en mandarín con Kokoro: el frontend convierte texto chino en representaciones fonéticas y segmentadas que alimentan la inferencia acústica en Candle, manteniendo separadas la capa lingüística y la neuronal.
-- Despliegue embebido en Rust: al ejecutarse el frontend de forma nativa en Rust, encaja en aplicaciones de escritorio o servicios de baja latencia que no quieren arrastrar un runtime de Python.
-- Reproducibilidad en producción: el manifiesto y los checksums SHA-256 permiten fijar un commit y verificar tamaños y hashes de cada fichero antes de desplegar, lo que facilita auditorías de cadena de suministro.
-- Validación de regresiones lingüísticas: el corpus de test independiente y los 28 casos en mandarín permiten comprobar que una actualización del frontend no altera la salida respecto a Misaki fijado.
-- Integración en sistemas de lectura por voz para contenido chino: diccionarios y reglas de pronunciación cubren la normalización necesaria antes de la síntesis en aplicaciones de accesibilidad o lectura de artículos.
-- Distribución de recursos sin autenticación: al ser un repositorio público y sin gating, los equipos pueden descargarlo sin cuenta ni token, lo que simplifica la incorporación en imágenes de contenedor y pipelines de CI.
-- Auditoría de licencias: los textos completos de Apache-2.0 y MIT y los avisos de fuentes incluidos facilitan la revisión legal antes de redistribuir el paquete.
+- Despliegue de TTS en mandarín con frontend nativo: integrar `kokoro/misaki-zh-v1/` en una aplicación Rust que use Candle para la inferencia acústica, aprovechando que el paquete no requiere Python en tiempo de ejecución.
+- Verificación de integridad en CI/CD: fijar un commit del repositorio y comprobar tamaños y SHA-256 contra la receta aprobada antes de empaquetar los recursos en una imagen de contenedor.
+- Desambiguación de pronunciación contextual: usar las tablas de `kokoro/g2pw-context-v1/` junto con el modelo ONNX oficial de g2pW descargado aparte para resolver polifonías en textos chinos.
+- Reproducción de builds nativos: emplear los registros de procedencia y las recetas de `native/` para reconstruir los pesos convertidos de Kokoro, CosyVoice3 e IndexTTS con layouts F32/F64 verificados.
+- Auditoría de licencias en producto: revisar los avisos por componente antes de distribuir, dado que IndexTTS queda bajo el bilibili Model Use License Agreement y no bajo Apache-2.0.
+- Evaluación comparativa de frontends G2P: usar el corpus de prueba independiente y los 24 casos oficiales para contrastar la ejecución nativa frente a la oficial de g2pW.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La única métrica declarada es de validación funcional del frontend: 28 casos en mandarín coinciden con la salida de Misaki fijada y un caso mixto con inglés se declara no soportado. No se aportan cifras de latencia, throughput, WER, MOS ni comparaciones con otros frontends.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente reporta validaciones funcionales: 28 casos de mandarín que coinciden con la salida de Misaki fijada (un caso mixto inglés no soportado) y 24 casos oficiales de g2pW coincidentes con el runtime nativo, con objetivo manual de 23/24.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no aplica al paquete de recursos, que no contiene pesos acústicos; el consumo dependerá del modelo Kokoro y del runtime Candle que se use por separado.
-- GPU recomendadas: no disponibles para este repositorio; vienen determinadas por el motor acústico aguas abajo, no por el frontend.
-- Compatibilidad con GPU de consumo: no evaluable con la información disponible; el frontend en Rust puede ejecutarse en CPU, pero la síntesis acústica requiere el modelo correspondiente.
-- Opciones de despliegue: frontend nativo en Rust con datos de Misaki 0.9.4; inferencia acústica en Candle. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de recurso.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: no disponible; el repositorio no publica requisitos de memoria para inferencia acústica.
+- GPU recomendadas: no disponible.
+- Compatibilidad con GPU de consumo: no disponible.
+- Opciones de despliegue: runtime nativo en Rust con Candle para la inferencia acústica; ORT en CPU exclusivamente para el modelo g2pW opcional.
+- Latencia y throughput: no disponible.
+- Almacenamiento: el repositorio ocupa 5,8 GB, por lo que se requiere espacio suficiente para los recursos y para los pesos upstream descargados por separado.
 
 ## Comparativa con modelos similares
 
-| Recurso | Tipo | Idioma | Contenido | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| `yexiyue/talechime-resources` | Recursos de frontend TTS | `zh` | Diccionarios, POS-HMM, reglas de pronunciación, manifiesto y checksums | Apache-2.0 y MIT | Público, sin gating, 0 descargas |
-| Misaki 0.9.4 (origen de los datos) | Frontend de fonemización | Multilingüe según versión | Reglas y diccionarios de pronunciación | Según proyecto original | Upstream fijado por el autor |
-| Kokoro (modelo acústico) | Modelo TTS neuronal | Varios | Pesos acústicos y voice packs | Según repositorio upstream | Obtenido por separado |
+| Aspecto | TaleChime Resources | Kokoro (upstream) | IndexTTS (upstream) | CosyVoice3 (upstream) |
+|---|---|---|---|---|
+| Tipo de artefacto | Recursos de runtime y componentes convertidos | Modelo TTS con pesos | Modelo TTS con pesos | Modelo TTS con pesos |
+| Parámetros | no disponible | no disponible | no disponible | no disponible |
+| Contexto | no aplica | no aplica | no aplica | no aplica |
+| Idiomas | zh | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha |
+| Licencia | Mixta por componente | según upstream | bilibili Model Use License Agreement | según upstream |
+| Disponibilidad | Pública, sin gate | según upstream | según upstream | según upstream |
 
-No se dispone de datos de rendimiento comparables entre estas opciones, ya que el repositorio analizado no publica benchmarks y los otros componentes se distribuyen en repositorios distintos con sus propias condiciones.
+La comparación se limita a los datos aportados; no se dispone de cifras de rendimiento comparables para estos motores en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo TTS completo: no contiene modelo acústico ONNX, voice packs ni runtime de Python; requiere obtener los pesos originales de sus repositorios upstream con sus propios términos.
-- Cobertura lingüística limitada al chino mandarín; el caso mixto con inglés está explícitamente no soportado.
-- La validación declarada se limita a 28 casos en mandarín; la aceptación acústica, de dispositivo y de escucha son validaciones separadas no cubiertas por esta publicación.
-- La licencia se declara como `other` en los metadatos con nombre `apache-2.0-and-mit`; es necesario revisar el NOTICE y los textos de licencia antes de uso comercial o redistribución.
-- Los consumidores deben fijar un commit y verificar tamaños y SHA-256 contra su receta de recursos aprobada; no hacerlo rompe la garantía de reproducibilidad.
-- Repositorio con 0 descargas y 0 likes y creado en noviembre de 2026: madurez y adopción no demostradas.
-- No se documentan sesgos, tasas de alucinación ni comportamiento en dominios especializados; al no ser un modelo generativo de texto, el riesgo de alucinación semántica no aplica, pero sí el de pronunciaciones incorrectas fuera del corpus validado.
-- Esta publicación no es una release de aplicación ni de SDK; no debe tratarse como tal en producción.
+- No es un modelo listo para usar: no contiene pesos acústicos completos ni SDK, y la publicación no implica síntesis correcta ni aceptación de escucha.
+- Licencia mixta: IndexTTS retiene el bilibili Model Use License Agreement y no está bajo Apache-2.0; es obligatorio revisar los términos por componente antes de uso comercial.
+- Idioma restringido al chino mandarín; el caso mixto inglés está declarado no soportado.
+- Riesgo de procedencia: los pesos originales y packs de voz deben obtenerse de repositorios upstream fijados, con sus propios términos.
+- Validación parcial: la aceptación acústica, de dispositivo y de escucha queda fuera del alcance de esta publicación.
+- Sin datos públicos de benchmarks, latencia, throughput ni requisitos de VRAM.
+- Repositorio con 0 descargas y 0 likes en el momento de la consulta; madurez de adopción no demostrada.
+- El modelo g2pW opcional requiere descarga separada del ONNX oficial y su vocabulario BERT desde upstream.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/yexiyue/talechime-resources
-- NOTICE del paquete Kokoro Mandarin frontend v1: https://huggingface.co/yexiyue/talechime-resources/blob/main/kokoro/misaki-zh-v1/NOTICE.md
-- Manifiesto de procedencia y checksums: https://huggingface.co/yexiyue/talechime-resources/blob/main/kokoro/misaki-zh-v1/manifest.json
+- Repositorio Hugging Face: https://huggingface.co/yexiyue/talechime-resources
+- Licencias por componente: https://huggingface.co/yexiyue/talechime-resources/blob/main/README.md#verified-runtime-components-v3
+- NOTICE del frontend Kokoro: https://huggingface.co/yexiyue/talechime-resources/blob/main/kokoro/misaki-zh-v1/NOTICE.md
+- Manifiesto del frontend Kokoro: https://huggingface.co/yexiyue/talechime-resources/blob/main/kokoro/misaki-zh-v1/manifest.json

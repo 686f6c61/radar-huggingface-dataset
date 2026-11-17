@@ -2,123 +2,106 @@
 
 ## Resumen
 
-Tessera-1B-Nano es un checkpoint de investigación publicado por la cuenta yava-code (atribuido en la model card a Paragon Intelligence Labs) que implementa una replicación a pequeña escala de ConceptLM sobre el backbone HuggingFaceTB/SmolLM2-360M. Se trata de un modelo causal de generación de texto que conserva la generación ordinaria por siguiente token y añade una ruta de conceptos causal y cuantizada sobre fragmentos (chunks) de 4 tokens: los estados de token se agrupan en conceptos, se cuantizan con product quantization, se procesan mediante bloques de concepto causales y el siguiente concepto predicho se reinyecta en el decodificador de tokens.
+Tessera-1B-Nano es un modelo de lenguaje de pequena escala desarrollado por yava-code que implementa una replicacion independiente y compacta de la arquitectura ConceptLM de Paragon Intelligence Labs. Parte del backbone de HuggingFaceTB/SmolLM2-360M (382,7 millones de parametros reales) y le anade una "ruta de conceptos" causal: cada 4 tokens se agrupan en un codigo de concepto, un modulo causal predice el siguiente codigo y esa prediccion se reinyecta en el decodificador mientras genera texto. El nombre "1B" hace referencia al presupuesto de entrenamiento (aproximadamente 1.000 millones de tokens), no al numero de parametros.
 
-El interés del checkpoint es metodológico más que de rendimiento: procede de una comparación token-matched contra el backbone SmolLM2-360M sin modificar, en la que ambos brazos consumieron los mismos tokens del mismo corpus empaquetado, en el mismo orden y desde la misma inicialización. La model card reporta que la pérdida de token es neutra respecto a la línea base (dentro del ruido de ejecución), que el canal de conceptos se usa de forma causal (anular el feedback de concepto cuesta +0,1050 nats de pérdida NTP en held-out) y que el codebook no colapsa (perplejidad 7,5477, uso del 85,6 %).
+El interes del modelo no es tanto su rendimiento como su valor como estudio controlado: compara una rama con ruta de conceptos frente a una rama identica solo con prediccion de siguiente token (Tessera-1B-Nano-Base), con los mismos datos, mismo orden y misma inicializacion. Los resultados muestran que el decodificador si consulta el canal de conceptos (silenciarlo incrementa la perdida NTP en 0,1050 nats), pero que la informacion leida es intercambiable entre frases, temas y dominios: realimentar con conceptos de otra frase apenas cambia la perdida (delta de 0,0008).
 
-El modelo tiene 382.718.400 parámetros reales según el índice de safetensors, pese a la denominación "1B" y "Nano" del nombre, y se distribuye bajo licencia Apache 2.0. Requiere `trust_remote_code=True` por incluir código personalizado. No se documentan en la información disponible la longitud de contexto, los idiomas soportados ni los tipos de cuantización admitidos.
+Es relevante ahora porque documenta de forma reproducible y con artefactos publicos (eval.json, metrics.jsonl, whitepaper) un fenomeno poco explorado: un canal de conceptos que el modelo usa pero cuyo contenido no parece codificar identidad de frase ni mejorar la perdida de tokens a esta escala. Es una pieza de investigacion, no un modelo listo para produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal (SmolLM2-360M) con ruta adicional de prediccion de siguiente concepto (NCP) causal y product-quantized |
-| Parametros totales | 382.718.400 (382,7 M) |
-| Parametros activos | No aplica: no es un modelo MoE |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | No disponibles |
+| Arquitectura | Transformer causal (SmolLM2-360M) + ruta de conceptos causal (ConceptLM compacto) |
+| Parametros totales | 382.718.400 |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; sin GGUF publicado) |
+| Idiomas soportados | no disponible |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors, con `custom_code` (requiere `trust_remote_code=True`) |
-| Tamano del repositorio | 1,5 GB |
-| Tamano de chunk de concepto | 4 tokens |
-| Product code | 15 segmentos x 64 entradas |
-| Bloques de concepto causales | 2 |
-| Punto de inyeccion | Antes del bloque 2 del decodificador de tokens |
-| Objetivo NCP | Siguiente concepto continuo |
-| Funcion de perdida | `L_ntp + 1 L_ncp + 1 L_vq` |
-| Modelo base | HuggingFaceTB/SmolLM2-360M |
-| Libreria | transformers |
-| Pipeline | text-generation |
-| Descargas / likes | 0 / 0 |
+| Formato de pesos | safetensors (libreria transformers, requiere trust_remote_code) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura parte del transformer causal SmolLM2-360M y le superpone una ruta de conceptos: los estados de token se agrupan en chunks de 4 tokens y se agregan (pooling) en conceptos; esos conceptos se cuantizan con un product code de 15 segmentos x 64 entradas; a continuación se procesan mediante 2 bloques de concepto causales; el siguiente concepto continuo predicho (objetivo NCP) se reinyecta antes del bloque 2 del decodificador de tokens. El entrenamiento optimiza una suma ponderada de tres términos con peso 1 para cada uno: pérdida de predicción de siguiente token (`L_ntp`), pérdida de predicción de siguiente concepto (`L_ncp`) y pérdida de cuantización vectorial (`L_vq`). La model card describe esta implementación como una versión compacta de estilo ConceptLM, no como una réplica del NCP-ArchPreview de 8,9 B: omite codificación residual iterativa, conexiones residuales entre escalas y la receta de entrenamiento a gran escala.
+La arquitectura es un transformer causal estandar (SmolLM2-360M) con una ruta de conceptos anadida. Cada bloque de 4 tokens se agrega (pooling) en un codigo de concepto mediante un codebook de producto de 15 segmentos x 64 entradas. Dos bloques causales de conceptos predicen el siguiente concepto continuo (objetivo NCP), y la prediccion se inyecta antes del bloque 2 del decodificador de tokens. La funcion de perdida combina tres terminos: `L_ntp + 1 * L_ncp + 1 * L_vq` (prediccion de siguiente token, prediccion de siguiente concepto y cuantizacion vectorial).
 
-El entrenamiento consumió 999.948.288 tokens (aproximadamente 1 B) del mismo corpus empaquetado y en el mismo orden que el brazo de control, partiendo de la misma inicialización, sin reinicios y sin NaNs, con un coste de cómputo estimado y registrado de 30,27 dólares. Más allá de las intervenciones de ablación, la model card no documenta uso de RLHF, DPO ni decodificación especulativa. La evidencia de que el canal de conceptos aporta información se basa en intervenciones de inferencia sobre lotes idénticos: cero feedback de concepto incrementa la pérdida NTP en 0,1050 nats y feedback barajado en 0,0008 nats, lo que sugiere que la reinyección real del concepto predicho es la que aporta la señal, no un efecto genérico de la ruta.
+El entrenamiento uso 999.948.288 tokens con el mismo corpus, orden e inicializacion que el control Tessera-1B-Nano-Base, que solo entrena con prediccion de siguiente token. El coste de computo estimado es de 30,27 dolares. El autor indica explicitamente que esta implementacion omite la codificacion residual iterativa, las conexiones residuales multi-escala y la receta de entrenamiento a gran escala del NCP-ArchPreview de 8.9B, por lo que es una version compacta del enfoque, no una replica.
 
 ## Capacidades
 
-- Generación de texto autorregresiva por siguiente token, heredada del backbone SmolLM2-360M.
-- Predicción de siguiente concepto continuo (next concept prediction) sobre chunks de 4 tokens, con codebook de product quantization de 15 x 64 entradas.
-- Reinyección causal del concepto predicho en el decodificador de tokens antes del bloque 2.
-- Trazabilidad experimental: el repositorio incluye `eval.json` y `metrics.jsonl` con las métricas e intervenciones.
-- Soporte de tool calling / function calling: no documentado.
-- Soporte de agentes y razonamiento multi-paso: no documentado.
-- Capacidades multilingües: no documentadas.
-- Capacidades especiales (modo thinking, visión, audio, decodificación especulativa): no documentadas.
-- Carga mediante `transformers` con código remoto personalizado (`trust_remote_code=True`).
-- Divulgación explícita de que no se ha publicado una comparación de benchmarks estándar frente a terceros.
+- Generacion de texto autoregresiva con prediccion de siguiente token (backbone SmolLM2-360M).
+- Prediccion de siguiente concepto mediante un canal causal interno que se realimenta en el decodificador.
+- Razonamiento y generacion de codigo basicos, heredados del backbone SmolLM2-360M (sin datos especificos publicados de estas capacidades).
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: no disponibles (idiomas no declarados).
+- Modo thinking, vision o audio: no disponible.
 
 ## Casos de uso
 
-- Investigación sobre modelado a nivel de concepto: el modelo permite medir el efecto causal de una ruta de conceptos sobre un backbone congelado en su arquitectura, usando los deltas de intervención (0 nats frente a +0,1050 nats al anular el feedback) como métrica de utilidad del canal.
-- Replicación y auditoría de resultados: al publicarse las métricas, el log del trainer y los hashes del corpus empaquetado en el repositorio ncp-smol, sirve para reproducir el experimento token-matched y verificar que la pérdida de token respecto a la línea base es neutra.
-- Ablaciones controladas de componentes: los hiperparámetros documentados (chunk size 4, 15 x 64 entradas de codebook, 2 bloques de concepto, inyección antes del bloque 2) permiten variar cada pieza y aislar su contribución sin reentrenar desde cero el backbone.
-- Docencia y formación en arquitecturas híbridas: es un ejemplo compacto y ejecutable de cómo acoplar cuantización vectorial y predicción de concepto a un transformer causal estándar.
-- Inferencia de bajo coste en hardware modesto: con 382,7 M de parámetros y pesos que ocupan aproximadamente 1,5 GB en el repositorio (coherente con fp32), cabe en GPUs de consumo para generación de texto en local con fines de experimentación.
-- Generación de texto en prototipos y demos internas: al derivar de SmolLM2-360M y mantener generación por siguiente token, puede usarse para tareas de completado y redacción de baja exigencia donde no se requiera calidad de frontera.
-- Estudio de dinámica de codebooks: las curvas de uso creciente y la perplejidad del codebook (7,5477 con 85,6 % de uso) lo hacen apto para investigar colapso de vocabularios aprendidos en product quantization.
-- Comparación frente al backbone sin modificar: sirve como brazo experimental en estudios que necesiten separar el efecto de una ruta latente adicional del efecto del propio corpus y presupuesto de tokens.
+- Investigacion sobre canales de conceptos: el modelo sirve como banco de pruebas reproducible para estudiar que informacion transporta un canal de prediccion de conceptos en un transformer causal, con artefactos de evaluacion publicos (eval.json, metrics.jsonl).
+- Reproduccion de estudios controlados: permite replicar el diseno experimental de rama con conceptos frente a rama solo NTP con los mismos datos e inicializacion, util para validar hipotesis de investigacion en laboratorios academicos.
+- Experimentos de ablacion de realimentacion: los modos de inferencia (realimentacion normal, silenciada, barajada) permiten medir la dependencia del decodificador respecto al canal de conceptos en tareas concretas.
+- Prototipado de arquitecturas alternativas: sirve como plantilla de codigo (con `trust_remote_code`) para implementar variantes de ConceptLM en modelos pequenos antes de escalar.
+- Docencia y formacion: modelo pequeno (382,7 M de parametros, repo de 1,5 GB) que cabe en hardware modesto y permite ilustrar conceptos de cuantizacion vectorial, prediccion latente y evaluacion por intervencion.
+- Generacion de texto ligera en entornos de recursos limitados: el tamano permite ejecucion en CPU o GPU consumer para demos y pruebas de concepto, aunque sin garantias de calidad de produccion.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible (no hay MMLU, HumanEval, GSM8K ni similares). Las unicas metricas aportadas por el autor son las de evaluacion interna del experimento:
+El autor publica metricas de entrenamiento y evaluacion por intervencion, no benchmarks estandar (MMLU, HumanEval, GSM8K).
 
 | Metrica | Valor |
 |---|---:|
 | Perdida NTP en held-out | 2,5142 |
 | Perplejidad en held-out | 12,3568 |
-| Delta con feedback a cero (aumento de perdida NTP) | 0,1050 |
-| Delta con feedback barajado (aumento de perdida NTP) | 0,0008 |
+| Delta al silenciar la realimentacion (aumento de perdida NTP) | 0,1050 |
+| Delta con realimentacion barajada (otra frase) | 0,0008 |
 | Perplejidad / uso del codebook | 7,5477 / 85,6 % |
 | Tokens de entrenamiento | 999.948.288 |
-| Coste de computo estimado y registrado | 30,27 USD |
+| Coste de computo estimado | 30,27 USD |
 
-Los deltas de intervencion se definen como incrementos de la perdida NTP en held-out respecto al feedback normal de concepto predicho, evaluados sobre lotes identicos. La propia model card indica que la perdida de token frente al brazo de control token-matched queda dentro del ruido de ejecucion.
+No se han publicado resultados de benchmarks estandar en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 1,5 GB solo para pesos en fp32 (382,7 M x 4 bytes), coherente con el tamano del repositorio; en fp16/bf16 serian unos 0,77 GB y en int8 unos 0,4 GB, pero no se documentan tipos de cuantizacion soportados, por lo que estas cifras son estimaciones derivadas del numero de parametros, no datos confirmados.
-- Overhead adicional: hay que sumar activaciones y cache KV, no documentados. Como referencia practica, cualquier GPU con 4 GB o mas deberia poder ejecutar el modelo en fp32.
-- GPU recomendadas: no se especifica ninguna. Por tamano, no requiere A100 ni H100; es adecuado para GPUs de consumo como RTX 3060, RTX 4060, RTX 4090 o inferencia en CPU.
-- Cabe en GPU de consumo: si, con margen amplio en cualquier GPU con 4-6 GB de VRAM o mas.
-- Opciones de despliegue: `transformers` con `AutoModelForCausalLM` y `trust_remote_code=True` es la via documentada. La compatibilidad con vLLM, llama.cpp, Ollama o TGI no esta documentada y es dudosa por el codigo personalizado y la ruta de conceptos con product quantization; se debe tratar como no confirmada.
+- VRAM estimada para inferencia: el modelo tiene 382,7 M de parametros; en fp32 ocupa aproximadamente 1,5 GB, en fp16/bf16 unos 0,8 GB y en cuantizacion de 8 bits unos 0,4 GB (estimacion segun tamano, no confirmada por el autor).
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4090) o incluso CPU; no requiere A100 ni H100.
+- Cabe en GPU consumer: si, con amplio margen, incluidas GPUs de gama baja y ejecucion en CPU.
+- Opciones de despliegue: transformers con `trust_remote_code=True` (metodo documentado). No se han publicado integraciones con vLLM, llama.cpp, Ollama ni TGI, y no hay pesos GGUF en el repositorio.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-El unico comparador documentado en la informacion proporcionada es el propio backbone sin modificar, que actua como brazo de control token-matched del experimento:
-
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tessera-1B-Nano | 382.718.400 | No disponible | apache-2.0 | safetensors + custom_code | Anade ruta de concepto causal, NCP y product quantization |
-| SmolLM2-360M (backbone sin modificar) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | safetensors | Brazo de control del experimento token-matched; perdida NTP equivalente dentro del ruido |
-| Otras alternativas de ~0,4 B | No disponible | No disponible | No disponible | No disponible | No se documenta ninguna comparacion con terceros en la informacion disponible |
+| Tessera-1B-Nano | 382,7 M | no disponible | SmolLM2-360M + ruta de conceptos | apache-2.0 | Hugging Face |
+| Tessera-1B-Nano-Base | no disponible (control del mismo backbone) | no disponible | SmolLM2-360M solo NTP | apache-2.0 (segun familia) | Hugging Face |
+| Tessera-135M-Gate | 135 M (segun nombre) | no disponible | Puerta de arquitectura (sobreajuste) | no disponible | Hugging Face |
+| HuggingFaceTB/SmolLM2-360M | 360 M aprox. | no disponible | Transformer causal estandar | no disponible en la informacion | Hugging Face |
 
-No se han publicado en la informacion disponible comparaciones de este checkpoint contra Qwen, Llama, Gemma u otros modelos de tamano similar en benchmarks estandar, por lo que no procede establecer una comparativa de rendimiento.
+La comparativa mas directa es con su propio control Tessera-1B-Nano-Base: misma inicializacion, mismos datos y mismo orden, con y sin ruta de conceptos. No se dispone de datos de rendimiento comparativo con otros modelos de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Nomenclatura enganosa: el nombre "Tessera-1B-Nano" sugiere 1 B de parametros, pero el indice de safetensors declara 382.718.400 parametros reales.
-- Modelo de investigacion, no de produccion: la propia model card lo describe como una replicacion compacta de ConceptLM y no como una replica del NCP-ArchPreview de 8,9 B, con omision de codificacion residual iterativa, conexiones residuales entre escalas y la receta de entrenamiento a gran escala.
-- Sin ganancia demostrada en perdida de token: el resultado principal es de neutralidad frente al backbone token-matched, no de mejora. El beneficio medido se limita a la utilidad causal del canal de concepto en las intervenciones.
-- Sin benchmarks estandar publicados: no hay MMLU, HumanEval, GSM8K ni evaluaciones de seguridad, sesgo o toxicidad en la informacion disponible.
-- Idiomas y contexto no documentados: al no declararse idiomas soportados ni longitud de contexto, no se puede asumir cobertura multilingue ni ventanas largas en produccion.
-- Riesgo de alucinacion: no evaluado en la informacion disponible; como modelo causal de 382,7 M de parametros, cabe esperar una tasa de error elevada en conocimiento factual, pero no hay mediciones publicadas.
-- Sesgos conocidos: no documentados.
-- Ejecucion de codigo remoto: la carga requiere `trust_remote_code=True`, lo que implica ejecutar codigo del repositorio; conviene auditar los archivos de modelado antes de usarlo en entornos sensibles.
-- Licencia: Apache 2.0, que permite uso comercial, pero el autor no ofrece garantias ni soporte, y no se documentan las condiciones del corpus de entrenamiento mas alla de los hashes del cache empaquetado en el repositorio ncp-smol.
-- Adopcion nula: 0 descargas y 0 likes en el momento de los datos, sin comunidad ni mantenimiento verificable.
-- Compatibilidad de despliegue limitada: no hay evidencia de soporte en vLLM, llama.cpp, Ollama o TGI, lo que complica el escalado en produccion.
-- Cuantizacion: no se documentan formatos soportados; aplicar cuantizacion agresiva a la ruta de conceptos y al codebook podria alterar el comportamiento del canal NCP sin que existan evaluaciones publicadas al respecto.
+- Modelo de investigacion: el propio autor lo presenta como un estudio controlado, no como un modelo para produccion.
+- No mejora la perdida de tokens: a este presupuesto, la rama con conceptos iguala exactamente al control solo NTP.
+- El canal de conceptos transporta informacion intercambiable entre frases, temas y dominios; no codifica identidad de frase.
+- Implementacion compacta: omite codificacion residual iterativa, conexiones residuales multi-escala y la receta de entrenamiento a gran escala del NCP-ArchPreview de 8.9B.
+- Sesgos conocidos: no disponibles; hereda los del corpus de entrenamiento de SmolLM2-360M, no documentados en esta ficha.
+- Riesgo de alucinacion: presente como en cualquier modelo de lenguaje de este tamano; no cuantificado por el autor.
+- Limitaciones de contexto e idioma: no declaradas; la longitud de contexto no esta disponible.
+- Licencia apache-2.0, que permite uso comercial, pero el modelo base SmolLM2-360M tiene sus propias condiciones que deben verificarse.
+- Requiere `trust_remote_code=True`, lo que implica ejecutar codigo personalizado del repositorio; conviene auditar el codigo antes de desplegarlo.
+- El nombre "1B" puede inducir a error: se refiere a tokens de entrenamiento, no a parametros.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/yava-code/Tessera-1B-Nano
-- Paper ConceptLM (referencia citada en la model card): https://arxiv.org/abs/2602.08984
-- Paper NCP-ArchPreview (referencia citada en la model card): https://arxiv.org/abs/2609.10715
-- Repositorio ncp-smol: referenciado en la model card (whitepaper en `docs/whitepaper.md`, resultados en `results/fineweb-edu/README.md`, hashes del corpus empaquetado y log del trainer), pero sin URL publica en la informacion disponible.
-- Artefactos incluidos en el propio repositorio del modelo: `eval.json` y `metrics.jsonl`.
-- Nota sobre la busqueda web: los resultados devueltos corresponden a un restaurante llamado Yava en Paris y no guardan relacion con el modelo; no se han encontrado otros enlaces relevantes en la busqueda web.
+- Repositorio del estudio: https://github.com/yava-code/Tessera-1B-Nano
+- Demo comparativa (Space): https://huggingface.co/spaces/yava-code/tessera-comparison
+- Control solo NTP: https://huggingface.co/yava-code/Tessera-1B-Nano-Base
+- Puerta de arquitectura 135M: https://huggingface.co/yava-code/Tessera-135M-Gate
+- Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-360M
+- Paper ConceptLM: https://arxiv.org/abs/2602.08984
+- Paper NCP-ArchPreview: https://arxiv.org/abs/2609.10715
+- Video demo: https://huggingface.co/yava-code/Tessera-1B-Nano/resolve/main/demo.mp4

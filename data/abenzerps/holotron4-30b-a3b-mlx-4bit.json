@@ -48,8 +48,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "abenzerps/Holotron4-30B-A3B-MLX",
+  "renamed_at": "2026-11-17T05:02:43.876Z",
   "benchmarks": [],
   "sources": [
     {

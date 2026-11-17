@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1836,
+  "downloads_30d": 573,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -42,26 +42,5 @@
   "renamed_to": "xidisdg/qwen3.8_27b-uncensored-ninfer",
   "renamed_at": "2026-11-11T08:07:38.591Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Outlook",
-      "url": "https://outlook.office365.com/mail/login.html?authRedirect=true&bO=1",
-      "snippet": "Sign in to your Outlook account to manage emails and access Office 365 services."
-    },
-    {
-      "title": "Outlook",
-      "url": "https://outlook.office365.com/owa/csp.qc.ca",
-      "snippet": ""
-    },
-    {
-      "title": "Outlook",
-      "url": "https://outlook.office365.com/mail/oauthRedirect.html",
-      "snippet": "Redirecting to Outlook for email management and Office 365 services."
-    },
-    {
-      "title": "Outlook",
-      "url": "https://outlook.office365.com/mail/oauthRedirect.html?qrcode=True",
-      "snippet": "MicrosoftのOutlookでメールアカウントにサインインし、メッセージを効率的に管理できます。"
-    }
-  ]
+  "sources": []
 }

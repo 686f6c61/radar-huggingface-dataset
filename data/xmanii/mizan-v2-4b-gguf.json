@@ -34,7 +34,7 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 67,
+  "downloads_30d": 56,
   "trending_score": 0,
   "parameters": 4237797892,
   "parameters_human": "4.24B",
@@ -54,31 +54,5 @@
   "renamed_to": "Nimruz/Mizan-v2-4B-GGUF",
   "renamed_at": "2026-11-11T08:07:47.289Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "xmanii (mani mirzaei) - Hugging Face",
-      "url": "https://huggingface.co/xmanii/models",
-      "snippet": "published a model about 1 month ago updated a dataset about 1 month ago"
-    },
-    {
-      "title": "GGUF Model Discovery - Browse & Download AI Models",
-      "url": "https://local-ai-zone.github.io/",
-      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
-    },
-    {
-      "title": "Hugging Bay | Find and Download AI Models",
-      "url": "https://huggingbay.xyz/",
-      "snippet": "Browse open AI models, download hosted files with published SHA-256 checksums, and try small models in your browser. No account needed."
-    },
-    {
-      "title": "Models compatible with the GGUF library - Hugging Face",
-      "url": "https://huggingface.co/models?library=gguf",
-      "snippet": "Explore machine learning models."
-    },
-    {
-      "title": "Browse AI Artifacts | Hugging Bay",
-      "url": "https://huggingbay.xyz/browse",
-      "snippet": "Browse the Hugging Bay catalog of open AI models, datasets, apps, tools, evals, hosted downloads, and external metadata records."
-    }
-  ]
+  "sources": []
 }

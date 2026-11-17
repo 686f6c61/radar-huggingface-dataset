@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 5,
+  "downloads_30d": 4,
   "trending_score": 0,
   "parameters": 51680908,
   "parameters_human": "51.7M",
@@ -39,8 +39,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "zeta0707/act_omx_makerfaire26_pre",
+  "renamed_at": "2026-11-17T10:56:05.486Z",
   "benchmarks": [],
   "sources": [
     {

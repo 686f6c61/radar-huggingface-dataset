@@ -20,7 +20,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 5,
+  "downloads_30d": 9,
   "trending_score": 0,
   "parameters": 4933375760,
   "parameters_human": "4.93B",
@@ -37,8 +37,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "zekaili/pi05_robodojo_step5000",
+  "renamed_at": "2026-11-17T07:40:10.466Z",
   "benchmarks": [],
   "sources": [
     {

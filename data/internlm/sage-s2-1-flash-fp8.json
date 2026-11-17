@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "internlm/Sage-S2.1-Flash-FP8",
+  "slug": "internlm-sage-s2-1-flash-fp8",
+  "author": "internlm",
+  "url": "https://huggingface.co/internlm/Sage-S2.1-Flash-FP8",
+  "created_at": "2026-11-13T15:04:23.000Z",
+  "updated_at": "2026-11-16T08:30:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm5_next",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 165,
+  "trending_score": 12,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 328535731076,
+  "storage_human": "328.5 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

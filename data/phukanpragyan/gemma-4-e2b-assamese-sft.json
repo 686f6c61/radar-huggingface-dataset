@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 43,
+  "downloads_30d": 74,
   "trending_score": 0,
   "parameters": 5651719747,
   "parameters_human": "5.65B",
@@ -33,13 +33,13 @@
     "safetensors"
   ],
   "is_conversational": false,
-  "gated": true,
+  "gated": false,
   "disabled": false,
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "assamailab/AssameseLM-E2B-it",
+  "renamed_at": "2026-11-17T09:01:32.945Z",
   "benchmarks": [],
   "sources": [
     {

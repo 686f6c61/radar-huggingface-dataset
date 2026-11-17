@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 21,
+  "downloads_30d": 12,
   "trending_score": 0,
   "parameters": 494032768,
   "parameters_human": "494.0M",
@@ -40,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Rowa68/haru-coder-0.5b-router-full",
+  "renamed_at": "2026-11-17T06:48:15.746Z",
   "benchmarks": [],
   "sources": [
     {

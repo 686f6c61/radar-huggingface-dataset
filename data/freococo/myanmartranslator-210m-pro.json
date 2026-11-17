@@ -5,7 +5,7 @@
   "author": "freococo",
   "url": "https://huggingface.co/freococo/MyanmarTranslator-210M-Pro",
   "created_at": "2026-11-15T07:36:36.000Z",
-  "updated_at": "2026-11-16T06:30:26.000Z",
+  "updated_at": "2026-11-16T06:42:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "translation",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 12,
   "trending_score": 0,
   "parameters": 210897408,
   "parameters_human": "210.9M",

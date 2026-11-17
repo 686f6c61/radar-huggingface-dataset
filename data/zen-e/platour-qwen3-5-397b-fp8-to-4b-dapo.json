@@ -43,16 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "PLatour - a zen-E Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/zen-E/platour",
-      "snippet": "Note PLatour bridge: Qwen3.5-35B-A3B to 4B on DAPO. Projection weights only; download the backbones separately."
-    },
-    {
-      "title": "Qwen3.5 397B A17B — 403.4B params, Apache-2.0, $0.550/M",
-      "url": "https://modelgrep.com/models/qwen/qwen3.5-397b-a17b",
-      "snippet": "Qwen3.5 397B A17B: Intelligence 18.4 · 114 t/s · $0.550/M in · 262K context. Served by 10 providers. Compare it against every other LLM on benchmarks, live speed, latency and per-provider pricing."
-    }
-  ]
+  "sources": []
 }

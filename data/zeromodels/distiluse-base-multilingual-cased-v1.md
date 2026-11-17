@@ -2,123 +2,112 @@
 
 ## Resumen
 
-zeromodels/distiluse-base-multilingual-cased-v1 es una conversión a Keras 3 puro del checkpoint sentence-transformers/distiluse-base-multilingual-cased-v1, publicada por el proyecto ZeroModels (IMvision12). No se trata de un modelo nuevo ni de un reentrenamiento: es la misma receta de embeddings del modelo original, portada a pesos Keras 3 para poder ejecutar similitud semántica sin depender del stack de PyTorch y transformers. El modelo codifica texto en vectores de 512 dimensiones usando un backbone DistilBERT con pooling de media y una proyección densa con activación tanh.
+`zeromodels/distiluse-base-multilingual-cased-v1` es una conversión pura a Keras 3 del checkpoint `sentence-transformers/distiluse-base-multilingual-cased-v1`, publicada por el proyecto ZeroModels. No se trata de un modelo nuevo ni de un reentrenamiento: es una reimplementación de los pesos originales en el ecosistema Keras 3, manteniendo la receta de embeddings de la fuente (pooling por media, proyección densa de 512 dimensiones con activación tanh, sin normalización L2 y similitud coseno como función de scoring). El backbone es DistilBERT, un transformer encoder destilado de BERT.
 
-La relevancia de esta ficha es de integración más que de investigación: permite usar un encoder multilingüe clásico de frases dentro de aplicaciones que ya trabajan con Keras 3, seleccionando backend (Torch verificado, TensorFlow y JAX no garantizados). Los embeddings no se normalizan L2 por defecto y la función de puntuación prevista es la similitud coseno, con una longitud máxima de entrada de 128 tokens, lo que lo sitúa en el terreno de frases y pasajes cortos, no de documentos largos.
+El modelo resuelve el problema de generar embeddings de frases y párrafos multilingües para tareas de similitud semántica, búsqueda y clustering. Su relevancia actual es doble: por un lado, permite ejecutar un sentence transformer clásico dentro de Keras 3 con backend Torch, TensorFlow o JAX, lo que facilita integrarlo en pipelines que ya usan ese stack; por otro, ofrece una alternativa ligera y madura frente a encoders más grandes para recuperación semántica en producción.
 
-El repositorio ocupa 0,5 GB y contiene tres artefactos: model.weights.h5, zm_config.json y tokenizer.json. El autor declara una verificación numérica contra Sentence Transformers en la revisión fijada del checkpoint original, con una diferencia absoluta máxima de embeddings de 8,80137e-05 y un coseno mínimo de 0,99999982, lo que respalda la fidelidad de la conversión.
+La conversión fue verificada contra el checkpoint original fijado a la revisión `826fee3d516ebb14987355af373f5b69101c7006`, con una diferencia absoluta máxima de embeddings de `8.80137e-05` y un coseno mínimo de `0.99999982`, lo que indica una paridad numérica prácticamente exacta. El repositorio ocupa 0,5 GB y contiene `model.weights.h5`, `zm_config.json` y `tokenizer.json`.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder tipo DistilBERT + pooling de media + proyección densa (tanh) de 512 dimensiones |
-| Parametros totales | no disponible (no declarado en la informacion proporcionada) |
-| Parametros activos | no aplica (modelo denso, no es MoE) |
-| Longitud de contexto | 128 tokens (longitud de truncado del tokenizador original) |
-| Tipos de cuantizacion | no disponible (los pesos se distribuyen en HDF5, sin variantes GGUF/AWQ/GPTQ documentadas) |
-| Idiomas soportados | no disponibles; la etiqueta del repositorio es "multilingual" (el modelo base cubre 50+ idiomas segun su origen, dato no confirmado en esta ficha) |
+| Arquitectura | Transformer encoder (DistilBERT) con pooling por media y proyección densa |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | 128 tokens (longitud máxima de entrada) |
+| Tipos de cuantizacion | no disponible (pesos en `model.weights.h5`, sin variantes GGUF/ONNX publicadas) |
+| Idiomas soportados | multilingüe (el checkpoint original está entrenado sobre corpus multilingüe; la model card no enumera la lista concreta de idiomas) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Keras 3 HDF5 (model.weights.h5), mas tokenizer.json y zm_config.json |
-| Dimension del embedding | 512 |
-| Normalizacion L2 | no |
-| Funcion de puntuacion | similitud coseno |
-| Tamano del repositorio | 0,5 GB |
-| Libreria de ejecucion | zeromodels (Keras 3) |
+| Formato de pesos | Keras HDF5 (`model.weights.h5`) más `zm_config.json` y `tokenizer.json` |
+
+| Parametro adicional | Valor |
+|---|---|
+| Dimensión de embedding | 512 |
+| Pooling | media (mean) |
+| Proyección densa | 512 dimensiones con activación tanh |
+| Normalización L2 | no |
+| Función de scoring | similitud coseno |
+| Backbone | DistilBERT |
 | Modelo base | sentence-transformers/distiluse-base-multilingual-cased-v1 |
-| Revision del origen | 826fee3d516ebb14987355af373f5b69101c7006 |
+| Revisión del checkpoint fuente | 826fee3d516ebb14987355af373f5b69101c7006 |
+| Librería | zeromodels (Keras 3) |
+| Tamaño del repo | 0,5 GB |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un encoder DistilBERT (variante destilada de BERT, sin cabeza de clasificacion) que produce representaciones contextuales token a token. Sobre esas representaciones se aplica un pooling de media para obtener un vector de frase, seguido de una proyeccion densa de 512 dimensiones con activacion tanh. El resultado son embeddings de 512 dimensiones que no se normalizan L2 y que estan pensados para compararse mediante similitud coseno, tal como declara la model card.
+La arquitectura es un encoder DistilBERT, la variante destilada de BERT con aproximadamente la mitad de capas que el modelo original. Sobre la salida del encoder se aplica un pooling por media de los tokens y una proyección densa de 512 dimensiones con activación tanh, que produce el vector final de embedding. Los embeddings no se normalizan L2, por lo que la similitud debe calcularse con coseno (o normalizando explícitamente antes de usar producto escalar). La longitud máxima de entrada es de 128 tokens, un límite relativamente corto que condiciona los casos de uso.
 
-No hay entrenamiento nuevo: la conversion preserva la receta de embeddings del checkpoint fuente y solo cambia el formato de pesos y el runtime. El autor indica que la paridad se comprobo contra Sentence Transformers en la revision fijada 826fee3d516ebb14987355af373f5b69101c7006, con una diferencia absoluta maxima de embeddings de 8,80137e-05, un coseno minimo entre embeddings de 0,99999982 y una diferencia absoluta maxima de puntuaciones de similitud de 6,05211e-05. La paridad se valido sobre el backend Torch de Keras; no se reclama paridad completa en TensorFlow ni en JAX.
-
-El tokenizador debe tomarse del mismo repositorio que el modelo, ya que conserva la longitud de truncado de 128 tokens del checkpoint fuente. La carga del checkpoint original sin pesos Keras convertidos es posible mediante `SentenceTransformerModel.from_weights("hf:sentence-transformers/distiluse-base-multilingual-cased-v1")`.
+Esta publicación no introduce un entrenamiento nuevo: es una conversión de pesos con paridad verificada frente al checkpoint original. Por tanto, los datos de entrenamiento, el número de tokens y el proceso de optimización (incluido si hubo destilación supervisada, objetivos de similitud o ajuste fino con pares) corresponden al modelo de Sentence Transformers original y no se detallan en la información disponible. La innovación técnica de esta ficha es la propia conversión a Keras 3, que permite cargar los pesos con `ZMSentenceTransformer.from_weights(repo)` y ejecutar la inferencia en el backend de Keras seleccionado.
 
 ## Capacidades
 
-- Generacion de embeddings de frases y pasajes cortos en vectores densos de 512 dimensiones.
-- Calculo de similitud semantica entre textos mediante similitud coseno (`model.similarity()`).
-- Codificacion por lotes: `model.encode(texts, tokenizer=tokenizer)` acepta una lista de textos y devuelve una matriz de forma (n, 512).
-- Normalizacion opcional a vectores unitarios pasando `normalize=True` a `encode`, con la advertencia del autor de que esto altera la receta original y puede cambiar las puntuaciones de recuperacion.
-- Capacidad multilingue segun la etiqueta del repositorio, heredada del checkpoint original; no se detalla la lista de idiomas.
-- No es un modelo generativo: no produce texto, no hace razonamiento multi-paso, no soporta tool calling ni function calling, no tiene modo thinking, no procesa vision ni audio y no implementa agentes.
-- No incluye atencion lineal, decodificacion especulativa ni mecanicas de SSM/hibridas; es un encoder transformer estandar.
+- Generación de embeddings de frases y párrafos de 512 dimensiones para similitud semántica.
+- Codificación multilingüe: el checkpoint original está pensado para textos en varios idiomas, aunque la lista exacta no se detalla.
+- Similitud coseno integrada mediante `model.similarity()`, con opción de normalización L2 explícita en `model.encode(..., normalize=True)`.
+- Tokenizador propio empaquetado en el repositorio (`tokenizer.json`) con truncación a 128 tokens.
+- Ejecución en Keras 3 con backend configurable (Torch verificado; paridad completa con TensorFlow y JAX no declarada).
+- Carga del checkpoint fuente original mediante `ZMSentenceTransformer.from_weights("hf:sentence-transformers/distiluse-base-multilingual-cased-v1")`.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo thinking: es un encoder de embeddings, no un modelo generativo.
 
 ## Casos de uso
 
-- Busqueda semantica sobre corpus documentales: indexar los fragmentos en vectores de 512 dimensiones y recuperar por similitud coseno. Es adecuado por la naturaleza multilingue del encoder y su coste de computo bajo, aunque el limite de 128 tokens obliga a trocear los documentos en pasajes cortos.
-- Recuperacion aumentada (RAG): usar el modelo como encoder de consultas y de chunks para alimentar un LLM generativo. La ventaja es poder ejecutar el encoder dentro de un pipeline Keras 3 ya existente, sin anadir dependencias de PyTorch.
-- Deduplicacion y agrupamiento de textos: calcular la matriz de similitudes de un conjunto de titulares, descripciones o tickets y aplicar clustering o umbrales para detectar duplicados y near-duplicates.
-- Deteccion de parafrasis y similitud de frases: comparar pares de oraciones cortas, tarea para la que el checkpoint distiluse fue disenado originalmente, con una ventana de 128 tokens suficiente para frases.
-- Clasificacion de texto con pocas etiquetas: congelar el encoder y entrenar un clasificador lineal o una regla de vecinos mas cercanos sobre los embeddings, util para categorizacion de tickets, intenciones o temas.
-- Moderacion y filtrado por similitud: comparar mensajes entrantes contra una lista de patrones problematicos previamente embebidos, usando similitud coseno como senal de alerta previa a una revision humana.
-- Recomendacion de contenido: representar articulos, productos o publicaciones como vectores y recomendar por cercania semantica respecto al historial del usuario.
-- Triaje multilingue en atencion al cliente: agrupar consultas equivalentes escritas en idiomas distintos para enrutarlas a la cola adecuada, apoyandose en la cobertura multilingue del checkpoint base.
+- Búsqueda semántica en bases documentales: indexar fragmentos de hasta 128 tokens y recuperar por similitud coseno; adecuado por su tamaño reducido y su naturaleza multilingüe.
+- Deduplicación y clustering de textos: agrupar noticias, tickets o reseñas calculando similitud entre embeddings de 512 dimensiones, con un coste de inferencia bajo.
+- Clasificación de textos por similitud con prototipos: comparar cada documento con embeddings de referencia de cada categoría, sin necesidad de entrenar un clasificador supervisado.
+- Detección de paráfrasis y preguntas duplicadas: el par de ejemplo de la model card ("A person is reading a book." frente a "Someone reads a novel.") ilustra el uso directo para medir equivalencia semántica.
+- Filtrado y ranking en pipelines de RAG: como primera etapa de recuperación sobre pasajes cortos, antes de un reranker más costoso, gracias a su bajo coste computacional.
+- Moderación y triaje de contenido: comparar mensajes entrantes con embeddings de referencia de políticas o categorías para enrutarlos a revisión humana.
+- Integración en aplicaciones Keras 3 existentes: al cargarse como pesos Keras, puede incorporarse a un grafo de Keras ya desplegado sin añadir una dependencia separada de PyTorch o de sentence-transformers.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de MTEB, MMLU, HumanEval ni equivalentes. Los unicos datos numericos publicados son las metricas de verificacion de la conversion frente al checkpoint original:
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente reporta métricas de paridad numérica frente al checkpoint original:
 
-| Metrica de verificacion | Valor |
+| Métrica de paridad | Valor |
 |---|---|
-| Diferencia absoluta maxima de embeddings | 8,80137e-05 |
-| Coseno minimo entre embeddings (conversion vs. origen) | 0,99999982 |
-| Diferencia absoluta maxima de puntuaciones de similitud | 6,05211e-05 |
-| Revision del checkpoint fuente comparada | 826fee3d516ebb14987355af373f5b69101c7006 |
-| Backend verificado | Torch (Keras 3) |
+| Diferencia absoluta máxima de embeddings | 8.80137e-05 |
+| Coseno mínimo entre embeddings | 0.99999982 |
+| Diferencia absoluta máxima de score de similitud | 6.05211e-05 |
+| Backend verificado | Torch |
 
 ## Requisitos de hardware
 
-- Peso del repositorio: 0,5 GB en formato HDF5, lo que sugiere un modelo del orden de 125 millones de parametros en float32; la cifra exacta de parametros no esta declarada en la informacion disponible.
-- VRAM estimada para inferencia: no disponible de forma oficial; por el tamano del repositorio, unas pocas unidades de GB de VRAM son suficientes y la inferencia en CPU es perfectamente viable para lotes moderados. Cualquier estimacion mas precisa seria especulativa.
-- GPU recomendadas: no disponibles en la informacion proporcionada. Dado el tamano del modelo, una GPU de gama media o incluso consumer moderna deberia bastar holgadamente, pero no hay datos de rendimiento publicados que lo confirmen.
-- Cabe en GPU consumer: si, con alta probabilidad, dado el tamano del repositorio; el autor no publica requisitos minimos.
-- Opciones de despliegue: Keras 3 con la libreria zeromodels (`KERAS_BACKEND` debe fijarse antes de importar Keras o ZeroModels), o bien Sentence Transformers cargando el checkpoint original. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos generativos y no a este formato de pesos.
-- Latencia y throughput: no disponibles. La model card no publica mediciones de latencia ni de frases por segundo.
+- VRAM estimada para inferencia: muy baja; el repositorio completo ocupa 0,5 GB y el modelo cabe holgadamente en cualquier GPU consumer con 2 GB o más.
+- GPU recomendadas: cualquier GPU moderna; para lotes grandes, A100 o H100 aportan throughput, pero no son necesarias para uso individual.
+- Cabe en GPU consumer: sí, en cualquier RTX (incluso series antiguas) y en GPUs de portátil con poca memoria.
+- Opciones de despliegue: Keras 3 con backend Torch (verificado), TensorFlow o JAX; también es posible cargar el checkpoint original con sentence-transformers y desplegarlo con FastAPI o servicios de embeddings dedicados.
+- Latencia y throughput estimados: no disponibles en la información proporcionada; por el tamaño del modelo y la longitud máxima de 128 tokens, se espera un throughput alto en GPU y aceptable en CPU.
+- CPU: viable para cargas moderadas dado el tamaño reducido del encoder.
 
 ## Comparativa con modelos similares
 
-El propio proyecto ZeroModels publica 13 variantes convertidas a Keras 3, todas cargables con `from_weights("zeromodels/<variante>")`. La tabla siguiente reproduce las recetas declaradas por el autor; las dimensiones de embedding de las demas variantes no estan disponibles.
+| Modelo | Backbone | Dimensión | Contexto | Normalización | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| zeromodels/distiluse-base-multilingual-cased-v1 | DistilBERT | 512 | 128 | No | Apache 2.0 | Hugging Face (Keras 3) |
+| sentence-transformers/distiluse-base-multilingual-cased-v1 | DistilBERT | 512 | 128 | No | Apache 2.0 | Hugging Face (PyTorch) |
+| zeromodels/paraphrase-multilingual-MiniLM-L12-v2 | BERT | no disponible | no disponible | Sí (mean) | no disponible | Hugging Face (Keras 3) |
+| zeromodels/paraphrase-multilingual-mpnet-base-v2 | XLM-R | no disponible | no disponible | No (mean) | no disponible | Hugging Face (Keras 3) |
 
-| Variante | Encoder y receta |
-|---|---|
-| distiluse-base-multilingual-cased-v1 (esta) | DistilBERT, mean + Dense, 512 dims, sin normalizar |
-| distiluse-base-multilingual-cased-v2 | DistilBERT, mean + Dense |
-| all-mpnet-base-v2 | MPNet, mean + normalize |
-| multi-qa-mpnet-base-dot-v1 | MPNet, CLS + producto escalar |
-| all-distilroberta-v1 | RoBERTa, mean + normalize |
-| all-MiniLM-L12-v2 | BERT, mean + normalize |
-| multi-qa-distilbert-cos-v1 | DistilBERT, mean + normalize |
-| all-MiniLM-L6-v2 | BERT, mean + normalize |
-| multi-qa-MiniLM-L6-cos-v1 | BERT, mean + normalize |
-| paraphrase-multilingual-mpnet-base-v2 | XLM-R, mean |
-| paraphrase-albert-small-v2 | ALBERT, mean |
-| paraphrase-multilingual-MiniLM-L12-v2 | BERT, mean |
-| paraphrase-MiniLM-L3-v2 | BERT, mean |
-
-Frente al checkpoint original (sentence-transformers/distiluse-base-multilingual-cased-v1), la diferencia relevante es el runtime: el original requiere PyTorch y la libreria sentence-transformers, mientras que esta conversion funciona con Keras 3 y pesos HDF5, con paridad numerica verificada en backend Torch. No se dispone de datos de rendimiento comparado (MTEB u otros) para establecer que variante es mejor en tareas concretas.
+La comparación de rendimiento en benchmarks entre estas variantes no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Limitacion de longitud: la ventana de entrada es de 128 tokens. Textos mas largos se truncan, lo que degrada la calidad del embedding para documentos, parrafos largos o conversaciones multi-turno.
-- Embeddings sin normalizar: por defecto los vectores no tienen longitud unitaria. Si se activa `normalize=True`, el propio autor advierte que se modifica la receta original y pueden cambiar las puntuaciones de recuperacion.
-- No es un modelo generativo: no puede redactar, resumir, traducir ni mantener conversaciones. Cualquier caso de uso que requiera generacion necesita un LLM adicional.
-- Paridad limitada por backend: la verificacion se hizo en Torch. No se reclama paridad completa en TensorFlow ni en JAX, por lo que cambiar de backend puede introducir discrepancias.
-- Tokenizador acoplado: debe usarse el tokenizador del mismo repositorio; mezclarlo con otro tokenizador rompe la correspondencia con los pesos.
-- Idiomas no declarados: aunque la etiqueta indique "multilingual", no se detalla la lista de idiomas ni su cobertura real. Conviene validar el castellano con un conjunto propio antes de produccion.
-- Sesgos: al ser una conversion del checkpoint original sin reentrenamiento, hereda integramente los sesgos de genero, raza, religion y origen cultural de los datos con los que se entreno DistilBERT multilingual y del ajuste posterior con pares de frases. La model card no documenta analisis de sesgo.
-- Riesgo de alucinacion: no aplica en el sentido generativo (el modelo no produce texto), pero si existe riesgo de falsos positivos en similitud, es decir, pares de frases con significado distinto puntuados como muy similares.
-- Madurez y validacion de la comunidad: el repositorio registra 0 descargas y 0 likes, y no hay resultados de benchmarks publicados. No hay validacion externa de su comportamiento en produccion.
-- Licencia: Apache 2.0, que permite uso comercial y modificacion con las obligaciones habituales de atribucion y conservacion del aviso de licencia. El checkpoint original tambien declara Apache 2.0.
-- Fechas del repositorio: la ficha de Hugging Face indica creacion el 2026-10-13 y actualizacion el 2026-10-13; conviene verificar el estado actual del repositorio antes de depender de el.
+- Ventana de contexto muy corta: 128 tokens; los textos más largos se truncan y pierden información, lo que degrada la recuperación en documentos extensos.
+- Embeddings sin normalizar: usar producto escalar directamente en lugar de similitud coseno altera el ranking; hay que normalizar explícitamente si se necesita.
+- Paridad verificada solo en el backend Torch; no se garantiza paridad completa en TensorFlow o JAX.
+- Es una conversión, no un modelo nuevo: hereda los sesgos y limitaciones del checkpoint original de Sentence Transformers, que no se detallan en la información disponible.
+- Riesgo de alucinación no aplica en sentido generativo, pero sí existe riesgo de falsos positivos en similitud semántica (textos distintos con embeddings próximos).
+- La lista concreta de idiomas soportados no está documentada en la model card; conviene validar el rendimiento en el idioma objetivo antes de producción.
+- Licencia Apache 2.0: permite uso comercial, pero debe conservarse la atribución al proyecto original y revisarse las condiciones del checkpoint fuente.
+- Popularidad muy baja (4 descargas, 0 likes): no hay evidencia de uso en producción ni comunidad que reporte incidencias.
+- El tokenizador debe cargarse del mismo repositorio que el modelo para respetar la truncación a 128 tokens.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/zeromodels/distiluse-base-multilingual-cased-v1
 - Checkpoint original: https://huggingface.co/sentence-transformers/distiluse-base-multilingual-cased-v1
-- Revision fijada del checkpoint original: https://huggingface.co/sentence-transformers/distiluse-base-multilingual-cased-v1/tree/826fee3d516ebb14987355af373f5b69101c7006
+- Revisión fijada del checkpoint original: https://huggingface.co/sentence-transformers/distiluse-base-multilingual-cased-v1/tree/826fee3d516ebb14987355af373f5b69101c7006
 - Repositorio ZeroModels en GitHub: https://github.com/IMvision12/ZeroModels
-- Documentacion de Sentence Transformers en ZeroModels: https://imvision12.github.io/ZeroModels/sentence_transformer/
-- Paper, blog o demo adicionales: no disponibles en la informacion proporcionada.
+- Documentación de Sentence Transformers en ZeroModels: https://imvision12.github.io/ZeroModels/sentence_transformer/
+- Variante v2: https://huggingface.co/zeromodels/distiluse-base-multilingual-cased-v2

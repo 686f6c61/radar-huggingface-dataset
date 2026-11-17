@@ -5,7 +5,7 @@
   "author": "madhav-ak",
   "url": "https://huggingface.co/madhav-ak/enzyme-v007",
   "created_at": "2026-11-05T09:33:02.000Z",
-  "updated_at": "2026-11-05T09:34:45.000Z",
+  "updated_at": "2026-11-16T08:25:20.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -16,7 +16,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 25,
+  "downloads_30d": 26,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

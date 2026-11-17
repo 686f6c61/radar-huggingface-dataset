@@ -2,91 +2,97 @@
 
 ## Resumen
 
-Gemma-4-E4B-it-GLQ-6bpw es una cuantizacion de alta precision del modelo instructivo Gemma 4 E4B de Google, realizada por el usuario xv0y5ncu. El modelo base, google/gemma-4-E4B-it, es un modelo denso de 4.4 mil millones de parametros (3.79 mil millones reales en safetensors) con soporte multimodal y modo de pensamiento, disenado por Google DeepMind para ejecutarse en hardware de consumo. Esta variante cuantizada utiliza la tecnica Golay-Leech Quantization (GLQ) con un promedio de 6.0 bits por peso (bpw), lo que reduce el tamano del archivo a 7.06 GB, 2.11 veces mas pequeno que el original en bf16.
+Gemma-4-E4B-it-GLQ-6bpw es una cuantización de 6 bits por peso (6,0 bpw uniforme) del modelo instructivo google/gemma-4-E4B-it, publicada por el usuario xv0y5ncu. Emplea GLQ (Golay-Leech Quantization), un esquema de cuantización basado en retículos que combina un codebook de la capa E8 con 65.536 entradas en bloques de 8 dimensiones, rotación mediante Randomized Hadamard Transform (RHT), realimentación LDLQ y cuantización residual en varias etapas. El resultado es un checkpoint de 7,06 GB, un 2,11× más pequeño que los pesos en bf16, con 3.788.507.722 parámetros almacenados.
 
-La relevancia de este modelo radica en que permite ejecutar un Gemma 4 de ultima generacion en GPUs de consumo con una perdida minima de calidad. Segun los datos del autor, en la evaluacion GSM8K con 50 ejemplos y modo de pensamiento, alcanza un 92% de precision exacta, superando el 86% del modelo bf16 original. Ademas, mantiene la licencia Apache 2.0, lo que facilita su uso comercial y en produccion. Es una opcion atractiva para desarrolladores que necesitan capacidades de razonamiento avanzado y generacion de codigo en entornos con recursos limitados.
+El modelo hereda las capacidades del Gemma 4 E4B instructivo de Google, incluyendo modo de razonamiento explícito (thinking mode) activable mediante la plantilla de chat. Su interés práctico radica en que reduce el espacio en disco y los requisitos de memoria de inferencia manteniendo una calidad medida cercana al original: en gsm8k con límite de 50 ejemplos y evaluación estricta en modo chat+thinking alcanza un 92 %, frente al 86 % del baseline en bf16 según la model card del autor.
+
+La relevancia actual es doble: por un lado, demuestra que las técnicas de cuantización basadas en retículos (E8, Leech) son viables en modelos de la familia Gemma 4; por otro, expone una dependencia frágil del ecosistema, ya que requiere una versión concreta de transformers y un kernel CUDA propio que se compila en el primer uso. La licencia declarada es Apache 2.0, con la licencia Gemma como referencia del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (Gemma 4) |
+| Arquitectura | Transformer decoder-only (familia Gemma 4; detalles internos no disponibles) |
 | Parametros totales | 3.788.507.722 |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | Hasta 256.000 tokens (segun modelo base) |
-| Tipos de cuantizacion | GLQ uniforme, 6.0 bpw |
-| Idiomas soportados | Ingles (segun la model card del autor) |
-| Licencia | Apache 2.0 (licencia Gemma) |
-| Formato de pesos | safetensors |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GLQ 6,0 bpw uniforme; esquema con codebook E8 de 65.536 entradas, RHT, LDLQ y cuantización residual N-stage; asignación de precisión mixta por proxy de sensibilidad derivado de la traza del Hessiano |
+| Idiomas soportados | en (inglés) |
+| Licencia | Apache 2.0 (licencia Gemma para el modelo base) |
+| Formato de pesos | safetensors (7,06 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Gemma 4 E4B es un transformer denso con atencion de multiples cabezas, entrenado por Google DeepMind. La variante cuantizada no modifica la arquitectura subyacente, solo los pesos. La cuantizacion GLQ se basa en una codificacion de celosia E8 con un libro de codigos de 65.536 entradas en bloques de 8 dimensiones, combinada con una Transformada de Hadamard Aleatorizada (RHT) para rotar los pesos y una cuantizacion con descomposicion LDL (LDLQ) durante el proceso de codificacion. El metodo incluye cuantizacion residual en N etapas para capas de 3 bpw o superiores y una asignacion de precision mixta basada en un proxy de sensibilidad derivado de la traza de la Hessiana.
+El modelo base es google/gemma-4-E4B-it, un transformer decoder-only de la familia Gemma 4 de Google; no se dispone de detalles sobre su configuración de capas, atención o datos de entrenamiento en la información proporcionada. Esta publicación no reentrena el modelo: aplica una cuantización post-entrenamiento sobre los pesos bf16 originales.
 
-El modelo base fue entrenado con un corpus masivo de datos en mas de 140 idiomas, aunque esta variante cuantizada solo declara soporte para ingles. No se ha aplicado entrenamiento adicional despues de la cuantizacion; el proceso es puramente de compresion de pesos. El metodo GLQ esta disponible como herramienta open source en GitHub, y el kernel CUDA se compila en el primer uso (aproximadamente 30 segundos).
+El método GLQ sustituye la cuantización escalar tradicional por una cuantización vectorial sobre el retículo E8: cada bloque de 8 dimensiones se codifica con un codebook de 65.536 entradas (la capa del retículo E8), y el error residual se corrige mediante descomposición LDL por bloques (LDLQ) durante la codificación. Antes de cuantizar se aplica una rotación Randomized Hadamard Transform en entradas y salidas para homogeneizar la distribución de los pesos. Las capas de al menos 3 bpw usan cuantización residual en varias etapas, y cuando procede se asigna precisión mixta según un proxy de sensibilidad derivado de la traza del Hessiano. El resultado es un promedio uniforme de 6,0 bpw.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento complejo con modo de pensamiento (thinking mode) activable mediante la plantilla de chat.
-- Razonamiento matematico y resolucion de problemas de varios pasos, con un rendimiento de 92% en GSM8K en la variante cuantizada.
-- Capacidades multimodales heredadas del modelo base (entrada de imagenes y texto).
-- Soporte para tool calling y function calling, segun las capacidades del modelo base Gemma 4.
-- Capacidades multilingues del modelo base, aunque la cuantizacion esta etiquetada para ingles.
-- Generacion de codigo y asistencia en programacion, con integracion en pipelines de desarrollo.
-- Modo de pensamiento (thinking mode) que requiere una generacion de tokens mas larga para converger a la respuesta final.
+- Generación de texto conversacional en inglés con plantilla de chat instructiva.
+- Modo de razonamiento explícito (thinking mode) activable con `enable_thinking=True` en `apply_chat_template`.
+- Razonamiento matemático multi-paso y resolución de problemas aritméticos (evaluado en gsm8k).
+- Capacidad de truncar el razonamiento si el presupuesto de tokens es insuficiente; requiere `max_new_tokens` de 8K a 16K en esta variante de 6 bpw.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso más allá del thinking mode: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas a inglés según la etiqueta de idioma declarada.
+- Visión, audio u otras modalidades: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- **Asistente de codigo en produccion**: el modelo puede integrarse en IDEs o pipelines de CI/CD para generar codigo, explicar fragmentos y revisar implementaciones. Su tamano compacto y la cuantizacion de 6 bpw permiten ejecutarlo en GPUs de consumo con baja latencia, manteniendo una calidad cercana al original.
-- **Razonamiento matematico y cientifico**: gracias a su modo de pensamiento y al alto rendimiento en GSM8K, es util para resolver problemas matematicos complejos, demostraciones y calculo cientifico en aplicaciones de tutoria o investigacion.
-- **Chatbots y atencion al cliente**: la ventana de contexto de hasta 256K tokens permite gestionar conversaciones largas y de multiples turnos, manteniendo el historico completo. La cuantizacion reduce los requisitos de VRAM, lo que abarata el despliegue en produccion.
-- **Analisis de documentos extensos**: con una ventana de contexto amplia, puede resumir, extraer informacion y responder preguntas sobre documentos de gran tamano, como contratos, informes tecnicos o articulos de investigacion.
-- **Agentes autonomos**: el modelo soporta tool calling y razonamiento multi-paso, por lo que puede integrarse en sistemas de agentes que ejecutan acciones, consultan APIs y toman decisiones de forma autonoma.
-- **Despliegue en edge y dispositivos locales**: con 7.06 GB de archivo y requisitos de VRAM de aproximadamente 8 GB, es viable ejecutar el modelo en un portatil con una GPU moderna (RTX 3060 o superior) o en servidores de gama media, sin depender de la nube.
+- Razonamiento matemático asistido: el modelo puede resolver problemas aritméticos y de varios pasos activando thinking mode con un presupuesto de 8K-16K tokens, adecuado para tutores automáticos o verificación de cálculos en pipelines educativos.
+- Despliegue en GPU de gama alta con memoria limitada: al ocupar 7,06 GB en disco y requerir menos memoria que la versión bf16, permite servir el modelo en una única GPU consumer de 24 GB con margen para el contexto y el kernel CUDA.
+- Evaluación comparativa de técnicas de cuantización: sirve como referencia para medir la degradación de calidad de GLQ frente a bf16 en tareas de razonamiento, útil en investigación sobre compresión de modelos.
+- Prototipado de asistentes conversacionales en inglés: la plantilla de chat instructiva permite integrarlo en aplicaciones de diálogo multi-turno sin reentrenamiento.
+- Generación de respuestas con trazas de razonamiento auditables: el thinking mode produce cadenas de pensamiento que pueden registrarse para depuración o revisión humana en entornos de investigación.
+- Experimentación con kernels CUDA personalizados: el repositorio GLQ y su integración con transformers y vLLM permiten estudiar el rendimiento de la decodificación con cuantización vectorial en producción.
+- Fine-tuning ligero o adaptación con LoRA sobre el checkpoint cuantizado: no disponible en la información proporcionada; no se documenta compatibilidad con PEFT.
 
 ## Benchmarks y rendimiento
 
-El autor ha publicado un resultado de benchmark en la model card:
-
-| Prueba | Resultado (GLQ 6bpw) | Linea base (bf16) |
+| Benchmark | Gemma-4-E4B-it-GLQ-6bpw | google/gemma-4-E4B-it (bf16) |
 |---|---|---|
-| GSM8K (50 ejemplos, chat + thinking, strict-match) | 92% | 86% |
+| gsm8k, limit=50, chat+thinking, strict-match | 92 % | 86 % |
 
-No se han publicado resultados adicionales de benchmarks (MMLU, HumanEval, etc.) en la informacion disponible. El autor indica que, con un presupuesto de tokens de generacion suficiente, todas las variantes cuantizadas convergen a un rendimiento dentro del error estandar de la calidad bf16 en GSM8K.
+No se han publicado otros resultados de benchmarks en la información disponible. La diferencia de 6 puntos porcentuales en gsm8k con solo 50 ejemplos queda dentro del margen de error estadístico y no debe interpretarse como una mejora real de calidad; el autor indica que, con presupuesto suficiente, todas las variantes convergen a la calidad de bf16 dentro del error estándar.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 8 GB (según el sitio gemma4.dev para el modelo base, la cuantizacion 6bpw reduce el uso aun mas).
-- GPU recomendadas: RTX 3060/3070/3080/3090, RTX 4060/4070/4080/4090, A100, H100.
-- Cabe en GPUs de consumo modernas con 8 GB o mas de VRAM.
-- Opciones de despliegue: vLLM (probado con vLLM 0.27.1), llama.cpp, Ollama, TGI, o directamente con transformers y el kernel CUDA personalizado de GLQ.
-- El kernel CUDA se compila en el primer uso (aproximadamente 30 segundos) y requiere CUDA 12.x y torch>=2.0.
-- Se recomienda fijar transformers en una version inferior a 5.15.0 para evitar un problema de configuracion conocido en la carga del modelo.
+- VRAM estimada para inferencia: aproximadamente 7-8 GB solo para los pesos; con overhead de activaciones, KV cache y kernel CUDA, se recomienda un mínimo de 12-16 GB para contextos moderados. No se dispone de cifras oficiales.
+- GPU recomendadas: no especificadas por el autor; por tamaño, una RTX 4090 (24 GB), L40S (48 GB), A100 (40/80 GB) o H100 (80 GB) son suficientes.
+- Cabe en GPU consumer: sí, en tarjetas con 16 GB o más (RTX 4080, 4090, RTX 5070 Ti y superiores), siempre que el contexto y el presupuesto de generación no agoten la memoria.
+- Opciones de despliegue: transformers (>=5.13.1, <5.15) con el paquete `glq` y su integración HF; vLLM 0.27.1 verificado con transformers 5.14.1; llama.cpp, Ollama y TGI no están documentados para este formato.
+- Latencia y throughput: no disponibles. El kernel CUDA personalizado se compila JIT en el primer uso (~30 s).
+- Requisitos de software: `torch>=2.0`, `transformers>=5.0` (pin <5.15), CUDA 12.x, `pip install 'glq[vllm]'`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Rendimiento GSM8K | Licencia |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma-4-E4B-it-GLQ-6bpw (este) | 3.79B | hasta 256K | GLQ 6bpw | 92% (50 ejemplos) | Apache 2.0 |
-| Gemma-4-E4B-it (bf16) | 4.4B | hasta 256K | Ninguna | 86% (50 ejemplos) | Apache 2.0 |
-| Gemma-4-E4B-it-GLQ-4bpw | 3.79B | hasta 256K | GLQ 4bpw | no disponible | Apache 2.0 |
+| Gemma-4-E4B-it-GLQ-6bpw | 3.788.507.722 | no disponible | GLQ 6,0 bpw | Apache 2.0 / Gemma | Hugging Face |
+| google/gemma-4-E4B-it (bf16) | no disponible | no disponible | bf16 | Gemma | Hugging Face |
+| Variantes GLQ 4bpw y 5bpw mix del mismo autor | no disponible | no disponible | GLQ 4-5 bpw | Apache 2.0 / Gemma | Hugging Face (referenciadas en la model card) |
+| Variantes GLQ 7bpw y 8bpw del mismo autor | no disponible | no disponible | GLQ 7-8 bpw | Apache 2.0 / Gemma | Hugging Face (referenciadas en la model card) |
 
-La comparativa con otras cuantizaciones del mismo modelo (por ejemplo, la version 4bpw) esta disponible en el perfil del autor. La principal ventaja de la version 6bpw es un mejor equilibrio entre tamano y calidad, con un archivo de 7.06 GB y un rendimiento superior al modelo original en GSM8K en la evaluacion limitada.
+No se dispone de datos suficientes para comparar con alternativas de otros autores (por ejemplo, cuantizaciones GGUF o AWQ del mismo modelo base).
 
 ## Limitaciones y advertencias
 
-- El modelo base Gemma 4 soporta mas de 140 idiomas, pero esta variante cuantizada solo declara ingles en su model card.
-- El modo de pensamiento requiere un presupuesto de generacion de tokens mayor que el modelo bf16 para converger a la respuesta final. Se recomienda entre 8K y 16K tokens de generacion para la variante 6bpw; con un presupuesto insuficiente, el modelo puede truncar el razonamiento y omitir la respuesta final.
-- Hay un problema conocido con transformers 5.15.0: la configuracion del modelo Gemma 4 se movio a un esquema por capas, lo que rompe la carga del modelo. Se recomienda fijar transformers<5.15.
-- La evaluacion con lm-evaluation-harness requiere un parche para habilitar el modo de pensamiento, ya que la herramienta no expone el parametro `enable_thinking=True`.
-- La cuantizacion puede introducir una ligera degradacion en tareas de muy alta precision numerica, aunque el autor indica que dentro de los limites de error estandar en GSM8K.
-- El kernel CUDA JIT-compilado requiere un entorno con CUDA 12.x, lo que limita su uso en sistemas con versiones de CUDA mas antiguas.
+- Solo soporta inglés según la etiqueta de idioma declarada; no se garantiza calidad en castellano ni en otros idiomas.
+- El modo thinking requiere un presupuesto de 8K-16K tokens en esta variante; con menos, el modelo trunca el razonamiento y puede no emitir respuesta final.
+- El kernel CUDA de GLQ se compila en el primer uso, lo que añade latencia inicial y depende de CUDA 12.x.
+- Requiere fijar transformers por debajo de 5.15: la versión 5.15.0 rompe la carga de gemma-4 en vLLM por un cambio en la configuración por capas.
+- El resultado de 92 % en gsm8k con 50 ejemplos tiene alta varianza; no debe tomarse como evidencia de superioridad frente a bf16.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no se documentan evaluaciones específicas de factualidad.
+- Sesgos conocidos: no documentados en la información proporcionada.
+- Licencia: la model card declara Apache 2.0, pero el modelo base Gemma se rige por los términos de Gemma; conviene revisar las condiciones de uso comercial de la licencia Gemma antes de desplegar en producción.
+- No se documenta soporte para tool calling, agentes, visión ni otras modalidades.
+- El repositorio tiene 80 descargas y 0 likes, lo que indica escasa validación comunitaria.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/xv0y5ncu/Gemma-4-E4B-it-GLQ-6bpw
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Repositorio GLQ: https://github.com/cnygaard/glq
-- Pagina oficial de Gemma 4: https://deepmind.google/models/gemma/gemma-4/
-- Documentacion de Gemma 4 para desarrolladores: https://ai.google.dev/gemma/docs/core/model_card_4
-- Guia del modelo Gemma 4 E4B: https://gemma4.dev/models/gemma-4-e4b
+- Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
+- Términos de Gemma: https://ai.google.dev/gemma/terms

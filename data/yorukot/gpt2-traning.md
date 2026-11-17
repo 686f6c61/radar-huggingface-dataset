@@ -2,114 +2,97 @@
 
 ## Resumen
 
-yorukot/gpt2-traning es un checkpoint de GPT-2 small entrenado desde cero (sin pesos preentrenados) sobre el corpus inglés allenai/c4. Lo publica el usuario yorukot como parte de una practica de laboratorio (identificada en la model card como `lab4-yoru-AY-482206`), con el objetivo de reproducir el pipeline completo de entrenamiento de un transformer causal de escala pequena y comparar recetas de optimizacion. Se trata, por tanto, de un modelo educativo y de investigacion, no de un modelo orientado a producto.
+`yorukot/gpt2-traning` es un modelo de lenguaje causal basado en la arquitectura GPT-2 estándar, entrenado desde cero (sin pesos preentrenados) sobre el corpus inglés C4. Lo desarrolla el usuario yorukot en el contexto de un laboratorio académico (identificado como "Lab 4, AD") y se publica como un experimento educativo de entrenamiento de un transformer pequeño a escala de 124 millones de parámetros. El checkpoint `lab4-yoru-AD-488712` corresponde a la ejecución con menor pérdida de validación local del autor.
 
-Arquitectonicamente es un GPT2LMHeadModel estandar: 12 capas, 12 cabezas de atencion, ancho oculto 768, vocabulario de 50.257 tokens y contexto de 1.024 tokens, con embeddings de entrada y salida atados. Tiene 124.439.808 parametros unicos, lo que corresponde a la familia que historicamente se etiqueta como "117M" o GPT-2 small. Se guarda en safetensors con parametros en FP32 y se distribuye bajo licencia Apache 2.0.
+El modelo emplea la implementación estándar `GPT2LMHeadModel` de Hugging Face: 12 capas, 12 cabezas de atención, anchura oculta de 768, contexto de 1.024 tokens y vocabulario de 50.257 entradas con embeddings de entrada y salida atados. Los 124.439.808 parámetros se guardan en FP32. No incorpora innovaciones arquitectónicas propias; la particularidad técnica está en el proceso de entrenamiento (empaquetado best-fit de documentos, atención restringida por documento con varlen flash attention y deduplicación exacta).
 
-Su relevancia es limitada pero concreta: sirve como referencia reproducible de un entrenamiento completo con Muon en las matrices ocultas y AdamW auxiliar, ejecutado en dos NVIDIA H200 durante una asignacion de 30 minutos, con 1.631 actualizaciones de optimizador y 855.113.728 tokens de entrada procesados. La perplexity reportada en validacion de C4 es 38,8660 (loss 3,660120) en el split de desarrollo, un valor alto en terminos absolutos que refleja un presupuesto de tokens muy inferior al habitual en modelos de esta familia.
+Su relevancia es limitada fuera del ámbito docente: no está ajustado a instrucciones, solo cubre inglés y su ventana de contexto es corta. Resulta útil como referencia reproducible de un pipeline de entrenamiento completo (tokenización, empaquetado, schedule, evaluación por perplejidad) y como modelo base de bajo coste para tareas de continuación de texto o experimentos de ajuste fino.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only causal (GPT2LMHeadModel), 12 capas, 12 cabezas, hidden width 768, embeddings entrada/salida atados |
+| Arquitectura | Transformer decoder-only (GPT-2 estándar, `GPT2LMHeadModel`) |
 | Parametros totales | 124.439.808 |
-| Parametros activos | no aplica (no es MoE) |
+| Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | 1.024 tokens |
-| Tipos de cuantizacion | Pesos publicados en FP32 (safetensors). No se distribuyen variantes GGUF, AWQ, GPTQ ni bitsandbytes oficiales; al ser arquitectura GPT-2 estandar es convertible y cuantizable con herramientas genericas, pero no hay artefactos publicados por el autor |
-| Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (parametros guardados en FP32) |
-| Vocabulario | 50.257 tokens (tokenizer GPT-2) |
-| Tamano del repositorio | 1,0 GB |
-| Libreria | transformers |
-| Pipeline | text-generation |
+| Tipos de cuantizacion | no disponible en la información proporcionada (pesos publicados en FP32; admite cuantización estándar vía herramientas externas) |
+| Idiomas soportados | inglés (`en`) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (FP32) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only causal sin modificaciones respecto a la implementacion estandar de GPT-2 en Hugging Face: 12 bloques, 12 cabezas de atencion por bloque, ancho oculto 768, contexto de 1.024 tokens y vocabulario de 50.257 entradas con pesos de embedding de entrada y de salida compartidos. No emplea atencion lineal, decodificacion especulativa, MoE ni componentes de estado recurrente; es una arquitectura densa clasica. El tokenizer es el de GPT-2 y los documentos se empaquetaron con separadores EOS.
+La arquitectura es un transformer decoder-only denso con atención causal multi-cabeza clásica: 12 capas, 12 cabezas, dimensión oculta 768, vocabulario de 50.257 tokens con embeddings de entrada y salida atados y contexto máximo de 1.024 posiciones. No hay mecanismos de atención lineal, decodificación especulativa ni mezcla de expertos; el modelo guardado es GPT-2 sin modificaciones estructurales.
 
-El entrenamiento no partio de pesos preentrenados. Se usaron dos NVIDIA H200 con precision BF16 y parametros guardados en FP32, en una asignacion de 30 minutos, con 1.631 actualizaciones de optimizador y un batch global de 524.288 tokens de entrada, lo que suma 855.113.728 tokens procesados del corpus C4 (revision `1588ec454efa1a09f29cd18ddd04fe05fc8653a2`). La innovacion principal es la receta de optimizacion: Muon para las matrices ocultas con learning rate 0,0012, momentum 0,95, Nesterov, cinco pasos de Newton-Schulz y ajuste RMS tipo AdamW, complementado con un AdamW auxiliar de learning rate 0,0006 y betas (0,9, 0,95). Se aplico weight decay 0,1 (sin decaimiento en parametros de normalizacion y sesgos), gradient clipping 1,0, dropout 0, semilla 42, warmup del 5 por ciento seguido de decaimiento coseno hasta cero, y `torch.compile` en modo por defecto. El autor indica que la version de PyTorch usada fue 2.14.0 y la de Transformers 5.17.0, y que el checkpoint se selecciono por la menor perdida de desarrollo entre nueve recetas experimentales, quedando pendientes la repeticion con semilla independiente y la evaluacion de auditoria reservada.
+El entrenamiento se realizó desde cero sobre C4 `en` (split de entrenamiento), tokenizado con el tokenizador GPT-2 sin tokens BOS/EOS. Los documentos se truncaron a 1.024 tokens y se empaquetaron con estrategia best-fit en filas de 1.024 tokens, reiniciando las posiciones a 0 en cada documento. Durante el entrenamiento se restringió la atención a cada documento mediante varlen flash attention (solo en el kernel de entrenamiento; el modelo guardado es GPT-2 plano). Se aplicó deduplicación exacta y se excluyeron los primeros 100.000 documentos de `validation.shuffle(seed=42)` (el conjunto de test del laboratorio). El optimizador fue AdamW fused con learning rate 1,8e-3, betas (0,9; 0,95), eps 1e-8, weight decay 0,1 solo en matrices, clipping de gradiente 1,0, dropout 0 y semilla 42. El schedule consistió en 150 pasos de warmup, learning rate constante durante la primera mitad del entrenamiento y decaimiento lineal hasta 0. El batch fue de 256 filas × 1.024 tokens = 262.144 slots por paso (incluyendo padding), con 6.010 pasos y aproximadamente 1,58B slots de tokens. El vocabulario se rellenó a 50.304 durante el entrenamiento y se recortó a 50.257 antes de guardar. El cómputo se ejecutó en dos NVIDIA H200 con autocast BF16 y `torch.compile`, en 29 minutos (PyTorch 2.14.0, Transformers 5.17.0).
 
 ## Capacidades
 
-- Generacion de texto autoregresiva en ingles: continuacion de prompts, completado de parrafos y generacion libre de texto corto.
-- Modelado de lenguaje puro: calculo de log-probabilidades y perplexity sobre texto ingles, util como modelo de scoring.
-- Capacidad de completar patrones sintacticos y estilisticos aprendidos de C4, con coherencia local limitada por el presupuesto de entrenamiento.
-- No dispone de instruction tuning ni de ajuste por RLHF/DPO: no sigue instrucciones, no mantiene formato de chat y no responde a consignas del tipo "explica X".
-- Sin soporte de tool calling ni de function calling.
-- Sin capacidades de agente, planificacion multi-paso ni razonamiento encadenado explicito.
-- Sin modo de pensamiento (thinking mode), sin vision, sin audio y sin multimodalidad.
-- Multilingue: no. Solo ingles; el vocabulario GPT-2 puede tokenizar otros idiomas, pero no hay entrenamiento en ellos.
-- Capacidad especial: ninguna mas alla de ser un modelo base reproducible para experimentos de optimizacion.
+- Generación de texto causal en inglés: continuación de texto libre y modelado de lenguaje puro.
+- Modelado de lenguaje y puntuación por perplejidad: útil para evaluar la probabilidad de secuencias o comparar distribuciones.
+- Capacidad limitada de razonamiento y matemáticas derivada de su escala (124M) y de la ausencia de ajuste instructivo; no es un modelo orientado a tareas de razonamiento complejo.
+- Sin soporte de tool calling ni function calling: es un modelo base sin plantilla de instrucciones ni formato de herramientas.
+- Sin capacidades de agente ni razonamiento multi-paso estructurado.
+- Multilingüismo: únicamente inglés entrenado; el tokenizador GPT-2 cubre otros idiomas de forma subóptima, pero el modelo no fue entrenado para ellos.
+- Sin capacidades multimodales (no hay visión ni audio) ni modo "thinking".
+- Sin ajuste por RLHF/DPO ni instrucciones: no sigue instrucciones de forma fiable.
 
 ## Casos de uso
 
-- Docencia y laboratorios de entrenamiento: sirve como checkpoint de referencia para que estudiantes comparen recetas de optimizador (Muon frente a AdamW) sobre una arquitectura conocida y un presupuesto de computo acotado, con la perdida de desarrollo como metrica.
-- Modelo de scoring de fluidez para filtrado de corpus: al ser un modelo de 124M parametros con contexto de 1.024 tokens, calcular perplexity sobre documentos ingleses es barato y permite descartar texto degradado en pipelines de limpieza de datos.
-- Punto de partida para fine-tuning de dominio: se puede ajustar sobre un corpus especializado en ingles (legal, medico, tecnico) partiendo de estos pesos, aunque un base preentrenado mayor daria mejor resultado en casi todos los casos.
-- Pruebas de humo de infraestructura de inferencia: por su tamano, es util para validar despliegues de TGI, vLLM o llama.cpp, medir latencia por token y verificar el pipeline completo antes de pasar a modelos de miles de millones de parametros.
-- Generacion de texto sintetico corto para pruebas de software: util para rellenar fixtures, datos de ejemplo o corpus de test en ingles donde no importa la calidad factual del contenido.
-- Investigacion en cuantizacion: al ser un GPT-2 estandar, permite estudiar la degradacion de perplexity al pasar de FP32 a 8, 5 o 4 bits sin el ruido que introduce una arquitectura no convencional.
-- Reproducibilidad de recetas de entrenamiento a escala reducida: la combinacion de batch grande (524.288 tokens), Muon y decaimiento coseno se puede replicar en un unico nodo para estudiar estabilidad del entrenamiento.
-- Baseline de comparacion en articulos o informes: como linea base debil y honesta para demostrar la mejora que aportan modelos preentrenados de mayor tamano sobre la misma tarea.
+- Docencia y reproducción de pipelines de entrenamiento: sirve como referencia completa de un flujo de entrenamiento desde cero (tokenización, empaquetado best-fit, schedule, evaluación por perplejidad) para cursos y laboratorios de aprendizaje automático.
+- Punto de partida para ajuste fino: al ser un GPT-2 de 124M con licencia Apache 2.0, se puede ajustar en tareas de clasificación o generación específicas de dominio con presupuesto de cómputo reducido.
+- Evaluación de perplejidad y detección de anomalías textuales: su pérdida por token permite puntuar documentos y detectar texto fuera de distribución en corpus ingleses.
+- Generación de texto de bajo coste en prototipos: continuación de texto en demos, pruebas de interfaz o generación de relleno donde la calidad no es crítica y el coste de inferencia debe ser mínimo.
+- Investigación sobre sesgos y datos de entrenamiento: al estar entrenado sobre C4, permite estudiar qué sesgos y artefactos del corpus se reflejan en un modelo pequeño entrenado desde cero.
+- Benchmark de infraestructura: su tamaño (124M) y su formato FP32 permiten validar despliegues en vLLM, TGI o llama.cpp y medir latencia y throughput en hardware modesto antes de escalar a modelos mayores.
+- Generación aumentada en pipelines de datos sintéticos: producción masiva de texto en inglés para aumentar datasets de entrenamiento o pruebas, aceptando la calidad limitada del modelo.
 
 ## Benchmarks y rendimiento
 
-El autor no publica resultados en benchmarks estandar (MMLU, HumanEval, GSM8K, ARC, HellaSwag, etc.). La unica evaluacion disponible es la perdida y perplexity sobre documentos de validacion de C4 en ingles, barajados con semilla 42, empaquetados en bloques de 1.024 tokens y puntuados con 1.023 objetivos desplazados por bloque.
+El autor solo reporta una métrica de evaluación local sobre el conjunto de validación descrito (10.000 documentos de C4 `en` posteriores a los 100.000 del test del laboratorio), con truncado a 1.024 tokens y puntuación desde la posición 0 sin BOS:
 
-| Split | Documentos | Bloques evaluados | Loss | Perplexity |
-|---|---|---:|---:|---:|
-| Desarrollo | Primeros 16.384 documentos barajados | 7.616 | 3,660120 | 38,8660 |
-| Comparacion historica | Primeros 2.048 documentos barajados | 962 | 3,684590 | 39,8288 |
+| Split | Documentos | Loss | Perplexity |
+| --- | ---: | ---: | ---: |
+| Validación local | 10.000 | 3,3149 | 27,52 |
 
-Advertencias sobre estos datos: los dos splits se solapan y no son pruebas independientes; el empaquetado de desarrollo retiene grupos completos de 64 bloques para evaluacion distribuida; la evaluacion oficial del laboratorio usa 100.000 documentos de validacion y puede diferir en empaquetado y scoring; y el split de auditoria reservado, de mayor tamano, no se incluye. El propio autor indica que las puntuaciones son proxies de evaluacion local y no un resultado de juez en linea oficial. No se dispone de resultados de MMLU, HumanEval, GSM8K ni de ninguna otra tarea estandar.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor indica explícitamente que la puntuación reportada es una evaluación local y no un resultado de un juez online oficial.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia en FP32: aproximadamente 0,5 GB solo para pesos (124,4M x 4 bytes) y del orden de 0,6-1,0 GB en total con estados de activacion para contexto de 1.024 tokens.
-- VRAM en BF16/FP16: aproximadamente 0,25 GB de pesos.
-- VRAM en cuantizacion de 8 bits: del orden de 0,13-0,15 GB; en 4 bits, del orden de 0,08-0,10 GB. Son estimaciones derivadas del numero de parametros, no medidas publicadas por el autor.
-- Cabe en cualquier GPU de consumo: desde una GTX 1050 Ti o una GTX 1650 de 4 GB hacia arriba, incluidas iGPU con memoria unificada suficiente. Tambien es viable la inferencia en CPU sola para uso no interactivo.
-- GPU recomendadas para entrenamiento: el autor uso dos NVIDIA H200 con BF16. Para reproducir el entrenamiento completo hacen falta GPU de datacenter con memoria amplia; para fine-tuning ligero basta una RTX 3090 o RTX 4090 de 24 GB, o incluso menos con gradient checkpointing y batch reducido.
-- Opciones de despliegue: transformers (via `AutoModelForCausalLM`), text-generation-inference (el repo esta etiquetado como `text-generation-inference` y `endpoints_compatible`), vLLM, llama.cpp u Ollama previa conversion a GGUF, y ONNX Runtime.
-- Latencia y throughput: no disponible. No hay mediciones publicadas de tokens por segundo ni de tiempo hasta el primer token.
+- VRAM estimada para inferencia en FP32: aproximadamente 0,5 GB de pesos (124M × 4 bytes) más overhead de activaciones y caché KV; en la práctica, menos de 1-2 GB para contextos de 1.024 tokens.
+- En FP16/BF16: aproximadamente 0,25 GB de pesos; en cuantización de 8 bits, unos 0,13 GB; en 4 bits, unos 0,07 GB (estimaciones a partir del recuento de parámetros, no publicadas por el autor).
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; cabe holgadamente en RTX 3060, RTX 4060, RTX 4090 e incluso en GPUs de gama baja con 4 GB o más. También es viable en CPU para inferencia por lotes pequeños.
+- Cabe en GPU consumer: sí, en todas las GPU con al menos 2 GB de VRAM para FP32 y contextos cortos.
+- Opciones de despliegue: transformers (referencia del autor), text-generation-inference (el modelo está etiquetado como compatible con TGI y endpoints), vLLM, llama.cpp y Ollama (requieren conversión a GGUF, no incluida en el repo), así como despliegue en CPU con PyTorch.
+- Latencia y throughput: no disponibles en la información proporcionada. Por escala (124M de parámetros y contexto de 1.024 tokens) se espera un throughput alto y latencia baja en GPU consumer, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-Los datos de rendimiento de los modelos alternativos no estan disponibles en la informacion proporcionada, por lo que la comparacion se limita a dimensiones estructurales y de licencia verificables.
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Notas |
+|---|---:|---:|---|---|---|
+| yorukot/gpt2-traning | 124M | 1.024 | en | Apache 2.0 | Entrenado desde cero sobre C4; sin ajuste instructivo; perplejidad local 27,52 |
+| GPT-2 (OpenAI, 124M) | 124M | 1.024 | en (multilingüe parcial) | MIT (pesos publicados) | Entrenado sobre WebText; referencia de la arquitectura; ampliamente usado como base |
+| GPT-2 medium (OpenAI) | 355M | 1.024 | en | MIT | Mayor capacidad con la misma arquitectura y contexto; más coste de inferencia |
+| DistilGPT-2 | 82M | 1.024 | en | Apache 2.0 | Destilado de GPT-2; menor tamaño y mayor velocidad, con pérdida de calidad |
 
-| Modelo | Parametros | Contexto | Vocabulario | Licencia | Origen de pesos | Rendimiento |
-|---|---:|---:|---:|---|---|---|
-| yorukot/gpt2-traning | 124,4M | 1.024 | 50.257 | Apache 2.0 | Entrenado desde cero en C4 | Perplexity 38,87 (C4, dev) |
-| GPT-2 small (OpenAI) | 124M | 1.024 | 50.257 | MIT modificada | Preentrenado en WebText | No disponible en esta informacion |
-| distilgpt2 | 82M | 1.024 | 50.257 | Apache 2.0 | Destilado de GPT-2 | No disponible en esta informacion |
-| Pythia-160M | 160M | 2.048 | 50.304 | Apache 2.0 | Preentrenado en The Pile | No disponible en esta informacion |
-
-Nota: el checkpoint de yorukot tiene la misma arquitectura que GPT-2 small, pero su presupuesto de entrenamiento (855M tokens) es muy inferior al de los modelos preentrenados de la comparativa, por lo que no es esperable que iguale su calidad de generacion. La comparativa con Pythia-160M es relevante por tratarse de otro modelo pequeno con pesos, codigo y checkpoints intermedios publicos.
+No se dispone de comparaciones de rendimiento publicadas entre este checkpoint y los modelos anteriores en la información proporcionada; la comparación se limita a parámetros, contexto y licencia.
 
 ## Limitaciones y advertencias
 
-- Sesgos de datos: entrenado sobre C4, un corpus de rastreo web en ingles; hereda los sesgos de representacion, estereotipos y perspectivas sobrerrepresentadas de ese corpus.
-- Alucinacion: alta. Es un modelo base de 124M parametros sin ajuste instructivo ni de veracidad, con tendencia a producir afirmaciones plausibles pero falsas y a degradarse rapidamente fuera de los patrones vistos en entrenamiento.
-- Sin instruction tuning: no sigue instrucciones ni admite formato de chat. Usarlo con prompts conversacionales produce continuaciones de texto, no respuestas.
-- Contexto muy corto: 1.024 tokens. No admite conversaciones multi-turno largas, documentos extensos ni recuperacion aumentada con muchos fragmentos.
-- Idioma: solo ingles. El rendimiento en castellano u otros idiomas no esta evaluado y previsiblemente sera pobre.
-- Presupuesto de entrenamiento bajo: 855.113.728 tokens procesados y 1.631 pasos de optimizador, muy por debajo de lo habitual para esta familia de modelos. La perplexity de 38,87 en C4 es coherente con un modelo poco entrenado.
-- Evaluacion no auditada: los splits de desarrollo y comparacion historica se solapan, el split de auditoria reservado no se publico y las puntuaciones son proxies locales, no resultados de juez en linea. No hay repeticion con semilla independiente.
-- Trazabilidad limitada: la model card cita PyTorch 2.14.0 y Transformers 5.17.0, versiones no verificables en el momento de redactar esta ficha, y el registro de Hugging Face indica una fecha de creacion posterior a la actual. La reproducibilidad exacta del entorno de entrenamiento no esta garantizada.
-- Licencia: Apache 2.0 permite uso comercial y modificacion, pero el autor no ofrece garantias de ningun tipo. El corpus C4 tiene sus propias condiciones de uso derivadas de Common Crawl, que el usuario debe respetar; la licencia del modelo no sustituye a las de los datos.
-- Sin soporte de produccion: no hay garantias de mantenimiento, versionado semantico, ni artefactos optimizados (GGUF, AWQ, GPTQ) publicados por el autor. El ID del repositorio contiene una errata ("traning" en lugar de "training").
-- Los resultados de la busqueda web realizada no aportan informacion relevante sobre este modelo; los enlaces devueltos corresponden a listas de recursos genericas sin relacion con el checkpoint.
+- Modelo base sin ajuste instructivo: no sigue instrucciones ni mantiene formatos de conversación de forma fiable; no debe usarse directamente en asistentes sin ajuste previo.
+- Riesgo de alucinación y texto inexacto: el autor advierte que los datos web de C4 pueden producir texto inexacto o sesgado.
+- Sesgos del corpus: al entrenarse sobre C4, puede reproducir sesgos sociales, estereotipos y toxicidad presentes en datos web, sin filtros posteriores documentados.
+- Cobertura lingüística limitada al inglés; el rendimiento en otros idiomas no está evaluado y se espera deficiente.
+- Ventana de contexto corta (1.024 tokens), insuficiente para documentos largos o conversaciones multi-turno extensas.
+- Evaluación limitada: solo se reporta perplejidad local; no hay benchmarks estándar ni evaluación por jueces online, por lo que la comparación con otros modelos es difícil.
+- Licencia Apache 2.0: permite uso comercial y modificación con atribución, pero el autor no ofrece garantías sobre el modelo; conviene revisar las condiciones de los datos C4 para usos derivados.
+- Modelo de laboratorio con fines educativos: no hay mantenimiento ni soporte documentado más allá de la model card y el enlace a W&B.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/yorukot/gpt2-traning
-- Registro del entrenamiento en Weights & Biases: https://wandb.ai/cerulean-labs/gpt2-training/runs/be37dscq
-- Dataset de entrenamiento (allenai/c4): https://huggingface.co/datasets/allenai/c4
-- Repositorio del corpus C4 original (TensorFlow Datasets): https://www.tensorflow.org/datasets/catalog/c4
-- Paper de GPT-2 (Language Models are Unsupervised Multitask Learners): https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
-- Documentacion de transformers para GPT-2: https://huggingface.co/docs/transformers/model_doc/gpt2
-- Paper de Muon (MomentUm Orthogonalized by Newton-Schulz): https://kellerjordan.github.io/posts/muon/
-- Modelo comparable Pythia-160M: https://huggingface.co/EleutherAI/pythia-160m
-- Modelo comparable distilgpt2: https://huggingface.co/distilgpt2
+- Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/cerulean-labs/gpt2-training/runs/ohnid20o
+- Dataset C4 (allenai/c4): https://huggingface.co/datasets/allenai/c4
+- Documentación de GPT2LMHeadModel (Transformers): https://huggingface.co/docs/transformers/model_doc/gpt2
+- Repositorio de Transformers: https://github.com/huggingface/transformers

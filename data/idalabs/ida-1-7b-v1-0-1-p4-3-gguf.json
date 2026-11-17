@@ -5,7 +5,7 @@
   "author": "idalabs",
   "url": "https://huggingface.co/idalabs/IDA-1.7B-v1.0.1-P4.3-GGUF",
   "created_at": "2026-11-16T03:18:03.000Z",
-  "updated_at": "2026-11-16T03:28:59.000Z",
+  "updated_at": "2026-11-16T04:05:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": 1720574976,
   "parameters_human": "1.72B",

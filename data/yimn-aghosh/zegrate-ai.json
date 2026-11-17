@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 14,
-  "downloads_30d": 587,
+  "downloads_30d": 616,
   "trending_score": 0,
   "parameters": 14770033664,
   "parameters_human": "14.77B",
@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "LÉGFEGYVERES Adás-Vétel-Keresés - Index Fórum",
-      "url": "https://forum.index.hu/Article/showArticle?t=9221011",
-      "snippet": "Sep 2, 2026 · Légfegyverek, tartozékainak, kiegészítőinek, alkatrészeinek eladási-keresési hirdetései. Az eladási hirdetéseket: - csak …"
-    },
-    {
-      "title": "Használt távcső adás-vétel, csere-bere - Index Fórum",
-      "url": "https://forum.index.hu/Article/showArticle?t=9197833",
-      "snippet": "Aug 18, 2026 · Használt távcsövek, binokulárok, monokulárok, teleszkópok, mikroszkópok, éjjellátók, nagyítók, és optikai kiegészítők, …"
-    },
-    {
-      "title": "Olcsó légfegyverek (kínai,török,spanyol) - Index Fórum",
-      "url": "https://forum.index.hu/Article/showArticle?t=9201610",
-      "snippet": "Aug 25, 2026 · Olcsó légfegyverekkel(kinai,török,spanyol)kapcsolatos kérdések ,tanácsok!"
-    },
-    {
-      "title": "bicskák, kések, tőrök, kardok adás-vétel - Index Fórum",
-      "url": "https://forum.index.hu/Article/showArticle?t=9209837",
-      "snippet": "Sep 3, 2026 · Adás-vétel topik!Ha hirdetsz, adj meg elérhetőséget (mail, telefon) vagy a mailcímedet tedd publikussá! \"Beszélgetni\" …"
-    },
-    {
-      "title": "Index Fórum",
-      "url": "https://forum.index.hu/Topic/showTopicList",
-      "snippet": "1 day ago · Hobbi, szabadidő Utazás, Állati, Gamez, Képes-játékok, Kertészet, Klubfórumok, Kreatív és technikai hobbik, Makett, …"
-    }
-  ]
+  "sources": []
 }

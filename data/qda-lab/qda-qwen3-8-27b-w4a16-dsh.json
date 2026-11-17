@@ -5,7 +5,7 @@
   "author": "qda-lab",
   "url": "https://huggingface.co/qda-lab/QDA-Qwen3.8-27B-W4A16-dsh",
   "created_at": "2026-11-15T19:56:22.000Z",
-  "updated_at": "2026-11-15T22:17:01.000Z",
+  "updated_at": "2026-11-17T01:16:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

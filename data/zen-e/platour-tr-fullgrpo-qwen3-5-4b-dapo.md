@@ -2,94 +2,101 @@
 
 ## Resumen
 
-PLatour-TR-FullGRPO-Qwen3.5-4B-DAPO es un artefacto de inferencia publicado por zen-E que actúa como receptor (receiver) completo dentro del marco PACT (Prefill-to-Autoregressive Cross-model Transfer). El modelo parte de Qwen/Qwen3.5-4B y se ha entrenado con GRPO (Group Relative Policy Optimization) sobre el dataset zen-E/PLatour-DAPO-Data, siguiendo la metodología descrita en el paper "On the Opportunities and Challenges of Prefill-to-Autoregressive Cross-Model Transfer" (arXiv:2611.06976). La idea central de PACT es que un modelo emisor de mayor tamano codifica el prompt y transfiere representaciones ocultas a un receptor mas pequeno que genera la respuesta de forma independiente.
+PLatour-TR-FullGRPO-Qwen3.5-4B-DAPO es un checkpoint de investigación publicado por el usuario zen-E dentro del proyecto PLatour, que explora la transferencia entre modelos (PACT, Prefill-to-Autoregressive Cross-model Transfer). En este paradigma, un modelo "emisor" de mayor tamaño codifica el prompt y entrega representaciones ocultas, mientras que un modelo "receptor" más pequeño genera la respuesta de forma independiente; el método entrena puentes lineales ligeros entre backbones congelados mediante recompensas de tarea.
 
-El modelo tiene 4.841.450.496 parametros reales (segun safetensors) y se distribuye en formato Transformers con pesos safetensors en BF16, con un tamano de repositorio de 9,7 GB. La arquitectura subyacente es qwen3_5_text (transformer con atención híbrida, segun la model card), sin codificador de visión. El autor advierte explicitamente que se trata de artefactos historicos de inferencia sin puntuaciones de benchmark, por lo que la ficha debe leerse con cautela respecto a cualquier afirmacion de rendimiento.
+Este artefacto concreto es el receptor de texto completo, derivado de Qwen/Qwen3.5-4B (arquitectura `qwen3_5_text`), con 4.841.450.496 parámetros reales en safetensors y un repositorio de 9,7 GB. El autor lo describe explícitamente como un artefacto de inferencia histórico sin puntuaciones de benchmark: el empaquetado no establece un protocolo de selección de checkpoint ni una evaluación imparcial.
 
-La relevancia actual del modelo es fundamentalmente metodologica: sirve como pieza reproducible para estudiar si las mejoras en tareas dependen realmente de la informacion transferida por el emisor o si surgen de la mera adaptacion del receptor. El paper introduce PACT-Check con controles (Dummy Transfer, Irrelevant Transfer, Self-Communication y Trained Receiver) para separar ambos efectos, lo que convierte a este checkpoint en material de investigacion mas que en un modelo listo para produccion.
+Su relevancia es metodológica más que de producto: sirve para reproducir los experimentos del paper arXiv:2611.06976 y para estudiar si las mejoras observadas dependen de información útil del emisor o de la mera adaptación del receptor. El paper introduce PACT-Check con controles de Dummy Transfer, Irrelevant Transfer, Self-Communication y Trained Receiver. No está pensado como modelo listo para producción.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (qwen3_5_text), atencion hibrida; sin codificador de vision |
-| Parametros totales | 4.841.450.496 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en BF16) |
+| Arquitectura | Transformer con atención híbrida (familia Qwen3.5; clase `qwen3_5_text`) |
+| Parámetros totales | 4.841.450.496 |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible en la información proporcionada |
+| Tipos de cuantización | no disponible (pesos publicados en BF16, según la model card) |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (Transformers, BF16) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (formato estándar de Transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se construye sobre Qwen/Qwen3.5-4B (revision fijada 851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a para la configuracion y el tokenizer del export), un transformer decoder-only con atencion hibrida segun la model card. El export mantiene deliberadamente independientes los embeddings de entrada y la cabeza de salida, preservando ambos tensores almacenados exactamente y el payload original en BF16. El paquete no incluye codificador de vision.
+El modelo es un receptor de texto completo en formato estándar de Transformers, con configuración y tokenizer propios; no incluye codificador de visión. Sus embeddings de entrada y su cabeza de salida se exportan de forma independiente, preservando los tensores BF16 originales. La arquitectura subyacente corresponde a Qwen3.5-4B, que el paper describe como soportada por el método PACT gracias a su atención híbrida.
 
-El entrenamiento sigue el marco PACT: un emisor de mayor tamano codifica el prompt y suministra representaciones ocultas, mientras el receptor (este modelo) genera la respuesta de forma independiente. El metodo principal entrena puentes lineales ligeros entre backbones congelados usando recompensas de tarea, partiendo de proyecciones inicializadas a cero y soportando modelos con atencion hibrida. En esta variante concreta, el receptor se ha entrenado con GRPO completo (FullGRPO) sobre el dataset zen-E/PLatour-DAPO-Data. La model card no especifica el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases adicionales de RLHF o DPO mas alla del GRPO indicado en el nombre.
-
-La innovacion tecnica destacable es el propio protocolo PACT-Check, que incluye controles de Dummy Transfer, Irrelevant Transfer, Self-Communication y Trained Receiver para verificar si las mejoras dependen de informacion util del emisor o de la adaptacion del receptor. El autor subraya que un mejor rendimiento en tarea no demuestra por si solo una comunicacion efectiva entre modelos.
+El entrenamiento se enmarca en PACT: se congelan los backbones (emisor y receptor) y se entrenan puentes lineales ligeros inicializados a cero entre ambos, optimizados con recompensas de tarea. El sufijo del nombre indica GRPO completo con datos DAPO (dataset `zen-E/PLatour-DAPO-Data`). El autor advierte que este paquete es un artefacto de inferencia histórico y que no establece por sí mismo un protocolo de selección de checkpoint ni una evaluación imparcial; se requiere evaluación independiente y un reporte preciso de procedencia antes de formular nuevas afirmaciones comparativas.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el pipeline declarado es text-generation y el modelo esta etiquetado como conversational.
-- Razonamiento y generacion autoregresiva como receptor dentro del esquema PACT.
-- Entrenamiento con GRPO sobre recompensas de tarea, orientado a mejorar la calidad de las respuestas generadas.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible; la model card no declara idiomas.
-- Capacidades especiales (vision, audio, thinking mode): no disponible; el paquete no incluye codificador de vision.
-- Endpoints compatibles: la etiqueta endpoints_compatible sugiere compatibilidad con la infraestructura de inferencia de Hugging Face.
+- Generación de texto conversacional mediante plantilla de chat (`apply_chat_template`).
+- Razonamiento y matemáticas: el protocolo de evaluación por defecto cubre AIME, HMMT e IMO con un tope de respuesta de 32K tokens.
+- Generación de código: la model card indica que generar código no requiere juez de código, aunque ejecutar tests de benchmark sí.
+- Evaluación de respuestas largas: soporta hasta 32K tokens de respuesta en el protocolo publicado (reducible a 16K con `--response-cap 16384`, registrado como cambio de protocolo).
+- Inferencia estándar con Transformers (`AutoModelForCausalLM`, `dtype="auto"`, `device_map="auto"`).
+- Integración en el pipeline de evaluación del proyecto (`platour-exps evaluate`, `platour-exps download`).
+- Soporte de ejecución multi-GPU mediante réplicas independientes con reparto de preguntas.
+- No incluye visión, audio ni codificador multimodal.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente multi-paso: no disponible en la información proporcionada (existe una guía Agent/API en el repositorio, pero no se detallan capacidades).
 
 ## Casos de uso
 
-- Investigacion sobre transferencia entre modelos: usar este receptor junto a un emisor mayor para reproducir los experimentos de PACT y medir si las representaciones ocultas transferidas aportan senal util frente a los controles de PACT-Check.
-- Validacion de protocolos de evaluacion: emplear el modelo como "Trained Receiver" en los controles del paper para comprobar si las mejoras observadas se deben a la adaptacion del receptor y no a la comunicacion cross-model.
-- Experimentos de destilacion de representaciones: entrenar o evaluar puentes lineales entre backbones congelados usando este checkpoint como receptor de referencia en tareas de generacion.
-- Reproducibilidad academica: servir como artefacto historico fijo (revision de Qwen3.5-4B anclada) para replicar resultados y comparar trayectorias de entrenamiento en estudios posteriores.
-- Analisis de alineacion con GRPO: estudiar el efecto de FullGRPO sobre un receptor de 4,8B en tareas con recompensa definida, comparando con el checkpoint base Qwen3.5-4B.
-- Pruebas de carga e integracion: validar pipelines de Transformers (Torch 2.15.0, Transformers 5.22.1, PEFT 0.21.2) y comprobar la independencia de embeddings y cabeza de salida en despliegues de investigacion.
-- Base para experimentos de atencion hibrida: aprovechar el soporte declarado de modelos con atencion hibrida para probar variantes de puentes y receptores en esa familia arquitectonica.
+- Reproducción de experimentos PACT: ejecutar `platour-exps evaluate --experiment 23` con este checkpoint y el receptor Qwen/Qwen3.5-4B permite replicar el protocolo publicado sobre AIME, HMMT e IMO, verificando hashes de configuración y pesos.
+- Investigación sobre transferencia entre modelos: usar el checkpoint como receptor entrenado y compararlo contra los controles de PACT-Check (Dummy Transfer, Irrelevant Transfer, Self-Communication) para determinar si la mejora proviene de información útil del emisor o de la adaptación del receptor.
+- Auditoría de procedencia de checkpoints: el comando `platour-exps download --experiment 23` descarga y verifica el checkpoint sin cargar modelos, útil en pipelines de validación de artefactos de investigación.
+- Evaluación a gran escala con réplicas: con `--n-gpu 8` se lanzan 8 réplicas independientes, cada una en una GPU, con shards disjuntos de preguntas, adecuado para barridos de evaluación sobre conjuntos de matemáticas competitivas.
+- Estudio de respuestas de razonamiento largo: el tope de 32K tokens permite analizar cadenas de razonamiento extensas en problemas de competición, comparando el efecto de recortar el límite a 16K.
+- Docencia y formación en IA: el ejemplo mínimo con `generate()` sirve para ilustrar carga de modelos, plantillas de chat y decodificación determinista (`do_sample=False`) sin infraestructura adicional.
+- Base para experimentos de destilación emisor-receptor: al mantener embeddings y cabeza de salida independientes en BF16, el checkpoint se puede emparejar con distintos emisores en configuraciones futuras.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explicitamente que se trata de artefactos historicos de inferencia sin puntuaciones de benchmark y que el empaquetado no establece un protocolo de seleccion de checkpoint ni una evaluacion imparcial.
+No se han publicado resultados de benchmarks en la información disponible. El autor indica explícitamente que son artefactos de inferencia históricos sin puntuaciones de benchmark y que el empaquetado no constituye una evaluación imparcial.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en BF16: aproximadamente 9,7 GB solo para pesos (4,84B parametros x 2 bytes), mas overhead de activaciones y cache KV; en la practica se recomienda reservar 12-16 GB.
-- VRAM estimada en cuantizacion de 8 bits: en torno a 5-6 GB de pesos; en 4 bits, en torno a 3 GB, aunque no se han publicado cuantizaciones oficiales para este checkpoint.
-- GPU recomendadas: A100 (40/80 GB), H100, L40S o RTX 4090 (24 GB) para BF16 sin problemas; GPUs consumer de 16 GB pueden alojar el modelo en BF16 con contexto corto.
-- Cabe en GPU consumer: si, en RTX 4090, RTX 4080, RTX 3090 y tarjetas con 16 GB o mas en BF16; en 8 GB seria necesario cuantizar.
-- Opciones de despliegue: Transformers con AutoModelForCausalLM (metodo documentado por el autor); vLLM, llama.cpp, Ollama o TGI no estan confirmados en la informacion disponible.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada: con 4.841.450.496 parámetros en BF16, los pesos ocupan aproximadamente 9,7 GB; la inferencia requiere margen adicional para caché KV y activaciones, por lo que se recomienda al menos 16-24 GB de VRAM en BF16. Las cifras para cuantizaciones no están disponibles en la información proporcionada.
+- GPU recomendadas: el evaluador del proyecto asigna por defecto 1 GPU por réplica; con `--n-gpu 8` se usan 8 GPUs, una por réplica. No se especifican modelos concretos de GPU (A100, H100, RTX 4090) en la información disponible.
+- GPU de consumo: no se confirma compatibilidad con GPU de consumo en la información proporcionada; por tamaño en BF16, encajaría en tarjetas con 24 GB, pero no hay validación publicada.
+- Despliegue: la ruta documentada es Transformers con PEFT en un entorno Linux con CUDA y Python 3.11, instalado mediante `scripts/install_environment.py`. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Evaluación multi-GPU: `--n-gpu N --gpus-per-replica G` divide N GPUs en N/G réplicas; N debe ser divisible por G. No se debe combinar `--n-gpu` con `torchrun`. La selección de GPUs se hace con `CUDA_VISIBLE_DEVICES`.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parámetros | Contexto | Benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PLatour-TR-FullGRPO-Qwen3.5-4B-DAPO | 4,84B | no disponible | apache-2.0 | Hugging Face (zen-E) | Receptor PACT entrenado con GRPO; sin benchmarks publicados |
-| Qwen/Qwen3.5-4B (modelo base) | ~4B | no disponible | no disponible en la informacion | Hugging Face (Qwen) | Backbone original sin el entrenamiento PACT |
-| zen-E/qwen3-4b-instruct-grpo-dapo-2epoch-8k | ~4B | 8k (segun nombre) | no disponible en la informacion | Hugging Face (zen-E) | Variante previa del mismo autor con GRPO y DAPO, sin model card |
+| PLatour-TR-FullGRPO-Qwen3.5-4B-DAPO | 4.841.450.496 | no disponible | no publicados (artefacto de investigación) | Apache 2.0 | Hugging Face (782 descargas) |
+| Qwen/Qwen3.5-4B (modelo base) | no disponible en la información | no disponible | no disponible | no disponible en la información | Hugging Face |
+| Alternativas de ~4B de otros fabricantes | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de datos de benchmarks ni de especificaciones del modelo base en la información proporcionada, por lo que no es posible una comparación cuantitativa con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Artefacto de investigacion: el autor declara que son artefactos historicos de inferencia sin benchmarks; no debe tratarse como un modelo validado para produccion.
-- Ausencia de evaluacion imparcial: la model card advierte que el empaquetado no establece un protocolo de seleccion ni una evaluacion no sesgada, y que se requiere evaluacion independiente antes de hacer afirmaciones comparativas.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible; al ser un modelo de 4,8B sin benchmarks publicados, el riesgo es desconocido.
-- Sesgos conocidos: no disponibles; no se documenta composicion del dataset ni filtros de sesgo.
-- Idiomas: no declarados; no se puede asumir soporte multilingue mas alla del comportamiento heredado de Qwen3.5-4B.
-- Contexto: longitud de contexto no especificada en la informacion proporcionada.
-- Trazabilidad del entrenamiento: la revision anclada de Qwen3.5-4B corresponde al export actual, no necesariamente a la usada en el entrenamiento historico.
-- Licencia: apache-2.0 para este paquete, pero siguen aplicando los terminos y avisos del modelo upstream Qwen/Qwen3.5-4B.
-- Sin codificador de vision: no admite entradas de imagen.
-- Dependencias de carga verificadas solo con Torch 2.15.0, Transformers 5.22.1 y PEFT 0.21.2; otras versiones pueden requerir ajustes.
+- Artefacto de investigación sin benchmarks: el autor advierte que no hay puntuaciones publicadas y que el empaquetado no establece un protocolo de selección ni una evaluación imparcial.
+- Sin protocolo de evaluación independiente: cualquier afirmación comparativa requiere evaluación externa y reporte preciso de procedencia.
+- Sin codificador de visión: no admite entradas de imagen.
+- Idiomas soportados no documentados: no se puede garantizar cobertura multilingüe más allá del comportamiento heredado del modelo base.
+- Longitud de contexto no documentada: el tope de 32K se refiere a tokens de respuesta en el protocolo de evaluación, no a la ventana de contexto del modelo.
+- Riesgo de alucinación: no cuantificado en la información disponible; aplicable el riesgo habitual de los modelos generativos.
+- Sesgos: no documentados en la información proporcionada.
+- Licencia Apache 2.0: permite uso comercial según los términos de la licencia, pero el autor no valida el uso en producción de este checkpoint.
+- Configuración de evaluación frágil: cambiar `--response-cap` modifica el protocolo publicado; las ejecuciones parciales reportan `three_suite_macro: null`.
+- Requiere el entorno del proyecto (Linux, CUDA, Python 3.11) y un checkout editable para que los manifiestos y ficheros de tarea estén disponibles.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/zen-E/PLatour-TR-FullGRPO-Qwen3.5-4B-DAPO
-- Paper (arXiv): https://arxiv.org/abs/2611.06976
-- Paper (HTML): https://arxiv.org/html/2611.06976
-- Coleccion PLatour: https://huggingface.co/collections/zen-E/platour
+- Paper: https://arxiv.org/html/2611.06976
+- Código: https://github.com/zhenyi4/platour
+- Colección de modelos: https://huggingface.co/collections/zen-E/platour
+- Guía de agente/API: https://github.com/zhenyi4/platour/blob/main/AGENT.md
+- Guía de instalación: https://github.com/zhenyi4/platour#getting-started
+- Guía de entorno: https://github.com/zhenyi4/platour/blob/main/docs/ENVIRONMENT.md
+- Protocolos de tarea: https://github.com/zhenyi4/platour/blob/main/qwen35/README.md
+- Índice de checkpoints: https://github.com/zhenyi4/platour/blob/main/models/README.md#downloadable-checkpoints
+- Valores por defecto de GPU para evaluación: https://github.com/zhenyi4/platour#gpu-defaults-for-standalone-evaluation
 - Dataset: https://huggingface.co/datasets/zen-E/PLatour-DAPO-Data
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- Variante previa del autor: https://huggingface.co/zen-E/qwen3-4b-instruct-grpo-dapo-2epoch-8k

@@ -2,89 +2,95 @@
 
 ## Resumen
 
-**Gemma-4-E4B-text-base** es un checkpoint derivado del modelo **google/gemma-4-E4B-it** de Google DeepMind, creado por el usuario de Hugging Face *wyattearp*. Se trata de una extracción del backbone de lenguaje del modelo original, eliminando las proyecciones multimodales (torres de visión y audio) para obtener un modelo puramente textual. El objetivo es reducir el uso de VRAM y simplificar la inferencia en entornos dedicados a generación de texto, razonamiento y tool calling, manteniendo los pesos del transformer de lenguaje idénticos bit a bit al lanzamiento original.
+Gemma-4-E4B-text-base es una extraccion text-only del modelo instructivo Gemma-4-E4B-it de Google DeepMind, publicada por el usuario wyattearp en Hugging Face. El checkpoint elimina las torres multimodales (vision y audio) y sus proyectores de atencion cruzada, conservando intactos los pesos del transformer de lenguaje (`model.language_model.*`), que segun el autor son identicos bit a bit a los del modelo original. El resultado es un backbone puro de lenguaje orientado a generacion de texto, ingenieria de software y despliegues con tool calling.
 
-El modelo conserva la arquitectura transformer de Gemma 4, con una longitud de contexto de 131 072 tokens y un vocabulario de 256 000 tokens. Aunque la model card indica aproximadamente 4,2 mil millones de parámetros, el archivo `safetensors` del repositorio contiene 7 518 069 034 parámetros, una discrepancia que no se explica en la documentación. Está pensado para ser servido con vLLM, y la card incluye una corrección para el parser de tool calling en vLLM.
+El modelo parte de la familia Gemma 4 de Google, con una ventana de contexto de 131.072 tokens y un vocabulario de 256.000 tokens. El repositorio ocupa 15,1 GB en safetensors y declara 7.518.069.034 parametros totales en los pesos, aunque la model card del autor indica "~4,2B parametros"; esta discrepancia probablemente refleja el conteo de parametros activos frente a los totales (el sufijo "E4B" sugiere una arquitectura con expertos), pero no se dispone de informacion que lo confirme.
 
-Su relevancia radica en ofrecer una alternativa ligera y especializada en texto para desarrolladores que necesitan un modelo de lenguaje de alto rendimiento sin la sobrecarga de los componentes multimodales, especialmente en tareas de agentes, generación de código y razonamiento.
+La relevancia de esta ficha radica en su caracter practico: al eliminar los componentes multimodales se reduce la VRAM reservada a buffers del vision transformer y se simplifica el preprocesado en motores de inferencia como vLLM, TensorRT-LLM o llama.cpp. Es una opcion util para equipos que solo necesitan texto y quieren evitar la sobrecarga de dependencias multimodales, siempre asumiendo que hereda la licencia Gemma de Google y que su publicacion es de un tercero, no oficial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (backbone de lenguaje de Gemma 4) |
-| Parametros totales | 7 518 069 034 (según safetensors); la model card indica ~4,2B |
+| Arquitectura | Transformer decoder-only derivado de Gemma 4 (torres multimodales eliminadas); posible arquitectura con expertos segun el sufijo "E4B", no confirmado |
+| Parametros totales | 7.518.069.034 (safetensors); la model card indica "~4,2B" |
 | Parametros activos | no disponible |
-| Longitud de contexto | 131 072 tokens |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | en (inglés) |
-| Licencia | Gemma Terms of Use (gemma) |
+| Longitud de contexto | 131.072 tokens |
+| Tipos de cuantizacion | no disponible (el autor solo documenta bfloat16 para vLLM) |
+| Idiomas soportados | en |
+| Licencia | Gemma Terms of Use (heredada de Google DeepMind) |
 | Formato de pesos | safetensors (compatible con transformers >= 4.40.0) |
+
+Otros datos: tamano del repositorio 15,1 GB, vocabulario de 256.000 tokens, pipeline text-generation, libreria transformers, modelo base google/gemma-4-E4B-it.
 
 ## Arquitectura y entrenamiento
 
-El modelo es una extracción del checkpoint **google/gemma-4-E4B-it**, un modelo multimodal de Google DeepMind que integra codificadores de visión y audio junto con un transformer de lenguaje. En esta versión, se han eliminado las proyecciones multimodales y los buffers asociados, dejando únicamente los parámetros del transformer de lenguaje (`model.language_model.*`). Según la model card, estos pesos son idénticos bit a bit a los del modelo original, por lo que no ha habido ningún entrenamiento adicional.
+El modelo es una extraccion de los pesos del transformer de lenguaje del checkpoint instructivo Gemma-4-E4B-it. El autor afirma que los parametros bajo `model.language_model.*` son identicos bit a bit al release upstream, de modo que no hay un reentrenamiento ni un fine-tuning propio: la intervencion consiste en decoupling y eliminacion de las proyecciones multimodales (torres de vision y audio) y de los proyectores de atencion cruzada. No se documentan datos de entrenamiento, numero de tokens, composicion del dataset ni procesos de RLHF o DPO en la informacion disponible; todo ello corresponde al modelo base de Google, cuya model card no se incluye en la informacion proporcionada.
 
-No se proporcionan detalles sobre el entrenamiento original del modelo base (número de tokens, composición del dataset, técnicas de alineación como RLHF o DPO). La única innovación técnica documentada es la propia extracción de modalidades y una corrección en el parser de tool calling de vLLM, referenciada en el issue [vllm-project/vllm#54256](https://github.com/vllm-project/vllm/issues/54256) y el pull request [vllm-project/vllm#54257](https://github.com/vllm-project/vllm/pull/54257).
+Como innovaciones tecnicas destacables, la model card menciona la reduccion de VRAM al prescindir de los buffers del vision transformer y de los parametros de los proyectores, la simplificacion del preprocesado de entradas multimodales en motores de serving y la fidelidad de pesos respecto al original. Tambien se documenta un bugfix relevante para el parser de tool calling de Gemma 4 en vLLM (issue #54256, PR #54257), que soporta llamadas con `call:` sin espacios y transiciones de canal sin espacios en blanco. No se dispone de informacion sobre decodificacion especulativa, atencion lineal ni otras optimizaciones de inferencia.
 
 ## Capacidades
 
-- Generación de texto y razonamiento de propósito general, heredadas del modelo base Gemma 4.
-- Soporte de tool calling / function calling, con una corrección específica para el parser de vLLM que permite llamadas a herramientas con formato "bare call" y transiciones de canal sin espacios.
-- Capacidad para tareas de agente y razonamiento multi-paso, gracias a la ventana de contexto de 131 072 tokens.
-- Generación de código y asistencia en ingeniería de software, mencionada explícitamente en la model card como uno de los casos de uso previstos.
-- Multilingüismo limitado: la card indica únicamente inglés (`language: en`).
-- No incluye capacidades de visión ni audio, al haber sido eliminadas deliberadamente.
+- Generacion de texto conversacional en ingles, heredada del modelo instructivo base.
+- Razonamiento y generacion de codigo, orientados segun el autor a cargas de trabajo de software engineering.
+- Tool calling y function calling, con soporte de parser dedicado en vLLM (`--tool-call-parser gemma4`) y seleccion automatica de herramientas (`--enable-auto-tool-choice`).
+- Razonamiento multi-paso mediante el parser de razonamiento de vLLM (`--reasoning-parser gemma4`), presumiblemente asociado a modos de pensamiento del modelo base.
+- Contexto largo de 131.072 tokens, adecuado para conversaciones multi-turno extensas y documentos largos.
+- Capacidades multilingues limitadas: solo se declara ingles (`en`) en los metadatos.
+- Sin capacidades de vision ni audio: precisamente han sido eliminadas en esta extraccion.
+- Compatibilidad con endpoints (tag `endpoints_compatible`) y despliegue con transformers y vLLM.
 
 ## Casos de uso
 
-- **Atención al cliente automatizada**: el modelo puede gestionar conversaciones multi-turno con contexto largo (hasta 131 072 tokens), lo que permite mantener el historial completo de una interacción sin truncamientos. Su naturaleza puramente textual reduce la latencia al eliminar el preprocesamiento multimodal.
-- **Generación de código en producción**: con soporte de tool calling y una corrección específica para vLLM, puede integrarse en pipelines de CI/CD para autocompletar código, generar tests o documentar APIs. La ventana de contexto amplia permite incluir repositorios enteros como contexto.
-- **Agentes autónomos**: su capacidad para razonar multi-paso y llamar herramientas lo hace adecuado para agentes que necesitan planificar, ejecutar acciones y reflexionar sobre los resultados, por ejemplo en automatización de tareas de oficina o navegación web.
-- **Análisis de documentos largos**: con 131 072 tokens de contexto, puede resumir, extraer información o responder preguntas sobre documentos extensos (informes, artículos científicos, contratos) sin necesidad de dividirlos en fragmentos.
-- **Asistente de programación en entornos con recursos limitados**: al eliminar los componentes multimodales, el modelo requiere menos VRAM que el original, lo que permite desplegarlo en GPUs de consumo como la RTX 4090 (24 GB) o incluso en configuraciones con 16 GB, dependiendo de la cuantización.
-- **Fine-tuning especializado en texto**: al ser un backbone limpio sin proyecciones multimodales, es un punto de partida ideal para fine-tuning en tareas de NLP específicas (clasificación, extracción de entidades, generación estructurada) sin desperdiciar parámetros en módulos que no se van a utilizar.
+- Atencion al cliente automatizada: el modelo puede gestionar conversaciones multi-turno con contexto largo gracias a sus 131.072 tokens de ventana, manteniendo el historial completo de la interaccion sin truncamientos agresivos.
+- Generacion de codigo en produccion: soporta tool calling y puede integrarse en pipelines de CI/CD o asistentes de IDE que necesiten invocar funciones externas (ejecutar tests, consultar repositorios) mediante el parser `gemma4` de vLLM.
+- Agentes autonomos de multiple paso: el parser de razonamiento de vLLM permite separar el razonamiento interno de la respuesta final, util para agentes que planifican y ejecutan subtareas encadenadas.
+- Procesamiento de documentos largos en ingles: con 131.072 tokens de contexto puede resumir, extraer entidades o responder preguntas sobre contratos, informes tecnicos o documentacion extensa en una sola pasada.
+- Servicio de inferencia text-only de bajo coste: al eliminar las torres multimodales se reduce la VRAM y se simplifica el despliegue en vLLM o TensorRT-LLM, lo que abarata el coste por peticion en entornos donde no se necesita vision ni audio.
+- Base para fine-tuning posterior: al ser un backbone de lenguaje limpio con pesos fieles al original, sirve como punto de partida para adaptaciones especificas de dominio (soporte, legal, codigo) sin arrastrar dependencias multimodales.
+- Evaluacion y benchmarking de la componente de lenguaje: util para aislar el rendimiento textual de Gemma-4-E4B-it en pruebas comparativas, sin interferencia de los modulos de vision o audio.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas de MMLU, HumanEval, GSM8K ni otras evaluaciones estándar. Tampoco se encontraron datos de rendimiento en la búsqueda web para esta variante específica. Se recomienda consultar la documentación del modelo base **google/gemma-4-E4B-it** para referencias de rendimiento, aunque los resultados no serán directamente comparables debido a la eliminación de las modalidades.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada para inferencia**: el checkpoint en `safetensors` ocupa 15,1 GB en el repositorio, lo que sugiere que en bfloat16 (2 bytes por parámetro) los 7,5 mil millones de parámetros requerirían aproximadamente 15 GB de VRAM. Sin embargo, si la cifra real de parámetros activos es ~4,2B como indica la model card, el requisito bajaría a unos 8,4 GB. No hay datos oficiales que resuelvan esta discrepancia.
-- **GPU recomendadas**: para la cifra mayor, se necesitaría una GPU con al menos 16 GB de VRAM (por ejemplo, RTX 4090, A100 40 GB, L4). Para la cifra menor, una GPU de 8-12 GB (RTX 3080, RTX 4070) podría ser suficiente con cuantización.
-- **Compatibilidad con GPU de consumo**: sí, es plausible en GPUs de gama alta (RTX 3090/4090) con cuantización a 8 bits o 4 bits, aunque no se proporcionan archivos GGUF ni cuantizaciones oficiales en el repositorio.
-- **Opciones de despliegue**: vLLM (recomendado en la model card, con el comando `vllm serve`), así como cualquier framework compatible con transformers (Hugging Face). También podría usarse con TensorRT-LLM o llama.cpp si se generan los formatos adecuados, aunque no se incluyen en el repo.
-- **Latencia y throughput**: no disponible. Dependerá del hardware y de la configuración de vLLM (por ejemplo, `--max-model-len`).
+- VRAM estimada para inferencia en bfloat16: aproximadamente 15 GB solo para pesos (7.518 millones de parametros x 2 bytes), mas overhead de cache KV para el contexto; con 131.072 tokens el consumo de cache KV puede ser considerable y depende de la configuracion de atencion, no disponible.
+- VRAM estimada en cuantizacion de 8 bits: alrededor de 7,5-8 GB para pesos, mas cache KV.
+- VRAM estimada en cuantizacion de 4 bits: alrededor de 4 GB para pesos, mas cache KV; los tipos de cuantizacion concretos no estan documentados por el autor.
+- GPU recomendadas: no disponible de forma explicita; por tamano, cabria en GPUs de 24 GB (RTX 4090, A10G, L4) en bfloat16 con contexto moderado, y en GPUs de 40-80 GB (A100, H100) para contexto completo de 131.072 tokens.
+- Cabe en GPU consumer: probablemente si en RTX 4090 (24 GB) con cuantizacion o contexto reducido; no confirmado por el autor.
+- Opciones de despliegue: vLLM (documentado con `--dtype bfloat16 --max-model-len 131072 --tool-call-parser gemma4 --reasoning-parser gemma4 --enable-auto-tool-choice`), transformers >= 4.40.0, y presumiblemente TensorRT-LLM y llama.cpp segun menciona el autor, aunque sin comandos documentados.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Modalidades | Disponibilidad |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Notas |
 |---|---|---|---|---|---|
-| **Gemma-4-E4B-text-base** (este) | ~4,2B (card) / 7,5B (safetensors) | 131 072 | Gemma Terms | Solo texto | Hugging Face |
-| **google/gemma-4-E4B-it** (original) | ~4,4B (según gemma4.dev) | 131 072 | Gemma Terms | Texto, visión, audio | Hugging Face |
-| **google/gemma-4-E4B-it-assistant** | no disponible | no disponible | Gemma Terms | Multimodal | Hugging Face |
-| **Llama 3.1 8B** (referencia) | 8B | 128 000 | Llama 3.1 Community | Solo texto | Hugging Face |
+| Gemma-4-E4B-text-base (este) | 7.518 M (safetensors); ~4,2B segun model card | 131.072 | en | Gemma Terms of Use | Extraccion text-only no oficial de Gemma-4-E4B-it |
+| google/gemma-4-E4B-it | no disponible | no disponible | no disponible | Gemma Terms of Use | Modelo base oficial de Google con capacidades multimodales |
+| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de otros modelos comparables en la informacion proporcionada |
 
-La comparativa se limita a parámetros, contexto y licencia, ya que no hay datos de rendimiento para esta variante. El modelo original multimodal es la referencia más cercana, pero esta extracción sacrifica las capacidades de visión y audio a cambio de un menor uso de VRAM y una inferencia más simple.
+No se dispone de informacion suficiente para comparar rendimiento con alternativas concretas; no se inventan cifras.
 
 ## Limitaciones y advertencias
 
-- **Solo inglés**: la model card indica únicamente el idioma inglés. No se garantiza un rendimiento adecuado en otros idiomas, incluido el español.
-- **Sin capacidades multimodales**: al eliminar las proyecciones de visión y audio, el modelo no puede procesar imágenes, vídeo ni audio. Cualquier tarea que requiera estas modalidades debe usar el modelo original.
-- **Discrepancia en el número de parámetros**: la model card afirma ~4,2B, pero el archivo `safetensors` contiene 7,5B. Esta inconsistencia puede afectar a la planificación de recursos y no está aclarada por el autor.
-- **Riesgo de alucinación**: como cualquier modelo de lenguaje, puede generar información falsa o inventada, especialmente en tareas de razonamiento o generación de código. Se recomienda validación humana en aplicaciones críticas.
-- **Restricciones de licencia**: la licencia Gemma Terms of Use de Google DeepMind impone condiciones de uso, incluyendo restricciones para ciertos usos comerciales y obligaciones de atribución. Es necesario revisar los términos completos antes de su uso en producción.
-- **Soporte no oficial**: al ser un checkpoint creado por un tercero (no por Google), no hay garantía de mantenimiento, correcciones de seguridad ni actualizaciones. El autor no proporciona documentación adicional más allá de la model card.
-- **Bugfix de vLLM pendiente de integración**: la corrección del parser de tool calling está en un pull request que puede no estar fusionado en todas las versiones de vLLM. Es necesario verificar la compatibilidad con la versión utilizada.
+- Modelo publicado por un tercero (wyattearp), no por Google DeepMind; no es un release oficial y carece de validacion independiente.
+- Solo soporta ingles segun los metadatos; no se declaran otros idiomas.
+- Sin capacidades de vision ni audio por diseno; no apto para tareas multimodales.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; no se documentan evaluaciones de fidelidad en la informacion disponible.
+- Sesgos conocidos: no documentados en la informacion proporcionada; deben asumirse los del modelo base Gemma-4-E4B-it.
+- Licencia Gemma Terms of Use: impone restricciones de uso comercial y obligaciones de cumplimiento que deben revisarse antes de desplegar en produccion.
+- Discrepancia entre el numero de parametros de safetensors (7.518 M) y el indicado en la model card (~4,2B); conviene verificar el conteo real y la arquitectura antes de planificar recursos.
+- Dependencia de un bugfix reciente en vLLM para el parser de tool calling de Gemma 4; versiones antiguas pueden fallar con llamadas sin espacios.
+- El contexto de 131.072 tokens implica un consumo elevado de cache KV; el maximo practico dependera del hardware y de la configuracion de serving.
+- No se documentan tipos de cuantizacion ni latencias, lo que dificulta la planificacion de capacidad.
 
 ## Enlaces
 
-- [Modelo en Hugging Face: wyattearp/Gemma-4-E4B-text-base](https://huggingface.co/wyattearp/Gemma-4-E4B-text-base)
-- [Modelo original: google/gemma-4-E4B](https://huggingface.co/google/gemma-4-E4B)
-- [Modelo original instruct: google/gemma-4-E4B-it-assistant](https://huggingface.co/google/gemma-4-E4B-it-assistant)
-- [Página oficial de Gemma 4 en Google DeepMind](https://deepmind.google/models/gemma/gemma-4/)
-- [Guía de Gemma 4 E4B en gemma4.dev](https://gemma4.dev/models/gemma-4-e4b)
-- [Repositorio oficial de Gemma en GitHub](https://github.com/google-deepmind/gemma)
-- [Issue de vLLM sobre el parser de Gemma 4](https://github.com/vllm-project/vllm/issues/54256)
-- [Pull request de corrección en vLLM](https://github.com/vllm-project/vllm/pull/54257)
+- Hugging Face: https://huggingface.co/wyattearp/Gemma-4-E4B-text-base
+- Modelo base: https://huggingface.co/google/gemma-4-E4B-it
+- Licencia Gemma: https://ai.google.dev/gemma/terms
+- Bug report vLLM: https://github.com/vllm-project/vllm/issues/54256
+- Pull request vLLM: https://github.com/vllm-project/vllm/pull/54257

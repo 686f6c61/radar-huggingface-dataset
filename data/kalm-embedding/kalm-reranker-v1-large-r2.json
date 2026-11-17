@@ -1,0 +1,89 @@
+{
+  "schema": 2,
+  "id": "KaLM-Embedding/KaLM-Reranker-V1-Large-R2",
+  "slug": "kalm-embedding-kalm-reranker-v1-large-r2",
+  "author": "KaLM-Embedding",
+  "url": "https://huggingface.co/KaLM-Embedding/KaLM-Reranker-V1-Large-R2",
+  "created_at": "2026-08-14T03:24:28.000Z",
+  "updated_at": "2026-11-17T11:36:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "t5gemma2",
+    "text2text-generation",
+    "transformers",
+    "reranker",
+    "encoder-decoder",
+    "FBNL",
+    "matryoshka",
+    "multilingual",
+    "retrieval",
+    "RAG",
+    "text-ranking",
+    "dataset:KaLM-Embedding/KaLM-reranker-training-data",
+    "dataset:KaLM-Embedding/KaLM-embedding-finetuning-data",
+    "dataset:Shitao/bge-m3-data",
+    "arxiv:2606.22807",
+    "arxiv:2506.20923",
+    "arxiv:2501.01028",
+    "base_model:google/t5gemma-2-4b-4b",
+    "base_model:finetune:google/t5gemma-2-4b-4b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 353,
+  "trending_score": 0,
+  "parameters": 7508928880,
+  "parameters_human": "7.51B",
+  "storage_bytes": 15053570288,
+  "storage_human": "15.1 GB",
+  "context_length": null,
+  "base_model": "google/t5gemma-2-4b-4b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kalm — le logiciel pour architectes et designers d'intérieur",
+      "url": "https://www.kalm.ai/",
+      "snippet": "Kalm, le logiciel de gestion de projet des architectes et architectes d'intérieur : CCTP, DPGF, consultation des entreprises, suivi de …"
+    },
+    {
+      "title": "Kalm — le logiciel pour se lancer comme architecte d'intérieur",
+      "url": "https://www.kalm.ai/logiciel-pour-se-lancer-architecte-interieur",
+      "snippet": "Essayez gratuitement ! Kalm est un outil de gestion de projet pensé pour les architectes et designers d'intérieur qui se lancent."
+    },
+    {
+      "title": "Kalm | L'outil tout-en-un des agences d'architecture",
+      "url": "https://app.kalm.ai/",
+      "snippet": "Kalm est l'outil tout-en-un des professionnels de l'architecture d'intérieur Pour que Kalm fonctionne correctement, il vous faut un …"
+    },
+    {
+      "title": "Kalm Atelier – Bâtir l’avenir, entre modernité et conscience écologique",
+      "url": "https://kalm-architecture.com/",
+      "snippet": "INFORMATIONS Fenêtre Mermoz 118, Immeuble D Mermoz, Dakar, SÉNÉGAL CONTACT contact@kalm-ai.com"
+    },
+    {
+      "title": "Kalm — project management tool for interior designers",
+      "url": "https://www.kalm.ai/en",
+      "snippet": "Kalm allows you to save valuable time in project management and boosts productivity. The real advantage is being able to …"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "LiqunMa/speed",
+  "slug": "liqunma-speed",
+  "author": "LiqunMa",
+  "url": "https://huggingface.co/LiqunMa/speed",
+  "created_at": "2026-11-17T08:40:21.000Z",
+  "updated_at": "2026-11-17T08:49:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "quantization",
+    "nvfp4",
+    "text-to-video",
+    "base_model:Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+    "base_model:finetune:Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2311156208,
+  "storage_human": "2.3 GB",
+  "context_length": null,
+  "base_model": "Wan-AI/Wan2.1-T2V-1.3B-Diffusers, THUDM/CogVideoX-2b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FBI-LLM: Scaling Up Fully Binarized LLMs from Scratch via ... - arXiv",
+      "url": "https://arxiv.org/pdf/2407.07093",
+      "snippet": "09.07.2024 ... Model: https://huggingface.co/LiqunMa/. ... To accelerate the model's convergence speed, we initialize α and β before training as following:."
+    }
+  ]
+}

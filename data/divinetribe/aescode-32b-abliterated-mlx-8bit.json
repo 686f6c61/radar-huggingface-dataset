@@ -5,7 +5,7 @@
   "author": "divinetribe",
   "url": "https://huggingface.co/divinetribe/AesCode-32B-abliterated-MLX-8bit",
   "created_at": "2026-10-28T12:19:04.000Z",
-  "updated_at": "2026-11-15T15:32:03.000Z",
+  "updated_at": "2026-11-16T12:27:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

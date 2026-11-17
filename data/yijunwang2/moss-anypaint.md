@@ -2,82 +2,89 @@
 
 ## Resumen
 
-MOSS AnyPaint es un adaptador LoRA de edición de imágenes desarrollado por el usuario yijunwang2 sobre el modelo base OpenMOSS-Team/MOSS-Image-Base. Su función es habilitar inpainting, outpainting y edición de imágenes con máscaras arbitrarias: permite insertar, reemplazar o reestilizar objetos y regiones internas, extender el lienzo por cualquier lado y manejar máscaras desconectadas, estructuras estrechas y ediciones mixtas que cruzan el borde de la imagen original. El adaptador seleccionado corresponde al paso 4303, con rango 32, alpha 32 y precisión BF16.
+MOSS AnyPaint es un adaptador LoRA de edición de imágenes desarrollado por el usuario yijunwang2 sobre el modelo base OpenMOSS-Team/MOSS-Image-Base. Su función es habilitar inpainting, outpainting y edición de imágenes con máscaras de forma arbitraria en una sola pasada, cubriendo casos que van desde ediciones internas del lienzo hasta la extensión del mismo, regiones desconectadas, estructuras estrechas y máscaras mixtas que cruzan el borde de la imagen original. Se distribuye como un adaptador funcional (no como un LoRA convencional) y requiere el uso de los scripts incluidos en el repositorio, ya que los importadores estándar de LoRA y el snippet autogenerado de Diffusers no son compatibles.
 
-El modelo se distribuye como un fichero LoRA en formato safetensors (0,2 GB de repositorio) y se acompaña de un adaptador comunitario "Base 8-step DMD2" fijado para inferencia en ocho pasos. Está pensado para integrarse en flujos de trabajo de ComfyUI mediante nodos y workflow propios, o bien usarse con los scripts `pipeline.py`, `anypaint.py` y `example.py` incluidos. No es un cargador LoRA de texto-a-imagen convencional: implementa una referencia limpia registrada y restricciones de región conocida que requieren su propio runtime de inferencia.
+El modelo resuelve un problema práctico en pipelines de edición: la mayoría de soluciones de inpainting asumen máscaras rectangulares o ediciones dentro del lienzo, mientras que AnyPaint unifica inpainting y outpainting bajo un mismo contrato de entrada (píxeles blancos se generan, píxeles negros se preservan, y todo lo que queda fuera de la fuente colocada se marca como generado). Esto simplifica la integración en herramientas como ComfyUI, para la que el autor publica nodos específicos.
 
-La relevancia actual del modelo reside en su enfoque de máscara arbitraria sobre un modelo base de imagen open source con licencia Apache 2.0, lo que facilita su uso comercial y su integración en pipelines de edición de imágenes. Soporta prompts en inglés y chino, y su diseño está orientado a tareas de edición controlada donde la fidelidad de la región no enmascarada es crítica.
+Es relevante ahora porque permite edición de imágenes de alta calidad con preservación estricta de las regiones no enmascaradas mediante restricciones latentes alineadas por timestep, y porque su licencia Apache 2.0 facilita el uso comercial. El repositorio pesa 0,3 GB y se apoya en el ecosistema Diffusers.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | LoRA (adaptador de bajo rango) sobre MOSS-Image-Base; no se especifica la arquitectura interna del modelo base |
-| Parametros totales | no disponible (adaptador LoRA de rango 32/alpha 32; el modelo base no reporta cifra en la información disponible) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BF16 para el adaptador; no se detallan otras cuantizaciones |
+| Arquitectura | LoRA (adaptador) sobre MOSS-Image-Base, pipeline image-to-image con Diffusers |
+| Parámetros totales | no disponible (adaptador LoRA rank 32; el modelo base no reporta cifra en la información) |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (modelo de imagen, no de texto) |
+| Tipos de cuantización | no disponible |
 | Idiomas soportados | en, zh |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (LoRA `moss_anypaint_rank32.safetensors`), librería PyTorch |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (moss_anypaint_rank32.safetensors) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA de rango 32 y alpha 32 entrenado en BF16 sobre el modelo base OpenMOSS-Team/MOSS-Image-Base. La información disponible no detalla el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO. El checkpoint publicado corresponde al paso 4303 de entrenamiento, seleccionado entre las variantes disponibles.
+MOSS AnyPaint es un adaptador LoRA de rango 32 que se aplica sobre el modelo de difusión MOSS-Image-Base. El adaptador no modifica la arquitectura del backbone; en su lugar, introduce capas de bajo rango entrenadas específicamente para la tarea de edición con máscaras arbitrarias. La innovación principal es el mecanismo de preservación de regiones no enmascaradas mediante restricciones latentes alineadas por timestep, que mantiene los píxeles negros de la máscara intactos mientras genera los blancos.
 
-La innovación técnica principal es la implementación de una referencia limpia registrada y restricciones de región conocida dentro del runtime de inferencia, lo que permite preservar la zona no enmascarada de la imagen de entrada. El adaptador se combina con un adaptador comunitario "Base 8-step DMD2" fijado para realizar inferencia en ocho pasos, lo que reduce el coste computacional frente a muestreos más largos. El repositorio incluye scripts propios (`pipeline.py`, `anypaint.py`, `example.py`) y nodos de ComfyUI que implementan este runtime; un cargador LoRA de texto-a-imagen estándar no es suficiente para reproducir el comportamiento.
+El contrato de entrada es unificado: los píxeles blancos de la máscara se generan o editan, los negros se preservan, y el helper marca automáticamente como generado todo píxel que queda fuera de la fuente colocada, de modo que inpainting y outpainting comparten la misma interfaz. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO; la model card no detalla el proceso de entrenamiento más allá de la naturaleza del adaptador.
 
 ## Capacidades
 
-- Inpainting interno con máscaras arbitrarias: inserción, reemplazo o reestilización de objetos y regiones dentro de la imagen.
-- Outpainting: extensión del lienzo por cualquier lado, respetando la colocación de la fuente en el lienzo de salida.
-- Manejo de máscaras desconectadas y estructuras estrechas.
-- Ediciones mixtas que cruzan el borde de la imagen original.
-- Runtime de inferencia compartido entre el ejemplo de Hugging Face y los nodos estándar IMAGE/MASK de ComfyUI.
-- Soporte de prompts en inglés y chino.
-- Inferencia en ocho pasos mediante el adaptador DMD2 fijado.
-- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, visión general, audio ni modo thinking; el modelo es específicamente de edición de imágenes.
+- Edición de imágenes con máscaras de forma arbitraria y trazos a mano alzada.
+- Inpainting dentro del mismo lienzo.
+- Outpainting en una sola pasada hacia un lienzo mayor.
+- Edición de múltiples regiones desconectadas en una misma petición.
+- Manejo de máscaras estrechas, curvas y que cruzan el borde de la fuente.
+- Combinación de inpainting y outpainting en una sola solicitud.
+- Preservación de las regiones no enmascaradas mediante restricciones latentes alineadas por timestep.
+- Integración con ComfyUI mediante nodos específicos publicados por el autor.
+- Soporte de idiomas inglés y chino en los prompts.
 
 ## Casos de uso
 
-- Retoque fotográfico de producto: sustituir o reestilizar un objeto sobre una mesa manteniendo la iluminación y la perspectiva del resto de la escena, usando máscaras internas y el prompt descriptivo del nuevo objeto.
-- Extensión de lienzo para formatos de impresión: ampliar una ilustración o fotografía por cualquiera de los lados para adaptarla a relaciones de aspecto distintas, aprovechando el outpainting con colocación de la fuente en el lienzo de salida.
-- Edición de retratos en estudio: cambiar accesorios, ropa o peinado en una región concreta del retrato sin alterar el rostro ni el fondo, gracias a las restricciones de región conocida.
-- Restauración de ilustraciones botánicas o naturalistas: rellenar zonas desconectadas (por ejemplo, flores o insectos separados) manteniendo la textura de papel y el estilo pictórico original.
-- Creación de variaciones de paisajes: insertar elementos fantásticos o atmosféricos en regiones amplias de una fotografía de paisaje, conservando la coherencia de luz y perspectiva del resto del encuadre.
-- Integración en ComfyUI para pipelines de edición por lotes: usar los nodos IMAGE/MASK para aplicar ediciones con máscaras generadas automáticamente sobre colecciones de imágenes.
-- Prototipado de edición asistida en herramientas gráficas: combinar el runtime de ocho pasos con los scripts de ejemplo para construir interfaces de edición interactiva con latencia reducida.
+- Restauración y retoque fotográfico: eliminar objetos no deseados o rellenar huecos en una fotografía usando máscaras de forma libre, aprovechando la preservación estricta de las zonas no enmascaradas para no alterar el resto de la imagen.
+- Extensión de lienzo para composición editorial: ampliar una imagen hacia arriba, abajo o los lados en una sola pasada para adaptar el encuadre a formatos de revista o redes sociales, con continuidad natural del contenido generado.
+- Edición de producto en e-commerce: cambiar el color o el acabado de un artículo manteniendo intacto el fondo y la iluminación, gracias al inpainting con máscaras precisas sobre regiones concretas.
+- Sustitución de vistas en interiores: reemplazar la vista de una ventana o un espejo por otra escena mediante una máscara interna, preservando el marco y la estructura de la habitación.
+- Inserción de elementos desconectados: añadir objetos como insectos, plantas o accesorios en varias regiones separadas de la imagen en una única petición, útil en ilustración botánica o científica.
+- Edición mixta para personajes: combinar el cambio de vestuario (inpainting) con la extensión del encuadre para un cuerpo completo (outpainting) en una sola operación, como muestra el caso de retrato de la model card.
+- Integración en flujos de ComfyUI: incorporar los nodos publicados por el autor en pipelines de generación y edición para producción de contenido visual iterativo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card incluye una galería cualitativa de 12 casos generados con semilla 2026 y los mismos pesos del paso 4303 (edición interna de fotografía, outpainting de acuarela, outpainting 3D, retrato mixto, botánica con máscaras desconectadas, producto con estructura estrecha, paisaje complejo y accesorios femeninos), pero no se aportan métricas cuantitativas como FID, CLIP score, SSIM ni comparaciones numéricas con otros modelos.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- El adaptador LoRA ocupa aproximadamente 0,2 GB en disco; los requisitos de VRAM dependen del modelo base MOSS-Image-Base, cuyos detalles de tamaño no se especifican en la información disponible.
-- No se indican GPU recomendadas ni modelos concretos (A100, H100, RTX 4090, etc.) en la documentación proporcionada.
-- No se confirma si el modelo cabe en GPU de consumo; depende del modelo base, no documentado.
-- Opciones de despliegue: scripts PyTorch incluidos (`pipeline.py`, `anypaint.py`, `example.py`) y nodos de ComfyUI con workflow propio. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no son aplicables a un modelo de edición de imágenes de este tipo.
-- No se proporcionan datos de latencia ni throughput; únicamente se indica que la inferencia se realiza en ocho pasos con el adaptador DMD2.
+- VRAM estimada para inferencia: no disponible en la información proporcionada; depende del modelo base MOSS-Image-Base, no del adaptador (0,3 GB de repo).
+- GPU recomendadas: no disponible.
+- Compatibilidad con GPU de consumo: no disponible.
+- Opciones de despliegue: Diffusers con los scripts incluidos (`example.py`, `pipeline.py`, `anypaint.py`); nodos de ComfyUI publicados por el autor. El snippet autogenerado de Diffusers y los importadores estándar de LoRA no son compatibles.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la documentación proporcionada. No se han publicado comparaciones con otros adaptadores de inpainting u outpainting (por ejemplo, variantes de Stable Diffusion Inpaint, ControlNet o adaptadores similares) en la información disponible.
+| Modelo | Tipo | Contexto / máscara | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| MOSS AnyPaint | LoRA sobre MOSS-Image-Base | Máscaras arbitrarias, inpainting + outpainting en una pasada | apache-2.0 | Hugging Face, ComfyUI |
+| Krea 2 AnyPaint | Adaptador equivalente (referenciado en la model card) | Showcase compartido con MOSS AnyPaint | no disponible | no disponible |
+| MOSS-Image-Base | Modelo base de difusión | Sin adaptador de edición específico | no disponible | Hugging Face |
+
+No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Las capacidades descritas no garantizan conteos exactos, identidad ni geometría precisos; la propia model card advierte de esta limitación.
-- No es posible usar un cargador LoRA de texto-a-imagen convencional: se requiere el runtime específico con referencia limpia registrada y restricciones de región conocida.
-- El adaptador está fijado al paso 4303 y al adaptador DMD2 de ocho pasos; otros ajustes pueden degradar los resultados.
-- Idiomas soportados limitados a inglés y chino para los prompts.
-- No se documentan sesgos conocidos, riesgo de alucinación específico ni restricciones adicionales de licencia más allá de Apache 2.0, que permite uso comercial con atribución y aviso de cambios.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica una validación comunitaria muy limitada.
-- Las imágenes de la galería de demostración son fuentes sintéticas generadas con Krea, no fotografías reales, por lo que el rendimiento en dominios reales no está verificado en la información disponible.
+- El adaptador no es compatible con el snippet autogenerado de Diffusers ni con importadores estándar de LoRA; es obligatorio usar los scripts incluidos.
+- El contrato de máscara es estricto: píxeles blancos se generan, negros se preservan; un uso incorrecto de la máscara produce resultados no deseados.
+- Los idiomas soportados para prompts son inglés y chino; no se garantiza un rendimiento equivalente en castellano.
+- No se dispone de información sobre sesgos del modelo base ni sobre tasas de alucinación visual.
+- Aunque la licencia es Apache 2.0, el uso comercial debe verificarse también contra la licencia del modelo base MOSS-Image-Base, que no se detalla en la información.
+- Los showcases son imágenes sintéticas generadas con el modelo base sin modificar; no se aportan métricas cuantitativas de calidad.
+- No hay datos publicados de benchmarks, latencia ni requisitos de hardware específicos.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/yijunwang2/moss-anypaint
-- LoRA: `moss_anypaint_rank32.safetensors` (incluido en el repositorio)
-- Nodos y workflow de ComfyUI: https://github.com/alexw5702-afk/moss-anypaint
-- Releases de ComfyUI: https://github.com/alexw5702-afk/moss-anypaint/releases
+- Hugging Face: https://huggingface.co/yijunwang2/moss-anypaint
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
+- LoRA (descarga): moss_anypaint_rank32.safetensors (en el repositorio de Hugging Face)
+- Nodos ComfyUI: https://github.com/alexw5702-afk/moss-anypaint
+- Releases ComfyUI: https://github.com/alexw5702-afk/moss-anypaint/releases

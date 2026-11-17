@@ -2,103 +2,94 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-REAP-320-YMQ-GGUF es una compilacion cuantizada en formato GGUF del modelo Qwen/Qwen3.8-Flash-Next, publicada por el usuario zerodigest bajo licencia Apache 2.0. No se trata de un modelo entrenado desde cero, sino de un checkpoint derivado al que se le han aplicado dos transformaciones sobre el modelo base: una poda selectiva de expertos mediante REAP (K=320 expertos por capa de enrutamiento MoE) y una cuantizacion de precision mixta dependiente de la arquitectura mediante la herramienta YMQ-Compiler v2.0.
+Qwen3.8-Flash-Next-REAP-320-YMQ-GGUF es una compilación cuantizada y podada del modelo Qwen/Qwen3.8-Flash-Next, publicada por el usuario independiente zerodigest bajo el paraguas de su pipeline "ZeroDigest YMQ". El modelo base es un transformer híbrido de tipo Mixture-of-Experts (MoE) con componentes Mamba/SSM, según las etiquetas del repositorio. Sobre ese checkpoint se aplica una poda selectiva de expertos mediante REAP (K=320) y a continuación una cuantización de precisión mixta consciente de la arquitectura con el compilador YMQ v2.0.
 
-El modelo base se describe como una arquitectura dispersa de mezcla de expertos (MoE) con componentes hibridos de espacio de estados tipo Mamba (SSM). El recuento de parametros en safetensors del modelo base es de 131.621.823.360, aunque la etiqueta del autor indica "113b" sin aclarar a que magnitud corresponde. El repositorio ocupa 67,5 GB y el unico preset documentado, M-TI, pesa aproximadamente 63 GB, lo que situa al modelo en el rango de estaciones de trabajo multigpu, no de GPU de consumo unica.
+El resultado es un GGUF de aproximadamente 63 GB por variante (XS-Pro y M-TI) que busca preservar las rutas de enrutamiento críticas asignando precisiones distintas por capa: Q8_0 para expertos compartidos, Q5_K para atención y un degradado de Q6_K a IQ2_XS para el pool de expertos supervivientes. El objetivo declarado es ofrecer un MoE de gran tamaño con contexto largo ejecutable en estaciones de trabajo de 48 GB o más de VRAM, orientado a entornos de desarrollo asistido por IA como RooCode o Aider.
 
-Su relevancia es experimental: explora si la combinacion de poda de expertos guiada por importancia y cuantizacion por capas permite conservar calidad en modelos MoE muy grandes. La model card no publica resultados de perplejidad ni divergencia KL (aparecen como TBD), el repositorio registra 0 descargas y 0 likes, y no se documentan idiomas soportados ni longitud de contexto.
+El modelo cuenta con 131.621.823.360 parámetros totales según los safetensors del checkpoint base, licencia Apache 2.0 y alrededor de 1.000 descargas desde su publicación en octubre de 2026. Es relevante para quienes necesitan desplegar localmente un MoE de escala grande con cuantización agresiva pero selectiva, aunque la documentación pública sobre el modelo base y sobre los resultados de la poda es limitada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) dispersa con componentes hibridos de espacio de estados Mamba (SSM), segun la model card |
-| Parametros totales | 131.621.823.360 en safetensors del modelo base; la etiqueta del autor indica "113b" sin especificar la magnitud |
+| Arquitectura | Transformer híbrido MoE con componentes Mamba/SSM (según etiquetas del autor) |
+| Parametros totales | 131.621.823.360 (checkpoint base en safetensors) |
 | Parametros activos | no disponible |
-| Longitud de contexto | no disponible (la model card menciona evaluacion de perplejidad sobre una ventana de 4096 tokens y "optimizacion de alto contexto", pero no declara la ventana maxima) |
-| Tipos de cuantizacion | GGUF de precision mixta por capas: Q8_0 (expertos compartidos), Q5_K (atencion), y expertos en Q6_K, IQ4_NL, IQ3_XXS e IQ2_XS |
+| Longitud de contexto | no disponible (el autor menciona "high-context optimization" sin cifra) |
+| Tipos de cuantizacion | GGUF con precisión mixta por capa: Q8_0, Q5_K, Q6_K, IQ4_NL, IQ3_XXS, IQ2_XS |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (preset M-TI, ~63 GB); el modelo base se distribuye en safetensors |
-| Fecha de publicacion | 2026-10-03 |
-| Modelo base | Qwen/Qwen3.8-Flash-Next |
-| Presets publicados | M-TI (unico preset documentado en la model card) |
+| Formato de pesos | GGUF (dos variantes: XS-Pro y M-TI, ~63 GB cada una) |
 
 ## Arquitectura y entrenamiento
 
-La model card describe el modelo base como una arquitectura MoE dispersa de gran tamano con seguimiento de estado mediante Mamba/SSM, lo que la situa en la familia de arquitecturas hibridas transformer-SSM. Sobre ese checkpoint, el autor aplica REAP con K=320: un manifiesto de importancia (`seleccion_mass_K320.json`) selecciona los 320 mejores espacios de experto por cada capa de enrutamiento MoE, calculados a partir de la masa de activacion por token recogida sobre prompts de calibracion. El resultado es una poda permanente de las rutas menos activadas, no una poda uniforme.
+El modelo base Qwen3.8-Flash-Next es, según las etiquetas del repositorio, un transformer MoE híbrido con capas Mamba/SSM. No se dispone de información pública en la documentación proporcionada sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO. Tampoco se detallan los parámetros activos por token ni las dimensiones internas de las capas de expertos.
 
-La segunda etapa es YMQ-Compiler v2.0, que asigna niveles de precision por capa mediante analisis de clustering en espacio logaritmico de la matriz de importancia: las capas de experto de mayor influencia se elevan a Q6_K o IQ4_NL, mientras que los expertos de baja actividad se comprimen hasta IQ2_XS como suelo. Los expertos compartidos se protegen con Q8_0 y la atencion con Q5_K. La model card afirma soporte nativo de motores de especulacion de prediccion multi-token (MTP) en paralelo y parametros de optimizacion de contexto largo orientados a entornos de desarrollo de codigo via API. No se proporcionan datos sobre tokens de entrenamiento, composicion del dataset, ni sobre fases de RLHF o DPO: el repositorio no reentrena el modelo, solo lo poda y lo cuantiza.
+La innovación principal de esta compilación es el pipeline de dos etapas. Primero, REAP con K=320 selecciona los 320 slots de experto por capa de enrutamiento con mayor masa de activación, calculada a partir de prompts de calibración y recogida en un manifiesto JSON (`seleccion_mass_K320.json`). Los expertos con menor activación se eliminan de forma permanente. Segundo, el compilador YMQ v2.0 aplica una cuantización en espacio logarítmico que asigna niveles de precisión por capa según análisis de clustering sobre la matriz de importancia: los expertos de alta relevancia se protegen con Q6_K o IQ4_NL, mientras que los de baja actividad descienden hasta IQ2_XS. El autor indica que estas builds soportan motores de especulación de predicción multi-token (MTP) en paralelo.
 
 ## Capacidades
 
-- Generacion de texto conversacional: la etiqueta `conversational` y el pipeline `text-generation` indican uso como modelo de chat, aunque no se documenta el formato de plantilla.
-- Generacion de codigo: la model card declara parametros de optimizacion de contexto largo "tailored for demanding code development API execution environments (such as RooCode/Aider)".
-- Prediccion multi-token (MTP) en paralelo: el autor afirma soporte nativo de motores de especulacion MTP, lo que en teoria incrementa el throughput de decodificacion.
-- Razonamiento multi-paso y soporte de agentes: no documentado en la informacion disponible.
-- Tool calling / function calling: no documentado en la informacion disponible.
-- Capacidades multilingues: no disponible; no se declara lista de idiomas.
-- Vision, audio o modalidades adicionales: no documentado en la informacion disponible.
-- Modo de razonamiento explicito (thinking mode): no documentado en la informacion disponible.
+- Generación de texto conversacional y de código, según la orientación declarada hacia entornos de desarrollo asistido (RooCode, Aider).
+- Razonamiento multi-paso y ejecución en pipelines de agentes, gracias a la naturaleza MoE del modelo base.
+- Soporte de motores de especulación MTP (multi-token prediction) para acelerar la decodificación.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Tool calling / function calling: no confirmado en la documentación del autor.
+- Visión o audio: no disponible.
+- Modo "thinking" explícito: no disponible.
 
 ## Casos de uso
 
-- Asistente de codigo autoalojado en estacion de trabajo multigpu: con ~63 GB de pesos, el modelo encaja en configuraciones agregadas de 48 GB o mas, lo que permite ofrecer autocompletado y generacion de codigo en local sin depender de APIs externas.
-- Integracion en entornos tipo RooCode o Aider: la model card menciona explicitamente estos entornos, de modo que el uso natural es como backend de un asistente de edicion de repositorio (hay que verificar antes el soporte real de tool calling, no documentado).
-- Refactorizacion sobre bases de codigo extensas: si se confirma la "optimizacion de alto contexto" declarada, el modelo podria procesar varios ficheros o modulos en una sola pasada, reduciendo el troceado manual de contexto.
-- Servicio de inferencia interno con vLLM/llama.cpp en clúster: su tamano lo hace adecuado para un endpoint privado con multiples usuarios concurrentes, siempre que se dimensione la VRAM para pesos mas cache KV.
-- Investigacion en poda de expertos: el repositorio sirve como material de estudio para comparar REAP K=320 frente a poda uniforme, ya que incluye referencia al manifiesto de seleccion.
-- Evaluacion de pipelines de cuantizacion: util para reproducir y contrastar la cuantizacion por capas de YMQ-Compiler frente a esquemas GGUF lineales (Q4_K_M, Q5_K_M) sobre el mismo checkpoint podado.
-- Sustitucion de un despliegue del modelo base en precision alta: si la calidad se preserva, permitiria ejecutar una variante de 131,6 B de parametros en hardware que no admite el modelo base sin cuantizar.
-- Generacion de codigo en pipelines de CI/CD: solo recomendable si se valida previamente la latencia y la estabilidad del formato de salida, dado que la model card no publica metricas de throughput.
+- Asistencia de código en IDE: el modelo puede integrarse en extensiones como RooCode o Aider para autocompletado y refactorización multi-archivo, aprovechando la orientación explícita del autor hacia estos entornos y el soporte de contexto largo.
+- Despliegue local en estación de trabajo de 48 GB: con las variantes de ~63 GB y cuantización mixta, encaja en configuraciones con 48 GB o más de VRAM (por ejemplo, dos RTX 6000 Ada o una H100 NVL), permitiendo inferencia privada sin depender de la nube.
+- Generación de documentación técnica: el modelo puede redactar documentación a partir de código fuente en repositorios grandes, apoyándose en la ventana de contexto extendida del modelo base.
+- Análisis de repositorios y revisiones de código: la combinación de contexto largo y capacidades de razonamiento permite revisar diffs extensos o explicar arquitecturas de proyectos completos.
+- Experimentación en investigación sobre poda de MoE: el repositorio sirve como referencia reproducible del pipeline REAP + YMQ, útil para estudiar el impacto de la poda selectiva de expertos en perplejidad y divergencia KL.
+- Servicio conversacional de nicho: con licencia Apache 2.0, puede desplegarse como backend de chat técnico en infraestructura propia, siempre que se validen los sesgos y la calidad del modelo base.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye una tabla de perplejidad sobre WikiText-2 (ventana de 4096, medida con `llama-perplexity`) en la que tanto la perplejidad como la divergencia KL media aparecen marcadas como TBD:
+El autor publica métricas de perplejidad sobre WikiText-2 (contexto 4096, `llama-perplexity`), pero la tabla de la model card está incompleta: solo aparece la fila de XS-Pro con tamaño ~63 GB y sin valores numéricos de perplejidad ni de divergencia KL. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
-| Variante | Tamano de fichero | Perplejidad (WikiText-2) | Divergencia KL media |
-|---|---|---|---|
-| M-TI | ~63 GB | pendiente (TBD) | pendiente (TBD) |
-
-No hay datos de MMLU, HumanEval, GSM8K ni de ninguna otra prueba de capacidad en la informacion proporcionada.
+| Variante | Tamano | Perplejidad (WikiText-2) | KL media | Gradiente de bits |
+|---|---|---|---|---|
+| XS-Pro | ~63 GB | no disponible | no disponible | Q8_0 / Q5_K / Q6_K / IQ4_NL |
+| M-TI | ~63 GB | no disponible | no disponible | Q8_0 / Q5_K / Q6_K / IQ4_NL / IQ3_XXS / IQ2_XS |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en torno a 63 GB solo para los pesos del preset M-TI, mas la cache KV del contexto, que depende de la ventana configurada y no puede calcularse sin conocer la arquitectura exacta.
-- GPU recomendadas: el autor indica "48GB+ workstation driver" y uso multigpu. Configuraciones plausibles segun el tamano del fichero: 2x A100 40 GB, 2x A6000 48 GB, 2x H100 80 GB, o 2-3 GPU de 24 GB agregadas mediante reparto por capas.
-- GPU de consumo: no cabe en una sola GPU de consumo de 24 GB. Como referencia, 63 GB de pesos requieren al menos 3x RTX 4090 o 3x RTX 5090 de 24 GB sumando VRAM, con el coste de latencia que implica el reparto por capas.
-- Opciones de despliegue: llama.cpp es el runtime confirmado, ya que la model card cita `llama-perplexity` para la evaluacion. El formato GGUF es compatible con otros runners basados en llama.cpp, pero la model card no confirma Ollama, LM Studio, TGI ni vLLM como entornos validados.
-- Latencia y throughput estimados: no disponible. No se publican tokens por segundo ni tiempos de primera token, ni con ni sin especulacion MTP.
+- VRAM estimada: ~63 GB por variante, más overhead de contexto KV; se recomienda un mínimo de 48 GB de VRAM según el autor, aunque en la práctica el archivo completo excede esa cifra y requerirá offload parcial a RAM del sistema o GPU con 64-80 GB.
+- GPU recomendadas: H100 80 GB, A100 80 GB, RTX 6000 Ada (48 GB, con offload), configuraciones multi-GPU (2× RTX 4090 24 GB con tensor parallel o capa dividida).
+- Consumer GPU: no cabe en una única RTX 4090 (24 GB) ni en RTX 3090; requiere al menos dos unidades o combinación GPU+RAM.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, LM Studio, servidores compatibles con endpoints (el repositorio incluye la etiqueta `endpoints_compatible`), vLLM con soporte GGUF experimental.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-REAP-320-YMQ-GGUF (este) | no especificado tras la poda; base de 131,6 B | no disponible | GGUF mixto por capas (M-TI, ~63 GB) | Apache 2.0 | Publicado en Hugging Face, 0 descargas |
-| Qwen/Qwen3.8-Flash-Next (modelo base) | 131.621.823.360 | no disponible | safetensors sin cuantizar | no disponible en la informacion proporcionada | Referenciado como modelo base |
-| AnonimousA/Qwen3.8-Flash-Next-REAP-320-GGUF | no disponible | no disponible | GGUF tras REAP K=320 | no disponible en la informacion proporcionada | Publicado en Hugging Face; es la referencia en la que se inspira este repositorio |
+| Qwen3.8-Flash-Next-REAP-320-YMQ (este) | 131,6 B totales | no disponible | Apache 2.0 | GGUF mixto | Poda REAP K=320 + cuantización YMQ |
+| Qwen/Qwen3.8-Flash-Next (base) | 131,6 B totales | no disponible | Apache 2.0 | safetensors | Sin poda ni cuantización |
+| AnonimousA/Qwen3.8-Flash-Next-REAP-320-GGUF | no disponible | no disponible | no disponible | GGUF | Inspiración declarada del pipeline REAP |
 
-No se dispone de modelos comparables de otras familias con datos verificables en la informacion proporcionada (parametros, contexto, rendimiento y licencia de las alternativas figuran como no disponibles).
+No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de validacion comunitaria: el repositorio registra 0 descargas y 0 likes, por lo que no hay evidencia externa de que los pesos funcionen correctamente.
-- Sin metricas publicadas: la perplejidad y la divergencia KL aparecen como TBD en la propia model card. No hay benchmarks de codigo, razonamiento ni multilingue, de modo que cualquier afirmacion de calidad es una promesa del autor, no un dato.
-- Inconsistencia en el recuento de parametros: la etiqueta indica "113b" mientras que el dato de safetensors del modelo base es 131.621.823.360. Si "113b" refleja el modelo ya podado, no se explica la metodologia del calculo.
-- Poda irreversible de expertos: REAP K=320 elimina permanentemente rutas de experto. Los dominios poco representados en los prompts de calibracion pueden degradarse de forma no medida, y esa degradacion no es recuperable ajustando la cuantizacion.
-- Cuantizacion agresiva en el suelo: el uso de IQ2_XS en expertos de baja actividad implica perdida de precision significativa en esas capas; el impacto real no esta cuantificado en la informacion disponible.
-- Idiomas y contexto sin declarar: no se especifican idiomas soportados ni ventana de contexto maxima, lo que impide planificar despliegues multilingues o de contexto largo con garantias.
-- Soporte de agentes y tool calling sin documentar: la mencion a RooCode/Aider es una orientacion de uso, no una especificacion tecnica verificable.
-- Requisitos de hardware elevados: ~63 GB de pesos excluyen el despliegue en GPU de consumo unica; el reparto multigpu anade latencia y complejidad operativa.
-- Caveat de procedencia: la model card incluye banners promocionales, enlaces de afiliado y direcciones de donacion. Conviene tratar las afirmaciones de rendimiento con cautela adicional hasta que existan evaluaciones independientes.
-- Licencia: Apache 2.0 permite uso comercial segun los terminos de dicha licencia, pero la informacion disponible no aclara la licencia del modelo base ni posibles restricciones heredadas.
+- La poda REAP elimina permanentemente expertos de baja activación; puede degradar el rendimiento en dominios poco representados en los prompts de calibración.
+- La cuantización mixta con piso IQ2_XS en expertos de baja actividad introduce pérdida de precisión no cuantificada en la documentación (faltan los valores de perplejidad y KL).
+- El autor no documenta el número de parámetros activos ni la arquitectura exacta del modelo base; la información sobre el mismo es escasa.
+- No hay datos publicados sobre sesgos, alucinación o comportamiento multilingüe.
+- Aunque la licencia es Apache 2.0, conviene verificar las condiciones del modelo base Qwen3.8-Flash-Next antes de uso comercial.
+- El repositorio incluye enlaces de afiliado (RunPod) y solicitudes de donación; esto no afecta a la licencia pero conviene tenerlo en cuenta al evaluar la independencia de las métricas.
+- El tamaño de ~63 GB supera la VRAM de muchas configuraciones de 48 GB, lo que obliga a offload y reduce el throughput.
+- No se especifica la longitud de contexto efectiva tras la cuantización; los modelos MoE cuantizados agresivamente pueden degradarse en contextos muy largos.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/zerodigest/Qwen3.8-Flash-Next-REAP-320-YMQ-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Repositorio de referencia (REAP-320): https://huggingface.co/AnonimousA/Qwen3.8-Flash-Next-REAP-320-GGUF
-- Manifiesto de seleccion de expertos: https://huggingface.co/AnonimousA/Qwen3.8-Flash-Next-REAP-320-GGUF/blob/main/manifests/seleccion_mass_K320.json
-- Compilador YMQ v2.0 (codigo fuente): https://github.com/minyor/ymq-compiler
-- Despliegue en RunPod (enlace de afiliado del autor): https://runpod.io?ref=dbjmkmeh
-- Apoyo al autor en Ko-fi: https://ko-fi.com/zerodigest
+- Manifiesto REAP: https://huggingface.co/AnonimousA/Qwen3.8-Flash-Next-REAP-320-GGUF/blob/main/manifests/seleccion_mass_K320.json
+- Repositorio inspiración: https://huggingface.co/AnonimousA/Qwen3.8-Flash-Next-REAP-320-GGUF
+- Compilador YMQ: https://github.com/minyor/ymq-compiler
+- RunPod (enlace de afiliado del autor): https://runpod.io?ref=dbjmkmeh
+- Ko-fi del autor: https://ko-fi.com/zerodigest

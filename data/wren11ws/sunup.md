@@ -2,90 +2,91 @@
 
 ## Resumen
 
-wren11ws/sunup es un repositorio alojado en Hugging Face por el usuario wren11ws. La unica informacion verificable disponible en el momento de redactar esta ficha es su identificador, su autoria, la licencia declarada (MIT), la region indicada en los tags (us) y las marcas temporales de creacion y ultima actualizacion (15 de septiembre de 2026, sin modificaciones posteriores). No consta pipeline declarado, ni idiomas soportados, ni descargas, ni interacciones de la comunidad.
+Scansion-LM (publicado en Hugging Face como `wren11ws/sunup`) es un modelo de lenguaje causal especializado en la generación de letras de canciones en inglés con estructura métrica y rímica controlada, pensado para el modo Custom de Suno Studio V6. Está desarrollado por el usuario `wren11ws` y se presenta como el componente central de un arnés de entrenamiento denominado "Scansion-LM Foundry", que incluye utilidades de extracción de métrica, tokenización, fine-tuning, evaluación y exportación.
 
-La model card publicada por el autor no contiene mas que la linea de metadatos de licencia; no se documenta arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento, capacidades ni proceso de evaluacion. El repositorio no incluye, segun la informacion disponible, una descripcion funcional que permita identificar que tipo de modelo es o para que tarea fue entrenado.
+Técnicamente es un fine-tune de `distilbert/distilgpt2`, un transformer decoder-only de 6 capas, 768 dimensiones de embedding y 12 cabezas de atención, con 81.914.880 parámetros totales y un vocabulario BPE de 50.257 tokens. La longitud de contexto nativa es de 1.024 tokens, aunque el autor indica que el entrenamiento se realizó con una ventana de 256 tokens.
 
-Por tanto, esta ficha se limita a reflejar el estado de la informacion publica. Cualquier dato tecnico sobre el modelo deberia considerarse no disponible hasta que el autor amplie la documentacion o publique los artefactos correspondientes. El unico dato con implicaciones practicas es la licencia MIT, que en principio permitiria uso comercial, modificacion y redistribucion, siempre que el titular de los derechos sea efectivamente quien la declara.
+Su relevancia es acotada y muy específica: no compite como modelo de propósito general, sino que aborda la generación de letras con esquemas de rima y pies métricos consistentes, un problema que los modelos base pequeños resuelven mal por falta de señal estructural. Con 722 descargas y 1 like en el momento de la consulta, es un proyecto de nicho orientado a creadores que trabajan con prompts estructurados de Suno.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible (no se indica que sea un modelo MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | MIT |
-| Formato de pesos | no disponible |
+| Arquitectura | Transformer decoder-only (GPT2LMHeadModel), 6 capas, 768 dim, 12 cabezas |
+| Parametros totales | 81.914.880 (81,9 M) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | 1.024 tokens (ventana de entrenamiento de 256 tokens) |
+| Tipos de cuantizacion | No disponible (pesos en safetensors; compatible con cuantizacion estandar de transformers/GGUF no documentada por el autor) |
+| Idiomas soportados | Inglés (`en` segun la model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (checkpoint de ~327 MB; repo de 1,3 GB) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos del repositorio. No se especifica si se trata de un transformer denso, un modelo de mezcla de expertos, una arquitectura de espacio de estados, un modelo hibrido o cualquier otra variante. Tampoco se indica el tipo de tarea (texto, vision, audio, multimodal) ni la familia de modelos de la que podria derivar.
+El modelo es un fine-tune directo de `distilgpt2`, es decir, un transformer decoder-only con atención causal estándar, sin mecanismos de atención lineal, decodificación especulativa ni arquitecturas híbridas. La configuración declarada en el checkpoint es de 6 capas, 768 dimensiones de embedding, 12 cabezas de atención y un vocabulario de 50.260 tokens (la model card indica 50.257 en la tabla y 50.260 en el bloque de checkpoint, una discrepancia menor del propio autor). Se carga con Transformers estándar mediante `AutoModelForCausalLM`, sin `auto_map` ni código personalizado.
 
-En cuanto al entrenamiento, no hay datos sobre volumen de tokens, composicion del dataset, fases de ajuste (SFT, RLHF, DPO), tecnicas de alineacion ni innovaciones tecnicas asociadas. No se dispone de informacion sobre el proceso de tokenizacion ni sobre el vocabulario empleado.
+El entrenamiento se realizó sobre extractos de letras originales y limpias, con 3.500 ejemplos y 300 pasos completados (300/300), alcanzando una pérdida de entrenamiento media de 4,0097. No se documenta el número total de tokens de entrenamiento, la composición exacta del dataset, ni si se aplicaron técnicas de RLHF, DPO o ajuste por preferencias. La innovación declarada no está en la arquitectura sino en el pipeline: extracción de pies métricos, esquemas de rima y secciones, tokenización con el tokenizer de GPT-2 y fine-tuning causal orientado a producir líneas rítmicas conformes a las reglas de scansion de Suno Studio V6.
 
 ## Capacidades
 
-No se ha publicado informacion sobre las capacidades del modelo. En concreto, no puede confirmarse ninguna de las siguientes:
-
-- Generacion de texto, razonamiento, generacion de codigo o matematicas.
-- Soporte de tool calling o function calling.
-- Soporte de agentes o razonamiento multi-paso.
-- Capacidades multilingues.
-- Capacidades especiales como modo de razonamiento explicito, vision o audio.
-
-Cualquier afirmacion al respecto seria especulativa y no debe utilizarse para tomar decisiones de adopcion.
+- Generación de texto causal en inglés con formato de prompt estructurado (`Title:`, `Idea:`, `Verse:`, `Chorus:`).
+- Generación de letras de canciones con densidad de rima y estructura métrica aprendida del corpus de entrenamiento.
+- Producción de secciones líricas diferenciadas (verso, estribillo) a partir de una idea temática.
+- Extracción de métrica, pies y esquemas de rima mediante el endpoint `/extract` del sidecar HTTP (funcionalidad del arnés, no del modelo en sí).
+- Ingesta por lotes de nuevas letras y reentrenamiento mediante los endpoints `/ingest-batch` y `/train` del sidecar en el puerto 8099.
+- Generación autoregresiva con parámetros de muestreo configurables (temperatura, `max_new_tokens`, `pad_token_id`, `eos_token_id`).
+- No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo thinking.
+- Capacidad multilingüe no disponible: el modelo está etiquetado únicamente para inglés.
 
 ## Casos de uso
 
-No es posible proponer casos de uso concretos y realistas sin conocer la tarea, la arquitectura, el tamano y el contexto del modelo. Los siguientes escenarios son unicamente marcos genericos de evaluacion que un desarrollador deberia aplicar una vez obtenida documentacion adicional:
-
-- Evaluacion exploratoria del repositorio: descargar los artefactos publicados (si existen) e inspeccionar los ficheros de pesos y configuracion para determinar la arquitectura real y el framework de origen.
-- Prueba de inferencia basica: cargar el modelo con la libreria correspondiente segun el formato de pesos detectado (transformers, llama.cpp, vLLM) y medir la coherencia de las salidas en una tarea generica.
-- Verificacion de licencia: confirmar con el autor la titularidad de los derechos y el alcance de la licencia MIT antes de cualquier uso comercial.
-- Analisis de idoneidad para tareas de texto: si el modelo resulta ser de lenguaje, comprobar calidad en resumen, clasificacion o generacion controlada.
-- Analisis de idoneidad para codigo: si el modelo resulta ser de codigo, medir tasa de compilacion y correccion en un conjunto de prueba propio.
-- Integracion en prototipos internos: uso en entornos de laboratorio sin exposicion a produccion hasta disponer de datos de rendimiento y seguridad.
+- Generación de letras para Suno Custom Mode: el modelo acepta un prompt con título, idea y etiqueta de sección, y devuelve líneas en inglés con rima y métrica consistentes, lo que encaja directamente con el flujo de trabajo de la herramienta para la que fue entrenado.
+- Prototipado rápido de estribillos: con `max_new_tokens` bajo (40-80) y temperatura en torno a 0,85, se pueden generar varias alternativas de estribillo para una misma idea y seleccionar la mejor, aprovechando la ventana de 256 tokens usada en entrenamiento.
+- Asistencia a compositores no angloparlantes: dado que el modelo solo genera inglés, se usa como generador de borradores que el autor luego adapta o traduce, apoyándose en la estructura de secciones que el modelo reproduce de forma fiable.
+- Herramienta educativa de métrica y rima: combinado con el endpoint `/extract` del arnés, permite analizar letras existentes en pies y esquemas de rima y compararlas con las generadas por el modelo, útil en talleres de escritura creativa.
+- Generación por lotes para catálogos musicales: el sidecar HTTP permite lanzar peticiones a `/infer` de forma programática, de modo que un pipeline puede producir decenas de borradores por tema para una biblioteca de canciones.
+- Filtrado y curación de corpus: el endpoint `/ingest-batch` permite incorporar letras nuevas al corpus `user_extracts.jsonl` y reentrenar el modelo, lo que sirve para adaptar el estilo a un género o artista concreto dentro de un proyecto de investigación.
+- Experimentación con modelos pequeños: por su tamaño (81,9 M de parámetros) y licencia Apache 2.0, es adecuado como banco de pruebas para estudiar cómo el fine-tuning sobre datos estructurados afecta a la métrica y la rima en modelos GPT-2 pequeños.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente reporta métricas de entrenamiento: pérdida media de 4,0097 tras 300 pasos sobre 3.500 ejemplos. No hay datos de MMLU, HumanEval, GSM8K ni de evaluaciones específicas de calidad lírica, rima o métrica.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible, al desconocerse el numero de parametros y la precision de los pesos.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: no disponible; dependera del formato de pesos, que tampoco se especifica.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: en fp32, el checkpoint ocupa aproximadamente 327 MB, por lo que la inferencia requiere menos de 1 GB de VRAM en la práctica (pesos más caché de activaciones y KV para 1.024 tokens).
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; una RTX 3060, RTX 4060 o superior ejecuta el modelo con holgura. También funciona en CPU para generación de pocos cientos de tokens.
+- Cabe en GPU consumer: sí, en prácticamente todas las GPU con al menos 2 GB de VRAM, e incluso en iGPU y CPU.
+- Opciones de despliegue: Transformers estándar (documentado por el autor), text-generation-inference (etiqueta `text-generation-inference` y `endpoints_compatible` en el repo), y el sidecar HTTP propio en el puerto 8099. No se documenta compatibilidad explícita con vLLM, llama.cpp u Ollama, aunque al ser un GPT-2 estándar es probable que sea convertible a GGUF; el autor no lo confirma.
+- Latencia y throughput estimados: no disponibles. Por el tamaño del modelo, se espera latencia de milisegundos por token en GPU consumer, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
-No es posible establecer una comparativa fiable: se desconoce la categoria del modelo (tamano, tarea, modalidad) y no hay datos de rendimiento publicados.
+| Modelo | Parametros | Contexto | Especialidad | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Scansion-LM (`wren11ws/sunup`) | 81,9 M | 1.024 tokens | Letras con métrica y rima para Suno | Apache 2.0 | Hugging Face, 722 descargas |
+| distilgpt2 (modelo base) | 82 M | 1.024 tokens | Generación de texto general en inglés | Apache 2.0 | Hugging Face, ampliamente usado |
+| GPT-2 small | 124 M | 1.024 tokens | Generación de texto general en inglés | MIT | Hugging Face |
+| Modelos de letras de mayor tamaño | No disponible | No disponible | Generación lírica | No disponible | No disponible |
 
-| Modelo | Parametros | Contexto | Licencia | Datos de rendimiento |
-|---|---|---|---|---|
-| wren11ws/sunup | no disponible | no disponible | MIT | no disponible |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
+La comparación relevante es con su propio modelo base: Scansion-LM no supera a distilgpt2 en capacidades generales y de hecho su pérdida de entrenamiento (4,01) refleja un ajuste sobre un corpus muy estrecho, lo que probablemente degrada su rendimiento fuera del dominio lírico. Frente a GPT-2 small, ofrece menos parámetros pero una especialización que el modelo original no tiene. No se dispone de datos de benchmarks que permitan comparar calidad de rima o métrica con alternativas.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: no hay model card tecnica, ficha de datos ni informe de evaluacion.
-- Imposibilidad de verificar capacidades, sesgos o tasas de alucinacion sin informacion sobre el entrenamiento y sin acceso a evaluaciones.
-- Riesgo de que el repositorio sea un artefacto de prueba, un experimento personal o un placeholder, dado el escaso contenido y la ausencia de descargas e interacciones.
-- La licencia MIT figura en los metadatos, pero no se acompana de informacion sobre la procedencia de los datos de entrenamiento, lo que impide descartar riesgos de derechos de terceros en los pesos publicados.
-- No se declaran idiomas soportados, por lo que no puede garantizarse un comportamiento correcto en castellano ni en ninguna otra lengua.
-- No debe utilizarse en produccion sin una evaluacion propia de calidad, seguridad y cumplimiento normativo.
-- Los resultados de busqueda web asociados a esta consulta no guardan relacion con el modelo (contenido comercial sobre prendas de vestir), por lo que no aportan ningun dato tecnico utilizable.
+- Modelo muy pequeño (81,9 M de parámetros) entrenado con solo 300 pasos y 3.500 ejemplos: la pérdida de 4,01 es alta y sugiere un ajuste limitado; es probable que la coherencia a nivel de canción completa sea baja.
+- Ventana de entrenamiento de 256 tokens frente a un contexto nativo de 1.024: las generaciones largas pueden degradarse más allá de la ventana usada en entrenamiento.
+- Solo inglés: no se ha entrenado ni evaluado en castellano ni en otros idiomas.
+- Riesgo de alucinación y de reproducción de fragmentos del corpus de entrenamiento, con posibles implicaciones de derechos de autor si las letras originales no eran libres; la model card afirma que son "extractos originales y limpios", pero no se aporta verificación.
+- Sesgos: no se documenta ningún análisis de sesgos; al entrenarse sobre letras de un dominio concreto, puede reproducir estereotipos temáticos y de género presentes en el corpus.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base distilgpt2 también es Apache 2.0, por lo que no hay restricciones adicionales conocidas; aun así, conviene verificar el archivo `LICENSE` del repo.
+- El arnés "Scansion-LM Foundry" se distribuye con instrucciones para PowerShell y un sidecar HTTP en `127.0.0.1:8099`; no se documenta su licencia por separado ni su madurez, y los endpoints `/train`, `/ingest-batch` e `/infer` no incluyen especificaciones de seguridad, autenticación ni límites de tasa.
+- No apto para producción como modelo de propósito general: su uso previsto es la generación de borradores líricos asistidos, no tareas de razonamiento, código o atención al cliente.
+- Discrepancia menor en la model card entre el tamaño de vocabulario declarado (50.257 frente a 50.260) que conviene tener en cuenta al integrar el tokenizer.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/wren11ws/sunup
-- Model card del autor: no contiene informacion tecnica mas alla de la licencia MIT
-- Paper: no disponible
-- Blog o anuncio: no disponible
-- Repositorio de codigo: no disponible
-- Demos: no disponible
+- Modelo en Hugging Face: https://huggingface.co/wren11ws/sunup
+- Modelo base: https://huggingface.co/distilbert/distilgpt2
+- Documentación de Transformers para GPT-2: https://huggingface.co/docs/transformers/model_doc/gpt2
+- Suno Studio: https://suno.com
+- No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales asociados al modelo.

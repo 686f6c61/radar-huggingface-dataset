@@ -5,7 +5,7 @@
   "author": "dpavlis",
   "url": "https://huggingface.co/dpavlis/Qwen3.8-27B-CTL",
   "created_at": "2026-11-15T19:31:46.000Z",
-  "updated_at": "2026-11-15T19:50:35.000Z",
+  "updated_at": "2026-11-16T11:21:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 21,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",

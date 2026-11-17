@@ -2,126 +2,117 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-16G64G-GGUF es una cuantización GGUF del modelo base Qwen/Qwen3.8-Flash-Next, publicada por el usuario zephel01. El modelo base es un transformer de tipo Mixture of Experts (MoE) con 176.943.899.520 parámetros totales (unos 177B), orientado a generación de texto conversacional y con capacidades declaradas en japonés, chino, inglés, código, matemáticas y tool calling. Esta ficha describe la cuantización, no el modelo original de Qwen.
+Qwen3.8-Flash-Next-IQ3_M-16G64G-GGUF es una cuantización GGUF del modelo Qwen3.8-Flash-Next, publicada por el usuario zephel01 bajo el paraguas del motor de inferencia Abyss. El objetivo declarado es hacer viable un modelo de arquitectura MoE de gran tamano (176.943.899.520 parametros totales, unos 177 mil millones) en un PC de consumo con una GPU de 16 GB de VRAM y 64 GB de RAM, manteniendo los 512 expertos del modelo original sin podar ninguno. Se distribuye en tres shards que suman 86,9 GB.
 
-La particularidad de esta publicación es su objetivo de despliegue: un PC con una GPU de 16 GB de VRAM y 64 GB de RAM. Para lograrlo se re-cuantizan los expertos del modelo NVFP4 original mediante LDLQ (una variante de cuantización con información de Hessian), manteniendo los 512 expertos sin poda. El resultado es un archivo de 86,9 GB con una media de 3,55 bits por peso, aproximadamente equivalente a IQ3_M.
+La receta de cuantización es mixta y no corresponde a un tipo estándar de llama.cpp: los tensores de expertos gate/up se cuantizan en IQ3_XXS (con la capa 2 en IQ3_S) y los down en IQ4_NL, lo que da una media de 3,55 bits por peso, aproximadamente equivalente a un IQ3_M. Los tensores no expertos (atención, router, experto compartido, embeddings y la tabla de embeddings por capa) se toman sin modificar de la cuantización UD-IQ3_XXS de unsloth. La tabla de embeddings por capa ocupa 28,8 GB en IQ4_NL y se lee desde SSD unas pocas filas por token.
 
-La relevancia de esta ficha es doble: por un lado documenta una técnica de cuantización de precisión mixta aplicada a un MoE de gran tamaño; por otro, advierte de que se trata de una versión BETA medida en un único equipo emulado (una RTX 5090 con la VRAM limitada a 16 GB), por lo que las cifras de rendimiento no deben extrapolarse sin verificación. La licencia es qwen-community-1.0, heredada del modelo base.
+El interés actual del artefacto es doble: por un lado demuestra que un MoE de este tamano puede ejecutarse en hardware de consumo con offload parcial de expertos a CPU y lectura de embeddings desde disco; por otro, la model card reporta una mejora sustancial de calidad frente a la referencia UD-IQ3_XXS (KL de 0,083 frente a 0,154, es decir, un 46 % menos) a costa de 4,9 GB adicionales de descarga. El estado es BETA y las mediciones provienen de un único equipo emulado.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer Mixture of Experts (MoE); arquitectura de motor `qwen4exp` en llama.cpp |
-| Parámetros totales | 176.943.899.520 (aprox. 177B), dato de safetensors del modelo base |
-| Parámetros activos | no disponible |
-| Longitud de contexto | no disponible (la model card cita pruebas con prompts de 8K tokens, sin especificar el máximo) |
-| Tipos de cuantización | Mezcla IQ3_XXS (56% de los bytes), IQ4_NL (42%), IQ3_S (1%); media de 3,55 bits por peso, aprox. IQ3_M |
-| Idiomas soportados | no disponible en metadatos; la model card menciona japonés, chino, inglés y código en los datos de calibración |
-| Licencia | qwen-community-1.0 (license_name: other) |
-| Formato de pesos | GGUF, 3 shards (`Qwen3.8-Flash-Next-16G64G-0000N-of-00003.gguf`) |
-| Tamaño del repo | 86,9 GB |
-| Memoria residente estimada | 57,6 GB (GPU + RAM, excluye la tabla de embeddings por capa de 28,8 GB) |
-| Modelo base | Qwen/Qwen3.8-Flash-Next (relación: quantized) |
-| Descargas / likes | 72 / 0 |
-| Fecha de creación | 2026-11-04 |
-| Última actualización | 2026-11-08 |
+| Arquitectura | MoE tipo transformer (arquitectura llama.cpp `qwen4exp`), 512 expertos por capa |
+| Parametros totales | 176.943.899.520 (~177 mil millones) |
+| Parametros activos | no disponible |
+| Longitud de contexto | hasta 32.768 tokens en el ejemplo de llama-server (`-c 32768`); máximo del modelo base no disponible |
+| Tipos de cuantizacion | mixta: expertos gate/up IQ3_XXS (capa 2 IQ3_S), expertos down IQ4_NL, media 3,55 bits/peso (~IQ3_M); tabla de embeddings por capa IQ4_NL (28,8 GB); tensores no expertos de UD-IQ3_XXS de unsloth |
+| Idiomas soportados | inglés y japonés (según etiquetas de la model card); cobertura real multilingüe del modelo base no disponible |
+| Licencia | qwen-community-1.0 (`license: other`) |
+| Formato de pesos | GGUF, 3 shards (`-00001-of-00003.gguf` a `-00003-of-00003.gguf`), 86,9 GB; `SHA256SUMS` incluido |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer MoE con 177B parámetros totales y 512 expertos, según se deduce de la model card ("All 512 experts are kept"). No se dispone de información sobre el número de parámetros activos por token, la composición exacta del dataset de preentrenamiento ni si hubo fases de RLHF o DPO; esos datos no están disponibles en la información proporcionada.
+El modelo base Qwen3.8-Flash-Next es un transformer con mezcla de expertos (MoE) de 512 expertos por capa, según se deduce de la receta de cuantización descrita en la model card. La arquitectura de llama.cpp utilizada es `qwen4exp`, soportada en el upstream `ac8e1694d` del 29 de octubre de 2026. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si el modelo base empleó RLHF o DPO; esos datos corresponden a la model card de Qwen y no están incluidos en la información proporcionada.
 
-El proceso de cuantización sí está documentado con detalle. Se parte del modelo en formato NVFP4 (magnitudedev/Qwen3.8-Flash-Next-NVFP4-GGUF) y se calculan matrices de Hessian sobre 1,26 millones de tokens de calibración: 181 prompts de conversación (44 en japonés, 20 en chino, 20 en inglés, 37 de código, 35 de matemáticas y 25 de tool calls), seguidos de texto mixto en los mismos idiomas y dominios. Con esos Hessians se aplica LDLQ para re-cuantizar cada experto: gate/up en IQ3_XXS (la capa 2 en IQ3_S) y down en IQ4_NL, con las escalas por experto plegadas en los pesos. Los tensores no expertos (atención, router, experto compartido, embeddings y la tabla de embeddings por capa) se copian sin cambios de la cuantización UD-IQ3_XXS de unsloth. La tabla de embeddings por capa ocupa 28,8 GB en IQ4_NL y se lee desde SSD unas pocas filas por token.
+La innovación técnica de este artefacto es la receta de cuantización: cada experto se recuantiza con LDLQ (Lattice-based Diagonal Linear Quantization) a partir de los pesos en formato NVFP4 de NVIDIA, manteniendo el layout de UD-IQ3_XXS de unsloth con gate/up un paso por encima. La calibración se realizó con los propios turnos de chat del modelo (181 prompts, 44 en japonés) más texto mixto en los mismos idiomas, e incluye una matriz de importancia (imatrix). No se eliminó ningún experto. El resultado es un fichero que mezcla varios tipos de cuantización por tensor en lugar de aplicar un tipo uniforme.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, con modo "thinking" (razonamiento explícito) activable en el servidor Abyss.
-- Generación de código: la model card reporta resultados en tareas de programación con tests ocultos (4/5 y 3/5 en dos semillas).
-- Razonamiento aritmético y resolución de problemas matemáticos, con datos de calibración específicos de matemáticas.
-- Soporte de tool calling / function calling, incluido en el conjunto de calibración (25 prompts dedicados).
-- Capacidades multilingües: japonés, chino e inglés verificados en las pruebas; el japonés está tratado de forma explícita (correo empresarial, explicaciones, resúmenes, literatura y aritmética).
-- Manejo de contexto largo: recuperación de información ("needle in a haystack") con prompts de 8K tokens verificada correctamente.
-- Compatibilidad con endpoints (tag `endpoints_compatible`).
-- No se declaran capacidades de visión ni de audio.
+- Generación de texto conversacional multi-turno, con pipeline declarado `text-generation` y compatibilidad con endpoints (`endpoints_compatible`).
+- Razonamiento y código: la model card evalúa explícitamente tareas de código (KL sobre código de 0,108) y prompts de programación reales.
+- Japonés: se reporta un KL específico para texto japonés de 0,176 y 5 de 5 respuestas correctas en prompts reales en japonés.
+- Contexto largo: se verificó la recuperación de una aguja (needle) a 8K tokens dentro de una ventana configurada de 32K.
+- Compatibilidad con llama.cpp y con el motor Abyss (v1.3.108 o superior), incluyendo servidor compatible con la API `/v1/chat/completions`.
+- Modo de razonamiento (thinking) activable, según las pruebas de uso real descritas.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente multi-paso: no disponible en la información proporcionada.
+- Visión o audio: no disponible; el pipeline es únicamente de texto.
 
 ## Casos de uso
 
-- Asistente conversacional local en japonés: el modelo responde correctamente a prompts de correo empresarial, explicaciones y resúmenes en japonés (10/10 en las pruebas del autor), lo que lo hace adecuado para equipos que necesitan un asistente privado en ese idioma sin depender de la nube.
-- Generación de código en estaciones de trabajo con GPU de 16 GB: con tool calling y modo thinking, puede integrarse en editores o pipelines locales; conviene aumentar `max_tokens` porque en algunas tareas el modelo agota el límite de 6.144 tokens razonando.
-- Procesamiento de documentos largos: la ventana de contexto permite analizar prompts de 8K tokens con recuperación fiable de información, útil para resúmenes de contratos o informes.
-- Automatización de flujos con function calling: los 25 prompts de tool calls en la calibración indican soporte para agentes que invocan APIs externas, aunque no hay benchmarks publicados de fiabilidad en agentes.
-- Despliegue en hardware de consumo: al caber en 16 GB de VRAM + 64 GB de RAM, permite ejecutar un MoE de 177B en un PC de escritorio con una RTX 5090 o similar, algo inviable con el modelo en precisión completa.
-- Inferencia con CPU offload en llama.cpp: con `--n-cpu-moe 39` (16,4 GB de VRAM) se obtienen 29-34 tok/s, suficiente para uso interactivo no intensivo.
-- Experimentación e investigación en cuantización: el repositorio documenta el pipeline completo (Hessians, LDLQ, merge) con las herramientas de trench-gguf, lo que sirve como referencia para reproducir el método en otros MoE.
+- Asistente de código en local: el modelo puede integrarse en un servidor llama.cpp o Abyss expuesto por API compatible con OpenAI y usarse desde editores o CLIs de programación. La ventana de 32K permite incluir varios ficheros de contexto y la cuantización mixta preserva mejor el comportamiento en código (KL 0,108) que la referencia UD-IQ3_XXS.
+- Atención al cliente en japonés e inglés: la model card reporta buen comportamiento en japonés (5/5 respuestas no vacías en prompts reales) y un KL específico de 0,176, lo que lo hace adecuado para despliegues bilingües en mercados japonés e inglés sobre hardware de consumo.
+- Procesamiento de documentos largos: con 32K tokens de contexto y la aguja a 8K verificada, sirve para resumir contratos, informes técnicos o hilos de correo extensos en una sola pasada.
+- Inferencia en estación de trabajo con GPU de 16 GB: el caso de uso central del artefacto es ejecutar un MoE de 177B en equipos con RTX 5090, RTX 4080/4090 con VRAM limitada o GPUs de 16 GB, descargando expertos a RAM y leyendo la tabla de embeddings desde SSD.
+- Laboratorio de investigación en cuantización: sirve como referencia reproducible para comparar recetas LDLQ frente a cuantizaciones estándar (UD-IQ3_XXS, GSQ-RCO IQ3_S, UD-IQ4_XS) midiendo KL y coincidencia de top token.
+- Prototipado de agentes conversacionales: el servidor Abyss expone `/v1/chat/completions`, lo que permite conectarlo a frameworks de orquestación existentes sin cambios de código, siempre que se acepte la latencia de decodificación de 29-34 tok/s.
+- Evaluación de despliegues con offload CPU/GPU: útil para medir el impacto de `--n-cpu-moe` en latencia y calidad antes de invertir en hardware con más VRAM.
 
 ## Benchmarks y rendimiento
 
-Los datos proceden de la model card del autor y se midieron en un PC emulado sobre una RTX 5090 (32 GB) con la VRAM limitada a 16 GB, 46 GB de RAM en un cgroup de 58 GB, 8 hilos de CPU, SSD NVMe y MTP drafter activado.
+La model card reporta métricas de divergencia KL frente al modelo en NVFP4 (10 secuencias retenidas de 1.023 tokens cada una, con código, inglés, chino, japonés y otros idiomas), medidas con el motor Abyss:
 
-| Métrica | Este archivo | unsloth UD-IQ3_XXS | ISTA-DASLab GSQ-RCO IQ3_S | unsloth UD-IQ4_XS |
-|---|---:|---:|---:|---:|
-| Descarga | 86,9 GB | 82,0 GB | 83,6 GB | 93,7 GB |
-| Residente (GPU + RAM) | 57,6 GB | 52,6 GB | 54,8 GB | 64,9 GB |
-| KL (10 secuencias) | 0,083 | 0,154 | 0,117 | 0,092 |
-| Mismo token top | 89,3% | 85,9% | 87,3% | 88,7% |
-| KL japonés | 0,176 | 0,317 | 0,251 | 0,195 |
-| KL código | 0,108 | 0,176 | 0,149 | 0,116 |
-| Decodificación (3 tareas de código) | 70,7 tok/s | 71,3 tok/s | 61,8 tok/s | no medido |
+| Modelo | Descarga | Residente (GPU + RAM) | KL (10 seqs) | Mismo top token | KL japonés | KL código |
+|---|---:|---:|---:|---:|---:|---:|
+| Este fichero (16G64G) | 86,9 GB | 57,6 GB | 0,083 | 89,3 % | 0,176 | 0,108 |
+| unsloth UD-IQ3_XXS | 82,0 GB | 52,6 GB | 0,154 | 85,9 % | 0,317 | 0,176 |
+| ISTA-DASLab GSQ-RCO IQ3_S | 83,6 GB | 54,8 GB | 0,117 | 87,3 % | 0,251 | 0,149 |
+| unsloth UD-IQ4_XS (tier 24 GB) | 93,7 GB | 64,9 GB | 0,092 | 88,7 % | 0,195 | 0,116 |
 
-Pruebas de uso real (servidor Abyss, thinking activado, dos semillas):
+Nota: la columna "residente" excluye la tabla de embeddings por capa de 28,8 GB, que se lee desde SSD.
 
-| Prueba | Este archivo | unsloth UD-IQ3_XXS |
-|---|---|---|
-| Japonés (5 prompts) | 10/10 correctos | 10/10 |
-| 5 tareas de código con tests ocultos | 4/5 y 3/5 | 5/5 y 4/5 |
-| Prompt de 8K, needle | OK / OK | OK / OK |
-| Respuestas vacías o eco del prompt | ninguno | ninguno |
-| Procesamiento de prompt (8K) | 1.618-1.627 tok/s | 1.729-1.747 tok/s |
+Rendimiento de velocidad medido en un PC emulado (RTX 5090 limitada a 16 GB de VRAM, tier de RAM de 46 GB dentro de un cgroup de 58 GB):
 
-En llama.cpp con `--n-cpu-moe 39`: 29-34 tok/s. No hay benchmarks estándar (MMLU, HumanEval, GSM8K) publicados en la información disponible.
+| Motor / configuración | Velocidad en tareas de código |
+|---|---:|
+| Este fichero con Abyss | 70,7 tok/s |
+| unsloth UD-IQ3_XXS con Abyss | 71,3 tok/s |
+
+Con llama.cpp (`-ngl 99 --n-cpu-moe 39 -c 32768`) la decodificación medida fue de 29-34 tok/s, con 16,4 GB de VRAM consumidos. En prompts reales: japonés 5/5, código 3/5, aguja a 8K encontrada.
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM: 16 GB como objetivo de diseño; el archivo completo requiere 57,6 GB residentes entre GPU y RAM, más lectura desde SSD de la tabla de embeddings por capa (28,8 GB).
-- RAM: 64 GB en el equipo objetivo; la model card recomienda `STRATA_GLM_RAM_GB=46` en Abyss.
-- GPU recomendadas: el autor midió sobre una RTX 5090 con VRAM limitada a 16 GB; no hay mediciones en otras GPU. Cualquier GPU de 16 GB o más con buen ancho de banda debería poder ejecutarlo, pero no está verificado.
-- Cabe en GPU de consumo: sí, en el sentido de que el diseño apunta a una GPU de 16 GB más RAM del sistema; no cabe completo en VRAM de una sola tarjeta de consumo.
-- Opciones de despliegue: Abyss v1.3.108 o superior (con empaquetado previo mediante `tools/iq_pack.py` y `--glm-pack`) y llama.cpp (arquitectura `qwen4exp`, upstream `ac8e1694d` del 2026-10-29). No se mencionan vLLM, TGI ni Ollama.
-- Rendimiento: 70,7 tok/s en decodificación y 1.618-1.627 tok/s de procesamiento de prompt en Abyss sobre el equipo emulado; 29-34 tok/s en llama.cpp con offload de 39 capas MoE a CPU.
+- VRAM estimada: 16 GB es el objetivo de diseño; con llama.cpp y `--n-cpu-moe 39` se midieron 16,4 GB, por lo que en una tarjeta real de 16 GB conviene subir `--n-cpu-moe` a 40 o más.
+- RAM: 64 GB en el equipo objetivo; el tier de RAM configurado en Abyss es `STRATA_GLM_RAM_GB=46` dentro de un cgroup de 58 GB.
+- Almacenamiento: 86,9 GB de descarga más espacio para la caché del motor; se recomienda SSD por la lectura de la tabla de embeddings por capa (28,8 GB) unas pocas filas por token.
+- GPU recomendadas: RTX 5090 (objetivo de las pruebas), cualquier GPU de 16 GB (RTX 4080, RTX 4060 Ti 16 GB, A4000); también funciona en DGX Spark (128 GB) con los mismos ficheros. Para el tier de 24 GB existe el repo IQ3_M-24G64G (93,7 GB); para 12 GB + 32 GB, el E448-IQ2_M (67,5 GB, 448 de 512 expertos).
+- Cabe en GPU de consumo: sí, con offload parcial de expertos a CPU y lectura de embeddings desde disco.
+- Opciones de despliegue: Abyss v1.3.108 o superior (recomendado, con `setup-deepseek.sh`/`.bat`), llama.cpp con arquitectura `qwen4exp` (upstream `ac8e1694d` del 2026-10-29). vLLM, TGI y Ollama no están documentados en la información disponible.
+- Latencia y throughput: 70,7 tok/s en el PC emulado con Abyss; 29-34 tok/s con llama.cpp y `--n-cpu-moe 39`. Muestreo recomendado: temperature 1.0, top_p 0.95, top_k 20.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Formato | Tamaño | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Calidad (KL vs NVFP4) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este archivo (zephel01, 16G64G) | 177B (MoE) | GGUF mixto IQ3/IQ4 | 86,9 GB | qwen-community-1.0 | Objetivo 16 GB VRAM + 64 GB RAM; KL 0,083 |
-| unsloth UD-IQ3_XXS | 177B (MoE) | GGUF | 82,0 GB | qwen-community-1.0 | Referencia de calidad; KL 0,154; 71,3 tok/s |
-| ISTA-DASLab GSQ-RCO IQ3_S | 177B (MoE) | GGUF | 83,6 GB | qwen-community-1.0 | KL 0,117; 61,8 tok/s |
-| unsloth UD-IQ4_XS | 177B (MoE) | GGUF | 93,7 GB | qwen-community-1.0 | Nivel de 24 GB de VRAM; KL 0,092 |
-| zephel01 IQ3_M-24G64G | 177B (MoE) | GGUF | no disponible | qwen-community-1.0 | Variante para GPU de 24 GB |
+| Este fichero (16G64G) | ~177B totales, 512 expertos | 32K en pruebas | 0,083 | qwen-community-1.0 | GGUF, 86,9 GB |
+| unsloth UD-IQ3_XXS | mismo modelo base | no disponible | 0,154 | según modelo base | GGUF, 82,0 GB |
+| ISTA-DASLab GSQ-RCO IQ3_S | mismo modelo base | no disponible | 0,117 | según modelo base | GGUF, 83,6 GB |
+| unsloth UD-IQ4_XS (tier 24 GB) | mismo modelo base | no disponible | 0,092 | según modelo base | GGUF, 93,7 GB |
 
-Todas las alternativas comparten el mismo modelo base y licencia; la diferencia está en el equilibrio entre tamaño, calidad (KL) y hardware objetivo. No se dispone de comparaciones con modelos de otros desarrolladores.
+Las tres alternativas son cuantizaciones del mismo Qwen3.8-Flash-Next, por lo que la comparación relevante es de receta, tamano y calidad, no de arquitectura. Frente a UD-IQ3_XXS, este fichero mejora el KL un 46 % con 4,9 GB más de descarga y una velocidad prácticamente idéntica en Abyss. Frente a UD-IQ4_XS, ofrece un KL ligeramente mejor (0,083 frente a 0,092) con 6,8 GB menos de descarga y 7,3 GB menos de memoria residente, a cambio de requerir un tier de 16 GB + 64 GB en lugar de 24 GB. No se dispone de comparación con modelos de otros desarrolladores del mismo tamano en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Versión BETA: las mediciones se hicieron en un único PC emulado (RTX 5090 con VRAM limitada a 16 GB); no hay datos de GPU reales de 16 GB ni de otros tamaños de RAM.
-- Calidad inferior a unsloth UD-IQ3_XXS en código: 7 de 10 frente a 9 de 10 en las pruebas del autor; en dos fallos el modelo agotó el límite de 6.144 tokens razonando, por lo que conviene aumentar `max_tokens` en tareas de ese tipo.
-- Riesgo de sobrepensamiento ("overthinking") en tareas que afectan a todas las builds de Qwen3.8, según la model card.
-- El archivo es 4,9 GB más grande que UD-IQ3_XXS, lo que reduce el margen de memoria en equipos ajustados.
-- La tabla de embeddings por capa (28,8 GB) se lee desde SSD; un almacenamiento lento degradará el rendimiento.
-- No hay información sobre sesgos, idiomas oficialmente soportados ni límite máximo de contexto; los metadatos de idioma están vacíos.
-- Licencia qwen-community-1.0: es una licencia comunitaria con posibles restricciones de uso comercial; debe revisarse el texto completo antes de un despliegue en producción.
-- Solo se documentan motores Abyss y llama.cpp; no hay soporte verificado en vLLM, TGI u Ollama.
-- No se han publicado benchmarks estándar (MMLU, HumanEval, GSM8K) para esta cuantización.
+- Estado BETA: las mediciones provienen de un único PC emulado (RTX 5090 capada a 16 GB); el autor solicita reportes de GPUs reales de 16 GB y de otros tamanos de RAM.
+- El nombre "IQ3_M" es aproximado: los ficheros mezclan IQ3_XXS, IQ4_NL e IQ3_S, por lo que no es una cuantización estándar de llama.cpp y las herramientas que asuman un tipo uniforme pueden dar resultados inesperados.
+- La tabla de embeddings por capa (28,8 GB) se lee desde SSD en cada token; sin SSD rápido el rendimiento puede degradarse notablemente y el desgaste del disco es una consideración a largo plazo.
+- El offload de expertos a CPU (`--n-cpu-moe`) es imprescindible en GPUs de 16 GB, lo que limita el throughput a 29-34 tok/s en llama.cpp, muy por debajo de lo que obtendría el modelo en VRAM completa.
+- Cobertura idiomática declarada limitada a inglés y japonés; el rendimiento en castellano no está documentado y el KL se midió sobre todo en inglés, japonés y código.
+- Riesgo de alucinación: no se han publicado evaluaciones de factualidad ni de sesgos en la información disponible; al ser una cuantización de 3,55 bits/peso, es esperable cierta degradación adicional frente al modelo en precisión completa, especialmente en razonamiento matemático y contextos muy largos.
+- Licencia `qwen-community-1.0` (marcada como `other`): conviene revisar los términos del modelo base antes de uso comercial; la model card enlaza al LICENSE de Qwen.
+- Compatibilidad: requiere Abyss v1.3.108+ o un llama.cpp con soporte de la arquitectura `qwen4exp` (upstream `ac8e1694d`); versiones anteriores no cargarán el modelo.
+- La recuperación de contexto largo solo se verificó con una aguja a 8K dentro de una ventana de 32K; el comportamiento más allá de esa distancia no está documentado.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/zephel01/Qwen3.8-Flash-Next-16G64G-GGUF
+- Repositorio Hugging Face: https://huggingface.co/zephel01/Qwen3.8-Flash-Next-IQ3_M-16G64G-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
-- Variante para 24 GB de VRAM: https://huggingface.co/zephel01/Qwen3.8-Flash-Next-IQ3_M-24G64G-GGUF
-- Variante para 12 GB + 32 GB: https://huggingface.co/zephel01/Qwen3.8-Flash-Next-E448-IQ2_M-12G32G-GGUF
-- Variante 16G64G / 32G96G (en preparación): https://huggingface.co/zephel01/Qwen3.8-Flash-Next-16G64G-32G96G-GGUF
-- Modelo NVFP4 de origen: https://huggingface.co/magnitudedev/Qwen3.8-Flash-Next-NVFP4-GGUF
 - Motor Abyss: https://github.com/zephel01/Abyss
-- Herramientas de cuantización trench-gguf: https://github.com/zephel01/trench-gguf
-- Formulario de reporte de benchmarks: https://github.com/zephel01/Abyss/issues/new?template=bench.md&title=Bench:+Qwen3.8-Flash-Next+16G64G+on+YOUR_GPU
+- Variante 12G32G (12 GB GPU + 32 GB RAM): https://huggingface.co/zephel01/Qwen3.8-Flash-Next-E448-IQ2_M-12G32G-GGUF
+- Variante 24G64G (24 GB GPU + 64 GB RAM): https://huggingface.co/zephel01/Qwen3.8-Flash-Next-IQ3_M-24G64G-GGUF
+- Variante DGX Spark: https://huggingface.co/zephel01/Qwen3.8-Flash-Next-DGX-Spark-GGUF
+- Formulario para reportar resultados de benchmarks: https://github.com/zephel01/Abyss/issues/new?template=bench.md&title=Bench:+Qwen3.8-Flash-Next+16G64G+on+YOUR_GPU

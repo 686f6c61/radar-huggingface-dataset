@@ -5,7 +5,7 @@
   "author": "hongzhuyi",
   "url": "https://huggingface.co/hongzhuyi/coserve-review-flash-next",
   "created_at": "2026-11-16T08:47:04.000Z",
-  "updated_at": "2026-11-16T09:11:52.000Z",
+  "updated_at": "2026-11-16T09:43:51.000Z",
   "license": "swift-open-license-1.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -44,8 +44,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "hongzhuyi/coserve-preview-flash-next",
+  "renamed_at": "2026-11-17T06:52:41.910Z",
   "benchmarks": [],
   "sources": []
 }

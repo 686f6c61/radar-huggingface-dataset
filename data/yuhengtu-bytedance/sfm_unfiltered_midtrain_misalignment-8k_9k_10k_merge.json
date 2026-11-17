@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 45,
+  "downloads_30d": 16,
   "trending_score": 0,
   "parameters": 6856253440,
   "parameters_human": "6.86B",
@@ -42,8 +42,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-8k_9k_10k_simpleavg_merge",
+  "renamed_at": "2026-11-17T10:51:04.907Z",
   "benchmarks": [],
   "sources": [
     {

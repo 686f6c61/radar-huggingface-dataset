@@ -5,7 +5,7 @@
   "author": "iaac-maai",
   "url": "https://huggingface.co/iaac-maai/day4-group3-ai_methods_MumbaiRentals",
   "created_at": "2026-11-14T10:22:29.000Z",
-  "updated_at": "2026-11-14T19:06:08.000Z",
+  "updated_at": "2026-11-16T14:29:40.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "tabular-regression",
@@ -14,6 +14,8 @@
   "tags": [
     "pytorch",
     "joblib",
+    "iaac-maai",
+    "ai-methods-1",
     "scikit-learn",
     "tabular-regression",
     "housing",
@@ -39,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "iaac-maai/day4-group3-mumbai-rent-mlp",
+  "renamed_at": "2026-11-17T06:58:10.063Z",
   "benchmarks": [],
   "sources": []
 }

@@ -2,86 +2,101 @@
 
 ## Resumen
 
-xamiuz1.1 es un ajuste fino (fine-tuning) del modelo Meta Llama 3.1 8B Instruct, publicado por el usuario xamiuz en Hugging Face. Se trata de un modelo derivado de la versión cuantizada en 4 bits de Unsloth (unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit), entrenado con la librería Unsloth y la pila TRL/transformers. La model card es mínima: no documenta el dataset de entrenamiento, el objetivo del ajuste ni los hiperparámetros utilizados, por lo que la información disponible sobre el proceso de entrenamiento es muy limitada.
+Xamiuz 1.1 es un ajuste fino mediante QLoRA de 4 bits sobre Meta-Llama-3.1-8B-Instruct, desarrollado por Xamiuz AI (Pandu Wirayuda) y publicado en Hugging Face. El modelo se distribuye como adaptadores LoRA de 16 bits (~185 MB) y como pesos cuantizados GGUF Q4_K_M, y está orientado a tres nichos concretos: ingeniería de software multilingüe, razonamiento académico formal en indonesio y ejecución autónoma de herramientas para la manipulación de archivos y documentos.
 
-El modelo hereda la arquitectura y las capacidades del Llama 3.1 8B Instruct original: un transformer decoder-only de 8.030 millones de parámetros con una ventana de contexto de 128.000 tokens, entrenado originalmente por Meta con datos multilingües y alineado mediante RLHF y DPO. El ajuste fino de xamiuz se ha realizado presumiblemente sobre una GPU de consumo con Unsloth, que acelera el entrenamiento mediante kernels optimizados y reduce el uso de memoria.
+El modelo conserva la arquitectura LlamaForCausalLM de 8.030.261.248 parámetros del modelo base, pero el autor documenta una ventana de contexto efectiva reducida a 2.048-4.096 tokens, muy por debajo de los 128.000 tokens nativos de Llama 3.1. El entrenamiento combina datasets abiertos (CodeAlpaca-20k, IndoMMLU, Indonesian Natural Dialog) con datos SFT internos propietarios orientados a trayectorias de tool calling, auditoría documental y citación científica.
 
-La relevancia de este modelo es limitada en el momento de su publicación: cuenta con cero descargas y cero likes, no incluye documentación sobre el propósito del ajuste ni resultados de evaluación, y el repositorio ocupa solo 0,2 GB (lo que sugiere pesos en precisión reducida o un subconjunto de los mismos). Debe tratarse como un experimento personal sin garantías de calidad ni de reproducibilidad.
+Su relevancia actual es limitada pero específica: es un ejemplo de ajuste fino de bajo coste con Unsloth sobre una base consolidada, empaquetado para inferencia offline en CPU o GPU de consumo mediante LM Studio, llama.cpp u Ollama. El propio autor lo etiqueta como "Active Development Preview", por lo que no debe considerarse una versión estable para producción.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Llama 3.1) |
-| Parámetros totales | 8.030 millones (heredados del modelo base) |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | 128.000 tokens (heredada del modelo base) |
-| Tipos de cuantización | No disponible (el modelo base de partida es bnb-4bit; el repo contiene safetensors) |
-| Idiomas soportados | Inglés (declarado en la model card); el modelo base soporta oficialmente 8 idiomas |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Arquitectura | LlamaForCausalLM (transformer decoder-only) |
+| Parametros totales | 8.030.261.248 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 2.048 - 4.096 tokens (según model card) |
+| Tipos de cuantizacion | GGUF Q4_K_M; adaptadores LoRA en 16 bits (~185 MB) |
+| Idiomas soportados | Indonesio (id) e inglés (en) |
+| Licencia | Llama 3.1 Community License Agreement |
+| Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es Llama 3.1 8B Instruct, un transformer decoder-only con atención por grupos (GQA), activación SwiGLU, normalización RMSNorm y embeddings rotatorios (RoPE). Meta entrenó el modelo original con aproximadamente 15 billones de tokens y lo alineó mediante RLHF y DPO. La ventana de contexto nativa es de 128.000 tokens.
+La base es un transformer decoder-only estándar de Llama 3.1 con 8.000 millones de parámetros. El ajuste se realizó mediante PEFT QLoRA de 4 bits con la librería Unsloth, lo que permite entrenar adaptadores de bajo rango sobre los pesos cuantizados del modelo base sin modificar la arquitectura. El resultado se distribuye como adaptadores LoRA de 16 bits y como GGUF Q4_K_M fusionado.
 
-El ajuste fino de xamiuz se realizó con Unsloth, una librería que implementa kernels Triton personalizados para acelerar el entrenamiento y reducir el consumo de VRAM, combinada con TRL. La model card únicamente indica que el entrenamiento fue "2x más rápido" gracias a Unsloth. No se especifica el dataset, el número de pasos, la tasa de aprendizaje, si se usó LoRA/QLoRA ni si se aplicaron técnicas de alineación adicionales. El repositorio ocupa 0,2 GB, un tamaño anómalamente pequeño para un modelo de 8B en safetensors de precisión completa (que rondaría los 16 GB), lo que sugiere pesos cuantizados, un adaptador LoRA o una subida incompleta.
+El corpus de entrenamiento documentado suma aproximadamente 6.000 muestras de datasets abiertos (2.000 de CodeAlpaca-20k, 2.000 de IndoMMLU y 2.000 de Indonesian Natural Dialog) más varios conjuntos SFT internos propietarios: trayectorias de tool calling para generación de PDF, Word, Excel, PPTX y diagramas Mermaid; auditoría de documentos administrativos indonesios (Surat Keputusan, BAST, e-KTP, facturas); y síntesis de referencias científicas con metadatos DOI/OpenAlex. El autor menciona además un mecanismo de "Flywheel Continuous On-Device Experience Memory" que recopila localmente interacciones exitosas, aunque no se detalla su implementación técnica ni si afecta a los pesos publicados. No se documenta RLHF ni DPO explícito.
 
 ## Capacidades
 
-- Generación de texto y razonamiento general, heredados del Llama 3.1 8B Instruct.
-- Generación de código y resolución de problemas matemáticos básicos.
-- Soporte de tool calling y function calling (nativo en Llama 3.1 Instruct).
-- Capacidad para flujos de agentes y razonamiento multi-paso.
-- Capacidades multilingües del modelo base (8 idiomas oficiales), aunque la model card solo declara inglés.
-- No se documentan capacidades de visión ni audio.
-- No se documenta un modo "thinking" explícito.
+- Generación de texto conversacional en indonesio e inglés, con especial énfasis en registro formal y administrativo indonesio.
+- Generación, análisis y depuración de código en TypeScript, JavaScript, Go, Rust, Java, C++, Python, SQL y Bash.
+- Razonamiento académico formal en dominios de derecho, medicina, ciencias exactas, historia y sociología, entrenado sobre IndoMMLU.
+- Tool calling estructurado mediante etiquetas `<tool_call>` para operaciones de sistema de archivos: `write_file`, `create_pdf`, `create_word`, `create_excel`, `create_flowchart` y `execute_command`.
+- Generación de documentos ofimáticos (PDF, DOCX, XLSX, PPTX) y diagramas Mermaid a partir de instrucciones en lenguaje natural.
+- Extracción de datos estructurados de documentos administrativos y financieros indonesios (e-KTP, facturas, BAST, kuitansi).
+- Síntesis de referencias bibliográficas en formatos DOI, OpenAlex, IEEE y APA.
+- Auditoría de accesibilidad según WCAG 2.1 AA (verificación de ratio de contraste).
+- No se documentan capacidades de visión funcionales pese a la mención a "native vision" en el estado del proyecto; el modelo base Llama 3.1-8B-Instruct es exclusivamente textual.
 
 ## Casos de uso
 
-- Prototipado de asistentes conversacionales: el modelo puede gestionar diálogos multi-turno con contexto largo (hasta 128.000 tokens heredados), útil para pruebas de concepto en las que se quiera evaluar un ajuste fino personalizado.
-- Experimentación con fine-tuning: sirve como referencia para desarrolladores que quieran reproducir el flujo de Unsloth + TRL sobre Llama 3.1 8B Instruct.
-- Generación de código en entornos de desarrollo: puede integrarse en editores o pipelines para autocompletar y explicar fragmentos de código, aunque sin garantías de calidad por la falta de evaluación.
-- Extracción de información de documentos largos: la ventana de contexto permite procesar contratos o informes extensos en una sola pasada.
-- Clasificación y etiquetado de texto: mediante prompts few-shot para tareas de categorización.
-- Base para investigación académica sobre ajuste fino eficiente en memoria: el modelo ilustra el uso de QLoRA/Unsloth sobre un modelo de 8B en hardware de consumo.
+- Automatización de back-office administrativo en Indonesia: el modelo puede extraer campos estructurados de e-KTP, facturas y BAST y volcarlos a Excel o PDF mediante sus herramientas de sistema de archivos, reduciendo la transcripción manual en flujos de procurement.
+- Generación de documentación técnica multilingüe: a partir de un repositorio o una especificación, produce README, comentarios y guías en indonesio e inglés para stacks TypeScript, Go, Rust o Python, aprovechando el entrenamiento sobre CodeAlpaca.
+- Asistente de desarrollo con ejecución de comandos: integrado en un agente local, puede invocar `execute_command` y `write_file` para scaffolding de proyectos, generación de Dockerfiles multi-stage o creación de APIs REST en Go.
+- Auditoría documental y de accesibilidad: revisión de contratos, surat dinas y material corporativo verificando estructura formal y contraste WCAG 2.1 AA, útil en equipos de diseño y compliance.
+- Soporte a investigación académica: síntesis de estado del arte y formateo de citas en APA o IEEE a partir de metadatos DOI/OpenAlex, adecuado para revisores y estudiantes indonesios.
+- Despliegue offline en entornos con air-gap: al distribuirse como GGUF Q4_K_M y ejecutarse en llama.cpp u Ollama sobre CPU, encaja en organismos o empresas que no pueden enviar datos a la nube.
+- Generación de diagramas de arquitectura: produce diagramas Mermaid de microservicios o flujos de proceso a partir de descripciones textuales, exportables a imagen en pipelines de documentación.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye evaluaciones propias ni comparaciones con el modelo base.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 16 GB en FP16, 8-9 GB en cuantización de 8 bits y 5-6 GB en 4 bits (estimaciones para un modelo de 8B; no verificadas para este ajuste concreto).
-- GPU recomendadas: A100 40/80 GB o H100 para FP16 con contexto largo; RTX 4090 (24 GB) para FP16 sin contexto extendido; RTX 3090/4080 para cuantización 8 bits.
-- Cabe en GPU de consumo: sí, en 4 bits cabe en tarjetas con 8 GB o más (RTX 3060 Ti, RTX 4060, etc.).
-- Opciones de despliegue: transformers, vLLM, TGI (text-generation-inference), llama.cpp y Ollama (previa conversión a GGUF).
+- VRAM estimada para GGUF Q4_K_M: aproximadamente 5-6 GB, suficiente para GPUs de consumo de 8 GB (RTX 3060 Ti, RTX 4060, RTX 3070).
+- Para los adaptadores LoRA en 16 bits sobre el modelo base en precisión completa: ~16 GB en FP16, o ~10-12 GB con cuantización 8 bits del base.
+- GPU recomendadas: RTX 4090 o A100/H100 para inferencia en FP16 con contexto completo; RTX 3060 12 GB o superior para Q4_K_M.
+- Ejecución en CPU viable con llama.cpp, aunque con throughput bajo; el autor documenta `-t 4` hilos en su ejemplo de llama-server.
+- Opciones de despliegue documentadas: LM Studio, llama.cpp / llama-server, Ollama. No se documenta soporte para vLLM ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| xamiuz1.1 | 8.030 M | 128.000 | Apache 2.0 | Hugging Face (0 descargas) |
-| Meta Llama 3.1 8B Instruct | 8.030 M | 128.000 | Llama 3.1 Community License | Hugging Face, ampliamente adoptado |
-| Mistral 7B Instruct | 7.240 M | 32.000 | Apache 2.0 | Hugging Face, ampliamente adoptado |
-| Qwen2.5 7B Instruct | 7.620 M | 131.072 | Apache 2.0 | Hugging Face, ampliamente adoptado |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Notas |
+|---|---|---|---|---|---|
+| Xamiuz 1.1 | 8,03 B | 2.048-4.096 | id, en | Llama 3.1 Community | Ajuste QLoRA especializado; preview |
+| Meta-Llama-3.1-8B-Instruct | 8,03 B | 128.000 | multilingüe (8 oficiales) | Llama 3.1 Community | Base; contexto 32x mayor |
+| Qwen2.5-7B-Instruct | 7,6 B | 128.000 | multilingüe amplio | Apache 2.0 | Alternativa permisiva con mejor soporte asiático |
+| Mistral-7B-Instruct-v0.3 | 7,2 B | 32.000 | en, fr, de, es, it | Apache 2.0 | Contexto menor pero licencia permisiva |
 
-No se dispone de datos de rendimiento comparativo para xamiuz1.1. El modelo base Llama 3.1 8B Instruct es la referencia natural, pero no se ha verificado que el ajuste fino preserve o mejore sus capacidades.
+La comparación directa más relevante es contra el propio modelo base: Xamiuz 1.1 gana en especialización indonesia y tool calling documentado, pero pierde drásticamente en ventana de contexto (4.096 frente a 128.000) y no publica métricas que justifiquen el ajuste frente al original.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación sobre el dataset de entrenamiento: imposible evaluar sesgos introducidos por el ajuste.
-- Riesgo elevado de alucinación y de degradación de capacidades respecto al modelo base, dado que no hay evaluaciones publicadas.
-- El repositorio de 0,2 GB es sospechosamente pequeño para un modelo de 8B; podría contener pesos incompletos, cuantizados o un adaptador, lo que impediría su uso directo con transformers sin verificación.
-- Solo se declara inglés en la model card, aunque el modelo base soporta más idiomas.
-- La licencia Apache 2.0 se aplica al ajuste, pero el uso debe respetar también la Llama 3.1 Community License del modelo base original de Meta.
-- Cero descargas y cero likes: no hay evidencia de uso en producción ni de validación por la comunidad.
-- No apto para producción sin una evaluación exhaustiva previa.
+- Estado "Active Development Preview": el autor advierte que arquitectura de razonamiento, optimización de inferencia y pesos multimodales siguen en evolución; no es una versión estable.
+- Ventana de contexto reducida a 2.048-4.096 tokens, muy inferior a los 128.000 del modelo base; esto limita casos de uso con documentos largos o conversaciones extensas.
+- El campo `language` de Hugging Face solo declara `en`, pese a que la model card indica soporte de indonesio; posible inconsistencia en metadatos.
+- Riesgo de alucinación en citas académicas: aunque se entrena en formatos APA/IEEE con DOI, no se verifica la existencia real de las referencias generadas.
+- El tool calling usa un formato propietario de etiquetas `<tool_call>` que requiere un parser específico; no es compatible directamente con el esquema OpenAI function calling sin adaptación.
+- Parte del entrenamiento usa datasets internos propietarios y un "flywheel" de memoria local cuya composición y volumen no se detallan, lo que impide auditar el sesgo introducido.
+- Licencia Llama 3.1 Community: permite uso comercial pero impone obligaciones (atribución "Built with Meta Llama 3", restricciones de uso, límite de 700 millones de usuarios mensuales para licencia automática).
+- Solo 114 descargas y 0 likes en el momento de la ficha: ecosistema mínimo, sin validación comunitaria independiente.
+- No se documenta evaluación de sesgos ni red-teaming; el ajuste sobre datos administrativos indonesios puede heredar sesgos de esos corpus.
+- El modelo base es textual; cualquier expectativa de capacidades de visión derivada de la mención a "native vision" en la model card no está respaldada por pesos publicados.
 
 ## Enlaces
 
-- [Hugging Face: xamiuz/xamiuz1.1](https://huggingface.co/xamiuz/xamiuz1.1)
-- [Modelo base: unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit)
-- [Unsloth (GitHub)](https://github.com/unslothai/unsloth)
-- [Meta Llama 3.1](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)
+- Hugging Face: https://huggingface.co/xamiuz/xamiuz1.1
+- Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
+- Repositorio GGUF (referenciado en la model card): https://huggingface.co/xamiuz/xamiuz1.1-GGUF
+- Dataset CodeAlpaca-20k: https://huggingface.co/datasets/sahil2801/CodeAlpaca-20k
+- Dataset Indonesian Natural Dialog (FreedomIntelligence): https://huggingface.co/datasets/FreedomIntelligence/Indonesian-Natural-Dialog
+- IndoMMLU (IndoLEM): https://github.com/indolem/IndoMMLU
+- Unsloth: https://github.com/unslothai/unsloth
+- llama.cpp: https://github.com/ggerganov/llama.cpp
+- Ollama: https://ollama.com
+- LM Studio: https://lmstudio.ai
+- Licencia Llama 3.1: https://llama.meta.com/llama3_1/license/
+- Contacto del autor: panduwirayuda12345@gmail.com

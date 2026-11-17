@@ -2,109 +2,100 @@
 
 ## Resumen
 
-pplx-embed-v2-context-0.6b-mlx es un port a Apple Silicon del modelo de embeddings contextuales pplx-embed-v2-context-0.6b desarrollado por Perplexity AI. El repositorio, mantenido por el usuario independiente zainmerchan, no contiene pesos: distribuye el paquete `pplx-context-mlx`, que descarga el checkpoint original de Perplexity y lo ejecuta sobre el framework MLX de Apple. Su proposito es permitir la generacion de embeddings contextuales de documentos y consultas en hardware Apple (chips de la familia M) sin depender de PyTorch sobre CPU ni de GPUs NVIDIA.
+pplx-embed-v2-context-0.6b-mlx es la conversión a MLX del modelo de embeddings contextuales pplx-embed-v2-context-0.6b de Perplexity AI, publicada por el usuario zainmerchan. El modelo original resuelve el problema del retrieval contextual: en lugar de generar un vector aislado por fragmento, produce embeddings que incorporan el contexto de los fragmentos vecinos dentro del mismo documento, lo que mejora la recuperación en tareas de RAG sobre documentos largos y multimodales. Esta versión permite ejecutar esos pesos en Apple Silicon mediante la librería `pplx-context-mlx`, sin necesidad de PyTorch ni de GPU dedicada.
 
-El modelo base es un encoder de aproximadamente 0,6 mil millones de parametros orientado a retrieval y feature-extraction, con soporte de embeddings contextuales: cada fragmento (chunk) se codifica viendo los fragmentos anteriores del mismo documento, lo que mejora la coherencia semantica en tareas de recuperacion sobre documentos largos. El port mantiene fidelidad numerica respecto al original (coseno minimo de 0,999998 en float32 y 0,99978 en float16) y reproduce las puntuaciones de retrieval del paper original en ViDoRe-V3 (55,82 frente a 55,81).
+La arquitectura subyacente es un transformer de tipo `pplx_contextual_qwen3_5` con 595.370.176 parámetros (aproximadamente 0,6B), derivado de la familia Qwen3.5 y adaptado por Perplexity para producir embeddings contextuales. El repositorio incluye pesos en `safetensors` y `float16` (1,1 GB, frente a los 2,2 GB del checkpoint original), manteniendo la proyección contextual en `float32` para preservar la precisión numérica.
 
-Es relevante ahora porque permite ejecutar un modelo de embeddings de calidad competitiva en un Mac con 64 GB de memoria unificada, con latencias de 7,4 ms por consulta y 1,16 s para un documento de 7.137 tokens, entre 3 y 12 veces mas rapido que la implementacion upstream en CPU. El proyecto es independiente y no esta afiliado a Perplexity.
+Su relevancia actual radica en dos factores: por un lado, ofrece una alternativa de embeddings de alta calidad con licencia MIT apta para uso comercial; por otro, demuestra que es viable ejecutar modelos de retrieval contextual de forma local en hardware de consumo Apple con latencias de milisegundos por consulta, lo que facilita prototipado y despliegues en el borde sin depender de APIs externas.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Encoder transformer para embeddings (detalles de capas y atencion no disponibles) |
-| Parametros totales | aproximadamente 0,6 mil millones (segun el nombre del checkpoint base) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | hasta 119.041 tokens verificados en el port (13.871 tokens con precision de vectores verificada) |
-| Tipos de cuantizacion | float16 y float32 soportados en MLX; int8 mencionado como referencia de comparacion |
+| Arquitectura | Transformer `pplx_contextual_qwen3_5` (derivada de Qwen3.5) |
+| Parámetros totales | 595.370.176 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible como límite oficial; el autor recomienda ventanas de hasta ~2.048 tokens por documento y reporta degradación a partir de pocos miles de tokens |
+| Tipos de cuantización | `float16` (repositorio) y `float32` (pesos originales de Perplexity); no se documentan cuantizaciones int8/int4 |
 | Idiomas soportados | no disponible |
-| Licencia | MIT para el codigo del port; el checkpoint base de Perplexity no lleva etiqueta de licencia en su model card |
-| Formato de pesos | pesos originales de Perplexity descargados en tiempo de ejecucion (aproximadamente 2,4 GB); el repositorio no aloja pesos |
+| Licencia | MIT |
+| Formato de pesos | `safetensors` (librería `mlx`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un encoder transformer disenado para generar embeddings de retrieval con contexto documental. La innovacion principal es el caracter contextual: cada chunk se codifica condicionado por los chunks precedentes del mismo documento, de modo que la representacion captura informacion que va mas alla del fragmento aislado. El port MLX reimplementa la inferencia sobre el framework de Apple sin modificar los pesos, por lo que la arquitectura y el entrenamiento son los del checkpoint original de Perplexity.
+El modelo es un transformer encoder de 0,6B parámetros orientado a `feature-extraction`, con una cabeza de proyección contextual que transforma las representaciones de cada fragmento en función de los fragmentos que lo rodean dentro de un mismo documento. La conversión a MLX mantiene los pesos en `float16` y deja la proyección contextual en `float32`, lo que según el autor produce vectores bit-idénticos (dentro de un paso de int8) a los del checkpoint original cargado en `float16`, con un coseno mínimo de 0,999998 en `float32` y 0,99978 en `float16`.
 
-No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO en la informacion proporcionada. El port incluye una API de codificacion por lotes (`encode` para documentos y `encode_queries` para consultas) con normalizacion opcional de embeddings, y ha sido validado contra la implementacion upstream en PyTorch sobre CPU, con desviaciones dentro de un paso de int8 en los vectores y diferencias de hasta 0,22 puntos en seis de las ocho tareas de ConTEB.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO; la model card del repositorio convertido no los detalla y la información proporcionada no los incluye. La innovación técnica destacable es el propio paradigma de embeddings contextuales: el modelo codifica un chunk condicionado por sus vecinos, lo que mejora el rendimiento de recuperación en documentos largos frente a embeddings independientes. El autor advierte que este beneficio se degrada si se procesan ventanas demasiado grandes: en ViDoRe-V3, el nDCG@10 cae de 66,7 con una página por pasada a 56,6 con 8.192 tokens y a 53,3 con 32.768.
 
 ## Capacidades
 
-- Generacion de embeddings de documentos con contexto entre chunks (contextual embeddings).
-- Generacion de embeddings de consultas mediante una ruta especifica (`encode_queries`).
-- Retrieval y busqueda semantica sobre documentos largos, con soporte de hasta 119.041 tokens.
-- Feature extraction para pipelines de RAG y sistemas de recuperacion.
-- Normalizacion de embeddings integrada para similitud coseno directa.
-- Ejecucion en Apple Silicon mediante MLX, con precision float16 y float32.
-- No se documentan capacidades de generacion de texto, razonamiento, codigo, vision, audio, tool calling ni agentes: es exclusivamente un modelo de embeddings.
+- Generación de embeddings de texto para recuperación de información (`retrieval`), con pipeline `feature-extraction`.
+- Embeddings contextuales: cada fragmento se codifica teniendo en cuenta los fragmentos vecinos del mismo documento.
+- Codificación de consultas separada de la codificación de documentos (`encode` frente a `encode_queries`).
+- Soporte de entradas multimodales: el autor menciona haber verificado la identidad de vectores también en entradas de imagen.
+- Normalización opcional de embeddings (`normalize_embeddings=True`) para similitud coseno directa.
+- Ejecución en Apple Silicon mediante MLX, sin dependencia de CUDA.
+- No se documentan capacidades de tool calling, agentes, generación de texto libre ni modo de razonamiento; es un modelo exclusivamente de representación.
 
 ## Casos de uso
 
-- RAG sobre documentacion tecnica larga: el modelo codifica cada fragmento viendo los anteriores, lo que reduce la perdida de contexto en documentos de decenas de miles de tokens y mejora la recuperacion de pasajes que dependen de informacion previa.
-- Busqueda semantica en corpus multilingues o especializados: se generan embeddings de consulta y de pasajes normalizados y se calcula similitud coseno para ranking, con latencias de 7,4 ms por consulta en un M4 Pro.
-- Indexacion de bases de conocimiento en un Mac de desarrollo: con 3,8 GB en float16 para la suite de velocidad, cabe en un equipo de 64 GB y permite prototipar pipelines de recuperacion sin GPU dedicada.
-- Evaluacion de sistemas de retrieval: al reproducir las puntuaciones de ViDoRe-V3 y ConTEB del paper original, sirve como referencia fiable para comparar pipelines propios en hardware Apple.
-- Procesamiento de documentos extensos en local: un documento de 7.137 tokens se codifica en 1,16 s en float16, adecuado para ingesta por lotes de contratos, informes o articulos cientificos.
-- Clasificacion y clustering de textos mediante embeddings: la salida normalizada permite agrupar documentos por similitud semantica en tareas de deduplicacion o organizacion de contenidos.
-- Integracion en herramientas de escritorio para macOS: al usar MLX, puede embeberse en aplicaciones nativas que necesiten busqueda semantica sin conexion a servicios externos.
+- RAG sobre documentación técnica: indexar manuales y páginas de referencia en fragmentos de hasta ~2.048 tokens, aprovechando el contexto vecino para que cada chunk se recupere con la información de su sección, lo que reduce respuestas descontextualizadas.
+- Búsqueda semántica local en portátiles Mac: desplegar el motor con `pplx-context-mlx` en un M4 Pro para un buscador interno que responde en 7,4 ms por consulta y procesa un documento de 7.137 tokens en 1,19 s.
+- Recuperación multimodal sobre documentos escaneados: el modelo acepta entradas de imagen además de texto, lo que permite indexar páginas de PDF con figuras y tablas en un mismo espacio vectorial.
+- Prototipado de pipelines de retrieval sin GPU: al caber en 2,1 GB de memoria en `float16`, se puede iterar sobre estrategias de chunking y re-ranking en un equipo de desarrollo convencional.
+- Deduplicación y clustering de fragmentos documentales: los embeddings normalizados permiten calcular similitud coseno directamente para agrupar secciones redundantes en corpus grandes.
+- Evaluación comparativa de sistemas de RAG: al reproducir las puntuaciones del paper (ViDoRe-V3 55,82 frente a 55,81), sirve como baseline fiable para medir mejoras de otras técnicas de recuperación.
+- Filtrado previo en pipelines de agentes: usar el modelo como primera etapa de recuperación de bajo coste antes de invocar un LLM generativo, reduciendo el número de tokens enviados al modelo grande.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Resultado del port | Referencia del paper |
+| Benchmark | Resultado | Referencia |
 |---|---|---|
-| ViDoRe-V3 | 55,82 | 55,81 |
-| ConTEB (6 de 8 tareas) | dentro de 0,22 puntos | referencia |
-| ConTEB ESG | 53,5 | 67,3 |
-| ConTEB Insurance | 88,9 | 88,0 |
+| ViDoRe-V3 (nDCG@10) | 55,82 | 55,81 en el paper |
+| ViDoRe-V3, 1 página por pasada | 66,7 | — |
+| ViDoRe-V3, 8.192 tokens | 56,6 | — |
+| ViDoRe-V3, 32.768 tokens | 53,3 | — |
+| ConTEB, 6 de 8 tareas | dentro de 0,22 puntos | paper |
+| ConTEB ESG | 53,5 | 67,3 en el paper |
+| ConTEB Insurance | 88,9 | 88,0 en el paper |
 
-Mediciones de rendimiento en M4 Pro con 64 GB, frente a PyTorch upstream en CPU:
+Mediciones de rendimiento en M4 Pro con 64 GB, frente a PyTorch en CPU:
 
-| Metrica | Valor |
+| Métrica | Valor |
 |---|---|
-| Consulta individual | 7,4 ms |
-| Documento de 7.137 tokens (float16) | 1,16 s |
-| Aceleracion frente a CPU upstream | 3 a 12 veces |
-| Memoria en suite de velocidad (float16) | 3,8 GB |
-| Memoria en suite de velocidad (float32) | 5,5 GB |
-| Memoria a 119.041 tokens (float16) | 13,2 GB |
-| Fidelidad de vectores (float32) | coseno minimo 0,999998 |
-| Fidelidad de vectores (float16) | coseno minimo 0,99978 |
-
-Las dos brechas en ConTEB (ESG e Insurance) se atribuyen al propio modelo upstream bajo el mismo harness, segun el autor del port.
-
-## Requisitos de hardware
-
-- VRAM/memoria unificada estimada: 3,8 GB en float16 y 5,5 GB en float32 para la suite de velocidad; 13,2 GB en float16 a 119.041 tokens.
-- GPU recomendadas: chips Apple Silicon; las pruebas se realizaron en un M4 Pro con 64 GB de memoria unificada.
-- Cabe en GPU consumer: si, en equipos Apple Silicon con memoria unificada suficiente; no se ha probado en un Mac de 16 GB.
-- Opciones de despliegue: paquete `pplx-context-mlx` sobre MLX; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: 7,4 ms por consulta y 1,16 s por documento de 7.137 tokens en float16 en M4 Pro.
-- No probado: GPUs NVIDIA, el modelo de 9B de la familia ni Macs de 16 GB.
+| Latencia por consulta | 7,4 ms |
+| Documento de 7.137 tokens (`float16`) | 1,19 s |
+| Aceleración frente a CPU upstream | 3 a 12 veces |
+| Memoria en suite de velocidad (`float16`) | 2,1 GB |
+| Memoria en suite de velocidad (`float32`) | 3,1 GB |
+| Memoria a 113.281 tokens (`float16`) | 7,8 GB |
+| Coseno mínimo frente a upstream (`float32`) | 0,999998 |
+| Coseno mínimo frente a upstream (`float16`) | 0,99978 |
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pplx-embed-v2-context-0.6b-mlx (este) | aproximadamente 0,6 B | hasta 119.041 tokens | Embeddings contextuales en MLX | MIT (codigo); checkpoint base sin etiqueta | Hugging Face, paquete pip |
-| pplx-embed-v2-context-0.6b (upstream) | aproximadamente 0,6 B | no disponible | Embeddings contextuales en PyTorch | sin etiqueta en la model card | Hugging Face |
-| pplx-embed-v2-context-9b | no disponible | no disponible | Embeddings contextuales (misma familia) | no disponible | Hugging Face (no probado en este port) |
+| pplx-embed-v2-context-0.6b-mlx (este) | 595M | ventanas recomendadas ~2.048 tokens | Embeddings contextuales, MLX | MIT | Hugging Face |
+| perplexity-ai/pplx-embed-v2-context-0.6b | 595M | no disponible | Embeddings contextuales, PyTorch | MIT (según el autor del convertido) | Hugging Face |
+| perplexity-ai/pplx-embed-v2-context-9b | no disponible | no disponible | Embeddings contextuales, versión grande | MIT (según el autor del convertido) | Hugging Face |
 
-No se dispone de datos de benchmarks de modelos alternativos de terceros en la informacion proporcionada para una comparacion cuantitativa.
+No se dispone de datos de benchmarks de los modelos comparables en la información proporcionada, por lo que no se pueden contrastar rendimientos entre ellos.
 
 ## Limitaciones y advertencias
 
-- El repositorio no contiene pesos: depende de la descarga del checkpoint de Perplexity (aproximadamente 2,4 GB) en el primer uso, lo que requiere conectividad y disponibilidad del repositorio upstream.
-- La licencia MIT cubre solo el codigo del port; el checkpoint base de Perplexity no lleva etiqueta de licencia, por lo que el uso comercial del modelo subyacente queda sin clarificar.
-- Brecha significativa en ConTEB ESG (53,5 frente a 67,3 del paper), atribuida al modelo upstream bajo el mismo harness, pero que limita su uso en dominios ESG.
-- Precisión de vectores verificada solo hasta 13.871 tokens, aunque se ha ejecutado a 119.041 tokens.
-- No probado en Macs de 16 GB, en el modelo de 9B ni en GPUs, por lo que el rendimiento fuera del entorno M4 Pro de 64 GB es desconocido.
-- Proyecto independiente sin afiliacion ni respaldo de Perplexity; el mantenimiento y la actualizacion dependen de un unico autor.
-- Modelo exclusivamente de embeddings: no genera texto ni soporta tool calling, agentes o razonamiento multi-paso.
-- Idiomas soportados no documentados; el rendimiento multilingue no puede evaluarse con la informacion disponible.
-- Riesgo de alucinacion no aplica directamente al ser un encoder, pero la calidad del retrieval depende de la estrategia de chunking y de la coherencia del contexto previo.
+- El propio autor recomienda mantener ventanas pequeñas (una página o sección, hasta ~2.048 tokens); por encima de pocos miles de tokens el retrieval empeora de forma medible (caída de nDCG@10 de 66,7 a 53,3 a 32.768 tokens).
+- La verificación de precisión de vectores solo se realizó hasta 13.871 tokens; no hay garantías documentadas más allá de ese umbral.
+- El autor no probó el modelo en un Mac de 16 GB, ni la variante de 9B, ni comparó contra GPU; el rendimiento en esos entornos es desconocido.
+- Los resultados de ConTEB muestran una discrepancia notable en la tarea ESG (53,5 frente a 67,3 del paper), aunque el autor indica que el modelo original puntúa igual bajo el mismo arnés de evaluación, lo que apunta a una diferencia metodológica más que a un fallo de la conversión.
+- No se documentan sesgos conocidos, riesgos de alucinación específicos ni limitaciones idiomáticas; al ser un modelo de embeddings, el riesgo de alucinación se traslada al sistema generativo que consuma los vectores, no al modelo en sí.
+- La licencia MIT permite uso comercial, pero el autor advierte que la model card original de 0.6B no declaraba etiqueta de licencia en la fecha de publicación del convertido; conviene verificar la licencia del checkpoint upstream antes de un despliegue comercial.
+- Dependencia del ecosistema MLX: no es portable directamente a CUDA sin reconversión, y requiere hardware Apple Silicon para aprovechar sus ventajas de rendimiento.
+- No hay información sobre idiomas soportados, lo que impide garantizar calidad en recuperación multilingüe.
 
 ## Enlaces
 
-- Repositorio del port en Hugging Face: https://huggingface.co/zainmerchan/pplx-embed-v2-context-0.6b-mlx
+- Repositorio Hugging Face: https://huggingface.co/zainmerchan/pplx-embed-v2-context-0.6b-mlx
 - Modelo base en Hugging Face: https://huggingface.co/perplexity-ai/pplx-embed-v2-context-0.6b
-- Repositorio del codigo en GitHub: https://github.com/zm2231/pplx-context-mlx
-- README con tablas completas: https://github.com/zm2231/pplx-context-mlx#readme
+- Repositorio del runtime MLX: https://github.com/zm2231/pplx-context-mlx
+- README del runtime con tablas completas: https://github.com/zm2231/pplx-context-mlx#readme

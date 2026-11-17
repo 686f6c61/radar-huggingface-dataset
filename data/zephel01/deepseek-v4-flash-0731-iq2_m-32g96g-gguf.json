@@ -5,7 +5,7 @@
   "author": "zephel01",
   "url": "https://huggingface.co/zephel01/DeepSeek-V4-Flash-0731-IQ2_M-32G96G-GGUF",
   "created_at": "2026-11-07T00:53:35.000Z",
-  "updated_at": "2026-11-09T00:28:34.000Z",
+  "updated_at": "2026-11-16T23:28:21.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -39,7 +39,7 @@
   "trending_score": 0,
   "parameters": 284334567511,
   "parameters_human": "284.33B",
-  "storage_bytes": 96819925536,
+  "storage_bytes": 96820181091,
   "storage_human": "96.8 GB",
   "context_length": 1048576,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
@@ -57,14 +57,9 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "DeepSeek-V4-Flash-0731-IQ2_M-32G96G-GGUF - Hugging Face",
-      "url": "https://huggingface.co/zephel01/DeepSeek-V4-Flash-0731-IQ2_M-32G96G-GGUF",
-      "snippet": "Instructions to use zephel01/DeepSeek-V4-Flash-0731-IQ2_M-32G96G-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "zephel01/DeepSeek-V4-Flash-0731-32G96G-GGUF · Hugging Face",
-      "url": "https://huggingface.co/zephel01/DeepSeek-V4-Flash-0731-32G96G-GGUF",
-      "snippet": "Text Generation model with 284B parameters. Download, explore files and run it on Hugging Face."
+      "title": "怎么使用chatgpt? - 知乎",
+      "url": "https://www.zhihu.com/question/1915944380994393865",
+      "snippet": "所以没法访问chatgpt的用户deepseek也是不错的选择，很多功能上它已经能比肩chatgpt了，特别是在中文处理的能力上。 在当下 …"
     }
   ]
 }

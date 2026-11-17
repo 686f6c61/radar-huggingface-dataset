@@ -5,7 +5,7 @@
   "author": "stlussea",
   "url": "https://huggingface.co/stlussea/sydney-qwen3-8b-lora",
   "created_at": "2026-11-16T09:05:38.000Z",
-  "updated_at": "2026-11-16T09:06:56.000Z",
+  "updated_at": "2026-11-16T09:46:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

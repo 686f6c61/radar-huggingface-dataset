@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 112,
+  "downloads_30d": 113,
   "trending_score": 0,
   "parameters": 2029892,
   "parameters_human": "2.0M",
@@ -55,31 +55,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Models - Hugging Face",
-      "url": "https://huggingface.co/models?!!",
-      "snippet": "Explore machine learning models."
-    },
-    {
-      "title": "wq2012/personal-vad-v2-conformer-unified · Hugging Face",
-      "url": "https://huggingface.co/wq2012/personal-vad-v2-conformer-unified",
-      "snippet": "wq2012 / personal-vad-v2-conformer-unified Like 0 Voice Activity Detection LiteRT Safetensors facebook/multilingual_librispeech personal-vad audio speaker-conditioning conformer lstm tensorflow arxiv:1908.04284 arxiv:2204.03793 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Personal VAD 2.0 — E5 Unified Enrolled & Enrollment-Less Causal Conformer ..."
-    },
-    {
-      "title": "GitHub - yule-li/CosFace: Tensorflow implementation for paper CosFace ...",
-      "url": "https://github.com/yule-li/CosFace",
-      "snippet": "Tensorflow implementation for paper CosFace: Large Margin Cosine Loss for Deep Face Recognition - yule-li/CosFace"
-    },
-    {
-      "title": "CosFace Loss: Additive Cosine Margin - emergentmind.com",
-      "url": "https://www.emergentmind.com/topics/cosface-loss",
-      "snippet": "CosFace Loss is a normalized softmax-based objective that leverages hyperspherical geometry with tuned scale and additive margin to improve discrimination in deep face recognition."
-    },
-    {
-      "title": "Models - ONNX Runtime",
-      "url": "https://onnxruntime.ai/models",
-      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
-    }
-  ]
+  "sources": []
 }

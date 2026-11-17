@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "jsrdcht/DEFUSE",
+  "renamed_at": "2026-11-17T10:05:43.677Z",
   "benchmarks": [],
   "sources": [
     {

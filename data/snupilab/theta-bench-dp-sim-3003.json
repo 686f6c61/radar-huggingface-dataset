@@ -41,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "snupilab/humanoidtoolbench-dp-sim-3003",
+  "renamed_at": "2026-11-17T09:45:01.118Z",
   "benchmarks": [],
   "sources": [
     {

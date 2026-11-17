@@ -2,132 +2,118 @@
 
 ## Resumen
 
-toolrank-emb-8b es un modelo de embeddings de texto para recuperación de herramientas (tool retrieval), publicado por el desarrollador yasinyaman bajo el identificador `yasinyaman/toolrank-emb-8b` y en su revisión `v0.2`. Se construye a partir de Qwen/Qwen3-Embedding-8B, al que se le aplica un LoRA (rango 16, alpha 32, dropout 0,05) entrenado sobre pares petición-herramienta y posteriormente fusionado en los pesos. El resultado es un modelo denso de 8.188.515.328 parámetros (unos 8,2 mil millones) que mantiene la tokenizador, el pooling de último token, las 4096 dimensiones y la normalización L2 del modelo base; solo cambian los pesos.
+ToolRank-emb-8b (publicado internamente como callbus-emb-8b v0.2) es un modelo de embeddings de 8.190 millones de parámetros derivado de Qwen3-Embedding-8B mediante un ajuste fino con LoRA orientado específicamente a la recuperación de herramientas (tool retrieval) para agentes y servidores MCP. Lo desarrolla yasinyaman como backbone por defecto del proyecto CallBus, y su función es convertir una petición de un agente en un vector y ordenar por similitud el catálogo de herramientas disponibles, de modo que la herramienta correcta quede en las primeras posiciones.
 
-El problema que resuelve es concreto: dado el catálogo de herramientas de un agente (por ejemplo, herramientas MCP o endpoints OpenAPI descritos como JSON), decidir cuáles son relevantes para una petición del usuario. Es el backbone por defecto del proyecto toolrank, y su uso previsto es generar vectores tanto de la petición como de cada herramienta para ordenar estas últimas por similitud. Según los resultados publicados por el autor, la mejora frente al modelo base se concentra en peticiones que requieren varias herramientas, mientras que en peticiones de una sola herramienta en lenguaje llano el rendimiento es prácticamente idéntico al del base.
+El modelo conserva intacta la arquitectura del Qwen3-Embedding-8B original (transformer denso, pooling por último token, 4.096 dimensiones, textos de hasta 8.192 tokens) y solo modifica los pesos mediante un LoRA de rango 16 y alpha 32, con dropout 0,05, fusionado posteriormente en el checkpoint. El entrenamiento emplea 20.000 pares petición-herramienta extraídos de ToolRet-Training-20w con objetivo InfoNCE y temperatura 0,05.
 
-Su relevancia actual viene del auge de los agentes basados en MCP y del function calling sobre catálogos grandes: en ToolRet, el conjunto de evaluación, hay 44.453 herramientas y 7.961 consultas. La licencia de los pesos es Apache-2.0, pero el autor advierte explícitamente de que los datos de entrenamiento (mangopy/ToolRet-Training-20w) no declaran licencia, lo que introduce un riesgo de procedencia que conviene evaluar antes de un despliegue comercial.
+Su relevancia radica en que mejora de forma medible la selección de herramientas en escenarios multi-herramienta: en ToolRet, el NDCG@10 pasa de 51,11 a 58,90, y en tareas que requieren tres herramientas sobre catálogos de GitHub y Stripe el NDCG@10 sube de 55,21 a 75,40. La licencia es Apache-2.0, aunque con la salvedad de que los datos de entrenamiento no declaran licencia.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (Qwen3-Embedding-8B) con pooling de ultimo token, salida de 4096 dimensiones y normalizacion L2; LoRA fusionado en los pesos |
-| Parametros totales | 8.188.515.328 (unos 8,2 mil millones) |
-| Longitud de contexto | 8192 tokens por texto (limite configurado en el ejemplo de serving con vLLM); durante el entrenamiento las peticiones se truncaron a 256 tokens y las herramientas a 768 |
-| Tipos de cuantizacion | bfloat16 (pesos publicados); FP8 mediante `--quantization fp8` en vLLM, con resultados publicados por el autor |
+| Arquitectura | Transformer denso (Qwen3-Embedding-8B), pooling por último token |
+| Parámetros totales | 8.188.515.328 |
+| Parámetros activos | no disponible (modelo denso) |
+| Longitud de contexto | 8.192 tokens por texto |
+| Tipos de cuantización | bfloat16 (original), FP8 (vía vLLM), GGUF Q8_0 y Q4_K_M |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 en los pesos; los datos de entrenamiento no declaran licencia |
-| Formato de pesos | safetensors (`model.safetensors`, bfloat16, 16,4 GB) |
-| Dimension de embedding | 4096 (heredada del modelo base) |
-| Pooling | ultimo token |
-| Revision | `v0.2` (sha256 `53789cfff18f631fa7e6494bcf8d2db7b5c18a25d2a239443b1614a5eacb7f42`) |
-| Libreria | sentence-transformers |
-| Pipeline | sentence-similarity |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (bfloat16, 16,4 GB); GGUF en repo separado |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base Qwen/Qwen3-Embedding-8B: un transformer denso de unos 8,2 mil millones de parámetros con pooling de último token, 4096 dimensiones de salida y normalización L2. La intervención del autor es un LoRA de rango 16, alpha 32 y dropout 0,05 aplicado sobre ese modelo y fusionado después en los pesos; el tokenizador, el pooling y la configuración no se modifican. El modelo no lleva cabezas adicionales: las cabezas de toolrank v0.1, entrenadas sobre el modelo base, cuestan entre 1 y 2 puntos cuando se aplican aquí, y las cabezas entrenadas sobre este modelo se quedan en la identidad, por lo que toolrank no aplica ninguna.
+La arquitectura es la del Qwen3-Embedding-8B sin cambios estructurales: un transformer denso con tokenizador, pooling y configuración heredados del modelo base. La única modificación son los pesos, ajustados con un LoRA de rango 16, alpha 32 y dropout 0,05, fusionado en el checkpoint final. La salida son embeddings de 4.096 dimensiones normalizados en L2, generados mediante pooling del último token.
 
-El entrenamiento usa 20.000 pares petición-herramienta extraídos de ToolRet-Training-20w (semilla 0); se descartaron 776 pares cuyas peticiones coincidían con alguna de ToolRet, LiveMCPBench o MCP-Zero. El objetivo es InfoNCE con negativos dentro del lote y temperatura 0,05. La optimización consistió en una época, 625 pasos, micro-lote de 16 con 2 pasos de acumulación, tasa de aprendizaje 1e-4 y 50 pasos de calentamiento, con un coste de 8,6 horas en una única GB10. El checkpoint (cada 300 pasos y el último) se seleccionó sobre MCP-Zero (`mcp_zero_server`), de modo que las cifras de ese conjunto son de selección y no de retención. Antes de entrenar, el autor verificó que los vectores del código de entrenamiento coincidían con los del modelo base servido (coseno medio de 0,9999 sobre 8 textos de herramientas), de forma que el LoRA aprendió sobre los vectores que vLLM sirve realmente.
-
-La innovación es de enfoque más que de arquitectura: en lugar de añadir cabezas de clasificación o reranking, se ajusta el propio espacio de embeddings para el dominio de recuperación de herramientas, y se documenta una segunda etapa opcional de reranking con Qwen3-Reranker-8B sobre el top 20.
+El entrenamiento usó 20.000 pares petición-herramienta muestreados de ToolRet-Training-20w (semilla 0), descartando 776 pares cuya petición coincidía con alguna de ToolRet, LiveMCPBench o MCP-Zero. El objetivo fue InfoNCE con negativos en el lote y temperatura 0,05, truncando peticiones a 256 tokens y herramientas a 768. Se realizó una época de 625 pasos, con micro-lote de 16 y 2 pasos de acumulación, tasa de aprendizaje 1e-4 y 50 pasos de calentamiento, durante 8,6 horas en una GB10. La selección del checkpoint se hizo sobre MCP-Zero, por lo que las cifras de ese conjunto no son de validación independiente. Antes del entrenamiento se verificó que los vectores del código de entrenamiento coincidían con los del modelo base servido (coseno medio 0,9999 sobre 8 textos de herramientas).
 
 ## Capacidades
 
-- Generacion de embeddings de texto de 4096 dimensiones, normalizados L2, para similitud semantica y recuperacion.
-- Recuperacion de herramientas (tool retrieval): dado un catalogo, ordena las herramientas por afinidad con la peticion.
-- Soporte nativo de descripciones de herramientas MCP y OpenAPI en formato JSON con los campos `server`, `name`, `description` e `inputSchema`.
-- Plantilla de instruccion especifica: `Instruct: Given an agent's request for a tool, retrieve the MCP tool that fulfills it.\nQuery: <request>`.
-- Capacidad de integrarse como etapa de recuperacion dentro de agentes con multiples pasos, alimentando la seleccion de herramientas antes de la llamada al LLM.
-- Reranking en dos etapas: puede combinarse con Qwen3-Reranker-8B sobre su top 20 (`toolrank serve --rerank cross`).
-- Compatible con text-embeddings-inference y con endpoints compatibles segun las etiquetas del repositorio.
-- Capacidades multilingues: no disponible (la plantilla de instruccion esta en ingles y no se publican evaluaciones por idioma).
-- No es un modelo generativo: no produce texto, razonamiento ni codigo, solo representaciones vectoriales.
+- Generación de embeddings de texto para similitud semántica y recuperación (pipeline sentence-similarity).
+- Recuperación de herramientas para agentes: ordena catálogos de herramientas MCP y OpenAPI por relevancia respecto a una petición.
+- Manejo de textos largos de hasta 8.192 tokens, suficiente para descripciones de herramientas con esquemas de entrada completos.
+- Soporte de instrucción específica de tarea (`Instruct: Given an agent's request for a tool, retrieve the MCP tool that fulfills it.`).
+- Buen rendimiento en peticiones que requieren varias herramientas encadenadas.
+- Compatibilidad con Text Embeddings Inference y endpoints compatibles.
+- No dispone de cabezas de clasificación propias: las cabezas v0.1 del proyecto, entrenadas sobre el modelo base, degradan el rendimiento entre 0,2 y 3,9 puntos.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Enrutamiento de herramientas en agentes MCP: el modelo convierte la peticion del usuario y cada herramienta del servidor MCP en vectores, y devuelve las mas cercanas. Es util cuando el catalogo es grande y no cabe completo en el prompt del LLM.
-- Seleccion de herramientas en pipelines de function calling: en catalogos de decenas de miles de entradas (ToolRet tiene 44.453), permite preseleccionar un subconjunto pequeno antes de que el LLM decida que funcion invocar.
-- Tareas que requieren varias herramientas: segun los datos del autor, la proporcion de tareas con todas sus herramientas en el top 10 sube del 72,1% al 89,5% en tareas de dos herramientas y del 33,9% al 64,5% en tareas de tres, lo que lo hace adecuado para flujos multi-paso donde hay que recuperar una combinacion de herramientas.
-- Segunda etapa de reranking sobre candidatos: combinado con Qwen3-Reranker-8B sobre su top 20, los resultados publicados suben a 59,36/54,35 en ToolRet, 61,24 en LiveMCPBench y 91,94 de top-1 en MCP-Zero, lo que encaja en arquitecturas de recuperacion en cascada.
-- Indexacion de catalogos de APIs OpenAPI: al aceptar descripciones con `server`, `name`, `description` e `inputSchema`, sirve para construir indices vectoriales de APIs internas o de terceros (el autor evalua con catalogos de GitHub y Stripe).
-- Asistentes de codigo que eligen entre APIs: los experimentos del autor sobre 800 tareas generadas que necesitan dos herramientas muestran una mejora de 71,04 a 82,95 en NDCG@10, lo que lo hace util para asistentes que deben encadenar llamadas a APIs.
-- Busqueda semantica sobre documentacion tecnica de herramientas internas: cualquier corpus de descripciones de funciones o microservicios puede indexarse y consultarse por similitud, con una ventana de 8192 tokens por texto.
-- Evaluacion y benchmarking de agentes: sirve como recuperador de referencia en pruebas internas de seleccion de herramientas, con conjuntos publicos como ToolRet, LiveMCPBench o MCP-Zero.
+- Enrutamiento de herramientas en agentes MCP: dado un catálogo de servidores y herramientas, el modelo convierte la petición del agente en un vector y devuelve las herramientas más cercanas, lo que permite seleccionar la herramienta correcta antes de invocar al LLM planificador.
+- Construcción de índices de recuperación sobre catálogos grandes: con 44.453 herramientas y 7.961 consultas en ToolRet, el modelo mantiene un NDCG@10 de 58,90, lo que lo hace adecuado para índices vectoriales de miles de entradas.
+- Pipelines de agentes multi-paso: en tareas que requieren dos o tres herramientas (catálogos de GitHub y Stripe), mejora el NDCG@10 de 71,04 a 82,95 y de 55,21 a 75,40 respectivamente, por lo que es útil cuando el agente debe encadenar varias llamadas.
+- Segunda etapa de reordenación: combinado con Qwen3-Reranker-8B sobre el top 20, alcanza 59,36 en ToolRet y 91,94 de top-1 en MCP-Zero, lo que permite un pipeline de recuperación en dos fases con precisión alta.
+- Despliegue en local sin GPU de 16 GB: la versión GGUF Q8_0 mantiene resultados equivalentes y Q4_K_M ocupa 5 GB con una pérdida de aproximadamente un punto de top-1 en peticiones cortas, lo que permite ejecutarlo en estaciones de trabajo modestas.
+- Servicio de embeddings en producción con vLLM: el comando de servicio documentado con `--runner pooling --max-model-len 8192` y cuantización FP8 permite servir el modelo con latencia baja y resultados prácticamente idénticos (59,02 frente a 58,90 en ToolRet).
+- Búsqueda semántica de APIs y funciones en documentación técnica: al aceptar descripciones JSON con `server`, `name`, `description` e `inputSchema`, puede indexar especificaciones OpenAPI y resolver consultas en lenguaje natural.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor, con instruccion y cada conjunto bajo su propio protocolo:
+Resultados con instrucción, cada conjunto bajo su propio protocolo:
 
-| Modelo | ToolRet NDCG@10 (micro / cat-macro) | LiveMCPBench NDCG@10 / Recall@5 | MCP-Zero top-1 (conjunto de seleccion) |
+| Modelo | ToolRet NDCG@10 (micro / cat-macro) | LiveMCPBench NDCG@10 / Recall@5 | MCP-Zero top-1 (selección) |
 |---|---:|---:|---:|
-| Qwen3-Embedding-8B | 51,11 / 46,54 | — / 50,82 | 78,19 |
-| Qwen3-Embedding-8B + cabezas toolrank v0.1 | 54,03 / 47,13 | 53,95 / 53,03 | 79,87 |
-| toolrank-emb-8b (este modelo) | 58,90 / 54,36 | 55,74 / 52,06 | 88,57 |
-| toolrank-emb-8b en FP8 (`--quantization fp8`) | 59,02 / 54,53 | 55,34 / 52,06 | 87,71 |
-| toolrank-emb-8b + cabezas toolrank v0.1 | — | 53,52 / 48,18 | 87,46 |
+| Qwen3-Embedding-8B | 51,11 / 46,54 | 53,74 / 50,82 | 78,19 |
+| Qwen3-Embedding-8B + cabezas callbus v0.1 | 54,03 / 47,13 | 53,95 / 53,03 | 79,87 |
+| ToolRank-emb-8b | 58,90 / 54,36 | 55,74 / 52,06 | 88,57 |
+| ToolRank-emb-8b en FP8 | 59,02 / 54,53 | 55,34 / 52,06 | 87,71 |
+| ToolRank-emb-8b + cabezas v0.1 | 58,71 / 52,94 | 53,52 / 48,18 | 87,46 |
 
-Con segunda etapa de reranking sobre el top 20 mediante Qwen3-Reranker-8B: ToolRet 59,36/54,35, LiveMCPBench 61,24 y MCP-Zero top-1 91,94.
+Detalle por tipo de tarea (NDCG@10, modelo base → ToolRank-emb-8b):
 
-Detalle por tipo de tarea (NDCG@10, base frente a este modelo, conjuntos de retencion salvo donde se indique):
+| Conjunto | Tipo | Base → ToolRank |
+|---|---|---:|
+| ToolRet | distribución de entrenamiento, muchas multi-herramienta | 51,11 → 58,90 |
+| MCP-Zero top-1 | conjunto de selección, peticiones de dos líneas | 78,19 → 88,57 |
+| LiveMCPBench | retenido, tareas multi-paso en lenguaje natural | 53,74 → 55,74 (no significativo, 94 tareas) |
+| GitHub + Stripe, 800 tareas de dos herramientas | retenido | 71,04 → 82,95 |
+| GitHub + Stripe, 498 tareas de tres herramientas | retenido | 55,21 → 75,40 |
+| GitHub + Stripe, 1.000 peticiones de una herramienta | retenido | 92,99 → 92,49 |
 
-| Conjunto | Naturaleza | Base → este modelo |
-|---|---|---|
-| ToolRet | distribucion de entrenamiento | 51,11 → 58,90 |
-| MCP-Zero, top-1 | conjunto de seleccion | 78,19 → 88,57 |
-| LiveMCPBench | retencion, tareas multi-paso en lenguaje llano | 53,74 → 55,74 (no significativo, 94 tareas) |
-| GitHub + Stripe, 800 tareas de dos herramientas | retencion | 71,04 → 82,95 |
-| GitHub + Stripe, 498 tareas de tres herramientas | retencion | 55,21 → 75,40 |
-| GitHub + Stripe, 1000 peticiones de una herramienta | retencion | 92,99 → 92,49 |
-| GitHub + Stripe, 598 peticiones de una herramienta que describen un problema | retencion | 89,67 → 87,71 |
-
-Tamanos de los conjuntos: ToolRet, 44.453 herramientas y 7.961 consultas; LiveMCPBench, 525 herramientas y 94 tareas; MCP-Zero, 2.792 herramientas con una peticion escrita por un LLM por herramienta. En los dos conjuntos MCP el nombre del servidor forma parte del texto de la herramienta.
+Con segunda etapa de reordenación (Qwen3-Reranker-8B sobre el top 20): ToolRet 59,36 / 54,35, LiveMCPBench 61,24, MCP-Zero top-1 91,94.
 
 ## Requisitos de hardware
 
-- Pesos en bfloat16: 16,4 GB en disco (`model.safetensors`). La VRAM de inferencia en bfloat16 se situa por encima de ese valor (estimacion de 18 a 22 GB, no publicada por el autor).
-- Cuantizacion FP8 en vLLM: reduce el peso a aproximadamente la mitad; el autor publica resultados con `--quantization fp8` sin perdida apreciable en los conjuntos medidos (por ejemplo, 59,02 frente a 58,90 en ToolRet).
-- GPU recomendadas: A100 40 GB, H100 80 GB, L40S 48 GB o A6000 48 GB para bfloat16 con margen; H100 y L40S para FP8 por soporte de Ada/Hopper.
-- GPU de consumo: una RTX 4090 de 24 GB puede alojar los pesos en bfloat16 de forma ajustada, y en FP8 con mas holgura; no hay datos publicados de latencia en estas tarjetas.
-- Despliegue: vLLM con `--runner pooling`, `--max-model-len 8192` y nombre de modelo con version (`--served-model-name toolrank-emb-v0.2`), tal como documenta el autor; tambien sentence-transformers (`library_name`) y text-embeddings-inference segun las etiquetas del repositorio, ademas de endpoints compatibles.
-- Cache de embeddings: el autor advierte de que la cache de toolrank usa como clave el nombre servido, por lo que una version nueva no debe reutilizar el nombre de la anterior.
-- Latencia y throughput: no disponibles. El unico dato temporal publicado es de entrenamiento (8,6 horas en una GB10 para 625 pasos).
+- VRAM estimada en bfloat16: aproximadamente 16,4 GB de pesos, más overhead de activaciones; se recomienda un mínimo de 20-24 GB.
+- VRAM en FP8: aproximadamente 8-9 GB de pesos, con resultados equivalentes (59,02 frente a 58,90 en ToolRet).
+- VRAM en GGUF Q8_0: en torno a 8-9 GB; Q4_K_M ocupa 5 GB.
+- GPU recomendadas: A100, H100 o GB10 para bfloat16; RTX 4090 (24 GB) cabe en bfloat16 y con holgura en FP8.
+- GPU de consumo: cabe en RTX 4090 y en tarjetas de 16 GB mediante GGUF Q8_0; Q4_K_M permite GPUs de 6-8 GB.
+- Despliegue: vLLM con `--runner pooling --max-model-len 8192` (y `--quantization fp8` opcional), llama.cpp, Ollama (GGUF) y Text Embeddings Inference.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | ToolRet NDCG@10 (micro) | LiveMCPBench NDCG@10 | MCP-Zero top-1 | Licencia |
-|---|---|---|---:|---:|---:|---|
-| toolrank-emb-8b | ~8,2 mil millones | 8192 tokens | 58,90 | 55,74 | 88,57 | Apache-2.0 (pesos); datos sin licencia |
-| Qwen3-Embedding-8B | ~8,2 mil millones | no disponible en la informacion | 51,11 | no disponible (Recall@5 50,82) | 78,19 | Apache-2.0 |
-| Qwen3-Embedding-8B + cabezas toolrank v0.1 | ~8,2 mil millones mas cabezas | no disponible | 54,03 | 53,95 | 79,87 | Apache-2.0 |
-| toolrank-emb-8b en FP8 | ~8,2 mil millones | 8192 tokens | 59,02 | 55,34 | 87,71 | Apache-2.0 |
+| Modelo | Parámetros | Contexto | ToolRet NDCG@10 | Licencia | Disponibilidad |
+|---|---:|---:|---:|---|---|
+| ToolRank-emb-8b | 8,19 B | 8.192 | 58,90 | Apache-2.0 (datos sin licencia declarada) | Hugging Face, GGUF |
+| Qwen3-Embedding-8B | 8,19 B | 8.192 | 51,11 | Apache-2.0 | Hugging Face |
+| Qwen3-Embedding-8B + cabezas callbus v0.1 | 8,19 B | 8.192 | 54,03 | Apache-2.0 | Hugging Face |
+| Qwen3-Reranker-8B (segunda etapa) | 8,19 B | no disponible | 59,36 en combinación | Apache-2.0 | Hugging Face |
 
-No se dispone en la informacion proporcionada de comparaciones con otros modelos de embeddings de recuperacion de herramientas de tamano similar (por ejemplo, variantes de la familia Qwen3-Embedding de menor tamano o modelos especificos de tool retrieval distintos de ToolRet).
+La comparación directa con otros modelos de embeddings de propósito general (por ejemplo, de la familia BGE o E5) no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Procedencia de los datos: ToolRet-Training-20w no declara licencia (ni campo ni texto). El repositorio de codigo de ToolRet es Apache-2.0, pero eso no cubre los datos, que a su vez proceden de benchmarks anteriores con sus propias condiciones. El propio autor publica los pesos asumiendo ese riesgo y recomienda usar el Qwen3-Embedding-8B base si se necesita procedencia limpia. Es el principal caveat para uso comercial.
-- Ganancia limitada en peticiones de una sola herramienta: en las 1000 peticiones de una herramienta del catalogo GitHub + Stripe el rendimiento baja ligeramente (92,99 → 92,49) y en las 598 peticiones que describen un problema sin nombrar la operacion tambien empeora (89,67 → 87,71).
-- Sobreajuste a la forma de los datos de entrenamiento: la mejora se concentra en peticiones que necesitan varias herramientas y en peticiones con la estructura de sus datos de entrenamiento.
-- Seleccion sobre el conjunto de evaluacion: las cifras de MCP-Zero (88,57) corresponden al conjunto usado para elegir el checkpoint, no a un conjunto de retencion, por lo que estan optimizadas y deben tomarse con cautela.
-- LiveMCPBench: la mejora de 53,74 a 55,74 no es estadisticamente significativa con solo 94 tareas, segun el propio autor.
-- No lleva cabezas: las cabezas de toolrank v0.1 restan entre 1 y 2 puntos, y las cabezas entrenadas sobre este modelo se quedan en la identidad.
-- Idioma: no se publican idiomas soportados ni evaluaciones multilingues; la plantilla de instruccion esta en ingles. Se desconoce el comportamiento en castellano.
-- Riesgo de alucinacion: aunque el modelo no genera texto y por tanto no alucina en sentido estricto, puede recuperar herramientas irrelevantes; el reranking en dos etapas y la validacion del `inputSchema` antes de invocar siguen siendo necesarios.
-- Dimension fija de 4096: encarece el almacenamiento y la busqueda por similitud en catalogos grandes en comparacion con modelos de embeddings mas pequenos.
-- Gestion de versiones: la cache de embeddings de toolrank se indexa por el nombre servido, por lo que mezclar versiones produce vectores inconsistentes.
-- El texto de la model card disponible esta truncado al final (seccion "Where it helps, and where it does not"), por lo que podria haber matices adicionales no recogidos aqui.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
+- La mejora se concentra en peticiones que requieren varias herramientas y en peticiones con la forma de los datos de entrenamiento; en peticiones de una sola herramienta en lenguaje llano el rendimiento es prácticamente igual al del modelo base (92,99 → 92,49).
+- La selección del checkpoint se hizo sobre MCP-Zero, por lo que sus cifras no son de validación independiente.
+- La mejora en LiveMCPBench (53,74 → 55,74) no es estadísticamente significativa con solo 94 tareas.
+- Los datos de entrenamiento (ToolRet-Training-20w) no declaran licencia, y proceden de benchmarks anteriores con sus propios términos; los mantenedores publican los pesos asumiendo ese riesgo. Para procedencia limpia de datos recomiendan usar el modelo base.
+- Las cabezas v0.1 del proyecto, entrenadas sobre el modelo base, degradan el rendimiento entre 0,2 y 3,9 puntos; no deben aplicarse sobre este modelo.
+- El modelo está especializado en recuperación de herramientas; no es un modelo generativo y no debe usarse para generación de texto, razonamiento o código.
+- No hay información sobre sesgos, riesgos de alucinación en el espacio de embeddings ni cobertura idiomática.
+- El caché de embeddings del proyecto está indexado por el nombre servido; debe servirse con la versión en el nombre para no mezclar vectores de versiones distintas.
+- El repositorio tiene 51 descargas y 0 likes en el momento de la consulta, lo que indica una validación comunitaria muy limitada.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/yasinyaman/toolrank-emb-8b
-- Modelo base Qwen3-Embedding-8B: https://huggingface.co/Qwen/Qwen3-Embedding-8B
-- Repositorio de codigo de toolrank: https://github.com/yasinyaman/toolrank
-- Documentacion del proyecto: https://yaman.dev/toolrank/
-- Benchmarks de toolrank: https://yaman.dev/toolrank/benchmarks/
+- Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-8B
+- Pesos GGUF: https://huggingface.co/yasinyaman/callbus-emb-8b-GGUF
+- Repositorio del proyecto: https://github.com/yasinyaman/callbus
+- Documentación y benchmarks: https://yaman.dev/callbus/
+- Guía de ejecución local: https://yaman.dev/callbus/guides/local/
+- Benchmarks del proyecto: https://yaman.dev/callbus/benchmarks/
 - Dataset de entrenamiento: https://huggingface.co/datasets/mangopy/ToolRet-Training-20w
-- Repositorio de codigo del benchmark ToolRet: https://github.com/mangopy/tool-retrieval-benchmark (referenciado como `mangopy/tool-retrieval-benchmark`)
-
-Nota: la busqueda web realizada no devolvio resultados relacionados con este modelo; los unicos enlaces utilizables son los que aparecen en la informacion de Hugging Face y en la model card del autor.
+- Repositorio de ToolRet: https://github.com/mangopy/tool-retrieval-benchmark

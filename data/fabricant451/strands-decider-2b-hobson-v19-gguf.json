@@ -9,11 +9,11 @@
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
-  "library": null,
+  "library": "strands-decider",
   "languages": [],
   "tags": [
-    "gguf",
     "strands-decider",
+    "gguf",
     "webgpu",
     "text-classification",
     "base_model:StrandsAgents/strands-decider-2B-hobson-v19",
@@ -25,7 +25,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 451,
+  "downloads_30d": 445,
   "trending_score": 0,
   "parameters": 1882878272,
   "parameters_human": "1.88B",

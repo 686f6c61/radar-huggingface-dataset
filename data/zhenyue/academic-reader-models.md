@@ -2,89 +2,89 @@
 
 ## Resumen
 
-`zhenyue/academic-reader-models` no es un modelo de lenguaje único, sino un repositorio de artefactos empaquetados que la aplicación Academic Reader descarga en tiempo de ejecución. El repositorio agrupa cuatro componentes heterogéneos: un modelo de layout documental D-FINE convertido a Core ML (bajo licencia OXR-1.0), el modelo de embeddings `BAAI/bge-small-en-v1.5` también convertido a Core ML, un conjunto de fuentes tipográficas Source Han Serif/Sans CN de Adobe, y un espejo en formato safetensors del modelo `SoMarkAI/OXR-1.0` (disponible solo en ModelScope). El autor del repositorio es el usuario `zhenyue`, y el paquete está pensado para verificar la integridad de cada fichero mediante su hash SHA-256 dentro de la propia aplicación.
+`zhenyue/academic-reader-models` es un repositorio de artefactos empaquetados para la aplicacion Academic Reader, no un modelo de lenguaje unico. El autor (zhenyue) publica en Hugging Face los ficheros que la app descarga en tiempo de ejecucion, cada uno verificado contra su hash SHA-256. El repositorio tiene un tamano de 0,4 GB, 38 descargas y ningun "like" en el momento de la consulta, y no declara licencia, idiomas ni pipeline a nivel de repositorio.
 
-El interés técnico del repositorio radica en su naturaleza de distribución empaquetada para una app de lectura académica: combina un detector de layout (D-FINE), un encoder de recuperación semántica (bge-small-en-v1.5) y un modelo de OCR/documento (OXR-1.0) en un único bundle de 0,2 GB. La conversión a Core ML con precisión mixta apunta a ejecución en Apple Silicon (CPU/GPU/Neural Engine), lo que sugiere un despliegue local en macOS o iOS.
+El contenido principal son dos modelos convertidos a Core ML: un modelo de layout D-FINE (procedente de OXR-1.0, de SoMarkAI) en precision mixta, y una conversion de `BAAI/bge-small-en-v1.5`, un modelo de embeddings de frases. Ademas, incluye 34 fuentes tipograficas (Source Han regional, LXGW WenKai, Klee One, MaruBuri, Noto y Go Noto) y, solo en ModelScope, un espejo de `SoMarkAI/OXR-1.0` en `model.safetensors` y `tokenizer.json`.
 
-No se dispone de información sobre arquitectura interna del modelo OXR-1.0, número de parámetros, longitud de contexto ni datos de entrenamiento más allá de lo indicado en la model card. La ficha se limita, por tanto, a documentar lo que el autor declara explícitamente y a marcar como "no disponible" todo aquello que no se especifica.
+Es relevante para desarrolladores que quieran replicar el pipeline de lectura academica de la app (deteccion de layout de pagina, embeddings para busqueda semantica) sobre Apple Silicon mediante Core ML, o reutilizar las conversiones. No es un modelo generativo ni un LLM: es un paquete de dependencias de inferencia.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (el repositorio agrupa D-FINE layout, bge-small-en-v1.5 y OXR-1.0; arquitecturas individuales no detalladas) |
-| Parámetros totales | No disponible |
-| Parámetros activos | No disponible (no se indica que sea MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | Core ML con precisión mixta (D-FINE y bge-small-en-v1.5); safetensors sin cuantización declarada para OXR-1.0 |
-| Idiomas soportados | No disponible (bge-small-en-v1.5 es un modelo en inglés; el resto sin especificar) |
-| Licencia | Mixta: OXR License (Apache-2.0 con términos adicionales de SoMark) para D-FINE y OXR-1.0; MIT para bge-small-en-v1.5; SIL Open Font License 1.1 para las fuentes |
-| Formato de pesos | Core ML (`.mlpackage`/`.mlmodel`) y safetensors (`model.safetensors` + `tokenizer.json`) |
+| Arquitectura | D-FINE (deteccion de layout) y BGE-small (encoder de frases), ambos convertidos a Core ML |
+| Parametros totales | no disponible (no se publican recuentos por artefacto) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (bge-small-en-v1.5 original: 512 tokens; no confirmado en esta conversion) |
+| Tipos de cuantizacion | Core ML en precision mixta (D-FINE); cuantizacion de bge-small no especificada |
+| Idiomas soportados | no disponible (bge-small-en-v1.5 es solo ingles; D-FINE es independiente del idioma) |
+| Licencia | no disponible a nivel de repo; por artefacto: OXR License (Apache-2.0 con terminos adicionales de SoMark), MIT (bge-small), SIL OFL 1.1 (fuentes) |
+| Formato de pesos | Core ML (`dfine-coreml/`, `bge-small-en-v1.5-coreml/`); `model.safetensors` + `tokenizer.json` solo en ModelScope |
 
 ## Arquitectura y entrenamiento
 
-El repositorio no entrena ningún modelo propio: empaqueta artefactos de terceros y un modelo propio de SoMarkAI (OXR-1.0). El componente D-FINE es un detector de objetos orientado a layout documental, convertido a Core ML en precisión mixta; D-FINE es una familia de detectores basada en transformers con refinamiento de bordes, aunque la model card no detalla la variante concreta ni el número de parámetros. El componente `bge-small-en-v1.5` es un encoder de frases de BAAI, conocido por su uso en recuperación semántica y búsqueda vectorial, aquí también convertido a Core ML; su tamaño habitual ronda los 33 millones de parámetros, dato que la model card no confirma explícitamente para esta conversión.
+El repositorio no entrena modelos: publica conversiones. El artefacto `dfine-coreml/` es el modelo de layout D-FINE de OXR-1.0 convertido a Core ML en precision mixta; D-FINE es un detector basado en transformers con refinamiento de distribucion (distribution refinement) para deteccion de objetos, aqui aplicado a la deteccion de regiones de layout en paginas de documentos academicos. El artefacto `bge-small-en-v1.5-coreml/` es la conversion a Core ML de `BAAI/bge-small-en-v1.5`, un encoder transformer pequeno de la familia BGE orientado a embeddings de frases en ingles.
 
-El componente OXR-1.0 (SoMarkAI) se distribuye como espejo en safetensors y se describe como el modelo principal del paquete, pero la model card no aporta información sobre su arquitectura, número de tokens de entrenamiento, composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. Tampoco se documentan innovaciones como decodificación especulativa o atención lineal. Todo ello queda marcado como no disponible.
+No se documentan en la model card los datos de entrenamiento, el numero de tokens, ni si hubo RLHF/DPO o ajuste fino posterior. Tampoco se detalla la receta de conversion (opset, precisiones por capa, calibracion). El espejo `model.safetensors`/`tokenizer.json` corresponde a `SoMarkAI/OXR-1.0`, cuyo entrenamiento no se describe en la informacion disponible.
 
 ## Capacidades
 
-- Detección de layout documental: el componente D-FINE identifica regiones (texto, figuras, tablas, encabezados) en páginas de documentos académicos.
-- Recuperación semántica y embeddings: `bge-small-en-v1.5` genera representaciones vectoriales para búsqueda por similitud sobre texto en inglés.
-- Procesamiento de documentos académicos: OXR-1.0 se presenta como modelo del pipeline de lectura académica, aunque sus capacidades concretas no se detallan.
-- Ejecución local en Apple Silicon: la conversión a Core ML con precisión mixta permite inferencia en CPU, GPU y Neural Engine de dispositivos Apple.
-- Verificación de integridad: cada artefacto se valida contra su SHA-256 en la aplicación, lo que aporta garantías de cadena de suministro.
-- Soporte tipográfico multilingüe (chino simplificado y tradicional, japonés, coreano) mediante las fuentes Source Han incluidas.
-- No se documentan capacidades de tool calling, razonamiento multi-paso, agentes ni multimodalidad más allá del layout.
+- Deteccion de layout de documentos: el modelo D-FINE identifica regiones estructurales (texto, figuras, tablas, etc.) en paginas academicas, como paso previo al recorte y OCR.
+- Generacion de embeddings de frases en ingles: `bge-small-en-v1.5` produce representaciones densas para busqueda semantica y similitud entre fragmentos.
+- Inferencia en dispositivo en Apple Silicon via Core ML (CPU, GPU y Neural Engine segun el despliegue).
+- Verificacion de integridad: cada artefacto se comprueba contra su SHA-256 en la app antes de usarse.
+- Renderizado tipografico multilingue: 34 fuentes que cubren chino (Source Han regional, LXGW WenKai), japones (Klee One), coreano (MaruBuri) y latinas/Noto.
+- No se documentan capacidades de generacion de texto, razonamiento, codigo, tool calling, agentes, vision general, audio ni modo "thinking".
 
 ## Casos de uso
 
-- Extracción de estructura en artículos académicos: D-FINE detecta bloques de texto, figuras y tablas en PDFs escaneados, permitiendo reconstruir el orden de lectura antes de aplicar OCR o extracción de texto.
-- Búsqueda semántica en una biblioteca personal de papers: `bge-small-en-v1.5` indexa fragmentos y permite consultas por similitud vectorial sin salir del dispositivo, útil para investigadores con grandes colecciones locales.
-- Lectura offline en macOS/iOS: al estar convertidos a Core ML, los modelos se ejecutan en el Neural Engine sin necesidad de conexión ni de enviar documentos a la nube, lo que reduce riesgos de privacidad.
-- Preprocesado para pipelines de RAG académico: el layout detector segmenta el documento y el encoder genera embeddings que alimentan un índice vectorial local para un asistente de lectura.
-- Distribución verificable de artefactos ML: el patrón de hashes SHA-256 sirve como referencia para empaquetar modelos en aplicaciones de escritorio con garantías de integridad.
-- Renderizado de documentos CJK: las fuentes Source Han permiten mostrar correctamente texto en chino, japonés y coreano en la interfaz de lectura.
-- Prototipado de OCR documental en Apple Silicon: el espejo de OXR-1.0 en safetensors permite experimentar con el modelo fuera del bundle Core ML, aunque requiere infraestructura propia.
+- Pipeline de lectura academica en macOS/iOS: usar `dfine-coreml` para segmentar la pagina en regiones y `bge-small-en-v1.5-coreml` para indexar los fragmentos extraidos; ambos artefactos estan pensados exactamente para este flujo dentro de la app.
+- Busqueda semantica local de literatura: generar embeddings con la conversion de BGE-small y almacenarlos en un indice vectorial en el dispositivo, sin enviar texto a servidores externos.
+- Deduplicacion y agrupacion de fragmentos: comparar embeddings de parrafos para detectar contenido repetido entre papers o notas.
+- Extraccion estructurada de PDFs academicos: combinar la deteccion de layout con un OCR posterior para reconstruir secciones (abstract, cuerpo, referencias) antes de alimentar un LLM.
+- Prototipado de apps de lectura en Apple Silicon: reutilizar las conversiones Core ML para evitar el paso de conversion desde PyTorch, con el ahorro de tiempo que ello implica.
+- Empaquetado de fuentes para visores multilingues: reutilizar las 34 caras (SIL OFL 1.1) en visores de documentos que necesiten cobertura CJK y latina.
+- Verificacion de integridad en pipelines de distribucion: adoptar el patron de hash SHA-256 para validar artefactos descargados en produccion.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: el repositorio completo ocupa 0,2 GB, por lo que el conjunto de artefactos cabe holgadamente en memoria de cualquier dispositivo moderno; el desglose por componente no se detalla.
-- GPU recomendadas: no se especifican; el formato Core ML está orientado a Apple Silicon (M1/M2/M3/M4) con aceleración por Neural Engine y GPU integrada.
-- Compatibilidad con GPU de consumo: los artefactos Core ML no están pensados para GPUs NVIDIA; el espejo safetensors de OXR-1.0 podría ejecutarse en GPUs de consumo, pero se desconoce su tamaño y por tanto los requisitos reales.
-- Opciones de despliegue: Core ML (Core ML Tools, Xcode) para los componentes convertidos; safetensors requiere un runtime compatible (PyTorch, Transformers) para OXR-1.0.
+- VRAM: no disponible; al ser Core ML, la inferencia usa memoria unificada en Apple Silicon, no VRAM dedicada. El repo completo ocupa 0,4 GB, pero el peso de cada artefacto por separado no se detalla.
+- GPU recomendadas: Apple Silicon (serie M) con soporte Core ML; no se documenta compatibilidad con A100, H100 ni RTX 4090, ya que Core ML esta orientado a hardware Apple.
+- Cabe en GPU de consumo: si, en equipos Apple Silicon; no se garantiza en GPU NVIDIA/AMD sin reconversion a otro runtime.
+- Opciones de despliegue: Core ML (framework nativo de Apple); no se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a estos artefactos.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
+| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `zhenyue/academic-reader-models` | Bundle (layout + embeddings + OCR) | No disponible | No disponible | Mixta (OXR, MIT, OFL) | Hugging Face (0 descargas) |
-| `BAAI/bge-small-en-v1.5` | Encoder de embeddings | ~33 M (no confirmado en esta conversión) | 512 tokens (típico de la familia) | MIT | Hugging Face, ampliamente usado |
-| D-FINE (upstream) | Detector de objetos | No disponible en esta ficha | No aplica | Apache-2.0 (upstream) | GitHub, Hugging Face |
-| `SoMarkAI/OXR-1.0` | Modelo de documento | No disponible | No disponible | OXR License | ModelScope (espejo en este repo) |
+| `zhenyue/academic-reader-models` | Paquete Core ML (D-FINE + BGE-small + fuentes) | no disponible | no disponible | por artefacto (OXR, MIT, OFL) | Hugging Face (0,4 GB) |
+| `SoMarkAI/OXR-1.0` | Modelo de layout/documento (origen del D-FINE) | no disponible | no disponible | OXR License | Hugging Face / ModelScope |
+| `BAAI/bge-small-en-v1.5` | Encoder de frases | no disponible | 512 tokens (original) | MIT | Hugging Face |
+| D-FINE (upstream) | Detector de objetos | no disponible | no aplica | no disponible | Repo de investigacion |
 
-La comparativa directa es limitada porque el repositorio no es un modelo único sino un paquete de distribución. Frente a alternativas como `docling` o `unstructured`, que ofrecen pipelines de layout y OCR en Python, este bundle se distingue por su orientación a ejecución local en Apple Silicon y por la verificación criptográfica de artefactos.
+La comparativa es estructural: el repositorio de zhenyue es una distribucion de artefactos derivados de los otros tres, no un competidor directo. No se dispone de datos de rendimiento para comparar metricas.
 
 ## Limitaciones y advertencias
 
-- La model card no documenta arquitectura, parámetros, contexto ni datos de entrenamiento de OXR-1.0, lo que impide evaluar su calidad de forma independiente.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta; no hay evidencia de uso en producción ni de validación por la comunidad.
-- La licencia es mixta y la OXR License incluye términos adicionales sobre Apache-2.0 que no se detallan en la model card; es imprescindible revisar el fichero LICENSE antes de cualquier uso comercial.
-- `bge-small-en-v1.5` está entrenado principalmente en inglés; su rendimiento en castellano u otros idiomas no está garantizado.
-- Las conversiones a Core ML con precisión mixta pueden introducir degradaciones numéricas respecto a los pesos originales; no se publican métricas de fidelidad de la conversión.
-- Riesgo de alucinación y sesgos: no evaluable sin información sobre el entrenamiento de OXR-1.0.
-- El espejo de OXR-1.0 solo está disponible en ModelScope según la model card, lo que puede complicar la reproducibilidad fuera de ese ecosistema.
-- No se especifican requisitos de versión mínima de macOS/iOS ni de Core ML Tools para cargar los artefactos.
+- No es un modelo de lenguaje: no genera texto, no razona y no soporta tool calling; usarlo como sustituto de un LLM es un error de categoria.
+- El repositorio no declara licencia, idiomas ni pipeline a nivel global; la licencia aplica por artefacto y debe revisarse individualmente (OXR License incluye terminos adicionales de SoMark sobre Apache-2.0).
+- `bge-small-en-v1.5` esta entrenado solo en ingles; los embeddings para otros idiomas no son fiables.
+- La deteccion de layout D-FINE puede fallar en maquetaciones atipicas (dos columnas con figuras flotantes, escaneos torcidos, tablas complejas); no se documentan tasas de error.
+- Al ser conversiones Core ML, el rendimiento y la fidelidad numerica pueden diferir del modelo original en PyTorch; no se publican comparaciones.
+- El espejo `model.safetensors` solo esta en ModelScope, lo que puede romper la reproducibilidad si se descarga solo desde Hugging Face.
+- El numero de descargas (38) y la ausencia de "likes" indican poca validacion externa; conviene verificar los SHA-256 antes de usar en produccion.
+- No se documentan sesgos, riesgos de alucinacion ni limitaciones de contexto mas alla de las propias de cada componente.
 
 ## Enlaces
 
 - Repositorio en Hugging Face: https://huggingface.co/zhenyue/academic-reader-models
-- Modelo upstream de embeddings: https://huggingface.co/BAAI/bge-small-en-v1.5
-- Repositorio D-FINE (upstream, referencia): https://github.com/Peterande/D-FINE
-- Modelo OXR-1.0 en ModelScope: no disponible (la model card lo menciona sin enlace directo)
-- Fuentes Source Han de Adobe: https://github.com/adobe-fonts/source-han-serif y https://github.com/adobe-fonts/source-han-sans
+- Modelo de layout de origen (OXR-1.0): https://huggingface.co/SoMarkAI/OXR-1.0
+- Encoder de frases original: https://huggingface.co/BAAI/bge-small-en-v1.5
+- Paper de D-FINE: no disponible en la informacion proporcionada
+- Repositorio de D-FINE: no disponible en la informacion proporcionada
+- Demo o blog del autor: no disponible en la informacion proporcionada

@@ -2,119 +2,94 @@
 
 ## Resumen
 
-send-gate-307m es un clasificador binario de seguridad para mensajes de chat, desarrollado por yamura4, concebido como puerta de envío («send gate») en aplicaciones de mensajería usadas por adolescentes en Flandes y los Países Bajos. Se apoya en el backbone encoder jhu-clsp/mmBERT-base (307 millones de parámetros, familia ModernBERT) y añade una cabeza MLP que devuelve una probabilidad de bloqueo. No genera texto: decide entre permitir o bloquear, sin banda intermedia de revisión, y ante la ambigüedad bloquea.
+send-gate v7.2 es un clasificador binario de seguridad para chats de adolescentes en neerlandés/flamenco e inglés, desarrollado por el usuario yamura4. Su función es devolver únicamente dos veredictos, `block` o `allow`, sin banda intermedia de revisión. Combina cuatro ramas aprendidas: un clasificador principal mmBERT de 307 millones de parámetros, una rama de n-gramas de caracteres, una rama de política para direcciones, IP y enlaces, y una rama de supresión de casos benignos. No emplea expresiones regulares ni listas de palabras.
 
-Su interés práctico está en el coste por mensaje: 11,5 ms de mediana y 12,2 ms en p95 sobre GPU AMD para un mensaje individual, con un peso de 614 MB en bf16, lo que permite moderar de forma síncrona antes de que el mensaje salga del remitente. En su benchmark interno de 577 elementos obtiene un AUC de 0,945, detecta el 80,0 % del contenido dañino con un 6,5 % de falsos bloqueos y se publica con licencia MIT en safetensors, PyTorch y ONNX.
+El modelo resuelve el problema de moderación de contenido en entornos de mensajería juvenil, donde los filtros léxicos clásicos fallan ante variantes ofuscadas (`k4nkermoeilijke`), formatos de dirección o frases de ingeniería social. La arquitectura principal es un transformer mmBERT con pooling CLS, complementado por una CNN de caracteres a nivel de byte y una cabeza 768→256→1. El modelo se distribuye en formato ONNX con encoder en FP16 y embeddings en INT8, manteniendo el vocabulario completo de 256.000 tokens y aceptando longitudes de mensaje dinámicas.
 
-El modelo está diseñado para funcionar en cascada: los casos con probabilidad intermedia se derivan a un profesor mayor (SingGuard-4B), de modo que solo alrededor del 7 % del tráfico requiere el modelo grande. Esa arquitectura de dos niveles, junto con la latencia y el tamaño reducido del estudiante, es lo que lo hace relevante frente a desplegar directamente un modelo de miles de millones de parámetros en cada mensaje.
+Es relevante porque ofrece un pipeline de moderación autocontenido, desplegable en hardware modesto (Raspberry Pi 5 con 4 GB como mínimo), con licencia MIT para el código de entrenamiento y la puerta, lo que facilita su integración en plataformas de chat sin dependencia de servicios externos.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Encoder ModernBERT (backbone jhu-clsp/mmBERT-base) con cabeza MLP de clasificación 768→256 (GELU)→1, dropout 0,1 |
-| Parámetros totales | 307.136.769 |
-| Parámetros activos | no aplica (modelo denso) |
-| Longitud de contexto | 512 tokens; ámbito de producto declarado: 1-250 caracteres |
-| Tipos de cuantización | bf16 (recomendada); INT8 no disponible |
-| Idiomas soportados | neerlandés (incluido flamenco) e inglés |
-| Licencia | MIT |
-| Formato de pesos | safetensors, PyTorch (.pt), ONNX |
+| Arquitectura | mmBERT (transformer) con pooling CLS, CNN de caracteres a nivel de byte y cabeza 768→256→1; tres ramas auxiliares de n-gramas de caracteres con regresión logística |
+| Parametros totales | 307.136.769 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (acepta longitudes dinámicas de mensaje; se documentan latencias a 128 tokens) |
+| Tipos de cuantizacion | FP16 (encoder) e INT8 (embeddings) en el export ONNX |
+| Idiomas soportados | neerlandés (nl), flamenco, inglés (en) |
+| Licencia | MIT para el código de entrenamiento y la puerta; el backbone `jhu-clsp/mmBERT-base` tiene su propia licencia que debe verificarse |
+| Formato de pesos | ONNX (`model.onnx`), tokenizer JSON, ramas auxiliares en NPZ |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un encoder bidireccional de la familia ModernBERT sobre el checkpoint jhu-clsp/mmBERT-base, coronado por una cabeza MLP que proyecta la representación de 768 dimensiones a 256 con activación GELU, aplica dropout de 0,1 y emite un único logit que se interpreta como probabilidad de bloqueo mediante sigmoide. La entrada se trunca a 512 tokens, aunque el ámbito de producto está fijado en mensajes de 1 a 250 caracteres, lo que sitúa la mayoría de peticiones muy por debajo del límite del contexto.
+El modelo principal es un mmBERT de 307 millones de parámetros con pooling CLS, una CNN de caracteres a nivel de byte y una cabeza de clasificación 768→256→1. Sobre esta base se añaden tres ramas auxiliares basadas en n-gramas de caracteres 2–5 hasheados con 2^18 características y regresión logística aprendida: una rama de n-gramas general, una rama de política entrenada sobre formatos sintéticos de direcciones, IP y enlaces, y una rama benigna entrenada sobre rechazos de privacidad, conversaciones sobre enlaces y chat común. La decisión final combina los umbrales: bloqueo si la rama principal ≥ 0,94, la de n-gramas ≥ 0,95 o la de política ≥ 0,85; la rama benigna ≥ 0,99 suprime un bloqueo.
 
-El entrenamiento combina dos objetivos: entropía cruzada binaria sobre etiquetas duras construidas como unión de los profesores (SingGuard-4B ∪ Nemotron-3.5, se bloquea si cualquiera de los dos bloquea) y destilación KL sobre las probabilidades suaves del profesor con temperatura T=2. No hay SFT, DPO ni RL. El conjunto de entrenamiento tiene 73.000 ejemplos (pool público, aumento de datos específico de flamenco y 1.300 filas escritas a mano) y 1.500 de desarrollo. En las filas manuscritas se aplica la regla «gold-wins»: se usan las etiquetas humanas aunque los profesores se equivoquen, algo que ocurre en el 13 % de esos casos. El umbral de decisión, 0,84, se seleccionó únicamente sobre el split de desarrollo, dejando el benchmark intacto. La elección del backbone se justificó con una comparación A/B frente a MrBERT (febrero de 2026), en la que mmBERT obtuvo 0,945 de AUC frente a 0,869.
+No se especifica en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se emplearon técnicas de RLHF o DPO. La model card indica explícitamente que no se usan expresiones regulares ni listas de palabras, y que la rama de política se entrena con formatos sintéticos de direcciones, IP y enlaces. El export ONNX es dinámico y requiere longitudes exactas de tokens y bytes; no debe rellenarse con ceros enmascarados, ya que `gate.py` lo gestiona automáticamente.
 
 ## Capacidades
 
-- Clasificación binaria de seguridad (bloquear/permitir) sobre mensajes cortos en neerlandés e inglés, con salida probabilística continua.
-- Cobertura de categorías medida en el benchmark: armas, drogas y ciberdelincuencia (90,0 % de detección), acoso y odio (86,2 %), amenazas y violencia (85,7 %), autolesión (84,0 %), ofuscación y bypass (76,0 %), contenido sexual adulto o trastornos alimentarios (71,4 %), PII y doxxing (70,6 %), estafas y suplantación (70,0 %), inyección de prompt (70,0 %) y contenido sexual con menores (50,0 % sobre solo 6 elementos).
-- Manejo de code-switching neerlandés/inglés y de jerga flamenca, con falsos bloqueos del 12,5 % y 5,0 % respectivamente en las rodajas benignas correspondientes.
-- Robustez parcial frente a ofuscación e intentos de inyección, integrada en el propio conjunto de evaluación.
-- No soporta tool calling, function calling, uso como agente, razonamiento multi-paso ni generación de texto: es exclusivamente un clasificador.
-- Salida calibrada para umbral fijo y para enrutado en cascada (tres bandas: permitir, bloquear, escalar).
-- Inferencia en CPU sin PyTorch mediante el grafo ONNX, lo que habilita despliegues en entornos sin GPU.
+- Clasificación binaria de contenido (`block`/`allow`) para mensajes de chat en neerlandés/flamenco e inglés.
+- Detección de términos dañinos ofuscados mediante variantes ortográficas y sustituciones de caracteres (`kkrtest`, `k4nkermoeilijke`).
+- Detección de formatos de dirección, direcciones IP y enlaces (incluyendo variantes como `192 dot 168 dot 1 dot 1` y `https://google.com`).
+- Detección de frases de ingeniería social y lenguaje abusivo (`je bent een omgekeerde regen`).
+- Supresión de falsos positivos en rechazos de privacidad y conversaciones benignas (`mijn huisadres zijn je zaken niet`, `ik leef op een heuvel`).
+- Capacidad multilingüe limitada a neerlandés/flamenco e inglés.
+- No soporta tool calling, function calling, agentes ni razonamiento multi-paso: es un clasificador de texto, no un modelo generativo.
+- No dispone de modo de razonamiento (thinking), visión ni audio.
 
 ## Casos de uso
 
-- Moderación pre-envío en aplicaciones de chat para adolescentes: el modelo se ejecuta en el camino crítico del envío y, con 11,5 ms por mensaje, puede bloquear contenido dañino antes de que llegue al destinatario sin introducir una latencia perceptible en la conversación.
-- Cascada de moderación a escala: con los umbrales recomendados (permitir por debajo de 0,25, bloquear por encima de 0,70 y escalar la franja intermedia a SingGuard-4B), solo cerca del 7 % del tráfico consume el modelo grande, lo que reduce el coste de inferencia en más de un orden de magnitud manteniendo un 89 % de detección end-to-end.
-- Detección de estafas y suplantación en comunidades flamencas y neerlandesas: el modelo identifica patrones como «gratis robux, geef je wachtwoord door» y otros intentos de ingeniería social dirigidos a menores.
-- Filtrado de PII y doxxing en mensajes cortos dentro de foros o salas de chat: la detección se aplica antes de publicar y permite retener el mensaje o enmascarar datos personales según política.
-- Moderación de contenido autolesivo con derivación a recursos de ayuda: cuando el mensaje se clasifica como autolesión, la aplicación puede mostrar líneas de apoyo en lugar de descartar silenciosamente el mensaje.
-- Protección frente a inyección de prompt en asistentes conversacionales: aunque el modelo es un clasificador y no un LLM, puede colocarse delante de un agente para marcar entradas que intentan manipular instrucciones del sistema.
-- Despliegue en regiones con infraestructura limitada: el grafo ONNX de 1,2 GB (617 MB en bf16) permite ejecutar la moderación en CPU, sin GPU, en instalaciones autoalojadas.
+- Moderación en tiempo real de chats juveniles: el modelo clasifica cada mensaje como `block` o `allow` con una latencia de ~22 ms para mensajes cortos en un Ryzen 7 3800X, lo que permite filtrar en línea sin degradar la experiencia de conversación.
+- Detección de intentos de compartir datos personales: la rama de política identifica direcciones, IP y enlaces con un recall del 99,7 % sobre 2.000 formatos sintéticos retenidos, adecuada para bloquear el intercambio de información de contacto en plataformas de mensajería.
+- Filtrado de lenguaje ofensivo ofuscado: la combinación de la rama principal mmBERT y la rama de n-gramas captura variantes como `k4nkermoeilijke` que escapan a listas de palabras, útil en comunidades donde los usuarios intentan evadir filtros léxicos.
+- Despliegue en dispositivos de borde: con un modelo en disco de 419 MB y un RSS de servidor de ~1,29 GiB, puede ejecutarse en una Raspberry Pi 5 con 4 GB (8 GB recomendado), lo que permite moderación local sin enviar mensajes a la nube.
+- Integración en servidores HTTP existentes: `serve.py` expone una API JSON y una interfaz web en el puerto 8080, lo que facilita conectarlo a un backend de chat mediante una llamada `POST /api/check`.
+- Prefiltrado en pipelines de moderación más amplios: al devolver solo `block` o `allow` sin banda de revisión, puede actuar como primera etapa que deriva únicamente los mensajes bloqueados a un revisor humano o a un modelo mayor.
+- Protección de menores en foros escolares: la rama benigna suprime falsos positivos en conversaciones ordinarias (`de regen valt`, `kwart voor 8`), reduciendo las interrupciones injustificadas en entornos educativos.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card sobre un benchmark de 577 elementos, con la inyección excluida del cómputo global.
-
-| Métrica | Valor |
+| Benchmark | Resultado |
 |---|---|
-| Elementos evaluados | 577 |
-| Contenido dañino detectado | 80,0 % |
-| Falsos bloqueos («false walls») | 6,5 % |
-| Precisión (accuracy) | 89,3 % |
-| AUC | 0,945 |
-| Errores | 62/577 |
+| Exactitud (804 elementos) | 94,2 % |
+| Dañinos detectados (804 elementos) | 95,6 % (282/295) |
+| Falsos bloqueos benignos (804 elementos) | 6,7 % (34/509) |
+| Falsos negativos (804 elementos) | 13 |
+| Falsos positivos (804 elementos) | 34 |
+| Exactitud global (1.793 elementos) | 96,0 % |
+| Falsos negativos globales (1.793 elementos) | 27 |
+| Falsos positivos globales (1.793 elementos) | 45 |
+| Variantes retenidas (227 elementos) | 0 falsos negativos |
+| Rama de política, recall (2.000 formatos sintéticos) | 99,7 % |
+| Rama de política, falsos positivos (1.060 controles benignos, umbral 0,85) | 0 |
 
-| Idioma | n | Detectado | Falsos bloqueos | Precisión |
-|---|---|---|---|---|
-| Neerlandés | 368 | 80,2 % | 8,1 % | 88,9 % |
-| Inglés | 209 | 79,8 % | 3,2 % | 90,0 % |
-
-| Versión | AUC | Detectado @ falsos bloqueos | Precisión | Errores |
-|---|---|---|---|---|
-| v0 | 0,905 | 61,7 % @ 6,8 % | 83,4 % | 96 |
-| v1 | 0,921 | 67,8 % @ 6,8 % | 85,3 % | 85 |
-| v2 (publicada) | 0,945 | 80,0 % @ 6,5 % | 89,3 % | 62 |
-| v3 | 0,950 | 81,7 % @ 7,3 % | 89,3 % | 62 |
-| MrBERT (A/B) | 0,869 | 57,2 % @ 5,5 % | 82,8 % | 99 |
-
-## Requisitos de hardware
-
-- Pesos: 1,2 GB en fp32 y 614 MB en bf16; los ficheros ONNX ocupan 1,2 GB y 617 MB respectivamente.
-- VRAM estimada para inferencia: aproximadamente 1,5-2 GB en bf16 y 2,5-3 GB en fp32 con lotes pequeños. Es una estimación a partir del tamaño de los pesos y de la activación de un encoder de 307M; el autor no publica cifras de VRAM.
-- GPU recomendadas: cualquier GPU con 4 GB o más sirve; una RTX 3060 de 12 GB, una RTX 4060 o una GTX 1660 de 6 GB son suficientes y dejan margen para otros procesos. En centros de datos, A100 y H100 están sobredimensionadas para este modelo y solo se justifican por agregación de tráfico, no por requisitos de memoria.
-- Cabe en GPU de consumo: sí, con holgura, incluida la variante bf16.
-- Despliegue: PyTorch/Transformers con el módulo `model.py` del repositorio, ONNX Runtime para CPU, y orquestadores tipo Triton Inference Server o endpoints gestionados de Hugging Face. No aplica vLLM ni TGI, al no ser un modelo generativo.
-- Latencia: p50 de 11,5 ms y p95 de 12,2 ms por mensaje individual en GPU AMD. El throughput agregado no está publicado; puede aumentarse por batching, ya que la entrada máxima es de 512 tokens.
-- En CPU solo se documenta la ruta ONNX; no se publican cifras de latencia para ese backend.
+| Métrica de despliegue | Valor |
+|---|---|
+| Modelo en disco | 419 MB |
+| RSS de sesión ONNX Runtime | ~0,85 GiB |
+| RSS del servidor completo | ~1,29 GiB |
+| Latencia en Ryzen 7 3800X | ~22 ms (mensajes cortos); ~100 ms (128 tokens) |
+| Raspberry Pi 5 | 4 GB mínimo, 8 GB recomendado; velocidad no medida |
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| send-gate-307m | 307M | 512 tokens | AUC 0,945; 80,0 % detectado @ 6,5 % de falsos bloqueos | MIT | Hugging Face (yamura4) |
-| MrBERT (A/B de febrero de 2026) | no disponible | no disponible | AUC 0,869; 57,2 % detectado @ 5,5 % | no disponible | no disponible |
-| SingGuard-4B (profesor) | ~4B | no disponible | no disponible como clasificador independiente | no disponible | no disponible |
-| jhu-clsp/mmBERT-base (backbone) | 307M | no disponible en la información proporcionada | no disponible; no es un clasificador de seguridad | no disponible | Hugging Face (jhu-clsp) |
-| Vela 1.0 Encoder 307M | 307M | no disponible | no disponible | no disponible | Hugging Face (vllm-sr) |
-
-La comparación más directa y con datos es la de MrBERT, que pierde 7,6 puntos de AUC y 22,8 puntos de detección frente a send-gate-307m con un umbral de falsos bloqueos similar. Vela 1.0 Encoder 307M comparte tamaño, pero pertenece a la familia de modelos de enrutado de vLLM Semantic Router y no se ha evaluado en la misma tarea de moderación, por lo que la comparación cuantitativa no está disponible.
+No se dispone de información sobre modelos comparables en la documentación proporcionada. Los clasificadores de moderación de propósito general (como los basados en BERT multilingüe o en modelos de toxicidad) no aparecen referenciados en la model card, por lo que no es posible establecer una comparación con datos verificables de parámetros, contexto, rendimiento o licencia.
 
 ## Limitaciones y advertencias
 
-- Idiomas: solo neerlandés (incluido flamenco) e inglés; cualquier otro idioma queda fuera de alcance y no debe asumirse un comportamiento fiable.
-- Longitud: el ámbito de producto es de 1 a 250 caracteres. Mensajes más largos, aunque quepan en los 512 tokens, no están cubiertos por la evaluación.
-- Decisión binaria sin banda de revisión: la ambigüedad se resuelve bloqueando, lo que penaliza casos límite legítimos.
-- Evaluación de paráfrasis: el propio autor reporta un 15,1 % de falsos bloqueos, más del doble que el 6,5 % del benchmark principal; el rendimiento en texto reformulado es peor de lo que sugiere la tabla.
-- Rodajas pequeñas: categorías como contenido sexual con menores tienen solo 6 elementos, con intervalos de confianza muy amplios; el 50 % de detección no debe interpretarse como una tasa estable.
-- Amenazas y violencia: aunque detecta el 85,7 % de los casos dañinos, también bloquea el 75,0 % de los mensajes benignos de esa misma categoría, lo que en la práctica hace inviable usar el modelo aislado para esa clase.
-- Umbral: 0,84 se eligió sobre el split de desarrollo y el autor advierte de que puede requerir recalibración en producción.
-- Cuantización: INT8 no está disponible. El cuantizador de ONNX Runtime falla con la atención de ModernBERT (errores de broadcasting en DequantizeLinear) y la cuantización dinámica de PyTorch degrada la detección del 80 % al 43 %. bf16 es la única alternativa de reducción viable.
-- Licencia MIT: permite uso comercial y modificación, pero no incluye garantías ni cláusulas de indemnización; el despliegue en un producto dirigido a menores exige revisión legal y de protección de datos independiente.
-- Documentación: el README incluye residuos de un script de publicación (líneas `EOF`, `echo`, `wc -l`), lo que sugiere un proceso de publicación poco pulido; conviene verificar los artefactos antes de integrarlos.
+- La rama de direcciones, IP y enlaces se entrena con formatos sintéticos; no garantiza cobertura de todos los TLD, trucos de espaciado o estilos de dirección del mundo real.
+- `ja jammer` sigue siendo un falso bloqueo benigno conocido.
+- Varias decisiones quedan a pocas milésimas del umbral, por lo que el redondeo FP16 puede invertir la clasificación de casos límite.
+- El rendimiento en Raspberry Pi y el comportamiento de ONNX Runtime en ARM64 no se han medido.
+- El servidor `serve.py` no incluye autenticación ni TLS; si se expone a internet, debe colocarse detrás de un proxy inverso.
+- No se recomienda su uso en placas de 2 GB.
+- La licencia MIT cubre el código de entrenamiento y la puerta, pero el backbone `jhu-clsp/mmBERT-base` tiene su propia licencia que debe verificarse antes de un despliegue comercial.
+- El modelo solo cubre neerlandés/flamenco e inglés; no es adecuado para otros idiomas.
+- Al ser un clasificador binario sin banda de revisión, los casos límite se resuelven con un bloqueo o una autorización, sin posibilidad de escalado intermedio.
+- Riesgo de sesgos y alucinación no documentado en la información disponible; al tratarse de un clasificador, el riesgo principal es de falsos positivos y negativos, no de generación de contenido.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/yamura4/send-gate-307m
-- Backbone mmBERT-base (ICML 2026): https://huggingface.co/jhu-clsp/mmBERT-base
-- Perfil del autor: https://huggingface.co/yamura4
-- Listado de modelos del autor: https://huggingface.co/yamura4/models
-- Blog de Vela 1.0 (familia de encoders de 307M, contexto relacionado): https://vllm-sr.ai/blog/vela-models/
-- Repositorio de vLLM Semantic Router con el registro de modelos Vela: https://github.com/vllm-project/semantic-router/blob/main/website/docs/tutorials/global/vela-models.md
-- Ficha de Vela 1.0 Encoder 307M: https://free2aitools.com/model/vllm-sr/vela-1.0-encoder-307m
-- Paper del backbone: no disponible en la información proporcionada.
+- Backbone mmBERT: `jhu-clsp/mmBERT-base` (referenciado en la model card, sin URL completa en la información disponible)

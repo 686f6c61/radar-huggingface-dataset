@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "mariklolik228/dl-course-hw7-compression",
+  "slug": "mariklolik228-dl-course-hw7-compression",
+  "author": "mariklolik228",
+  "url": "https://huggingface.co/mariklolik228/dl-course-hw7-compression",
+  "created_at": "2026-11-17T01:23:22.000Z",
+  "updated_at": "2026-11-17T03:43:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "quantization",
+    "distillation",
+    "ru",
+    "dataset:AmazonScience/massive",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51683386350,
+  "storage_human": "51.7 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

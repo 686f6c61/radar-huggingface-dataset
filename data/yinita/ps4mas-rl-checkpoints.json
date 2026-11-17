@@ -40,31 +40,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "yinita/ps4mas-sft-0805-mas-rewrite-v1-ckpt200 · Hugging Face",
-      "url": "https://huggingface.co/yinita/ps4mas-sft-0805-mas-rewrite-v1-ckpt200",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Checkpoint AI Models (141) | Civitai",
-      "url": "https://civitai.com/tag/checkpoint",
-      "snippet": "Browse 141 AI models tagged \"Checkpoint\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
-    },
-    {
-      "title": "AI Image & Video Models, LoRAs & Checkpoints | Civitai",
-      "url": "https://civitai.com/models",
-      "snippet": "Download AI image and video models from the largest community library: checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux, Wan and more."
-    },
-    {
-      "title": "Stable Diffusion Checkpoints — Free AI Model Downloads | ComfyUI Resources",
-      "url": "https://comfyuiweb.com/resources/checkpoints",
-      "snippet": "Curated collection of the most popular Stable Diffusion checkpoint models. From photorealistic to anime, find the perfect base model for your AI art workflow."
-    },
-    {
-      "title": "Hub repository · TrendSpikes",
-      "url": "https://www.trendspikes.com/app/hugging-face/repositories/aa876386-6f5d-4c19-ab3f-cd3f355950cc",
-      "snippet": "Public Hugging Face Hub repository metadata. No weights, dataset rows or Space files are ever downloaded. ← All formation phrases model open on the Hub ↗ yinita Namespace 2026-08-13 Created 2026-08-13 Last modified 0 Likes 0 Downloads blank = unknown — Trending score provider signal"
-    }
-  ]
+  "sources": []
 }

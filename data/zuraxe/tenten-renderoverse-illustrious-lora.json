@@ -5,7 +5,7 @@
   "author": "zuraxe",
   "url": "https://huggingface.co/zuraxe/tenten-renderoverse-illustrious-lora",
   "created_at": "2026-11-16T19:26:41.000Z",
-  "updated_at": "2026-11-16T19:31:05.000Z",
+  "updated_at": "2026-11-17T10:24:24.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "zuraxe/tenten-naruto-boruto",
+  "renamed_at": "2026-11-17T10:58:52.017Z",
   "benchmarks": [],
   "sources": []
 }

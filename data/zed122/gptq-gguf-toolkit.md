@@ -2,90 +2,88 @@
 
 ## Resumen
 
-`zed122/gptq-gguf-toolkit` es un repositorio publicado en Hugging Face por el usuario zed122 cuyo nombre y etiquetas (`gguf`, `imatrix`, `gptq`, `conversational`, `endpoints_compatible`) apuntan a un conjunto de herramientas para convertir y cuantizar pesos en formato GPTQ hacia GGUF, más que a un modelo de lenguaje con una arquitectura documentada. El repositorio contiene 494.032.768 parámetros en pesos safetensors y ocupa 0,5 GB, una cifra coherente con un checkpoint pequeño (aproximadamente 0,5 millardos de parámetros) o con un conjunto de tensores auxiliares empaquetados.
+`zed122/gptq-gguf-toolkit` es un repositorio publicado en Hugging Face por el usuario zed122 bajo licencia Apache 2.0. A pesar de su identificador y de las etiquetas que lo acompanan (`gguf`, `imatrix`, `conversational`), la informacion disponible no permite confirmar que se trate de un modelo de lenguaje con pesos entrenados en sentido estricto: el nombre sugiere un conjunto de herramientas para convertir y cuantizar modelos GPTQ a formato GGUF, y el unico enlace externo de la model card apunta a un repositorio de GitHub con un nombre practicamente identico.
 
-La model card es prácticamente vacía: solo declara licencia Apache 2.0 y enlaza a un repositorio de GitHub (`phox9622-dotcom/suc_gptq-gguf-toolkit`). No se documentan arquitectura, datos de entrenamiento, longitud de contexto, idiomas ni resultados de evaluación, por lo que no es posible verificar qué contiene realmente el checkpoint ni para qué tarea fue entrenado.
+El dato mas concreto es el recuento de parametros en safetensors, que asciende a 494.032.768 (aproximadamente 494 millones). Este orden de magnitud es coherente con un modelo de la familia de los ~500M parametros, pero no se dispone de informacion sobre arquitectura, contexto, datos de entrenamiento ni resultados de evaluacion. El tamano del repositorio (122,6 GB) es muy superior al que corresponderia a un modelo de 494M en precision completa, lo que apunta a que el repositorio incluye artefactos adicionales (multiples cuantizaciones, ficheros intermedios o pesos de otros modelos) y no solo los pesos del modelo.
 
-Su relevancia potencial es de infraestructura: si efectivamente implementa un pipeline de conversión GPTQ → GGUF con soporte de `imatrix` (matrices de importancia para cuantización), resultaría útil para desplegar modelos cuantizados en llama.cpp u Ollama. Con cero descargas y cero likes en el momento de la consulta, se trata de un artefacto sin validación comunitaria; conviene tratarlo como experimental y auditar los pesos antes de cualquier uso en producción.
+La relevancia actual del repositorio es, por tanto, instrumental: encaja en el ecosistema de conversion y cuantizacion (GPTQ a GGUF, uso de matrices de importancia `imatrix`) que permite desplegar modelos en llama.cpp y entornos de inferencia local. Para cualquier evaluacion como modelo de lenguaje, la informacion publica es insuficiente y asi se refleja en esta ficha.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (no documentada en la model card; el nombre del repo sugiere utilidades de conversion de cuantizacion, no una arquitectura de red declarada) |
-| Parametros totales | 494.032.768 (segun metadatos de safetensors) |
-| Parametros activos | no disponible (no se indica que sea un modelo MoE) |
+| Arquitectura | no disponible |
+| Parametros totales | 494.032.768 |
+| Parametros activos | no disponible (no consta que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible en detalle; las etiquetas del repo mencionan GGUF, GPTQ e `imatrix` |
+| Tipos de cuantizacion | no disponible (las etiquetas mencionan `gguf` e `imatrix`, sin detallar niveles) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (repo de 0,5 GB) y GGUF segun etiquetas |
+| Formato de pesos | safetensors (segun metadatos); etiqueta `gguf` |
+| Tamano del repositorio | 122,6 GB |
+| Descargas | 523 |
+| Likes | 0 |
+| Fecha de creacion | 2026-10-19 |
+| Ultima actualizacion | 2026-10-21 |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura del modelo: la model card no describe si se trata de un transformer denso, un modelo MoE, un SSM o un hibrido, ni incluye configuracion de capas, dimensiones ocultas, cabezas de atencion o tipo de tokenizador. Tampoco se publica el `config.json` ni ningun detalle sobre el proceso de entrenamiento (numero de tokens, composicion del dataset, uso de RLHF, DPO o SFT).
+No se ha publicado informacion sobre la arquitectura del modelo (transformer, MoE, SSM o hibrida), ni sobre el numero de tokens de entrenamiento, la composicion del dataset o el uso de tecnicas de alineacion como RLHF o DPO. El unico dato estructural disponible es el recuento de parametros en safetensors (494.032.768), que situa el artefacto en la escala de los modelos pequenos.
 
-Lo unico inferible a partir de los metadatos es el caracter presuntamente instrumental del repositorio: las etiquetas `gguf`, `gptq` e `imatrix` son propias del ecosistema de cuantizacion (llama.cpp y herramientas asociadas), y el nombre `gptq-gguf-toolkit` describe una utilidad de conversion de formato. Cualquier afirmacion sobre innovaciones tecnicas (atencion lineal, decodificacion especulativa, destilacion) seria especulativa y no se recoge aqui.
+Las etiquetas del repositorio (`gguf`, `imatrix`, `conversational`) y el propio nombre (`gptq-gguf-toolkit`) indican que el contenido esta orientado a la conversion de pesos GPTQ a GGUF y a la generacion de cuantizaciones asistidas por matrices de importancia. No obstante, no se detalla que innovaciones tecnicas incorpora ni que modelo base se utiliza como origen de la conversion.
 
 ## Capacidades
 
-- No se documenta ninguna capacidad verificada de generacion de texto, razonamiento, codigo o matematicas.
-- La etiqueta `conversational` sugiere un uso previsto de chat, pero no hay evidencia en la model card ni ejemplos de uso.
-- La etiqueta `endpoints_compatible` indica compatibilidad declarada con endpoints de inferencia, sin especificar el motor ni la API.
-- Soporte de tool calling o function calling: no disponible.
-- Soporte de agentes o razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas esta vacio).
-- Capacidades especiales (modo thinking, vision, audio): no disponibles.
+- Generacion de texto conversacional: la etiqueta `conversational` sugiere un uso orientado a dialogo, aunque no se documenta el formato de prompt ni las plantillas de chat.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el artefacto puede servirse a traves de la infraestructura de Inference Endpoints de Hugging Face.
+- Conversion y cuantizacion: el nombre del repositorio apunta a utilidades para transformar pesos GPTQ en GGUF y aplicar `imatrix`, lo que permitiria producir variantes cuantizadas para llama.cpp.
+- Tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: no disponible.
+- Capacidades especiales (vision, audio, modo thinking): no disponible.
 
 ## Casos de uso
 
-Los siguientes escenarios son hipoteticos y se derivan exclusivamente del nombre y las etiquetas del repositorio; no estan validados por el autor:
-
-- Conversion de checkpoints GPTQ a GGUF para despliegue en llama.cpp: si el repositorio contiene los scripts anunciados, permitiria transformar pesos cuantizados en formato GPTQ a GGUF y ejecutarlos en CPU o GPU con `llama.cpp`.
-- Generacion de matrices de importancia (`imatrix`) para cuantizacion de alta calidad: las matrices de importancia permiten ponderar los tensores durante la cuantizacion y reducir la perdida de perplexidad en Q4_K_M o Q5_K_M; el repositorio estaria orientado a ese flujo de trabajo.
-- Automatizacion de pipelines de publicacion de modelos cuantizados: integraria la conversion en un proceso reproducible que genere multiples variantes (Q4, Q5, Q8) a partir de un checkpoint original.
-- Evaluacion comparativa de calidad de cuantizacion: serviria para producir artefactos con los que medir la degradacion de perplexidad entre el modelo original y sus versiones cuantizadas.
-- Despliegue en hardware de bajos recursos: un checkpoint de ~0,5 GB en FP16 (aproximadamente 1 GB) puede comprimirse a unos 0,3 GB en Q4, lo que permitiria inferencia en dispositivos con poca memoria si el modelo resultase funcional.
-- Prototipado de endpoints compatibles con OpenAI: la etiqueta `endpoints_compatible` sugiere que el artefacto podria servirse detras de una API compatible, aunque no se especifica con que servidor.
+- Conversion de pesos GPTQ a GGUF: el repositorio se usaria como punto de partida para transformar un modelo cuantizado en formato GPTQ a GGUF, habilitando su ejecucion en llama.cpp y derivados. Es el uso que sugiere directamente el nombre del proyecto.
+- Generacion de cuantizaciones con `imatrix`: a partir de las etiquetas, el flujo permitiria calcular matrices de importancia y producir variantes GGUF de distinta precision para equilibrar calidad y memoria.
+- Despliegue en Inference Endpoints: la etiqueta `endpoints_compatible` permite publicar el artefacto como endpoint gestionado para pruebas de inferencia sin infraestructura propia.
+- Experimentacion con modelos de ~500M parametros: el recuento de parametros permite usar el artefacto como banco de pruebas para pipelines de cuantizacion y comparacion de niveles de precision en hardware modesto.
+- Integracion en pipelines de CI para validacion de cuantizaciones: un repositorio de herramientas de este tipo encaja en la automatizacion de comprobaciones de calidad (perplejidad, coherencia) tras cada conversion.
+- Prototipado de asistentes conversacionales ligeros: si el modelo base subyacente es conversacional, podria emplearse en demos de chat de bajo coste, siempre que se valide previamente su calidad, no documentada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye MMLU, HumanEval, GSM8K, perplexidad ni ninguna otra metrica, y los resultados de la busqueda web no contienen informacion tecnica relacionada con este repositorio.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Las cifras siguientes son estimaciones calculadas a partir del recuento de parametros (494 millones) y no proceden de mediciones publicadas por el autor:
-
-- VRAM estimada en FP16: en torno a 1,0 GB solo para pesos, mas overhead de activaciones y cache KV (dependiente de una longitud de contexto que no se ha publicado).
-- VRAM estimada en INT8: aproximadamente 0,5-0,6 GB.
-- VRAM estimada en Q4_K_M: aproximadamente 0,3-0,4 GB.
-- GPU: cabe con holgura en cualquier GPU consumer con 4 GB o mas (GTX 1650, RTX 3050, RTX 4060, RTX 4090); tambien en iGPU con memoria unificada. No requiere A100 ni H100.
-- Despliegue: `llama.cpp` y Ollama son las opciones coherentes con el formato GGUF declarado; vLLM y TGI requeririan pesos en safetensors con arquitectura soportada, lo cual no esta confirmado.
-- Latencia y throughput: no disponibles; sin arquitectura ni contexto documentados no es posible estimar tokens por segundo de forma fiable.
+- VRAM estimada para inferencia: no disponible con precision. Como referencia orientativa por el recuento de parametros (494M), en FP16 requeriria del orden de 1 GB de pesos y en cuantizaciones de 4 bits alrededor de 0,3-0,5 GB, pero estos calculos no estan confirmados por el autor.
+- GPU recomendadas: no disponible. Por tamano, cualquier GPU consumer con al menos 2-4 GB de VRAM libre deberia poder alojar un modelo de esta escala en cuantizacion, pero no hay validacion publicada.
+- Cabe en GPU consumer: previsiblemente si, dado el recuento de parametros, aunque no se documenta.
+- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio) por el formato GGUF; Inference Endpoints por la etiqueta `endpoints_compatible`. vLLM y TGI no estan confirmados.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No disponible. Al no estar documentada la arquitectura, la tarea ni el contenido real del checkpoint, no es posible identificar modelos alternativos comparables en parametros, contexto o rendimiento. Como referencia de categoria (modelos de ~500 M de parametros), existirian familias como Qwen2.5-0.5B o SmolLM2-360B, pero esta comparacion no se puede sostener sin confirmar que el repositorio contiene un modelo de lenguaje entrenado y no un conjunto de herramientas.
+No disponible. No se dispone de informacion sobre el modelo base ni sobre resultados de evaluacion que permitan una comparacion rigurosa con alternativas de la misma categoria.
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| zed122/gptq-gguf-toolkit | 494.032.768 (safetensors) | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
-| Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
-| Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Licencia | Formato | Benchmarks |
+|---|---|---|---|---|---|
+| zed122/gptq-gguf-toolkit | 494.032.768 | no disponible | Apache 2.0 | safetensors / GGUF | no disponible |
+| Alternativas de ~500M | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Model card practicamente vacia: no hay informacion sobre arquitectura, entrenamiento, datos, contexto ni evaluacion. Imposible evaluar sesgos conocidos.
-- Riesgo elevado de que el artefacto no sea un modelo conversacional funcional, sino un paquete de utilidades de conversion; el nombre del repositorio lo sugiere.
-- Cero descargas y cero likes: sin validacion de la comunidad ni evidencia de que los pesos funcionen.
-- Los resultados de la busqueda web asociados a este nombre no contienen informacion tecnica y no deben considerarse fuente; se han descartado por no ser relevantes.
-- Ausencia de datos sobre idiomas: no se puede asumir un rendimiento correcto en castellano.
-- Riesgo de alucinacion y de degradacion por cuantizacion: no medible sin benchmarks publicados.
-- Licencia Apache 2.0 permite uso comercial, pero el usuario debe verificar la procedencia de los pesos originales antes de redistribuirlos, ya que la licencia del checkpoint de origen podria ser distinta.
-- Para produccion: auditar los tensores, verificar que el `config.json` e `imatrix` sean coherentes y ejecutar una evaluacion propia de perplexidad antes de cualquier despliegue.
+- Ausencia de model card sustantiva: el README solo contiene la licencia y un enlace a GitHub, sin informacion sobre arquitectura, entrenamiento o evaluacion.
+- Naturaleza del artefacto incierta: el nombre y las etiquetas sugieren un conjunto de herramientas de conversion mas que un modelo listo para produccion; conviene verificar el contenido real del repositorio antes de usarlo.
+- Repositorio de gran tamano (122,6 GB) para un modelo de 494M parametros: probablemente contiene artefactos adicionales; revisar antes de descargar.
+- Riesgo de alucinacion y sesgos: no evaluables sin informacion sobre entrenamiento ni benchmarks.
+- Idiomas soportados no documentados: no se puede garantizar calidad en castellano ni en ningun otro idioma.
+- Licencia Apache 2.0: permite uso comercial, pero al no conocerse el modelo base ni la procedencia de los pesos, la cadena de licencias no esta verificada.
+- Sin senales de comunidad: 0 likes y 523 descargas indican poca validacion externa.
+- Fechas de creacion y actualizacion (2026) no coinciden con el estado publico del ecosistema; tratar los metadatos con cautela.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/zed122/gptq-gguf-toolkit
-- Repositorio en GitHub citado en la model card: https://github.com/phox9622-dotcom/suc_gptq-gguf-toolkit/tree/main
-- Paper, blog, demo o documentacion adicional: no disponible (no se han encontrado enlaces tecnicos relevantes en la busqueda web)
+- Hugging Face: https://huggingface.co/zed122/gptq-gguf-toolkit
+- Repositorio GitHub referenciado en la model card: https://github.com/phox9622-dotcom/suc_gptq-gguf-toolkit/tree/main

@@ -5,7 +5,7 @@
   "author": "ehzawad",
   "url": "https://huggingface.co/ehzawad/ThinkingCap-gemma-4-26B-A4B-it-INT4-W4A16-experts",
   "created_at": "2026-11-16T20:13:11.000Z",
-  "updated_at": "2026-11-16T20:46:00.000Z",
+  "updated_at": "2026-11-16T21:27:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

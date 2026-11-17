@@ -2,96 +2,90 @@
 
 ## Resumen
 
-Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NVFP4 es una cuantización NVFP4 (precisión de 4 bits en coma flotante de NVIDIA) del modelo instructivo multimodal DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1, creada por windowsxp811203 específicamente para GPUs Blackwell (compute capability 12.0) y el servidor de inferencia vLLM. El modelo base aplica la metodología de entrenamiento "Cold Fusion", que combina la técnica interna GAIN con la infraestructura de Unsloth, reduciendo los tokens de razonamiento a entre 1/10 y 1/2 de los modelos Qwen estándar mientras mantiene el 99 % del rendimiento en BF16 tanto en 8 como en 4 bits.
+Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NVFP4 es una cuantizacion en NVFP4 (formato de 4 bits de NVIDIA) del modelo DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1, un fine-tune comunitario de la familia Qwen 3.5 publicado por el usuario windowsxp811203. El repositorio contiene pesos en safetensors con metadatos de compressed-tensors y esta pensado para su despliegue en vLLM sobre hardware NVIDIA Blackwell, que es el unico que soporta de forma nativa el formato NVFP4.
 
-La cuantización NVFP4 conserva intactos los componentes más sensibles: el cabezal de borrador MTP (Multi-Token Prediction) completo en bf16, el torre de visión (333 tensores `visual.*`) en bf16, el camino Gated DeltaNet (`linear_attn.*`) y `lm_head`. Esto permite que el modelo mantenga capacidades multimodales y decodificación especulativa funcional. El autor midió sobre este checkpoint un 79,5 % en MMLU (muestra de 400 preguntas) y una tasa de aceptación del borrador MTP del 97,6 %.
+El modelo base declara 27B en su nombre comercial, pero el recuento real de parametros en safetensors es de 19.135.892.976 (aproximadamente 19,1B), lo que sugiere que la cifra "27B" del nombre no corresponde al numero efectivo de pesos almacenados. El pipeline declarado es image-text-to-text, es decir, el modelo base incorpora capacidad multimodal de entrada de imagen y texto, aunque no se detalla la arquitectura exacta del componente visual.
 
-El modelo se distribuye bajo licencia Apache 2.0, pesa aproximadamente 28,6 GB y está diseñado para ejecutarse en tarjetas Blackwell de 32 GB o superiores, aunque su contexto nativo es de 262 000 tokens.
+La relevancia de esta ficha es doble: por un lado documenta una cuantizacion de 4 bits orientada a inferencia de alto rendimiento en vLLM con decodificacion especulativa (tags mtp y speculative-decoding); por otro, advierte de que el acceso esta restringido (gated) y de que se trata de un fine-tune de la comunidad sin benchmarks publicados ni documentacion tecnica detallada en la informacion disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3.8-27B (transformer denso multimodal, Gated DeltaNet para atencion lineal) |
-| Parametros totales | 19.135.892.976 (segun safetensors; el nombre comercial indica 27B) |
-| Parametros activos | no disponible (modelo denso) |
-| Longitud de contexto | 262 144 tokens nativos; 32 768 tokens en la configuracion de ejemplo de vLLM |
-| Tipos de cuantizacion | NVFP4 (NVFP4A16, 4 bits en coma flotante, formato compressed-tensors) |
-| Idiomas soportados | no disponible (heredados del modelo base Qwen3.8) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (cuantizacion NVFP4 con `quantization_config` para vLLM) |
+| Arquitectura | Transformer (familia Qwen 3.5, tag `qwen3_5`); multimodal image-text-to-text; detalles de capas y atencion no disponibles |
+| Parametros totales | 19.135.892.976 (segun safetensors) |
+| Parametros activos | no disponible (no se declara configuracion MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | NVFP4 (4 bits, formato NVIDIA), etiquetado tambien como 8-bit en los tags; compressed-tensors |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (compressed-tensors), tamano del repo 28,6 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-27B es un transformer denso multimodal de la familia Qwen3.8, con una torre de visión integrada (pipeline `image-text-to-text`) y un mecanismo de atención híbrido que incluye una ruta Gated DeltaNet (atención lineal) además de la atención por softmax convencional. Incluye un cabezal MTP (Multi-Token Prediction) que se usa como borrador para decodificación especulativa.
+El modelo base pertenece a la familia Qwen 3.5 (tag `qwen3_5`), por lo que se trata de un transformer decoder-only con capacidad multimodal de entrada (pipeline image-text-to-text). El fine-tune Cold-Fusion-GAIN-V1.1 añade, segun los tags del repositorio, soporte de MTP (multi-token prediction) y decodificacion especulativa, tecnicas que permiten proponer varios tokens por paso y verificarlos en paralelo para aumentar el throughput en inferencia. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO en el fine-tune.
 
-La variante "Cold Fusion" de DavidAU se entrenó con la metodología GAIN (una técnica interna del autor) sobre la infraestructura de Unsloth, con el objetivo de reducir drásticamente los tokens de razonamiento (thinking) en las respuestas. Según la documentación de Unsloth y el artículo de HackerNoon, el modelo mantiene el 99 % del rendimiento en BF16 tanto en cuantizaciones de 8 como de 4 bits.
-
-En esta cuantización NVFP4, el autor (windowsxp811203) decidió mantener en bf16 las partes más sensibles: los 15 tensores `mtp.*` del borrador MTP, las 333 tensores `visual.*` de la torre de visión, el camino completo `linear_attn.*` (Gated DeltaNet) y `lm_head`. El resto de capas lineales se cuantizan a NVFP4A16. Esta decisión es inusual: según la corrección del autor, solo 14 de 72 artefactos NVFP4 auditados mantienen todo el camino `linear_attn` en bf16. La receta usa llm-compressor 0.13.0 con targets `Linear` e ignore list `[lm_head, mtp.*, visual.*, linear_attn.*]`.
+La contribucion tecnica concreta de esta publicacion es la cuantizacion a NVFP4 mediante compressed-tensors. NVFP4 es un formato de coma flotante de 4 bits con escala compartida por bloques, disenado por NVIDIA para las GPU Blackwell (serie B200/GB200 y RTX 50xx), donde se ejecuta con kernels nativos en vLLM. Esto reduce el peso de los pesos a aproximadamente una cuarta parte del modelo en BF16, aunque el repositorio ocupa 28,6 GB, lo que sugiere que parte de los tensores (embeddings, capas de salida o componentes multimodales) se mantienen en mayor precision. No se detalla el esquema exacto de escalas ni que capas quedan sin cuantizar.
 
 ## Capacidades
 
-- Generación de texto conversacional y de razonamiento compacto: el modelo hereda el comportamiento del tune "Cold Fusion", que produce razonamiento visible abreviado (entre 1/10 y 1/2 de los tokens de pensamiento de los Qwen estándar).
-- Visión: procesa imágenes mediante la torre de visión en bf16 (pipeline `image-text-to-text`). Acepta mensajes multimodales estilo OpenAI (`content` array con partes `image_url`).
-- Decodificación especulativa MTP: el borrador MTP en bf16 permite una tasa de aceptación medida del 97,4 % con temperatura 0 y longitud de aceptación media de 1,98 tokens.
-- Tool calling y agentes: capacidades heredadas de Qwen3.8-27B, incluyendo razonamiento agéntico y uso de herramientas.
-- Multilingüe: no se dispone de datos específicos de idiomas soportados en la información disponible, pero hereda las capacidades multilingües de la familia Qwen3.8.
-- Modo pensamiento: el razonamiento está fuertemente abreviado por el entrenamiento Cold Fusion; se puede desactivar con `chat_template_kwargs: {"enable_thinking": false}`.
+- Generacion de texto conversacional multi-turno, segun el tag `conversational`.
+- Entrada multimodal de imagen y texto (pipeline image-text-to-text): el modelo base acepta imagenes junto con instrucciones textuales.
+- Razonamiento y generacion de codigo heredados del modelo base Qwen 3.5; sin datos especificos del fine-tune.
+- Decodificacion especulativa y multi-token prediction (MTP) declaradas en los tags, orientadas a mejorar la latencia en vLLM.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Cobertura multilingue: no disponible; el repositorio no declara lista de idiomas.
+- Modo thinking explicito: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Inferencia multimodal en GPU Blackwell con presupuesto de VRAM limitado: con 28,6 GB de pesos, una RTX PRO 6000 Blackwell de 32 GB ejecuta el modelo con contexto moderado; tarjetas mayores permiten subir `--max-model-len` hasta el nativo de 262K.
-- Asistentes de conversación con razonamiento visible pero compacto: el tune Cold Fusion reduce la latencia percibida al acortar el thinking, manteniendo la calidad en tareas de razonamiento.
-- Sistemas agénticos con decodificación especulativa: el cabezal MTP intacto acelera la generación en vLLM con `--speculative-config '{"method":"mtp","num_speculative_tokens":1}'`, útil para pipelines de agentes con múltiples turnos.
-- Análisis de imágenes con contexto largo: la torre de visión en bf16 permite tareas de captioning y VQA en documentos largos con ventanas de hasta 262K tokens.
-- Generación de código asistida en entornos con GPU Blackwell: hereda las capacidades de codificación de Qwen3.8-27B, con el beneficio de un footprint de memoria reducido.
-- Investigación sobre cuantización de modelos híbridos: sirve como caso de estudio de cómo preservar rutas sensibles (atención lineal, cabezal MTP, visión) en cuantización NVFP4.
+- Despliegue de inferencia de alto throughput en vLLM sobre GPU Blackwell: la cuantizacion NVFP4 permite servir un modelo de ~19B en menos VRAM que una version BF16, con kernels nativos y decodificacion especulativa activable para reducir la latencia por token en cargas concurrentes.
+- Asistentes conversacionales con entrada de imagen: al ser image-text-to-text, puede emplearse en interfaces de chat donde el usuario adjunta capturas, diagramas o fotos y pide explicaciones o extraccion de informacion.
+- Procesamiento de documentos escaneados en pipelines internos: combinando entrada visual y texto, se puede usar para resumir formularios o extraer campos, siempre que se valide la salida por el riesgo de alucinacion.
+- Prototipado e investigacion de tecnicas de decodificacion especulativa: el tag MTP y la cuantizacion NVFP4 lo convierten en un banco de pruebas para medir ganancias de throughput frente a FP8 o BF16 en vLLM.
+- Experimentacion academica con fine-tunes comunitarios: util para estudiar el impacto de la cuantizacion de 4 bits en la calidad de un fine-tune sobre Qwen 3.5, comparando contra el modelo base DavidAU sin cuantizar.
+- Evaluacion interna de modelos multimodales antes de adoptar un proveedor: su licencia Apache 2.0 permite desplegarlo en infraestructura propia para pruebas de concepto sin coste de API, con la cautela de que el acceso esta restringido y no hay benchmarks publicados.
 
 ## Benchmarks y rendimiento
 
-El autor midió los siguientes resultados sobre este checkpoint exacto (vLLM 0.27.1, 1× RTX PRO 6000 Blackwell):
-
-| Prueba | Resultado |
-|---|---|
-| MMLU (muestra de 400 preguntas) | 79,5 % |
-| Aceptación del draft MTP (temperatura 0, forma corta) | 97,6 %; longitud media de aceptación 1,98 |
-| Sonda de visión | Descripción de escena correcta |
-| Comportamiento de pensamiento | Razonamiento fuertemente abreviado (heredado del tune Cold Fusion) |
-
-No se publicaron en la información disponible comparativas contra el modelo base en BF16 ni contra otras cuantizaciones del mismo tune. El autor de la cuantización indica que el método Cold Fusion mantiene el 99 % del rendimiento en BF16 en 8 y 4 bits, según la documentación del modelo base.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: ~28,6 GB de pesos; una tarjeta de 32 GB (como la RTX PRO 6000 Blackwell) ejecuta el modelo con contexto moderado. Tarjetas mayores (48 GB, 80 GB) permiten subir `--max-model-len` hasta el nativo de 262K.
-- GPU compatibles: únicamente Blackwell (compute capability 12.0). No funciona en GPUs de generaciones anteriores (Ampere, Ada, Hopper). Para estas, el autor recomienda los builds GGUF de DavidAU.
-- Opciones de despliegue: vLLM (0.27.1 o superior) con soporte NVFP4; también es compatible con el ecosistema compressed-tensors. No se menciona soporte directo en llama.cpp u Ollama para este formato NVFP4.
-- Latencia: no se publican medidas de throughput o latencia en la información disponible; el uso de decodificación especulativa MTP (1 token especulativo) reduce la latencia efectiva de generación.
-- Configuración de ejemplo: `vllm serve windowsxp811203/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NVFP4 --served-model-name cf-nvfp4 --max-model-len 32768 --speculative-config '{"method":"mtp","num_speculative_tokens":1}'`.
+- VRAM estimada para inferencia: el repositorio pesa 28,6 GB, por lo que se necesita al menos esa cantidad de VRAM para cargar los pesos completos; con overhead de KV cache y activaciones, un minimo practico de 32-40 GB es razonable para contextos cortos.
+- GPU recomendadas: NVIDIA Blackwell (B200, GB200, RTX 5090 y superiores), unicas con soporte nativo de NVFP4 en vLLM. En generaciones anteriores (H100, A100, RTX 4090) el formato NVFP4 no se ejecuta con kernels nativos y requeriria conversion previa.
+- Cabe en consumer GPU: si, en RTX 5090 (32 GB) de forma ajustada y con contexto limitado; en RTX 4090 (24 GB) no cabe en NVFP4 sin offloading.
+- Opciones de despliegue: vLLM es el runtime declarado en los tags; llama.cpp y Ollama no soportan NVFP4 de forma nativa, por lo que requeririan una cuantizacion GGUF alternativa no incluida en este repositorio.
+- Latencia y throughput estimados: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Acceso |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-Cold-Fusion-GAIN-V1.1 (BF16) | 27B | 262K | bf16 | Apache-2.0 | Modelo base sin cuantizar; 99 % rendimiento respecto al BF16 según el autor |
-| Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NVFP4 (este modelo) | 19,1B (safetensors) | 262K (nativo) | NVFP4 | Apache-2.0 | Cuantizado para Blackwell; MTP, visión y DeltaNet en bf16 |
-| Qwen3.8-27B-Abliterated-NVFP4 | 27B | 262K | NVFP4 | Apache-2.0 | Misma pipeline de cuantización, sin el tune Cold Fusion (abliterated) |
-| Qwen3.8-27B (base, sin tune) | 27B | 256K | BF16/GGUF | Apache-2.0 | Modelo original de Qwen; razonamiento estándar sin Cold Fusion |
+| windowsxp811203/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NVFP4 | 19,1B (reales) | no disponible | NVFP4 | Apache 2.0 | Restringido (gated) |
+| DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1 (base) | no disponible | no disponible | BF16/FP16 presumiblemente | Apache 2.0 (heredada) | no disponible |
+| Familia Qwen 3.5 oficial (tamano equivalente) | no disponible | no disponible | multias | Apache 2.0 en la mayoria de tamanos | Publico |
 
-No se dispone de benchmarks comparativos directos entre estas variantes en la información proporcionada.
+La comparacion con alternativas oficiales de Qwen 3.5 no puede completarse con datos verificables en la informacion disponible; no se dispone de cifras de contexto ni de rendimiento del modelo base ni de sus equivalentes.
 
 ## Limitaciones y advertencias
 
-- Requiere hardware Blackwell (compute capability 12.0). No es ejecutable en GPUs de generaciones anteriores; para esas plataformas hay que usar los GGUF de DavidAU.
-- El razonamiento del modelo está fuertemente abreviado por el entrenamiento Cold Fusion; en tareas que requieran cadenas de pensamiento largas y detalladas, el modelo puede producir explicaciones demasiado concisas.
-- La tasa de aceptación del draft MTP medida (97,4 %) corresponde a temperatura 0 y respuestas cortas; con temperatura alta y respuestas largas se espera una tasa menor.
-- El número de parámetros reportado por safetensors (19,1 mil millones) difiere del nombre comercial "27B"; puede deberse a la eliminación de tensores duplicados o a la estructura de la cuantización, pero no se aclara en la documentación.
-- La licencia Apache-2.0 permite uso comercial, pero se recomienda revisar la model card del modelo base de DavidAU para conocer restricciones adicionales del tune.
-- No se han publicado evaluaciones detalladas de sesgos, alucinaciones ni calidad multilingüe específica para esta cuantización.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede bloquear automatizaciones y despliegues en CI.
+- Ausencia total de benchmarks: no hay datos publicados de MMLU, HumanEval, GSM8K ni evaluaciones multimodales, por lo que el rendimiento real es desconocido.
+- Discrepancia de parametros: el nombre indica 27B pero safetensors reporta 19,1B; conviene verificar la configuracion antes de dimensionar hardware.
+- Riesgo de alucinacion: inherente a los modelos generativos y no cuantificado en este fine-tune comunitario; en tareas de extraccion de informacion a partir de imagenes el riesgo es especialmente relevante.
+- Sesgos: no documentados; al ser un fine-tune comunitario sin model card detallada, no hay evaluacion de sesgos ni de seguridad.
+- Idiomas: no se declara cobertura linguistica; el rendimiento fuera del ingles y el chino es incierto.
+- Limitaciones de contexto: la longitud de contexto no esta disponible, lo que impide garantizar conversaciones largas o documentos extensos.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el modelo base es un fine-tune de terceros y conviene revisar su model card original por si impone condiciones adicionales.
+- Dependencia de hardware Blackwell: el formato NVFP4 limita el despliegue a GPU NVIDIA de ultima generacion con vLLM; no es portable a otros runtimes sin reconversion.
+- Madurez: 61 descargas y 2 likes en el momento de la consulta, lo que indica escasa validacion por parte de la comunidad.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/windowsxp811203/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NVFP4
-- Modelo base original: https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1
-- Discusión que motivó la cuantización: https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated-NVFP4/discussions/1
-- Documentación de Unsloth sobre Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
-- Artículo de HackerNoon sobre Cold Fusion: https://hackernoon.com/qwen38-27b-cold-fusion-cuts-thinking-tokens-without-sacrificing-performance
+- Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1
+- Documentacion de compressed-tensors: no disponible en la informacion proporcionada
+- Documentacion de NVFP4 en vLLM: no disponible en la informacion proporcionada
+- Paper o blog del fine-tune Cold-Fusion-GAIN: no disponible en la informacion proporcionada

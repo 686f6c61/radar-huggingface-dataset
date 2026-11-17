@@ -43,16 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "zen-E/PLatour-SFT-Qwen3-235B-to-1.7B-MMLU-Redux · Hugging Face",
-      "url": "https://huggingface.co/zen-E/PLatour-SFT-Qwen3-235B-to-1.7B-MMLU-Redux",
-      "snippet": "PLatour explores Prefill-to-Autoregressive Cross-model Transfer (PACT): a larger sender encodes the prompt and supplies hidden representations, while a smaller receiver generates the response independently. The main method trains lightweight linear bridges between frozen backbones using task rewards, starting from zero-initialized projections and supporting hybrid-attention models."
-    },
-    {
-      "title": "Qwen/Qwen3-1.7B · Hugging Face",
-      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
-      "snippet": "Text Generation model with 2B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
-    }
-  ]
+  "sources": []
 }

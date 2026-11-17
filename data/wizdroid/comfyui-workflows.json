@@ -34,31 +34,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "wizdroid/comfyui-workflows · Hugging Face",
-      "url": "https://huggingface.co/wizdroid/comfyui-workflows",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "wizdroid/comfyui-workflows at main - Hugging Face",
-      "url": "https://huggingface.co/wizdroid/comfyui-workflows/tree/main",
-      "snippet": "wizdroid / comfyui-workflows like 0 License:mit Model card FilesFiles and versions xet Community Copy to bucket new main comfyui-workflows 318 kB Ctrl+K Ctrl+K 1 contributor History:10 commits wizdroid Update PROMPTS.md 182c49c verifiedabout 4 hours ago .gitattributes Safe 1.52 kBinitial commitabout 10 hours ago PROMPTS.md 77.1 kBUpdate PROMPTS ..."
-    },
-    {
-      "title": "Comfy Workflows - Free AI Generation Workflows",
-      "url": "https://comfy.org/workflows/",
-      "snippet": "FLUX 3 Video: Text to Video ComfyUI Partner Nodes Image to Video Browse Workflows 626+ workflows across every model and category Run in your browser MiniMax H3 - Motion Context Guide one continuous shot with three reference images pinned to exact moments — no install, runs on a live deployment. Try MiniMax H3 Live deployment Video + audio"
-    },
-    {
-      "title": "ComfyUI Workflows - ComfyUI.org",
-      "url": "https://comfyui.org/en/workflows",
-      "snippet": "Browse 329 ComfyUI workflows and guides with downloadable templates, model requirements, and setup notes."
-    },
-    {
-      "title": "Models - Comfy",
-      "url": "https://comfy.org/models/",
-      "snippet": "Run the world&#x27;s leading AI models in ComfyUI. Browse every supported model with community workflow templates ready to run."
-    }
-  ]
+  "sources": []
 }

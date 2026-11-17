@@ -2,97 +2,112 @@
 
 ## Resumen
 
-Este repositorio contiene una conversion no oficial a GGUF del modelo Gemma 4 12B-it, en su variante entrenada con cuantizacion consciente (QAT, quantization-aware training) por Google DeepMind. Lo publica el usuario independiente xbill9, sin afiliacion con Google, y su proposito es ofrecer un GGUF de 4 bits en el que cada peso reconstruido sea exactamente el valor que produjo el QAT de Google, incluido el tensor de embeddings de tokens. El resultado ocupa 6,72 GB (6.716.356.736 bytes) frente a los 6,98 GB del GGUF oficial de Google.
+Esta ficha describe `xbill9/gemma-4-12B-it-qat-q4_0-exact-gguf`, una conversión no oficial a GGUF de llama.cpp del modelo Gemma 4 12B-it de Google, en su variante entrenada con quantisation-aware training (QAT) y cuantizada a 4 bits. El autor, xbill9, publica el modelo de forma independiente a Google. El objetivo es preservar exactamente la rejilla de cuantización de 4 bits que produjo el entrenamiento QAT de Google: cada matriz de pesos, incluida la tabla de embeddings, se almacena como Q4_0 con la escala entrenada por bloque, en lugar del paso estándar de llama.cpp.
 
-El modelo base es google/gemma-4-12B-it-qat-q4_0-unquantized y cuenta con 11.907.350.576 parametros (unos 11,9 mil millones). Se distribuye bajo licencia Apache 2.0, en formato GGUF con cuantizacion Q4_0, y es exclusivamente de texto: la torre de vision vive en un mmproj GGUF aparte que no se incluye.
+El modelo resuelve un problema concreto de fidelidad: los GGUF Q4_0 convencionales recalculan la escala de cada bloque a partir de la magnitud máxima, lo que desplaza valores fuera de la rejilla sobre la que se entrenó el modelo QAT. Esta build recupera el paso entrenado por bloque y reduce la divergencia respecto al modelo bf16. El resultado es un fichero de 6,72 GB que cabe en una GPU de 8 GB con todas las capas en VRAM y permite hasta 40.960 tokens de contexto con caché KV en f16 en una RTX 3050.
 
-Su relevancia es doble. Por un lado, permite ejecutar un modelo de 12B en GPUs de consumo con un peso de 6,7 GB. Por otro, es un experimento de fidelidad de cuantizacion: el autor reconstruye cada bloque de pesos buscando el paso de cuantizacion entrenado por Google en lugar del paso estandar de llama.cpp (magnitud maxima del bloque dividida entre 8), lo que eleva el porcentaje de valores identicos bit a bit respecto al origen QAT. Como contrapartida, el autor advierte de que la build se verifico en local contra su fuente pero aun no se ha cargado en llama.cpp.
+El modelo es solo de texto: la torre de visión vive en un `mmproj` separado que no se incluye. Tiene 11.907.350.576 parámetros totales (aproximadamente 12B) y licencia Apache 2.0, aunque el enlace de licencia apunta a los términos de Gemma 4 de Google.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder (familia Gemma 4); detalles completos no disponibles en la informacion proporcionada |
-| Parametros totales | 11.907.350.576 |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q4_0 (pesos de atencion y FFN, mas token_embd); vectores de norma y escalas en F32 |
+| Arquitectura | Transformer denso (Gemma 4), con 8 capas de atención completa y 40 capas de ventana deslizante |
+| Parámetros totales | 11.907.350.576 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | hasta 40.960 tokens con caché KV f16 en 8 GB; hasta 131.072 tokens con caché KV q4_0; hasta 81.920 con drafter y caché q4_0 |
+| Tipos de cuantización | Q4_0 (todos los pesos, incluida la tabla de embeddings); normas, escalas y frecuencias RoPE en F32; caché KV configurable en f16, q8_0 o q4_0 |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 (Apache 2.0, con enlace a la licencia de Gemma 4 de Google) |
+| Licencia | Apache 2.0 (con enlace a la licencia de Gemma 4 de Google) |
 | Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no detalla la arquitectura interna completa del modelo. Los nombres de tensor del GGUF (`attn_q`, `attn_k`, `attn_v`, `attn_output`, `ffn_gate`, `ffn_up`, `ffn_down`, `token_embd` y vectores de norma) corresponden a un transformer decoder con atencion y redes feed-forward, el esquema habitual de la familia Gemma. Llama la atencion que el recuento de tensores no es homogeneo: hay 48 tensores de `attn_k`, `attn_output`, `attn_q`, `ffn_down`, `ffn_gate` y `ffn_up`, pero solo 40 de `attn_v`, lo que sugiere algun tipo de comparticion o trato diferenciado por capas; el material no lo explica.
+El modelo subyacente es Gemma 4 12B-it, un transformer denso de aproximadamente 12.000 millones de parámetros. La estructura descrita en la model card indica 48 capas en total: 8 capas de atención completa y 40 capas de ventana deslizante. Las 8 capas de atención completa no tienen matriz de valor (v), como en el modelo fuente. El modelo base fue entrenado por Google con quantisation-aware training sobre una rejilla de 4 bits: en cada bloque de 32 valores, cada valor es una escala de bloque multiplicada por un entero entre -8 y 7. Esa restricción se aplica también a la tabla de embeddings.
 
-El entrenamiento original es de Google DeepMind e incluye QAT: los pesos ya vienen entrenados para tolerar la cuantizacion a 4 bits, de ahi el sufijo `qat-q4_0` del modelo base. Esta build no reentrena nada; parte de google/gemma-4-12B-it-qat-q4_0-unquantized (revision b6ed862) y reconstruye los pesos como Q4_0.
-
-La innovacion tecnica concreta de esta build es el metodo de reconstruccion de bloques. En lugar de usar el paso estandar de llama.cpp (magnitud maxima del bloque dividida entre 8), el script busca el paso entrenado que situe todos los valores del bloque en un nivel entero: dividido entre 8, 7, ... hasta 1, refinado por minimos cuadrados. Los metadatos (tokenizer, chat template, hiperparametros y orden de tensores) se copian byte a byte del GGUF oficial de Google en la revision 29d0977. Los porcentajes de valores identicos bit a bit al origen QAT por tensor son: `token_embd` 96,88 %, `attn_v` 96,88 %, `ffn_down` 96,88 %, `ffn_up` 96,86 %, `ffn_gate` 96,83 %, `attn_k` 96,80 %, `attn_q` 96,78 % y `attn_output` 96,77 %. Los valores no identicos difieren por el redondeo a fp16 de la escala de bloque. El autor publica el desglose por tensor en `evidence/build_report.json` y el script `gguf_exact.py`, que solo requiere numpy y aborta si algun bloque no cae en una rejilla de 4 bits.
+La aportación técnica de esta build no está en el entrenamiento, sino en la conversión. El autor reconstruyó las 328 matrices de capa (atención q/k/v/o y MLP gate/up/down) y la tabla de embeddings desde `google/gemma-4-12B-it-qat-q4_0-unquantized` en la revisión `b6ed862`, almacenándolas como Q4_0. La diferencia clave es que recupera el paso entrenado de cada bloque en lugar de usar el paso estándar de llama.cpp (magnitud máxima del bloque dividida por 8). Los metadatos (tokenizador, plantilla de chat, hiperparámetros y orden de tensores) se copiaron byte a byte del GGUF de Google en la revisión `29d0977`. Las normas, escalas y frecuencias RoPE se copiaron sin cambios en F32.
 
 ## Capacidades
 
-- Generacion de texto conversacional: la etiqueta del repositorio incluye `conversational` y la pipeline es text-generation, con chat template copiado del GGUF oficial.
-- Modelo exclusivamente de texto: la vision queda fuera de esta build, ya que el mmproj GGUF de Google no se incluye.
-- Razonamiento e instrucciones: el sufijo `-it` indica ajuste por instrucciones del modelo base de Google; el alcance exacto de las capacidades de razonamiento no esta detallado en la informacion proporcionada.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible en la informacion proporcionada.
-- Capacidades especiales (modo thinking, audio, vision): no disponible; la unica indicada explicitamente es la ausencia de vision.
+- Generación de texto conversacional e instrucciones, en el pipeline `text-generation` con etiqueta `conversational`.
+- Razonamiento y respuesta a instrucciones en modo chat, con la plantilla de chat de Gemma 4 copiada del GGUF oficial.
+- Solo texto: no incluye capacidades de visión, ya que el `mmproj` de Google no está incluido en el repositorio.
+- Soporte de decodificación especulativa mediante un drafter Q4_0 separado (`xbill9/gemma-4-12B-it-qat-assistant-q4_0-exact-gguf`), que eleva la generación a 56 tok/s en RTX 3050.
+- Evaluado por el autor en GSM8K, BFCL simple y recuperación de códigos en documentos largos, con resultados estables entre cachés KV f16, q8_0 y q4_0.
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags).
+- Capacidades multilingües: no disponible en la información proporcionada.
+- Tool calling y function calling: no disponible en la información proporcionada, aunque BFCL simple se usa como prueba de referencia.
 
 ## Casos de uso
 
-- Inferencia local en GPU de consumo: con 6,72 GB de pesos en Q4_0, el modelo se puede cargar en GPUs de 12 GB o mas (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4080), lo que permite disponer de un modelo de 12B en hardware de escritorio sin depender de la nube.
-- Despliegue en portatiles con memoria unificada: en equipos Apple Silicon con 16 GB o mas, un GGUF de este tamano deja margen para el contexto y el resto del sistema, algo que un modelo de 12B en fp16 (unos 24 GB) no permite.
-- Reproduccion de builds de cuantizacion: dado que el autor publica el script `gguf_exact.py` y el informe `build_report.json`, sirve como caso practico para quien quiera auditar o replicar conversiones GGUF fieles al QAT original.
-- Generacion de texto y asistencia conversacional offline: al ser text-generation con chat template incluido, encaja en asistentes de escritorio, resumen de documentos o redaccion asistida en entornos sin conectividad.
-- Comparacion de fidelidad de cuantizacion en investigacion: el par Google GGUF / esta build permite medir el efecto de cambiar el paso de cuantizacion por bloque (Q4_0 con paso entrenado frente a Q6_K en `token_embd`) sobre la perplejidad y la calidad, una vez validado en llama.cpp.
-- Evaluacion y benchmarking de modelos abiertos: como build no oficial de bajo coste computacional, resulta util para pruebas comparativas internas antes de decidir un despliegue mayor.
+- Despliegue local en GPU de 8 GB: el modelo cabe completo en VRAM en una RTX 3050 con 6.390 MiB de pesos y deja espacio para caché KV, lo que permite ejecutar un modelo de 12B en hardware de gama de entrada sin descargar capas a CPU.
+- Asistentes conversacionales de contexto largo: con 40.960 tokens en caché f16 o hasta 131.072 con caché q4_0, se pueden mantener conversaciones multi-turno o procesar documentos extensos sin truncar.
+- Procesamiento de documentos largos con recuperación de información: el autor verifica la recuperación de códigos distribuidos a lo largo de un documento largo, lo que lo hace adecuado para tareas de extracción sobre textos extensos.
+- Razonamiento matemático en local: los resultados estables en GSM8K entre configuraciones de caché permiten usar el modelo para resolución de problemas aritméticos en entornos sin conexión.
+- Inferencia de baja latencia con decodificación especulativa: combinado con el drafter Q4_0, alcanza 56 tok/s en RTX 3050 y 55,1 tok/s sin contexto, lo que sirve para aplicaciones interactivas en tiempo real.
+- Integración en pipelines llama.cpp: al ser un GGUF compatible con `llama-server`, `llama-bench` y `llama-perplexity`, se puede desplegar con `-ngl 99 -fa 1` en servidores o estaciones de trabajo con CUDA.
+- Evaluación de fidelidad de cuantización: sirve como referencia para estudiar el impacto de preservar la rejilla QAT frente a la cuantización post-entrenamiento estándar, con métricas de divergencia KL y perplejidad publicadas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor indica que la divergencia respecto a bf16, la velocidad y el consumo de memoria se midieron unicamente para la build E4B (xbill9/gemma-4-E4B-it-qat-q4_0-exact-gguf), pero esas cifras no se incluyen en el material proporcionado, y esta build de 12B no se ha cargado todavia en llama.cpp.
+| Métrica (CPU, wikitext-2, 16 chunks de 512 tokens) | GGUF Q4_0 de Google | Esta build |
+|---|---:|---:|
+| Divergencia KL media respecto a bf16 | 0,543225 ± 0,019046 | 0,124504 ± 0,009525 |
+| Percentil 99 de divergencia KL | 6,217015 | 1,914886 |
+| Mismo token top que bf16 | 71,77 ± 0,71 % | 89,14 ± 0,49 % |
+| Perplejidad relativa a bf16 | 1,3855 ± 0,0449 | 1,2567 ± 0,0248 |
+| Tamaño de fichero | 6.975.879.296 B | 6.716.356.736 B |
+| Pesos en VRAM | 6.637,69 MiB | 6.390,19 MiB |
+| Contexto máximo en 8 GB con KV f16 | 28.672 tokens | 40.960 tokens |
+
+| Rendimiento en RTX 3050 OEM (8 GB) | GGUF de Google | Esta build |
+|---|---:|---:|
+| Generación, 128 tokens | 27,68 tok/s | 28,64 tok/s (1,035x) |
+| Procesamiento de prompt, 512 tokens | 979,7 tok/s | 987,2 tok/s (1,008x) |
+
+| Contexto máximo con `llama-server -ngl 99 -fa 1` en RTX 3050 8 GB | f16 KV | q8_0 KV | q4_0 KV |
+|---|---:|---:|---:|
+| Esta build | 40.960 | 65.536 | 131.072 |
+| Esta build + drafter Q4_0 | 24.576 | 49.152 | 81.920 (7.853 MiB) |
+| GGUF de Google | 28.672 | no probado | no probado |
+
+Con drafter y caché q4_0, la generación es de 55,1 / 42,4 / 37,8 / 30,8 tok/s con 0 / 16k / 32k / 65k tokens en contexto (0,85x respecto a f16 a 16k). Sin drafter: 28,6 / 26,8 / 26,3 tok/s con 0 / 8.192 / 16.384 tokens en contexto. El autor advierte que estas cifras deben compararse entre columnas del mismo test y no con las de otros modelos, ya que el modelo de 12B instruction-tuned lee texto crudo de Wikipedia con dificultad (perplejidad bf16 de 312, frente a 40 de E4B en el mismo test).
 
 ## Requisitos de hardware
 
-- VRAM estimada para los pesos: 6,72 GB (6.716.356.736 bytes) solo en pesos Q4_0; hay que sumar el contexto y los buffers de llama.cpp, por lo que en la practica conviene disponer de 8-12 GB.
-- Comparacion de tamano: 6,72 GB frente a 6,98 GB del GGUF oficial Q4_0 de Google; el ahorro se concentra en el tensor `token_embd`, que aqui es Q4_0 en lugar de Q6_K.
-- GPUs consumer compatibles: RTX 3060 12 GB y RTX 4060 Ti 16 GB como minimo razonable en el segmento consumer; RTX 4080, RTX 4090 y RTX 5090 con holgura. En GPUs de 8 GB o menos habria que recurrir a offload parcial de capas a CPU.
-- GPUs de datacenter: A100, H100 y L40S no son necesarias para el tamano del modelo, pero permitirian lotes grandes y contextos largos en servidor.
-- Memoria unificada: equipos Apple Silicon con 16 GB o mas pueden ejecutarlo por CPU/GPU combinadas.
-- Opciones de despliegue: llama.cpp (formato nativo del repo), Ollama y LM Studio como envoltorios habituales de GGUF. vLLM y TGI no son las rutas tipicas para GGUF puro. El soporte en endpoints aparece como `endpoints_compatible` en las etiquetas del repositorio.
-- Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo para esta build, y el autor indica que la velocidad solo se midio para la version E4B.
+- VRAM estimada: 6.390,19 MiB de pesos en VRAM con todas las capas en GPU; el resto se destina a caché KV (16 KiB por token para las 8 capas de atención completa más 480 MiB fijos para las 40 capas de ventana deslizante en f16).
+- GPU recomendadas: RTX 3050 OEM de 8 GB verificada por el autor; cualquier GPU con 8 GB o más y soporte CUDA puede ejecutarlo. Para contexto largo con caché q4_0 se recomienda más de 8 GB.
+- Cabe en GPU consumer: sí, en una RTX 3050 de 8 GB con todas las capas en GPU, siempre que la tarjeta esté inactiva (quedan 370–640 MiB libres).
+- Opciones de despliegue: llama.cpp (`llama-server`, `llama-bench`, `llama-perplexity`); probado con la build `7182ef71e`.
+- Latencia y throughput: 28,64 tok/s de generación y 987,2 tok/s de procesamiento de prompt en RTX 3050 sin drafter; 56 tok/s con el drafter Q4_0.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Formato y cuantizacion | Tamano | Licencia | Estado |
-|---|---|---|---|---|---|
-| xbill9/gemma-4-12B-it-qat-q4_0-exact-gguf (este) | 11,9 B | GGUF, Q4_0 reconstruido del QAT | 6,72 GB | Apache 2.0 | No oficial; verificado offline, no cargado aun en llama.cpp |
-| google/gemma-4-12B-it-qat-q4_0-gguf | 11,9 B (base) | GGUF, Q4_0 (con `token_embd` en Q6_K) | 6,98 GB | Apache 2.0 | Oficial de Google; referencia de partida |
-| xbill9/gemma-4-E4B-it-qat-q4_0-exact-gguf | no disponible | GGUF, Q4_0 reconstruido del QAT | no disponible | Apache 2.0 | No oficial; construido con el mismo script |
-
-Datos de contexto, benchmarks y rendimiento de las alternativas: no disponibles en la informacion proporcionada.
+| Modelo | Parámetros | Contexto máximo (8 GB, KV f16) | Divergencia KL media vs bf16 | Licencia | Disponibilidad |
+|---|---|---:|---:|---|---|
+| Esta build (xbill9, exact Q4_0) | 11,9B | 40.960 | 0,124504 | Apache 2.0 | GGUF en HF |
+| `google/gemma-4-12B-it-qat-q4_0-gguf` | 11,9B | 28.672 | 0,543225 | Apache 2.0 / Gemma 4 | GGUF en HF |
+| `xbill9/gemma-4-E4B-it-qat-q4_0-exact-gguf` | no disponible (E4B) | no disponible | 0,0010 (en el mismo test) | Apache 2.0 | GGUF en HF |
+| `xbill9/gemma-4-E2B-it-qat-q4_0-exact-gguf` | no disponible (E2B) | no disponible | no disponible | Apache 2.0 | GGUF en HF |
 
 ## Limitaciones y advertencias
 
-- Build no oficial: no esta afiliada ni respaldada por Google; los problemas deben reportarse al autor de la build, no a Google.
-- No validada en ejecucion: el autor indica explicitamente que la build se verifico offline contra su fuente pero aun no se ha cargado en llama.cpp. Hasta que eso ocurra, no hay confirmacion de que el modelo funcione correctamente en inferencia.
-- Solo texto: no incluye la torre de vision; cualquier caso de uso multimodal queda fuera.
-- Fidelidad no total: los pesos reconstruidos son identicos bit a bit al origen QAT en torno al 96,8 % de los valores por tensor; el resto difiere por el redondeo a fp16 de la escala de bloque.
-- Ausencia de benchmarks propios: no hay mediciones publicadas de calidad, divergencia respecto a bf16, velocidad ni memoria para esta build de 12B.
-- Idiomas y contexto sin especificar: la informacion proporcionada no indica cobertura linguistica ni longitud de contexto, lo que impide valorar su idoneidad para casos multilingues o de contexto largo.
-- Sesgos y alucinacion: no disponibles en la informacion proporcionada; al ser un derivado directo de Gemma 4, heredaria las caracteristicas del modelo base de Google, pero el material no aporta datos concretos.
-- Licencia: Apache 2.0 segun el repositorio, con enlace a la licencia especifica de Gemma 4 de Google. Conviene revisar ese enlace antes de un uso comercial, ya que las condiciones de la familia Gemma pueden imponer obligaciones adicionales no reflejadas en la ficha del repositorio.
-- Repositorio con adopcion minima: 38 descargas y 0 likes en la fecha de creacion (8 de octubre de 2026), sin senales de uso en produccion.
+- Build no oficial: hecha y publicada de forma independiente a Google; no cuenta con el respaldo del desarrollador original.
+- Solo texto: no incluye visión; el `mmproj` de Google no está en el repositorio.
+- El modelo de 12B instruction-tuned rinde mal sobre texto crudo de Wikipedia (perplejidad bf16 de 312), por lo que las métricas de divergencia y perplejidad del autor deben interpretarse solo en comparación interna entre las dos columnas, no frente a otros modelos.
+- La tarjeta gráfica debe estar inactiva para las cifras de contexto publicadas: quedan solo 370–640 MiB libres en la RTX 3050.
+- Idiomas soportados no disponibles en la información proporcionada.
+- Riesgo de alucinación y sesgos: no disponible en la información proporcionada.
+- Restricciones de licencia: la licencia declarada es Apache 2.0, pero el enlace de licencia apunta a los términos de Gemma 4 de Google; conviene revisar las condiciones de uso comercial de Gemma 4 antes de producción.
+- El rendimiento con drafter reduce el contexto máximo disponible (24.576 tokens con KV f16 frente a 40.960 sin drafter).
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/xbill9/gemma-4-12B-it-qat-q4_0-exact-gguf
-- Modelo base: https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-unquantized (revision b6ed862)
-- GGUF oficial de Google: https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-gguf (revision 29d0977)
-- Build equivalente en 4B: https://huggingface.co/xbill9/gemma-4-E4B-it-qat-q4_0-exact-gguf
+- Modelo base: https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-unquantized
+- GGUF oficial de Google: https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-gguf
+- Drafter Q4_0: https://huggingface.co/xbill9/gemma-4-12B-it-qat-assistant-q4_0-exact-gguf
+- Variante E2B: https://huggingface.co/xbill9/gemma-4-E2B-it-qat-q4_0-exact-gguf
+- Variante E4B: https://huggingface.co/xbill9/gemma-4-E4B-it-qat-q4_0-exact-gguf
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
-- Script de reconstruccion: gguf_exact.py, incluido en el repositorio del modelo; requiere unicamente numpy
-- Informe de build por tensor: evidence/build_report.json, dentro del repositorio
-- Model card original de Google: ORIGINAL_README.md, conservado sin cambios en el repositorio
-
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; unicamente aparecieron paginas sin relacion con el contenido tecnico solicitado, por lo que no se incluyen como enlaces.
+- Informe de benchmarks de caché KV: https://github.com/xbill9/gemma4-dev/blob/main/local-llamacpp-3050oem-12b-q4_0/benchmarks/runs/2026-10-17-kvcache-12b-3050oem/REPORT.md

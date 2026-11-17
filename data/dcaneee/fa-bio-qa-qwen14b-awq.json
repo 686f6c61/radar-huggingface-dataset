@@ -5,7 +5,7 @@
   "author": "dcaneee",
   "url": "https://huggingface.co/dcaneee/fa-bio-qa-qwen14b-awq",
   "created_at": "2026-11-16T19:55:47.000Z",
-  "updated_at": "2026-11-16T20:02:48.000Z",
+  "updated_at": "2026-11-16T20:04:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

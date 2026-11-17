@@ -5,7 +5,7 @@
   "author": "limxdynamics",
   "url": "https://huggingface.co/limxdynamics/luna-description",
   "created_at": "2026-11-06T07:40:35.000Z",
-  "updated_at": "2026-11-06T08:24:33.000Z",
+  "updated_at": "2026-11-17T06:45:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -27,6 +27,9 @@
     "luna",
     "en",
     "zh",
+    "arxiv:2605.23733",
+    "arxiv:2609.30761",
+    "arxiv:2609.18193",
     "license:apache-2.0",
     "region:us"
   ],

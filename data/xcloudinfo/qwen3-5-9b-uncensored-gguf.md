@@ -2,106 +2,96 @@
 
 ## Resumen
 
-Qwen3.5-9B-Uncensored-GGUF es una version "abliterated" (con rechazo reducido) del modelo base Qwen/Qwen3.5-9B, publicada por el usuario xCloudinfo (云碩). El objetivo declarado es eliminar las respuestas de rechazo reflejo ante peticiones de caracter limite pero legal, sin degradar la coherencia del modelo original; el autor la presenta como la alternativa de tamano pequeno de su gama, pensada para equipos con poca VRAM (tarjetas unicas de 8-12 GB y maquinas de borde).
+Qwen3.5-9B-Uncensored-GGUF es una versión derivada del modelo base Qwen/Qwen3.5-9B, publicada por xCloudinfo (云碩科技) bajo el nombre comercial xVITA. Se trata de una variante "abliterated" o "uncensored" cuyo objetivo es reducir la tasa de rechazos reflejos ante peticiones legales pero limítrofes, manteniendo al mismo tiempo la coherencia y las capacidades originales del modelo base. El autor aplica la misma metodología que en su modelo hermano de mayor tamaño, Qwen3.8-27B-Uncensored-GGUF, pero en este caso orientada a máquinas con poca VRAM (tarjetas individuales de 8–12 GB y dispositivos de borde).
 
-El modelo conserva la arquitectura del base: 8.953.803.264 parametros (unos 8,95 mil millones), formato GGUF listo para llama.cpp y derivados, y una torre de vision opcional (archivo `mmproj`) que habilita entrada multimodal. El autor documenta tambien soporte de modo "thinking", que se puede desactivar en el arranque del servidor.
+El modelo cuenta con 8.953.803.264 parámetros totales (aproximadamente 9B) y se distribuye exclusivamente en formato GGUF en seis niveles de cuantización, además de un proyector multimodal (mmproj) en f16 para la torre de visión. La licencia es Apache 2.0, heredada del modelo base, y los idiomas declarados en la model card son chino (zh) e inglés (en).
 
-Su relevancia actual es doble: por un lado ofrece una variante sin censura de una familia reciente (Qwen3.5) en un tamano que cabe en GPU de consumo; por otro, la model card detalla una correccion tecnica de metadatos ("ghost MTP") que afecta a toda la serie Qwen3.5 y que puede provocar errores de carga si no se aplica antes de cuantizar.
+Su relevancia actual radica en que ofrece una alternativa de despliegue local en hardware modesto para casos donde el modelo original rechaza peticiones legítimas, con una divulgación transparente de las cifras de rechazo en dos escenarios distintos (safetensors fusionado con decodificación greedy y GGUF cuantizado con muestreo por defecto).
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer derivada de Qwen3.5-9B; incluye torre de vision (mmproj) y soporte de MTP (multi-token prediction) |
-| Parametros totales | 8.953.803.264 (~8,95 B) |
-| Parametros activos | No aplica (no es MoE) |
+| Arquitectura | Transformer (arquitectura del modelo base Qwen3.5-9B; detalles específicos no disponibles) |
+| Parámetros totales | 8.953.803.264 (~9B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q8_0, Q6_K, Q5_K_M, Q4_K_M, IQ4_XS, IQ2_M (GGUF); mmproj en f16 |
-| Idiomas soportados | no disponible (la model card menciona fluidez en chino tradicional en la evaluacion de coherencia) |
-| Licencia | apache-2.0 (heredada de Qwen/Qwen3.5-9B) |
-| Formato de pesos | GGUF (se menciona tambien un modelo fusionado en safetensors usado para la evaluacion) |
+| Tipos de cuantización | Q8_0, Q6_K, Q5_K_M, Q4_K_M, IQ4_XS, IQ2_M (GGUF); mmproj en f16 |
+| Idiomas soportados | zh, en (según model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (safetensors del modelo base no incluido en el repo) |
 
 ## Arquitectura y entrenamiento
 
-No se trata de un modelo entrenado desde cero, sino de una modificacion de pesos (abliteration) sobre Qwen/Qwen3.5-9B. La tecnica empleada es Heretic, una herramienta de busqueda automatica de hiperparametros que optimiza simultaneamente dos objetivos: minimizar la tasa de rechazo y mantener baja la divergencia KL respecto al modelo original para preservar sus capacidades. El autor ejecuto 200 pruebas por iteracion y aplico dos iteraciones: tras converger la primera, volvio a correr el proceso sobre el resultado para reducir aun mas el rechazo.
+El modelo es una modificación del Qwen3.5-9B original mediante la herramienta Heretic, que automatiza la búsqueda de hiperparámetros (200 pruebas) minimizando simultáneamente la tasa de rechazo y la divergencia KL respecto al modelo base, con el fin de preservar las capacidades originales. El proceso se ejecutó en dos iteraciones: tras la convergencia de la primera, se aplicó una segunda iteración sobre el resultado para reducir aún más la tasa de rechazo.
 
-El base Qwen3.5-9B es un transformer con soporte de MTP (multi-token prediction) y capacidad multimodal mediante una torre de vision separada. Durante el proceso de conversion a GGUF, el autor detecto y corrigio un problema de metadatos comun a la serie Qwen3.5: el campo `qwen35.block_count` contaba una capa de mas (33 frente a las 32 reales) y `nextn_predict_layers` estaba mal etiquetado como 1. Ambos campos se corrigieron antes de cuantizar para evitar errores de carga o comportamiento anomalo en el motor de inferencia. El repositorio no documenta el dataset de entrenamiento original ni si hubo fases de RLHF o DPO, ya que ese trabajo corresponde al modelo base de Qwen.
+Los detalles de arquitectura interna (tipo de atención, número de capas, composición del dataset de entrenamiento original, uso de RLHF/DPO) no se especifican en la información disponible. La model card sí documenta una corrección técnica relevante: el problema de "MTP fantasma" común a la serie Qwen3.5, donde el metadato `qwen35.block_count` contaba una capa de más (33 frente a las 32 reales) y `nextn_predict_layers` estaba mal etiquetado como 1. Ambos campos se corrigieron antes de la cuantización para evitar errores de carga o comportamientos anómalos en el motor de inferencia.
 
 ## Capacidades
 
-- Generacion de texto conversacional y respuesta a preguntas en formato de chat multi-turno.
-- Razonamiento con modo "thinking" activable o desactivable (en el ejemplo de uso se pasa `enable_thinking: false`).
-- Entrada multimodal: la torre de vision `mmproj-Qwen3.5-9B-Uncensored-xCloud-f16.gguf` permite procesar imagenes junto al texto.
-- Reduccion de rechazos en peticiones de caracter limite pero legal (abliterated/uncensored).
-- Compatibilidad con plantillas de chat Jinja (`--jinja`), lo que facilita su uso con tool calling segun el formato del modelo base.
-- Soporte de cuantizaciones imatrix (la etiqueta `imatrix` aparece en el repositorio).
-- Compatible con endpoints (etiqueta `endpoints_compatible`).
-- Capacidades multilingues: no detalladas en la informacion disponible, aunque la evaluacion de coherencia se hizo en chino tradicional.
+- Generación de texto conversacional en chino e inglés.
+- Capacidades multimodales (visión) mediante el proyector `mmproj-Qwen3.5-9B-Uncensored-xCloud-f16.gguf`.
+- Modo de razonamiento configurable: la plantilla de chat admite `enable_thinking` (true/false) mediante `--chat-template-kwargs`.
+- Reducción de rechazos reflejos ante preguntas legales pero limítrofes (objetivo principal de la modificación).
+- Compatibilidad con endpoints (`endpoints_compatible` según los tags del repositorio).
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades de código y matemáticas: no documentadas específicamente para esta variante.
 
 ## Casos de uso
 
-- Inferencia local en equipos con GPU modesta: al estar disponible en Q4_K_M, IQ4_XS e IQ2_M, el modelo puede ejecutarse en tarjetas de 8-12 GB y en maquinas de borde, tal como indica el autor en la model card.
-- Asistente conversacional sin filtros reflexivos: util para equipos que necesitan respuestas directas ante preguntas de seguridad, ficcion o temas sensibles que un modelo alineado rechazaria por defecto.
-- Procesamiento de documentos con imagenes: gracias a la torre de vision, se puede usar para extraer o describir informacion de capturas, diagramas o fotos combinadas con texto.
-- Prototipado rapido con llama-server: el ejemplo oficial arranca el servidor con plantilla Jinja y modo thinking desactivado, adecuado para desplegar un endpoint de chat en minutos.
-- Evaluacion de tecnicas de abliteration: sirve como referencia reproducible para investigadores que comparan Heretic frente a otros metodos de reduccion de rechazo, dado que el autor publica cifras separadas para safetensors y GGUF.
-- Generacion de texto en entornos sin conectividad: al ser GGUF y funcionar offline en llama.cpp, encaja en escenarios de privacidad donde no se pueden enviar datos a APIs externas.
-- Tareas de generacion creativa y brainstorming: la menor tasa de rechazo amplia el rango de temas que el modelo esta dispuesto a abordar en escritura y guiones.
+- Despliegue en estaciones de trabajo con GPU de 8–12 GB: el nivel Q4_K_M o IQ4_XS permite cargar el modelo en una única tarjeta consumer, algo inviable con el modelo hermano de 27B, lo que lo hace adecuado para prototipado local.
+- Asistentes conversacionales en local para entornos con requisitos de privacidad: al ejecutarse con llama.cpp o llama-server sin dependencia de la nube, los datos no salen del equipo, lo que encaja en despliegues de borde.
+- Procesamiento de documentos con imágenes: el proyector mmproj en f16 habilita tareas de descripción de imágenes o extracción de información visual combinadas con texto en el mismo flujo.
+- Investigación sobre alineación y tasas de rechazo: el modelo sirve como caso de estudio reproducible de la metodología Heretic en dos iteraciones, con cifras de rechazo publicadas para comparar safetensors frente a GGUF cuantizado.
+- Generación de contenido creativo en chino tradicional: la model card indica coherencia intacta en ítems benignos con chino tradicional fluido y correcto, útil para redacción y edición en ese idioma.
+- Evaluación de cuantizaciones: los seis niveles disponibles (de Q8_0 a IQ2_M) permiten medir el impacto de la cuantización en la tasa de rechazo; el propio autor documenta un repunte de 0/10 a 2/10 al pasar de safetensors a GGUF.
+- Integración en pipelines con plantilla Jinja: el uso de `--jinja` y `--chat-template-kwargs` facilita el control del modo thinking desde código de servidor.
 
 ## Benchmarks y rendimiento
 
-La model card no publica benchmarks academicos (MMLU, HumanEval, GSM8K, etc.). El unico dato de evaluacion es la tasa de rechazo sobre un conjunto propio de 10 preguntas consideradas gravemente nocivas ("held-out"), mas una comprobacion cualitativa de coherencia en respuestas inofensivas.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card únicamente reporta métricas internas de tasa de rechazo sobre un conjunto held-out de 10 ítems de daño severo:
 
-| Configuracion | Metodo de decodificacion | Tasa de rechazo |
+| Escenario | Configuración | Tasa de rechazo |
 |---|---|---|
-| safetensors fusionado, iteracion 1 | greedy | 3/10 |
-| safetensors fusionado, iteracion 2 | greedy | 0/10 |
-| GGUF Q6_K, cargado con llama-server | muestreo por defecto (no greedy) | 2/10 |
-| GGUF Q4_K_M, cargado con llama-server | muestreo por defecto (no greedy) | 2/10 |
-
-El propio autor advierte que la cuantizacion y el cambio de esquema de muestreo hacen que la tasa de rechazo repunte ligeramente respecto al modelo sin cuantizar, y publica ambos escenarios en lugar de solo el mejor resultado.
-
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
+| safetensors fusionado, iter1 | greedy | 3/10 |
+| safetensors fusionado, iter2 | greedy | 0/10 |
+| GGUF Q6_K, iter2 | muestreo por defecto (llama-server) | 2/10 |
+| GGUF Q4_K_M, iter2 | muestreo por defecto (llama-server) | 2/10 |
 
 ## Requisitos de hardware
 
-- VRAM estimada para pesos (solo modelo de texto, sin contar KV cache ni mmproj):
-  - Q8_0: ~9-10 GB.
-  - Q6_K: ~7-8 GB.
-  - Q5_K_M: ~6-6,5 GB.
-  - Q4_K_M: ~5-5,5 GB.
-  - IQ4_XS: ~4,5-5 GB.
-  - IQ2_M: ~3,5-4 GB.
-- La torre de vision en f16 anade VRAM adicional cuando se usa entrada multimodal; no se especifica su tamano exacto.
-- El autor situa el objetivo en tarjetas unicas de 8-12 GB y maquinas de borde, por lo que Q4_K_M, IQ4_XS e IQ2_M encajan en GPU de consumo.
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080 (12-16 GB) para las cuantizaciones medias; RTX 4090 (24 GB) o A100/H100 para las cuantizaciones altas o despliegues con mucho contexto.
-- Opciones de despliegue: llama.cpp, llama-server, Ollama y cualquier motor compatible con GGUF. La model card solo confirma llama.cpp y llama-server; vLLM y TGI trabajar con safetensors y no se mencionan.
+- VRAM estimada: no disponible de forma explícita; el autor indica que el modelo está pensado para tarjetas individuales de 8–12 GB y dispositivos de borde, lo que sitúa el nivel Q4_K_M/IQ4_XS en ese rango.
+- GPU recomendadas: no se especifican modelos concretos (A100, H100, RTX 4090, etc.) en la información proporcionada.
+- GPU consumer: sí cabe en GPU consumer de 8–12 GB según el autor, siempre eligiendo cuantizaciones de 4 bits o inferiores; los niveles Q8_0 y Q6_K requieren más memoria.
+- Opciones de despliegue: llama.cpp, llama-server y cualquier motor compatible con GGUF. El ejemplo de la model card usa `llama-server -m ... --jinja --chat-template-kwargs '{"enable_thinking":false}'`.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| Qwen3.5-9B-Uncensored-GGUF (este) | ~8,95 B | no disponible | apache-2.0 | Version abliterated con Heretic; multimodal; GGUF |
-| Qwen/Qwen3.5-9B (base) | ~8,95 B | no disponible | apache-2.0 | Modelo original de Qwen, con rechazo estandar; no abliterado |
-| Qwen3.8-27B-Uncensored-GGUF (mismo autor) | no disponible | no disponible | no disponible | Version mayor del mismo autor y misma metodologia; requiere mas VRAM |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Qwen3.5-9B-Uncensored-GGUF (este) | ~9B | no disponible | Apache 2.0 | GGUF (6 niveles) | Variante sin rechazos reflejos, con visión vía mmproj |
+| Qwen/Qwen3.5-9B (base) | ~9B | no disponible | Apache 2.0 | safetensors (no confirmado en la información) | Modelo original sin modificar; mantiene rechazos estándar |
+| xCloudinfo/Qwen3.8-27B-Uncensored-GGUF | ~27B (no confirmado) | no disponible | no disponible | GGUF | Misma metodología Heretic, mayor tamaño y requisitos de VRAM |
 
-No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada; la tabla recoge solo tamano, licencia y enfoque.
+No se dispone de datos de rendimiento comparativo (benchmarks) entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La abliteration elimina rechazos reflejos; el autor aclara explicitamente que esto no implica respaldo a usos ilegales y que la responsabilidad legal de uso recae en el usuario.
-- Aunque la tasa de rechazo medida baja a 0/10 en safetensors con greedy, repunta a 2/10 tras cuantizar, por lo que el comportamiento real depende del formato y del esquema de muestreo.
-- Riesgo de alucinacion: no se documentan evaluaciones de veracidad; al ser un modelo de ~9 B, es esperable un comportamiento inferior al de modelos mayores en tareas de razonamiento factual.
-- La evaluacion de coherencia se realizo unicamente en chino tradicional; no hay datos sobre degradacion en otros idiomas.
-- No se especifica la longitud de contexto soportada, lo que dificulta planificar despliegues con documentos largos.
-- Licencia apache-2.0 heredada del base, que en principio permite uso comercial, pero conviene revisar los terminos de Qwen3.5-9B, ya que este repositorio no anade condiciones propias.
-- El repositorio tiene 0 descargas y 0 "likes" en el momento de la ficha, sin comunidad que lo haya validado de forma independiente.
-- Los modelos "uncensored" pueden producir contenido inapropiado, ofensivo o inexacto en dominios sensibles; no se recomienda su uso en atencion al cliente o sistemas de cara al publico sin filtros adicionales.
+- La eliminación de rechazos reflejos puede aumentar la probabilidad de generar contenido inapropiado o dañino; el autor declara explícitamente que no respalda usos ilegales y que la responsabilidad recae en el usuario.
+- La tasa de rechazo repunta al cuantizar y al usar muestreo por defecto (de 0/10 en safetensors greedy a 2/10 en GGUF), por lo que el comportamiento no es idéntico entre formatos.
+- Riesgo de alucinación: no cuantificado en la información disponible; aplicable el riesgo general de los modelos de lenguaje de este tamaño.
+- Idiomas limitados a chino e inglés según la model card; el rendimiento en castellano no está documentado.
+- Longitud de contexto no especificada, lo que dificulta planificar despliegues con ventanas largas.
+- La corrección de metadatos MTP es específica de esta conversión; otras conversiones de la serie Qwen3.5 pueden presentar el mismo problema de capas.
+- El repositorio no incluye los pesos en safetensors, solo GGUF; para fine-tuning sería necesario partir del modelo base.
+- Licencia Apache 2.0 permite uso comercial, pero las implicaciones legales del comportamiento "uncensored" en producción deben evaluarse por el integrador.
 
 ## Enlaces
 
-- Hugging Face del modelo: https://huggingface.co/xCloudinfo/Qwen3.5-9B-Uncensored-GGUF
+- Modelo en Hugging Face: https://huggingface.co/xCloudinfo/Qwen3.5-9B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
-- Version mayor del mismo autor: https://huggingface.co/xCloudinfo/Qwen3.8-27B-Uncensored-GGUF
+- Modelo hermano de 27B: https://huggingface.co/xCloudinfo/Qwen3.8-27B-Uncensored-GGUF
 - Heretic (herramienta de abliteration): https://github.com/p-e-w/heretic
+- Perfil del autor en Hugging Face: https://hf.co/xCloudinfo

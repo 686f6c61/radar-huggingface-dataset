@@ -5,7 +5,7 @@
   "author": "gangryunguh",
   "url": "https://huggingface.co/gangryunguh/distilbert-toxic-classifier",
   "created_at": "2026-11-16T20:18:47.000Z",
-  "updated_at": "2026-11-16T20:34:19.000Z",
+  "updated_at": "2026-11-16T20:49:23.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -17,6 +17,7 @@
     "distilbert",
     "text-classification",
     "arxiv:1910.09700",
+    "text-embeddings-inference",
     "endpoints_compatible",
     "region:us"
   ],
@@ -25,8 +26,8 @@
   "trending_score": 0,
   "parameters": 66955010,
   "parameters_human": "67.0M",
-  "storage_bytes": 267832560,
-  "storage_human": "268 MB",
+  "storage_bytes": 535665120,
+  "storage_human": "536 MB",
   "context_length": null,
   "base_model": null,
   "formats": [

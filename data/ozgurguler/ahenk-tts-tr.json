@@ -5,7 +5,7 @@
   "author": "ozgurguler",
   "url": "https://huggingface.co/ozgurguler/ahenk-tts-tr",
   "created_at": "2026-10-16T11:20:12.000Z",
-  "updated_at": "2026-10-17T09:49:37.000Z",
+  "updated_at": "2026-11-16T18:14:04.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -15,6 +15,7 @@
   ],
   "tags": [
     "voxcpm",
+    "voxcpm-lora",
     "lora",
     "turkish",
     "synthetic-voice",

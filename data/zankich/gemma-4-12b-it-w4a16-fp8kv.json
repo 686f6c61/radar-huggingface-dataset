@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 40,
+  "downloads_30d": 47,
   "trending_score": 0,
   "parameters": 2507432688,
   "parameters_human": "2.51B",
@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Aternos | Minecraft Sunucuları. Ücretsiz. Sınırsız.",
-      "url": "https://aternos.org/:tr/",
-      "snippet": "Minecraft Sunucuları. Ücretsiz. Sınırsız. Tamamen senin Minecraft sunucun, sadece senin ve sonsuza kadar ücretsiz."
-    },
-    {
-      "title": "Aternos | سيرفرات ماين كرافت. مجاناً. للأبد.",
-      "url": "https://aternos.org/:ar/",
-      "snippet": "سيرفرات ماين كرافت. مجاناً. للأبد. خادم Minrcraft الخاص جداً، الوحيد الذي سيبقى مجاناً إلى الأبد."
-    },
-    {
-      "title": "Online/Offline mode - Server - Aternos Community",
-      "url": "https://board.aternos.org/thread/16104-online-offline-mode/",
-      "snippet": "Apr 8, 2018 · Online/Offline mode English Robi_Bog Apr 8th 2018 Closed The Aternos forums are now deprecated Learn more about …"
-    },
-    {
-      "title": "Gamerules – Aternos | Help Center",
-      "url": "https://support.aternos.org/hc/en-us/articles/360049676332-Gamerules",
-      "snippet": "Jan 21, 2011 · Adjust gamerules directly on Aternos The easiest way to use gamerules is by utilizing the built-in gamerule list on the …"
-    },
-    {
-      "title": "Install modpacks (Minecraft: Java Edition) - Aternos",
-      "url": "https://support.aternos.org/hc/en-us/articles/4409967265425-Install-modpacks-Minecraft-Java-Edition",
-      "snippet": "Aternos offers a wide range of modpacks for Minecraft Java Edition published on modded launchers like CurseForge, Modrinth, …"
-    }
-  ]
+  "sources": []
 }

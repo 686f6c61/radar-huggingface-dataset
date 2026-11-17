@@ -2,87 +2,99 @@
 
 ## Resumen
 
-GLM-5.3-Flash-EXL3-K3.25-MC es una cuantización de 3 bits del modelo multimodal GLM-5.3-Flash-BF16, desarrollado originalmente por Zhipu AI (zai-org) y reempaquetado por el usuario wrldsuksgo2mars. El modelo base es un transformer multimodal de tipo image-text-to-text con 73.422.639.454 parámetros totales, orientado a conversación, razonamiento agéntico y procesamiento conjunto de imagen y texto. Esta versión emplea el formato EXL3 (ExLlamaV3) con una mezcla de precisión K3/K4 en las capas expertas y mantiene el drafter MTP (multi-token prediction) de la capa 45 en K4.
+GLM-5.3-Flash-EXL3-K3.25-MC es una cuantización de tipo "multi-core" (MC) del modelo multimodal zai-org/GLM-5.3-Flash-BF16, publicada por el usuario wrldsuksgo2mars. Se trata de un transformer de mezcla de expertos (MoE) de 73.582 millones de parámetros totales, con torre de visión integrada y pipeline image-text-to-text, que ha sido cuantizado con la técnica EXL3 (EXL3 MCG) para reducir el peso de los expertos enrutados a una mezcla de 3 y 4 bits, manteniendo el núcleo denso en varias codificaciones seleccionables.
 
-El interés de este repack reside en reducir el peso del modelo desde BF16 hasta aproximadamente 160,7 GB de repositorio mediante cuantización de 3 bits, preservando supuestamente la equivalencia byte a byte con el núcleo K4 original verificado. El autor declara explícitamente que el reempaquetado no introduce nuevas afirmaciones de rendimiento ni de calidad, y remite a un fichero `package-validation.json` para las pruebas de bytes. Es, por tanto, un artefacto de interés para quienes necesiten desplegar el modelo en infraestructura con VRAM limitada usando el ecosistema ExLlamaV3.
+La innovación principal del checkpoint es el formato "multi-core": los expertos enrutados (que ocupan 119,0 GiB, aproximadamente el 86,9% del payload) se almacenan una sola vez, mientras que el núcleo denso (atención, proyecciones FFN densas y compartidas, y cabeza de salida) se ofrece en tres vistas: BF16 original (137,0 GiB), EXL3 MCG de 8 bits (129,5 GiB) y EXL3 MCG de 6 bits (127,7 GiB). El usuario selecciona la vista en tiempo de carga mediante la variable `CORE_VIEW` en el runtime cuteafd.
 
-La licencia es MIT, lo que facilita el uso comercial, aunque conviene verificar las condiciones del modelo base original. El modelo fue creado el 11 de noviembre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni likes, por lo que se trata de una publicación reciente y sin validación comunitaria independiente.
+Es relevante porque permite desplegar un MoE multimodal de gran tamaño con un ahorro sustancial de almacenamiento en los expertos, manteniendo la flexibilidad de elegir el equilibrio precisión/tamaño del núcleo denso sin duplicar los pesos de los expertos. El repositorio ocupa 161,1 GB y está pensado para el runtime cuteafd, con soporte de cuantización upstream en el fork tpurtell/GPTQModel.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (image-text-to-text) con capas expertas y drafter MTP; arquitectura interna del base no detallada en la información disponible |
-| Parametros totales | 73.422.639.454 |
+| Arquitectura | Transformer MoE multimodal (image-text-to-text) con torre de visión; tag `glm5_next`; atención KDA, MLA, DSA indexer y mHC |
+| Parametros totales | 73.582.023.006 (73,58 B) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | EXL3 de 3 bits con mezcla K3/K4 en capas 3-44; drafter MTP de capa 45 en K4; vistas alternativas K8 y K6 completas |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | EXL3 MCG: expertos enrutados en mezcla K3/K4 (27.216 matrices K3 + 9.936 K4); núcleo denso seleccionable en BF16, K8 o K6; MTP en K4 (vistas compactas) o BF16 (vista original); torre de visión, embeddings, routers, normas y gates KDA en nativo sin cuantizar |
+| Idiomas soportados | no disponible (la model card menciona texto multilingüe en el dataset de calibración) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (EXL3) |
+| Formato de pesos | safetensors (índices separados por vista: `model.safetensors.index.json` para original, `.k8.` y `.k6.` para las compactas; metadatos en `quantize_config.json` y `cuteafd-mc.json`) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del modelo base GLM-5.3-Flash-BF16 más allá de su naturaleza multimodal image-text-to-text. El repack conserva el núcleo BF16 como vista por defecto y ofrece vistas alternativas K8 y K6 completas. Las capas 3 a 44 emplean expertos con cuantización mixta K3/K4 derivados del núcleo FP8 del repositorio `wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3.25-Core-FP8`, mientras que la capa 45, correspondiente al drafter MTP, permanece en K4 desde el paquete MC padre. No se retiene ningún payload del núcleo FP8 del proveedor original.
+El modelo base es un transformer de mezcla de expertos multimodal con torre de visión integrada. La model card cita componentes concretos de la arquitectura: atención KDA (con gates y convoluciones), MLA (con proyecciones q_a/q_b/kv_a/o y kv_b), un indexador DSA, mecanismo mHC, routers, normas y embeddings. Los expertos enrutados son la mayor parte del peso (119,0 GiB, 86,9% del payload de la vista `original`) y se almacenan una sola vez, compartidos entre las tres vistas de núcleo. La torre de visión se mantiene nativa y no se cuantiza por la selección de núcleo.
 
-El autor indica que el núcleo, los tensores nativos compartidos y los recursos multimedia incluidos derivan del paquete K4 MC verificado con hash `91a8dbc9c12e790c65aa1a38c6aede6a3e23a77d`. No se especifican en la información proporcionada el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF o DPO en el modelo base. El dataset citado (`wrldsuksgo2mars/agentic-quant-panel-v1`) parece asociado al proceso de cuantización agéntica, no al entrenamiento del modelo original.
+La cuantización se realizó con el cuantizador tpurtell/GPTQModel (fork de ModelCloud/GPTQModel), en las revisiones `2108e195...` (procedencia de expertos K4 y núcleo K6) y `1f920091...` (procedencia del núcleo K8). Los expertos objetivo provienen de `wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3.25-Core-FP8` y el núcleo y los encodes MTP compartidos de `wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K4-MC`. La receta registrada usa codebook EXL3 MCG con multiplicador `0xCBAC1FED`, semilla 787, regularización de Hessiano sigma 0,025, escalas de salida automáticas y Hessiano con congruencia block-Hadamard firmada (cómputo FP64, almacenamiento FP32). El dataset de calibración declarado es `wrldsuksgo2mars/agentic-quant-panel-v1`, un panel de código fuente real, matemáticas resueltas, esquemas de llamada a funciones y texto multilingüe; la procedencia heredada del K4 registra 1.426 prompts y 1.097.737 tokens, aunque el autor advierte que esas cifras no documentan de forma independiente la receta de los expertos K3/K4 objetivo.
+
+El soporte de la familia K4/K6 está upstream en ModelCloud/GPTQModel (PRs #3609 y #3611), mientras que el núcleo K8 requiere la ampliación K1-K8 del fork tpurtell/GPTQModel (PR #5), que aún no está upstream. El autor indica explícitamente que este repositorio combina vistas de núcleo con expertos mezclados K3/K4 de origen separado y no documenta una cuantización causal unificada nueva de esa combinación.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno en formato image-text-to-text.
-- Procesamiento conjunto de imágenes y texto (pipeline image-text-to-text declarado).
-- Razonamiento agéntico: el modelo base pertenece a la familia GLM orientada a tareas de agente, aunque las capacidades concretas del base no se detallan en la información disponible.
-- Decodificación con drafter MTP (multi-token prediction) en la capa 45, lo que sugiere soporte de decodificación especulativa para acelerar la generación.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponibles; el campo de idiomas no está relleno en la ficha de Hugging Face.
-- Modo thinking explícito, audio u otras capacidades especiales: no disponible.
+- Generación de texto y razonamiento conversacional multi-turno (pipeline `conversational`).
+- Procesamiento multimodal image-text-to-text gracias a la torre de visión integrada, que se mantiene en precisión nativa.
+- Razonamiento matemático y generación de código: el dataset de calibración está orientado a código fuente real, matemáticas resueltas y esquemas de function calling.
+- Soporte de tool calling / function calling: la calibración incluye esquemas de llamada a funciones, lo que sugiere uso previsto en flujos agénticos.
+- Uso en agentes y razonamiento multi-paso: el tag de dataset `agentic-quant-panel-v1` y la presencia de MTP (multi-token prediction) apuntan a este escenario.
+- Capacidades multilingües: el dataset de calibración incluye texto multilingüe, aunque no se especifica la lista de idiomas soportados.
+- Decodificación con MTP (multi-token prediction) en las vistas compactas, codificado en K4.
 
 ## Casos de uso
 
-- Despliegue en infraestructura con VRAM limitada: la cuantización EXL3 de 3 bits reduce el peso del modelo hasta unos 160,7 GB de repositorio, lo que permite ejecutar un modelo de 73.400 millones de parámetros en configuraciones multi-GPU que no admitirían la versión BF16 completa, usando ExLlamaV3 como motor de inferencia.
-- Asistentes conversacionales multimodales: al declarar el pipeline image-text-to-text, el modelo puede gestionar diálogos en los que el usuario adjunta imágenes junto con texto, adecuado para aplicaciones de soporte con capturas de pantalla o documentos escaneados.
-- Investigación sobre cuantización extrema: el paquete incluye pruebas de bytes en `package-validation.json` y vistas alternativas K8 y K6, lo que lo convierte en un artefacto útil para estudiar el impacto de la cuantización K3/K4 frente a K6/K8 en la calidad de salida.
-- Evaluación de decodificación especulativa: la presencia del drafter MTP en K4 permite experimentar con decodificación multi-token prediction en entornos ExLlamaV3 y medir ganancias de throughput.
-- Prototipado de agentes con presupuesto de hardware ajustado: para equipos que necesiten un modelo de gran tamaño con capacidades conversacionales y multimodales sin acceso a clústeres de H100 en BF16, esta versión ofrece un punto de partida con licencia MIT.
-- Reproducibilidad de artefactos cuantizados: los hashes y pruebas de bytes documentados permiten a investigadores verificar la integridad de la conversión y comparar el comportamiento del modelo frente al núcleo K4 de referencia.
+- Asistente de código en producción: el modelo puede integrarse en pipelines de revisión y generación de código con tool calling, ya que la calibración se hizo sobre código fuente real y esquemas de función; el núcleo K6 permite reducir el peso del checkpoint manteniendo la calidad del núcleo denso.
+- Automatización de atención al cliente multimodal: al aceptar entradas image-text-to-text, puede gestionar conversaciones multi-turno que incluyan capturas de pantalla o documentos escaneados, con la torre de visión en precisión nativa.
+- Agentes autónomos con razonamiento multi-paso: el soporte de function calling y el MTP lo hacen adecuado para orquestación de herramientas en flujos agénticos, donde el contexto largo y la coherencia entre pasos son críticos.
+- Análisis de documentos técnicos y matemáticos: el panel de calibración incluye matemáticas resueltas, lo que lo hace útil para resolución asistida de problemas y verificación de cálculos en entornos de investigación.
+- Despliegue en infraestructura con VRAM limitada: la vista `k6-compact` (127,7 GiB de payload) reduce el almacenamiento del núcleo denso frente a la vista `original` (137,0 GiB), útil cuando el presupuesto de disco o memoria es ajustado pero se quiere conservar la calidad de los expertos.
+- Investigación en cuantización de MoE: el formato multi-core con expertos compartidos sirve como banco de pruebas para evaluar el impacto de distintas precisiones del núcleo denso (BF16 vs K8 vs K6) sobre el mismo conjunto de expertos.
+- Servicio de inferencia multimodal autoalojado: con licencia MIT y pesos safetensors, puede desplegarse en clústeres propios para tareas de visión-lenguaje sin dependencia de APIs externas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor declara explícitamente que este reempaquetado "no hace nuevas afirmaciones de rendimiento de servicio ni de calidad".
+No se han publicado resultados de benchmarks en la informacion disponible. La model card solo documenta tamaños de payload por vista (137,0 GiB original, 129,5 GiB k8-compact, 127,7 GiB k6-compact) y la distribución de matrices cuantizadas (27.216 K3 + 9.936 K4), sin métricas de calidad (MMLU, HumanEval, GSM8K u otras).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio ocupa 160,7 GB, por lo que se necesita al menos esa cantidad de memoria agregada en GPUs para cargar los pesos en formato EXL3 de 3 bits; las vistas K6 y K8 requieren más espacio.
-- GPU recomendadas: configuraciones multi-GPU de数据中心 (A100 80 GB, H100 80 GB) en número de dos o más para cubrir los ~161 GB de pesos; no se especifican requisitos oficiales.
-- GPU de consumo: no cabe en una única GPU de consumo (RTX 4090 con 24 GB, RTX 3090 con 24 GB) ni en configuraciones típicas de 2×24 GB; se requeriría un número elevado de GPUs de consumo o memoria unificada en CPU, con latencia muy degradada.
-- Opciones de despliegue: el formato EXL3 está diseñado para ExLlamaV3; no se indica compatibilidad con vLLM, llama.cpp, Ollama o TGI en la información disponible.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia, el payload de la vista `original` es de 137,0 GiB, el de `k8-compact` de 129,5 GiB y el de `k6-compact` de 127,7 GiB; a esto hay que sumar KV cache, activaciones y overhead del runtime, por lo que la inferencia requiere múltiples GPU.
+- GPU recomendadas: no especificadas por el autor. Por el tamaño del checkpoint, se necesita un nodo multi-GPU con memoria agregada superior a los 130-140 GiB (por ejemplo, varias A100 80 GB, H100 80 GB o H200).
+- ¿Cabe en consumer GPU? No. Con 73,58 B de parámetros y un payload mínimo de 127,7 GiB, no cabe en una RTX 4090 (24 GB) ni en ninguna GPU de consumo individual.
+- Opciones de despliegue: el runtime previsto es cuteafd (con `CORE_VIEW=original|k8-compact|k6-compact`, por defecto `original`). No se documenta soporte para vLLM, llama.cpp, Ollama o TGI en la información disponible.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash-EXL3-K3.25-MC | 73.422.639.454 | no disponible | EXL3 3 bits (K3/K4) | MIT | Hugging Face, 0 descargas |
-| zai-org/GLM-5.3-Flash-BF16 (base) | no disponible en la información | no disponible | BF16 | no disponible en la información | Hugging Face (referenciado como base) |
-| wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3.25-Core-FP8 | no disponible | no disponible | FP8 | no disponible | Hugging Face (referenciado como origen de expertos) |
+| GLM-5.3-Flash-EXL3-K3.25-MC (este) | 73,58 B (MoE) | no disponible | EXL3 MCG K3/K4 expertos + núcleo BF16/K8/K6 | MIT | Hugging Face, runtime cuteafd |
+| zai-org/GLM-5.3-Flash-BF16 (base) | no disponible en la información | no disponible | BF16 nativo | no disponible en la información | Hugging Face |
+| wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K4-MC | no disponible en la información | no disponible | EXL3 K4 expertos + núcleo multi-core | no disponible en la información | Hugging Face |
+| wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3.25-Core-FP8 | no disponible en la información | no disponible | EXL3 K3.25 con núcleo FP8 | no disponible en la información | Hugging Face |
 
-No se dispone de datos de rendimiento comparado con alternativas de la misma categoría en la información proporcionada.
+No se dispone de datos de benchmarks ni de especificaciones completas de los modelos comparables en la información proporcionada, por lo que la comparación se limita a procedencia, esquema de cuantización y licencia.
 
 ## Limitaciones y advertencias
 
-- La cuantización de 3 bits puede degradar la calidad de salida frente al modelo BF16 original; el autor no aporta métricas de calidad comparativas.
-- El modelo no cuenta con validación comunitaria: 0 descargas y 0 likes en el momento de la ficha, lo que implica ausencia de retroalimentación independiente sobre su comportamiento real.
-- Los idiomas soportados no están declarados, por lo que no se puede garantizar un rendimiento adecuado en castellano u otros idiomas distintos del inglés sin evaluación previa.
-- La longitud de contexto no está disponible, lo que impide planificar aplicaciones que dependan de ventanas largas.
-- Riesgo de alucinación inherente a los modelos de lenguaje de gran tamaño; no se han publicado evaluaciones específicas para esta cuantización.
-- Aunque la licencia del repack es MIT, deben verificarse las condiciones del modelo base zai-org/GLM-5.3-Flash-BF16 para uso comercial, ya que la información disponible no las detalla.
-- El formato EXL3 limita las opciones de despliegue al ecosistema ExLlamaV3; no se confirma compatibilidad con otros motores de inferencia.
-- El tamaño de 160,7 GB exige infraestructura multi-GPU de数据中心, lo que restringe su uso a entornos con hardware especializado.
+- El autor advierte que el repositorio no documenta una cuantización causal unificada nueva: combina vistas de núcleo con expertos mezclados K3/K4 procedentes de repositorios distintos, y los recuentos heredados de calibración no establecen de forma independiente la receta de esos expertos.
+- El soporte del núcleo K8 depende de una ampliación del fork tpurtell/GPTQModel que aún no está upstream; la validación upstream de GLM core solo acepta K4/K6. Esto puede limitar la portabilidad del checkpoint.
+- El runtime previsto es cuteafd; no se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI, lo que restringe las opciones de despliegue en producción.
+- Riesgo de alucinación: no cuantificado en la información disponible; es un riesgo inherente a los modelos de lenguaje y no se han publicado evaluaciones específicas para esta cuantización.
+- Sesgos conocidos: no documentados en la información disponible.
+- Idiomas soportados: no especificados; solo se indica que el dataset de calibración incluye texto multilingüe, sin lista de idiomas ni evaluación por idioma.
+- Longitud de contexto: no disponible, lo que impide evaluar su idoneidad para tareas de contexto largo.
+- Licencia MIT: permite uso comercial, pero conviene verificar las condiciones del modelo base zai-org/GLM-5.3-Flash-BF16 y de los repositorios de procedencia de los expertos y del núcleo.
+- El repositorio ocupa 161,1 GB y requiere hardware multi-GPU; no es apto para entornos de consumo.
+- La model card está redactada en inglés y orientada a usuarios del runtime cuteafd; la documentación sobre el formato MC está en el repositorio de GitHub del runtime.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3.25-MC
+- Hugging Face del modelo: https://huggingface.co/wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3.25-MC
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
-- Núcleo FP8 de origen de los expertos: https://huggingface.co/wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3.25-Core-FP8
-- Dataset citado: https://huggingface.co/datasets/wrldsuksgo2mars/agentic-quant-panel-v1
-- Pruebas de bytes del paquete: fichero `package-validation.json` en el repositorio del modelo (no se proporciona URL directa en la información disponible).
+- Repositorio de expertos objetivo: https://huggingface.co/wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3.25-Core-FP8
+- Repositorio de núcleo y MTP: https://huggingface.co/wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K4-MC
+- Dataset de calibración: https://huggingface.co/datasets/wrldsuksgo2mars/agentic-quant-panel-v1
+- Runtime cuteafd: https://github.com/tpurtell/cuteafd
+- Documentación del formato MC: https://github.com/tpurtell/cuteafd/blob/dev/docs/mc-checkpoints.md
+- Cuantizador GPTQModel (fork): https://github.com/tpurtell/GPTQModel
+- PR de soporte GLM core/source upstream: https://github.com/ModelCloud/GPTQModel/pull/3609
+- PR de soporte Flash core/MTP upstream: https://github.com/ModelCloud/GPTQModel/pull/3611
+- PR de ampliación K1-K8 del fork: https://github.com/tpurtell/GPTQModel/pull/5

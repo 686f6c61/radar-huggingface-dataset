@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 48,
+  "downloads_30d": 39,
   "trending_score": 0,
   "parameters": 55117626057,
   "parameters_human": "55.12B",
@@ -45,8 +45,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "jakeatx/slimder-qwen38-ream288-depth32-agentic-ngram50-compact-nvfp4",
+  "renamed_at": "2026-11-17T09:42:50.664Z",
   "benchmarks": [],
   "sources": [
     {

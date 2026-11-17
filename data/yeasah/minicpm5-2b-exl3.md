@@ -2,106 +2,106 @@
 
 ## Resumen
 
-MiniCPM5-2B-exl3 es una colección de cuantizaciones EXL3 del modelo base openbmb/MiniCPM5-2B, publicada por el usuario yeasah. No se trata de un modelo entrenado desde cero, sino de una conversión a formatos de 3, 3.5, 4, 5 y 6 bits por peso (BPW) pensada para ejecutarse con ExLlamaV3 o con vLLM mediante el plugin vllm-exl3-plugin. El modelo base pertenece a la familia MiniCPM5 de OpenBMB y esta etiquetado como orientado a despliegue en dispositivo (on-device, edge-ai), con capacidades declaradas de contexto largo y tool calling.
+MiniCPM5-2B-exl3 es una familia de cuantizaciones EXL3 del modelo base openbmb/MiniCPM5-2B, publicada por el usuario yeasah. El modelo subyacente es MiniCPM5-2B, un modelo de lenguaje de 2.000 millones de parámetros desarrollado por OpenBMB, orientado a despliegue en dispositivo (on-device) y edge computing, con soporte declarado de contexto largo y tool calling. Esta ficha describe la variante cuantizada, que mantiene la licencia Apache 2.0 del original y ofrece cinco niveles de compresión entre 3,00 y 6,00 bits por peso.
 
-La relevancia de esta ficha radica en que ofrece una alternativa de inferencia muy comprimida (desde 0,98 GiB en 3.00 BPW hasta 1,73 GiB en 6.00 BPW) frente a los 4,69 GiB del checkpoint sin cuantizar, manteniendo una degradación medida y documentada en perplejidad y en retención de hechos. El autor publica métricas de KLD excedido y de retención de conocimiento factual para cada tasa de bits, lo que permite elegir el compromiso tamaño/calidad con datos concretos.
+La relevancia de esta publicación está en el método de cuantizacion: no es un EXL3 genérico, sino una calibración específica para lo que el modelo "lee y escribe mientras trabaja" (documentos, salidas de herramientas, código, diffs y respuestas propias), con asignación de bits por tensor según sensibilidad medida y redondeo con factor de Fisher del lado de salida (LDLQ de dos lados, tras YAQA). El resultado es que a 4,00 BPW el checkpoint ocupa 1,24 GiB y pierde solo 1,59% de perplejidad, mientras que a 3,00 BPW se queda en 0,98 GiB con un 6,26% de aumento.
 
-El repositorio tiene un tamaño total de 8,0 GB porque incluye todas las revisiones de cuantización, pero cada revisión individual ocupa entre 0,98 y 1,73 GiB. La licencia es Apache 2.0, heredada del modelo base. Los idiomas declarados son inglés y chino.
+El repo ocupa 8,0 GB porque incluye todas las revisiones de bitrate. Cada nivel se sirve como revisión independiente y requiere exllamav3 1.6.4 o posterior (porque también se cuantiza la tabla de embeddings de entrada) o vLLM mediante el plugin vllm-exl3-plugin del mismo autor. La información disponible no detalla la arquitectura interna del MiniCPM5-2B original, por lo que los campos correspondientes se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia MiniCPM5; el repositorio hereda la etiqueta "llama" en los tags, sin detalle arquitectonico adicional) |
-| Parametros totales | 2B (según el nombre del modelo base; no se detalla el desglose exacto) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (el tag "long-context" sugiere contexto extendido, sin cifra) |
-| Tipos de cuantizacion | EXL3 en 3.00, 3.50, 4.00, 5.00 y 6.00 BPW (revisiones separadas del repositorio) |
-| Idiomas soportados | en, zh |
+| Arquitectura | no disponible (modelo base MiniCPM5-2B; tags indican familia llama/minicpm) |
+| Parametros totales | 2.000 millones (según nombre del modelo base) |
+| Parametros activos | no aplica (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (el tag "long-context" sugiere contexto largo, sin cifra publicada) |
+| Tipos de cuantizacion | EXL3 en 3,00, 3,50, 4,00, 5,00 y 6,00 BPW (revisiones separadas) |
+| Idiomas soportados | inglés (en), chino (zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | EXL3 (checkpoint para ExLlamaV3 y vLLM con vllm-exl3-plugin); el modelo base esta en safetensors |
+| Formato de pesos | EXL3 (checkpoint cuantizado compatible con exllamav3 y vLLM vía plugin) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base MiniCPM5-2B es un transformer de aproximadamente 2.000 millones de parametros desarrollado por OpenBMB. La model card del repositorio de cuantizacion no detalla la arquitectura interna (número de capas, dimensiones, tipo de atención ni si incorpora innovaciones como atención lineal o capas MTP). Los tags incluyen "llama" y "minicpm5", y se menciona la existencia de "MTP draft layers" en la definicion de BPW, lo que sugiere capas de prediccion multi-token para decodificacion especulativa, aunque no se aportan mas detalles.
+No se dispone de información sobre la arquitectura interna del modelo base MiniCPM5-2B en los datos proporcionados (solo los tags "minicpm", "minicpm5" y "llama", que apuntan a una familia tipo transformer decoder-only). Tampoco se detalla el número de tokens de entrenamiento ni la composición exacta del corpus. Los datasets listados en la model card del modelo base (Ultra-FineWeb, UltraX-Preview, Ultra-FineWeb-L3, UltraData-Math, UltraData-Code, UltraData-SFT-2605, UltraData-SFT-Agent-2609 y UltraData-RL-2609) indican un pipeline que combina preentrenamiento web, datos matemáticos y de código, SFT y una fase de RL, presumiblemente con datos de agentes y tool calling.
 
-Los datos de entrenamiento del modelo base, segun los datasets referenciados, incluyen Ultra-FineWeb, UltraX-Preview, Ultra-FineWeb-L3, UltraData-Math, UltraData-Code, UltraData-SFT-2605, UltraData-SFT-Agent-2609 y UltraData-RL-2609. Esto indica un pipeline que abarca preentrenamiento con datos web filtrados, matematicas y codigo, seguido de ajuste supervisado (SFT) y aprendizaje por refuerzo (RL), con un componente especifico para agentes. No se especifica el numero de tokens de entrenamiento ni la composicion porcentual del dataset.
-
-La innovacion tecnica de esta publicacion no esta en el entrenamiento sino en la cuantizacion: calibracion sobre texto que los modelos leen y escriben durante el trabajo (documentos, salidas de herramientas, codigo, diffs y respuestas propias) en lugar de solo texto web; asignacion de bits por tensor segun la sensibilidad medida en las respuestas del propio modelo; y redondeo mediante LDLQ bilateral con factor de Fisher del lado de la salida, tras YAQA. La cuantizacion incluye tambien los embeddings de tokens, lo que requiere ExLlamaV3 1.6.4 o superior.
+La innovación técnica de esta publicación no está en el modelo base sino en el proceso de cuantizacion EXL3: calibración sobre texto que el modelo consume y produce en tareas reales (documentos, salidas de herramientas, código y diffs, respuestas del propio modelo) en lugar de texto web genérico; asignación de bits por tensor a partir de la sensibilidad medida en las respuestas del modelo, manteniendo el mismo tamaño total que una asignación uniforme; y redondeo ponderado por la importancia de cada salida para las predicciones (LDLQ de dos lados con factor de Fisher del lado de salida, después de YAQA). Según la model card, esto cambia solo cómo se redondean los valores, no el tamaño ni el formato. La tabla de "Facts kept" (871 preguntas cerradas) muestra que la pérdida no es uniforme: el quant retiene lo que el modelo original sabía con seguridad y pierde más lo que apenas sabía.
 
 ## Capacidades
 
-- Generacion de texto en ingles y chino.
-- Razonamiento y respuesta a preguntas de conocimiento cerrado (el autor evalua 871 preguntas factuales).
-- Capacidades de codigo y matematicas, inferidas de los datasets UltraData-Code y UltraData-Math del modelo base.
-- Tool calling / function calling, segun el tag "tool-calling" y el dataset UltraData-SFT-Agent-2609.
-- Soporte de agentes y flujos multi-paso, segun el dataset UltraData-SFT-Agent-2609.
-- Contexto largo, segun el tag "long-context" (sin cifra concreta disponible).
-- Orientado a despliegue en dispositivo y edge (tags "on-device", "edge-ai").
-- No se declaran capacidades de vision, audio ni modo thinking explicito en la informacion disponible.
+- Generación de texto en inglés y chino.
+- Soporte declarado de tool calling / function calling (tag "tool-calling" y datasets de agentes y RL).
+- Orientado a contexto largo (tag "long-context"), aunque la longitud exacta no está publicada.
+- Diseñado para despliegue on-device y edge (tags "on-device", "edge-ai").
+- Compatible con transformers (library_name) y con exllamav3 / vLLM vía plugin.
+- No se documentan capacidades de visión, audio, thinking mode ni decodificación especulativa en la información disponible.
 
 ## Casos de uso
 
-- Despliegue en dispositivos con VRAM limitada: la revision de 3.00 BPW ocupa 0,98 GiB, lo que permite ejecutar el modelo en GPUs de consumo con poca memoria o en entornos integrados, a costa de una perdida de perplejidad del +6,26%.
-- Asistentes conversacionales en local: las revisiones de 5.00 y 6.00 BPW (1,50 y 1,73 GiB) mantienen el 93,9% y el 97,3% de los hechos del modelo original, adecuadas para chatbots que requieren fidelidad factual sin conexion.
-- Agentes con tool calling: el modelo base esta entrenado con UltraData-SFT-Agent-2609 y etiquetado para tool calling, por lo que puede integrarse en pipelines de agentes que invocan APIs y procesan salidas de herramientas; la calibracion de la cuantizacion incluye precisamente salidas de herramientas y conversaciones.
-- Procesamiento de documentos y codigo en produccion: la calibracion sobre documentos, codigo y diffs hace que estas cuantizaciones sean adecuadas para tareas de resumen, revision de cambios y generacion de codigo en entornos con recursos ajustados.
-- Inferencia de alto rendimiento con vLLM: mediante vllm-exl3-plugin, las revisiones EXL3 pueden servirse en un servidor vLLM, lo que permite atender peticiones concurrentes con un consumo de VRAM de 0,98 a 1,73 GiB por instancia.
-- Evaluacion y prototipado rapido: el reducido tamano en disco (menos de 2 GiB por revision) facilita descargar y comparar varias tasas de bits en la misma maquina para medir el compromiso calidad/tamano antes de fijar una configuracion.
-- Entornos multilingues ingles-chino: el soporte declarado de en y zh permite tareas de traduccion o atencion al cliente en ambos idiomas, aunque no se documenta calidad por idioma.
+- Asistente local en dispositivo: con checkpoints de 0,98 a 1,73 GiB, el modelo cabe en equipos con poca VRAM y puede ejecutarse como asistente de texto offline en portátiles o mini-PC, usando exllamav3 como runtime.
+- Automatización de agentes con tool calling: los datasets de SFT de agentes y RL del modelo base apuntan a uso en pipelines donde el modelo invoca funciones; el EXL3 a 5,00 o 6,00 BPW preserva mejor las respuestas factuales (93,9% y 97,3% de "facts kept") necesarias para no encadenar errores.
+- Generación y revisión de código en local: la calibración incluye código y diffs, lo que hace que a 4,00 BPW (1,24 GiB) el modelo sea adecuado para autocompletado y revisión de parches en entornos con GPU consumer.
+- Procesamiento de documentos largos: el tag de contexto largo y la calibración sobre documentos permiten resumir y extraer información de textos extensos en un servicio self-hosted con vLLM y vllm-exl3-plugin.
+- Servicio multiusuario de bajo coste: vLLM con el plugin permite servir varias peticiones concurrentes con menos de 1,6 GiB de VRAM de pesos a 6,00 BPW, liberando el resto para KV cache.
+- Evaluación de cuantizaciones en investigación: las revisiones por bitrate y las métricas publicadas (Excess KLD, Δ perplexity, facts kept, confident errors) permiten comparar el compromiso calidad/tamaño de EXL3 frente a GGUF Q6_K de bartowski en las mismas evaluaciones.
+- Chat bilingüe inglés-chino: el soporte declarado de ambos idiomas lo hace utilizable en atención al cliente o documentación para mercados que requieren EN y ZH.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible (MMLU, HumanEval, GSM8K u otros). La model card solo aporta métricas de cuantizacion:
+La model card publica métricas de cuantizacion, no benchmarks de capacidad (MMLU, HumanEval, GSM8K). Se reproducen los datos disponibles:
 
-| BPW | Tamano en disco | VRAM (vLLM) | Excess KLD | Delta perplejidad | Hechos retenidos | Errores con confianza |
+| BPW | Tamano en disco | VRAM (vLLM) | Excess KLD | Δ perplejidad | Facts kept | Errores confiados |
 |---|---|---|---|---|---|---|
-| 3.00 | 0,98 GiB | 0,98 GiB | 0,0603 | +6,26% | 76,3% | 4,59% |
-| 3.50 | 1,09 GiB | 1,09 GiB | 0,0304 | +3,23% | 81,1% | 3,90% |
-| 4.00 | 1,24 GiB | 1,24 GiB | 0,0148 | +1,59% | 89,0% | 1,38% |
-| 5.00 | 1,50 GiB | 1,50 GiB | 0,0039 | +0,34% | 93,9% | 0,11% |
-| 6.00 | 1,73 GiB | 1,73 GiB | 0,0011 | +0,09% | 97,3% | 0,00% |
-| base | 4,69 GiB | no disponible | 0 (referencia) | 0% | 100% | no disponible |
+| 3,00 | 0,98 GiB | 0,85 GiB | 0,0603 | +6,26% | 76,3% | 4,59% |
+| 3,50 | 1,09 GiB | 0,97 GiB | 0,0304 | +3,23% | 81,1% | 3,90% |
+| 4,00 | 1,24 GiB | 1,11 GiB | 0,0148 | +1,59% | 89,0% | 1,38% |
+| 5,00 | 1,50 GiB | 1,34 GiB | 0,0039 | +0,34% | 93,9% | 0,11% |
+| 6,00 | 1,73 GiB | 1,57 GiB | 0,0011 | +0,09% | 97,3% | 0,00% |
+| base | 4,69 GiB | no disponible | 0 | 0 | 100% | 0% |
 
-Los "hechos retenidos" corresponden a 871 preguntas de conocimiento cerrado que el modelo sin cuantizar responde correctamente, puntuadas token a token. Los "errores con confianza" son preguntas en las que la cuantizacion asigna al menos un 70% a un token incorrecto. El autor advierte que diferencias de uno o dos puntos entre niveles consecutivos son poco significativas.
+"Facts kept" se mide sobre 871 preguntas cerradas que el modelo sin cuantizar responde correctamente, con puntuación token a token; "errores confiados" son preguntas donde el quant asigna al menos 70% a un token incorrecto. No se han publicado resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: entre 0,98 GiB (3.00 BPW) y 1,73 GiB (6.00 BPW) segun la columna VRAM de vLLM; el checkpoint sin cuantizar ocupa 4,69 GiB. La VRAM real consumida puede ser inferior al tamano total del checkpoint segun la configuracion.
-- GPU recomendadas: no se especifican modelos concretos. Por el rango de VRAM, cualquier GPU con al menos 2 GiB libres puede alojar las revisiones mas pequenas; para 6.00 BPW se recomienda disponer de 2 GiB o mas exclusivos para pesos, mas el espacio de KV cache.
-- Cabe en GPU de consumo: si, dado que la revision de 3.00 BPW ocupa menos de 1 GiB y la de 6.00 BPW menos de 2 GiB; el modelo esta etiquetado como on-device y edge-ai.
-- Opciones de despliegue: ExLlamaV3 (version 1.6.4 o superior, necesaria por la cuantizacion de embeddings) y vLLM mediante vllm-exl3-plugin. No se menciona soporte de llama.cpp u Ollama para estas cuantizaciones EXL3; para GGUF existe una publicacion separada de bartowski.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM de pesos en vLLM: 0,85 GiB (3,00 BPW) hasta 1,57 GiB (6,00 BPW); el checkpoint en disco va de 0,98 a 1,73 GiB.
+- El modelo base sin cuantizar ocupa 4,69 GiB en checkpoint.
+- Cabe en GPU consumer: cualquier GPU con 2 GB o más de VRAM libre puede alojar los pesos a 6,00 BPW; con 1 GB libre se puede usar 3,00 BPW. La VRAM total necesaria depende de la KV cache y del contexto configurado.
+- GPU recomendadas: no especificadas en la información disponible; por tamaño, RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 y A100/H100 son holgadas para los pesos, y estas últimas permiten mayor concurrencia y contexto.
+- Despliegue: exllamav3 1.6.4 o posterior (obligatorio por la cuantizacion de embeddings de entrada) y vLLM mediante vllm-exl3-plugin. La library_name del repo es transformers, pero el formato EXL3 requiere los runtimes citados.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| MiniCPM5-2B-exl3 (este) | 2B | no disponible | EXL3 3-6 BPW | Apache 2.0 | Cuantizacion con metricas de KLD y retencion de hechos por nivel |
-| openbmb/MiniCPM5-2B (base) | 2B | no disponible | safetensors | Apache 2.0 | Referencia sin cuantizar; 4,69 GiB |
-| bartowski/MiniCPM5-2B-GGUF | 2B | no disponible | GGUF | Apache 2.0 | Alternativa GGUF para llama.cpp; el autor compara contra Q6_K en sus graficas |
+| yeasah/MiniCPM5-2B-exl3 (esta ficha) | 2.000 M | no disponible | Apache 2.0 | EXL3 (3,00-6,00 BPW) | Calibración específica para uso agéntico y de código; métricas de KLD y facts kept publicadas |
+| openbmb/MiniCPM5-2B | 2.000 M | no disponible | Apache 2.0 | safetensors (presumible) | Modelo base sin cuantizar, 4,69 GiB |
+| bartowski/MiniCPM5-2B-GGUF | 2.000 M | no disponible | Apache 2.0 | GGUF | Referencia Q6_K usada en las gráficas del autor; evaluado por llama.cpp en las mismas pruebas |
 
-No se dispone de datos de rendimiento (benchmarks de tarea) para comparar cualitativamente con modelos de la misma categoria. La comparacion disponible se limita al formato, tamano y licencia.
+No se dispone de datos de benchmarks de capacidad para comparar rendimiento entre estas variantes; la comparación disponible es exclusivamente de tamaño, formato y métricas de cuantizacion.
 
 ## Limitaciones y advertencias
 
-- La cuantizacion degrada el conocimiento factual: en 3.00 BPW se pierde el 23,7% de los hechos que el modelo original acierta, y el 4,59% de las preguntas producen errores con alta confianza (el modelo afirma algo falso en lugar de dudar).
-- Los errores con confianza son especialmente peligrosos en produccion: incluso en 4.00 BPW se registra un 1,38% de respuestas falsas con al menos 70% de probabilidad asignada al token incorrecto.
-- El autor advierte que la perdida no es uniforme: la cuantizacion conserva lo que el modelo original sabia con seguridad y pierde mas lo que apenas conocia.
-- Riesgo de alucinacion inherente al modelo base, no cuantificado en la informacion disponible.
-- Idiomas limitados a ingles y chino; no se declara soporte de castellano.
-- La longitud de contexto no se especifica, por lo que no puede validarse el uso en ventanas largas pese al tag "long-context".
-- Requiere ExLlamaV3 1.6.4 o superior por la cuantizacion de los embeddings de tokens; versiones anteriores no son compatibles.
-- El soporte en vLLM depende de un plugin de terceros (vllm-exl3-plugin), lo que anade una dependencia externa al stack de produccion.
-- Licencia Apache 2.0: permite uso comercial, pero se heredan las condiciones y posibles avisos del modelo base; conviene revisar la model card de openbmb/MiniCPM5-2B.
-- Las metricas de calidad publicadas son del autor del repositorio y se basan en una unica conversion por nivel; el propio autor indica que conversiones con los mismos ajustes varian unos pocos puntos.
+- La cuantizacion introduce pérdida de conocimiento factual: a 3,00 BPW se conserva el 76,3% de los hechos y el 4,59% de las respuestas son errores confiados; incluso a 6,00 BPW se pierde un 2,7% de hechos. No recomendable para tareas que exijan exactitud factual estricta por debajo de 5,00 BPW.
+- Riesgo de alucinacion inherente al modelo base, agravado por la cuantizacion en bitrates bajos.
+- Idiomas limitados a inglés y chino; no se declara soporte de castellano.
+- La longitud de contexto real no está publicada; el tag "long-context" no especifica cifra y la KV cache debe dimensionarse aparte de los pesos.
+- Requiere exllamav3 1.6.4 o posterior; versiones anteriores no funcionan por la cuantizacion de embeddings. El soporte en vLLM depende de un plugin de terceros (vllm-exl3-plugin), no del core de vLLM.
+- Licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base y de los datasets de entrenamiento citados.
+- Las métricas publicadas (Excess KLD, facts kept) miden fidelidad respecto al modelo sin cuantizar, no capacidad absoluta; no deben interpretarse como rendimiento en tareas.
+- El repo de 8,0 GB contiene todas las revisiones; hay que descargar solo la revisión del bitrate elegido.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/yeasah/MiniCPM5-2B-exl3
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Commit del modelo base usado: https://huggingface.co/openbmb/MiniCPM5-2B/tree/42433e90dad95123ab87729fd7011e7110629556
-- ExLlamaV3: https://github.com/turboderp-org/exllamav3
-- Plugin vLLM para EXL3: https://github.com/yeasah/vllm-exl3-plugin
-- Cuantizaciones GGUF de referencia: https://huggingface.co/bartowski/MiniCPM5-2B-GGUF
-- Detalle tecnico de las cuantizaciones: https://huggingface.co/yeasah/MiniCPM5-2B-exl3/blob/main/TECHNICAL.md
+- exllamav3: https://github.com/turboderp-org/exllamav3
+- Plugin vLLM EXL3: https://github.com/yeasah/vllm-exl3-plugin
+- GGUF de referencia: https://huggingface.co/bartowski/MiniCPM5-2B-GGUF
+- Detalle técnico de las cuantizaciones: https://huggingface.co/yeasah/MiniCPM5-2B-exl3/blob/main/TECHNICAL.md
+- Revisión 3,00 BPW: https://huggingface.co/yeasah/MiniCPM5-2B-exl3/tree/3.00bpw-H5
+- Revisión 3,50 BPW: https://huggingface.co/yeasah/MiniCPM5-2B-exl3/tree/3.50bpw-H5
+- Revisión 4,00 BPW: https://huggingface.co/yeasah/MiniCPM5-2B-exl3/tree/4.00bpw
+- Revisión 5,00 BPW: https://huggingface.co/yeasah/MiniCPM5-2B-exl3/tree/5.00bpw
+- Revisión 6,00 BPW: https://huggingface.co/yeasah/MiniCPM5-2B-exl3/tree/6.00bpw

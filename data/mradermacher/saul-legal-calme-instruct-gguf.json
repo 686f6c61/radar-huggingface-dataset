@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Saul-Legal-Calme-Instruct-GGUF",
+  "slug": "mradermacher-saul-legal-calme-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Saul-Legal-Calme-Instruct-GGUF",
+  "created_at": "2024-12-21T15:45:18.000Z",
+  "updated_at": "2026-11-17T08:16:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "mergekit",
+    "MaziyarPanahi/Calme-7B-Instruct-v0.1.1",
+    "Equall/Saul-Instruct-v1",
+    "en",
+    "base_model:arcee-ai/Saul-Legal-Calme-Instruct",
+    "base_model:quantized:arcee-ai/Saul-Legal-Calme-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 309,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 63929818496,
+  "storage_human": "63.9 GB",
+  "context_length": 32768,
+  "base_model": "arcee-ai/Saul-Legal-Calme-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

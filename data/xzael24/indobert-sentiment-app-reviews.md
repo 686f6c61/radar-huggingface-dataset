@@ -2,111 +2,116 @@
 
 ## Resumen
 
-IndoBERT Sentiment - Ulasan Aplikasi es un modelo de clasificación de sentimiento binario (negativo/positivo) para reseñas de la Google Play Store escritas en indonesio. Lo desarrolla el usuario xzael24 como fine-tuning del checkpoint `indolem/indobert-base-uncased`, un BERT base entrenado específicamente para indonesio por el proyecto IndoLEM. El modelo resuelve un problema acotado: clasificar automáticamente reseñas de aplicaciones móviles en dos categorías a partir de etiquetas derivadas de la puntuación de estrellas (1 estrella = negativo, 5 estrellas = positivo).
+IndoBERT Sentiment App Reviews es un modelo de clasificación de sentimiento binario (negativo/positivo) para reseñas de aplicaciones en indonesio. Lo desarrolla el usuario xzael24 como parte de un ejercicio práctico de transfer learning, y consiste en un fine-tuning del modelo base `indolem/indobert-base-uncased`, un BERT base entrenado específicamente para indonesio por el proyecto IndoLEM.
 
-Arquitectónicamente es un transformer encoder BERT base de 110,5 millones de parámetros, con una cabeza de clasificación de dos clases, y una longitud máxima de entrada de 128 tokens durante el entrenamiento. El contexto nativo de BERT base es de 512 tokens, aunque el modelo se ajustó con secuencias de 128. El repositorio ocupa 0,4 GB y los pesos están en formato safetensors.
+El modelo resuelve un problema acotado pero útil: clasificar automáticamente reseñas de Google Play Store en dos polaridades, derivando las etiquetas de las calificaciones por estrellas (1 estrella = negativo, 5 estrellas = positivo, descartando las intermedias). Se entrenó sobre reseñas de dos aplicaciones concretas, ClassDojo (educación infantil) y PrimaKu (seguimiento de embarazo y crecimiento infantil), con un total de 1.378 reseñas únicas tras el proceso de limpieza y deduplicación.
 
-Su relevancia es limitada y muy específica: no es un modelo generalista sino un clasificador de dominio con un conjunto de datos pequeño (1.377 reseñas únicas de dos aplicaciones, ClassDojo y PrimaKu) y un rendimiento en test de 0,8986 de accuracy y 0,8942 de macro F1. Resulta útil como referencia para pipelines de análisis de opiniones en indonesio o como base para fine-tuning adicional, pero no compite con modelos generativos multilingües.
+Es relevante como ejemplo reproducible de un pipeline completo de clasificación de sentimiento en un idioma de recursos limitados como el indonesio, con documentación detallada del proceso de limpieza, partición de datos y evaluación. No obstante, su alcance es muy restringido: dos aplicaciones, dos clases y un conjunto de test de solo 138 ejemplos, por lo que debe tratarse como un modelo experimental y no como una solución de producción generalizable.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder BERT base (IndoBERT) con cabeza de clasificación de 2 clases |
-| Parámetros totales | 110.559.746 |
-| Parámetros activos | no aplica (no es MoE) |
-| Longitud de contexto | 512 tokens nativos de BERT base; entrenado con max length 128 |
-| Tipos de cuantización | no disponible (pesos safetensors en precisión original; admite cuantización estándar de BERT, no documentada por el autor) |
-| Idiomas soportados | indonesio (id) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Arquitectura | Transformer encoder (BERT base), fine-tuning de `indolem/indobert-base-uncased` |
+| Parametros totales | 110.559.746 |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 256 tokens (longitud máxima de entrenamiento, padding dinámico) |
+| Tipos de cuantizacion | No disponible (pesos en safetensors; compatible con cuantización estándar de transformers, no documentada por el autor) |
+| Idiomas soportados | Indonesio (`id`) |
+| Licencia | MIT |
+| Formato de pesos | safetensors (repo de 0,4 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `indolem/indobert-base-uncased`, un BERT base (12 capas, 768 de dimensión oculta, 12 cabezas de atención, ~110M de parámetros) preentrenado sobre corpus en indonesio. Sobre él se añade una cabeza de clasificación secuencial para dos etiquetas (Negatif/Positif) y se realiza un fine-tuning supervisado con entropía cruzada ponderada por clase.
+La arquitectura es un BERT base estándar (encoder transformer bidireccional) heredado de `indolem/indobert-base-uncased`, con una cabeza de clasificación de dos etiquetas superpuesta durante el fine-tuning. El entrenamiento se realizó con learning rate 2e-5 y scheduler lineal, batch size 16 en entrenamiento y 32 en evaluación, hasta 5 épocas con early stopping (paciencia 2), warmup del 10% de los pasos totales, weight decay 0,01, longitud máxima de 256 tokens con padding dinámico, pérdida de entropía cruzada ponderada por clase (peso 1,234 para negativo y 0,841 para positivo) para compensar el desbalance, precisión FP16 y semilla 42. El entrenamiento completo llevó aproximadamente 2 minutos en una GPU de Google Colab.
 
-El conjunto de datos, tras eliminar duplicados, contiene 1.377 reseñas únicas repartidas en train (1.101), validation (138) y test (138), con partición estratificada por aplicación y etiqueta. La distribución es de 81 negativas y 169 positivas en ClassDojo, y 477 negativas y 650 positivas en PrimaKu. Las etiquetas se derivan automáticamente de la puntuación: 1 estrella = negativo, 5 estrellas = positivo; las reseñas con puntuaciones 2 a 4 se excluyen. El preprocesado incluye casefolding, eliminación de URL, menciones y símbolos, normalización de letras repetidas y de jerga, sin stemming ni eliminación de stopwords para preservar las negaciones.
-
-Los hiperparámetros de entrenamiento son: learning rate 2e-05, batch size 16, hasta 6 épocas con early stopping (patience 2), weight decay 0,01, cross-entropy ponderada por clase y max length 128. El checkpoint final corresponde a la época 2, seleccionada por la menor validation loss. No se documenta uso de RLHF, DPO ni técnicas de decodificación especulativa; es un fine-tuning supervisado clásico de clasificación.
+Los datos provienen de scraping de Google Play Store (idioma `id`, país `id`, orden por más recientes) mediante `google-play-scraper`, conservando solo reseñas de 1 y 5 estrellas. Tras eliminar textos vacíos, `reviewId` duplicados y textos duplicados, el conjunto final quedó en 1.378 reseñas (559 negativas, 819 positivas), divididas 80/10/10 de forma estratificada por combinación de aplicación y etiqueta: 1.103 de entrenamiento, 137 de validación y 138 de test. El preprocesado incluyó eliminación de URL, menciones y símbolos, normalización de letras repetidas y de jerga, conservando los signos `. , ! ?`. Los pesos guardados corresponden a la época 3, la de menor pérdida de validación (0,229).
 
 ## Capacidades
 
 - Clasificación de sentimiento binaria (negativo/positivo) de texto en indonesio.
-- Especializado en reseñas de aplicaciones de Google Play Store, aunque puede aplicarse a texto corto en indonesio de dominio similar.
-- Procesamiento de entradas de hasta 128 tokens efectivos en el régimen de entrenamiento (hasta 512 por arquitectura).
-- Manejo de texto con jerga, abreviaturas y ruido típico de reseñas móviles gracias al preprocesado y al preentrenamiento en indonesio.
+- Especialización en reseñas de aplicaciones móviles de Google Play Store.
+- Inferencia mediante `pipeline("text-classification")` de la librería transformers.
+- Compatible con Text Embeddings Inference y endpoints de Hugging Face (`endpoints_compatible`).
 - No soporta tool calling ni function calling.
-- No soporta razonamiento multi-paso ni comportamiento de agente.
-- No dispone de modo thinking, visión ni audio.
-- Capacidad multilingüe limitada al indonesio; no se ha evaluado en otros idiomas.
+- No soporta razonamiento multi-paso ni comportamiento agéntico.
+- No dispone de modo de razonamiento (thinking mode).
+- No procesa visión ni audio.
+- Capacidad multilingüe limitada: entrenado solo en indonesio; las reseñas en inglés se identifican como fuente de error.
 
 ## Casos de uso
 
-- Monitorización de opiniones en Google Play Store: clasificar en lote reseñas de aplicaciones en indonesio para calcular la proporción de sentimiento negativo y positivo por versión o por periodo, usando el modelo como clasificador en un pipeline de ingesta.
-- Alertas de reputación: detectar picos de reseñas negativas en tiempo casi real y disparar avisos al equipo de producto o soporte, dado el bajo coste computacional de un BERT base.
-- Priorización de tickets de soporte: etiquetar automáticamente comentarios de usuarios en indonesio para enrutar los negativos a atención al cliente y los positivos a marketing.
-- Análisis comparativo entre aplicaciones: aplicar el modelo a reseñas de apps del mismo sector en indonesio para comparar la percepción de usuarios, con la cautela de que el modelo se entrenó solo con dos aplicaciones.
-- Generación de datasets etiquetados: usar el modelo para preetiquetar grandes volúmenes de reseñas y revisar manualmente solo los casos de baja confianza, acelerando la anotación.
-- Investigación en PLN indonesio: servir como baseline de clasificación de sentimiento en trabajos académicos que comparen arquitecturas sobre el mismo corpus.
-- Filtrado de contenido en comunidades: clasificar comentarios de usuarios en foros o redes en indonesio para moderar tono negativo, siempre con supervisión humana.
+- Monitorización de opiniones en Google Play: clasificar en lote las reseñas nuevas de una aplicación en indonesio para separar quejas de elogios y priorizar la respuesta del equipo de soporte.
+- Alertas tempranas de regresiones: detectar picos de reseñas negativas tras un despliegue, usando la salida del clasificador como señal para revisar la versión recién publicada.
+- Análisis exploratorio de mercado: procesar reseñas de aplicaciones competidoras del mismo nicho (educación infantil o salud maternoinfantil) para comparar la proporción de sentimiento negativo entre productos.
+- Enrutamiento de tickets: integrar el clasificador como primer filtro en un sistema de atención al cliente que dirija las reseñas negativas a un equipo especializado y las positivas a un módulo de recopilación de testimonios.
+- Investigación académica y docencia: servir como referencia reproducible de un pipeline de fine-tuning de IndoBERT con partición estratificada, ponderación de clases y análisis de errores documentado, útil en cursos de NLP.
+- Extracción de métricas de producto: agregar el sentimiento por aplicación y por período temporal para construir paneles de calidad percibida que complementen las calificaciones medias por estrellas.
+- Filtrado previo en pipelines de datos: descartar o etiquetar reseñas positivas antes de un análisis manual más costoso, reduciendo el volumen que revisa un analista humano.
 
 ## Benchmarks y rendimiento
 
-Resultados en el conjunto de test (n = 138), según la model card:
+Resultados reportados por el autor sobre el conjunto de test (n = 138):
 
-| Modelo | Accuracy | Macro F1 |
+| Metrica | Valor |
+|---|---|
+| Accuracy (test) | 0,9275 (128/138) |
+| Intervalo de confianza 95% (Wilson) | 87,2% – 96,0% |
+| Macro F1 (test) | 0,9253 |
+| Accuracy (validación) | 0,9489 |
+| Accuracy (train) | 0,9538 |
+
+Desglose por clase en test:
+
+| Clase | Precision | Recall | F1 | Ejemplos |
+|---|---|---|---|---|
+| Negativo | 0,8966 | 0,9286 | 0,9123 | 56 |
+| Positivo | 0,9500 | 0,9268 | 0,9383 | 82 |
+
+Desglose por aplicación en test:
+
+| Aplicacion | Negativo correctos | Positivo correctos |
 |---|---|---|
-| TF-IDF + LinearSVC | 0,8768 | 0,8726 |
-| TF-IDF + Naive Bayes | 0,8986 | 0,8948 |
-| IndoBERT (fine-tuned) | 0,8986 | 0,8942 |
+| ClassDojo | 7/8 | 16/17 |
+| PrimaKu | 45/48 | 60/65 |
 
-El accuracy del modelo fine-tuneado es 0,8986 con intervalo de confianza del 95 % de 0,8369 a 0,9386.
-
-Prueba cruzada entre aplicaciones (entrenado en una, evaluado en la otra):
-
-| Escenario | IndoBERT accuracy | TF-IDF + SVM accuracy | n test |
-|---|---|---|---|
-| classdojo -> primaku | 0,7684 | 0,8270 | 1127 |
-| primaku -> classdojo | 0,8560 | 0,8040 | 250 |
-
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible; el modelo no está diseñado para esas tareas.
+El autor advierte que dos ejecuciones del mismo notebook con la misma semilla dieron 88,4% y 92,75% de accuracy en test, por lo que el rendimiento real debe considerarse en el rango del 88% al 93%. No se han publicado comparaciones con otros modelos en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp32: aproximadamente 0,45 GB de pesos más activaciones; en la práctica, menos de 1 GB para lotes pequeños.
-- En fp16 o bf16: alrededor de 0,25 GB de pesos.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; funciona en RTX 3060, RTX 4090, A100, H100 y también en CPU para volúmenes moderados.
-- Cabe holgadamente en GPU de consumo, incluida una GTX 1650 o superior, y en entornos sin GPU mediante CPU.
-- Opciones de despliegue: Hugging Face Transformers (`AutoModelForSequenceClassification`), ONNX Runtime, TorchScript, y servidores de inferencia como TGI o vLLM (aunque para un BERT base de clasificación, Transformers u ONNX suelen ser más eficientes). llama.cpp y Ollama no son adecuados por no ser un modelo generativo.
-- Latencia y throughput: no disponibles en la información proporcionada. Por el tamaño del modelo, se espera un throughput alto en GPU (miles de clasificaciones por segundo por lote en hardware moderno), pero es una estimación no verificada.
+- VRAM estimada para inferencia en FP16: aproximadamente 0,25 GB de pesos más activaciones; en la práctica, menos de 1 GB para lotes pequeños con longitud 256.
+- VRAM estimada en FP32: alrededor de 0,45 GB de pesos.
+- Cabe holgadamente en cualquier GPU consumer: RTX 3060, RTX 4060, RTX 4090, e incluso en CPU para volúmenes moderados.
+- GPU recomendadas para alto throughput: A100, H100 o L4 para servir lotes grandes; para uso puntual basta una T4 o una GPU integrada.
+- Opciones de despliegue: `transformers` con `pipeline`, Text Embeddings Inference (soporte declarado en los tags), endpoints de Hugging Face, y exportación a ONNX para inferencia optimizada.
+- Latencia y throughput: no disponibles en la información proporcionada; el entrenamiento completo requirió unos 2 minutos en una GPU de Colab, lo que sugiere una inferencia del orden de milisegundos por ejemplo en GPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Enfoque |
 |---|---|---|---|---|---|
-| xzael24/indobert-sentiment-app-reviews | 110,5 M | 512 (entrenado a 128) | Clasificación de sentimiento binaria en indonesio | Apache 2.0 | Hugging Face |
-| indolem/indobert-base-uncased | ~110 M | 512 | Modelo base de lenguaje en indonesio (no clasificador) | No disponible en la información | Hugging Face |
-| TF-IDF + LinearSVC (baseline del autor) | no aplica | no aplica | Clasificación de sentimiento binaria en indonesio | no disponible | No publicado como modelo |
-| TF-IDF + Naive Bayes (baseline del autor) | no aplica | no aplica | Clasificación de sentimiento binaria en indonesio | no disponible | No publicado como modelo |
+| xzael24/indobert-sentiment-app-reviews | 110,6 M | 256 tokens | Indonesio | MIT | Clasificación binaria de reseñas de apps |
+| indolem/indobert-base-uncased | 110,6 M (aprox.) | 512 tokens (BERT base estándar) | Indonesio | No disponible en la información proporcionada | Modelo base preentrenado, sin cabeza de clasificación |
+| Modelos de sentimiento multilingües basados en XLM-R | No disponible | No disponible | Multilingüe | No disponible | Clasificación de sentimiento genérica |
 
-No se dispone de datos sobre otros clasificadores de sentimiento en indonesio comparables en la información proporcionada.
+La comparación directa con alternativas específicas para indonesio no está disponible en la información proporcionada. Frente a su modelo base, la diferencia principal es la cabeza de clasificación y el ajuste fino sobre un dominio concreto; frente a clasificadores multilingües genéricos, la ventaja esperada es la especialización en jerga y registro de reseñas de apps indonesias, aunque no se aportan métricas comparativas que lo confirmen.
 
 ## Limitaciones y advertencias
 
-- Conjunto de datos muy pequeño (1.377 reseñas) y limitado a dos aplicaciones (ClassDojo y PrimaKu); el rendimiento en otros dominios o aplicaciones no está validado.
-- Las etiquetas se derivan automáticamente de la puntuación de estrellas, no de anotación humana; las reseñas con puntuaciones 2 a 4 se excluyen, por lo que el modelo no ha visto casos neutrales ni ambiguos.
-- Riesgo de error en reseñas sarcásticas, irónicas o ambiguas, como reconoce el propio autor.
-- En la prueba cruzada entre aplicaciones, el rendimiento cae notablemente (0,7684 de accuracy en classdojo -> primaku), lo que indica sensibilidad al dominio.
-- Posible riesgo de alucinación no aplica en sentido generativo, pero sí de clasificaciones erróneas con alta confianza.
-- Limitación idiomática: solo indonesio; no se ha evaluado en malayo ni en otros idiomas cercanos.
-- Los datos se recogieron el 2026-11-01 y pueden quedar desactualizados si se vuelven a extraer reseñas.
-- Licencia Apache 2.0 permite uso comercial, pero la procedencia de los datos de reseñas de Google Play Store puede estar sujeta a los términos de servicio de la plataforma; conviene revisar el cumplimiento antes de un uso comercial a gran escala.
-- No es un modelo generativo: no debe usarse para tareas de generación de texto, razonamiento ni agentes.
+- Conjunto de datos pequeño (1.378 reseñas únicas) y limitado a dos aplicaciones de nichos concretos (educación infantil y salud maternoinfantil); el rendimiento en otras aplicaciones o dominios no se ha evaluado.
+- Etiquetas derivadas automáticamente de las calificaciones por estrellas, no de anotación manual, lo que introduce ruido y desajustes entre texto y etiqueta.
+- Solo dos clases: las reseñas neutras (2 a 4 estrellas) no se entrenaron y serán forzadas a negativo o positivo.
+- Evaluación únicamente dentro del mismo dominio; no hay pruebas cruzadas entre aplicaciones, por lo que la generalización es desconocida.
+- El conjunto de test tiene solo 138 ejemplos y el rendimiento varía entre ejecuciones (88,4% a 92,75%), por lo que un único número no es fiable.
+- Las reseñas sarcásticas, con mezcla de idiomas o en inglés se clasifican mal con frecuencia.
+- El preprocesado es parte del contrato del modelo: sin una limpieza similar (eliminación de URL, normalización de jerga y letras repetidas), el rendimiento puede degradarse.
+- Riesgo de alucinación no aplica en sentido generativo, pero sí de clasificaciones erróneas confiadas en textos ambiguos.
+- Licencia MIT: permite uso comercial y modificación, pero el autor no ofrece garantías ni soporte; conviene verificar la licencia del modelo base `indolem/indobert-base-uncased` antes de un despliegue comercial.
+- El modelo se creó como parte de un práctico académico y no está pensado como componente crítico de producción sin una reevaluación sobre datos propios.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/xzael24/indobert-sentiment-app-reviews
 - Modelo base: https://huggingface.co/indolem/indobert-base-uncased
-- Proyecto IndoLEM (referencia del modelo base): no disponible en la información proporcionada
-- Paper de IndoBERT: no disponible en la información proporcionada
-- Repositorio o demo: no disponible en la información proporcionada
+- Paper de IndoBERT e IndoLEM (Koto et al., 2020): no disponible enlace directo en la información proporcionada
+- Repositorio o demo adicional: no disponible

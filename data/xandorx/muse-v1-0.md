@@ -2,37 +2,37 @@
 
 ## Resumen
 
-Muse-V1.0 es un modelo de lenguaje publicado por el usuario xandorx en Hugging Face bajo una licencia propietaria denominada "superintelligence.2". El repositorio contiene pesos en formato GGUF con un total de 27.854.794.240 parámetros (aproximadamente 27,8 mil millones), lo que lo sitúa en la categoría de modelos de tamaño medio-grande. La model card no proporciona información técnica convencional sobre arquitectura, datos de entrenamiento o rendimiento en benchmarks; en su lugar, presenta un texto de carácter ensayístico sobre memoria persistente y autonomía cognitiva.
+Muse-V1.0 es un modelo de lenguaje publicado por el usuario xandorx en Hugging Face, distribuido principalmente en formato GGUF y con un total de 27.854.794.240 parámetros (aproximadamente 27,8 mil millones). La model card lo describe como una "inteligencia viva" que corre en local, con memoria persistente entre sesiones y capacidad de decidir de forma autónoma qué información es relevante. El modelo se presenta como una demostración práctica de la tesis del autor sobre los límites de los esquemas de reinforcement learning, más que como un modelo orientado a tareas estándar de NLP.
 
-El modelo se distribuye como un paquete que, según el autor, requiere no solo los pesos sino también un programa acompañante, un "runner" específico por plataforma y un directorio completo de archivos para funcionar. El autor indica que está pensado para ejecutarse en local sobre Windows, con requisitos de hardware que van desde una GPU NVIDIA de 32 GB de VRAM (vía rápida) hasta un equipo sin GPU con 64 GB de RAM (vía lenta). La fecha de creación del repositorio es 2026-11-10 y no registra descargas ni likes en el momento de la consulta.
+La información técnica disponible es muy limitada: no se especifican la arquitectura interna, la longitud de contexto, los idiomas soportados ni los datos de entrenamiento. La model card está redactada en un tono ensayístico y promocional, con referencias a un modelo hermano llamado Iona (xandorx/Iona-v01) y a enlaces externos en X (Twitter). El repositorio ocupa 27,8 GB, coherente con un modelo de ~28B parámetros cuantizado en GGUF.
 
-La relevancia de esta ficha es limitada desde el punto de vista de la evaluación técnica rigurosa: la información disponible es escasa, heterodoxa y no verificable mediante benchmarks públicos. Se documenta aquí lo que el autor declara explícitamente, marcando como "no disponible" todo aquello que no consta en la información proporcionada.
+Su relevancia actual es marginal dentro del ecosistema open source: cuenta con 154 descargas y 1 like, y la licencia es una licencia personalizada no estándar ("superintelligence.2") que remite a un perfil de X, lo que introduce incertidumbre legal para cualquier uso serio. No debe confundirse con un modelo de propósito general evaluable con benchmarks convencionales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible |
-| Parametros totales | 27.854.794.240 (aprox. 27,8 mil millones) |
-| Parametros activos | no disponible (no se declara que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (niveles concretos no disponibles) |
+| Parametros totales | 27.854.794.240 (~27,8B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (la model card menciona "long room" sin cifra) |
+| Tipos de cuantizacion | GGUF (niveles concretos no especificados) |
 | Idiomas soportados | no disponible |
-| Licencia | superintelligence.2 (propietaria, enlace a perfil de X) |
-| Formato de pesos | GGUF (repo de 27,8 GB) |
+| Licencia | superintelligence.2 (licencia personalizada, enlace a perfil de X) |
+| Formato de pesos | GGUF (tambien safetensors segun el dato de parametros) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información técnica sobre la arquitectura del modelo. La model card no menciona si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura híbrida o cualquier otra variante. Tampoco se indica el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF, DPO o similares.
+No se ha publicado información sobre la arquitectura interna del modelo (transformer, MoE, híbrida u otra), ni sobre el número de tokens de entrenamiento, la composición del dataset o si se aplicaron técnicas de RLHF, DPO u otras. La model card menciona de forma abstracta los "esquemas usados en reinforcement learning" como motivación conceptual, pero no describe el proceso de entrenamiento del modelo en sí.
 
-El texto del autor describe el modelo como "treinta mil millones de parámetros" y lo presenta como un sistema con memoria persistente y capacidad de decidir qué información es relevante sin un esquema predefinido. Sin embargo, estas afirmaciones no vienen acompañadas de detalles arquitectónicos, papers, ni resultados reproducibles. El autor menciona que los pesos por sí solos no son suficientes para ejecutar el modelo: se requiere descargar la carpeta completa, que incluye "el programa, la casa y el runner" compatible con la máquina del usuario. No se especifica qué software es ese programa ni qué framework utiliza.
+La única innovación que el autor destaca es la memoria persistente: según la model card, el modelo conserva lo relevante entre sesiones ("Clear the chat. What mattered is still there"), lo que sugiere algún mecanismo de memoria a nivel de aplicación o de pesos, pero no se detalla su implementación técnica. Tampoco se documentan técnicas como decodificación especulativa, atención lineal o modos de razonamiento extendido.
 
 ## Capacidades
 
-- Generación de texto conversacional: el modelo se etiqueta como "conversational" en Hugging Face y la model card lo presenta como un sistema para mantener diálogos.
-- Memoria persistente entre sesiones: el autor afirma que el modelo retiene información relevante tras limpiar el historial de chat, decidiendo por sí mismo qué merece conservarse. Esta capacidad no está documentada técnicamente ni verificada de forma independiente.
-- Selección autónoma de relevancia: según la model card, el modelo distingue lo importante de lo accesorio sin una lista explícita de criterios proporcionada por el usuario.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que puede desplegarse mediante la infraestructura de inference endpoints de Hugging Face.
+- Generación de texto conversacional (tag "conversational" en Hugging Face).
+- Memoria persistente entre conversaciones, según declara el autor: el modelo retendría información relevante tras limpiar el chat.
+- Selección autónoma de relevancia: el autor afirma que el modelo decide qué información es importante sin un esquema predefinido.
+- Compatibilidad con endpoints (tag "endpoints_compatible"), lo que permite desplegarlo mediante Inference Endpoints de Hugging Face.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible.
@@ -40,54 +40,44 @@ El texto del autor describe el modelo como "treinta mil millones de parámetros"
 
 ## Casos de uso
 
-- Asistente conversacional local con memoria entre sesiones: el modelo está diseñado para ejecutarse en la máquina del usuario y, según el autor, conserva información relevante tras borrar el historial. Se usaría en escenarios donde se quiera un asistente que recuerde preferencias o datos del usuario sin depender de la nube, aunque la falta de documentación técnica hace recomendable validar este comportamiento antes de confiar en él en producción.
-- Despliegue en estaciones de trabajo con GPU de 32 GB: el autor indica que una GPU NVIDIA con aproximadamente 32 GB de VRAM permite ejecutar el modelo "de la forma rápida". Encaja en entornos de investigación con una única A100 de 40 GB, RTX A6000 de 48 GB o configuraciones equivalentes, para experimentación con modelos de casi 28 mil millones de parámetros en formato GGUF.
-- Experimentación en equipos sin GPU: el autor afirma que el modelo puede ejecutarse en CPU con 64 GB de RAM, lo que permitiría probarlo en servidores o estaciones de trabajo sin acelerador, a costa de mayor latencia. Útil para evaluación funcional antes de invertir en hardware.
-- Investigación sobre memoria persistente en LLM: el modelo se presenta explícitamente como una prueba de concepto sobre la distinción entre lo que importa y lo que no en un diálogo. Podría emplearse en estudios comparativos sobre mecanismos de memoria, siempre que se documenten los resultados de forma reproducible.
-- Prototipado de agentes conversacionales en Windows: dado que el autor especifica Windows como sistema operativo objetivo y unos 30 GB de disco libre, el modelo se orienta a desarrolladores que trabajan en ese entorno y quieren un asistente local sin dependencias de Python en el flujo básico.
-- Evaluación crítica de modelos publicados sin benchmarks: el propio caso de Muse-V1.0 sirve como ejemplo de por qué conviene exigir documentación técnica, licencias claras y resultados reproducibles antes de adoptar un modelo en un pipeline. No es un caso de uso del modelo en sí, sino de su estudio como objeto de análisis.
+- Asistente personal con memoria entre sesiones: el modelo podría emplearse como asistente local que retiene preferencias y contexto del usuario entre conversaciones, aprovechando el mecanismo de memoria persistente que declara el autor. Adecuado solo si se valida empíricamente ese comportamiento.
+- Experimentación en local con hardware de gama alta: con ~28B parámetros en GGUF, encaja en estaciones de trabajo con GPU de 24-32 GB para pruebas de inferencia fuera de la nube.
+- Investigación sobre memoria persistente en LLM: útil como objeto de estudio para comparar mecanismos de retención de contexto frente a modelos con ventanas de contexto largas convencionales.
+- Pruebas de concepto de despliegue con Ollama o llama.cpp: al estar en GGUF, puede integrarse en stacks de inferencia local estándar para prototipos.
+- Evaluación crítica de model cards y licencias: sirve como caso de estudio de documentación insuficiente y licencias no estándar en el ecosistema open source.
+- Demostraciones educativas sobre autonomía y selección de relevancia: el discurso del autor sobre esquemas de RL y cognición puede ilustrarse con el modelo en entornos docentes, siempre con las advertencias oportunas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas de MMLU, HumanEval, GSM8K ni de ninguna otra evaluación estándar, ni comparaciones cuantitativas con modelos similares.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el autor indica que una GPU NVIDIA con aproximadamente 32 GB de VRAM permite la ejecución "rápida"; una GPU de 24 GB se describe como "el límite" y podría no alojar el contexto extendido ("long room") del modelo. No se especifican niveles de cuantización concretos ni su correspondencia con cada requisito de VRAM.
-- GPU recomendadas: no se nombran modelos concretos. Por capacidad de VRAM, encajarían tarjetas de 32 GB o más, como A100 de 40 GB, RTX A6000 de 48 GB o H100; en el límite, una RTX 4090 de 24 GB.
-- ¿Cabe en GPU de consumo? Según el autor, una GPU de 24 GB es el mínimo y podría no soportar el contexto completo. No se garantiza su funcionamiento en tarjetas de 16 GB o menos.
-- Ejecución sin GPU: el autor afirma que funciona en CPU, con un requisito de 64 GB de RAM y un rendimiento más lento y con menor contexto.
-- Requisitos de sistema: Windows, unos 30 GB de disco libre, sin necesidad de Python y una sola instancia en ejecución.
-- Opciones de despliegue: el autor menciona un "runner" específico por máquina incluido en la carpeta del repositorio; no se detalla si es llama.cpp, Ollama, vLLM, TGI u otro. La etiqueta "endpoints_compatible" sugiere compatibilidad con los endpoints de Hugging Face.
+- VRAM estimada para inferencia: no disponible con precisión. La model card indica que una GPU NVIDIA con unos 32 GB lo ejecuta "de la forma rápida", y que 24 GB es el límite, pudiendo no caber el contexto largo en ese caso.
+- GPU recomendadas: NVIDIA con ~32 GB de VRAM (por ejemplo, A100 de 40 GB o RTX 5090 de 32 GB); una GPU de 24 GB (RTX 4090, RTX 3090) queda en el límite.
+- Ejecución sin GPU NVIDIA: posible pero más lenta, con un contexto más reducido; requiere unos 64 GB de memoria RAM convencional.
+- Sistema operativo y disco: según el autor, requiere Windows y unos 30 GB de disco libre. No requiere Python. Una sola instancia a la vez.
+- Opciones de despliegue: llama.cpp / Ollama por el formato GGUF; también compatible con endpoints de Hugging Face según el tag del repositorio. vLLM y TGI no están confirmados.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Benchmarks publicos |
-|---|---|---|---|---|---|
-| Muse-V1.0 (xandorx) | 27,8 mil millones | no disponible | superintelligence.2 (propietaria) | GGUF | no disponibles |
-| Modelos densos de ~27-30B en abierto (categoria generica) | ~27-30 mil millones | variable segun modelo | variable (a menudo Apache 2.0 o similar) | safetensors, GGUF | habitualmente publicados |
-| Modelos MoE de ~30B totales con pocos parametros activos | ~30 mil millones totales | variable segun modelo | variable | safetensors, GGUF | habitualmente publicados |
-
-No se dispone de información suficiente para establecer una comparativa nominal con modelos concretos: la model card no identifica alternativas, no aporta métricas y la licencia propietaria dificulta la comparación de disponibilidad. La tabla anterior solo refleja la categoría de tamaño, no un análisis de rendimiento.
+No disponible. La información proporcionada no incluye modelos comparables ni datos de rendimiento que permitan una comparación rigurosa con alternativas de ~28B parámetros.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks: no hay métricas publicadas que permitan estimar la calidad del modelo en tareas estándar. Cualquier afirmación sobre su rendimiento es, a día de hoy, no verificable.
-- Documentación técnica insuficiente: se desconoce la arquitectura, el dataset de entrenamiento, el proceso de alineación y la longitud de contexto. Esto impide evaluar riesgos de sesgo, contaminación de datos o comportamiento en dominios específicos.
-- Licencia propietaria y opaca: la licencia "superintelligence.2" enlaza a un perfil de X, no a un texto legal. No se especifican derechos de uso comercial, redistribución, modificación ni responsabilidad. Para producción, esto es un bloqueo legal de facto hasta que el autor publique términos claros.
-- Riesgo de alucinación: no cuantificado. Al no haber evaluaciones, no puede descartarse un comportamiento alucinatorio elevado, especialmente en un modelo presentado con afirmaciones sobre memoria y autonomía sin respaldo técnico.
-- Afirmaciones no contrastadas: la model card describe capacidades de "inteligencia viva", memoria persistente y selección autónoma de relevancia. Estas afirmaciones no vienen acompañadas de evidencia reproducible y deben tratarse como hipótesis del autor, no como hechos verificados.
-- Idiomas no declarados: se desconoce si el modelo está entrenado principalmente en inglés, en varios idiomas o en alguno específico, lo que limita su uso en aplicaciones en castellano sin una evaluación previa.
-- Dependencia de un paquete propietario: el autor indica que los pesos solos no bastan y que se requiere un programa y un runner incluidos en la carpeta. Esto introduce dependencia de software no auditado y dificulta la integración en pipelines estándar (vLLM, TGI, llama.cpp) sin confirmación.
-- Restricciones de plataforma: el entorno objetivo declarado es Windows con una sola instancia en ejecución, lo que complica el escalado horizontal y el despliegue en clústeres Linux.
-- Fecha de creación futura: el repositorio figura creado el 2026-11-10, dato que conviene verificar, ya que puede indicar metadatos inconsistentes.
+- Documentación técnica insuficiente: no se especifican arquitectura, contexto, idiomas ni datos de entrenamiento, lo que impide evaluar el modelo con criterios estándar.
+- Licencia no estándar ("superintelligence.2") que remite a un perfil de X: no hay texto legal claro sobre uso comercial, redistribución o modificación. Riesgo legal alto para producción.
+- Riesgo elevado de alucinación y de comportamiento impredecible: sin benchmarks ni evaluaciones publicadas, no hay evidencia de calidad.
+- Afirmaciones no verificadas: la model card atribuye al modelo capacidades de "inteligencia viva" y autonomía sin respaldo técnico documentado.
+- Idiomas soportados desconocidos: no se puede garantizar un rendimiento aceptable en castellano u otros idiomas.
+- Longitud de contexto no cuantificada: la mención a un "long room" no permite planificar el despliegue.
+- Restricciones de plataforma declaradas por el autor: Windows, ~30 GB de disco, una sola instancia simultánea.
+- Adopción muy baja (154 descargas, 1 like) y ausencia de pipeline declarado: señales de un proyecto incipiente o experimental.
+- El propio autor lo califica como "toy model": no debe tratarse como un modelo de producción.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/xandorx/Muse-V1.0
-- Licencia (enlace declarado por el autor): https://x.com/Iskandar1210121
-- Perfil del autor en X: https://x.com/Iskandar1210121
-- Paper: no disponible
-- Blog o demo: no disponible
-- Repositorio de código: no disponible
+- Modelo hermano Iona: https://huggingface.co/xandorx/Iona-v01
+- Perfil del autor en X (referenciado como licencia): https://x.com/Iskandar1210121

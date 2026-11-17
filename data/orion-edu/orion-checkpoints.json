@@ -1,0 +1,64 @@
+{
+  "schema": 2,
+  "id": "Orion-Edu/orion-checkpoints",
+  "slug": "orion-edu-orion-checkpoints",
+  "author": "Orion-Edu",
+  "url": "https://huggingface.co/Orion-Edu/orion-checkpoints",
+  "created_at": "2026-11-17T07:23:17.000Z",
+  "updated_at": "2026-11-17T07:23:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Orion (constellation) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Orion_(constellation)",
+      "snippet": "Orion fait partie des rares constellations immédiatement reconnaissables par leur forme. Ses sept étoiles les plus brillantes forment …"
+    },
+    {
+      "title": "Orion (mythologie) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Orion_(mythologie)",
+      "snippet": "Dans Les Travaux et les Jours d' Hésiode, Orion est une constellation dont le lever et le coucher avec le soleil sont utilisés pour …"
+    },
+    {
+      "title": "Accueil - Orion",
+      "url": "https://orion.education.gouv.fr/",
+      "snippet": "Orion recense toutes les formations de la voie professionnelle initiale, dispensées en lycées professionnels et lycées polyvalents. …"
+    },
+    {
+      "title": "Orion Santé • Formations DPC | FIF-PL | CPF • IDEL infirmier libéral",
+      "url": "https://www.orionsante.fr/",
+      "snippet": "Orion Santé, le leader de la formation santé depuis plus de 20 ans. Organisme de formation continue des professionnels de santé et …"
+    },
+    {
+      "title": "Constellation Orion : signification, étoiles et observation",
+      "url": "https://planete-telescope.fr/constellation-orion/",
+      "snippet": "Jul 28, 2025 · Découvrez la signification d’Orion, les noms de ses étoiles, quand l’observer et les mythes qui l’entourent. Un guide …"
+    }
+  ]
+}

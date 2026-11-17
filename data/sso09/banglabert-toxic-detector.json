@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "SSO09/banglabert-toxic-detector",
+  "slug": "sso09-banglabert-toxic-detector",
+  "author": "SSO09",
+  "url": "https://huggingface.co/SSO09/banglabert-toxic-detector",
+  "created_at": "2026-11-17T06:53:19.000Z",
+  "updated_at": "2026-11-17T06:57:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "bn"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "electra",
+    "text-classification",
+    "toxicity-detection",
+    "cyberbullying-detection",
+    "hate-speech",
+    "banglabert",
+    "bengali",
+    "bn",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110618882,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442499672,
+  "storage_human": "442 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

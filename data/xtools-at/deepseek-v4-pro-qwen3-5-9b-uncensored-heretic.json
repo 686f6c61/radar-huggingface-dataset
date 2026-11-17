@@ -54,13 +54,13 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 9108,
-  "downloads_30d": 29567,
-  "trending_score": 3015.6,
+  "likes": 9415,
+  "downloads_30d": 32356,
+  "trending_score": 133.8,
   "parameters": 9409813744,
   "parameters_human": "9.41B",
-  "storage_bytes": 19361416368,
-  "storage_human": "19.4 GB",
+  "storage_bytes": 19346282982,
+  "storage_human": "19.3 GB",
   "context_length": null,
   "base_model": "Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B",
   "formats": [

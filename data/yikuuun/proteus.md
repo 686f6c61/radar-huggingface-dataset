@@ -2,78 +2,81 @@
 
 ## Resumen
 
-ProTEUS es un checkpoint de pesos publicado por el usuario yikuuun (con repositorio de código en la cuenta de GitHub yikunpku) bajo el nombre de "mutation-resolved world model for closed-loop protein evolution". Se trata, por tanto, de un modelo orientado a la ingeniería de proteínas y a la predicción del efecto de mutaciones, no de un modelo de lenguaje natural al uso. El repositorio de Hugging Face contiene únicamente el fichero de pesos `proteus_release.pth` (8.654.985.537 bytes, aproximadamente 8,06 GiB) y una model card mínima que remite al repositorio de GitHub para código, documentación y demo.
+ProTEUS es un modelo de lenguaje de proteinas presentado por el autor yikuuun (repositorio vinculado a la Universidad de Pekin, segun la URL del proyecto en GitHub) y descrito en el articulo arXiv 2611.13348 como un "modelo del mundo con resolucion de mutaciones para evolucion dirigida de proteinas en bucle cerrado". A diferencia de los modelos de lenguaje de proteinas convencionales orientados a la prediccion de estructura o a la generacion de secuencias, ProTEUS se plantea como un modelo que predice el efecto de mutaciones concretas y se integra en un ciclo iterativo de diseno-evaluacion-seleccion.
 
-La relevancia del modelo radica en su planteamiento como "world model" resuelto por mutaciones para evolución de proteínas en bucle cerrado (closed-loop), una formulación que sugiere el uso del modelo como simulador del paisaje de fitness para guiar campañas de evolución dirigida. Sin embargo, la información pública disponible es extremadamente escasa: no se detallan arquitectura, número de parámetros, contexto, datos de entrenamiento ni resultados de benchmarks. La ficha que sigue refleja exclusivamente lo que puede verificarse a partir de los metadatos y la model card, marcando como "no disponible" todo aquello que el autor no ha hecho público.
+El checkpoint publicado ocupa 8,06 GiB en un unico fichero `proteus_release.pth`, lo que situa el modelo en el rango de los miles de millones de parametros, aunque la model card no desglosa el numero exacto ni la arquitectura interna. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales mas alla de la atribucion.
 
-El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación, y el checkpoint se publica en formato PyTorch (`.pth`), no en safetensors ni GGUF. Con cero descargas y cero likes en el momento de la consulta, se trata de una publicación reciente (creada el 4 de noviembre de 2026) sin validación comunitaria todavía.
+Su relevancia actual radica en la combinacion de dos tendencias: el uso de modelos del mundo para planificar experimentos biologicos y la aplicacion de tecnicas de evolucion dirigida asistida por aprendizaje automatico. El modelo se distribuye junto con codigo, documentacion y una demo de extremo a extremo en el repositorio de GitHub del autor.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (descrita como "mutation-resolved world model"; no se detalla la familia arquitectónica) |
-| Parametros totales | no disponible (el fichero de pesos ocupa 8,06 GiB, lo que sugiere un orden de magnitud de miles de millones de parámetros, pero no se confirma) |
+| Arquitectura | no disponible (descrita como "world model" en el paper; no se detalla en la model card) |
+| Parametros totales | no disponible (checkpoint de 8,06 GiB, compatible con un modelo de varios miles de millones de parametros) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (solo se publica el checkpoint en precisión original `.pth`) |
-| Idiomas soportados | no disponible (modelo de proteínas; no aplica el concepto de idioma natural) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible (modelo de proteinas; no procesa lenguaje natural) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | PyTorch (`.pth`), fichero `proteus_release.pth` |
+| Formato de pesos | `.pth` (PyTorch, fichero `proteus_release.pth`) |
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura interna del modelo. La única información técnica verificable es la denominación que el autor le da: "mutation-resolved world model for closed-loop protein evolution". El término "world model" en este contexto suele designar un modelo generativo o predictivo que aprende la dinámica de un entorno (aquí, el paisaje de fitness de una proteína) y que se utiliza para planificar experimentalmente. "Mutation-resolved" indica que el modelo opera a resolución de mutación individual, es decir, que predice o modela el efecto de sustituciones concretas en la secuencia. "Closed-loop" sugiere que está pensado para integrarse en ciclos diseño-predicción-ensayo experimental, donde las predicciones del modelo guían la selección de variantes a sintetizar y los resultados realimentan el siguiente ciclo.
+La model card no proporciona detalles sobre la arquitectura interna: no se especifica si se trata de un transformer, de un modelo hibrido o de una arquitectura especifica para proteinas (por ejemplo, basada en ESM o en un encoder de secuencias con cabezas de prediccion de efectos de mutacion). El unico dato estructural disponible es el tamano del checkpoint (8.654.985.537 bytes, 8,06 GiB) y su formato PyTorch.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset (por ejemplo, secuencias de UniProt, datos de Deep Mutational Scanning u otros), ni sobre si se emplearon técnicas de alineación como RLHF o DPO. Tampoco se documentan innovaciones técnicas específicas (atención lineal, decodificación especulativa, etc.). El repositorio de GitHub enlazado (`https://github.com/yikunpku/ProTEUS`) es la fuente indicada por el autor para obtener estos detalles, pero su contenido no forma parte de la información proporcionada.
+Tampoco se detallan los datos de entrenamiento (numero de tokens, composicion del corpus de secuencias, uso de RLHF o DPO) ni innovaciones tecnicas concretas. La descripcion del articulo indica que el modelo opera con "resolucion de mutaciones" y en "bucle cerrado", lo que sugiere un entrenamiento orientado a predecir el efecto de mutaciones puntuales y a integrarse en un ciclo iterativo de propuesta de variantes, evaluacion in silico y seleccion. Para obtener la informacion completa de arquitectura y datos de entrenamiento es necesario consultar el paper (arXiv 2611.13348) y el repositorio de GitHub.
 
 ## Capacidades
 
-- Modelado del efecto de mutaciones en proteínas, a resolución de mutación individual según la descripción del autor.
-- Simulación de un "paisaje de fitness" o dinámica de evolución proteica, en tanto que "world model".
-- Soporte para evolución dirigida en bucle cerrado: el modelo está concebido para integrarse en ciclos de diseño-predicción-ensayo.
-- Ingeniería de proteínas: aplicación declarada en las etiquetas del repositorio (`protein-engineering`).
-- Predicción del efecto de mutaciones (`mutation-effect-prediction`), según las etiquetas.
-- No se documentan capacidades de generación de texto, código, matemáticas, visión, audio, tool calling ni razonamiento multi-paso en el sentido de los LLM de propósito general.
+- Prediccion del efecto de mutaciones en proteinas (mutation-effect prediction), segun los tags del modelo.
+- Modelado de lenguaje de proteinas: representacion y puntuacion de secuencias de aminoacidos.
+- Evolucion dirigida (directed evolution): generacion y evaluacion de variantes dentro de un ciclo iterativo.
+- Modelo del mundo para planificacion experimental: el paper lo describe como "world model" para bucle cerrado, lo que implica simular el resultado de intervenciones (mutaciones) antes de ejecutarlas en laboratorio.
+- Ingenieria de proteinas (protein engineering) como dominio de aplicacion declarado.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible (aunque el concepto de bucle cerrado implica iteracion, no se documenta como capacidad de agente general).
+- Capacidades multilingues: no aplicable; el modelo opera sobre secuencias de proteinas, no sobre lenguaje natural.
+- Capacidades especiales (vision, audio, thinking mode): no disponibles.
 
 ## Casos de uso
 
-- Evolución dirigida de enzimas: el modelo se usaría para puntuar variantes candidatas generadas por mutagénesis y priorizar las que se sintetizan y ensayan en el laboratorio, reduciendo el número de experimentos necesarios en cada ronda del ciclo.
-- Predicción de efectos de mutaciones puntuales: dado un conjunto de sustituciones candidatas en una proteína de interés, el modelo estimaría su impacto en fitness, permitiendo filtrar bibliotecas de variantes antes de su caracterización experimental.
-- Optimización de estabilidad proteica: en el diseño de proteínas terapéuticas o industriales, el modelo podría guiar la selección de mutaciones que aumenten la estabilidad sin comprometer la función.
-- Diseño de bibliotecas de mutagénesis dirigida: uso del modelo para construir bibliotecas sesgadas hacia regiones de la secuencia con mayor probabilidad de mejora, en lugar de bibliotecas aleatorias.
-- Aprendizaje activo en laboratorio: integración del modelo en un bucle cerrado donde las mediciones experimentales actualizan las predicciones y guían la siguiente ronda de diseño, tal como sugiere la descripción "closed-loop".
-- Investigación en paisajes de fitness: uso del modelo como aproximación computacional del paisaje de fitness para estudiar trayectorias evolutivas, epistasia y accesibilidad de mutaciones en estudios de biología evolutiva de laboratorio.
+- Optimizacion de enzimas industriales: usar ProTEUS para puntuar bibliotecas de variantes de una enzima candidata y priorizar las mutaciones con mayor probabilidad de mejorar actividad o estabilidad termica antes de sintetizarlas, reduciendo el coste de cribado experimental.
+- Evolucion dirigida en bucle cerrado: integrar el modelo en un pipeline que proponga mutaciones, prediga su efecto, seleccione las mejores y realimente los resultados experimentales en la siguiente iteracion, tal como propone el paper.
+- Priorizacion de variantes en ingenieria de anticuerpos: evaluar mutaciones en regiones determinantes de complementariedad (CDR) para estimar efectos sobre afinidad o estabilidad y descartar candidatos poco prometedores antes de la fase de expresion.
+- Diseno de proteinas terapeuticas: analizar el impacto de mutaciones sobre la funcion de proteinas candidatas a farmaco, filtrando variantes con efectos deletéreos predichos.
+- Investigacion en biologia computacional: utilizar el modelo como banco de pruebas para estudiar la relacion entre secuencia, mutacion y funcion, y para generar hipotesis que se validen experimentalmente.
+- Filtrado en pipelines de protein design generativo: combinar generadores de secuencias (por ejemplo, modelos de difusion o de lenguaje de proteinas) con ProTEUS como evaluador para seleccionar las propuestas con mejor efecto de mutacion predicho.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tablas de MMLU, HumanEval, GSM8K ni metricas especificas de proteinas (por ejemplo, correlacion de Spearman en tareas de prediccion de efecto de mutacion como ProteinGym). Para datos de evaluacion hay que remitirse al paper arXiv 2611.13348.
 
 ## Requisitos de hardware
 
-- El checkpoint ocupa 8,06 GiB en formato `.pth`, lo que implica que la inferencia en precisión original requiere al menos esa cantidad de memoria más el overhead del runtime; no se especifica el framework de inferencia.
-- VRAM estimada para inferencia: no disponible con precisión; como referencia, un checkpoint de 8,06 GiB en FP32 requiere al menos ~8 GiB solo para los pesos, y en FP16/BF16 aproximadamente la mitad, aunque no se confirma el tipo de dato de los pesos.
-- GPU recomendadas: no disponible. Por tamaño de fichero, cabría esperar que un checkpoint de este orden pudiera ejecutarse en GPUs de 16-24 GB (RTX 4090, A10, L4) si se convierte a precisión reducida, pero el autor no lo documenta.
-- ¿Cabe en GPU de consumo? No confirmado; el tamaño del fichero (8,06 GiB) es compatible con GPUs de consumo de 12-24 GB en precisión reducida, pero no hay documentación al respecto.
-- Opciones de despliegue: no disponible. No se mencionan vLLM, llama.cpp, Ollama ni TGI; el formato `.pth` sugiere carga directa con PyTorch.
+- VRAM estimada para inferencia: el checkpoint en precision de 32 bits ocupa 8,06 GiB, por lo que la inferencia requiere al menos unos 10-12 GiB de VRAM solo para los pesos, mas memoria para activaciones y overhead del runtime. En FP16 el peso seria de aproximadamente 4 GiB, aunque no se confirma que exista una version en FP16.
+- GPU recomendadas: no disponible en la documentacion. Por tamano, una GPU con 16 GB o mas (RTX 4090, A100 40 GB, H100) es un punto de partida razonable, pero no hay confirmacion del autor.
+- GPU de consumo: probablemente cabe en GPUs consumer de gama alta con 16-24 GB (RTX 4090, RTX 3090), sujeto a que el codigo del repositorio permita cargar el modelo en FP16 o en cuantizacion; no confirmado.
+- Opciones de despliegue: no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI. El formato `.pth` sugiere carga directa con PyTorch y el codigo del repositorio de GitHub.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye comparaciones con otros modelos de proteínas (por ejemplo, ESM, ProteinMPNN u otros), ni datos de rendimiento que permitan establecer una comparativa fundamentada.
+No disponible. La informacion proporcionada no incluye comparaciones con otros modelos de proteinas (por ejemplo, ESM-2, ESM-3, ProteinMPNN o modelos de prediccion de efecto de mutacion como los evaluados en ProteinGym), ni datos de rendimiento que permitan establecer una comparacion rigurosa.
 
 ## Limitaciones y advertencias
 
-- Información pública mínima: la model card no documenta arquitectura, datos de entrenamiento, evaluación ni limitaciones, lo que impide una evaluación rigurosa del modelo.
-- Sin validación comunitaria: cero descargas y cero likes en el momento de la consulta; no hay evidencia de uso o replicación independiente.
-- Riesgo de sobreajuste o sesgo en el paisaje de fitness: al no documentarse la composición del dataset de entrenamiento, no puede descartarse un sesgo hacia las familias de proteínas o los tipos de mutaciones presentes en los datos.
-- Riesgo de extrapolación: los "world models" de fitness pueden fallar en regiones del espacio de secuencias poco representadas en el entrenamiento; no se documenta el dominio de validez.
-- Formato de pesos no estándar para despliegue: `.pth` requiere PyTorch y no es directamente compatible con runtimes de inferencia optimizados como vLLM o llama.cpp sin conversión.
-- Licencia Apache 2.0: permite uso comercial y modificación, pero no se especifican restricciones adicionales sobre los datos de entrenamiento ni sobre las predicciones.
-- Ausencia de documentación sobre calibración: no se indica si las predicciones del modelo son probabilísticas o deterministas, ni cómo deben interpretarse.
-- No aplicable a tareas de lenguaje natural: el modelo está especializado en proteínas y no debe esperarse de él comportamiento de LLM general.
+- La model card es extremadamente escasa: no documenta arquitectura, datos de entrenamiento, contexto ni evaluacion, lo que dificulta la reproduccion y la evaluacion independiente.
+- No hay informacion sobre sesgos en los datos de entrenamiento ni sobre la distribucion de proteinas cubierta; el rendimiento puede degradarse en familias de proteinas poco representadas.
+- Riesgo de alucinacion: como modelo predictivo, puede generar puntuaciones de efecto de mutacion poco fiables fuera de su dominio de entrenamiento; las predicciones deben validarse experimentalmente.
+- No se especifican limitaciones de contexto ni de idioma (no aplica lenguaje natural), pero se desconoce la longitud maxima de secuencia soportada.
+- Licencia Apache 2.0: permite uso comercial y modificacion con atribucion; no obstante, no se especifican restricciones adicionales sobre los datos de entrenamiento ni sobre patentes.
+- El modelo se publica como checkpoint de investigacion (0 descargas, 0 likes en el momento de la consulta) y sin garantias de soporte; para produccion conviene evaluar el codigo del repositorio y la estabilidad de la API.
+- No se documentan requisitos de hardware ni procesos de cuantizacion, lo que puede complicar el despliegue en entornos con recursos limitados.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/yikuuun/proteus
-- Repositorio de código y documentación (indicado por el autor): https://github.com/yikunpku/ProTEUS
+- Modelo en Hugging Face: https://huggingface.co/yikuuun/proteus
+- Paper: https://huggingface.co/papers/2611.13348
+- Repositorio de codigo y demo: https://github.com/yikunpku/ProTEUS
+- Pagina del proyecto: https://yikunpku.github.io/ProTEUS/

@@ -2,65 +2,87 @@
 
 ## Resumen
 
-Este modelo es un adaptador LoRA publicado en Hugging Face por el usuario xw17. El nombre del repositorio indica que se ha realizado un ajuste fino supervisado (SFT) sobre el modelo base Qwen2-1.5B-Instruct, con un tema que parece relacionado con la soledad y la depresión (lonelinessdep). Sin embargo, la model card es una plantilla generada automáticamente y no contiene información sobre el desarrollo, los datos de entrenamiento, la licencia ni las capacidades del modelo. El repositorio muestra un tamaño de 0.0 GB, lo que sugiere que puede no contener archivos o que la información no se ha actualizado correctamente.
+El modelo `xw17/Qwen2-1.5B-Instruct_SFT_lora_lonelinessdep` es un ajuste fino mediante LoRA del modelo base Qwen2-1.5B-Instruct, publicado en Hugging Face por el usuario xw17. El nombre del repositorio sugiere un entrenamiento de tipo SFT (supervised fine-tuning) orientado a un dominio concreto relacionado con la soledad ("lonelinessdep"), aunque la model card no documenta ni el dataset, ni el procedimiento, ni los objetivos del ajuste. El repositorio tiene un tamano de 0,1 GB, lo que es coherente con un conjunto de adaptadores LoRA y no con una copia completa de los pesos del modelo base.
 
-En los metadatos de Hugging Face se indican las etiquetas transformers, safetensors, endpoints_compatible y region:us, pero no se proporciona ningún detalle técnico adicional. La búsqueda web no ha arrojado resultados relevantes sobre este modelo, salvo otros adaptadores LoRA del mismo autor en Hugging Face, sin información complementaria.
+La relevancia de esta ficha es limitada desde el punto de vista de la evaluacion tecnica: se trata de un artefacto de investigacion o experimento personal sin documentacion publica, sin benchmarks y sin licencia declarada. No obstante, resulta util como ejemplo de adaptacion de un modelo pequeno (1.500 millones de parametros) de la familia Qwen2, una arquitectura transformer decoder-only ampliamente desplegable en hardware de consumo.
 
-## Especificaciones técnicas
+Toda la informacion disponible proviene del identificador del repositorio, de los metadatos de Hugging Face y de la model card autogenerada, que no contiene datos sustantivos. Por tanto, la mayoria de las especificaciones se marcan como "no disponible" y las afirmaciones sobre arquitectura se refieren al modelo base Qwen2-1.5B-Instruct, no al ajuste publicado.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptador LoRA sobre Qwen2-1.5B-Instruct (transformer) |
-| Parametros totales | No disponible (adaptador LoRA; el modelo base Qwen2-1.5B-Instruct tiene 1.5B) |
-| Longitud de contexto | No disponible (el modelo base Qwen2-1.5B-Instruct tiene 32.768 tokens) |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | No disponible |
-| Licencia | No disponible |
-| Formato de pesos | safetensors (según tags; el repo muestra 0.0 GB) |
+| Arquitectura | Transformer decoder-only (heredada de Qwen2-1.5B-Instruct); el ajuste es LoRA |
+| Parametros totales | 1.500 millones (modelo base); tamano de los adaptadores no disponible |
+| Parametros activos | no disponible (no es un modelo MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Qwen2-1.5B-Instruct soporta hasta 32.768 tokens, dato no confirmado para este ajuste) |
+| Tipos de cuantizacion | no disponible; el repositorio contiene safetensors sin variantes GGUF publicadas |
+| Idiomas soportados | no disponible |
+| Licencia | no disponible |
+| Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA (Low-Rank Adaptation) que se aplica sobre el modelo base Qwen2-1.5B-Instruct, un transformer de 1.500 millones de parámetros. El nombre del repositorio indica que se ha utilizado entrenamiento supervisado (SFT), pero no se proporcionan detalles sobre el dataset, el número de tokens, los hiperparámetros ni el procedimiento de entrenamiento. El tag arxiv:1910.09700 que aparece en los metadatos corresponde a la plantilla de la model card sobre impacto ambiental y no a una innovación técnica del modelo.
+La arquitectura subyacente es la de Qwen2-1.5B-Instruct: un transformer decoder-only con atencion causal, normalizacion RMSNorm, activaciones SwiGLU y embeddings rotatorios (RoPE), disenado para generacion de texto e instrucciones. Sobre este modelo base se ha aplicado un ajuste fino supervisado mediante LoRA, segun indica el nombre del repositorio. El repositorio pesa 0,1 GB, lo que sugiere que solo se publican los adaptadores y no los pesos completos fusionados.
 
-No se ha publicado ninguna información sobre la composición de los datos de entrenamiento, el uso de RLHF/DPO, ni técnicas de decodificación o atención especiales. El adaptador es un LoRA, por lo que el coste computacional de entrenamiento es reducido en comparación con un ajuste completo, pero no se dispone de datos concretos sobre el tiempo ni el hardware utilizado.
+No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el rango y alpha de LoRA, la tasa de aprendizaje ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La model card es la plantilla autogenerada de Hugging Face y todos los campos sustantivos aparecen como "[More Information Needed]". Tampoco se documentan innovaciones tecnicas adicionales.
 
 ## Capacidades
 
-No disponible. La model card no documenta ninguna capacidad específica. Al ser un adaptador LoRA sobre Qwen2-1.5B-Instruct, el modelo hereda las capacidades del modelo base (generación de texto, instrucciones, razonamiento básico), pero no se han publicado evaluaciones que confirmen el comportamiento de este adaptador en tareas concretas. El nombre del repositorio sugiere un posible uso en conversación sobre soledad y depresión, pero no hay evidencia que lo respalde.
+- Generacion de texto autoregresiva, heredada del modelo base Qwen2-1.5B-Instruct.
+- Seguimiento de instrucciones en formato conversacional, presumiblemente reforzado por el SFT, aunque no hay evaluacion publicada.
+- Razonamiento basico y generacion de codigo a nivel de modelo pequeno; sin datos de rendimiento.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada para este ajuste (el modelo base Qwen2-Instruct lo soporta, pero no se confirma aqui).
+- Capacidades de agente y razonamiento multi-paso: no disponibles.
+- Capacidades multilingues: no disponibles; no se declara lista de idiomas.
+- Capacidades especiales (modo thinking, vision, audio): no disponibles.
 
 ## Casos de uso
 
-No se dispone de información suficiente para determinar casos de uso concretos. El modelo no tiene documentación de uso previsto, ni datos de evaluación, ni benchmarks publicados. Cualquier aplicación requeriría una evaluación previa por parte del usuario, especialmente si se considera un dominio sensible como el de la salud mental, dado el nombre del repositorio.
+- Prototipado de asistentes conversacionales en local: un modelo de 1.500 millones de parametros cabe en GPUs de consumo y permite iterar rapidamente sobre prompts y flujos de dialogo sin coste de API, siempre que se valide el comportamiento del ajuste.
+- Investigacion sobre ajuste fino con LoRA: el repositorio sirve como referencia de como se publican adaptadores sobre Qwen2-1.5B-Instruct y puede reutilizarse como punto de partida para experimentos de SFT en dominios acotados.
+- Experimentos academicos sobre sesgos y dominios sensibles: dado el nombre del ajuste ("lonelinessdep"), puede emplearse en estudios controlados sobre respuestas del modelo en contextos de soledad o salud emocional, con supervision humana obligatoria.
+- Generacion de texto de bajo coste en entornos con recursos limitados: clasificacion, resumen o reescritura de textos cortos en un servidor sin GPU dedicada, usando cuantizacion si se generan pesos compatibles.
+- Educacion y demos de despliegue: sirve para mostrar el flujo completo de carga de un adaptador LoRA con transformers y su fusion con el modelo base en un cuaderno o entorno de laboratorio.
+- Evaluacion comparativa de tecnicas de fine-tuning: util como caso de estudio de modelos pequenos ajustados frente a sus versiones base en tareas de dominio especifico.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Estimaciones orientativas basadas en el modelo base Qwen2-1.5B-Instruct. El adaptador LoRA añade un coste mínimo (típicamente decenas de MB).
-
-- VRAM estimada para inferencia (modelo base + adaptador):
-  - FP16: aproximadamente 4-6 GB
-  - 8-bit: aproximadamente 2-3 GB
-  - 4-bit (GGUF/AWQ): aproximadamente 1-2 GB
-- GPU recomendadas: RTX 3060 12GB, RTX 4060 Ti 16GB, RTX 4090, A10G, T4 (con cuantización)
-- Sí cabe en GPU de consumo, especialmente con cuantización. En FP16, una RTX 3060 12GB es suficiente.
-- Opciones de despliegue: vLLM (soporta adaptadores LoRA), llama.cpp (con --lora), Ollama (Modelfile con adaptador), Hugging Face Transformers + PEFT
-- Latencia y throughput: no disponible
+- VRAM estimada para inferencia en fp16: aproximadamente 3 GB para los pesos del modelo base de 1.500 millones de parametros, mas memoria para el contexto y el runtime (del orden de 4-6 GB en total).
+- VRAM estimada en cuantizacion de 8 bits: alrededor de 1,6 GB de pesos; en 4 bits, alrededor de 0,9 GB, aunque no se publican pesos cuantizados para este ajuste.
+- GPU recomendadas: cualquier GPU con al menos 6-8 GB de VRAM para fp16; RTX 3060, RTX 4060, RTX 4090, A100 o H100 funcionan sin problema. Cabe en GPUs de consumo.
+- Opciones de despliegue: transformers (libreria declarada); vLLM, llama.cpp, Ollama o TGI requeririan convertir o fusionar los adaptadores, y no hay artefactos publicados para ello.
+- Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-No disponible. No se han publicado benchmarks ni información suficiente para comparar este modelo con alternativas de la misma categoría.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| xw17/Qwen2-1.5B-Instruct_SFT_lora_lonelinessdep | 1.500 M (base) | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen2-1.5B-Instruct (modelo base) | 1.500 M | 32.768 tokens (segun documentacion del modelo base) | Apache 2.0 (segun documentacion del modelo base) | Hugging Face, ampliamente utilizado |
+| Qwen2.5-1.5B-Instruct | 1.500 M | 32.768 tokens (segun documentacion del modelo base) | Apache 2.0 (segun documentacion del modelo base) | Hugging Face, ampliamente utilizado |
+| SmolLM2-1.7B-Instruct | 1.700 M | 8.192 tokens (segun documentacion del modelo base) | Apache 2.0 (segun documentacion del modelo base) | Hugging Face, ampliamente utilizado |
+
+La comparativa se limita a datos publicos de los modelos base; no existen metricas del ajuste de xw17 que permitan una comparacion de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Sesgos: no evaluados. El modelo no tiene documentación de evaluación de sesgos ni análisis de riesgos.
-- Riesgo de alucinación: no evaluado. Al ser un adaptador sin documentación, el riesgo es desconocido.
-- Limitaciones de contexto o idioma: no especificadas. El modelo base Qwen2-1.5B-Instruct soporta múltiples idiomas, pero el adaptador no declara idiomas soportados.
-- Restricciones de licencia: la licencia no está especificada. El uso comercial no está garantizado y requiere contactar con el autor o revisar los términos del repositorio.
-- Caveat importante: el nombre del modelo sugiere un dominio sensible (soledad y depresión). No se debe usar en producción sin una evaluación rigurosa de seguridad y eficacia, y sin supervisión humana.
+- La model card no documenta sesgos, datos de entrenamiento ni evaluaciones; no es posible estimar el comportamiento del ajuste en produccion.
+- Riesgo de alucinacion elevado por el reducido tamano del modelo base y la ausencia de evaluacion del ajuste.
+- El nombre del repositorio sugiere un dominio sensible (soledad y salud emocional); no debe usarse como sustituto de atencion profesional ni en aplicaciones clinicas sin validacion.
+- No se declara licencia, por lo que el uso comercial queda en un limbo legal: hay que contactar con el autor o asumir los terminos del modelo base.
+- No se especifican idiomas soportados; el comportamiento en castellano no esta garantizado.
+- El repositorio tiene 0 descargas y 0 likes, y la model card es autogenerada: no hay evidencia de validacion por parte de la comunidad.
+- Solo se publican, presumiblemente, los adaptadores LoRA; es necesario descargar el modelo base Qwen2-1.5B-Instruct y fusionarlos para su uso.
+- No hay pesos cuantizados ni integracion documentada con servidores de inferencia de alto rendimiento.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/xw17/Qwen2-1.5B-Instruct_SFT_lora_lonelinessdep
+- Repositorio en Hugging Face: https://huggingface.co/xw17/Qwen2-1.5B-Instruct_SFT_lora_lonelinessdep
+- Referencia citada en los metadatos (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
+- Calculadora de impacto ambiental mencionada en la model card: https://mlco2.github.io/impact
+- Modelo base presumible (no confirmado en la model card): https://huggingface.co/Qwen/Qwen2-1.5B-Instruct

@@ -5,7 +5,7 @@
   "author": "zephel01",
   "url": "https://huggingface.co/zephel01/DeepSeek-V4-Flash-0731-IQ1_S-16G64G-GGUF",
   "created_at": "2026-11-07T00:53:38.000Z",
-  "updated_at": "2026-11-09T00:28:31.000Z",
+  "updated_at": "2026-11-16T23:28:14.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -39,7 +39,7 @@
   "trending_score": 0,
   "parameters": 284334567511,
   "parameters_human": "284.33B",
-  "storage_bytes": 61705212448,
+  "storage_bytes": 61705461943,
   "storage_human": "61.7 GB",
   "context_length": 1048576,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
@@ -55,16 +55,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "zephel01/DeepSeek-V4-Flash-0731-16G64G-GGUF · Hugging Face",
-      "url": "https://huggingface.co/zephel01/DeepSeek-V4-Flash-0731-16G64G-GGUF",
-      "snippet": "Text Generation model with 284B parameters. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "zephel01/DeepSeek-V4-Flash-0731-32G64G-GGUF · Hugging Face",
-      "url": "https://huggingface.co/zephel01/DeepSeek-V4-Flash-0731-32G64G-GGUF",
-      "snippet": "Text Generation model with 284B parameters. Download, explore files and run it on Hugging Face."
-    }
-  ]
+  "sources": []
 }

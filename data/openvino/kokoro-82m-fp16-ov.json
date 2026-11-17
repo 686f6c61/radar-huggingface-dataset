@@ -1,0 +1,72 @@
+{
+  "schema": 2,
+  "id": "OpenVINO/Kokoro-82M-fp16-ov",
+  "slug": "openvino-kokoro-82m-fp16-ov",
+  "author": "OpenVINO",
+  "url": "https://huggingface.co/OpenVINO/Kokoro-82M-fp16-ov",
+  "created_at": "2026-10-07T12:56:52.000Z",
+  "updated_at": "2026-11-17T10:11:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "openvino",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "openvino",
+    "kokoro",
+    "text-to-speech",
+    "en",
+    "base_model:hexgrad/Kokoro-82M",
+    "base_model:finetune:hexgrad/Kokoro-82M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 531,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 218219855,
+  "storage_human": "218 MB",
+  "context_length": null,
+  "base_model": "hexgrad/Kokoro-82M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenVINO 2026.4 — OpenVINO™ documentation — Version (2026)",
+      "url": "https://docs.openvino.ai/",
+      "snippet": "OpenVINO is an open-source toolkit for deploying high-performance AI solutions across cloud, AI PCs, edge devices, and Physical …"
+    },
+    {
+      "title": "GitHub - openvinotoolkit/openvino: OpenVINO™ is an open source …",
+      "url": "https://github.com/openvinotoolkit/openvino",
+      "snippet": "OpenVINO supports the CPU, GPU, and NPU devices and works with models from PyTorch, TensorFlow, ONNX, TensorFlow Lite, …"
+    },
+    {
+      "title": "Intel® Distribution of OpenVINO™ Toolkit",
+      "url": "https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/overview.html",
+      "snippet": "OpenVINO™ toolkit is an open source toolkit that accelerates AI inference with lower latency and higher throughput while …"
+    },
+    {
+      "title": "OpenVINO - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/OpenVINO",
+      "snippet": "OpenVINO is an open-source software toolkit developed by Intel for optimizing and deploying deep learning models. It supports …"
+    },
+    {
+      "title": "OpenVINO (OpenVINO Toolkit) - Hugging Face",
+      "url": "https://huggingface.co/OpenVINO",
+      "snippet": "Visual Language Models Collection of OpenVINO optimized models for visual-language assistance VLMs optimized for NPU View 9 …"
+    }
+  ]
+}

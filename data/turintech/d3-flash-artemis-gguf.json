@@ -5,7 +5,7 @@
   "author": "turintech",
   "url": "https://huggingface.co/turintech/d3-flash-Artemis-GGUF",
   "created_at": "2026-10-14T06:56:41.000Z",
-  "updated_at": "2026-11-09T16:12:07.000Z",
+  "updated_at": "2026-11-16T12:07:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",

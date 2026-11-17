@@ -2,99 +2,100 @@
 
 ## Resumen
 
-Qwen3.8-27B-YASAKANI-quality es una conversión cuantizada del modelo Qwen3.8-27B (27 000 millones de parámetros, desarrollado por el equipo Qwen de Alibaba Cloud) realizada por yasakani-dev para su motor de inferencia local YASAKANI, orientado a Windows 11 con una única GPU NVIDIA RTX 5090. El repositorio no contiene pesos en formatos estándar (safetensors, GGUF), sino archivos propietarios en el formato `.yskn` que solo puede cargar el motor YASAKANI; ni transformers, ni llama.cpp, ni vLLM, ni SGLang son compatibles con ellos.
+Qwen3.8-27B-YASAKANI-quality es una conversión cuantizada y comprimida del modelo Qwen3.8-27B (27.000 millones de parámetros, desarrollado por el equipo Qwen de Alibaba Cloud) realizada por yasakani-dev. El artefacto principal, `qwen38_27b_quality.yskn`, ocupa 12,37 GB frente a los 53,8 GB de los pesos originales en BF16, lo que supone una compresión aproximada de 4,3x. No es un modelo autónomo en formato estándar: emplea el formato propietario `.yskn` del motor YASAKANI, un runtime local para Windows diseñado para ejecutarse sobre una única GPU NVIDIA RTX.
 
-El modelo comprime los pesos originales en BF16 (53,8 GB) hasta 12,37 GB, lo que supone una reducción de aproximadamente el 77 % del tamaño. Según la model card, la predicción del siguiente token coincide con la del modelo original en el 95,24 % de las posiciones sobre un conjunto de 20 transcripciones de razonamiento (20 460 posiciones, caché KV en FP16, medidas del 8 de noviembre de 2026), con una divergencia KL de 0,0122. Se distribuye bajo licencia Apache 2.0 y está pensado para uso conversacional y de generación de texto en local.
+La relevancia de esta ficha reside en que ilustra una tendencia creciente de cuantizaciones específicas por motor, optimizadas para hardware de consumo de gama alta (RTX 5090, 32 GB de VRAM) y con decodificación especulativa integrada mediante un modelo borrador derivado de DFlash 2 de z-lab. El objetivo declarado es preservar la fidelidad al modelo original manteniendo velocidades de generación altas, con un 95,24% de coincidencia en el token más probable respecto al BF16 original sobre un corpus de 20 transcripciones de razonamiento.
 
-La relevancia de esta ficha es doble: por un lado, documenta una de las pocas conversiones publicadas de Qwen3.8-27B para hardware de consumo de gama alta (RTX 5090, 32 GB de VRAM); por otro, ilustra un caso de empaquetado propietario que limita fuertemente la portabilidad y la reproducibilidad respecto a los formatos abiertos habituales.
+Es importante subrayar que estos pesos solo pueden cargarse con YASAKANI: no son compatibles con transformers, llama.cpp, vLLM ni SGLang. La licencia es Apache 2.0, heredada del modelo base, y el repositorio no cuenta con el aval oficial de Qwen, Alibaba Cloud, z-lab ni Inco AI.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base Qwen3.8-27B; la model card no detalla la arquitectura interna) |
-| Parametros totales | 27 000 millones (modelo base Qwen3.8-27B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | conversion propietaria a formato `.yskn` (12,37 GB); no se especifica el esquema numerico exacto |
-| Idiomas soportados | no disponible (la model card incluye texto en japones e ingles, pero no declara lista de idiomas) |
+| Arquitectura | Transformer (derivada de Qwen3.8-27B); no se detalla en la información disponible |
+| Parámetros totales | 27.000 millones (modelo base) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible de forma fija; se ajusta dinámicamente según la VRAM libre al arrancar el modelo (inferior a 32 GB de VRAM implica contexto potencialmente más corto) |
+| Tipos de cuantización | Compresión propietaria en formato `.yskn` (12,37 GB); caché KV comprimida mediante `kvq_u5.bin` |
+| Idiomas soportados | no disponible en la model card; el modelo base Qwen3.8-27B es multilingüe, pero no se especifica el conjunto exacto |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `.yskn` propietario de YASAKANI (no compatible con safetensors, GGUF, etc.); incluye draft model `bdraft2_k8.yskn` y cache KV comprimida `kvq_u5.bin` |
+| Formato de pesos | `.yskn` (propietario de YASAKANI); incluye `bdraft2_k8.yskn` y `bdraft2_k8.shead` para el modelo borrador; tokenizer y config en formato estándar |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una conversion del Qwen3.8-27B original de Alibaba Cloud, no un entrenamiento nuevo. La model card no describe la arquitectura del modelo base (transformer denso o MoE, tipo de atencion, datos de entrenamiento, uso de RLHF/DPO), por lo que esos datos deben consultarse en la ficha oficial de Qwen/Qwen3.8-27B. Lo que si documenta el autor es el proceso de compresion: los pesos BF16 originales (53,8 GB) se convierten al formato `.yskn` y se comprimen hasta 12,37 GB, con una perdida de fidelidad medida en terminos de coincidencia del siguiente token (95,24 %) y divergencia KL (0,0122) frente al modelo original.
+El modelo subyacente es Qwen3.8-27B, un transformer denso de 27.000 millones de parámetros. La información proporcionada no detalla la composición del dataset de entrenamiento, el número de tokens, ni si se aplicaron técnicas de RLHF, DPO u otras etapas de alineación; estos datos corresponden a la model card original de Qwen y no se reproducen aquí.
 
-La innovacion tecnica destacable es el uso de decodificacion especulativa mediante un draft model derivado de DFlash 2 de z-lab (`bdraft2_k8.yskn` y `bdraft2_k8.shead`), junto con una cache KV comprimida configurada por `kvq_u5.bin`. El repositorio incluye ademas los archivos originales del modelo base sin modificar (`tokenizer.json`, `tokenizer_config.json`, `chat_template.jinja`, `config.json`, `generation_config.json`), lo que permite inspeccionar la configuracion de tokenizacion y plantilla de chat del modelo original. No se publican datos sobre el dataset de entrenamiento, el numero de tokens vistos ni las tecnicas de alineacion empleadas.
+La innovación técnica de esta conversión es doble. Por un lado, la compresión a 12,37 GB mediante el formato `.yskn`, que según el autor mantiene el 95,24% de coincidencia en el token más probable frente al BF16 original (20.460 posiciones evaluadas sobre 20 transcripciones de razonamiento, con caché KV en FP16, medidas el 8 de noviembre de 2026). Por otro, la integración de decodificación especulativa mediante un modelo borrador pequeño (`bdraft2_k8.yskn`) derivado de DFlash 2 de z-lab, que propone tokens candidatos para acelerar la generación. La divergencia KL respecto al original es de 0,0122 en texto de razonamiento, aunque el propio autor advierte que en texto web general la divergencia es un 3-10% mayor que en su conversión anterior del mismo tamaño, por lo que la fidelidad no es uniforme entre dominios.
 
 ## Capacidades
 
-- Generacion de texto y conversacion multi-turno, segun el pipeline declarado (`text-generation`) y la plantilla de chat incluida.
-- Razonamiento en modo thinking: las metricas de fidelidad se midieron sobre transcripciones de razonamiento, lo que sugiere soporte de cadenas de pensamiento, aunque la model card no lo declara explicitamente como funcionalidad.
-- Generacion de codigo y matematicas: no confirmado en la informacion disponible; depende de las capacidades del modelo base Qwen3.8-27B.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no se declara lista de idiomas; la model card esta redactada en ingles y japones.
-- Capacidades de vision o audio: no disponibles; el pipeline es exclusivamente de texto.
-- Decodificacion especulativa integrada mediante draft model propio, que acelera la generacion respecto a la decodificacion autoregresiva estandar.
+- Generación de texto conversacional y de razonamiento (el corpus de evaluación se compone de transcripciones de *thinking*, lo que sugiere soporte de modo razonamiento heredado del modelo base).
+- Generación de código y matemáticas: capacidades heredadas de Qwen3.8-27B, aunque no se documentan explícitamente en esta model card.
+- Decodificación especulativa integrada mediante modelo borrador, con aceleración de la generación en GPU RTX.
+- Caché KV comprimida para reducir el consumo de VRAM durante la inferencia.
+- Verificación de integridad de los archivos mediante SHA-256 (`yasakani verify`) y autocomprobación de referencia (`yasakani selfcheck`).
+- No se documentan en la información disponible capacidades de tool calling, function calling, uso de agentes, visión, audio ni multilingüismo específico.
 
 ## Casos de uso
 
-- Asistente conversacional local en estaciones de trabajo Windows: el modelo esta disenado para ejecutarse en una RTX 5090 con 12,37 GB de pesos, lo que permite mantener conversaciones multi-turno sin conexion a servicios en la nube y con la plantilla de chat original de Qwen.
-- Razonamiento asistido en entornos con requisitos de privacidad: al ejecutarse en local y no requerir envio de datos a terceros, es adecuado para analisis de documentos internos o borradores tecnicos donde no se permite salida de datos.
-- Prototipado rapido de aplicaciones de generacion de texto: la integracion con el CLI de YASAKANI (`yasakani chat`, `yasakani verify`, `yasakani selfcheck`) permite validar el modelo y arrancar un chat en pocos comandos sobre Windows.
-- Evaluacion de tecnicas de cuantizacion y decodificacion especulativa: el repositorio publica metricas de fidelidad (coincidencia del siguiente token, divergencia KL) y un draft model separado, lo que lo convierte en un banco de pruebas para estudiar el impacto de la compresion en la calidad de generacion.
-- Despliegue en hardware de consumo de gama alta: con 12,37 GB de pesos y una cache KV comprimida, el modelo cabe holgadamente en los 32 GB de VRAM de una RTX 5090, dejando margen para contexto adicional y para el draft model.
-- Generacion de texto en japones e ingles: la model card y el ecosistema del autor estan orientados a estos idiomas, por lo que es una opcion razonable para aplicaciones bilingues en esos mercados, siempre que se valide la calidad con datos propios.
+- Asistente conversacional local en estación de trabajo Windows: el modelo se ejecuta íntegramente en una RTX 5090 (32 GB) o en GPUs de 24 GB como la RTX 4090 o la RTX 3090, sin depender de servicios en la nube, lo que resulta adecuado para entornos con requisitos de privacidad.
+- Razonamiento asistido sobre textos largos: gracias al modo *thinking* heredado y a la caché KV comprimida, puede emplearse para tareas de análisis y resumen de documentos técnicos en local.
+- Prototipado rápido de aplicaciones LLM en Windows: el flujo `yasakani chat` permite interactuar con el modelo desde línea de comandos con verificación previa de integridad, útil para validar ideas antes de invertir en infraestructura.
+- Evaluación comparativa de cuantizaciones: investigadores pueden contrastar esta conversión *quality* con la *speed* del mismo autor (10,31 GB, 93,01% de coincidencia, KL 0,0304) para medir el compromiso entre fidelidad y velocidad en su propio corpus.
+- Despliegue en entornos aislados o air-gapped: al ser un runtime local con pesos descargables y verificables por checksum, encaja en escenarios sin conectividad externa.
+- Generación de código en local para desarrolladores con GPU de consumo: siempre que se validen las capacidades de código del modelo base, puede integrarse en flujos de autocompletado o revisión sin enviar código a terceros.
+- Investigación sobre decodificación especulativa: el par modelo principal + borrador DFlash 2 permite estudiar el impacto de la decodificación especulativa en latencia y calidad sobre hardware de consumo.
 
 ## Benchmarks y rendimiento
 
-La model card no publica resultados de benchmarks estandar (MMLU, HumanEval, GSM8K). Solo se incluyen metricas de fidelidad frente al modelo original BF16, medidas sobre 20 transcripciones de razonamiento (20 460 posiciones, cache KV en FP16, 8 de noviembre de 2026):
-
-| Metrica | Quality (este repo) | Speed (repo hermano) |
+| Métrica | Quality (este repo) | Speed (repo hermano) |
 |---|---|---|
-| Coincidencia del siguiente token mas probable con el original | 95,24 % | 93,01 % |
+| Tamaño del archivo principal | 12,37 GB | 10,31 GB |
+| VRAM mínima | 24 GB | 16 GB |
+| Coincidencia con el token más probable del original | 95,24% | 93,01% |
 | Divergencia KL respecto al original (menor es mejor) | 0,0122 | 0,0304 |
-| Tamano del archivo principal | 12,37 GB | 10,31 GB |
 
-El autor advierte que estas cifras no son precision de tarea y que solo cubren texto de razonamiento. En texto web general, una evaluacion adicional mostro una divergencia KL entre un 3 % y un 10 % mayor que una conversion anterior del mismo tamano, lo que indica que la fidelidad no se traslada a todos los tipos de texto. No se han publicado resultados de benchmarks en la informacion disponible.
+Condiciones de medida: 20 transcripciones de razonamiento no utilizadas durante la creación de los archivos, 20.460 posiciones, caché KV en FP16, 8 de noviembre de 2026. El autor advierte que en texto web general la divergencia KL es un 3-10% mayor que en su conversión anterior del mismo tamaño. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos ocupan 12,37 GB; con cache KV comprimida y el draft model, el consumo total debe situarse por debajo de los 32 GB de una RTX 5090, aunque la model card no publica la cifra exacta de VRAM en ejecucion.
-- GPU recomendadas: NVIDIA RTX 5090 (unica GPU soportada oficialmente segun la model card y los tags `windows`, `rtx-5090`). No se mencionan A100, H100 ni otras GPU.
-- Cabe en GPU de consumo: si, en RTX 5090. No se garantiza compatibilidad con GPU de menor VRAM.
-- Sistema operativo: Windows 11, Python 3.10 o superior.
-- Opciones de despliegue: exclusivamente el motor YASAKANI (CLI `yasakani chat`, `yasakani verify`, `yasakani selfcheck`). No es compatible con vLLM, llama.cpp, Ollama, TGI ni transformers.
-- Latencia y throughput: no disponibles en la informacion proporcionada; el autor remite a la pagina de GitHub para las mediciones de velocidad y sus condiciones.
+- VRAM estimada: 24 GB o más para el modelo *quality*; 16 GB o más para el modelo *speed*.
+- GPUs compatibles con el modelo *quality*: RTX 5090 (32 GB, probada oficialmente), RTX 3090, RTX 3090 Ti y RTX 4090 (24 GB).
+- GPUs de 16 GB (solo modelo *speed*): RTX 4060 Ti 16GB, RTX 4070 Ti SUPER, RTX 4080, RTX 4080 SUPER, RTX 5060 Ti 16GB, RTX 5070 Ti, RTX 5080.
+- No compatible con GPUs de 12 GB o menos, ni con la serie RTX 20 o anteriores. AMD y Mac no están soportados oficialmente.
+- Solo se ha probado en RTX 5090; en el resto de tarjetas el autor no garantiza funcionamiento ni velocidad. La longitud de contexto se ajusta automáticamente según la VRAM libre al iniciar.
+- Sistema operativo: Windows 11; Python 3.10 o superior; YASAKANI 0.1.3 o superior para tarjetas distintas de la RTX 5090.
+- Despliegue: exclusivamente mediante el motor YASAKANI (comandos `yasakani verify`, `yasakani selfcheck`, `yasakani chat`). No compatible con vLLM, llama.cpp, Ollama, TGI, SGLang ni transformers.
+- Latencia y throughput: no disponibles en la información proporcionada; el autor remite a la página de GitHub para las mediciones de velocidad, todas realizadas en RTX 5090.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Qwen3.8-27B-YASAKANI-quality (este) | 27 000 M | no disponible | `.yskn` propietario | Apache 2.0 | Hugging Face, solo motor YASAKANI |
-| Qwen3.8-27B-YASAKANI-speed | 27 000 M | no disponible | `.yskn` propietario (10,31 GB) | Apache 2.0 | Hugging Face, solo motor YASAKANI |
-| Qwen/Qwen3.8-27B (original) | 27 000 M | no disponible | safetensors BF16 (53,8 GB) | Apache 2.0 | Hugging Face, compatible con transformers, vLLM, etc. |
-| z-lab/Qwen3.8-27B-DFlash2 | no disponible | no disponible | no disponible | no disponible | Hugging Face (draft model para decodificacion especulativa) |
+| Modelo | Parámetros | Contexto | Formato | VRAM mínima | Licencia | Motor |
+|---|---|---|---|---|---|---|
+| Qwen3.8-27B-YASAKANI-quality | 27B | dinámico según VRAM | `.yskn` | 24 GB | Apache 2.0 | YASAKANI |
+| Qwen3.8-27B-YASAKANI-speed | 27B | dinámico según VRAM | `.yskn` | 16 GB | Apache 2.0 | YASAKANI |
+| Qwen3.8-27B (original) | 27B | no disponible | safetensors BF16 | 53,8 GB de pesos | Apache 2.0 | transformers, vLLM, etc. |
 
-La comparativa con modelos de otros fabricantes no esta disponible en la informacion proporcionada. Frente al modelo original, la version YASAKANI reduce el tamano un 77 % a costa de una perdida de fidelidad medible y de perder la portabilidad entre motores de inferencia.
+No se dispone de información sobre otros modelos comparables de la misma categoría en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es el modelo original: los pesos estan comprimidos de 53,8 GB a 12,37 GB, con una coincidencia del siguiente token del 95,24 % sobre texto de razonamiento; la fidelidad en otros dominios puede ser menor (divergencia KL entre un 3 % y un 10 % mayor en texto web general).
-- Formato propietario: los archivos `.yskn` solo los carga el motor YASAKANI. Esto impide usar herramientas estandar del ecosistema (transformers, llama.cpp, vLLM, SGLang) y limita la reproducibilidad y la integracion en pipelines existentes.
-- Dependencia de plataforma: requiere Windows 11, Python 3.10 o superior y una RTX 5090; no se documenta soporte para Linux ni para otras GPU.
-- Sesgos conocidos: no disponibles en la informacion proporcionada; dependen del modelo base Qwen3.8-27B.
-- Riesgo de alucinacion: no cuantificado en la model card; aplicable el riesgo habitual de los modelos generativos de este tamano.
-- Limitaciones de contexto e idioma: la longitud de contexto no se declara y no se publica lista de idiomas soportados; la documentacion esta orientada a ingles y japones.
-- Licencia: Apache 2.0 permite uso comercial, pero el modelo deriva de Qwen3.8-27B (Alibaba Cloud) y de DFlash 2 (z-lab / Inco AI); debe conservarse el archivo `NOTICE` con la atribucion correspondiente.
-- Sin aval oficial: el repositorio no es una release oficial de Qwen, Alibaba Cloud, z-lab ni Inco AI, y ninguna de estas entidades lo respalda.
-- Madurez: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay evidencia de uso en produccion ni validacion independiente.
+- No es el modelo original: la compresión a 12,37 GB introduce divergencia respecto al BF16; la coincidencia del 95,24% se midió solo sobre transcripciones de razonamiento, y en texto web general la divergencia KL es un 3-10% mayor.
+- Dependencia total del motor YASAKANI: los archivos `.yskn` no pueden cargarse con transformers, llama.cpp, vLLM, SGLang ni ninguna otra herramienta estándar, lo que limita la portabilidad y la integración en pipelines existentes.
+- Solo Windows 11: no hay soporte oficial para Linux, macOS ni GPUs AMD.
+- Soporte hardware muy restringido: únicamente probado en RTX 5090; en el resto de tarjetas el rendimiento y la estabilidad no están garantizados.
+- Contexto variable: en GPUs con menos de 32 GB de VRAM la ventana de contexto se reduce automáticamente, lo que puede afectar a tareas que requieran contexto largo.
+- Riesgo de alucinación: no se documentan evaluaciones de veracidad ni de sesgos; al ser una cuantización, estos riesgos son al menos equivalentes a los del modelo base.
+- Idiomas soportados no especificados en la model card; no se puede confirmar el comportamiento multilingüe de esta conversión concreta.
+- Licencia Apache 2.0 permite uso comercial, pero el autor declara explícitamente que el repositorio no es una release oficial de Qwen, Alibaba Cloud, z-lab ni Inco AI, y que ninguna de estas entidades lo respalda.
+- Los archivos `qwen38_27b_quality.yskn`, `bdraft2_k8.yskn` y `bdraft2_k8.shead` no son los pesos originales; deben conservarse todos los archivos del repositorio juntos en una misma carpeta para que el motor funcione.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/yasakani-dev/Qwen3.8-27B-YASAKANI-quality
-- Repositorio hermano (modelo rapido): https://huggingface.co/yasakani-dev/Qwen3.8-27B-YASAKANI-speed
+- Modelo *speed* (repo hermano): https://huggingface.co/yasakani-dev/Qwen3.8-27B-YASAKANI-speed
 - Motor YASAKANI (GitHub): https://github.com/yasakani-dev/yasakani
-- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Draft model DFlash 2: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
+- README en japonés: https://github.com/yasakani-dev/yasakani/blob/main/README.ja.md
+- Issues del proyecto: https://github.com/yasakani-dev/yasakani/issues
+- Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo borrador DFlash 2: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2

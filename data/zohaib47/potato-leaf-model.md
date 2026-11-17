@@ -2,98 +2,84 @@
 
 ## Resumen
 
-`zohaib47/potato-leaf-model` es un modelo de visión por computadora publicado en Hugging Face por el usuario zohaib47 el 21 de octubre de 2026. El repositorio contiene pesos en formato safetensors con 85.800.963 parámetros (aproximadamente 85,8 millones), lo que sitúa al modelo en el rango de tamaño de un Vision Transformer tipo ViT-Base. El tag `vit` del repositorio confirma que la arquitectura pertenece a la familia de transformers de visión, aunque la model card no documenta la configuración exacta (tamaño de parche, número de capas, dimensión de embedding ni resolución de entrada).
+`zohaib47/potato-leaf-model` es un modelo de visión por computador publicado en Hugging Face por el usuario zohaib47, orientado a la clasificación de imágenes de hojas de patata. Se distribuye en formato safetensors con arquitectura ViT (Vision Transformer) y un total de 85.800.963 parámetros, lo que lo sitúa en la gama de los ViT-Base, adecuados para tareas de clasificación de imágenes en entornos con recursos moderados.
 
-Por el nombre del repositorio, el modelo parece orientado a la clasificación de hojas de patata, presumiblemente para detección de enfermedades foliares, una tarea habitual en agricultura de precisión. Sin embargo, esta finalidad no está confirmada en la información disponible: la model card pública solo contiene la declaración de licencia MIT y no incluye descripción, dataset de entrenamiento, métricas ni instrucciones de uso. El pipeline declarado en Hugging Face está vacío.
+El modelo resuelve un problema acotado y de interés agronómico: la identificación del estado de las hojas de patata, presumiblemente para detección temprana de enfermedades foliares. Su licencia MIT permite uso comercial sin restricciones significativas, lo que facilita su integración en herramientas de agricultura de precisión o aplicaciones móviles de diagnóstico en campo.
 
-Su relevancia actual es limitada y de nicho: se trata de un modelo pequeño (0,3 GB de repositorio) que cabe en CPU y en cualquier GPU de consumo, con licencia permisiva MIT, lo que facilita su uso comercial. No obstante, con 0 descargas y 0 likes en el momento de la consulta y sin documentación técnica, no existe validación externa de su calidad ni evidencia publicada de su rendimiento.
+La información pública disponible es muy limitada: la model card únicamente declara la licencia MIT, sin especificar clases, dataset de entrenamiento, métricas ni procedimiento de uso. El repositorio tiene 39 descargas y ningún "like", lo que indica un modelo de nicho, probablemente un proyecto personal o académico, sin validación comunitaria extensa. Cualquier evaluación rigurosa requiere inspeccionar los pesos y probar el modelo directamente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Vision Transformer (según el tag `vit` del repositorio; configuración de capas, parche y embedding no disponible) |
-| Parametros totales | 85.800.963 (dato real de los safetensors) |
-| Parametros activos | No aplica (no es un modelo MoE según la información disponible) |
-| Longitud de contexto | No aplica / no disponible (modelo de visión; resolución de entrada no documentada) |
-| Tipos de cuantizacion | No disponible (no se documentan versiones GGUF, ONNX ni int8; al ser safetensors fp32, la cuantización requeriría conversión manual) |
-| Idiomas soportados | No disponible (modelo de visión, sin capacidades de texto declaradas) |
+| Arquitectura | ViT (Vision Transformer) |
+| Parametros totales | 85.800.963 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (modelo de visión, sin contexto textual) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible (modelo de visión, sin procesamiento de lenguaje) |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
-| Pipeline declarado | No disponible |
-| Tamaño del repositorio | 0,3 GB |
-| Descargas / likes | 0 / 0 |
-| Fecha de creación | 2026-10-21 |
 
 ## Arquitectura y entrenamiento
 
-La única información estructural disponible es el tag `vit` y el recuento de parámetros (85,8 M). Un ViT-Base estándar con parches de 16x16 y 12 capas tiene del orden de 86 M de parámetros, por lo que el tamaño es coherente con esa configuración, pero no hay confirmación en la model card sobre el tamaño de parche, la dimensión oculta, el número de cabezas de atención ni la resolución de imagen esperada. Tampoco se especifica si incluye una cabeza de clasificación lineal sobre el token `[CLS]`, cuántas clases predice ni sus etiquetas.
+La etiqueta `vit` y el recuento de parámetros (85,8 M) son compatibles con un Vision Transformer de tamaño Base, una arquitectura basada exclusivamente en mecanismos de atención sobre parches de imagen. No se dispone de información sobre el número de capas, dimensión de los embeddings, número de cabezas de atención ni resolución de entrada; estos datos deberían confirmarse inspeccionando la configuración del modelo en el repositorio.
 
-No se dispone de información sobre el dataset de entrenamiento: ni número de imágenes, ni composición, ni procedencia, ni si se aplicaron aumentos de datos, fine-tuning desde un checkpoint preentrenado (por ejemplo, ImageNet-21k o ImageNet-1k) o entrenamiento desde cero. Tampoco se documenta si hubo fases de ajuste fino supervisado, destilación o calibración posterior. No consta ninguna innovación técnica destacable (atención lineal, destilación de datos, decodificación especulativa u otras).
+Tampoco se ha publicado información sobre el dataset de entrenamiento (número de imágenes, composición, clases etiquetadas), el régimen de entrenamiento (fine-tuning desde un checkpoint preentrenado tipo ImageNet o entrenamiento desde cero), ni sobre técnicas de aumento de datos o regularización. No hay evidencia de RLHF, DPO ni de innovaciones técnicas destacables. La model card se limita a declarar la licencia MIT.
 
 ## Capacidades
 
-- Clasificación de imágenes: es la capacidad más probable dada la arquitectura ViT y el nombre del repositorio, orientada presumiblemente a hojas de patata. No confirmado en la documentación.
-- Extracción de características visuales: al ser un ViT, los pesos podrían emplearse como backbone congelado para tareas aguas abajo, aunque no se documenta si el checkpoint incluye solo el encoder o también la cabeza de clasificación.
-- Generación de texto: no disponible.
-- Razonamiento, código y matemáticas: no disponible.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes o razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible (no procesa texto).
-- Capacidades especiales (visión, audio, thinking mode): únicamente visión, según la evidencia del tag; sin detalles adicionales.
+- Clasificación de imágenes de hojas de patata: la tarea inferida del nombre y la arquitectura es la categorización del estado foliar (posiblemente sano frente a distintas enfermedades).
+- Procesamiento de imágenes estáticas: al ser un ViT, no maneja secuencias de vídeo ni texto de forma nativa.
+- Extracción de características visuales: los embeddings intermedios del transformer pueden reutilizarse para tareas auxiliares de visión (similitud, clustering, fine-tuning posterior).
+- No se ha documentado soporte de tool calling, function calling, agentes ni razonamiento multi-paso.
+- No se ha documentado capacidad multilingüe (no aplica a un modelo puramente visual).
+- No se ha documentado modo "thinking", visión general fuera de dominio, audio ni otras capacidades especiales.
 
 ## Casos de uso
 
-- Clasificación de imágenes de hojas de patata en campo: el modelo podría integrarse en una aplicación móvil que capture una fotografía de la hoja y devuelva la clase predicha. Adecuado por su tamaño reducido (85,8 M de parámetros), que permite inferencia en dispositivo. Requiere validar previamente las etiquetas y el dominio de entrenamiento, no documentados.
-- Prototipado rápido de pipelines de visión: al ser un checkpoint ligero con licencia MIT, sirve para montar un servicio de inferencia de referencia con `transformers` o `torchscript` antes de invertir en un modelo mayor.
-- Investigación agronómica con fine-tuning: el encoder podría ajustarse con un dataset propio de enfermedades foliares. Su tamaño permite reentrenar en una única GPU de consumo.
-- Extracción de embeddings visuales para búsqueda por similitud: usar las activaciones del encoder como descriptores y construir un índice vectorial de imágenes de cultivos.
-- Filtrado automático en aplicaciones de teledetección o agricultura de precisión: descartar o priorizar imágenes candidatas antes de un análisis más costoso con modelos mayores.
-- Docencia y experimentación con Vision Transformers: repositorio pequeño, licencia permisiva y formato safetensors estándar, útil para demostrar el flujo completo de carga y clasificación con `transformers`.
-- Componente en un ensemble de visión: al ser ligero, puede combinarse con otros clasificadores para tareas de votación, siempre que se valide su comportamiento individual.
+- Diagnóstico foliar en campo: integrado en una aplicación móvil, el modelo puede clasificar una fotografía de hoja de patata y devolver la categoría detectada, apoyando al agricultor en la identificación temprana de problemas. Requiere validar previamente las clases reales del modelo.
+- Agricultura de precisión con drones: procesamiento por lotes de imágenes aéreas o de proximidad para generar mapas de incidencia foliar en parcelas, siempre que la resolución y el dominio visual coincidan con los datos de entrenamiento.
+- Triaje en laboratorio agronómico: uso como primer filtro para separar muestras presumiblemente sanas de las que requieren inspección experta, reduciendo carga manual.
+- Investigación en fitopatología: extracción de embeddings para agrupar imágenes por similitud visual y explorar patrones no supervisados en colecciones de hojas.
+- Base para fine-tuning específico: al ser un ViT de ~86 M de parámetros con licencia MIT, puede reentrenarse sobre un dataset propio de variedades o patologías locales con coste computacional moderado.
+- Educación y demostraciones: ejemplo didáctico de pipeline de clasificación de imágenes con transformers en cursos de visión por computador o machine learning aplicado.
 
 ## Benchmarks y rendimiento
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-La model card no incluye exactitud, F1, matriz de confusión, ni evaluación sobre ningún dataset de referencia. Tampoco se especifica el conjunto de test ni el número de clases, por lo que no es posible comparar su rendimiento con alternativas de forma cuantitativa.
-
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp32: aproximadamente 343 MB para los pesos, más activaciones y memoria del framework; en la práctica, menos de 1 GB para lotes pequeños.
-- VRAM estimada en fp16: aproximadamente 172 MB de pesos.
-- VRAM estimada en int8 (previa cuantización manual): aproximadamente 86 MB de pesos.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Una RTX 4090, A100 o H100 queda enormemente sobredimensionada para este modelo.
-- GPU de consumo: sí, cabe en GTX 1650, RTX 3050, RTX 4060 y superiores. También es viable en CPU para inferencia por lotes pequeños.
-- Opciones de despliegue: `transformers` (carga directa de safetensors), exportación a ONNX Runtime, TorchScript o TensorRT; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que están orientadas a modelos de lenguaje y no aplican a este caso.
-- Latencia y throughput: no disponibles. No se han publicado mediciones.
+- VRAM estimada para inferencia en fp32: aproximadamente 0,35 GB solo para pesos (85,8 M × 4 bytes), más activaciones; en la práctica cabe holgadamente en cualquier GPU consumer.
+- VRAM estimada en fp16: aproximadamente 0,17 GB para pesos; en int8, unos 0,09 GB.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; RTX 3060, RTX 4090, A100 o H100 funcionan sin problema, aunque para un modelo de este tamaño una GPU consumer es más que suficiente.
+- Cabe en GPU consumer: sí, en prácticamente todas las GPU dedicadas modernas e incluso en iGPU con suficiente memoria compartida.
+- Opciones de despliegue: PyTorch nativo con `transformers` (clase `ViTForImageClassification` o similar), exportación a ONNX Runtime, TorchScript o TensorRT para producción; llama.cpp y Ollama no aplican a un modelo de visión de este tipo.
+- Latencia y throughput estimados: no disponibles; para un ViT-Base en una RTX 4090 se espera un throughput de cientos a miles de imágenes por segundo en batch, pero no hay mediciones publicadas para este checkpoint concreto.
 
 ## Comparativa con modelos similares
 
-Los datos de las alternativas son cifras públicas de referencia, no proceden de la información proporcionada para este modelo.
-
-| Modelo | Parámetros | Tarea | Entrada | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zohaib47/potato-leaf-model | 85,8 M | Clasificación de imágenes (inferida) | No disponible | MIT | Hugging Face, sin documentación |
-| google/vit-base-patch16-224 | ~86 M | Clasificación de imágenes (ImageNet-1k, 1000 clases) | 224x224 | Apache 2.0 | Hugging Face, ampliamente documentado |
-| ResNet-50 | ~25,6 M | Clasificación de imágenes | 224x224 | BSD-3-Clause (torchvision) | Muy extendido, múltiples frameworks |
-| MobileNetV3-Large | ~5,4 M | Clasificación de imágenes en dispositivo | 224x224 | BSD-3-Clause (torchvision) | Muy extendido, optimizado para móvil |
+| zohaib47/potato-leaf-model | 85,8 M | no disponible (imagen) | Clasificación de hojas de patata | MIT | Hugging Face, 39 descargas |
+| google/vit-base-patch16-224 | ~86 M | imagen 224×224 | Clasificación general ImageNet | Apache 2.0 | Hugging Face, ampliamente usado |
+| microsoft/resnet-50 | ~25 M | imagen 224×224 | Clasificación general ImageNet | Apache 2.0 | Hugging Face, ampliamente usado |
+| PlantVillage (modelos derivados) | variable | imagen | Clasificación de enfermedades vegetales | variable | Múltiples checkpoints comunitarios |
 
-Frente a estas alternativas, la única ventaja diferencial del modelo analizado es su licencia MIT y un tamaño de pesos reducido; en cambio, carece de documentación, de evaluación publicada y de cualquier validación de la comunidad (0 descargas, 0 likes), lo que lo sitúa por debajo en madurez frente a los checkpoints de referencia.
+La comparación directa con `google/vit-base-patch16-224` es la más informativa: mismo orden de magnitud de parámetros y misma familia arquitectónica, pero el modelo de Google cuenta con validación extensa en ImageNet y documentación completa, mientras que `potato-leaf-model` carece de métricas publicadas. Frente a ResNet-50, el ViT ofrece mayor capacidad de atención global pero requiere más datos para igualar rendimiento en dominios pequeños.
 
 ## Limitaciones y advertencias
 
-- Documentación inexistente: la model card solo declara la licencia MIT. No se especifican clases, resolución de entrada, preprocesado, normalización ni formato de etiquetas, lo que impide un uso fiable sin ingeniería inversa del checkpoint.
-- Sesgos desconocidos: al no documentarse el dataset, no es posible evaluar sesgos de dominio (variedades de patata, iluminación, fondo, geografía) ni su generalización fuera del conjunto de entrenamiento.
-- Riesgo de alucinación: no aplica en el sentido generativo, pero sí existe riesgo de predicciones erróneas con alta confianza si el modelo se aplica fuera de su dominio; no hay métricas de calibración.
-- Limitaciones de idioma y contexto: no aplica, es un modelo visual sin capacidades de texto ni ventana de contexto.
-- Restricciones de licencia: la licencia MIT permite uso comercial, modificación y redistribución con atribución y sin garantía. No obstante, al no constar el origen de los datos de entrenamiento, no se puede descartar que los pesos deriven de un checkpoint previo con condiciones adicionales; conviene verificar la procedencia antes de un despliegue comercial.
-- Ausencia de validación externa: 0 descargas y 0 likes en el momento de la consulta; ningún tercero ha reportado resultados.
-- Riesgo de producción: sin evaluación publicada ni conjunto de test documentado, no es recomendable usar este modelo como componente crítico en producción sin una validación propia exhaustiva.
-- Fecha de creación futura respecto a la información habitual de referencia; conviene confirmar que el repositorio sigue disponible y sin cambios en los pesos.
+- Ausencia total de documentación sobre clases, dataset y métricas: no es posible saber qué etiquetas devuelve el modelo ni su fiabilidad sin inspeccionarlo.
+- Riesgo elevado de sobreajuste o generalización deficiente si se entrenó con un dataset pequeño y poco diverso, algo habitual en proyectos de este tipo.
+- Sesgos desconocidos: sin información sobre la procedencia de las imágenes (región, variedad de patata, condiciones de iluminación), no se puede evaluar su robustez fuera del dominio de entrenamiento.
+- No apto para uso clínico o agronómico crítico sin validación independiente: un diagnóstico erróneo podría derivar en tratamientos fitosanitarios innecesarios.
+- Licencia MIT: permite uso comercial, modificación y redistribución, pero sin garantías; conviene conservar el aviso de copyright.
+- Sin soporte comunitario ni mantenimiento aparente: 0 likes y 39 descargas indican bajo respaldo; posibles problemas de reproducibilidad.
+- No aplica a tareas de texto, audio ni multimodalidad general.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/zohaib47/potato-leaf-model
-
-No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos asociados a este modelo.
+- Modelo en Hugging Face: https://huggingface.co/zohaib47/potato-leaf-model
+- Perfil del autor: https://huggingface.co/zohaib47

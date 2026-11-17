@@ -43,11 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "zen-E/PLatour-SFT-Qwen3-235B-to-1.7B-MMLU-Redux · Hugging Face",
-      "url": "https://huggingface.co/zen-E/PLatour-SFT-Qwen3-235B-to-1.7B-MMLU-Redux",
-      "snippet": "Paper for zen-E/PLatour-SFT-Qwen3-235B-to-1.7B-MMLU-Redux On the Opportunities and Challenges of Prefill-to-Autoregressive Cross-Model Transfer Paper • 2611.06976 •Published 2 days ago• 12"
-    }
-  ]
+  "sources": []
 }

@@ -27,7 +27,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 909,
+  "downloads_30d": 947,
   "trending_score": 0,
   "parameters": 8791592960,
   "parameters_human": "8.79B",
@@ -47,31 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Civitai | Discover and Create AI Art",
-      "url": "https://civitai.red/",
-      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world's largest community …"
-    },
-    {
-      "title": "Civitai Gallery | AI-Generated Art Showcase",
-      "url": "https://civitai.red/tools/comfyui",
-      "snippet": "It is a node-based GUI that lets users create complex workflows without coding."
-    },
-    {
-      "title": "Red AI Models (224) | Civitai",
-      "url": "https://civitai.com/tag/red",
-      "snippet": "Browse 224 AI models tagged \"Red\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. …"
-    },
-    {
-      "title": "AI Image & Video Models, LoRAs & Checkpoints | Civitai",
-      "url": "https://civitai.com/models",
-      "snippet": "Download AI image and video models from the largest community library: checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux, …"
-    },
-    {
-      "title": "What Is CivitAI Red? What Designers Should | Lovart",
-      "url": "https://www.lovart.ai/blog/what-is-civitai-red",
-      "snippet": "Jun 27, 2026 · What CivitAI Red actually is, how access and safety differ from production readiness, and when designers should stop …"
-    }
-  ]
+  "sources": []
 }

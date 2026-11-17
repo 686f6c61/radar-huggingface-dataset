@@ -33,7 +33,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 12613,
+  "downloads_30d": 12739,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
@@ -53,31 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GPU Instancing: Technical Deep Dive and Performance Impact",
-      "url": "https://gpu-benchmark.org/article-gpu-instancing-deep-dive.html",
-      "snippet": "Jan 17, 2025 · Comprehensive guide to GPU instancing technology. Learn how instancing works, performance benefits, …"
-    },
-    {
-      "title": "InstancedMesh Guide: 1 000 000 Objects at 60 FPS | 3D…",
-      "url": "https://www.mysimulator.uk/content/tutorials/instancedmesh-guide.html",
-      "snippet": "This tutorial covers: Why Instancing Matters, Basic InstancedMesh Setup, Per-Instance Transforms (setMatrixAt), Per-Instance …"
-    },
-    {
-      "title": "Performance inquiry: Instanced Skinned Meshes vs. GPU Static Meshes …",
-      "url": "https://forums.unrealengine.com/t/performance-inquiry-instanced-skinned-meshes-vs-gpu-static-meshes-for-dense-pcg-grass/2810631",
-      "snippet": "Aug 18, 2026 · What is the performance overhead of instancing thousands of bone-driven meshes via PCG compared to using the …"
-    },
-    {
-      "title": "How to Benchmark Istio Service Mesh Performance",
-      "url": "https://oneuptime.com/blog/post/2026-02-24-how-to-benchmark-istio-service-mesh-performance/view",
-      "snippet": "Feb 24, 2026 · A comprehensive guide to benchmarking Istio service mesh performance including tools, methodologies, and …"
-    },
-    {
-      "title": "Mesh Shading Part 3: Instancing | chaoticbob.github.io",
-      "url": "https://chaoticbob.github.io/2024/01/26/mesh-shading-part-3.html",
-      "snippet": "Jan 26, 2024 · I assume you’re reading this post because you’re already interested in mesh shading. Instead, my objective is to …"
-    }
-  ]
+  "sources": []
 }

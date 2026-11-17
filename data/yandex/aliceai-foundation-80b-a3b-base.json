@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 413,
-  "downloads_30d": 2109,
+  "downloads_30d": 2050,
   "trending_score": 10,
   "parameters": 81286433408,
   "parameters_human": "81.29B",
@@ -55,24 +55,19 @@
       "snippet": "Yandex finds anything: webpages, images, music, good. Solve any problem — from everyday to a scientific one. Search by text, …"
     },
     {
-      "title": "Яндекс — быстрый поиск в интернете",
-      "url": "https://ya.ru/",
-      "snippet": "Яндекс предлагает быстрый поиск информации в интернете, включая сайты, изображения, музыку и товары. Используйте …"
-    },
-    {
       "title": "Яндекс",
       "url": "https://yandex.fr/?from=tabbar",
       "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
     },
     {
-      "title": "Yandex",
-      "url": "http://online.yandex.com/search",
-      "snippet": "{\"2_c6yu\":{\"state\":{\"form\":{\"action\":\"/search\",\"logo\":{\"href\":\"//yandex.com\",\"isForeign\":true,\"size\":44},\"searchLabel\":\"Search\",\"clearLabel\":\"Clear\",\"hiddenInputs\":[{\"name\":\"lr\",\"value\":21206}],\"inputMaxLength\":4000},\"actions\":{\"advancedSearch\":{\"checked\":false,\"ariaLabel\":\"Advanced …"
+      "title": "Yandex — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Yandex",
+      "snippet": "La société mère de Yandex, Yandex N.V., est basée à Amsterdam. Selon une étude conjointe de TNS, FOM et Comcon, Yandex est …"
     },
     {
-      "title": "Search by images and photos - Yandex",
-      "url": "https://yandex.com/images/",
-      "snippet": "Search for postcards, desktop screensavers, funny pictures, diagrams, illustrated manuals, and other images in Yandex Images. Get …"
+      "title": "Yandex Translate - Dictionary and online translation",
+      "url": "https://translate.yandex.com/",
+      "snippet": "Yandex Translate is a free online translation tool that allows you to translate text, documents, and images in over 90 languages. In …"
     }
   ]
 }

@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 52,
+  "downloads_30d": 54,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -41,31 +41,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Yahoo Finance - Stock Market Live, Quotes, Business & Finance News",
-      "url": "https://finance.yahoo.com/",
-      "snippet": "At Yahoo Finance, you get free stock quotes, up-to-date news, portfolio management resources, international market data, social …"
-    },
-    {
-      "title": "Top Stock Gains: US stocks posting the highest gains today - Yahoo …",
-      "url": "https://finance.yahoo.com/markets/stocks/gainers/",
-      "snippet": "Yahoo Finance's list of top gaining stocks, includes share price changes, trading volume, intraday highs and lows, and day charts for …"
-    },
-    {
-      "title": "Screeners - Yahoo Finance",
-      "url": "https://finance.yahoo.com/research-hub/screener/",
-      "snippet": "Yahoo Finance Screeners lets you choose from hundreds of data filters to discover Stocks, Mutual Funds, ETFs and more."
-    },
-    {
-      "title": "Dow Jones Industrial Average (^DJI) - Yahoo Finance",
-      "url": "https://finance.yahoo.com/quote/%5EDJI/",
-      "snippet": "Find the latest information on Dow Jones Industrial Average (^DJI) including data, charts, related news and more from Yahoo Finance"
-    },
-    {
-      "title": "Yahoo Finanzas - Bolsa de valores en directo, cotizaciones, noticias ...",
-      "url": "https://es.finance.yahoo.com/",
-      "snippet": "En Yahoo Finanzas encontrarás gratis cotizaciones de acciones, las últimas noticias, recursos de gestión de carteras, datos del …"
-    }
-  ]
+  "sources": []
 }

@@ -2,86 +2,86 @@
 
 ## Resumen
 
-DeepTaxon-Tri-JevAny-Qwen3.5-4B-Public-Experiments es un adaptador LoRA de investigación publicado por el usuario wyqdf sobre el modelo base Qwen/Qwen3.5-4B. Se trata de un artefacto experimental orientado a clasificación de imágenes en el dominio de la biología (taxonomía), no de un modelo de propósito general. El repositorio contiene los pesos del adaptador PEFT en formato safetensors, junto con checkpoints intermedios y segmentos de entrenamiento, con un tamaño total de 1,4 GB.
+DeepTaxon-Tri-JevAny-Qwen3.5-4B-Public-Experiments es un conjunto de adaptadores LoRA de investigación publicados por el usuario wyqdf sobre el modelo base Qwen/Qwen3.5-4B. El repositorio no contiene un modelo entrenado final, sino los artefactos de tres ejecuciones experimentales activas orientadas a clasificación de imágenes en el dominio de la biología (taxonomía de especies). El pipeline declarado en Hugging Face es `image-classification`, aunque el adaptador se monta sobre un modelo de lenguaje, lo que sugiere un uso multimodal o una formulación del problema taxonómico como tarea de selección sobre representaciones del LLM.
 
-El autor documenta dos experimentos comparativos que comparten exactamente el mismo base limpio Qwen3.5-4B, el mismo conjunto de 60.190 preguntas de entrenamiento y 3.068 preguntas marcadas como Unknown, candidatos clasificados A/B, píxeles originales de imagen, 20 lotes, 957 actualizaciones del optimizador y las mismas 1.888 preguntas de desarrollo. La única diferencia experimental declarada es el orden de presentación de la entrada: un experimento coloca todas las imágenes antes del texto de estado, mientras que el control 112 usa el formato entrelazado con imagen de consulta, taxonomía y referencias del candidato A, seguidas de las del candidato B.
+El interés del repositorio es metodológico más que de producto: documenta con detalle el diseño de muestreo, el emparejamiento de candidatos A/B, la construcción de pools de referencias y la reproducibilidad de las ejecuciones (checkpoints con estado de optimizador, scheduler y RNG de cuatro rangos). El autor declara explícitamente que no reclama ninguna mejora antes de la evaluación, por lo que se trata de material de investigación en curso.
 
-Ambos entrenamientos parten de un LoRA nuevo con rango r8, una cabeza Pointer256 y optimizador Adam. El autor indica explícitamente que los checkpoints intermedios son artefactos de investigación y que no se reclama ninguna mejora de rendimiento. La relevancia de esta ficha es acotada: sirve para documentar un experimento reproducible de ajuste fino multimodal sobre un LLM de 4B, no para recomendar su uso en producción.
+El tamaño del repositorio (16,5 GB) corresponde fundamentalmente a checkpoints intermedios y segmentos de entrenamiento, no a pesos consolidados de un modelo final. La licencia no está especificada y no se declaran idiomas soportados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptador LoRA (PEFT) sobre transformer multimodal Qwen3.5-4B; incluye cabeza Pointer256 |
-| Parametros totales | No disponible (el adaptador LoRA r8 se suma a los parámetros del base Qwen3.5-4B) |
+| Arquitectura | Adaptador LoRA (r8) sobre transformer Qwen/Qwen3.5-4B, con tensores "Pointer256" adicionales |
+| Parametros totales | No disponible (el adaptador es de rango 8; el modelo base declara 4B en su nombre) |
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible (pesos publicados en safetensors sin cuantizar) |
+| Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible |
 | Licencia | No disponible |
-| Formato de pesos | safetensors (adaptador PEFT), con checkpoints y segmentos de entrenamiento |
+| Formato de pesos | safetensors (libreria peft) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA de rango 8 aplicado sobre Qwen/Qwen3.5-4B, un transformer multimodal de 4B parámetros. El adaptador incorpora además una cabeza de punteros denominada Pointer256, orientada a la selección entre candidatos taxonómicos. El pipeline declarado en Hugging Face es image-classification, lo que confirma que la tarea objetivo es clasificar imágenes (presumiblemente especímenes biológicos) eligiendo entre taxonomías candidatas.
+El modelo es un adaptador PEFT de tipo LoRA con rango 8 sobre el modelo base Qwen/Qwen3.5-4B, complementado con tensores denominados "Pointer256". Cada ejecución parte de un adaptador nuevo, un Pointer256 nuevo y un optimizador Adam nuevo. El pipeline declarado es clasificación de imágenes, con entrada de píxeles originales (padding solo a derecha e inferior) y siete niveles taxonómicos.
 
-El entrenamiento se realizó sobre 60.190 preguntas de entrenamiento y 3.068 preguntas Unknown, con candidatos ordenados A/B, píxeles originales de imagen, 20 lotes y 957 actualizaciones del optimizador. Se usó Adam con un LoRA nuevo y se evaluó sobre 1.888 preguntas de desarrollo clasificadas. El diseño experimental compara dos representaciones de entrada: una con todas las imágenes antes del texto de estado y otra entrelazada (imagen de consulta, taxonomía y referencias del candidato A, después las del candidato B). Los checkpoints completos se conservan en `runs/<experiment>/checkpoints/` y `runs/<experiment>/segments/`, incluyendo adaptador, cabeza de punteros, procesador, optimizador, planificador de tasa de aprendizaje, RNG de cuatro rangos y cursor de entrenamiento. El autor no reporta mejoras ni resultados comparativos.
+El entrenamiento se realizó sobre 60.190 presentaciones de entrenamiento y 3.068 presentaciones "Unknown", con 20 lotes y 957 actualizaciones del optimizador, evaluando sobre 1.888 preguntas Dev clasificadas. Se comparan tres configuraciones: `native-ranked` (todas las imágenes antes del texto de estado), `interleaved-control` (query, taxonomía A y referencias, taxonomía B y referencias) y `top1top2-top12refs` (mismo prefijo de todas las imágenes, con verdad de rango 1 y rango 2 presentadas 27.027 veces cada una y referencias de rango 2 muestreadas de forma independiente en cada ocurrencia). La ejecución activa es `cuda-meeting-4b-top1top2-top12refs-fresh20pct-20261108`.
+
+El diseño de muestreo es notablemente detallado: para cada ocurrencia de rango 2 se construye un pool con las hasta 12 imágenes de Train más similares según características congeladas, se baraja de forma determinista y se toman `min(8, pool_size)` referencias. Las 27.027 presentaciones de rango 2 generan 26.917 vistas ordenadas distintas y 25.498 conjuntos no ordenados distintos. Los checkpoints se guardan cada 1.800 segundos y en fronteras de lote, conservando adaptador, pointer, procesador, optimizador, scheduler, RNG de cuatro rangos y cursor de entrenamiento, con verificación de tamaños y hashes SHA256 o Git blob en la subida.
 
 ## Capacidades
 
-- Clasificación de imágenes en el dominio biológico/taxonómico mediante selección entre candidatos A/B.
-- Procesamiento conjunto de imágenes y texto (entrada multimodal con píxeles originales y estado textual).
-- Selección de taxonomía mediante cabeza de punteros Pointer256 sobre candidatos.
-- Manejo de preguntas marcadas como Unknown (3.068 en el conjunto de entrenamiento).
-- No se documentan capacidades de generación de texto libre, código, matemáticas, tool calling, agentes ni multilingüismo específicas para este adaptador.
-- No se documenta modo thinking, visión general, audio ni otras capacidades especiales más allá de la clasificación de imágenes.
+- Clasificación taxonómica de imágenes en el dominio biológico, con siete niveles taxonómicos declarados.
+- Selección entre candidatos rankeados A/B mediante comparación de taxonomías y pools de referencias.
+- Manejo explícito de casos "Unknown" (3.068 presentaciones dedicadas).
+- Procesamiento de imágenes en píxeles originales con padding a derecha e inferior.
+- Reproducibilidad de ejecuciones mediante estado completo de entrenamiento (optimizador, scheduler, RNG).
+- No se declaran capacidades de tool calling, agentes, generación de texto general, código, matemáticas, visión general ni audio.
 
 ## Casos de uso
 
-- Investigación reproducible en ajuste fino multimodal: el repositorio conserva checkpoints, segmentos, optimizador, scheduler y RNG, lo que permite reproducir exactamente el entrenamiento y comparar variantes de representación de entrada.
-- Estudio de representación de entrada en tareas de clasificación con candidatos: comparar el formato "imágenes primero" frente al entrelazado query/candidato A/candidato B aporta evidencia sobre cómo afecta el orden de los tokens visuales y textuales al rendimiento.
-- Clasificación taxonómica asistida en entornos de investigación biológica: el adaptador puede evaluarse sobre imágenes de especímenes para seleccionar entre taxones candidatos, siempre como artefacto experimental y no como sistema de producción.
-- Benchmarking de cabezas de punteros sobre LLMs: la combinación LoRA r8 + Pointer256 sirve para medir la eficacia de cabezas de selección sobre un base de 4B en tareas de elección entre opciones.
-- Docencia y formación en PEFT: el repositorio es un ejemplo completo de cómo empaquetar adaptadores, checkpoints intermedios y metadatos de experimento para su auditoría.
-- Auditoría de pipelines de subida y verificación de integridad: el autor documenta subidas en procesos CPU independientes a través de proxy HTTP con verificación de recibos contra SHA256 del Hub o hashes de blob Git, lo que puede servir como referencia de buenas prácticas de publicación.
+- Investigación en clasificación taxonómica asistida por LLM: el adaptador permite evaluar si un modelo de lenguaje de 4B puede resolver tareas de identificación de especies cuando se le presentan imágenes y taxonomías candidatas, comparando configuraciones de entrada (prefijo de imágenes frente a intercalado).
+- Reproducción de experimentos de muestreo: los artefactos permiten reanudar exactamente una ejecución gracias a la conservación de RNG de cuatro rangos y cursor de entrenamiento, útil para auditar resultados de ablación.
+- Estudio de estrategias de referencias en few-shot visual: el diseño de pools de hasta 12 imágenes y selección de 8 referencias sirve como banco de pruebas para investigar cómo afecta la elección de ejemplos de referencia al rendimiento en clasificación fine-grained.
+- Comparación de formatos de entrada multimodal: las tres configuraciones (native-ranked, interleaved-control, top1top2-top12refs) permiten medir el impacto de colocar todas las imágenes antes del texto frente a intercalarlas con las taxonomías.
+- Análisis de calibración en preguntas Unknown: las 3.068 presentaciones Unknown y sus parejas permiten estudiar la tasa de falsos positivos al forzar una decisión taxonómica cuando la especie no está en el conjunto candidato.
+- Base para fine-tuning posterior en dominios biológicos específicos: al ser un adaptador LoRA r8 sobre Qwen3.5-4B, puede servir como punto de partida para tareas de clasificación de imágenes en otros dominios con estructura de candidatos rankeados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explícitamente que no se reclama ninguna mejora y que los checkpoints intermedios son artefactos de investigación.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explícitamente que no reclama ninguna mejora antes de la evaluación y que las métricas de la ejecución anterior (`cuda-meeting-4b-top1top2-balanced-fresh20pct-20261108`) no deben combinarse con las de la nueva ejecución.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma específica para el adaptador; el base Qwen3.5-4B requiere típicamente entre 8 y 10 GB en FP16 y alrededor de 3 a 4 GB en cuantización de 4 bits, aunque estos valores no están confirmados en la información proporcionada.
-- GPU recomendadas: no disponibles en la información proporcionada; por el tamaño del base (4B) cabría esperar GPUs consumer de gama alta (RTX 3090, RTX 4090) y GPUs de datacenter (A100, H100) para entrenamiento o inferencia a mayor throughput, sin datos confirmados.
-- Compatibilidad con GPU consumer: probable para el base en cuantización, no confirmado para el adaptador ni para la cabeza Pointer256.
-- Opciones de despliegue: la librería declarada es PEFT, por lo que el despliegue requeriría cargar el base Qwen3.5-4B más el adaptador mediante transformers/PEFT; no se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
+- VRAM estimada para inferencia: no disponible. Al tratarse de un adaptador LoRA sobre un modelo base de 4B, la VRAM vendrá determinada por el modelo base y por el procesamiento de imágenes (píxeles originales), no por el adaptador en sí.
+- GPU recomendadas: no disponibles en la información proporcionada. El nombre de la ejecución activa (`cuda-meeting-4b-...`) sugiere entrenamiento en GPU CUDA, sin especificar modelo.
+- Compatibilidad con GPU de consumo: no confirmada; depende del modelo base Qwen3.5-4B y del pipeline de imágenes.
+- Opciones de despliegue: el repositorio usa la librería `peft`; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| DeepTaxon-Tri-JevAny-Qwen3.5-4B-Public-Experiments | Adaptador LoRA sobre base 4B | No disponible | Clasificación de imágenes / taxonomía | No disponible | Hugging Face (wyqdf) |
-| Qwen/Qwen3.5-4B (base) | 4B | No disponible en la información | LLM multimodal de propósito general | No disponible en la información | Hugging Face (Qwen) |
-| DeepTaxon-Tri-JevAny-Qwen3.5-4B-Checkpoints | Adaptador LoRA sobre base 4B | No disponible | Clasificación de imágenes / taxonomía | No disponible | Hugging Face (wyqdf) |
+No disponible. No se han proporcionado datos de benchmarks ni de modelos comparables de la misma categoría (clasificación taxonómica de imágenes sobre LLM), por lo que no es posible establecer una comparación cuantitativa con alternativas.
 
-No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas de la misma categoría.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| DeepTaxon-Tri-JevAny-Qwen3.5-4B | Adaptador LoRA r8 sobre base 4B | No disponible | No disponible | Hugging Face (wyqdf) |
+| Alternativas comparables | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
 
-- El autor declara explícitamente que no se reclama ninguna mejora de rendimiento; es un artefacto de investigación, no un modelo validado.
-- No hay licencia declarada, lo que impide determinar si el uso comercial está permitido.
-- No se especifican idiomas soportados ni longitud de contexto.
-- El adaptador está especializado en clasificación de imágenes biológicas/taxonómicas; no debe esperarse un comportamiento de LLM general.
-- Los checkpoints intermedios pueden contener estados de entrenamiento parciales no aptos para inferencia directa sin selección previa.
-- Riesgo de alucinación y sesgos: no evaluado ni documentado por el autor.
-- El repositorio tiene 0 descargas y 0 likes, sin validación externa de la comunidad.
-- La fecha de creación (2026-11-07) y el modelo base Qwen3.5-4B no están verificados de forma independiente en la información disponible.
-- El autor indica que no se subieron imágenes de entrenamiento ni credenciales de inicio de sesión, pero no se detalla la composición del dataset ni su procedencia.
+- El repositorio contiene artefactos de investigación intermedios (checkpoints cada 1.800 segundos), no un modelo final consolidado ni evaluado.
+- El autor declara explícitamente que no reclama ninguna mejora de rendimiento antes de la evaluación; no debe interpretarse como un modelo listo para producción.
+- La licencia no está especificada, lo que impide determinar si se permite uso comercial. Además, la licencia del modelo base Qwen/Qwen3.5-4B condiciona cualquier uso derivado.
+- No se declaran idiomas soportados; el dominio es biológico y la tarea, de clasificación de imágenes, no de generación multilingüe.
+- Riesgo de sesgo y alucinación: no evaluado en la información disponible. En tareas de clasificación fine-grained con opciones forzadas, el modelo puede asignar una especie incorrecta en lugar de responder "Unknown".
+- El pipeline `image-classification` sobre un LLM implica una formulación no estándar; la validez de las salidas depende del formato exacto de entrada (prefijo de imágenes, taxonomías, referencias).
+- Las métricas de la ejecución anterior detenida no son comparables con las de la ejecución activa y no deben combinarse.
+- No se suben imágenes de entrenamiento ni credenciales; los checkpoints intermedios son artefactos de investigación sin garantía de reproducibilidad externa más allá de los estados guardados.
+- El tamaño del repositorio (16,5 GB) y la ausencia de pesos consolidados dificultan su uso directo como modelo de inferencia.
 
 ## Enlaces
 
-- Hugging Face del modelo: https://huggingface.co/wyqdf/DeepTaxon-Tri-JevAny-Qwen3.5-4B-Public-Experiments
-- Repositorio de checkpoints: https://huggingface.co/wyqdf/DeepTaxon-Tri-JevAny-Qwen3.5-4B-Checkpoints
-- Directorio de runs del repositorio de checkpoints: https://huggingface.co/wyqdf/DeepTaxon-Tri-JevAny-Qwen3.5-4B-Checkpoints/tree/main/runs
+- Hugging Face: https://huggingface.co/wyqdf/DeepTaxon-Tri-JevAny-Qwen3.5-4B-Public-Experiments
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
+- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

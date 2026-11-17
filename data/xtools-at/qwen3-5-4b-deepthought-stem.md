@@ -1,95 +1,103 @@
 # xtools-at/Qwen3.5-4B-DeepThought-STEM
 
 ## Resumen
-Deep Thought 4B es un ajuste fino mediante LoRA en 16 bits sobre Qwen3.5-4B, desarrollado por el usuario xtools-at y publicado en Hugging Face. El modelo parte del checkpoint xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic, una variante sin censura del fine-tune de Jackrong sobre Qwen3.5-4B destilado a partir de trazas de razonamiento de DeepSeek-V4-Pro. Su objetivo es reforzar el razonamiento estructurado, las matematicas, las ciencias duras y, de forma destacada, el descubrimiento de farmacos y la formulacion farmaceutica.
 
-Con 4.539.265.536 parametros reales en safetensors y un repositorio de 9,1 GB, se posiciona como un modelo pequeno pero especializado, pensado para entornos con recursos limitados que necesitan capacidades de razonamiento cientifico por encima de la media de su tamano. La ficha del autor lo describe como multimodal heredado de Qwen3.5-4B (pipeline image-text-to-text), aunque el ajuste adicional es exclusivamente textual y no incluye una etapa dedicada de entrenamiento de vision.
+Deep Thought 4B es un ajuste fino mediante LoRA en 16 bits de Qwen3.5-4B, desarrollado por xtools-at y especializado en razonamiento avanzado, matematicas, resolucion de problemas cientificos y conocimiento tecnico. Parte del checkpoint no censurado xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic, que a su vez deriva de Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B, un fine-tune de Qwen3.5 destilado de respuestas generadas por DeepSeek-V4-Pro en modo Max Effect.
 
-Es relevante ahora porque combina tres tendencias: destilacion de trazas de razonamiento de modelos frontera, ajuste especializado en dominios cientificos de nicho (farmacologia) y una licencia Apache 2.0 permisiva. No obstante, el modelo acumula cero descargas y cero likes en el momento de la consulta, y su model card esta incompleta en varias secciones, lo que limita la evaluacion independiente.
+El modelo hereda la arquitectura multimodal de Qwen3.5-4B (4.539 millones de parametros, pipeline image-text-to-text) y anade un entrenamiento adicional de aproximadamente 11.000 ejemplos centrados en matematicas, fisica, quimica, biologia, ingenieria y descubrimiento de farmacos. La mezcla combina destilaciones de razonamiento de modelos frontera (Claude Haiku 5.5, Xiaomi MiMo 2.6 Pro, ChatGPT Terra 6.1, GPT-5.6 Luna, GLM-5.1) con datos sinteticos de formulacion farmaceutica y una pequena mezcla de calibracion.
+
+Es relevante porque ofrece capacidades de razonamiento STEM en un tamano de 4B parametros que cabe en GPU de consumo, con licencia Apache 2.0 y sin las restricciones de censura del modelo base original. La model card indica explicitamente que el ajuste adicional es textual y no representa una etapa de entrenamiento de vision dedicada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (herencia de Qwen3.5-4B); ajuste fino con LoRA/PEFT en 16 bits |
+| Arquitectura | Transformer multimodal (hereda de Qwen3.5-4B), pipeline image-text-to-text |
 | Parametros totales | 4.539.265.536 |
 | Parametros activos | no disponible (no es MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no especificados en la model card; existen GGUFs de terceros referenciados mediante busqueda por tag `base_model:quantized` |
-| Idiomas soportados | no disponibles (la model card menciona conocimiento cientifico multilingue como area de enfoque) |
+| Tipos de cuantizacion | no disponible en la model card; existen GGUFs y cuantizaciones de terceros enlazadas por el autor |
+| Idiomas soportados | no disponible (la model card menciona "multilingual scientific knowledge") |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (libreria transformers) |
+| Formato de pesos | safetensors (repo de 9,3 GB); GGUFs disponibles via modelos derivados |
+| Tipo de ajuste | LoRA en 16 bits sobre Qwen3.5-4B (PEFT) |
+| Modelo base | xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic |
 
 ## Arquitectura y entrenamiento
-La arquitectura subyacente es la de Qwen3.5-4B, un transformer decoder-only de 4B parametros con capacidades multimodales (image-text-to-text) heredadas de la familia Qwen3.5. El ajuste propio de Deep Thought se aplica como LoRA de 16 bits sobre el checkpoint xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic. La cadena de linaje incluye un fine-tune previo de Jackrong sobre Qwen3.5-4B, entrenado con aproximadamente 250.000 muestras de matematicas y STEM mediante SFT y una etapa ligera de refinamiento con RL usando GSPO; ese historial corresponde al modelo upstream, no al entrenamiento de Deep Thought.
 
-El conjunto de datos adicional de Deep Thought contiene aproximadamente 11.000+ ejemplos organizados en tres grupos, con un 5% reservado como evaluacion. El grupo de razonamiento suma 6.022 ejemplos, compuesto por destilaciones de modelos frontera: Claude Haiku 5.5 (2.936), Xiaomi MiMo 2.6 Pro (178), ChatGPT Terra 6.1 (75), GPT-5.6 Luna (1.633) y el subconjunto de matematicas de GLM-5.1 (1.200). Los otros dos grupos (conocimiento cientifico/farmaceutico y mezcla de calibracion) no estan desglosados en la informacion disponible. La model card indica explicitamente que estos datos son textuales y no constituyen una etapa de entrenamiento de vision.
+El modelo hereda la arquitectura de Qwen3.5-4B, un modelo fundacional multimodal de 4.000 millones de parametros del equipo Qwen. Sobre esa base, la linea de razonamiento proviene de Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B, entrenado con aproximadamente 250.000 muestras de matematicas y STEM mediante supervised fine-tuning, seguido de un refinamiento ligero con RL usando GSPO. Ese historial de entrenamiento corresponde al modelo upstream, no al run propio de Deep Thought.
+
+El ajuste adicional de Deep Thought emplea una mezcla de aproximadamente 11.000+ ejemplos organizados en tres grupos, con un 5% de conjunto de evaluacion muestreado de cada grupo. El grupo de razonamiento (6.000+ ejemplos) combina destilaciones de modelos frontera: Claude Haiku 5.5 sintetico (2.936), GPT-5.6 Luna (1.633), GLM-5.1 Mathematics (1.200), Xiaomi MiMo 2.6 Pro (178) y ChatGPT Terra 6.1 (75). Los cuatro datasets de modelos frontera aportan en conjunto unos 4.800 ejemplos. El resto de la mezcla incluye datos sinteticos de descubrimiento y formulacion farmaceutica (red-pill-drug-discovery-formulation) y una pequena mezcla de calibracion basada en HuggingFaceTB/smoltalk2. El entrenamiento se realizo con Unsloth y tecnicas de destilacion; la model card no detalla hiperparametros, numero de tokens ni si hubo etapas de RLHF/DPO adicionales.
 
 ## Capacidades
-- Generacion de texto y razonamiento multi-paso con descomposicion estructurada de problemas.
-- Matematicas avanzadas: algebra, calculo, demostraciones y razonamiento cuantitativo.
-- Ciencias duras: fisica, quimica, biologia y preguntas de nivel doctoral.
-- Razonamiento cientifico especializado en descubrimiento de farmacos, razonamiento molecular y desarrollo de formulaciones farmaceuticas.
-- Conocimiento STEM multilingue (segun la model card, sin lista de idiomas concreta).
-- Capacidades multimodales heredadas de Qwen3.5-4B (image-text-to-text), aunque el ajuste adicional no refuerza vision.
-- Estilo de razonamiento destilado de modelos frontera (trazas sinteticas de Claude Haiku 5.5, GPT-5.6 Luna, GLM-5.1 y otros).
-- Variante "uncensored/abliterated" heredada del checkpoint base, orientada a reducir rechazos.
+
+- Generacion de texto y razonamiento estructurado con descomposicion de problemas en multiples pasos.
+- Matematicas avanzadas: demostraciones, algebra, calculo y razonamiento cuantitativo.
+- Ciencia: fisica, quimica, biologia y preguntas cientificas de nivel doctorado.
+- STEM e ingenieria: analisis tecnico y conocimiento cientifico multilingue.
+- Descubrimiento de farmacos: razonamiento molecular y desarrollo de formulaciones farmaceuticas.
+- Capacidad multimodal heredada de Qwen3.5-4B (pipeline image-text-to-text), aunque el ajuste adicional es solo textual.
+- Estilo de razonamiento destilado de modelos frontera (trazas sinteticas multi-paso).
+- Modelo no censurado ("uncensored", "decensored", "abliterated" segun tags), lo que reduce rechazos en dominios sensibles.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes: no disponible en la informacion proporcionada.
+- Soporte de agentes y multi-step reasoning: no confirmado explicitamente en la model card, aunque el entrenamiento en trazas de razonamiento multi-paso lo hace plausible.
 
 ## Casos de uso
-- **Tutoria y resolucion de problemas de matematicas avanzadas**: el modelo puede descomponer demostraciones y derivaciones paso a paso, aprovechando los 1.200 ejemplos de GLM-5.1 Mathematics y las trazas de razonamiento destiladas para generar explicaciones intermedias verificables.
-- **Asistencia en investigacion farmaceutica**: razonamiento sobre moleculas y formulaciones, apoyado en los datasets red-pill-drug-discovery-formulation, adecuado para exploracion preliminar de hipotesis en entornos de I+D con recursos computacionales limitados.
-- **Apoyo a estudiantes de doctorado en ciencias**: respuestas a preguntas de nivel PhD en fisica, quimica y biologia, usando los ejemplos de GPT-5.6 Luna que cubren estas disciplinas.
-- **Generacion de material docente STEM**: creacion de problemas, soluciones y explicaciones para asignaturas universitarias, con estilo de razonamiento estructurado.
-- **Prototipado de asistentes cientificos en local**: al ser un modelo de 4B, puede desplegarse en una unica GPU consumer para experimentacion sin depender de APIs externas, con licencia Apache 2.0 que permite uso comercial.
-- **Analisis tecnico de ingenieria**: descomposicion de problemas de ingenieria y analisis cuantitativo, apoyado en el enfoque STEM declarado por el autor.
-- **Investigacion sobre destilacion de razonamiento**: util como caso de estudio de como se comporta un modelo de 4B entrenado con trazas sinteticas de modelos frontera, para comparar con el modelo base.
+
+- Resolucion de problemas matematicos y demostraciones: el modelo puede abordar derivaciones, pruebas y calculo avanzado, aprovechando los 1.200 ejemplos de GLM-5.1 Mathematics y las trazas de razonamiento destiladas para construir soluciones paso a paso.
+- Asistencia en investigacion cientifica: respuesta a preguntas de fisica, quimica y biologia de nivel avanzado, util como apoyo a investigadores que necesitan explorar hipotesis o repasar conceptos con razonamiento explicito.
+- Formulacion farmaceutica y descubrimiento de farmacos: el ajuste incluye datasets sinteticos especificos de drug discovery y formulacion, por lo que puede asistir en la generacion de hipotesis sobre moleculas, excipientes y estrategias de formulacion.
+- Tutoria STEM automatizada: con 4B parametros y licencia Apache 2.0, se puede desplegar en infraestructura propia para dar soporte educativo en matematicas y ciencias, con coste de inferencia bajo.
+- Generacion de documentacion tecnica y analisis de ingenieria: redaccion de explicaciones tecnicas, revision de calculos y analisis de problemas de ingenieria gracias a su especializacion STEM.
+- Entornos de investigacion sin censura: al ser un modelo abliterated/uncensored, es adecuado para explorar temas cientificos sensibles (toxicologia, farmacologia, quimica de sustancias controladas) donde los modelos alineados rechazan responder.
+- Prototipado en GPU de consumo: con 4B parametros y cuantizaciones GGUF disponibles, sirve para experimentar con razonamiento STEM en estaciones de trabajo con una sola GPU.
 
 ## Benchmarks y rendimiento
+
 No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
-- **VRAM estimada para inferencia**: en FP16, aproximadamente 9 GB solo para pesos (4,54B parametros x 2 bytes), mas overhead de activaciones y KV cache; en cuantizacion de 8 bits, en torno a 5 GB; en 4 bits, alrededor de 3 GB (estimaciones teoricas, no verificadas por el autor).
-- **GPU recomendadas**: A100 o H100 para FP16 con contexto largo; RTX 4090 (24 GB) o RTX 3090 para FP16 con margen amplio; GPUs de 8-12 GB para cuantizaciones de 4-8 bits.
-- **Cabe en GPU consumer**: si, en tarjetas con 8 GB o mas usando cuantizacion, y en 16-24 GB en FP16.
-- **Opciones de despliegue**: transformers (libreria declarada), text-generation-inference (tag presente), llama.cpp/Ollama mediante GGUFs de terceros referenciados por el autor, y potencialmente vLLM (no confirmado en la informacion).
-- **Latencia y throughput**: no disponibles.
+
+- VRAM estimada para inferencia: en FP16, aproximadamente 9-10 GB (4.539 millones de parametros x 2 bytes mas overhead); en cuantizacion de 8 bits, unos 5-6 GB; en 4 bits (GGUF Q4), unos 3-4 GB.
+- GPU recomendadas: A100 o H100 para despliegue en FP16 con throughput alto; RTX 4090 o RTX 3090 para FP16 en una sola GPU.
+- Cabe en GPU de consumo: si, en RTX 4090/3090 en FP16, y en GPUs con 6-8 GB (RTX 3060, RTX 4060 Ti) usando cuantizacion de 4-8 bits.
+- Opciones de despliegue: transformers (libreria indicada), text-generation-inference (tag), vLLM, llama.cpp y Ollama mediante los GGUFs de terceros enlazados por el autor, y Unsloth para fine-tuning.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| xtools-at/Qwen3.5-4B-DeepThought-STEM | 4,54B | no disponible | Razonamiento STEM, matematicas, farmacia | Apache 2.0 | Hugging Face, 0 descargas |
-| xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic (modelo base) | ~4B | no disponible | Razonamiento general sin censura | no disponible en la informacion | Hugging Face |
-| xtools-at/Qwen3.5-9B-DeepThought-STEM | ~9B | no disponible | Version ampliada del mismo fine-tune | no disponible en la informacion | Hugging Face |
-| Qwen/Qwen3.5-4B (modelo fundacional) | ~4B | no disponible | Multimodal generalista | no disponible en la informacion | Hugging Face |
+| xtools-at/Qwen3.5-4B-DeepThought-STEM | 4.539 M | no disponible | STEM, matematicas, farmacia, sin censura | Apache 2.0 | Hugging Face, GGUFs de terceros |
+| xtools-at/Qwen3.5-9B-DeepThought-STEM | no disponible | no disponible | Version ampliada del mismo linaje | no disponible | Hugging Face (referenciado por el autor) |
+| Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B | no disponible | no disponible | Razonamiento destilado de DeepSeek-V4-Pro | no disponible | Hugging Face |
+| Qwen/Qwen3.5-4B | 4.000 M (aprox.) | no disponible | Modelo fundacional multimodal generalista | no disponible | Hugging Face |
 
-La comparativa se limita a los modelos citados en la propia model card, ya que no se dispone de datos de benchmarks ni de especificaciones detalladas de las alternativas.
+La comparativa se limita a los modelos del mismo linaje porque la informacion proporcionada no incluye datos de rendimiento ni especificaciones de alternativas externas.
 
 ## Limitaciones y advertencias
-- **Sesgos conocidos**: no documentados por el autor; al derivar de destilaciones de modelos frontera y de un checkpoint "abliterated/uncensored", puede reproducir sesgos de esos profesores y presentar menor alineacion de seguridad.
-- **Riesgo de alucinacion**: elevado en dominios cientificos especializados, especialmente en farmacologia, donde respuestas plausibles pero incorrectas pueden tener consecuencias graves; requiere verificacion humana.
-- **Contenido sin censura**: la variante heretic/abliterated reduce los rechazos, lo que implica mayor riesgo de generar contenido inapropiado o peligroso sin filtros adicionales.
-- **Contexto e idiomas**: la longitud de contexto y la lista de idiomas no estan documentadas, lo que impide garantizar un rendimiento multilingue concreto.
-- **Model card incompleta**: faltan secciones clave (benchmarks, contexto, cuantizaciones oficiales, detalles del grupo de datos cientifico/farmaceutico), y el modelo no tiene descargas ni validacion de la comunidad.
-- **Licencia**: Apache 2.0 permite uso comercial, pero el modelo base y los datasets de origen pueden tener condiciones adicionales no verificadas en la informacion disponible.
-- **Vision no reforzada**: aunque hereda capacidades multimodales, el ajuste adicional es textual y no mejora el rendimiento en tareas de imagen.
-- **Fecha de publicacion futura**: el modelo figura creado el 2026-11-02, lo que sugiere un contexto temporal no estandar; conviene verificar la autenticidad y procedencia antes de usarlo en produccion.
+
+- Sesgos conocidos: no documentados en la model card; al derivar de destilaciones de modelos frontera y de un modelo "abliterated", puede reproducir sesgos de esos profesores y presentar menor alineacion de seguridad.
+- Riesgo de alucinacion: inherente a los modelos de 4B y acentuado por el entrenamiento en trazas sinteticas de razonamiento; las respuestas cientificas y farmaceuticas deben verificarse.
+- Limitaciones de contexto e idioma: la longitud de contexto no se especifica y los idiomas soportados no estan documentados; el soporte multilingue se menciona solo de forma generica.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el modelo base y los datasets de destilacion pueden tener terminos propios que conviene revisar antes de produccion.
+- Modelo no censurado: la naturaleza "uncensored/abliterated" implica que puede generar contenido que otros modelos rechazan; requiere filtros y politicas de uso en despliegues publicos.
+- Capacidad multimodal no entrenada en este ajuste: aunque hereda el pipeline image-text-to-text, el fine-tune adicional es textual y no representa una etapa de vision.
+- Datos de entrenamiento limitados: unos 11.000 ejemplos es una mezcla pequena; el rendimiento puede degradarse fuera de los dominios STEM y farmaceutico.
+- Fecha de creacion inusual (2026-11-02) y nombres de datasets con modelos no verificables; conviene contrastar la procedencia antes de adoptarlo en produccion.
 
 ## Enlaces
-- [Modelo en Hugging Face](https://huggingface.co/xtools-at/Qwen3.5-4B-DeepThought-STEM)
-- [Modelo base: xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic](https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic)
-- [Modelo upstream: Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B](https://huggingface.co/Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B)
-- [Modelo fundacional: Qwen/Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B)
-- [Version ampliada: xtools-at/Qwen3.5-9B-DeepThought-STEM](https://huggingface.co/xtools-at/Qwen3.5-9B-DeepThought-STEM)
-- [Cuantizaciones/GGUFs (busqueda por tag)](https://huggingface.co/models?other=base_model:quantized:xtools-at/Qwen3.5-4B-DeepThought-STEM)
-- [Dataset: Claude-Haiku-5.5-High-Reasoning-TraceInversion-3000x](https://huggingface.co/datasets/xtools-at/Claude-Haiku-5.5-High-Reasoning-TraceInversion-3000x)
-- [Dataset: Xiaomi-MiMo-2.6-Pro-High-Reasoning-250x](https://huggingface.co/datasets/xtools-at/Xiaomi-MiMo-2.6-Pro-High-Reasoning-250x)
-- [Dataset: ChatGPT-6.1-Terra-High-Reasoning-TraceInversion-80x](https://huggingface.co/datasets/xtools-at/ChatGPT-6.1-Terra-High-Reasoning-TraceInversion-80x)
-- [Dataset: GPT-5.6-luna-reasoning-102881x](https://huggingface.co/datasets/Roman1111111/GPT-5.6-luna-reasoning-102881x)
-- [Dataset: GLM-5.1-Reasoning-1M-Cleaned](https://huggingface.co/datasets/Jackrong/GLM-5.1-Reasoning-1M-Cleaned)
-- [Dataset: GLM-5.1-1000000x](https://huggingface.co/datasets/Kassadin88/GLM-5.1-1000000x)
-- [Dataset: red-pill-drug-discovery-formulation-synthetic-reasoning](https://huggingface.co/datasets/xtools-at/red-pill-drug-discovery-formulation-synthetic-reasoning)
-- [Dataset: red-pill-drug-discovery-formulation](https://huggingface.co/datasets/saidutta69/red-pill-drug-discovery-formulation)
-- [Dataset: HuggingFaceTB/smoltalk2](https://huggingface.co/datasets/HuggingFaceTB/smoltalk2)
+
+- Modelo en Hugging Face: https://huggingface.co/xtools-at/Qwen3.5-4B-DeepThought-STEM
+- Modelo base (uncensored): https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic
+- Modelo upstream de Jackrong: https://huggingface.co/Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B
+- Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
+- Version 9B: https://huggingface.co/xtools-at/Qwen3.5-9B-DeepThought-STEM
+- Cuantizaciones y GGUFs: https://huggingface.co/models?other=base_model:adapter:xtools-at/Qwen3.5-4B-DeepThought-STEM
+- Dataset Claude Haiku 5.5: https://huggingface.co/datasets/xtools-at/Claude-Haiku-5.5-High-Reasoning-TraceInversion-3000x
+- Dataset Xiaomi MiMo 2.6 Pro: https://huggingface.co/datasets/xtools-at/Xiaomi-MiMo-2.6-Pro-High-Reasoning-250x
+- Dataset ChatGPT Terra 6.1: https://huggingface.co/datasets/xtools-at/ChatGPT-6.1-Terra-High-Reasoning-TraceInversion-80x
+- Dataset GPT-5.6 Luna: https://huggingface.co/datasets/Roman1111111/GPT-5.6-luna-reasoning-102881x
+- Dataset GLM-5.1 Mathematics: https://huggingface.co/datasets/Jackrong/GLM-5.1-Reasoning-1M-Cleaned/viewer/Math
+- Dataset red-pill drug discovery: https://huggingface.co/datasets/xtools-at/red-pill-drug-discovery-formulation-synthetic-reasoning
+- Dataset smoltalk2: https://huggingface.co/datasets/HuggingFaceTB/smoltalk2

@@ -2,104 +2,98 @@
 
 ## Resumen
 
-Verto Arabic ASR es un modelo de reconocimiento automático del habla (ASR) especializado en árabe egipcio y en habla con alternancia de código árabe-inglés, publicado por el usuario yayaiu6 en Hugging Face. No se trata de un modelo entrenado desde cero: es una conversión a ONNX INT8 del modelo Metro-ASR-Small (mohammedaly22), empaquetada junto con el preprocesado de audio y el decodificador necesarios para ejecutarse íntegramente en el navegador. El autor aporta la cuantización y la integración web, y mantiene la licencia MIT y la atribución original.
+Verto Arabic ASR es un modelo de reconocimiento automático del habla (ASR) para árabe egipcio y habla mixta árabe-inglés, distribuido como ONNX INT8 y pensado para ejecutarse íntegramente en el navegador. Lo publica el usuario yayaiu6 bajo el identificador `yayaiu6/Verto-Arabic-ASR`, y no es un modelo entrenado desde cero: se trata de una conversión a INT8 del checkpoint Metro-ASR-Small (`mohammedaly22/Metro-ASR-Small`), con la integración de navegador y el preprocesado de audio añadidos por Verto.
 
-La arquitectura subyacente es un Conformer con cabeza CTC y decodificación greedy, sin KenLM ni marcas de tiempo. El artefacto ONNX ocupa 69,46 MB y el paquete completo con tokenizador y assets de audio llega a 69,93 MB (MB decimales), lo que lo sitúa en la franja de modelos pequeños aptos para inferencia en CPU mediante WebAssembly, con WebGPU opcional y fallback a CPU.
+El modelo emplea una arquitectura Conformer con decodificación CTC voraz y un tamaño reducido: el archivo ONNX ocupa 69,46 MB y el paquete completo con tokenizador y activos de audio llega a 69,93 MB. La cuantización es weight-only INT8 con activaciones FP32, de modo que parte de los pesos permanece en FP32. Está pensado para audio de 0,5 a 60 segundos, con ejecución por CPU/WASM como opción por defecto y WebGPU opcional con retroceso a CPU.
 
-Su relevancia actual está en el nicho de ASR privado y de baja latencia en el cliente: el audio se procesa en el dispositivo, sin enviar muestras a un servidor, algo crítico para datos personales y para aplicaciones web sin backend de GPU. La contrapartida es que el modelo está en estado de preview: el autor declara que la evaluación de WER/CER con referencias humanas sigue pendiente y que la precisión varía con el ruido, el dialecto y el vocabulario no habitual.
+Su relevancia práctica está en el despliegue: permite transcripción local en el navegador sin enviar audio a un servidor, con una reducción de tamaño del 70,92 % respecto al checkpoint FP32 original y un coste medido de solo 0,041 puntos porcentuales de WER en el conjunto global de evaluación. Es, por tanto, una pieza útil para aplicaciones web de dictado o subtitulado en árabe egipcio, no un modelo de propósito general multilingüe.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Conformer con cabeza CTC (modelo base Metro-ASR-Small, convertido a ONNX) |
-| Parámetros totales | No disponible |
-| Parámetros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No aplica como contexto de texto; la aplicación admite clips de audio de 0,5 a 60 segundos |
-| Tipos de cuantización | INT8 weight-only (solo pesos) con activaciones FP32; algunos pesos permanecen en FP32 |
-| Idiomas soportados | Árabe (egipcio) e inglés, con alternancia de código árabe-inglés |
+| Arquitectura | Conformer con decodificacion CTC |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible; audio de entrada limitado a 0,5-60 segundos en la aplicacion de navegador |
+| Tipos de cuantizacion | INT8 weight-only con activaciones FP32 (algunos pesos permanecen en FP32) |
+| Idiomas soportados | arabe (ar), ingles (en); enfocado a arabe egipcio y code-switching arabe-ingles |
 | Licencia | MIT |
-| Formato de pesos | ONNX (`model.onnx` INT8), más `tokenizer.json`, `preprocessor.json` y `mel_filters.json` como assets de la aplicación |
-| Tamaño del artefacto | 69,46 MB ONNX; 69,93 MB con tokenizador y preprocesado de audio; repositorio de 0,1 GB |
-| Entrada del modelo | `features` float32 `[1, T, 80]` (log-Mel de 80 bins, audio mono a 16 kHz) y `feature_lengths` int64 `[1]` |
-| Salida del modelo | `log_probs` float32 `[1, T_out, V]` y `output_lengths` int64 `[1]` |
-| Decodificación | CTC greedy, sin KenLM y sin marcas de tiempo |
-| Runtime | ONNX Runtime Web (WASM por defecto, WebGPU opcional con fallback a CPU); no es un pipeline drop-in de Transformers.js |
-| Descargas / likes | 24 descargas, 1 like |
-| Fecha de creación / actualización | 2026-10-19 / 2026-10-20 |
+| Formato de pesos | ONNX (INT8); tokenizer.json propio de la aplicacion, no en formato Hugging Face Tokenizers |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue una arquitectura Conformer, es decir, un codificador que combina bloques convolucionales y auto-atención, acoplado a una cabeza de clasificación CTC. La decodificación es CTC greedy sobre las probabilidades logarítmicas de salida, sin modelo de lenguaje externo (KenLM) ni alineamientos temporales, lo que simplifica el despliegue pero renuncia a la corrección léxica que aporta un LM y a la posibilidad de emitir timestamps por palabra.
+El modelo es un Conformer CTC, es decir, un transformer convolucional con cabecera de clasificacion Connectionist Temporal Classification y decodificacion voraz, sin KenLM ni marcas de tiempo. Verto no aporta entrenamiento nuevo: parte del checkpoint Metro-ASR-Small en su revision `525644dc782b6627f1eb1f0a589407fcacbfc152` y aplica una cuantizacion de solo pesos a INT8 manteniendo las activaciones en FP32. No se dispone de informacion sobre el volumen de tokens, la composicion del dataset de entrenamiento original ni sobre si hubo RLHF o DPO.
 
-No hay entrenamiento original por parte de este autor: la model card indica explícitamente que Verto aporta la conversión a INT8 y la integración en navegador, no un modelo nuevo. Los pesos de origen corresponden a Metro-ASR-Small, revisión del Space `525644dc782b6627f1eb1f0a589407fcacbfc152`, y se desconoce en la información disponible el volumen de tokens de audio, la composición del dataset, el uso de técnicas de aumento de datos o cualquier etapa de ajuste fino con RLHF/DPO. La innovación técnica del artefacto es de ingeniería de despliegue: cuantización weight-only INT8 con activaciones en FP32, preprocesado log-Mel implementado en el cliente y un pipeline propio de audio y texto que sustituye al de Transformers.js.
+La innovacion tecnica del paquete es la integracion: el modelo se sirve mediante ONNX Runtime Web con preprocesado de audio propio (audio mono a 16 kHz convertido a caracteristicas log-Mel de 80 bins) y decodificacion de texto propia. Las entradas del grafo son `features` float32 `[1, T, 80]` y `feature_lengths` int64 `[1]`; las salidas son `log_probs` float32 `[1, T_out, V]` y `output_lengths` int64 `[1]`. El tokenizador incluido es una tabla de piezas de la aplicacion, no un tokenizador compatible con Transformers.js, por lo que el modelo no funciona como pipeline directo de esa libreria.
 
 ## Capacidades
 
-- Transcripción de voz a texto en árabe egipcio y en inglés, incluyendo utterances con alternancia de código entre ambos idiomas.
-- Ejecución local en el navegador: el audio no se envía a ningún servidor, el procesamiento ocurre en el dispositivo del usuario.
-- Inferencia en CPU mediante WebAssembly y, opcionalmente, aceleración con WebGPU con retroceso automático a CPU si no está disponible.
-- Aceptación de clips de audio de 0,5 a 60 segundos por petición en la aplicación de referencia.
-- API JavaScript (`VertoASR`) con métodos `load`, `transcribe` y `close` para integrar la transcripción en una aplicación web.
-- Uso directo del grafo ONNX desde otros runtimes, alimentando log-Mel de 80 bins a 16 kHz y leyendo `log_probs` para decodificar por CTC.
-- Despliegue autocontenido vía Docker sin necesidad de Node ni npm en el servidor.
-- No dispone de marcas de tiempo, diarización de hablantes, puntuación automática documentada ni modo de razonamiento o tool calling: es un modelo puramente ASR.
+- Reconocimiento de voz en arabe egipcio y en habla mixta arabe-ingles (code-switching).
+- Transcripcion de audio de 0,5 a 60 segundos por peticion en la aplicacion de navegador.
+- Ejecucion local en el dispositivo mediante ONNX Runtime Web, con CPU/WASM por defecto y WebGPU opcional con retroceso a CPU.
+- Decodificacion CTC voraz sin modelo de lenguaje externo (sin KenLM).
+- Uso directo del grafo ONNX con preprocesado propio (log-Mel de 80 bins) para integraciones fuera del navegador.
+- No dispone de tool calling, function calling, capacidades de agente, vision ni audio generativo; es exclusivamente un modelo ASR.
 
 ## Casos de uso
 
-- Dictado por voz en aplicaciones web: integrar `VertoASR` en un editor o formulario para transcribir directamente en el navegador, sin backend, manteniendo el audio del usuario en su dispositivo.
-- Subtitulado de clips cortos: procesar fragmentos de hasta 60 segundos (por ejemplo, stories, reels o notas de voz) y generar el texto para subtítulos en árabe egipcio o en inglés.
-- Herramientas de accesibilidad: convertir voz a texto en tiempo real para personas con limitaciones motoras en entornos where la privacidad del audio es requisito, al no existir transmisión externa.
-- Transcripción de atención al cliente en árabe dialectal: analizar notas de voz de clientes egipcios, incluyendo mezclas de árabe e inglés típicas en contextos técnicos o comerciales, antes de pasarlas a un motor de análisis.
-- Investigación sociolingüística y de code-switching: recoger y transcribir corpus de habla egipcia con inserción de términos ingleses, aprovechando que el modelo está entrenado sobre ese fenómeno.
-- Preprocesado en pipelines de ASR en servidor: usar el ONNX INT8 con ONNX Runtime nativo para abaratar coste de CPU en transcripciones masivas de baja criticidad, reservando modelos mayores para casos donde se requiera máxima precisión.
-- Aplicaciones offline o con conectividad intermitente: al distribuirse como assets estáticos y ejecutarse con WASM, puede cachearse y funcionar sin acceso a servicios de inferencia remotos.
+- Dictado en aplicaciones web en arabe egipcio: el modelo se carga en el navegador y transcribe fragmentos de hasta 60 segundos sin enviar el audio a un servidor, lo que simplifica el cumplimiento de privacidad.
+- Subtitulado de clips cortos en redes sociales o videos de menos de un minuto: la ventana de 0,5-60 segundos encaja con clips y permite generar subtitulos en el propio cliente.
+- Asistentes de voz para interfaces web en Egipto: la combinacion de arabe e ingles cubre el habla mixta habitual en entornos tecnicos y comerciales.
+- Busqueda por voz en catálogos o archivos: transcripcion local del audio de consulta y envio solo del texto al backend, reduciendo coste de ancho de banda y de inferencia en servidor.
+- Prototipado e investigacion en ASR de bajo recursos: el paquete ONNX de 69,46 MB permite experimentar con decodificacion CTC y preprocesado log-Mel en entornos sin GPU.
+- Aplicaciones offline o con conectividad limitada: al ejecutarse con WASM en el navegador, no requiere infraestructura de inferencia remota una vez servidos los activos.
+- Evaluacion comparativa de cuantizacion: sirve como referencia reproducible para medir el impacto de INT8 weight-only frente al checkpoint FP32 en tareas ASR.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card indica que la evaluación de WER/CER con referencias humanas está pendiente y que solo se han comparado cualitativamente las salidas INT8 en navegador y en nativo sobre clips de la demo. El autor no reclama que la precisión se mantenga intacta respecto al modelo original.
+Evaluacion frente al checkpoint Metro FP32 original sobre 6.726 grabaciones de Casablanca (7,70 horas), con el evaluador del Open Universal Arabic ASR Leaderboard y CTC voraz sin KenLM. Tasas de error mas bajas son mejores.
 
-| Aspecto | Estado |
-|---|---|
-| WER / CER con referencia humana | Pendiente de publicación |
-| Comparación cualitativa INT8 navegador vs. nativo | Realizada sobre clips de demo (sin métricas publicadas) |
-| Comparación frente al modelo base FP32 | No disponible |
-| Throughput y latencia medidos | No disponible |
+| Metrica | FP32 original | Verto INT8 |
+|---|---:|---:|
+| WER — ocho dialectos | 75,408% | 75,449% |
+| CER — ocho dialectos | 41,847% | 41,875% |
+| WER — arabe egipcio (825 grabaciones) | 30,678% | 31,115% |
+| Tamano del archivo de inferencia | 238,84 MB | 69,46 MB |
+
+El archivo es un 70,92 % mas pequeno, con incrementos de WER de 0,041 puntos porcentuales en el conjunto global y de 0,437 puntos en arabe egipcio. Ambas versiones presentan tasas de error elevadas en varios de los otros dialectos. El autor no ha medido velocidad, memoria ni rendimiento en navegador, y advierte que estos resultados no garantizan la misma precision en otros audios.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no requiere GPU; el grafo INT8 ocupa 69,46 MB y el conjunto de assets 69,93 MB, por lo que el consumo de memoria es del orden de decenas a pocos cientos de MB incluyendo activaciones y buffers de audio.
-- GPU recomendadas: no aplica en el escenario objetivo (navegador). Para uso nativo con GPU se puede emplear cualquier GPU compatible con ONNX Runtime (por ejemplo, series RTX o datacenter), pero no hay recomendaciones ni cifras publicadas por el autor.
-- Cabe en GPU de consumo: sí, con enorme margen; de hecho el caso de uso principal es CPU. También cabe en dispositivos móviles y equipos sin GPU dedicada.
-- Opciones de despliegue: ONNX Runtime Web (WASM por defecto, WebGPU opcional) para navegador; ONNX Runtime nativo para servidor; imagen Docker publicada en el repositorio de GitHub sin dependencias de Node ni npm. No es compatible como pipeline de Transformers.js.
-- Latencia y throughput estimados: no disponibles. Dependen del dispositivo, del backend (WASM frente a WebGPU) y de la duración del clip, limitada a 60 segundos por petición en la aplicación de referencia.
+- VRAM estimada para inferencia: no disponible; el modelo esta disenado para ejecucion en CPU/WASM en el navegador, sin requisito de GPU.
+- GPU recomendadas: no aplica como requisito; WebGPU es opcional y cuenta con retroceso a CPU.
+- Cabe en cualquier equipo capaz de ejecutar un navegador moderno con ONNX Runtime Web; el paquete de activos ocupa 69,93 MB.
+- Opciones de despliegue: aplicacion web servida desde el repositorio de GitHub con ONNX Runtime Web; despliegue en Docker sin necesidad de Node ni npm; uso directo del grafo ONNX con preprocesado propio.
+- Latencia y throughput: no disponibles; el autor indica explicitamente que no se han medido el rendimiento ni la velocidad en navegador.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto / audio | Idiomas | Licencia | Formato / despliegue | Rendimiento |
-|---|---|---|---|---|---|---|
-| Verto Arabic-ASR | No disponible | Clips de 0,5 a 60 s | Árabe egipcio, inglés (code-switching) | MIT | ONNX INT8, navegador y nativo | WER/CER pendientes de publicación |
-| Metro-ASR-Small (modelo base) | No disponible | No disponible | Árabe, inglés (según model card del base) | MIT (preservada) | Pesos originales, presumiblemente FP32 | No disponible en la información proporcionada |
-| Otros ASR pequeños para navegador | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Formato |
+|---|---|---|---|---|---|
+| Verto Arabic ASR | no disponible | 0,5-60 s (aplicacion web) | ar, en | MIT | ONNX INT8 |
+| Metro-ASR-Small (FP32) | no disponible | no disponible | ar, en | MIT | checkpoint original (238,84 MB) |
+| Alternativas ASR multilingues de gran tamano (p. ej. Whisper) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
-La información suministrada solo permite comparar con el modelo de origen, del que se conocen la licencia y la relación de cuantización, pero no los parámetros, el contexto ni métricas. No se dispone de datos verificables de alternativas comparables en el material consultado.
+La comparacion directa solo es posible con el checkpoint del que deriva: Verto INT8 reduce el tamano un 70,92 % con un incremento de WER de 0,041 puntos en el conjunto global y de 0,437 en egipcio. No se dispone de datos de benchmarks frente a otros modelos ASR en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Estado de preview: la evaluación de WER/CER con referencias humanas está pendiente y el autor no garantiza que la precisión se mantenga respecto al modelo original tras la cuantización INT8.
-- La precisión varía con el ruido de fondo, el dialecto y el vocabulario poco frecuente; el ámbito declarado es el árabe egipcio, por lo que el rendimiento en otros dialectos árabes no está caracterizado.
-- Decodificación CTC greedy sin KenLM: mayor propensión a errores ortográficos y a palabras mal segmentadas que con un modelo de lenguaje de rescoring.
-- Sin marcas de tiempo ni puntuación documentada, lo que limita su uso en subtitulado con sincronización o en análisis temporal fino.
-- Límite de 60 segundos por clip en la aplicación de referencia; no está documentado el comportamiento con audios más largos sin segmentar.
-- Riesgo de alucinación o inserciones en pasajes de silencio o ruido, habitual en modelos CTC entrenados con datos ruidosos; no hay evaluación publicada al respecto.
-- Sesgos: al desconocerse la composición del dataset del modelo base, no se pueden evaluar sesgos de género, acento, edad o clase social en las transcripciones.
-- El `tokenizer.json` incluido es la tabla de piezas de la aplicación, no el formato de Hugging Face Tokenizers, y el modelo no es un pipeline drop-in de Transformers.js; la integración requiere el cliente propio del repositorio.
-- Licencia MIT: permite uso comercial y modificación, pero exige conservar el aviso de copyright y la atribución original, tal como se preserva en el fichero `LICENSE` del repositorio.
-- Los resultados de la búsqueda web realizada no contenían documentación técnica ni referencias relevantes al modelo; toda la información procede de la model card y de los metadatos de Hugging Face.
+- Estado de vista previa: evaluado contra transcripciones de referencia de Casablanca; la precision varia con ruido, dialecto y vocabulario no habitual, y no se garantiza la misma exactitud que el modelo original.
+- Tasas de error altas en varios dialectos arabes distintos del egipcio (WER global del 75,449 % sobre los ocho dialectos evaluados).
+- Decodificacion CTC voraz sin KenLM ni marcas de tiempo, lo que limita la calidad frente a sistemas con modelo de lenguaje.
+- Ventana de audio limitada a 0,5-60 segundos en la aplicacion de navegador; no esta pensado para transcripciones largas continuas.
+- No es un pipeline directo de Transformers.js y su tokenizer.json no sigue el formato de Hugging Face Tokenizers, lo que complica la integracion con ecosistemas estandar.
+- No se han medido velocidad, memoria ni rendimiento en navegador; el comportamiento en produccion bajo carga es desconocido.
+- Licencia MIT, que permite uso comercial, pero se mantiene la atribucion original y la licencia del modelo base; conviene revisar el aviso de licencia incluido en el repositorio.
+- Riesgo de alucinacion y de transcripciones incorrectas en audio con ruido, acentos no egipcios o mezcla de idiomas atipica; se recomienda validacion humana en flujos criticos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/yayaiu6/Verto-Arabic-ASR
 - Demo: https://verto-arabic-asr.yahya-mahroof.site/
-- Código y despliegue: https://github.com/yayaiu6/Verto-Arabic-ASR
+- Colab: https://huggingface.co/yayaiu6/Verto-Arabic-ASR/colab
+- Codigo y despliegue: https://github.com/yayaiu6/Verto-Arabic-ASR
+- Benchmark y metodologia: https://github.com/yayaiu6/Verto-Arabic-ASR/blob/main/BENCHMARK.md
+- Resultados en CSV: https://github.com/yayaiu6/Verto-Arabic-ASR/blob/main/benchmark-results.csv
 - Modelo base: https://huggingface.co/mohammedaly22/Metro-ASR-Small

@@ -2,101 +2,103 @@
 
 ## Resumen
 
-Tūmataiti DeBERTa-v3-small (open data) es un clasificador de tokens especializado en la detección de información personal identificable (PII) en textos en inglés y en contextos de Nueva Zelanda, incluyendo te reo Māori y nombres de origen pasifika y asiático neozelandés. Lo desarrolla el autor independiente woodrock como componente central de Tūmataiti, una herramienta local de redacción que elimina datos personales antes de enviar texto a un modelo de IA en la nube. El modelo está pensado para ejecutarse en el dispositivo del usuario: el archivo ONNX int4 ocupa 152 MB y procesa un documento en unos 30 ms en la CPU de un portátil.
+Tūmataiti DeBERTa-v3-small (open data) es un clasificador de tokens especializado en la deteccion y redaccion de informacion personal identificable (PII) en textos en ingles y en neozelandes, incluyendo te reo maori. Lo desarrolla woodrock como componente principal de Tūmataiti, una herramienta local de redaccion que elimina datos personales antes de enviar texto a un modelo de IA en la nube. El modelo esta afinado a partir de microsoft/deberta-v3-small y cuenta con 141.320.469 parametros, con un checkpoint fp32 para Transformers y una version cuantizada int4 en ONNX de 152 MB que se ejecuta en CPU de portatil en unos 30 ms por documento.
 
-Arquitectónicamente es un fine-tuning de `microsoft/deberta-v3-small` (141.320.469 parámetros) para token-classification con etiquetado BIO sobre diez categorías de PII. Se complementa con reglas en Rust para identificadores con dígito de control (IRD, NHI, tarjetas) y cubre lo que las reglas no alcanzan: nombres, direcciones, afiliación a iwi, hapū y marae, y fechas de nacimiento en contexto.
+La relevancia del modelo reside en su enfoque en privacidad diferencial: corre en el dispositivo del usuario, de modo que el texto nunca abandona la maquina, y cubre un nicho poco atendido como son los nombres maories, pasifikas y asiatico-neozelandeses, asi como las afiliaciones (iwi, hapu, marae, maunga, awa, waka y tupuna dentro de un pepeha). Se combina con reglas en Rust para identificadores con digito de control (IRD, NHI, tarjetas) que el modelo por si solo no detecta de forma fiable.
 
-Su relevancia actual reside en la combinación de tres factores: licencia Apache-2.0, despliegue en navegador o dispositivo sin conexión y un rendimiento medido en tasa de fuga documental (document leak rate) que en sus conjuntos de validación sintéticos se sitúa por debajo del 1 % en fp32. Es, por tanto, una pieza útil para pipelines de privacidad previos a inferencia en la nube, no un sistema de anonimización garantizada.
+El modelo se distribuye bajo licencia Apache-2.0, soporta los idiomas en y mi, y esta pensado para integrarse en pipelines de token-classification mediante la libreria transformers o mediante ONNX Runtime. Su tamano reducido y su formato cuantizado lo hacen adecuado para despliegues en el borde (edge) y en navegador.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder DeBERTa-v3-small (fine-tuning para token classification) |
+| Arquitectura | Transformer encoder (DeBERTa-v3-small), token classification |
 | Parametros totales | 141.320.469 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 512 tokens por ventana, con 128 tokens de solapamiento en el decodificador de Tūmataiti |
-| Tipos de cuantizacion | fp32 (safetensors) e int4 ONNX (embeddings int8, encoder con cuantización por bloques int4, 32 pesos por escala, activaciones fp32) |
-| Idiomas soportados | en, mi (inglés y te reo Māori; incluye nombres pasifika y asiático neozelandeses) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (fp32), ONNX (int4) |
+| Longitud de contexto | 512 tokens por ventana (el decodificador de Tūmataiti usa ventanas de 512 con 128 de solapamiento) |
+| Tipos de cuantizacion | fp32 (checkpoint Transformers), int4 con embeddings int8 (ONNX Runtime) |
+| Idiomas soportados | en, mi |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors, ONNX |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `microsoft/deberta-v3-small`, un encoder transformer con atención desacoplada y embeddings de posiciones relativas, y se fine-tunea para token classification con etiquetas BIO sobre las categorías `PERSON`, `ADDRESS`, `EMAIL`, `PHONE`, `URL`, `IP_ADDRESS`, `DATE` (solo fechas de nacimiento o defunción), `ID` (números gubernamentales, de tarjeta y bancarios), `SECRET` (contraseñas y claves) y `AFFILIATION` (iwi, hapū, marae). El entrenamiento se realizó durante 3 épocas (lr 5e-5, batch 16, seed 0), conservando el checkpoint tras la primera época, que fue el que obtuvo mejor puntuación en dev, sobre 38.000 documentos sintéticos.
+El modelo es un encoder Transformer DeBERTa-v3-small afinado para token-classification con etiquetas BIO sobre las categorias PERSON, ADDRESS, EMAIL, PHONE, URL, IP_ADDRESS, DATE (solo fechas de nacimiento o defuncion), ID (numeros de gobierno, tarjeta y banco), SECRET (contrasenas y claves) y AFFILIATION (iwi, hapu, marae y, en un pepeha, maunga, awa, moana, waka, wharenui y tupuna). El checkpoint fp32 se ofrece para Transformers y existe una version ONNX con embeddings int8 y encoder cuantizado int4 en bloques de 32 pesos por escala con activaciones fp32, pensada para ONNX Runtime.
 
-El corpus combina tres fuentes: Tūmataiti NZ synthetic v2 (8.000 documentos generados a partir de plantillas de actas de reunión, derivaciones, formularios, entrevistas, mensajes y chats, con nombres extraídos al 25 % de cada una de las listas māori, pākehā, pasifika y asiático neozelandesa, e incluyendo palabras te reo no onomásticas como negativos), `nvidia/Nemotron-PII` (20.000 documentos, CC BY 4.0, con etiquetas remapeadas a las categorías anteriores) y `gretelai/gretel-pii-masking-en-v1` (10.000 documentos, Apache-2.0, con localización de entidades por coincidencia exacta con límites de palabra). No se empleó PII-Masking-300k en el entrenamiento. El decodificador propio de Tūmataiti divide el texto largo en ventanas de 512 tokens con 128 de solapamiento, conserva un token cuando P(no-O) ≥ 0,5, ensancha los spans a palabras completas y descarta los que son solo etiquetas de campo como "NHI".
+El entrenamiento parte de microsoft/deberta-v3-small (MIT) durante 3 epocas con lr 5e-5, batch 16 y semilla 0, conservando el checkpoint tras la primera epoca, que obtuvo la mejor puntuacion de validacion. Se usaron 38.000 documentos sinteticos: 8.000 del conjunto Tūmataiti NZ synthetic v4 generados por plantillas (notas de hui, derivaciones, formularios, entrevistas, mensajes, chats, actas, pepeha en te reo y en ingles, notas de whakapapa) con nombres extraidos al 25% de listas maories, pakeha, pasifikas y asiatico-neozelandesas; 20.000 documentos de nvidia/Nemotron-PII (CC BY 4.0) con etiquetas remapeadas; y 10.000 documentos de gretelai/gretel-pii-masking-en-v1 (Apache-2.0) con coincidencia exacta por limites de palabra. No se uso PII-Masking-300k en el entrenamiento. El decodificador propio de Tūmataiti divide texto largo en ventanas de 512 tokens con 128 de solapamiento, conserva un token cuando P(no O) >= 0.5, ensancha los spans a palabras completas y descarta spans que son solo etiquetas de campo como "NHI".
 
 ## Capacidades
 
-- Detección y clasificación de entidades PII en texto: personas, direcciones, correo electrónico, teléfono, URL, dirección IP, fechas de nacimiento o defunción, identificadores oficiales, secretos y afiliación a iwi, hapū y marae.
-- Etiquetado BIO token a token con diez categorías y decodificación a spans a nivel de palabra.
-- Procesamiento de texto largo mediante ventanas de 512 tokens con solapamiento de 128, gestionado por el decodificador externo.
-- Cobertura específica de nombres māori, pākehā, pasifika y asiático neozelandeses, con negativos para palabras te reo que no son nombres en contexto (tūī, kōwhai, "aroha mai").
-- Ejecución en dispositivo: variante ONNX int4 de 152 MB apta para CPU de portátil y para navegador (demo en woodrock.github.io/tumataiti).
-- Integración con reglas deterministas en Rust para identificadores con dígito de control (IRD, NHI, tarjetas), complementando al modelo.
-- No soporta tool calling, agentes, visión, audio ni modo de razonamiento: es exclusivamente un clasificador de tokens.
+- Deteccion de entidades nombradas de tipo PERSON, ADDRESS, EMAIL, PHONE, URL e IP_ADDRESS en texto en ingles y en neozelandes.
+- Deteccion de fechas de nacimiento o defuncion en contexto (etiqueta DATE restringida).
+- Deteccion de identificadores de gobierno, tarjeta y banco (etiqueta ID), complementando reglas con digito de control.
+- Deteccion de contrasenas y claves (etiqueta SECRET).
+- Deteccion de afiliaciones maories: iwi, hapu, marae y, dentro de un pepeha, maunga, awa, moana, waka, wharenui y tupuna.
+- Cobertura de nombres maories, pakeha, pasifikas y asiatico-neozelandeses.
+- Ejecucion local en dispositivo y en navegador mediante ONNX (int4), sin envio de texto a la nube.
+- Integracion como pipeline de token-classification en transformers con aggregation_strategy="simple".
+- No dispone de tool calling, function calling, agentes, vision ni audio segun la informacion disponible.
 
 ## Casos de uso
 
-- Redacción previa a inferencia en la nube: el modelo elimina PII del prompt antes de enviarlo a un LLM externo, reduciendo la exposición de datos personales en el proveedor; su tamaño int4 de 152 MB permite ejecutarlo en el propio portátil del usuario.
-- Cumplimiento de privacidad en herramientas internas: integrado en pipelines de registro o analítica, permite anonimizar textos antes de almacenarlos o compartirlos entre equipos, con revisión humana en los casos sensibles.
-- Procesamiento de documentación sanitaria o administrativa neozelandesa: detección de nombres, fechas de nacimiento e identificadores NHI o IRD en derivaciones y formularios, complementando las reglas con dígito de control.
-- Anonimización de conversaciones y chats de soporte: el modelo maneja mensajes, actas de reunión y logs de chat, formatos presentes en el corpus de entrenamiento sintético.
-- Filtrado en navegador sin conexión: la demo pública ejecuta el modelo ONNX int4 en el navegador, de modo que el texto nunca sale de la página; útil para herramientas de privacidad orientadas a usuario final.
-- Preprocesado en pipelines de investigación con datos sensibles: etiquetado automático de entidades PII para construir conjuntos de datos anonimizados antes de su publicación o análisis.
-- Capa de defensa en profundidad: combinado con reglas deterministas para identificadores estructurados, cubre tanto patrones formales como entidades en prosa que las reglas no detectan.
+- Redaccion previa a envio a un modelo en la nube: Tūmataiti usa este modelo para eliminar nombres, direcciones, telefonos y afiliaciones antes de que el texto salga del dispositivo, reduciendo la exposicion de datos personales en flujos con LLM de terceros.
+- Cumplimiento de privacidad en documentos sanitarios o administrativos neozelandeses: el modelo detecta NHI, IRD y numeros de tarjeta junto con nombres y direcciones en notas de derivacion y formularios, donde las reglas por si solas no cubren el texto libre.
+- Anonimizacion de notas de hui y actas: el modelo identifica personas y afiliaciones (iwi, hapu, marae, tupuna) en textos en te reo y en ingles, lo que permite publicar actas sin exponer informacion genealogica o de afiliacion.
+- Procesamiento en navegador sin backend: la demo en woodrock.github.io/tumataiti ejecuta la version int4 en el navegador, adecuada para herramientas de redaccion donde el usuario no quiere que el texto abandone la pagina.
+- Enmascarado de datos en pipelines de datos estructurados y logs: aunque el rendimiento es mas debil en JSON y HTML que en prosa, el modelo puede integrarse en etapas de preprocesado para marcar campos con PII antes de almacenar o compartir registros.
+- Deteccion de secretos en texto libre: la etiqueta SECRET permite localizar contrasenas y claves embebidas en mensajes o documentacion antes de reenviar contenido a servicios externos.
+- Filtrado en aplicaciones de mensajeria y chat: con 30 ms por documento en CPU de portatil, el modelo puede aplicarse en tiempo real sobre mensajes entrantes para redactar datos personales antes de persistirlos.
 
 ## Benchmarks y rendimiento
 
-Los resultados publicados miden la tasa de fuga documental (porcentaje de documentos con al menos una pieza de PII sin redactar), que es la métrica relevante para privacidad. Se comparan fp32 e int4, y se incluye como referencia el modelo profesor `openai/privacy-filter` en su punto de operación por defecto.
+Resultados publicados por el autor. La tasa de fuga por documento es la proporcion de documentos en los que al menos un dato personal queda sin redactar; el modelo se evalua sin las reglas.
 
-| Conjunto de test | Documentos | Fuga fp32 | Fuga int4 | Precisión de caracteres int4 | Fuga del profesor |
+| Conjunto de prueba | Documentos | Fuga fp32 | Fuga int4 | Precision de caracteres int4 | Fuga del teacher |
 |---|---:|---:|---:|---:|---:|
-| NZ synthetic, plantillas y nombres reservados | 1.750 | 0,3 % | 0,7 % | 98,9 | 47,4 % |
-| NZ synthetic, nombres reservados | 1.600 | 0,1 % | 0,0 % | 100,0 | 49,2 % |
-| Nemotron-PII + Gretel-en test splits | 2.000 | 3,3 % | 3,3 % | 99,0 | 40,0 % |
-| PII-Masking-300k, validación en inglés | 7.946 | 32,7 % | 34,2 % | 95,0 | 8,2 % |
+| NZ sintetico, plantillas, nombres y afiliaciones reservados | 2.750 | 2,3% | 2,2% | 94,8 | 66,6% |
+| NZ sintetico, nombres y afiliaciones reservados | 2.300 | 0,1% | 0,1% | 100,0 | 64,5% |
+| Nemotron-PII + Gretel-en test | 2.000 | 3,9% | 3,6% | 99,0 | 40,0% |
+| PII-Masking-300k, validacion en ingles | 7.946 | 35,1% | 33,9% | 95,0 | 8,2% |
 
-Desglose por comunidad de nombres (mismos documentos reservados, solo cambiando los nombres; porcentaje de nombres sin redactar):
+El teacher es openai/privacy-filter en su punto de operacion por defecto. En la primera fila, 57 de los 60 documentos con fuga del modelo int4 corresponden a un unico nombre de waka reservado, Māhuhu-ki-te-rangi, cuya ultima palabra no detecta.
 
-| Nombres | fp32 | int4 |
-|---|---:|---:|
-| Māori | 0,2 % | 0,3 % |
-| Pākehā | 0,2 % | 0,6 % |
-| Pasifika | 0,0 % | 0,0 % |
-| Asian NZ | 0,0 % | 0,0 % |
+Nombres por comunidad (mismos documentos reservados, solo cambiando los nombres; porcentaje de nombres y de afiliaciones sin redactar):
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible, dado que el modelo no es generativo.
+| Nombres | Nombres, fp32 | Nombres, int4 | Afiliaciones, int4 |
+|---|---:|---:|---:|
+| Maori | 0,1% | 0,1% | 0,8% |
+| Pakeha | 0,1% | 0,1% | 1,1% |
+| Pasifika | 0,0% | 0,0% | 1,1% |
+| Asian NZ | 0,0% | 0,0% | 0,9% |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no aplica en la variante ONNX int4, diseñada para CPU; el checkpoint fp32 requiere aproximadamente 0,6 GB en memoria.
-- GPU recomendadas: no se especifican; el modelo está optimizado para CPU de portátil y ejecución en navegador. Cualquier GPU con más de 1 GB de memoria puede alojar la variante fp32.
-- Cabe en GPU de consumo: sí, cualquier GPU consumer moderna (RTX 3060 o superior, e incluso integradas) puede ejecutar la variante fp32; la int4 está pensada para CPU.
-- Opciones de despliegue: ONNX Runtime (variante int4), Transformers con pipeline `token-classification` (fp32), y el decodificador propio de Tūmataiti en Python o en Rust para navegador.
-- Latencia y throughput: aproximadamente 30 ms por documento en CPU de portátil con la variante int4, según el autor. No se han publicado cifras de throughput para fp32 ni para GPU.
+- VRAM estimada para inferencia: el checkpoint fp32 ocupa aproximadamente 565 MB en memoria (141,3 M parametros a 4 bytes); la version int4 ONNX pesa 152 MB en disco y requiere bastante menos memoria, aunque el dato exacto de VRAM no esta disponible.
+- GPU recomendadas: no se especifican; por tamano, cualquier GPU consumer con 2 GB o mas de VRAM puede alojar el modelo fp32, y la version int4 cabe en CPU.
+- Cabe en GPU consumer: si, en cualquier GPU consumer moderna; el autor indica ejecucion en CPU de portatil a unos 30 ms por documento con la version int4.
+- Opciones de despliegue: transformers (pipeline token-classification), ONNX Runtime (modelo int4), y el decodificador propio de Tūmataiti en Python y en Rust para navegador.
+- Latencia y throughput: aproximadamente 30 ms por documento en CPU de portatil con int4 segun el autor; no se publican cifras de throughput en GPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
-|---|---:|---|---|---|---|
-| Tūmataiti DeBERTa-v3-small (open data) | 141 M | 512 tokens por ventana | Apache-2.0 | PII en inglés y NZ, int4 para dispositivo | Hugging Face, ONNX, demo en navegador |
-| openai/privacy-filter | no disponible | no disponible | no disponible | PII en inglés | Usado como profesor de referencia |
-| microsoft/deberta-v3-small | 141 M | 512 tokens | MIT | Modelo base encoder para token classification | Hugging Face |
-| Modelos NER genéricos tipo spaCy o BERT-base NER | 100-340 M | 512 tokens | MIT/Apache-2.0 | NER generalista, sin categorías PII específicas | Hugging Face, spaCy |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| woodrock/tumataiti-deberta-v3-small-open | 141,3 M | 512 tokens por ventana | PII en en y mi, con afiliaciones maories | apache-2.0 | Hugging Face, ONNX, demo en navegador |
+| openai/privacy-filter | no disponible | no disponible | PII general en ingles (usado como teacher) | no disponible en la informacion | Hugging Face |
+| microsoft/deberta-v3-small | no disponible | no disponible | Modelo base encoder, sin fine-tuning de PII | MIT | Hugging Face |
 
-La comparación directa con `openai/privacy-filter` solo es posible en términos de tasa de fuga documental en los conjuntos evaluados, donde el modelo de woodrock obtiene cifras muy inferiores en los conjuntos neozelandeses (0,3 % frente a 47,4 %) y en Nemotron+Gretel (3,3 % frente a 40,0 %), pero significativamente peores en PII-Masking-300k (32,7 % frente a 8,2 %). Esa discrepancia refleja diferencias de convención de etiquetado y de dominio, no una superioridad global.
+No se dispone de datos de benchmarks comparativos directos mas alla de la tasa de fuga frente al teacher openai/privacy-filter recogida en la seccion anterior.
 
 ## Limitaciones y advertencias
 
-- Todos los conjuntos de evaluación son sintéticos y provienen del mismo generador que los datos de entrenamiento, con plantillas y nombres reservados; miden generalización dentro de ese generador, no rendimiento en el mundo real. El autor planea un conjunto anotado por humanos.
-- La fuga en PII-Masking-300k es alta (34,2 % en int4), en parte por convenciones de etiquetado distintas (fechas en campos JSON tratadas como fechas de nacimiento, números de edificio y códigos postales como direcciones, cadenas inusuales como contraseñas) y por apellidos europeos poco frecuentes en marcado. Se espera peor rendimiento en datos estructurados (JSON, HTML) que en prosa.
-- Las palabras de parentesco usadas como nombres se etiquetan como personas ("Koro's IRD number", "Nan's"), y algunos números de referencia sin etiquetar con forma de IRD se etiquetan como identificadores.
-- Ninguna herramienta de redacción es completa: debe usarse para reducir exposición, con revisión humana en material sensible, no como garantía.
-- Cobertura lingüística limitada a inglés y te reo Māori; no se ha evaluado en castellano ni en otros idiomas.
-- Licencia Apache-2.0 permite uso comercial, pero el modelo se entrenó con Nemotron-PII (CC BY 4.0) y Gretel PII masking (Apache-2.0), cuyas atribuciones deben conservarse; el modelo base DeBERTa-v3-small es MIT.
-- El modelo es un clasificador de tokens, no un generador: no admite tool calling, agentes ni razonamiento multi-paso, y su salida debe interpretarse con el decodificador de Tūmataiti para obtener spans a nivel de palabra.
+- Todos los conjuntos de prueba son sinteticos: los conjuntos neozelandeses provienen del mismo generador que los datos de entrenamiento, con plantillas y nombres reservados, por lo que miden generalizacion dentro de ese generador. El autor planea un conjunto de prueba anotado por humanos; hasta entonces, las cifras deben tratarse como cota superior del rendimiento real.
+- La fuga en PII-Masking-300k es alta (34%), en parte por convenciones de etiquetado de ese conjunto (cualquier fecha en un campo JSON como fecha de nacimiento, numeros de edificio y codigos postales como direcciones, cadenas inusuales como contrasenas). Se esperan resultados mas debiles en datos estructurados (JSON, HTML) que en prosa.
+- Nombres de afiliacion largos y con guiones, como el waka Māhuhu-ki-te-rangi, pueden quedar parcialmente sin redactar.
+- El modelo esta limitado a ingles y te reo maori; no cubre otros idiomas.
+- La ventana de contexto es de 512 tokens por ventana, con solapamiento gestionado por el decodificador externo; textos muy largos dependen de esa logica de ventaneo.
+- Riesgo de alucinacion de spans: el decodificador filtra spans que son solo etiquetas de campo, pero el modelo puede marcar falsos positivos o negativos en texto no representado en el entrenamiento.
+- Licencia Apache-2.0: permite uso comercial, pero los datos de entrenamiento de terceros (Nemotron-PII bajo CC BY 4.0 y Gretel bajo Apache-2.0) imponen sus propias condiciones de atribucion.
+- No se han publicado resultados de sesgos mas alla del desglose por comunidad de nombres; el rendimiento en nombres fuera de las listas de entrenamiento no esta medido.
 
 ## Enlaces
 
@@ -107,4 +109,5 @@ La comparación directa con `openai/privacy-filter` solo es posible en términos
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-small
 - Dataset Nemotron-PII: https://huggingface.co/datasets/nvidia/Nemotron-PII
 - Dataset Gretel PII masking: https://huggingface.co/datasets/gretelai/gretel-pii-masking-en-v1
-- Modelo profesor de referencia: https://huggingface.co/openai/privacy-filter
+- Modelo teacher: https://huggingface.co/openai/privacy-filter
+- Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/

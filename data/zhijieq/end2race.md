@@ -2,100 +2,85 @@
 
 ## Resumen
 
-End2Race es una política neuronal end-to-end y un entorno de simulación para carreras autónomas multivehículo sobre la plataforma F1TENTH. Lo desarrolla el Michigan Traffic Lab (Zhijie Qiao, Haowei Li, Zhong Cao y Henry X. Liu) y se publica como un paquete de Python acompañado de pesos preentrenados en Hugging Face. El modelo mapea directamente lecturas de LiDAR 2D y velocidad del vehículo a comandos de dirección y velocidad a 40 Hz, sin etapas intermedias de percepción o planificación explícitas.
+End2Race es una política neuronal de conducción extremo a extremo para carreras autónomas multivehículo sobre la plataforma F1TENTH. Desarrollada por Zhijie Qiao, Haowei Li, Zhong Cao y Henry X. Liu (Michigan Traffic Lab, Universidad de Míchigan), convierte directamente escaneos LiDAR 2D de 360° y la velocidad longitudinal en comandos de dirección y velocidad a 40 Hz, sin módulos intermedios de percepción, localización o planificación.
 
-No es un modelo de lenguaje ni un modelo multimodal de propósito general: es un controlador de robótica con 850.556 parámetros (datos reales de safetensors, aproximadamente 3,4 MB en fp32), lo que lo sitúa en el rango de un sistema embebido más que de un modelo de gran escala. Su relevancia actual radica en que combina una política recurrente entrenada con aprendizaje por refuerzo con un entorno Gymnasium listo para usar, lo que facilita reproducir experimentos de conducción autónoma y de maniobras de adelantamiento en circuitos reales modelados.
+El modelo es relevante dentro del campo de la robótica y el aprendizaje por refuerzo porque demuestra que una política recurrente compacta puede ejecutar maniobras de adelantamiento en circuitos reales de F1TENTH, un banco de pruebas habitual para vehículos autónomos a escala 1:10. Su tamaño es minúsculo (850.556 parámetros), lo que permite inferencia en tiempo real incluso en hardware embebido de bajo consumo.
 
-El repositorio de Hugging Face funciona como demo rápida: incluye una rueda instalable, ejemplos de código para prueba cronometrada individual y para carrera cabeza a cabeza, y soporte para cuatro trazados (Austin, Hockenheim, MoscowRaceway y Nuerburgring). El proyecto se distribuye bajo licencia Apache 2.0 y está vinculado al artículo arXiv 2509.16894.
+El repositorio de Hugging Face distribuye tanto los pesos preentrenados como un paquete Python (`end2race`) que registra un entorno Gymnasium (`End2Race-v0`) para simulación, con cuatro circuitos disponibles (Austin, Hockenheim, MoscowRaceway y Nuerburgring) y dos modos: contrarreloj individual y carrera cabeza a cabeza contra un oponente controlado por línea de carrera.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Red de política end-to-end para robótica (encoder de LiDAR + embedding de velocidad + estado recurrente GRU). La topología completa de capas no está detallada en la información disponible. |
-| Parametros totales | 850.556 |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No aplica. No es un modelo de lenguaje: mantiene estado recurrente GRU que se reinicia con `policy.reset()`. No se declara ventana de contexto |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | No aplica / no disponible. No procesa texto |
+| Arquitectura | Red neuronal recurrente (GRU) con codificadores para LiDAR y velocidad; política extremo a extremo |
+| Parámetros totales | 850.556 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no aplica (entrada: LiDAR de 180 haces tras submuestreo y velocidad; estado oculto de la GRU) |
+| Tipos de cuantización | no disponible |
+| Idiomas soportados | no disponible (no es un modelo de lenguaje) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, con código personalizado (`custom_code`), requiere `trust_remote_code=True` |
-| Entrada | LiDAR `float32[1440]` (360°, alcance máximo 30 m) y velocidad `float32[1]` en m/s. Internamente el LiDAR se submuestrea a 180 haces |
-| Salida | `float32[2]`: `[ángulo de dirección en radianes, velocidad deseada en m/s]`. Dirección recortada a [-0,4189, 0,4189] rad (±24°) |
-| Frecuencia de control | 40 Hz |
-| Entorno asociado | Gymnasium, tarea `End2Race-v0`; circuitos Austin, Hockenheim, MoscowRaceway y Nuerburgring |
-| Librería | transformers (PyTorch) |
-| Descargas / likes en Hugging Face | 3 descargas, 0 likes |
+| Formato de pesos | safetensors (carga vía `transformers` con `trust_remote_code=True`) |
 
 ## Arquitectura y entrenamiento
 
-End2Race se presenta como un marco de aprendizaje extremo a extremo para carreras multivehículo. La política consume directamente la observación del simulador: un escaneo LiDAR 2D de 1440 haces repartidos en 360° con alcance máximo de 30 m, la velocidad longitudinal y, de forma implícita, el estado recurrente del vehículo. En el método `act(observation)`, el LiDAR se submuestrea a 180 haces, la velocidad se proyecta mediante un embedding y la red produce el par de acciones de dirección y velocidad objetivo. El estado oculto es recurrente (GRU) y debe reiniciarse explícitamente antes de cada episodio mediante `policy.reset()`, lo que indica que el historial temporal forma parte de la toma de decisiones.
+End2Race es una política de aprendizaje por refuerzo entrenada de extremo a extremo. La entrada es un diccionario de observación con LiDAR (`float32[1440]`, alcance máximo de 30 m), velocidad longitudinal (`float32[1]`) y pose del vehículo (`float32[3]`: x, y, orientación). Internamente, la política submuestrea el LiDAR a 180 haces, embebe la velocidad y mantiene un estado oculto recurrente de tipo GRU que se reinicia con `policy.reset()` al comienzo de cada episodio. La salida es un vector `float32[2]` con ángulo de dirección (recortado a ±0,4189 rad, es decir, ±24°) y velocidad deseada en m/s.
 
-El entrenamiento se enmarca en aprendizaje por refuerzo sobre el entorno de simulación F1TENTH, según las etiquetas del repositorio (`reinforcement-learning`, `autonomous-racing`, `f1tenth`). El entorno admite dos modos: prueba cronometrada individual, terminada por colisión o por completar vueltas, y carrera cabeza a cabeza con un oponente que sigue una de tres líneas de carrera (interna, central o externa) a una velocidad escalada. Los resultados del episodio se resumen en `info["outcome"]` con los valores `overtake`, `follow` o `collision`. La información proporcionada no incluye el número de tokens o pasos de entrenamiento, la composición del dataset ni si se aplicaron técnicas de ajuste fino como RLHF o DPO, por lo que esos datos no están disponibles.
+El entrenamiento se realiza mediante aprendizaje por refuerzo en el simulador propio de End2Race, que modela la dinámica del vehículo F1TENTH y varios circuitos. La model card no detalla el número de pasos de entrenamiento, la composición del dataset ni si se emplearon técnicas de ajuste fino supervisado o preferencias. La innovación principal es la integración de la política recurrente con un entorno de simulación Gymnasium que permite tanto evaluación individual como interacción multivehículo con oponentes que siguen líneas de carrera predefinidas (interna, central o externa) y escalado de velocidad ajustable.
 
 ## Capacidades
 
-- Control de conducción end-to-end: convierte LiDAR 2D y velocidad en ángulo de dirección y velocidad deseada a 40 Hz, sin módulos separados de percepción y planificación.
-- Memoria temporal: incorpora un estado recurrente GRU que permite reaccionar de forma dependiente del historial dentro de un episodio.
-- Prueba cronometrada individual: modo `single`, con terminación por colisión o por completar el número de vueltas configurado.
-- Carrera cabeza a cabeza: modo `multi`, con maniobras de adelantamiento y seguimiento frente a un oponente parametrizable en línea de carrera, velocidad y distancia inicial.
-- Soporte de cuatro circuitos: Austin, Hockenheim, MoscowRaceway y Nuerburgring.
-- Compatibilidad con Gymnasium: se integra como tarea `End2Race-v0` con espacios de observación de tipo `Dict` y renderizado interactivo u headless.
-- Métricas de episodio: expone resultado (`overtake`, `follow`, `finished`, `collision`), tiempos por vuelta y velocidad media en m/s.
-- No dispone de tool calling, function calling, capacidades de agente basadas en texto, razonamiento simbólico, visión RGB, audio ni soporte multilingüe, ya que no es un modelo de lenguaje.
+- Conducción autónoma extremo a extremo a 40 Hz a partir de LiDAR 2D y velocidad, sin mapas ni localización global explícita.
+- Carreras multivehículo con maniobras de adelantamiento: el entorno reporta como resultado `"overtake"` o `"follow"`.
+- Contrarreloj individual con seguimiento de vueltas y tiempos por vuelta.
+- Adaptación a cuatro circuitos distintos: Austin, Hockenheim, MoscowRaceway y Nuerburgring.
+- Gestión de estado recurrente para mantener coherencia temporal entre pasos de control.
+- No dispone de tool calling, function calling, capacidades de agente basadas en lenguaje, multilingüismo ni modos de razonamiento explícito; es una política de control motor especializada.
 
 ## Casos de uso
 
-- Investigación en aprendizaje por refuerzo para conducción autónoma: el entorno Gymnasium permite entrenar y evaluar políticas de control continuo con observaciones de LiDAR, con recompensas y condiciones de terminación ya definidas.
-- Estudio de maniobras de adelantamiento: el modo `multi` con parámetros de línea de carrera del oponente (`raceline0`, `raceline1`, `raceline2`), escalado de velocidad y separación inicial permite reproducir escenarios de tráfico controlados y medir si la política opta por adelantar o seguir.
-- Benchmark de pipelines percepción-control a 40 Hz: sirve como referencia de latencia para comparar arquitecturas end-to-end frente a aproximaciones modulares (percepción explícita más planificador).
-- Docencia en robótica: el formato de instalación mediante rueda de Python y los ejemplos de código permiten montar prácticas de control autónomo y de simulación F1TENTH en pocas líneas.
-- Generación de datos sintéticos de conducción: los episodios ejecutados con la política preentrenada producen trayectorias etiquetadas (tiempos por vuelta, resultado, velocidad media) reutilizables para imitación o para análisis de comportamiento.
-- Evaluación de seguridad y robustez: el criterio de terminación por colisión y el modo headless facilitan ejecutar campañas automatizadas de episodios para estudiar tasas de fallo en distintas condiciones iniciales.
-- Prototipado de transferencia sim-to-real en F1TENTH: la interfaz de observación y acción es la habitual de la plataforma, por lo que la política puede probarse como punto de partida en un banco físico, si bien no hay validación publicada de esa transferencia en la información disponible.
+- Investigación en conducción autónoma extremo a extremo: sirve como línea base reproducible para comparar políticas de control sobre F1TENTH, con un entorno Gymnasium que estandariza observaciones, acciones y criterios de terminación.
+- Desarrollo de algoritmos de adelantamiento multivehículo: el modo `"multi"` permite evaluar estrategias de overtaking contra oponentes con líneas de carrera y velocidades configurables, lo que facilita experimentos controlados de interacción.
+- Simulación de competiciones de robótica: el modo contrarreloj con seguimiento de vueltas y tiempos permite organizar benchmarks internos o reproducir condiciones de competición F1TENTH.
+- Validación de pipelines de simulación a realidad: al ser una política compacta con entradas de sensores reales (LiDAR y velocidad), puede transferirse a un vehículo F1TENTH físico tras validación en simulador.
+- Educación y docencia en robótica y RL: el tamaño reducido (850.556 parámetros) y la API sencilla (`reset`, `act`) permiten ejecutar experimentos completos en portátiles sin GPU dedicada.
+- Pruebas de robustez y seguridad: el entorno reporta colisiones y resultados de episodio, lo que permite medir tasas de fallo y analizar el comportamiento de la política ante configuraciones adversariales de oponentes.
+- Integración en sistemas de control de bajo nivel: la salida directa de dirección y velocidad a 40 Hz encaja en bucles de control de vehículos a escala con requisitos de latencia estrictos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio de Hugging Face no incluye tablas comparativas de métricas como tiempos por vuelta, tasas de colisión o comparaciones frente a planificadores clásicos; únicamente referencia el artículo arXiv 2509.16894, cuyo contenido no forma parte de la información proporcionada.
+No se han publicado resultados de benchmarks en la información disponible. La model card y los metadatos no incluyen tablas comparativas de MMLU, HumanEval, GSM8K ni métricas específicas de conducción (tiempos de vuelta, tasas de colisión o porcentaje de adelantamientos exitosos) más allá de los campos que el entorno devuelve en tiempo de ejecución (`lap_times`, `avg_speed`, `outcome`).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: muy baja. Con 850.556 parámetros, el peso ocupa aproximadamente 3,4 MB en fp32 y 1,7 MB en fp16, más el estado oculto recurrente. No se requieren aceleradores dedicados.
-- GPU recomendadas: cualquiera con soporte CUDA es suficiente; no hay indicios de que el modelo necesite A100, H100 ni tarjetas de gama alta. Una RTX 4090 o similar queda muy por encima de los requisitos reales.
-- Cabida en GPU de consumo: sí, en cualquier GPU de consumo e incluso en iGPU integradas. También es viable la ejecución en CPU.
-- CPU: es el escenario realista, ya que el bucle de control debe sostener 40 Hz (25 ms de presupuesto por ciclo) y tanto la codificación del LiDAR como la pasada por la red son de coste reducido.
-- Opciones de despliegue: `AutoModel.from_pretrained` de transformers junto con el paquete `end2race` y Gymnasium, con `trust_remote_code=True`. No aplican vLLM, llama.cpp, Ollama ni TGI, al no ser un modelo de lenguaje.
-- Latencia y throughput: no se publican cifras concretas en la información disponible. La única referencia temporal es la frecuencia de operación declarada de 40 Hz, que implica un presupuesto de 25 ms por ciclo incluyendo el paso del simulador.
-- Almacenamiento: el tamaño del repositorio se indica como 0,0 GB, coherente con un paquete de pesos de pocos megabytes.
+- VRAM estimada para inferencia: inferior a 1 GB; con 850.556 parámetros en precisión completa el peso de los parámetros ronda los 3,4 MB, y el estado recurrente y los buffers de observación son despreciables.
+- GPU recomendadas: no se requiere GPU; cualquier GPU consumer (por ejemplo, RTX 3060 o superior) ejecuta la política sin problema. También es viable en CPU.
+- Cabe en GPU consumer: sí, en cualquier modelo actual e incluso en hardware embebido tipo Raspberry Pi o Jetson Nano para el control del vehículo a escala.
+- Opciones de despliegue: `transformers` con `AutoModel.from_pretrained(..., trust_remote_code=True)` y el paquete `end2race` instalado desde el wheel del repositorio; el entorno de simulación se ejecuta con Gymnasium y renderizado opcional en ventana interactiva.
+- Latencia y throughput estimados: no disponibles de forma publicada; el diseño apunta a control a 40 Hz (25 ms por paso), holgado para el tamaño del modelo, pero no se aportan mediciones oficiales.
 
 ## Comparativa con modelos similares
 
-No disponible. En la información proporcionada no se identifican modelos comparables con datos publicados de parámetros, contexto o rendimiento. End2Race pertenece a la categoría de políticas end-to-end para F1TENTH y carreras autónomas, donde las alternativas habituales son planificadores clásicos y controladores basados en línea de carrera (por ejemplo, seguimiento de raceline o control predictivo), pero no se aportan cifras verificables para establecer una comparación cuantitativa.
-
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Tipo | Parámetros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| End2Race | 850.556 | No aplica (estado recurrente GRU) | No disponible | Apache 2.0 | Pesos en Hugging Face y entorno Gymnasium |
-| Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
+| End2Race | Política RL extremo a extremo para F1TENTH | 850.556 | LiDAR 2D (180 haces) + velocidad | Apache 2.0 | Hugging Face + GitHub |
+| Políticas F1TENTH basadas en aprendizaje supervisado (por ejemplo, imitation learning) | Redes CNN para conducción | no disponible | Imágenes o LiDAR | variable | repositorios académicos |
+| Controladores clásicos (MPC, Stanley, Pure Pursuit) | No neuronales | no aplica | Mapas y localización | variable | software abierto |
+
+No se dispone de datos públicos de rendimiento comparativo entre End2Race y estas alternativas en la información proporcionada; la comparación se limita a categoría, tamaño y licencia.
 
 ## Limitaciones y advertencias
 
-- No es un modelo de lenguaje: carece de generación de texto, razonamiento verbal, tool calling, capacidades de agente y soporte multilingüe. Cualquier expectativa en ese sentido es incorrecta.
-- Ámbito restringido: solo contempla observaciones de LiDAR 2D (hasta 30 m), velocidad y pose del vehículo. No procesa cámara RGB, radar ni mapas de alta definición.
-- Dirección limitada: la acción de dirección se recorta a ±24° (0,4189 rad), lo que restringe la agilidad en curvas muy cerradas.
-- Generalización limitada por el dominio de entrenamiento: los circuitos soportados son cuatro (Austin, Hockenheim, MoscowRaceway, Nuerburgring) y no hay datos sobre el comportamiento en trazados, superficies o dinámicas distintas.
-- Transferencia al mundo real no validada: no se documenta en la información disponible ninguna verificación sim-to-real sobre un vehículo F1TENTH físico, con las diferencias de dinámica y ruido de sensores que ello implica.
-- Estado del repositorio: 3 descargas y 0 likes, con la model card descrita como "quick demo". Se trata de un artefacto de investigación con escasa validación externa por parte de la comunidad.
-- Ejecución de código personalizado: el uso de `trust_remote_code=True` implica ejecutar código del autor del repositorio, lo que supone un riesgo de seguridad que conviene auditar antes de desplegarlo en un entorno de producción.
-- Sin datos de benchmarks en la información disponible: no se pueden contrastar tiempos por vuelta, tasas de colisión ni ventajas frente a controladores clásicos.
-- Dependencia del entorno: el comportamiento depende de la implementación del simulador y de la plataforma F1TENTH, por lo que cambios en la física o en la frecuencia de simulación pueden degradar el rendimiento.
-- Licencia: Apache 2.0 permite uso comercial y modificación, con obligación de conservar el aviso de licencia y el archivo de cambios. Al incluir pesos entrenados, conviene revisar la licencia de las dependencias del entorno de simulación por separado.
-- Riesgo de alucinación: no aplica en el sentido habitual; el modo de fallo equivalente es una acción de control incorrecta que puede derivar en colisión, sin mecanismo de abstención ni estimación de incertidumbre documentada.
+- Modelo especializado en conducción F1TENTH: no es un modelo de lenguaje ni un modelo de propósito general; no admite tareas de texto, código o visión genérica.
+- Dependencia del simulador y de la dinámica del vehículo modelada: el rendimiento en un vehículo físico puede degradarse por diferencias de calibración del LiDAR, latencias y dinámica no modelada.
+- Sin datos publicados sobre sesgos, tasas de colisión o robustez ante condiciones de iluminación, superficies o sensores ruidosos.
+- Riesgo de sobreajuste a los cuatro circuitos incluidos; no hay evidencia de generalización a pistas no vistas.
+- La licencia Apache 2.0 permite uso comercial, pero el código y el entorno asociados deben revisarse en el repositorio de GitHub para confirmar compatibilidad y dependencias.
+- Requiere `trust_remote_code=True` al cargar el modelo, lo que implica ejecutar código del autor; conviene auditar el repositorio antes de usarlo en producción.
+- No se especifican requisitos de seguridad funcional ni certificaciones; su uso en vehículos reales exige validación independiente y mecanismos de parada de emergencia.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/zhijieq/End2Race
-- Artículo (arXiv): https://arxiv.org/abs/2509.16894
+- Paper (arXiv): https://arxiv.org/abs/2509.16894
 - Código y documentación completa: https://github.com/michigan-traffic-lab/End2Race
-- Plataforma F1TENTH (roboracer.ai): https://roboracer.ai/
-- Instalación de la rueda publicada: https://huggingface.co/zhijieq/End2Race/resolve/main/end2race-1.0.0rc2-py3-none-any.whl
-- Cita BibTeX del proyecto: incluida en la model card del repositorio (Qiao, Li, Cao y Liu, 2025)
+- Plataforma F1TENTH: https://roboracer.ai/

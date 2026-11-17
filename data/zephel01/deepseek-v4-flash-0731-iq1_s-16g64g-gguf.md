@@ -2,108 +2,108 @@
 
 ## Resumen
 
-Esta ficha describe una cuantización GGUF extrema del modelo DeepSeek-V4-Flash-0731 (MIT), publicada por el usuario zephel01 bajo el identificador `DeepSeek-V4-Flash-0731-IQ1_S-16G64G-GGUF`. No es un modelo nuevo, sino un empaquetado de 61,7 GB pensado para ejecutar un modelo MoE de 284.334.567.511 parámetros totales en un PC con una GPU de 16 GB de VRAM y 64 GB de RAM. La build conserva los 256 expertos enrutados de cada capa, sin poda, y recurre a una mezcla de cuantizaciones IQ1_S (64% de los bytes) e IQ1_M (36%) para los expertos, con una media de 1,62 bits por peso.
+DeepSeek-V4-Flash-0731-IQ1_S-16G64G-GGUF es una cuantización GGUF extrema del modelo DeepSeek-V4-Flash-0731 (desarrollado por DeepSeek), publicada por el usuario zephel01 bajo licencia MIT. Se trata de un modelo MoE (mixture of experts) de 284.334.567.511 parámetros totales, comprimido hasta 61,7 GB mediante una mezcla de tipos de cuantización (IQ1_S, IQ1_M, Q5_K y bytes de UD-Q2_K_XL) que promedia 1,62 bits por peso. El objetivo declarado es que el modelo quepa y funcione en un PC con una GPU de 16 GB de VRAM y 64 GB de RAM, manteniendo los 256 expertos enrutados de cada capa sin poda.
 
-El problema que resuelve es de encaje en memoria: la cuantización de referencia de unsloth (UD-Q2_K_XL, 96,8 GB) no cabe en ese perfil de hardware y obliga a paginar desde SSD, mientras que esta build sí cabe. El precio es una pérdida de calidad medible: KL de 0,407 frente a 0,186 de la referencia, y un 73,7% de coincidencia en el token superior. El autor la marca explícitamente como BETA y advierte de que las mediciones se hicieron en una RTX 5090 limitada por software a 16 GB de VRAM, no en una tarjeta real de 16 GB.
+La relevancia de esta ficha reside en que permite ejecutar un modelo de escala frontier en hardware de consumo, sacrificando calidad (KL de 0,407 frente a 0,186 de la referencia UD-Q2_K_XL) a cambio de un rendimiento 4x superior (84,5 tok/s frente a 21,3 tok/s) al evitar el desbordamiento a SSD. Es una build BETA medida en una RTX 5090 limitada artificialmente a 16 GB de VRAM, no en una tarjeta real de 16 GB.
 
-La relevancia es acotada pero clara para quien quiera ejecutar un MoE de gran tamaño en hardware de consumo: demuestra que con LDLQ, imatrix propia y reempaquetado selectivo de atención se puede bajar un modelo de 284B a un régimen de 1,6 bits por peso manteniendo un comportamiento aceptable en pruebas de uso real (10 de 11 comprobaciones superadas). No hay datos publicados de arquitectura, contexto ni entrenamiento del modelo base en la información disponible.
+La información disponible sobre el modelo base (arquitectura interna, datos de entrenamiento, benchmarks oficiales) es muy limitada; esta ficha se centra en los datos verificables de la cuantización y del modelo base en lo que la model card proporciona.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | MoE (mixture of experts); detalles de la arquitectura base no disponibles |
-| Parametros totales | 284.334.567.511 |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible (las pruebas del autor usan prompts de 4K, 16K y needle de 8K-31K) |
-| Tipos de cuantizacion | GGUF mixta: expertos IQ1_S (64% de bytes) e IQ1_M (36%); atención `attn_q_b`, `attn_output_a`, `attn_output_b` en Q5_K; resto heredado de UD-Q2_K_XL; media de 1,62 bits por peso |
-| Idiomas soportados | no disponible en la model card; el autor incluye pruebas en inglés y japonés y advierte de respuestas en chino ante prompts en japonés |
+| Arquitectura | MoE (mixture of experts); detalles internos del transformer no disponibles |
+| Parámetros totales | 284.334.567.511 (284,3 mil millones) |
+| Parámetros activos | no disponible |
+| Longitud de contexto | no disponible (se menciona una prueba needle de 8K-31K en la model card) |
+| Tipos de cuantización | Mixta: expertos enrutados gate/up en IQ1_S (64% por bytes) y down en IQ1_M (36%); attention `attn_q_b`, `attn_output_a`, `attn_output_b` en Q5_K; resto en bytes de UD-Q2_K_XL; media de 1,62 bits por peso |
+| Idiomas soportados | Inglés (en) y japonés (ja), según tags y model card |
 | Licencia | MIT |
-| Formato de pesos | GGUF (3 shards, 61,7 GB; `SHA256SUMS` incluido) |
+| Formato de pesos | GGUF (3 shards, 61,7 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer con mezcla de expertos (MoE) de 284.334.567.511 parámetros totales, según los datos de safetensors del repositorio. La información disponible no detalla el número de capas, la dimensión oculta, el número de expertos activos por token ni el proceso de entrenamiento (tokens, composición del dataset, RLHF/DPO). Lo que sí se documenta es el proceso de cuantización, que constituye la innovación técnica de esta ficha.
+El modelo base es un MoE de DeepSeek con 284,3 mil millones de parámetros totales. La model card no detalla el número de parámetros activos, la composición del dataset de entrenamiento, el número de tokens ni si hubo RLHF/DPO. Lo que sí se documenta es el proceso de cuantización: los expertos fueron recuantizados con LDLQ a partir del UD-Q8_K_XL de unsloth (expertos originales en MXFP4), usando un volcado de Hessian generado a partir de las propias respuestas de chat de V4 (241 prompts, 104 de ellos en japonés) más texto general, y una imatrix propia.
 
-Los 256 expertos enrutados de cada capa se recuantizaron con LDLQ a partir de la build UD-Q8_K_XL de unsloth (expertos originales en MXFP4), usando un volcado de Hessiano generado con respuestas de chat del propio V4 (241 prompts, 104 en japonés) más texto general, y una imatrix propia. Las matrices `gate`/`up` quedaron en IQ1_S y `down` en IQ1_M. Las matrices de atención `attn_q_b`, `attn_output_a` y `attn_output_b` se subieron a Q5_K; el resto de tensores conserva los bytes de UD-Q2_K_XL, y el primer shard (solo metadatos, 5 MB) es el archivo de unsloth sin modificar. El autor menciona además un drafter DSpark (~6,5 GB de VRAM) que no recomienda en tarjetas de 16 GB y que se desactiva con `./setup-deepseek.sh --no-dspark`.
+La innovación técnica destacable de esta build es la estrategia de cuantización mixta por tipo de tensor: los expertos enrutados (los que dominan el tamaño) se comprimen a IQ1_S/IQ1_M, mientras que las proyecciones de atención críticas (`attn_q_b`, `attn_output_a`, `attn_output_b`) se mantienen en Q5_K para preservar calidad. El primer shard (solo metadatos, 5 MB) es el fichero de unsloth tal cual, por lo que su campo `general.quantized_by` sigue indicando Unsloth. El motor de referencia es Abyss (v1.3.120 o superior); llama.cpp no ha sido verificado todavía.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno: el autor valida una conversación de 11 turnos en su suite de pruebas.
-- Razonamiento y respuesta a preguntas con contexto largo: prueba de needle superada en el rango de 8K a 31K tokens.
-- Generación de código: 5 de 5 tareas de código con tests superadas en la validación del autor.
-- Tool calling / function calling: una de las comprobaciones de la suite `--check` es explícitamente una llamada a herramienta, superada.
-- Capacidad multilingüe limitada y problemática: responde en japonés en 9 de 10 casos, pero puede contestar en chino a preguntas en japonés (comportamiento presente también en los pesos originales).
-- No hay evidencia en la información disponible de soporte de visión, audio, modo thinking explícito ni agentes multi-paso más allá del tool calling citado.
+- Generación de texto conversacional (pipeline `text-generation`, tag `conversational`).
+- Razonamiento y respuesta a preguntas (se cita una prueba de needle de 8K-31K tokens).
+- Generación de código: la model card reporta 5/5 tareas de código con tests superadas.
+- Tool calling / function calling: incluido en las pruebas `--check` del motor Abyss.
+- Conversaciones multi-turno: se cita una prueba de conversación de 11 turnos.
+- Capacidades multilingües: inglés y japonés (9/10 respuestas en japonés se mantuvieron en japonés).
+- Compatibilidad con endpoints (tag `endpoints_compatible`), con API estilo OpenAI (`/v1/chat/completions`).
 
 ## Casos de uso
 
-- Ejecución local de un MoE de 284B en un PC de consumo: el caso de uso central. Con una GPU de 16 GB (RTX 5060 Ti 16 GB, RTX 4080, RX 9070 XT) y 64 GB de RAM, el modelo cabe sin paginar desde SSD, lo que evita el cuello de botella de disco que lastra a la build de 96,8 GB.
-- Asistente de código en local con tests: las 5 tareas de código con tests pasaron en la validación del autor, lo que permite usar el modelo como generador de parches verificables en un pipeline local sin enviar código a la nube.
-- Automatización con tool calling: la llamada a herramienta superada en la suite permite integrarlo en flujos de agente sencillos (consulta de APIs, ejecución de comandos) siempre que se validen las salidas.
-- Procesamiento de documentos largos en local: con prompts de 16K tokens medidos a 89,5 tok/s, es viable resumir o extraer información de documentos de decenas de miles de tokens en hardware de consumo, aceptando la pérdida de calidad de la cuantización.
-- Atención al cliente o chat multi-turno en japonés con salvaguardas: requiere fijar en el system prompt "日本語で答えてください。" (responder en japonés), ya que sin esa instrucción el modelo deriva al chino con frecuencia; con ella, el autor reporta 1 de 24 derivas en la build L97.
-- Laboratorio de cuantización e investigación: el repositorio documenta el método (LDLQ, Hessiano propio, imatrix, reempaquetado selectivo) y el motor Abyss, lo que lo convierte en una referencia reproducible para estudiar el límite práctico de compresión de MoE grandes.
+- Ejecución local de un modelo de 284B en un PC de consumo: con una GPU de 16 GB (RTX 5060 Ti 16 GB, RTX 4080, RX 9070 XT) y 64 GB de RAM, el modelo cabe sin desbordar a SSD, permitiendo inferencia local de un modelo de escala frontier.
+- Asistente de código en local: las pruebas reportan 5/5 tareas de código con tests superadas; adecuado para autocompletado y generación de funciones en entornos sin conexión.
+- Atención al cliente en japonés e inglés: el modelo mantiene el idioma en 9/10 respuestas y no produjo hechos erróneos en las pruebas, lo que lo hace apto para conversaciones multi-turno (11 turnos probados).
+- Procesamiento de documentos largos: la ventana de contexto permite pruebas needle de 8K-31K tokens, útil para resumen y extracción sobre contratos o informes.
+- Agentes con tool calling: el soporte de function calling y la API compatible con OpenAI permiten integrarlo en pipelines de agentes multi-paso.
+- Prototipado e investigación en hardware limitado: permite evaluar el comportamiento de un MoE de 284B sin acceso a clústeres, a costa de una calidad inferior (KL 0,407).
+- Despliegue con CPU offload: los tags `cpu-offload` y `consumer-gpu` indican que el motor Abyss gestiona la distribución VRAM/RAM, útil para estaciones de trabajo modestas.
 
 ## Benchmarks y rendimiento
 
-Datos publicados por el autor de la cuantización (no del modelo base). KL calculada contra UD-Q8_K_XL de unsloth con 12 secuencias de 1.024 tokens (8 de texto inglés, 1 de código, 3 de japonés), motor Abyss.
+Datos de la model card (motor Abyss, RTX 5090 limitada a 16 GB de VRAM y 64 GB de RAM):
 
-| Metrica | L62 (esta build) | unsloth UD-Q2_K_XL (referencia) |
-|---|---|---|
-| Tamano | 61,7 GB | 96,8 GB |
+| Métrica | L62 (esta repo) | UD-Q2_K_XL (referencia) |
+|---|---:|---:|
+| Descarga | 61,7 GB | 96,8 GB |
 | KL (12 secuencias) | 0,407 | 0,186 |
-| KL en japones (3 secuencias) | 0,435 | 0,219 |
-| Coincidencia en token superior | 73,7% | 81,5% |
-| Velocidad, prompt 4K (16G64G) | 84,5 tok/s | 21,3 tok/s |
-| Velocidad, prompt 16K (16G64G) | 89,5 tok/s | 19,6 tok/s |
-| Suite `--check` de Abyss | 10 de 11 | 11 de 11 |
+| KL japonés (3 secuencias) | 0,435 | 0,219 |
+| Mismo token top | 73,7% | 81,5% |
+| Throughput | 84,5 tok/s | 21,3 tok/s |
+| `--check` (japonés, 3 tareas código, tool call, needle 8K-31K, conversación 11 turnos) | 10/11 | 11/11 |
+| Respuestas en japonés que se mantuvieron en japonés | 9/10 | 9/10 |
+| Hechos erróneos en esas respuestas | 0 | 0 |
+| 5 tareas de código con tests | 5/5 | 5/5 |
+| Needle 8K | encontrado | no reportado |
 
-Las velocidades se midieron en una RTX 5090 limitada por software a 16 GB de VRAM y con un reparto de 40 GB de RAM bajo un límite de 58 GB, sobre un equipo con Ryzen AI Max+ 395 y memoria LPDDR5X. El propio autor advierte que una tarjeta real de 16 GB tiene menos ancho de banda y que la RAM LPDDR5X de ese equipo es aproximadamente 3 veces más rápida que un DDR5 de sobremesa habitual, por lo que las cifras reales serán inferiores. No hay resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estándar en la información disponible.
+El único fallo de `--check` fue una explicación en japonés (detalle truncado en la información disponible). No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM: 16 GB es el objetivo de diseño; el autor indica que una GPU de 24 GB más 64 GB de RAM también encaja "con margen de sobra".
-- RAM: 64 GB en el perfil objetivo; en las pruebas se usó un reparto de 40 GB de RAM bajo un límite de 58 GB.
-- GPU objetivo citadas: RTX 5060 Ti 16 GB, RTX 4080, RX 9070 XT. No se ha medido en ninguna de ellas de forma nativa.
-- Almacenamiento: 61,7 GB de pesos en 3 shards más el espacio del pack generado por `iq_pack.py`.
-- Cabe en GPU de consumo: sí, en el perfil 16 GB VRAM + 64 GB RAM, que es precisamente su razón de ser.
-- Despliegue: motor Abyss v1.3.120 o superior (requiere `setup-deepseek.sh --no-dspark` y `tools/iq_pack.py --compat-bf16`). llama.cpp no está verificado según el autor. No se mencionan vLLM, Ollama ni TGI.
-- Latencia y throughput: 84,5 tok/s con prompt de 4K y 89,5 tok/s con prompt de 16K, generando 512 tokens a temperatura 0, mediana de 3 ejecuciones, en el hardware de prueba descrito. En un PC de 16 GB convencional se esperan cifras notablemente menores.
-- El drafter DSpark (~6,5 GB de VRAM) no se recomienda en tarjetas de 16 GB y no se midió a este tamaño.
+- VRAM estimada: 16 GB de VRAM más 64 GB de RAM como objetivo de diseño; el fichero pesa 61,7 GB y requiere offload de expertos a RAM.
+- GPU recomendadas: RTX 5060 Ti 16 GB, RTX 4080, RX 9070 XT (16 GB); la medición se hizo en una RTX 5090 limitada a 16 GB.
+- Cabe en GPU de consumo de 16 GB con 64 GB de RAM del sistema; no cabe en GPUs con menos VRAM sin depender del SSD (lo que degrada el rendimiento a ~21 tok/s).
+- Opciones de despliegue: motor Abyss v1.3.120+ (recomendado, con `setup-deepseek.sh --quant 16G64G --no-dspark --download-model`); llama.cpp no verificado.
+- Latencia y throughput: 84,5 tok/s en la configuración medida; el drafter DSpark (~6,5 GB de VRAM) no se recomienda en tarjetas de 16 GB y no está medido a este tamaño.
+- El modelo se sirve en `http://127.0.0.1:8082/` con API compatible con OpenAI.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Tamano en disco | Contexto | Calidad (KL) | Licencia | Encaje 16 GB + 64 GB |
-|---|---|---|---|---|---|---|
-| Esta build (L62, IQ1_S/IQ1_M) | 284,3B totales | 61,7 GB | no disponible | 0,407 | MIT | Si |
-| zephel01 32G64G (IQ2_XXS) | 284,3B totales | 72,0 GB | no disponible | no disponible | MIT | No (requiere 32 GB VRAM) |
-| zephel01 32G96G (IQ2_M) | 284,3B totales | 96,8 GB | no disponible | no disponible | MIT | No (requiere 32 GB VRAM y 96 GB RAM) |
-| unsloth UD-Q2_K_XL | 284,3B totales | 96,8 GB | no disponible | 0,186 | MIT (heredada) | No, pagina desde SSD |
+| Modelo | Parámetros | Contexto | Throughput (16G64G) | KL | Licencia | Disponibilidad |
+|---|---|---:|---:|---:|---|---|
+| DeepSeek-V4-Flash-0731-IQ1_S-16G64G (esta repo) | 284,3B | no disponible | 84,5 tok/s | 0,407 | MIT | GGUF, 61,7 GB |
+| DeepSeek-V4-Flash-0731-IQ2_XXS-32G64G | 284,3B | no disponible | no disponible | no disponible | MIT | GGUF, 72,0 GB (requiere 32 GB VRAM) |
+| DeepSeek-V4-Flash-0731-IQ2_M-32G96G | 284,3B | no disponible | no disponible | no disponible | MIT | GGUF, 96,8 GB (requiere 32 GB VRAM + 96 GB RAM) |
+| unsloth UD-Q2_K_XL | 284,3B | no disponible | 21,3 tok/s | 0,186 | MIT | GGUF, 96,8 GB |
 
-La comparación relevante es interna a la familia de cuantizaciones del mismo modelo base: a mayor tamaño, mejor KL y mayor velocidad sostenida, pero solo las builds de 16G64G y 32G64G caben en perfiles de consumo. No se dispone de datos de modelos alternativos de otros desarrolladores en la información proporcionada.
+Las alternativas de la misma familia (L72 y L97) ofrecen mayor calidad a cambio de más VRAM y RAM; el UD-Q2_K_XL de unsloth es la referencia de calidad pero no cabe en 16 GB + 64 GB sin esperar al SSD.
 
 ## Limitaciones y advertencias
 
-- Calidad degradada de forma medible: KL de 0,407 frente a 0,186 de la referencia, y 26,3% de discrepancia en el token superior. Es una cuantización de 1,62 bits por peso, en el límite práctico de compresión.
-- Estado BETA: medida en una sola máquina (RTX 5090 limitada por software), no en una GPU real de 16 GB. El autor advierte que el archivo puede sustituirse por una build mejor y que entonces cambiará el nombre de la carpeta.
-- Deriva de idioma: el modelo responde en chino a preguntas en japonés con una frecuencia no trivial (6 de 24 respuestas en los pesos originales; 11 de 24 en la build L97). Mitigable con instrucción explícita en el system prompt, que redujo la deriva a 1 de 24 en L97.
-- Un fallo en la suite de validación: una explicación solicitada en japonés se respondió en chino. El autor lo documenta como la única comprobación no superada de 11.
-- Riesgo de alucinación: no cuantificado en la información disponible; el autor reporta "0 hechos erróneos" en 10 respuestas en japonés, una muestra demasiado pequeña para extraer conclusiones.
-- Compatibilidad de motores: solo verificada en Abyss; llama.cpp no se ha comprobado. Esto limita la portabilidad frente a GGUFs convencionales.
-- Metadatos inconsistentes: el primer shard es el archivo de unsloth sin modificar, por lo que su campo `general.quantized_by` sigue indicando Unsloth.
-- Licencia MIT en el modelo base y en la cuantización, lo que permite uso comercial, pero el autor no ofrece garantías sobre el comportamiento en producción.
-- Sin datos publicados de sesgos, composición del dataset de entrenamiento ni evaluación de seguridad del modelo base en la información disponible.
+- Build BETA: medida en una RTX 5090 limitada artificialmente, no en una tarjeta real de 16 GB; el fichero puede ser reemplazado por una build mejor (y el nombre de carpeta cambiará).
+- Pérdida de calidad significativa: KL de 0,407 frente a 0,186 de la referencia, con solo 73,7% de coincidencia en el token top; puede degradar tareas sensibles a precisión.
+- Un fallo documentado en la prueba `--check` (explicación en japonés), aunque el detalle está truncado en la información disponible.
+- Riesgo de alucinación: no se han publicado evaluaciones de sesgo ni de alucinación; las pruebas reportan 0 hechos erróneos en 10 respuestas japonesas, muestra insuficiente para generalizar.
+- Idiomas: solo inglés y japonés documentados; no hay soporte declarado de castellano.
+- Licencia MIT: permite uso comercial, pero el modelo base y la cuantización deben verificarse por separado; el primer shard conserva metadatos de Unsloth.
+- llama.cpp no verificado; el motor Abyss es la única vía de despliegue probada.
+- El drafter DSpark no está medido a este tamaño y no se recomienda en 16 GB de VRAM.
+- No se dispone de datos sobre parámetros activos, contexto máximo ni composición del entrenamiento, lo que limita la evaluación rigurosa.
 
 ## Enlaces
 
-- Repositorio de esta cuantización: https://huggingface.co/zephel01/DeepSeek-V4-Flash-0731-IQ1_S-16G64G-GGUF
+- Hugging Face (esta repo): https://huggingface.co/zephel01/DeepSeek-V4-Flash-0731-IQ1_S-16G64G-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
-- Build hermana 32G96G (IQ2_M, 96,8 GB): https://huggingface.co/zephel01/DeepSeek-V4-Flash-0731-IQ2_M-32G96G-GGUF
-- Build hermana 32G64G (IQ2_XXS, 72,0 GB): https://huggingface.co/zephel01/DeepSeek-V4-Flash-0731-IQ2_XXS-32G64G-GGUF
-- Build para DGX Spark: https://huggingface.co/zephel01/DeepSeek-V4-Flash-0731-DGX-Spark-GGUF
-- Build 16G64G (variante): https://huggingface.co/zephel01/DeepSeek-V4-Flash-0731-16G64G-GGUF
 - Motor Abyss: https://github.com/zephel01/Abyss
-- Formulario de reporte de rendimiento: https://github.com/zephel01/Abyss/issues/new?template=bench.md&title=Bench:+DeepSeek-V4-Flash-0731+16G64G+L62+on+YOUR_GPU
-- Incidencias de Abyss: https://github.com/zephel01/Abyss/issues
-- GGUFs de origen (unsloth): https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731
+- Versión 32G64G: https://huggingface.co/zephel01/DeepSeek-V4-Flash-0731-IQ2_XXS-32G64G-GGUF
+- Versión 32G96G: https://huggingface.co/zephel01/DeepSeek-V4-Flash-0731-IQ2_M-32G96G-GGUF
+- Versión DGX Spark: https://huggingface.co/zephel01/DeepSeek-V4-Flash-0731-DGX-Spark-GGUF
+- Reporte de resultados: https://github.com/zephel01/Abyss/issues/new?template=bench.md&title=Bench:+DeepSeek-V4-Flash-0731+16G64G+L62+on+YOUR_GPU

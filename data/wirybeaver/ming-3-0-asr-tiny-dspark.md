@@ -2,95 +2,116 @@
 
 ## Resumen
 
-Ming-3.0-asr-tiny-dspark es un checkpoint de borrador (draft) para decodificación especulativa del modelo ASR `inclusionAI/Ming-3.0-asr-tiny`, publicado por el usuario `wirybeaver`. No es un modelo de reconocimiento de voz autónomo: es un artefacto de entrenamiento que predice tokens candidatos que el verificador Ming (congelado) valida después. El objetivo es acelerar la inferencia del verificador mediante decodificación especulativa, reduciendo el coste por token generado en transcripción de audio.
+Ming-3.0-ASR-tiny DSpark es un modelo borrador (*draft*) de decodificacion especulativa disenado para acelerar la inferencia del verificador `inclusionAI/Ming-3.0-asr-tiny`, un modelo de reconocimiento automatico del habla (ASR). Lo desarrolla el usuario `wirybeaver` y se publica bajo la libreria `speculators`, con pesos en formato safetensors y BF16. No es un modelo ASR autonomo: es un componente auxiliar que predice varios tokens por paso para que el verificador los valide en paralelo, reduciendo el coste por token generado.
 
-El borrador emplea la arquitectura DSpark, un decoder de 5 capas con hidden size 1.536, cabezal Markov de rango 256 y cabezal de confianza, entrenado mediante destilación offline del verificador Ming congelado. El modelo tiene 291.632.513 parámetros en BF16 y se distribuye en formato safetensors con código personalizado, requiriendo la librería Speculators y soporte específico en vLLM para el resolvedor de nombres de embeddings de Ming.
+El modelo resuelve un problema concreto de eficiencia en produccion: la decodificacion autoregresiva de un verificador ASR es secuencial y costosa, y un borrador bien alineado permite aceptar bloques de tokens en cada verificacion. Segun la model card, en modo de servicio no determinista sobre una H200 (BF16, TP1) y evaluado en SeedTTS, se midieron ganancias de throughput del +27,18 % a concurrencia 1, +24,06 % a concurrencia 8 y +20,04 % a concurrencia 16, con una longitud de aceptacion (AL) en torno a 6,44-6,46 tokens por verificacion.
 
-Es relevante ahora porque la decodificación especulativa se ha consolidado como técnica estándar para reducir latencia en modelos grandes, y este checkpoint ilustra el patrón de publicar borradores especializados para verificadores concretos. No obstante, el autor advierte explícitamente de que no se han medido la longitud de aceptación en servicio, el throughput, la latencia ni el WER, por lo que se trata de un artefacto de investigación y no de un componente listo para producción.
+Tecnicamente es un decoder DSpark de cinco capas con hidden size 1.536, intermediate size 4.608, cabeza Markov de rango 256 y cabeza de confianza, entrenado por destilacion offline del verificador congelado. El checkpoint publicado tiene 291.632.513 parametros y ocupa 0,6 GB en el repositorio. Esta pensado para ingles, chino y japones, aunque el propio autor advierte que el subconjunto japones de entrenamiento es demasiado pequeno para establecer calidad de reconocimiento en ese idioma.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | DSpark (decoder de 5 capas para decodificación especulativa) |
+| Arquitectura | DSpark draft decoder (5 capas), con cabeza Markov de rango 256 y cabeza de confianza; verifica contra `inclusionAI/Ming-3.0-asr-tiny` |
 | Parametros totales | 291.632.513 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en BF16) |
-| Idiomas soportados | en, zh, ja (el japonés con reservas, ver limitaciones) |
+| Tipos de cuantizacion | BF16 (precision de pesos declarada); no se documentan otras cuantizaciones |
+| Idiomas soportados | en, zh, ja (el japones con subconjunto de entrenamiento minimo) |
 | Licencia | MIT |
-| Formato de pesos | safetensors, con código personalizado (custom_code) |
+| Formato de pesos | safetensors |
+| Hidden size / intermediate size | 1.536 / 4.608 |
+| Vocabulario de entrada / salida del draft | 157.184 / 48.000 |
+| Block size | 8 tokens predichos, mas el token bonus del verificador en EAL offline |
+| Fronteras de capas auxiliares objetivo | 2, 7, 14, 18, 21 |
+| Libreria | speculators |
+| Modelo base | inclusionAI/Ming-3.0-asr-tiny (revision `ac95e7b1678c08ea6f4a2581a051e432ed63e9b7`) |
+| Tamano del repo | 0,6 GB |
 
 ## Arquitectura y entrenamiento
 
-El borrador es un decoder DSpark de 5 capas con hidden size 1.536 e intermediate size 4.608. Incorpora un cabezal Markov de rango 256 y un cabezal de confianza (confidence head) activado. El vocabulario de entrada es de 157.184 tokens (el del verificador Ming), mientras que el vocabulario de salida del borrador se reduce a 48.000 tokens mediante mapeos d2t/t2d construidos exclusivamente a partir de las etiquetas del profesor en el conjunto de entrenamiento. El tamaño de bloque es de 8 tokens predichos más el token bonus del verificador en la EAL offline. Los pesos se publican en BF16.
+El borrador es un decoder DSpark de cinco capas con hidden size 1.536 e intermediate size 4.608, equipado con una cabeza Markov de rango 256 y una cabeza de confianza. Captura estados auxiliares del verificador congelado en las fronteras de capa 2, 7, 14, 18 y 21, ademas de los estados finales pre-norm usados para reconstruir los logits del profesor. El vocabulario de entrada del verificador se mantiene en 157.184 tokens, mientras que el vocabulario de salida del borrador se reduce a 48.000 tokens mediante mapeos d2t/t2d congelados antes del entrenamiento formal. Los embeddings de entrada y las proyecciones de vocabulario conservan los pesos congelados del verificador.
 
-El entrenamiento usó destilación offline con el verificador Ming congelado, en una única etapa de audio corto de 10 épocas (sin continuación para audio largo), con una duración aproximada de 4 horas y 48 minutos sobre dos GPU H200. Los datos proceden de LibriSpeech train-clean-360, People's Speech clean, VoxPopuli English, AISHELL-1 y FLEURS (inglés, chino y japonés), totalizando 357.005 clips y 999,71 horas de audio; validación con 2.576 clips. Se excluyeron Emilia-YODAS y Common Voice 17. Las etiquetas del profesor se generaron con vLLM nativo en BF16 y decodificación greedy, batch 128 por GPU, y se descartaron 181 clips con generaciones sin parada. La función de pérdida combina divergencia KL respecto a la distribución del profesor sobre el vocabulario reducido y un término BCE del cabezal de confianza (peso 1,0), con ponderación exp(-k/4) por posición de predicción. Se usó DDP de dos rangos con precisión mixta BF16, presupuesto de 16.384 tokens empaquetados, hasta 3.072 anclas por rango, Muon para parámetros matriciales elegibles y AdamW para el resto, con learning rate inicial 3e-4. El export publicado es la época 6, seleccionada por la menor pérdida de validación agregada tras completar las 10 épocas.
+El entrenamiento se realizo por destilacion offline con el verificador Ming congelado. Los datos se prepararon a partir de clips mono de 16 kHz de hasta 30 segundos de LibriSpeech train-clean-360, People's Speech clean, VoxPopuli English, AISHELL-1 y FLEURS en ingles, chino y japones; se excluyeron Emilia-YODAS y Common Voice 17. El conjunto final tiene 357.005 clips y 999,71 horas de audio, con 2.576 clips de validacion y 181 clips excluidos por generaciones sin parada. Las etiquetas del profesor se generaron con vLLM nativo en BF16 y decodificacion greedy, con batch 128 por GPU.
+
+La fase de entrenamiento uso dos GPUs H200 en DDP de dos rangos, precision mixta BF16, presupuesto de 16.384 tokens empaquetados y hasta 3.072 anclas por rango, con ocho predicciones por bloque. Se uso Muon para parametros matriciales elegibles y AdamW para el resto, con learning rate inicial 3e-4. La funcion de perdida combina divergencia KL respecto a la distribucion del profesor sobre el vocabulario reducido con un termino BCE de la cabeza de confianza (peso 1.0), y pondera la posicion k con exp(-k/4). Se completo una etapa de audio corto de 10 epocas (sin continuacion de audio largo) en aproximadamente 4 horas 48 minutos; el checkpoint publicado es la epoca 6, seleccionada por menor perdida de validacion agregada. La cobertura del vocabulario de etiquetas de entrenamiento fue del 99,871 % en ingles, 98,227 % en chino y 98,270 % en japones.
 
 ## Capacidades
 
-- Predicción de tokens candidatos para decodificación especulativa sobre el verificador `inclusionAI/Ming-3.0-asr-tiny`.
-- Generación de bloques de hasta 8 tokens predichos más el token bonus del verificador en la EAL offline.
-- Estimación de confianza por token mediante cabezal de confianza dedicado.
-- Soporte de vocabulario reducido (48.000 tokens) mapeado al vocabulario de entrada del verificador (157.184 tokens).
-- No realiza reconocimiento de voz por sí mismo: depende del verificador Ming y de su tokenizer y procesador de audio.
-- No soporta tool calling, function calling, agentes ni razonamiento multi-paso de forma nativa; su función es exclusivamente la aceleración de inferencia.
-- Idiomas: inglés y chino según el verificador; japonés presente en el entrenamiento pero sin calidad establecida.
+- Prediccion especulativa de tokens para el verificador ASR `inclusionAI/Ming-3.0-asr-tiny`, con bloques de 8 tokens predichos por paso.
+- Decodificacion especulativa con cabeza de confianza para estimar la aceptacion de cada prediccion.
+- Modelado Markoviano de dependencias entre tokens predichos mediante cabeza de rango 256.
+- Uso de estados auxiliares del verificador en multiples fronteras de capa (2, 7, 14, 18, 21) para alinear las predicciones.
+- Soporte de vocabulario reducido (48.000 tokens) con mapeo al vocabulario de entrada del verificador (157.184 tokens).
+- Cobertura linguistica de ingles, chino y japones, con limitaciones declaradas en japones.
+- Integracion con Speculators y vLLM; requiere el tokenizer y el procesador de audio del verificador.
+- No soporta tool calling, function calling, agentes ni razonamiento multi-paso: es exclusivamente un borrador de decodificacion para ASR.
 
 ## Casos de uso
 
-- Aceleración de transcripción ASR en producción: el borrador se empareja con el verificador Ming congelado para reducir el número de pasos de decodificación por token aceptado, disminuyendo la latencia en pipelines de transcripción de audio corto (hasta 30 segundos por clip).
-- Servicio de subtitulado en inglés y chino: integrado en vLLM con Speculators, permite servir transcripciones con menor coste por token generado en comparación con la decodificación greedy del verificador.
-- Investigación en decodificación especulativa: sirve como caso de estudio reproducible de destilación offline de un borrador DSpark sobre un verificador ASR multimodal, con configuración, comando de entrenamiento e historial de validación publicados.
-- Evaluación de EAL offline: permite medir la longitud de aceptación esperada (6,02 tokens con bonus en la validación offline) y comparar estrategias de borrador sobre el mismo verificador.
-- Prototipado de ASR con contexto: al heredar el tokenizer y procesador de audio de Ming, puede usarse en experimentos de reconocimiento con hotwords o diálogo previo, siempre que el verificador aporte esa capacidad.
-- Benchmarking interno de infraestructura: útil para comparar throughput y latencia de configuraciones vLLM con y sin borrador especulativo en clústeres con GPU H200 o equivalentes.
+- Servicio de transcripcion ASR de alta concurrencia: desplegar el borrador junto al verificador Ming en SGLang-Omni para aumentar el throughput entre un 20 % y un 27 % segun concurrencia, manteniendo la precision del verificador gracias a la validacion token a token.
+- Reduccion de latencia en transcripcion en tiempo real: con una longitud de aceptacion cercana a 6,4 tokens por verificacion, el coste por token generado baja y se reducen los tiempos de respuesta en flujos de audio corto (hasta 30 segundos por clip).
+- Procesamiento por lotes de audio en ingles: usar el borrador en pipelines de transcripcion masiva (por ejemplo, actas, subtitulos o notas de reunion) donde el ahorro de computo por token se traduce en menor coste por hora de audio.
+- Transcripcion de audio en chino: el conjunto de entrenamiento incluye 123.340 clips y 160,54 horas en chino con cobertura de vocabulario del 98,227 %, lo que permite acelerar cargas de trabajo ASR en mandarin junto al verificador.
+- Optimizacion de infraestructura existente: si ya se sirve Ming-3.0-asr-tiny en vLLM o SGLang-Omni, anadir este borrador mejora el throughput sin cambiar el modelo verificado ni la salida final.
+- Evaluacion e investigacion en decodificacion especulativa: el checkpoint, con metricas offline de EAL (6,023555 greedy y 5,615419 analitica) y perdida de validacion (0,409284), sirve como referencia reproducible para estudiar tecnicas DSpark sobre modelos de audio.
+- Pruebas de calidad en japones con cautela: el subconjunto japones (2.150 clips, 6,84 horas) permite experimentar, pero el autor no establece calidad de reconocimiento en ese idioma, por lo que no es adecuado para produccion en japones sin validacion adicional.
 
 ## Benchmarks y rendimiento
 
+Validacion offline del export publicado (contextos condicionados por el profesor en cache y vocabulario reducido del borrador):
+
 | Metrica | Valor |
 |---|---:|
-| Pérdida total de validación | 0,409284 |
+| Perdida total de validacion | 0,409284 |
 | EAL offline greedy (incluye un token bonus del verificador) | 6,023555 |
-| Longitud de aceptación analítica (incluye un token bonus) | 5,615419 |
+| Longitud de aceptacion analitica (incluye un token bonus) | 5,615419 |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, WER) en la información disponible. El autor indica explícitamente que la longitud de aceptación en servicio, el throughput, la latencia y el WER no se han medido.
+Servicio online, ASR en ingles en modo normal (no determinista) sobre una H200 (BF16, TP1), evaluado en SeedTTS:
+
+| Concurrencia | Ganancia de throughput | AL (tokens/verificacion) |
+|---|---:|---:|
+| c1 | +27,18 % | 6,4481 |
+| c8 | +24,06 % | 6,4378 |
+| c16 | +20,04 % | 6,4563 |
+
+No se han publicado en la informacion disponible resultados de benchmarks estandar como MMLU, HumanEval o GSM8K, que no aplican a un modelo de este tipo. Los resultados completos de precision, modo determinista y ASR en chino estan en el PR de SGLang-Omni #3660.
 
 ## Requisitos de hardware
 
-- El borrador tiene 291,6 M de parámetros en BF16, lo que supone aproximadamente 0,58 GB de pesos; el repositorio completo ocupa 0,6 GB.
-- El borrador por sí solo cabe holgadamente en cualquier GPU consumer (RTX 3060 12 GB, RTX 4090, etc.), pero el requisito real lo impone el verificador Ming, que debe residir en memoria junto al borrador.
-- Entrenamiento realizado sobre dos GPU H200; no se documenta el hardware mínimo de inferencia.
-- Despliegue previsto mediante vLLM con soporte de Speculators y del resolvedor de nombres de embeddings de Ming; no se documenta soporte para llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles (no medidos por el autor).
+- VRAM estimada para inferencia: no disponible de forma explicita; el checkpoint pesa 0,6 GB en BF16, por lo que el borrador en si ocupa muy poca memoria y el grueso del consumo corresponde al verificador Ming-3.0-asr-tiny.
+- GPU recomendadas: el entrenamiento se realizo en dos H200; la evaluacion online se hizo en una sola H200 (BF16, TP1).
+- GPU de consumo: no hay datos publicados sobre ejecucion en RTX 4090 u otras GPU consumer; el requisito real dependera del verificador y del backend de servicio.
+- Opciones de despliegue: SGLang-Omni (usado en la evaluacion online), vLLM y Speculators; requiere soporte del resolvedor de nombres de embedding de Ming en Speculators.
+- Latencia y throughput: ganancias de throughput del +27,18 % (c1), +24,06 % (c8) y +20,04 % (c16) en ingles sobre H200; no se publican cifras absolutas de latencia.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| wirybeaver/Ming-3.0-asr-tiny-dspark | 291,6 M | no disponible | Borrador especulativo para Ming-3.0-asr-tiny | MIT | Hugging Face |
-| inclusionAI/Ming-3.0-asr-tiny | no disponible | no disponible | ASR (verificador) chino/inglés con dialectos y Context ASR | no disponible | Hugging Face, GitHub |
-| Otros borradores DSpark para verificadores ASR | no disponible | no disponible | Decodificación especulativa | no disponible | no disponible |
+| Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| wirybeaver/Ming-3.0-asr-tiny-dspark | Borrador especulativo DSpark para ASR | 291.632.513 | no disponible | +20-27 % throughput; AL ~6,4 en H200 | MIT | Hugging Face |
+| inclusionAI/Ming-3.0-asr-tiny | Verificador ASR (modelo base) | no disponible | no disponible | Referencia de precision del sistema | no disponible en la informacion | Hugging Face |
+| Otros borradores DSpark | Borradores especulativos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos suficientes para comparar rendimiento con alternativas equivalentes; el autor no publica métricas de servicio ni WER.
+No se dispone en la informacion proporcionada de otros borradores especulativos comparables con los que contrastar parametros, contexto o rendimiento.
 
 ## Limitaciones y advertencias
 
-- El checkpoint es un artefacto de entrenamiento: no se han medido aceptación en servicio, throughput, latencia ni WER.
-- Requiere el verificador `inclusionAI/Ming-3.0-asr-tiny` fijado a la revisión `ac95e7b1678c08ea6f4a2581a051e432ed63e9b7`; no es un modelo autónomo.
-- Requiere Speculators con soporte del resolvedor de nombres de embeddings de Ming y código personalizado; no funciona con stacks estándar sin parches.
-- Solo se entrenó una etapa de audio corto (clips de hasta 30 segundos); no hay continuación para audio largo.
-- El subconjunto japonés es muy pequeño (2.150 clips, 6,84 horas) y el autor advierte que no establece calidad de reconocimiento en japonés.
-- La cobertura de vocabulario de entrenamiento es del 99,871% en inglés, 98,227% en chino y 98,270% en japonés; los tokens fuera de cobertura no pueden predecirse con el vocabulario reducido.
-- Las métricas offline usan contextos condicionados por el profesor en caché y el vocabulario reducido; la paridad con la salida ASR real requiere validación separada.
-- Riesgo de alucinación y sesgos: no evaluados en la información disponible; al heredar el comportamiento del verificador Ming, cualquier sesgo de este se traslada.
-- Licencia MIT para los pesos del borrador, pero el uso comercial debe verificar también la licencia del verificador Ming subyacente.
-- No se incluyen scripts de entrenamiento, overlays de runtime ni parches en el repositorio; se mantienen por separado.
+- No es un modelo ASR autonomo: requiere el verificador `inclusionAI/Ming-3.0-asr-tiny` en la revision `ac95e7b1678c08ea6f4a2581a051e432ed63e9b7` y su tokenizer y procesador de audio.
+- La calidad en japones no esta establecida: solo 2.150 clips y 6,84 horas de entrenamiento en ese idioma.
+- Solo se entreno una etapa de audio corto (clips de hasta 30 segundos) durante 10 epocas; no hubo etapa de continuacion para audio largo.
+- El checkpoint publicado es la epoca 6 de 10, seleccionada por perdida de validacion agregada, no necesariamente la de mejor EAL.
+- Las metricas offline usan contextos condicionados por el profesor en cache y el vocabulario reducido, por lo que no son directamente comparables con las metricas de servicio online.
+- Los resultados de servicio online publicados en la ficha corresponden a ASR en ingles en modo no determinista; los datos de modo determinista y chino estan solo en el PR externo.
+- Riesgo de sesgos y alucinaciones: no documentado en la informacion disponible; al ser un borrador validado por el verificador, la salida final depende de este ultimo.
+- Requiere soporte especifico en Speculators para el resolvedor de nombres de embedding de Ming; sin esa integracion el borrador no funciona.
+- La licencia MIT permite uso comercial, pero el uso en produccion debe validarse contra el verificador y el backend de servicio elegidos.
+- El repositorio tiene muy poca traccion (0 likes, 162 descargas) y fue creado en noviembre de 2026; no hay historial de mantenimiento a largo plazo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/wirybeaver/Ming-3.0-asr-tiny-dspark
 - Modelo base (verificador): https://huggingface.co/inclusionAI/Ming-3.0-asr-tiny
-- Repositorio GitHub de Ming-3.0-asr: https://github.com/inclusionAI/Ming-3.0-asr
+- Evaluacion de servicio online (SGLang-Omni PR #3660): https://github.com/sgl-project/sglang-omni/pull/3660
 - Speculators: https://github.com/vllm-project/speculators
 - vLLM: https://github.com/vllm-project/vllm

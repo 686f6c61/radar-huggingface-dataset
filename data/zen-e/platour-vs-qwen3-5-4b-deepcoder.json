@@ -43,11 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "PLatour - a zen-E Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/zen-E/platour",
-      "snippet": "Note PLatour bridge: Qwen3.5-35B-A3B to 4B on DAPO. Projection weights only; download the backbones separately."
-    }
-  ]
+  "sources": []
 }

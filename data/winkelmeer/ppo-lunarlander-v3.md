@@ -2,87 +2,92 @@
 
 ## Resumen
 
-`winkelmeer/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium, una tarea de control continuo en la que un modulo lunar debe aterrizar de forma segura entre dos banderas. El modelo lo publica el usuario de Hugging Face `winkelmeer` y se ha generado con la libreria Stable-Baselines3, el framework de referencia para implementaciones de RL en PyTorch.
+`winkelmeer/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo Proximal Policy Optimization (PPO) sobre el entorno LunarLander-v3 de Gymnasium. Lo desarrolla el usuario de Hugging Face `winkelmeer` y se publica como un artefacto de politica entrenada, no como un modelo de lenguaje: el repositorio contiene los pesos de una red neuronal pequena que mapea observaciones del entorno (8 dimensiones continuas) a acciones discretas de control del modulo de aterrizaje.
 
-No se trata de un modelo de lenguaje ni de un modelo fundacional: es una politica entrenada especificamente para un unico entorno de simulacion. Su relevancia es didactica y de referencia: sirve como ejemplo reproducible de un pipeline de entrenamiento PPO con Stable-Baselines3 y de como publicar artefactos de RL en el Hub mediante la integracion `huggingface_sb3`. El autor declara una recompensa media de 278,01 +/- 12,63 en LunarLander-v3, un resultado que supera el umbral de 200 puntos habitualmente considerado como "resuelto" para esta tarea.
+El modelo se distribuye a traves de la libreria `stable-baselines3` y sigue el formato estandar de la comunidad para agentes RL en el Hub, lo que permite cargarlo con `huggingface_sb3.load_from_hub` y evaluarlo o reentrenarlo con el ecosistema SB3. Su relevancia es acotada: sirve como referencia reproducible de un agente PPO que resuelve LunarLander-v3 con una recompensa media declarada de 278,01 +/- 12,63, por encima del umbral de 200 que se suele considerar "resuelto" en este entorno.
 
-El repositorio es de tamano practicamente nulo (0,0 GB), lo que es coherente con una politica de red neuronal pequena (perceptron multicapa) en lugar de un transformer. La model card esta incompleta: la seccion de uso contiene un `TODO` sin codigo funcional, y no se declaran licencia ni idiomas.
+No se trata de un modelo fundacional ni de proposito general. No procesa lenguaje natural, no tiene ventana de contexto ni cuantizaciones en el sentido habitual, y su utilidad se limita a docencia, experimentacion en RL y comparacion de hiperparametros de PPO. La informacion publicada por el autor es minima y no incluye detalles de entrenamiento, licencia ni codigo de uso.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Red neuronal de politica (MLP) entrenada con PPO; no es un transformer |
-| Parametros totales | No disponible (no declarado; el repo ocupa 0,0 GB) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No aplica (entorno de RL con observacion de estado fija; dimension no declarada) |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | No disponible (no procesa lenguaje natural) |
-| Licencia | No disponible |
-| Formato de pesos | Pesos de Stable-Baselines3 (`.zip`), cargables con `stable_baselines3` y `huggingface_sb3` |
+| Arquitectura | Red de politica y valor (actor-critic) entrenada con PPO; arquitectura exacta no disponible |
+| Parametros totales | no disponible (red pequena tipo MLP; el tamano del repo figura como 0.0 GB) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (entorno RL con observaciones de 8 dimensiones) |
+| Tipos de cuantizacion | no disponible (pesos en el formato nativo de stable-baselines3) |
+| Idiomas soportados | no disponible (no es un modelo de lenguaje) |
+| Licencia | no disponible |
+| Formato de pesos | formato nativo de stable-baselines3 (`.zip` con politica y valor); no safetensors ni GGUF |
 
 ## Arquitectura y entrenamiento
 
-El agente emplea PPO, un algoritmo de gradiente de politica con recorte de la ratio de probabilidad (*clipped surrogate objective*) que estabiliza las actualizaciones y limita el tamano del paso por iteracion. La politica se implementa como una red neuronal multicapa (MLP) que recibe el vector de observacion del entorno LunarLander-v3 y produce una distribucion de acciones; el valor se estima con una red critica separada o compartida segun la configuracion por defecto de Stable-Baselines3.
+El agente emplea PPO, un algoritmo de gradiente de politica con recorte de la razon de probabilidades (clipped surrogate objective) que combina una politica estocastica con una funcion de valor critica. En el caso de LunarLander-v3, la politica opera sobre un espacio de observacion continuo de 8 dimensiones (posicion, velocidad, angulo, velocidad angular, contacto con las patas y senales de encendido) y un espacio de accion discreto de 4 opciones (no hacer nada, encender motor principal, encender motor lateral izquierdo, encender motor lateral derecho). La red suele ser un perceptron multicapa pequeno, aunque la topologia exacta (numero de capas y unidades) no se detalla en la model card.
 
-No se especifican en la informacion disponible el numero de pasos de entrenamiento, la composicion del dataset (en RL no hay dataset estatico: los datos se generan por interaccion con el simulador), ni si se aplicaron tecnicas adicionales como recompensas conformadas o curriculo. Tampoco se documentan hiperparametros (learning rate, tamano de red, `n_steps`, `batch_size`, `gamma`, `gae_lambda`). El unico dato de rendimiento declarado es la recompensa media de evaluacion.
+No se han publicado datos sobre el numero de pasos de entrenamiento, la composicion del dataset de interacciones, el uso de recompensas conformadas ni la semilla empleada. La model card incluye una seccion `Usage` con un bloque `TODO`, de modo que no hay codigo de carga ni de evaluacion proporcionado por el autor. Tampoco se documentan innovaciones tecnicas adicionales (por ejemplo, normalizacion de observaciones o reward shaping) mas alla del uso estandar de PPO en stable-baselines3.
 
 ## Capacidades
 
-- Control de politica para el entorno LunarLander-v3: aterrizaje del modulo lunar en el simulador de Gymnasium.
-- Toma de decisiones en espacio de acciones discreto (no continuo) segun la configuracion estandar de LunarLander-v3.
-- Inferencia determinista o estocastica mediante `model.predict(obs, deterministic=True/False)`.
-- Integracion con el ecosistema Stable-Baselines3 y `huggingface_sb3` para carga desde el Hub.
-- No soporta generacion de texto, codigo, matematicas, vision, audio, tool calling, agentes multi-paso ni capacidades multilingues.
-- No dispone de modo "thinking" ni de razonamiento simbólico.
+- Control de politica para el entorno LunarLander-v3: selecciona acciones discretas de encendido de motores a partir de observaciones continuas.
+- Aprendizaje por refuerzo profundo: implementa el algoritmo PPO segun la implementacion de stable-baselines3.
+- Compatibilidad con el ecosistema SB3: puede cargarse con `huggingface_sb3`, evaluarse con `model.predict` y reentrenarse con `model.learn`.
+- Reproducibilidad de referencia: sirve como punto de comparacion de recompensa media en LunarLander-v3.
+- No soporta tool calling, function calling, agentes multi-paso, razonamiento simbolico ni capacidades multilingues.
+- No dispone de modo "thinking", vision, audio ni generacion de texto.
 
 ## Casos de uso
 
-- Docencia y formacion en RL: sirve como ejemplo completo y reproducible de un agente PPO entrenado sobre LunarLander-v3 para ilustrar el ciclo entrenamiento-evaluacion-publicacion en Stable-Baselines3.
-- Punto de partida para *fine-tuning*: el agente puede reentrenarse con `model.learn()` sobre variantes del entorno o con hiperparametros distintos para estudiar la sensibilidad de PPO.
-- Evaluacion comparativa de algoritmos: util como baseline PPO frente a otros algoritmos (A2C, DQN, SAC) sobre el mismo entorno.
-- Pruebas de infraestructura de RL: sirve para validar pipelines de carga de modelos desde el Hub, ejecucion en bucle de evaluacion y registro de recompensas medias.
-- Reproduccion de resultados: permite verificar la recompensa declarada (278,01 +/- 12,63) ejecutando el agente en LunarLander-v3 con la configuracion estandar.
-- Demostraciones de simulacion: integrable en notebooks o demos interactivas que rendericen el aterrizaje del modulo lunar para divulgacion.
-- Benchmark de entornos Gymnasium: util para comprobar el correcto funcionamiento de la version v3 del entorno tras cambios en la API de Gymnasium.
+- Docencia de aprendizaje por refuerzo: utilizar el agente como ejemplo funcional de PPO en un curso introductorio, cargandolo con stable-baselines3 y ejecutando episodios en LunarLander-v3 para ilustrar el bucle de interaccion, recompensa y politica.
+- Comparacion de hiperparametros: servir de linea base frente a nuevos entrenamientos PPO con distintas tasas de aprendizaje, `n_steps` o coeficientes de entropia, midiendo la recompensa media en el mismo entorno.
+- Validacion de pipelines de evaluacion: integrar el agente en un script de evaluacion automatizada que compruebe que la recompensa media supera el umbral de 200 en varias semillas, como test de regresion en un repositorio de RL.
+- Demostracion de despliegue en el Hub: usar el flujo `load_from_hub` para mostrar como se publica y recupera un agente SB3, util en talleres sobre MLOps para RL.
+- Investigacion en robustez: evaluar la politica bajo perturbaciones del entorno (viento, cambios de gravedad) para estudiar la generalizacion de PPO en tareas de control continuo.
+- Base para fine-tuning: reentrenar el agente con recompensas conformadas o con un curriculum de dificultad creciente, partiendo de los pesos publicados para acelerar la convergencia.
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor en la model card (no verificados):
+Datos declarados por el autor en el `model-index` de la model card (no verificados, `verified: false`):
 
-| Algoritmo | Tarea | Entorno | Metrica | Valor |
-|---|---|---|---|---|
-| PPO | reinforcement-learning | LunarLander-v3 | mean_reward | 278,01 +/- 12,63 |
+| Algoritmo | Entorno | Metrica | Valor |
+|---|---|---|---|
+| PPO | LunarLander-v3 | mean_reward | 278,01 +/- 12,63 |
 
 No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: practicamente nula; el modelo es una MLP de pocos miles de parametros y cabe en cualquier GPU consumer, e incluso se ejecuta en CPU.
-- GPU recomendadas: no requiere GPU; cualquier GPU (RTX 3060 o superior, A100, H100) es sobredimensionada para inferencia. Para reentrenamiento, una GPU consumer acelera el bucle de simulacion.
-- Cabe en GPU consumer: si, en cualquier modelo; tambien en CPU sin problemas.
-- Opciones de despliegue: `stable-baselines3` (carga directa del `.zip`), `huggingface_sb3` para descarga desde el Hub, y ejecucion dentro de un bucle de Gymnasium con `env.step(action)`.
-- Latencia y throughput: no disponibles; al ser una MLP con inferencia por paso, la latencia por decision es del orden de microsegundos en CPU, pero no se aportan mediciones oficiales.
+- VRAM estimada para inferencia: no disponible; por el tamano del repositorio (0.0 GB) y la naturaleza de la politica (MLP pequena), el modelo cabe holgadamente en cualquier GPU consumer e incluso puede ejecutarse en CPU.
+- GPU recomendadas: no se especifican; cualquier GPU con soporte de PyTorch es suficiente, e incluso una CPU moderna basta para inferencia en tiempo real del entorno.
+- Cabe en GPU consumer: si, practicamente en cualquier modelo (GTX 1050 o superior, RTX 2060, RTX 3060, RTX 4090, etc.).
+- Opciones de despliegue: `stable-baselines3` con PyTorch como backend; no aplica vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos de lenguaje.
+- Latencia y throughput estimados: no disponibles; en la practica, la inferencia de una MLP pequena es del orden de microsegundos a milisegundos por paso, muy por debajo del coste de la simulacion del entorno.
 
 ## Comparativa con modelos similares
 
-No disponible. No se han proporcionado en la informacion modelos comparables de la misma categoria (agentes PPO sobre LunarLander-v3) con parametros, contexto, rendimiento o licencia declarados.
+| Modelo | Algoritmo | Entorno | Recompensa media declarada | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| winkelmeer/ppo-LunarLander-v3 | PPO | LunarLander-v3 | 278,01 +/- 12,63 | no disponible | Hugging Face Hub |
+| Agentes PPO de referencia en SB3 RL Zoo | PPO | LunarLander-v2 | no disponible en esta ficha | MIT (codigo SB3) | GitHub (DLR-RM/stable-baselines3) |
+| Agentes DQN de referencia en SB3 RL Zoo | DQN | LunarLander-v2 | no disponible en esta ficha | MIT (codigo SB3) | GitHub (DLR-RM/stable-baselines3) |
+
+No se dispone de datos de benchmarks de los agentes de referencia en la informacion proporcionada, por lo que la comparacion cuantitativa no es posible.
 
 ## Limitaciones y advertencias
 
-- Especifico de un unico entorno: el agente solo es valido para LunarLander-v3; no generaliza a otras tareas ni a variantes del entorno sin reentrenamiento.
-- Sin licencia declarada: la ausencia de licencia impide asumir permisos de uso comercial o redistribucion; debe contactarse con el autor.
-- Model card incompleta: la seccion de uso contiene un `TODO` sin codigo, por lo que la carga debe reconstruirse a partir de la API estandar de Stable-Baselines3.
-- Resultado no verificado: la recompensa media declarada (278,01 +/- 12,63) figura como `verified: false` en el model-index.
-- Sin informacion sobre hiperparametros ni semillas: la reproducibilidad exacta del entrenamiento no esta garantizada.
-- Riesgo de sobreajuste al entorno: al no documentarse el numero de episodios de evaluacion ni la politica de semillas, la recompensa puede no ser representativa de un rendimiento robusto.
-- Sin soporte de lenguaje natural, vision ni audio: no debe emplearse en tareas de NLP, generacion de codigo o agentes conversacionales.
-- Sin garantias de mantenimiento: el repositorio tiene 0 descargas y 0 likes, y no se declara soporte del autor.
+- Especifico de un unico entorno: la politica esta entrenada exclusivamente para LunarLander-v3 y no generaliza a otras tareas sin reentrenamiento.
+- Sin licencia declarada: la ausencia de licencia impide asumir permisos de uso comercial, redistribucion o modificacion; conviene contactar con el autor antes de cualquier uso en produccion.
+- Resultados no verificados: la recompensa media procede del `model-index` del autor con `verified: false`, sin evidencia de evaluacion independiente ni numero de episodios.
+- Model card incompleta: la seccion de uso contiene un `TODO` y no hay codigo de carga, evaluacion ni hiperparametros documentados.
+- Sin informacion sobre sesgos: al no operar sobre datos humanos ni lenguaje, no aplican sesgos sociales en el sentido habitual, pero no se documenta el comportamiento bajo distribuciones de estado fuera de las vistas en entrenamiento.
+- Riesgo de sobreajuste al entorno: no se documenta la variabilidad entre semillas ni el rendimiento en configuraciones no estandar (viento, gravedad modificada).
+- No apto para tareas de lenguaje, vision, codigo ni agentes conversacionales.
+- Fecha de creacion futura en los metadatos (2026-11-09): conviene verificar la integridad del repositorio antes de confiar en el.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/winkelmeer/ppo-LunarLander-v3
-- Libreria Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3
-- Integracion `huggingface_sb3`: https://github.com/huggingface/huggingface_sb3
+- Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
+- Utilidad `huggingface_sb3`: https://github.com/huggingface/huggingface_sb3
 - Entorno LunarLander-v3 (Gymnasium): https://gymnasium.farama.org/environments/box2d/lunar_lander/
-- Paper de PPO: https://arxiv.org/abs/1707.06347
+- Documentacion de PPO en SB3: https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html

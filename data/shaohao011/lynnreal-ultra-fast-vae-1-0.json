@@ -5,7 +5,7 @@
   "author": "shaohao011",
   "url": "https://huggingface.co/shaohao011/LynnReal-ultra-fast-vae-1.0",
   "created_at": "2026-11-15T15:18:06.000Z",
-  "updated_at": "2026-11-16T02:20:28.000Z",
+  "updated_at": "2026-11-16T18:08:02.000Z",
   "license": "minimax-h3-community",
   "license_family": "non-commercial",
   "pipeline_tag": null,
@@ -14,7 +14,11 @@
   "tags": [
     "lynnreal-hand",
     "video-generation",
-    "hand-control",
+    "video-vae",
+    "video-decoder",
+    "variational-autoencoder",
+    "latent-video",
+    "efficient-inference",
     "license:other",
     "region:us"
   ],

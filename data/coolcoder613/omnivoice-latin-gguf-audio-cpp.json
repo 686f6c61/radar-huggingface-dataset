@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "coolcoder613/omnivoice-latin-GGUF-audio.cpp",
+  "slug": "coolcoder613-omnivoice-latin-gguf-audio-cpp",
+  "author": "coolcoder613",
+  "url": "https://huggingface.co/coolcoder613/omnivoice-latin-GGUF-audio.cpp",
+  "created_at": "2026-11-17T05:55:14.000Z",
+  "updated_at": "2026-11-17T06:11:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "la"
+  ],
+  "tags": [
+    "gguf",
+    "text-to-speech",
+    "latin",
+    "audio.cpp",
+    "la",
+    "base_model:k2-fsa/OmniVoice",
+    "base_model:quantized:k2-fsa/OmniVoice",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7340798016,
+  "storage_human": "7.3 GB",
+  "context_length": null,
+  "base_model": "k2-fsa/OmniVoice",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

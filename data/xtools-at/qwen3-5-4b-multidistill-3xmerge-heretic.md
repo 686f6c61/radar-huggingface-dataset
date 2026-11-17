@@ -2,124 +2,104 @@
 
 ## Resumen
 
-Qwen3.5-4B-MultiDistill-3xMerge-heretic es un checkpoint experimental publicado por el usuario xtools-at. Se trata de una versión "descensurada" (etiquetada como heretic, uncensored, decensored y abliterated) de su propio modelo xtools-at/Qwen3.5-4B-MultiDistill-3xMerge, obtenida aplicando la herramienta Heretic v2.0.0.dev0 mediante una ablación de rango arbitrario (Arbitrary-Rank Ablation, ARA) sobre las capas 16 a 30 del modelo original.
+Qwen3.5-4B-MultiDistill-3xMerge-heretic es un checkpoint experimental publicado por el usuario xtools-at en Hugging Face. Se trata de una versión "decensored" (abliterated) del merge `xtools-at/Qwen3.5-4B-MultiDistill-3xMerge`, que a su vez combina mediante media ponderada lineal tres fine-tunes de Qwen3.5-4B orientados a razonamiento: una destilación de trazas estilo Claude Opus 4.6, una destilación del profesor Qwen3.8 de Empero y una destilación de matemáticas y STEM de DeepSeek-V4-Pro. El resultado es un modelo denso de aproximadamente 4.539 millones de parámetros (4,54 B) sobre la arquitectura Qwen3.5, con licencia Apache-2.0 declarada.
 
-El modelo base del que deriva es, a su vez, un merge por media ponderada lineal de tres fine-tunes de Qwen3.5-4B orientados a razonamiento: Jackrong/Qwen3.5-4B-Claude-4.6-Opus-Reasoning-Distilled-v2 (peso 1), empero-ai/Qwen3.8-4B-Distill (peso 0,8) y Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B (peso 0,6). El objetivo declarado es combinar razonamiento general, eficiencia de razonamiento, seguimiento de instrucciones y matemáticas/STEM en un modelo compacto de aproximadamente 4B parámetros.
+El proceso de "decensoring" se ha realizado con Heretic v2.0.0.dev0, una herramienta de ablación de direcciones que reduce la tasa de rechazos del modelo original. Según la model card, los rechazos pasan de 98/100 en el modelo base a 3/100 en esta versión, con una divergencia KL de 0,0200 respecto al original. La ablación se aplica mediante Arbitrary-Rank Ablation (ARA) sobre las capas 16 a 30, con pesos específicos de preservación y corrección de comportamiento.
 
-La relevancia de esta variante concreta reside en su modificación de comportamiento: según la model card, reduce los rechazos de 98/100 en el modelo original a 3/100, con una divergencia KL de 0,0200 respecto al original. Es un artefacto de investigación, no un modelo validado para producción, y el propio autor advierte que el merge combinado no ha sido evaluado de forma independiente.
+El modelo es relevante para quienes necesitan un modelo compacto de razonamiento sin restricciones de rechazo, reproducible (incluye directorio `reproduce/`) y desplegable en hardware de consumo. No obstante, es un checkpoint experimental sin benchmarks independientes publicados en su model card, por lo que sus capacidades no deben asumirse equivalentes a las de los modelos fuente.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only con base Qwen3.5-4B; detalles no especificados en la model card |
-| Parametros totales | 4.539.265.536 (aprox. 4,54 mil millones) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no se publican versiones cuantizadas; pesos distribuidos en precision completa (BF16). Cuantizacion posible con herramientas externas |
-| Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 (verificar terminos de los modelos fuente antes de redistribuir) |
-| Formato de pesos | safetensors (libreria transformers) |
-| Tamano del repositorio | 9,1 GB |
-| Pipeline | text-generation |
-| Metodo de construccion | Merge por media ponderada lineal + ablacion ARA con Heretic v2.0.0.dev0 |
-| Modelo base | xtools-at/Qwen3.5-4B-MultiDistill-3xMerge |
-| Fecha de publicacion | 2026-10-14 |
+| Arquitectura | Transformer denso Qwen3.5 (qwen3_5) |
+| Parámetros totales | 4.539.265.536 (4,54 B) |
+| Parámetros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | No disponible en la información proporcionada (pesos en safetensors; cuantizaciones GGUF/AWQ no documentadas) |
+| Idiomas soportados | No disponible |
+| Licencia | Apache-2.0 (verificar términos upstream antes de redistribuir) |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es Qwen3.5-4B, un transformer decoder-only de aproximadamente 4B parametros. Este checkpoint no incorpora entrenamiento adicional propio: es el resultado de dos transformaciones aplicadas sobre xtools-at/Qwen3.5-4B-MultiDistill-3xMerge. La primera es un merge de pesos por media ponderada lineal de tres checkpoints fine-tuneados, con coeficientes 1, 0,8 y 0,6. La segunda es una ablacion de rango arbitrario (ARA) ejecutada con Heretic v2.0.0.dev0 sobre las capas 16 a 30, que modifica los pesos para suprimir comportamientos de rechazo.
+La arquitectura subyacente es Qwen3.5-4B, un transformer denso de aproximadamente 4B parámetros. Sobre esa base se aplica un merge de checkpoints mediante media ponderada lineal con tres fuentes: `Jackrong/Qwen3.5-4B-Claude-4.6-Opus-Reasoning-Distilled-v2` (peso 1), `empero-ai/Qwen3.8-4B-Distill` (peso 0,8) y `Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B` (peso 0,6). El merge busca combinar razonamiento general, eficiencia de trazas, seguimiento de instrucciones y matemáticas/STEM.
 
-Los datos de entrenamiento corresponden a las destilaciones de los tres modelos fuente, no a un entrenamiento nuevo de este checkpoint. Segun la model card, la fuente Claude Opus 4.6 utilizo mas de 14.000 muestras de razonamiento estilo Opus; la fuente Empero Qwen3.8-4B-Distill reporta aproximadamente 45.000 trazas de profesor filtradas por calidad, con bloques `<think>` aprendidos y comportamiento nativo de function calling segun la especificacion de Qwen3.5; y la fuente DeepSeek-V4-Pro-Qwen3.5-4B reporta una mezcla de aproximadamente 250.000 muestras de matematicas y STEM, entrenada con Unsloth y un pipeline LoRA, con los pesos resultantes fusionados en BF16. El autor de esta ultima fuente indica explicitamente que la mezcla SFT de 4B no incluyo datos especificos de codigo.
-
-En cuanto a la innovacion tecnica, el elemento distintivo es la ablacion de rango arbitrario con parametros declarados: start_layer_index 16, end_layer_index 30, preserve_good_behavior_weight 0,9511, steer_bad_behavior_weight 0,0016, overcorrect_relative_weight 0,6627 y neighbor_count 14. El modelo se declara reproducible, con instrucciones en el directorio `reproduce` del repositorio.
+Los datos de entrenamiento provienen de las tres destilaciones: más de 14.000 muestras de razonamiento estilo Claude Opus 4.6, aproximadamente 45.000 trazas del profesor Qwen3.8 2.4T A95B y unas 250.000 muestras de matemáticas y STEM de DeepSeek-V4-Pro en modo Max Effect. La fuente DeepSeek-V4-Pro se entrenó con Unsloth y LoRA fusionado a BF16, y no incluyó datos específicos de código. Sobre el merge se aplica después la ablación Heretic v2.0.0.dev0 con parámetros ARA: `start_layer_index` 16, `end_layer_index` 30, `preserve_good_behavior_weight` 0,9511, `steer_bad_behavior_weight` 0,0016, `overcorrect_relative_weight` 0,6627 y `neighbor_count` 14. El modelo incluye bloques `<think>` aprendidos y function calling nativo según la especificación Qwen3.5, heredados de la fuente Empero.
 
 ## Capacidades
 
-- Generacion de texto conversacional y seguimiento de instrucciones, heredado de los tres checkpoints fuente.
-- Razonamiento general con enfasis en trazas estructuradas y economicas, procedente de la destilacion estilo Claude Opus 4.6.
-- Razonamiento matematico y cientifico (STEM) con derivaciones detalladas y descomposicion de problemas, procedente de la fuente DeepSeek-V4-Pro.
-- Razonamiento multi-paso con bloques `<think>` aprendidos, segun lo descrito en la fuente Empero.
-- Function calling nativo segun la especificacion de Qwen3.5, segun la model card de la fuente Empero.
-- Capacidad multimodal: la etiqueta `image-text-to-text` aparece en los metadatos del repositorio, pero la model card no describe capacidades de vision ni detalla su alcance. Dato no confirmado.
-- Supresion del comportamiento de rechazo (3/100 rechazos frente a 98/100 del original).
-- Capacidades multilingues: no disponible.
-- Soporte de agentes: no documentado explicitamente en la model card.
+- Generación de texto y razonamiento general con trazas estructuradas y económicas.
+- Razonamiento matemático y STEM con derivaciones detalladas y descomposición de problemas.
+- Modo de pensamiento (`<think>`) aprendido, heredado de la destilación de Empero.
+- Function calling / tool calling nativo según la especificación Qwen3.5.
+- Seguimiento de instrucciones y tareas analíticas de múltiples pasos.
+- Reducción drástica de rechazos (3/100 frente a 98/100 del original), lo que permite abordar peticiones que el modelo base rechazaría.
+- Capacidades multilingües: no documentadas en la información disponible.
+- Capacidades de visión: la pipeline declarada es `image-text-to-text` en los tags de Hugging Face, aunque la model card no detalla el soporte visual; tratar como no confirmado.
 
 ## Casos de uso
 
-- Investigacion sobre alineacion y seguridad: el modelo es un caso de estudio controlado para medir el efecto de una ablacion ARA sobre la tasa de rechazos (de 98/100 a 3/100) y sobre la divergencia KL (0,0200) respecto al checkpoint original. Util para estudiar el compromiso entre supresion de rechazos y degradacion de comportamiento.
-- Reproducibilidad de tecnicas de ablacion: al incluir instrucciones y parametros en el directorio `reproduce`, permite replicar el procedimiento completo de Heretic v2.0.0.dev0 sobre un merge de 4B y validar los coeficientes declarados.
-- Generacion de razonamiento matematico en entornos de investigacion: la mezcla incorpora aproximadamente 250.000 muestras de matematicas y STEM de la fuente DeepSeek-V4-Pro, orientadas a derivaciones paso a paso y respuestas finales verificables.
-- Analisis comparativo de destilaciones: el modelo combina tres enfoques de destilacion distintos (Opus 4.6, Qwen3.8 y DeepSeek-V4-Pro) en un unico checkpoint, lo que permite estudiar como se comporta una mezcla ponderada frente a cada fuente por separado.
-- Prototipado de asistentes conversacionales sin filtros de rechazo: en entornos de investigacion cerrados, para estudiar respuestas del modelo ante peticiones que un modelo alineado rechazaria. Requiere supervision humana y evaluacion de riesgos previa.
-- Evaluacion de degradacion por ablacion: con una divergencia KL de 0,0200 respecto al original, sirve para medir experimentalmente cuanto se degrada la coherencia al aplicar la ablacion en el rango de capas 16-30.
-- Base para experimentos de merge adicionales: al ser un checkpoint experimental de 4B con licencia Apache-2.0, se puede usar como punto de partida para nuevas combinaciones ponderadas en investigacion academica.
+- Razonamiento matemático en entornos educativos o de investigación: el modelo puede generar derivaciones paso a paso y descomponer problemas cuantitativos, aprovechando la destilación de DeepSeek-V4-Pro con 250.000 muestras de matemáticas y STEM.
+- Asistente de análisis técnico sin filtros de rechazo: útil para revisar contenido sensible en entornos controlados (seguridad, red teaming, investigación) donde el modelo original rechazaría el 98 % de las peticiones y este solo el 3 %.
+- Prototipado de agentes con tool calling: el soporte nativo de function calling y los bloques `<think>` permiten construir flujos de razonamiento multi-paso con llamadas a herramientas en pipelines de automatización.
+- Generación de trazas de razonamiento para destilación: al ser un modelo pequeño y reproducible, puede usarse para generar datos de razonamiento estructurado que alimenten el entrenamiento de modelos aún más pequeños.
+- Despliegue en hardware de consumo: con 4,54 B parámetros y pesos safetensors, es viable en GPUs de gama alta para consumidores (ver sección de hardware) para tareas de razonamiento local sin dependencia de la nube.
+- Investigación en alineación y ablación: el directorio `reproduce/` y los parámetros ARA documentados permiten reproducir y estudiar el efecto de la ablación sobre el comportamiento del modelo.
+- Evaluación comparativa de merges: sirve como referencia para estudiar cómo la combinación ponderada de destilaciones afecta al rendimiento en razonamiento frente a cada fuente individual.
 
 ## Benchmarks y rendimiento
 
-La model card no publica resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros). Los unicos datos de rendimiento declarados son la tasa de rechazos y la divergencia KL respecto al modelo original:
+La model card solo publica métricas del proceso de decensoring, no benchmarks de razonamiento:
 
-| Metrica | Este modelo | Modelo original (xtools-at/Qwen3.5-4B-MultiDistill-3xMerge) |
+| Métrica | Este modelo | Modelo original |
 |---|---|---|
 | Rechazos | 3/100 | 98/100 |
-| Divergencia KL | 0,0200 | 0 (por definicion) |
+| Divergencia KL | 0,0200 | 0 (por definición) |
 
-El autor indica explicitamente que el checkpoint combinado no ha sido evaluado de forma independiente y que sus capacidades no deben asumirse equivalentes a las de ninguno de los modelos fuente por separado.
+No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor indica explícitamente que el merge combinado no ha sido evaluado de forma independiente y que sus capacidades no deben asumirse equivalentes a las de los modelos fuente.
 
 ## Requisitos de hardware
 
-Las cifras de VRAM que siguen son estimaciones derivadas del numero de parametros declarado (4.539.265.536); no proceden de la model card.
-
-- Inferencia en BF16: aproximadamente 9,1 GB solo para los pesos, mas memoria para cache KV; en la practica se recomienda una GPU con 12-16 GB o mas.
-- Inferencia en INT8: aproximadamente 4,5-5 GB para los pesos.
-- Inferencia en INT4 (GPTQ, AWQ o GGUF Q4): aproximadamente 2,3-2,7 GB para los pesos, viable en GPUs consumer de 6-8 GB.
-- GPU recomendadas: NVIDIA A100 o H100 para despliegue de alta concurrencia; RTX 4090 (24 GB) para BF16 sin problemas; RTX 3060 de 12 GB para BF16 con contexto limitado; GPUs de 8 GB o menos requieren cuantizacion INT4.
-- Cabe en GPU consumer: si, en RTX 4090, RTX 3090, RTX 4080 y, con cuantizacion, en RTX 3060 12 GB o GPUs de 8 GB.
-- Opciones de despliegue: transformers (formato nativo safetensors), vLLM, TGI y, previa conversion a GGUF, llama.cpp y Ollama. El repositorio no publica archivos GGUF, por lo que el uso en llama.cpp u Ollama requiere una conversion propia.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia en BF16: aproximadamente 9 GB solo para pesos, más overhead de activaciones y KV cache; en la práctica, 12-16 GB para contextos moderados.
+- VRAM estimada en cuantización de 8 bits: alrededor de 5 GB de pesos; en 4 bits, alrededor de 3 GB (cuantizaciones no documentadas oficialmente, estimación por tamaño).
+- GPU recomendadas: A100 40 GB, H100, L40S para producción; RTX 4090 (24 GB) y RTX 3090 (24 GB) para BF16 con holgura; RTX 4080/4070 Ti Super (16 GB) para 8 bits.
+- Cabe en GPU de consumo: sí, en RTX 4090/3090 en BF16 y en GPUs de 8-12 GB con cuantización de 4-8 bits.
+- Opciones de despliegue: transformers (librería declarada), vLLM y TGI para serving; llama.cpp/Ollama si se generan cuantizaciones GGUF (no publicadas en el repo).
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-Comparativa con el modelo del que deriva directamente:
-
-| Modelo | Parametros | Contexto | Rechazos | Divergencia KL | Licencia |
+| Modelo | Parámetros | Contexto | Licencia | Enfoque | Notas |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-MultiDistill-3xMerge-heretic (este) | ~4,54B | no disponible | 3/100 | 0,0200 | Apache-2.0 |
-| Qwen3.5-4B-MultiDistill-3xMerge (original) | no disponible en la informacion proporcionada | no disponible | 98/100 | 0 | Apache-2.0 |
+| Este modelo (heretic) | 4,54 B | No disponible | Apache-2.0 | Razonamiento + matemáticas/STEM, sin rechazos | Merge de 3 destilaciones + ablación Heretic |
+| xtools-at/Qwen3.5-4B-MultiDistill-3xMerge | ~4 B | No disponible | Apache-2.0 | Razonamiento + matemáticas/STEM | Modelo base; 98/100 rechazos |
+| Jackrong/Qwen3.5-4B-Claude-4.6-Opus-Reasoning-Distilled-v2 | ~4 B | No disponible | No disponible | Razonamiento general | Fuente con peso 1 en el merge |
+| empero-ai/Qwen3.8-4B-Distill | ~4 B | No disponible | No disponible | Destilación de profesor, instrucciones | Fuente con peso 0,8; incluye `<think>` y function calling |
+| Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B | ~4 B | No disponible | No disponible | Matemáticas y STEM | Fuente con peso 0,6; sin datos de código |
 
-Composicion del merge del modelo original:
-
-| Modelo fuente | Peso | Enfasis principal |
-|---|---:|---|
-| Jackrong/Qwen3.5-4B-Claude-4.6-Opus-Reasoning-Distilled-v2 | 1 | Razonamiento general, eficiencia de razonamiento, matematicas y logica |
-| empero-ai/Qwen3.8-4B-Distill | 0,8 | Razonamiento destilado de profesor, conocimiento general y seguimiento de instrucciones |
-| Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B | 0,6 | Matematicas, STEM, derivaciones estructuradas y razonamiento cuantitativo |
-
-No se dispone de datos verificados de otros modelos comparables de la misma categoria (por ejemplo, otros modelos de ~4B orientados a razonamiento) en la informacion proporcionada: no disponible.
+No se dispone de benchmarks comparativos publicados para establecer diferencias de rendimiento entre estas variantes.
 
 ## Limitaciones y advertencias
 
-- Modelo descensurado por diseno: la ablacion reduce los rechazos de 98/100 a 3/100. Esto implica que el modelo puede generar contenido que un modelo alineado rechazaria, con los riesgos asociados en cualquier uso real.
-- Checkpoint experimental sin evaluacion independiente: el autor advierte que el merge combinado no ha sido benchmarkeado y que sus capacidades no deben darse por equivalentes a las de las fuentes.
-- Degradacion potencial por ablacion: la divergencia KL de 0,0200 respecto al original indica que la distribucion de salida ha cambiado; no se documenta el impacto sobre coherencia, factualidad o tareas especificas.
-- Riesgo de alucinacion: no disponible como dato medido; al ser un modelo de 4B con destilacion de razonamiento, el riesgo existe, pero no hay cifras publicadas.
-- Carencia de entrenamiento en codigo: el autor de la fuente DeepSeek-V4-Pro-Qwen3.5-4B indica que la mezcla SFT de 4B no incluyo datos especificos de codigo, por lo que la transferencia en codigo y uso de herramientas no esta establecida por el entrenamiento de esa fuente.
-- Capacidad multimodal dudosa: la etiqueta `image-text-to-text` figura en los metadatos, pero la model card no describe ni valida vision. No debe asumirse soporte de imagenes en produccion.
-- Idiomas, contexto y cuantizaciones oficiales: no disponibles. No hay datos sobre cobertura multilingue ni sobre la longitud de contexto efectiva.
-- Licencia: el checkpoint declara Apache-2.0, pero la propia model card pide verificar los terminos de los modelos fuente antes de redistribuir. Las licencias de los tres checkpoints de origen condicionan el uso comercial.
-- Uso comercial: no verificado. La combinacion de una licencia Apache-2.0 declarada con terminos upstream no comprobados exige revision legal previa a cualquier despliegue comercial.
-- Ausencia de datos de latencia y throughput: no disponible, lo que dificulta estimar costes de despliegue en produccion.
+- Checkpoint experimental sin benchmarks independientes; el rendimiento no está validado y puede no coincidir con el de los modelos fuente.
+- La ablación Heretic reduce rechazos pero puede degradar la calidad en tareas que dependían de comportamientos de seguridad; la divergencia KL de 0,0200 indica un cambio medible respecto al original.
+- Riesgo de alucinación inherente a modelos de 4B y a la destilación de trazas; no hay evaluación de fidelidad factual publicada.
+- La fuente DeepSeek-V4-Pro no incluyó datos de código, por lo que las capacidades de programación no están establecidas.
+- Idiomas soportados no documentados; el comportamiento multilingüe es incierto.
+- Longitud de contexto no especificada; no asumir ventanas largas sin verificación empírica.
+- Licencia Apache-2.0 declarada, pero la model card advierte de verificar los términos upstream de los modelos fuente antes de redistribuir.
+- El uso comercial es posible según la licencia, pero la ausencia de benchmarks y la naturaleza "uncensored" requieren evaluación propia y salvaguardas adicionales en producción.
+- El pipeline `image-text-to-text` aparece en los tags, pero la capacidad visual no está confirmada en la model card; no asumir soporte multimodal.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/xtools-at/Qwen3.5-4B-MultiDistill-3xMerge-heretic
-- Modelo base (original sin ablacion): https://huggingface.co/xtools-at/Qwen3.5-4B-MultiDistill-3xMerge
-- Heretic (herramienta de ablacion): https://heretic-project.org
-- Fuente 1 del merge: https://huggingface.co/Jackrong/Qwen3.5-4B-Claude-4.6-Opus-Reasoning-Distilled-v2
-- Fuente 2 del merge: https://huggingface.co/empero-ai/Qwen3.8-4B-Distill
-- Fuente 3 del merge: https://huggingface.co/Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B
-- Dataset citado: https://huggingface.co/datasets/nohurry/Opus-4.6-Reasoning-3000x-filtered
-- Dataset citado: https://huggingface.co/datasets/Jackrong/Qwen3.5-reasoning-700x
-- Dataset citado: https://huggingface.co/datasets/Roman1111111/claude-opus-4.6-10000x
-- Instrucciones de reproduccion: directorio `reproduce/README.md` dentro del repositorio del modelo
+- Modelo base del merge: https://huggingface.co/xtools-at/Qwen3.5-4B-MultiDistill-3xMerge
+- Fuente 1 (Claude Opus 4.6 distillation): https://huggingface.co/Jackrong/Qwen3.5-4B-Claude-4.6-Opus-Reasoning-Distilled-v2
+- Fuente 2 (Empero Qwen3.8-4B Distill): https://huggingface.co/empero-ai/Qwen3.8-4B-Distill
+- Fuente 3 (DeepSeek-V4-Pro-Qwen3.5-4B): https://huggingface.co/Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B
+- Heretic: https://heretic-project.org
+- Dataset nohurry/Opus-4.6-Reasoning-3000x-filtered: https://huggingface.co/datasets/nohurry/Opus-4.6-Reasoning-3000x-filtered
+- Dataset Jackrong/Qwen3.5-reasoning-700x: https://huggingface.co/datasets/Jackrong/Qwen3.5-reasoning-700x
+- Dataset Roman1111111/claude-opus-4.6-10000x: https://huggingface.co/datasets/Roman1111111/claude-opus-4.6-10000x

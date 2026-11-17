@@ -2,90 +2,86 @@
 
 ## Resumen
 
-`yujiepan/minimax-m3.1-flash-tiny-random` es un checkpoint de depuración de aproximadamente 14 millones de parámetros, publicado por el usuario de Hugging Face yujiepan, cuya configuración se ha adaptado de `MiniMaxAI/MiniMax-M3.1-Flash`. No es un modelo entrenado: sus pesos se inicializan de forma aleatoria con semilla fija (42) y su única finalidad es reproducir el esquema exacto del checkpoint original para validar cargadores, código de conversión y grafos de ejecución.
+`yujiepan/minimax-m3.1-flash-tiny-random` es un checkpoint de depuración de MiniMax-M3.1-Flash, el modelo multimodal de tipo Mixture-of-Experts (MoE) desarrollado por MiniMax. No es un modelo funcional: se trata de una inicialización aleatoria con la misma estructura de grafo que el modelo original (atención dispersa, enrutado MoE, torre de visión y rama de borrador DSpark), pero con dimensiones internas reducidas a valores mínimos (hidden size 32, 8 capas de texto, 2 capas de visión). Su propósito es validar pipelines de carga, serialización y despliegue en SGLang sin necesidad de descargar ni ejecutar el modelo completo.
 
-El interés técnico está en que conserva la estructura del modelo fuente: arquitectura Mixture-of-Experts con atención dispersa e indexador en todas las capas, torre de visión, rama de borrador especulativa DSpark de cinco etapas y el mismo formato de cuantización mixta (MXFP8 para capas densas y de atención, NVFP4 para los expertos enrutados). El autor señala que Transformers puede instanciar el grafo multimodal M3 VL, pero no puede serializar el layout NVFP4 de los expertos, por lo que el checkpoint sigue los nombres y formatos del cargador oficial de SGLang.
+El checkpoint conserva fielmente el esquema de nombres y los formatos de cuantización del modelo fuente: MXFP8 para capas densas y de atención, NVFP4 para los expertos enrutados, además de las matrices de tokens sin atar en BF16. Esta fidelidad estructural lo convierte en una herramienta útil para desarrolladores que integran MiniMax-M3.1-Flash en SGLang o que necesitan comprobar el soporte de los formatos de cuantización mixtos antes de pasar a producción.
 
-Es relevante ahora porque permite probar infraestructura de despliegue (SGLang, TP, procesadores de imagen y vídeo, plantilla de chat) sin necesidad de reservar el hardware del modelo completo, que requiere rutas de ejecución NVFP4 en Blackwell. Cualquier uso generativo real con este checkpoint carece de sentido: sus pesos no contienen conocimiento aprendido.
+Con 14.038.240 parámetros totales reales (según safetensors) y un tamaño de repositorio de 0,1 GB, el modelo tiene relevancia exclusivamente como utilidad de ingeniería. Su autor, yujiepan, lo publica bajo la librería `sglang` y lo etiqueta explícitamente como "tiny random" y "intended for debugging". No debe emplearse para inferencia real, evaluación de calidad ni despliegue en producción.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only Mixture-of-Experts con atención dispersa e indexador en todas las capas, torre de visión y rama de borrador especulativa DSpark |
-| Parámetros totales | 14.038.240 |
-| Parámetros activos | no disponible (estructura MoE con 128 expertos enrutados, top-4 y 1 experto compartido; el número exacto de parámetros activos no se ha publicado) |
+| Arquitectura | Transformer multimodal MoE con atención dispersa y torre de visión; grafo MiniMax M3 VL |
+| Parametros totales | 14.038.240 |
+| Parametros activos | no disponible (el modelo fuente usa top-k 4 de 128 expertos enrutados; no se especifica el recuento activo del tiny) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | MXFP8 (capas densas y de atención), NVFP4 (expertos enrutados), BF16 (embeddings, `lm_head`, torre de visión y proyector multimodal) |
+| Tipos de cuantizacion | MXFP8 (capas densas y atención), NVFP4 (expertos enrutados), BF16 (embeddings y lm_head sin atar), F32 (escalas) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (`model.safetensors` 28,3 MB; `dspark/model.safetensors` 6,5 MB), con `custom_code` y código de configuración propio (`configuration_minimax_m3_vl.py`) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo replica la topología del M3 VL fuente: 8 capas de texto, de las cuales las 3 primeras son densas y las 5 restantes usan MoE (`moe_layer_freq`), con 128 expertos enrutados, top-4 por token y un experto compartido. La dimensión oculta es 32, con 1 cabeza de atención, 1 cabeza KV y `head_dim` 32; la atención dispersa mantiene un indexador por capa con `sparse_index_dim` 32, bloques de 32 y `sparse_topk_blocks` 1. La torre de visión consta de 2 capas con anchura 64, tamaño de imagen 28 y `projection_dim` alineado con la dimensión oculta. Se conserva la rama de borrador DSpark de 5 etapas, pensada para decodificación especulativa.
+La arquitectura replica el grafo de MiniMax-M3.1-Flash con dimensiones reducidas: 8 capas de texto (3 densas de prefijo y 5 MoE) frente a las 60 del original, hidden size de 32 (frente a 6144), una única cabeza de atención con head_dim 32 y 128 expertos enrutados con top-k 4 y 1 experto compartido. Mantiene la atención dispersa con indexador en todas las capas (`sparse_attention_freq` a 1 en cada capa), con `sparse_block_size` 32, `sparse_topk_blocks` 1 y `sparse_local_block` 1. La torre de visión se reduce a 2 capas y anchura 64 (frente a 32 capas y 1280). La rama de borrador DSpark de 5 etapas se conserva íntegra estructuralmente.
 
-El almacenamiento respeta el formato mixto del modelo fuente: pesos MXFP8 con escalas E8M0 (identificadas por SGLang como UE8M0) en capas densas y de atención, y expertos enrutados en NVFP4 con dos valores por byte y escala E4M3 cada 16 columnas, más `input_global_scale`. Las matrices de embedding y `lm_head` se mantienen sin atar (`untied`) en BF16 y con las filas de vocabulario originales, lo que por sí solo exige 25.608.192 bytes y hace que el checkpoint supere el objetivo de 30 MB declarado por el autor.
-
-No hay entrenamiento: no se han usado datos, no hay fases de RLHF ni DPO y no existe ajuste alguno. La inicialización es aleatoria (`normal_(0, 0.1)`) sobre formas tomadas de la configuración fuente, con los ficheros de tokenizador, procesadores y plantilla de chat copiados byte a byte del repositorio original en la revisión `54e4e69dfc452b1e94a426c24a4fdeeaa8e3ad5e`.
+No hubo entrenamiento: los pesos son aleatorios, muestreados con `torch.manual_seed(42)` y distribución normal (0, 0,1), convertidos posteriormente a los formatos de cuantización del modelo fuente. Las capas MXFP8 usan `weight_scale_inv` en E8M0 (exponente 127 = 1,0) y los expertos NVFP4 usan `weight_packed` con dos valores por byte y escala E4M3 por cada 16 columnas. Los embeddings y `lm_head` se mantienen sin atar en BF16 y conservan las filas del vocabulario original, lo que obliga a que el checkpoint completo supere el objetivo blando de 30 MB (solo esos dos tensores ocupan 25.608.192 bytes).
 
 ## Capacidades
 
-- Ninguna capacidad generativa real: los pesos son aleatorios, por lo que la salida de texto no es coherente ni fiable.
-- Validación estructural del grafo multimodal M3 VL (texto + visión) en Transformers y en el cargador de SGLang.
-- Comprobación del esquema de serialización de expertos NVFP4 y de escalas MXFP8/UE8M0, incluyendo el empaquetado de dos valores por byte.
-- Tokenizador, `chat_template.jinja`, `preprocessor_config.json`, `image_processor.py` y `video_processor.py` funcionales y copiados del modelo base, útiles para probar preprocesado de imagen y vídeo.
-- Estructura de decodificación especulativa presente (rama DSpark de 5 etapas), apta para validar el cableado, no para medir aceptación de tokens.
-- Soporte de tool calling, agentes o razonamiento multi-paso: no disponible (no hay pesos entrenados que lo sustenten).
-- Capacidades multilingües: no disponible (el tokenizador proviene del modelo base, pero no se documenta cobertura idiomática).
+- No tiene capacidades funcionales de generación, razonamiento, código o matemáticas: los pesos son aleatorios y la salida es ruido.
+- Reproduce la estructura de tool calling y razonamiento multi-paso del modelo fuente a nivel de grafo, pero sin pesos entrenados que las sustenten.
+- Incluye la estructura de visión (torre y proyector multimodal) y de la rama de borrador DSpark, útil para probar la carga de esos componentes.
+- Sirve para validar el cargador oficial de SGLang, los nombres de tensores y el empaquetado NVFP4/MXFP8.
+- No soporta inferencia multilingüe real ni modo thinking operativo.
+- Permite comprobar el comportamiento del tokenizador y del chat template copiados byte a byte del modelo fuente.
 
 ## Casos de uso
 
-- Validación del cargador de SGLang: arrancar el servidor con este checkpoint para comprobar que el loader resuelve nombres de tensores, escalas y layouts NVFP4/MXFP8 antes de intentarlo con el modelo completo.
-- Pruebas de humo en CI: un repositorio de 0,1 GB y 14 M de parámetros permite ejecutar tests de carga y de inicialización en cada commit sin aprovisionar GPUs de gama alta.
-- Desarrollo de kernels y codecs de cuantización: sirve para verificar rutas de descompresión FP4 (escala E4M3 cada 16 columnas) y FP8 con escala E8M0 sin depender de pesos reales.
-- Integración de pipelines multimodales: los procesadores de imagen y vídeo copiados del modelo fuente permiten probar el preprocesado, el `projector_hidden_size` y la conexión torre de visión ↔ modelo de lenguaje.
-- Verificación de plantillas de chat y tokenizador: al conservarse `chat_template.jinja`, `tokenizer.json` y `special_tokens_map.json` byte a byte, se puede testear el formateo de conversaciones y el conteo de tokens en aplicaciones downstream.
-- Pruebas de paralelismo tensorial: el comando documentado con `--tp-size 4` permite ensayar el reparto de capas MoE y el sharding de expertos en un entorno de 4 GPUs sin cargar el modelo real.
-- Regresión de scripts de conversión: comparar el esquema generado por herramientas propias contra este checkpoint como referencia de nombres y `dtype` de cada tensor.
+- Validación de pipelines de carga en SGLang: permite comprobar que el cargador oficial reconoce los nombres de tensores, el esquema de cuantización mixta y la rama DSpark sin descargar el modelo completo de decenas de gigabytes.
+- Pruebas de integración de CI/CD: al pesar 0,1 GB, se puede incluir en pipelines automatizados que verifiquen que una nueva versión de SGLang o de Transformers sigue instanciando correctamente el grafo M3 VL.
+- Desarrollo de herramientas de conversión de pesos: sirve como referencia para validar scripts que transformen entre formatos MXFP8/NVFP4 y otros formatos, gracias a que conserva el layout exacto del modelo fuente.
+- Depuración de soporte hardware: permite reproducir errores de carga en flotas sin ruta de ejecución Blackwell NVFP4 (como la H20 citada por el autor) antes de escalar al modelo real.
+- Pruebas de tokenizador y chat template: al copiar los ficheros de tokenización y plantilla de chat del modelo fuente, se puede verificar el preprocesado de texto e imágenes en entornos de test.
+- Benchmarking de infraestructura: útil para medir tiempos de arranque, inicialización de servidores SGLang y asignación de memoria con el grafo M3 sin la carga computacional del modelo completo.
+- Formación y documentación: permite a investigadores inspeccionar la estructura interna de un MoE multimodal con atención dispersa sin necesidad de recursos de GPU de gama alta.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Al tratarse de un checkpoint con pesos aleatorios, cualquier métrica de calidad (MMLU, HumanEval, GSM8K) carecería de significado.
+No se han publicado resultados de benchmarks en la informacion disponible. Al tratarse de un modelo con pesos aleatorios, cualquier métrica de calidad (MMLU, HumanEval, GSM8K) sería meaningless y no se reporta.
 
 ## Requisitos de hardware
 
-- VRAM estimada: inferior a 1 GB en BF16 para el conjunto del checkpoint (28,3 MB de pesos principales más 6,5 MB de la rama DSpark, con overhead de activaciones y del servidor).
-- Cabe en cualquier GPU de consumo: GTX 1060 6 GB, RTX 3060, RTX 4090, así como en CPU.
-- GPU de datacenter: el ejemplo del autor usa `--tp-size 4` (flota H20), pero está marcado como no verificado.
-- La ejecución de los expertos NVFP4 del modelo fuente requiere la ruta Blackwell NVFP4, no disponible en la flota H20 usada para validar; por eso el comando de SGLang se presenta como no verificado.
-- Opciones de despliegue: SGLang con `--trust-remote-code` (soporte declarado, sin verificar); Transformers puede instanciar el grafo M3 VL pero no serializar el layout NVFP4. No se documentan artefactos GGUF, por lo que llama.cpp u Ollama no están soportados.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: inferior a 0,1 GB en BF16; el checkpoint completo ocupa 0,1 GB en disco (28,3 MB `model.safetensors` + 6,5 MB `dspark/model.safetensors`).
+- GPU recomendadas: cualquier GPU con soporte BF16; el autor indica que la flota de validación H20 no dispone de la ruta de ejecución Blackwell NVFP4 necesaria para los expertos del modelo fuente, por lo que la ejecución TP=4 en SGLang queda marcada como no verificada.
+- Cabe en cualquier GPU de consumo (RTX 3060, RTX 4090, etc.) e incluso en CPU para pruebas de carga, aunque la ejecución NVFP4 requeriría hardware Blackwell.
+- Opciones de despliegue: SGLang con `--trust-remote-code` y `--tp-size 4` (comando no verificado por el autor); no se documenta soporte en vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles; al ser un modelo de depuración, no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Propósito |
 |---|---|---|---|---|---|
-| yujiepan/minimax-m3.1-flash-tiny-random | 14.038.240 | no disponible | MXFP8 + NVFP4 + BF16 | no disponible | Hugging Face, 0 descargas, 0 likes |
-| MiniMaxAI/MiniMax-M3.1-Flash (modelo base) | no disponible en la información proporcionada | no disponible | MXFP8 denso, NVFP4 expertos | no disponible | Hugging Face |
-| Otros checkpoints aleatorios de depuración | no disponible | no disponible | no disponible | no disponible | no disponible |
+| yujiepan/minimax-m3.1-flash-tiny-random | 14.038.240 | no disponible | no disponible | Hugging Face | Depuración estructural |
+| MiniMaxAI/MiniMax-M3.1-Flash | no disponible | no disponible | no disponible | Hugging Face | Modelo multimodal MoE de producción |
+| Otros tiny-random de MiniMax | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de rendimiento ni de especificaciones completas de alternativas comparables en la información proporcionada.
+No se dispone de información sobre otros checkpoints tiny-random comparables de la familia MiniMax ni de sus especificaciones completas. La comparativa con el modelo fuente se limita a la tabla estructural incluida en la model card (capas de texto 8 frente a 60, hidden 32 frente a 6144, visión 2 capas/64 de anchura frente a 32/1280).
 
 ## Limitaciones y advertencias
 
-- Pesos inicializados aleatoriamente: la generación de texto es incoherente; no debe usarse en producción ni para evaluación de calidad.
-- Licencia no disponible: no puede asumirse permiso de uso comercial; además, la licencia del modelo base tampoco se documenta en la información proporcionada.
-- Idiomas y contexto no documentados: se desconoce la ventana máxima real y la cobertura lingüística, aunque el tokenizador provenga del modelo fuente.
-- Paridad solo estructural: reproduce formas, nombres y formatos de tensor, no el comportamiento del modelo original.
-- El checkpoint supera el objetivo de 30 MB declarado por el autor porque conserva las matrices de embedding y `lm_head` sin atar con el vocabulario completo.
-- La ruta NVFP4 de los expertos requiere hardware Blackwell; la validación en H20 no cubre esa ruta y el comando de SGLang con TP=4 figura explícitamente como no verificado.
-- Riesgo de alucinación: total, en el sentido de que la salida no está anclada a ningún dato aprendido.
-- Adopción nula: 0 descargas y 0 likes en el momento de la consulta, sin validación por parte de la comunidad.
-- La búsqueda web realizada no devolvió resultados técnicos relevantes sobre este modelo ni sobre su modelo base.
+- Pesos aleatorios: el modelo no produce salidas coherentes; cualquier uso para inferencia real, evaluación o producción es inválido.
+- No es un modelo entrenado: no ha pasado por preentrenamiento, RLHF ni DPO; no refleja sesgos de datos reales porque no ha visto datos.
+- La licencia no está declarada, lo que impide determinar si su uso comercial está permitido; debe consultarse el modelo base MiniMaxAI/MiniMax-M3.1-Flash.
+- La ejecución en SGLang con TP=4 está marcada como no verificada por el autor debido a la falta del hardware Blackwell NVFP4 necesario.
+- El checkpoint supera intencionadamente el objetivo de 30 MB por conservar las filas de vocabulario originales y las matrices de tokens BF16 sin atar.
+- No debe confundirse con el modelo MiniMax-M3.1-Flash real: comparte esquema de nombres y formatos, pero no pesos ni capacidades.
+- No hay información sobre idiomas soportados, contexto máximo ni rendimiento, por lo que no puede evaluarse su idoneidad para casos de uso multilingües o de contexto largo.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/yujiepan/minimax-m3.1-flash-tiny-random
+- Hugging Face: https://huggingface.co/yujiepan/minimax-m3.1-flash-tiny-random
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash
-- No se han encontrado papers, blogs, repositorios ni demos adicionales en la búsqueda web realizada.
+- SGLang: https://github.com/sgl-project/sglang
+- Repositorio de la revisión del modelo fuente citada en la model card: revisión `54e4e69dfc452b1e94a426c24a4fdeeaa8e3ad5e` de MiniMaxAI/MiniMax-M3.1-Flash
+- No se han encontrado papers, blogs ni demos adicionales en la información proporcionada.

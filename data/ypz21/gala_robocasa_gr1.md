@@ -2,111 +2,87 @@
 
 ## Resumen
 
-GALA_robocasa_gr1 es un checkpoint de inferencia del proyecto GALA, publicado por el usuario ypz21 en Hugging Face, destinado a la evaluación de políticas robóticas en el entorno de simulación RoboCasa con el robot humanoide GR1 en tareas de mesa (tabletop). No es un modelo de lenguaje al uso, sino una política visión-lenguaje-acción (VLA) entrenada a partir del backbone Qwen2.5-VL-3B-Instruct, con 4.833.350.656 parámetros (~4,83 mil millones) y un repositorio de 19,3 GB distribuido en cuatro shards de safetensors.
+GALA_robocasa_gr1 es un checkpoint de inferencia del modelo GALA (Geometry-Aware Latent Action Modeling), un modelo vision-language-action (VLA) desarrollado por Yichen Liu, Puzhen Yuan, Xiang Zhu, Yanjiang Guo y Jianyu Chen, y publicado en arXiv en 2026. El modelo parte de Qwen2.5-VL-3B-Instruct como backbone y se ha afinado para control robótico en el entorno RoboCasa con el robot humanoide GR1 en tareas de mesa (tabletop). Este checkpoint concreto está orientado a la evaluacion de inferencia en dicho benchmark.
 
-El checkpoint está diseñado para ejecutarse con el cargador de inferencia propio del proyecto GALA (repositorio privado, requiere acceso) junto con el procesador y los archivos del backbone Qwen2.5-VL. No funciona como un pipeline estándar de Transformers, vLLM o llama.cpp, lo que limita su uso fuera del entorno de investigación para el que fue pensado. El export incluye únicamente pesos de inferencia, índice, configuración y metadatos de normalización/modalidad de GR1; excluye estados de optimizador y scheduler, estados aleatorios, registros de entrenamiento, el cabezal de predicción de bridge-supervision y metadatos de otros embodiments.
+La propuesta tecnica de GALA es el modelado de acciones latentes con conciencia geometrica durante el preentrenamiento, con el objetivo de transferir habilidades entre distintas morfologias de robot. El checkpoint hereda la arquitectura transformer multimodal de Qwen2.5-VL-3B (vision encoder mas decoder de lenguaje) y anade las cabezas o adaptadores necesarios para emitir acciones motoras.
 
-Su relevancia es acotada y muy específica: sirve como referencia reproducible para investigar manipulación de mesa en simulación con GR1, ya que el autor valida numéricamente que el export produce acciones idénticas al checkpoint original ante entradas fijas. La model card advierte explícitamente de que el modelo es para investigación en simulación y que el despliegue en robots físicos no ha sido validado por esta release.
+Es relevante para investigadores en robotica y VLA porque ofrece un punto de partida reproducible sobre el benchmark RoboCasa GR1, con pesos en safetensors y un repositorio publico de evaluacion. El modelo tiene 4.833.350.656 parametros segun los pesos publicados y ocupa 19,3 GB en el repositorio.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Política VLA sobre el backbone Qwen2.5-VL-3B-Instruct; la evaluación con pasos de denoising apunta a un cabezal de acciones generativo, pero la model card no detalla la arquitectura interna |
-| Parámetros totales | 4.833.350.656 (~4,83 mil millones) |
-| Parámetros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible para el checkpoint; el modelo base Qwen2.5-VL-3B-Instruct declara 32.768 tokens nativos, dato no confirmado para esta política |
-| Tipos de cuantización | no disponible; no se publican variantes cuantizadas y el export conserva la precisión original de los pesos |
-| Idiomas soportados | no disponible; el backbone Qwen2.5-VL es multilingüe, pero las entradas de la política son observaciones e instrucciones robóticas |
-| Licencia | no disponible; Qwen2.5-VL y los assets del simulador mantienen sus licencias originales |
-| Formato de pesos | safetensors (cuatro shards más su índice) |
-| Modelo base | Qwen/Qwen2.5-VL-3B-Instruct |
-| Pipeline declarado | robotics |
-| Tipo de acciones | acciones de articulación absolutas (absolute joint actions) |
-| Chunk de acciones | 16 pasos por chunk |
-| Pasos de denoising | 4 |
-| Tamaño del repositorio | 19,3 GB |
-| Idioma del backbone | Qwen2.5-VL-3B-Instruct (inglés y otros idiomas según su model card) |
-| Fecha de publicación | 17 de septiembre de 2026 (creación y última actualización el mismo día) |
-| Descargas / likes | 0 / 0 |
+| Arquitectura | Transformer multimodal vision-language-action (VLA) sobre Qwen2.5-VL-3B-Instruct |
+| Parametros totales | 4.833.350.656 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible |
+| Licencia | no disponible |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El checkpoint sigue el paradigma VLA: un backbone de visión-lenguaje (Qwen2.5-VL-3B-Instruct, transformer con torre de visión y proyector multimodal) al que se añade un cabezal de generación de acciones. La única pista sobre el cabezal es la configuración de evaluación declarada por el autor: 16 pasos de acción por chunk y 4 pasos de denoising, lo que encaja con un esquema de difusión o flow matching en el espacio de acciones, aunque la model card no lo especifica de forma explícita. No se documentan detalles de atención, positional encodings ni mecanismos adicionales.
+El modelo se construye sobre Qwen2.5-VL-3B-Instruct, un transformer multimodal con encoder de vision y decoder de lenguaje. GALA incorpora sobre esta base un esquema de acciones latentes con informacion geometrica, disenado para el preentrenamiento de modelos VLA entre distintas morfologias (cross-embodiment). El checkpoint publicado corresponde a la fase de inferencia y ha sido afinado especificamente para el benchmark RoboCasa GR1 en tareas tabletop.
 
-En cuanto al entrenamiento, la información disponible es mínima: no se indican el número de tokens, la composición del dataset, ni si hubo etapas de RLHF, DPO o aprendizaje por imitación más allá de la mención implícita a un entrenamiento de política. La model card indica que el export excluye el cabezal de predicción de bridge-supervision (bridge-supervision prediction head), lo que sugiere que el pipeline de entrenamiento original empleaba alguna forma de supervisión puente entre modalidades, pero ese componente no forma parte de los pesos liberados. El export sí conserva la precisión original de los pesos de inferencia y se ha validado numéricamente contra el checkpoint original con entradas fijas, obteniendo acciones idénticas.
-
-La evaluación declarada usa 24 tareas ID (in-distribution) con 50 episodios por tarea. El autor señala que los resultados son estocásticos, sin publicar tasas de éxito.
+No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones concretas de decodificacion. La referencia tecnica completa es el paper arXiv:2609.21948, que describe el metodo GALA.
 
 ## Capacidades
 
-- Generación de acciones de control para el robot GR1 en tareas de manipulación de mesa dentro del simulador RoboCasa.
-- Procesamiento de observaciones visuales y entradas multimodales heredado del backbone Qwen2.5-VL-3B-Instruct.
-- Producción de chunks de 16 acciones de articulación absolutas mediante 4 pasos de denoising.
-- Ejecución de evaluación paralela por ID a través del cargador de inferencia de GALA (según el README del repositorio de código).
-- Reproducibilidad numérica: el export genera acciones idénticas al checkpoint original ante entradas fijas.
-- No se documentan capacidades de tool calling, function calling, uso como agente multi-paso, razonamiento en lenguaje natural ni modo de pensamiento explícito.
-- No se documentan capacidades de audio, vídeo de larga duración ni generación de texto como producto final.
+- Percepcion visual y comprension de escenas mediante el backbone Qwen2.5-VL-3B.
+- Generacion de acciones motoras para control robotico en el entorno RoboCasa GR1 (tareas tabletop).
+- Razonamiento visuolinguistico heredado del modelo base (descripcion de imagenes, respuesta a instrucciones en lenguaje natural).
+- Modelado de acciones latentes con informacion geometrica para transferencia entre morfologias (segun la propuesta del paper).
+- Soporte de tool calling / function calling: no disponible como capacidad especifica del checkpoint.
+- Soporte de agentes multi-paso: no disponible como capacidad especifica del checkpoint.
+- Capacidades multilingues: no disponibles.
+- Capacidades especiales (thinking mode, audio): no disponibles.
 
 ## Casos de uso
 
-- Evaluación de investigación en manipulación tabletop: ejecutar las 24 tareas ID de RoboCasa con GR1 y 50 episodios por tarea para obtener medidas de éxito comparables dentro del mismo protocolo de simulación.
-- Reproducción de resultados de GALA: al requerir el cargador de inferencia del proyecto y validarse numéricamente contra el checkpoint original, sirve para replicar experimentos previos del equipo en lugar de reentrenar desde cero.
-- Baseline en comparativas de políticas VLA: usar este checkpoint como referencia fija sobre el mismo entorno y conjunto de tareas al evaluar variantes arquitectónicas o de entrenamiento.
-- Fine-tuning sobre nuevas tareas de RoboCasa: al partir de un backbone Qwen2.5-VL-3B-Instruct y de pesos de política ya alineados con el embodiment GR1, es un punto de partida razonable para adaptar la política a otras tareas del mismo simulador.
-- Generación de rollouts sintéticos: producir trayectorias en simulación para análisis de comportamiento, estudio de modos de fallo o como datos auxiliares en pipelines de imitación.
-- Ablación de parámetros de inferencia: variar el número de pasos de denoising o la longitud del chunk (por defecto 16 acciones y 4 pasos) para medir su efecto en la calidad y estabilidad de las acciones.
-- Verificación de conversiones y exports de pesos: la validación numérica con entradas fijas convierte al checkpoint en un patrón de referencia para comprobar que un pipeline de exportación reproduce acciones idénticas.
-- Docencia y demos de VLA en simulación: ilustrar el ciclo observación-visión-lenguaje-acción sin necesidad de hardware robótico, con la advertencia de que el repositorio de código es privado y requiere autorización.
+- Evaluacion de investigacion en RoboCasa GR1: el checkpoint sirve para reproducir los resultados del paper en tareas tabletop, ejecutando el pipeline de evaluacion del repositorio GitHub con el entorno y los controladores del robot GR1.
+- Estudio de transferencia entre morfologias: permite analizar como las acciones latentes geometricas de GALA se adaptan a un robot humanoide concreto, comparando con otros checkpoints de la misma familia.
+- Base para fine-tuning en nuevos entornos: al partir de Qwen2.5-VL-3B-Instruct, puede reentrenarse sobre tareas de manipulacion distintas, aprovechando el conocimiento visuolinguistico del backbone.
+- Benchmarking de modelos VLA: sirve como referencia cuantitativa en comparativas de exito de tarea frente a otros VLA sobre RoboCasa.
+- Investigacion en representaciones de accion: util para experimentos que estudien el efecto de acciones latentes frente a acciones explicitas en control de robots.
+- Prototipado de politicas de manipulacion en laboratorio: con el entorno simulado de RoboCasa, permite validar politicas antes de trasladarlas a un GR1 fisico.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card únicamente describe el protocolo de evaluación (24 tareas ID, 50 episodios por tarea, acciones de articulación absolutas, chunks de 16 acciones, 4 pasos de denoising y resultados estocásticos), sin incluir tasas de éxito ni comparaciones numéricas con otras políticas.
+No se han publicado resultados de benchmarks en la informacion disponible. El paper arXiv:2609.21948 y el sitio web del proyecto son las fuentes donde consultar las metricas de exito en RoboCasa GR1.
 
 ## Requisitos de hardware
 
-- VRAM estimada en precisión original (bf16): aproximadamente 9,7 GB solo para los pesos de la política, más el coste del procesador y la torre de visión de Qwen2.5-VL y de los búferes de inferencia.
-- VRAM estimada si los pesos estuvieran en fp32: aproximadamente 19,3 GB, cifra coherente con el tamaño total del repositorio (19,3 GB).
-- GPU de 24 GB: RTX 3090, RTX 4090, A5000 o L4 permiten inferencia en bf16 con margen razonable.
-- GPU de 16 GB: viable solo reduciendo precisión o aplicando cuantización manual, ya que no se publican variantes cuantizadas.
-- GPU de datacenter: A100 o H100 no son necesarias para una sola instancia, pero resultan útiles para lanzar evaluación paralela en múltiples entornos de simulación.
-- Consumer GPU: sí cabe en tarjetas de gama alta con 24 GB en bf16; en 16 GB requiere ajustes no documentados por el autor.
-- Opciones de despliegue: no compatible con vLLM, TGI, llama.cpp ni Ollama como pipeline estándar. Requiere el cargador de inferencia de GALA (repositorio privado con acceso restringido), los archivos del procesador y backbone de Qwen2.5-VL-3B-Instruct y el entorno del simulador RoboCasa.
-- Latencia y throughput estimados: no disponible. Cabe esperar el coste de 4 pasos de denoising por cada chunk de 16 acciones, pero no se publican medidas de latencia ni de acciones por segundo.
-- Almacenamiento: prever al menos 19,3 GB para el checkpoint, más el espacio de los archivos del backbone y de los assets del simulador.
+- VRAM estimada para inferencia en precision completa (FP16/BF16): aproximadamente 9,7 GB solo para pesos, mas memoria para activaciones y el encoder de vision; se recomienda al menos 16-24 GB.
+- VRAM estimada en cuantizacion de 8 bits: en torno a 5-6 GB para pesos, con overhead adicional.
+- GPU recomendadas: A100 (40/80 GB), H100, L40S o RTX 4090 (24 GB) para FP16.
+- Cabe en GPU de consumo: si, en RTX 4090 (24 GB) en FP16; en GPUs de 16 GB (RTX 4080, 4060 Ti 16 GB) requeriria cuantizacion.
+- Opciones de despliegue: no se especifican en la informacion disponible; el repositorio GitHub de GALA indica el procedimiento de inferencia y evaluacion. Al ser un modelo de robotica con cabezas de accion, no es directamente compatible con servidores de texto estandar como vLLM o TGI sin adaptacion.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-Los datos de los modelos comparables proceden de conocimiento general y no han sido verificados en la búsqueda web de esta ficha; se marcan como tales. No es posible comparar rendimiento porque GALA_robocasa_gr1 no publica tasas de éxito.
+| Modelo | Parametros | Contexto | Entorno / tarea | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| GALA_robocasa_gr1 | 4.833 M | no disponible | RoboCasa GR1 (tabletop) | no disponible | Hugging Face, 20 descargas |
+| Qwen2.5-VL-3B-Instruct (base) | ~3.750 M | 32.768 tokens (segun model card oficial de Qwen) | Vision-lenguaje general | Apache 2.0 (segun model card oficial de Qwen) | Hugging Face, ampliamente usado |
+| Otros VLA sobre RoboCasa | no disponible | no disponible | RoboCasa | no disponible | no disponible |
 
-| Modelo | Parámetros | Backbone | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| GALA_robocasa_gr1 | ~4,83 mil millones | Qwen2.5-VL-3B-Instruct | no disponible | pesos en Hugging Face con autenticación; cargador de inferencia en repositorio privado |
-| OpenVLA-7B (referencia externa, no verificada) | ~7 mil millones | Llama-2-7B con codificadores DINOv2 y SigLIP | licencia comunitaria de Llama 2 | pesos públicos en Hugging Face |
-| pi-0 / openpi (referencia externa, no verificada) | del orden de 3 mil millones | PaliGemma con cabezal de flow matching | Apache 2.0 | pesos y código públicos |
-| GR00T N1 (referencia externa, no verificada) | del orden de 2 mil millones | arquitectura propia de NVIDIA con torre de visión | licencia comunitaria de NVIDIA | pesos públicos en Hugging Face |
-
-Diferencias relevantes: GALA_robocasa_gr1 es el único de la lista con licencia sin especificar, sin métricas publicadas y con dependencia de un repositorio de código privado, lo que dificulta su reproducción por terceros. Los tres alternativas citadas publican pesos y código con licencias identificables, aunque su entrenamiento y evaluación se centran en otros conjuntos de tareas y embodiments.
+La comparativa con otros VLA especificos de RoboCasa no esta disponible en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Licencia no disponible: no se puede confirmar que el uso comercial esté permitido. Los componentes de Qwen2.5-VL y los assets del simulador quedan sujetos a sus licencias originales.
-- Dependencia de código privado: la ejecución requiere el cargador de inferencia de GALA, alojado en un repositorio privado con acceso restringido; sin autorización, el checkpoint no es utilizable.
-- No es un pipeline estándar: no funciona con Transformers, vLLM, TGI, llama.cpp ni Ollama sin trabajo de integración adicional.
-- Validación limitada a simulación: el despliegue en robots físicos no ha sido validado por esta release, según advierte la propia model card.
-- Sin métricas publicadas: se desconoce la tasa de éxito en las 24 tareas ID y no hay comparaciones numéricas con otras políticas.
-- Resultados estocásticos: la evaluación declarada produce resultados variables entre ejecuciones, lo que complica la comparación directa si no se fija la semilla.
-- Sesgo de distribución: las 24 tareas son in-distribution; no se documenta el comportamiento ante tareas, objetos o iluminaciones fuera de esa distribución.
-- Alcance del embodiment: el checkpoint está ajustado a GR1 y a los metadatos de normalización de ese robot; no incorpora metadatos de otros embodiments, por lo que no se espera transferencia directa a otras plataformas.
-- Componentes excluidos: el cabezal de bridge-supervision y los estados de entrenamiento no están incluidos, de modo que el checkpoint no permite reanudar entrenamiento tal cual.
-- Idiomas: no se documenta el comportamiento multilingüe de la política; las instrucciones de tarea en RoboCasa suelen formularse en inglés.
-- Riesgo de alucinación: no aplica en el sentido de generación de texto libre, pero existe riesgo de acciones incoherentes o inseguras fuera del dominio entrenado; al evaluarse solo en simulación, el riesgo físico directo está acotado.
-- Madurez y adopción: cero descargas y cero likes en el momento de redactar esta ficha, sin validación independiente por parte de la comunidad.
-- Ventana de contexto: no se documenta el contexto efectivo usado por la política, aunque el backbone declare 32.768 tokens nativos.
+- Es un checkpoint de inferencia para un benchmark concreto (RoboCasa GR1); su uso fuera de ese entorno o morfologia no esta validado.
+- La licencia no esta indicada en la informacion disponible, por lo que no puede confirmarse el uso comercial.
+- No se especifican los idiomas soportados ni la longitud de contexto efectiva del checkpoint.
+- Riesgo de alucinacion y sesgos: heredados del backbone Qwen2.5-VL-3B-Instruct, sin evaluacion especifica publicada para este checkpoint.
+- Solo 20 descargas y 0 likes en el momento de la consulta: ecosistema de validacion muy reducido.
+- El repositorio ocupa 19,3 GB, lo que implica requisitos de almacenamiento y transferencia considerables.
+- No hay resultados de benchmarks publicados en la informacion disponible para verificar el rendimiento real.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/ypz21/GALA_robocasa_gr1
-- Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
-- Repositorio de código de GALA (privado, requiere acceso): https://github.com/PuzhenYuan/GALA
-- La búsqueda web realizada para esta ficha no devolvió resultados relevantes: únicamente páginas de ayuda de Google Translate y ensayos genéricos sin relación con el modelo. No se han localizado papers, blogs ni demos adicionales.
+- Hugging Face: https://huggingface.co/ypz21/GALA_robocasa_gr1
+- Paper: https://arxiv.org/abs/2609.21948v1
+- Sitio web del proyecto: https://puzhenyuan.github.io/GALA-website/
+- Repositorio GitHub: https://github.com/PuzhenYuan/GALA

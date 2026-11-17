@@ -2,99 +2,100 @@
 
 ## Resumen
 
-`youssef-khazal/qwen3-4b-demarches-lora` es un adaptador LoRA (entrenado con QLoRA) sobre el modelo base Qwen/Qwen3-4B, desarrollado por el autor independiente youssef-khazal como parte del proyecto "Démarches FR", un asistente RAG local para consultas sobre trámites administrativos franceses. El adaptador no es un modelo autónomo: está diseñado para funcionar exclusivamente dentro del pipeline del proyecto, recibiendo pasajes de las guías oficiales de Service-Public.fr y devolviendo una respuesta estructurada en JSON con un comportamiento clasificado (answer, clarify, fallback, off-topic, emergency, refuse), el texto de la respuesta y los números de los pasajes citados.
+`youssef-khazal/qwen3-4b-demarches-lora` es un adaptador LoRA (entrenado con QLoRA) sobre el modelo base Qwen/Qwen3-4B, desarrollado por youssef-khazal como parte del proyecto independiente Démarches FR, un asistente RAG local para consultas sobre trámites administrativos franceses. El adaptador no funciona de forma autónoma: está diseñado para recibir pasajes de las guías oficiales de Service-Public.fr dentro del prompt y devolver una respuesta en formato JSON con un comportamiento clasificado (answer, clarify, fallback, off-topic, emergency, refuse), el texto de la respuesta y los números de los pasajes citados.
 
-El modelo base Qwen3-4B es un transformer denso de 4.000 millones de parámetros con capacidad de razonamiento (thinking mode), aunque este adaptador se usa explícitamente con el modo thinking desactivado. El adaptador añade 658 ejemplos de respuestas generadas por el asistente final del proyecto (Qwen3-8B con razonamiento más comprobaciones en código), filtradas automáticamente y con exclusión de las fichas que responden a las 163 preguntas de test del proyecto.
+El modelo resuelve un problema acotado pero relevante: mejorar la fidelidad de un modelo pequeño (4B parámetros) a la hora de extraer hechos de documentación administrativa oficial y de admitir cuándo la documentación no cubre una pregunta. Según la model card, frente al Qwen3-4B sin ajustar encuentra un 6,3 % más de hechos esperados (IC 95 % [+1,2, +11,6]) y reduce ligeramente la tasa de contenido inventado, aunque no alcanza al modelo Qwen3-8B con razonamiento que el proyecto usa finalmente en producción.
 
-Su relevancia es doble: por un lado, demuestra un flujo completo de fine-tuning QLoRA reproducible en hardware de consumo (una GPU de portátil de 8 GB, 3 h 15 min); por otro, publica una evaluación medida con intervalos de confianza y comparación contra el modelo base y contra el modelo final del proyecto, lo que permite valorar con rigor si el fine-tuning aporta mejoras reales en un dominio acotado como es la administración pública francesa.
+Es relevante ahora por dos motivos: demuestra que un ajuste fino con QLoRA en una GPU de portátil de 8 GB (3 h 15 min de entrenamiento) puede producir mejoras medibles en una tarea RAG concreta, y publica una evaluación con 163 preguntas de test e intervalos de confianza, algo poco habitual en adaptadores LoRA de nicho. El repositorio ocupa 0,1 GB y solo contiene los pesos del adaptador, no el modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (QLoRA) sobre transformer denso Qwen3-4B; rank 16, alpha 32, aplicado a todas las proyecciones de atención y MLP |
-| Parametros totales | No disponible (adaptador LoRA; el modelo base Qwen3-4B tiene 4.000 millones) |
+| Arquitectura | LoRA (PEFT) sobre transformer decoder-only Qwen3-4B; rango 16, alpha 32, aplicado a todas las proyecciones de atención y MLP |
+| Parametros totales | Adaptador LoRA sobre un modelo base de 4B parámetros (tamaño exacto del adaptador no disponible; repo de 0,1 GB) |
 | Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible en la informacion proporcionada (heredada del modelo base Qwen3-4B) |
-| Tipos de cuantizacion | Base cargado en 4-bit nf4 durante el entrenamiento; el adaptador se distribuye en safetensors sin cuantizar |
-| Idiomas soportados | Frances (fr), ingles (en), arabe (ar) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (adaptador PEFT/LoRA); requiere el modelo base Qwen/Qwen3-4B |
+| Longitud de contexto | No disponible en la información proporcionada (heredada del Qwen3-4B base; no confirmada) |
+| Tipos de cuantizacion | Entrenado con QLoRA cargando el base en 4-bit nf4; el adaptador se publica en safetensors (precisión del adaptador no especificada) |
+| Idiomas soportados | fr, en, ar (el árabe es el punto débil según el autor) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (adaptador PEFT/LoRA); requiere el modelo base Qwen/Qwen3-4B por separado |
 
 ## Arquitectura y entrenamiento
 
-El adaptador se entrena con QLoRA: el modelo base Qwen3-4B se carga cuantizado en 4-bit nf4 y se añade un LoRA de rango 16 (alpha 32) sobre todas las proyecciones de atención y MLP. La pérdida se calcula únicamente sobre los tokens de la respuesta, no sobre el prompt. Se realizan 2 pasadas con learning rate 2e-4 y batch efectivo de 8, y se publica el checkpoint con mejor pérdida de validación (tras la primera pasada). El entrenamiento completo se ejecutó en una GPU de portátil de 8 GB en 3 horas y 15 minutos.
+El adaptador se entrena sobre Qwen3-4B, un transformer decoder-only, mediante QLoRA: el modelo base se carga cuantizado en 4-bit nf4 y se inserta un LoRA de rango 16 con alpha 32 en todas las proyecciones de atención y MLP. La pérdida se calcula únicamente sobre los tokens de la respuesta. Se realizaron 2 pasadas con learning rate 2e-4 y batch efectivo de 8; se publica el checkpoint con mejor pérdida de validación (tras la primera pasada). El entrenamiento completo se ejecutó en una GPU de portátil de 8 GB en 3 h 15 min.
 
-Los datos de entrenamiento consisten en 658 respuestas generadas por el asistente final del proyecto (Qwen3-8B con razonamiento, más comprobaciones programáticas), filtradas mediante verificaciones automáticas. Las preguntas se generaron a partir de las fichas oficiales en francés (registro formal, oral y SMS), inglés y árabe, excluyendo las fichas que responden a las 163 preguntas del conjunto de test para evitar contaminación. El adaptador espera el prompt construido por `Assistant.build_messages` del proyecto, con `enable_thinking=False`.
+Los datos de entrenamiento consisten en 658 respuestas generadas por el asistente final del proyecto (Qwen3-8B con razonamiento, más comprobaciones en código) y filtradas mediante verificaciones automáticas. Las preguntas se generaron a partir de las fichas oficiales en francés (registro formal, hablado y SMS), inglés y árabe, excluyendo las fichas que responden a las 163 preguntas del conjunto de test para evitar contaminación. El adaptador espera el prompt construido por `Assistant.build_messages` del proyecto, con el modo de razonamiento desactivado (`enable_thinking=False`), y no está pensado para responder sin los pasajes de contexto del pipeline RAG.
 
 ## Capacidades
 
-- Generación de respuestas estructuradas en JSON con un campo de comportamiento clasificado en seis categorías: answer, clarify, fallback, off-topic, emergency y refuse.
-- Citación de pasajes: el modelo devuelve los números de los fragmentos de las guías oficiales que utiliza para fundamentar la respuesta.
-- Respuesta fundamentada en contexto (RAG): responde exclusivamente a partir de los pasajes que recibe en el prompt, no de conocimiento paramétrico.
-- Multilingüe en tres idiomas: francés (formal, oral y SMS), inglés y árabe.
-- Detección de fuera de alcance: indica cuando las guías no cubren una pregunta, en lugar de inventar una respuesta.
-- No soporta tool calling ni function calling de forma nativa según la información disponible.
-- No soporta agentes multi-paso ni razonamiento extendido: se usa con thinking desactivado.
-- No dispone de capacidades de visión ni audio.
+- Generación de texto con salida estructurada en JSON: comportamiento clasificado, respuesta y lista de pasajes citados.
+- Extracción de hechos a partir de pasajes de documentación administrativa francesa proporcionados en el contexto (RAG).
+- Clasificación de intención en seis comportamientos: answer, clarify, fallback, off-topic, emergency y refuse.
+- Citación de fuentes mediante números de pasaje, lo que permite verificar la respuesta contra el contexto.
+- Capacidad de declarar que las guías no cubren una pregunta (fallback), mejorada respecto al modelo base.
+- Multilingüe en fr, en y ar, con rendimiento notablemente inferior en árabe según el autor.
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión, audio ni modo de razonamiento explícito (de hecho, el uso previsto desactiva el thinking).
 
 ## Casos de uso
 
-- Asistente RAG de trámites administrativos franceses: integrado en el pipeline del proyecto "Démarches FR", recibe pasajes de Service-Public.fr y devuelve una respuesta citada con comportamiento clasificado, lo que permite al frontend decidir si mostrar la respuesta, pedir aclaración o derivar a un humano.
-- Clasificación de intención en atención al ciudadano: el campo `behaviour` del JSON permite enrutar consultas a respuestas automáticas, aclaraciones, derivaciones de emergencia o rechazos sin necesidad de un clasificador separado.
-- Filtrado de consultas fuera de alcance: el comportamiento `off-topic` y `fallback` permite descartar preguntas que las guías no cubren, reduciendo el riesgo de respuestas inventadas en producción.
-- Base para fine-tuning de dominio en otros idiomas o administraciones: la receta QLoRA (rank 16, 4-bit nf4, pérdida solo en tokens de respuesta) es reproducible en una GPU de 8 GB, lo que sirve como plantilla para adaptar Qwen3-4B a otros corpus administrativos.
-- Evaluación comparativa de estrategias de fine-tuning: el proyecto publica métricas con intervalos de confianza al 95 % y comparación contra el modelo base y contra un modelo mayor con razonamiento, útil como referencia metodológica.
-- Prototipado local sin conexión: al ejecutarse sobre un modelo de 4B cuantizable, puede desplegarse en un portátil para demos o pruebas de concepto de asistentes administrativos antes de escalar a modelos mayores.
-- Generación de respuestas multilingües para residentes extranjeros: el soporte de francés, inglés y árabe cubre consultas de usuarios que no dominan el francés, aunque el árabe es el punto débil declarado por el autor.
+- Asistente RAG de trámites administrativos franceses: integrado en el pipeline del proyecto Démarches FR, recibe los pasajes recuperados de Service-Public.fr y devuelve una respuesta citada en JSON, lo que permite mostrar al usuario las fuentes exactas.
+- Clasificación y enrutado de consultas ciudadanas: el campo de comportamiento permite derivar consultas de emergencia, fuera de alcance o ambiguas a flujos específicos (clarificación, rechazo o escalado a un operador humano) sin coste adicional de un segundo modelo.
+- Despliegue local con recursos limitados: al ser un adaptador sobre un modelo de 4B, puede servirse en hardware modesto (el autor entrenó en una GPU de 8 GB), lo que encaja en escenarios de privacidad donde los datos del usuario no deben salir del equipo.
+- Prototipado rápido de asistentes documentales en otros dominios: la receta (QLoRA rango 16, 658 ejemplos filtrados, salida JSON con citas) es replicable para corpus normativos o manuales internos con presupuesto de cómputo mínimo.
+- Evaluación comparativa de pipelines RAG: el conjunto de 163 preguntas y la metodología de grading (LLM judge y grading de referencia con Claude) sirven como base para medir el impacto del ajuste fino frente al modelo base en una tarea concreta.
+- Filtro de alucinaciones en producción: la mejora en la detección de preguntas no cubiertas por las guías permite reducir respuestas inventadas en un 2,4 % absoluto (de 32,5 % a 30,1 % según el LLM judge), útil como capa de seguridad antes de mostrar contenido al usuario.
+- Experimentación académica con adaptadores pequeños: útil para estudiar la relación entre tamaño de modelo, ajuste fino y fidelidad a las fuentes en tareas de question answering sobre documentos.
 
 ## Benchmarks y rendimiento
 
-Evaluación sobre 163 preguntas de test escritas a mano, con la misma búsqueda y prompt para todos los modelos:
+Evaluación sobre 163 preguntas de test con la misma búsqueda y prompt del proyecto:
 
 | Modelo | Comportamiento correcto | Hechos encontrados | Respuestas con contenido inventado |
 |---|---|---|---|
-| Qwen3-4B antes del fine-tuning (juez LLM) | 73,6 % | 72,3 % | 32,5 % |
-| Este adaptador (juez LLM) | 79,8 % | 78,7 % | 30,1 % |
-| Este adaptador (corrección manual) | 85,9 % | 76,3 % | 27,0 % |
-| Qwen3-8B + razonamiento, modelo final del proyecto (corrección manual) | 92,6 % | 81,4 % | 15,3 % |
+| Qwen3-4B sin ajustar (LLM judge) | 73,6 % | 72,3 % | 32,5 % |
+| Este adaptador (LLM judge) | 79,8 % | 78,7 % | 30,1 % |
+| Este adaptador (grading de referencia) | 85,9 % | 76,3 % | 27,0 % |
+| Qwen3-8B con razonamiento, modelo final del proyecto (grading de referencia) | 92,6 % | 81,4 % | 15,3 % |
 
-El adaptador mejora al modelo base en hechos encontrados en +6,3 puntos (IC 95 % [+1,2, +11,6]) y declara con más frecuencia que las guías no cubren una pregunta. No alcanza al modelo de 8B con razonamiento, y el árabe es su punto débil según el autor.
+- Mejora en hechos encontrados frente al 4B base: +6,3 puntos, IC 95 % [+1,2, +11,6].
+- LLM judge: Qwen3-8B. Grading de referencia: cada respuesta revisada contra sus pasajes por Claude.
+- No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- Entrenamiento: una GPU de portátil de 8 GB, 3 h 15 min, con QLoRA en 4-bit nf4.
-- Inferencia: el adaptador se suma al modelo base Qwen3-4B; en 4-bit nf4 el conjunto cabe en GPUs de consumo con 8 GB o más de VRAM (por ejemplo, RTX 3060 Ti, RTX 4060 Ti, RTX 3070). En fp16 requiere aproximadamente 8-10 GB, por lo que encaja en RTX 4070 Ti, RTX 4080, RTX 4090, A100 o H100.
-- Despliegue: al ser un adaptador PEFT, se carga con `peft.PeftModel.from_pretrained` sobre transformers; no se documenta soporte específico para vLLM, llama.cpp, Ollama o TGI en la información disponible, aunque al estar basado en safetensors y PEFT podría fusionarse con el modelo base para su uso en esos motores.
+- VRAM estimada para inferencia: el adaptador se suma al modelo base Qwen3-4B. En 4-bit nf4 el base ocupa aproximadamente 2-3 GB; en fp16, en torno a 8 GB. Cifras exactas no disponibles en la información proporcionada.
+- GPU recomendadas: el autor entrenó en una GPU de portátil de 8 GB, por lo que la inferencia cabe en GPUs consumer de gama media-alta (RTX 3060 12 GB, RTX 4070, RTX 4090). Para despliegue en servidor, A100 o H100 son sobredimensionadas para este tamaño.
+- Cabe en GPU consumer: sí, según la evidencia del entrenamiento en 8 GB; la inferencia en 4-bit debería caber en GPUs de 6-8 GB.
+- Opciones de despliegue: PEFT + Transformers (documentado en la model card), y por compatibilidad con el base Qwen3-4B, herramientas como vLLM, TGI, llama.cpp u Ollama previa fusión del adaptador con el modelo base. No se documenta configuración específica para estas herramientas.
 - Latencia y throughput: no disponibles en la información proporcionada.
-- El adaptador requiere el prompt exacto del proyecto (`Assistant.build_messages`) y `enable_thinking=False`; fuera de ese pipeline no está pensado para responder.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Rendimiento en la tarea (hechos / comportamiento) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (Qwen3-4B + LoRA Démarches FR) | 4B (base) + LoRA r16 | No disponible | RAG especializado en trámites FR, salida JSON con citas | Apache 2.0 | Hugging Face (adaptador PEFT) |
-| Qwen/Qwen3-4B (base) | 4B | No disponible | Modelo generalista con thinking mode | Apache 2.0 | Hugging Face |
-| Qwen3-8B + razonamiento (modelo final del proyecto) | 8B | No disponible | RAG especializado en trámites FR, mayor calidad | No disponible | Uso interno del proyecto, no publicado como modelo |
-| Alternativas generalistas de 4B (p. ej. Llama 3.2 3B, Gemma 2 2B) | 2-4B | No disponible | Modelo generalista | Licencias variables | Hugging Face |
+| Este adaptador (Qwen3-4B + LoRA) | 4B + adaptador | No disponible | 78,7 % / 79,8 % (LLM judge) | apache-2.0 | Hugging Face |
+| Qwen3-4B base | 4B | No disponible | 72,3 % / 73,6 % (LLM judge) | apache-2.0 | Hugging Face |
+| Qwen3-8B con razonamiento (modelo final del proyecto) | 8B | No disponible | 81,4 % / 92,6 % (grading de referencia) | No disponible en la información | Uso interno del proyecto |
 
-La comparación relevante es contra el modelo base y contra el modelo de 8B del propio proyecto: el adaptador mejora al base en hechos encontrados (+6,3 puntos) pero queda por debajo del 8B con razonamiento (76,3 % frente a 81,4 % en corrección manual). No se dispone de comparación con otros adaptadores de dominio equivalentes.
+No se dispone de datos de otros adaptadores LoRA comparables para esta tarea específica en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo autónomo: sin la búsqueda y el prompt del proyecto "Démarches FR" no está pensado para responder nada; usarlo fuera de ese pipeline produce resultados no evaluados.
-- No constituye asesoramiento legal: ofrece información general extraída de las guías oficiales y puede confundir reglas entre casos vecinos, como refleja la tasa de contenido inventado (27,0 % en corrección manual).
-- Punto débil en árabe, según declara el propio autor; el rendimiento multilingüe no es homogéneo.
-- No alcanza la calidad del modelo de 8B con razonamiento del proyecto (85,9 % frente a 92,6 % en comportamiento correcto), por lo que el proyecto mantiene el 8B en producción.
-- Proyecto independiente: no está afiliado ni respaldado por la administración francesa.
-- Los datos de entrenamiento incluyen pasajes de "Fiches pratiques et ressources de Service-Public.gouv.fr Particuliers" (DILA) bajo Licence Ouverte / Open Licence 2.0; conviene verificar las condiciones de atribución si se redistribuye el modelo o sus salidas.
-- El adaptador se distribuye sin cuantizar en safetensors; para despliegue en producción hay que fusionarlo con el base o servirlo con un motor compatible con PEFT.
-- Sin descargas ni likes en el momento de la consulta (0 descargas, 0 likes), lo que indica que no ha sido validado por la comunidad.
+- No es un modelo autónomo: sin el pipeline de búsqueda y el prompt del proyecto (`Assistant.build_messages`) no está pensado para responder preguntas.
+- Ofrece información general extraída de guías oficiales; no constituye asesoramiento legal. Puede confundir reglas entre casos próximos, como se mide en la evaluación.
+- Tasa de contenido inventado del 27-30 % según el método de evaluación: sigue siendo un riesgo relevante en producción y requiere verificación contra las fuentes citadas.
+- El árabe es el punto débil declarado por el autor; el rendimiento multilingüe no es homogéneo.
+- No alcanza al Qwen3-8B con razonamiento del proyecto (85,9 % vs 92,6 % en comportamiento correcto con grading de referencia).
+- Proyecto independiente, no afiliado ni respaldado por la administración francesa.
+- Los datos de entrenamiento incluyen pasajes de Service-Public.fr (DILA) bajo Licence Ouverte / Open Licence 2.0, lo que impone obligaciones de atribución sobre ese contenido.
+- El adaptador se publica sin el modelo base; es necesario descargar Qwen/Qwen3-4B por separado y respetar su licencia.
+- No hay información sobre sesgos específicos más allá de los medidos en la evaluación.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/youssef-khazal/qwen3-4b-demarches-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
-- Repositorio del proyecto: https://github.com/youssef-khazal/fr-admin-assistant
-- Metodología y resultados del fine-tuning: https://github.com/youssef-khazal/fr-admin-assistant/blob/main/finetune/README.md
-- Fuente de datos oficial: https://www.service-public.fr/ (DILA, Licence Ouverte / Open Licence 2.0)
+- Repositorio del proyecto Démarches FR: https://github.com/youssef-khazal/fr-admin-assistant
+- Metodología y resultados completos del ajuste fino: https://github.com/youssef-khazal/fr-admin-assistant/blob/main/finetune/README.md
+- Fuente de datos: Service-Public.fr / DILA (Licence Ouverte / Open Licence 2.0)

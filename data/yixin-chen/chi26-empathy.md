@@ -2,89 +2,97 @@
 
 ## Resumen
 
-`yixin-chen/chi26-empathy` es un repositorio alojado en Hugging Face por el usuario `yixin-chen` del que, en el momento de redactar esta ficha, no se puede confirmar prácticamente nada. La pagina del modelo no incluye model card, descripcion, pesos documentados, fichero de configuracion, tokenizador ni pipeline declarado. Los unicos metadatos verificables son: 0 descargas, 2 "me gusta", la etiqueta `region:us`, licencia no declarada, idiomas no declarados y fechas de creacion y actualizacion identicas (13 de septiembre de 2026, un valor anomalo que apunta a un error de metadatos o a una publicacion programada con fecha futura).
+`yixin-chen/chi26-empathy` es un conjunto de clasificadores de empatia publicados junto al articulo "Empathy Practices in Social Media Discourse: A Multidimensional and Relational Perspective" (CHI 2026), firmado por Yixin Chen, Bernie Hogan y Scott A. Hale. No es un modelo generativo de proposito general, sino una coleccion de 12 adaptadores fine-tuneados sobre `unsloth/Phi-3-medium-4k-instruct-bnb-4bit`, cada uno entrenado para detectar una practica de empatia concreta en publicaciones y respuestas de redes sociales.
 
-El identificador del repositorio permite plantear dos hipotesis no confirmadas: `chi26` podria referirse a la conferencia ACM CHI 2026 (Conference on Human Factors in Computing Systems) y `empathy` a un sistema orientado a generar o evaluar respuestas empaticas en dialogo. Ninguna de las dos hipotesis esta respaldada por documentacion del repositorio, por lo que no deben tomarse como especificaciones tecnicas.
+El modelo base es Phi-3-medium-4k-instruct, un transformer denso de Microsoft con 14.000 millones de parametros y una ventana de contexto de 4096 tokens. El repositorio ocupa 2,1 GB y contiene exclusivamente pesos en formato safetensors (adaptadores), sin pipeline declarado, sin licencia explicita y sin idiomas declarados en la model card.
 
-En terminos de relevancia practica, este repositorio no es evaluable ni desplegable hoy: sin pesos publicos, sin arquitectura declarada, sin licencia y sin benchmarks, no existe base para recomendarlo en produccion ni para incluirlo en una comparativa tecnica. Su interes actual es como ejemplo de repositorio vacio o en fase de publicacion, y como recordatorio de que la ausencia de licencia implica, por defecto, ausencia de permiso explicito de uso comercial.
+Su relevancia es acotada pero clara: ofrece una taxonomia operacionalizada de 12 practicas de empatia (solicitud de consejo, revelacion personal, resonancia emocional, validacion, reafirmacion, interes por profundizar, consejo personalizado, etc.) utilizable en investigacion computacional social y en analisis de discurso a escala. Para desarrolladores que buscan un LLM de proposito general, este repositorio no es la eleccion; para equipos de NLP social que necesiten etiquetar empatia en corpus de redes sociales, es una referencia metodologica concreta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no aplicable (no se ha confirmado que sea un modelo MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible (sin licencia declarada; no se concede permiso explicito de uso) |
-| Formato de pesos | no disponible (no se han publicado ficheros de pesos identificables) |
+| Arquitectura | Transformer denso (base: Phi-3-medium-4k-instruct) con adaptadores fine-tuneados por tarea |
+| Parametros totales | 14.000 millones (modelo base Phi-3-medium); tamano de los adaptadores no disponible |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 4096 tokens (heredada del modelo base) |
+| Tipos de cuantizacion | no disponible en el repositorio; el base de referencia es bnb-4bit |
+| Idiomas soportados | no disponible en la model card (el modelo base soporta principalmente ingles) |
+| Licencia | no disponible |
+| Formato de pesos | safetensors |
+| Tamano del repositorio | 2,1 GB |
+| Numero de adaptadores | 12 (uno por tarea de clasificacion) |
 | Pipeline declarado | no disponible |
-| Etiquetas del repositorio | `region:us` |
-| Descargas | 0 |
-| "Me gusta" | 2 |
-| Fecha de creacion | 2026-09-13T15:58:52.000Z |
-| Fecha de actualizacion | 2026-09-13T15:58:52.000Z |
 
 ## Arquitectura y entrenamiento
 
-No disponible. El repositorio no publica informacion sobre el tipo de arquitectura (transformer denso, mixture of experts, SSM, hibrida u otra), el numero de parametros, la longitud de contexto, el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares. Tampoco se documentan innovaciones tecnicas (atencion lineal, decodificacion especulativa, cuantizacion nativa, etc.).
+Cada uno de los 12 directorios del repositorio contiene un adaptador fine-tuneado sobre `unsloth/Phi-3-medium-4k-instruct-bnb-4bit`, una version cuantizada a 4 bits del Phi-3-medium de Microsoft preparada con la libreria Unsloth. El modelo base es un transformer decoder-only denso de 14.000 millones de parametros con contexto de 4096 tokens, entrenado originalmente por Microsoft con datos publicos y ajustado por instrucciones.
 
-Dado que no hay ficheros de configuracion ni pesos visibles, cualquier afirmacion sobre la arquitectura seria especulacion. La unica via de verificacion seria consultar el repositorio directamente y comprobar si contiene `config.json`, `model.safetensors`, ficheros GGUF u otros artefactos.
+El entrenamiento de los adaptadores se describe en el articulo CHI 2026 asociado, que define y operacionaliza cada una de las 12 practicas de empatia. La model card no detalla el numero de ejemplos de entrenamiento, la composicion del dataset, la plataforma de origen de los posts ni si se aplicaron tecnicas de RLHF, DPO o regularizacion especifica. Tampoco se especifica el rango de los adaptadores (LoRA, QLoRA u otro). Toda esa informacion debe consultarse en el paper.
 
 ## Capacidades
 
-No disponible. Al no existir model card ni artefactos de inferencia publicados, no es posible determinar:
-
-- Si el modelo genera texto, codigo, matematicas o contenido multimodal.
-- Si soporta tool calling o function calling.
-- Si esta preparado para flujos de agente o razonamiento multi-paso.
-- Que idiomas cubre realmente (la pagina no declara ninguno).
-- Si incorpora modos especiales como modo "thinking", vision o audio.
+- Clasificacion binaria (o multiclase, segun la tarea) de practicas de empatia en posts y respuestas de redes sociales.
+- Deteccion de practicas de solicitud: pedir consejo u opiniones, buscar experiencias o sentimientos similares, buscar calibracion de circunstancias.
+- Deteccion de practicas de revelacion: compartir informacion personal, compartir emociones.
+- Deteccion de resonancia emocional: expresar resonancia emocional, recordar sentimientos o emociones similares.
+- Deteccion de validacion: expresar validacion, compartir experiencias similares.
+- Deteccion de reafirmacion: ofrecer tranquilidad, animo o buenos deseos, expresar interes por una elaboracion adicional, ofrecer consejo personalizado.
+- Capacidad generativa subyacente del modelo base Phi-3-medium (no es el proposito del repositorio).
+- Soporte de tool calling y function calling: no documentado para estos adaptadores.
+- Soporte de agentes y razonamiento multi-paso: no documentado.
+- Capacidades multilingues: no documentadas en la model card.
+- Capacidades especiales (vision, audio, thinking mode): no disponibles.
 
 ## Casos de uso
 
-No se pueden proponer casos de uso reales para este repositorio: no hay pesos, ni licencia, ni documentacion de capacidades. Cualquier escenario de aplicacion seria una hipotesis sin base verificable. A modo de orientacion sobre lo que habria que validar antes de plantear un caso de uso, y siempre condicionado a que el autor publique la informacion correspondiente:
-
-- Dialogo empatico en atencion al cliente: solo seria viable si el modelo resultase ser un modelo de dialogo ajustado para empatia y si su licencia permitiese uso comercial, algo que hoy no se puede confirmar.
-- Moderacion o clasificacion de tono emocional: requeriria conocer la tarea de entrenamiento y disponer de benchmarks de clasificacion, inexistentes en la informacion disponible.
-- Apoyo a investigacion en HCI: si el identificador `chi26` alude a CHI 2026, el modelo podria acompaanar a una publicacion academica, pero no se ha localizado ningun paper asociado.
-- Evaluacion comparativa de modelos empaticos: no es posible sin pesos ni metricas publicadas.
-- Despliegue en produccion: bloqueado por la ausencia de licencia y de pesos.
-- Fine-tuning sobre datos propios: inviable sin pesos base y sin terminos de uso definidos.
+- Analisis de discurso empatico a escala en redes sociales: procesar corpus de posts y respuestas y etiquetar cada mensaje con las 12 practicas de empatia, permitiendo estudios cuantitativos sobre como se manifiesta el apoyo emocional en comunidades online.
+- Moderacion y salud comunitaria: identificar respuestas que ofrecen validacion, reafirmacion o consejo personalizado, para destacar interacciones de apoyo y priorizar su visibilidad frente a contenido toxico.
+- Investigacion en HCI y psicologia social: replicar o extender el marco del paper CHI 2026 en nuevos dominios (foros de salud, comunidades de apoyo, plataformas de mensajeria) con una taxonomia ya operacionalizada.
+- Entrenamiento de sistemas de respuesta empatica: usar las etiquetas como senal de supervision para ajustar modelos conversacionales que respondan con la practica de empatia adecuada al contexto (por ejemplo, validar antes de aconsejar).
+- Monitorizacion de comunidades de soporte: medir la proporcion de respuestas que buscan experiencias similares frente a las que ofrecen consejo personalizado, para evaluar la calidad del apoyo percibido en un foro.
+- Investigacion comparativa entre plataformas: aplicar los mismos 12 clasificadores a datos de distintas redes (X, Reddit, foros especializados) para comparar culturas de empatia.
+- Anotacion asistida en estudios cualitativos: preetiquetar grandes volumenes de texto y reducir el coste de la codificacion manual por parte de anotadores humanos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion, ni comparaciones con modelos similares.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card remite al articulo CHI 2026 para la evaluacion de los clasificadores; no se incluyen metricas (F1, precision, recall, accuracy) en el repositorio ni en los metadatos consultados.
 
 ## Requisitos de hardware
 
-No disponible. Sin conocer el numero de parametros ni el formato de pesos, es imposible estimar requisitos de VRAM, GPU recomendadas, latencia o throughput.
-
-Como referencia generica, no aplicable a este repositorio, la VRAM necesaria para inferencia en cuantizacion de 4 bits suele situarse en el rango de 2 a 4 GB para modelos de 1-3B parametros, 5 a 7 GB para modelos de 7-9B, 12 a 16 GB para modelos de 13-14B y 40 GB o mas para modelos de 70B. Estas cifras son orientativas y no describen este modelo concreto.
-
-Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, TensorRT-LLM): no disponible, ya que depende del formato de pesos, que no se ha publicado.
+- El repositorio contiene adaptadores (2,1 GB en total), no pesos completos; para inferencia hay que cargar el modelo base Phi-3-medium (14.000 millones de parametros).
+- VRAM estimada para el modelo base en bf16: aproximadamente 28 GB, mas overhead de activaciones y KV cache.
+- VRAM estimada con el base cuantizado a 4 bits (el referenciado en el repositorio): aproximadamente 8-10 GB, suficiente para GPUs consumer de gama alta.
+- GPUs recomendadas: A100 40/80 GB o H100 para bf16; RTX 4090 (24 GB) o RTX 3090 (24 GB) para cuantizacion 4 bits; GPUs con 8-12 GB pueden ser insuficientes segun la longitud de secuencia.
+- Despliegue: al ser adaptadores sobre un modelo de la familia Phi-3, es compatible con `transformers` + PEFT, y con servidores de inferencia que soporten Phi-3 (vLLM, TGI). llama.cpp y Ollama requeririan conversion previa a GGUF de los pesos fusionados.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. No es posible identificar la categoria del modelo (tamano, tarea, modalidad) ni, por tanto, seleccionar alternativas comparables sobre parametros, contexto, rendimiento, licencia y disponibilidad.
+| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| `yixin-chen/chi26-empathy` | 14.000 M (base) | 4096 | Clasificacion de 12 practicas de empatia | no disponible | Hugging Face (adaptadores) |
+| `microsoft/Phi-3-medium-4k-instruct` | 14.000 M | 4096 | Instrucciones generales | MIT | Hugging Face |
+| `microsoft/Phi-3-mini-4k-instruct` | 3.800 M | 4096 | Instrucciones generales | MIT | Hugging Face |
+| Clasificadores de emocion tipo GoEmotions (BERT/RoBERTa) | 110-355 M | 512 | Clasificacion de emociones | Apache 2.0 / MIT | Hugging Face |
+
+La comparativa directa con otros clasificadores de empatia no esta disponible en la informacion proporcionada. Frente a clasificadores BERT pequenos, este repositorio ofrece mayor capacidad de razonamiento por el modelo base, a cambio de un coste de inferencia muy superior y de una licencia no declarada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card: no hay descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
-- Licencia no declarada: en ausencia de licencia explicita no se concede permiso de uso, modificacion ni redistribucion, y el uso comercial queda especialmente comprometido.
-- Cero descargas: el repositorio no ha sido validado por terceros; no hay evidencia de que los artefactos funcionen.
-- Riesgo de ficheros no auditados: si el repositorio contuviese pesos en formato pickle (`.bin`, `.pt`), existiria riesgo de ejecucion de codigo arbitrario al cargarlos; conviene usar exclusivamente `safetensors`.
-- Idiomas no declarados: no se puede asumir soporte de castellano ni de ningun otro idioma.
-- Sin benchmarks: no hay ninguna medida de calidad, sesgo o alucinacion.
-- Metadatos anomalos: la fecha de creacion y actualizacion (13 de septiembre de 2026) es posterior a la fecha habitual de publicacion y sugiere un error o una publicacion programada, lo que resta fiabilidad al registro.
-- Ambiguedad del nombre: la posible relacion con CHI 2026 y con tareas de empatia es una inferencia no confirmada; no debe citarse como hecho.
-- No apto para produccion en su estado actual: sin pesos, licencia ni documentacion no cumple los requisitos minimos de trazabilidad y cumplimiento.
+- Licencia no declarada: no se puede asumir uso comercial permitido; hay que contactar con el autor o consultar el paper antes de usar en produccion.
+- El modelo base Phi-3-medium-4k-instruct tiene licencia MIT, pero los adaptadores derivados no heredan automaticamente esa licencia si el autor no la declara.
+- Entrenado sobre datos de redes sociales: probable sesgo hacia el dominio y la plataforma de origen (idioma, jerga, formato de post), con degradacion fuera de ese dominio.
+- Riesgo de alucinacion y falsos positivos en clasificacion: al ser un LLM ajustado como clasificador, puede producir etiquetas inconsistentes en textos ambiguos o muy cortos.
+- Contexto limitado a 4096 tokens: posts o hilos largos deben truncarse o segmentarse.
+- Idiomas soportados no declarados; el modelo base esta optimizado para ingles, por lo que el rendimiento en castellano es incierto.
+- Solo 2 likes y 0 descargas en el momento de la consulta: sin validacion externa por parte de la comunidad.
+- No hay pipeline declarado ni ejemplos de uso en la model card; la integracion requiere revisar el paper y la estructura de directorios.
+- La fecha de creacion (2026-09-13) y la referencia al congreso CHI 2026 indican que es un artefacto de publicacion academica, no un modelo mantenido como producto.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/yixin-chen/chi26-empathy
-- Paper, blog, repositorio de codigo o demo: no disponible.
-
-Nota sobre la busqueda web: las consultas realizadas no devolvieron ningun resultado relacionado con el modelo. Los unicos enlaces recuperados pertenecen a sitios de poemas y frases de amor en aleman (`gedankenportal.de`, `schreiben.net`, `1001sprueche.com`, `gedichte.levrai.de`, `literatpro.de`) y no guardan relacion con `yixin-chen/chi26-empathy`, por lo que se omiten de esta lista.
+- Repositorio en Hugging Face: https://huggingface.co/yixin-chen/chi26-empathy
+- Paper (ACM DL): https://dl.acm.org/doi/full/10.1145/3772318.3790967
+- Modelo base: https://huggingface.co/unsloth/Phi-3-medium-4k-instruct-bnb-4bit
+- Phi-3-medium-4k-instruct (Microsoft): https://huggingface.co/microsoft/Phi-3-medium-4k-instruct

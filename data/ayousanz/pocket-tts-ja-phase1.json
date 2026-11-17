@@ -42,8 +42,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "japanese-speech-models/pocket-tts-ja-phase1",
+  "renamed_at": "2026-11-17T05:27:28.797Z",
   "benchmarks": [],
   "sources": [
     {

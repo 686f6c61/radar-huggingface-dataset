@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "GautierP/Petal-1-150M",
+  "slug": "gautierp-petal-1-150m",
+  "author": "GautierP",
+  "url": "https://huggingface.co/GautierP/Petal-1-150M",
+  "created_at": "2026-11-16T21:02:30.000Z",
+  "updated_at": "2026-11-16T21:17:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "petal_llm",
+    "text-generation",
+    "tiny",
+    "english",
+    "conversational",
+    "custom_code",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 152727296,
+  "parameters_human": "152.7M",
+  "storage_bytes": 1221842560,
+  "storage_human": "1.2 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

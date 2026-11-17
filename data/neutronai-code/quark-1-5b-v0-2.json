@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "neutronai-code/Quark-1.5B-v0.2",
+  "slug": "neutronai-code-quark-1-5b-v0-2",
+  "author": "neutronai-code",
+  "url": "https://huggingface.co/neutronai-code/Quark-1.5B-v0.2",
+  "created_at": "2026-11-17T03:39:38.000Z",
+  "updated_at": "2026-11-17T08:03:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "en",
+    "base_model:neutronai-code/Quark-1.5B-v0.1",
+    "base_model:finetune:neutronai-code/Quark-1.5B-v0.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 24978690291,
+  "storage_human": "25.0 GB",
+  "context_length": null,
+  "base_model": "neutronai-code/Quark-1.5B-v0.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

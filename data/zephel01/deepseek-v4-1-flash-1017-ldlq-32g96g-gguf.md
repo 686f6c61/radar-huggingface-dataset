@@ -2,107 +2,100 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-LDLQ-32G96G-GGUF es una cuantización en formato GGUF del modelo DeepSeek-V4.1-Flash-1017 (MIT) de DeepSeek, publicada por el usuario zephel01 bajo el ecosistema de su motor de inferencia Abyss. El objetivo declarado es hacer viable un modelo de arquitectura MoE con 384 expertos enrutados por capa en un equipo de consumo compuesto por una única GPU de 32 GB y 96 GB de RAM, sin podar expertos. Para ello se re-cuantizan los pesos FP4 originales de los expertos con la técnica LDLQ (redondeo con realimentación de error usando las estadísticas de entrada de cada experto), en lugar del redondeo imatrix convencional.
+DeepSeek-V4.1-Flash-1017 es un modelo de lenguaje de arquitectura MoE (mixture of experts) desarrollado por DeepSeek, con 748.494.643.824 parametros totales segun los datos de safetensors del modelo base. Esta ficha concreta corresponde a una cuantizacion GGUF publicada por el usuario zephel01 bajo licencia MIT, disenada especificamente para ejecutarse en un PC con una GPU de 32 GB de VRAM y 96 GB de RAM.
 
-Se distribuyen dos variantes completas de 6 shards: una de 132 GB de expertos (prioriza velocidad, mismos tipos que el UD-IQ1_M de unsloth pero con mejor redondeo) y otra de 139 GB (prioriza calidad, con las capas 35-39 un paso por encima, en IQ3_XXS). Todo lo que no son expertos enrutados (atención, expertos compartidos, routers, embeddings, salida, tokenizer) es byte-idéntico a la cuantización UD-IQ2_XXS de unsloth. La ficha está marcada como BETA por el propio autor: las cifras de rendimiento proceden de un único PC y no hay datos de benchmarks estándar publicados.
+El trabajo de zephel01 no es una cuantizacion estandar: aplica una tecnica propia denominada LDLQ (error-feedback rounding con estadisticas de entrada por experto) para re-cuantizar los expertos enrutados a partir de los pesos FP4 originales, manteniendo los 384 expertos de cada capa sin poda. El resultado son dos variantes (132G y 139G) que caben en el hardware objetivo mediante offload de expertos a RAM y SSD, con velocidades reportadas de 67,5 tok/s en una RTX 5090 con el tier de RAM limitado a 60 GB.
 
-La relevancia actual reside en la técnica de cuantización: demuestra que el redondeo con realimentación de error (LDLQ) mejora la KL frente al redondeo imatrix a tipos idénticos, y que un MoE de gran tamaño puede servirse desde un solo equipo con GPU de 32 GB y RAM DDR5/LPDDR5X, con velocidades de decodificación de decenas de tokens por segundo.
+La relevancia de esta publicacion radica en que hace accesible localmente un modelo de casi 750.000 millones de parametros en hardware de consumo, algo impensable con cuantizaciones convencionales. El autor advierte que se trata de una version BETA medida en un unico equipo, y anima a reportar resultados en otras configuraciones.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (Mixture of Experts) transformer, 384 expertos enrutados por capa; modelo base DeepSeek-V4.1-Flash-1017 |
-| Parametros totales | no disponible |
+| Arquitectura | MoE (mixture of experts) con expertos enrutados y expertos compartidos; 384 expertos enrutados por capa; incluye tabla Engram |
+| Parametros totales | 748.494.643.824 |
 | Parametros activos | no disponible |
-| Longitud de contexto | no disponible (se han validado prompts de 8K y 32K en las pruebas del autor) |
-| Tipos de cuantizacion | GGUF: IQ1_S, IQ2_XXS, IQ2_XS, IQ2_S, IQ3_XXS para expertos; Q8_0 para denso; Q5_K para tabla Engram |
-| Idiomas soportados | no disponible (se han probado 3 prompts en japones con resultado correcto) |
+| Longitud de contexto | no disponible (el ejemplo de llama.cpp usa `-c 4096`) |
+| Tipos de cuantizacion | Mixta: expertos en IQ2_XXS (45%), IQ1_S (30%), IQ2_XS (14%), IQ2_S (11%) en la variante 132G; IQ2_XXS (38%), IQ1_S (29%), IQ3_XXS (19%), IQ2_S (10%), IQ2_XS (5%) en la variante 139G; denso en Q8_0; tabla Engram en Q5_K |
+| Idiomas soportados | en, ja (segun tags y model card) |
 | Licencia | MIT |
-| Formato de pesos | GGUF (6 shards por variante) |
+| Formato de pesos | GGUF (6 shards por carpeta, con SHA256SUMS) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es DeepSeek-V4.1-Flash-1017, un transformer con arquitectura de mezcla de expertos (MoE) que mantiene 384 expertos enrutados en cada capa. Esta publicación no es un modelo entrenado, sino una cuantización: no aporta información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF/DPO. La model card del cuantizador no documenta esos datos, por lo que deben consultarse en la ficha del modelo base.
+El modelo base es un transformer MoE con 384 expertos enrutados por capa, expertos compartidos, routers, embeddings y una tabla Engram adicional (shard 6, cuantizada en Q5_K) que se lee desde SSD unas pocas filas a la vez y no necesita caber en RAM. Todo excepto los expertos enrutados es byte-identico a la cuantizacion UD-IQ2_XXS de unsloth (denso en Q8_0). No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF o DPO en la informacion proporcionada.
 
-La innovación técnica de esta publicación es el método LDLQ aplicado a los expertos enrutados: se parte de los pesos FP4 originales y se re-cuantizan con redondeo de realimentación de error, usando las estadísticas de entrada propias de cada experto. Según el autor, el redondeo plano a los mismos tipos rompía el modelo (KL 0.85, por acumulación de errores en las cinco últimas capas), el redondeo de unsloth obtiene KL 0.198 y LDLQ baja a 0.194 en la variante 132G. La variante 139G sube las capas 35-39 a IQ3_XXS para reducir la acumulación de error, logrando KL 0.182. El shard 6 contiene la tabla Engram en Q5_K, byte-idéntica a la de unsloth, y se lee desde SSD por filas sin necesidad de caber en RAM.
+La innovacion tecnica de esta publicacion es LDLQ: re-cuantizacion de los expertos desde los pesos FP4 originales mediante error-feedback rounding usando las estadisticas de entrada propias de cada experto. Segun el autor, la re-cuantizacion simple a estos tipos daba KL 0.404 (8 secuencias), frente a 0.198 del rounding de unsloth y 0.194 de LDLQ. En la variante 139G, las cinco ultimas capas (35-39), donde los errores se acumulan, suben un escalon a IQ3_XXS. La asignacion de tipos por capas es: capas 0-4 con IQ1_S en gate/up y down; capas 5-19 con IQ1_S e IQ2_XXS; capas 20-29 con IQ2_XXS e IQ2_S; capas 30-37 con IQ2_XXS e IQ2_XS; capas 38-39 con IQ2_XS.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: hereda las capacidades del modelo base DeepSeek-V4.1-Flash-1017; la model card no las detalla.
-- Codificación: validado con 10 tareas de código difíciles con tests ocultos, resueltas 10/10 en ambas variantes.
-- Tool calling: validado en una sesión de 7 turnos con llamadas a herramientas y tests que pasan.
-- Recuperación en contexto largo: prueba de "find the needle" superada con prompts de 8K y 32K.
-- Multilingüe: prueba en japonés con 3 prompts sin mezcla de escrituras; el resto de idiomas no está documentado.
-- Decodificación especulativa: compatible con el drafter DSpark de Lucebox (Q2K-Q4K) en el motor Abyss.
-- Soporte de modo `--uncensor` en el motor Abyss según las pruebas del autor.
-- Capacidades de visión, audio o thinking mode: no disponibles en la información proporcionada.
+- Generacion de texto conversacional y respuesta a preguntas (pipeline `text-generation`, tag `conversational`).
+- Razonamiento y resolucion de tareas de codigo: el autor verifico respuestas correctas a una tarea de Python en llama.cpp.
+- Capacidades multilingues limitadas a ingles y japones segun los tags del repositorio.
+- Compatibilidad con endpoints estilo OpenAI (`endpoints_compatible`), incluyendo `/v1/chat/completions`.
+- Soporte de plantillas Jinja (`--jinja` en llama.cpp).
+- Ejecucion local con offload de expertos a CPU/RAM/SSD mediante motores como Abyss o llama.cpp.
+- No se documentan en la informacion disponible capacidades de vision, audio, tool calling explicito ni modo thinking.
 
 ## Casos de uso
 
-- Asistencia de código en local: el modelo resuelve tareas de programación con tests ocultos (10/10 en las pruebas del autor) y sostiene sesiones de tool calling de varios turnos, por lo que puede integrarse en un asistente de desarrollo que ejecute tests y corrija código en un equipo de sobremesa con GPU de 32 GB.
-- Servicio de generación de texto autoalojado: con 43,4 tok/s de decodificación tras un prompt de 32K, es viable para APIs internas de resumen, redacción y extracción de información donde la privacidad de los datos impide usar servicios en la nube.
-- Procesamiento de documentos largos: la ventana validada de 32K tokens permite analizar contratos, informes o expedientes completos en una sola pasada, con recuperación fiable de datos concretos dentro del texto.
-- Agentes multi-paso con herramientas: la sesión de 7 turnos con tool calling que pasa tests demuestra su idoneidad para pipelines de agentes que consultan APIs, ejecutan comandos y verifican resultados de forma iterativa.
-- Atención al cliente multilingüe: el comportamiento correcto en japonés sin mezcla de escrituras sugiere un uso viable en soporte en varios idiomas, aunque la cobertura idiomática no está documentada y debe validarse por idioma antes de producción.
-- Laboratorio de cuantización e investigación: las dos variantes con KL medido (0.194 y 0.182) y los tipos por capa documentados sirven como referencia reproducible para estudiar el impacto del redondeo LDLQ frente a imatrix en modelos MoE de gran tamaño.
-- Despliegue en estación de trabajo con un solo equipo: el diseño explícito para 32 GB de VRAM más 96 GB de RAM permite montar un nodo de inferencia sin clúster ni GPUs de datacenter.
+- Inferencia local de un modelo de gran escala en hardware de consumo: un PC con RTX 5090 (32 GB) y 96 GB de RAM puede ejecutar el modelo completo con todos los expertos, gracias al diseno 32G96G y al offload selectivo de expertos a RAM.
+- Asistencia de programacion en local: el modelo resuelve tareas de Python y puede integrarse en flujos de desarrollo sin enviar codigo a servicios en la nube, manteniendo la confidencialidad.
+- Procesamiento de texto en japones e ingles: util para equipos que trabajan con documentacion bilingue en estos idiomas, aprovechando el soporte declarado en los tags.
+- Servicio de chat self-hosted: mediante el endpoint compatible con OpenAI (`/v1/chat/completions`) se puede desplegar como backend de una interfaz conversacional interna.
+- Experimentacion e investigacion en cuantizacion extrema: la publicacion documenta tecnicas (LDLQ, mezcla de tipos por capas, tabla Engram en SSD) que sirven de referencia para estudiar el compromiso entre tamano, velocidad y calidad (KL).
+- Despliegue en estaciones de trabajo con VRAM limitada pero gran cantidad de RAM: la variante E256 (256 de 384 expertos) del mismo autor permite configuraciones desde 12 GB de GPU con 128 GB de RAM, ampliando el rango de hardware viable.
+- Evaluacion comparativa de motores de inferencia: el autor solicita reportes de rendimiento en distintas GPU, por lo que el modelo sirve como carga de trabajo de referencia para medir throughput y latencia en Abyss o llama.cpp.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor publica métricas propias de calidad de cuantización y velocidad:
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. Los unicos datos cuantitativos son de calidad de cuantizacion y de velocidad:
 
-| Metrica | 132G | 139G | unsloth UD-IQ1_M | unsloth UD-IQ2_XXS |
-|---|---|---|---|---|
-| Bytes de expertos | 132,2 GB | 139,4 GB | 132,2 GB | 156,9 GB |
-| KL medio (8 secuencias x 1.023 tokens) | 0,194 | 0,182 | 0,198 | 0,142 |
-| Mismo token top-1 | 81,1 % | 81,6 % | 81,7 % | 83,7 % |
-| NLL | 2,215 | 2,204 | 2,209 | 2,173 |
-| 10 tareas de código difíciles resueltas | 10/10 | 10/10 | 10/10 | 10/10 |
-| Puntuación de calidad (calificada) | 77,6 | 81,4 | 81,1 | 78,8 |
-| Decodificación, 3 tareas de código (tok/s) | 67,5 | 57,9 | 71,8 | no disponible |
-| Decodificación, 10 tareas difíciles, media (tok/s) | 58,0 | 47,8 | 52,5 | no disponible |
-| Decodificación tras prompt de 32K (tok/s) | 43,4 | 43,4 | no disponible | no disponible |
-
-Las cifras de velocidad se midieron en un único PC: RTX 5090 (32 GB) sobre OCuLink PCIe Gen4 x4, Ryzen AI Max+ 395 con LPDDR5X (su iGPU Radeon 8060S calcula parte de los expertos en RAM), límite de RAM de 60 GB y el resto leído desde NVMe, con drafter DSpark y los ajustes `STRATA_GLM_TAIL_SKIP=4`, `STRATA_GLM_TAIL_SKIP_DISK=1` y `STRATA_GLM_ROUTE_AFFINITY_RAM=0.08` en Abyss v1.3.9x. El autor advierte que un sobremesa con DDR5 de doble canal y sin iGPU será más lento.
+| Metrica | Valor |
+|---|---|
+| KL (re-cuantizacion simple, 8 secuencias) | 0,404 |
+| KL (rounding de unsloth) | 0,198 |
+| KL (LDLQ) | 0,194 |
+| Throughput en RTX 5090 (tier RAM 60 GB, Abyss) | 67,5 tok/s |
+| Throughput en RTX 5090 con llama.cpp (2 capas de expertos en GPU) | 10-11 tok/s |
 
 ## Requisitos de hardware
 
-- VRAM: 32 GB de GPU como mínimo para el diseño previsto; el resto del modelo se reparte entre RAM y SSD.
-- RAM: 96 GB recomendados; el autor limita la capa de RAM a 60 GB (`STRATA_GLM_RAM_GB=60`) y lee el resto desde NVMe. Con 64 GB de RAM la velocidad baja (30,5 tok/s frente a 40,6 en la referencia R9700).
-- Almacenamiento: 275,8 GB para la variante 132G y 283,0 GB para la 139G (6 shards cada una); se recomienda SSD NVMe por la lectura de la tabla Engram y de los expertos no residentes.
-- GPU medidas: RTX 5090 (32 GB) a 67,5 tok/s (132G) y 57,9 tok/s (139G).
-- GPU estimadas: Radeon AI PRO R9700 (32 GB) a ~40 tok/s (132G) y ~33-35 tok/s (139G), extrapoladas de una medición de UD-IQ1_M a 40,6 tok/s en esa tarjeta con 96 GB de RAM. V100 (32 GB): sin medir; Abyss compila para sm_70 con CUDA 12.9, pero sin kernels FP4 ni tensor cores modernos se espera menos rendimiento.
-- Cabe en GPU de consumo: sí, en RTX 5090 de 32 GB, siempre que se combine con RAM y SSD según el diseño.
-- Opciones de despliegue: motor Abyss (v1.3.9x o superior) con drafter DSpark; no se documentan otros motores (llama.cpp, vLLM, Ollama, TGI) en la información disponible.
-- Throughput: 67,5 tok/s en decodificación de tareas de código (132G) y 43,4 tok/s tras prompt de 32K en ambas variantes, en el equipo de referencia.
+- VRAM: 32 GB de GPU como objetivo para el tier de expertos en GPU; el resto de expertos se sirve desde RAM y SSD.
+- RAM: 96 GB en el equipo objetivo; el autor midio con el tier de RAM limitado a 60 GB (`STRATA_GLM_RAM_GB=60`).
+- Almacenamiento: descarga de 275,8 GB (132G) o 283,0 GB (139G); la tabla Engram (135,2 GB) se lee desde SSD y no necesita residir en RAM.
+- GPU recomendada: RTX 5090 de 32 GB (unica configuracion medida). Otras GPU no estan documentadas.
+- En consumer GPU: si, en RTX 5090 con 32 GB; la variante E256 permite configuraciones desde 12 GB de GPU con 128 GB de RAM.
+- Motores de despliegue: Abyss v1.3.100 o superior (recomendado, con descarga y verificacion SHA-256 integradas) y llama.cpp (arquitectura `deepseek41`, upstream `ac8e1694d` de 2026-10-29).
+- En llama.cpp con `--n-cpu-moe 38` funciono; con `--n-cpu-moe 34` se agoto la VRAM en la primera peticion.
+- Latencia y throughput: 67,5 tok/s con Abyss y 10-11 tok/s con llama.cpp en RTX 5090; la variante 139G pierde un 15-20% de velocidad de decodificacion frente a 132G.
 
 ## Comparativa con modelos similares
 
-| Modelo | Bytes de expertos | KL | Calidad (tareas) | Velocidad (tok/s) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| LDLQ 132G (esta ficha) | 132,2 GB | 0,194 | 77,6 | 67,5 | MIT | Hugging Face |
-| LDLQ 139G (esta ficha) | 139,4 GB | 0,182 | 81,4 | 57,9 | MIT | Hugging Face |
-| unsloth UD-IQ1_M | 132,2 GB | 0,198 | 81,1 | 71,8 | MIT (modelo base) | Hugging Face |
-| unsloth UD-IQ2_XXS | 156,9 GB | 0,142 | 78,8 | no disponible | MIT (modelo base) | Hugging Face |
-
-La comparación se limita a las cuantizaciones del mismo modelo base citadas por el autor; no se dispone de datos de otros modelos MoE comparables en la información proporcionada.
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| DeepSeek-V4.1-Flash-1017 LDLQ 132G/139G (esta ficha) | 748,5 B totales | no disponible | GGUF mixto | MIT | Todos los 384 expertos; objetivo 32 GB GPU + 96 GB RAM |
+| DeepSeek-V4.1-Flash-1017 E256 (zephel01) | 748,5 B totales (256/384 expertos) | no disponible | GGUF | MIT | 207,1 GB; valido para 32 GB GPU + 96 GB RAM o 12 GB GPU + 128 GB RAM |
+| DeepSeek-V4.1-Flash-1017 UD-IQ2_XXS (unsloth) | 748,5 B totales | no disponible | GGUF | MIT | Referencia de calidad (KL 0,198); denso Q8_0 y Engram identicos |
+| DeepSeek-V4.1-Flash-1017 UD-IQ1_M (unsloth) | 748,5 B totales | no disponible | GGUF | MIT | Mismos tipos de experto que 132G, peor rounding (KL superior) |
 
 ## Limitaciones y advertencias
 
-- Estado BETA: las mediciones proceden de un único PC y el autor solicita reportes de otras GPU y tamaños de RAM; las cifras de R9700 y V100 son estimaciones, no mediciones.
-- Calidad inferior al cuantizado mayor: la KL de 0,194 (132G) y 0,182 (139G) es peor que la de UD-IQ2_XXS (0,142), que ocupa 156,9 GB de expertos; hay una pérdida de fidelidad respecto al modelo sin cuantizar.
-- La puntuación de calidad de 132G (77,6) se debe a una sola tarea con 47 puntos; el resto está a la altura, pero indica variabilidad en tareas concretas.
-- Dependencia del motor Abyss: el rendimiento documentado se obtuvo con Abyss y el drafter DSpark; no hay datos de compatibilidad ni velocidad con llama.cpp, vLLM u Ollama.
-- Requisitos de hardware estrictos: sin 32 GB de VRAM, 96 GB de RAM y SSD NVMe, la velocidad cae de forma notable (30,5 tok/s con 64 GB de RAM en la referencia R9700).
-- Idiomas no documentados: solo se validó japonés con 3 prompts; el resto de la cobertura multilingüe es desconocida.
-- Riesgo de alucinación y sesgos: no evaluados en la información disponible; deben asumirse los del modelo base.
-- Licencia MIT: permite uso comercial, pero al ser una cuantización conviene verificar los términos del modelo base DeepSeek-V4.1-Flash-1017 y de los ficheros de unsloth reutilizados (shard 6 y partes densas byte-idénticas).
-- Los tipos de cuantización muy bajos (IQ1_S, IQ2_XXS) en las primeras capas pueden degradar tareas que dependan de representaciones finas; el autor solo valida con las pruebas descritas.
+- Version BETA: los resultados se midieron en un unico PC (RTX 5090, RAM limitada a 60 GB); no hay validacion en otras GPU o tamanos de RAM.
+- La cuantizacion a ~1,95-2,05 bits por peso implica perdida de calidad respecto al modelo original; el propio autor reporta KL de 0,194 frente a la referencia sin cuantizar.
+- Los nombres de cuantizacion del repositorio no corresponden a tipos estandar de llama.cpp: son mezclas de varios tipos, por lo que no deben tratarse como un quant homogeneo.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; no se documentan evaluaciones de fidelidad factual en la informacion disponible.
+- Idiomas limitados a ingles y japones segun los tags; el castellano no figura como idioma soportado.
+- Longitud de contexto no especificada; el ejemplo de llama.cpp usa 4096 tokens, muy por debajo de lo habitual en modelos de esta categoria.
+- Requiere hardware especifico (32 GB de VRAM y 96 GB de RAM) y almacenamiento rapido para la tabla Engram; configuraciones con menos VRAM pueden agotar memoria (`--n-cpu-moe 34` fallo en la prueba del autor).
+- La licencia MIT del repositorio de cuantizacion se hereda del modelo base; conviene verificar las condiciones del modelo original de DeepSeek antes de uso comercial.
+- No se documentan capacidades de tool calling, agentes, vision ni modo thinking en la informacion proporcionada.
 
 ## Enlaces
 
-- Hugging Face (esta cuantización): https://huggingface.co/zephel01/DeepSeek-V4.1-Flash-1017-LDLQ-32G96G-GGUF
+- Repositorio Hugging Face: https://huggingface.co/zephel01/DeepSeek-V4.1-Flash-1017-LDLQ-32G96G-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+- Version E256 (JA256): https://huggingface.co/zephel01/DeepSeek-V4.1-Flash-1017-E256-IQ2_XXS-32G96G-GGUF
 - Motor Abyss: https://github.com/zephel01/Abyss
-- Issues de Abyss: https://github.com/zephel01/Abyss/issues
+- trench-gguf (LDLQ): https://github.com/zephel01/trench-gguf
+- Reportar resultados de benchmarks: https://github.com/zephel01/Abyss/issues/new?template=bench.md&title=Bench:+DeepSeek-V4.1+LDLQ-132G+on+YOUR_GPU

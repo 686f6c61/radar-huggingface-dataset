@@ -41,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "tiny-desk-ai/tiny-desk-ai-video-generator",
+  "renamed_at": "2026-11-17T05:09:46.856Z",
   "benchmarks": [],
   "sources": []
 }

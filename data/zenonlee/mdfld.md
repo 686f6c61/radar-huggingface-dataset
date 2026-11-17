@@ -2,97 +2,100 @@
 
 ## Resumen
 
-MDFLD v2 (multi-domain face landmark detection) es un modelo de deteccion de puntos faciales (face landmark detection) especializado en rostros de dominios no fotograficos: dibujos animados, caricaturas y animacion 3D, ademas de caras reales. Lo desarrolla un equipo academico (Yuanming Li, Gwantae Kim, Jeong-gi Kwak, Bon-hwa Ku y Hanseok Ko) y se publico junto al articulo "Towards Multi-Domain Face Landmark Detection with Synthetic Data from Diffusion Model" en ICASSP 2024. El modelo resuelve el problema de la degradacion de los detectores de landmarks entrenados con fotografia cuando se aplican a estilos artisticos con proporciones exageradas.
+MDFLD (Multi-Domain Face Landmark Detection) es un modelo de deteccion de puntos faciales (face landmark detection) especializado en rostros no fotorrealistas: caricaturas, ilustraciones de anime, pinturas y animacion 3D, ademas de caras reales. Lo desarrollan Yuanming Li, Gwantae Kim, Jeong-gi Kwak, Bon-hwa Ku y Hanseok Ko, y se presento en el paper "Towards Multi-Domain Face Landmark Detection with Synthetic Data from Diffusion Model" (ICASSP 2024). El repositorio de Hugging Face, publicado por el usuario zenonlee, distribuye los pesos en formato TorchScript listos para inferencia.
 
-La version v2 que nos ocupa es el modelo del articulo afinado mediante self-training sobre rostros de dibujo animado y caricatura. Predice 68 puntos en orden iBUG 300-W y, ademas, el paquete que lo acompana anade curvas de parpado. En el conjunto de test de caricaturas CariFace (1.560 imagenes) reduce el NME de 68 puntos del 6,70 % al 5,03 %, y en fotogramas de video de caras reales no vistas alcanza el 1,74 % (frente al 3,03 % de la v1).
+La version v3, la predeterminada en el paquete `mdfld`, parte de la red v2 (una pila tipo hourglass inspirada en STAR) y le anade caracteristicas congeladas de un ViT-B/16 de DINOv3 mediante un pequeno adaptador, entrenando con mas datos de caricatura. Detecta 68 puntos en el orden iBUG 300-W y devuelve tambien curvas de parpado. El modelo resuelve un problema concreto: los detectores de landmarks entrenados con rostros reales fallan de forma sistematica en dominios estilizados, y este modelo mantiene un error normalizado (NME) bajo en caricaturas (4,64 %) y en caras reales (1,69 %).
 
-Es relevante para pipelines de animacion, captura de movimiento facial, avatares y postproduccion, donde los detectores genericos fallan. Su uso es exclusivamente de investigacion y los pesos se distribuyen como TorchScript, sin informacion publica sobre el numero de parametros ni sobre el coste de entrenamiento.
+Es relevante para pipelines de animacion, rigging facial, avatares y analisis de contenido ilustrado, donde los modelos genericos no bastan. Su licencia es exclusivamente de investigacion y la version v3 incorpora pesos de DINOv3, lo que anade restricciones adicionales de la DINOv3 License.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Red neuronal para regresion de keypoints (detalle no disponible; el codigo del repositorio se basa en STAR) |
+| Arquitectura | Red tipo hourglass (base STAR) con caracteristicas congeladas de DINOv3 ViT-B/16 inyectadas mediante adaptador (v3) |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no aplica (modelo de vision, entrada de 256 x 256 px) |
-| Tipos de cuantizacion | no disponible (pesos TorchScript en precision original) |
+| Tipos de cuantizacion | no disponible (pesos distribuidos en fp32) |
 | Idiomas soportados | no aplica (modelo de vision, sin procesamiento de lenguaje) |
-| Licencia | research-only (uso solo de investigacion, sin garantia) |
-| Formato de pesos | TorchScript (`mdfld_cartoon_v2.torchscript.pt`); checkpoint original `.pkl` en la release v2.0 |
+| Licencia | research-only-and-dinov3-license (solo investigacion; v3 bajo DINOv3 License) |
+| Formato de pesos | TorchScript (`.torchscript.pt`); checkpoint original `.pkl` para v2 en el release de GitHub |
 
 ## Arquitectura y entrenamiento
 
-La model card no detalla la arquitectura interna mas alla de que el codigo del repositorio se apoya en STAR (un transformer para analisis de caras) y de que los pesos se exportan a TorchScript. La entrada es un recorte cuadrado de la cara de 256 x 256 px en formato BGR normalizado a [-1, 1] y la salida es un tensor de forma (N, 68, 2) con coordenadas en [-1, 1] que se reescalan a pixeles del recorte. Los 68 puntos siguen el orden iBUG 300-W con indexacion desde cero.
+El modelo es un detector de keypoints puramente visual. La red v2 es una pila tipo hourglass que predice 68 coordenadas (x, y) normalizadas en [-1, 1] a partir de un recorte facial cuadrado de 256 x 256 px en BGR normalizado. La v3 mantiene esa red pero concatena a su entrada caracteristicas de un ViT-B/16 de DINOv3, congelado, a traves de un adaptador ligero; esto aporta representaciones semánticas robustas a estilos y explica la mejora en caricaturas y anime.
 
-El entrenamiento parte del modelo publicado en el articulo y aplica self-training (fine-tuning con pseudoetiquetas) sobre rostros de dibujo animado y caricatura. El articulo original propone el uso de datos sinteticos generados con modelos de difusion para cubrir dominios con escasez de anotaciones. Para obtener la maxima precision, el pipeline recomendado ejecuta tres pasadas de recorte: cada pasada recorta un cuadrado centrado en la caja de la cara de 1,1 veces el lado mayor de la caja de los puntos anteriores, y reinyecta el recorte al modelo. No se publican en la informacion disponible el numero de tokens, la composicion exacta del dataset ni si hubo etapas de RLHF o DPO (no aplicables a este tipo de modelo).
+El entrenamiento combina datos reales y sinteticos. El paper original propone generar datos sinteticos con modelos de difusion para cubrir multiples dominios (fotorrealista, caricatura, pintura, 3D). La v3 se entrena ademas con mas datos de caricatura. El modelo aplica un protocolo de tres pasadas de recorte: la primera sobre el bounding box de la cara, y dos adicionales sobre cuadrados de 1,1 veces el lado mayor del box de los puntos previos, lo que refina la precision. No se dispone de datos sobre numero de tokens ni composicion exacta del dataset en la informacion proporcionada.
 
 ## Capacidades
 
-- Deteccion de 68 puntos faciales (iBUG 300-W) en caras reales, dibujos animados, caricaturas y animacion 3D.
-- Generalizacion a dominios artisticos con proporciones exageradas, gracias al entrenamiento multi-dominio y al self-training sobre caricaturas.
-- Salida de curvas de parpado adicionales mediante el paquete `mdfld` (no forman parte de los 68 puntos estandar).
-- Refinamiento iterativo de la precision mediante el esquema de tres pasadas de recorte.
-- Ejecucion en GPU o CPU a traves de PyTorch/TorchScript, sin dependencia del codigo del repositorio.
-- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingues: es un modelo puramente de vision.
+- Deteccion de 68 puntos faciales en orden iBUG 300-W (0-based) sobre recortes de 256 x 256 px.
+- Deteccion robusta en dominios estilizados: caricaturas, ilustraciones de anime, pinturas y animacion 3D, ademas de caras reales.
+- Prediccion de curvas de parpado (eyelid curves) ademas de los 68 puntos.
+- Localizacion automatica de la cara integrada en el paquete `mdfld` (con extra `sam`).
+- Refinamiento mediante protocolo de tres pasadas de recorte para mayor precision.
+- Ejecucion en GPU (CUDA) o CPU; compatible con TorchScript sin dependencia del codigo del repositorio.
+- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingues: es un modelo de vision de una sola tarea.
 
 ## Casos de uso
 
-- Animacion 2D y caricatura: extraer los 68 puntos de un personaje dibujado para rigging o interpolacion de expresiones; el modelo esta especificamente afinado para este dominio y supera al detector base en CariFace (NME 5,03 % frente a 6,70 %).
-- Captura de movimiento facial en video: procesar fotogramas de caras reales con un NME de 1,74 % en datos no vistos, adecuado para driving de avatares en tiempo real si la latencia del pipeline de tres pasadas lo permite.
-- Postproduccion y VFX: alinear o estabilizar rostros animados entre planos usando los puntos como referencia geometrica, incluso en estilos no fotograficos.
-- Avatares y filtros en aplicaciones moviles: el modelo es pequeno y exportable a TorchScript, por lo que puede ejecutarse en dispositivos con aceleracion (GPU o CPU) sin infraestructura de servidor.
-- Investigacion en deteccion de landmarks: servir como baseline multi-dominio para comparar tecnicas de adaptacion de dominio o de datos sinteticos.
-- Control de calidad de datasets artisticos: detectar automaticamente caras mal anotadas o recortes erroneos en corpus de dibujos y caricaturas antes de entrenar otros modelos.
-- Analisis de expresiones en animacion 3D: usar los puntos y las curvas de parpado para medir apertura ocular y gestos en personajes renderizados.
+- Rigging y animacion facial 2D: extraer los 68 puntos y las curvas de parpado de personajes de caricatura o anime para generar blendshapes y animar expresiones en herramientas de animacion.
+- Analisis de contenido ilustrado: procesar lotes de ilustraciones o comics para indexar rostros, detectar expresiones o medir proporciones faciales en personajes estilizados.
+- Avatares y filtros en tiempo real: el modelo v2 (69 MB, 38 ms por cara en RTX 4090 D) es adecuado para aplicaciones interactivas donde la latencia importa; v3 prioriza precision.
+- Reconstruccion y retoque de pinturas o retratos historicos: localizar rasgos faciales en obras de dominio publico para tareas de restauracion o analisis artistico.
+- Preprocesado para generacion condicionada: usar los landmarks como condicion para modelos de difusion que generen o animen rostros estilizados con control de pose y expresion.
+- Control de calidad en pipelines de animacion 3D: detectar desalineaciones o fallos de rigging comparando landmarks detectados con los esperados en frames renderizados.
+- Investigacion en deteccion de landmarks multi-dominio: servir como baseline o componente para estudiar generalizacion entre dominios fotorrealistas y estilizados.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos publicados en la informacion disponible son los de la model card, medidos con el pipeline de tres pasadas del paquete:
+Resultados publicados en la model card (NME = normalized mean error, menor es mejor):
 
-| Conjunto de evaluacion | Metrica | v1 | v2 |
+| Test set | v1 (paper) | v2 | v3 |
 |---|---|---|---|
-| CariFace (1.560 caricaturas), 68 puntos | NME | 6,70 % | 5,03 % |
-| CariFace, ojos | NME | 3,49 % | 2,78 % |
-| CariFace, mandibula | NME | 10,42 % | 7,75 % |
-| Fotogramas de video de caras reales no vistas | NME | 3,03 % | 1,74 % |
+| CariFace test, 1.560 caricaturas: NME (%) | 6,70 | 5,03 | 4,64 |
+| CariFace test: caras con NME > 10 % | no disponible | 3,6 % | 2,0 % |
+| Caras reales, 313 frames de video reservados (etiquetas automaticas): NME (%) | 3,03 | 1,74 | 1,69 |
+| Ilustraciones anime, 980 imagenes reservadas: desacuerdo > 15 % con detector de caras anime | no disponible | 10,5 % | 6,1 % |
 
-No se han publicado en la informacion disponible resultados de benchmarks estandar de face alignment (300-W, WFLW, COFW) ni comparaciones numericas con otros detectores.
+Rendimiento de inferencia indicado por el autor: 71 ms por cara en RTX 4090 D para v3 frente a 38 ms para v2; 1,8 s frente a 0,4 s en CPU de 8 hilos.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible; por el tamano del repositorio (0,0 GB) y la entrada de 256 x 256 px, el modelo es ligero y cabe holgadamente en cualquier GPU consumer, aunque no se publica la cifra exacta.
-- GPU recomendadas: cualquier GPU con soporte CUDA (RTX 3060 o superior es suficiente en la practica); tambien puede ejecutarse en CPU.
-- Cabe en GPU consumer: si, previsiblemente en todas las GPU modernas con al menos unos pocos GB de VRAM; la cifra concreta no esta publicada.
-- Opciones de despliegue: PyTorch con TorchScript (`torch.jit.load`), el paquete `mdfld` (con extra `sam` para deteccion de cara) y el codigo STAR del repositorio con el checkpoint `.pkl`. No hay soporte documentado para vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
-- Latencia y throughput: no disponibles. El coste real depende del detector de caras previo (SAM en el paquete) y de las tres pasadas de recorte.
+- VRAM estimada: no disponible de forma explicita; el fichero v3 pesa 419 MB en fp32 y el v2 69 MB, por lo que la huella en memoria es reducida y cabe holgadamente en cualquier GPU consumer.
+- GPU recomendadas: RTX 4090 D medida por el autor (71 ms v3, 38 ms v2 por cara); cualquier GPU con CUDA es suficiente. Tambien funciona en CPU.
+- Cabe en GPU consumer: si, en todas las gamas actuales (incluso integradas con suficiente memoria).
+- Opciones de despliegue: PyTorch con TorchScript (`torch.jit.load`), paquete `mdfld` (pip), o integracion directa en pipelines Python. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI (no aplican a un modelo de vision de este tipo).
+- Latencia: 71 ms/cara (v3) y 38 ms/cara (v2) en RTX 4090 D; 1,8 s y 0,4 s en CPU de 8 hilos. Se recomienda desactivar los fusers de Torch (`torch.jit.fuser("none")`) para evitar un primer arranque de 20-30 s en GPU.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Puntos | Enfoque multi-dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MDFLD v2 (este) | Regresion de keypoints | 68 | Si (real, dibujo, caricatura, 3D) | research-only | Hugging Face + GitHub |
-| STAR | Transformer de analisis facial | 68 | No especifico | no disponible en la informacion | Codigo publico |
-| Detectores clasicos de face alignment (p. ej. basados en 300-W) | Regresion/heatmap | 68 | Limitado a fotografia | variable | Multiples |
+| MDFLD v3 | Hourglass + DINOv3 ViT-B/16 | 68 + parpados | Si (caricatura, anime, pintura, 3D, real) | Solo investigacion + DINOv3 | Hugging Face, TorchScript |
+| MDFLD v2 | Hourglass (STAR) | 68 + parpados | Si | Solo investigacion | Hugging Face, TorchScript |
+| STAR | Hourglass con transformer | 68 | Centrado en caras reales | No disponible en la informacion | Codigo publico |
+| Detectores genericos de landmarks (p. ej. MediaPipe Face Mesh) | Varios | 468 (malla) | Limitado en estilizado | Apache 2.0 (MediaPipe) | Amplia |
 
-No se dispone en la informacion proporcionada de datos numericos comparativos con alternativas concretas; la comparativa se limita a la categoria y al enfoque.
+No se dispone de datos de benchmarks comparativos con alternativas en la informacion proporcionada; la comparativa se limita a caracteristicas cualitativas.
 
 ## Limitaciones y advertencias
 
-- Licencia research-only: prohibido el uso comercial sin autorizacion; los pesos se ofrecen sin garantia.
-- Los datos de entrenamiento incluyen conjuntos de terceros con sus propias condiciones (CariFace es solo para investigacion y varios sets de dibujos contienen obra artistica de terceros), lo que puede imponer restricciones adicionales.
-- El rendimiento cae en la mandibula de caricaturas (NME 7,75 %), la region mas dificil por las proporciones exageradas.
-- La precision depende del esquema de tres pasadas; con una sola pasada los resultados empeoran.
-- Requiere un detector de cara previo (el paquete usa SAM); errores en la caja inicial degradan los puntos.
-- No hay informacion publicada sobre sesgos por etnia, edad o genero, ni sobre robustez ante oclusiones, perfiles extremos o iluminacion adversa.
-- El modelo predice solo geometria facial; no genera texto ni razona, por lo que no debe evaluarse con benchmarks de lenguaje.
-- No se documentan tasas de fallo ni umbrales de confianza; en produccion conviene validar con datos propios antes de desplegar.
+- Licencia de solo investigacion: no permite uso comercial. La v3 incorpora pesos de DINOv3 y queda sujeta a la DINOv3 License, incluidas sus restricciones de control de exportaciones; publicar resultados con v3 exige citar DINOv3 (Simeoni et al., 2025).
+- Los datos de entrenamiento incluyen CariFace (solo investigacion) y varios conjuntos de caricatura con arte de terceros, lo que anade incertidumbre sobre la redistribucion y el uso.
+- Riesgo de fallo en dominios no cubiertos: rostros muy ocluidos, perfiles extremos, estilos artisticos no representados o resoluciones muy bajas pueden degradar la precision.
+- Las metricas en caras reales usan etiquetas automaticas, no anotacion humana, por lo que pueden estar sesgadas.
+- v3 es mas lento y pesado (419 MB, 71 ms en RTX 4090 D) que v2 (69 MB, 38 ms); en produccion con requisitos de latencia conviene evaluar v2.
+- El modelo no procesa texto ni lenguaje; no debe presentarse como un LLM ni usarse para tareas de NLP.
+- No se documentan sesgos demograficos especificos, pero al entrenar con datos de terceros puede heredar sesgos de representacion.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/zenonlee/MDFLD
-- Articulo (arXiv): https://arxiv.org/abs/2401.13191
-- Codigo en GitHub: https://github.com/zenonLEE/MDFLD
+- Hugging Face: https://huggingface.co/zenonlee/MDFLD
+- Paper (arXiv): https://arxiv.org/abs/2401.13191
+- Codigo (GitHub): https://github.com/zenonLEE/MDFLD
 - Pagina del proyecto: https://zenonlee.github.io/MDFLD/
-- Release v2.0 (checkpoint `.pkl`): https://github.com/zenonLEE/MDFLD/releases/tag/v2.0
 - Terminos de uso: https://github.com/zenonLEE/MDFLD#terms-of-use
+- Release v2.0 (checkpoint original): https://github.com/zenonLEE/MDFLD/releases/tag/v2.0
+- DINOv3 (GitHub): https://github.com/facebookresearch/dinov3
+- Licencia DINOv3: https://huggingface.co/zenonlee/MDFLD/blob/main/LICENSE_DINOv3.md

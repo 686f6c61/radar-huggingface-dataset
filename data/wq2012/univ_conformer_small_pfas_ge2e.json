@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 122,
+  "downloads_30d": 123,
   "trending_score": 0,
   "parameters": 2162184,
   "parameters_human": "2.2M",
@@ -55,31 +55,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "wq2012/personal-vad-v2-conformer-unified · Hugging Face",
-      "url": "https://huggingface.co/wq2012/personal-vad-v2-conformer-unified",
-      "snippet": "wq2012 / personal-vad-v2-conformer-unified Like 0 Voice Activity Detection LiteRT Safetensors facebook/multilingual_librispeech personal-vad audio speaker-conditioning conformer lstm tensorflow arxiv:1908.04284 arxiv:2204.03793 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Personal VAD 2.0 — E5 Unified Enrolled & Enrollment-Less Causal Conformer ..."
-    },
-    {
-      "title": "wq2012 (Quan Wang) · GitHub",
-      "url": "https://github.com/wq2012",
-      "snippet": "A graph representing wq2012&#x27;s contributions from October 12, 2025 to October 12, 2026. The contributions are 100% commits, 0% pull requests, 0% issues, 0% code review."
-    },
-    {
-      "title": "wq2012/personal-vad-v2-conformer-std-vad · Hugging Face",
-      "url": "https://huggingface.co/wq2012/personal-vad-v2-conformer-std-vad",
-      "snippet": "wq2012 / personal-vad-v2-conformer-std-vad Like 0 Voice Activity Detection LiteRT Safetensors facebook/multilingual_librispeech personal-vad audio speaker-conditioning conformer lstm tensorflow arxiv:1908.04284 arxiv:2204.03793 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Personal VAD 2.0 — B2 4-Layer Causal Conformer Standard VAD (wq2012/personal ..."
-    },
-    {
-      "title": "GitHub - wq2012/personal_vad: Personal VAD 1.0 and 2.0",
-      "url": "https://github.com/wq2012/personal_vad",
-      "snippet": "Personal VAD 1.0 and 2.0. Contribute to wq2012/personal_vad development by creating an account on GitHub."
-    },
-    {
-      "title": "Towards smart PFAS management: Integrating artificial intelligence in ...",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0304389425038555",
-      "snippet": "Abstract Artificial intelligence (AI) and machine learning (ML) are increasingly integrated into Per- and polyfluoroalkyl substances (PFAS) research; however, the field remains fragmented with substantial variation in modeling objectives."
-    }
-  ]
+  "sources": []
 }

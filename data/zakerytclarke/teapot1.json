@@ -40,16 +40,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub - zakerytclarke/teapot",
-      "url": "https://github.com/zakerytclarke/teapot",
-      "snippet": "Teapot is an open-source small language model (~800 million parameters) fine-tuned on synthetic data and optimized to run locally on resource-constrained devices such as smartphones and CPUs. Teapot is trained to only answer using context from documents, reducing hallucinations. Teapot can perform a ..."
-    },
-    {
-      "title": "zakerytclarke/instruct-teapot · Hugging Face",
-      "url": "https://huggingface.co/zakerytclarke/instruct-teapot",
-      "snippet": "zakerytclarke / instruct-teapot like 0 Model card FilesFiles and versions Community No model card"
-    }
-  ]
+  "sources": []
 }

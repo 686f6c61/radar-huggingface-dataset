@@ -2,46 +2,51 @@
 
 ## Resumen
 
-`zxcd1/MyModel_xh` es un modelo de lenguaje de 1.777.088.000 parámetros desarrollado por zxcd1 mediante fine-tuning del modelo base `unsloth/DeepSeek-R1-Distill-Qwen-1.5B-unsloth-bnb-4bit`. Se trata de un modelo destilado de DeepSeek-R1 sobre la arquitectura Qwen2.5-1.5B, entrenado con las librerías Unsloth y TRL de Hugging Face. Según la model card, el entrenamiento se realizó 2 veces más rápido gracias a Unsloth.
+MyModel_xh es un ajuste fino (fine-tuning) publicado en Hugging Face por el usuario zxcd1, derivado del modelo unsloth/DeepSeek-R1-Distill-Qwen-1.5B-unsloth-bnb-4bit, que a su vez es una destilación en 4 bits del DeepSeek-R1 sobre la base Qwen2. El repositorio declara una arquitectura Qwen2 con pesos en safetensors, licencia Apache 2.0 y uso orientado a generacion de texto conversacional en ingles. El autor no documenta el dataset, el procedimiento de entrenamiento ni los hiperparametros empleados; la model card se limita a indicar que el entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face.
 
-El modelo está pensado para generación de texto en inglés y, al heredar las capacidades de razonamiento de DeepSeek-R1, puede abordar tareas de instrucción y conversación. Su tamaño compacto lo hace adecuado para entornos con recursos limitados, y su licencia Apache 2.0 permite uso comercial. No se ha publicado información sobre el dataset de fine-tuning ni sobre benchmarks.
+Un dato relevante y contradictorio es el tamano real de los pesos: el repositorio contiene 7.615.616.512 parametros (aproximadamente 7.600 millones), muy lejos de los 1.500 millones que sugiere el nombre del modelo base. Esto indica que el ajuste se aplico sobre una variante ampliada o que los pesos publicados no corresponden al checkpoint de 1,5B referenciado. El tamano del repositorio, 29,6 GB, es coherente con un modelo de esa magnitud en precision completa o bfloat16, no con una cuantizacion 4-bit del modelo de 1,5B.
+
+El modelo tiene 478 descargas y ninguna marca de "me gusta", lo que sugiere un experimento personal o un artefacto de pruebas mas que un modelo pensado para produccion. Su interes practico es limitado, pero resulta util como ejemplo de pipeline de fine-tuning con Unsloth y de los riesgos de trazabilidad cuando la model card no documenta el proceso.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (basado en Qwen2) |
-| Parametros totales | 1.777.088.000 |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | Ingles (segun metadatos) |
+| Arquitectura | Qwen2 (transformer decoder-only), segun los tags del repositorio |
+| Parametros totales | 7.615.616.512 (dato real de safetensors) |
+| Parametros activos | no disponible (no es un modelo MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible en el repositorio; el modelo base se entreno en bnb-4bit (bitsandbytes) |
+| Idiomas soportados | en (ingles) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors |
+| Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning de `unsloth/DeepSeek-R1-Distill-Qwen-1.5B-unsloth-bnb-4bit`, que a su vez es una destilación de DeepSeek-R1 sobre la arquitectura Qwen2.5-1.5B. La arquitectura resultante es un transformer decoder-only, sin componentes de mezcla de expertos (MoE). El entrenamiento se llevó a cabo con Unsloth y la librería TRL de Hugging Face, lo que, según la model card, permitió una aceleración de 2x en comparación con un fine-tuning estándar.
+La arquitectura declarada es Qwen2, un transformer decoder-only con atencion causal estandar. El modelo base es una destilacion de DeepSeek-R1 sobre Qwen2 de 1,5B, cuantizada en 4 bits con bitsandbytes y preparada por Unsloth. Sobre esa base, el autor aplico un ajuste fino supervisado (SFT) con Unsloth y TRL, segun la model card. No se especifica el dataset, el numero de tokens de entrenamiento, la composicion de los datos ni si se aplicaron tecnicas de preferencia como RLHF o DPO.
 
-No se ha publicado información sobre el dataset de entrenamiento, el número de tokens utilizados ni el método de alineación (RLHF, DPO, etc.). Tampoco se documentan innovaciones técnicas más allá del uso de Unsloth para optimizar el proceso de fine-tuning.
+La discrepancia entre el nombre del modelo base (1,5B) y el recuento real de parametros (7,6B) es la principal incognita tecnica. Puede deberse a que el checkpoint publicado corresponde a un modelo Qwen2 de 7B ajustado con datos de destilacion de R1, o a que el autor mezclo pesos de distintas fuentes. En cualquier caso, la model card no lo aclara y no hay informacion sobre la longitud de contexto efectiva ni sobre innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, etc.).
 
 ## Capacidades
 
-- Generacion de texto en ingles, orientada a tareas de instruccion y conversacion.
-- Razonamiento paso a paso heredado del modelo base DeepSeek-R1-Distill-Qwen-1.5B.
-- No se ha documentado soporte de tool calling, function calling, vision ni audio en la informacion disponible.
-- Capacidades multilingues limitadas: solo ingles segun los metadatos.
-- Aptitud para tareas de razonamiento basico y generacion de codigo, aunque sin benchmarks publicados que lo confirmen.
+- Generacion de texto conversacional en ingles, con el estilo de razonamiento encadenado propio de las destilaciones de DeepSeek-R1.
+- Razonamiento multi-paso basado en cadenas de pensamiento, heredado del modelo base R1-Distill.
+- Resolucion de problemas matematicos elementales e intermedios, dentro de los limites de un modelo pequeno destilado.
+- Generacion de codigo basica, sin garantias de calidad para tareas complejas.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso orquestado: no disponible; el modelo base R1-Distill no incorpora herramientas de agente nativas.
+- Capacidades multilingues: limitadas al ingles declarado; no se documentan otros idiomas.
+- Capacidades especiales (vision, audio, thinking mode explicito): no disponible.
 
 ## Casos de uso
 
-- Asistentes conversacionales en ingles para atencion al cliente: el modelo puede gestionar dialogos multi-turno gracias a su naturaleza de instruccion, y su tamano reducido permite desplegarlo en infraestructuras modestas.
-- Razonamiento en dispositivos edge: al tener 1.78B parametros, puede ejecutarse en GPUs de gama media o en cuantizaciones 4-bit, lo que lo hace apto para entornos con recursos limitados.
-- Generacion de codigo basico: al ser un destilado de DeepSeek-R1, se espera que mantenga capacidades de razonamiento y generacion de codigo, aunque no hay benchmarks que lo confirmen.
-- Tutoria educativa: puede explicar conceptos paso a paso y resolver problemas de matematicas o logica, gracias a su entrenamiento de razonamiento.
-- Analisis y resumen de documentos: sirve para tareas de extraccion de informacion y resumen en ingles, con bajo coste de inferencia.
-- Prototipado y experimentacion: al estar fine-tuned con Unsloth, es un modelo adecuado para ajustes rapidos y pruebas de concepto en investigacion.
-- Chatbots internos para empresas: con licencia Apache 2.0, puede integrarse en herramientas internas sin restricciones comerciales.
+- Prototipado de asistentes conversacionales en ingles: el modelo puede mantener dialogos multi-turno simples, aunque se desconoce la ventana de contexto efectiva y conviene validarla antes de desplegar.
+- Experimentacion con fine-tuning: sirve como referencia para reproducir pipelines de Unsloth y TRL sobre destilaciones de R1, comparando hiperparametros y datasets.
+- Generacion de explicaciones paso a paso para tareas educativas: el formato de razonamiento heredado de R1 permite producir cadenas de pensamiento utiles en tutoria automatica de matematicas basicas.
+- Generacion de codigo en entornos de prueba: adecuado para autocompletar fragmentos o explicar funciones sencillas, no para pipelines de CI/CD criticos.
+- Clasificacion y extraccion de informacion en ingles: con prompts bien disenados puede etiquetar texto o extraer campos, siempre con validacion posterior por el riesgo de alucinacion.
+- Evaluacion comparativa de destilaciones: util como linea base en estudios sobre el efecto de la cuantizacion 4-bit y del ajuste fino en modelos pequenos.
+- Demos y pruebas de integracion con text-generation-inference: el tag text-generation-inference permite desplegarlo con TGI para validar latencia y throughput en entornos de laboratorio.
 
 ## Benchmarks y rendimiento
 
@@ -49,32 +54,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: para pesos en FP16 (3,6 GB), se requieren al menos 4-5 GB de VRAM; con cuantizacion 4-bit, aproximadamente 1-2 GB.
-- GPU recomendadas: RTX 3060 (12 GB), RTX 4090, A100, o cualquier GPU con mas de 5 GB de VRAM.
-- Si cabe en GPUs de consumo: si, en RTX 3060, RTX 4060, etc.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI y Transformers.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: con 7,6B parametros, en bfloat16 se necesitan aproximadamente 15-16 GB solo para pesos, mas overhead de activaciones y cache KV; en cuantizacion 4-bit (GPTQ/AWQ/GGUF Q4) se reduce a unos 5-6 GB.
+- GPU recomendadas: A100 40GB o H100 para precision completa y despliegue concurrente; RTX 4090 (24 GB) para bfloat16 en lote pequeno; RTX 3090/4080 (16-24 GB) para cuantizaciones de 8 bits.
+- Cabe en GPU de consumo: si, en RTX 4090 con bfloat16 y lote 1, y en GPUs de 8-12 GB con cuantizacion 4-bit (RTX 3060 12GB, RTX 4060 Ti 16GB).
+- Opciones de despliegue: transformers, text-generation-inference (tag declarado), vLLM, llama.cpp y Ollama previa conversion a GGUF; Unsloth para reentrenamiento.
+- Latencia y throughput estimados: no disponibles; no hay mediciones publicadas por el autor.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| zxcd1/MyModel_xh | 1.777.088.000 | No disponible | No disponible | Apache 2.0 | Hugging Face |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1.777.088.000 | No disponible | No disponible | MIT | Hugging Face |
-| Qwen2.5-1.5B | 1.540.000.000 | No disponible | No disponible | Apache 2.0 | Hugging Face |
-| DeepSeek-R1-Distill-Qwen-7B | 7.600.000.000 | No disponible | No disponible | MIT | Hugging Face |
+| zxcd1/MyModel_xh | 7,6B | no disponible | Apache 2.0 | Hugging Face, 478 descargas | Fine-tuning no documentado; discrepancia de tamano frente al base declarado |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1,5B | 32.768 tokens (segun documentacion de DeepSeek) | MIT (modelo original) | Hugging Face, ampliamente descargado | Base declarada; contexto y benchmarks publicados por DeepSeek |
+| Qwen2.5-7B-Instruct | 7,6B | 131.072 tokens | Apache 2.0 | Hugging Face, muy popular | Alternativa directa en tamano, con contexto largo y benchmarks publicados |
+| Llama-3.2-3B-Instruct | 3,2B | 131.072 tokens | Llama 3.2 Community License | Hugging Face, meta-llama | Menor, con licencia con restricciones comerciales y buen soporte de ecosistema |
 
 ## Limitaciones y advertencias
 
-- Sesgos: el dataset de fine-tuning no esta documentado, por lo que pueden existir sesgos no identificados.
-- Alucinacion: al ser un modelo pequeno, el riesgo de alucinacion es significativo, especialmente en tareas de razonamiento complejo.
-- Contexto: no se ha especificado la longitud de contexto; se recomienda validar antes de usar en aplicaciones que requieran ventanas largas.
-- Idioma: solo soporta ingles segun los metadatos; no se ha verificado el rendimiento en espanol.
-- Licencia: Apache 2.0 permite uso comercial, pero el modelo base DeepSeek-R1-Distill-Qwen-1.5B puede tener licencias adicionales (MIT para DeepSeek-R1, Apache 2.0 para Qwen2.5). Revisar las licencias de los componentes.
-- Produccion: al no haber benchmarks publicados, no se recomienda su uso en sistemas criticos sin una evaluacion previa.
+- Trazabilidad insuficiente: la model card no documenta dataset, hiperparametros, tokens de entrenamiento ni evaluaciones; imposible reproducir el ajuste.
+- Discrepancia de parametros: 7,6B reales frente a 1,5B en el nombre del base, lo que invalida supuestos de VRAM y latencia basados en el nombre.
+- Riesgo de alucinacion: inherente a las destilaciones de R1 y agravado por la falta de evaluacion publicada; requiere validacion en produccion.
+- Sesgos conocidos: no documentados por el autor; al entrenarse en ingles, los sesgos culturales y linguisticos del dataset subyacente son desconocidos.
+- Limitacion de idioma: solo ingles declarado; el rendimiento en castellano no esta verificado y probablemente sea deficiente.
+- Contexto desconocido: no se especifica la ventana efectiva, lo que impide planificar casos de uso con documentos largos.
+- Licencia Apache 2.0: permite uso comercial, pero el modelo base R1-Distill-Qwen tiene licencia MIT y Qwen2 Apache 2.0; conviene revisar la cadena completa de licencias antes de redistribuir.
+- Madurez: 478 descargas y cero interacciones sugieren ausencia de validacion por la comunidad; no recomendable como dependencia critica sin pruebas propias.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/zxcd1/MyModel_xh
-- Perfil del autor: https://huggingface.co/zxcd1
-- Unsloth: https://github.com/unslothai/unsloth
+- Modelo base declarado: https://huggingface.co/unsloth/DeepSeek-R1-Distill-Qwen-1.5B-unsloth-bnb-4bit
+- Modelo original DeepSeek-R1-Distill-Qwen-1.5B: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
+- Repositorio Unsloth: https://github.com/unslothai/unsloth
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
+- Documentacion de text-generation-inference: https://github.com/huggingface/text-generation-inference

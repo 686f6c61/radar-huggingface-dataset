@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "abdur-rahman97/indonesian-roberta-base",
+  "slug": "abdur-rahman97-indonesian-roberta-base",
+  "author": "abdur-rahman97",
+  "url": "https://huggingface.co/abdur-rahman97/indonesian-roberta-base",
+  "created_at": "2026-11-17T09:26:34.000Z",
+  "updated_at": "2026-11-17T09:26:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "pytorch",
+    "jax",
+    "tensorboard",
+    "safetensors",
+    "roberta",
+    "indonesian-roberta-base",
+    "id",
+    "dataset:oscar",
+    "arxiv:1907.11692",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124697947,
+  "parameters_human": "124.7M",
+  "storage_bytes": 1539170593,
+  "storage_human": "1.5 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

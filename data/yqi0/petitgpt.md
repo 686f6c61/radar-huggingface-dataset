@@ -2,124 +2,115 @@
 
 ## Resumen
 
-petitgpt es un modelo de lenguaje decoder-only de 124,6 millones de parametros desarrollado por Yang Qi (usuario yqi0) y publicado en Hugging Face bajo licencia Apache-2.0. Se trata de un artefacto de investigacion construido desde cero ("from-scratch") con arquitectura transformer de 30 capas, anchura 576, FFN de 1536 y atencion con query grouping (GQA) de 9 cabezas de consulta y 3 de clave/valor. El checkpoint publicado, denominado alpha075, no procede de un paso de entrenamiento adicional, sino de una interpolacion lineal de parametros entre dos estados de un ajuste por instrucciones.
+PetitGPT es un modelo de lenguaje de 124,6 millones de parametros entrenado desde cero por Yang Qi (usuario `yqi0` en Hugging Face) como proyecto de investigacion. El objetivo declarado es estudiar el entrenamiento eficiente de modelos pequenos, los compromisos del post-entrenamiento y las metodologias de evaluacion, usando un unico GPU de consumo (una NVIDIA RTX 4090) durante todo el proceso de preentrenamiento, en el que se procesaron aproximadamente 13.000 millones de posiciones de entrada del modelo.
 
-El modelo se posiciona explicitamente como material de estudio para reproducir mediciones, inspeccionar el pipeline de entrenamiento y analizar modos de fallo, no como asistente de proposito general. Su ventana de contexto es de 2.048 tokens y su vocabulario de 32.000 entradas, con embeddings de entrada y salida atados (tied embeddings). Los pesos se almacenan en FP32, lo que da un repositorio de aproximadamente 0,5 GB.
+El checkpoint publicado, `alpha075`, forma parte de la release `research-v1` y se distribuye junto con un tokenizador propio, la configuracion del modelo y una implementacion de inferencia nativa en PyTorch. La arquitectura emplea atencion con query grouping (GQA) y, segun las etiquetas del repositorio, se aplico interpolacion de modelos (model interpolation) como parte del post-entrenamiento, ademas de una fase de SFT sobre `smol-smoltalk`.
 
-Su relevancia actual es metodologica: documenta con detalle inusual la procedencia de los datos (13.000 millones de tokens empaquetados), la mezcla de fuentes en dos fases de preentrenamiento y la ascendencia exacta del checkpoint, incluidas las ramas que se inicializaron a partir de el. Ademas, publica resultados congelados en ARC-Easy y PIQA bajo un protocolo de evaluacion por verosimilitud de respuesta multiple, comparable con las familias SmolLM y SmolLM2 de 135 M.
+Es relevante ahora por su caracter didactico y reproducible: demuestra que es posible llevar a cabo un ciclo completo de preentrenamiento y ajuste supervisado de un transformer de ~125M de parametros en hardware de consumo, publicando el informe tecnico, las sumas de verificacion de los ficheros y una guia de ejecucion. No obstante, la release tiene limitaciones de compatibilidad importantes: no implementa carga via `AutoModel` de Transformers ni ofrece pesos en GGUF u ONNX, y el CLI requiere una GPU CUDA.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only con atencion de consulta agrupada (GQA), RMSNorm y RoPE |
-| Parametros totales | 124.635.456 (124,6 M) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | 2.048 tokens |
-| Tipos de cuantizacion | no disponible (los pesos publicados estan en FP32; no se documentan cuantizaciones oficiales) |
-| Idiomas soportados | no disponible (no evaluado; la mezcla de datos es mayoritariamente en ingles) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (FP32), con codigo PyTorch nativo ("native-pytorch") |
-| Capas / anchura / FFN | 30 / 576 / 1536 |
-| Atencion | 9 cabezas de consulta, 3 cabezas de clave/valor, dimension de cabeza 64 |
-| Vocabulario | 32.000 tokens, embeddings de entrada y salida atados |
-| Normalizacion | RMSNorm con epsilon 1e-6 |
-| Posiciones | RoPE con theta 10000 y rotacion completa de cabeza |
-| Dropout | 0,0 |
-| Tamano del repositorio | 0,5 GB |
+| Arquitectura | Transformer decoder-only con GQA (query grouping attention) |
+| Parametros totales | 124.635.456 |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (no se publican pesos GGUF/ONNX; solo safetensors en FP32/BF16 segun implementacion) |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors |
+| Tokenizador | propio, incluido en el repositorio |
+| Implementacion de inferencia | PyTorch nativo (CLI propio, requiere CUDA) |
+| Hardware de entrenamiento | 1x NVIDIA RTX 4090 |
+| Tokens de preentrenamiento | ~13.000 millones de posiciones de entrada |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only clasico de 30 capas con anchura 576 y FFN de 1536, normalizacion RMSNorm (epsilon 1e-6), codificacion posicional rotary (RoPE con theta 10000 y rotacion completa de cabeza) y atencion con consulta agrupada: 9 cabezas de consulta frente a 3 cabezas de clave/valor con dimension de cabeza 64. El vocabulario es de 32.000 entradas y los embeddings de entrada y salida estan atados. El dropout es 0,0 y los pesos se almacenan y exportan en FP32.
+PetitGPT es un transformer decoder-only con atencion de tipo grouped-query attention (GQA), disenado para reducir el coste de memoria del cache KV frente a la atencion multi-cabeza clasica, algo especialmente relevante cuando el objetivo es entrenar en un unico GPU de 24 GB. El modelo se entreno desde cero, sin inicializacion a partir de pesos preexistentes, procesando aproximadamente 13.000 millones de posiciones de entrada durante el preentrenamiento. La configuracion del modelo se publica en el repositorio junto con los pesos.
 
-El preentrenamiento consumio 13.000.005.634 tokens empaquetados y retenidos, distribuidos en 13.755.731 documentos, sobre los que el optimizador realizo 12.999.720.960 posiciones de entrada al modelo, con una unica exposicion por bloque y sin repeticion del recorrido de posiciones. Se estructuro en dos fases. La etapa A selecciono 10.000.003.234 tokens de cuatro fuentes: FineWeb-Edu deduplicado (71,11 %), DCLM-Edu (20,32 %), Wikipedia FineWiki EN (5,08 %) y Python-Edu (3,50 %). La etapa B selecciono 3.000.004.240 tokens de siete fuentes: FineWeb-Edu deduplicado (40,10 %), DCLM-Edu (22,92 %), contenido tutorial estructurado (11,46 %), Python-Edu (8,33 %), Wikipedia (5,73 %), PES2O (5,73 %) y StackExchange (5,73 %).
-
-El postentrenamiento utilizo siete subconjuntos de instrucciones extraidos de la coleccion fijada HuggingFaceTB/smol-smoltalk (revision f73fe857d519ff6ac5af2ea67c4d3834da7b8bcc, configuracion default, split train). La innovacion metodologica destacable no esta en la arquitectura sino en la procedencia del checkpoint: los pesos publicados son una interpolacion de parametros, no un paso de optimizacion, segun la formula theta = theta_P2_step750 + 0,75 · (theta_P3_step320 − theta_P2_step750), ejecutada con cero actualizaciones del optimizador y cero pasos hacia atras. La ascendencia completa es: publicacion del tokenizador, preentrenamiento de etapa A (pasos 0 a 38.146), preentrenamiento continuado de etapa B (pasos 38.146 a 49.590, reanudacion exacta de estado completo, aceptado como Base), SFT de instrucciones concisas P2 (750 actualizaciones, inicializacion solo de pesos desde Base), adaptacion a instrucciones basicas P3 (padre B en el paso 320, no en el punto final 640) e interpolacion final. Este checkpoint no contiene las actualizaciones posteriores de destilacion de respuestas DeepSeek, SFT unificado, DPO, destilacion suave ni ramas LoRA, aunque varias ramas posteriores se inicializaron a partir de el.
+El corpus de preentrenamiento combina varios datasets publicos: `HuggingFaceTB/smollm-corpus`, `HuggingFaceTB/dclm-edu`, `HuggingFaceFW/finewiki`, `HuggingFaceFW/finephrase`, `allenai/dolmino-mix-1124` y `common-pile/stackv2_edu_filtered`. El post-entrenamiento incluye una fase de SFT sobre `HuggingFaceTB/smol-smoltalk` y tecnicas de interpolacion de modelos (etiqueta `model-interpolation`), una practica habitual para promediar checkpoints o combinar modelos ajustados y mejorar la robustez sin coste adicional de entrenamiento. No se detalla en la informacion disponible el uso de RLHF o DPO, ni la composicion exacta por fracciones de cada dataset.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva en ingles, con calidad propia de un modelo de 124,6 M de parametros.
-- Seguimiento basico de instrucciones, derivado de los siete subconjuntos de smol-smoltalk empleados en el postentrenamiento.
-- Puntuacion por verosimilitud de respuestas candidatas, que es el uso bajo el que se publicaron los resultados de ARC-Easy y PIQA.
-- Razonamiento de un solo turno de baja complejidad; no se documenta razonamiento multi-paso extenso.
-- Generacion de codigo elemental, favorecida por la presencia de Python-Edu (3,50 % en etapa A, 8,33 % en etapa B) en el corpus.
-- Capacidades multilingues: no evaluadas y no documentadas; la mezcla de datos de preentrenamiento es predominantemente en ingles.
-- Tool calling / function calling: no documentado ni evaluado.
-- Soporte de agentes: no documentado ni evaluado.
-- Capacidades especiales (modo de pensamiento, vision, audio): no disponibles.
-- Plantilla de chat y contrato de tokenizador incluidos en el paquete, identicos byte a byte a los originales del proyecto.
+- Generacion de texto en ingles: modelo causal de lenguaje para continuacion y generacion libre.
+- Razonamiento basico y respuesta a preguntas de opcion multiple, evaluado en modo zero-shot por verosimilitud (ARC-Easy, ARC-Challenge, PIQA, HellaSwag).
+- Seguimiento de instrucciones: dispone de plantilla de chat nativa y fue evaluado en IFEval con decodificacion greedy.
+- Ajuste supervisado (SFT) sobre datos conversacionales (`smol-smoltalk`), lo que le permite mantener formato de dialogo.
+- Capacidades multilingues: limitadas al ingles segun la model card (`language: en`).
+- Tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Vision, audio o modo thinking: no disponible.
+- Inferencia nativa en PyTorch con CLI propio; no hay soporte para vLLM, llama.cpp, TGI ni CPU en esta release.
 
 ## Casos de uso
 
-- Reproduccion de mediciones publicadas: el modelo permite replicar los resultados congelados de ARC-Easy y PIQA bajo el protocolo exacto descrito (completado zero-shot con formato "Question: …\nAnswer:", sin plantilla de chat, sin tokens de rol, sin ejemplos few-shot y con autocast desactivado), util para auditar pipelines de evaluacion.
-- Estudio de mezclas de datos de preentrenamiento: con 13.000 millones de tokens y porcentajes de fuente documentados por etapa, sirve como caso de analisis de como la composicion de FineWeb-Edu, DCLM-Edu, Wikipedia, Python-Edu, PES2O y StackExchange afecta a las capacidades finales.
-- Analisis de interpolacion de parametros: el checkpoint alpha075 permite estudiar si una interpolacion lineal entre dos estados de SFT preserva, degrada o combina comportamientos de sus modelos padre, un experimento reproducible con coste de computo minimo.
-- Linea base para entrenamiento desde cero: al ser un modelo de 124,6 M con receta completa publicada, se puede comparar contra arquitecturas propias del mismo orden de magnitud bajo el mismo tokenizador y corpus.
-- Estudio de tokenizacion y contrato de tokens: el paquete incluye un modulo de tokenizador con vocabulario de 32.000 entradas, util para analizar empiricamente como afecta la segmentacion al comportamiento de un modelo pequeno.
-- Evaluacion de protocolos de scoring en respuesta multiple: el modelo puntua candidatos por verosimilitud y publica tanto acc como acc_norm, lo que lo convierte en un banco de pruebas para estudiar el efecto de la normalizacion por longitud de respuesta.
-- Analisis de modos de fallo: con 2.048 tokens de contexto, ingles casi exclusivo y sin evaluacion de seguridad, es adecuado para documentar comportamiento de alucinacion y degradacion fuera de distribucion en modelos pequenos.
-- Prototipado ligero en entornos con recursos minimos: sus 124,6 M de parametros permiten experimentar en CPU o en GPU de gama baja antes de escalar a modelos mayores.
+- Investigacion sobre entrenamiento eficiente: reproducir el pipeline completo de preentrenamiento y SFT en una unica RTX 4090 permite estudiar curvas de escalado, eleccion de hiperparametros y coste energetico en modelos de ~125M de parametros sin acceso a clústeres.
+- Docencia y formacion: el repositorio incluye informe tecnico, guia de ejecucion y sumas de verificacion, lo que lo convierte en un material adecuado para cursos de LLMs donde se quiera mostrar el ciclo completo desde cero hasta el ajuste conversacional.
+- Experimentos de interpolacion de modelos: al publicar checkpoints y configuracion, sirve como banco de pruebas para estudiar tecnicas de model averaging y su efecto en benchmarks de opcion multiple.
+- Evaluacion comparativa de modelos pequenos: sus resultados en ARC, PIQA, HellaSwag e IFEval permiten situarlo frente a otros modelos de ~125M en tareas de conocimiento comun y seguimiento de instrucciones.
+- Generacion de texto de baja latencia en prototipos: con 124,6M de parametros cabe holgadamente en una GPU de consumo, por lo que puede usarse como generador de texto en demos locales siempre que se acepte la limitacion al ingles y la ausencia de tool calling.
+- Estudio de tokenizadores: al incluir un tokenizador propio, es util para analizar como afectan las decisiones de tokenizacion al rendimiento en tareas de opcion multiple y al coste de entrenamiento.
+- Base para fine-tuning especifico de dominio: al estar bajo licencia Apache 2.0 y con pesos safetensors, puede ajustarse en ingles para tareas concretas (clasificacion, resumen, extraccion) en entornos con un solo GPU.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor, congelados en FP32 y copiados sin recalculo. Protocolo: completado zero-shot crudo "Question: …\nAnswer:" puntuado por verosimilitud de la respuesta candidata, sin plantilla de chat, sin tokens de rol, sin ejemplos few-shot, sin BOS, sin EOS puntuado, sin generacion y sin limpieza. Parametros y forward en FP32 con autocast desactivado, TF32 desactivado para matmul y cuDNN, SDPA matematico, tamano de lote 1 sin relleno, sin cache KV y sin compilacion.
+Resultados declarados por el autor en la model card (evaluador nativo compatible con el protocolo, no una ejecucion instalada de `lm-evaluation-harness`; metrica de verosimilitud zero-shot en FP32 salvo donde se indique):
 
-| Dataset | Split / documentos | acc | acc_norm |
-|---|---|---|---|
-| ARC-Easy | test / 2.376 | 1372/2376 = 0,5774 | 1244/2376 = 0,5236 |
-| PIQA | validation / 1.838 | 1167/1838 = 0,6349 | 1145/1838 = 0,6230 |
-
-Comparadores medidos bajo el protocolo identico y sobre las mismas filas:
-
-| Modelo | acc ARC-Easy | acc PIQA |
+| Benchmark | Metrica | Valor |
 |---|---|---|
-| petitgpt (alpha075) | 0,5774 | 0,6349 |
-| SmolLM-135M-Instruct | 0,4924 | 0,6708 |
-| SmolLM2-135M-Instruct | 0,5400 | 0,6670 |
+| ARC-Easy (test) | accuracy | 57,74 |
+| ARC-Easy (test) | accuracy normalizada | 52,36 |
+| PIQA (validation) | accuracy | 63,49 |
+| PIQA (validation) | accuracy normalizada | 62,30 |
+| ARC-Challenge (test) | accuracy | 28,16 |
+| ARC-Challenge (test) | accuracy normalizada (protocolo del proyecto) | 32,68 |
+| HellaSwag (validation) | accuracy | 31,28 |
+| HellaSwag (validation) | accuracy normalizada (protocolo del proyecto) | 35,60 |
+| IFEval | prompt-level strict accuracy | 17,19 |
+| IFEval | instruction-level strict accuracy | 28,54 |
+| IFEval | prompt-level loose accuracy | 17,74 |
+| IFEval | instruction-level loose accuracy | 29,98 |
 
-El evaluador es una implementacion nativa compatible con el protocolo, fijada a un commit concreto de lm-evaluation-harness. No se publican resultados de MMLU, HumanEval, GSM8K ni de ningun benchmark generativo publico. El autor declara explicitamente que no se han evaluado el trabajo en contexto largo, el comportamiento multilingue, el uso de herramientas, el dialogo multi-turno extendido, la seguridad y el rechazo, la vigencia factual ni la recuperacion.
+No se han publicado en la informacion disponible resultados de MMLU, GSM8K, HumanEval ni comparaciones directas con otros modelos en la model card.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP32: aproximadamente 0,5 GB solo de pesos, mas activaciones y cache KV (despreciable con 2.048 tokens de contexto).
-- VRAM estimada en FP16/BF16: en torno a 250 MB de pesos.
-- VRAM estimada en INT8: en torno a 125 MB; en INT4, en torno a 65-70 MB (conversiones no publicadas oficialmente por el autor).
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; el modelo tambien es viable en CPU y en GPU integradas.
-- Cabe holgadamente en GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en iGPU modernas y en dispositivos tipo Raspberry Pi si se convierte a formatos ligeros.
-- Opciones de despliegue: al ser un artefacto "native-pytorch" con modulos propios (modelo, plantilla de chat y contrato de tokens), lo habitual es cargarlo con PyTorch activando codigo remoto o con el codigo del proyecto. vLLM, TGI, llama.cpp y Ollama requeririan conversion previa, no documentada por el autor.
-- Latencia y throughput: no disponibles; no se publican mediciones.
+- VRAM estimada para inferencia: con 124,6M de parametros, los pesos en FP32 ocupan aproximadamente 0,5 GB y en BF16/FP16 unos 0,25 GB; el consumo real depende del cache KV y de la longitud de contexto, no especificada.
+- GPU recomendadas: cualquier GPU CUDA con al menos 2-4 GB de VRAM deberia ser suficiente para inferencia en precision completa; el autor entreno en una RTX 4090.
+- Cabe en GPU de consumo: si, en tarjetas como RTX 3060, RTX 4060, RTX 4090 y similares, siempre que se use la implementacion nativa en PyTorch.
+- Opciones de despliegue: unicamente el CLI nativo en PyTorch incluido en el repositorio, que requiere CUDA. GGUF, ONNX, vLLM, llama.cpp, Ollama, TGI y la inferencia en CPU no estan implementados ni validados en esta release.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | ARC-Easy (acc) | PIQA (acc) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| petitgpt (alpha075) | 124,6 M | 2.048 | 0,5774 | 0,6349 | Apache-2.0 | Hugging Face, pesos FP32 |
-| SmolLM-135M-Instruct | 135 M | 2.048 | 0,4924 | 0,6708 | Apache-2.0 | Hugging Face |
-| SmolLM2-135M-Instruct | 135 M | 8.192 | 0,5400 | 0,6670 | Apache-2.0 | Hugging Face |
-| GPT-2 | 124 M | 1.024 | no medido bajo este protocolo | no medido bajo este protocolo | MIT | Hugging Face |
+| Modelo | Parametros | Contexto | Licencia | Formato / despliegue | Notas |
+|---|---|---|---|---|---|
+| PetitGPT (alpha075) | 124,6M | no disponible | Apache 2.0 | safetensors, CLI PyTorch nativo con CUDA | Entrenado desde cero en una RTX 4090; solo ingles; sin tool calling |
+| SmolLM-135M (HuggingFaceTB) | 135M | no disponible en esta ficha | Apache 2.0 | Transformers, GGUF, llama.cpp, etc. | Alternativa de tamano similar con ecosistema de despliegue amplio; no se dispone de comparacion de benchmarks en la informacion |
+| Qwen2.5-0.5B | ~500M | no disponible en esta ficha | Apache 2.0 | Transformers, GGUF, vLLM | Mayor tamano y soporte multilingue; no comparable directamente por escala |
+| GPT-2 small | 124M | 1024 tokens | MIT | Transformers, GGUF | Referencia historica de mismo orden de parametros; no se dispone de comparacion de benchmarks en la informacion |
 
-La comparacion directa solo es valida en ARC-Easy y PIQA, unicos benchmarks medidos bajo el protocolo identico. petitgpt supera a SmolLM-135M-Instruct y a SmolLM2-135M-Instruct en ARC-Easy, pero queda por debajo de ambos en PIQA. La diferencia de contexto es notable: SmolLM2-135M-Instruct ofrece 8.192 tokens frente a los 2.048 de petitgpt. El dato de GPT-2 se incluye solo como referencia de tamano, ya que no se ha evaluado bajo este protocolo.
+No se dispone de datos de benchmarks de los modelos alternativos en la informacion proporcionada, por lo que la comparacion se limita a parametros, licencia y opciones de despliegue.
 
 ## Limitaciones y advertencias
 
-- El autor declara explicitamente que el modelo no esta pensado como asistente general, sistema en produccion ni fuente de respuestas factuales.
-- No esta certificado en seguridad ni en correccion; no debe ejecutarse el codigo que genere sin revision independiente.
-- Riesgo de alucinacion elevado, coherente con un modelo de 124,6 M de parametros entrenado sobre 13.000 millones de tokens: la vigencia factual no se ha evaluado y no hay garantia de veracidad.
-- Ventana de contexto limitada a 2.048 tokens, insuficiente para documentos largos o dialogos extensos.
-- El comportamiento multilingue no se ha evaluado; la mezcla de datos es mayoritariamente en ingles, por lo que el rendimiento en castellano u otros idiomas es impredecible.
-- No se ha evaluado el uso de herramientas, el razonamiento multi-paso ni el dialogo multi-turno extendido.
-- Sesgos conocidos: no documentados de forma especifica, pero heredables de FineWeb-Edu, DCLM-Edu, Wikipedia, StackExchange y PES2O.
-- El postentrenamiento depende de smol-smoltalk en una revision fijada; el autor advierte que los componentes incorporados tienen licencias declaradas heterogeneas (Apache-2.0, ODC-BY y un componente sin licencia declarada en su tarjeta), y que no se establece ninguna determinacion legal ni la revision de cada componente.
-- Las cadenas de licencia registradas para las fuentes de preentrenamiento son evidencia de lo capturado en cada revision fijada, no una determinacion legal ni la licencia vigente hoy.
-- El checkpoint no contiene ramas posteriores (destilacion de respuestas DeepSeek, SFT unificado, DPO, destilacion suave, LoRA); no deben sumarse las exposiciones de las ramas derivadas a la historia de entrenamiento de este modelo.
-- Los pesos se exportan en FP32 sin cambios numericos, lo que implica que no hay una version oficial cuantizada ni optimizada para inferencia de baja latencia.
-- Repositorio sin descargas ni likes en el momento de la consulta, sin pipeline declarado y sin resultados de benchmarks generativos publicos: la validacion externa es practicamente inexistente.
+- El modelo solo declara soporte de ingles; no se ha validado su comportamiento en castellano ni en otros idiomas.
+- Con 124,6M de parametros y ~13.000 millones de tokens de preentrenamiento, la capacidad de razonamiento es limitada: los resultados en ARC-Challenge (28,16 de accuracy) y HellaSwag (31,28) estan cerca o por debajo del azar en tareas de cuatro opciones.
+- Riesgo elevado de alucinacion en preguntas factuales y en generacion abierta, inherente a modelos de este tamano.
+- IFEval muestra un seguimiento de instrucciones debil (17,19 de prompt-level strict accuracy), por lo que no es adecuado para tareas que requieran cumplir restricciones estrictas de formato o contenido.
+- La longitud de contexto no se especifica en la informacion disponible; no debe asumirse una ventana larga.
+- La release no implementa carga via `AutoModel` de Transformers ni formatos GGUF/ONNX, y el CLI requiere CUDA: no es desplegable en CPU ni en entornos sin GPU NVIDIA.
+- Los benchmarks son declarados por el autor con un evaluador nativo propio, no verificado de forma independiente ni ejecutado con `lm-evaluation-harness` instalado; deben interpretarse con cautela.
+- La licencia Apache 2.0 permite uso comercial, pero la ausencia de validacion en produccion, el limitado soporte de herramientas y el bajo rendimiento en tareas complejas desaconsejan su uso comercial directo sin ajuste adicional.
+- No se documentan sesgos especificos; al entrenarse sobre corpus web publicos, es probable que herede sesgos presentes en dichos datos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/yqi0/petitgpt
-- Conjunto de datos de postentrenamiento referenciado: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk
-- Archivo de procedencia del checkpoint dentro del repositorio: MODEL_PROVENANCE.json
-- Tabla de mezcla de fuentes de preentrenamiento dentro del repositorio: tables/PRETRAIN_SOURCE_MIXTURE.csv
-- Configuracion completa derivada del checkpoint dentro del paquete: config.json
-- Los resultados de busqueda web proporcionados no contienen enlaces relevantes al modelo ni a su ecosistema.
+- Repositorio GitHub del proyecto: https://github.com/yangqi0/petitgpt
+- Informe tecnico: https://github.com/yangqi0/petitgpt/blob/53a5bb33052fa8092987eacc1047e040a7c5ce30/docs/petitgpt-v1/TECHNICAL_REPORT.md
+- Seccion de evaluacion de opcion multiple del informe: https://github.com/yangqi0/petitgpt/blob/53a5bb33052fa8092987eacc1047e040a7c5ce30/docs/petitgpt-v1/TECHNICAL_REPORT.md#81-public-multiple-choice-likelihood-frozen-fp32
+- Seccion de IFEval del informe: https://github.com/yangqi0/petitgpt/blob/53a5bb33052fa8092987eacc1047e040a7c5ce30/docs/petitgpt-v1/TECHNICAL_REPORT.md#84-ifeval-instruction-following
+- Guia de ejecucion: RUN_GUIDE.md (en el repositorio de Hugging Face)
+- Sumas de verificacion: SHA256SUMS (en el repositorio de Hugging Face)

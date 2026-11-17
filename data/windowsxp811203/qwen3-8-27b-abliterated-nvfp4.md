@@ -2,100 +2,92 @@
 
 ## Resumen
 
-El modelo `windowsxp811203/Qwen3.8-27B-Abliterated-NVFP4` es una cuantización NVFP4 (4-bit float) del modelo `Qwen3.8-27B-Abliterated`, que a su vez es una versión "abliterated" (eliminación de la capa de rechazo) del modelo multimodal denso `Qwen/Qwen3.8-27B` desarrollado por Alibaba. El autor, windowsxp811203, ha aplicado una técnica de ortogonalización de tensores contra una dirección de rechazo para eliminar las respuestas de negativa ante instrucciones dañinas, manteniendo la torre de visión byte-idéntica. Esta versión cuantizada reduce el tamaño de 55.6 GB a 28.6 GB, lo que permite su ejecución en GPUs Blackwell (sm100+) con vLLM, conservando la cabeza MTP (multi-token prediction) para decodificación especulativa, algo inusual en derivados cuantizados de esta arquitectura.
+Qwen3.8-27B-Abliterated-NVFP4 es una cuantizacion en formato NVFP4 (FP4 de NVIDIA con escalado por bloques) del modelo Qwen3.8-27B-Abliterated, un derivado de la familia Qwen3.5 sometido a un proceso de "abliteration" que elimina los mecanismos de rechazo del modelo original. Lo publica el usuario windowsxp811203 en Hugging Face, no el equipo oficial de Qwen, por lo que se trata de una modificacion comunitaria sobre una base propietaria de Alibaba. El resultado es un modelo multimodal de tipo image-text-to-text, con 19.135.892.976 parametros reales en pesos (pese a la denominacion comercial "27B"), pensado para inferencia eficiente en hardware NVIDIA Blackwell mediante vLLM y el formato compressed-tensors.
 
-El modelo está diseñado para investigación en seguridad y alineación, así como para aplicaciones que requieren generación de texto sin restricciones de rechazo. Incluye soporte multimodal (imagen-texto), razonamiento con modo de pensamiento activado por defecto, y una ventana de contexto nativa de 262,144 tokens, ampliable a 1M mediante configuración específica. Su licencia Apache-2.0 permite uso comercial, aunque el autor advierte que el usuario es responsable del cumplimiento legal. La cuantización NVFP4 mantiene la precisión (MMLU 77.75% frente al 78% de la referencia GGUF Q8) y la cabeza MTP verifica una tasa de aceptación de draft del 76-78%.
+La relevancia de esta ficha es doble: por un lado documenta una tecnica de cuantizacion de 4 bits (NVFP4) que reduce el peso del repositorio a 28,6 GB y permite servir un modelo multimodal de ~19B en una sola GPU moderna; por otro, ilustra el ecosistema de variantes "abliterated" y "uncensored", que eliminan deliberadamente las capas de seguridad alineadas. Es un modelo con acceso restringido (gated) y licencia Apache 2.0 declarada, aunque la licencia original del modelo base Qwen condiciona su uso comercial real.
 
-## Especificaciones técnicas
+El modelo soporta ingles y chino, incluye soporte declarado de MTP (multi-token prediction) segun sus tags, y esta orientado a generacion de texto conversacional y comprension de imagenes. No se han publicado resultados de benchmarks ni detalles del proceso de entrenamiento en la informacion disponible.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3.8 (transformer denso multimodal con atención híbrida: full attention en 16 capas y Gated DeltaNet/SSM en el resto) |
-| Parametros totales | 19.135.892.976 (según safetensors; el nombre comercial indica 27B, la diferencia se debe al conteo del vision tower y componentes auxiliares) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 262,144 tokens nativos; ampliable a 1,010,000 mediante `--hf-overrides` (verificado) |
-| Tipos de cuantizacion | NVFP4 (4-bit float, group size 16, scales float8_e4m3); también disponible GGUF Q8_0 en repo separado |
-| Idiomas soportados | Inglés (en), chino (zh) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (con cuantización NVFP4 mediante compressed-tensors) |
+| Arquitectura | Transformer multimodal (image-text-to-text), familia Qwen3.5; detalles internos no disponibles |
+| Parametros totales | 19.135.892.976 (pesos reales en safetensors) |
+| Parametros activos | no disponible (no se confirma que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | NVFP4 / FP4 con compressed-tensors (el repo se declara tambien como 8-bit en tags) |
+| Idiomas soportados | en, zh |
+| Licencia | apache-2.0 (declarada en el repo; sujeta a la licencia del modelo base Qwen) |
+| Formato de pesos | safetensors (cuantizado NVFP4, compatible con vLLM y transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base `Qwen3.8-27B` es un transformer denso multimodal que combina atención completa en 16 de sus 64 capas y Gated DeltaNet (una arquitectura SSM lineal) en las restantes, junto con una torre de visión independiente. Sobre esta base, el autor aplicó un proceso de "abliteration": ortogonalizó 131 tensores que escriben en el residuo (incluyendo `embed_tokens`) contra una dirección de rechazo calculada a partir de respuestas negativas, con λ=1.5, dejando la torre de visión intacta. El resultado es un modelo que no produce rechazos ante instrucciones dañinas, manteniendo las capacidades generales.
+La informacion disponible no detalla la arquitectura interna mas alla de las etiquetas del repositorio: se identifica como `qwen3_5`, un transformer multimodal con pipeline `image-text-to-text`, lo que implica un codificador visual acoplado a un decodificador de lenguaje. El modelo incorpora la etiqueta `mtp`, que en la familia Qwen hace referencia a multi-token prediction, una tecnica de decodificacion especulativa interna que acelera la generacion al predecir varios tokens por paso. No se especifican el numero de capas, dimensiones ocultas, numero de cabezas ni el mecanismo de atencion concreto.
 
-La cuantización NVFP4 se realizó con llm-compressor 0.13.0 sobre el modelo abliterated en bf16. Se cuantizaron 256 lineales (MLP gate/up/down y atención q/k/v/o de las 16 capas con atención completa), mientras que la cabeza MTP, la torre de visión, las capas SSM, `lm_head` y los embeddings se mantuvieron en bf16. Un detalle técnico relevante es que la cabeza MTP se "injertó" de nuevo tras la cuantización y se listó en `quantization_config.ignore` para que vLLM no la tratara como objetivo de cuantización; sin esta doble operación, la decodificación especulativa fallaría con 0% de aceptación. No se dispone de información sobre el dataset de entrenamiento original ni sobre el número de tokens utilizados.
+Respecto al entrenamiento, no hay informacion sobre el volumen de tokens, la composicion del dataset ni si se aplicaron fases de RLHF o DPO en el modelo base. Lo unico documentado es la cadena de derivacion: un modelo Qwen3.8-27B original, una version "Abliterated" que elimina direcciones de activacion asociadas al rechazo, y esta cuantizacion NVFP4 de esa version. La innovacion tecnica destacable es precisamente la cuantizacion: NVFP4 usa bloques de 16 valores con escalas FP8 y una escala global FP32, lo que preserva mas precision que FP4 ingenuo y esta optimizado para los tensor cores de quinta generacion de NVIDIA (Blackwell).
 
 ## Capacidades
 
-- Generación de texto multimodal: procesa imágenes y texto, generando respuestas coherentes y contextualizadas.
-- Razonamiento con modo de pensamiento (thinking) activado por defecto, desactivable por petición.
-- Decodificación especulativa con cabeza MTP (multi-token prediction) para acelerar la inferencia (tasa de aceptación de draft verificada del 76-78%).
-- Sin capa de rechazo (abliterated): no produce negativas ante instrucciones dañinas, lo que lo hace útil para investigación en seguridad.
-- Soporte de tool calling y flujos agénticos (heredado de Qwen3.8, aunque no verificado en esta cuantización).
-- Capacidades multilingües en inglés y chino (declarado), con posible extensión a otros idiomas no documentada.
-- Extensión de contexto a 1M tokens verificada con needle-in-a-haystack (pasaje recuperado a 50% de profundidad).
+- Generacion de texto conversacional multi-turno en ingles y chino.
+- Comprension de imagenes y respuesta sobre contenido visual (pipeline image-text-to-text).
+- Razonamiento y respuesta a instrucciones heredados del modelo base Qwen3.5.
+- Generacion de codigo y matematicas (capacidad esperada del modelo base, no verificada en esta cuantizacion).
+- Soporte de tool calling y function calling: no confirmado explicitamente en la informacion disponible.
+- Soporte de agentes y razonamiento multi-paso: no confirmado explicitamente.
+- Multi-token prediction (MTP) segun tags del repositorio, orientado a acelerar la decodificacion.
+- Modo "uncensored": el proceso de abliteration elimina las capas de rechazo, de modo que el modelo responde a peticiones que el original rechazaria.
+- Compatibilidad con endpoints y despliegue via vLLM (`endpoints_compatible`, `vllm` en tags).
 
 ## Casos de uso
 
-- Investigación en seguridad y alineación: el modelo permite estudiar el comportamiento de sistemas sin rechazo, analizar jailbreaks y desarrollar técnicas de mitigación. Su tasa de rechazo de 0% en AdvBench lo hace idóneo para entornos controlados de laboratorio.
-- Generación de contenido creativo sin restricciones: escritura de ficción, guiones o diálogos que requieran explorar temas controvertidos sin autocensura, siempre bajo supervisión humana y cumplimiento legal.
-- Asistentes de código con baja latencia: gracias a la decodificación especulativa MTP, puede integrarse en pipelines de CI/CD o IDEs donde la velocidad de generación es crítica, manteniendo calidad en tareas de programación.
-- Procesamiento de documentos largos: con la configuración de 1M de contexto, puede resumir o analizar libros técnicos, informes extensos o bases de conocimiento completas en una sola pasada, útil en entornos de investigación.
-- Chatbots multilingües especializados: al no rechazar peticiones, puede atender consultas en inglés y chino sobre temas técnicos o científicos sin filtros, adecuado para plataformas de soporte interno.
-- Evaluación de modelos de seguridad: comparar el comportamiento de este modelo frente al original Qwen3.8-27B permite medir el impacto del abliteration en métricas de utilidad y seguridad, sirviendo como referencia en publicaciones académicas.
+- Procesamiento de documentos con imagenes en ingles o chino: el pipeline image-text-to-text permite extraer y resumir informacion de capturas, formularios o diagramas dentro de un flujo OCR + LLM, desplegado en vLLM sobre una GPU Blackwell.
+- Asistente conversacional interno sin filtros corporativos: util para equipos que necesitan respuestas directas sobre temas sensibles (seguridad ofensiva, analisis de contenido) donde un modelo alineado rechazaria la peticion; requiere gobierno de uso y registro de auditoria.
+- Generacion de codigo en pipelines de CI/CD: el modelo puede integrarse como servicio de vLLM para autocompletar, revisar y documentar codigo, con la ventaja de que la cuantizacion NVFP4 reduce el coste por token frente a FP16.
+- Analisis de imagenes tecnicas: interpretacion de diagramas de arquitectura, esquemas electricos o graficos en entornos de ingenieria, combinando vision y lenguaje en una sola llamada.
+- Investigacion sobre alineacion y seguridad: el par modelo base alineado frente a esta variante abliterated permite estudiar empiricamente como el abliteration afecta a la utilidad, la coherencia y la tasa de respuestas daninas.
+- Evaluacion de cuantizacion FP4: sirve como banco de pruebas para medir la perdida de calidad de NVFP4 frente a FP16/BF16 en tareas multimodales y multilingues, especialmente en chino.
+- Despliegue en hardware limitado: con 28,6 GB de pesos, cabe en una RTX 5090 (32 GB) o en una RTX 6000 Blackwell, lo que permite servir un modelo de ~19B multimodal en una unica GPU de consumo profesional.
 
 ## Benchmarks y rendimiento
 
-El autor proporciona resultados medidos sobre este checkpoint exacto en una RTX PRO 6000 Blackwell:
-
-| Benchmark | Resultado |
-|---|---|
-| MMLU (400 preguntas equidistantes, misma metodología) | 77.75 % (NVFP4) vs 78.00 % (GGUF Q8_0 de referencia) |
-| AdvBench (80 prompts) | 0/80 (0.00 % de rechazo) |
-| HarmBench safety categories (119 prompts) | 0/119 (0.0 % de rechazo) |
-| HarmBench copyright (41 prompts) | 17/41 (41.5 %; el autor indica que son falsos positivos del clasificador, no rechazos) |
-| MTP draft acceptance rate | 76.4 % – 78.3 % (mean acceptance length 1.76 – 1.78) |
-
-No se han publicado resultados de benchmarks adicionales (HumanEval, GSM8K, etc.) en la información disponible. El autor advierte que estos números no son comparables con el 82.35 % de MMLU reportado en la tarjeta del modelo padre, ya que esa cifra se obtuvo mediante comparación de logits (método más permisivo).
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- GPU obligatoria: arquitectura Blackwell (sm100+), por ejemplo RTX PRO 6000 Blackwell, B200, etc. No funciona en GPUs Ampere o anteriores.
-- VRAM para inferencia: aproximadamente 26.6 GiB para los pesos cuantizados, más la caché KV. Para contexto de 256K cabe en una GPU de 96 GB; para 1M se necesitan 2× 96 GB (presupuesto de ~61 GiB de KV adicional).
-- Opciones de despliegue: vLLM es el runtime recomendado y verificado. Configuración típica: `vllm serve windowsxp811203/Qwen3.8-27B-Abliterated-NVFP4 --max-model-len 8192 --speculative-config '{"method":"mtp","num_speculative_tokens":1}'`.
-- Para 1M de contexto: `--tensor-parallel-size 2 --max-model-len 1010000 --hf-overrides '{"text_config": {"max_position_embeddings": 1010000}}'`.
-- En caso de error de FlashInfer (problema de toolchain del host), se recomienda exportar `VLLM_USE_FLASHINFER_SAMPLER=0` y `VLLM_ATTENTION_BACKEND=TRITON_ATTN`.
-- También existe una versión GGUF (Q8_0) para llama.cpp/Ollama, aunque la cuantización NVFP4 requiere vLLM.
+- VRAM estimada para inferencia: ~28,6 GB solo para pesos en NVFP4; con cache KV y overhead de vLLM, prever 32-40 GB segun longitud de contexto y tamano de lote.
+- GPU recomendadas: NVIDIA Blackwell (RTX 5090, RTX 6000 Blackwell, B200) por el soporte nativo de NVFP4 en tensor cores de quinta generacion; en arquitecturas anteriores (Hopper, Ada) NVFP4 no esta acelerado por hardware y el rendimiento sera poor o requerira conversion.
+- Cabe en GPU de consumo: si, en RTX 5090 de 32 GB con contexto moderado y cuantizacion ya aplicada; no cabe en RTX 4090 (24 GB) sin reducir contexto o descargar capas a CPU.
+- Opciones de despliegue: vLLM (recomendado, con soporte compressed-tensors y NVFP4), transformers con el backend adecuado; llama.cpp y Ollama no soportan NVFP4 de forma nativa, por lo que requeririan reconvertir a GGUF.
+- Latencia y throughput estimados: no disponibles; el tag MTP sugiere decodificacion especulativa que podria aumentar el throughput, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | MMLU (misma metodología) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Qwen3.8-27B (original) | ~27B (denso) | 262K (ampliable a 1M) | 82.35 % (logit comparison) | Apache-2.0 | Hugging Face |
-| Qwen3.8-27B-Abliterated (bf16) | ~27B | 262K | No disponible | Apache-2.0 | Hugging Face |
-| Qwen3.8-27B-Abliterated-NVFP4 (este) | 19.1B (según safetensors) | 262K (ampliable a 1M) | 77.75 % | Apache-2.0 | Hugging Face |
-| Qwen3.8-27B-Abliterated-GGUF (Q8_0) | ~27B | 262K | 78.00 % | Apache-2.0 | Hugging Face |
+| Modelo | Parametros | Contexto | Modalidad | Cuantizacion | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Qwen3.8-27B-Abliterated-NVFP4 (este) | 19,1B | no disponible | Texto + imagen | NVFP4 | Apache 2.0 (declarada) | Gated en HF |
+| Qwen3.8-27B-Abliterated (base) | no disponible | no disponible | Texto + imagen | BF16/FP16 | Apache 2.0 (declarada) | HF |
+| Qwen3-VL oficial (familia Qwen) | variable (2B-72B) | hasta 256K en variantes recientes | Texto + imagen | BF16, GPTQ, AWQ, GGUF | Apache 2.0 | Publico en HF |
 
-La comparativa se limita a las variantes del mismo modelo base porque no se dispone de datos de otros modelos de la misma categoría (p. ej., Llama 3.1 8B o Mistral 7B) en la información proporcionada. El abliteration no afecta significativamente al rendimiento en MMLU (pérdida de ~0.25 puntos porcentuales entre Q8 y NVFP4), pero sí elimina por completo la capa de rechazo.
+La comparacion con la familia Qwen3-VL oficial es la mas pertinente por tratarse de la misma estirpe arquitectonica, pero no se dispone de datos de rendimiento de esta variante que permitan una comparacion cuantitativa. Frente a la version BF16 del modelo base, la ventaja es el menor footprint (28,6 GB frente a ~38 GB en BF16 para 19B parametros) y el mayor throughput en Blackwell; la desventaja es la perdida de precision inherente a FP4 y la dependencia de hardware NVIDIA reciente.
 
 ## Limitaciones y advertencias
 
-- El modelo no rechaza contenido dañino: presenta 0% de rechazo en AdvBench y HarmBench safety categories. Su uso para generar contenido ilegal, difamatorio o peligroso es responsabilidad del usuario, y puede violar leyes locales.
-- Riesgo de alucinación: como cualquier modelo de lenguaje, puede generar información falsa o inventada, especialmente en contextos largos o con prompts ambiguos.
-- Sesgos heredados: al derivar de Qwen3.8-27B, puede contener sesgos culturales, de género o ideológicos presentes en los datos de entrenamiento originales, no documentados en esta ficha.
-- Limitaciones de idioma: solo se declaran inglés y chino; el rendimiento en otros idiomas no está garantizado.
-- Requisitos de hardware restrictivos: necesita GPU Blackwell (sm100+), lo que excluye la mayoría de hardware consumer actual (RTX 40 series, A100, etc.).
-- La cuantización NVFP4 introduce una pérdida mínima de precisión (0.25 puntos en MMLU), pero puede afectar a tareas de razonamiento muy sensibles al redondeo.
-- La cabeza MTP funciona solo con vLLM y la configuración especificada; otros runtimes pueden ignorarla o fallar.
-- El abliteration puede degradar la utilidad en tareas que requieren respuestas seguras o matizadas, como asesoramiento médico o legal.
-- Licencia Apache-2.0 permite uso comercial, pero el autor declina responsabilidad sobre el uso indebido.
+- El proceso de abliteration elimina los rechazos de seguridad: el modelo puede generar contenido danino, ilegal o inseguro sin filtro. No apto para aplicaciones de cara al publico sin moderacion externa.
+- Riesgo elevado de alucinacion, agravado por la cuantizacion FP4, que puede degradar la coherencia en tareas de razonamiento largo.
+- Solo soporta ingles y chino de forma declarada; el rendimiento en castellano no esta verificado y probablemente sea inferior.
+- La licencia Apache 2.0 esta declarada en el repositorio, pero el modelo deriva de Qwen (Alibaba); el uso comercial debe verificar la licencia del modelo base original, que puede imponer condiciones adicionales.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face, lo que anade friccion a la reproducibilidad y al despliegue automatizado.
+- NVFP4 requiere hardware Blackwell para rendir; en GPUs anteriores el modelo puede no cargar o funcionar con rendimiento muy degradado.
+- El tag "8-bit" junto a "nvfp4" y "fp4" sugiere posible ambiguedad en el formato real de los pesos; conviene inspeccionar `config.json` y `quantization_config` antes de desplegar.
+- No hay informacion sobre el contexto maximo soportado, lo que impide planificar aplicaciones de contexto largo con garantias.
+- Modelo de autor individual sin trayectoria verificable; no hay garantias de mantenimiento, soporte ni correccion de errores.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated-NVFP4
-- Modelo base (abliterated bf16): https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated
-- Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
-- Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
-- Página de Jetson AI Lab sobre Qwen3.8-27B: https://www.jetson-ai-lab.com/models/qwen3-8-27b/
-- Versión GGUF: https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated-GGUF
-- Página en Ollama: https://ollama.com/library/qwen3.8:27b
+- Hugging Face: https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated-NVFP4
+- Modelo base (Abliterated): https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated
+- Repositorio oficial de Qwen en Hugging Face: https://huggingface.co/Qwen
+- Documentacion de vLLM: https://docs.vllm.ai
+- compressed-tensors (formato de cuantizacion): https://github.com/neuralmagic/compressed-tensors
+- Documentacion de NVFP4 en NVIDIA: https://developer.nvidia.com/blog/introducing-nvfp4-for-efficient-and-accurate-low-precision-inference/

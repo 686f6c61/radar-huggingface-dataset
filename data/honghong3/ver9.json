@@ -5,7 +5,7 @@
   "author": "honghong3",
   "url": "https://huggingface.co/honghong3/VER9",
   "created_at": "2026-11-11T01:49:33.000Z",
-  "updated_at": "2026-11-16T06:17:06.000Z",
+  "updated_at": "2026-11-17T06:33:51.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -21,6 +21,7 @@
     "dc-ae",
     "t5",
     "en",
+    "ko",
     "license:mit",
     "region:us"
   ],
@@ -29,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 60431533639,
-  "storage_human": "60.4 GB",
+  "storage_bytes": 664668828183,
+  "storage_human": "664.7 GB",
   "context_length": null,
   "base_model": null,
   "formats": [

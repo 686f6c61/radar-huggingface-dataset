@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 55,
+  "downloads_30d": 57,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -43,16 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "PLatour - a zen-E Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/zen-E/platour",
-      "snippet": "PLatour model and dataset releases. Dataset preview; model releases will be added later."
-    },
-    {
-      "title": "Qwen3.5-4B Transformer Model - emergentmind.com",
-      "url": "https://www.emergentmind.com/topics/qwen3-5-4b-model",
-      "snippet": "Qwen3.5-4B Model is a dense transformer-based language model featuring 4B parameters and specialized procedural demonstrations. Supervised fine-tuning with LoRA adapters and a chain-of-thought protocol significantly improves its step-by-step reasoning performance. It leverages extensive multilingual tokenization and a vast pretraining corpus to excel in various downstream tasks."
-    }
-  ]
+  "sources": []
 }

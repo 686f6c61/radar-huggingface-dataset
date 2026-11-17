@@ -1,0 +1,104 @@
+{
+  "schema": 2,
+  "id": "PL-HFT/whisper-large-v3-turbo-ko-dysarthria-lora",
+  "slug": "pl-hft-whisper-large-v3-turbo-ko-dysarthria-lora",
+  "author": "PL-HFT",
+  "url": "https://huggingface.co/PL-HFT/whisper-large-v3-turbo-ko-dysarthria-lora",
+  "created_at": "2026-11-17T10:49:35.000Z",
+  "updated_at": "2026-11-17T10:49:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "peft",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "automatic-speech-recognition",
+    "asr",
+    "speech-recognition",
+    "korean",
+    "dysarthria",
+    "lora",
+    "transformers",
+    "base_model:adapter:openai/whisper-large-v3-turbo",
+    "ko",
+    "base_model:openai/whisper-large-v3-turbo",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 222887416,
+  "storage_human": "223 MB",
+  "context_length": null,
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Korean Combined Dysarthria + Typical Speech Test (AI-Hub 013 + 109)",
+      "metric": "CER (%) - Combined Test (N=38,599)",
+      "value": 1.17
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Korean Combined Dysarthria + Typical Speech Test (AI-Hub 013 + 109)",
+      "metric": "WER (%) - Combined Test (N=38,599)",
+      "value": 4.93
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Korean Dysarthria Speech Test (AI-Hub 013)",
+      "metric": "CER (%) - Dysarthria Test (N=15,495)",
+      "value": 0.59
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Korean Dysarthria Speech Test (AI-Hub 013)",
+      "metric": "WER (%) - Dysarthria Test (N=15,495)",
+      "value": 1.83
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Korean Typical Speech Test (AI-Hub 109)",
+      "metric": "CER (%) - Typical Test (N=23,104)",
+      "value": 1.53
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Korean Typical Speech Test (AI-Hub 109)",
+      "metric": "WER (%) - Typical Test (N=23,104)",
+      "value": 6.86
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "External Korean Lecture Speech Test (AI-Hub 71627)",
+      "metric": "CER (%) - External Korean Test (N=10,000)",
+      "value": 11.69
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "External Korean Lecture Speech Test (AI-Hub 71627)",
+      "metric": "WER (%) - External Korean Test (N=10,000)",
+      "value": 28.8
+    }
+  ],
+  "sources": []
+}

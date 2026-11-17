@@ -2,109 +2,97 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-W4A16-Merlin-INT4PLE es un checkpoint cuantizado de 123.958.298.771 parámetros (unos 124B) publicado por el usuario zankich. No es un modelo entrenado desde cero: es el reempaquetado del checkpoint `halt95/Qwen3.8-Flash-Next-W4A16-Merlin`, del que se conservan intactos el cuerpo del modelo en W4A16 (group-128, formato compressed-tensors), las escalas KV en FP8 y el cabezal MTP en bf16. La única aportación propia del repositorio es la conversión de la tabla de embeddings PLE de n-gramas (51B parámetros) de FP8 a INT4.
+Qwen3.8-Flash-Next-W4A16-Merlin-INT4PLE es un checkpoint cuantizado del modelo Qwen3.8-Flash-Next de Alibaba Qwen, publicado por el usuario zankich sobre el trabajo de cuantización previo de halt95. Se trata de un empaquetado que parte del checkpoint W4A16 Merlin (cuerpo del modelo en 4 bits con activaciones en 16 bits, formato compressed-tensors) y le aplica dos modificaciones: la conversión de la tabla de embeddings n-gram PLE de 51.000 millones de parámetros de FP8 a INT4, y una caché KV calibrada en FP8 E4M3. El modelo total declarado en safetensors es de 123.958.298.771 parámetros.
 
-El problema que resuelve es de infraestructura, no de calidad: la tabla PLE en FP8 ocupa 47,7 GB en memoria del host, lo que impide servir el modelo en GPUs de gama Ampere de 24 GB. Con el reempaquetado INT4 (group-32 simétrico, 8 nibbles por palabra int32) la tabla baja a 26,8 GB y el conjunto pasa a ser servible en 4x RTX 3090 Ti con tensor parallelism 4, según declara la model card.
+La relevancia de este checkpoint es puramente de despliegue: reduce la tabla PLE fijada en memoria de host de 47,7 GB a 26,8 GB (requiere unos 32 GB de RAM libre) y, con la caché KV en FP8, aproximadamente duplica el número de tokens que caben por GiB de VRAM, lo que permite activar la ventana de contexto nativa de 262.144 tokens. No aporta mejoras de capacidad sobre el modelo base; es una receta de servido para vLLM.
 
-Es relevante ahora porque demuestra una vía concreta para desplegar modelos de ~124B con ventana de 262.144 tokens sobre hardware consumer de generación anterior, externalizando la memoria de n-gramas a RAM del host y manteniendo el cuerpo del modelo en 4 bits. El repositorio es muy reciente (creado el 23 de septiembre de 2026) y no tiene descargas ni likes registrados.
+El modelo requiere obligatoriamente una build de vLLM con el plugin int4 PLE y soporte de la arquitectura `qwen4_exp`, que no existe en vLLM estándar. El autor mantiene un fork (`zankich/vllm`) y una imagen preconstruida (`zankich/vllm-openai`). La licencia es `qwen-research`, lo que restringe el uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible de forma explícita. Modelo base Qwen3.8-Flash-Next (tag `qwen4_exp`), transformer con tabla de embeddings PLE de n-gramas y cabezal MTP injertado. El fichero `mtp-routed-experts-int4.safetensors` sugiere expertos enrutados, pero la model card no lo confirma |
-| Parametros totales | 123.958.298.771 (dato real de safetensors) |
-| Parametros activos | No disponible (no se confirma que la arquitectura sea MoE) |
-| Longitud de contexto | 262.144 tokens (inferido del fichero de escalas `qsa_kv_scales_262k.json`; no se declara de forma explícita en la model card) |
-| Tipos de cuantizacion | Cuerpo: W4A16 group-128 (compressed-tensors). Tabla PLE: INT4 group-32 simétrico, 8 nibbles por palabra int32, escalas de grupo en fp16 con la escala global del FP8 original incorporada. Caché KV: FP8. Cabezal MTP: bf16 |
-| Idiomas soportados | No disponible en la informacion proporcionada |
-| Licencia | `qwen-research` (campo `license: other` en Hugging Face) |
-| Formato de pesos | safetensors (compressed-tensors); repositorio de 101,4 GB |
-| Libreria de inferencia | vLLM, con plugin `ple-int4` y `VLLM_PLE_CPU_OFFLOAD=1` |
-| Descargas / likes | 0 / 0 |
-| Fecha de publicacion | 2026-09-23 |
+| Arquitectura | Transformer con mezcla de expertos (MoE) y capas QSA; soporte de decodificación especulativa MTP; ruta multimodal de visión |
+| Parametros totales | 123.958.298.771 |
+| Parametros activos | no disponible |
+| Longitud de contexto | 262.144 tokens (nativa, activable con caché KV FP8) |
+| Tipos de cuantizacion | Cuerpo W4A16 (GPTQ, compressed-tensors); tabla PLE INT4 (grupo 32, simétrico); caché KV FP8 E4M3 con escalas estáticas por capa; cabeza MTP en bf16 |
+| Idiomas soportados | no disponible |
+| Licencia | qwen-research (etiquetada como `other`) |
+| Formato de pesos | safetensors (95 GB, 40 archivos) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre el entrenamiento del modelo original: la model card no documenta número de tokens, composición del dataset, fases de RLHF o DPO, ni innovaciones de arquitectura más allá de los componentes visibles en el checkpoint. Lo que sí se describe con precisión es la composición del artefacto cuantizado, que combina cuatro piezas: el cuerpo en W4A16 group-128 heredado del checkpoint base, la tabla PLE de n-gramas reempaquetada a INT4, la caché KV en FP8 con escalas por capa y un cabezal MTP en bf16.
+El modelo subyacente es un transformer con capas de mezcla de expertos (MoE) y capas QSA (atención con escalas calibradas), según se deduce de la configuración de servido: el autor indica `--enable-expert-parallel` sobre las capas MoE y el sidecar de escalas cubre 12 capas QSA. Incluye una cabeza MTP (multi-token prediction) en bf16 que habilita decodificación especulativa opcional mediante `--speculative-config`. La ruta multimodal de visión se sirve junto al texto.
 
-La innovación técnica destacable es el contrato de layout del PLE en INT4. Los pesos se almacenan como palabras int32 de dimensión `[rows, 20]`, con 8 nibbles little-endian por palabra (el elemento *i* de cada grupo de 8 ocupa los bits `4i`). Los códigos se guardan con sesgo +8, de modo que `valor = (nibble - 8) * escala`. Las escalas son fp16 de forma `[rows, 5]`, una por grupo de 32 columnas, con la escala global del FP8 de origen incorporada, de forma que la decodificación aproxima `fp8_source * global_scale`. El residuo de ida y vuelta queda acotado por medio paso de cuantización. El fichero `ple-int4-manifest.json` registra los digests SHA-256 por shard y los residuos de autocomprobación del empaquetado.
-
-La decodificación de la tabla se externaliza a memoria del host mediante el plugin `ple-int4` de vLLM, que mantiene la tabla anclada (host-pinned) en lugar de residente en VRAM. El código de vLLM y el empaquetador se encuentran, según la model card, en el árbol `ple-int4` del repositorio `zankich/infra`.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni las etapas de alineación (RLHF/DPO) del modelo base en la información proporcionada. La innovación técnica documentada de este checkpoint es el contrato de empaquetado INT4 de la tabla PLE: palabras int32 `[rows, 20]` con 8 nibbles little-endian por palabra (elemento `i` del grupo de 8 en los bits `4i`), códigos almacenados con sesgo +8 (`value = (nibble - 8) * scale`), escalas fp16 `[rows, 5]` una por grupo de 32 columnas con la escala global del origen FP8 incorporada, y un residuo de ida y vuelta acotado a medio paso de cuantización. El manifiesto `ple-int4-manifest.json` registra digests SHA-256 por shard y los residuos de autocomprobación del empaquetador.
 
 ## Capacidades
 
-- Generación de texto a gran escala con un modelo de ~124B parámetros y ventana de hasta 262.144 tokens.
-- Recuperación mediante tabla de embeddings PLE de n-gramas: la tabla de 51B parámetros aporta memoria asociativa de n-gramas consultada por índice.
-- Decodificación con cabezal MTP (`mtp-routed-experts-int4.safetensors`) injertado en bf16; la model card no documenta la ganancia de rendimiento asociada.
-- Inferencia con caché KV cuantizada en FP8 con escalas por capa (`qsa_kv_scales_262k.json`).
-- Despliegue con tensor parallelism en vLLM (configuración validada declarada: TP4).
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no disponible.
-- Capacidades multilingües concretas: no disponible.
-- Visión, audio o modo de pensamiento explícito: no disponible en la información proporcionada.
+- Generación de texto y razonamiento con modo de pensamiento: el checkpoint incluye plantilla de chat y etiquetas de razonamiento que se parsean con `--reasoning-parser qwen3`.
+- Llamada a herramientas y funciones: soporte de tool calling automático con `--enable-auto-tool-choice` y `--tool-call-parser qwen3_coder`.
+- Comprensión de imágenes: la ruta multimodal de visión se sirve junto con el texto.
+- Contexto largo: ventana nativa de 262.144 tokens, viable gracias a la caché KV en FP8.
+- Decodificación especulativa mediante la cabeza MTP (opcional, configurable en el fork de vLLM).
+- Descarga de caché KV por niveles a otros dispositivos mediante el conector `TieringOffloadingSpec` (opcional).
+- Capacidades multilingües: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- **Despliegue on-premise de un modelo de ~124B sobre GPUs de 24 GB**: con el cuerpo en W4A16 y la tabla PLE en INT4 anclada en el host, el modelo se sirve en 4x RTX 3090 Ti con TP4, una configuración que con la tabla en FP8 (47,7 GB) no era viable en esa clase de tarjetas.
-- **Procesamiento de expedientes y documentación extensa sin trocear**: la ventana de 262.144 tokens permite ingerir contratos completos, actas de consejo o historiales clínicos en una sola pasada, evitando la pérdida de contexto que introduce el chunking en pipelines RAG.
-- **Análisis de repositorios de código completos**: el contexto de 262k admite árboles de proyecto enteros, lo que facilita tareas de revisión, detección de inconsistencias entre módulos y generación de parches que dependen de ficheros alejados entre sí.
-- **Atención al cliente multi-turno con historial largo**: al mantener conversaciones de cientos de miles de tokens, el modelo conserva decisiones tomadas en turnos muy anteriores sin necesidad de resúmenes intermedios que degradan la fidelidad.
-- **Investigación en cuantización de tablas de embeddings**: el repositorio sirve como banco de pruebas reproducible para medir el coste de calidad de pasar una tabla de 51B parámetros de FP8 a INT4, con manifiesto de digests y residuos de empaquetado incluidos.
-- **Evaluación de infraestructura vLLM con offload a host**: útil para equipos que necesitan comparar el rendimiento del plugin `ple-int4` frente a alternativas de offload parcial en clústeres con GPUs Ampere de 24 GB.
-- **Servicio interno de resumen y extracción estructurada**: sobre corpus largos (informes financieros, documentación regulatoria) donde la coherencia entre secciones distantes es crítica.
-- **Prototipado de asistentes sobre corpus propietarios en entornos con licencia de investigación**: adecuado para laboratorios que ya operan bajo los términos `qwen-research` y quieren validar capacidades antes de decidir una ruta de producción.
+- Servicio de chat con contexto largo en producción: con 262.144 tokens de ventana y caché KV FP8, se puede mantener un historial de conversación muy extenso o adjuntar documentación completa sin truncar, siempre sobre el fork de vLLM indicado.
+- Asistentes de código con herramientas: el parser `qwen3_coder` y el tool calling automático permiten integrar el modelo en un bucle de agente que invoca funciones, ejecuta tests y consulta repositorios.
+- Análisis de documentos con imágenes: la ruta de visión combinada con contexto largo sirve para extraer información de informes, capturas o diagramas junto a texto extenso.
+- Razonamiento multi-paso con trazas: el modo de pensamiento y las etiquetas de razonamiento permiten separar la cadena de pensamiento de la respuesta final en pipelines que auditan el proceso.
+- Despliegue multi-GPU con paralelismo de expertos: el checkpoint está pensado para servirse con `--tensor-parallel-size 4 --enable-expert-parallel`, adecuado para clústeres de 4 GPU donde se quiera maximizar el número de tokens en caché.
+- Investigación sobre cuantización: el contrato INT4 PLE, el manifiesto con digests y los residuos de autocomprobación lo convierten en un caso de estudio reproducible para evaluar el impacto de cuantizar tablas de embeddings de gran tamaño.
+- Evaluación comparativa de precisión: con la medición publicada de MMLU-Pro (0,8486 ± 0,0133) sirve como referencia para estudiar la degradación de la cuantización frente al modelo base.
 
 ## Benchmarks y rendimiento
 
 | Benchmark | Configuracion | Resultado |
 |---|---|---|
-| MMLU-Pro | lm-eval, plantilla de chat, 5-shot, 700 preguntas | 0.8486 ± 0.0133 |
-| MMLU-Pro (referencia del modelo base, medición publicada por omlx en 4 bits) | 300 preguntas | 0.843 |
+| MMLU-Pro (lm-eval, plantilla de chat, 5-shot, 700 preguntas) | Este checkpoint | 0,8486 ± 0,0133 |
+| MMLU-Pro (subconjunto de 300 preguntas, medición publicada omlx 4-bit) | Modelo base | 0,843 |
+| MMLU-Pro (subconjunto determinista de 112 preguntas, margen de calibración 1,20, tier limpio) | Caché KV FP8 activa | 0,875 ± 0,031 |
+| MMLU-Pro (mismo subconjunto de 112 preguntas) | KV dtype por defecto | 0,8839 |
 
-La model card interpreta estos valores como paridad con el checkpoint base, es decir, sin coste de calidad visible atribuible al reempaquetado INT4 de la tabla PLE. No se han publicado resultados de otros benchmarks (HumanEval, GSM8K, MMLU estándar, evaluaciones multilingües) en la información disponible. Tampoco se aportan datos de throughput ni de latencia.
+El autor describe la diferencia con la caché KV FP8 como paridad dentro del ruido estadístico. No se han publicado otros resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-Todas las cifras de VRAM son estimaciones derivadas del recuento de parámetros y del tamaño del repositorio, salvo donde se indica que son datos declarados:
-
-- **Cuerpo del modelo en W4A16**: aproximadamente 37-39 GB estimados (unos 73.000 millones de parámetros a 4 bits más las escalas y ceros de grupo-128 en fp16). El dato exacto no está publicado.
-- **Tabla PLE en INT4**: 26,8 GB en memoria del host anclada (dato declarado), frente a los 47,7 GB de la versión FP8. No consume VRAM cuando se usa `VLLM_PLE_CPU_OFFLOAD=1`.
-- **Caché KV en FP8 para 262k tokens**: no disponible; depende del número de capas y cabezas KV, que la model card no especifica. Con contextos largos es con toda probabilidad el componente dominante del consumo de VRAM.
-- **Configuración declarada como viable**: 4x RTX 3090 Ti (96 GB de VRAM agregada) con TP4, más RAM de host suficiente para la tabla anclada de 26,8 GB y el resto de buffers.
-- **GPUs recomendadas**: no disponible de forma explícita. Por capacidad de VRAM, el cuerpo cuantizado cabría en una A100 80 GB o H100 80 GB, pero habría que validar la caché KV a contexto largo y el offload del PLE en esa topología.
-- **¿Cabe en GPU consumer?**: sí, en GPUs de 24 GB agrupadas en tensor parallelism (el caso declarado son 4x RTX 3090 Ti). No se documenta una configuración de GPU única.
-- **Opciones de despliegue**: vLLM con el plugin `ple-int4` y la variable `VLLM_PLE_CPU_OFFLOAD=1`. No se publica conversión a GGUF ni compatibilidad con llama.cpp, Ollama o TGI en la información disponible.
-- **Latencia y throughput**: no disponible.
+- VRAM: el repositorio ocupa 95 GB en disco; con el cuerpo W4A16 y la caché KV FP8, el despliegue de referencia usa 4 GPU en tensor parallel con expert parallel. No se especifica la VRAM por GPU en la información disponible.
+- RAM de host: unos 32 GB libres obligatorios para la tabla PLE INT4 fijada en memoria (26,8 GB) con `VLLM_PLE_CPU_OFFLOAD=1`.
+- GPU recomendadas: no disponible de forma explícita; por el esquema de 4 GPU y el tamaño, se sitúa en el rango de A100/H100 o equivalentes con suficiente VRAM agregada.
+- GPU de consumo: no cabe en una GPU de consumo individual; el modelo requiere configuración multi-GPU.
+- Despliegue: exclusivamente vLLM con el fork `zankich/vllm` o la imagen `zankich/vllm-openai`. vLLM estándar no soporta ni la arquitectura `qwen4_exp` ni el plugin int4 PLE. Parámetros obligatorios: `--quantization compressed-tensors`, `--kv-cache-dtype fp8_e4m3`, `VLLM_QSA_KV_SCALES` apuntando al sidecar de escalas, `--tensor-parallel-size 4 --enable-expert-parallel`.
+- Latencia y throughput: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la información proporcionada, por lo que la comparación se limita al linaje directo del checkpoint.
-
-| Modelo | Parametros totales | Contexto | Cuantizacion del PLE | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Notas |
 |---|---|---|---|---|---|
-| zankich/Qwen3.8-Flash-Next-W4A16-Merlin-INT4PLE | 123.958.298.771 | 262.144 tokens (inferido) | INT4 group-32, 26,8 GB en host | qwen-research | Hugging Face, 0 descargas |
-| halt95/Qwen3.8-Flash-Next-W4A16-Merlin (modelo base) | No disponible | No disponible | FP8, 47,7 GB en host | No disponible | Hugging Face |
-| Otros modelos de ~124B con contexto largo | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Este checkpoint (INT4PLE, FP8-KV) | 123.958.298.771 | 262.144 | W4A16 + PLE INT4 + KV FP8 | qwen-research | Requiere fork de vLLM; tabla PLE en 26,8 GB de RAM de host |
+| halt95/Qwen3.8-Flash-Next-W4A16-Merlin | no disponible | no disponible | W4A16, PLE FP8 | qwen-research (heredada) | Modelo base directo; tabla PLE de 47,7 GB; sin caché KV FP8 calibrada |
+| Qwen/Qwen3.8-Flash-Next | no disponible | no disponible | sin cuantizar | qwen-research | Modelo original de referencia |
+
+No se dispone de datos de benchmarks de los modelos comparables distintos de la medición omlx 4-bit citada (0,843 en 300 preguntas), por lo que la comparación de rendimiento queda limitada a esa referencia.
 
 ## Limitaciones y advertencias
 
-- **Cadena de derivación no auditada**: el checkpoint es el reempaquetado de un cuantizado comunitario (`halt95`), que a su vez deriva de un modelo Qwen con el tag experimental `qwen4_exp`. No hay publicación de Alibaba/Qwen que respalde esta variante concreta.
-- **Licencia restrictiva**: la licencia es `qwen-research`, lo que en la práctica limita el uso comercial. Cualquier despliegue en producción debe revisar los términos completos antes de operar.
-- **Adopción nula**: 0 descargas y 0 likes en el momento de la consulta, sin validación independiente de la calidad del reempaquetado más allá de la medición de MMLU-Pro reportada por el propio autor.
-- **Riesgo de alucinación no evaluado**: no se aportan evaluaciones de factualidad, veracidad ni tasas de alucinación, ni para el modelo base ni para esta variante.
-- **Idiomas no documentados**: se desconoce la cobertura lingüística real; no se debe asumir competencia multilingüe sin verificación.
-- **Error de cuantización acotado pero no nulo**: el reempaquetado INT4 introduce un residuo de ida y vuelta de hasta medio paso de cuantización por elemento de la tabla PLE. Aunque la medición declarada no detecta pérdida, se trata de una tabla de 51B parámetros y el efecto puede manifestarse en tareas no cubiertas por MMLU-Pro.
-- **Intervalo de confianza amplio**: el resultado de 0.8486 ± 0.0133 sobre 700 preguntas implica que la diferencia frente al 0.843 del base (medido además sobre un subconjunto de 300 preguntas) no es concluyente.
-- **Dependencia de un plugin específico**: el modelo solo es utilizable con vLLM más el plugin `ple-int4` del repositorio `zankich/infra`. No hay GGUF ni soporte en otros motores, lo que reduce la portabilidad.
-- **Consumo de RAM del host**: la tabla anclada de 26,8 GB debe estar residente en memoria del sistema; en máquinas con poca RAM o con contenedores limitados, esto puede ser un cuello de botella no evidente en el cálculo de VRAM.
-- **Metadatos incompletos**: no se documentan arquitectura exacta, número de parámetros activos, idiomas, pipeline de inferencia ni composición del dataset de entrenamiento, lo que dificulta la reproducibilidad.
-- **Fechas del repositorio**: la creación y la actualización están fechadas en septiembre de 2026; conviene verificar el estado del repositorio antes de integrarlo en cualquier flujo.
+- Dependencia crítica de un fork no oficial de vLLM: sin el plugin int4 PLE y el soporte `qwen4_exp`, el modelo no carga. Esto ata el despliegue al mantenimiento de `zankich/vllm` y su imagen Docker.
+- Licencia `qwen-research`: restringe el uso comercial; es necesario revisar los términos del modelo base antes de cualquier despliegue productivo.
+- Consumo de RAM de host no trivial: 32 GB libres solo para la tabla PLE, además de la memoria del resto del sistema.
+- Riesgo de alucinación: inherente a los modelos de lenguaje; no se documentan mitigaciones específicas en la información disponible.
+- Idiomas soportados no documentados: no se puede garantizar calidad fuera de los idiomas del modelo base, que no se detallan.
+- La ganancia de calidad de la caché KV FP8 es paridad dentro del ruido (0,875 ± 0,031 frente a 0,8839 en 112 preguntas); no debe presentarse como mejora de precisión.
+- El residuo de la cuantización INT4 de la tabla PLE está acotado a medio paso de cuantización, pero no se publican evaluaciones específicas del impacto de esta conversión sobre la calidad final más allá de la medición agregada de MMLU-Pro.
+- Sesgos conocidos: no disponible en la información proporcionada.
+- Solo 138 descargas y 0 likes en el momento de la consulta: comunidad reducida, menor probabilidad de que los problemas de integración estén resueltos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/zankich/Qwen3.8-Flash-Next-W4A16-Merlin-INT4PLE
-- Modelo base (halt95): https://huggingface.co/halt95/Qwen3.8-Flash-Next-W4A16-Merlin
-- Perfil del autor del cuantizado original (halt95): https://huggingface.co/halt95
-- Repositorio `zankich/infra`, árbol `ple-int4` (código del plugin de vLLM y del empaquetador): citado en la model card, URL directa no disponible
-- Paper, blog o demo oficial: no disponible en la información proporcionada
+- Modelo base cuantizado (halt95): https://huggingface.co/halt95/Qwen3.8-Flash-Next-W4A16-Merlin
+- Modelo original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Fork de vLLM con soporte int4 PLE y `qwen4_exp`: https://github.com/zankich/vllm
+- Imagen Docker de servido: https://hub.docker.com/r/zankich/vllm-openai/tags

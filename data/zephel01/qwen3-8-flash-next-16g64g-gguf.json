@@ -5,7 +5,7 @@
   "author": "zephel01",
   "url": "https://huggingface.co/zephel01/Qwen3.8-Flash-Next-16G64G-GGUF",
   "created_at": "2026-11-04T10:19:07.000Z",
-  "updated_at": "2026-11-09T00:29:15.000Z",
+  "updated_at": "2026-11-16T23:30:14.000Z",
   "license": "qwen-community-1.0",
   "license_family": "non-commercial",
   "pipeline_tag": "text-generation",
@@ -36,11 +36,11 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 148,
+  "downloads_30d": 164,
   "trending_score": 0,
   "parameters": 176943899520,
   "parameters_human": "176.94B",
-  "storage_bytes": 86890131136,
+  "storage_bytes": 86890396292,
   "storage_human": "86.9 GB",
   "context_length": 262144,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
@@ -56,16 +56,5 @@
   "renamed_to": "zephel01/Qwen3.8-Flash-Next-IQ3_M-16G64G-GGUF",
   "renamed_at": "2026-11-11T08:13:35.008Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "zephel01/Qwen3.8-Flash-Next-16G64G-GGUF · Hugging Face",
-      "url": "https://huggingface.co/zephel01/Qwen3.8-Flash-Next-16G64G-GGUF",
-      "snippet": "Text Generation model with 177B parameters. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "zephel01/Qwen3.8-Flash-Next-16G64G-32G96G-GGUF · Hugging Face",
-      "url": "https://huggingface.co/zephel01/Qwen3.8-Flash-Next-16G64G-32G96G-GGUF",
-      "snippet": "Qwen3.8-Flash-Next GGUF (for 16 GB GPU + 64 GB RAM / 32 GB GPU + 96 GB RAM) — coming soon Work in progress. This repository will hold GGUFs of Qwen3.8-Flash-Next made for two PC sizes, with every expert kept (no expert pruning), measured in Abyss and released as BETA: 16G64G/ a 16 GB GPU + 64 GB ..."
-    }
-  ]
+  "sources": []
 }

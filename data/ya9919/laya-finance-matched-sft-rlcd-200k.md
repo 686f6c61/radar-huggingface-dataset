@@ -2,99 +2,100 @@
 
 ## Resumen
 
-`laya-finance-matched-sft-rlcd-200k` es un checkpoint de ajuste fino publicado por el usuario `ya9919` sobre su propio modelo `ya9919/laya-finance-matched-sft-200k`. No es un modelo generativo de propósito general: es un encoder de 421.293.830 parámetros (FP16) con una cabeza de decisión nativa ("decision head") orientada a responder preguntas financieras de opción múltiple sobre un conjunto concreto de encuestas (CHFS/CGSS). La etapa documentada es una pasada adicional de ajuste sobre el mismo conjunto de 200.000 filas downstream ya usado en la etapa SFT previa, con un total acumulado de 400.000 exposiciones a fila y 200.000 filas distintas.
+`laya-finance-matched-sft-rlcd-200k` es un checkpoint de investigación desarrollado por el usuario `ya9919` en el marco del proyecto S²-MAS, un entorno de simulación multiagente a escala social orientado a estudiar decisiones financieras de hogares. El modelo no es un generador de texto conversacional, sino un encoder con cabeza de decisión que puntúa opciones candidatas ante preguntas financieras de opción múltiple. Se inicializa desde `ya9919/laya-finance-matched-sft-200k` y aplica una pasada adicional de 200.000 filas con el método RLCD (cross-entropy combinada con un término de policy-gradient sobre logits de opciones ruidosas).
 
-La relevancia es acotada y muy específica: se trata de un artefacto de reproducción de investigación, ligado a la librería `laya` (versión 0.4.2) y al repositorio `mas-simulation`. El autor publica métricas de evaluación sobre un subconjunto congelado de 240.458 filas y 119 versiones de pregunta (accuracy 0,7393; F1 macro por pregunta 0,3605; cero predicciones inválidas), lo que permite auditar el comportamiento del modelo en esa tarea concreta.
+Técnicamente parte de un encoder `answerdotai/ModernBERT-large` con una cabeza de decisión Laya de dos capas, sumando 421.293.830 parámetros en formato safetensors (0,8 GB en el repositorio). Su relevancia es acotada y muy específica: sirve como referencia de adaptación con presupuesto fijo dentro de la comparativa de rutas de decisión del paper S²-MAS, no como modelo de propósito general.
 
-Conviene subrayar que el modelo solo declara inglés, no expone pipeline en Hugging Face, no tiene descargas ni likes, y su model card no describe arquitectura interna más allá de "encoder" más "cabeza de decisión". No hay información sobre ventana de contexto efectiva, composición del corpus de preentrenamiento ni alineamiento (RLHF/DPO).
+La licencia es restrictiva (S²-MAS Controlled Model Research License v1.2): uso científico no comercial, sin redistribución ni extracción. El modelo está entrenado y evaluado únicamente en inglés y su interfaz de inferencia es la nativa de Laya, no la de `transformers` estándar.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Encoder transformer con cabeza de decisión nativa (detalles internos no disponibles) |
+| Arquitectura | Encoder transformer (ModernBERT-large) con cabeza de decisión Laya de dos capas |
 | Parametros totales | 421.293.830 |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible (la configuración registra la ventana de entrenamiento, no se publica el valor) |
-| Tipos de cuantizacion | No disponible; pesos publicados en FP16 nativo |
-| Idiomas soportados | Ingles (`en`) |
-| Licencia | Apache-2.0 (con atribución al modelo base) |
-| Formato de pesos | `safetensors` (FP16), mas `rl_agent_config.json`, `encoder/config.json`, `tokenizer/tokenizer.json`, `tokenizer/tokenizer_config.json` |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (inferencia reportada en BF16 nativo) |
+| Idiomas soportados | inglés (en) |
+| Licencia | S²-MAS Controlled Model Research License v1.2 (uso científico no comercial, sin redistribución) |
+| Formato de pesos | safetensors |
+| Biblioteca | laya |
+| Modelo base | ya9919/laya-finance-matched-sft-200k |
+| Tamaño del repositorio | 0,8 GB |
+| Precisión de inferencia | PyTorch BF16 nativo |
 
 ## Arquitectura y entrenamiento
 
-El autor describe el artefacto como "complete fine-tuned encoder and original native decision head": un encoder ajustado más la cabeza de decisión original del proyecto, con pesos en FP16 y atribución al modelo base `ya9919/laya-finance-matched-sft-200k`. El método de esta etapa se denomina `native-laya-rlcd-additional-pass` y consiste en una pasada adicional sobre el mismo conjunto de filas downstream ya empleado en la etapa SFT: 200.000 filas distintas del split de entrenamiento de QA en inglés de cuatro fuentes, con 200.000 exposiciones a fila en esta etapa y 400.000 acumuladas (200.000 filas distintas acumuladas). La selección del checkpoint se hace con un `dev20k` fijo, usando F1 macro por pregunta como criterio primario y accuracy como desempate.
+El modelo es un encoder `answerdotai/ModernBERT-large` fine-tuneado con la cabeza de decisión original de Laya, que puntúa conjuntamente el estado del hogar, la pregunta y el menú completo de opciones candidatas. La inferencia no genera texto libre: produce una puntuación por opción y selecciona la respuesta. Esto lo sitúa en la ruta de "encoder option scoring" de las seis rutas de decisión comparadas en el paper S²-MAS.
 
-No se documentan el número de tokens de preentrenamiento, la composición del corpus, ni si hubo RLHF, DPO u otra fase de alineamiento. Tampoco se detallan innovaciones de arquitectura (atención lineal, decodificación especulativa, etc.). Lo que sí se explicita es la receta de inferencia: codificación nativa de entrada completa que calcula las ventanas de tokens suficientes y rechaza el desbordamiento en lugar de truncar silenciosamente; el autor advierte que la ventana registrada en la configuración corresponde al entrenamiento y no debe interpretarse como una instrucción para truncar entradas de evaluación más largas. La carga se realiza con `laya==0.4.2`, PyTorch 2.12.1 y Transformers 5.19.0.
+El entrenamiento parte del checkpoint SFT200 y ejecuta una pasada adicional de continuación RLCD sobre las mismas 200.000 filas distintas de la partición de entrenamiento de QA de decisión. RLCD combina la cross-entropy con un término de policy-gradient de tipo proper-score sobre logits ruidosos de las opciones. Las exposiciones acumuladas del checkpoint seleccionado son 400.000 filas (200.000 distintas), y la selección del punto de control se hizo con un conjunto de desarrollo fijo de 20.000 ejemplos. El proyecto declara que el aprendizaje de decisiones usa datos de encuestas reales; los registros de entrenamiento y evaluación no se distribuyen y el motor GENESE/MAS permanece privado.
 
 ## Capacidades
 
-- Respuesta a preguntas financieras de opción múltiple: el modelo consume el estado, la pregunta y todas las opciones para emitir una decisión.
-- Clasificación/decisión sobre ítems de encuesta financiera (CHFS/CGSS) con etiquetas observadas.
-- Evaluación determinista sin predicciones inválidas: 0 inválidas sobre las 240.458 filas del subconjunto común congelado.
-- Manejo de entradas largas mediante codificación de ventanas múltiples con rechazo explícito de desbordamiento.
-- Uso como artefacto de reproducción de investigación dentro del ecosistema `laya`.
-- No se declara soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo "thinking".
-- Capacidad multilingüe: no disponible; solo se declara inglés.
+- Clasificación de elección múltiple sobre preguntas financieras de hogar (uso de tarjetas de crédito, cuentas de depósito a la vista, cuentas de valores, depósitos a plazo no vencidos, etc.).
+- Puntuación de menús completos de opciones candidatas, no solo generación de una respuesta.
+- Procesamiento conjunto de estado del hogar, pregunta y menú de opciones.
+- Salida con cero decisiones inválidas en el test común reportado.
+- No soporta generación de texto libre, tool calling, agentes ni razonamiento multi-paso en el sentido de un LLM conversacional.
+- Capacidad multilingüe: no disponible (solo inglés).
+- Capacidades especiales: no disponible más allá de la cabeza de decisión.
 
 ## Casos de uso
 
-- Investigación reproducible en QA financiero: cargar el checkpoint con `laya.train.load_checkpoint` y replicar las métricas publicadas sobre el subconjunto común de 240.458 filas, sirviendo como línea base auditable frente a otras etapas del proyecto.
-- Evaluación comparada de etapas de ajuste: al compartir conjunto de filas con el checkpoint SFT previo, permite aislar el efecto de una pasada adicional de entrenamiento manteniendo constante el conjunto de datos downstream.
-- Anotación asistida de respuestas en encuestas financieras: el modelo puede predecir la opción seleccionada en ítems de CHFS/CGSS y usarse como preetiquetador para revisión humana, con la ventaja de que no genera salidas inválidas en el subconjunto evaluado.
-- Auditoría de sesgo y calibration en dominios financieros: al ser un modelo pequeño (421 M parámetros) y con pesos abiertos, se puede ejecutar en local para analizar la distribución de predicciones por versión de pregunta (119 versiones documentadas).
-- Componente de un sistema multiagente de simulación: el repositorio `mas-simulation` sugiere su uso como cabecera de decisión dentro de simulaciones agregadas, donde el modelo actúa como policy de respuesta y no como generador de texto libre.
-- Despliegue en infraestructura modesta para pruebas internas: al ocupar del orden de 0,8 GB en FP16, cabe en CPU o en una GPU de gama de entrada para experimentos de integración continua.
-- Referencia metodológica para quien diseñe evaluaciones por pregunta: el uso de F1 macro por pregunta junto con accuracy como desempate es replicable en otros conjuntos de QA con desbalance entre ítems.
+- Simulación de decisiones financieras de hogares: el modelo puntúa opciones de respuesta ante preguntas de encuesta financiera, alimentando el motor de transición de estados del framework S²-MAS para estudiar consumo, reservas de efectivo y pagos.
+- Investigación comparativa de métodos de decisión: sirve como checkpoint de referencia de la ruta "encoder option scoring" frente a las otras cinco rutas del paper (LLM con cabeza de decisión, SFT next-token, clasificación dinámica, encoder multimodal e interfaces de proveedor).
+- Replicación de experimentos con presupuesto fijo: al compartir padre y presupuesto de pasada adicional con el control de continuación CE, permite aislar el efecto del término RLCD en la comparativa.
+- Evaluación de robustez en QA financiera de opción múltiple: con 240.458 registros de test, 119 versiones de pregunta y 8.275 grupos de hogar, es adecuado para medir accuracy y F1 macro por pregunta.
+- Análisis de calibración de decisiones: la cabeza de decisión produce puntuaciones por opción que pueden analizarse para estudiar la confianza del modelo en escenarios sintéticos de hogares.
+- Docencia e investigación académica en modelado de agentes económicos: únicamente en el ámbito científico no comercial permitido por la licencia.
 
 ## Benchmarks y rendimiento
 
-Evaluación con etiquetas observadas sobre el subconjunto común CHFS/CGSS congelado de 240.458 filas y 119 versiones de pregunta. El autor advierte que el split de test completo en inglés del repositorio fuente tiene 418.597 filas, por lo que los denominadores no son comparables.
+Test común retenido de 240.458 registros de QA, 119 versiones de pregunta y 8.275 grupos de hogar. La selección del checkpoint se hizo con datos de desarrollo antes del test.
 
-| Metrica | Resultado |
-|---|---:|
-| Accuracy | 0,739268396 |
-| F1 macro por pregunta | 0,360503211 |
-| Predicciones invalidas | 0 |
+| Checkpoint / referencia | Accuracy (%) | F1 macro por pregunta (%) | Decisiones inválidas |
+|---|---:|---:|---:|
+| **Este checkpoint** | **73,9268** | **36,0503** | **0** |
+| Padre SFT200 | 73,8753 | 35,9949 | 0 |
+| Laya nativo original, referencia BF16 emparejada | 60,1972 | 29,5995 | 0 |
 
-No se han publicado en la información disponible resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks estándar, ni comparaciones numéricas con modelos de la misma categoría. El autor indica que los resultados de simulación financiera y los resultados históricos del sistema Fin-Laya sobre datos completos se reportan por separado.
+Frente a su padre SFT200, el paper reporta +0,0516 puntos de accuracy (IC 95 %: 0,0029–0,1020) y +0,0554 puntos de F1 macro por pregunta (−0,0380–0,1654). Las diferencias emparejadas se calculan sobre las predicciones subyacentes antes del redondeo mostrado.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 0,85 GB solo para pesos en FP16 (421,3 M de parámetros); con activaciones y overhead del runtime, un entorno de 2-3 GB es suficiente en la práctica.
-- GPU recomendadas: cualquier GPU con 4 GB o más de memoria (GTX 1650, RTX 3050, RTX 4060, T4, L4); no requiere A100 ni H100.
-- Cabe en GPU de consumo: sí, holgadamente, en cualquier tarjeta moderna de 4 GB o superior; también es viable en CPU para evaluación por lotes.
-- Opciones de despliegue: la receta nativa es la librería `laya` 0.4.2 con PyTorch 2.12.1 y Transformers 5.19.0. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, y al no ser un modelo generativo causal estándar es poco probable que esos runners lo carguen sin adaptación.
-- Latencia y throughput: no disponibles. El coste dominante será la codificación de múltiples ventanas de tokens cuando la entrada (estado, pregunta y todas las opciones) exceda la ventana de entrenamiento.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 421 M de parámetros en BF16 el peso ronda los 0,84 GB, por lo que la inferencia cabe holgadamente en GPUs de consumo.
+- GPU recomendadas: no disponible en la información proporcionada; por tamaño, cualquier GPU con al menos 2–4 GB de VRAM libre debería ser suficiente en BF16.
+- Cabe en GPU de consumo: sí, por el tamaño del modelo (no se especifican modelos concretos).
+- Opciones de despliegue: interfaz nativa de Laya con la configuración de encoder, tokenizer y cabeza de decisión suministradas. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks de alternativas en la información proporcionada, por lo que la comparación numérica con otros modelos de la misma categoría no está disponible. La única comparación documentada es con su propio checkpoint de partida.
-
-| Modelo | Parametros | Contexto | Accuracy (subconjunto 240.458 filas) | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Accuracy en test común | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `laya-finance-matched-sft-rlcd-200k` (este modelo) | 421.293.830 | No disponible | 0,739268396 | Apache-2.0 | Hugging Face |
-| `ya9919/laya-finance-matched-sft-200k` (modelo base) | No disponible en la información | No disponible | No disponible | Apache-2.0 (heredada) | Hugging Face |
-| Otros modelos de QA financiero | No disponible | No disponible | No disponible | No disponible | No disponible |
+| laya-finance-matched-sft-rlcd-200k | 421.293.830 | no disponible | 73,9268 % | S²-MAS Controlled Research v1.2 | Hugging Face (65 descargas) |
+| laya-finance-matched-sft-200k (padre) | no disponible | no disponible | 73,8753 % | no disponible | Hugging Face |
+| Laya nativo original (referencia BF16) | no disponible | no disponible | 60,1972 % | no disponible | no disponible |
+
+No se dispone de datos de benchmarks comparables con modelos de la misma categoría fuera del conjunto de rutas del paper S²-MAS.
 
 ## Limitaciones y advertencias
 
-- Propósito muy restringido: es una cabeza de decisión para QA de opción múltiple sobre encuestas financieras concretas, no un asistente conversacional ni un modelo de generación de texto libre.
-- El F1 macro por pregunta (0,3605) es notablemente inferior a la accuracy (0,7393), lo que indica un rendimiento muy desigual entre las 119 versiones de pregunta; la media global oculta fallos en subconjuntos específicos.
-- Solo inglés declarado; no hay evidencia de comportamiento en castellano ni en otros idiomas.
-- Riesgo de alucinación no caracterizado: al emitir una opción entre las disponibles, el modo de fallo esperable es la elección incorrecta sistemática, no la invención de contenido, pero no se publican análisis de calibración ni de incertidumbre.
-- Sesgos no documentados: no se publica información sobre composición demográfica de CHFS/CGSS ni sobre sesgos derivados de los datos de encuesta; el modelo puede heredar sesgos de la población muestreada.
-- Sobreajuste al conjunto downstream: 400.000 exposiciones acumuladas sobre 200.000 filas distintas implican dos épocas efectivas sobre el mismo conjunto, lo que limita la generalización fuera de esa distribución.
-- Advertencia de evaluación: los resultados publicados usan un subconjunto de 240.458 filas, distinto del test completo de 418.597 filas del repositorio fuente; no son comparables entre sí.
-- Restricciones de licencia: los artefactos del modelo son Apache-2.0, pero los datos de entrenamiento retienen los términos `chfs-cgss-cfps-clds-source-data-terms` del repositorio de QA, lo que puede condicionar el uso comercial de derivados entrenados con esos datos.
-- Dependencia de versiones concretas: la receta exige `laya==0.4.2`, PyTorch 2.12.1 y Transformers 5.19.0; otras combinaciones pueden no cargar el checkpoint correctamente.
-- Sin pipeline declarado en Hugging Face, sin descargas ni validación de la comunidad: la fiabilidad del artefacto depende únicamente de la reproducibilidad declarada por el autor.
-- La búsqueda web realizada no devolvió resultados relevantes sobre este modelo, por lo que no hay verificación externa independiente de las métricas.
+- Modelo de investigación acotado: no es un LLM generativo; solo puntúa opciones candidatas en un formato de QA financiera concreto.
+- Licencia restrictiva: uso científico no comercial, sin redistribución, sin ingeniería inversa, extracción o destilación no autorizadas. El uso comercial no está permitido.
+- Solo inglés; no hay soporte multilingüe declarado.
+- Los registros de entrenamiento y evaluación no se distribuyen y el acceso a los datos fuente requiere autorización del proveedor.
+- Riesgo de alucinación no aplicable en el sentido habitual (no genera texto), pero las puntuaciones de opción pueden ser incorrectas en estados de hogar fuera de distribución.
+- La mejora frente al padre es muy pequeña (+0,0516 puntos de accuracy) y el intervalo de confianza de F1 incluye valores negativos; la ventaja no es concluyente.
+- Requiere el estado del hogar en tiempo de inferencia; sin él, las respuestas no son válidas.
+- El motor GENESE/MAS es privado, lo que limita la reproducibilidad completa del entorno de simulación.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/ya9919/laya-finance-matched-sft-rlcd-200k
 - Modelo base: https://huggingface.co/ya9919/laya-finance-matched-sft-200k
-- Repositorio de reproducción y evidencia agregada: https://github.com/KataDavidXD/mas-simulation
-- Paper, blog o demo adicionales: no disponible
-- La búsqueda web no devolvió resultados relevantes sobre este modelo; no se han encontrado enlaces adicionales que verificar.
+- Licencia: https://huggingface.co/ya9919/laya-finance-matched-sft-rlcd-200k/blob/main/LICENSE
+- Paper S²-MAS: https://github.com/KataDavidXD/s2-mas/blob/main/paper/S2_MAS_Paper.pdf
+- Ejemplos de QA (JSON): https://huggingface.co/ya9919/laya-finance-matched-sft-rlcd-200k/blob/main/qa_examples.json
+- Encoder base: https://huggingface.co/answerdotai/ModernBERT-large

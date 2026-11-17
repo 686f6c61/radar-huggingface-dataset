@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "SudoRmRfMe/testgemma4",
+  "slug": "sudormrfme-testgemma4",
+  "author": "SudoRmRfMe",
+  "url": "https://huggingface.co/SudoRmRfMe/testgemma4",
+  "created_at": "2026-11-17T10:47:23.000Z",
+  "updated_at": "2026-11-17T10:47:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma2",
+    "obliteratus",
+    "abliteration",
+    "uncensored",
+    "obliterate",
+    "en",
+    "base_model:google/gemma-2-9b",
+    "base_model:finetune:google/gemma-2-9b",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5209992676,
+  "parameters_human": "5.21B",
+  "storage_bytes": 6552809464,
+  "storage_human": "6.6 GB",
+  "context_length": null,
+  "base_model": "google/gemma-2-9b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

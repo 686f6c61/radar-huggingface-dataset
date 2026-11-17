@@ -2,88 +2,100 @@
 
 ## Resumen
 
-PLatour-Qwen3-235B-to-1.7B-Chemistry-CoT es un artefacto de investigación publicado por zen-E que implementa el método PACT (Prefill-to-Autoregressive Cross-model Transfer) descrito en el paper "On the Opportunities and Challenges of Prefill-to-Autoregressive Cross-Model Transfer" (arXiv:2611.06976). No es un modelo de lenguaje autónomo en el sentido convencional: es un conjunto de puentes lineales entrenados entre dos backbones congelados, un emisor grande (Qwen3-235B-A22B-FP8) que codifica el prompt y un receptor pequeño (Qwen3-1.7B) que genera la respuesta de forma independiente.
+PLatour-Qwen3-235B-to-1.7B-Chemistry-CoT es un checkpoint de investigación publicado por zen-E que implementa el método PACT (Prefill-to-Autoregressive Cross-model Transfer) descrito en el paper arXiv:2611.06976. No se trata de un modelo completo, sino de un conjunto de proyecciones lineales (bridges) entrenadas entre dos backbones congelados de Qwen3: un emisor grande (Qwen3-235B-A22B-FP8) que codifica el prompt y un receptor pequeño (Qwen3-1.7B) que genera la respuesta de forma independiente.
 
-La relevancia del artefacto es metodológica más que de producto. El paper propone PACT-Check, un conjunto de controles (Dummy Transfer, Irrelevant Transfer, Self-Communication y Trained Receiver) para verificar si una mejora de tarea proviene realmente de la información transferida por el emisor o de la simple adaptación del receptor. Este repositorio corresponde al experimento 13 del proyecto, centrado en razonamiento químico con cadena de pensamiento (chemistry_cot).
+El objetivo del método es transferir capacidad de razonamiento de un modelo de 235B parámetros a uno de 1.7B sin modificar los pesos de ninguno de los dos, entrenando únicamente puentes lineales inicializados a cero con recompensas de tarea (GRPO). El checkpoint corresponde al experimento 13 del proyecto, centrado en razonamiento químico con cadena de pensamiento (chemistry_cot).
 
-El repo pesa 0,9 GB y contiene únicamente las proyecciones de los puentes, no los pesos completos de los backbones. Los modelos emisor y receptor deben descargarse por separado. El autor declara explícitamente que la exportación no incluye puntuaciones de benchmark ni protocolo de selección de checkpoint, y que no es cargable mediante `AutoModel.from_pretrained` ni PEFT, sino a través del loader propio del proyecto PLatour.
+Es relevante porque explora una vía alternativa a la destilación clásica: en lugar de copiar pesos o generar datos sintéticos, se aprende una interfaz ligera entre representaciones de modelos de distinta escala. El repositorio ocupa 0.9 GB y contiene solo las proyecciones, no los pesos completos de ninguno de los dos modelos.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Puentes lineales (bridge projections) entre dos transformers congelados; emisor Qwen3-235B-A22B (MoE) y receptor Qwen3-1.7B (dense) |
-| Parámetros totales | No disponible (el repo de 0,9 GB contiene solo las proyecciones del puente, no los backbones) |
-| Parámetros activos | No disponible para el artefacto; el emisor Qwen3-235B-A22B es MoE con 22B activos según su denominación |
+| Arquitectura | Puentes lineales (bridge projections) entre dos backbones transformer Qwen3 congelados; soporta modelos de atención híbrida |
+| Parametros totales | No disponible (el checkpoint contiene solo las proyecciones, no los backbones; el receptor es Qwen3-1.7B y el emisor Qwen3-235B-A22B-FP8) |
+| Parametros activos | No disponible (el emisor es MoE con 235B totales y 22B activos según su nombre; el receptor es denso de 1.7B) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantización | No disponible (el emisor referenciado se distribuye en FP8) |
+| Tipos de cuantizacion | No disponible (el emisor se distribuye en FP8; no se documentan cuantizaciones del bridge) |
 | Idiomas soportados | No disponible |
-| Licencia | Apache-2.0 (los modelos upstream conservan sus propias licencias) |
-| Formato de pesos | safetensors con loader personalizado (`custom-loader`); no compatible con `AutoModel.from_pretrained` ni PEFT |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors, con cargador personalizado (`custom-loader`); no compatible con `AutoModel.from_pretrained` |
 
 ## Arquitectura y entrenamiento
 
-PACT separa el cómputo en dos fases: un emisor grande procesa el prompt y expone representaciones ocultas (prefill), y un receptor pequeño genera la respuesta de forma autorregresiva sin acceso directo al emisor durante la decodificación. El entrenamiento consiste en ajustar puentes lineales ligeros entre backbones congelados, partiendo de proyecciones inicializadas a cero y optimizando con recompensas de tarea. El método soporta modelos con atención híbrida, según la model card.
+PACT separa el proceso de inferencia en dos fases: un emisor grande procesa el prompt y produce representaciones ocultas, y un receptor pequeño genera la respuesta de forma autorregresiva a partir de una proyección lineal de esas representaciones. Los backbones permanecen congelados; solo se entrenan los puentes lineales, inicializados a cero, mediante recompensas de tarea con GRPO. El mapeo de capas para este checkpoint es `uniform_endpoints` (a diferencia del variante PLatour-SFT, que usa `last_aligned`).
 
-El experimento 13 se centra en `chemistry_cot`, es decir, razonamiento químico con cadena de pensamiento. El dataset asociado es `zen-E/PLatour-Qwen3-Data`. El paper introduce además PACT-Check con cuatro controles (Dummy Transfer, Irrelevant Transfer, Self-Communication, Trained Receiver) para descartar que las ganancias observadas se deban solo a la adaptación del receptor. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO más allá de la mención a "task rewards".
+El paper introduce además PACT-Check, un conjunto de controles (Dummy Transfer, Irrelevant Transfer, Self-Communication y Trained Receiver) para verificar que las mejoras provienen de información útil del emisor y no de la mera adaptación del receptor. El entrenamiento se realizó sobre el dataset zen-E/PLatour-Qwen3-Data, con la tarea chemistry_cot como objetivo del experimento 13. No se especifican en la información disponible el número de tokens de entrenamiento ni la composición detallada del dataset.
 
 ## Capacidades
 
-- Generación de texto autorregresiva mediante el receptor Qwen3-1.7B, condicionada por las representaciones transferidas del emisor.
-- Razonamiento con cadena de pensamiento en el dominio químico (chemistry_cot), objetivo específico del experimento 13.
-- Transferencia cross-model de representaciones ocultas entre un emisor MoE de 235B y un receptor dense de 1.7B.
-- Soporte de modelos con atención híbrida en el diseño del método PACT.
-- No se documentan capacidades de tool calling, function calling, agentes, visión, audio ni multilingüismo en la información disponible.
-- No se documenta un modo "thinking" explícito más allá del formato CoT del dataset de entrenamiento.
+- Generación de respuestas de razonamiento químico con cadena de pensamiento (chain-of-thought), objetivo específico del experimento 13.
+- Razonamiento multi-paso delegado: el emisor de 235B aporta la codificación del prompt y el receptor de 1.7B produce la secuencia final.
+- Generación de texto autorregresiva estándar a través del receptor Qwen3-1.7B.
+- Integración con backend vLLM para la generación (`backend="vllm"` en la API del proyecto).
+- Soporte de conversaciones por roles (`messages` con `role` y `content`), lo que permite uso conversacional multi-turno.
+- No se documentan capacidades de tool calling, function calling, visión, audio ni agentes en la información disponible.
+- El modelo no ejecuta código generado; la generación devuelve solo texto.
 
 ## Casos de uso
 
-- Investigación en transferencia cross-model: reproducir el experimento 13 con el loader de PLatour para estudiar si la información del emisor mejora tareas de química frente a los controles de PACT-Check.
-- Auditoría metodológica de PACT: ejecutar Dummy Transfer e Irrelevant Transfer para verificar que las ganancias no provienen de la adaptación del receptor.
-- Estudio de eficiencia en inferencia: comparar el coste de prefill en un emisor de 235B frente a la decodificación en un receptor de 1.7B en escenarios de razonamiento químico.
-- Evaluación de cadena de pensamiento en dominios científicos: usar el pipeline del experimento para medir calidad de CoT químico con el juez oficial aislado que requiere la evaluación de programación.
-- Base para experimentos de destilación implícita: analizar qué representaciones del emisor son aprovechables por un receptor pequeño en tareas de razonamiento estructurado.
-- Reproducibilidad de resultados publicados: descargar el artefacto y los backbones por separado para reejecutar la comparativa del paper con las entradas de tarea firmadas.
+- Investigación en transferencia entre modelos: reproducir el experimento 13 con `platour-exps evaluate` para estudiar si un emisor de 235B mejora a un receptor de 1.7B en tareas de química, usando los controles PACT-Check para descartar mejoras espurias.
+- Destilación ligera de razonamiento químico: desplegar el receptor de 1.7B con el bridge entrenado para obtener respuestas de tipo CoT en dominios químicos con un coste de inferencia muy inferior al del emisor de 235B.
+- Estudio de eficiencia en serving: comparar latencia y throughput de la pareja emisor-receptor frente a ejecutar directamente Qwen3-235B-A22B-FP8, aprovechando que el receptor es un modelo denso pequeño.
+- Validación de metodología PACT: usar los controles Dummy Transfer e Irrelevant Transfer para medir cuánto de la mejora se debe a información útil del emisor y cuánto a adaptación del receptor.
+- Prototipado de pipelines híbridos: integrar la API `load_session` y `generate` en flujos de investigación que requieran separar codificación de prompt y decodificación.
+- Reproducibilidad y auditoría de checkpoints: descargar y verificar hashes con `platour-exps download --experiment 13` antes de incorporar el bridge a experimentos propios.
+- Evaluación multi-GPU: ejecutar el evaluador con `--n-gpu 8` para obtener 4 réplicas independientes de 2 GPUs cada una sobre shards disjuntos de preguntas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor indica explícitamente que la exportación no adjunta puntuaciones y que no se hace ninguna afirmación sobre el protocolo de selección de checkpoint ni sobre rendimiento no sesgado en held-out.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explícitamente que el repositorio distribuye pesos de inferencia históricos sin puntuaciones de benchmark y que no se reclama ningún protocolo de selección de checkpoint ni rendimiento insesgado en held-out; se requiere evaluación independiente y revisión de procedencia.
 
 ## Requisitos de hardware
 
-- El repo de 0,9 GB solo contiene las proyecciones del puente; el requisito real lo determinan los backbones descargados por separado.
-- Emisor Qwen3-235B-A22B en FP8: requiere hardware de clase servidor con memoria agregada muy elevada (varias GPU A100/H100 o H200); no cabe en GPU de consumo.
-- Receptor Qwen3-1.7B: cabe en GPU de consumo (por ejemplo, RTX 4090 o inferiores) en FP16/BF16 y en cuantizaciones de 8 o 4 bits.
-- El artefacto no es cargable con vLLM, llama.cpp, Ollama ni TGI de forma directa; requiere el loader `platour-exps` del proyecto.
-- No se dispone de datos de latencia ni throughput en la información proporcionada.
+- VRAM: no disponible de forma agregada; depende de los backbones. El emisor Qwen3-235B-A22B-FP8 en FP8 requiere del orden de cientos de GB, mientras que el receptor Qwen3-1.7B es ligero. El bridge en sí ocupa 0.9 GB en el repositorio.
+- El evaluador del proyecto usa por defecto 2 GPUs por réplica para este checkpoint; `--n-gpu 1` es incompatible con ese tamaño de grupo por defecto.
+- Con `--n-gpu 8` se lanzan 4 réplicas independientes, cada una con 2 GPUs y shards de preguntas disjuntos.
+- GPU recomendadas: no se especifican modelos concretos; el entorno requiere Linux con CUDA y memoria suficiente para emisor, receptor y carga de decodificación en cada réplica.
+- No cabe en una GPU de consumo de forma completa por el emisor de 235B; el receptor de 1.7B sí es apto para GPUs de consumo, pero el método necesita el emisor para codificar el prompt.
+- Despliegue: API del proyecto `platour_api.load_session` con backend vLLM; no es cargable con `AutoModel.from_pretrained`. No se documentan integraciones con llama.cpp u Ollama.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PLatour-Qwen3-235B-to-1.7B-Chemistry-CoT | Puentes sobre 235B (emisor) + 1.7B (receptor) | No disponible | Transferencia cross-model PACT | Apache-2.0 | Hugging Face (loader propio) |
-| Qwen3-235B-A22B | 235B totales, 22B activos | No disponible en la información | LLM MoE estándar | Según upstream Qwen | Hugging Face |
-| Qwen3-1.7B | 1.7B | No disponible en la información | LLM dense estándar | Según upstream Qwen | Hugging Face |
+| PLatour-Qwen3-235B-to-1.7B-Chemistry-CoT | Bridge + backbones Qwen3-235B-A22B-FP8 y Qwen3-1.7B | No disponible | Transferencia cross-model vía proyecciones lineales entrenadas con GRPO | Apache 2.0 | Hugging Face + GitHub del proyecto |
+| Qwen3-1.7B (receptor solo) | 1.7B denso | No disponible en esta ficha | Modelo base sin transferencia | Apache 2.0 | Hugging Face |
+| Qwen3-235B-A22B-FP8 (emisor solo) | 235B totales / 22B activos | No disponible en esta ficha | MoE de gran escala | Apache 2.0 | Hugging Face |
 
-No se dispone de información sobre otros artefactos PACT comparables ni de métricas que permitan una comparación cuantitativa de rendimiento.
+No se dispone de datos de rendimiento comparativo entre estas opciones en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo listo para producción: es una exportación de pesos de inferencia histórica sin benchmark ni protocolo de selección documentado.
-- No es cargable mediante `AutoModel.from_pretrained` ni PEFT; requiere el loader específico del proyecto PLatour.
-- Los backbones emisor y receptor deben descargarse por separado y no se incluyen en el repo.
-- Las revisiones exactas de los backbones usadas en la ejecución histórica no han sido verificadas de forma independiente y no deben inferirse de la última revisión del Hub.
-- El autor advierte que la evaluación independiente y la revisión de procedencia son necesarias antes de usar estos artefactos para respaldar nuevas afirmaciones comparativas.
-- El artefacto no es estado reanudable de optimizador/RNG.
-- No se documentan sesgos conocidos, idiomas soportados ni riesgos de alucinación específicos; deben evaluarse sobre el receptor Qwen3-1.7B subyacente.
-- La licencia Apache-2.0 del export no sustituye las licencias y avisos de los modelos upstream.
+- No es un modelo autónomo: contiene solo proyecciones; requiere descargar y cargar por separado el emisor y el receptor con la API del proyecto.
+- Incompatible con `AutoModel.from_pretrained`; necesita el cargador personalizado y el entorno del repositorio GitHub.
+- La model card advierte que no se publican puntuaciones de benchmark ni se garantiza rendimiento insesgado en held-out; se requiere evaluación independiente y revisión de procedencia antes de usarlo.
+- El ejemplo de generación es una demo de prompt personalizado, no el protocolo de benchmark publicado; el límite de 256 tokens es solo ilustrativo.
+- Riesgo de alucinación: no cuantificado en la información disponible.
+- Sesgos conocidos: no documentados.
+- Idiomas soportados: no disponibles.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero las condiciones de los backbones subyacentes (Qwen3-1.7B y Qwen3-235B-A22B-FP8) deben verificarse por separado.
+- En producción, el coste del emisor de 235B puede anular la ventaja de latencia del receptor pequeño; la viabilidad depende del caso de uso.
+- El modelo no ejecuta código generado; no debe usarse como ejecutor en pipelines automáticos sin sandboxing adicional.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/zen-E/PLatour-Qwen3-235B-to-1.7B-Chemistry-CoT
-- Colección PLatour: https://huggingface.co/collections/zen-E/platour
+- Hugging Face: https://huggingface.co/zen-E/PLatour-Qwen3-235B-to-1.7B-Chemistry-CoT
+- Paper: https://arxiv.org/html/2611.06976
+- Código: https://github.com/zhenyi4/platour
+- Colección de modelos: https://huggingface.co/collections/zen-E/platour
+- Guía de agente/API: https://github.com/zhenyi4/platour/blob/main/AGENT.md
+- Guía de instalación: https://github.com/zhenyi4/platour#getting-started
+- Guía de entorno: https://github.com/zhenyi4/platour/blob/main/docs/ENVIRONMENT.md
+- Protocolos de tarea: https://github.com/zhenyi4/platour/blob/main/qwen3/README.md
+- Índice de checkpoints: https://github.com/zhenyi4/platour/blob/main/models/README.md#downloadable-checkpoints
+- Valores por defecto de GPU en evaluación: https://github.com/zhenyi4/platour#gpu-defaults-for-standalone-evaluation
 - Dataset: https://huggingface.co/datasets/zen-E/PLatour-Qwen3-Data
-- Paper (HTML): https://arxiv.org/html/2611.06976
-- Paper (abstract): https://arxiv.org/abs/2611.06976
-- Modelo emisor: https://huggingface.co/Qwen/Qwen3-235B-A22B
 - Modelo receptor: https://huggingface.co/Qwen/Qwen3-1.7B
+- Modelo emisor: https://huggingface.co/Qwen/Qwen3-235B-A22B-FP8

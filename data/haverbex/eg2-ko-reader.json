@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "Haverbex/eg2-ko-reader",
+  "slug": "haverbex-eg2-ko-reader",
+  "author": "Haverbex",
+  "url": "https://huggingface.co/Haverbex/eg2-ko-reader",
+  "created_at": "2026-11-17T04:20:29.000Z",
+  "updated_at": "2026-11-17T05:47:42.000Z",
+  "license": "eg2-ko-reader-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "safetensors",
+    "speech-recognition",
+    "ctc",
+    "korean",
+    "embeddinggemma",
+    "core-ai",
+    "automatic-speech-recognition",
+    "ko",
+    "base_model:google/embeddinggemma-2",
+    "base_model:finetune:google/embeddinggemma-2",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1607317979,
+  "storage_human": "1.6 GB",
+  "context_length": null,
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

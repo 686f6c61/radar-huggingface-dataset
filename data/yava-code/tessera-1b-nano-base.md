@@ -2,114 +2,105 @@
 
 ## Resumen
 
-Tessera-1B-Nano-Base es un modelo de lenguaje causal de tipo decoder-only publicado por el usuario yava-code, descrito en su model card como la rama de control (baseline NTP-only) de la comparativa Tessera-1B-Nano de Paragon Intelligence Labs. No es un modelo entrenado desde cero: es el backbone `HuggingFaceTB/SmolLM2-360M` sin modificar, sometido a un continued-pretraining sobre el mismo corpus empaquetado que su rama experimental (la rama con "ruta de concepto"), con los mismos tokens, en el mismo orden y desde la misma inicializacion. Su funcion es servir de referencia para que el resultado de la rama de concepto sea interpretable.
+Tessera-1B-Nano-Base es un modelo de lenguaje causal de tipo base (no instruido) desarrollado por yava-code, publicado bajo el paraguas de Paragon Intelligence Labs. Se trata del brazo de control de un experimento controlado sobre predicción de conceptos: parte del backbone intacto de HuggingFaceTB/SmolLM2-360M y lo somete a un continued-pretraining de aproximadamente mil millones de tokens sin ninguna modificación arquitectónica, sin ruta de conceptos y sin parámetros adicionales. Su función no es rendir mejor que nadie, sino servir de vara de medir frente a su hermano Tessera-1B-Nano, que sí incorpora una ruta de conceptos.
 
-El dato de parametros reales extraido de los safetensors es de 361.821.120 parametros, coherente con el backbone SmolLM2-360M del que deriva, pese al "1B" del nombre comercial. El repositorio ocupa 1,4 GB y se distribuye en formato safetensors bajo licencia Apache-2.0, con pipeline `text-generation` y compatibilidad declarada con `text-generation-inference` y endpoints.
+El modelo conserva la arquitectura transformer causal de SmolLM2 y cuenta con 361.821.120 parámetros reales según los pesos en safetensors, pese a que el nombre comercial lo etiquete como "1B" (la cifra hace referencia al presupuesto de tokens de entrenamiento, no al tamaño del modelo). El repositorio ocupa 1,4 GB y se distribuye en formato safetensors para la librería transformers.
 
-Su relevancia es metodologica mas que de producto: se trata de un artefacto de investigacion reproducible (hashes SHA256 del corpus empaquetado, log completo de metricas, estado del trainer y JSON de evaluacion de intervenciones incluidos en el repo) que permite auditar una comparacion token-matched entre prediccion de siguiente token y prediccion de siguiente concepto. La model card advierte explicitamente de que se trata de una implementacion compacta estilo ConceptLM, no de una replica del NCP-ArchPreview de 8.9B.
+Su relevancia es metodológica: publica de forma transparente el registro completo de entrenamiento (hashes SHA256 de la caché empaquetada, log de métricas, estado del trainer y evaluaciones de intervención en JSON) junto con los checkpoints, algo poco habitual en modelos de este tamaño. Para desarrolladores e investigadores que quieran reproducir experimentos de continued-pretraining o auditar comparaciones entre arquitecturas, es un artefacto de referencia útil, no un modelo de producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal decoder-only (backbone Llama/SmolLM2); la model card describe ademas 2 bloques de concepto causales con punto de inyeccion antes del bloque decodificador de tokens 2, pero esta variante es la rama de control sin ruta de concepto |
+| Arquitectura | Transformer causal (backbone SmolLM2), sin ruta de conceptos |
 | Parametros totales | 361.821.120 |
-| Parametros activos | no aplica (no es un modelo MoE) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (no se documentan cuantizaciones oficiales; al publicarse en safetensors es convertible a GGUF, GPTQ o AWQ con herramientas externas) |
+| Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (libreria transformers) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors |
 | Modelo base | HuggingFaceTB/SmolLM2-360M |
-| Tamano del repositorio | 1,4 GB |
-| Pipeline | text-generation |
-| Autoria | yava-code (Paragon Intelligence Labs, segun la model card) |
-| Fecha de creacion / actualizacion | 2026-09-28 / 2026-09-29 |
+| Tokens de entrenamiento | 999.948.288 |
+| Perdida NTP held-out | 2,5135 |
+| Perplejidad held-out | 12,3485 |
+| Tamano del repo | 1,4 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo conserva la arquitectura del backbone SmolLM2-360M, un transformer causal decoder-only, y anade, segun la configuracion descrita en la model card, un conjunto de componentes de concepto: chunk size de 4, codigo de producto de 15 segmentos x 64 entradas, 2 bloques de concepto causales, punto de inyeccion antes del bloque decodificador de tokens 2, objetivo NCP (siguiente concepto continuo) y una perdida compuesta `L_ntp + 1 L_ncp + 1 L_vq`. La model card indica que se trata de una implementacion compacta estilo ConceptLM y que omite codificacion residual iterativa, conexiones residuales entre escalas y la receta de entrenamiento a gran escala. Conviene subir con cautela esta seccion: la propia ficha define esta variante como la rama de control "sin ruta de concepto", por lo que la descripcion de bloques de concepto puede corresponder a la configuracion compartida del experimento y no a los pesos efectivamente activos en este checkpoint.
+El modelo es un transformer causal estándar que reutiliza el backbone de SmolLM2-360M sin alteraciones. La model card lo describe explícitamente como la mitad "plana" del experimento: mismo corpus, mismo orden de tokens y misma inicialización que el brazo con conceptos, sin reinicios ni valores NaN durante el entrenamiento. No incorpora decodificación especulativa, atención lineal ni ninguna innovación de inferencia; la innovación, si existe, reside en el diseño experimental, no en el modelo.
 
-En cuanto al entrenamiento, la model card documenta una comparacion token-matched: esta rama consumio los mismos tokens del mismo corpus empaquetado, en el mismo orden y desde la misma inicializacion que la rama de concepto, sin reinicios y sin valores NaN. El volumen total de tokens de entrenamiento reportado es de 999.948.288 y el coste de computo estimado y registrado es de 24,88 USD. No se documentan en la informacion disponible fases de RLHF, DPO u otro ajuste por preferencias, ni la composicion detallada del dataset mas alla de la existencia del corpus empaquetado con hashes SHA256 fijados en el repositorio `ncp-smol`.
+El entrenamiento consistió en un continued-pretraining de 999.948.288 tokens con pérdida de next-token prediction (NTP) exclusivamente. El coste de cómputo registrado se estima en 24,88 dólares. La model card menciona parámetros de una arquitectura ConceptLM (chunk size 4, product code de 15 segmentos x 64 entradas, 2 bloques causales de concepto, inyección antes del bloque 2 del decodificador de tokens y pérdida L_ntp + 1 L_ncp + 1 L_vq), pero esos componentes pertenecen al brazo con conceptos; en este checkpoint no están activos, ya que se describe como "sin ruta de conceptos, sin parámetros extra". No se detalla la composición del corpus ni si hubo RLHF o DPO; la procedencia se remite a los hashes y registros del repositorio ncp-smol.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva basica (modelo causal de 361,8 M de parametros), sin capacidades de razonamiento avanzado documentadas.
-- Prediccion de siguiente token (NTP) como objetivo unico de esta variante; es la referencia frente a la que se mide la rama de concepto.
-- Actua como baseline de perplejidad: la model card publica perdida NTP en held-out de 2,5135 y perplejidad de 12,3485.
-- Reproducibilidad de experimentos: el repositorio incluye `eval.json` y `metrics.jsonl`, ademas del registro de estado del trainer y los hashes del corpus en el repositorio `ncp-smol`.
-- Tool calling / function calling: no documentado; no se declara soporte.
-- Soporte de agentes y razonamiento multi-paso: no documentado.
-- Capacidades multilingues: no disponibles (el campo de idiomas del modelo esta vacio).
-- Capacidades especiales (modo thinking, vision, audio, decodificacion especulativa): ninguna documentada.
-- Ajuste posterior: al ser un checkpoint base, esta pensado para servir de punto de partida a fine-tuning supervisado o a comparaciones controladas.
+- Generación de texto autoregresiva básica, heredada del backbone SmolLM2-360M.
+- Modelo base sin ajuste de instrucciones: no sigue instrucciones de forma fiable ni mantiene formato conversacional.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- No dispone de modo "thinking", visión, audio ni otras capacidades especiales.
+- Utilidad principal como baseline de referencia para comparaciones controladas de entrenamiento.
 
 ## Casos de uso
 
-- Baseline de ablacion en investigacion: usar este checkpoint como rama de control frente a la rama con ruta de concepto, replicando la comparacion token-matched descrita, para aislar el efecto de la prediccion de siguiente concepto frente a la prediccion de siguiente token.
-- Referencia de perplejidad en evaluaciones de corpus: al tener fijados el corpus empaquetado y la perdida held-out (2,5135 / perplejidad 12,3485), sirve como punto de comparacion estable cuando se evalua el impacto de cambios en tokenizacion, empaquetado o filtrado de datos.
-- Fine-tuning academico de bajo coste: con 361,8 M de parametros y Apache-2.0, es viable ajustarlo en una unica GPU de consumo para tareas concretas de clasificacion de texto, resumen extractivo o generacion de plantillas donde no se requiera un modelo grande.
-- Validacion de pipelines de entrenamiento y reproducibilidad: los hashes SHA256, el log de metricas y el estado del trainer permiten comprobar que un entorno de entrenamiento reproduce la misma perdida antes de lanzar experimentos mas caros.
-- Pruebas de infraestructura de despliegue: por su tamano reducido es util para validar integraciones con transformers, text-generation-inference o endpoints compatibles antes de migrar a modelos mayores.
-- Experimentos de compresion y cuantizacion: sirve para medir la degradacion de perplejidad al aplicar cuantizaciones de 8 y 4 bits sobre un modelo pequeno con una referencia NTP conocida.
-- Docencia y prototipado rapido: permite ilustrar el ciclo completo de continued-pretraining y evaluacion en un presupuesto minimo (24,88 USD de computo registrado).
+- Baseline de comparación en investigación: sirve como control NTP-only frente a Tessera-1B-Nano para aislar el efecto de la ruta de conceptos en el mismo corpus y la misma inicialización.
+- Reproducción de experimentos de continued-pretraining: el repositorio incluye hashes de la caché empaquetada, log de métricas y estado del trainer, lo que permite auditar y replicar el pipeline con SmolLM2-360M.
+- Estudio de curvas de pérdida y perplejidad: con una pérdida held-out de 2,5135 y perplejidad de 12,3485 publicadas, es útil para calibrar expectativas en entrenamientos de ~1B tokens sobre modelos de ~360M parámetros.
+- Docencia y formación en metodología de ML: ejemplo de diseño experimental con brazo de control, artefactos versionados y coste de cómputo declarado (24,88 dólares).
+- Pruebas de infraestructura de inferencia: al ser un modelo pequeño en safetensors y compatible con transformers y text-generation-inference, sirve para validar pipelines de despliegue antes de escalar a modelos mayores.
+- Generación de texto exploratoria en entornos con recursos limitados: 361,8M parámetros permiten ejecución en CPU o GPU de gama baja para experimentos cualitativos, sin expectativas de calidad de asistente.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos numericos publicados en la informacion disponible son los de la evaluacion del propio autor. No hay resultados de MMLU, HumanEval, GSM8K ni comparativas estandar en la documentacion facilitada.
-
 | Metrica | Valor |
 |---|---:|
-| Perdida NTP en held-out | 2,5135 |
-| Perplejidad en held-out | 12,3485 |
+| Perdida NTP held-out | 2,5135 |
+| Perplejidad held-out | 12,3485 |
 | Tokens de entrenamiento | 999.948.288 |
-| Estimacion de computo registrada | 24,88 USD |
+| Coste de computo estimado | 24,88 USD |
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible. La model card solo reporta métricas internas de entrenamiento y evaluación de intervención, sin comparación numérica con modelos de referencia.
 
 ## Requisitos de hardware
 
-Las cifras de VRAM que siguen son estimaciones derivadas del recuento real de parametros (361,8 M) y no datos publicados por el autor:
-
-- Pesos en fp32: aproximadamente 1,45 GB; en fp16/bf16: aproximadamente 0,72 GB; en int8: aproximadamente 0,36 GB; en 4 bits: aproximadamente 0,2 GB.
-- VRAM total para inferencia: con overhead de activaciones, cache KV y runtime, en torno a 1-2 GB en fp16 para contextos cortos, y por debajo de 1 GB con cuantizacion de 4 bits.
-- Cabe holgadamente en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en CPU y en dispositivos integrados.
-- GPU de datacenter (A100, H100) sobredimensionadas para inferencia; pueden tener sentido para entrenamiento o para servir muchas replicas en paralelo.
-- Opciones de despliegue: transformers (soporte nativo declarado), text-generation-inference y endpoints compatibles segun los tags del repositorio; llama.cpp, Ollama o vLLM requeririan conversion previa a GGUF o a los formatos que soportan, ya que el repositorio solo publica safetensors.
-- Latencia y throughput: no disponible en la informacion proporcionada.
+- VRAM estimada para inferencia en fp16: en torno a 0,7-0,8 GB solo para pesos; con caché KV y overhead del runtime, aproximadamente 1,5-2 GB.
+- En cuantización de 8 bits o 4 bits, el modelo cabría holgadamente en GPUs de consumo con 4-6 GB de VRAM; los tipos de cuantización concretos no están documentados.
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) es suficiente; también A100 o H100, aunque sobredimensionadas para este tamaño.
+- Ejecución en CPU viable para pruebas y generación de baja concurrencia.
+- Opciones de despliegue: transformers (soporte nativo), text-generation-inference (etiqueta endpoints_compatible) y, presumiblemente, llama.cpp u Ollama si se generan pesos GGUF, aunque no se documenta su disponibilidad.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-Los datos de parametros y licencia de los modelos comparados proceden de conocimiento general sobre sus fichas publicas, no de la informacion proporcionada en esta busqueda; conviene verificarlos antes de citarlos. No hay datos de rendimiento comparables publicados para Tessera-1B-Nano-Base.
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---:|---|---|---|
+| Tessera-1B-Nano-Base | 361,8M | no disponible | apache-2.0 | Baseline NTP-only, 1B tokens de continued-pretraining |
+| HuggingFaceTB/SmolLM2-360M | 361,8M | no disponible | apache-2.0 | Modelo base del que deriva; sin continued-pretraining adicional |
+| Tessera-1B-Nano | no disponible | no disponible | apache-2.0 | Brazo con ruta de conceptos del mismo experimento |
+| Tessera-135M-Gate | 135M (aprox.) | no disponible | apache-2.0 | Gate arquitectónico sobrentrenado del mismo estudio |
 
-| Modelo | Parametros | Contexto | Licencia | Rendimiento publicado |
-|---|---|---|---|---|
-| Tessera-1B-Nano-Base | 361.821.120 | no disponible | Apache-2.0 | Perplejidad 12,3485 en held-out (evaluacion propia) |
-| SmolLM2-360M (modelo base) | ~362 M | no disponible en esta ficha | Apache-2.0 | No disponible en la informacion proporcionada |
-| Qwen2.5-0.5B | ~494 M | no disponible en esta ficha | Apache-2.0 | No disponible en la informacion proporcionada |
-| TinyLlama-1.1B | ~1,1 B | no disponible en esta ficha | Apache-2.0 | No disponible en la informacion proporcionada |
-
-La diferencia sustantiva de Tessera-1B-Nano-Base frente a esos modelos no es de capacidad, sino de proposito: es un checkpoint de investigacion con trazabilidad completa del corpus y del entrenamiento, no un modelo orientado a producto con benchmarks publicos.
+La comparación relevante es interna al estudio: Tessera-1B-Nano-Base frente a Tessera-1B-Nano, con idénticos datos e inicialización. Frente a SmolLM2-360M original, la diferencia es el continued-pretraining de mil millones de tokens. No se dispone de datos de rendimiento frente a otros modelos de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Es un modelo base sin ajuste por instrucciones ni por preferencias: no cabe esperar comportamiento conversacional fiable ni seguimiento de instrucciones.
-- El nombre "1B" no se corresponde con el tamano real (361,8 M de parametros); puede inducir a error al compararlo con modelos de mil millones de parametros.
-- No hay informacion sobre sesgos, composicion del dataset ni filtrado de datos mas alla de la procedencia del corpus empaquetado, por lo que el riesgo de sesgos y de contenido problematico es desconocido.
-- Riesgo de alucinacion alto y esperable en un modelo de este tamano y entrenamiento puramente NTP.
-- Idiomas soportados no declarados; no hay garantia de cobertura multilingue.
-- Longitud de contexto no disponible en la ficha; no debe asumirse ninguna ventana concreta sin verificarla en la configuracion del modelo.
-- La seccion de arquitectura de la model card describe componentes de concepto que, segun la propia definicion de esta variante como rama de control "sin ruta de concepto", podrian no estar activos en estos pesos; hay que tratarlo como una ambiguedad documental a resolver.
-- Aunque la licencia es Apache-2.0 y permite uso comercial, el modelo deriva de SmolLM2-360M y de un corpus cuyo origen y licencias subyacentes no se detallan en la informacion disponible; conviene auditar la procedencia de los datos antes de un uso en produccion.
-- El repositorio presenta 0 descargas y 0 likes en el momento de la consulta, sin senales de adopcion ni de mantenimiento por parte de terceros.
-- Los identificadores arXiv citados (2602.08984 y 2609.10715) no han podido verificarse con la busqueda realizada; los resultados web devueltos corresponden a un restaurante homonimo en Nanterre y no guardan relacion con el modelo.
+- Es un modelo base sin ajuste de instrucciones: no debe usarse como asistente conversacional ni esperar que siga instrucciones.
+- Riesgo elevado de alucinación y de generación incoherente en tareas abiertas, propio de un modelo de 361,8M parámetros con entrenamiento limitado.
+- No hay información sobre sesgos; cabe esperar los sesgos del corpus de SmolLM2 y del corpus de continued-pretraining, no documentado en la información disponible.
+- Longitud de contexto no documentada: no se puede garantizar el manejo de secuencias largas.
+- Idiomas soportados no documentados; el rendimiento fuera del inglés es incierto.
+- La licencia apache-2.0 permite uso comercial, pero el modelo no está pensado para producción y su calidad en tareas reales es limitada.
+- El nombre "1B" puede inducir a error: se refiere a tokens de entrenamiento, no a parámetros del modelo.
+- La model card está redactada como artefacto de investigación; no incluye guías de uso responsable ni evaluaciones de seguridad.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/yava-code/Tessera-1B-Nano-Base
-- Modelo base SmolLM2-360M: https://huggingface.co/HuggingFaceTB/SmolLM2-360M
-- ConceptLM (paper citado en la model card): https://arxiv.org/abs/2602.08984
-- NCP-ArchPreview (paper citado en la model card): https://arxiv.org/abs/2609.10715
-- Repositorio ncp-smol (mencionado en la model card como contenedor del whitepaper, hashes del corpus y registros de entrenamiento): URL no disponible en la informacion proporcionada
-- Whitepaper (`docs/whitepaper.md` dentro del repositorio ncp-smol): URL no disponible en la informacion proporcionada
-- Artefactos de evaluacion incluidos en el repositorio del modelo: `eval.json` y `metrics.jsonl` (accesibles desde la pestana de archivos del modelo en Hugging Face)
+- Repositorio del estudio: https://github.com/yava-code/Tessera-1B-Nano
+- Espacio de comparación: https://huggingface.co/spaces/yava-code/tessera-comparison
+- Brazo con conceptos: https://huggingface.co/yava-code/Tessera-1B-Nano
+- Gate arquitectónico: https://huggingface.co/yava-code/Tessera-135M-Gate
+- Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-360M
+- Paper ConceptLM: https://arxiv.org/abs/2602.08984
+- Paper NCP-ArchPreview: https://arxiv.org/abs/2609.10715
+- Demo en vídeo: https://huggingface.co/yava-code/Tessera-1B-Nano/resolve/main/demo.mp4

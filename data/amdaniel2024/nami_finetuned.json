@@ -5,7 +5,7 @@
   "author": "amDANIEL2024",
   "url": "https://huggingface.co/amDANIEL2024/nami_finetuned",
   "created_at": "2026-11-14T20:33:24.000Z",
-  "updated_at": "2026-11-14T20:57:04.000Z",
+  "updated_at": "2026-11-16T12:43:51.000Z",
   "license": "TODO",
   "license_family": "unknown",
   "pipeline_tag": "translation",
@@ -16,6 +16,7 @@
   ],
   "tags": [
     "pytorch",
+    "onnx",
     "safetensors",
     "nami-seq2seq",
     "translation",
@@ -31,15 +32,16 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 33,
+  "downloads_30d": 52,
   "trending_score": 0,
   "parameters": 89418240,
   "parameters_human": "89.4M",
-  "storage_bytes": 358506285,
-  "storage_human": "359 MB",
+  "storage_bytes": 489518437,
+  "storage_human": "490 MB",
   "context_length": null,
   "base_model": null,
   "formats": [
+    "onnx",
     "safetensors"
   ],
   "is_conversational": false,

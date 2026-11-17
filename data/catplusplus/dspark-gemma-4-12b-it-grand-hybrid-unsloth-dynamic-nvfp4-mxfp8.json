@@ -5,7 +5,7 @@
   "author": "catplusplus",
   "url": "https://huggingface.co/catplusplus/dspark-gemma-4-12b-it-Grand-Hybrid-Unsloth-Dynamic-NVFP4-MXFP8",
   "created_at": "2026-11-16T09:52:54.000Z",
-  "updated_at": "2026-11-16T09:56:49.000Z",
+  "updated_at": "2026-11-17T04:19:12.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -39,7 +39,7 @@
   "storage_bytes": 1257820356,
   "storage_human": "1.3 GB",
   "context_length": null,
-  "base_model": "deepseek-ai/dspark_gemma4_12b_block7, TrevorJS/gemma-4-12B-it-uncensored-Grand-Hybrid-NVFP4-MXFP8",
+  "base_model": "deepseek-ai/dspark_gemma4_12b_block7, catplusplus/gemma-4-12B-it-uncensored-Grand-Hybrid-NVFP4-MXFP8",
   "formats": [
     "safetensors"
   ],

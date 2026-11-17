@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 14,
+  "downloads_30d": 17,
   "trending_score": 0,
   "parameters": 202700416,
   "parameters_human": "202.7M",
@@ -47,8 +47,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "huluhuluu/qwen3-4b-instruct-2507-eagle3-sharegpt-full-context-epoch2-step60000",
+  "renamed_at": "2026-11-17T06:56:49.097Z",
   "benchmarks": [],
   "sources": [
     {

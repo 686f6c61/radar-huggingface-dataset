@@ -43,16 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Run Qwen3 1.7B Locally: Step-by-Step Guide — AI Tutorial",
-      "url": "https://aiindigo.com/tutorials/getting-started-with-qwen3-1-7b-deploying-efficient-edge-ai",
-      "snippet": "Deploy Alibaba's Qwen3 1.7B model for efficient edge AI. Learn installation, inference setup, and optimization tips for low-resource environments."
-    },
-    {
-      "title": "Qwen/Qwen3-1.7B · Hugging Face",
-      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
-      "snippet": "Text Generation model with 2B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
-    }
-  ]
+  "sources": []
 }

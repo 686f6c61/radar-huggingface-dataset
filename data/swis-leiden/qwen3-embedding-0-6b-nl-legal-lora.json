@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "SWIS-Leiden/qwen3-embedding-0.6b-nl-legal-lora",
+  "slug": "swis-leiden-qwen3-embedding-0-6b-nl-legal-lora",
+  "author": "SWIS-Leiden",
+  "url": "https://huggingface.co/SWIS-Leiden/qwen3-embedding-0.6b-nl-legal-lora",
+  "created_at": "2026-11-16T11:06:21.000Z",
+  "updated_at": "2026-11-17T10:18:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "peft",
+  "languages": [
+    "nl"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "legal",
+    "dutch",
+    "retrieval",
+    "feature-extraction",
+    "nl",
+    "base_model:Qwen/Qwen3-Embedding-0.6B",
+    "base_model:adapter:Qwen/Qwen3-Embedding-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40420208,
+  "storage_human": "40 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-Embedding-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

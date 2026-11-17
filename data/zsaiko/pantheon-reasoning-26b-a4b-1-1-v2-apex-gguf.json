@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 834,
+  "downloads_30d": 819,
   "trending_score": 0,
   "parameters": 25971339550,
   "parameters_human": "25.97B",
@@ -54,11 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Models - Hugging Face",
-      "url": "https://huggingface.co/models?sort=modified&search=gguf",
-      "snippet": "ngquocvinh/AliceAI-T5-35B-A0.6B-GGUF. Text Generation • 35B • Updated 10 minutes ago • 10.6k • 19 · zSaiko/Pantheon-Reasoning-26B-A4B-1.1-V2-APEX-GGUF."
-    }
-  ]
+  "sources": []
 }

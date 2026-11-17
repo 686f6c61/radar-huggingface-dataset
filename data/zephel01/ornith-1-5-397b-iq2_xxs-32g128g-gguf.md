@@ -2,113 +2,109 @@
 
 ## Resumen
 
-Ornith-1.5-397B es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por ornith-ai, del que esta ficha describe la cuantización GGUF publicada por el usuario zephel01. El modelo base cuenta con 402.941.918.464 parámetros totales (aproximadamente 403B) y emplea 512 expertos enrutados, de los cuales activa 10 por token más un experto compartido. Esta cuantización concreta, denominada IQ2_XXS-32G128G, está diseñada específicamente para ejecutarse en un equipo con una GPU de 32 GB de VRAM y 128 GB de RAM, sin lecturas desde el SSD durante la generación.
+Ornith-1.5-397B es un modelo de lenguaje de tipo Mixture of Experts (MoE) desarrollado por ornith-ai, distribuido bajo licencia MIT y orientado a generacion de texto conversacional en ingles y japones. La ficha que nos ocupa no es el modelo original, sino una cuantizacion GGUF de 114,2 GB publicada por el usuario zephel01 bajo el identificador `Ornith-1.5-397B-IQ2_XXS-32G128G-GGUF`, disenada especificamente para ejecutarse en un PC con 32 GB de VRAM y 128 GB de RAM.
 
-La relevancia de esta publicación radica en que permite ejecutar localmente un modelo de casi 400B parámetros en hardware de consumo de gama alta (por ejemplo, una RTX 5090), algo impensable con los pesos en BF16 (que ocuparían unos 800 GB). Para lograrlo, el autor aplica una receta de cuantización mixta: los expertos enrutados se cuantizan a IQ2_XXS con una importance matrix (imatrix), mientras que las proyecciones de atención, delta-net y los expertos compartidos se mantienen en Q8_0. El resultado es un archivo de 114,2 GB dividido en tres shards.
+El modelo base cuenta con 402.941.918.464 parametros totales (unos 403B) y una arquitectura MoE que enruta 10 expertos por token, con un bloque adicional NextN (MTP) para decodificacion especulativa. La cuantizacion emplea IQ2_XXS con importance matrix para los expertos enrutados y Q8_0 para atencion, proyecciones delta-net y expertos compartidos, manteniendo los 512 expertos sin podar.
 
-El modelo está pensado para generación de texto conversacional, con soporte declarado de inglés y japonés, licencia MIT y compatibilidad con motores como Abyss (versión 1.3.122 o superior) y llama.cpp. Se trata de una publicación en estado BETA, medida en un único equipo, por lo que el autor solicita reportes de otras configuraciones.
+Su relevancia actual reside en que permite ejecutar un modelo de ~400B parametros en hardware de consumo (una GPU de 32 GB, como una RTX 5090, mas 128 GB de RAM) sin lectura desde SSD durante la generacion, alcanzando cotas de decodificacion de 40 tok/s segun las mediciones del autor. Es una propuesta BETA, medida en un unico equipo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts (MoE), etiquetada como qwen35moe; incluye bloque NextN (MTP) en `blk.60` |
-| Parametros totales | 402.941.918.464 (aprox. 403B) |
-| Parametros activos | 10 expertos enrutados por token + 1 experto compartido (de 512 expertos totales); número exacto de parámetros activos no disponible |
-| Longitud de contexto | 32.768 tokens en las pruebas del autor; contexto máximo nativo no disponible |
-| Tipos de cuantizacion | Expertos enrutados IQ2_XXS con imatrix; atención, delta-net y expertos compartidos Q8_0; bloque NextN (MTP) Q4_K |
-| Idiomas soportados | Inglés (en) y japonés (ja) |
+| Arquitectura | Transformer MoE (tag `qwen35moe`), con bloque NextN/MTP para decodificacion especulativa |
+| Parametros totales | 402.941.918.464 (~403B) |
+| Parametros activos | no disponible (10 expertos enrutados por token, mas el compartido) |
+| Longitud de contexto | 32.768 tokens en el ejemplo de llama.cpp (`-c 32768`); contexto maximo del modelo base no disponible |
+| Tipos de cuantizacion | Expertos enrutados IQ2_XXS con imatrix; atencion, delta-net y expertos compartidos Q8_0; bloque NextN (blk.60) Q4_K |
+| Idiomas soportados | Ingles (en) y japones (ja) |
 | Licencia | MIT |
-| Formato de pesos | GGUF (3 shards, generados con `llama-gguf-split`) |
+| Formato de pesos | GGUF (3 shards: 45,6 GB + 45,7 GB + 22,9 GB; total 114,2 GB) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible confirma que se trata de un transformer con arquitectura Mixture-of-Experts: 512 expertos en total, de los que se enrutan 10 por token además de un experto compartido. La etiqueta `qwen35moe` sugiere una arquitectura de la familia Qwen 3.5 MoE, aunque no se detalla en la documentación proporcionada. El modelo incluye proyecciones denominadas "delta-net" y un bloque NextN (MTP, multi-token prediction) en la capa `blk.60`, que se conserva a Q4_K para que los motores puedan usarlo como drafter en decodificación especulativa.
+El modelo base es un transformer de tipo Mixture of Experts con 403B parametros totales, enrutando 10 expertos por token ademas de un experto compartido, y conservando los 512 expertos totales en esta cuantizacion. Incluye un bloque NextN (Multi-Token Prediction, `blk.60`) que el motor Abyss emplea para decodificacion especulativa (drafting). La cuantizacion mantiene las capas de atencion, las proyecciones delta-net y los expertos compartidos en Q8_0, mientras que los expertos enrutados se comprimen a IQ2_XXS con una importance matrix construida sobre texto tecnico y codigo en ingles y japones.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO u otras fases de alineación. Tampoco se documentan innovaciones de entrenamiento. Lo que sí está documentado es el proceso de cuantización: los expertos enrutados se cuantizan a IQ2_XXS con una importance matrix, mientras que las partes sensibles (atención, delta-net, expertos compartidos) se mantienen en Q8_0 para preservar calidad. La calidad se midió con `llama-perplexity --kl-divergence` contra el GGUF Q8_0 de referencia sobre 8 chunks de 1024 tokens de texto inglés y japonés reservado: KL medio de 0,1655, KL al 99% de 1,11, 79,1% de coincidencia en el token top y perplejidad de 12,93 (frente a 12,30 del Q8_0).
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO en el modelo base. La unica innovacion documentada en esta ficha es la propia receta de cuantizacion (denominada P99), que segun el autor logra una calidad casi identica a la variante P107 (7 GB mayor) con un KL medio de 0,1655 frente a 0,1523, y un 79,1% de coincidencia en el token superior frente al 80,0%.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno: las pruebas del autor incluyen una conversación de 11 turnos.
-- Razonamiento y aritmética: se evaluó aritmética en japonés, con la advertencia de que las respuestas pueden apoyarse en fórmulas más que en prosa.
-- Generación de código: se probaron tres tareas de programación con tests, incluyendo generación de HTML y código con caracteres hiragana.
-- Tool calling / function calling: se incluye una prueba específica de llamada a herramienta en el conjunto de verificación.
-- Recuperación de información en contexto largo: se validaron needles a 8K, 24K y 31K tokens, con acierto en el needle de 31K.
-- Multilingüismo limitado a inglés y japonés según la model card.
-- Decodificación especulativa mediante el bloque NextN (MTP) incluido en el archivo, con una tasa de borradores aceptados del 79% en las pruebas del autor.
-- Modo thinking desactivable: las mediciones de velocidad se realizaron con thinking off.
-- No se declaran capacidades de visión, audio ni otras modalidades.
+- Generacion de texto conversacional multi-turno en ingles y japones.
+- Razonamiento aritmetico y explicaciones tecnicas (verificado en las pruebas del autor con aritmetica japonesa y explicaciones en japones).
+- Generacion de codigo con pruebas automatizadas (tres tareas de codigo con tests en el conjunto de comprobacion `--check`).
+- Tool calling / function calling (una de las 11 pruebas de `--check` es una llamada a herramienta).
+- Recuperacion de informacion en contexto largo (pruebas de aguja en 8K, 24K y 31K tokens).
+- Decodificacion especulativa mediante el bloque NextN (MTP) en el motor Abyss.
+- Soporte de conversacion de hasta 11 turnos en las pruebas realizadas.
+- Capacidades multimodales, de vision o audio: no disponible.
 
 ## Casos de uso
 
-- Asistente conversacional local en japonés e inglés: el modelo puede mantener conversaciones multi-turno (se validaron 11 turnos) con hasta 32K tokens de contexto, adecuado para usuarios que necesitan privacidad total sin depender de APIs en la nube.
-- Generación de código en local: las pruebas incluyen tareas de programación con tests y generación de HTML; puede integrarse en flujos de trabajo de desarrollo donde el código no deba salir del equipo.
-- Automatización con tool calling: la verificación incluye una llamada a herramienta, lo que permite construir agentes sencillos que invoquen funciones externas en un entorno local.
-- Análisis de documentos largos en inglés o japonés: con 32K tokens de contexto y recuperación validada a 31K, es apto para resumir o extraer información de informes, contratos o documentación técnica extensa.
-- Experimentación e investigación en cuantización extrema: este archivo sirve como referencia para estudiar el compromiso calidad/tamaño en MoE de gran escala (KL de 0,1655 contra Q8_0), útil para investigadores que evalúan técnicas de cuantización mixta con imatrix.
-- Despliegue en estaciones de trabajo con RTX 5090: un equipo con 32 GB de VRAM y 128 GB de RAM puede ejecutar el modelo completo sin acceso a disco durante la generación (0 ms de espera de SSD por token), lo que lo hace viable para prototipos y demos en local.
-- Procesamiento por lotes de texto en japonés: tareas de traducción, reescritura o clasificación donde el throughput de prompt (386 tok/s a 2K y 882 tok/s a 8K) sea suficiente para volúmenes moderados.
+- Asistencia tecnica en japones: el modelo puede mantener conversaciones multi-turno en japones con contexto de hasta 32K tokens, adecuado para soporte a desarrolladores nipones o documentacion tecnica bilingue.
+- Generacion de codigo en local: las pruebas del autor incluyen tres tareas de codigo con tests, por lo que puede integrarse en flujos de trabajo de desarrollo asistido sin depender de la nube.
+- Agentes con tool calling: la capacidad de function calling verificada permite construir agentes que consulten APIs o ejecuten acciones a partir de instrucciones en lenguaje natural.
+- Analisis de documentos largos: con 32K tokens de contexto y pruebas de aguja superadas hasta 31K, sirve para resumir o extraer informacion de manuales y contratos extensos.
+- Despliegue en estaciones de trabajo con GPU de consumo: al caber en 32 GB de VRAM + 128 GB de RAM, permite ofrecer inferencia de un modelo de ~400B en entornos sin acceso a clusters.
+- Prototipado de asistentes conversacionales bilingues: la combinacion de ingles y japones con licencia MIT facilita experimentar en productos comerciales sin restricciones de licencia.
+- Investigacion sobre cuantizacion extrema: el repositorio documenta la receta P99 y las metricas KL, util como referencia para estudiar el impacto de IQ2_XXS en modelos MoE de gran tamano.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Los únicos datos de rendimiento son las mediciones del autor en un equipo concreto:
+Calidad de la cuantizacion frente a la referencia Q8_0 (perplejidad de Q8_0: 12,30; `llama-perplexity --kl-divergence`, 8 fragmentos de 1024 tokens de texto ingles y japones no usado en la imatrix):
 
-| Metrica | Resultado (RTX 5090 32 GB + 123 GB RAM, Abyss v1.3.122) |
-|---|---|
-| Decodificacion (media de 3 respuestas x 256 tokens, greedy, thinking off) | 42,0 tok/s (codigo 43,2 / prosa 38,8 / HTML 43,9) |
-| Borradores NextN aceptados | 79% (sin drafter: ~37,8 tok/s estimados por el motor) |
-| Prompt a 2K tokens | 386 tok/s |
-| Prompt a 8K tokens | 882 tok/s |
-| Prompt a 24K tokens | 1.553 tok/s |
-| Espera de SSD por token | 0 ms |
-| Mediana de decodificacion en `--check` | 40,0 tok/s |
-| Verificacion `--check` (11 pasos, 3 ejecuciones) | 10/11, 10/11, 11/11 |
+| Fichero | Tamano | KL medio | KL 99% | Mismo token superior | PPL |
+|---|---:|---:|---:|---:|---:|
+| P107 (expertos `ffn_down` IQ2_S, no subido) | 121,2 GB | 0,1523 | 1,17 | 80,0% | 12,91 |
+| P99 (este fichero) | 114,2 GB | 0,1655 | 1,11 | 79,1% | 12,93 |
 
-| Calidad (KL contra Q8_0, 8 chunks de 1024 tokens) | Valor |
-|---|---|
-| KL medio | 0,1655 |
-| KL al 99% | 1,11 |
-| Coincidencia token top | 79,1% |
-| Perplejidad | 12,93 (Q8_0: 12,30) |
+Comprobaciones de uso real (`./abyss.sh --check`, 11 pasos, 3 ejecuciones, temperatura 0,6, top_p 0,95, top_k 20):
+
+| Ejecucion | Resultado | Fallo |
+|---|---:|---|
+| 1 | 10 / 11 | una tarea de codigo (hiragana) no paso sus tests |
+| 2 | 10 / 11 | aritmetica japonesa: respuesta solo 44% en japones (mayormente formulas) |
+| 3 | 11 / 11 | ninguno |
+
+Rendimiento medido en el equipo del autor: decodificacion mediana de 40,0 tok/s; procesamiento de prompt de 773 tok/s con 8K y 1.553 tok/s con 24K. El titulo del repositorio anuncia 42,0 tok/s en una GPU de 32 GB + 128 GB de RAM.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 32 GB de GPU para el objetivo declarado; el archivo completo ocupa 114,2 GB y el resto reside en RAM del sistema.
-- RAM necesaria: 128 GB recomendados; con 96 GB parte del archivo se leería del SSD en cada token, con degradación de velocidad no medida.
-- GPU recomendadas: RTX 5090 (32 GB) validada por el autor; cualquier GPU con 32 GB de VRAM debería encajar en el mismo perfil.
-- Cabe en GPU de consumo: sí, en una RTX 5090 (32 GB), combinada con 128 GB de RAM.
-- Opciones de despliegue: Abyss v1.3.122 o superior (motor de referencia, con soporte de NextN drafter y CPU offload); llama.cpp (commit `ac8e1694d`) carga los tres shards y responde correctamente, aunque solo se verificó la carga, no la velocidad.
-- Latencia y throughput: 42,0 tok/s de decodificación y 386–1.553 tok/s de prompt según longitud, en el equipo de referencia. El autor advierte que un escritorio con DDR5 de doble canal será más lento en el cálculo de expertos en CPU que su equipo con LPDDR5X, y que una GPU que además gestione la pantalla dispone de 1–2 GB menos para el modelo.
-- Almacenamiento: NVMe con 3,7 GB/s medidos en el equipo de prueba; el modelo no lee del SSD durante la generación si cabe en VRAM+RAM.
+- VRAM estimada: 32 GB de GPU mas 128 GB de RAM del sistema; el modelo completo (114,2 GB) reside en memoria, sin lectura desde SSD durante la generacion.
+- GPU recomendadas: RTX 5090 (32 GB) segun el autor; cualquier GPU con 32 GB de VRAM deberia encajar en el perfil objetivo.
+- Cabe en GPU de consumo: si, con el perfil 32 GB VRAM + 128 GB RAM. Existe una variante `16G64G` (16 GB GPU + 64 GB RAM) que lee desde SSD a ~9 tok/s, y variantes de 122B en IQ3_XXS (16 GB + 64 GB) e IQ4_XS (24-32 GB + 64 GB).
+- Opciones de despliegue: motor Abyss v1.3.122 o superior (requerido, ya que versiones anteriores rechazan el fichero por el enrutado de 10 expertos por token); llama.cpp con build `ac8e1694d` o posterior (`llama-server -ngl 99 --cpu-moe -c 32768`), con velocidad no medida.
+- Latencia y throughput: decodificacion mediana 40,0 tok/s; prompt 773 tok/s a 8K y 1.553 tok/s a 24K en el equipo del autor.
+- Almacenamiento: 114,2 GB para los tres shards; el repositorio incluye `SHA256SUMS`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| Ornith-1.5-397B IQ2_XXS (este repo) | ~403B totales, 10 expertos activos | 32K validados | MIT | GGUF (114,2 GB) | Objetivo 32 GB VRAM + 128 GB RAM |
-| Ornith-1.5-122B IQ3_XXS | 122B | no disponible | MIT | GGUF (52,1 GB) | Objetivo 16 GB VRAM + 64 GB RAM |
-| Ornith-1.5-122B IQ4_XS | 122B | no disponible | MIT | GGUF (68,9 GB) | Objetivo 24–32 GB VRAM + 64 GB RAM, mayor calidad que IQ3_XXS |
+| Modelo | Parametros | Contexto | Formato / tamano | Licencia | Notas |
+|---|---|---:|---|---|---|
+| Ornith-1.5-397B IQ2_XXS 32G128G (este) | ~403B | 32K (ejemplo) | GGUF, 114,2 GB | MIT | 10 expertos/token; 40 tok/s en 32 GB VRAM + 128 GB RAM |
+| Ornith-1.5-397B IQ2_XXS 16G64G | ~403B | no disponible | GGUF, 110,6 GB | MIT | Perfil 16 GB VRAM + 64 GB RAM; lee desde SSD (~9 tok/s) |
+| Ornith-1.5-122B IQ3_XXS 16G64G | 122B | no disponible | GGUF, 51,7 GB | MIT | Perfil 16 GB VRAM + 64 GB RAM |
+| Ornith-1.5-122B IQ4_XS 24G64G | 122B | no disponible | GGUF, 68,9 GB | MIT | Perfil 24-32 GB VRAM + 64 GB RAM; mayor calidad |
 
-No se dispone de datos de benchmarks que permitan comparar el rendimiento de estos modelos frente a alternativas de otros desarrolladores. La comparación disponible se limita a la propia familia Ornith-1.5 y a los perfiles de hardware objetivo.
+No se dispone de datos de benchmarks comparativos frente a modelos de otros desarrolladores en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Estado BETA: las mediciones provienen de un único equipo y el autor solicita reportes de otras configuraciones; el rendimiento en hardware distinto puede diferir sustancialmente.
-- No determinismo: en Abyss, los primeros tokens de una respuesta pueden variar entre ejecuciones idénticas en modo greedy, porque la vía de CPU calcula los expertos con un redondeo ligeramente distinto al de la GPU y la asignación de expertos cambia en cada token. El modelo es sensible a este efecto.
-- Fallos ocasionales en tareas: en las pruebas `--check`, una de cada tres ejecuciones falló un paso (una tarea de código con hiragana y una respuesta aritmética en japonés con solo un 44% de contenido en japonés). Qué paso falla varía entre ejecuciones.
-- Calidad de cuantización: la perplejidad es de 12,93 frente a 12,30 del Q8_0 de referencia, con un 79,1% de coincidencia en el token top; no es equivalente al modelo sin cuantizar.
-- Idiomas: solo inglés y japonés declarados; el rendimiento en castellano u otros idiomas no está documentado y probablemente sea deficiente.
-- Contexto: el máximo validado es de 32.768 tokens; no se documenta la ventana nativa del modelo base ni su comportamiento más allá de esa longitud.
-- Requisito de motor: necesita Abyss v1.3.122 o superior; versiones anteriores se niegan a cargar el archivo por el enrutado de 10 expertos por token.
-- Hardware justo: con 96 GB de RAM el modelo lee del SSD en cada token y la velocidad cae; no se ha medido cuánto.
-- Sesgos y alucinaciones: no se documentan sesgos conocidos ni evaluaciones específicas de alucinación en la información disponible.
-- Licencia MIT: permite uso comercial, pero al ser una cuantización de un modelo de terceros conviene verificar las condiciones del modelo base ornith-ai/Ornith-1.5-397B.
+- Estado BETA: las mediciones proceden de un unico PC; el autor solicita reportes de otras maquinas y no garantiza la velocidad en otros equipos.
+- Fallos ocasionales en tareas concretas: en las pruebas del autor, una de cada tres ejecuciones fallo un paso (tests de codigo o aritmetica japonesa con respuesta mayoritariamente en formulas).
+- Idiomas limitados a ingles y japones; no se documenta soporte de castellano ni de otros idiomas.
+- Riesgo de alucinacion no cuantificado en la informacion disponible; como todo modelo generativo, puede producir contenido incorrecto con apariencia de veracidad.
+- La cuantizacion IQ2_XXS es agresiva: el KL medio de 0,1655 y el 79,1% de coincidencia en el token superior implican una degradacion medible frente a Q8_0, aunque el autor la considera aceptable.
+- Dependencia de version concreta del motor: Abyss requiere v1.3.122 o superior; en llama.cpp solo se verifico el build `ac8e1694d` con una respuesta corta y sin medir velocidad.
+- Licencia MIT: permite uso comercial, pero el autor no ofrece garantias; conviene validar el comportamiento en el dominio de produccion antes de desplegar.
+- No se dispone de informacion sobre sesgos del modelo base ni sobre el contexto maximo nativo del modelo original.
 
 ## Enlaces
 
-- Repositorio Hugging Face de esta cuantización: https://huggingface.co/zephel01/Ornith-1.5-397B-IQ2_XXS-32G128G-GGUF
+- Repositorio Hugging Face: https://huggingface.co/zephel01/Ornith-1.5-397B-IQ2_XXS-32G128G-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-397B
 - Motor Abyss: https://github.com/zephel01/Abyss
-- Issues de Abyss (reportes de rendimiento): https://github.com/zephel01/Abyss/issues
-- Cuantización hermana Ornith-1.5-122B IQ3_XXS (16G64G): https://huggingface.co/zephel01/Ornith-1.5-122B-IQ3_XXS-16G64G-GGUF
-- Cuantización hermana Ornith-1.5-122B IQ4_XS (24G64G): https://huggingface.co/zephel01/Ornith-1.5-122B-IQ4_XS-24G64G-GGUF
+- Documentacion de Abyss para Ornith: https://github.com/zephel01/Abyss/blob/main/docs/ornith/README.md
+- Variante 16G64G del mismo modelo: https://huggingface.co/zephel01/Ornith-1.5-397B-IQ2_XXS-16G64G-GGUF
+- Variante 122B IQ3_XXS: https://huggingface.co/zephel01/Ornith-1.5-122B-IQ3_XXS-16G64G-GGUF
+- Variante 122B IQ4_XS: https://huggingface.co/zephel01/Ornith-1.5-122B-IQ4_XS-24G64G-GGUF
+- Envio de resultados de benchmark: https://github.com/zephel01/Abyss/issues/new?template=bench.md&title=Bench:+Ornith-1.5-397B+32G128G

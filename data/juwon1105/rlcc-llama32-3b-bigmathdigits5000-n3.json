@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 6,
+  "downloads_30d": 8,
   "trending_score": 0,
   "parameters": 3212749824,
   "parameters_human": "3.21B",
@@ -47,8 +47,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "juwon1105/RLCC-llama32-3B-bigmathdigits5000",
+  "renamed_at": "2026-11-17T07:18:28.705Z",
   "benchmarks": [],
   "sources": []
 }

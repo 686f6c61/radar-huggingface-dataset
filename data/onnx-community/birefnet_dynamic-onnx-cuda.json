@@ -45,8 +45,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "onnx-community/BiRefNet_dynamic-1024x1024-ONNX-CUDA",
+  "renamed_at": "2026-11-17T08:50:31.167Z",
   "benchmarks": [],
   "sources": [
     {

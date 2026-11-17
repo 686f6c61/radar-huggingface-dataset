@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 4433121792,
   "parameters_human": "4.43B",
-  "storage_bytes": 13725523670,
-  "storage_human": "13.7 GB",
+  "storage_bytes": 31633179798,
+  "storage_human": "31.6 GB",
   "context_length": null,
   "base_model": "moeshawky/Ornith-1.5-9B",
   "formats": [

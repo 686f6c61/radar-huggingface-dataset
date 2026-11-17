@@ -42,7 +42,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 393,
+  "downloads_30d": 395,
   "trending_score": 0,
   "parameters": 2213241664,
   "parameters_human": "2.21B",
@@ -62,16 +62,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Qwen3.5-2B-MultiDistill-Megamix-6xMerge-UNCENSORED-heretic",
-      "url": "https://huggingface.co/xtools-at/Qwen3.5-2B-MultiDistill-Megamix-6xMerge-UNCENSORED-heretic",
-      "snippet": "Instructions to use xtools-at/Qwen3.5-2B-MultiDistill-Megamix-6xMerge-UNCENSORED-heretic with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "Qwen3.5-2B-MultiDistill-Megamix-6xMerge - Hugging Face",
-      "url": "https://huggingface.co/xtools-at/Qwen3.5-2B-MultiDistill-Megamix-6xMerge",
-      "snippet": "Instructions to use xtools-at/Qwen3.5-2B-MultiDistill-Megamix-6xMerge with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    }
-  ]
+  "sources": []
 }

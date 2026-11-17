@@ -5,7 +5,7 @@
   "author": "thuEcstasy1",
   "url": "https://huggingface.co/thuEcstasy1/ForesightLoop-4",
   "created_at": "2026-11-06T13:36:04.000Z",
-  "updated_at": "2026-11-06T13:36:45.000Z",
+  "updated_at": "2026-11-17T08:07:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -16,7 +16,7 @@
   "tags": [
     "pytorch",
     "safetensors",
-    "foresightloop",
+    "infuseloop",
     "looped-transformer",
     "causal-lm",
     "research",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 323,
+  "downloads_30d": 326,
   "trending_score": 0,
   "parameters": 596139462,
   "parameters_human": "596.1M",
@@ -44,8 +44,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "thuEcstasy1/InfuseLoop-4",
+  "renamed_at": "2026-11-17T10:09:04.238Z",
   "benchmarks": [],
   "sources": [
     {

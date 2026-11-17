@@ -43,16 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "zen-E/PLatour-TR-FullGRPO-Qwen3.5-4B-DeepCoder · Hugging Face",
-      "url": "https://huggingface.co/zen-E/PLatour-TR-FullGRPO-Qwen3.5-4B-DeepCoder",
-      "snippet": "Instructions to use zen-E/PLatour-TR-FullGRPO-Qwen3.5-4B-DeepCoder with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "Qwen3.5-4B LoRA Fine-tuning on Step-3.5-Flash-SFT - GitHub",
-      "url": "https://github.com/IIIIQIIII/qwen35-4b-lora-sft",
-      "snippet": "This experiment validates whether a single H100 can efficiently fine-tune Qwen3.5-4B on general agent/coding/reasoning data that the base model has never seen before, using a large LoRA rank to compensate for the domain gap."
-    }
-  ]
+  "sources": []
 }

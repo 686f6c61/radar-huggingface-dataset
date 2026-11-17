@@ -2,100 +2,109 @@
 
 ## Resumen
 
-QwenQPU es un modelo experimental publicado por xi-zhao que integra un módulo de simulación cuántica ("QPU") dentro de un modelo de lenguaje Qwen. El componente lingüístico son los pesos sin modificar de divagr1925/Qwen3.5-4B-Qwenputer (43 capas, hidden size 3968, 9.357.602.496 parámetros totales según safetensors, 18,7 GB en ocho shards). El componente cuántico es una red de puertas de pesos fijos (48 coeficientes FP32 para H, X y T, más CNOT mediante máscara de control) que ejecuta circuitos sobre un registro de 1 a 16 qubits.
+QwenQPU es un modelo experimental publicado por el usuario xi-zhao que integra un simulador de circuitos cuánticos dentro de un modelo de lenguaje. Parte del checkpoint comunitario divagr1925/Qwen3.5-4B-Qwenputer (arquitectura Qwen3.5) y le añade cuatro capas estándar nuevas encargadas de almacenar amplitudes, ejecutar compuertas H, X, T y CNOT, y leer probabilidades de eventos. El modelo hereda 32 capas de lenguaje y utiliza el forward estándar de `Qwen3_5ForCausalLM`; el modelo de lenguaje genera el circuito y las capas añadidas devuelven la respuesta numérica.
 
-El flujo de funcionamiento es un pipeline de tres etapas: Qwen genera una descripción de circuito, el módulo cuántico la ejecuta mediante simulación ideal de vector de estado y devuelve un recuento de medidas, y Qwen responde a partir de esos recuentos. La innovación no está en el entrenamiento (los pesos del lenguaje no se han reentrenado), sino en el acoplamiento de un runtime compuesto que separa el estado del registro cuántico del estado del decodificador lingüístico.
+La propuesta es poco convencional: no se trata de un LLM de propósito general, sino de un artefacto de investigación que combina pesos de lenguaje con una red de pesos fijos que simula evolución de vectores de estado cuánticos. El repositorio raíz contiene el checkpoint completo r5 en FP32 (29 shards safetensors, 36 capas, 483 tensores, tokenizer de 333.702 tokens), con un payload de pesos de 36.671.706.112 bytes.
 
-Es relevante ahora como prueba de concepto de "herramientas" no neuronales embebidas en un LLM: en lugar de delegar el cálculo cuántico a una API externa, el modelo lleva consigo un simulador determinista de pesos fijos. Su utilidad práctica es limitada y su licencia es heterogénea, pero documenta una vía interesante para aumentar la fiabilidad en dominios con verificación formal.
+Su relevancia es acotada pero interesante para quien investigue híbridos entre modelos de lenguaje y simulación cuántica: los ejemplos publicados muestran una precisión numérica muy alta en la simulación (0,1464464664 frente a la referencia 0,1464466094 en el evento H–T–H) y un benchmark interino de 27 de 48 tareas emparejadas en el que el modelo base resuelve 1 de 27 y QwenQPU resuelve 27 de 27.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (Qwen3.5, 43 capas, hidden size 3968) + módulo QPU de pesos fijos (simulación de vector de estado) |
-| Parámetros totales | 9.357.602.496 (pesos lingüísticos; el módulo cuántico añade 48 coeficientes FP32) |
-| Parámetros activos | no disponible (no es MoE) |
+| Arquitectura | Transformer Qwen3.5 (`qwen3_5_text`) con cuatro capas estándar añadidas para simulación cuántica |
+| Parametros totales | 9.167.926.528 (según safetensors del repo) |
+| Parametros activos | no disponible (no es MoE según la información disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible (el repo solo publica safetensors en el formato original) |
+| Tipos de cuantizacion | no disponible; el checkpoint publicado es FP32 |
 | Idiomas soportados | no disponible |
-| Licencia | component-specific-terms (pesos upstream Apache-2.0; código propio sin licencia open source) |
-| Formato de pesos | safetensors (8 shards) + `QwenQPU.bundle.json` (coeficientes cuánticos, configs y runtime en Python) |
+| Licencia | component-specific-terms (términos por componente, ver LICENSES.md) |
+| Formato de pesos | safetensors (29 shards FP32 en el checkpoint r5), más JSON de configuración y manifiesto de pesos |
+| Modelo base | divagr1925/Qwen3.5-4B-Qwenputer (revisión 2d9068508f2b680badb7abcded96fdd107e9ba5d) |
+| Capas | 36 capas en el checkpoint r5 (43 capas y hidden size 3968 en el checkpoint base) |
+| Tokenizer | 333.702 tokens |
+| Tamaño del repo | 55,5 GB |
+| Librería | PyTorch (Transformers 5.19.0) |
 
 ## Arquitectura y entrenamiento
 
-La parte lingüística es un transformer denso estándar cargable con la clase `Qwen3_5ForCausalLM` de Transformers (`trust_remote_code=False`). Procede tal cual del checkpoint divagr1925/Qwen3.5-4B-Qwenputer en la revisión `2d9068508f2b680badb7abcded96fdd107e9ba5d`, incluyendo sus parámetros CPU compilados originales. No hay información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo base.
+El modelo combina dos componentes. Por un lado, los pesos de lenguaje proceden sin cambios del checkpoint divagr1925/Qwen3.5-4B-Qwenputer, que según la model card tiene 43 capas y hidden size 3968, incluyendo parámetros compilados de CPU originales. Por otro, se añaden cuatro capas estándar de Qwen para almacenamiento de amplitudes, ejecución de compuertas H/X/T/CNOT y lectura de probabilidades de eventos. El forward es el stock de `Qwen3_5ForCausalLM`, de modo que el modelo de lenguaje genera la instrucción del circuito y las capas añadidas devuelven el resultado numérico.
 
-El módulo QPU es una red de puertas de pesos fijos: H, X y T son matrices reales fijas que actúan sobre pares de amplitudes complejas, y CNOT aplica una X controlada mediante máscara. La misma red pequeña se aplica en posiciones distintas del vector de estado, actualizando el estado puerta a puerta. El estado se almacena como tensor FP32 de forma `[2**n, 2]` (parte real e imaginaria). El runtime soporta 1–16 qubits y hasta 1.000 operaciones de puerta secuenciales entre resets. La medida terminal usa un estado final y el número solicitado de extracciones uniformes; las probabilidades exactas están disponibles para diagnóstico. La implementación es simulación ideal de vector de estado, sin ruido ni corrección de errores. El host (código Python) parsea instrucciones, suministra números aleatorios, agrega recuentos y planifica la generación lingüística; el registro cuántico y el estado del decodificador son independientes.
+La parte cuántica no es un módulo entrenado de forma convencional: H, X y T son matrices reales fijas que actúan sobre pares de amplitudes complejas, y CNOT aplica una máscara de control. La misma red pequeña de compuertas actúa en distintas posiciones del vector de estado, actualizando el estado compuerta a compuerta. El host (runtime Python) parsea instrucciones, aporta números aleatorios, agrega conteos y programa la generación de lenguaje; el registro cuántico y el estado del decodificador de lenguaje están separados. Los coeficientes son constantes construidas y se almacenan como JSON en FP32 junto al código del runtime. No se documentan en la información disponible datos sobre volumen de tokens de entrenamiento, composición del dataset ni uso de RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto y razonamiento heredados del modelo base Qwen3.5-4B.
-- Generación de especificaciones de circuitos cuánticos a partir de lenguaje natural.
-- Ejecución de circuitos con puertas H, X, T y CNOT sobre 1–16 qubits.
-- Devolución de recuentos de medidas (shots) y de probabilidades exactas para diagnóstico.
-- Diálogo encadenado lenguaje → circuito → recuentos → respuesta en lenguaje natural.
-- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión, audio ni modo thinking.
+- Generación de texto con el backbone Qwen3.5 heredado del checkpoint base.
+- Simulación de circuitos cuánticos de 1 a 16 qubits con compuertas H, X, T y CNOT.
+- Cálculo de probabilidades de eventos cuánticos con alta precisión numérica (error del orden de 1e-7 en el ejemplo H–T–H publicado).
+- Muestreo de resultados de medición y agregación de conteos (por ejemplo, 534 muestras todo-cero y 490 todo-uno en un GHZ de 16 qubits con 1024 shots).
+- Generación de circuitos a partir de instrucciones en lenguaje natural, ejecución y respuesta en lenguaje natural a partir de los conteos devueltos.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible como capacidad general; el flujo circuito-ejecución-respuesta es multi-paso dentro del dominio cuántico.
 - Capacidades multilingües: no disponibles en la información proporcionada.
+- Modo thinking, visión o audio: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Docencia de computación cuántica: el modelo puede recibir una descripción en lenguaje natural ("prepara un estado GHZ de 16 qubits y mide 1024 veces") y devolver los recuentos, útil para demostraciones interactivas sin acceso a hardware cuántico.
-- Verificación de intuiciones sobre circuitos pequeños: con hasta 16 qubits y 1.000 puertas secuenciales, sirve para comprobar manualmente resultados de circuitos de paridad o superposición antes de lanzarlos en un simulador de referencia como Qiskit.
-- Generación de código Qiskit asistida: el modelo base puede redactar el circuito y el módulo QPU aporta una ejecución de contraste dentro del mismo entorno, reduciendo la dependencia de servicios externos.
-- Prototipado de pipelines híbridos lenguaje-cálculo: útil para investigadores que quieran experimentar con arquitecturas donde un LLM orquesta una herramienta determinista embebida en lugar de una API remota.
-- Reproducción de experimentos de investigación: el bundle incluye manifiesto de pesos, hashes y runtime, lo que permite replicar el benchmark publicado con semilla fija (`--seed 123`).
-- Evaluación de fiabilidad en cálculo simbólico: el benchmark de cálculo (19/20 frente a 8/20 del modelo base) lo hace adecuado como caso de estudio de cómo una herramienta determinista corrige errores aritméticos del LLM.
-- No se recomienda para atención al cliente, generación de código en producción ni despliegues comerciales, dado el estado experimental y la licencia heterogénea.
+- Verificación de resultados de circuitos cuánticos pequeños: el modelo puede generar el circuito, ejecutarlo en su simulador interno y devolver probabilidades de eventos que se comparan con valores de referencia de Qiskit con tolerancia de 5e-5, útil como herramienta de docencia o validación cruzada.
+- Docencia de computación cuántica: sirve para construir circuitos GHZ, aplicar secuencias H–T–H y explicar en lenguaje natural la distribución de resultados a partir de los conteos muestreados.
+- Investigación en híbridos LLM-simulador: permite estudiar cómo un modelo de lenguaje formula circuitos y consume los resultados numéricos, con un protocolo de layout de tokens documentado (`protocol-token-layout.json`).
+- Reproducción de experimentos: los ejemplos incluidos (`checkpoint_ghz.py`, `qwen_local.py`) permiten reproducir el diálogo lenguaje-a-circuito-a-conteos con semilla fija y presupuesto de generación acotado.
+- Generación de datos sintéticos de circuitos: el modelo puede producir descripciones de circuitos y sus resultados asociados para alimentar pipelines de evaluación de simuladores cuánticos.
+- Auditoría de pesos y artefactos: el manifiesto de pesos y los hashes del bundle permiten verificar la composición exacta del checkpoint, útil en entornos que exigen trazabilidad de artefactos.
+- Exploración de estados GHZ y entrelazamiento: con hasta 16 qubits y 1024 shots se pueden caracterizar empíricamente los extremos de la distribución GHZ.
 
 ## Benchmarks y rendimiento
 
-Benchmark de circuitos supplied (partida desde |0...0>, tareas de paridad tras circuitos H/X/T/CNOT, 20 tareas en 1, 3, 8, 12 y 16 qubits, decodificación greedy, presupuesto de 16.384 tokens, 4.096 muestras por circuito, referencia Qiskit):
+Benchmark interino publicado en la model card (2026-11-04 00:26 UTC), con 27 de 48 tareas emparejadas completadas. Ambas variantes comparten un presupuesto de 16.384 predicciones, incluidas las predicciones del QPU; ambas probabilidades de evento deben coincidir con valores independientes de Qiskit dentro de 5e-5.
 
-| Tarea y criterio de puntuación | Qwen | QwenQPU |
-|---|---:|---:|
-| Cálculo: JSON repetido idéntico fusionado | 8/20 | 19/20 |
-| Cálculo: parser de respuesta original | 1/20 | 19/20 |
-| Planificación: éxito conjunto circuito y respuesta | 1/20 | 1/20 |
+| Categoría | Tareas completadas | Qwen | QwenQPU |
+|---|---:|---:|---:|
+| No-Clifford | 20 | 1/20 | 20/20 |
+| Controles Clifford | 7 | 0/7 | 7/7 |
+| Todos los pares completados | 27 | 1/27 | 27/27 |
 
-El módulo de ejecución mejora la puntuación de cálculo pero no la de planificación. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+Ejemplos numéricos publicados: el evento H–T–H devuelve 0,1464464664 frente a la referencia 0,1464466094, y cada extremo de un GHZ de seis qubits devuelve 0,5. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el checkpoint lingüístico completo ocupa 18,7 GB en safetensors; en FP16 requiere al menos ~19 GB de VRAM, más overhead de activaciones y del runtime cuántico.
-- GPU recomendadas: los experimentos originales se ejecutaron en A100 80 GB con PyTorch 2.6.0+cu124 y Transformers 5.19.0.
-- GPU de consumo: no cabe en GPUs de 8–16 GB sin cuantización; no se publican pesos cuantizados, por lo que no hay una ruta oficial para RTX 4090 (24 GB) ni inferiores.
-- Opciones de despliegue: el runtime propio en Python (`QwenQPU-runtime/`), cargando con Transformers. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI; el módulo cuántico requiere el bundle JSON y el instalador `install_qwenqpu.py`.
-- Latencia y throughput: no disponibles. El presupuesto de generación por defecto es de 16.384 tokens acumulados entre generación de circuito y respuesta.
+- El checkpoint publicado es FP32 y pesa 36.671.706.112 bytes solo en pesos, más tokenizer y configuración; el repo completo ocupa 55,5 GB.
+- Las ejecuciones originales documentadas usaron A100 de 80 GB con PyTorch 2.6.0+cu124 y Transformers 5.19.0.
+- No se indica que quepa en GPU de consumo con el checkpoint FP32 publicado; no hay versiones GGUF ni cuantizadas disponibles en la información proporcionada.
+- Opciones de despliegue: carga con `AutoModelForCausalLM.from_pretrained` de Transformers 5.19.0 con `trust_remote_code=False`; el runtime cuántico se distribuye como código Python aparte en la release histórica (`install_qwenqpu.py`). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles. El presupuesto de generación es acumulado entre la generación del circuito y la respuesta (16.384 tokens en el ejemplo).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Capacidad cuántica | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| QwenQPU | 9,36 B (pesos lingüísticos) | no disponible | Simulación 1–16 qubits, H/X/T/CNOT | component-specific-terms | Hugging Face, repo propio |
-| Qwen3.5-4B-Qwenputer (base) | no disponible en la información | no disponible | No | no disponible | Hugging Face |
-| Qiskit (simulador de referencia) | N/A | N/A | Simulación de vector de estado, muchas más puertas y qubits | Apache-2.0 | PyPI, open source |
+No hay modelos directamente comparables en la información proporcionada: QwenQPU no es un LLM de propósito general sino un artefacto de investigación que combina un backbone Qwen3.5 con un simulador cuántico de pesos fijos. Como referencia del backbone:
 
-La comparación directa con otros LLM con módulo cuántico embebido no está disponible en la información proporcionada. Frente a Qiskit, QwenQPU añade la capa de lenguaje natural pero limita el alcance a 16 qubits, 1.000 puertas y cuatro tipos de puerta.
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| QwenQPU | 9.167.926.528 | no disponible | component-specific-terms | Hugging Face, repo de 55,5 GB |
+| divagr1925/Qwen3.5-4B-Qwenputer (base) | no disponible (43 capas, hidden 3968) | no disponible | no disponible | Hugging Face |
+| Simuladores cuánticos clásicos (Qiskit y similares) | no aplica | no aplica | variable | Bibliotecas estándar |
 
 ## Limitaciones y advertencias
 
-- Los pesos lingüísticos no se han reentrenado: las mejoras provienen exclusivamente del módulo de ejecución, no de un ajuste del modelo.
-- La puntuación de planificación (generar el circuito correcto y la respuesta) se mantiene en 1/20; el modelo no planifica bien circuitos complejos.
-- Simulación ideal de vector de estado: no modela ruido, decoherencia ni errores de puerta, por lo que no sirve para validar hardware real.
-- Límite duro de 16 qubits y 1.000 operaciones secuenciales entre resets.
-- Solo cuatro tipos de puerta (H, X, T, CNOT); no hay rotaciones arbitrarias ni puertas de múltiples qubits más allá de CNOT.
-- Riesgo de alucinación inherente al modelo base en la fase de generación de circuitos y de respuestas en lenguaje natural.
-- Sesgos del modelo base no documentados en la información disponible.
-- Idiomas soportados no documentados.
-- Licencia fragmentada: los pesos upstream son Apache-2.0, pero el código y el arte propios de QwenQPU no tienen licencia open source project-wide, lo que impide un uso comercial claro sin revisar `docs/LICENSES.md`.
-- El comando de descarga de la model card referencia `xxx1221/QwenQPU`, distinto del ID del repo (`xi-zhao/QwenQPU`); conviene verificar la ruta antes de descargar.
-- Proyecto con 0 descargas y 0 likes en el momento de la consulta: sin validación comunitaria ni mantenimiento demostrado.
+- Modelo experimental de investigación: no es un LLM de propósito general y su uso previsto es la simulación cuántica acoplada al lenguaje.
+- La licencia es `component-specific-terms`, con términos distintos por componente; es imprescindible revisar `docs/LICENSES.md` antes de cualquier uso comercial.
+- El checkpoint publicado está en FP32 y requiere memoria muy superior a la de un modelo de 4B cuantizado; no hay versiones ligeras disponibles.
+- El benchmark está incompleto (27 de 48 tareas) y es interino; los resultados no deben tratarse como definitivos.
+- La simulación está limitada a 1–16 qubits y a las compuertas H, X, T y CNOT; no se documentan otras compuertas.
+- Los coeficientes cuánticos son constantes fijas, no aprendidas, lo que limita la adaptabilidad del componente cuántico.
+- No hay información sobre sesgos, riesgo de alucinación en lenguaje natural, cobertura idiomática ni comportamiento fuera del dominio cuántico.
+- El runtime histórico y el checkpoint r5 actual son artefactos distintos; el runtime compuesto anterior solo es recuperable en la revisión `78dfa7bcc58f6a66da3ba78a5b86aa5eb917aadf`.
+- El modelo base tiene 43 capas y hidden size 3968, mientras que el checkpoint r5 declara 36 capas; conviene verificar la composición exacta con el manifiesto de pesos antes de desplegar.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/xi-zhao/QwenQPU
-- Modelo base: https://huggingface.co/divagr1925/Qwen3.5-4B-Qwenputer
-- Código y demo: https://github.com/xi-zhao/QwenQPU
+- Modelo en Hugging Face: https://huggingface.co/xi-zhao/QwenQPU
+- Repositorio y demo: https://github.com/xi-zhao/QwenQPU
 - Arquitectura: https://github.com/xi-zhao/QwenQPU/blob/main/docs/ARCHITECTURE.md
-- Benchmark: https://github.com/xi-zhao/QwenQPU/blob/main/docs/BENCHMARK.md
+- Capas añadidas: https://github.com/xi-zhao/QwenQPU/blob/main/docs/ADDED_LAYERS.md
+- Manifiesto de pesos: https://github.com/xi-zhao/QwenQPU/blob/main/evidence/added-layers/weight-manifest.json
+- Benchmark de capas añadidas: https://github.com/xi-zhao/QwenQPU/blob/main/docs/BENCHMARK_ADDED_LAYERS.md
+- Benchmark histórico: https://github.com/xi-zhao/QwenQPU/blob/main/docs/BENCHMARK.md
 - Licencias por componente: https://github.com/xi-zhao/QwenQPU/blob/main/docs/LICENSES.md
+- Modelo base: https://huggingface.co/divagr1925/Qwen3.5-4B-Qwenputer
+- Revisión histórica del runtime compuesto: https://huggingface.co/xi-zhao/QwenQPU/tree/78dfa7bcc58f6a66da3ba78a5b86aa5eb917aadf

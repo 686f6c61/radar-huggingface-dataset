@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 120,
+  "downloads_30d": 121,
   "trending_score": 0,
   "parameters": 3199264,
   "parameters_human": "3.2M",
@@ -55,31 +55,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Ecapa Tdnn | Nvidia Ngc",
-      "url": "https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemo/models/ecapa_tdnn?version=1.16.0",
-      "snippet": "This model with modified ecapa based encoder [1] is trained end-to-end using angular softmax loss for speaker verification and diarization purposes and for extracting speaker embeddings Model Architecture ECAPA models consists of blocks of time delay neural blocks (TDNNs) and squeeze and excite (SE) layers unified with blocks of Res2Block layers."
-    },
-    {
-      "title": "yangwang825/ecapa-tdnn-vox2 · Hugging Face",
-      "url": "https://huggingface.co/yangwang825/ecapa-tdnn-vox2",
-      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "GitHub - TaoRuijie/ECAPA-TDNN: Unofficial reimplementation of ECAPA ...",
-      "url": "https://github.com/TaoRuijie/ECAPA-TDNN",
-      "snippet": "This repository contains my unofficial reimplementation of the standard ECAPA-TDNN, which is the speaker recognition in VoxCeleb2 dataset. This repository is modified based on voxceleb_trainer."
-    },
-    {
-      "title": "speechbrain/spkrec-ecapa-voxceleb · Hugging Face",
-      "url": "https://huggingface.co/speechbrain/spkrec-ecapa-voxceleb",
-      "snippet": "This repository provides all the necessary tools to perform speaker verification with a pretrained ECAPA-TDNN model using SpeechBrain. The system can be used to extract speaker embeddings as well. It is trained on Voxceleb 1+ Voxceleb2 training data. For a better experience, we encourage you to ..."
-    },
-    {
-      "title": "[2005.07143] ECAPA-TDNN: Emphasized Channel Attention, Propagation and ...",
-      "url": "https://arxiv.org/abs/2005.07143",
-      "snippet": "Abstract page for arXiv paper 2005.07143: ECAPA-TDNN: Emphasized Channel Attention, Propagation and Aggregation in TDNN Based Speaker Verification"
-    }
-  ]
+  "sources": []
 }

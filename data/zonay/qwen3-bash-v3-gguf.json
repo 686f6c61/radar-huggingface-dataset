@@ -49,11 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub - shelken/awesome-stars",
-      "url": "https://github.com/shelken/awesome-stars",
-      "snippet": "TecharoHQ/anubis - Weighs the soul of incoming HTTP requests to stop AI crawlers; QuantumNous/new-api - A unified AI model hub for aggregation & distribution."
-    }
-  ]
+  "sources": []
 }

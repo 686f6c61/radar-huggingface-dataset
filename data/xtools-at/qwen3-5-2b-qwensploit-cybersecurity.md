@@ -2,125 +2,105 @@
 
 ## Resumen
 
-Qwensploit 3.5 2B es un ajuste fino (fine-tune) especializado en ciberseguridad del modelo `xtools-at/Qwen3.5-2B-MultiDistill-Megamix-6xMerge-UNCENSORED-heretic`, un merge de la familia Qwen3.5-2B que combina destilaciones de razonamiento, código y razonamiento multi-paso. Lo desarrolla el usuario xtools-at y está orientado a razonamiento sobre seguridad, análisis de vulnerabilidades, revisión de código seguro, conocimiento de red team y respuesta a preguntas técnicas.
+Qwensploit 3.5 2B es un ajuste fino (fine-tune) especializado en ciberseguridad y red team sobre un merge de modelos de la familia Qwen3.5-2B. Lo desarrolla el usuario xtools-at y se distribuye en Hugging Face bajo licencia Apache-2.0 (con reservas sobre la compatibilidad de licencias upstream). El modelo parte de `xtools-at/Qwen3.5-2B-MultiDistill-Megamix-6xMerge-UNCENSORED-heretic`, un merge que combina destilaciones de razonamiento, código y razonamiento multi-paso, y se entrena mediante LoRA supervisado sobre 7.000 ejemplos de cuatro datasets de ciberseguridad, red team y destilación sintética.
 
-El modelo parte de una base de aproximadamente 2.213 millones de parámetros (2,21 B) y se ha entrenado con supervisión (SFT) mediante LoRA sobre 7.000 ejemplos procedentes de cuatro conjuntos de datos: dos de temática específica de ciberseguridad y red team, y dos de destilación sintética de razonamiento y código. El entrenamiento se realizó a una longitud de contexto de 8.192 tokens, con 1 epoch, LoRA de rango 16 sobre todos los módulos lineales y una única GPU NVIDIA L4 de 24 GB.
+El problema que aborda es la falta de modelos pequeños y accesibles con conocimientos específicos de seguridad ofensiva y defensiva, análisis de vulnerabilidades y revisión de código seguro. Con 2.213.241.664 parámetros totales (aproximadamente 2,2 mil millones) y un contexto de entrenamiento de 8.192 tokens, está pensado para ejecutarse en hardware modesto, lo que lo hace atractivo para laboratorios, CTF y formación.
 
-Su relevancia es acotada pero clara: ofrece un modelo pequeño (~2 B), con licencia declarada Apache-2.0 y ejecutable en hardware de consumo, orientado a un nicho (seguridad ofensiva y defensiva autorizada, CTF, análisis de amenazas) donde la mayoría de modelos generalistas aplican rechazos o filtros que dificultan el trabajo técnico. El autor declara explícitamente que no hay evaluación independiente de rendimiento en tareas reales de seguridad.
+Es relevante ahora porque el ecosistema de modelos "uncensored" y especializados en seguridad crece rápidamente, y este modelo ofrece una alternativa de 2B parámetros con licencia permisiva declarada, aunque con advertencias claras sobre la necesidad de revisar las licencias heredadas de los datasets de destilación. El autor mantiene una familia de variantes (2B, 4B y 9B) y una versión V2 posterior.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Qwen3.5), ajuste fino LoRA sobre un modelo merge |
-| Parámetros totales | 2.213.241.664 (~2,21 B) |
-| Parámetros activos | no aplica (no se describe como MoE en la información disponible) |
-| Longitud de contexto | 8.192 tokens (longitud usada en el entrenamiento); contexto nativo del modelo base: no disponible |
-| Tipos de cuantización | no disponible (el repositorio solo publica pesos safetensors) |
-| Idiomas soportados | inglés (`en`); otros idiomas no declarados |
-| Licencia | Apache-2.0 (sujeta a revisión de compatibilidad con licencias upstream) |
-| Formato de pesos | safetensors (librería transformers); tamaño del repo 4,4 GB |
-| Pipeline declarado | image-text-to-text (según metadatos de Hugging Face; la model card no describe capacidades de visión) |
-| Modalidad de entrenamiento | SFT con LoRA (peft) |
-| Descargas / likes | 0 / 0 (a fecha de creación del registro) |
-| Fecha de creación / actualización | 2026-10-19 / 2026-10-19 |
+| Arquitectura | Transformer decoder-only (familia Qwen3.5), ajuste fino con LoRA (PEFT) |
+| Parametros totales | 2.213.241.664 |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 8.192 tokens (longitud de entrenamiento) |
+| Tipos de cuantizacion | No disponible en la informacion proporcionada (pesos en safetensors; cuantizaciones GGUF/AWQ no documentadas) |
+| Idiomas soportados | Ingles (en) |
+| Licencia | Apache-2.0 (sujeta a revision de compatibilidad con licencias upstream) |
+| Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es un transformer decoder-only de la familia Qwen3.5 (aproximadamente 2,21 B de parámetros). El modelo directo del que parte es un merge denominado MultiDistill-Megamix-6xMerge, que combina ajustes finos de destilación de razonamiento, código y razonamiento multi-paso, destilados de modelos Claude Mythos, Fable y Opus según la model card. Sobre esa base se aplicó un ajuste fino supervisado con LoRA, no un entrenamiento desde cero: 1 epoch, 7.000 entradas de entrenamiento y 350 de evaluación, longitud máxima de entrada de 8.000 caracteres en la mezcla de datos y contexto de 8.192 tokens.
+El modelo es un transformer decoder-only de la familia Qwen3.5 con aproximadamente 2,2 mil millones de parametros, ajustado mediante Supervised Fine-Tuning con LoRA sobre el merge `Qwen3.5-2B-MultiDistill-Megamix-6xMerge-UNCENSORED-heretic`. La configuracion de entrenamiento usa rango LoRA 16, alpha 32, dropout 0,02 y aplicacion a todos los modulos objetivo, con optimizador AdamW de 8 bits, learning rate 2e-4, scheduler lineal, weight decay 0,002, batch efectivo de 4x8 y una sola epoca sobre 7.000 entradas (con 350 de evaluacion), en una GPU NVIDIA L4 de 24 GB. La longitud maxima de entrada fue de 8.000 caracteres y el contexto de entrenamiento de 8.192 tokens.
 
-La configuración de entrenamiento reportada es: learning rate 2e-4, batch size 4x8, LoRA con r=16, alpha=32, dropout 0.02 y todos los módulos lineales como objetivos, optimizador AdamW de 8 bits, scheduler lineal y weight decay 0.002, sobre una NVIDIA L4 de 24 GB. La mezcla de datos es un 67% de contenido específico de seguridad (33% CyberSec-Reasoning-Premium, 34% RedTeam-Premium) y un 33% de destilaciones sintéticas de razonamiento y código (20% Claude Mythos Distilled 25K Clean, 13% Qwen3.8-Max Distillation 50K Clean). No se documenta uso de RLHF ni DPO, ni innovaciones de decodificación (decodificación especulativa, atención lineal, etc.).
-
-Los resultados reportados son únicamente de pérdida: training loss 0,710 y evaluation loss 0,696 al step 219, con una curva descendente (0,983 → 0,782 → 0,744 → 0,710 en entrenamiento). El propio autor advierte que la pérdida es un diagnóstico de entrenamiento y no una medida de precisión en ciberseguridad ni de seguridad del modelo.
+El dataset de entrenamiento combina cuatro fuentes: CyberSec-Reasoning-Premium (2.305 entradas, 33%), RedTeam-Premium (2.385, 34%), Claude Mythos Distilled 25K Clean (1.385, 20%) y Qwen3.8-Max Distillation 50K Clean (925, 13%). Estas fuentes se construyen a su vez sobre datasets como Cybersecurity Reasoning Dataset, Ultimate Offensive Red Team, claude_mythos_distilled_25k y qwen3.8-max-distillation-50k. La mezcla combina ejemplos de ciberseguridad y red team con datos sinteticos de razonamiento, codigo e instrucciones generales. No se documenta el uso de RLHF o DPO; el entrenamiento es puramente supervisado. La perdida final reportada es 0,710 de entrenamiento y 0,696 de evaluacion, con un descenso progresivo a lo largo de los pasos 66, 110, 154 y 219.
 
 ## Capacidades
 
-- Razonamiento técnico sobre ciberseguridad: explicación de conceptos, vectores de ataque, taxonomías de vulnerabilidades y marcos de referencia.
-- Análisis de vulnerabilidades y revisión de código seguro: identificación de patrones inseguros y propuesta de correcciones.
-- Conocimiento de red team y pentesting: procedimientos, herramientas y técnicas descritas en los datasets de entrenamiento (Ultimate Offensive Red Team, entre otros).
-- Seguridad defensiva: modelado de amenazas, análisis de incidentes y triaje.
-- Resolución de retos CTF y asistencia educativa en seguridad.
-- Generación de código y asistencia de programación, heredada parcialmente de las destilaciones de código del modelo base.
-- Razonamiento multi-paso y modo conversacional (herencia del merge base con destilaciones de razonamiento).
-- Alineamiento reducido ("uncensored"/"heretic"): menor tendencia al rechazo en consultas de temática ofensiva, según la nomenclatura del modelo base.
-- Soporte de tool calling / function calling: no documentado en la información disponible.
-- Capacidades de agente autónomo: no documentadas.
-- Capacidades de visión: no documentadas, pese al `pipeline_tag: image-text-to-text`.
-- Capacidades multilingües: no declaradas; el modelo solo lista inglés.
-- Modo "thinking" explícito: no documentado como tal, aunque el linaje incluye destilaciones de razonamiento.
+- Generacion de texto y respuesta a preguntas tecnicas de ciberseguridad.
+- Razonamiento sobre vulnerabilidades, analisis de amenazas y modelado de riesgos.
+- Revision de codigo seguro y deteccion de patrones inseguros.
+- Conocimiento de red team: tecnicas ofensivas, reconocimiento y explotacion en entornos autorizados.
+- Soporte para retos CTF y educacion en seguridad.
+- Generacion y explicacion de codigo en contextos de seguridad y programacion general.
+- Razonamiento multi-paso heredado del merge base (destilaciones de razonamiento).
+- Capacidad multimodal declarada por el pipeline `image-text-to-text` en Hugging Face, aunque no se detalla en la model card el alcance real de vision.
+- Conversacion multi-turno en ingles.
+- Modo "uncensored" orientado a reducir rechazos en consultas de seguridad ofensiva.
+- No se documenta soporte explicito de tool calling ni de function calling en la informacion disponible.
 
 ## Casos de uso
 
-- Revisión de código seguro en CI/CD: el modelo puede analizar diffs o fragmentos de código y señalar patrones inseguros (inyección, desbordamientos, gestión de secretos) antes del merge, aprovechando su especialización en secure code review y su ventana de 8.192 tokens para revisar ficheros completos.
-- Triaje de vulnerabilidades: a partir de una descripción de CVE o de un informe de escaneo, el modelo ayuda a clasificar severidad, explicar el vector de ataque y proponer mitigaciones, útil en equipos SOC con volumen alto de alertas.
-- Modelado de amenazas en diseño de sistemas: dado un diagrama descrito en texto o una arquitectura de servicios, generar análisis STRIDE, identificar superficies de exposición y priorizar controles.
-- Ejercicios de red team autorizados: generación de hipótesis de ataque, listas de comprobación de reconocimiento y borradores de informes dentro de un alcance de pruebas explícitamente autorizado, gracias al entrenamiento sobre datasets ofensivos.
-- Formación y CTF: creación de pistas, explicaciones paso a paso de retos y resolución asistida en entornos de laboratorio, donde el modelo responde sin los rechazos típicos de modelos generalistas.
-- Asistente local de bajo coste para investigadores de seguridad: al ser un modelo de ~2,2 B y 4,4 GB en safetensors, puede desplegarse en una estación de trabajo con GPU de consumo y sin enviar datos sensibles a la nube.
-- Soporte a la respuesta a incidentes: resumen y correlación de trazas, comandos y artefactos forenses en texto, con explicación de indicadores de compromiso.
-- Generación de scripts de automatización de seguridad (parseo de logs, consultas a APIs de inteligencia de amenazas), apoyándose en la componente de código del modelo base.
+- Analisis de vulnerabilidades en auditorias: el modelo puede revisar fragmentos de codigo y describir posibles fallos (inyeccion, desbordamientos, configuraciones inseguras) apoyandose en su entrenamiento especifico de CyberSec-Reasoning, aunque los resultados deben validarse manualmente.
+- Revision de codigo seguro en pipelines de desarrollo: integrado como asistente de revision, puede senalar practicas inseguras y proponer alternativas, gracias a su mezcla de datos de codigo y seguridad.
+- Formacion y concienciacion en ciberseguridad: sirve para generar escenarios, preguntas y explicaciones tecnicas en entornos educativos, con contexto de 8.192 tokens suficiente para material didactico extenso.
+- Retos CTF: puede ayudar a razonar sobre pistas, identificar tecnicas y explicar pasos de resolucion, aprovechando el conocimiento de red team y el razonamiento multi-paso heredado.
+- Ejercicios de red team autorizados: como asistente de planificacion de pruebas de penetracion, puede proponer tecnicas y comandos que el operador debe revisar y ejecutar solo en entornos con autorizacion explicita.
+- Analisis de incidentes y threat modeling: puede estructurar hipotesis sobre vectores de ataque y contramedidas defensivas, usando su conocimiento de seguridad defensiva y ofensiva.
+- Asistente de laboratorio en hardware modesto: al ser un modelo de 2B, puede desplegarse en una unica GPU de consumo o en CPU con cuantizacion, lo que facilita su uso en laboratorios personales y entornos de aprendizaje.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card únicamente reporta métricas de entrenamiento (loss), que no constituyen una evaluación de capacidad:
-
-| Métrica | Paso 66 | Paso 110 | Paso 154 | Paso 219 (final) |
-|---|---:|---:|---:|---:|
-| Training loss | 0,983 | 0,782 | 0,744 | 0,710 |
-| Evaluation loss | 0,828 | 0,753 | 0,715 | 0,696 |
-
-No hay datos de MMLU, HumanEval, GSM8K ni de evaluaciones específicas de seguridad (CTF, Cybench, etc.) en la información proporcionada.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card solo reporta metricas de perdida de entrenamiento y evaluacion (0,710 y 0,696 respectivamente), que no constituyen una medida directa de precision en tareas de ciberseguridad ni de seguridad del modelo.
 
 ## Requisitos de hardware
 
-- Pesos en safetensors (bf16): 4,4 GB, coherente con 2,21 B de parámetros. VRAM estimada para inferencia: en torno a 6-8 GB incluyendo caché KV y overhead del runtime (estimación, no publicada por el autor).
-- Cuantización a 8 bits: aproximadamente 2,2-2,5 GB de pesos; VRAM estimada 4-5 GB (estimación).
-- Cuantización a 4 bits: aproximadamente 1,1-1,5 GB de pesos; VRAM estimada 2,5-3,5 GB (estimación). El autor no publica versiones GGUF ni AWQ/GPTQ.
-- GPU recomendadas: cabe en GPU de consumo, como RTX 3060 12 GB, RTX 4060 Ti 8/16 GB, RTX 4070 o RTX 4090; el entrenamiento se realizó en una NVIDIA L4 de 24 GB. Para despliegue en servidor, A10G, L4 o A100 son suficientes y quedan sobredimensionadas.
-- Despliegue: transformers (librería declarada) y, previsiblemente, servidores compatibles con arquitecturas Qwen (vLLM, TGI) una vez verificada la arquitectura exacta; llama.cpp u Ollama requerirían convertir los pesos a GGUF, conversión no publicada.
-- Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo.
+- VRAM estimada para inferencia: no disponible de forma oficial; para un modelo de 2,2B parametros, en FP16 se requieren aproximadamente 4,4 GB solo para pesos, mas overhead de activaciones y cache KV; en cuantizacion de 8 bits rondaria 2,2-3 GB y en 4 bits alrededor de 1,5-2 GB (estimaciones teoricas, no publicadas por el autor).
+- GPU recomendadas: el entrenamiento se realizo en una NVIDIA L4 de 24 GB; para inferencia son suficientes GPUs consumer como RTX 3060 12 GB, RTX 4060 Ti 16 GB o RTX 4090.
+- Cabe en GPU consumer: si, previsiblemente en cualquier GPU con 6 GB o mas en FP16 y en GPUs de 4 GB con cuantizacion de 4 bits.
+- Opciones de despliegue: transformers (libreria declarada); vLLM, llama.cpp, Ollama o TGI no estan documentados en la informacion disponible, aunque al ser un modelo transformers estandar podrian ser compatibles previa conversion.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-Los datos disponibles solo permiten comparar con el linaje directo del propio modelo; no se dispone de métricas de benchmarks para comparar con alternativas de la misma categoría.
-
-| Modelo | Parámetros | Contexto | Especialización | Licencia | Datos de rendimiento |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwensploit 3.5 2B (este modelo) | 2,21 B | 8.192 (entrenamiento) | Ciberseguridad y red team | Apache-2.0 (con revisión upstream) | Solo loss (0,696 eval) |
-| Qwen3.5-2B-MultiDistill-Megamix-6xMerge-UNCENSORED-heretic (base directa) | ~2,2 B | no disponible | Merge generalista con razonamiento y código, sin censura declarada | no disponible en la información proporcionada | no disponible |
-| Qwen3.5-2B-MultiDistill-Megamix-6xMerge (merge relacionado) | ~2,2 B | no disponible | Merge de destilaciones de razonamiento, código y multi-paso | no disponible | no disponible |
-| Qwen/Qwen3.5-2B (familia subyacente) | ~2,2 B | no disponible | Modelo base generalista | no disponible | no disponible |
+| Qwensploit 3.5 2B | 2,2B | 8.192 | Ciberseguridad y red team (LoRA) | Apache-2.0 (con reservas upstream) | Hugging Face |
+| Qwensploit 4B | No disponible en la informacion | No disponible | Ciberseguridad y red team | Apache-2.0 (declarada) | Hugging Face |
+| Qwensploit 9B | No disponible en la informacion | No disponible | Ciberseguridad y red team | Apache-2.0 (declarada) | Hugging Face |
+| Qwen3.5-2B (base de la familia) | ~2B | No disponible | Modelo generalista | No disponible en la informacion | Hugging Face |
+
+No se dispone de datos de benchmarks que permitan comparar el rendimiento real frente a alternativas de la misma categoria; la comparativa se limita a parametros, contexto y licencia.
 
 ## Limitaciones y advertencias
 
-- Puede generar explicaciones inexactas, código inseguro o consejos de seguridad desactualizados; el autor recomienda validar toda salida antes de usarla.
-- Los datos de destilación son sintéticos y pueden arrastrar errores del modelo profesor, además de sesgos de estilo y de contenido de las fuentes originales.
-- El rendimiento en tareas reales de seguridad no ha sido establecido de forma independiente; las métricas publicadas se limitan a la pérdida de entrenamiento.
-- Riesgo de alucinación en detalles técnicos concretos: versiones de software, CVE, rutas de explotación y comandos pueden ser inventados o estar obsoletos.
-- Sesgo de dominio: el ajuste se centra en seguridad y el modelo solo declara inglés, por lo que su calidad en castellano u otros idiomas no está garantizada.
-- Contexto limitado a 8.192 tokens en entrenamiento; no se especifica el contexto nativo del modelo base, por lo que ventanas mayores no están validadas.
-- Uso dual: las capacidades ofensivas deben emplearse únicamente en sistemas con autorización explícita; el autor lo exige en la model card.
-- Licencia: aunque se declara Apache-2.0, el propio autor advierte de que las licencias upstream (en particular el dataset de destilación de Qwen) documentan restricciones heredadas que pueden afectar a la redistribución o al uso comercial. Es obligatoria una revisión legal previa.
-- La model card contiene errores de forma ("LoRA traget modules", compartición de porcentajes que suman 100 con redondeo) que conviene verificar contra el repositorio.
-- Metadatos incoherentes: el `pipeline_tag` es `image-text-to-text`, pero no se documentan capacidades multimodales; no debe asumirse soporte de imagen.
-- Ausencia de cuantizaciones oficiales (GGUF, AWQ, GPTQ) y de versiones adaptadoras separadas: los tags incluyen `peft` y `lora`, pero el tamaño del repositorio (4,4 GB) sugiere pesos completos en bf16.
-- Modelo con 0 descargas y 0 likes en el momento del registro: sin validación por parte de la comunidad.
+- Puede generar explicaciones inexactas, codigo inseguro o consejos de seguridad desactualizados.
+- Los datos de destilacion sintetica pueden contener errores heredados de los modelos profesor.
+- El rendimiento en tareas de seguridad del mundo real no ha sido establecido de forma independiente.
+- Debe usarse exclusivamente en sistemas para los que se tenga autorizacion explicita de pruebas.
+- Es necesario revisar comandos, codigo y recomendaciones generados antes de su uso.
+- La licencia Apache-2.0 declarada esta sujeta a revision de las licencias upstream; en particular, el dataset de destilacion de Qwen documenta restricciones heredadas que pueden afectar al uso downstream y comercial.
+- Solo soporta ingles, lo que limita su uso en entornos en castellano sin traduccion previa.
+- El contexto de 8.192 tokens puede ser insuficiente para analisis de repositorios o documentos muy extensos.
+- El caracter "uncensored" implica un mayor riesgo de generar contenido ofensivo o peligroso; requiere salvaguardas adicionales en produccion.
+- No se documentan mecanismos de tool calling ni de agentes, por lo que su integracion en pipelines automatizados requiere envoltorios propios.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/xtools-at/Qwen3.5-2B-Qwensploit-CyberSecurity
-- Modelo base directo: https://huggingface.co/xtools-at/Qwen3.5-2B-MultiDistill-Megamix-6xMerge-UNCENSORED-heretic
+- Modelo base: https://huggingface.co/xtools-at/Qwen3.5-2B-MultiDistill-Megamix-6xMerge-UNCENSORED-heretic
 - Merge relacionado: https://huggingface.co/xtools-at/Qwen3.5-2B-MultiDistill-Megamix-6xMerge
 - Familia Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
+- Variante 4B: https://huggingface.co/xtools-at/Qwen3.5-4B-Qwensploit-CyberSecurity
+- Variante 9B: https://huggingface.co/xtools-at/Qwen3.5-9B-Qwensploit-CyberSecurity
+- Version V2: https://huggingface.co/xtools-at/Qwensploit-V2-2B-CyberSecurity-Qwen3.5
 - Dataset CyberSec-Reasoning-Premium: https://huggingface.co/datasets/saidutta69/CyberSec-Reasoning-Premium
 - Dataset RedTeam-Premium: https://huggingface.co/datasets/saidutta69/RedTeam-Premium
 - Dataset Claude Mythos Distilled 25K Clean: https://huggingface.co/datasets/saidutta69/claude-mythos-distilled-25k-clean
 - Dataset Qwen3.8-Max Distillation 50K Clean: https://huggingface.co/datasets/saidutta69/qwen3.8-max-distillation-50k-clean
-- Fuente upstream Cybersecurity Reasoning Dataset: https://huggingface.co/datasets/dpevzner/Cybersecurity_Reasoning_Dataset
-- Fuente upstream Ultimate Offensive Red Team: https://huggingface.co/datasets/WNT3D/Ultimate-Offensive-Red-Team
-- Fuente upstream claude_mythos_distilled_25k: https://huggingface.co/datasets/WithinUsAI/claude_mythos_distilled_25k
-- Fuente upstream qwen3.8-max-distillation-50k: https://huggingface.co/datasets/r0b0tlab/qwen3.8-max-distillation-50k
-- Variante DavidAU Claude 4.6 OS: https://huggingface.co/DavidAU/Qwen3.5-2B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING
-- Referencia a la destilación de razonamiento de Jackrong: enlace truncado en la model card, no disponible
-- Paper, blog o demo oficial: no disponible
-- Resultados de la búsqueda web: no relevantes para este modelo (corresponden a la marca de máquinas de grabado xTool, sin relación con el autor del modelo)
+- Fuente Cybersecurity Reasoning Dataset: https://huggingface.co/datasets/dpevzner/Cybersecurity_Reasoning_Dataset
+- Fuente Ultimate Offensive Red Team: https://huggingface.co/datasets/WNT3D/Ultimate-Offensive-Red-Team
+- Fuente claude_mythos_distilled_25k: https://huggingface.co/datasets/WithinUsAI/claude_mythos_distilled_25k
+- Fuente qwen3.8-max-distillation-50k: https://huggingface.co/datasets/r0b0tlab/qwen3.8-max-distillation-50k

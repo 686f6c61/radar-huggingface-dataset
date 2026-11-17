@@ -5,7 +5,7 @@
   "author": "sungjuncho",
   "url": "https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-satimp-seed2",
   "created_at": "2026-11-14T10:35:12.000Z",
-  "updated_at": "2026-11-14T10:36:49.000Z",
+  "updated_at": "2026-11-16T21:37:34.000Z",
   "license": "llama3.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

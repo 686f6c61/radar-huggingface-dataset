@@ -2,107 +2,110 @@
 
 ## Resumen
 
-DeepSeek-V4-Flash-0731-DGX-Spark-GGUF es una cuantizacion GGUF del modelo DeepSeek-V4-Flash-0731 (licencia MIT), desarrollada por el usuario zephel01. El objetivo concreto es empaquetar un modelo MoE de aproximadamente 284.000 millones de parametros totales en un unico equipo NVIDIA DGX Spark (SoC GB10 con 128 GB de memoria unificada), preservando los 256 expertos por capa sin poda alguna. El resultado es un archivo de 96,8 GB que combina varios tipos de cuantizacion (IQ2_XS, IQ3_XXS, IQ2_S y MXFP4) con una media de 2,64 bits por peso.
+DeepSeek-V4-Flash-0731-DGX-Spark-GGUF es una cuantización GGUF del modelo DeepSeek-V4-Flash-0731 (MIT) publicada por el usuario zephel01, pensada para ejecutarse íntegramente en una única NVIDIA DGX Spark con 128 GB de memoria unificada (GB10). El archivo ocupa 96,8 GB repartido en tres shards y conserva los 256 expertos del modelo original sin poda, con una mezcla de tipos de cuantización (IQ2_XS 41%, IQ3_XXS 39%, IQ2_S 18%, MXFP4 2% por bytes) que promedia 2,64 bits por peso, aproximadamente equivalente a un IQ2_M.
 
-La relevancia de esta ficha es doble. Por un lado, demuestra que es posible ejecutar localmente un modelo de escala frontier en hardware de escritorio de gama alta para IA, algo impensable hace pocos anos. Por otro, es una publicacion en estado BETA: la velocidad declarada para DGX Spark (aproximadamente 26 tok/s) es una estimacion derivada de mediciones de la cuantizacion equivalente de unsloth en un Spark alquilado, no una medicion directa de este archivo.
+El modelo base es un transformer de tipo mezcla de expertos (MoE) con 284.334.567.511 parámetros totales según los safetensors del repositorio original. La cuantización está orientada al motor propietario Abyss del mismo autor, que ofrece decodificación especulativa mediante un drafter DSpark opcional, y declara compatibilidad con endpoints. El repositorio se publica como BETA y, en el momento de la ficha, no se ha ejecutado todavía en una DGX Spark real: las cifras de velocidad disponibles proceden de una RTX 5090 con 96 GB de RAM y de un Spark alquilado con el GGUF de unsloth de tamaño equivalente.
 
-El modelo base DeepSeek-V4-Flash-0731 es un transformer con mezcla de expertos (MoE) orientado a generacion de texto conversacional, con soporte declarado de ingles y japones. Esta cuantizacion esta pensada para entornos donde la VRAM dedicada es limitada pero se dispone de memoria unificada amplia, y donde prima la fidelidad al modelo original frente a la velocidad pura.
+Su relevancia es doble: por un lado demuestra que un MoE de ~284B puede caber en 128 GB de memoria unificada manteniendo todos los expertos; por otro, publica métricas de divergencia KL frente a una cuantización de referencia de mayor precisión, lo que permite evaluar la pérdida de calidad de forma cuantitativa. La licencia MIT del modelo base facilita su uso comercial, aunque la herramienta de inferencia recomendada (Abyss) es un proyecto independiente que conviene revisar por separado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (MoE); detalles completos de capas y atencion no disponibles |
-| Parametros totales | 284.334.567.511 (284,3 mil millones) |
+| Arquitectura | Transformer MoE (mezcla de expertos, 256 expertos, segun model card) |
+| Parametros totales | 284.334.567.511 |
 | Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Mixta: IQ2_XS 41%, IQ3_XXS 39%, IQ2_S 18%, MXFP4 2% (por bytes); media de 2,64 bits por peso, equivalente aproximado a IQ2_M |
-| Idiomas soportados | Ingles (en) y japones (ja) |
+| Longitud de contexto | 65.536 tokens en la configuracion de ejemplo del autor (`--max-context 65536`); contexto nativo del modelo base no disponible |
+| Tipos de cuantizacion | Mezcla: IQ2_XS 41%, IQ3_XXS 39%, IQ2_S 18%, MXFP4 2% (por bytes); 2,64 bits/peso de media (~IQ2_M) |
+| Idiomas soportados | Ingles (en) y japones (ja) declarados; el modelo base puede tener mas, no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF (3 shards en la carpeta L97) |
+| Formato de pesos | GGUF (3 shards, 96,8 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer con mezcla de expertos (MoE) de 284.334.567.511 parametros totales. La model card de esta cuantizacion no detalla el numero de capas, la dimension oculta, el numero de cabezas de atencion ni el numero de parametros activos por token, por lo que esos datos deben consultarse en la model card del modelo original de DeepSeek. Si se confirma que se conservan los 256 expertos por capa (la model card afirma que no se ha podado ninguno), el modelo mantiene la misma topologia que el original.
+El modelo base DeepSeek-V4-Flash-0731 es un transformer de mezcla de expertos con 284.334.567.511 parametros totales y 256 expertos por capa segun la model card de la cuantizacion. No se dispone de informacion sobre el numero de parametros activos por token, la composicion del dataset de entrenamiento, el numero de tokens vistos ni si se aplicaron tecnicas de RLHF, DPO u otras fases de alineamiento; estos datos no aparecen en la informacion proporcionada.
 
-El proceso de cuantizacion lo realiza la herramienta trench-gguf del propio autor, partiendo de los GGUF publicados por unsloth (unsloth/DeepSeek-V4-Flash-0731-GGUF). Se aplica una estrategia de tipos mixtos por experto en lugar de un unico tipo uniforme: los expertos se reparten entre IQ2_XS, IQ3_XXS, IQ2_S y MXFP4, con una media de 2,64 bits por peso. La model card menciona el uso de imatrix (matriz de importancia) como parte del pipeline, lo que permite asignar mas bits a los pesos mas sensibles. No se documentan en la informacion disponible detalles sobre el dataset de entrenamiento original, el numero de tokens, ni si hubo RLHF o DPO en el modelo base.
+La innovacion tecnica de esta publicacion no reside en el modelo sino en el proceso de cuantizacion: se ha generado una mezcla heterogenea de tipos (IQ2_XS, IQ3_XXS, IQ2_S y MXFP4) usando matrices de importancia (imatrix) y la herramienta `iq_pack.py` del motor Abyss, conservando la totalidad de los expertos. El autor reporta una divergencia KL de 0,150 frente a la cuantizacion de referencia UD-Q8_K_XL de unsloth (original con expertos MXFP4), medida sobre 12 secuencias de 1.024 tokens (8 en ingles, 1 de codigo, 3 en japones), frente a 0,186 del UD-Q2_K_XL de unsloth del mismo tamano. En japones la diferencia es mayor: 0,145 frente a 0,219. La coincidencia del token superior es del 84,1% frente al 81,5% de la referencia. Ademas, el motor Abyss soporta decodificacion especulativa con un drafter DSpark externo (GGUF de 6,5 GB, Q2K/Q8 con Markov Q8) que en el Spark alquilado alcanzo una tasa de aceptacion del 78%.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno en ingles y japones.
-- Razonamiento y respuesta a instrucciones propias de un modelo de gran escala, heredadas del modelo base DeepSeek-V4-Flash-0731.
-- Capacidad multilingue limitada a los idiomas declarados (en, ja); el resto de idiomas no esta garantizado.
-- Soporte de decodificacion especulativa mediante el drafter DSpark (6,5 GB), recomendado en DGX Spark para mejorar el throughput.
-- Compatibilidad con endpoints de inferencia (tag `endpoints_compatible`).
-- No se documentan en la informacion disponible capacidades de vision, audio, tool calling nativo ni modo de razonamiento explicito (thinking mode) para esta cuantizacion concreta.
+- Generacion de texto conversacional multi-turno, segun la etiqueta `conversational` y el pipeline `text-generation`.
+- Razonamiento y respuesta a instrucciones heredados del modelo base DeepSeek-V4-Flash-0731; el alcance exacto (codigo, matematicas, tool calling) no se detalla en la informacion disponible.
+- Capacidad multilingue limitada a ingles y japones en la declaracion del repositorio; el autor advierte que el modelo tiende a responder en chino a preguntas en japones (11 de 24 respuestas en la cuantizacion L97, frente a 6 de 24 en los pesos originales), y que un system prompt del tipo "日本語で答えてください。" reduce el fallo a 1 de 24.
+- Compatibilidad con endpoints HTTP mediante el servidor `serve/server.py` del motor Abyss, con API estilo OpenAI.
+- Decodificacion especulativa opcional mediante el drafter DSpark para acelerar la generacion.
+- No se declaran capacidades de vision, audio ni modo thinking en la informacion proporcionada.
 
 ## Casos de uso
 
-- Inferencia local en un unico DGX Spark: el caso de uso principal. El archivo de 96,8 GB cabe en los 128 GB de memoria unificada del GB10 dejando margen para el contexto y el drafter DSpark, lo que permite ejecutar un modelo de 284.000 millones de parametros en un equipo de sobremesa sin GPU dedicada de gran VRAM.
-- Asistente conversacional en japones e ingles: el modelo esta evaluado especificamente en japones (KL de 0,145 en 3 secuencias) y mantiene un 84,1% de coincidencia en el token superior respecto al original, lo que lo hace util para atencion al usuario bilingue en esos dos idiomas.
-- Prototipado de aplicaciones sobre modelos de gran escala sin coste de API: al ser MIT y ejecutable localmente, permite iterar en pipelines de generacion de texto sin dependencia de proveedores externos.
-- Investigacion sobre cuantizacion extrema: el archivo sirve como referencia reproducible para estudiar el impacto de la cuantizacion mixta a 2,64 bits en un MoE de gran tamano, con metricas KL publicadas frente a la cuantizacion de unsloth.
-- Despliegue en PC con RTX 5090 y 96 GB de RAM: el mismo archivo (en el repo IQ2_M-32G96G) alcanza 69,1 tok/s medidos, lo que lo hace viable para generacion interactiva en estaciones de trabajo con GPU consumer de gama alta y RAM abundante.
-- Evaluacion comparativa de cuantizaciones: los datos de KL (0,150 frente a 0,186 en ingles y 0,145 frente a 0,219 en japones) permiten comparar estrategias de cuantizacion en condiciones controladas.
-- Generacion de codigo y texto tecnico: la model card incluye una secuencia de codigo en el conjunto de evaluacion KL, lo que sugiere uso en tareas de programacion, aunque no se publican resultados de HumanEval ni similares.
+- Inferencia local de un MoE de gran tamano en una unica DGX Spark: el archivo de 96,8 GB cabe completo en los 128 GB de memoria unificada del GB10, de modo que durante la generacion no se leen pesos desde el SSD y se evita el cuello de botella de ancho de banda de disco.
+- Asistente conversacional en japones con contexto largo: la ventana configurada de 65.536 tokens permite mantener historiales extensos; conviene fijar el system prompt en japones para mitigar la deriva al chino documentada por el autor.
+- Prototipado y evaluacion de cuantizaciones: las metricas de KL publicadas frente a UD-Q8_K_XL permiten comparar la perdida de calidad de esta mezcla con otras alternativas del mismo tamano antes de comprometerse con un despliegue.
+- Despliegue en estaciones de trabajo con GPU de 32 GB y 96 GB de RAM: el autor publica el mismo conjunto de archivos en el repositorio `DeepSeek-V4-Flash-0731-IQ2_M-32G96G-GGUF`, con el modelo repartido entre VRAM y RAM del sistema.
+- Aceleracion mediante decodificacion especulativa: en un Spark, donde todo el modelo reside en memoria unificada, el drafter DSpark de 6,5 GB no compite por espacio y el autor recomienda usarlo; en el Spark alquilado con el GGUF de unsloth se midieron 26,0 tok/s con drafter frente a 21,0 tok/s sin el.
+- Investigacion sobre cuantizacion de MoE con imatrix: el repositorio documenta la receta (`iq_pack.py --compat-bf16`), los tipos por experto y las comprobaciones SHA256, lo que sirve como referencia reproducible para experimentos similares.
+- Servicio interno con API compatible con OpenAI: el servidor de Abyss expone el modelo en un puerto configurable (8082 en el ejemplo) con parametros de muestreo (temperatura 1,0, top_p 0,95), adecuado para integrarlo en herramientas internas.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Este archivo (L97) | unsloth UD-Q2_K_XL (referencia) |
-|---|---|---|
-| Tamano de descarga | 96,8 GB | 96,8 GB |
-| Expertos conservados | Todos (256, sin poda) | Todos |
-| KL (12 secuencias: 8 ingles, 1 codigo, 3 japones) | 0,150 | 0,186 |
-| KL en japones (3 secuencias) | 0,145 | 0,219 |
-| Coincidencia en el token superior | 84,1% | 81,5% |
-| Decodificacion en DGX Spark | ~26 tok/s (estimacion, no medida) | 26,0 tok/s con drafter DSpark (medido, Abyss v1.3.119) |
-| Decodificacion en RTX 5090 + 96 GB RAM | 69,1 tok/s | no disponible |
-| Prueba Abyss `--check` (RTX 5090) | 10 de 11 superadas | no disponible |
+Calidad medida por el autor como divergencia KL frente a unsloth UD-Q8_K_XL (expertos MXFP4 originales), 12 secuencias de 1.024 tokens (8 ingles, 1 codigo, 3 japones), motor Abyss:
 
-La metrica KL se calcula contra la cuantizacion UD-Q8_K_XL de unsloth (expertos MXFP4 originales). No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
+| Modelo | Descarga | Expertos | KL (12 seqs) | KL japones (3) | Mismo token superior |
+|---|---:|---:|---:|---:|---:|
+| L97 (este repo) | 96,8 GB | todos (sin poda) | 0,150 | 0,145 | 84,1% |
+| unsloth UD-Q2_K_XL (referencia) | 96,8 GB | todos | 0,186 | 0,219 | 81,5% |
+
+Velocidad de decodificacion:
+
+| Configuracion | Decode | Equipo |
+|---|---:|---|
+| Este archivo (L97), sin drafter | 69,1 tok/s (prompt de 4K) | RTX 5090 32 GB + PC con 96 GB RAM, Abyss v1.3.120 |
+| unsloth UD-Q2_K_XL, sin drafter | 21,0 tok/s | DGX Spark alquilado, Abyss v1.3.114 |
+| unsloth UD-Q2_K_XL, con drafter DSpark (78% aceptacion) | 22,8 tok/s | DGX Spark alquilado, Abyss v1.3.114 |
+| unsloth UD-Q2_K_XL, con drafter DSpark (prompt 4K, mediana de 3 x 512 tokens) | 26,0 tok/s | DGX Spark alquilado, Abyss v1.3.119 |
+
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. El autor indica que este archivo aun no se ha ejecutado en una DGX Spark y que las cifras de Spark corresponden al GGUF de unsloth de tamano equivalente.
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: 96,8 GB de pesos mas el espacio para contexto y el drafter DSpark (6,5 GB adicionales). En DGX Spark (128 GB unificados) cabe con margen.
-- GPU recomendadas: NVIDIA DGX Spark (GB10, sm_121, aarch64) es el objetivo principal; RTX 5090 con 96 GB de RAM de sistema para la variante 32G96G.
-- Cabe en GPU consumer: si, en RTX 5090 (32 GB VRAM) siempre que se disponga de al menos 96 GB de RAM y se use offload; en GPUs de 16 GB o 32 GB con menos RAM hay variantes especificas mas pequenas (IQ1_S con 61,7 GB, IQ2_XXS con 72,0 GB).
-- Opciones de despliegue: Abyss (motor del autor, con soporte documentado para DGX Spark en docs/DGX-SPARK.md); llama.cpp por ser formato GGUF estandar; no se documentan en la informacion disponible otros motores como vLLM, TGI u Ollama.
-- Latencia y throughput: ~26 tok/s estimados en DGX Spark (sin medir); 69,1 tok/s medidos en RTX 5090 + 96 GB RAM; 26,0 tok/s medidos con unsloth UD-Q2_K_XL y drafter DSpark en Spark.
+- VRAM/memoria: 96,8 GB de pesos; en la DGX Spark caben en los 128 GB de memoria unificada dejando margen para contexto (el autor configura 65.536 tokens). En un PC con GPU de 32 GB y 96 GB de RAM, el mismo conjunto de archivos se reparte entre VRAM y RAM del sistema.
+- GPU recomendadas: NVIDIA DGX Spark (GB10, 128 GB de memoria unificada) es el objetivo declarado. Como referencia, el autor midio 69,1 tok/s en una RTX 5090 de 32 GB con 96 GB de RAM de sistema.
+- GPU de consumo: cabe en una RTX 5090 (32 GB) solo si se combina con 96 GB de RAM; para equipos mas modestos el autor publica variantes mas pequenas: IQ1_S (61,7 GB, para 16 GB GPU + 64 GB RAM), IQ2_XXS (72,0 GB, para 32 GB GPU + 64 GB RAM) e IQ2_M (96,8 GB, para 32 GB GPU + 96 GB RAM).
+- Opciones de despliegue: motor Abyss (recomendado y unico verificado por el autor, con backend CUDA, compilacion para aarch64 y sm_121 con CUDA 12.9 o superior en el Spark). llama.cpp no esta comprobado con este archivo segun la model card. No se mencionan vLLM, TGI ni Ollama.
+- Latencia y throughput: 69,1 tok/s en RTX 5090 + 96 GB RAM sin drafter; 21,0-26,0 tok/s en DGX Spark alquilado con el GGUF de unsloth del mismo tamano, con y sin drafter DSpark. Para este archivo concreto en Spark no hay medicion publicada.
+- Almacenamiento: 96,8 GB para los tres shards, mas 6,5 GB del drafter DSpark si se usa, mas el espacio del pack generado por `iq_pack.py`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
-|---|---|---|---|---|---|
-| Este archivo (L97) | 284,3 mil M (MoE) | no disponible | GGUF mixto (2,64 bits/peso) | MIT | Todos los expertos, KL 0,150 |
-| unsloth UD-Q2_K_XL | 284,3 mil M (MoE) | no disponible | GGUF | MIT | Mismo tamano, KL 0,186, 26,0 tok/s medidos en Spark |
-| zephel01 IQ2_M-32G96G (L97) | 284,3 mil M (MoE) | no disponible | GGUF mixto | MIT | Mismo archivo, orientado a PC con 32 GB GPU + 96 GB RAM |
-| zephel01 IQ2_XXS-32G64G | 284,3 mil M (MoE) | no disponible | GGUF | MIT | 72,0 GB, menor calidad, para 32 GB GPU + 64 GB RAM |
-| zephel01 IQ1_S-16G64G | 284,3 mil M (MoE) | no disponible | GGUF | MIT | 61,7 GB, la variante mas pequena, para 16 GB GPU + 64 GB RAM |
+| Modelo | Parametros | Contexto | Tamano de descarga | Calidad (KL) | Licencia | Disponibilidad |
+|---|---|---:|---:|---:|---|---|
+| DeepSeek-V4-Flash-0731-DGX-Spark-GGUF (L97) | 284,3B totales | 65.536 configurado | 96,8 GB | 0,150 (0,145 ja) | MIT | Hugging Face, BETA |
+| unsloth UD-Q2_K_XL de DeepSeek-V4-Flash-0731 | 284,3B totales | no disponible | 96,8 GB | 0,186 (0,219 ja) | MIT (modelo base) | Hugging Face |
+| DeepSeek-V4-Flash-0731-IQ2_M-32G96G-GGUF (mismo autor) | 284,3B totales | 65.536 configurado | 96,8 GB | identico (mismos archivos, carpeta L97) | MIT | Hugging Face |
+| DeepSeek-V4-Flash-0731-IQ1_S-16G64G-GGUF (mismo autor) | 284,3B totales | no disponible | 61,7 GB | no disponible | MIT | Hugging Face |
 
-No se dispone de datos en la informacion proporcionada para comparar con modelos de otros desarrolladores de tamano o categoria equivalente.
+No se dispone de datos de benchmarks estandar que permitan comparar con modelos de otros desarrolladores de la misma categoria; la comparacion se limita a las variantes de cuantizacion del mismo modelo base publicadas por el autor y por unsloth.
 
 ## Limitaciones y advertencias
 
-- Estado BETA: la velocidad en DGX Spark es una estimacion basada en un archivo de igual tamano medido en un Spark alquilado; este archivo no se ha ejecutado aun en un Spark real.
-- Riesgo de cambio de idioma: el modelo base a veces responde en chino a preguntas en japones (6 de 24 respuestas en el original; 11 de 24 en L97). Se recomienda incluir "answer in Japanese" en el system prompt, lo que reduce el fallo a 1 de 24.
-- Sesgos: no se documentan sesgos especificos en la informacion disponible, pero al ser una cuantizacion extrema de 2,64 bits por peso puede amplificar errores del modelo base.
-- Alucinacion: no se publican tasas de alucinacion; la cuantizacion agresiva puede incrementar la degradacion en tareas de razonamiento largo.
-- Limitaciones de contexto: la longitud de contexto soportada no esta documentada; el margen de memoria en DGX Spark condiciona el tamano maximo de contexto utilizable.
-- Idiomas: solo ingles y japones declarados; el rendimiento en castellano no esta garantizado ni evaluado.
-- Licencia MIT: permite uso comercial, pero debe conservarse el aviso de copyright y no se ofrece garantia alguna.
-- Prueba Abyss `--check`: 10 de 11 superadas en RTX 5090; el fallo corresponde a una explicacion en japones respondida en chino.
-- No usar como referencia de rendimiento en produccion sin medir previamente en el hardware objetivo.
+- Estado BETA: el autor indica explicitamente que el archivo no se ha ejecutado en una DGX Spark y que las cifras de velocidad en Spark corresponden a un GGUF equivalente de unsloth, no a este archivo.
+- Deriva de idioma: el modelo tiende a responder en chino a preguntas en japones. En la evaluacion del autor ocurrio en 11 de 24 respuestas con L97, frente a 6 de 24 con los pesos originales; se mitiga con un system prompt que exija responder en japones, pero no se elimina por completo.
+- Perdida de calidad por cuantizacion: 2,64 bits por peso de media implica una divergencia KL de 0,150 frente a la referencia de alta precision; el 15,9% de los tokens superiores no coincide con la referencia, lo que puede afectar a tareas sensibles a la precision (codigo, matematicas, extraccion de datos).
+- Riesgo de alucinacion: no se documenta una evaluacion especifica de alucinacion en la informacion disponible; al tratarse de un modelo conversacional de gran tamano, el riesgo existe y no esta cuantificado.
+- Sesgos: no se han publicado analisis de sesgo en la informacion disponible.
+- Compatibilidad de herramientas: solo el motor Abyss esta verificado; llama.cpp no se ha comprobado con este archivo, lo que limita la portabilidad a otros stacks de inferencia habituales.
+- Requisitos de compilacion: en DGX Spark exige compilar para aarch64 con sm_121 y CUDA 12.9 o superior, ademas de generar un pack con `iq_pack.py`, lo que anade pasos operativos frente a un GGUF convencional.
+- Licencia: el modelo base y esta cuantizacion son MIT, lo que permite uso comercial; sin embargo, el motor Abyss es un proyecto separado cuyo licenciamiento y garantias deben revisarse antes de usarlo en produccion.
+- Idiomas: solo se declaran ingles y japones; el rendimiento en castellano no esta documentado y no deberia asumirse.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/zephel01/DeepSeek-V4-Flash-0731-DGX-Spark-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
-- GGUF de origen (unsloth): https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF
-- Variante IQ2_M-32G96G (mismo archivo): https://huggingface.co/zephel01/DeepSeek-V4-Flash-0731-IQ2_M-32G96G-GGUF
-- Variante IQ2_XXS-32G64G: https://huggingface.co/zephel01/DeepSeek-V4-Flash-0731-IQ2_XXS-32G64G-GGUF
-- Variante IQ1_S-16G64G: https://huggingface.co/zephel01/DeepSeek-V4-Flash-0731-IQ1_S-16G64G-GGUF
 - Motor Abyss: https://github.com/zephel01/Abyss
-- Documentacion DGX Spark de Abyss: https://github.com/zephel01/Abyss/blob/main/docs/DGX-SPARK.md
-- Herramienta de cuantizacion trench-gguf: https://github.com/zephel01/trench-gguf
-- Formulario de benchmark: https://github.com/zephel01/Abyss/issues/new?template=bench.md&title=Bench:+DeepSeek-V4-Flash-0731+DGX-Spark+L97+on+GB10
-- Issues de Abyss: https://github.com/zephel01/Abyss/issues
+- Documentacion de Abyss para DGX Spark: https://github.com/zephel01/Abyss/blob/main/docs/DGX-SPARK.md
+- Variante para PC con 32 GB de GPU y 96 GB de RAM: https://huggingface.co/zephel01/DeepSeek-V4-Flash-0731-IQ2_M-32G96G-GGUF
+- Variante para PC con 32 GB de GPU y 64 GB de RAM: https://huggingface.co/zephel01/DeepSeek-V4-Flash-0731-IQ2_XXS-32G64G-GGUF
+- Variante para PC con 16 GB de GPU y 64 GB de RAM: https://huggingface.co/zephel01/DeepSeek-V4-Flash-0731-IQ1_S-16G64G-GGUF
+- Drafter DSpark: https://huggingface.co/bleysg/DeepSeek-V4-Flash-DSpark-drafter-GGUF
+- Envio de resultados de benchmark: https://github.com/zephel01/Abyss/issues/new?template=bench.md&title=Bench:+DeepSeek-V4-Flash-0731+DGX-Spark+L97+on+GB10

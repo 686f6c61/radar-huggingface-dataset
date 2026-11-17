@@ -2,52 +2,49 @@
 
 ## Resumen
 
-Jerboa es un modelo de lenguaje causal ultraligero desarrollado por el usuario ztor2, publicado en Hugging Face bajo el identificador `ztor2/jerboa-base`. Con 221.430.400 parámetros reales confirmados en los pesos safetensors, se posiciona en la franja de modelos de menos de 250 millones de parámetros, pensados para ejecución local en dispositivos con recursos limitados. El autor lo describe como un proyecto en desarrollo activo cuyo objetivo declarado es ofrecer un modelo de lenguaje y multimodal de bajo coste computacional optimizado específicamente para Apple Silicon (MPS/Metal) y despliegues en el borde (edge).
+Jerboa es un modelo de lenguaje causal ultraligero desarrollado por el usuario ztor2 bajo el identificador `ztor2/jerboa-base`. Con aproximadamente 221 millones de parámetros, está disenado especificamente para despliegue en Apple Silicon (MPS/Metal) y dispositivos edge, lo que lo posiciona como una alternativa de bajo coste computacional frente a modelos de mayor tamano pensados para servidores. La familia Jerboa incluye tambien una variante multimodal (`JerboaVLForConditionalGeneration`), aunque la model card la describe como en desarrollo activo.
 
-La arquitectura emplea un diseño "Deep & Thin" de 28 capas con una dimensión de modelo de 768 y una dimensión de feed-forward de 2048 con activación SwiGLU. Incorpora atención con consultas agrupadas (GQA) con 12 cabezas de consulta y 4 de clave/valor, normalización QK-Norm y atención de ventana deslizante intercalada (ventana local de 2048 tokens, con capas de atención global cada 4 capas). El vocabulario es de 49.152 tokens BPE y usa RoPE con theta de 500.000.
+El modelo emplea una arquitectura transformer de tipo "Deep & Thin": 28 capas con una dimension oculta de 768 y una FFN de 2048 con activacion SwiGLU. Incorpora atencion con GQA (12 cabezas de consulta frente a 4 de clave/valor), QK-Norm y atencion de ventana deslizante intercalada (ventana de 2048 tokens, con atencion global cada 4 capas). El vocabulario BPE es de 49.152 tokens y usa RoPE con theta de 500.000.
 
-Su relevancia actual radica en el creciente interés por modelos pequeños que puedan ejecutarse en portátiles con chip Apple o en hardware de borde sin GPU dedicada, un nicho donde los pesos abiertos con licencia Apache 2.0 y soporte de `trust_remote_code` facilitan la experimentación. El modelo se entrenó con más de 1.230 millones de tokens (75% FineWeb-Edu, 25% código Python) y declara soporte para inglés y coreano, aunque no se han publicado resultados de benchmarks en la información disponible.
+Su relevancia actual radica en el nicho de modelos pequenos optimizados para hardware de consumo y edge, con licencia Apache 2.0 permisiva. No obstante, conviene advertir que se trata de un proyecto en desarrollo temprano, con solo >1,23 mil millones de tokens de preentrenamiento y sin resultados de benchmarks publicados en la informacion disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal decoder-only, 28 capas, d_model=768, d_ffn=2048 (SwiGLU), GQA (12 Q : 4 KV), QK-Norm, SWA intercalada |
+| Arquitectura | Transformer causal "Deep & Thin" (28 capas, d_model=768, d_ffn=2048, SwiGLU) |
 | Parametros totales | 221.430.400 |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible como valor maximo explicito; la ventana de atencion local declarada es de 2048 tokens con capas globales cada 4 capas |
-| Tipos de cuantizacion | no disponible (el repositorio solo publica pesos safetensors) |
-| Idiomas soportados | ingles (en) y coreano (ko) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible de forma explicita; SWA con ventana de 2048 y atencion global cada 4 capas |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | en, ko |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (PyTorch), con codigo personalizado (`custom_code`, requiere `trust_remote_code=True`) |
+| Formato de pesos | safetensors (pytorch), custom_code |
 
 ## Arquitectura y entrenamiento
 
-El modelo se define como un transformer causal decoder-only con una arquitectura a la que el autor denomina "Deep & Thin": 28 capas apiladas sobre una dimension oculta relativamente estrecha de 768. Cada bloque feed-forward usa SwiGLU con dimension intermedia de 2048. La atencion emplea consultas agrupadas con una relacion de 12 cabezas de consulta por 4 de clave/valor, lo que reduce el coste de memoria de la caché KV en inferencia, un detalle coherente con el objetivo de despliegue en dispositivos de borde. Se aplica QK-Norm para estabilizar el entrenamiento y una atencion de ventana deslizante intercalada: la mayoria de capas operan con una ventana local de 2048 tokens y cada cuatro capas se introduce atencion global, un patron habitual para reducir el coste cuadratico manteniendo cierta capacidad de mezcla a larga distancia.
+El modelo sigue una arquitectura transformer causal decoder-only con un diseno "Deep & Thin": 28 capas relativamente estrechas con dimension oculta de 768 y FFN de 2048 con SwiGLU. La atencion usa GQA con 12 cabezas de consulta y 4 de clave/valor, lo que reduce el coste de memoria del KV cache. Incorpora QK-Norm y atencion de ventana deslizante intercalada: ventana de 2048 tokens con atencion global cada 4 capas. El vocabulario es BPE de 49.152 tokens y la codificacion posicional usa RoPE con theta de 500.000, un valor alto que sugiere intencion de soportar contextos largos.
 
-El preentrenamiento declara un volumen superior a 1.230 millones de tokens, con una composicion del 75% procedente de FineWeb-Edu y un 25% de codigo Python. El vocabulario es de 49.152 tokens con tokenizacion BPE y las posiciones se codifican con RoPE de theta 500.000, valor elevado que en la practica suele asociarse a intentos de extender la longitud de contexto efectiva mas alla de la ventana de entrenamiento. La model card menciona tambien un componente multimodal (`JerboaVLForConditionalGeneration`) y una variante conversacional, pero no se detallan ni la arquitectura del proyector visual ni los datos de alineacion. No se documenta en la informacion disponible si hubo fases de RLHF, DPO u otra forma de ajuste por preferencias.
+En cuanto al entrenamiento, la model card indica un volumen de preentrenamiento de mas de 1,23 mil millones de tokens, con una composicion del 75% FineWeb-Edu y 25% codigo Python. No se mencionan en la informacion disponible fases de RLHF, DPO ni tecnicas de alineacion adicional, ni innovaciones como decodificacion especulativa. El modelo requiere `trust_remote_code=True` para cargarse, lo que implica logica de modelado personalizada empaquetada en el repositorio.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva en ingles y coreano mediante el pipeline `text-generation`.
-- Modelado causal de lenguaje con licencia Apache 2.0, lo que permite uso comercial y modificacion.
-- Soporte declarado de conversacion (etiqueta `conversational` en el repositorio).
-- Componente multimodal anunciado (`JerboaVLForConditionalGeneration`) para generacion condicionada, sin detalles publicados sobre modalidades concretas.
-- Exposicion de una arquitectura personalizada (`custom_code`) que exige `trust_remote_code=True` al cargar el modelo.
-- Capacidad de tool calling: no disponible en la informacion proporcionada.
+- Generacion de texto causal en ingles y coreano.
+- Capacidad de modelado de codigo Python, dada la inclusion de un 25% de codigo en el preentrenamiento.
+- Soporte de conversacion multi-turno (tag `conversational`), aunque sin datos de benchmarks de calidad.
+- Variante multimodal asociada (`JerboaVLForConditionalGeneration`) segun la model card, en desarrollo activo; no se detallan las modalidades concretas soportadas.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Modo de razonamiento explicito (thinking): no disponible en la informacion proporcionada.
-- Capacidades de audio o vision detalladas: no disponible en la informacion proporcionada.
+- Capacidades especiales (thinking mode, audio, vision en el modelo base): no disponibles.
 
 ## Casos de uso
 
-- Asistentes locales en portatiles Apple Silicon: con 221 millones de parametros, el modelo puede ejecutarse en MPS/Metal ocupando una fraccion de la memoria unificada, lo que permite mantener un asistente de texto siempre disponible sin conexion.
-- Autocompletado de codigo ligero en editores: dado que el 25% del preentrenamiento es codigo Python, es razonable usarlo como base para sugerencias de fragmentos cortos dentro de un IDE, asumiendo que no hay datos de evaluacion que garanticen calidad.
-- Clasificacion y etiquetado de texto en lote: por su tamano reducido, permite procesar grandes volumenes de documentos en una sola maquina sin GPU, en tareas de extraccion de entidades o categorizacion.
-- Prototipado e investigacion academica: sirve como banco de pruebas para estudiar el efecto de la atencion de ventana deslizante intercalada o de RoPE con theta 500.000 en modelos de menos de 250 millones de parametros.
-- Aplicaciones de borde con restricciones de latencia y memoria: su tamano lo hace candidato para dispositivos embebidos con aceleradores modestos, siempre que se cuantice fuera del repositorio original.
-- Generacion de texto en ingles y coreano: puede emplearse en tareas bilingues de resumen o reescritura para esos dos idiomas, que son los unicos declarados.
-- Base para ajuste fino especifico de dominio (fine-tuning): al publicarse bajo Apache 2.0 y en safetensors, es adecuado como punto de partida para adaptaciones con LoRA u otras tecnicas de ajuste eficiente.
+- Inferencia en dispositivo edge y Apple Silicon: gracias a sus 221M de parametros y a la optimizacion declarada para MPS/Metal, el modelo puede ejecutarse en portatiles Apple y dispositivos con recursos limitados para tareas de generacion de texto en local.
+- Autocompletado de codigo Python en entornos de desarrollo ligeros: el 25% de codigo Python en el preentrenamiento lo hace adecuado para sugerencias basicas de codigo en IDE o plugins sin necesidad de GPU dedicada.
+- Prototipado rapido de asistentes conversacionales: al ser un modelo pequeno con licencia Apache 2.0, sirve para validar pipelines de chat multi-turno antes de escalar a modelos mayores.
+- Experimentacion academica en arquitecturas eficientes: su combinacion de GQA, QK-Norm y SWA intercalada lo convierte en un banco de pruebas para estudiar tecnicas de atencion eficiente con bajo coste de entrenamiento.
+- Filtrado y clasificacion ligera de texto: el modelo puede usarse para tareas auxiliares de generacion condicionada (resumenes cortos, reescritura) en entornos de bajos recursos.
+- Investigacion en modelos multilingues en/coreano: al cubrir ambos idiomas, permite estudiar transferencia interlingue en modelos de tamano reducido.
 
 ## Benchmarks y rendimiento
 
@@ -55,38 +52,33 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (calculada a partir de los 221,4 millones de parametros, no confirmada por el autor): aproximadamente 0,9 GB en FP32, 0,45 GB en FP16/BF16, 0,22 GB en INT8 y 0,11 GB en INT4, sin contar la cache KV ni el overhead del runtime.
-- GPU recomendadas: no disponible en la informacion proporcionada; el autor orienta explicitamente el modelo a Apple Silicon (MPS/Metal) y a dispositivos de borde.
-- Compatibilidad con GPU de consumo: por tamano, cualquier GPU con mas de 2 GB de VRAM deberia poder alojarlo, incluidas integradas modernas, aunque no hay validacion publicada.
-- Opciones de despliegue: `transformers` con `AutoModelForCausalLM` y `trust_remote_code=True`; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, y la ausencia de pesos GGUF en el repositorio limita el uso directo en runtimes orientados a CPU.
-- Latencia y throughput estimados: no disponible en la informacion proporcionada.
+- VRAM estimada para inferencia: con 221M de parametros en precision fp16 el modelo ocupa aproximadamente 0,44 GB en pesos; en cuantizacion a 8 bits, en torno a 0,22 GB. No obstante, no se detallan cuantizaciones oficiales disponibles.
+- GPU recomendadas: el modelo esta optimizado explicitamente para Apple Silicon (MPS/Metal) y dispositivos edge. No se documenta soporte verificado para A100, H100 o RTX 4090 en la informacion disponible.
+- Cabe en GPU de consumo, incluidas GPU integradas y NPU de dispositivos edge, por su tamano reducido.
+- Opciones de despliegue: el quickstart oficial usa `transformers` con `trust_remote_code=True`. No se confirma soporte para vLLM, llama.cpp, Ollama o TGI en la informacion disponible.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento en benchmarks |
+| Modelo | Parametros | Contexto | Licencia | Idiomas | Notas |
 |---|---|---|---|---|---|
-| Jerboa base (ztor2) | 221,4 M | no especificado (SWA 2048 + globales cada 4 capas) | Apache 2.0 | safetensors en Hugging Face | no disponible |
-| SmolLM2-360M | 362 M | 8.192 tokens | Apache 2.0 | safetensors y GGUF en Hugging Face | publicado por el autor |
-| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 | safetensors y GGUF en Hugging Face | publicado por el autor |
-| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache 2.0 | safetensors y GGUF en Hugging Face | publicado por el autor |
+| Jerboa base | 221M | no disponible (SWA 2048) | Apache 2.0 | en, ko | Optimizado para Apple Silicon y edge |
+| Modelos de ~200-500M de la familia Qwen / Gemma | ~200M-500M | variable (no disponible para Jerboa) | variable | multilingue | No se dispone de comparativa de rendimiento con Jerboa |
+| SmolLM (familia) | ~135M-1.7B | variable | variable | mayoritariamente en | No se dispone de comparativa de rendimiento con Jerboa |
 
-La comparacion se limita a parametros, contexto y licencia porque no hay resultados de benchmarks publicados para Jerboa. En terminos de ecosistema, Jerboa parte con desventaja frente a alternativas como SmolLM2 o Qwen2.5 en disponibilidad de cuantizaciones GGUF y en documentacion de rendimiento.
+No se dispone de datos de rendimiento comparativos entre Jerboa y modelos de su categoria en la informacion proporcionada; la comparativa se limita a dimension y licencia.
 
 ## Limitaciones y advertencias
 
-- No se han publicado resultados de benchmarks, por lo que no hay evidencia objetiva de calidad frente a alternativas de tamano similar.
-- El modelo esta declarado como "en desarrollo activo", lo que implica posibles cambios incompatibles entre revisiones y ausencia de garantias de estabilidad en produccion.
-- El repositorio tiene 122 descargas y 0 likes en el momento de la consulta, lo que indica validacion externa practicamente nula.
-- Riesgo de alucinacion: previsiblemente alto en un modelo de 221 millones de parametros entrenado con poco mas de 1.200 millones de tokens, aunque no hay mediciones publicadas.
-- Cobertura idiomatica limitada a ingles y coreano; el castellano no esta declarado como soportado.
-- La longitud maxima de contexto efectiva no se especifica; la ventana local de 2048 tokens condiciona el rendimiento en tareas de contexto largo.
-- El uso requiere `trust_remote_code=True`, lo que implica ejecutar codigo personalizado del autor; conviene auditar `modeling_*.py` antes de desplegarlo en entornos sensibles.
-- Ausencia de pesos cuantizados oficiales (GGUF, AWQ, GPTQ), lo que obliga a cuantizar por cuenta propia si se busca despliegue en CPU o en hardware muy limitado.
-- Licencia Apache 2.0: permite uso comercial y modificacion, pero no exime de cumplir las obligaciones de atribucion y de conservar los avisos de licencia.
-- No hay informacion sobre sesgos, composicion demografica del dataset ni procesos de alineacion, por lo que no es posible evaluar riesgos de contenido toxico o sesgado.
-- No se documenta soporte de tool calling ni de razonamiento multi-paso, capacidades habitualmente requeridas en flujos de agentes.
+- Sesgos conocidos: no documentados en la informacion disponible; al entrenarse principalmente con FineWeb-Edu y codigo Python, puede heredar sesgos de esas fuentes.
+- Riesgo de alucinacion: elevado para un modelo de 221M de parametros con solo >1,23B tokens de preentrenamiento; no debe usarse como fuente de verdad sin verificacion.
+- Limitaciones de contexto e idioma: solo se declaran ingles y coreano; no hay garantias de calidad en castellano ni en otros idiomas. La ventana de atencion efectiva esta limitada por SWA de 2048 tokens con atencion global intercalada cada 4 capas.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero la model card lo describe como "en desarrollo activo", lo que desaconseja su uso en produccion sin evaluacion propia.
+- Requiere `trust_remote_code=True`, lo que implica ejecutar codigo personalizado del autor; conviene auditar el repositorio antes de desplegarlo en entornos sensibles.
+- Sin benchmarks publicados: la ausencia de evaluaciones estandar (MMLU, HumanEval, GSM8K) impide validar su calidad frente a alternativas.
+- El repo ocupa 48,4 GB pese a los 221M de parametros, lo que sugiere la presencia de pesos adicionales o variantes no documentadas; conviene revisar los archivos antes de la descarga.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/ztor2/jerboa-base
-- No se han encontrado papers, blogs, repositorios ni demos adicionales en los resultados de busqueda web proporcionados; las referencias devueltas corresponden a contenido no relacionado con el modelo.
+- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

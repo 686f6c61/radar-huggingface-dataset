@@ -60,31 +60,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub - Mapika/decider: A family of System One-style models fine-tuned ...",
-      "url": "https://github.com/Mapika/decider",
-      "snippet": "A family of System One-style models fine-tuned from Qwen3.5, designed for one-pass typed decisions with calibrated probabilities. - Mapika/decider"
-    },
-    {
-      "title": "mlx-community (MLX Community) - Hugging Face",
-      "url": "https://huggingface.co/mlx-community",
-      "snippet": "Org profile for MLX Community on Hugging Face, the AI community building the future."
-    },
-    {
-      "title": "perplexity-ai/pplx-decider-v1-27b · Hugging Face",
-      "url": "https://huggingface.co/perplexity-ai/pplx-decider-v1-27b",
-      "snippet": "pplx-decider-v1-27b is a decision model fine-tuned from Qwen3.8-27B. Accuracy across 11 benchmarks. The pplx-decider-v1-27b results were measured through the Perplexity API ..."
-    },
-    {
-      "title": "GitHub - NandhaKishorM/laya: Non-autoregressive System 1 decision ...",
-      "url": "https://github.com/NandhaKishorM/laya",
-      "snippet": "Non-autoregressive System 1 decision engine. Typed choice, score and yes/no decisions over any text in a single forward pass, in 100+ languages, with a router that picks the right checkpoint per request. - NandhaKishorM/laya"
-    },
-    {
-      "title": "Strands Decider 2B — AWS&#x27;s Local Decision Model | AI/TLDR",
-      "url": "https://ai-tldr.dev/models/strands-decider-2b/",
-      "snippet": "A 1.9B Apache-2.0 decision model from AWS Strands Labs that picks between options or rates on a scale with a calibrated confidence, in a single forward pass on local hardware, released October 2026."
-    }
-  ]
+  "sources": []
 }

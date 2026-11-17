@@ -2,60 +2,59 @@
 
 ## Resumen
 
-ZGCM-1-7B es un modelo de lenguaje denso de 7.394.832.384 parámetros (7,39B) entrenado desde cero por el Zhongguancun Academy y el Zhongguancun Institute of Artificial Intelligence (usuario de Hugging Face `zgcagi`). Está especializado en razonamiento matemático y búsqueda asistida por herramientas, y combina en un único modelo dos modos de respuesta: uno con razonamiento interno explícito (*thinking*) y otro de respuesta directa. Su ventana de contexto máxima es de 262.144 tokens (256K), muy por encima de lo habitual en la franja de 7B-8B.
+ZGCM-1-7B es un modelo de lenguaje denso de 7.390 millones de parámetros (7,39B) entrenado desde cero por el Zhongguancun Academy y el Zhongguancun Institute of Artificial Intelligence. Está diseñado específicamente para razonamiento matemático y búsqueda asistida por herramientas, combinando pensamiento interno deliberado con recogida activa de información. Soporta una ventana de contexto de 256K tokens y ofrece modos de pensamiento y de respuesta directa en un único modelo.
 
-La relevancia del modelo está en dos frentes. Por un lado, publica resultados competitivos en benchmarks de matemáticas de competición: 97,13% en MATH-500, 75,00% en AIME 2026 y 70,42% en HMMT 2025, con el mejor rango medio entre los siete modelos de 7B-8B comparados en su informe técnico. Por otro, es un lanzamiento completamente abierto: licencia MIT, pesos en safetensors, dataset de entrenamiento y repositorio con los flujos de preprocesado, preentrenamiento, *mid-training* y SFT.
+La arquitectura es un transformer decoder-only con atención híbrida: 27 capas con sliding-window attention con compuerta (gated) y 5 capas de atención global, con GQA de 32 cabezas de consulta y 8 de clave/valor. El entrenamiento combina precisión FP8 con el optimizador Muon, un mid-training progresivo de contexto largo y un SFT supervisado de tipo agéntico. El modelo se distribuye con licencia MIT y código de modelado propio, lo que exige `trust_remote_code=True`.
 
-El proyecto se apoya en una arquitectura de atención híbrida (27 capas con *sliding window* con puerta + 5 capas de atención global), entrenamiento en FP8 con el optimizador Muon y un *mid-training* progresivo de contexto (16K → 64K → 256K). El informe estima una mejora de 3,94× en *throughput* de entrenamiento a 256K frente a atención completa, y de aproximadamente 4,2× en tiempo hasta un *loss* dado a 16K sumando arquitectura, precisión, optimizador y normalización.
+Su relevancia actual radica en que ofrece receta de entrenamiento abierta (datos, código y logs de entrenamiento publicados) y resultados competitivos frente a modelos de 7B-8B consolidados en matemáticas y búsqueda agéntica, con un contexto de 256K poco habitual en esta escala de parámetros.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only denso, con atención híbrida: 27 capas de sliding window con puerta (ventana local de 128 tokens) + 5 capas de atención global; GQA con 32 cabezas de consulta y 8 cabezas KV |
+| Arquitectura | Transformer decoder-only denso con atención híbrida (27 capas gated sliding-window + 5 capas globales), GQA |
 | Parametros totales | 7.394.832.384 (7,39B) |
-| Parametros activos | no aplica (modelo denso, no MoE) |
+| Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | 262.144 tokens (256K) |
-| Tipos de cuantizacion | no disponible (el repositorio publica pesos en bfloat16; no se documentan variantes GGUF, AWQ, GPTQ ni FP8 para inferencia) |
-| Idiomas soportados | en (inglés), zh (chino) |
+| Tipos de cuantizacion | No disponible |
+| Idiomas soportados | Inglés (en) y chino (zh) |
 | Licencia | MIT |
-| Formato de pesos | safetensors, con código de modelado propio (requiere `trust_remote_code=True`) |
-
-Datos adicionales de la ficha de Hugging Face: 32 capas, tamaño oculto 4.096, 406 descargas y 10 *likes* en el momento de la consulta, tamaño del repositorio 16,5 GB, fecha de creación 2026-09-07 y última actualización 2026-09-15. Etiquetas declaradas: `math`, `reasoning`, `agentic-search`, `long-context`, `conversational`.
+| Formato de pesos | safetensors |
+| Capas / tamano oculto | 32 / 4.096 |
+| Ventana local / cabezas GQA | 128 tokens / 32 cabezas de consulta, 8 de clave-valor |
+| Libreria | transformers (con `trust_remote_code=True`) |
+| Tamano del repo | 16,5 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un Transformer decoder-only denso de 32 capas y tamaño oculto 4.096. La innovación arquitectónica principal es la combinación de atención local y global: 27 de las 32 capas usan *sliding window attention* con puerta y una ventana de solo 128 tokens, mientras que las 5 restantes aplican atención global. Todas las capas emplean *grouped-query attention* con 32 cabezas de consulta y 8 cabezas KV. Esta mezcla reduce el coste computacional y de caché KV a contextos largos sin renunciar a la propagación de información a larga distancia a través de las capas globales.
+El modelo es un transformer decoder-only denso de 32 capas con tamaño oculto de 4.096. La innovación arquitectónica principal es la atención híbrida: 27 capas usan sliding-window attention con compuerta sobre una ventana local de 128 tokens, mientras que 5 capas emplean atención global. Según el informe técnico, esta combinación proporciona 3,94 veces más throughput de entrenamiento a 256K tokens en comparación con atención completa.
 
-El entrenamiento se divide en tres etapas descritas en el informe técnico. La primera es un preentrenamiento de aproximadamente 4,19 billones (4.19T) de tokens con mezcla curricular de datos, precisión híbrida FP8 y optimizador Muon. La segunda es un *mid-training* de aproximadamente 600B tokens que extiende el contexto de 16K a 64K y después a 256K; en esta fase las trazas de interacción se reformulan como transiciones estado-acción de un proceso de decisión de Markov (MDP) para supervisar decisiones individuales. La tercera es un ajuste supervisado (SFT) conjunto de capacidades generales y agenticas, con ejemplos mixtos de razonamiento y respuesta directa, trayectorias verificadas por ejecución y función de pérdida aplicada solo a las respuestas del asistente. No se menciona en la información disponible el uso de RLHF, DPO u otras técnicas de alineación por preferencias.
+El entrenamiento se estructura en tres fases. La fase de preentrenamiento consume aproximadamente 4,19 billones (T) de tokens, con mezcla de datos basada en currículum, precisión híbrida FP8 y el optimizador Muon. El mid-training añade unos 600.000 millones (B) de tokens con extensión progresiva de contexto de 16K a 64K y finalmente 256K; en esta fase las trazas de interacción se reformulan como transiciones estado-acción de un proceso de decisión de Markov (MDP) para supervisar decisiones individuales. La fase final es un SFT conjunto de datos generales y agénticos. El informe estima una mejora de aproximadamente 4,2 veces en tiempo hasta alcanzar una pérdida dada en preentrenamiento a 16K, atribuible a la combinación de arquitectura, precisión, optimizador y normalización.
 
 ## Capacidades
 
-- Generación de texto y razonamiento matemático de nivel de competición: 97,13% en MATH-500, 75,00% en AIME 2026 y 70,42% en HMMT 2025.
-- Dos modos de inferencia en el mismo modelo: modo *thinking* (razonamiento interno deliberado) y modo de respuesta directa, seleccionables mediante el parámetro `enable_thinking` de la plantilla de chat.
-- Uso de herramientas y búsqueda agentica multi-paso: 63,09% en WebWalkerQA y 42,52% en GAIA (solo texto), con hasta 64 pasos de búsqueda y lectura web en la configuración de evaluación.
-- Búsqueda de funciones en binarios: 62,00% de coincidencias exactas de entrada de función (31/50) usando herramientas de Ghidra, sobre tareas de proyectos no vistos.
-- Razonamiento en varios pasos para agentes: la fase de SFT supervisa trayectorias de ejecución verificadas y decisiones individuales modeladas como transiciones MDP.
-- Capacidades generales adicionales cubiertas en la evaluación completa del informe (20 benchmarks), que incluye código, conocimiento e instrucción.
-- Soporte multilingüe limitado a inglés y chino según la ficha del modelo.
-- Contexto largo de 256K tokens para ingesta de documentación extensa o historiales largos.
-- Conversación multi-turno mediante su plantilla de chat.
-- Capacidad de ajuste fino sobre una receta abierta: se publican los flujos de procesado de datos, preentrenamiento, *mid-training* y SFT con configuraciones por etapa.
+- Generación de texto y razonamiento matemático de alto nivel, con modo de pensamiento explícito (`enable_thinking=True`) y modo de respuesta directa en el mismo modelo.
+- Razonamiento multi-paso con cadenas de pensamiento largas (hasta 4.096 tokens nuevos en el ejemplo de generación).
+- Uso de herramientas y búsqueda agéntica: búsqueda web, lectura de páginas y hasta 64 pasos de búsqueda y lectura en las evaluaciones.
+- Búsqueda de funciones binarias mediante herramientas de Ghidra (protocolo específico del informe).
+- Contexto largo de 256K tokens para manejar documentos extensos o historiales de interacción prolongados.
+- Capacidades multilingües limitadas a inglés y chino.
+- Soporte de plantilla de chat mediante `apply_chat_template` del tokenizer.
+- No se mencionan capacidades de visión, audio ni otras modalidades en la información disponible.
 
 ## Casos de uso
 
-- Resolución de problemas matemáticos de competición: el modelo puede resolver ejercicios tipo AIME y HMMT y autoverificar cadenas de razonamiento en modo *thinking*; es adecuado por sus resultados en MATH-500 (97,13%) y por permitir 32 ejecuciones con *pass@1* medio para estimar fiabilidad.
-- Agente de búsqueda web multi-paso: integrado en un bucle que llama a un buscador y a un lector de páginas, puede resolver preguntas que requieren consultar varias fuentes; su resultado de 63,09% en WebWalkerQA y 42,52% en GAIA con hasta 64 pasos lo sitúa como pieza central de un sistema RAG agentico.
-- Análisis de ingeniería inversa asistida: con herramientas de Ghidra como *tool calling*, el modelo puede identificar funciones en binarios, tarea en la que obtiene 62,00% de coincidencias exactas sobre proyectos no vistos.
-- Asistente de documentación técnica con contexto largo: sus 256K tokens permiten cargar manuales, repositorios de código o actas completas y hacer preguntas transversales sin trocear el material en fragmentos independientes.
-- Generación y revisión de código en pipelines de CI/CD: el informe cubre benchmarks de código dentro de su evaluación de 20 tareas y el modelo soporta tool calling, por lo que puede invocarse como paso de revisión o de generación dentro de un flujo automatizado.
-- Atención al cliente bilingüe inglés-chino: gestiona conversaciones multi-turno en los dos idiomas declarados, con la ventana de contexto amplia como ventaja para conservar el historial completo de la interacción.
-- Investigación sobre recetas de entrenamiento: al liberar datos, código y configuraciones por etapa, sirve como base para estudiar el efecto de FP8, Muon, atención híbrida y extensión progresiva de contexto en modelos de 7B.
-- Extracción estructurada de información a partir de documentos largos: la ventana de 256K y el modo de respuesta directa (sin cadena de razonamiento visible) lo hacen apropiado para tareas de producción donde se prioriza latencia y salida limpia.
+- Resolución de problemas matemáticos en producción educativa: el modelo alcanza 97,13% en MATH-500 y 75,00% en AIME 2026, por lo que puede emplearse en tutores automáticos o generadores de soluciones paso a paso con verificación.
+- Investigación web automatizada: con 63,09% en WebWalkerQA y capacidad de hasta 64 pasos de búsqueda y lectura, es adecuado para agentes que recopilan y sintetizan información de múltiples páginas.
+- Análisis de documentos largos: la ventana de 256K tokens permite procesar informes, expedientes o bases de código extensas en una sola pasada sin truncamiento.
+- Ingeniería inversa asistida: el soporte de herramientas de Ghidra y su resultado de 62,00% en Binary Function Search lo hacen útil para tareas de identificación de funciones en binarios.
+- Asistentes de razonamiento con tool calling: puede integrarse en pipelines donde el modelo decide cuándo invocar una herramienta externa y cómo encadenar varias llamadas en un flujo multi-paso.
+- Evaluación comparativa de recetas de entrenamiento: al publicarse datos, código y logs, sirve como base reproducible para investigar atención híbrida, FP8 con Muon y extensión de contexto.
+- Generación de código y conocimiento general: el informe cubre 20 benchmarks, incluidos código, conocimiento y seguimiento de instrucciones, aunque los resultados concretos de esas categorías no se detallan en la información disponible.
 
 ## Benchmarks y rendimiento
 
-Resultados del informe técnico, usando el *checkpoint* SFT de 256K en modo *thinking*. Las evaluaciones no agenticas emplean temperatura 1,0, top-p 1,0 y media de *pass@1* sobre 32 ejecuciones. La negrita marca el mejor resultado de cada fila.
+Resultados del checkpoint SFT de 256K en modo thinking, con temperatura 1,0, top-p 1,0 y media de pass@1 sobre 32 ejecuciones salvo indicación contraria.
 
 | Benchmark (%) | ZGCM-1 | DeepSeek-R1-0528-Qwen3-8B | MiniCPM4.1-8B | Qwen3-8B | Olmo 3 7B Think |
 |---|---:|---:|---:|---:|---:|
@@ -66,49 +65,44 @@ Resultados del informe técnico, usando el *checkpoint* SFT de 256K en modo *thi
 | HMMT 2025 | **70,42** | 61,50 | 52,50 | 43,33 | 43,89 |
 | HMMT 2026 | **59,48** | 51,52 | 46,21 | 45,45 | 43,94 |
 
-Rendimiento agentico:
+Búsqueda agéntica:
 
 | Benchmark | ZGCM-1 (%) | Configuracion |
 |---|---:|---|
-| WebWalkerQA | 63,09 | búsqueda web y lectura de páginas |
-| BrowseComp | 19,43 | búsqueda web y lectura de páginas |
-| GAIA (solo texto) | 42,52 | búsqueda web y lectura de páginas |
-| Binary Function Search | 62,00 | 31/50 coincidencias exactas de entrada de función con herramientas de Ghidra |
+| WebWalkerQA | 63,09 | Búsqueda web y lectura de páginas |
+| BrowseComp | 19,43 | Búsqueda web y lectura de páginas |
+| GAIA (solo texto) | 42,52 | Búsqueda web y lectura de páginas |
+| Binary Function Search | 62,00 | 31/50 coincidencias exactas de entrada de función con herramientas Ghidra |
 
-La evaluación completa del informe abarca 20 benchmarks, incluidos código, conocimiento y seguimiento de instrucciones, pero en la información disponible solo se detallan las tablas anteriores. No se han publicado en la información disponible resultados de benchmarks de latencia, *throughput* de inferencia ni consumo de memoria.
+La búsqueda web permite hasta 64 pasos de búsqueda y lectura. Binary Function Search usa un protocolo separado sobre 50 tareas de 10 proyectos reservados. El informe completo cubre 20 benchmarks e incluye código, conocimiento y seguimiento de instrucciones, pero los valores de esas categorías no están disponibles en la información proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM estimada para los pesos: en bfloat16, aproximadamente 14,8 GB (7,394.832.384 parámetros × 2 bytes); en FP8, unos 7,4 GB. Son cálculos aritméticos a partir del número de parámetros, no cifras publicadas por el autor.
-- Caché KV: gracias a las 27 capas de ventana local de 128 tokens, el coste por token queda dominado por las 5 capas globales. Estimando una dimensión de cabeza de 128 (no publicada de forma explícita), serían unos 20 KB por token, es decir en torno a 5,2 GB en bfloat16 para una secuencia de 256K. Esta cifra es una estimación propia a partir de las especificaciones publicadas.
-- GPU recomendadas: para contexto completo de 256K conviene una GPU de 80 GB (H100, A100 80GB) o reparto multi-GPU con `device_map="auto"`. Para contextos moderados, una A100 40GB, L40S 48GB o RTX A6000 48GB son suficientes.
-- Cabe en GPU de consumo: en una RTX 4090 de 24 GB los pesos en bfloat16 entran con poco margen y contexto corto; con contexto muy largo la caché KV excede la memoria disponible. En GPUs de 16 GB o menos haría falta cuantización, que no está publicada.
-- Opciones de despliegue: la ruta documentada es `transformers` con `trust_remote_code=True` y `dtype="bfloat16"`, más `device_map="auto"` para reparto entre GPUs. La compatibilidad con vLLM, llama.cpp, Ollama o TGI no está confirmada en la información disponible, y es dudosa a priori por el uso de código de modelado propio y atención híbrida.
-- Latencia y throughput de inferencia: no disponible. Los únicos datos de eficiencia publicados son de entrenamiento: 3,94× de *throughput* a 256K frente a atención completa y ~4,2× de mejora en tiempo hasta un *loss* dado a 16K.
+- VRAM estimada para inferencia en bfloat16: aproximadamente 15-16 GB solo para pesos, más memoria para KV cache; con contexto de 256K el KV cache crece de forma considerable y exige GPUs de 40-80 GB o más para secuencias muy largas.
+- GPU recomendadas: A100 80GB o H100 para contexto completo de 256K; A100 40GB para contextos moderados en bf16.
+- GPU de consumo: el modelo en bf16 no cabe en GPUs de 24 GB como la RTX 4090; requeriría cuantización, cuyos formatos no se detallan en la información disponible.
+- Opciones de despliegue: transformers con `trust_remote_code=True` es el método documentado; al incluir código de modelado propio, la compatibilidad con vLLM, llama.cpp, Ollama o TGI no está confirmada en la información disponible.
+- Latencia y throughput: no se publican cifras de inferencia; el informe solo aporta el dato de 3,94 veces más throughput de entrenamiento a 256K frente a atención completa.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | MATH-500 | AIME 2025 | HMMT 2025 | Licencia | Disponibilidad |
-|---|---:|---:|---:|---:|---:|---|---|
-| ZGCM-1-7B | 7,39B denso | 256K | 97,13 | 73,33 | 70,42 | MIT | pesos, datos y código de entrenamiento abiertos |
-| DeepSeek-R1-0528-Qwen3-8B | ~8B denso | no disponible en la informacion proporcionada | 96,32 | 75,21 | 61,50 | no disponible en la informacion proporcionada | pesos publicos |
-| MiniCPM4.1-8B | ~8B denso | no disponible en la informacion proporcionada | 95,60 | 73,33 | 52,50 | no disponible en la informacion proporcionada | pesos publicos |
-| Qwen3-8B | ~8B denso | no disponible en la informacion proporcionada | 96,20 | 63,33 | 43,33 | no disponible en la informacion proporcionada | pesos publicos |
-| Olmo 3 7B Think | ~7B denso | no disponible en la informacion proporcionada | 95,10 | 64,60 | 43,89 | no disponible en la informacion proporcionada | pesos publicos |
-
-Los datos de benchmarks de la comparativa proceden de la tabla del informe de ZGCM-1. Las columnas de contexto, licencia y disponibilidad de los modelos alternativos no se detallan en la información proporcionada y deben verificarse en sus respectivas fichas antes de tomar una decisión.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| ZGCM-1-7B | 7,39B denso | 256K | MIT | Hugging Face, código y datos abiertos | Mejor media de ranking en 14 benchmarks de razonamiento entre los 7 modelos comparados |
+| DeepSeek-R1-0528-Qwen3-8B | 8B | No disponible | No disponible | Hugging Face | Gana en AIME 2024 y 2025; pierde en MATH-500, AIME 2026 y HMMT |
+| MiniCPM4.1-8B | 8B | No disponible | No disponible | Hugging Face | Empata en AIME 2024 y 2025; peor en HMMT |
+| Qwen3-8B | 8B | No disponible | No disponible | Hugging Face | Inferior en todos los benchmarks matemáticos mostrados salvo MATH-500, donde queda cerca |
 
 ## Limitaciones y advertencias
 
-- Cobertura de idiomas limitada a inglés y chino. No hay soporte declarado de castellano, por lo que su uso en producción en español no está validado.
-- Riesgo de alucinación, especialmente en tareas de búsqueda y respuesta directa: en BrowseComp el modelo solo alcanza 19,43%, lo que indica que la resolución de preguntas abiertas que requieren búsqueda profunda sigue siendo poco fiable.
-- No se documentan en la información disponible técnicas de alineación por preferencias humanas (RLHF, DPO) ni evaluaciones de seguridad, sesgo o toxicidad. No hay datos publicados sobre sesgos conocidos.
-- La licencia MIT permite uso comercial sin restricciones de royalties, pero conviene verificar las licencias de los datos de entrenamiento publicados en `zgcagi/ZGCM-1-Data` antes de un despliegue comercial.
-- Requiere `trust_remote_code=True` y ejecuta código de modelado propio incluido en el repositorio. Esto implica revisar ese código antes de ejecutarlo en entornos no controlados, por motivos de seguridad de la cadena de suministro.
-- No hay cuantizaciones oficiales publicadas (GGUF, AWQ, GPTQ, FP8 de inferencia), lo que dificulta el despliegue en hardware de gama media o en CPU.
-- El contexto de 256K exige memoria considerable para la caché KV y no está claro que los frameworks de inferencia optimizados (vLLM, TGI) sean compatibles con la atención híbrida personalizada.
-- Los resultados de competición matemática se miden con temperatura 1,0 y media de *pass@1* sobre 32 ejecuciones; en producción con una sola muestra el rendimiento esperado será más variable.
-- Las fechas de creación del repositorio (septiembre de 2026) y la referencia al arXiv 2609.13356 son las publicadas por el autor; verifica la vigencia de los enlaces antes de citarlos.
+- Idiomas limitados a inglés y chino; el rendimiento en castellano no está evaluado y probablemente sea inferior.
+- Riesgo de alucinación inherente a los modelos generativos, especialmente en tareas de búsqueda donde BrowseComp solo alcanza 19,43%.
+- El contexto de 256K exige hardware de gama alta; el KV cache a esa longitud puede superar la VRAM de GPUs de consumo.
+- Requiere `trust_remote_code=True`, lo que implica ejecutar código del autor; conviene auditar el código de modelado antes de desplegarlo en producción.
+- La licencia MIT permite uso comercial, pero no se especifican restricciones adicionales sobre los datos de entrenamiento ni sobre las herramientas externas (búsqueda web, Ghidra) que el modelo invoca.
+- Los resultados de benchmarks provienen del informe técnico del propio autor; no se han verificado de forma independiente en la información disponible.
+- No se detallan los formatos de cuantización soportados, lo que limita la planificación de despliegues con recursos reducidos.
+- El modelo está especializado en matemáticas y búsqueda agéntica; su rendimiento en otras tareas (código, conocimiento general) no se detalla con cifras.
 
 ## Enlaces
 
@@ -116,7 +110,4 @@ Los datos de benchmarks de la comparativa proceden de la tabla del informe de ZG
 - Informe técnico (arXiv): https://arxiv.org/abs/2609.13356
 - Dataset de entrenamiento: https://huggingface.co/datasets/zgcagi/ZGCM-1-Data
 - Código de entrenamiento: https://github.com/zgcagi/ZGCM-1
-- Resultados de evaluación: sección `#evaluation-results` de la model card en Hugging Face
-- Comunidad WeChat: enlace incluido en la model card (sección `#wechat-community`)
-
-Nota: los resultados de la búsqueda web realizada no aportaron enlaces adicionales relevantes sobre este modelo; los resultados devueltos eran páginas genéricas (Reddit, Zhihu, GitHub Desktop, un repositorio de *prompts* y un repositorio de DeepSeek) sin relación con ZGCM-1.
+- Log de entrenamiento (Weights & Biases): https://wandb.ai/zgcagi/zgcm-1-reports/reports/ZGCM-1-Training-and-Evaluation--VmlldzoxNzk1OTMxMg

@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 148,
+  "downloads_30d": 153,
   "trending_score": 0,
   "parameters": 291632513,
   "parameters_human": "291.6M",
@@ -54,19 +54,14 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "GitHub - inclusionAI/Ming-3.0-asr",
-      "url": "https://github.com/inclusionAI/Ming-3.0-asr",
-      "snippet": "Real speech comes with accents, background noise, unfamiliar names, and specialized terminology. Ming-3.0-asr-tiny combines the Ling-tiny-v3 language model with an audio encoder for Chinese and English transcription, dialect recognition, and Context ASR. Hotwords or preceding dialogue can help ..."
+      "title": "Le bar de la plage - S01 - E04 - Les Quatre Saisons - Streaming, …",
+      "url": "https://www.diverto.tv/series/les-quatre-saisons/le-bar-de-la-plage",
+      "snippet": "Nick et Anne accueillent leurs vieux amis Kate, Jack, Danny et Claude pour un week-end dans leur maison bucolique en bordure de …"
     },
     {
-      "title": "GitHub - Yeachan-Heo/oh-my-claudecode: Teams-first Multi-agent ...",
-      "url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
-      "snippet": "Package naming note: the repo, plugin, and commands are branded oh-my-claudecode, but the published npm package name …"
-    },
-    {
-      "title": "inclusionAI/Ming-3.0-asr-tiny · Hugging Face",
-      "url": "https://huggingface.co/inclusionAI/Ming-3.0-asr-tiny",
-      "snippet": "Ming-3.0-asr-tiny combines the Ling-tiny-v3 language backbone with an audio encoder. It transcribes single-turn Chinese and English speech, covers regional dialects, and can use hotwords or preceding dialogue to improve recognition of domain-specific terms. This repository includes the model weights ..."
+      "title": "Le bar de la plage en streaming & replay | Molotov TV",
+      "url": "https://www.molotov.tv/fr_fr/p/6136265/le-bar-de-la-plage",
+      "snippet": "📺 Regardez et enregistrez Le bar de la plage en streaming sur Molotov TV : l'app gratuite pour regarder la TV en direct et en replay. …"
     }
   ]
 }

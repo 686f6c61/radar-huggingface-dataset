@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1326,
+  "downloads_30d": 1328,
   "trending_score": 0,
   "parameters": 29776626688,
   "parameters_human": "29.78B",
@@ -51,8 +51,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "MongoDB/wayfinder-glimmer-30b",
+  "renamed_at": "2026-11-17T06:57:23.949Z",
   "benchmarks": [],
   "sources": []
 }

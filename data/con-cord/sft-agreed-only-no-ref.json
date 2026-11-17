@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 5,
+  "downloads_30d": 9,
   "trending_score": 0,
   "parameters": 4300079472,
   "parameters_human": "4.30B",
@@ -46,8 +46,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "con-cord/SFT-agreed",
+  "renamed_at": "2026-11-17T05:46:38.661Z",
   "benchmarks": [],
   "sources": [
     {

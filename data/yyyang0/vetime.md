@@ -2,91 +2,84 @@
 
 ## Resumen
 
-VETime es un framework de deteccion de anomalias en series temporales en regimen zero-shot que combina representaciones temporales y visuales. Lo desarrolla un equipo academico encabezado por Yingyuan Yang (repositorio bajo el identificador `yyyang0`), y el trabajo ha sido aceptado en NeurIPS 2026. No es un modelo de lenguaje generativo, sino un sistema de deteccion de anomalias compuesto por un codificador temporal, un codificador visual y un modulo de fusion multimodal adaptativo a la tarea.
+VETime es un framework de deteccion de anomalias en series temporales en regimen zero-shot que combina representaciones temporales y visuales. Lo desarrolla yyyang0 (con vinculacion al laboratorio THU-SAL) y se distribuye bajo licencia Apache 2.0. El trabajo fue aceptado en NeurIPS 2026 y cuenta con un articulo en arXiv (2602.16681). El repositorio de Hugging Face distribuye codigo fuente y utilidades de evaluacion; los pesos preentrenados se alojan por separado en `yyyang0/VETime-checkpoints`.
 
-El problema que aborda es el compromiso clasico en deteccion de anomalias: los metodos centrados en el dominio temporal localizan bien anomalias puntuales pero pierden patrones globales, mientras que los enfoques basados en vision capturan contexto de largo alcance pero pierden resolucion temporal fina. VETime convierte la serie temporal en una imagen trazable (manteniendo la correspondencia temporal), alinea los parches visuales con la linea temporal original y fusiona ambas modalidades de forma adaptativa para localizar tanto anomalias puntuales como anomalias contextuales de largo rango.
+El problema que aborda es el compromiso clasico en deteccion de anomalias: los metodos centrados en localizacion temporal fina pierden comprension global de patrones, mientras que los enfoques globales sacrifican precision en la localizacion. VETime convierte la serie temporal en una imagen trazable que preserva la correspondencia temporal, alinea los parches visuales con la linea temporal original y fusiona de forma adaptativa ambas modalidades para localizar anomalias puntuales y anomalias contextuales de largo alcance.
 
-La relevancia actual radica en su caracter zero-shot sobre el benchmark TSB-AD (univariante y multivariante) y en su publicacion en NeurIPS 2026. La informacion disponible no especifica el numero de parametros ni la longitud de contexto, ya que no se trata de un transformer generativo con ventana de contexto en el sentido habitual.
+Es relevante porque propone un paradigma multimodal (tiempo + vision) para una tarea tradicionalmente unimodal, con evaluacion estandarizada sobre el benchmark TSB-AD (variantes univariante TSB-AD-U y multivariante TSB-AD-M). No se dispone de datos publicos sobre numero de parametros, longitud de contexto ni volumen de entrenamiento en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Framework multimodal: codificador temporal + codificador visual + alineamiento patch-nivel + fusion adaptativa |
+| Arquitectura | Framework multimodal con encoder visual (MAE, pesos `mae_visualize_base.pth`) y encoder de series temporales, con modulo de alineamiento y fusion visual-temporal (VTS) |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (depende de la longitud de la ventana de la serie temporal de entrada) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no aplica (modelo no linguistico) |
-| Licencia | Apache 2.0 (segun el README del repositorio; el campo de licencia de Hugging Face figura como no disponible) |
-| Formato de pesos | checkpoints PyTorch (repositorio separado `yyyang0/VETime-checkpoints`); no se especifica safetensors ni GGUF |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos distribuidos en `.pth` de PyTorch) |
+| Idiomas soportados | no disponible (tarea no linguistica: series temporales numericas) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | `.pth` (checkpoint PyTorch); el repositorio principal contiene codigo fuente |
 
 ## Arquitectura y entrenamiento
 
-VETime se organiza en cuatro componentes: (1) conversion trazable de serie temporal a imagen, que preserva la correspondencia temporal al rasterizar la senal; (2) alineamiento temporal a nivel de parche, que asocia cada parche visual con su tramo correspondiente en la linea temporal; (3) aprendizaje contrastivo de ventanas de anomalia, que separa ventanas normales de anomalas; y (4) fusion multimodal adaptativa a la tarea, que combina caracteristicas temporales y visuales para la localizacion final. El codigo esta implementado en PyTorch 2.3+ y requiere Python 3.8+ (probado con 3.11) y CUDA 12.1 recomendado.
+VETime es un framework multimodal compuesto por cuatro bloques: (1) conversion trazable de series temporales a imagen, que preserva la correspondencia temporal; (2) alineamiento a nivel de parche entre las representaciones visuales y la linea temporal original; (3) aprendizaje contrastivo por ventanas de anomalia, que separa ventanas normales de anomalas; y (4) fusion multimodal adaptativa a la tarea, que combina caracteristicas temporales y visuales para la localizacion de anomalias. El codigo incluye modulos separados para el encoder visual (`model/Vision_encoder/`) y el encoder temporal (`model/TS_encoder/`), ademas del modulo de alineamiento y fusion (`model/VTS_module.py`).
 
-En cuanto a datos de entrenamiento, el framework se evalua y entrena sobre el benchmark TSB-AD, en sus variantes univariante (TSB-AD-U) y multivariante (TSB-AD-M), distribuidas por TheDatumOrg. La model card no detalla el numero de tokens, la composicion exacta del dataset ni si se empleo RLHF o DPO (no aplica en un modelo de deteccion). La innovacion tecnica destacable es la fusion de dos modalidades (temporal y visual) con alineamiento patch-nivel para resolver el compromiso entre localizacion fina y comprension global, en un regimen de evaluacion zero-shot.
+El modelo se entrena con perdidas definidas en `loss/` y se evalua en regimen zero-shot sobre TSB-AD. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset de preentrenamiento, ni si se emplearon tecnicas de RLHF/DPO (poco probables en una tarea de deteccion de anomalias). El checkpoint principal es `VETime.pth` y el encoder visual se inicializa desde `mae_visualize_base.pth`. La implementacion requiere Python 3.8+ (probado en 3.11), PyTorch 2.3.0+ y CUDA 12.1 recomendado.
 
 ## Capacidades
 
-- Deteccion de anomalias puntuales en series temporales univariantes y multivariantes.
-- Deteccion de anomalias contextuales de largo rango gracias a la representacion visual global.
-- Evaluacion zero-shot sobre el benchmark TSB-AD sin reentrenamiento especifico por dominio.
-- Conversion trazable de series temporales a imagenes con preservacion de la correspondencia temporal.
-- Alineamiento patch-nivel entre representacion visual y linea temporal original.
-- Fusion multimodal adaptativa a la tarea para localizacion de anomalias.
-- Calculo de metricas de evaluacion: VUS-PR, metricas de afiliacion (Affiliation), F1-T (basada en rango con contexto temporal) y Standard-F1 (puntual).
-- No soporta tool calling, function calling, agentes ni generacion de texto: no es un modelo linguistico.
+- Deteccion de anomalias puntuales y anomalias contextuales de largo alcance en series temporales.
+- Evaluacion zero-shot: no requiere reentrenamiento sobre el dominio objetivo para inferencia.
+- Soporte de series univariantes (TSB-AD-U) y multivariantes (TSB-AD-M).
+- Conversion trazable de series temporales a representaciones visuales con correspondencia temporal preservada.
+- Alineamiento parche-tiempo para localizacion fina de anomalias.
+- Fusion adaptativa de modalidades temporal y visual.
+- Aprendizaje contrastivo de ventanas para mejorar la separacion normal/anomalo.
+- No se documentan capacidades de generacion de texto, codigo, matematicas, tool calling, agentes, vision general, audio ni multilingueismo; el modelo es especifico de deteccion de anomalias en series temporales.
 
 ## Casos de uso
 
-- Monitorizacion de infraestructura IT: deteccion de picos y caidas anomalas en metricas de servidores (CPU, latencia, throughput) usando la variante multivariante TSB-AD-M, aprovechando la fusion temporal-visual para capturar tanto spikes puntuales como desviaciones sostenidas.
-- Deteccion de fraude en transacciones: identificacion de patrones anomalos en series de transacciones con contexto de largo rango, donde la representacion visual permite ver regimenes alterados que un detector puramente puntual pasaria por alto.
-- Mantenimiento predictivo industrial: analisis de series de sensores de maquinaria para detectar degradaciones graduales y anomalias contextuales antes de un fallo, con evaluacion zero-shot sobre nuevos equipos sin reentrenamiento.
-- Monitorizacion de salud y telemetria biometrica: deteccion de episodios anomalos en series de signos vitales continuos, beneficiandose de la localizacion temporal fina para marcar el inicio y fin del evento.
-- Deteccion de anomalias en energia y utilities: identificacion de consumos anomalos o perdidas en series de contadores, con la variante univariante TSB-AD-U para despliegues por medidor.
-- Investigacion y benchmarking: uso del framework como baseline reproducible sobre TSB-AD para comparar metodos de deteccion de anomalias con metricas estandarizadas (VUS-PR, Affiliation, F1-T, Standard-F1).
-- Analisis de series financieras: deteccion de regimenes anomalos en precios o volumenes, apoyandose en la vision para capturar patrones globales y en el codificador temporal para la localizacion precisa.
+- Monitorizacion de infraestructura IT: deteccion de picos y desviaciones contextuales en metricas de CPU, memoria, latencia o trafico de red, aprovechando la capacidad de identificar tanto anomalias puntuales como cambios graduales de regimen.
+- Mantenimiento predictivo industrial: analisis de sensores de maquinaria (vibracion, temperatura, presion) para detectar fallos incipientes sin necesidad de reentrenar por cada equipo, gracias al regimen zero-shot.
+- Deteccion de fraude en transacciones: identificacion de patrones anomalos en secuencias de operaciones financieras, con soporte para series multivariantes que combinan importe, frecuencia y ubicacion.
+- Monitorizacion de salud con wearables: deteccion de episodios anomalos en senales fisiologicas (ritmo cardiaco, actividad, sueno) sobre series univariantes, sin etiquetado especifico por paciente.
+- Observabilidad de sistemas distribuidos: analisis de metricas multivariantes de microservicios para localizar degradaciones y picos de error en ventanas temporales concretas.
+- Investigacion en deteccion de anomalias: uso como baseline zero-shot sobre TSB-AD para comparar con metodos unimodales y evaluar el aporte de la fusion visual-temporal.
+- Analitica de consumo energetico: deteccion de consumos atipicos en series de contadores inteligentes para alertar de fugas o usos fraudulentos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card describe las metricas que el codigo reporta (VUS-PR, Affiliation, F1-T, Standard-F1) y el benchmark empleado (TSB-AD-U y TSB-AD-M), pero no incluye cifras numericas de rendimiento ni comparaciones cuantitativas con otros metodos.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explicitamente que la actualizacion no incluye nuevas puntuaciones de benchmark ni afirmaciones de reproduccion del articulo, y que el Space online es una demo ligera que no ejecuta el pipeline completo de TSB-AD. El repositorio incluye el codigo de evaluacion (`Test_TSB.py`, `evaluation/`) para reproducir resultados sobre TSB-AD-U y TSB-AD-M.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible; depende del tamano de los codificadores temporal y visual, no especificado en la informacion.
-- GPU recomendadas: no disponibles de forma explicita; el entorno probado usa CUDA 12.1, por lo que se requiere una GPU NVIDIA compatible.
-- Ajuste en GPU de consumo: no disponible; no se confirma si cabe en RTX 4090 u otras GPU consumer.
-- Opciones de despliegue: ejecucion nativa en PyTorch 2.3+ mediante `train.py` y `Test_TSB.py`; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (no aplica a este tipo de modelo).
+- VRAM estimada para inferencia: no disponible en la informacion proporcionada; depende del tamano del encoder visual (basado en MAE-Base) y del encoder temporal, cuyos parametros no se detallan.
+- GPU recomendadas: no especificadas; la documentacion recomienda un entorno con CUDA 12.1 y `--device cuda:0`.
+- Compatibilidad con GPU de consumo: no confirmada; el uso de un encoder tipo MAE-Base sugiere que podria ejecutarse en GPUs consumer con VRAM suficiente, pero no hay datos oficiales.
+- Opciones de despliegue: ejecucion directa con PyTorch (`Test_TSB.py`, `train.py`); no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplicables a este tipo de modelo).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Enfoque | Benchmark | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| VETime | Framework multimodal (temporal + vision) | Zero-shot, fusion adaptativa | TSB-AD-U / TSB-AD-M | Apache 2.0 | Codigo + checkpoints en Hugging Face |
-| Time-RCD | Modelo fundacional para deteccion zero-shot | Datos sinteticos + Relative Context Discrepancy | No disponible en la informacion | No disponible | Repositorio GitHub (thu-sail-lab) |
-| TSB-AD (baselines) | Conjunto de metodos de referencia | Multiples enfoques de deteccion | TSB-AD | No disponible | Codigo en GitHub (TheDatumOrg) |
-
-No se dispone de datos cuantitativos de rendimiento para establecer una comparacion numerica con alternativas.
+No disponible. La informacion proporcionada no incluye modelos comparables ni datos de rendimiento de alternativas de deteccion de anomalias zero-shot sobre TSB-AD.
 
 ## Limitaciones y advertencias
 
-- No es un modelo de lenguaje: no genera texto, no soporta tool calling ni agentes; cualquier uso conversacional queda fuera de su alcance.
-- La informacion publica no detalla el numero de parametros, la composicion del dataset de entrenamiento ni los resultados numericos, lo que dificulta evaluar su rendimiento antes de ejecutarlo.
-- El regimen zero-shot puede degradarse en dominios muy alejados de la distribucion de TSB-AD; se recomienda validacion en el dominio objetivo.
-- La conversion a imagen introduce una resolucion limitada: anomalias mas finas que la resolucion del rasterizado pueden perderse.
-- Riesgo de falsos positivos en series con estacionalidad o ruido no representados en el benchmark de referencia.
-- La licencia Apache 2.0 figura en el README del repositorio, pero el campo de licencia de Hugging Face aparece como no disponible; conviene verificar el fichero LICENSE antes de un uso comercial.
-- No se documentan sesgos especificos ni limitaciones por idioma (no aplica).
+- El repositorio de Hugging Face distribuye codigo y utilidades, no los pesos; es necesario descargar `VETime.pth` y `mae_visualize_base.pth` desde `yyyang0/VETime-checkpoints`.
+- El Space online es una demo ligera alojada en un host personal y no ejecuta el benchmark completo de TSB-AD; no debe usarse para validar rendimiento.
+- No se documentan sesgos especificos, pero al ser un modelo entrenado sobre TSB-AD, su comportamiento fuera de la distribucion de ese benchmark puede degradarse.
+- Riesgo de falsos positivos y negativos en regimen zero-shot: la deteccion sin ajuste al dominio puede no alcanzar la precision de metodos supervisados especificos.
+- No se detalla el volumen ni la composicion de los datos de entrenamiento, lo que limita la evaluacion de su cobertura de dominios.
+- La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar las licencias de los datasets TSB-AD y del encoder visual MAE subyacente.
+- Requiere entorno CUDA para el pipeline de evaluacion completo; el rendimiento en CPU no esta documentado.
 
 ## Enlaces
 
-- Hugging Face (modelo): https://huggingface.co/yyyang0/VETime
-- Hugging Face (checkpoints): https://huggingface.co/yyyang0/VETime-checkpoints
-- Repositorio GitHub: https://github.com/yyyangcoder/VETime
-- Paper arXiv: https://arxiv.org/abs/2602.16681
+- Repositorio Hugging Face: https://huggingface.co/yyyang0/VETime
+- Checkpoints: https://huggingface.co/yyyang0/VETime-checkpoints
+- Demo interactiva: https://huggingface.co/spaces/thu-sail-lab/VETime
+- Codigo fuente: https://github.com/yyyangcoder/VETime
+- Articulo arXiv: https://arxiv.org/abs/2602.16681
 - Dataset TSB-AD-U: https://www.thedatum.org/datasets/TSB-AD-U.zip
 - Dataset TSB-AD-M: https://www.thedatum.org/datasets/TSB-AD-M.zip
-- Benchmark TSB-AD: https://github.com/TheDatumOrg/TSB-AD
-- Time-RCD (referencia): https://github.com/thu-sail-lab/Time-RCD

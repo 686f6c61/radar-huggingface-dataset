@@ -5,7 +5,7 @@
   "author": "samartomar",
   "url": "https://huggingface.co/samartomar/spark-x2.6-4b-hindsight-1.1-research-preview",
   "created_at": "2026-11-14T08:41:28.000Z",
-  "updated_at": "2026-11-15T16:04:01.000Z",
+  "updated_at": "2026-11-16T20:36:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

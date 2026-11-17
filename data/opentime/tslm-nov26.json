@@ -19,10 +19,11 @@
     "base_model:google/gemma-3-4b-pt",
     "base_model:finetune:google/gemma-3-4b-pt",
     "license:gemma",
+    "deploy:sagemaker",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 97,
+  "downloads_30d": 99,
   "trending_score": 0,
   "parameters": 5241692050,
   "parameters_human": "5.24B",

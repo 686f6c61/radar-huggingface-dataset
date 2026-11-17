@@ -1,102 +1,90 @@
 # yniw/MiniMax-H3-mmh3
 
 ## Resumen
+MiniMax-H3-mmh3 es un repositorio de artefactos derivados de MiniMax H3, un modelo de generación de vídeo a partir de texto, empaquetados para el motor de inferencia mmh3. Lo publica el usuario yniw y no contiene pesos completos del modelo base, sino parches, LoRAs y un VAE cuantizado que modifican checkpoints de terceros (Comfy-Org, FastVideo, TaoLiveAIGC, pdmd2026 y ZhengmingYu) para que funcionen con el motor mmh3 y, en varios casos, también con ComfyUI.
 
-yniw/MiniMax-H3-mmh3 es un repositorio de pesos auxiliares publicado por el usuario yniw el 14 de septiembre de 2026, pensado para el motor de inferencia [mmh3](https://github.com/niw/mmh3), dedicado a MiniMax H3. No contiene un modelo completo, sino ficheros que siguen la estructura del directorio `models` de mmh3. En concreto, incluye el parche `patches/minimax_h3_fasth3_vsa_datafree_patch_rank64.safetensors`, que transforma el DiT FL2VA podado INT8 ConvRot de Comfy-Org en el checkpoint FastH3 VSA-DataFree de FastVideo, capaz de generar vídeo en cuatro pasos con atención dispersa de vídeo (VSA).
+El interés del repositorio está en la compresión del coste de inferencia: incluye un parche que convierte el DiT INT8 podado en la variante FastH3 VSA-DataFree, que genera en cuatro pasos con atención dispersa sobre vídeo; un VAE de vídeo con capas lineales en INT8 ConvRot; y tres LoRAs de destilación que reducen la generación a dos, tres o cuatro pasos. El resultado es un conjunto de piezas que permite ejecutar MiniMax H3 con muy pocos pasos de muestreo y precisión reducida, algo relevante para despliegues con presupuesto de GPU ajustado.
 
-El interes practico del repositorio es que reduce la diferencia entre los pesos de FastH3 y los de MiniMax H3 a un LoRA de rango 64, y convierte a la topologia del DiT INT8 podado los tensores que un LoRA no puede transportar, como las compuertas VSA y el AdaLN reajustado. Esto permite ejecutar un pipeline de generacion de video texto-a-video en muy pocos pasos de muestreo y con atencion en precision mixta int8-fp8, sobre un DiT ya cuantizado y podado, lo que abarata el coste de inferencia frente al modelo base sin destilar.
-
-Se trata de un artefacto muy reciente y sin validacion comunitaria: acumula 0 descargas y 0 likes en el momento de redactar esta ficha, y su licencia es la MiniMax H3 Community License Agreement (etiquetada como `license: other`). Cualquier uso en produccion exige revisar las restricciones de la seccion V y del anexo A (Acceptable Use Policy) del acuerdo, que se aplican tanto a MiniMax H3 como a este derivado.
+El repositorio ocupa 10,5 GB y se distribuye bajo la licencia comunitaria de MiniMax H3, no bajo una licencia de código abierto permisiva. No se publican especificaciones del modelo base (parámetros, contexto, idiomas) en la información disponible, por lo que muchos campos de esta ficha quedan como no disponibles.
 
 ## Especificaciones tecnicas
-
 | Parametro | Valor |
 |---|---|
-| Arquitectura | DiT (Diffusion Transformer) con atencion dispersa de video (VSA); variante FL2VA con cuantizacion INT8 ConvRot |
+| Arquitectura | no disponible para el modelo base; los artefactos operan sobre un DiT (diffusion transformer) con VAE de vídeo y atención dispersa (VSA) en la variante FastH3 |
 | Parametros totales | no disponible |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no disponible (modelo de generacion de video; no se documenta ventana de contexto de texto) |
-| Tipos de cuantizacion | INT8 en el DiT podado de origen (INT8 ConvRot); atencion ejecutable en precision mixta `int8-fp8` |
-| Idiomas soportados | no disponible |
-| Licencia | MiniMax H3 Community License Agreement (`license: other`), con ficheros LICENSE y NOTICE |
-| Formato de pesos | safetensors (parche con LoRA de rango 64 mas tensores VSA y AdaLN) |
-| Tamano del repositorio | 2,7 GB |
-| Pipeline declarado | text-to-video |
-| Libreria declarada | minimax-h3 |
-| Modelos base | MiniMaxAI/MiniMax-H3; FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree |
-| Hash del parche | SHA-256 `5577a30b1a443c5f6d0ba923e11a0b5ae57cbf73aa64ae8d458d1c2feff16903` |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | INT8 ConvRot en el DiT podado y en las capas lineales del decodificador del VAE; LoRAs en BF16; precisión de atención int8-fp8 en la inferencia |
+| Idiomas soportados | no disponible (los prompts de texto dependen del modelo base) |
+| Licencia | minimax-h3-community-license-agreement (etiquetada como "other") |
+| Formato de pesos | safetensors (parche LoRA rank-64 con tensores adicionales, VAE INT8, LoRAs BF16 rank-128) |
 
 ## Arquitectura y entrenamiento
+Los artefactos se apoyan en MiniMax H3, cuyo diseño interno no se detalla en la información disponible; lo que sí se documenta es la cadena de derivaciones. El parche `minimax_h3_fasth3_vsa_datafree_patch_rank64.safetensors` transforma el DiT INT8 ConvRot podado de Comfy-Org en el checkpoint FastH3 VSA-DataFree de FastVideo: las diferencias entre ambos conjuntos de pesos se reducen a una LoRA de rango 64 y los tensores que una LoRA no puede transportar (compuertas VSA y AdaLN ajustado) se convierten al layout del DiT INT8 podado. Se construyó con `tools/models/fasth3_vsa_patch.py` de mmh3.
 
-La familia MiniMax H3 se materializa aqui como un DiT (Diffusion Transformer) en su variante FL2VA, distribuida por Comfy-Org en una version podada y cuantizada a INT8 con rotacion de convoluciones (ConvRot). Sobre esa base, FastVideo publico un checkpoint FastH3 VSA-DataFree que anade atencion dispersa de video (VSA) y un muestreo destilado de cuatro pasos. El parche de este repositorio no reentrena nada: expresa la diferencia entre ambos conjuntos de pesos como un LoRA de rango 64 y convierte a la topologia del DiT INT8 podado los tensores que un LoRA no puede representar, es decir, las compuertas de VSA y el AdaLN ajustado. Segun la model card, el parche se construyo con la herramienta `tools/models/fasth3_vsa_patch.py` del propio mmh3.
-
-Como consecuencia, no se dispone de informacion sobre volumen de tokens, composicion del dataset, ni sobre si hubo etapas de RLHF, DPO u otro ajuste por preferencias: esos datos corresponderian a los modelos originales y no se detallan en la informacion proporcionada. La innovacion tecnica destacable es doble: el destilado a cuatro pasos de muestreo y el uso de atencion dispersa de video para reducir el coste cuadratico de la atencion sobre secuencias espacio-temporales largas. El repositorio tambien advierte de que, al contener tensores ajenos a un LoRA, herramientas distintas de mmh3 pueden no ser capaces de cargar el parche.
+Las tres LoRAs de destilación siguen un patrón similar de re-factorización y renombrado. TaoMate-H3 (rango 128, EMA del paso 3000) genera en tres pasos con el schedule `taomate` (estados 0, 16, 33 y 49 de 50); PDMD 2-NFE (estudiante del paso 4000, destilado con Projected Distribution Matching Distillation) genera en dos pasos con shifts de vídeo y audio de 12 y 3, y sus actualizaciones q, k y v se fusionan y recortan de rango 384 a 128 conservando el 97 % de su energía media; DMAD (estudiante de 4 pasos con crítico entrenado por Distribution Matching as Adversarial Distillation) usa shifts 12 y 2 y una regla de re-ruido específica. El VAE INT8 se cuantizó con GPTQ sobre latentes de calibración, con reescalado por canal de entrada plegado en los pesos vecinos, y alcanza 60,9 dB PSNR frente al VAE FP16 en cinco latentes FastH3 fuera de calibración (58,2 dB con redondeo al más cercano).
 
 ## Capacidades
-
-- Generacion de video a partir de texto, con el pipeline declarado `text-to-video`.
-- Generacion en cuatro pasos de muestreo (`--steps 4`), gracias al destilado del checkpoint FastH3 VSA-DataFree.
-- Atencion dispersa de video (VSA), orientada a secuencias espacio-temporales largas.
-- Inferencia con precision de atencion `int8-fp8` sobre un DiT cuantizado en INT8 y podado.
-- Aplicacion como parche sobre un DiT concreto (`minimax_h3_fl2va_pruned_int8_convrot.safetensors`), mediante el flag `--patch` de mmh3.
-- Generacion por lotes desde fichero de prompts (`--prompt-file prompt.txt`) y salida a MP4 (`--out out.mp4`).
-- Soporte de tool calling / function calling: no aplica (no es un modelo de lenguaje).
-- Soporte de agentes y razonamiento multi-paso: no aplica.
-- Capacidades multilingues: no disponible (el modelo base es de generacion de video; no se documentan idiomas de prompt).
-- Modo thinking, vision o audio: no disponible / no documentado en la informacion proporcionada.
+- Generación de vídeo a partir de texto (pipeline `text-to-video`), con generación de audio asociada según los shifts de audio documentados en las LoRAs.
+- Generación en pocos pasos: 2 pasos (PDMD), 3 pasos (TaoMate) o 4 pasos (FastH3 VSA y DMAD).
+- Atención dispersa sobre vídeo (VSA) en la variante FastH3, con inicio de dispersión configurable.
+- Precisión de atención reducida (int8-fp8) para abaratar la inferencia.
+- Carga de LoRAs bajo los nombres de ComfyUI, lo que permite usar los adaptadores tanto en mmh3 como en ComfyUI.
+- Decodificación de vídeo con VAE cuantizado en INT8 compatible con checkpoints INT8 ConvRot de ComfyUI.
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso ni soporte multilingüe explícito.
 
 ## Casos de uso
-
-- Prototipado rapido de video texto-a-video en local: con cuatro pasos de muestreo y un DiT INT8 podado, el coste por clip se reduce lo suficiente como para iterar sobre prompts sin depender de una API externa.
-- Aplicaciones creativas con requisitos de baja latencia: insercion de clips generados en herramientas de edicion o tableros de guion grafico, donde el tiempo de espera por toma es el factor limitante.
-- Investigacion en destilado de modelos de difusion: el parche documenta como reducir la diferencia entre dos checkpoints a un LoRA de rango 64 mas tensores auxiliares, un patron reutilizable para estudiar destilacion a pocos pasos.
-- Investigacion en cuantizacion: sirve como caso de estudio de un DiT INT8 ConvRot podado ejecutado con atencion int8-fp8, util para medir el impacto de la precision mixta en la calidad del video.
-- Experimentacion con atencion dispersa de video: permite reproducir el comportamiento de VSA sobre el DiT podado sin necesidad de reentrenar.
-- Reproducibilidad y auditoria de pesos: al publicarse el hash SHA-256 del parche, se puede verificar la integridad del artefacto antes de cargarlo en un pipeline de inferencia.
-- Evaluacion comparativa interna: sirve para contrastar, en el mismo hardware, el modelo base de MiniMax H3 frente a su variante FastH3 de cuatro pasos y cuantizada.
+- Prototipado rápido de vídeo generativo: con la LoRA PDMD de 2 pasos y atención int8-fp8 se puede iterar sobre prompts con un coste de muestreo mínimo, útil para explorar ideas antes de lanzar una generación de más calidad.
+- Producción de clips cortos en pipelines automatizados: el parche FastH3 VSA-DataFree permite generar en cuatro pasos con atención dispersa, lo que encaja en procesos por lotes donde el throughput importa más que el detalle fino.
+- Integración en ComfyUI: las LoRAs y el VAE están renombrados al esquema de ComfyUI, de modo que un estudio con flujos de trabajo en nodos puede incorporar los adaptadores sin conversión adicional.
+- Reducción de huella de memoria en GPUs modestas: el VAE INT8 y el DiT INT8 ConvRot disminuyen los requisitos de VRAM frente a las variantes FP16, lo que facilita desplegar generación de vídeo en hardware de gama alta de consumo.
+- Evaluación comparativa de métodos de destilación: al reunir TaoMate, PDMD y DMAD en un mismo repositorio con comandos reproducibles, sirve para medir en igualdad de condiciones la calidad de cada esquema de pocos pasos.
+- Investigación sobre cuantización de VAEs: el PSNR reportado (60,9 dB frente a FP16) y el método GPTQ con reescalado por canal ofrecen un punto de partida para estudiar el impacto de la cuantización en la calidad visual.
+- Despliegue con audio sincronizado: los shifts de audio diferenciados en PDMD y DMAD permiten ajustar el equilibrio entre vídeo y audio en la generación conjunta.
 
 ## Benchmarks y rendimiento
+| Metrica | Resultado | Contexto |
+|---|---|---|
+| PSNR del VAE INT8 frente al VAE FP16 | 60,9 dB | Decodificación de cinco latentes FastH3 fuera de calibración |
+| PSNR del VAE con redondeo al más cercano | 58,2 dB | Misma prueba, cuantización naive como referencia |
+| Energía conservada en la LoRA PDMD tras recorte de rango | 97 % de media | Fusión de q, k y v y recorte de rango 384 a 128 |
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio no incluye metricas de calidad de video (FVD, CLIP-score, VBench u otras), ni comparativas numericas frente al modelo base. La busqueda web realizada para esta ficha no devolvio resultados relacionados con el modelo.
+No se han publicado resultados de benchmarks de calidad de vídeo (FVD, CLIP score u otros) en la información disponible.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia: no disponible. El repositorio solo contiene los parches (2,7 GB), no el DiT ni el resto de componentes necesarios para generar, por lo que no puede deducirse de este repositorio la huella final en memoria.
-- GPU recomendadas: no disponible. Al ejecutarse sobre un DiT INT8 podado con destilado a cuatro pasos, el perfil de memoria es inferior al del modelo base sin cuantizar, pero no se proporcionan cifras.
-- Compatibilidad con GPU de consumo: no disponible; no se documenta en la informacion proporcionada.
-- Opciones de despliegue: el unico entorno documentado es el motor mmh3 (CLI `mmh3 generate`). vLLM, llama.cpp, Ollama y TGI no aplican a este tipo de modelo de difusion de video, y la propia model card advierte de que herramientas distintas de mmh3 pueden no cargar el parche.
-- Ficheros necesarios: el parche `minimax_h3_fasth3_vsa_datafree_patch_rank64.safetensors` se aplica sobre `diffusion_models/minimax_h3_fl2va_pruned_int8_convrot.safetensors` de Comfy-Org/MiniMax-H3.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: no disponible con cifras concretas; el repositorio no publica requisitos. El uso de DiT INT8 ConvRot, VAE INT8 y atención int8-fp8 apunta a una reducción sustancial frente a FP16, pero no se cuantifica.
+- GPU recomendadas: no disponible. Por el tamaño del repositorio (10,5 GB) y el uso de cuantización INT8, es plausible que quepa en GPUs de consumo de gama alta con suficiente VRAM, pero no hay confirmación en la información proporcionada.
+- ¿Cabe en GPU de consumo? No confirmado; depende del tamaño real del DiT base, que no se especifica.
+- Opciones de despliegue: motor mmh3 (comandos `mmh3 generate` documentados) y ComfyUI para las LoRAs y el VAE; no se mencionan vLLM, llama.cpp, Ollama ni TGI, que además no aplican a un modelo de difusión de vídeo.
+- Latencia y throughput: no disponibles; solo se indica el número de pasos de muestreo (2, 3 o 4) según el adaptador.
 
 ## Comparativa con modelos similares
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| MiniMax-H3-mmh3 (este repo) | no disponible | no disponible | Artefactos de destilación y cuantización para MiniMax H3 | Comunitaria MiniMax H3 | Hugging Face, 3462 descargas |
+| MiniMaxAI/MiniMax-H3 | no disponible | no disponible | Modelo base de generación de vídeo | no disponible | Hugging Face |
+| FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree | no disponible | no disponible | Variante de 4 pasos con VSA | no disponible | Hugging Face |
+| TaoLiveAIGC/TaoMate-H3 | no disponible | no disponible | Adaptador de destilación a 3 pasos | no disponible | Hugging Face |
+| pdmd2026/pdmd_2NFE_lora | no disponible | no disponible | LoRA de destilación a 2 pasos | no disponible | Hugging Face |
 
-| Modelo | Tipo | Relacion con este repositorio | Tamano / formato | Licencia |
-|---|---|---|---|---|
-| yniw/MiniMax-H3-mmh3 | Parche (LoRA rango 64 + tensores VSA y AdaLN) | Objeto de esta ficha | 2,7 GB, safetensors | MiniMax H3 Community License Agreement |
-| Comfy-Org/MiniMax-H3 (`minimax_h3_fl2va_pruned_int8_convrot.safetensors`) | DiT FL2VA podado y cuantizado | Modelo de destino del parche | INT8 ConvRot, safetensors | MiniMax H3 Community License Agreement |
-| FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree | Derivado de MiniMax H3 con VSA y destilado a 4 pasos | Origen de las diferencias que el parche codifica | no disponible | no disponible en la informacion proporcionada |
-| MiniMaxAI/MiniMax-H3 | Modelo base | Ancestro de todos los anteriores | no disponible | MiniMax H3 Community License Agreement |
-
-No se dispone de datos de parametros, contexto ni rendimiento de los modelos comparados en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa. Tampoco se han identificado alternativas de otros fabricantes con datos verificables en esta busqueda.
+La comparación con modelos de otras familias no es posible con los datos disponibles; los únicos puntos de referencia documentados son los propios checkpoints de origen de los que derivan estos artefactos.
 
 ## Limitaciones y advertencias
-
-- No es un modelo autonomo: requiere el DiT podado de Comfy-Org y el motor mmh3 para funcionar. Cargarlo con otras herramientas puede fallar, ya que contiene tensores que un LoRA convencional no transporta.
-- Sin evidencia de uso: 0 descargas y 0 likes en el momento de la consulta, sin benchmarks publicados ni validacion por terceros.
-- Restricciones de licencia: se distribuye bajo la MiniMax H3 Community License Agreement. Las restricciones de uso de la seccion V y del anexo A (Acceptable Use Policy) se aplican a cualquier usuario de estos ficheros; conviene revisarlas antes de un uso comercial.
-- Idiomas soportados no documentados: no se especifica que lenguas admiten los prompts, lo que puede afectar a la calidad con prompts en castellano.
-- Riesgo de alucinacion visual: como todo modelo generativo de video, puede producir contenido incoherente, artefactos temporales o detalles fisicamente imposibles; no se han publicado evaluaciones al respecto.
-- Sesgos: no disponible. No se documenta analisis de sesgos del modelo base ni del derivado.
-- Dependencia de datos externos: el repositorio no incluye los pesos base ni los componentes de texto, por lo que la reproducibilidad completa depende de terceros (MiniMaxAI, Comfy-Org, FastVideo).
-- Ausencia de garantias de calidad tras la conversion: la model card no reporta comparaciones de fidelidad entre el resultado del parche y el checkpoint FastH3 original.
-- Fechas y versionado: el repositorio se creo y actualizo en septiembre de 2026; es un artefacto reciente y sujeto a cambios.
+- El repositorio no contiene un modelo autónomo: son artefactos derivados que requieren el DiT base de Comfy-Org/MiniMax-H3 y el motor mmh3 para funcionar.
+- El parche FastH3 incluye tensores que una LoRA convencional no puede transportar (compuertas VSA, AdaLN), por lo que herramientas distintas de mmh3 pueden no cargarlo correctamente.
+- La licencia es la acordada comunitaria de MiniMax H3, no una licencia de código abierto; es obligatorio revisar sus términos antes de cualquier uso comercial.
+- No se documentan sesgos, tasas de alucinación ni limitaciones idiomáticas del modelo base en la información disponible.
+- La generación en 2 o 3 pasos reduce la calidad potencial frente a schedules más largos; los benchmarks de calidad no se publican.
+- La cuantización INT8 introduce una pérdida medible (60,9 dB PSNR frente a FP16), aceptable en muchos casos pero no idéntica al original.
+- La información de la model card está truncada al final del apartado de DMAD, por lo que pueden faltar artefactos o detalles adicionales.
+- No hay garantías de soporte ni mantenimiento del repositorio por parte del autor.
 
 ## Enlaces
-
 - Repositorio en Hugging Face: https://huggingface.co/yniw/MiniMax-H3-mmh3
 - Motor de inferencia mmh3: https://github.com/niw/mmh3
 - Modelo base MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
-- Checkpoint FastH3 VSA-DataFree: https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree
-- DiT podado INT8 ConvRot de Comfy-Org: https://huggingface.co/Comfy-Org/MiniMax-H3
-- Licencia (MiniMax H3 Community License Agreement): fichero LICENSE del repositorio
-- Aviso legal: fichero NOTICE del repositorio
+- Checkpoints de Comfy-Org para MiniMax H3: https://huggingface.co/Comfy-Org/MiniMax-H3
+- FastH3 VSA-DataFree: https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree
+- TaoMate-H3: https://huggingface.co/TaoLiveAIGC/TaoMate-H3
+- PDMD 2-NFE LoRA: https://huggingface.co/pdmd2026/pdmd_2NFE_lora
+- DMAD: https://huggingface.co/ZhengmingYu/DMAD

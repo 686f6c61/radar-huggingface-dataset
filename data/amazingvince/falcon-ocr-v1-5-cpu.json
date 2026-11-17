@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 47,
+  "downloads_30d": 96,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -48,8 +48,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "BEE-spoke-data/falcon-ocr-v1.5-cpu",
+  "renamed_at": "2026-11-17T05:15:01.917Z",
   "benchmarks": [],
   "sources": [
     {

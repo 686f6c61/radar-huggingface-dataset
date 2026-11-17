@@ -5,7 +5,7 @@
   "author": "zephel01",
   "url": "https://huggingface.co/zephel01/DeepSeek-V4.1-Flash-1017-E256-IQ2_XXS-32G96G-GGUF",
   "created_at": "2026-11-03T00:42:15.000Z",
-  "updated_at": "2026-11-09T00:28:39.000Z",
+  "updated_at": "2026-11-16T23:28:35.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -37,12 +37,12 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 117,
   "trending_score": 0,
   "parameters": 567274486384,
   "parameters_human": "567.27B",
-  "storage_bytes": 207055746212,
+  "storage_bytes": 207056026609,
   "storage_human": "207.1 GB",
   "context_length": 1048576,
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
@@ -58,16 +58,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "zephel01/DeepSeek-V4.1-Flash-1017-LDLQ-32G96G-GGUF · Hugging Face",
-      "url": "https://huggingface.co/zephel01/DeepSeek-V4.1-Flash-1017-LDLQ-32G96G-GGUF",
-      "snippet": "KL against the unquantized model (top-256 log-probs of DeepSeek-V4.1-Flash-1017 before quantization, 8 held-out sequences x 1,023 tokens), computed in the Abyss engine with exact routing."
-    },
-    {
-      "title": "DeepSeek-V4.1-Flash-1017-Compact-32G96G-GGUF - Hugging Face",
-      "url": "https://huggingface.co/zephel01/DeepSeek-V4.1-Flash-1017-Compact-32G96G-GGUF",
-      "snippet": "Text Generation model with 567B parameters. Download, explore files and run it on Hugging Face."
-    }
-  ]
+  "sources": []
 }

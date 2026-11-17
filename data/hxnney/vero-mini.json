@@ -5,7 +5,7 @@
   "author": "hxnney",
   "url": "https://huggingface.co/hxnney/VERO-Mini",
   "created_at": "2026-10-28T03:48:41.000Z",
-  "updated_at": "2026-10-29T02:26:53.000Z",
+  "updated_at": "2026-11-17T03:51:13.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -18,8 +18,8 @@
     "conversational",
     "en",
     "es",
-    "base_model:MagmaStudios/VERO-Mini",
-    "base_model:finetune:MagmaStudios/VERO-Mini",
+    "base_model:MagmaStudios/VERO-Mini-Discontinued",
+    "base_model:finetune:MagmaStudios/VERO-Mini-Discontinued",
     "region:us"
   ],
   "likes": 2,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 73215308,
-  "storage_human": "73 MB",
+  "storage_bytes": 1064836273,
+  "storage_human": "1.1 GB",
   "context_length": null,
   "base_model": "MagmaStudios/VERO-Mini, MagmaStudios/VERO-Mini-V2",
   "formats": [
@@ -40,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": "MagmaStudios/VERO-Mini",
-  "renamed_at": "2026-11-11T05:37:09.880Z",
+  "renamed_to": "MagmaStudios/VERO-Mini-Discontinued",
+  "renamed_at": "2026-11-17T06:57:30.845Z",
   "benchmarks": [],
   "sources": [
     {

@@ -2,99 +2,98 @@
 
 ## Resumen
 
-smol-math-dpo-merged es un modelo de lenguaje causal de tipo Llama desarrollado por el usuario yas1988 como parte de su participacion en el curso Smol de Hugging Face (Unidad 2, alineamiento de preferencias). Se construye sobre SmolLM2-1.7B, al que se aplico primero un ajuste supervisado (SFT) sobre MetaMathQA y despues un alineamiento con Direct Preference Optimization (DPO) mediante LoRA, fusionando finalmente el adaptador en los pesos base. El resultado es un modelo de 1.711.376.384 parametros orientado a la resolucion de problemas matematicos elementales y a la generacion de texto conversacional.
+smol-math-dpo-merged es un modelo de lenguaje causal de 1.711 millones de parámetros (1,7B) desarrollado por el usuario yas1988 como parte del curso de Hugging Face sobre modelos pequeños (unidad 2, alineamiento de preferencias). Se construye sobre SmolLM2-1.7B, al que se aplicó primero un ajuste supervisado (SFT) con LoRA sobre MetaMathQA y después un alineamiento con Direct Preference Optimization (DPO) usando 3.000 pares de preferencia de `trl-lib/ultrafeedback_binarized`. El adaptador LoRA resultante se fusionó en los pesos base, por lo que el repositorio contiene un modelo único listo para inferencia.
 
-El modelo resuelve el problema de alinear un modelo pequeno ya especializado en matematicas con preferencias humanas de respuesta, usando pares elegido/rechazado de UltraFeedback. Su relevancia es principalmente didactica y de investigacion: demuestra un pipeline completo de SFT + DPO reproducible en una unica GPU T4 de Colab en unos 42 minutos, lo que lo convierte en un caso de estudio util para entender el alineamiento de preferencias en modelos de menos de 2.000 millones de parametros.
+El objetivo del modelo es doble: reforzar habilidades matemáticas básicas y mejorar la calidad de las respuestas conversacionales mediante preferencias humanas. La arquitectura es Llama (transformer causal denso) heredada de SmolLM2, con licencia Apache 2.0. El contexto máximo no está documentado en la información disponible, aunque el entrenamiento DPO se realizó con longitud máxima de 512 tokens.
 
-La arquitectura es un transformer causal denso con atencion estandar, sin innovaciones de atencion lineal ni mezcla de expertos. El contexto de entrenamiento se limito a 512 tokens y el modelo esta pensado para ingles. La licencia Apache 2.0 heredada de SmolLM2 permite uso comercial, aunque el autor no publica evaluacion final de benchmarks.
+Su relevancia es principalmente didáctica y experimental: demuestra un pipeline completo de alineamiento (SFT + DPO + merge) ejecutable en una única GPU T4 de Colab en unos 42 minutos. No obstante, sus resultados en GSM8K (0,4375) y TruthfulQA (0,2644 mc1) lo sitúan como un modelo pequeño de propósito general, no como una herramienta de producción para tareas críticas.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer causal denso (familia Llama) |
-| Parametros totales | 1.711.376.384 |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible de forma explicita; el entrenamiento uso max_length 512 |
-| Tipos de cuantizacion | No disponible (pesos en safetensors; compatible con cuantizacion estandar de transformers) |
-| Idiomas soportados | Ingles (segun la model card) |
+| Arquitectura | Transformer causal denso (familia Llama, base SmolLM2-1.7B) |
+| Parámetros totales | 1.711.376.384 (1,7B) |
+| Parámetros activos | No aplica (modelo denso) |
+| Longitud de contexto | No disponible (entrenamiento DPO con max length 512) |
+| Tipos de cuantización | No disponible de forma explícita; compatible con cuantizaciones estándar de transformers (fp16 en entrenamiento) |
+| Idiomas soportados | Inglés (según model card) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer causal denso de la familia Llama, con 1.711 millones de parametros, derivado de SmolLM2-1.7B. El pipeline de entrenamiento consta de tres etapas: partida desde SmolLM2-1.7B, ajuste supervisado (SFT) sobre MetaMathQA con LoRA (etapa previa que produce yas1988/smol-math-sft-merged) y, finalmente, alineamiento con DPO usando TRL `DPOTrainer`. El adaptador LoRA se fusiono en los pesos base tras el entrenamiento.
+El modelo es un transformer causal denso de la familia Llama, derivado de SmolLM2-1.7B. El pipeline de entrenamiento consta de tres fases: (1) SFT con LoRA sobre MetaMathQA para reforzar matemáticas (modelo intermedio `yas1988/smol-math-sft-merged`), (2) DPO con LoRA usando TRL `DPOTrainer` sobre los primeros 3.000 ejemplos de `trl-lib/ultrafeedback_binarized` (pares chosen/rejected), y (3) fusión del adaptador en los pesos base.
 
-Los detalles del DPO son concretos: LoRA con r=16, alpha=32, dropout 0.05 y modulos objetivo `all-linear`; beta 0.1, learning rate 2e-5, 1 epoca (172 pasos), batch por dispositivo 1 con acumulacion de gradiente 16 (batch efectivo 16), fp16, gradient checkpointing y longitud maxima 512. Los datos de preferencia son los primeros 3.000 ejemplos de `trl-lib/ultrafeedback_binarized` (pares chosen/rejected). El entrenamiento se ejecuto en una unica GPU T4 de Colab en aproximadamente 42 minutos. La perdida de entrenamiento paso de 0.692 a aproximadamente 0.64, partiendo cerca de ln 2 = 0.693 como es esperable en DPO. Las metricas finales de recompensa fueron accuracy 0.54 y margin 0.015. El token de fin de secuencia configurado es `<|im_end|>`, de modo que la generacion se detiene tras la respuesta.
+Los hiperparámetros del DPO son: LoRA con r=16, alpha=32, dropout 0,05 y módulos objetivo `all-linear`; beta 0,1, learning rate 2e-5, 1 época (172 pasos), batch efectivo 16 (batch 1 × acumulación 16), precisión fp16, gradient checkpointing y longitud máxima 512. El entrenamiento se ejecutó en una sola GPU T4 de Colab en aproximadamente 42 minutos. La pérdida pasó de 0,692 a ~0,64 (partiendo del valor esperado ln 2 ≈ 0,693) y las métricas finales de recompensa fueron accuracy 0,54 y margin 0,015. El token de fin de secuencia es `<|im_end|>`, lo que permite detener la generación tras la respuesta.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles con formato de chat (roles user/assistant).
-- Razonamiento matematico elemental: problemas aritmeticos de enunciado, del estilo de GSM8K y MetaMathQA.
-- Resolucion de problemas de varios pasos en formato de texto (por ejemplo, "Tom tiene 5 manzanas y compra 3 mas").
-- Alineamiento de preferencias orientado a respuestas mas deseables segun UltraFeedback.
-- Parada limpia de generacion gracias al token `<|im_end|>`.
-- Compatible con `transformers` pipeline y con text-generation-inference (tag `text-generation-inference`).
-- No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo thinking.
-- Capacidad multilingue no documentada; la model card indica unicamente ingles.
+- Generación de texto conversacional en inglés con formato de chat (roles user/assistant).
+- Razonamiento matemático básico, reforzado mediante SFT sobre MetaMathQA (problemas aritméticos de tipo GSM8K).
+- Alineamiento de preferencias: respuestas ajustadas con pares chosen/rejected de UltraFeedback.
+- Detención limpia de generación gracias al token `<|im_end|>` como EOS.
+- Compatible con `transformers` pipeline y con text-generation-inference (tag `text-generation-inference` y `endpoints_compatible`).
+- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo thinking.
+- Capacidad multilingüe no documentada; la model card indica únicamente inglés.
 
 ## Casos de uso
 
-- Tutoria de matematicas basicas: el modelo puede resolver problemas aritmeticos de enunciado paso a paso, aprovechando el SFT sobre MetaMathQA, en un entorno educativo de bajo coste.
-- Demostracion didactica de DPO: sirve como ejemplo reproducible de pipeline SFT + DPO + merge de LoRA para cursos y talleres, ya que el entrenamiento completo cabe en una T4 en menos de una hora.
-- Prototipado rapido de asistentes conversacionales en ingles: con 1.700 millones de parametros se puede desplegar en una GPU consumer para pruebas de concepto de chat multi-turno.
-- Generacion de explicaciones matematicas en aplicaciones de refuerzo escolar: el modelo produce respuestas en lenguaje natural a problemas numericos sencillos, adecuado para generar ejercicios resueltos.
-- Investigacion sobre alineamiento de preferencias en modelos pequenos: permite estudiar el efecto de DPO con subconjuntos pequenos (3.000 pares) y comparar con la version SFT.
-- Base para experimentos de cuantizacion y despliegue ligero: al ser un modelo de 1.7B en safetensors, es un candidato para probar pipelines de cuantizacion y servir con vLLM o TGI en hardware modesto.
-- Filtrado o generacion de pares de respuesta en ingles para tareas de matematicas dentro de pipelines de datos, dado su tamano reducido y su licencia permisiva.
+- Prototipado educativo de alineamiento: sirve para reproducir un pipeline SFT + DPO + merge completo en una T4, comparando el modelo SFT contra el DPO en tareas de matemáticas y conversación.
+- Resolución de problemas aritméticos sencillos en entornos de demostración: adecuado para ejercicios tipo "Tom tiene 5 manzanas y compra 3 más" con respuestas cortas y formato de chat.
+- Asistente conversacional ligero en local: al ocupar ~3,4 GB en fp16, puede desplegarse en portátiles con GPU consumer para pruebas de UX conversacional.
+- Evaluación comparativa de técnicas de preferencia: útil como baseline DPO de referencia frente a otros métodos (ORPO, KTO, RLHF) en experimentos académicos.
+- Generación de respuestas en cuadernos de Jupyter o demos de Hugging Face Spaces con recursos limitados.
+- Filtrado y anotación asistida de datos de chat en inglés donde la precisión matemática no sea crítica, aprovechando su bajo coste de inferencia.
+- Docencia y talleres: ejemplo práctico de cómo el DPO sobre datos generales apenas altera el rendimiento matemático (GSM8K 0,4375 frente a 0,4268 del SFT).
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye una tabla de evaluacion con los campos GSM8K (0-shot), TruthfulQA y ARC marcados como "TBD", y unicamente aporta la referencia del modelo SFT previo en GSM8K 0-shot: 0.4268. No se dispone de cifras del modelo DPO final ni de comandos de evaluacion reproducibles.
+| Tarea | Métrica | smol-math-dpo-merged | smol-math-sft-merged (referencia) |
+|---|---|---|---|
+| GSM8K (0-shot) | extractive_match | 0,4375 ± 0,0137 | 0,4268 ± 0,0136 |
+| ARC-Challenge (0-shot) | acc | 0,3567 ± 0,0140 | No disponible |
+| TruthfulQA (0-shot) | mc1 / mc2 | 0,2644 / 0,3950 | No disponible |
 
-| Tarea | smol-math-dpo-merged | smol-math-sft-merged (referencia) |
-|---|---|---|
-| GSM8K (0-shot) | TBD | 0.4268 |
-| TruthfulQA | TBD | No disponible |
-| ARC | TBD | No disponible |
+La evaluación se realizó con `lighteval accelerate` en una T4 de Colab, con batch size 1 (necesario para TruthfulQA por límites de memoria) y dtype float16. El rendimiento en GSM8K se mantiene dentro del ruido respecto al modelo SFT, lo que indica que el DPO preservó la capacidad matemática sin mejorarla.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp16: aproximadamente 3,4 GB solo para pesos, mas overhead de activaciones y KV cache; en la practica unos 5-6 GB.
-- En cuantizacion de 8 bits: alrededor de 1,8-2 GB de pesos.
-- En cuantizacion de 4 bits: alrededor de 1 GB de pesos, con un consumo total tipico de 2-3 GB.
-- GPU recomendadas: cualquier GPU con 8 GB o mas para fp16 (RTX 3060 Ti, RTX 4060, RTX 3070, RTX 4090); A100 y H100 sobradas para este tamano.
-- Cabe en GPU consumer: si, en tarjetas de 8 GB o superiores en fp16 y en tarjetas de 4-6 GB con cuantizacion.
-- Opciones de despliegue: `transformers` pipeline (documentado en la model card), text-generation-inference (tag oficial), vLLM y llama.cpp/Ollama mediante conversion a GGUF (no documentado por el autor).
-- Latencia y throughput: no disponibles; el autor solo reporta el tiempo de entrenamiento (unos 42 minutos en una T4), no metricas de inferencia.
+- VRAM estimada en fp16: ~3,4 GB de pesos más overhead de activaciones; en la práctica, entre 4 y 6 GB para inferencia con contexto moderado.
+- VRAM estimada en cuantización de 8 bits: ~1,8 GB; en 4 bits: ~1 GB (estimaciones a partir del tamaño de parámetros, no publicadas por el autor).
+- GPU recomendadas: T4 (16 GB), RTX 3060/4060 (8-12 GB), RTX 4090, A100 y H100 sin problema; cabe holgadamente en cualquier GPU consumer con al menos 6 GB.
+- Despliegue: `transformers` pipeline (documentado por el autor), text-generation-inference (tag oficial), y previsiblemente llama.cpp/Ollama/vLLM mediante conversión a GGUF, aunque no está documentado en la model card.
+- Latencia y throughput: no disponibles. El autor reporta ~42 minutos de entrenamiento DPO en una T4, pero no cifras de inferencia.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Especialidad | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smol-math-dpo-merged | 1,71B | No disponible (entreno a 512) | Matematicas + DPO | Apache 2.0 | Hugging Face |
-| SmolLM2-1.7B (base) | 1,71B | 8.192 tokens (segun la familia SmolLM2) | Proposito general | Apache 2.0 | Hugging Face |
-| smol-math-sft-merged | 1,71B | No disponible (entreno a 512) | Matematicas (solo SFT) | Apache 2.0 | Hugging Face |
-| Qwen2.5-Math-1.5B | 1,54B | 4.096 tokens (segun la familia Qwen2.5) | Matematicas | Apache 2.0 | Hugging Face |
+| smol-math-dpo-merged | 1,7B | No disponible | 0,4375 | Apache 2.0 | Hugging Face |
+| SmolLM2-1.7B (base) | 1,7B | 8.192 tokens (según documentación pública de SmolLM2) | No disponible en esta ficha | Apache 2.0 | Hugging Face |
+| smol-math-sft-merged | 1,7B | No disponible | 0,4268 | Apache 2.0 | Hugging Face |
+| Qwen2.5-Math-1.5B | 1,5B | 4.096 tokens (según documentación pública) | No disponible en esta ficha | Apache 2.0 | Hugging Face |
 
-La comparativa con Qwen2.5-Math-1.5B se ofrece como referencia de categoria por tamano y especialidad, pero no se dispone de datos de rendimiento del modelo de yas1988 para establecer una comparacion cuantitativa.
+La comparación con SmolLM2 base y Qwen2.5-Math se ofrece como referencia de categoría; los datos de contexto y rendimiento de esos modelos no forman parte de la información proporcionada para esta ficha y deben verificarse en sus respectivas model cards.
 
 ## Limitaciones y advertencias
 
-- El DPO se ejecuto sobre un subconjunto de solo 3.000 muestras y una unica epoca, por lo que el alineamiento es limitado y puede no corregir sesgos del modelo SFT.
-- No hay evaluacion final publicada: GSM8K, TruthfulQA y ARC figuran como TBD, de modo que el rendimiento real del modelo DPO es desconocido.
-- Riesgo de alucinacion en problemas matematicos fuera de la distribucion de MetaMathQA y en preguntas de conocimiento general.
-- Ventana de contexto efectiva limitada: el entrenamiento uso max_length 512, aunque la arquitectura base soporte ventanas mayores.
-- Idioma: la model card indica unicamente ingles; el rendimiento en castellano u otros idiomas no esta documentado.
-- Modelo de muy bajo uso (0 descargas, 0 likes) y sin validacion externa; no es aconsejable para produccion sin evaluacion propia.
-- Licencia Apache 2.0 permite uso comercial, pero se heredan las condiciones y posibles sesgos de SmolLM2 y de los datos de UltraFeedback y MetaMathQA.
-- El token de parada es `<|im_end|>`; si se integra en pipelines que no lo respeten, la generacion puede continuar mas alla de la respuesta.
+- El DPO se ejecutó sobre solo 3.000 muestras y una época, por lo que la mejora respecto al SFT es modesta (reward margin 0,015).
+- Los datos de preferencia son de chat general, no matemáticos; por eso GSM8K no mejora y se mantiene en ~0,44.
+- Modelo pequeño: puede cometer errores factuales y aritméticos; el autor desaconseja su uso donde una respuesta incorrecta tenga consecuencias.
+- TruthfulQA mc1 de 0,2644 indica una tasa elevada de respuestas verosímiles pero falsas; riesgo de alucinación relevante.
+- Solo se documenta inglés; no hay evidencia de calidad en castellano u otros idiomas.
+- Contexto máximo no documentado; el entrenamiento usó max length 512, lo que sugiere un rendimiento degradado en secuencias largas.
+- Licencia Apache 2.0 permite uso comercial, pero la ausencia de garantías y los bajos benchmarks hacen recomendable una evaluación propia antes de producción.
+- No se documentan sesgos específicos; al derivar de SmolLM2 y UltraFeedback, hereda los sesgos de esos datasets.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/yas1988/smol-math-dpo-merged
 - Modelo base SFT: https://huggingface.co/yas1988/smol-math-sft-merged
 - Dataset de preferencias: https://huggingface.co/datasets/trl-lib/ultrafeedback_binarized
-- SmolLM2-1.7B (modelo de partida): https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B
-- Curso Smol de Hugging Face: https://github.com/huggingface/smol-course
+- Resultados de evaluación: https://huggingface.co/datasets/yas1988/details_yas1988__smol-math-dpo-merged_private
+- SmolLM2 (modelo original): https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B
+- Curso smol de Hugging Face: https://huggingface.co/learn/smol-course
 - TRL (DPOTrainer): https://github.com/huggingface/trl
+- LightEval: https://github.com/huggingface/lighteval

@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 5,
+  "downloads_30d": 7,
   "trending_score": 0,
   "parameters": 77026926,
   "parameters_human": "77.0M",
@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "thunderboltc/combined_marianmt_sanlishTO_Bangla_newsplit",
+  "renamed_at": "2026-11-17T10:09:04.962Z",
   "benchmarks": [],
   "sources": []
 }

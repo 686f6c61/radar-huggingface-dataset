@@ -2,126 +2,120 @@
 
 ## Resumen
 
-MiDM-9B-q35-e1-bx es un adaptador LoRA con una cabeza apuntadora (pointer head) lineal entrenada sobre el modelo base Qwen/Qwen3.5-9B-Base. No es un modelo generativo: recibe un estado (state) en texto y un conjunto de opciones definidas por el usuario, y devuelve una probabilidad por opción calculada en una única pasada forward. El autor lo publica bajo el nombre MiDM (decision model) y lo orienta a "decisiones tipadas": preguntas de elección (`choice`), de sí/no (`noul`) y ordinales (`score`).
+MiDM-9B-q35-e1-bx es un adaptador LoRA (con una cabeza de puntero lineal aprendida) publicado por el usuario yunicro sobre el modelo base Qwen/Qwen3.5-9B-Base. No es un modelo generativo al uso: es un "decision model" que puntúa conjuntamente un conjunto de opciones proporcionadas por el usuario en una sola pasada forward y devuelve probabilidades por opción. No genera SQL, Python ni explicaciones; su salida es una distribución de probabilidad sobre alternativas discretas.
 
-El interés técnico está en el enfoque: en lugar de pedir al modelo que escriba una respuesta y parsearla, el sistema puntúa conjuntamente todas las alternativas con una cabeza entrenada, lo que reduce la variabilidad del formateo y permite comparar opciones de forma directa. Sobre el checkpoint de 9B, el autor reporta una mejora modesta frente a la versión de 4B en la suite propia de decisiones tipadas (79,30 % frente a 78,85 % sobre 2.000 ítems) y una mejora mayor en JevBench hard (54,05 % frente a 45,95 % sobre 111 ítems).
+El modelo resuelve el problema de seleccionar acciones tipadas (choice, sí/no y ordinales) a partir de un estado textual, por ejemplo decidir si aprobar un reembolso o solicitar un recibo. Se distribuye como adaptador PEFT con safetensors, acompañado de un cargador Python autocontenido (`midm`), y está pensado para ejecutarse con cuantización NF4 por defecto sobre GPU NVIDIA. El contexto máximo configurado es de 4096 tokens, con opciones individuales limitadas a 192 tokens.
 
-La relevancia actual es doble: por un lado, ejemplifica el patrón de "capa de decisión" acoplada a un LLM base con licencia Apache-2.0 y ejecución offline; por otro, la documentación publicada es inusualmente explícita sobre qué no funciona (regresiones en SQL y Python, benchmarks no medidos, resultados retrospectivos y no compuestos oficiales). La revisión v0.2.2 es solo documental: los pesos siguen siendo los de v0.2.0.
+La relevancia actual del proyecto radica en su enfoque de evaluación rigurosa y transparente: el autor publica tablas de resultados emparejados entre la versión 4B y la 9B, documenta explícitamente las pruebas no realizadas (DeepSWE, Terminal-Bench) y separa mediciones propias de comparaciones históricas o de API. La licencia es Apache-2.0 para el adaptador y el código, mientras que el modelo base y los datos de entrenamiento conservan sus propios términos.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (modelo base Qwen3.5-9B-Base) + adaptador LoRA + cabeza apuntadora lineal que puntúa opciones en una sola pasada forward |
-| Parámetros totales | 9B en el modelo base; tamaño exacto del adaptador no disponible (repo de 0,2 GB) |
-| Parámetros activos | No aplica (no se describe como MoE) |
-| Longitud de contexto | 4.096 tokens de entrada configurados en inferencia; 1.024 tokens en entrenamiento; cada opción limitada a 192 tokens |
-| Tipos de cuantización | NF4 (QLoRA en entrenamiento y por defecto en inferencia) y BF16 |
-| Idiomas soportados | No disponible |
-| Licencia | Apache-2.0 para adaptador y código; el modelo base y los datos de entrenamiento conservan sus propios términos |
-| Formato de pesos | safetensors (adaptador PEFT/LoRA) más cargador Python propio incluido en el repositorio |
-| Pipeline declarado | text-classification |
-| Librería | peft |
-| Descargas / likes | 118 / 0 |
-| Fechas | Creado 2026-10-05; actualizado 2026-10-20 |
+| Arquitectura | LoRA sobre transformer decoder (Qwen3.5-9B-Base) + cabeza de puntero lineal |
+| Parámetros totales | 9B (modelo base); adaptador LoRA de rango 16 no cuantificado en el repo (0.2 GB) |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | 4096 tokens de entrada; opciones individuales limitadas a 192 tokens |
+| Tipos de cuantización | NF4 por defecto (QLoRA); evaluación en NF4/BF16 |
+| Idiomas soportados | no disponible |
+| Licencia | Apache-2.0 (adaptador y código); el modelo base y los datos conservan sus términos |
+| Formato de pesos | safetensors (adaptador PEFT); cargador Python propio |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.5-9B-Base y le añade un adaptador LoRA junto con una cabeza apuntadora lineal entrenada para puntuar opciones. La inferencia no genera texto: el cargador (`midm.py`) procesa el estado y las opciones juntas y devuelve probabilidades por opción. La configuración declarada de entrenamiento es QLoRA en NF4, rango 16, alpha 32, una época, semilla 0, tasa de aprendizaje 2e-4 y contexto de entrenamiento de 1.024 tokens, con los conjuntos `td_train`, `kev_train`, `breadth_v1` y `pp6_new`. No se publica el número total de tokens de entrenamiento ni la composición detallada del dataset, y el repositorio no incluye datos de entrenamiento.
+El modelo combina un adaptador LoRA de rango 16 y alpha 32 sobre el transformer decoder de Qwen3.5-9B-Base con una cabeza de puntero lineal aprendida que puntúa todas las opciones en una única pasada forward. La API acepta preguntas de tipo `choice`, `noul` (sí/no) y `score` (ordinales), y devuelve probabilidades por opción. El estado de entrada se trunca conservando cabeza y cola cuando excede los 4096 tokens.
 
-El punto diferencial es el mecanismo de puntuación conjunta: en lugar de comparar log-probabilidades de secuencias generadas, la cabeza produce una puntuación por opción en una sola pasada, lo que hace el coste proporcional al número de opciones y no al número de tokens generados. Los estados largos se truncan conservando cabeza y cola del texto. El autor publica además análisis de arquitectura comparada en el atlas de benchmarks de v0.2.1, aunque los detalles internos de la cabeza no se especifican más allá de ser lineal.
+El entrenamiento se realizó con QLoRA en NF4, una época, semilla 0, learning rate 2e-4 y contexto de entrenamiento de 1024 tokens, sobre los conjuntos `td_train`, `kev_train`, `breadth_v1` y `pp6_new`. La inferencia se configura a 4096 tokens para coincidir con la evaluación. El autor indica que el repositorio no incluye datos de entrenamiento, preguntas en bruto, respuestas, datos financieros, informes ni credenciales.
 
 ## Capacidades
 
-- Puntuación de decisiones de elección (`choice`): asigna probabilidad a cada opción definida por el usuario en el prompt.
-- Decisiones binarias (`noul`, sí/no) con probabilidad asociada.
-- Decisiones ordinales (`score`): puntuación de opciones ordenadas.
-- Evaluación conjunta de todas las opciones en un único forward pass, con coste acotado por el número de alternativas.
-- Truncado controlado de estados largos (hasta 4.096 tokens) preservando el inicio y el final del texto.
-- Ejecución completamente offline una vez cacheados el paquete y el modelo base.
-- No genera SQL, Python, explicaciones ni prosa de informe: esa función la cubre un modelo aparte (el autor indica que el redactor de informes sigue siendo Qwen3 8B).
-- No se documentan capacidades de tool calling, agentes, visión, audio ni modo "thinking".
-- Soporte multilingüe: no disponible en la información publicada.
+- Puntuación conjunta de opciones tipadas: choice, sí/no y ordinales, devolviendo probabilidades por alternativa.
+- Clasificación de decisiones sobre estados textuales (pipeline `text-classification`).
+- Inferencia offline una vez cacheados el paquete y el modelo base.
+- Ejecución con cuantización NF4 por defecto sobre GPU NVIDIA compatible.
+- Cargador Python autocontenido (`midm`) con API `predict(state, questions)`.
+- No genera SQL, Python, explicaciones ni prosa de informe; el "report writer" del proyecto sigue siendo Qwen3 8B.
+- Soporte multilingüe: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Clasificación de acciones en flujos de atención al cliente: dado un estado ("el cliente no tiene recibo") y un conjunto cerrado de acciones (aprobar, revisar, escalar), el modelo devuelve la probabilidad de cada una, lo que permite fijar umbrales de derivación a un humano.
-- Enrutado de decisiones en pipelines de back office: usar la distribución de probabilidad sobre opciones predefinidas para decidir el siguiente paso de un workflow, con la ventaja de que el espacio de salida es cerrado y validable por esquema.
-- Validación y verificación en entornos de código: el autor reproduce el verificador DeepSWE con un 81,58 % (31/38) de aciertos, de modo que el modelo puede emplearse para elegir entre veredictos candidatos ya generados por otro sistema.
-- Selección best-of-N en generación de código o SQL: puntuar varias salidas candidatas y escoger una; el autor documenta resultados mixtos (Spider 78,34 % → 77,27 %, retención SQL 81,66 % → 81,77 %), por lo que el caso de uso es viable pero requiere validación propia.
-- Triaje ordinal en revisión documental: preguntas de tipo `score` permiten ordenar expedientes por prioridad o gravedad sin generar texto adicional.
-- Evaluación de decisiones retrospectivas con fines de auditoría: el autor aplica el modelo a decisiones históricas del KOSPI (precisión de acción del 54,37 %) como ejercicio de validación, no como señal en vivo.
-- Capa de decisión en sistemas con requisitos de privacidad: al poder ejecutarse offline sobre una GPU local, encaja en entornos donde no se puede enviar el estado a una API externa.
+- Validación de políticas de reembolso: dado un estado textual ("se requiere recibo para el reembolso; el cliente no lo tiene"), el modelo puntúa acciones como aprobar o revisar, adecuado por su API de decisiones tipadas y su contexto de 4096 tokens.
+- Triaje de solicitudes de soporte: clasificar tickets en categorías de acción discretas mediante preguntas `choice`, aprovechando la puntuación conjunta en una sola pasada.
+- Enrutamiento de decisiones binarias: usar preguntas `noul` para decidir si escalar un caso a revisión humana o resolverlo automáticamente.
+- Puntuación ordinal de severidad o prioridad: con preguntas `score`, asignar niveles ordenados (por ejemplo, prioridad baja/media/alta) a partir de descripciones de incidencias.
+- Evaluación de verificación de candidatos: el autor documenta su uso en la reproducción de veredictos del verificador DeepSWE (31/38 reproducidos), lo que lo hace adecuado para seleccionar entre soluciones candidatas ya generadas.
+- Selección de respuestas en pipelines de generación: puntuar opciones pregeneradas por otro modelo (best-of-N) en lugar de generar directamente, útil cuando ya se dispone de un pool de candidatos.
+- Validación financiera retrospectiva: el autor reporta una precisión de acción del 54,37% en decisiones KOSPI retrospectivas reutilizadas, aunque advierte explícitamente que no son señales en vivo.
 
 ## Benchmarks y rendimiento
 
-Evaluación primaria emparejada, NF4/BF16 sobre RTX 3090, entrada máxima 4.096, presupuesto de batch 4.096 tokens, TTA=1, mismos ítems y orden. Precisión de etiqueta dura retrospectiva, no puntuaciones compuestas oficiales de JevBench.
+Evaluación primaria emparejada (NF4/BF16 sobre RTX 3090, entrada máxima 4096, presupuesto de tokens por lote 4096, TTA=1; mismos ítems y orden):
 
-| Suite | N | MiDM 4B | MiDM 9B |
+| Suite | N | 4B | 9B |
 |---|---:|---:|---:|
-| Typed Decisions test | 2.000 | 78,85 % | 79,30 % |
-| Kev transfer test | 764 | 79,84 % | 82,59 % |
-| JevBench original | 72 | 91,67 % | 97,22 % |
-| JevBench easy | 48 | 100,00 % | 100,00 % |
-| JevBench hard | 111 | 45,95 % | 54,05 % |
+| Typed Decisions test | 2000 | 78,85% | 79,30% |
+| Kev transfer test | 764 | 79,84% | 82,59% |
+| JevBench original | 72 | 91,67% | 97,22% |
+| JevBench easy | 48 | 100,00% | 100,00% |
+| JevBench hard | 111 | 45,95% | 54,05% |
 
-Otras mediciones publicadas:
+Otras pruebas documentadas por el autor:
 
 | Prueba | Resultado |
 |---|---|
-| Reproducción del verificador DeepSWE (CLM) | 31/38 (81,58 %); p unilateral exacto = 0,062 en las 13 tareas de resultado mixto |
-| Precisión de acción del baseline MiDM (validación financiera v0.2.2) | 54,37 % |
-| Routing aprendido, JevBench público (231) | 77,06 % MiDM, 79,65 % router, 81,82 % Qwen3-4B con razonamiento solo |
-| SQL best-of-N, Spider | 78,34 % (4B) → 77,27 % (9B) |
-| SQL holdout | 81,66 % (4B) → 81,77 % (9B) |
-| Python hard80 | 28,75 % (4B) → 25,00 % (9B) |
+| DeepSWE verifier replay (CLM) | 31/38 (81,58%) reproducidos; p unilateral exacta = 0,062 en 13 tareas de resultado mixto |
+| SQL best-of-N Spider | 4B 78,34% → 9B 77,27% |
+| SQL holdout | 4B 81,66% → 9B 81,77% |
+| Python hard80 | 4B 28,75% → 9B 25,00% |
+| Enrutamiento aprendido JevBench público 231 | MiDM 77,06%; router 79,65%; Qwen3-4B reasoning local 81,82% |
+| Validación financiera (v0.2.2) | Precisión de acción 54,37% (decisiones KOSPI retrospectivas) |
 
-No hay mediciones de MiDM en DeepSWE ni en Terminal-Bench local: el autor indica explícitamente que no se encontraron los artefactos de evaluación correspondientes y que no sustituye la métrica por ninguna puntuación oficial.
+El autor advierte que estas son precisiones retrospectivas de etiqueta dura y no puntuaciones compuestas oficiales de JevBench. Las pruebas MiDM DeepSWE y Terminal-Bench local quedan sin medir por falta de trazas de candidatos o artefactos de evaluación coincidentes.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el autor valida la inferencia en NF4 sobre una RTX 3090 (24 GB), configuración que deja margen holgado. Como referencia aritmética a partir del tamaño (no publicada por el autor), un modelo de 9B en NF4 ocupa del orden de 5-6 GB de pesos, y en BF16 del orden de 18 GB, antes de activaciones y caché.
-- GPU recomendadas: RTX 3090 es la única configuración verificada y documentada. Cualquier GPU NVIDIA compatible con las dependencias listadas debería funcionar; no se detallan otras.
-- Cabe en GPU de consumo: sí, en el caso verificado de RTX 3090 con NF4. No hay certificación de memoria mínima ni pruebas de resistencia.
-- Opciones de despliegue: cargador propio del repositorio (`midm.py`, `MiDM.from_pretrained(".")`), con `requirements.txt`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI; la presencia de una cabeza apuntadora adicional hace que las pilas de serving estándar no sean aplicables sin trabajo adicional. El ejemplo de uso lanza el proceso desde el directorio del repositorio en la revisión `v0.2.0`.
-- Throughput: en pruebas piloto sintéticas de una sola ejecución, dos procesos 4B con entradas cortas casi duplicaron el rendimiento; con 2.048 tokens (4B) y 4.096 tokens (9B) el rendimiento cayó. No son pruebas de resistencia ni certificaciones de memoria.
-- Latencia: no disponible.
+- VRAM estimada: no disponible de forma explícita; el modelo base es de 9B parámetros y la evaluación se ejecutó en NF4/BF16 sobre una RTX 3090 (24 GB), lo que sugiere que cabe en 24 GB con cuantización NF4.
+- GPU recomendadas: RTX 3090 (usada en la evaluación); se requiere una GPU NVIDIA compatible según el autor. No se especifican A100 ni H100.
+- GPU de consumo: sí, según la evaluación sobre RTX 3090.
+- Despliegue: cargador Python propio (`midm`) con PEFT; no se documentan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: el autor reporta que dos procesos 4B con entrada corta casi duplicaron el throughput, mientras que 4B con 2048 tokens y 9B con 4096 tokens perdieron rendimiento; son pilotos sintéticos de una sola prueba, no certificación de resistencia ni de memoria mínima.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Rendimiento reportado | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiDM-9B-q35-e1-bx (este) | 9B (base) + LoRA | 4.096 tokens | Typed Decisions 79,30 %; JevBench hard 54,05 %; DeepSWE 81,58 % | Apache-2.0 (adaptador y código) | Hugging Face, 118 descargas |
-| MiDM 4B (release original del mismo autor) | 4B | No disponible en detalle | Typed Decisions 78,85 %; Kev 79,84 %; JevBench hard 45,95 %; Python hard80 28,75 % | Apache-2.0 | Disponible según el autor |
-| Qwen3-4B con razonamiento solo | 4B | No disponible | 81,82 % en JevBench público (231), superior al router de 79,65 % | No disponible en la información | Uso local citado por el autor |
-| Qwen3.5-9B-Base (modelo base sin adaptar) | 9B | No disponible | Sin medición publicada en esta información para estas suites | Términos propios del modelo base | Hugging Face |
-| Verificador DeepSWE de CLM (referencia) | No disponible | No disponible | Reproducido al 81,58 % por MiDM 9B | No disponible | Artefactos de replay citados |
+| MiDM-9B-q35-e1-bx | 9B (base) + LoRA | 4096 | Puntuación de decisiones tipadas | Apache-2.0 (adaptador) | Hugging Face |
+| MiDM 4B (versión original) | 4B (base) + LoRA | no disponible | Puntuación de decisiones tipadas | Apache-2.0 (adaptador) | Hugging Face |
+| Qwen3-4B reasoning (local) | 4B | no disponible | Generación/razonamiento | según modelo base | Hugging Face |
+| Router aprendido del proyecto | no disponible | no disponible | Enrutamiento de decisiones | no disponible | interno del proyecto |
 
-La comparación directa más informativa es la del propio autor: el salto de 4B a 9B aporta entre +0,45 y +8,1 puntos según la suite, mientras que un Qwen3-4B con razonamiento supera al enrutador aprendido en JevBench público, lo que sugiere que la ventaja del enfoque no es uniforme.
+En JevBench público 231, el router del proyecto obtuvo 79,65% y Qwen3-4B reasoning local 81,82%, frente al 77,06% de MiDM; el autor no promovió el router por no demostrar no inferioridad ni ahorro de latencia.
 
 ## Limitaciones y advertencias
 
-- El modelo no genera texto: solo puntúa opciones proporcionadas. No sirve como sustituto de un LLM conversacional ni para producir SQL, Python o informes.
-- Las probabilidades devueltas no están garantizadas como calibradas; el autor lo advierte explícitamente. No deben usarse como intervalos de confianza sin calibración propia.
-- Resultados retrospectivos: las cifras de JevBench son precisiones de etiqueta dura sobre conjuntos públicos, no las puntuaciones compuestas oficiales (full/sealed). La validación financiera se basa en decisiones históricas del KOSPI, no en señales en vivo.
-- El holdout de 600 preguntas de Typed Decisions es una partición de desarrollo y selección de modelo, no el test público de 2.000.
-- Regresiones documentadas al pasar de 4B a 9B en tareas de código: Spider baja de 78,34 % a 77,27 % y Python hard80 de 28,75 % a 25,00 %. El autor no promueve el enrutador aprendido ni reclama superioridad.
-- La mejora en DeepSWE no alcanza significación estadística al 5 % (p = 0,062) en las 13 tareas de resultado mixto.
-- Sin datos sobre sesgos, composición del dataset de entrenamiento ni evaluación multilingüe; el repositorio no incluye datos de entrenamiento, preguntas, respuestas, informes ni credenciales.
-- La licencia Apache-2.0 cubre el adaptador y el código, pero el modelo base y los datasets conservan sus propios términos: es necesario revisarlos antes de un uso comercial.
-- La revisión v0.2.2 es únicamente documental; no hay checkpoint financiero mejorado publicado, y los pesos siguen siendo v0.2.0.
-- Requiere GPU NVIDIA compatible; no hay ruta de despliegue documentada para CPU ni para servidores de inferencia estándar.
+- No genera texto, SQL, Python ni explicaciones; solo puntúa opciones proporcionadas.
+- Las salidas son probabilidades por opción, no confianza calibrada garantizada.
+- El estado de entrada se trunca a 4096 tokens conservando cabeza y cola, lo que puede perder información intermedia.
+- Las opciones individuales están limitadas a 192 tokens.
+- Los resultados de JevBench son precisiones retrospectivas de etiqueta dura, no puntuaciones compuestas oficiales.
+- La validación financiera se basa en decisiones KOSPI retrospectivas reutilizadas; no son señales en vivo ni mejoras de benchmark general.
+- El autor documenta regresiones en SQL/Python best-of-N al pasar de 4B a 9B (Spider 78,34% → 77,27%; Python hard80 28,75% → 25,00%).
+- No se estableció significación estadística al 5% en la reproducción de DeepSWE (p = 0,062).
+- Las pruebas DeepSWE de MiDM y Terminal-Bench local quedan sin medir.
+- Sesgos conocidos: no disponible.
+- Riesgo de alucinación: no aplica de forma directa al no generar texto, pero la calibración de probabilidades no está garantizada.
+- Idiomas soportados: no disponible.
+- La licencia Apache-2.0 cubre el adaptador y el código; el modelo base y los datos de entrenamiento conservan sus propios términos.
+- El repositorio no incluye datos de entrenamiento ni credenciales; el uso en producción requiere verificar la licencia del modelo base.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/yunicro/MiDM-9B-q35-e1-bx
-- Revisión de pesos v0.2.0: https://huggingface.co/yunicro/MiDM-9B-q35-e1-bx/tree/v0.2.0
-- Repositorio de código: https://github.com/YeoHoonYun/midm-decision-models
-- Release v0.2.0 (código y evidencia completa): https://github.com/YeoHoonYun/midm-decision-models/releases/tag/v0.2.0
-- Release v0.2.1 (análisis de benchmarks y arquitectura): https://github.com/YeoHoonYun/midm-decision-models/releases/tag/v0.2.1
-- Atlas de benchmarks v0.2.1: https://huggingface.co/yunicro/MiDM-9B-q35-e1-bx/blob/main/benchmarks/v0.2.1/README.md
-- Notas de validación financiera v0.2.2: https://huggingface.co/yunicro/MiDM-9B-q35-e1-bx/blob/main/financial_validation/v0.2.2/README.md
+- Hugging Face: https://huggingface.co/yunicro/MiDM-9B-q35-e1-bx
+- Revisión v0.2.0: https://huggingface.co/yunicro/MiDM-9B-q35-e1-bx/tree/v0.2.0
 - Informe ScenarioView: https://yeohoonyun.github.io/midm-decision-models/
-- DOI de concepto (Zenodo): https://doi.org/10.5281/zenodo.23084583
+- Notas de validación v0.2.2: financial_validation/v0.2.2/README.md (relativo al repo)
+- Atlas de benchmarks v0.2.1: benchmarks/v0.2.1/README.md (relativo al repo)
+- GitHub release v0.2.1: https://github.com/YeoHoonYun/midm-decision-models/releases/tag/v0.2.1
+- GitHub release v0.2.0: https://github.com/YeoHoonYun/midm-decision-models/releases/tag/v0.2.0
 - DOI de versión v0.2.1: https://doi.org/10.5281/zenodo.23164651
-- Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
+- DOI conceptual: https://doi.org/10.5281/zenodo.23084583

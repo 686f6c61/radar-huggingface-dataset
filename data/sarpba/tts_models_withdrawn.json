@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "sarpba/TTS_Models_Withdrawn",
+  "slug": "sarpba-tts_models_withdrawn",
+  "author": "sarpba",
+  "url": "https://huggingface.co/sarpba/TTS_Models_Withdrawn",
+  "created_at": "2026-11-16T18:06:38.000Z",
+  "updated_at": "2026-11-17T06:45:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "hu"
+  ],
+  "tags": [
+    "en",
+    "hu",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "Ori5147/context-reranker-MiniLM-L6",
+  "slug": "ori5147-context-reranker-minilm-l6",
+  "author": "Ori5147",
+  "url": "https://huggingface.co/Ori5147/context-reranker-MiniLM-L6",
+  "created_at": "2026-11-17T12:03:37.000Z",
+  "updated_at": "2026-11-17T12:03:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "reranker",
+    "cross-encoder",
+    "rag",
+    "context-compression",
+    "text-ranking",
+    "en",
+    "base_model:cross-encoder/ms-marco-MiniLM-L6-v2",
+    "base_model:quantized:cross-encoder/ms-marco-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 113959439,
+  "storage_human": "114 MB",
+  "context_length": null,
+  "base_model": "cross-encoder/ms-marco-MiniLM-L6-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

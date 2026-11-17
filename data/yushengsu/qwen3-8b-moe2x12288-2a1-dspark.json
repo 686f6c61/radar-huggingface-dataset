@@ -44,31 +44,5 @@
   "renamed_to": "yushengsu/Qwen3-8B-5layer-MoE-2E1A",
   "renamed_at": "2026-11-11T08:11:44.127Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Dogacel/Qwen3-8B-DSpark · Hugging Face",
-      "url": "https://huggingface.co/Dogacel/Qwen3-8B-DSpark",
-      "snippet": "A DSpark speculative-decoding draft model for Qwen/Qwen3-8B, trained with TorchSpec. DSpark combines a DFlash block-diffusion drafter with EAGLE-style Markov and confidence heads. This repository contains only the draft model. It is used together with the unmodified Qwen/Qwen3-8B target model at ..."
-    },
-    {
-      "title": "yushengsu/dense-1-8 · Hugging Face",
-      "url": "https://huggingface.co/yushengsu/dense-1-8",
-      "snippet": "Per-epoch checkpoints of one SpecForge run: the Qwen3-8B dense DSpark drafter (causal draft block, block 16, no confidence head) shrunk in structure only: 2 layers instead of 5, attention GQA 8/2 heads x 128 (1/4 of the dense arm&#x27;s width), MLP intermediate_size 1536 (1/8 of 12288); residual hidden stays 4096. About 0.22B parameters."
-    },
-    {
-      "title": "Qwen Timeline: Model & Product Release History",
-      "url": "https://www.scriptbyai.com/qwen-timeline/",
-      "snippet": "Qwen model release dates and version history, from Tongyi Qianwen and Qwen-7B through Qwen3.8-Omni-Flash, Max, Coder, VL, QwQ, and Qwen Code."
-    },
-    {
-      "title": "qwen/qwen3-8b • LM Studio",
-      "url": "https://lmstudio.ai/models/qwen/qwen3-8b",
-      "snippet": "Qwen3 8B by qwen Supports a context length of up to 131,072 tokens with YaRN (default 32k) Supports /no_think to disable reasoning, just add it at the end of your prompt Supports both thinking and non-thinking modes withe enhanced reasoning in both for significantly enhanced mathematics, coding, and commonsense Excels at creative writing, role-playing, multi-turn dialogues, and instruction ..."
-    },
-    {
-      "title": "Qwen3-8B · Models",
-      "url": "https://www.modelscope.cn/models/Qwen/Qwen3-8B",
-      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support, with the following key features:"
-    }
-  ]
+  "sources": []
 }

@@ -40,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "rjz123/colar-prosqa-l1b",
+  "renamed_at": "2026-11-17T09:21:38.499Z",
   "benchmarks": [],
   "sources": [
     {

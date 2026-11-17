@@ -5,7 +5,7 @@
   "author": "mahiyama",
   "url": "https://huggingface.co/mahiyama/Sazanami-AGC-310m",
   "created_at": "2026-10-03T00:08:23.000Z",
-  "updated_at": "2026-10-03T00:09:14.000Z",
+  "updated_at": "2026-11-09T09:57:07.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -46,7 +46,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 23,
+  "downloads_30d": 42,
   "trending_score": 0,
   "parameters": 314611968,
   "parameters_human": "314.6M",

@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 66,
+  "downloads_30d": 65,
   "trending_score": 0,
   "parameters": 8188515328,
   "parameters_human": "8.19B",
@@ -50,31 +50,5 @@
   "renamed_to": "yasinyaman/callbus-emb-8b",
   "renamed_at": "2026-11-11T08:09:19.717Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "12 meilleurs bloqueurs de publicité pour Chrome, Edge ou Firefox en ...",
-      "url": "https://www.malekal.com/meilleurs-bloqueurs-de-publicite-pour-chrome-edge-ou-firefox/",
-      "snippet": "Apr 7, 2022 · Une sélection et le top des meilleurs bloqueurs de publicité (Adblock) pour Chrome, Edge ou Firefox en 2025."
-    },
-    {
-      "title": "Quels sont les meilleurs bloqueurs de publicités ? Comparatif 2026",
-      "url": "https://www.clubic.com/guide-achat-549869-quels-sont-les-meilleurs-bloqueurs-de-publicites-comparatif-2025.html",
-      "snippet": "Dec 31, 2025 · Les points clés pour bien choisir son bloqueur de pub Le choix d'un bloqueur de pub performant ne doit pas se limiter …"
-    },
-    {
-      "title": "Bloqueur de publicités gratuit - Microsoft Edge Add-ons",
-      "url": "https://microsoftedge.microsoft.com/addons/detail/bloqueur-de-publicit%C3%A9s-gr/ckbnedlollcgifeaeiemcplinaejodgh?hl=fr",
-      "snippet": "Le meilleur bloqueur de publicité gratuit pour Edge. Bloquez les publicités, les trackers et les pop-ups ! Bloc d'annonces pour …"
-    },
-    {
-      "title": "AdBlock - bloquez les publicités sur le web - Microsoft Edge Add-ons",
-      "url": "https://microsoftedge.microsoft.com/addons/detail/adblock-%E2%80%94-le-meilleur-blo/ndcileolkflehcjpmjnfbnaibdcgglog?hl=fr-CA",
-      "snippet": "Edd White - ★★★★★ \"Le meilleur bloqueur de publicités !\" Arik Akon - ★★★★★ \"J'ai téléchargé plusieurs bloqueurs de …"
-    },
-    {
-      "title": "Bloqueurs de publicités (AdBlocker) : les 25 meilleurs à utiliser",
-      "url": "https://www.leptidigital.fr/securite-informatique/bloqueurs-de-publicites-29797/",
-      "snippet": "Sep 14, 2024 · Les bloqueurs de publicité sont des logiciels ou des extensions qui bloquent les publicités lors de la navigation sur …"
-    }
-  ]
+  "sources": []
 }

@@ -2,48 +2,54 @@
 
 ## Resumen
 
-El modelo `xv0y5ncu/Gemma-4-31B-it-GLQ-5.0bpw-mix3-8` es una cuantización de precisión mixta del modelo base `google/gemma-4-31B-it`, desarrollada por el usuario xv0y5ncu mediante la herramienta GLQ (Generalized Lattice Quantization). La cuantización utiliza un esquema basado en el retículo E8 con 65536 entradas, transformada de Hadamard aleatorizada (RHT), descomposición LDLQ y cuantización residual en varias etapas, logrando un promedio de 5.0 bits por peso. El resultado es un archivo de aproximadamente 24 GB, unas 2,5 veces menor que el peso original en bf16 (≈62 GB), lo que permite ejecutar el modelo de 31B en una única GPU de 24–32 GB.
+Gemma-4-31B-it-GLQ-5.0bpw-mix3-8 es una cuantizacion de precision mixta del modelo google/gemma-4-31B-it, publicada por el usuario xv0y5ncu mediante la herramienta GLQ (E8 lattice quantization). El objetivo no es otro que reducir el peso en memoria del modelo base: frente a los aproximadamente 62 GB en bf16, esta version ocupa unos 24 GB en disco y unos 16,5 GiB en GPU, lo que permite ejecutar un modelo de 31B en una unica GPU de 24-32 GB.
 
-El modelo base, Gemma 4 31B, es un transformer denso multimodal desarrollado por Google DeepMind, con una ventana de contexto de hasta 256K tokens y soporte multilingüe en más de 140 idiomas. Esta cuantización se centra exclusivamente en el decodificador de texto; los módulos de visión, vídeo y audio no están cuantizados y deben desactivarse durante la inferencia. El trabajo es relevante porque reduce drásticamente los requisitos de VRAM sin una pérdida de calidad medible en las evaluaciones realizadas, facilitando el despliegue en hardware de consumo o de gama media.
+La cuantizacion se realiza con un esquema de precision mixta con objetivo de 5,0 bits por peso (rango 3-8 bpw), asignando mas bits a las capas mas sensibles (q/k/v de las primeras capas del decoder y per_layer_projection en las ultimas) mediante un proxy de sensibilidad derivado de la traza del Hessiano. El modelo conserva las capacidades del base Gemma 4, incluyendo modo thinking, aunque las torres de vision y audio no estan cuantizadas y el autor documenta el despliegue en modo solo texto.
 
-## Especificaciones técnicas
+Es relevante porque demuestra que una cuantizacion agresiva basada en reticulos E8 puede mantener la calidad del bf16 (dentro del ruido de medicion a n pequeno) con una reduccion de huella de aproximadamente 3,5x en VRAM, abriendo el 31B a hardware consumer de gama alta y a GPUs de workstation de 32 GB.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (modelo base Gemma 4 31B) |
-| Parametros totales | 31B (modelo base); archivo safetensors: 12.027.607.404 |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 256K tokens (modelo base) |
-| Tipos de cuantizacion | GLQ 5.0 bpw (mixed-precision, rango 3–8 bpw) |
-| Idiomas soportados | Multilingüe (modelo base, más de 140 idiomas); la model card indica solo "en" |
-| Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (con integración GLQ para transformers y vLLM) |
+| Arquitectura | Transformer (Gemma 4), cuantizacion E8 lattice (GLQ) |
+| Parametros totales | 12.027.607.404 (safetensors; el nombre comercial indica 31B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (los benchmarks usan hasta 64k tokens en thinking) |
+| Tipos de cuantizacion | GLQ 5.0 bpw de media, precision mixta en rango 3-8 bpw |
+| Idiomas soportados | en |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer denso de 31B parámetros, entrenado por Google DeepMind con una ventana de contexto de 256K tokens y soporte multimodal (texto, imagen, vídeo y audio). El entrenamiento incluye fases de preentrenamiento y ajuste fino instructivo, con técnicas de alineación como RLHF. La cuantización GLQ emplea un esquema de cuantización por retícula E8: cada bloque de 8 dimensiones se codifica con un libro de códigos de 65536 entradas, se aplica una transformación de Hadamard aleatoria (RHT) para rotar los vectores de entrada y salida, y se utiliza LDLQ (descomposición LDL con feedback) durante la codificación. Para capas con ≥3 bpw se usa cuantización residual en N etapas. La asignación de precisión mixta se basa en un proxy de sensibilidad derivado de la traza de la Hessiana, priorizando capas tempranas de q/k/v y `per_layer_projection` en capas tardías. El resultado es una cuantización que, según las evaluaciones internas, no muestra diferencias de calidad estadísticamente significativas frente al modelo bf16.
+El modelo es una cuantizacion del base google/gemma-4-31B-it, un transformer de la familia Gemma 4 con capacidades multimodales (torres de vision y audio presentes en el base, no cuantizadas en esta version). El proceso GLQ aplica un codebook de reticulo E8 con 65536 entradas sobre bloques de 8 dimensiones, una Randomized Hadamard Transform (RHT) para la rotacion de entrada y salida, y feedback LDLQ basado en descomposicion LDL por bloques durante la codificacion. Las capas con al menos 3 bpw usan cuantizacion residual en N etapas.
+
+La asignacion de precision mixta se hace con un allocator greedy de rendimientos decrecientes: se calcula un proxy de sensibilidad a partir de la traza del Hessiano y se reparte el presupuesto de bits segun la ganancia marginal (proxy_loss x 4^-(b-min_bpw)), concentrando bits en las capas q/k/v tempranas del decoder y en per_layer_projection de las capas tardias. No se documenta reentrenamiento ni ajuste fino adicional: es una cuantizacion post-entrenamiento de los pesos del base.
 
 ## Capacidades
 
-- Generación de texto: producción de texto coherente y contextualizado en múltiples dominios.
-- Razonamiento y matemáticas: resolución de problemas aritméticos y de razonamiento complejo, especialmente con el modo de pensamiento (`enable_thinking`).
-- Codificación: generación y depuración de código, aunque no se proporcionan benchmarks específicos.
-- Multilingüismo: el modelo base soporta más de 140 idiomas, aunque esta cuantización no modifica esa capacidad.
-- Modo de pensamiento (thinking): mediante la plantilla de chat con `enable_thinking=True`, el modelo genera un bloque de razonamiento previo a la respuesta final.
-- No soporta visión, audio ni vídeo en esta cuantización: los módulos multimodales no están cuantizados y deben desactivarse (por ejemplo, `limit_mm_per_prompt={"image":0, "video":0, "audio":0}` en vLLM).
+- Generacion de texto conversacional y razonamiento en modo thinking (chat template con enable_thinking=True).
+- Razonamiento matematico y resolucion de problemas (evaluado en AIME-2024 y AIME-2026).
+- Conocimiento general y preguntas de opcion multiple complejas (MMLU-Pro).
+- Capacidades multimodales del base (vision y audio) presentes en el modelo, aunque las torres correspondientes no estan cuantizadas y el autor documenta el serving en modo solo texto.
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma del repositorio.
 
 ## Casos de uso
 
-- Despliegue de un asistente conversacional en una sola GPU de 24 GB: gracias al tamaño reducido (≈16,5 GiB de pesos), el modelo puede ejecutarse en una RTX 4090 o similar, ofreciendo respuestas de alta calidad sin necesidad de clústeres.
-- Razonamiento matemático en entornos educativos: el modo de pensamiento permite resolver problemas de álgebra, cálculo o lógica mostrando el proceso de razonamiento, útil para herramientas de tutoría.
-- Generación de código en pipelines de integración continua: el modelo puede generar fragmentos de código y explicaciones, integrándose en flujos de revisión automática, aunque no se documenta soporte explícito de tool calling.
-- Análisis de documentos largos: gracias a la ventana de 256K tokens, se pueden procesar informes, manuales o actas completas sin truncamiento, y resumir o extraer información relevante.
-- Chat de atención al cliente con contexto prolongado: el modelo puede mantener conversaciones multiturno con historial extenso, gracias a la ventana de contexto y al tamaño reducido que permite ejecutarlo en servidores con VRAM moderada.
-- Prototipado de agentes de razonamiento multi-paso: la capacidad de generar cadenas de pensamiento y el soporte para entornos de texto largo hacen adecuado el modelo para experimentos de agente con planificación y reflexión.
+- Despliegue de un modelo de 31B en una unica GPU de 24-32 GB: con unos 16,5 GiB de pesos en GPU, permite servir el modelo en una RTX PRO 6000 o similar donde el bf16 (unos 58 GiB) requeriria tres o mas GPUs.
+- Razonamiento matematico con modo thinking: el modelo resuelve problemas de competicion (AIME) con presupuestos de hasta 64k tokens; util para asistentes de matematicas o verificacion de derivaciones.
+- Evaluacion de conocimiento experto: MMLU-Pro con 16k tokens de thinking lo hace adecuado para sistemas de preguntas y respuestas tecnicas de alta exigencia.
+- Prototipado e investigacion en local: al caber en hardware de workstation, permite experimentar con un 31B sin infraestructura multigpu, reduciendo coste y latencia de iteracion.
+- Servicio de chat con contexto largo: el ahorro de VRAM frente a bf16 deja margen para cache KV y ventanas de contexto extendidas en vLLM.
+- Fine-tuning o adaptadores sobre una base cuantizada: el formato safetensors y la licencia Apache 2.0 facilitan integrarlo en pipelines de experimentacion, aunque la cuantizacion limita el ajuste directo de pesos.
+- Comparacion de tecnicas de cuantizacion: sirve como referencia reproducible para evaluar GLQ frente a otros esquemas (GPTQ, AWQ) en terminos de calidad y huella.
 
 ## Benchmarks y rendimiento
 
-La model card incluye una evaluación pareada contra el modelo bf16 en vLLM 0.23.0 (GPU RTX PRO 6000), con modo de pensamiento activo. Los resultados son muestras únicas (pass@1) con n pequeño, por lo que son indicativos, no estimaciones ajustadas.
+Evaluacion pareada contra el base bf16 en vLLM 0.23.0 sobre una RTX PRO 6000, modo thinking, mismo harness y mismo muestreo. Son pass@1 de una sola muestra con n pequeno: indicativos, no estimaciones ajustadas.
 
 | Benchmark | n | bf16 | GLQ 5.0 bpw |
 |---|---|---|---|
@@ -51,44 +57,42 @@ La model card incluye una evaluación pareada contra el modelo bf16 en vLLM 0.23
 | AIME-2024 (thinking, 32k) | 30 | 86,7% (26/30) | 90,0% (27/30) |
 | AIME-2026 (thinking, 64k) | 30 | 90,0% (27/30) | 83,3% (25/30) |
 
-Las diferencias están dentro del ruido de una muestra única y van en ambas direcciones (GLQ por delante en MMLU-Pro y AIME-2024, bf16 en AIME-2026). No se observan truncamientos en ninguno de los tres casos. No se realizan afirmaciones de paridad exacta, solo se concluye que no hay diferencia medible en estas evaluaciones.
+Las diferencias caen dentro del ruido de una sola muestra y oscilan en ambas direcciones (GLQ por delante en MMLU-Pro y AIME-2024, bf16 por delante en AIME-2026). No hubo truncamientos en ninguna de las tres pruebas. El autor no reclama paridad ni perdida de calidad mas alla de "indistinguible con este n".
 
 ## Requisitos de hardware
 
-- VRAM estimada: los pesos en GPU ocupan ≈16,5 GiB (GLQ 5.0 bpw) frente a ≈57,9 GiB (bf16). Con la memoria adicional para KV cache y activaciones, se recomienda al menos 24 GB de VRAM.
-- GPU recomendadas: RTX 4090 (24 GB), RTX PRO 6000 (24 GB), A100 40GB, o cualquier GPU con ≥24 GB de memoria.
-- En consumer GPU: sí, cabe en una RTX 4090 de 24 GB. Para contexto largo (256K tokens) se necesitará más VRAM, pero se puede reducir la longitud de contexto o usar cuantización de KV cache.
-- Opciones de despliegue: vLLM (0.23.0+), Hugging Face Transformers (con integración GLQ, `pip install glq`), y posiblemente otros frameworks que soporten GLQ (no documentado).
-- Latencia y throughput: no se proporcionan datos de velocidad. Se indica que en GPU grandes donde bf16 también cabe, bf16 decodifica más rápido; la ventaja de GLQ es la reducción de huella, no la velocidad.
-- Requisitos de software: CUDA 12.x, `torch>=2.0`, `transformers>=5.0` (pin por debajo de 5.15 por un problema con `config.head_dim`), y el paquete `glq` con JIT de kernel (≈30s de compilación).
+- VRAM estimada para inferencia: aproximadamente 16,5 GiB de pesos en GPU (GLQ 5.0 bpw) frente a unos 57,9 GiB en bf16; el autor dimensiona el conjunto para caber en una GPU de 32 GB (24 GB de pesos mas cache KV).
+- GPU recomendadas: RTX PRO 6000 (medida por el autor), GPUs de 24-32 GB en general; el bf16 del base requiere tres o mas GPUs.
+- Cabe en GPU consumer: si, en tarjetas de 24 GB o mas (por ejemplo, RTX 4090 de 24 GB) segun la huella declarada, aunque no se aportan mediciones en esa tarjeta.
+- Opciones de despliegue: vLLM 0.23.0 o superior (soporte GLQ, solo texto con limit_mm_per_prompt a 0) y transformers con el paquete glq (transformers >=5.13.1, <5.15). El kernel CUDA personalizado se compila JIT en el primer uso (unos 30 s); requiere torch >=2.0 y CUDA 12.x.
+- Latencia y throughput: no disponibles de forma numerica. El autor indica que en una GPU grande donde el bf16 ya cabe, el bf16 decodifica mas rapido; la ventaja de GLQ es la huella y el margen de VRAM para cache KV y contexto largo, no la velocidad.
 
 ## Comparativa con modelos similares
 
-No se dispone de comparativas directas con otras cuantizaciones (como AWQ, GPTQ, GGUF) del mismo modelo. La comparación principal es con el modelo base bf16, que se muestra en la tabla de benchmarks. Respecto a otras alternativas de la misma familia:
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Gemma-4-31B-it-GLQ-5.0bpw-mix3-8 | 12.027.607.404 (safetensors) | no disponible | Apache 2.0 | safetensors (GLQ) | Unos 16,5 GiB en GPU; sirve en una GPU de 24-32 GB |
+| google/gemma-4-31B-it (bf16) | 31B (nominal) | no disponible | Apache 2.0 | safetensors | Unos 57,9 GiB en GPU; requiere 3+ GPUs |
+| Otras cuantizaciones del mismo base (GPTQ, AWQ, GGUF) | 31B (nominal) | no disponible | Apache 2.0 | segun esquema | No se aportan datos comparativos en la informacion disponible |
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| google/gemma-4-31B-it (bf16) | 31B | 256K | Apache 2.0 | Hugging Face |
-| xv0y5ncu/Gemma-4-31B-it-GLQ-5.0bpw-mix3-8 | 31B (base) | 256K | Apache 2.0 | Hugging Face |
-| Otras cuantizaciones (p.ej. GGUF) | 31B | 256K | Apache 2.0 | No disponibles en la búsqueda |
-
-No se han encontrado datos de comparación con otros modelos de tamaño similar (por ejemplo, Llama 3.1 70B o Mistral Large) en la información proporcionada.
+No se dispone de datos de rendimiento de las alternativas de cuantizacion en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- La cuantización solo cubre el decodificador de texto; los componentes de visión, vídeo y audio no están cuantizados y deben desactivarse explícitamente, limitando las capacidades multimodales del modelo base.
-- La evaluación de rendimiento se basa en muestras pequeñas (n=30–60) y no constituye una garantía estadística de paridad con el modelo bf16.
-- El modelo puede alucinar información, especialmente en tareas de razonamiento complejo o con contexto largo; se recomienda validar las respuestas críticas.
-- La ventana de contexto de 256K tokens es la del modelo base; con la cuantización, la memoria disponible para KV cache puede limitar el contexto real según la GPU.
-- La licencia Apache 2.0 permite uso comercial, pero es necesario revisar los términos específicos de Gemma 4 en el sitio oficial de Google para garantizar el cumplimiento.
-- La integración con `transformers` requiere fijar la versión por debajo de 5.15; versiones posteriores rompen la carga del modelo.
-- El modo de pensamiento requiere `max_new_tokens` suficiente (se recomienda 16384) para no truncar el razonamiento antes de la respuesta final.
+- El modelo esta etiquetado unicamente en ingles; el rendimiento en castellano u otros idiomas no esta documentado.
+- Los benchmarks tienen n muy pequeno (30-60 items) y una sola muestra; las diferencias frente a bf16 no son estadisticamente concluyentes.
+- Riesgo de alucinacion inherente al modelo base; la cuantizacion no lo mitiga ni lo agrava de forma documentada.
+- Las torres de vision y audio no estan cuantizadas y el autor documenta el serving en modo solo texto en vLLM; el uso multimodal no esta validado en esta version.
+- El paquete glq requiere compilar un kernel CUDA en el primer uso; hay que fijar transformers por debajo de 5.15 (la 5.15.0 rompe gemma-4 en vLLM por el cambio a config por capa).
+- El script de vLLM debe usar el guard __main__ obligatoriamente por el metodo de arranque spawn de multiprocessing.
+- Para tareas de thinking se recomienda max_new_tokens=16384; presupuestos menores pueden truncar el bloque de razonamiento antes de la respuesta final.
+- lm-evaluation-harness no expone enable_thinking; requiere un monkey-patch del tokenizer para evaluar en modo thinking.
+- La licencia Apache 2.0 permite uso comercial, pero el autor remite a la licencia de Gemma 4 en ai.google.dev; conviene revisar los terminos del modelo base.
+- Los sesgos conocidos del modelo base no se documentan en esta ficha.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/xv0y5ncu/Gemma-4-31B-it-GLQ-5.0bpw-mix3-8
+- Hugging Face: https://huggingface.co/xv0y5ncu/Gemma-4-31B-it-GLQ-5.0bpw-mix3-8
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
-- Documentación de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
-- Repositorio de GLQ: https://github.com/cnygaard/glq
-- Página oficial de Gemma 4: https://deepmind.google/models/gemma/gemma-4/
-- NVIDIA NIM para Gemma 4 31B: https://build.nvidia.com/google/gemma-4-31b-it/modelcard
+- Repositorio GLQ: https://github.com/cnygaard/glq
+- Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

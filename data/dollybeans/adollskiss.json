@@ -30,7 +30,7 @@
   "base_model": "OnomaAIResearch/Illustrious-xl-early-release-v0",
   "formats": [],
   "is_conversational": false,
-  "gated": false,
+  "gated": true,
   "disabled": false,
   "removed": false,
   "removed_at": null,

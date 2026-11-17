@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 141,
+  "downloads_30d": 144,
   "trending_score": 0,
   "parameters": 25233053440,
   "parameters_human": "25.23B",
@@ -46,16 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "google/gemma-4-26B-A4B · Hugging Face",
-      "url": "https://huggingface.co/google/gemma-4-26B-A4B",
-      "snippet": "This model card summarizes details on the models' architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
-    },
-    {
-      "title": "google/gemma-4-26B-A4B-it · Hugging Face",
-      "url": "https://huggingface.co/google/gemma-4-26B-A4B-it",
-      "snippet": "This model card summarizes details on the models' architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
-    }
-  ]
+  "sources": []
 }

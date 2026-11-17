@@ -1,0 +1,75 @@
+{
+  "schema": 2,
+  "id": "Saathimed/AxonMed-32B-Titan",
+  "slug": "saathimed-axonmed-32b-titan",
+  "author": "Saathimed",
+  "url": "https://huggingface.co/Saathimed/AxonMed-32B-Titan",
+  "created_at": "2026-11-15T03:58:53.000Z",
+  "updated_at": "2026-11-15T04:17:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "medical",
+    "clinical",
+    "usmle",
+    "biomedical",
+    "healthcare",
+    "reasoning",
+    "icd-10",
+    "icd-11",
+    "rxnorm",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-32B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-32B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 65539264614,
+  "storage_human": "65.5 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen2.5-32B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "MedQA (USMLE 4-options)",
+      "metric": "Accuracy (0-Shot)",
+      "value": 75.81
+    },
+    {
+      "task": null,
+      "dataset": "PubMedQA",
+      "metric": "Accuracy (0-Shot)",
+      "value": 79
+    }
+  ],
+  "sources": []
+}

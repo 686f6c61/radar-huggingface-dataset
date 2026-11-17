@@ -2,85 +2,91 @@
 
 ## Resumen
 
-El repositorio `zhangzhan394340606/cyp2026-model-report` no contiene un modelo de lenguaje, sino el informe de un participante en el OpenADMET CYP Challenge 2026, una competicion de prediccion de propiedades ADMET centrada en la inhibicion de enzimas del citocromo P450 (CYP). Lo publica Zhan Zhang, investigador independiente de Xi'an (China), bajo licencia Apache 2.0, y describe la metodologia empleada en dos pistas del reto: inhibicion directa (regresion) e inhibicion dependiente del tiempo o TDI (clasificacion).
+`cyp2026-model-report` es un artefacto publicado en Hugging Face por Zhan Zhang (investigador independiente, Xi'an, China) que documenta la solucion presentada al OpenADMET CYP Challenge 2026. No es un modelo de lenguaje: es un paquete de modelos de quimioinformatica orientados a la prediccion de propiedades ADMET, concretamente la inhibicion de isoformas del citocromo P450 (CYP). El repositorio agrupa los artefactos y la descripcion metodologica de dos pistas del reto: inhibicion directa (regresion) e inhibicion dependiente del tiempo o TDI (clasificacion).
 
-La aproximacion combina un ensemble multi-tarea de Chemprop D-MPNN, con especialistas por isoforma y transformers de SMILES preentrenados y ajustados, validado mediante validacion cruzada agrupada de cinco pliegues. Para la pista de TDI se emplean clasificadores LightGBM con ajuste de umbral. El autor indica que el codigo y el metodo detallado se publicaran cuando finalice la competicion.
+La aproximacion combina un ensamblado multi-tarea de Chemprop D-MPNN (Directed Message Passing Neural Network) con especialistas por isoforma y transformers de SMILES preentrenados y ajustados finamente. Para la pista TDI se emplean clasificadores LightGBM con ajuste de umbral. La validacion se realizo con validacion cruzada agrupada por clusters en cinco folds, usando las metricas y el validador oficiales del reto, sin acceso a etiquetas del conjunto ciego.
 
-Por tanto, esta ficha documenta un artefacto de investigacion reproducible en quimioinformatica, no un modelo generativo: no hay parametros de lenguaje, contexto conversacional ni capacidades de generacion. Su relevancia radica en el dominio (prediccion de interacciones farmaco-enzima para cribado temprano) y en la transparencia metodologica declarada.
+El interes del artefacto es doble: por un lado, documenta una receta reproducible para prediccion ADMET con quimica grafica y modelos de lenguaje molecular; por otro, ilustra las buenas practicas de validacion en dominios donde la fuga de informacion entre estructuras similares es el principal riesgo metodologico. La licencia es Apache 2.0, pero el repositorio no contiene pesos de un modelo generativo ni una model card convencional con especificaciones de inferencia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Ensemble de Chemprop D-MPNN multi-tarea + especialistas por isoforma + transformers de SMILES ajustados; LightGBM para TDI |
+| Arquitectura | Ensamblado multi-tarea de Chemprop D-MPNN (message passing dirigido sobre grafos moleculares) con especialistas por isoforma; transformers de SMILES preentrenados ajustados finamente; clasificadores LightGBM para TDI |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (no es un modelo de lenguaje) |
+| Longitud de contexto | no disponible (no es un modelo de contexto textual; opera sobre grafos moleculares y cadenas SMILES) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (entrada: cadenas SMILES) |
+| Idiomas soportados | no disponible (entrada en formato SMILES, no lenguaje natural) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (no se publican pesos; solo informe) |
+| Formato de pesos | no disponible (el repositorio se describe como informe de modelo; no se detalla el formato de los artefactos) |
 
 ## Arquitectura y entrenamiento
 
-El componente principal es un ensemble de redes neuronales de mensajes dirigidos (D-MPNN) implementadas con Chemprop, entrenadas de forma multi-tarea sobre isoformas CYP y complementadas con especialistas por isoforma. A ello se suman transformers de SMILES preentrenados y ajustados de forma supervisada. Para la prediccion de inhibicion dependiente del tiempo se usan clasificadores LightGBM con ajuste de umbral sobre las probabilidades.
+El nucleo del sistema es un ensamblado de Chemprop D-MPNN, una red neuronal de paso de mensajes sobre grafos moleculares en la que los mensajes se dirigen a lo largo de los enlaces en lugar de propagarse de forma simetrica, lo que reduce la redundancia y mejora la generalizacion en tareas de propiedad molecular. Sobre esta base se construyen cabezas multi-tarea y especialistas por isoforma CYP, de modo que cada isoforma dispone de un modelo dedicado ademas de compartir representaciones con el resto. En paralelo se ajustan finamente transformers de SMILES preentrenados, que aportan una vista secuencial complementaria a la vista grafica.
 
-El entrenamiento utiliza los datos oficiales del reto y conjuntos publicos de potencia frente a CYP, con eliminacion previa de estructuras publicas que solapaban con el conjunto ciego. La validacion se realizo con validacion cruzada agrupada por grupos o clusters y cinco pliegues, en lugar de particiones aleatorias, lo que evita fuga de informacion entre moleculas estructuralmente similares. Se aplico calibracion de distribucion y ensemble. No se emplearon etiquetas de test ni datos propietarios. El autor no detalla el numero de compuestos ni la composicion exacta del dataset.
+Para la pista de inhibicion dependiente del tiempo se usan clasificadores LightGBM con ajuste de umbral, una eleccion coherente con problemas de clasificacion tabular de senal debil donde los modelos de arboles suelen ser competitivos y mas estables que las redes profundas. El entrenamiento emplea los datos del reto y conjuntos publicos de potencia CYP; se eliminaron las estructuras publicas solapadas con el conjunto ciego antes de entrenar y no se usaron etiquetas de test ni datos propietarios. La validacion es cruzada agrupada por clusters en cinco folds, lo que evita el optimismo artificial de las particiones aleatorias cuando hay familias estructurales muy similares entre train y validacion. Se aplica ademas calibracion de distribucion sobre el ensamblado.
 
 ## Capacidades
 
-- Prediccion de inhibicion directa de isoformas CYP como tarea de regresion (valores de potencia).
-- Prediccion de inhibicion dependiente del tiempo (TDI) como tarea de clasificacion binaria.
-- Modelado multi-tarea con especialistas por isoforma, lo que permite compartir representacion entre isoformas relacionadas.
-- Procesamiento de moleculas representadas como grafos moleculares (D-MPNN) y como cadenas SMILES (transformers).
-- Calibracion de probabilidades y ajuste de umbral para clasificacion.
-- No soporta tool calling, agentes, razonamiento multi-paso ni generacion de texto: no es un modelo de lenguaje.
+- Prediccion de inhibicion directa de isoformas CYP como tarea de regresion, con ensamblado multi-tarea y especialistas por isoforma.
+- Prediccion de inhibicion dependiente del tiempo (TDI) como tarea de clasificacion binaria con clasificadores LightGBM y umbral ajustado.
+- Modelado de propiedades ADMET a partir de estructura molecular en formato SMILES o grafo.
+- Extraccion de representaciones moleculares mediante D-MPNN y transformers de SMILES.
+- Validacion con el validador oficial de submission del reto OpenADMET CYP 2026.
+- Calibracion de distribucion de las predicciones del ensamblado.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni generacion de texto: no es un modelo de lenguaje.
+- No dispone de capacidades de vision, audio ni modo de razonamiento extendido.
 
 ## Casos de uso
 
-- Cribado virtual temprano en descubrimiento de farmacos: el ensemble predice la probabilidad de inhibicion de isoformas CYP para candidatos, permitiendo descartar compuestos con riesgo de interacciones farmacologicas antes de sintesis.
-- Evaluacion de riesgo de interacciones farmaco-farmaco (DDI): la prediccion de inhibicion de CYP3A4, CYP2D6 y otras isoformas alimenta modelos de exposicion para estimar riesgos regulatorios.
-- Priorizacion de compuestos en quimica medicinal: los especialistas por isoforma permiten identificar selectividad frente a una diana frente a la inhibicion de CYP.
-- Deteccion de inhibidores dependientes del tiempo: el clasificador LightGBM con umbral ajustado sirve para filtrar compuestos con riesgo de inactivacion metabolica irreversible.
-- Reproduccion metodologica en competiciones ADMET: la descripcion de validacion agrupada y calibracion es util como referencia para equipos que aborden retos similares de OpenADMET.
-- Analisis de dominio de aplicabilidad: la comparacion entre D-MPNN y transformers de SMILES ajustados permite estudiar que representacion generaliza mejor fuera del conjunto de entrenamiento.
+- Filtrado temprano en descubrimiento de farmacos: el ensamblado puede puntuar bibliotecas de compuestos antes de sintetizarlos, priorizando candidatos con bajo riesgo de inhibicion CYP y reduciendo el coste experimental en fases tempranas.
+- Evaluacion de interacciones farmacologicas: predecir la inhibicion de isoformas CYP concretas permite anticipar riesgo de interacciones metabolismo-dependientes en candidatos a farmaco.
+- Priorizacion de compuestos para ensayos TDI: el clasificador LightGBM con umbral ajustado permite separar compuestos con riesgo de inhibicion dependiente del tiempo, un fallo toxico relevante en desarrollo.
+- Enriquecimiento de pipelines ADMET internos: los modelos pueden integrarse como etapa de scoring en plataformas de quimioinformatica existentes que ya consumen SMILES.
+- Analisis de espacios quimicos publicos: aplicar el ensamblado a conjuntos como ChEMBL o bases de compuestos comerciales para mapear la distribucion de riesgo CYP por familia estructural.
+- Reproduccion metodologica: el informe sirve como plantilla de validacion agrupada por clusters y de combinacion de modelos graficos con transformers de SMILES para equipos que aborden retos ADMET similares.
+- Investigacion en modelado molecular: las representaciones D-MPNN y de transformers de SMILES pueden reutilizarse como features en tareas de propiedad molecular adyacentes.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona el uso de las metricas oficiales y del validador oficial de submission, pero no incluye cifras.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona el uso de las metricas oficiales del reto y del validador oficial de submission, pero no incluye cifras numericas de rendimiento ni comparaciones cuantitativas con otras soluciones.
 
 ## Requisitos de hardware
 
-- No disponible: el repositorio no publica pesos ni codigo de inferencia, solo el informe metodologico.
-- Al tratarse de un ensemble de D-MPNN y modelos tipo transformer sobre SMILES, la inferencia seria ligera en comparacion con modelos de lenguaje; un ensemble de este tipo suele ejecutarse en CPU o en una GPU consumer, pero no hay datos publicados de latencia ni throughput.
-- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI) no aplicables: no es un modelo generativo.
-- VRAM estimada: no disponible.
+- VRAM estimada para inferencia: no disponible. El tamano de los artefactos no se documenta en la informacion proporcionada.
+- GPU recomendadas: no disponible. Para modelos de grafos moleculares de este tipo, una GPU consumer moderna suele ser suficiente en inferencia por lotes, pero no hay datos publicados que lo confirmen para este artefacto concreto.
+- Compatibilidad con GPU consumer: no confirmada por falta de especificaciones de parametros y formato de pesos.
+- Opciones de despliegue: no disponible. El stack implicito es Python con Chemprop y LightGBM, pero no se documenta un formato de servicio ni un runtime de inferencia estandar.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Tarea | Licencia | Pesos publicados |
-|---|---|---|---|---|
-| cyp2026-model-report (este) | Ensemble D-MPNN + transformers SMILES + LightGBM | Prediccion CYP (regresion y TDI) | Apache 2.0 | No |
-| Chemprop (referencia) | D-MPNN | Prediccion de propiedades moleculares | MIT (segun el proyecto original) | Codigo, no pesos especificos |
-| ADMET-AI | Ensemble de modelos de grafos | Prediccion ADMET general | MIT | Codigo y pesos |
-| Modelos de la suite Therapeutics Data Commons | Varios | Multiples tareas ADMET | Variable | Variable |
+| Modelo | Tipo | Enfoque | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| cyp2026-model-report | Ensamblado de grafos + transformers de SMILES + LightGBM | Prediccion CYP (inhibicion directa y TDI) | No aplica | Apache 2.0 | Hugging Face, sin descargas ni likes |
+| Chemprop (referencia original) | D-MPNN | Propiedades moleculares generales | No aplica | MIT (repositorio original) | Codigo abierto en GitHub |
+| Modelos ADMET comerciales | Cajas negras | Prediccion ADMET multi-endpoint | No aplica | Propietaria | Servicios de pago |
+| Transformers de SMILES preentrenados (familia quimica) | Transformer sobre secuencias | Representacion molecular y downstream | Depende del modelo base | Variable | Hugging Face |
 
-No se dispone de datos de rendimiento comparativo para este artefacto, por lo que la comparativa se limita a tipo de arquitectura y disponibilidad.
+No se dispone de datos de rendimiento comparables entre estas alternativas en la informacion proporcionada, por lo que la comparativa se limita a tipo de enfoque, licencia y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- El repositorio es un informe, no un modelo desplegable: no incluye pesos, tokenizador ni scripts de inferencia.
-- El codigo y el metodo detallado se publicaran solo tras el cierre de la competicion, por lo que la reproducibilidad completa no es posible en la fecha de publicacion.
-- Al ser un modelo entrenado especificamente para el reto, el sobreajuste a la distribucion de los datos de competicion es un riesgo; la validacion agrupada mitiga parte de este problema, pero no lo elimina.
-- No se documentan sesgos de dominio (por ejemplo, cobertura quimica limitada a los conjuntos publicos de CYP).
-- No hay informacion sobre calibracion fuera de la distribucion de entrenamiento ni sobre el dominio de aplicabilidad.
-- La licencia Apache 2.0 se aplica al contenido publicado; el uso comercial de la metodologia requeriria reentrenar y validar de forma independiente.
-- No se han publicado metricas, por lo que no es posible evaluar su calidad frente a alternativas.
+- El repositorio se presenta como un informe de modelo, no como un paquete de pesos listo para inferencia; no hay garantia de que los artefactos completos esten publicados.
+- Cero descargas y cero likes en el momento de la consulta: no hay evidencia de uso externo ni de replicacion independiente de los resultados.
+- No se publican cifras de rendimiento ni comparaciones con el estado del arte, por lo que la calidad predictiva no es verificable a partir de la informacion disponible.
+- El dominio de aplicacion es estrecho: isoformas CYP y tareas ADMET concretas; extrapolar a otros endpoints requiere reentrenamiento.
+- Riesgo de sesgo por los conjuntos publicos de entrenamiento: la cobertura quimica de los datos publicos de potencia CYP puede no representar espacios quimicos industriales o de quimica medicinal reciente.
+- La validacion agrupada por clusters mitiga pero no elimina el riesgo de fuga estructural si las familias del conjunto ciego difieren de las de entrenamiento.
+- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias sobre idoneidad para decisiones regulatorias o clinicas.
+- No debe usarse como sustituto de ensayos experimentales en decisiones de desarrollo de farmacos sin validacion prospectiva.
+- No es un modelo de lenguaje: no admite prompts en lenguaje natural, tool calling ni generacion de texto.
 
 ## Enlaces
 
 - Repositorio en Hugging Face: https://huggingface.co/zhangzhan394340606/cyp2026-model-report
-- Chemprop (implementacion D-MPNN): https://github.com/chemprop/chemprop
-- OpenADMET: https://openadmet.org
-- LightGBM: https://github.com/microsoft/LightGBM
-- No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs o demos del autor.
+- OpenADMET CYP Challenge 2026: no disponible en la informacion proporcionada
+- Repositorio de Chemprop: no disponible en la informacion proporcionada
+- Documentacion de LightGBM: no disponible en la informacion proporcionada
+- Paper o blog del autor: no disponible en la informacion proporcionada

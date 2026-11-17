@@ -2,106 +2,86 @@
 
 ## Resumen
 
-`wmueller/krea2` es un repositorio de Hugging Face publicado por el usuario wmueller que distribuye pesos en formato GGUF (17,4 GB de repositorio, 12.820.073.036 parametros segun los metadatos de safetensors) bajo licencia Apache 2.0. La nomenclatura y los resultados de busqueda asociados apuntan a que se trata de una redistribucion del modelo de generacion de imagenes Krea 2 de Krea AI, cuya version oficial se publica como codigo de inferencia en el repositorio krea-ai/krea-2 y en dos variantes en Hugging Face (RAW y TURBO). No se trata, por tanto, del repositorio oficial de Krea AI.
+krea2 es un modelo de lenguaje publicado en Hugging Face por el usuario wmueller bajo licencia Apache 2.0. El repositorio contiene pesos en formato GGUF y, según los metadatos de safetensors, suma 12.820.073.036 parámetros totales, lo que lo sitúa en la franja de los modelos de aproximadamente 13B. El tamaño del repositorio es de 17,9 GB, coherente con una distribución orientada a inferencia cuantizada.
 
-El modelo subyacente, Krea 2, se describe en el blog de Krea AI como un modelo fundacional de imagen entrenado desde cero, orientado a diversidad estetica, control de estilo, mezcla de estilos y flujos de trabajo creativos. El repositorio analizado no aporta ninguna ficha tecnica propia: su model card se limita a la declaracion de licencia `apache-2.0`, sin descripcion de arquitectura, datos de entrenamiento, idiomas ni instrucciones de uso.
+La model card publicada es prácticamente vacía: solo incluye la declaración de licencia, sin descripción de arquitectura, datos de entrenamiento, idiomas soportados ni resultados de evaluación. Tampoco se declara un pipeline de Hugging Face ni una lista de idiomas. Esto limita severamente cualquier afirmación técnica sobre el modelo más allá de lo que revelan los metadatos del repositorio.
 
-Su relevancia practica es limitada pero concreta: ofrece una via de acceso a pesos cuantizados GGUF de un modelo de imagen de ~12,8 mil millones de parametros, lo que permite desplegarlo en hardware de consumo mediante herramientas que aceptan GGUF para modelos de difusion. La contrapartida es la ausencia total de documentacion, la falta de validacion comunitaria (36 descargas y 0 likes en el momento de la consulta) y la incertidumbre sobre si la licencia declarada por el tercero refleja la del modelo original.
+Su relevancia actual es, por tanto, limitada y condicionada: se trata de un modelo con licencia permisiva y pesos GGUF listos para ejecución local, pero sin documentación que permita evaluar su calidad, procedencia o idoneidad para producción. Cualquier adopción debería ir precedida de una evaluación empírica propia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el repositorio no documenta la arquitectura; la documentacion de Krea AI describe Krea 2 como modelo fundacional de generacion de imagenes) |
-| Parametros totales | 12.820.073.036 (~12,8 mil millones), segun metadatos de safetensors |
-| Parametros activos | no disponible (no se ha confirmado que sea un modelo MoE) |
-| Longitud de contexto | no disponible (concepto no aplicable en el sentido habitual a un modelo de generacion de imagenes) |
-| Tipos de cuantizacion | GGUF (etiqueta del repositorio); niveles concretos de cuantizacion no disponibles |
+| Arquitectura | no disponible |
+| Parametros totales | 12.820.073.036 |
+| Parametros activos | no aplica (no se ha declarado que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF (niveles concretos no disponibles) |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 (declarada por el autor del repositorio) |
-| Formato de pesos | GGUF (etiqueta del repositorio); el conteo de parametros procede de metadatos de safetensors |
-| Tamano del repositorio | 17,4 GB |
-| Fecha de creacion | 2026-08-02 |
-| Ultima actualizacion | 2026-10-12 |
-| Descargas / likes | 36 / 0 |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (el repositorio incluye metadatos safetensors con el recuento de parametros) |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura en la informacion proporcionada. El repositorio `wmueller/krea2` no incluye model card tecnica, diagrama, paper ni referencias a la arquitectura interna. La unica descripcion funcional disponible proviene del blog de Krea AI, que presenta Krea 2 como un modelo de imagen fundacional entrenado desde cero para transferencia y mezcla de estilos y para control creativo sobre cualquier estilo visual. No se especifican el tipo de backbone (difusion, transformer de difusion u otro), el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO.
+No se ha publicado información sobre la arquitectura del modelo. Los metadatos no indican si se trata de un transformer denso, un modelo MoE, una arquitectura híbrida o cualquier otra variante. El recuento de 12.820.073.036 parámetros es el único dato estructural disponible y sugiere un modelo denso de escala ~13B, pero esto es una inferencia, no un dato confirmado por el autor.
 
-Tampoco se documenta el proceso de cuantizacion aplicado para generar los ficheros GGUF, ni el nivel de degradacion esperado respecto a los pesos originales. Los pesos originales sin cuantizar corresponderian al repositorio oficial `krea-ai/krea-2`, cuyo codigo de inferencia si se publica en GitHub, pero no se dispone de datos verificables sobre su entrenamiento en la informacion consultada.
+Tampoco hay información sobre el corpus de entrenamiento (número de tokens, composición, filtrado), sobre si se aplicaron técnicas de alineación como RLHF, DPO o similares, ni sobre innovaciones técnicas concretas (atención lineal, decodificación especulativa, modos de razonamiento explícito). La model card no aporta nada en este sentido y no se han localizado papers, blogs técnicos ni repositorios asociados en la información disponible.
 
 ## Capacidades
 
-- Generacion de imagenes a partir de texto: segun la descripcion de Krea AI, Krea 2 es un modelo fundacional de imagen orientado a la creacion visual.
-- Transferencia de estilo: aplicacion de un estilo de referencia a una generacion nueva.
-- Mezcla de estilos: combinacion de multiples referencias estilisticas en una misma salida.
-- Control creativo y moodboards: la documentacion oficial menciona flujos de trabajo de exploracion estetica y paneles de referencia.
-- Generacion de texto, razonamiento, codigo, matematicas, vision o audio: no disponible (no hay evidencia de que el modelo cubra estas capacidades).
+- Generación de texto: capacidad esperable en un modelo de ~13B, pero no verificada documentalmente.
+- Razonamiento y matemáticas: no disponible.
+- Generación de código: no disponible.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se documentan idiomas; en generacion de imagenes la relevancia es la del prompt de texto asociado).
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
+- Capacidades multilingües: no disponible; el autor no declara lista de idiomas.
+- Capacidades especiales (modo thinking, visión, audio): no disponible.
+
+No se ha publicado ninguna evaluación funcional que permita confirmar o descartar estas capacidades.
 
 ## Casos de uso
 
-- Generacion de imagenes con estilo propio en produccion local: el formato GGUF permite cargar los pesos en entornos de inferencia local sin depender de la API de Krea AI, util para estudios que necesitan procesar lotes grandes de imagenes sin coste por llamada.
-- Transferencia de estilo para identidad visual de marca: dado que Krea 2 esta disenado para aplicar estilos de referencia, se puede usar para generar variaciones de un mismo concepto manteniendo coherencia estetica en campanas o catalogo.
-- Mezcla de estilos para direccion de arte: combinacion de dos o mas referencias visuales para explorar territorios graficos antes de fijar una linea grafica, con un coste por iteracion bajo si se ejecuta en hardware propio.
-- Prototipado rapido de assets graficos: generacion de bocetos e ilustraciones conceptuales para presentaciones internas, evitando la dependencia de un ilustrador en fases tempranas de un proyecto.
-- Integracion en pipelines de ComfyUI: al distribuirse como GGUF, encaja en nodos de carga de modelos cuantizados de ComfyUI, lo que permite encadenarlo con upscalers, ControlNet u otros nodos en un flujo reproducible.
-- Generacion de contenido para marketing y redes sociales: creacion de imagenes de apoyo con una estetica controlada y repetible, con la ventaja de poder ejecutarse en una estacion de trabajo con GPU de gama alta.
-- Investigacion sobre cuantizacion de modelos de imagen: el repositorio es un caso de estudio para medir la perdida de calidad de un modelo de ~12,8 mil millones de parametros al pasar a GGUF, comparando contra los pesos originales.
-- Despliegue en entornos con restricciones de conectividad: al ser pesos descargables y ejecutables en local, resulta util en organizaciones que no pueden enviar material grafico a servicios externos.
+- Evaluación comparativa interna: dado que no hay benchmarks publicados, un equipo puede desplegar el GGUF en local y ejecutar su propia batería de pruebas (MMLU reducido, GSM8K, tareas de código) para decidir si entra en el catálogo de modelos candidatos.
+- Prototipado rápido en estación de trabajo: al estar en GGUF, puede cargarse con llama.cpp u Ollama en una máquina con GPU de consumo y usarse para validar flujos de prompting antes de comprometerse con un modelo mayor.
+- Generación de texto asistida en entornos con requisitos de licencia permisiva: la licencia Apache 2.0 permite uso comercial sin royalties, lo que facilita integrarlo en productos propietarios siempre que la evaluación propia sea satisfactoria.
+- Fine-tuning experimental: con ~12,8B parámetros, es un tamaño manejable para LoRA o QLoRA sobre una o dos GPU, útil para experimentar con adaptaciones de dominio.
+- Inferencia en el borde o en servidores modestos: el formato GGUF y el tamaño del repo (17,9 GB) permiten despliegues en hardware sin aceleradores de gama alta, aunque el rendimiento real no está documentado.
+- Base para pipelines de generación de texto por lotes: tareas de resumen, reescritura o clasificación generativa donde la latencia no es crítica y se prioriza coste por token bajo.
+
+En todos los casos, la ausencia de documentación obliga a validar el comportamiento antes de usarlo en producción.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye metricas de calidad de imagen (FID, CLIP score, evaluaciones humanas), ni comparaciones con otros modelos, ni datos de latencia o throughput. Los resultados de busqueda consultados tampoco aportan cifras.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Las estimaciones de VRAM siguientes se derivan unicamente del numero de parametros (12,82 mil millones) y de la regla aproximada de 2 bytes por parametro en precision de 16 bits; no proceden de mediciones publicadas por el autor y deben tratarse como orientativas.
-
-- VRAM estimada en FP16 (aproximadamente 2 bytes por parametro): en torno a 25-26 GB solo para los pesos, mas el coste adicional del codificador de texto, el VAE y las activaciones durante la generacion.
-- VRAM estimada en cuantizacion Q8: en torno a 13-14 GB para los pesos.
-- VRAM estimada en cuantizacion Q6_K: en torno a 10-11 GB para los pesos.
-- VRAM estimada en cuantizacion Q5_K_M: en torno a 9 GB para los pesos.
-- VRAM estimada en cuantizacion Q4_K_M: en torno a 7-8 GB para los pesos.
-- GPU de gama profesional: H100 (80 GB), A100 (40 GB y 80 GB) y L40S permiten ejecutar sin cuantizacion agresiva y con margen para lotes.
-- GPU de consumo: una RTX 4090 (24 GB) puede asumir las cuantizaciones Q4 a Q8, y una RTX 3090 (24 GB) se comporta de forma similar. Tarjetas de 12-16 GB (RTX 4070 Ti, RTX 4080) solo serian viables en las cuantizaciones mas bajas y con resoluciones moderadas.
-- Opciones de despliegue: no confirmadas en el repositorio. El codigo de inferencia oficial se distribuye en el repositorio GitHub `krea-ai/krea-2`. Para pesos GGUF de modelos de difusion, las rutas habituales son nodos GGUF de ComfyUI y `stable-diffusion.cpp`; no se ha confirmado compatibilidad con vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos de lenguaje.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible con precisión, ya que se desconocen los niveles de cuantización incluidos. Como referencia orientativa para un modelo denso de ~12,8B parámetros: en FP16 requeriría del orden de 25-26 GB de VRAM; en cuantizaciones de 8 bits, alrededor de 13-14 GB; en 4 bits, alrededor de 7-8 GB. Estas cifras son estimaciones por tamaño, no medidas del modelo.
+- GPU recomendadas: no disponible. Por tamaño, un modelo de esta escala encajaría en A100 40/80 GB, H100, L40S o RTX 4090 para cuantizaciones bajas.
+- ¿Cabe en GPU de consumo? Probablemente sí en cuantizaciones de 4-8 bits en tarjetas con 8-24 GB de VRAM, pero no hay confirmación del autor ni pruebas publicadas.
+- Opciones de despliegue: llama.cpp y Ollama son las vías naturales al distribuirse en GGUF. vLLM y TGI requerirían pesos en safetensors completos, que no se declaran en el repositorio.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-Los datos de la columna de Krea 2 oficial proceden de la informacion de busqueda proporcionada; el resto de referencias de tamano son de conocimiento publico general y no se han verificado en esta busqueda. Los campos sin dato se marcan como no disponibles.
+No hay información suficiente para establecer una comparativa rigurosa: se desconocen arquitectura, contexto, benchmarks y datos de entrenamiento. A modo de referencia por escala de parámetros (~13B) y licencia permisiva, podrían considerarse alternativas como Mistral 7B, Llama 3.1 8B o Qwen2.5 14B, pero la comparación sería especulativa y no se dispone de datos del modelo para confrontarlos.
 
-| Modelo | Parametros | Contexto / resolucion | Licencia | Formato | Disponibilidad |
-|---|---|---|---|---|---|
-| wmueller/krea2 (este repositorio) | 12.820.073.036 | no disponible | apache-2.0 (declarada por el tercero) | GGUF | Hugging Face, 36 descargas |
-| Krea 2 RAW (oficial) | no disponible | no disponible | no disponible | no disponible | Hugging Face, referenciado desde GitHub krea-ai/krea-2 |
-| Krea 2 TURBO (oficial) | no disponible | no disponible | no disponible | no disponible | Hugging Face, referenciado desde GitHub krea-ai/krea-2 |
-| Alternativas abiertas de ~12B para generacion de imagenes (por ejemplo FLUX.1 [dev]) | ~12 mil millones | no disponible | no comercial en varias variantes | safetensors, GGUF | Hugging Face |
-
-La comparacion directa de rendimiento no es posible porque no hay benchmarks publicados en la informacion disponible para ninguna de las variantes de Krea 2.
+| Modelo | Parametros | Contexto | Licencia | Documentacion |
+|---|---|---|---|---|
+| krea2 | 12,82B | no disponible | Apache 2.0 | Practicamente inexistente |
+| Alternativas de ~7-14B | 7B-14B | Variable segun modelo | Variable (Apache 2.0, Llama, etc.) | Model cards completas y benchmarks publicados |
 
 ## Limitaciones y advertencias
 
-- Procedencia no verificada: el repositorio pertenece a un usuario particular, no a Krea AI. No hay garantia de que los pesos correspondan exactamente al modelo oficial ni de que la cuantizacion se haya realizado con una receta reproducible.
-- Licencia potencialmente inconsistente: el autor declara `apache-2.0`, pero no se ha confirmado que la licencia del modelo Krea 2 original sea esa. Antes de un uso comercial es imprescindible verificar la licencia upstream, porque una declaracion incorrecta por parte de un tercero no otorga derechos.
-- Model card practicamente vacia: no hay informacion sobre arquitectura, datos de entrenamiento, sesgos, idiomas ni limitaciones conocidas, lo que impide evaluar riesgos de sesgo de forma documentada.
-- Riesgo de artefactos visuales: no se dispone de evaluaciones de calidad de la cuantizacion GGUF, por lo que se desconoce la degradacion respecto a los pesos originales en detalle fino, texto dentro de la imagen o composiciones complejas.
-- Riesgo de alucinacion visual: como cualquier modelo generativo de imagen, puede producir elementos anatomicamente incorrectos, texto ilegible o detalles incoherentes con el prompt, especialmente en escenas con muchas entidades.
-- Ausencia de validacion comunitaria: 36 descargas y 0 likes indican que el repositorio no ha sido contrastado por la comunidad; no hay issues, discusiones ni reportes de calidad.
-- Sin soporte de idiomas documentado: se desconoce que lenguas maneja bien el codificador de texto asociado, lo que afecta directamente a la calidad con prompts en castellano.
-- Ambiguedad sobre la tarea: aunque los indicios apuntan a un modelo de generacion de imagenes, el repositorio no lo declara de forma explicita; el campo `pipeline` no esta disponible en Hugging Face.
-- Pesos cuantizados no aptos para entrenamiento: el formato GGUF esta pensado para inferencia. Cualquier ajuste fino o entrenamiento de LoRA requeriria los pesos originales sin cuantizar.
-- Sin datos de rendimiento: no hay cifras de latencia ni de throughput, por lo que la planificacion de capacidad en produccion tendria que hacerse con pruebas propias.
+- Ausencia total de documentación: no hay model card sustantiva, ni paper, ni benchmarks, lo que impide evaluar calidad, sesgos o robustez.
+- Riesgo elevado de alucinación no caracterizada: sin datos de alineación ni evaluaciones, el comportamiento en tareas factuales es una incógnita.
+- Idiomas no declarados: no se puede asumir un buen rendimiento en castellano ni en ningún otro idioma concreto.
+- Contexto desconocido: planificar aplicaciones con ventanas largas sin conocer la longitud de contexto soportada es arriesgado.
+- Procedencia incierta: el autor no documenta el origen de los pesos ni el proceso de entrenamiento o destilación, lo que plantea dudas sobre la trazabilidad.
+- Licencia Apache 2.0: permisiva para uso comercial, pero conviene verificar que el autor tenía derecho a relicenciar los pesos subyacentes, dado que no se documenta su procedencia.
+- Sin garantías de mantenimiento: el repositorio tiene 39 descargas y 0 likes en el momento de la consulta, lo que sugiere escasa comunidad y soporte.
+- No apto para producción sin evaluación previa: cualquier despliegue debería ir precedido de pruebas propias de calidad, seguridad y sesgo.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/wmueller/krea2
-- Arbol de ficheros del repositorio: https://huggingface.co/wmueller/krea2/tree/main
-- Pagina oficial de Krea 2: https://www.krea.ai/krea-2
-- Blog tecnico de Krea 2 (Krea AI): https://www.krea.ai/blog/krea-2-image-model
-- Codigo de inferencia oficial: https://github.com/krea-ai/krea-2
+- Hugging Face: https://huggingface.co/wmueller/krea2

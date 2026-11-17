@@ -5,7 +5,7 @@
   "author": "foofifoo",
   "url": "https://huggingface.co/foofifoo/Mawdistical-Synica-27B-GGUF",
   "created_at": "2026-11-14T16:28:25.000Z",
-  "updated_at": "2026-11-14T19:19:22.000Z",
+  "updated_at": "2026-11-16T11:42:25.000Z",
   "license": "other",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,7 +35,7 @@
     "not-for-all-audiences"
   ],
   "likes": 0,
-  "downloads_30d": 473,
+  "downloads_30d": 500,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",

@@ -49,7 +49,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 19,
+  "downloads_30d": 17,
   "trending_score": 0,
   "parameters": 27781427952,
   "parameters_human": "27.78B",
@@ -66,8 +66,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "crystalai35/Qwopus3.6-27B-v2",
+  "renamed_at": "2026-11-17T05:03:46.860Z",
   "benchmarks": [],
   "sources": []
 }

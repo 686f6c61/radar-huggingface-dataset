@@ -2,89 +2,96 @@
 
 ## Resumen
 
-PLatour-TR-FullGRPO-Qwen3.5-4B-DeepCoder es un checkpoint de investigación publicado por el usuario zen-E en Hugging Face. Se trata de un receptor de texto completo (*full text receiver*) construido sobre el modelo base Qwen/Qwen3.5-4B, con aproximadamente 4.841 millones de parámetros reales según los tensores safetensors. Forma parte del proyecto PLatour, que investiga la transferencia entre modelos (*Prefill-to-Autoregressive Cross-model Transfer*, PACT): un modelo emisor de mayor tamaño codifica el prompt y proporciona representaciones ocultas, mientras que un receptor más pequeño genera la respuesta de forma independiente.
+PLatour-TR-FullGRPO-Qwen3.5-4B-DeepCoder es un artefacto de inferencia publicado por zen-E, derivado del modelo base Qwen/Qwen3.5-4B mediante un procedimiento de entrenamiento GRPO completo (FullGRPO) sobre el dataset zen-E/PLatour-DeepCoder-Data. Forma parte del proyecto de investigacion PLatour, descrito en el paper "On the Opportunities and Challenges of Prefill-to-Autoregressive Cross-Model Transfer" (arXiv:2611.06976), que explora la transferencia entre modelos de distinto tamano (PACT): un modelo emisor de mayor capacidad codifica el prompt y un receptor mas pequeno genera la respuesta de forma independiente.
 
-El modelo ha sido entrenado con GRPO (*Group Relative Policy Optimization*) sobre el dataset zen-E/PLatour-DeepCoder-Data, orientado a tareas de código. La innovación principal del proyecto no reside en el modelo en sí, sino en el método: se entrenan puentes lineales ligeros entre *backbones* congelados, partiendo de proyecciones inicializadas a cero y soportando modelos con atención híbrida. El artículo asociado (arXiv:2611.06976) introduce además PACT-Check, un conjunto de controles (Dummy Transfer, Irrelevant Transfer, Self-Communication y Trained Receiver) para verificar si las mejoras dependen realmente de información útil del emisor o si surgen simplemente de la adaptación del receptor.
+Este checkpoint concreto es el receptor de texto completo ("Full text receiver"), exportado en formato estandar de Transformers con pesos safetensors BF16, tokenizer y configuracion incluidos, sin encoder de vision. Tiene 4.841.450.496 parametros reales (segun los safetensors del repositorio) y un tamano de repo de 9,7 GB. La arquitectura declarada en los tags es `qwen3_5_text`, lo que indica una variante de texto del linaje Qwen3.5.
 
-Es relevante ahora porque aborda una pregunta metodológica clave en la investigación de transferencia entre modelos: demostrar que una mejora de rendimiento no implica necesariamente una comunicación efectiva entre modelos. El autor advierte explícitamente que se trata de artefactos de inferencia históricos sin puntuaciones de benchmark, y que se requiere evaluación independiente antes de extraer conclusiones comparativas.
+Su relevancia es principalmente metodologica: el propio autor advierte que se trata de artefactos historicos de inferencia sin puntuaciones de benchmark publicadas, y que el empaquetado no establece un protocolo de seleccion de checkpoint ni una evaluacion imparcial. Por tanto, debe tratarse como material de investigacion reproducible (con el codigo del proyecto y el juez de codigo asociado), no como un modelo listo para produccion.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Qwen3.5, `qwen3_5_text`), receptor de texto completo sin codificador de visión |
-| Parámetros totales | 4.841.450.496 |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | No disponible (pesos originales en BF16) |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer decoder-only de texto (tag `qwen3_5_text`), linaje Qwen3.5; soporta atencion hibrida segun el paper PACT |
+| Parametros totales | 4.841.450.496 (4,84 mil millones, dato real de safetensors) |
+| Parametros activos | no disponible (no se declara como MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos publicados en BF16; no se listan GGUF/AWQ/GPTQ) |
+| Idiomas soportados | no disponible (el campo de idiomas del repo no esta cumplimentado) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (formato Transformers estándar) |
+| Formato de pesos | safetensors (BF16), libreria transformers |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer de la familia Qwen3.5 en su variante de texto (`qwen3_5_text`), exportado en formato Transformers estándar. La configuración exportada mantiene deliberadamente independientes los embeddings de entrada y la cabeza de salida, preservando ambos tensores almacenados exactamente como estaban; la carga útil original en BF16 no se ha modificado. El paquete no incluye codificador de visión.
+El modelo es un receptor de texto completo en formato estandar de Transformers, con embeddings de entrada y cabeza de salida independientes que preservan los tensores BF16 originales. Deriva de Qwen/Qwen3.5-4B y ha sido afinado mediante GRPO completo (FullGRPO) sobre el dataset zen-E/PLatour-DeepCoder-Data, orientado a tareas de generacion de codigo. El marco PLatour entrena puentes lineales ligeros entre backbones congelados usando recompensas de tarea, partiendo de proyecciones inicializadas a cero y admitiendo modelos con atencion hibrida.
 
-El entrenamiento se realizó mediante GRPO (optimización de política con recompensas de grupo) sobre el dataset zen-E/PLatour-DeepCoder-Data, con el objetivo de producir un receptor especializado en tareas de código. En el marco del proyecto PLatour, este receptor se concibe para funcionar junto a un emisor de mayor tamaño que le suministra representaciones ocultas del prompt a través de puentes lineales entrenados con recompensas de tarea. La configuración y el tokenizador base del export están fijados a la revisión `851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a` de Qwen/Qwen3.5-4B, lo que fija la dependencia actual del export pero no implica que el entrenamiento histórico usara esa revisión. Las comprobaciones de carga locales se realizaron con Torch 2.15.0, Transformers 5.22.1 y PEFT 0.21.2.
+El paper asociado introduce ademas PACT-Check, un conjunto de controles (Dummy Transfer, Irrelevant Transfer, Self-Communication y Trained Receiver) para verificar si las mejoras dependen de informacion util del emisor o si surgen simplemente de la adaptacion del receptor. El autor subraya que un mejor rendimiento de tarea por si solo no demuestra una comunicacion cross-model efectiva. No se documentan en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset ni detalles de RLHF/DPO mas alla del uso de GRPO.
 
 ## Capacidades
 
-- Generación de texto conversacional en formato Transformers (`text-generation`, etiqueta `conversational`).
-- Especialización en tareas de código derivada del dataset DeepCoder y del entrenamiento con GRPO.
-- Funciona como receptor de texto completo dentro del marco PACT: recibe representaciones ocultas de un emisor de mayor tamaño y genera la respuesta de forma independiente.
-- Compatibilidad con endpoints (`endpoints_compatible` según las etiquetas del repositorio).
-- Soporte de atención híbrida heredado del backbone Qwen3.5 (el método PACT soporta modelos con atención híbrida).
-- Capacidades de tool calling, agentes, visión o audio: no disponibles en la información proporcionada.
+- Generacion de texto conversacional en formato chat (uso de `apply_chat_template`).
+- Generacion de codigo, con enfasis declarado en tareas de programacion (DeepCoder).
+- Razonamiento multi-paso orientado a resolucion de problemas de codigo.
+- Evaluacion reproducible contra benchmarks de codigo (LCB v6, HumanEval, MBPP) mediante el juez de codigo del proyecto.
+- Integracion como receptor en el pipeline PACT con un emisor de mayor capacidad (opcional, requiere el codigo del proyecto).
+- Soporte de tool calling / function calling: no disponible en la informacion.
+- Capacidades multimodales (vision/audio): no disponibles; el paquete no incluye encoder de vision.
+- Cobertura multilingue: no disponible.
 
 ## Casos de uso
 
-- Investigación en transferencia entre modelos: el modelo sirve como receptor en experimentos PACT para estudiar si la información del emisor mejora realmente la generación, usando los controles PACT-Check (Dummy Transfer, Irrelevant Transfer, Self-Communication, Trained Receiver) para descartar mejoras atribuibles solo a la adaptación del receptor.
-- Reproducción de experimentos académicos: permite replicar el pipeline descrito en arXiv:2611.06976 con un checkpoint de texto completo en formato Transformers estándar, sin necesidad de infraestructura propietaria.
-- Estudio de entrenamiento con GRPO sobre tareas de código: sirve como referencia para analizar cómo afecta el ajuste por recompensas de grupo a un modelo base de ~4.800 millones de parámetros.
-- Evaluación metodológica de benchmarks: al ser un artefacto histórico sin puntuaciones publicadas, es útil para diseñar protocolos de evaluación independientes y comparar contra el modelo base Qwen/Qwen3.5-4B.
-- Base para experimentos de destilación o comunicación entre modelos: el receptor puede combinarse con distintos emisores para medir la transferencia de representaciones ocultas a través de puentes lineales.
-- Fine-tuning posterior sobre dominios específicos de código: al estar en formato Transformers y con licencia Apache 2.0, puede adaptarse con PEFT o ajuste completo en entornos de investigación.
+- Generacion de funciones y utilidades de codigo: el modelo produce fragmentos Python a partir de instrucciones en formato chat, como ilustra el ejemplo oficial (`sum` de dos enteros), adecuado para prototipado rapido de snippets.
+- Reproduccion de experimentos PACT: sirve como receptor congelado o afinado en el pipeline PLatour para estudiar transferencia cross-model con el emisor configurado, usando `platour-exps evaluate --experiment 29`.
+- Investigacion sobre GRPO en modelos pequenos: al ser un checkpoint FullGRPO sobre 4,84B, permite analizar el efecto del entrenamiento por recompensa en tareas de codigo con recursos moderados.
+- Evaluacion controlada con PACT-Check: util para ejecutar los controles Dummy/Irrelevant Transfer y Self-Communication y comprobar si las ganancias provienen del emisor o del propio receptor.
+- Banco de pruebas de generacion de codigo con juez Docker: el proyecto ejecuta los programas generados en contenedores aislados contra LCB v6, HumanEval y MBPP, lo que permite validar correccion funcional de forma reproducible.
+- Fine-tuning posterior en dominio de codigo: partir de este receptor (Apache 2.0) para adaptarlo a un lenguaje o estilo de codigo concreto, aprovechando que los pesos estan en safetensors BF16 estandar.
+- Docencia y demos de inferencia local: con 4,84B parametros y BF16, se puede servir en una GPU unica para demostraciones de generacion de codigo en entornos controlados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El autor indica explícitamente que se trata de artefactos de inferencia históricos sin puntuaciones de benchmark, y que el empaquetado no establece un protocolo de selección de checkpoint ni una evaluación imparcial.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explicitamente que se trata de artefactos historicos de inferencia sin puntuaciones de benchmark, y que el empaquetado no establece un protocolo de seleccion de checkpoint ni una evaluacion imparcial. El proyecto permite ejecutar la evaluacion (LCB v6, HumanEval, MBPP) con el comando `platour-exps evaluate --experiment 29`, pero los resultados no se recogen en la model card.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en BF16: aproximadamente 9,7 GB solo para pesos (tamaño del repositorio), más memoria para activaciones y caché KV; en la práctica se recomienda al menos 16-24 GB de VRAM en BF16.
-- En cuantización de 8 bits: en torno a 5-6 GB de pesos; en 4 bits: en torno a 3 GB, aunque los tipos de cuantización no están documentados en la información disponible.
-- GPU recomendadas: A100, H100 o RTX 4090 para inferencia en BF16 sin cuantizar; GPU consumer de gama alta (RTX 3090, RTX 4080/4090) suficientes con cuantización.
-- Cabe en GPU consumer: sí, especialmente con cuantización; en BF16 requiere tarjetas con 16 GB o más.
-- Opciones de despliegue: Transformers (probado con Torch 2.15.0, Transformers 5.22.1 y PEFT 0.21.2), compatible con endpoints; vLLM, llama.cpp, Ollama o TGI no están confirmados en la información disponible.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia en BF16: aproximadamente 9,7 GB solo para pesos (4,84B x 2 bytes), mas overhead de activaciones y KV cache; en la practica se recomienda 12-16 GB de VRAM para contexto moderado.
+- Cuantizacion: no se publican pesos cuantizados; habria que generarlos (por ejemplo GGUF/AWQ) a partir de los safetensors BF16.
+- GPU recomendadas: A100, H100 o L40S para despliegue estandar; RTX 4090 (24 GB) es suficiente para BF16 con margen.
+- Cabe en GPU consumer: si, en tarjetas de 16 GB o mas (RTX 4080/4090, RTX 4060 Ti 16 GB), con posible limitacion de contexto.
+- Opciones de despliegue: Transformers (ruta documentada); el proyecto PLatour admite colocacion multi-GPU con `--n-gpu` y `--gpus-per-replica` (por defecto 1 GPU por replica). Compatibilidad con vLLM, llama.cpp, Ollama o TGI: no disponible en la informacion.
+- Latencia y throughput: no disponibles. El proyecto permite replicas independientes en 8 GPUs con shards disjuntos de preguntas para evaluacion.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| PLatour-TR-FullGRPO-Qwen3.5-4B-DeepCoder | 4.841 M | No disponible | Apache 2.0 | Receptor PACT entrenado con GRPO sobre datos de código; sin benchmarks publicados |
-| Qwen/Qwen3.5-4B (modelo base) | ~4 B (no confirmado en la información) | No disponible | No disponible en la información | Modelo base del que deriva el checkpoint |
-| Qwen3-4B (referencia de fine-tuning) | ~4 B | No disponible | No disponible en la información | Citado en la documentación de Azure Databricks como ejemplo de ajuste completo en una H100 |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| PLatour-TR-FullGRPO-Qwen3.5-4B-DeepCoder | 4,84B | no disponible | Receptor PACT afinado con FullGRPO para codigo | Apache 2.0 | Hugging Face (775 descargas) |
+| Qwen/Qwen3.5-4B (base) | ~4B | no disponible | Modelo base generalista de texto | no disponible en la informacion | Hugging Face |
+| Alternativas de codigo de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparación con alternativas de la misma categoría (receptores PACT o modelos de código de ~4 B) no está disponible en la información proporcionada.
+No se dispone de datos de rendimiento comparativo; la comparativa con el modelo base se limita a la relacion de derivacion declarada. No se identifican en la informacion otros modelos de la misma categoria con metricas publicadas para contrastar.
 
 ## Limitaciones y advertencias
 
-- El autor advierte que son artefactos de inferencia históricos sin puntuaciones de benchmark; no deben usarse para reclamaciones comparativas sin evaluación independiente.
-- El empaquetado no establece un protocolo de selección de checkpoint ni una evaluación imparcial; la procedencia debe reportarse con precisión.
-- Las comprobaciones de carga y de prompts sintéticos no reproducen la precisión de benchmark ni una trayectoria de entrenamiento histórica.
-- La revisión del modelo base fijada en el export corresponde a la dependencia actual, no necesariamente a la usada en el entrenamiento original.
-- Idiomas soportados no documentados; riesgo de comportamiento degradado fuera del inglés o del dominio de código.
-- Riesgo de alucinación inherente a los modelos generativos; no se han publicado evaluaciones de sesgo.
-- Licencia Apache 2.0 permite uso comercial, pero siguen aplicándose los términos y avisos del modelo upstream (Qwen).
-- No incluye codificador de visión; no debe esperarse capacidad multimodal.
+- Ausencia de benchmarks publicados: el autor advierte que no hay puntuaciones y que el empaquetado no garantiza una evaluacion imparcial; no debe citarse como evidencia de rendimiento superior.
+- Artefacto de investigacion: pensado para reproducir experimentos PLatour, no como modelo de produccion; requiere el entorno del proyecto (Linux, CUDA, Python 3.11, Docker y juez de codigo) para evaluacion.
+- Riesgo de alucinacion: como modelo generativo de codigo, puede producir funciones sintacticamente validas pero incorrectas; la evaluacion oficial exige ejecucion en contenedores aislados.
+- Sesgos: no se documentan sesgos conocidos en la informacion disponible; al derivar de Qwen3.5-4B, hereda las caracteristicas del base, no detalladas aqui.
+- Idiomas: el campo de idiomas no esta cumplimentado; no se garantiza cobertura multilingue.
+- Contexto: la longitud de contexto no esta declarada; no debe asumirse una ventana concreta.
+- Sin capacidades multimodales: no incluye encoder de vision ni audio.
+- Licencia Apache 2.0: permite uso comercial, pero el autor recomienda evaluacion independiente y reporte de procedencia antes de emitir afirmaciones comparativas.
+- Dependencia del juez para metricas: la correccion de codigo solo se verifica con el juez Docker configurado (`JUDGE_ROOT`, `LCB_CHECKER`, `JUDGE_IMAGE`, `PYTHONPATH`); sin el, solo se obtiene generacion de texto.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/zen-E/PLatour-TR-FullGRPO-Qwen3.5-4B-DeepCoder
-- Colección PLatour: https://huggingface.co/collections/zen-E/platour
+- Hugging Face: https://huggingface.co/zen-E/PLatour-TR-FullGRPO-Qwen3.5-4B-DeepCoder
+- Paper: https://arxiv.org/html/2611.06976
+- Codigo: https://github.com/zhenyi4/platour
+- Coleccion de modelos: https://huggingface.co/collections/zen-E/platour
+- Guia de agente/API: https://github.com/zhenyi4/platour/blob/main/AGENT.md
+- Guia de entorno: https://github.com/zhenyi4/platour/blob/main/docs/ENVIRONMENT.md
+- Protocolos de tarea: https://github.com/zhenyi4/platour/blob/main/qwen35/README.md
+- Indice de checkpoints: https://github.com/zhenyi4/platour/blob/main/models/README.md#downloadable-checkpoints
 - Dataset: https://huggingface.co/datasets/zen-E/PLatour-DeepCoder-Data
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- Paper: https://arxiv.org/abs/2611.06976
-- Paper (HTML): https://arxiv.org/html/2611.06976
-- Ejemplo de fine-tuning de Qwen3-4B en Azure Databricks: https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-finetune-qwen3-4b

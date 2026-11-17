@@ -2,90 +2,94 @@
 
 ## Resumen
 
-PLatour-SFT-Qwen3-8B-to-1.7B-ARC-C es un artefacto de investigación publicado por zen-E que implementa el método PACT (Prefill-to-Autoregressive Cross-model Transfer) descrito en el paper "On the Opportunities and Challenges of Prefill-to-Autoregressive Cross-Model Transfer" (arXiv:2611.06976). La idea central es que un modelo emisor grande (Qwen3-8B) codifica el prompt y suministra representaciones ocultas, mientras que un receptor pequeño (Qwen3-1.7B) genera la respuesta de forma independiente. El repositorio contiene únicamente las proyecciones lineales del puente entrenadas entre ambos backbones congelados, no los pesos completos de ninguno de los dos modelos.
+PLatour-SFT-Qwen3-8B-to-1.7B-ARC-C es un checkpoint experimental publicado por el usuario zen-E dentro del proyecto PLatour, que investiga la transferencia entre modelos (PACT, Prefill-to-Autoregressive Cross-model Transfer). En este esquema, un modelo "emisor" grande (Qwen3-8B) procesa el prompt y genera representaciones ocultas, mientras que un modelo "receptor" pequeno (Qwen3-1.7B) produce la respuesta de forma autonoma. El checkpoint liberado no contiene pesos completos de un modelo, sino unicamente las proyecciones lineales (bridges) entrenadas entre ambos backbones congelados.
 
-Este checkpoint concreto corresponde al Experimento 07 del proyecto, un ajuste supervisado (SFT) sobre la tarea `arc_c`. No es un modelo autónomo: requiere descargar por separado el emisor (Qwen3-8B) y el receptor (Qwen3-1.7B), además de un cargador personalizado del proyecto PLatour, ya que no es directamente cargable mediante `AutoModel.from_pretrained` ni PEFT. El repositorio ocupa 0,9 GB, lo que es coherente con un conjunto de proyecciones de puente más metadatos, no con pesos de un transformer completo.
+El modelo esta asociado al articulo arXiv 2611.06976, "On the Opportunities and Challenges of Prefill-to-Autoregressive Cross-Model Transfer", y corresponde al experimento 07 sobre la tarea arc_c. La relevancia reside en que propone una via para aprovechar la capacidad de representacion de modelos grandes reduciendo el coste de decodificacion al delegar la generacion en un receptor de 1.700 millones de parametros. El checkpoint se distribuye con licencia Apache 2.0 y un peso de repositorio de aproximadamente 0,9 GB.
 
-La relevancia de este artefacto es metodológica más que práctica: explora si un modelo pequeño puede beneficiarse de representaciones internas de uno grande sin ejecutar el grande en cada paso de decodificación, y propone el conjunto de controles PACT-Check (Dummy Transfer, Irrelevant Transfer, Self-Communication, Trained Receiver) para verificar que las mejoras provienen realmente de información útil del emisor y no de simple adaptación del receptor. El autor advierte explícitamente que este export no incluye puntuaciones de benchmark ni garantiza un protocolo de selección de checkpoint imparcial.
+Es importante subrayar que este artefacto no es un modelo autonomo: requiere cargar por separado los backbones Qwen3-8B y Qwen3-1.7B mediante la API del proyecto y no puede cargarse con `AutoModel.from_pretrained`. Ademas, el autor indica explicitamente que el repositorio distribuye pesos de inferencia historicos sin puntuaciones de benchmark asociadas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Puente de proyecciones lineales entre dos backbones transformer congelados (emisor Qwen3-8B y receptor Qwen3-1.7B); soporta modelos de atención híbrida |
-| Parametros totales | No disponible (el repo de 0,9 GB contiene solo las proyecciones del puente, no los backbones) |
+| Arquitectura | Transformer (backbones Qwen3 congelados) mas puentes lineales ligeros entrenados; soporta modelos de atencion hibrida |
+| Parametros totales | No disponible como modelo unico; el checkpoint contiene solo proyecciones bridge (repo de 0,9 GB). Backbones: Qwen3-8B (emisor) y Qwen3-1.7B (receptor) |
 | Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (heredada de los backbones Qwen3, no especificada en la información) |
+| Longitud de contexto | No disponible (heredada de los backbones Qwen3, no especificada en la informacion) |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible |
-| Licencia | Apache-2.0 (los modelos upstream conservan sus propias licencias) |
-| Formato de pesos | Safetensors con cargador personalizado (`custom-loader`); no compatible con `AutoModel.from_pretrained` ni PEFT |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors con cargador personalizado (`custom-loader`); no compatible con carga estandar |
 
 ## Arquitectura y entrenamiento
 
-El método PACT entrena puentes lineales ligeros entre dos backbones congelados, partiendo de proyecciones inicializadas a cero. El emisor grande (Qwen3-8B) procesa el prompt y produce representaciones ocultas que se proyectan hacia el espacio del receptor pequeño (Qwen3-1.7B), que genera la respuesta de forma autorregresiva e independiente. El entrenamiento del puente se guía por recompensas de tarea (task rewards), no por destilación de logits ni por ajuste conjunto de los backbones. El método está diseñado para soportar modelos con atención híbrida.
+El metodo PACT separa el procesamiento del prompt de la generacion de la respuesta. Un emisor grande (Qwen3-8B) codifica el prompt y suministra representaciones ocultas; un receptor pequeno (Qwen3-1.7B) genera la respuesta de forma independiente. Los backbones permanecen congelados y solo se entrenan puentes lineales ligeros entre ellos, inicializados a cero y optimizados mediante recompensas de tarea. El mapeo utilizado en este checkpoint concreto es `last_aligned`, a diferencia de la variante PLatour con GRPO, que emplea `uniform_endpoints`.
 
-Este checkpoint concreto corresponde al Experimento 07 con ajuste supervisado (SFT) sobre la tarea `arc_c`, usando el dataset `zen-E/PLatour-Qwen3-Data`. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO. El paper introduce además PACT-Check, un conjunto de controles experimentales (Dummy Transfer, Irrelevant Transfer, Self-Communication y Trained Receiver) cuyo objetivo es descartar que las mejoras observadas se deban únicamente a la adaptación del receptor en lugar de a la transferencia efectiva de información desde el emisor.
+El articulo introduce ademas PACT-Check, un conjunto de controles (Dummy Transfer, Irrelevant Transfer, Self-Communication y Trained Receiver) disenado para verificar si las mejoras provienen realmente de informacion util del emisor o si pueden explicarse por simple adaptacion del receptor. El entrenamiento se realizo sobre el dataset zen-E/PLatour-Qwen3-Data y corresponde al experimento 07 sobre la tarea arc_c. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion detallada del dataset ni si se aplicaron tecnicas adicionales de RLHF o DPO mas alla del esquema basado en recompensas de tarea.
 
 ## Capacidades
 
-- Generación de texto autorregresiva mediante el receptor Qwen3-1.7B, condicionada por las representaciones proyectadas del emisor Qwen3-8B.
-- Razonamiento y respuesta a tareas de tipo ARC (`arc_c`), que es la tarea concreta sobre la que se entrenó este checkpoint.
-- Transferencia de información entre modelos de distinto tamaño y familia mediante proyecciones lineales entrenadas.
-- Compatibilidad con backbones de atención híbrida según el diseño del método.
-- No se documentan capacidades de tool calling, function calling, agentes, visión, audio ni modo thinking en la información disponible.
-- Capacidades multilingües: no disponibles en la información proporcionada.
+- Generacion de texto condicionada por representaciones de un emisor de mayor tamano, con decodificacion a cargo de un receptor de 1.700 millones de parametros.
+- Razonamiento sobre tareas tipo ARC (Abstraction and Reasoning Corpus) en el contexto del experimento 07.
+- Transferencia entre modelos de distinta escala dentro de la familia Qwen3 mediante puentes lineales entrenados.
+- Soporte de modelos con atencion hibrida segun la descripcion del metodo.
+- Evaluacion mediante el protocolo PACT-Check con controles de transferencia nula, irrelevante, autocomunicacion y receptor entrenado.
+- Integracion con backend vLLM para la generacion a traves de la API del proyecto (`load_session`, `generate`).
+- No se documentan capacidades de tool calling, function calling, vision, audio ni modo thinking en la informacion disponible.
 
 ## Casos de uso
 
-- Investigación en transferencia entre modelos: reproducir el Experimento 07 del proyecto PLatour para estudiar si un receptor de 1,7B se beneficia de representaciones de un emisor de 8B en tareas ARC, usando los comandos de evaluación del proyecto y las entradas de tarea firmadas.
-- Validación de metodología PACT-Check: ejecutar los controles Dummy Transfer, Irrelevant Transfer, Self-Communication y Trained Receiver para verificar que las mejoras no provienen de la mera adaptación del receptor.
-- Estudio de eficiencia en decodificación: analizar el coste de prefill con el emisor grande frente a la decodificación con el receptor pequeño, como alternativa a ejecutar el modelo de 8B en cada paso.
-- Reproducibilidad de artefactos históricos: comparar los hashes SHA-256 del export con ejecuciones previas, teniendo en cuenta que las revisiones exactas de los backbones no están verificadas de forma independiente.
-- Base para nuevos experimentos de puentes entre backbones: reutilizar el cargador y el mapeo de tensores como punto de partida para entrenar puentes en otras tareas o pares de modelos.
-- Docencia y divulgación: ilustrar de forma práctica los riesgos de confundir mejora de tarea con comunicación efectiva entre modelos, usando los controles del paper como material didáctico.
+- Investigacion sobre transferencia entre modelos: el checkpoint permite reproducir el experimento 07 y analizar si la informacion del emisor mejora al receptor bajo los controles de PACT-Check, usando el comando `platour-exps evaluate`.
+- Estudios de eficiencia computacional: evaluar el coste de decodificacion de un receptor de 1.7B frente a generar directamente con un modelo de 8B, manteniendo la calidad derivada de las representaciones del emisor.
+- Experimentacion con atencion hibrida: validar el comportamiento de los puentes lineales en arquitecturas que combinan mecanismos de atencion, tal como contempla el metodo.
+- Reproduccion de resultados academicos: el cargador de release verifica configuracion y hashes de pesos, lo que facilita replicar evaluaciones sobre las entradas TEST publicadas.
+- Desarrollo de pipelines de investigacion con multiples GPUs: el evaluador admite replicas independientes (`--n-gpu 8`) con shards disjuntos de preguntas, util para barridos a gran escala.
+- Analisis de provenance y sesgo de seleccion de checkpoints: dado que el repositorio no incluye puntuaciones, sirve como caso de estudio para revisar protocolos de seleccion y evaluacion independiente.
+- Prototipado de sistemas emisor-receptor en entornos controlados con CUDA, Python 3.11 y memoria GPU suficiente para ambos backbones.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explícitamente que este repositorio distribuye pesos de inferencia históricos sin puntuaciones de benchmark y que no se hace ninguna afirmación sobre el protocolo de selección de checkpoint ni sobre rendimiento imparcial en held-out.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explicitamente que el repositorio distribuye pesos de inferencia historicos sin puntuaciones de benchmark y que no se realiza ninguna afirmacion sobre el protocolo de seleccion de checkpoints ni sobre rendimiento no sesgado en conjuntos reservados.
 
 ## Requisitos de hardware
 
-- El repositorio en sí ocupa 0,9 GB y contiene solo las proyecciones del puente; el consumo real depende de los backbones descargados por separado.
-- Para inferencia se necesita cargar simultáneamente Qwen3-8B (emisor) y Qwen3-1.7B (receptor), lo que en FP16 supone aproximadamente 16 GB para el emisor y 3,4 GB para el receptor, más overhead del runtime.
-- GPU recomendadas: A100 40/80 GB o H100 para ejecutar ambos backbones en FP16 con margen; en consumer GPU solo es viable con cuantización agresiva del emisor (por ejemplo, 4 bits, unos 5-6 GB) más el receptor en FP16.
-- RTX 4090 (24 GB) puede alojar ambos modelos en FP16 de forma ajustada; RTX 3090/4080 requerirían cuantización del emisor.
-- Opciones de despliegue: no se documenta soporte para vLLM, llama.cpp, Ollama o TGI; el proyecto proporciona su propio cargador (`platour-exps download --experiment 7`) y requiere el `config.json` del repositorio con el mapeo de tensores y el SHA-256.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada: no disponible de forma explicita. Requiere memoria suficiente para cargar simultaneamente Qwen3-8B (emisor) y Qwen3-1.7B (receptor) mas el checkpoint de puentes (0,9 GB), segun la indicacion del autor de "enough GPU memory for the selected models".
+- GPU recomendadas: no se especifican modelos concretos. El evaluador permite `--n-gpu 1` cuando la carga completa cabe en una sola GPU y despliegue multi-GPU con replicas independientes (por defecto 1 GPU por replica).
+- GPU de consumo: no confirmado en la informacion disponible; depende de la viabilidad de cargar ambos backbones en la VRAM disponible.
+- Opciones de despliegue: backend vLLM a traves de la API del proyecto PLatour (`load_session` con `backend="vllm"`); no compatible con `AutoModel.from_pretrained` ni con cargadores estandar tipo llama.cpp u Ollama.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PLatour-SFT-Qwen3-8B-to-1.7B-ARC-C | Puente sobre 8B + 1,7B | No disponible | Transferencia prefill-a-autorregresiva entre backbones congelados | Apache-2.0 | Hugging Face, cargador propio |
-| Qwen/Qwen3-8B | 8B | No disponible en la información | Transformer denso de generación de texto | No disponible en la información | Hugging Face, Transformers |
-| Qwen/Qwen3-1.7B | 1,7B | No disponible en la información | Transformer denso de generación de texto | No disponible en la información | Hugging Face, Transformers |
+| PLatour-SFT-Qwen3-8B-to-1.7B-ARC-C | Puentes sobre Qwen3-8B + Qwen3-1.7B | No disponible | Transferencia emisor-receptor (PACT) | Apache 2.0 | Hugging Face (checkpoint de puentes) |
+| Qwen3-8B | 8B | No disponible en esta ficha | LLM denso estandar | No disponible en esta ficha | Hugging Face |
+| Qwen3-1.7B | 1.7B | No disponible en esta ficha | LLM denso estandar | No disponible en esta ficha | Hugging Face |
 
-La comparación directa con otros métodos de transferencia entre modelos (destilación de logits, decodificación especulativa, draft models) no está disponible en la información proporcionada.
+No se dispone de datos de rendimiento comparativo entre estas opciones en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo autónomo: requiere descargar por separado el emisor y el receptor, además del cargador del proyecto PLatour; no funciona con `AutoModel.from_pretrained` ni con PEFT.
-- El export no incluye puntuaciones de benchmark; el autor desaconseja usar estos artefactos para respaldar nuevas afirmaciones comparativas sin una evaluación independiente y una revisión de procedencia.
-- Las revisiones exactas de los backbones usadas en la ejecución histórica no han sido verificadas de forma independiente y no deben inferirse de la última revisión del Hub.
-- El export no es estado de reanudación de optimizador/RNG, por lo que no permite reanudar el entrenamiento tal cual.
-- El repositorio no registra descargas ni likes y no tiene pipeline declarado, lo que sugiere un uso muy limitado y sin validación comunitaria.
-- Riesgo de alucinación y sesgos: no documentados específicamente, pero heredados del receptor Qwen3-1.7B y del dataset de entrenamiento.
-- Restricciones de licencia: el export es Apache-2.0, pero los modelos upstream conservan sus propias licencias y avisos, que deben respetarse en uso comercial.
-- Idiomas soportados no declarados; no se debe asumir cobertura multilingüe.
-- La mejora en la tarea no demuestra por sí sola comunicación efectiva entre modelos; es imprescindible ejecutar los controles PACT-Check antes de extraer conclusiones.
+- El checkpoint no es un modelo autonomo: contiene solo proyecciones bridge y exige cargar por separado los backbones Qwen3-8B y Qwen3-1.7B mediante la API del proyecto.
+- No es cargable con `AutoModel.from_pretrained` ni con herramientas estandar de inferencia.
+- El autor declara que no se publican puntuaciones de benchmark y que no se afirma nada sobre rendimiento no sesgado en conjuntos reservados; se requiere evaluacion independiente y revision de provenance antes de usar estos artefactos para nuevas afirmaciones comparativas.
+- El ejemplo de generacion con 256 tokens es una demo de prompt personalizado, no el protocolo de benchmark publicado.
+- La generacion devuelve texto y no ejecuta codigo generado.
+- No se documentan sesgos conocidos, riesgos de alucinacion especificos ni limitaciones de idioma en la informacion disponible.
+- La licencia Apache 2.0 permite uso comercial, pero las restricciones practicas derivan de la dependencia de los backbones y del codigo del proyecto.
+- Requiere entorno Linux con CUDA y Python 3.11, y ejecutar los comandos desde un checkout editable del repositorio para disponer de los manifiestos de release.
+- No se debe combinar `--n-gpu` con `torchrun` en el evaluador del proyecto.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/zen-E/PLatour-SFT-Qwen3-8B-to-1.7B-ARC-C
-- Colección PLatour: https://huggingface.co/collections/zen-E/platour
-- Paper (arXiv): https://arxiv.org/abs/2611.06976
-- Paper (HTML): https://arxiv.org/html/2611.06976
+- Hugging Face: https://huggingface.co/zen-E/PLatour-SFT-Qwen3-8B-to-1.7B-ARC-C
+- Paper: https://arxiv.org/html/2611.06976
+- Codigo: https://github.com/zhenyi4/platour
+- Coleccion de modelos: https://huggingface.co/collections/zen-E/platour
+- Guia de agente/API: https://github.com/zhenyi4/platour/blob/main/AGENT.md
+- Guia de entorno: https://github.com/zhenyi4/platour/blob/main/docs/ENVIRONMENT.md
+- Protocolos de tarea: https://github.com/zhenyi4/platour/blob/main/qwen3/README.md
+- Indice de checkpoints: https://github.com/zhenyi4/platour/blob/main/models/README.md#downloadable-checkpoints
+- Valores por defecto de GPU en evaluacion: https://github.com/zhenyi4/platour#gpu-defaults-for-standalone-evaluation
 - Dataset: https://huggingface.co/datasets/zen-E/PLatour-Qwen3-Data
-- Modelo base emisor: https://huggingface.co/Qwen/Qwen3-8B
-- Modelo base receptor: https://huggingface.co/Qwen/Qwen3-1.7B

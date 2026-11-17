@@ -41,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "simaai/gpt-oss-20b-Autoround-a16w4",
+  "renamed_at": "2026-11-17T06:25:49.246Z",
   "benchmarks": [],
   "sources": [
     {

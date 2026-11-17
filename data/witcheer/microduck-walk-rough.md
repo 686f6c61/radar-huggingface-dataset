@@ -2,107 +2,98 @@
 
 ## Resumen
 
-`witcheer/microduck-walk-rough` es una politica de locomocion (gait) entrenada mediante aprendizaje por refuerzo para el robot microduck de Pollen Robotics. No es un modelo de lenguaje: se trata de una red neuronal de control exportada a ONNX que consume observaciones de 61 dimensiones y produce 14 acciones a 50 Hz, pensada para ocupar la ranura `walk` del sistema de politicas del robot. La politica es de tipo perpetuo, es decir, se ejecuta de forma continua hasta que se le indique lo contrario.
+`witcheer/microduck-walk-rough` es una política de control para el robot cuadrúpedo de código abierto Microduck de Pollen Robotics, entrenada mediante aprendizaje por refuerzo en simulación. No es un modelo de lenguaje: es una política de locomoción que ocupa el slot `walk` del daemon del robot y genera comandos de articulación a 50 Hz a partir de observaciones de 61 dimensiones (14 acciones). Se distribuye como `policy.onnx` con el normalizador de observaciones integrado, de modo que el consumidor alimenta observaciones en crudo.
 
-El entrenamiento se realizo en el entorno Mjlab-Velocity-Rough-MicroDuck durante 8.000 iteraciones con 4.096 entornos paralelos, empleando 324 minutos en una unica GPU RTX 5090. Todo el desarrollo es exclusivamente en simulacion: el autor indica que el robot se mantuvo erguido durante una toma de 12 segundos en terreno plano, que no se ha registrado todavia ninguna toma en terreno irregular y que la politica no se ha probado en un Microduck real.
+La versión 2 es un ajuste fino de la v1 sobre el terreno rugoso del simulador con juego de engranajes simulado (+-1 grado de holgura en cada servo) y filas de terreno ordenadas de fácil a difícil. El entrenamiento parte de la iteración 8.000 de v1 y añade 3.000 iteraciones con 4.096 entornos en una única RTX 5090 (147 minutos, unos 2,9 s por iteración). El autor reporta que en la fila de terreno más difícil y con holgura activa, la v2 se mantuvo en pie 8 de 9 tomas de 20 segundos frente a 4 de 9 de la v1.
 
-Su relevancia actual es la de un artefacto de investigacion para flujos de sim-to-real en robotica de bajo coste. Se integra mediante el comando `robotctl policy load walk witcheer/microduck-walk-rough` y su `manifest.json` sigue el esquema 2 del manifiesto de politicas de microduck. El repositorio no declara licencia, no incluye benchmarks y acumula cero descargas, por lo que debe tratarse como material experimental sin validacion externa.
+Su relevancia es acotada pero concreta: es una de las piezas de una escalera de habilidades (`witcheer/microduck-*`) para un robot de bajo coste, con licencia Apache-2.0 y un formato de despliegue estandarizado (`robotctl policy load`). El propio autor advierte que no se ha probado en un Microduck real y que las muestras son pequeñas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Red neuronal de politica para control motor, exportada a ONNX; topologia interna no especificada por el autor |
+| Arquitectura | Red neuronal de política para control robótico (entrenada con RL en simulación; topología interna no detallada) |
 | Parametros totales | no disponible |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no aplica; la politica opera con un vector de observacion de 61 dimensiones por paso |
-| Tipos de cuantizacion | no disponible (solo se publica `policy.onnx`; no se anuncian variantes cuantizadas) |
-| Idiomas soportados | no aplica (politica de control robotico; no procesa lenguaje) |
-| Licencia | no disponible |
-| Formato de pesos | ONNX (`policy.onnx`) acompanado de `manifest.json` |
-| Dimension de observacion | 61 |
-| Dimension de accion | 14 |
-| Frecuencia de control | 50 Hz |
-| Duracion del episodio | perpetua (se ejecuta hasta recibir orden de parada) |
-| Entorno de entrenamiento | Mjlab-Velocity-Rough-MicroDuck |
-| Tamano del repositorio | 0,0 GB |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (política de control reactiva; observación de 61 dimensiones, sin ventana de contexto) |
+| Tipos de cuantizacion | no disponible (exportación en ONNX; no se documentan niveles de cuantización) |
+| Idiomas soportados | no disponible (no es un modelo de lenguaje) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | ONNX (`policy.onnx`) más `manifest.json` (esquema 2 del manifiesto de políticas de microduck) |
 
 ## Arquitectura y entrenamiento
 
-El autor no detalla la topologia de la red en la model card, mas alla de que se trata de una politica exportada a ONNX que se ejecuta en bucle cerrado a 50 Hz. La interfaz es completamente explicita: 61 entradas de observacion, 14 salidas de accion. El normalizador de observaciones esta embebido dentro de `policy.onnx`, de modo que el consumidor debe alimentar observaciones en crudo sin preprocesado adicional. El manifiesto sigue el esquema 2 del manifiesto de politicas de microduck documentado en el repositorio del demonio.
+La política mapea una observación de 61 dimensiones a 14 acciones a 50 Hz, con comportamiento perpetuo: ejecuta la marcha hasta recibir una orden de parada. El normalizador de observaciones está embebido en el ONNX, por lo que la interfaz de entrada es la observación cruda del robot. El manifiesto sigue el esquema 2 descrito en `docs/policy-manifest.md` del repositorio del daemon.
 
-El entrenamiento se realizo con el repositorio `pollen-robotics/microduck_rl`, rama `develop`, commit `53b8971b6`, usando el entorno Mjlab-Velocity-Rough-MicroDuck: 8.000 iteraciones, 4.096 entornos en paralelo y un tiempo total de 324 minutos en una RTX 5090. No se especifica el algoritmo de RL empleado (PPO u otro), ni el volumen de muestras, ni si hubo fases de ajuste fino o de domain randomization adicionales mas alla de lo implicito en un entorno etiquetado como "rough".
+El entrenamiento se realizó con el repositorio `pollen-robotics/microduck_rl` (rama `develop`, commit `53b8971b6`, exportado desde un checkout con cambios sin confirmar). La tarea de simulación es `Mjlab-Velocity-Rough-Backlash-MicroDuck`, una variante del terreno rugoso del fabricante con +-1 grado de juego de engranajes en cada servo y filas de terreno ordenadas por dificultad (parche local de currículo; la v1 usó una rejilla aleatoria de 5x5). La v2 arranca en caliente desde la iteración 8.000 de la v1 y entrena hasta la 11.000: 3.000 iteraciones, 4.096 entornos, 147 minutos en una RTX 5090. La curva de recompensa media se mantiene plana alrededor de 104 entre las iteraciones 8.500 y 10.900, con nivel medio de terreno de 5,9 sobre 9 en la última ventana. La recompensa no es comparable con la de v1 por el distinto mix de terreno.
 
 ## Capacidades
 
-- Locomocion continua a 50 Hz en simulacion, con una politica de tipo perpetuo que no requiere reinicio por episodio.
-- Control de marcha entrenado especificamente para terreno irregular (Mjlab-Velocity-Rough), aunque sin toma grabada en ese terreno.
-- Consumo de observaciones en crudo: el normalizador va embebido en el grafo ONNX.
-- Integracion directa con la ranura `walk` del sistema de politicas de microduck a traves de `robotctl`.
-- Declaracion de metadatos mediante `manifest.json` conforme al esquema 2.
-- No dispone de tool calling, function calling, razonamiento multi-paso, capacidades de agente, vision, audio ni soporte multilingue: es un controlador motor de proposito unico.
+- Locomoción cuadrúpeda perpetua sobre terreno rugoso: escaleras, pendientes y rejillas de bloques, con tolerancia a holgura mecánica de +-1 grado por servo.
+- Ejecución de una marcha continua hasta recibir orden de parada (política perpetua, sin horizonte fijo).
+- Despliegue directo en el robot mediante `sudo robotctl policy load walk witcheer/microduck-walk-rough`.
+- Integración estandarizada vía manifiesto de política (esquema 2) y exportación ONNX autocontenida.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni capacidades multilingües: es una política de control motor.
 
 ## Casos de uso
 
-- Investigacion en sim-to-real: usar la politica como linea base para medir la brecha entre el rendimiento en Mjlab-Velocity-Rough y el comportamiento en el robot fisico, dado que el autor reconoce que no se ha probado en hardware real.
-- Punto de partida para reentrenamiento: el pipeline `pollen-robotics/microduck_rl` (rama `develop`, commit `53b8971b6`) permite reproducir las 8.000 iteraciones con 4.096 entornos y modificar recompensas o parametros de dominio.
-- Evaluacion comparativa de gaits: al cargarse en la ranura `walk` mediante `robotctl policy load walk`, puede alternarse con otras politicas de marcha para comparar estabilidad y velocidad en el mismo robot.
-- Docencia y divulgacion en RL aplicado a robotica: el ciclo completo (entorno de simulacion, entrenamiento en una sola GPU de consumo, exportacion ONNX, manifiesto y despliegue por CLI) es reproducible en unas cinco horas y media de computo.
-- Pruebas de integracion del demonio de microduck: sirve como carga de trabajo real para validar el manejo del esquema 2 de manifiestos y la carga de politicas ONNX en el daemon.
-- Generacion de datos de referencia en simulacion: al ser perpetua, puede dejarse corriendo de forma indefinida para registrar trayectorias de observacion-accion que alimenten analisis de estabilidad o entrenamiento de criticos.
-- Prototipado rapido de politicas de marcha: modificar el entorno Mjlab-Velocity-Rough y reentrenar en una RTX 5090 para iterar sobre estrategias de locomocion antes de invertir en pruebas fisicas.
+- Demostración de locomoción en terreno irregular: cargar la política en el slot `walk` y dejar que el Microduck recorra escaleras, rampas y rejillas de bloques en un entorno controlado, aprovechando el entrenamiento específico con holgura de engranajes.
+- Investigación en simulación a realidad: usar la política como punto de partida para estudiar la brecha sim-to-real en un cuadrúpedo de bajo coste, dado que el autor documenta explícitamente que no se ha probado en hardware real.
+- Banco de pruebas de robustez mecánica: evaluar cómo afecta el juego de engranajes real (backlash) a una marcha entrenada con +-1 grado simulado, comparando con la v1 sin holgura.
+- Base para ajuste fino con RL: al estar entrenada contra `microduck_rl` y publicarse el linaje (v1 en la iteración 8.000, v2 hasta la 11.000), sirve como inicialización para nuevas tareas o terrenos.
+- Docencia y divulgación en robótica: ejemplo reproducible de un pipeline completo de RL en simulación (Mjlab, 4.096 entornos, exportación ONNX, manifiesto de política) con coste de cómputo de una sola GPU.
+- Integración en pipelines de evaluación automatizada: cargar la política vía `robotctl` y medir métricas de estabilidad (inclinación del tronco, reinicios por caída) sobre tomas de 20 segundos en filas de terreno seleccionadas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La unica metrica de rendimiento aportada por el autor es cualitativa: el robot simulado se mantuvo erguido durante una toma de 12 segundos en terreno plano, sin toma registrada en terreno irregular.
+Resultados en simulación reportados por el autor (tomas de 20 s, una sola pata simulada forzada a una fila y tipo de terreno, sin empujes aleatorios, muestreadas cada 0,1 s; una toma cuenta como mantenida si el tronco no supera 60 grados de inclinación y la simulación no reinicia por caída):
 
-| Metrica | Resultado |
-|---|---|
-| MMLU / HumanEval / GSM8K | no aplica (no es un modelo de lenguaje) |
-| Tiempo de entrenamiento | 324 minutos en una RTX 5090 |
-| Iteraciones de entrenamiento | 8.000 |
-| Entornos paralelos | 4.096 |
-| Toma en terreno plano | 12 s manteniendose erguido |
-| Toma en terreno irregular | no registrada |
-| Prueba en robot fisico | no realizada |
+| Escenario | v2 (con holgura) | v1 (con holgura) |
+|---|---|---|
+| Fila más difícil, 9 tomas (3 por tipo) | 8 de 9 mantenidas, 2 caídas | 4 de 9 mantenidas, 6 caídas |
+| Escaleras, fila más difícil | 2 de 3 | 1 de 3 |
+| Rejilla de bloques, fila más difícil | 3 de 3 | 1 de 3 |
+| Pendiente, fila más difícil | 3 de 3 | 2 de 3 |
+| Fila 6, una toma por tipo | 3 de 3 | 3 de 3 |
+| Fila más difícil sin holgura (una toma por tipo) | 2 de 3 (una caída en escaleras a los 2,5 s) | 3 de 3 |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible, ni aplican a este tipo de modelo.
 
 ## Requisitos de hardware
 
-- VRAM para inferencia: no disponible. El repositorio ocupa 0,0 GB y el artefacto es un unico fichero ONNX, por lo que el modelo es de tamano reducido, pero no se publican cifras de memoria ni de latencia.
-- GPU para entrenamiento: una RTX 5090, con 324 minutos para 8.000 iteraciones y 4.096 entornos paralelos.
-- GPU para inferencia: no especificada. No se documenta si la politica se ejecuta en CPU, en GPU de borde o en el ordenador embebido del microduck.
-- Encaje en GPU de consumo: el entrenamiento ya se realizo en una GPU de consumo (RTX 5090); para inferencia no hay datos publicados.
-- Opciones de despliegue: ONNX Runtime como ejecutor del grafo `policy.onnx`, cargado a traves de `robotctl policy load walk witcheer/microduck-walk-rough` en el ecosistema del demonio de microduck. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de artefacto.
-- Latencia y throughput: no disponibles; el unico dato temporal es la frecuencia de control de 50 Hz.
+- Inferencia en robot: la política es un ONNX de observación 61 y acción 14 a 50 Hz, por lo que la carga computacional en el Microduck es mínima; el autor no publica cifras de latencia ni de memoria en el dispositivo.
+- Entrenamiento: una única RTX 5090 para la v2 (3.000 iteraciones, 4.096 entornos, 147 minutos, ~2,9 s/iteración) y para la v1 (8.000 iteraciones, 4.096 entornos, 324 minutos).
+- VRAM estimada para inferencia: no disponible.
+- GPU recomendadas: no disponible para inferencia; para reentrenamiento, RTX 5090 según la model card.
+- Despliegue: daemon de microduck con `robotctl` y runtime ONNX; no se documentan opciones vLLM, llama.cpp, Ollama ni TGI, que no aplican a este modelo.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre politicas de locomocion publicadas para el mismo robot microduck ni sobre alternativas equivalentes con las que comparar parametros, contexto, rendimiento o licencia. El propio autor no cita comparaciones en la model card, y la busqueda web no devolvio resultados relevantes (unicamente dominios de informacion financiera sin relacion con el modelo).
+| Modelo | Tipo | Entrenamiento | Holgura de engranajes | Terreno | Licencia | Estado |
+|---|---|---|---|---|---|---|
+| `witcheer/microduck-walk-rough` v2 | Política de marcha (ONNX) | 11.000 iteraciones, 4.096 entornos, RTX 5090 | Sí (+-1 grado) | Rugoso ordenado por dificultad | Apache-2.0 | Simulación, no probado en hardware real |
+| `witcheer/microduck-walk-rough` v1 | Política de marcha (ONNX) | 8.000 iteraciones, 4.096 entornos, RTX 5090 | No | Rugoso, rejilla aleatoria 5x5 | Apache-2.0 | Simulación |
+| Políticas del fabricante (`pollen-robotics/microduck_rl`) | Políticas de referencia | No disponible | No disponible | No disponible | Apache-2.0 | No disponible |
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| microduck-walk-rough | no disponible | no aplica (observacion de 61 D) | 12 s erguido en plano simulado | no disponible | Hugging Face, 0 descargas |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+No se dispone de datos de rendimiento de las políticas del fabricante en la información proporcionada, por lo que la comparación cuantitativa se limita a las dos versiones del propio autor.
 
 ## Limitaciones y advertencias
 
-- No se ha probado en un Microduck fisico: todos los resultados proceden de simulacion y la brecha sim-to-real no esta cuantificada.
-- No existe toma grabada en terreno irregular, pese a que el entrenamiento se realizo en el entorno "rough". La unica evidencia de estabilidad es una toma de 12 segundos en terreno plano.
-- Ausencia total de licencia declarada: no se especifican condiciones de uso comercial, redistribucion ni modificacion, lo que impide un aprovechamiento en produccion sin aclaracion previa del autor.
-- Sin benchmarks publicados: no hay numeros de recompensa, velocidad de marcha, tasa de caidas ni robustez ante perturbaciones, lo que impide una evaluacion objetiva frente a otras politicas.
-- Cero descargas y cero "likes": no hay validacion independiente por parte de la comunidad ni informes de terceros sobre su comportamiento.
-- Politica de tipo perpetuo: no incorpora criterio de parada propio, por lo que el sistema anfitrion debe gestionar la terminacion del bucle de control.
-- Sin soporte de lenguaje, tool calling ni agentes; cualquier expectativa en ese sentido es inaplicable a este artefacto.
-- Dependencia de la interfaz exacta de 61 observaciones y 14 acciones a 50 Hz: cualquier cambio en el robot o en el esquema del manifiesto puede invalidar la politica.
-- El normalizador esta embebido en el grafo ONNX, de modo que alimentar observaciones ya normalizadas produciria un comportamiento incorrecto.
-- Sesgos conocidos: no disponibles, ya que no se ha realizado analisis de sesgo ni de cobertura de condiciones (pendientes, fricciones, cargas utiles) en la informacion proporcionada.
-- La fecha de creacion del repositorio indicada por Hugging Face (2026-09-21) es posterior a la fecha de consulta habitual; conviene verificar la vigencia del artefacto antes de integrarlo.
+- Solo simulación: el autor afirma explícitamente que no se ha probado en un Microduck real.
+- Muestras pequeñas: 9 tomas por política en la fila más difícil; el autor califica la evidencia de limitada.
+- Confusión de variables: la v2 cambia dos cosas a la vez (holgura de engranajes y filas de terreno ordenadas), por lo que la mejora no puede atribuirse solo a la holgura.
+- Sin probar: empujes en terreno rugoso, cargas útiles y perturbaciones externas.
+- Regresión en el simulador original: sin holgura, en la fila más difícil, la v2 mantuvo 2 de 3 tomas frente a 3 de 3 de la v1 (una caída en escaleras a los 2,5 s).
+- Reproducibilidad parcial: exportada desde un checkout con cambios sin confirmar del repositorio `microduck_rl`.
+- Sin capacidades de lenguaje, visión ni razonamiento; no debe evaluarse con métricas de LLM.
+- Licencia Apache-2.0: permite uso comercial y modificación, con las obligaciones habituales de atribución y aviso de cambios; no se documentan restricciones adicionales.
+- Riesgo de alucinación no aplica; el riesgo relevante es de transferencia sim-to-real y de caída en hardware.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/witcheer/microduck-walk-rough
-- Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
-- Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl`, rama `develop`, commit `53b8971b6`
-- Documentacion del manifiesto de politicas: `docs/policy-manifest.md` en el repositorio del demonio de microduck
-- Comando de despliegue: `sudo robotctl policy load walk witcheer/microduck-walk-rough`
-- Resultados de la busqueda web: sin enlaces relevantes (unicamente dominios de informacion financiera ajenos al modelo)
+- Repositorio del robot Microduck: https://github.com/pollen-robotics/microduck
+- Repositorio de entrenamiento RL: https://github.com/pollen-robotics/microduck_rl
+- Dataset con registros y curvas: https://huggingface.co/datasets/witcheer/microduck-skill-tree (carpeta `level-04b-walk-rough-gear-play`)
+- Otras políticas de la escalera de habilidades: https://huggingface.co/witcheer

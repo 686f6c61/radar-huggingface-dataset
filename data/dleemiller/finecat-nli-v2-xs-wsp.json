@@ -5,7 +5,7 @@
   "author": "dleemiller",
   "url": "https://huggingface.co/dleemiller/finecat-nli-v2-xs-wsp",
   "created_at": "2026-11-15T00:20:08.000Z",
-  "updated_at": "2026-11-16T14:58:33.000Z",
+  "updated_at": "2026-11-16T17:50:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "zero-shot-classification",

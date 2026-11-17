@@ -5,7 +5,7 @@
   "author": "zephel01",
   "url": "https://huggingface.co/zephel01/DeepSeek-V4-Flash-0731-IQ2_XXS-32G64G-GGUF",
   "created_at": "2026-11-07T00:53:37.000Z",
-  "updated_at": "2026-11-09T00:28:36.000Z",
+  "updated_at": "2026-11-16T23:28:28.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -39,7 +39,7 @@
   "trending_score": 0,
   "parameters": 284334567511,
   "parameters_human": "284.33B",
-  "storage_bytes": 72023200288,
+  "storage_bytes": 72023449532,
   "storage_human": "72.0 GB",
   "context_length": 1048576,
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
@@ -55,16 +55,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "zephel01/DeepSeek-V4-Flash-0731-32G64G-GGUF · Hugging Face",
-      "url": "https://huggingface.co/zephel01/DeepSeek-V4-Flash-0731-32G64G-GGUF",
-      "snippet": "Text Generation model with 284B parameters. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "DeepSeek-V4-Flash-0731-ds4-IQ2XXS-GGUF - Hugging Face",
-      "url": "https://huggingface.co/GaelicThunder/DeepSeek-V4-Flash-0731-ds4-IQ2XXS-GGUF",
-      "snippet": "A 2-bit GGUF of the official DeepSeek-V4-Flash-0731 release, built for the ds4 engine so the model fits on a single 128 GB GB10 box (DGX Spark / ASUS Ascent GX10)."
-    }
-  ]
+  "sources": []
 }

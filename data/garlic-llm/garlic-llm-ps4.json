@@ -5,7 +5,7 @@
   "author": "garlic-llm",
   "url": "https://huggingface.co/garlic-llm/garlic-llm-ps4",
   "created_at": "2026-11-11T13:56:07.000Z",
-  "updated_at": "2026-11-14T20:58:03.000Z",
+  "updated_at": "2026-11-16T09:20:00.000Z",
   "license": "mixed",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -38,7 +38,7 @@
     "license:other",
     "region:us"
   ],
-  "likes": 7,
+  "likes": 9,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 118,
+  "downloads_30d": 117,
   "trending_score": 0,
   "parameters": 2029892,
   "parameters_human": "2.0M",
@@ -55,31 +55,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "wq2012/personal-vad-v2-conformer-std-vad · Hugging Face",
-      "url": "https://huggingface.co/wq2012/personal-vad-v2-conformer-std-vad",
-      "snippet": "wq2012 / personal-vad-v2-conformer-std-vad Like 0 Voice Activity Detection LiteRT Safetensors facebook/multilingual_librispeech personal-vad audio speaker-conditioning conformer lstm tensorflow arxiv:1908.04284 arxiv:2204.03793 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Personal VAD 2.0 — B2 4-Layer Causal Conformer Standard VAD (wq2012/personal ..."
-    },
-    {
-      "title": "Conformer Model: Hybrid Neural Architecture",
-      "url": "https://www.emergentmind.com/topics/conformer-model",
-      "snippet": "The Conformer model fuses CNNs with self-attention for efficient sequence modeling, excelling in ASR, vision, and biological tasks with state-of-the-art performance."
-    },
-    {
-      "title": "Models - Hugging Face",
-      "url": "https://huggingface.co/models?search=conformer",
-      "snippet": "Explore machine learning models. byan/librispeech_asr_train_asr_conformer_raw_bpe_batch_bins30000000_accum_grad3_optim_conflr0.001_sp"
-    },
-    {
-      "title": "Conformer: Convolution-augmented Transformer for Speech ... - DeepAI",
-      "url": "https://deepai.org/publication/conformer-convolution-augmented-transformer-for-speech-recognition",
-      "snippet": "In this work, we achieve the best of both worlds by studying how to combine convolution neural networks and transformers to model both local and global dependencies of an audio sequence in a parameter-efficient way. To this regard, we propose the convolution-augmented transformer for speech recognition, named Conformer."
-    },
-    {
-      "title": "GitHub - LuluW8071/Conformer: End-to-End Speech Recognition Training ...",
-      "url": "https://github.com/LuluW8071/Conformer",
-      "snippet": "This repository contains a complete implementation of the Conformer: Convolution-Augmented Transformer for Speech Recognition. It includes: Recommended: At least 1-2 hours of personal recordings.Original audio is augmented (e.g., noise, pitch, speed) to boost variation in recorded corpus and ..."
-    }
-  ]
+  "sources": []
 }

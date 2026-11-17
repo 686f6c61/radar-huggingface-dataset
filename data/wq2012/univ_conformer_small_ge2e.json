@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 219,
+  "downloads_30d": 225,
   "trending_score": 0,
   "parameters": 2029892,
   "parameters_human": "2.0M",
@@ -56,31 +56,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Speed Test by MyBroadband",
-      "url": "https://speedtest.mybroadband.co.za/",
-      "snippet": "Test your Internet connection quickly and accurately. Lightweight, easy-to-use, reliable and completely free."
-    },
-    {
-      "title": "Starlink is illegal in South Africa but that is not stopping people",
-      "url": "https://mybroadband.co.za/news/broadband/670728-starlink-is-illegal-in-south-africa-but-that-is-not-stopping-people.html",
-      "snippet": "6 days ago · Despite highly restrictive access in South Africa, data from MyBroadband’s Speed Test platform shows that SpaceX’s …"
-    },
-    {
-      "title": "Android Flash Tool Lets You Install Android Using a Browser",
-      "url": "https://www.bleepingcomputer.com/news/google/android-flash-tool-lets-you-install-android-using-a-browser/",
-      "snippet": "Jan 28, 2020 · Google announced the release of a web-based tool that can be used by developers to install Android Open Source …"
-    },
-    {
-      "title": "speed test - MyBroadband Forum",
-      "url": "https://mybroadband.co.za/forum/tags/speed-test/",
-      "snippet": "Apr 29, 2026 · Mybroadband speed test broken Getting 0MBps download and upload on mybroadband speedtest. Whoops! …"
-    },
-    {
-      "title": "Best Windows 10 commands to diagnose your Internet connection",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/best-windows-10-commands-to-diagnose-your-internet-connection/",
-      "snippet": "May 15, 2021 · Diagnosing an Internet connection in Windows can be a frustrating experience. To help with this, we have outlined six …"
-    }
-  ]
+  "sources": []
 }

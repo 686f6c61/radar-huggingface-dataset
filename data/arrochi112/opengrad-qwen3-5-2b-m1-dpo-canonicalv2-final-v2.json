@@ -5,7 +5,7 @@
   "author": "arrochi112",
   "url": "https://huggingface.co/arrochi112/OpenGrad-Qwen3.5-2B-M1-DPO-CanonicalV2-Final-v2",
   "created_at": "2026-09-11T18:02:32.000Z",
-  "updated_at": "2026-10-22T05:31:24.000Z",
+  "updated_at": "2026-11-11T09:05:41.000Z",
   "license": "composite-per-source",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -45,8 +45,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "arjhinety/OpenGrad-Qwen3.5-2B-M1-DPO-CanonicalV2-Final-v2",
+  "renamed_at": "2026-11-17T05:21:58.171Z",
   "benchmarks": [],
   "sources": [
     {

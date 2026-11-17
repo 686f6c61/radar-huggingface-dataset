@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 23,
   "trending_score": 0,
   "parameters": 4833350656,
   "parameters_human": "4.83B",
@@ -44,31 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Google Translate Help",
-      "url": "https://support.google.com/translate/?hl=en",
-      "snippet": "Official Google Translate Help Center where you can find tips and tutorials on using Google Translate and other answers to …"
-    },
-    {
-      "title": "Télécharger et utiliser Google Traduction",
-      "url": "https://support.google.com/translate/answer/6350850?hl=fr&co=GENIE.Platform%3DDesktop",
-      "snippet": "Télécharger et utiliser Google Traduction Vous pouvez traduire du texte saisi au clavier, en écriture manuscrite, sur une photo ou …"
-    },
-    {
-      "title": "Communication Essay - bartleby",
-      "url": "https://www.bartleby.com/topics/Communication-Essay",
-      "snippet": "reflected in your perception of such things as your skills, abilities, talents, and appearance” (Beebe, 40). Communication enhances …"
-    },
-    {
-      "title": "Loneliness Essay - 575 Words | Bartleby",
-      "url": "https://www.bartleby.com/essay/Loneliness-FK4YFYZTC",
-      "snippet": "To be lonely is an easy thing, being alone is another matter entirely. To understand this, first one must understand the difference …"
-    },
-    {
-      "title": "Download & use Google Translate",
-      "url": "https://support.google.com/translate/answer/6350850?hl=en&co=GENIE.Platform%3DDesktop",
-      "snippet": "You can translate text, handwriting, photos, and speech in over 200 languages with the Google Translate app. You can also use …"
-    }
-  ]
+  "sources": []
 }

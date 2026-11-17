@@ -2,98 +2,98 @@
 
 ## Resumen
 
-connectailab-rl-yegomfloor-v4-teacher es un modelo de decisión basado en aprendizaje por refuerzo (RL) desarrollado por el autor independiente yegom (Park Sehyun) en el marco del proyecto CONNECT AI LAB. No es un modelo de lenguaje generativo: es una política entrenada para operar una empresa simulada dentro del entorno CONNECT TYCOON, gestionando decisiones de personal, inventario, marketing, atención al cliente, reembolsos y seguridad a lo largo de un mes de 20 días laborables. Su relevancia radica en que ejemplifica el uso de RL (PPO) para automatizar decisiones empresariales secuenciales en un simulador, con un formato de salida estructurado compatible con JEV.
+`connectailab-rl-yegomfloor-v4-teacher` es una política de decisión entrenada con aprendizaje por refuerzo (PPO) por el desarrollador independiente yegom (Park Sehyun) en el marco de CONNECT AI LAB. No es un modelo de lenguaje generativo: es un cerebro de decisión que opera una empresa simulada dentro del entorno CONNECT TYCOON, un juego de gestión empresarial donde el agente debe tomar decisiones mensuales sobre personal, inventario, marketing, atención al cliente, reembolsos y seguridad. El modelo recibe observaciones del estado de la empresa y devuelve decisiones estructuradas en el formato JEV (JSON Evaluation Vocabulary), la misma interfaz que usa `typesafe/jev-1.13`.
 
-El modelo se distribuye como artefacto NumPy (librería `numpy`) y se integra mediante el paquete Python `connect-tycoon`, que permite cargarlo desde el Hub y actuar como "cerebro" de la compañía. Según la model card, supera al "presidente por reglas" del simulador en métricas de beneficio mensual, satisfacción del cliente, incidentes de riesgo y días de desabastecimiento, aunque se trata de un modelo educativo sobre un simulador sintético y no de un sistema validado en entornos reales.
+El modelo se entrenó en dos fases: primero imitación supervisada de un "jefe basado en reglas" (el baseline del simulador) y después ajuste fino con PPO usando una función de recompensa ponderada por los valores de la empresa (beneficio 2.5, satisfacción del cliente 2.0, riesgo 1.0). Según la model card, supera al baseline en 40 meses no vistos: 10,74 millones de wones de beneficio mensual frente a 3,24 millones, 96 % de satisfacción frente a 79 %, 4,7 incidentes de riesgo frente a 7,8 y 0,8 días de rotura de stock frente a 10,7. Es relevante como ejemplo de RL aplicado a toma de decisiones empresariales con una interfaz tipada y verificable, y como pieza educativa de un curso de RL.
 
-La información técnica disponible es escasa: no se publican parámetros, arquitectura de red, longitud de contexto ni datos de entrenamiento detallados. La ficha refleja esa limitación de forma explícita.
+La librería declarada es `numpy` y el artefacto se distribuye como política serializada (no como pesos de transformer). El pipeline es `reinforcement-learning`, el idioma declarado es coreano (`ko`) y la licencia es Apache 2.0.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (política de RL entrenada con PPO; estructura de red no publicada) |
+| Arquitectura | Política de aprendizaje por refuerzo (PPO) sobre observaciones estructuradas del simulador CONNECT TYCOON; no es un transformer |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (opera sobre un estado estructurado por turno, no sobre texto libre) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | coreano (ko) |
+| Longitud de contexto | no disponible (opera por paso de decisión sobre el estado del juego) |
+| Tipos de cuantizacion | no disponible (artefacto NumPy; no se documentan cuantizaciones) |
+| Idiomas soportados | coreano (`ko`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (artefacto NumPy distribuido vía paquete `connect-tycoon`) |
+| Formato de pesos | no disponible; serialización cargable con `connect_tycoon.CompanyBrain.from_hub` (librería `numpy`) |
 
 ## Arquitectura y entrenamiento
 
-La model card describe un entrenamiento en dos fases: primero aprendizaje supervisado imitando al "presidente por reglas" del simulador y después ajuste con PPO utilizando como recompensa la función de valor de la empresa `{"이익": 2.5, "고객 만족": 2.0, "위험": 1.0}` (beneficio 2,5; satisfacción del cliente 2,0; riesgo 1,0). El modelo se etiqueta como "corteza prefrontal" del sistema, es decir, el módulo que decide acciones sobre un estado estructurado del negocio.
+La política se entrena en dos etapas. La primera es aprendizaje supervisado por imitación de un "jefe basado en reglas" que actúa como profesor (de ahí el sufijo `teacher` en el identificador): el agente aprende a replicar las decisiones del baseline sobre el estado de la empresa. La segunda es ajuste con PPO (Proximal Policy Optimization), donde la recompensa se define como una combinación ponderada de los valores corporativos declarados en la model card: beneficio 2.5, satisfacción del cliente 2.0 y riesgo 1.0. El entorno es un simulador de empresa con configuración explícita (`warehouse: 250.0`, `base_demand: 40.0`, `unit_cost: 1.5`, `order_scale: 1.0`, `wage: 0.0`, `ad_power: 1.0`, entre otros), con horizonte de 20 días laborables por mes.
 
-No se especifican la topología de la red, el número de parámetros, el volumen de datos de entrenamiento ni hiperparámetros de PPO. La salida se emite en el formato JEV (`typesafe/jev-1.13`), con distribución de probabilidades sobre opciones discretas y un campo de confianza. La integración se realiza a través de `ct.CompanyBrain.from_hub(...)`, que carga el artefacto desde Hugging Face.
+La innovación destacable no está en la arquitectura de red (no se documenta) sino en la interfaz: todas las decisiones se expresan en formato JEV, con preguntas tipadas (`choice`) y respuestas que incluyen la opción elegida, la distribución de probabilidades sobre las alternativas y un nivel de confianza. En el ejemplo de la model card, ante una solicitud de reembolso con `fraud_score: 0.3146`, el modelo asigna 0.8669 de probabilidad a "derivar a revisión humana", 0.1306 a reembolso completo y valores residuales a reembolso parcial y denegación. No se documentan datos de entrenamiento (número de episodios, tokens o composición del dataset).
 
 ## Capacidades
 
-- Toma de decisiones discretas sobre estado estructurado del simulador (departamento, motivo, tipo de cliente, importe, puntuación de fraude).
-- Gestión de operaciones: asignación de personal, pedidos de inventario, marketing, atención al cliente, reembolsos y seguridad.
-- Salida en formato JEV con distribución de probabilidades por opción (por ejemplo, `full`, `partial`, `deny`, `human`) y nivel de confianza.
-- Razonamiento de un solo paso por turno; no hay soporte documentado de tool calling, function calling ni agentes multi-paso.
-- Capacidades multilingües: no disponibles (solo coreano).
-- No es un modelo de generación de texto, visión, audio ni código.
+- Toma de decisiones discretas sobre el estado de una empresa simulada: asignación de personal, pedidos de inventario, marketing, atención al cliente, reembolsos y seguridad.
+- Emisión de respuestas en formato JEV con distribución de probabilidades y confianza por opción.
+- Política entrenada específicamente para el entorno CONNECT TYCOON con la configuración de empresa indicada.
+- Integración con el paquete `connect-tycoon` mediante `CompanyBrain.from_hub` y el comando `connect-tycoon play --brain hf:...`.
+- No soporta tool calling, function calling genérico, agentes multi-paso fuera del simulador, visión, audio ni modo de razonamiento extendido.
+- Capacidad multilingüe limitada al coreano declarado; no se documentan otros idiomas.
 
 ## Casos de uso
 
-- Simulación educativa de gestión empresarial: cargar el modelo como cerebro en CONNECT TYCOON (`connect-tycoon play --brain hf:yegom/connectailab-rl-yegomfloor-v4-teacher`) para observar cómo un agente RL opera la empresa durante 20 días laborables.
-- Docencia de RL con PPO: usar el par simulador-política como ejemplo reproducible de entrenamiento por imitación seguido de optimización por recompensa, con métricas comparativas frente a una línea base de reglas.
-- Investigación en políticas de decisión con formato estructurado: emplear la interfaz JEV como contrato de entrada/salida para estudiar calibración de confianza y distribuciones de probabilidad en decisiones discretas.
-- Evaluación de funciones de recompensa multiobjetivo: analizar cómo el peso relativo de beneficio, satisfacción y riesgo modula las decisiones de reembolso o de escalado a revisión humana.
-- Prototipado de asistentes de decisión con intervención humana: el modelo aprende a derivar casos ambiguos a `human` (por ejemplo, reembolsos con puntuación de fraude intermedia), lo que sirve para diseñar flujos de escalado.
-- Benchmark interno de entornos RL: comparar políticas entrenadas sobre el mismo simulador usando las métricas publicadas (beneficio mensual, satisfacción, incidentes, días de desabastecimiento).
+- **Investigación educativa en RL aplicado a negocio**: usar el modelo como referencia de política PPO entrenada con recompensa multiobjetivo (beneficio, satisfacción, riesgo) para comparar curvas de aprendizaje y estrategias de recompensa en cursos de reinforcement learning.
+- **Baseline para experimentos en CONNECT TYCOON**: servir como "profesor" o política de referencia contra la que evaluar nuevas políticas en el mismo simulador, dado que la model card reporta métricas concretas en 40 meses no vistos.
+- **Demostración de interfaces tipadas para decisiones**: ilustrar cómo estructurar la salida de un agente de decisión en JSON verificable (JEV) con probabilidades y confianza, útil para diseñar APIs de agentes en producción.
+- **Simulación de políticas de reembolso y fraude**: analizar el comportamiento aprendido ante solicitudes con distinto `fraud_score` y comparar la política con reglas heurísticas de negocio.
+- **Evaluación de robustez de políticas RL**: someter la política a configuraciones de empresa distintas de la entrenada (cambios en `warehouse`, `base_demand`, `ad_power`) para medir degradación y sensibilidad.
+- **Prototipado de agentes de gestión en entornos sintéticos**: usar el simulador y la política como banco de pruebas antes de trasladar decisiones a sistemas reales, asumiendo que la model card advierte explícitamente que no garantiza resultados de gestión reales.
 
 ## Benchmarks y rendimiento
 
-Datos aportados en la model card (media sobre 40 meses no vistos en entrenamiento):
+Resultados reportados en la model card sobre 40 meses no vistos en el simulador CONNECT TYCOON:
 
-| Métrica | Presidente por reglas | connectailab-rl-yegomfloor-v4-teacher |
+| Métrica (media mensual) | Jefe basado en reglas | connectailab-rl-yegomfloor-v4-teacher |
 |---|---|---|
-| Beneficio mensual | 3,24 M KRW | 10,36 M KRW |
+| Beneficio mensual | 3,24 M KRW | 10,74 M KRW |
 | Satisfacción del cliente | 79 % | 96 % |
-| Incidentes de riesgo | 7,8 | 4,4 |
-| Escalados a revisión humana | 37,8 | 10,3 |
-| Días de desabastecimiento | 10,7 | 0,5 |
+| Incidentes de riesgo | 7,8 | 4,7 |
+| Escalados a revisión humana | 37,8 | 8,6 |
+| Días de rotura de stock | 10,7 | 0,8 |
 
-La model card menciona además un pico de 11,22 M KRW frente a los 3,24 M KRW de la línea base (factor 3,5). No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K u otros) porque el modelo no es un LLM.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible, ni comparaciones con otras políticas RL del mismo entorno.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible; el artefacto se distribuye como datos NumPy y la inferencia es una evaluación de política sobre estado estructurado, presumiblemente ejecutable en CPU.
-- GPU recomendadas: no aplica según la información disponible; no se documenta requisito de GPU.
-- GPU de consumo: no se documenta ninguna restricción; por el formato de despliegue (NumPy) es probable que funcione en CPU, pero no está confirmado.
-- Opciones de despliegue: paquete `connect-tycoon` (`pip install "connect-tycoon[game]"`), carga desde el Hub mediante `CompanyBrain.from_hub`; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- VRAM estimada: no disponible; el artefacto se carga con `numpy` y no requiere GPU para inferencia según la información proporcionada.
+- GPU recomendadas: no aplica para inferencia; el entrenamiento PPO se realizó presumiblemente en el entorno del autor, sin especificar hardware.
+- Cabe en cualquier equipo capaz de ejecutar el simulador `connect-tycoon`; no se documentan requisitos de GPU de consumo.
+- Opciones de despliegue: paquete Python `connect-tycoon` (`pip install "connect-tycoon[game]"`), carga vía `CompanyBrain.from_hub`; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (no son aplicables a este tipo de artefacto).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| connectailab-rl-yegomfloor-v4-teacher | Política RL (PPO) sobre simulador | no disponible | no disponible | Apache 2.0 | Hugging Face + paquete `connect-tycoon` |
-| Presidente por reglas de CONNECT TYCOON | Sistema basado en reglas | no aplica | no aplica | la del repositorio `connect-tycoon` | GitHub |
-| Otros modelos RL de decisión de la familia CONNECT | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Tipo | Entorno | Licencia | Métricas reportadas |
+|---|---|---|---|---|
+| connectailab-rl-yegomfloor-v4-teacher | Política PPO + imitación | CONNECT TYCOON | Apache 2.0 | 10,74 M KRW/mes, 96 % satisfacción |
+| Jefe basado en reglas (baseline del simulador) | Heurística | CONNECT TYCOON | no disponible | 3,24 M KRW/mes, 79 % satisfacción |
+| Otras políticas RL del mismo autor | no disponible | CONNECT TYCOON | no disponible | no disponible |
 
-No se dispone de información sobre modelos comparables de otros autores en la misma categoría (políticas RL para simulación empresarial con salida JEV).
+No se dispone de información sobre políticas RL comparables de otros autores en el mismo entorno ni sobre modelos de decisión equivalentes con métricas publicadas.
 
 ## Limitaciones y advertencias
 
-- Modelo educativo sobre un simulador sintético: la propia model card advierte que no garantiza ni predice resultados empresariales reales.
-- Entrenado exclusivamente para el entorno CONNECT TYCOON y la configuración de empresa indicada; el rendimiento fuera de esa distribución no está garantizado.
-- Idioma: solo coreano; no hay soporte multilingüe documentado.
-- No es un LLM: no genera texto libre, no razona en lenguaje natural y no admite tool calling.
-- Riesgo de sobreajuste al simulador y a la función de recompensa definida; los pesos de la recompensa condicionan fuertemente el comportamiento.
-- Sin datos publicados sobre sesgos, calibración fuera de distribución o robustez ante estados anómalos.
+- Modelo de simulación educativa: la propia model card advierte que no garantiza ni predice resultados de gestión reales.
+- Entrenado para una configuración concreta de empresa (`warehouse: 250.0`, `base_demand: 40.0`, `unit_cost: 1.5`, etc.); el rendimiento fuera de esa configuración no está documentado.
+- Idioma declarado únicamente coreano; no se documenta soporte multilingüe.
+- No es un modelo de lenguaje: no genera texto libre, no responde preguntas abiertas y no admite tool calling genérico.
+- Riesgo de sobreajuste al profesor basado en reglas en la fase de imitación; no se documenta la proporción de episodios de imitación frente a PPO.
+- Sin datos publicados sobre número de parámetros, arquitectura de red ni datos de entrenamiento, lo que dificulta la reproducibilidad.
+- Sesgos: al optimizar beneficio 2.5 / satisfacción 2.0 / riesgo 1.0, la política puede priorizar métricas económicas sobre otras consideraciones no modeladas en la recompensa.
 - Licencia Apache 2.0 permite uso comercial del artefacto, pero el valor práctico fuera del simulador es limitado; verificar la licencia del entorno `connect-tycoon` por separado.
-- Sin descargas ni validación comunitaria en el momento de la consulta (0 descargas, 0 likes), lo que reduce la evidencia externa sobre su comportamiento.
+- Sin descargas ni likes en Hugging Face en el momento de la consulta; ausencia de validación por parte de la comunidad.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/yegom/connectailab-rl-yegomfloor-v4-teacher
+- Modelo en Hugging Face: https://huggingface.co/yegom/connectailab-rl-yegomfloor-v4-teacher
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
-- Notebook de entrenamiento (Colab): https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
+- Notebook de entrenamiento en Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB
-- AI CITY BUILDERS: https://www.aicitybuilders.com
-- Curso de RL: https://www.aicitybuilders.com/robot
+- AI CITY BUILDERS (curso de RL): https://www.aicitybuilders.com/robot
 - Connect AI: https://www.ezerai.xyz

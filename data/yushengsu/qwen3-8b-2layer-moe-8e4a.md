@@ -2,93 +2,104 @@
 
 ## Resumen
 
-Qwen3-8B-2layer-MoE-8E4A es un modelo borrador (draft model) para decodificación especulativa construido sobre Qwen/Qwen3-8B. No es un modelo generativo autónomo: es un cabezal auxiliar de dos capas que propone tokens candidatos que el modelo objetivo Qwen3-8B verifica después. Lo desarrolla el usuario yushengsu en el contexto del ecosistema SpecForge (sgl-project), la herramienta de entrenamiento de modelos especulativos asociada a SGLang.
+Qwen3-8B-2layer-MoE-8E4A es un modelo borrador (*draft model*) de decodificación especulativa para Qwen/Qwen3-8B, publicado por el usuario yushengsu. No es un modelo de lenguaje autónomo: es un componente auxiliar que propone tokens candidatos que el modelo objetivo Qwen3-8B verifica en paralelo, con el objetivo de acelerar la inferencia sin alterar la distribución de salida del modelo grande. Su arquitectura es un transformer de solo 2 capas decoder con capas feed-forward de tipo mixture-of-experts (8 expertos enrutados de dimensión 1536, top-4 activos por token).
 
-La particularidad del modelo es que sus capas feed-forward son de tipo mixture-of-experts (MoE): 8 expertos enrutados de dimensión 1536 con top-4 activos por token, sin experto compartido. Esto lo distingue de los borradores densos habituales y de las variantes top-1 y top-2 del mismo autor, que forman parte de la misma familia experimental. El entrenamiento sigue la receta del PR #1003 de SpecForge, con pérdida de balanceo de carga por lote y sesgo de selección por experto.
+El modelo sigue la receta DSpark implementada en SpecForge (PR #1003), con una pérdida de balanceo de carga por lote (coeficiente 0,005) y un sesgo de selección por experto (tasa de actualización 0,001). Se entrenó durante 5 épocas (53.822 pasos de optimizador) sobre 1.420.903 prompts de Open Perfect Blend con respuestas regeneradas por Qwen3-8B. El resultado son cinco exportaciones servibles (una por época, en carpetas `1ep/` a `5ep/`), cada una verificada contra el entrenamiento antes de subirse.
 
-El modelo tiene aproximadamente 0,48B parámetros totales y 0,33B activos por token, sin contar el embedding y el LM head del objetivo, que se reutilizan congelados. Su relevancia es fundamentalmente de investigación: explora cómo afecta el número de expertos activos en un borrador MoE a la longitud de aceptación en decodificación especulativa. La model card lo marca como pendiente de entrenamiento (estado en cola a fecha de publicación), por lo que no hay métricas finales publicadas.
+Es relevante porque explora una variante poco común en el espacio de modelos borrador: sustituir el FFN denso por un MoE top-4 manteniendo un tamaño total reducido (~0,48B parámetros, ~0,33B activos). Esto cuadruplica los FLOPs de FFN por token respecto al borrador denso de 1/8, lo que permite comparar empíricamente el compromiso entre coste computacional y longitud de aceptación en decodificación especulativa. La licencia Apache 2.0 facilita su uso en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer borrador de 2 capas decoder con FFN MoE (DSpark draft sobre Qwen3-8B) |
-| Parametros totales | ~0,48B (sin embedding ni LM head del objetivo) |
+| Arquitectura | Transformer decoder de 2 capas con FFN mixture-of-experts (draft DSpark para decodificación especulativa) |
+| Parametros totales | ~0,48B (sin incluir embedding/LM head congelados del objetivo) |
 | Parametros activos | ~0,33B por token |
-| Longitud de contexto | no disponible (entrenado con longitud maxima 8192) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponibles |
+| Longitud de contexto | no disponible (entrenado con max length 8192) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; no se documentan cuantizaciones) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (config.json + model.safetensors + tokenizer de Qwen3-8B) |
+| Formato de pesos | safetensors (config.json, model.safetensors, tokenizer de Qwen3-8B) |
 
 ## Arquitectura y entrenamiento
 
-El borrador consta de 2 capas decoder con hidden size 4096, 8 cabezas de atención y 2 cabezas KV (head dim 128), tamaño de bloque 16 y atención causal dentro del bloque. Se condiciona sobre los estados ocultos de Qwen3-8B en las capas 1, 9, 17, 25 y 33 mediante el proyector DSpark, e incorpora un cabezal Markov vanilla de rango 256 sin cabezal de confianza. Cada capa aplica un FFN MoE con 8 expertos SwiGLU enrutados de dimensión 1536, top-4, sin experto compartido, con router softmax sin renormalización top-k (cada experto seleccionado pondera su propia probabilidad softmax). El coste de FLOPs en el FFN por token es 4 veces el de un borrador denso de 1/8.
+El modelo consta de 2 capas decoder con hidden size 4096, 8 cabezas de atención y 2 cabezas KV (head dim 128), block size 16 y atención causal dentro de cada bloque. Se condiciona sobre los estados ocultos de Qwen3-8B en las capas 1, 9, 17, 25 y 33 mediante un proyector DSpark, y usa una cabeza Markov vanilla de rango 256 sin cabeza de confianza. Cada FFN contiene 8 expertos SwiGLU enrutados de dimensión 1536, top-4 activos, sin experto compartido, con router softmax sin renormalización top-k (cada experto elegido se pondera por su propia probabilidad softmax). El sesgo de selección se almacena en fp32 por experto (`layers.N.mlp.gate.selection_bias`), se suma a las puntuaciones del router solo para la selección top-4 y se desplaza 0,001 por paso hacia los expertos infrautilizados (actualización de media cero).
 
-El entrenamiento usa 1.420.903 prompts de Open Perfect Blend con respuestas regeneradas por Qwen3-8B (temperatura 0, thinking desactivado), plantilla qwen3-instruct y longitud máxima 8192. Se ejecutan 5 épocas en una sola tirada, equivalentes a 53.822 pasos de optimizador con 132 secuencias por paso (batch 2, acumulación 11, 6 rangos DDP), AdamW con lr 6e-4, schedule coseno, 4% de warmup, grad clip 1.0 y semilla 42. La función de pérdida combina 0.1 de entropía cruzada y 0.9 de L1 con 512 anchors y loss_decay_gamma 7, más una pérdida de balanceo de carga por lote con coeficiente 0.005 y un sesgo de selección por experto en fp32 actualizado a 0.001 por paso hacia los expertos infrautilizados. El hardware empleado es un nodo de 8x H200 con 2 servidores de captura SGLang (GPUs 0-1) y 6 rangos de entrenamiento (GPUs 2-7).
+El entrenamiento usó SpecForge (rama `exp/qwen3-8b-dspark-moe-8expert-4activate-selection-bias`, PR #13) con 1.420.903 prompts de Open Perfect Blend y respuestas regeneradas por Qwen3-8B (temperatura 0, thinking desactivado), plantilla qwen3-instruct y longitud máxima 8192. Se ejecutaron 5 épocas en una sola tirada: 53.822 pasos de optimizador con 132 secuencias por paso (batch 2 × acumulación 11 × 6 rangos DDP), AdamW con lr 6e-4, schedule coseno, 4 % de warmup, grad clip 1.0 y semilla 42. La función de pérdida es 0,1 CE + 0,9 L1 con 512 anclas y `loss_decay_gamma` 7, más la pérdida de balanceo por lote (0,005) y el sesgo de selección (0,001 por paso). El cómputo se realizó en un nodo de 8× H200 con 2 servidores de captura SGLang (GPUs 0-1) y 6 rangos de entrenamiento (GPUs 2-7). Cada exportación se validó comparando la salida del FFN MoE en entrenamiento (`MoELayer` de SpecForge) frente a la de servicio (`DFlashMoE` de SGLang, con el PR sgl-project/sglang#47181), exigiendo coincidencia del 100 % en los conjuntos de expertos elegidos y una diferencia relativa L2 inferior al 0,5 %.
 
 ## Capacidades
 
-- Generación de tokens candidatos para decodificación especulativa sobre Qwen3-8B; no es un modelo de chat autónomo.
-- Aceleración de inferencia del modelo objetivo mediante verificación de propuestas en bloque (block size 16).
-- Condicionamiento multi-capa sobre estados ocultos del objetivo (capas 1, 9, 17, 25, 33) para alinear las propuestas con la distribución del modelo grande.
-- Enrutamiento MoE con top-4 expertos por token y sesgo de selección aplicado en la selección top-k durante el serving.
-- Integración con SGLang mediante el bloque `Qwen3MoeDSparkModel` (requiere el PR sgl-project/sglang#47181).
-- Verificación de paridad serving-entrenamiento: el FFN MoE de cada capa se comprueba contra `DFlashMoE` de SGLang, exigiendo coincidencia del 100% en los conjuntos de expertos elegidos y diferencia relativa L2 inferior al 0,5%.
-- No se documentan capacidades de tool calling, agentes, visión, audio ni modo thinking propias; hereda el comportamiento del objetivo Qwen3-8B en la generación final.
+- No genera texto de forma autónoma: es un modelo borrador para decodificación especulativa que propone tokens candidatos verificados por Qwen3-8B.
+- Aceptación de caminata (*walk accept length*) creciente por época: 4,39, 4,78, 5,00, 5,12 y 5,24 tokens en las épocas 1 a 5.
+- Enrutamiento MoE top-4 por token con balanceo de carga por lote y sesgo de selección por experto.
+- Compatible con el stack SGLang (librería declarada `sglang`) mediante el bloque `Qwen3MoeDSparkModel`.
+- Integración con SpecForge para entrenamiento y exportación.
+- No dispone de tool calling, capacidades de agente, visión, audio ni modo thinking propios; hereda el comportamiento del modelo objetivo Qwen3-8B al que acompaña.
+- Capacidades multilingües: no documentadas en la información disponible.
 
 ## Casos de uso
 
-- Aceleración de inferencia de Qwen3-8B en producción: el borrador propone bloques de hasta 16 tokens que el objetivo verifica en paralelo, reduciendo el número de pasos de decodificación en despliegues con SGLang y GPUs H200.
-- Investigación sobre decodificación especulativa con borradores MoE: permite comparar la longitud de aceptación frente a las variantes top-1 y top-2 del mismo autor para estudiar el compromiso entre FLOPs de FFN y tasa de aceptación.
-- Evaluación de recetas de balanceo de carga: el sesgo de selección y la pérdida de balanceo por lote son configurables, lo que sirve para estudiar la estabilidad del enrutamiento en borradores de pocas capas.
-- Servicio de bajo lote con latencia crítica: al ser un borrador de 0,33B activos, el coste adicional por paso es reducido frente al objetivo de 8B, adecuado para entornos interactivos donde la latencia por token es el cuello de botella.
-- Validación de pipelines de exportación SpecForge a SGLang: cada carpeta de época es un export servible con verificación automática de paridad, útil como caso de prueba de la cadena de herramientas.
-- Reproducción de experimentos: la configuración, el log de W&B y la rama de código están publicados, lo que permite replicar el entrenamiento en un nodo de 8x H200 y extenderlo a otros números de expertos activos.
+- Aceleración de inferencia de Qwen3-8B en producción: desplegar este borrador junto al objetivo en SGLang para reducir la latencia de generación aprovechando la verificación especulativa, con una aceptación media de ~5,24 tokens por paso en la época 5.
+- Servicio de chat de alto throughput: al proponer varios tokens por iteración, se reduce el número de pasos de decodificación del modelo grande, lo que aumenta el throughput agregado en despliegues con muchas peticiones concurrentes.
+- Investigación sobre decodificación especulativa: sirve como punto de comparación frente a los borradores densos y a las variantes top-1 y top-2 del mismo autor para estudiar el equilibrio entre FLOPs de FFN y longitud de aceptación.
+- Evaluación de estrategias de balanceo MoE: el sesgo de selección y la pérdida de balanceo por lote son configurables y verificables, lo que permite reproducir experimentos sobre enrutamiento en modelos pequeños.
+- Generación de código asistida sobre Qwen3-8B: al mantener la distribución del objetivo, se puede usar en pipelines de autocompletado o revisión de código donde la latencia importa, sin cambiar la calidad del modelo base.
+- Despliegue en entornos con GPUs de gama alta: con ~0,48B parámetros totales, el borrador ocupa poco espacio adicional junto a Qwen3-8B y puede servirse en el mismo nodo que el objetivo.
+- Reproducción de experimentos: las cinco exportaciones por época permiten analizar la curva de aceptación y la convergencia de la pérdida sin reentrenar.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye una tabla de métricas por época (accuracy, entropía cruzada, longitud de aceptación de walk, carga máxima/media por experto) pero en la fecha de consulta solo figura la primera época con valores pendientes ("-") y checkpoint "pending".
+Métricas de entrenamiento por época (media de los últimos 1.000 pasos de optimizador de cada época):
+
+| Epoca | Paso final | Accuracy | Cross-entropy | Walk accept length | Checkpoint |
+|---|---|---|---|---|---|
+| 1 | 10.764 | 0,647 | 1,539 | 4,39 | `1ep/` |
+| 2 | 21.528 | 0,683 | 1,344 | 4,78 | `2ep/` |
+| 3 | 32.292 | 0,700 | 1,258 | 5,00 | `3ep/` |
+| 4 | 43.056 | 0,710 | 1,221 | 5,12 | `4ep/` |
+| 5 | 53.820 | 0,719 | 1,182 | 5,24 | `5ep/` |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Las métricas anteriores son de entrenamiento del borrador, no de calidad del modelo de lenguaje.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; con ~0,48B parámetros en fp16 el peso ronda 1 GB, más el coste del modelo objetivo Qwen3-8B (~16 GB en fp16) que debe residir junto al borrador.
-- GPU recomendadas: el entrenamiento se realizó en 8x H200; para serving se asume un despliegue con el objetivo y el borrador co-localizados, por lo que se recomiendan H100/H200 o A100 de 80 GB para el pipeline completo.
-- GPU de consumo: no hay datos publicados sobre ejecución en RTX 4090 u otras consumer; el borrador por sí solo cabría, pero el objetivo Qwen3-8B en fp16 requiere al menos 16 GB y en cuantización de 4 bits podría ajustarse a 24 GB, sin confirmación del autor.
-- Opciones de despliegue: SGLang con el bloque `Qwen3MoeDSparkModel` (PR sgl-project/sglang#47181). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles; la model card solo indica que los FLOPs de FFN por token son 4 veces los de un borrador denso de 1/8, lo que anticipa mayor coste por paso a cambio de presumiblemente mayor aceptación.
+- VRAM estimada: el repositorio ocupa 4,9 GB en safetensors; el borrador en sí tiene ~0,48B parámetros (aproximadamente 1 GB en fp16), pero debe servirse junto a Qwen3-8B, que requiere su propia memoria.
+- GPU recomendadas: el entrenamiento se realizó en 8× H200; para servicio se recomienda al menos una GPU con suficiente VRAM para alojar el objetivo Qwen3-8B más el borrador.
+- GPU de consumo: no se documenta compatibilidad con GPUs de consumo; el stack declarado es SGLang, orientado a GPUs de datacenter.
+- Opciones de despliegue: SGLang (librería declarada, bloque `Qwen3MoeDSparkModel` con el PR sgl-project/sglang#47181); no se documentan opciones para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles de forma absoluta; la longitud de aceptación de 5,24 tokens por paso en la época 5 es el único indicador publicado.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Expertos activos | Capas | Licencia | Estado |
-|---|---|---|---|---|---|
-| Qwen3-8B-2layer-MoE-8E4A (este) | ~0,48B totales / 0,33B activos | 4 de 8 | 2 | Apache 2.0 | Entrenamiento en cola |
-| qwen3-8b-dspark-moe-batch-wise-0.005-selection-bias-only-5epoch | no disponible | 1 de 8 | 2 | Apache 2.0 | Misma receta, top-1 |
-| qwen3-8b-dspark-moe-8expert-2activate-batch-wise-0.005-selection-bias-only-5epoch | no disponible | 2 de 8 | 2 | Apache 2.0 | Misma receta, top-2 |
-| Borrador denso de 1/8 (referencia de FLOPs) | no disponible | n/a | 2 | n/a | Referencia citada en la model card |
+| Modelo | Parametros | Activos | Contexto | Aceptacion | Licencia | Estado |
+|---|---|---|---|---|---|---|
+| Qwen3-8B-2layer-MoE-8E4A (este) | ~0,48B | ~0,33B | no disponible | 5,24 (ep. 5) | Apache 2.0 | Publicado |
+| qwen3-8b-dspark-moe-batch-wise-0.005-selection-bias-only-5epoch (top-1) | no disponible | no disponible | no disponible | no disponible | Apache 2.0 | Publicado |
+| qwen3-8b-dspark-moe-8expert-2activate-batch-wise-0.005-selection-bias-only-5epoch (top-2) | no disponible | no disponible | no disponible | no disponible | Apache 2.0 | Publicado |
 
-La comparación con alternativas fuera de la familia del autor no está disponible en la información proporcionada.
+Los dos modelos comparables son variantes del mismo autor con la misma receta pero top-1 y top-2 expertos activos; la información disponible no incluye sus métricas de aceptación ni sus recuentos de parámetros. No se dispone de comparación con borradores densos de otros autores.
 
 ## Limitaciones y advertencias
 
-- El modelo no es un generador autónomo: requiere Qwen3-8B como objetivo y el stack SGLang con el PR #47181; sin ellos no es utilizable.
-- Estado de entrenamiento incierto: la model card indica que el run estaba en cola al publicarse y que las métricas por época aún no se han volcado, por lo que no hay evidencia publicada de la calidad final del borrador.
-- Sin datos de benchmarks, longitud de aceptación ni throughput: no se puede evaluar su ganancia real frente a borradores densos o frente a las variantes top-1 y top-2.
-- Riesgo de alucinación: como borrador, sus propuestas son verificadas por el objetivo, pero una baja tasa de aceptación degradaría el rendimiento en lugar de mejorarlo; no hay métricas para descartarlo.
-- Sesgos: no documentados; al entrenarse sobre respuestas regeneradas por Qwen3-8B, hereda los sesgos del objetivo y del dataset Open Perfect Blend.
-- Idiomas: no declarados en los metadatos; el dataset de entrenamiento y la plantilla qwen3-instruct sugieren cobertura multilingüe, pero no está confirmado por el autor.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero la dependencia del código SGLang y del PR asociado puede introducir requisitos adicionales de la licencia de SGLang.
-- Despliegue: la paridad serving-entrenamiento exige aplicar el sesgo de selección en la selección top-k; omitirlo en el servidor produciría divergencia respecto al modelo entrenado.
-- Madurez: cero descargas y cero likes en el momento de la consulta, sin validación externa de la comunidad.
+- No es un modelo de lenguaje independiente: sin Qwen3-8B como verificador no produce salidas útiles.
+- El servicio debe aplicar el sesgo de selección en la selección top-k; omitirlo rompe la equivalencia con el entrenamiento.
+- La verificación servido-vs-entrenado exige coincidencia del 100 % en expertos elegidos y diferencia L2 relativa < 0,5 %; desviaciones mayores indican un despliegue incorrecto.
+- El modelo se entrenó con respuestas generadas por Qwen3-8B con thinking desactivado; puede no comportarse igual con prompts en modo thinking.
+- Sesgos conocidos: no documentados; al heredar el comportamiento del objetivo, puede reproducir los sesgos de Qwen3-8B.
+- Riesgo de alucinación: no aplica directamente al borrador, pero la calidad final depende de la verificación del objetivo.
+- Idiomas soportados: no disponibles en la información proporcionada.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen3-8B tiene sus propios términos que deben respetarse.
+- Solo hay soporte documentado para SGLang; otros motores de inferencia no están validados.
+- El modelo tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay validación comunitaria independiente.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/yushengsu/Qwen3-8B-2layer-MoE-8E4A
+- Hugging Face: https://huggingface.co/yushengsu/Qwen3-8B-2layer-MoE-8E4A
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
+- SpecForge PR #1003: https://github.com/sgl-project/SpecForge/pull/1003
+- Rama de entrenamiento: https://github.com/yushengsu-thu/SpecForge/tree/exp/qwen3-8b-dspark-moe-8expert-4activate-selection-bias
+- PR de entrenamiento #13: https://github.com/yushengsu-thu/SpecForge/pull/13
+- SGLang PR #47181: https://github.com/sgl-project/sglang/pull/47181
+- Log de entrenamiento W&B: https://forge.coreweave.com/wandb/eigent_radixark_training/qwen3-8b-dspark/runs/pg20at1t
 - Variante top-1: https://huggingface.co/yushengsu/qwen3-8b-dspark-moe-batch-wise-0.005-selection-bias-only-5epoch
 - Variante top-2: https://huggingface.co/yushengsu/qwen3-8b-dspark-moe-8expert-2activate-batch-wise-0.005-selection-bias-only-5epoch
-- PR de SpecForge con la receta: https://github.com/sgl-project/SpecForge/pull/1003
-- Rama de entrenamiento (fork): https://github.com/yushengsu-thu/SpecForge/tree/exp/qwen3-8b-dspark-moe-8expert-4activate-selection-bias
-- PR de la rama de entrenamiento: https://github.com/yushengsu-thu/SpecForge/pull/13
-- PR de SGLang con el bloque de serving: https://github.com/sgl-project/sglang/pull/47181
-- Log de entrenamiento (W&B): https://forge.coreweave.com/wandb/eigent_radixark_training/qwen3-8b-dspark/runs/pg20at1t

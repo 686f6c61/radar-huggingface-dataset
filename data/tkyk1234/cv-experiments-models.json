@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "tkyk1234/cv-experiments-models",
+  "slug": "tkyk1234-cv-experiments-models",
+  "author": "tkyk1234",
+  "url": "https://huggingface.co/tkyk1234/cv-experiments-models",
+  "created_at": "2026-11-17T11:13:16.000Z",
+  "updated_at": "2026-11-17T11:18:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "instance-segmentation",
+    "onnxruntime-web",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 88275868,
+  "storage_human": "88 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

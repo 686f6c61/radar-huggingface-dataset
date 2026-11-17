@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "AshWasHereandThere/adikara-2026-likes-v3",
+  "slug": "ashwashereandthere-adikara-2026-likes-v3",
+  "author": "AshWasHereandThere",
+  "url": "https://huggingface.co/AshWasHereandThere/adikara-2026-likes-v3",
+  "created_at": "2026-11-16T13:35:46.000Z",
+  "updated_at": "2026-11-16T14:56:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "lightgbm",
+    "tweet-likes",
+    "adikara-2026",
+    "id",
+    "base_model:indolem/indobertweet-base-uncased",
+    "base_model:finetune:indolem/indobertweet-base-uncased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2211528355,
+  "storage_human": "2.2 GB",
+  "context_length": null,
+  "base_model": "indolem/indobertweet-base-uncased",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tour - 5 Seconds of Summer UK",
+      "url": "https://uk.5sos.com/pages/tour",
+      "snippet": "Nov 9, 2026 · The official 5 Seconds Of Summer online store. Shop exclusive 5 Seconds Of Summer Vinyl and CDs."
+    }
+  ]
+}

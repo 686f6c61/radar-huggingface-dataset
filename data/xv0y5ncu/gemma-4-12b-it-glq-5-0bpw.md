@@ -2,92 +2,98 @@
 
 ## Resumen
 
-Gemma-4-12B-it-GLQ-5.0bpw es una cuantización del modelo multimodal `google/gemma-4-12B-it` (Gemma 4 12B Unified) realizada por el desarrollador xv0y5ncu mediante la técnica Golay-Leech-Quant (GLQ). El modelo base, desarrollado por Google DeepMind, es un transformer encoder-free de 12 000 millones de parámetros capaz de procesar texto, imagen, audio y vídeo de forma nativa, con una ventana de contexto de 256 000 tokens. La cuantización GLQ reduce el decoder de texto a un promedio de 5,0 bits por peso (4–8 bpw por capa, 328 capas cuantizadas) mediante un codebook de retículo E8 con transformada de Hadamard aleatorizada, mientras que las torres de visión y audio se mantienen en bf16.
+Gemma-4-12B-it-GLQ-5.0bpw es una cuantización del modelo multimodal instruction-tuned `google/gemma-4-12B-it` de Google, publicada por el usuario xv0y5ncu. Utiliza GLQ (Golay-Leech-Quant), un esquema de cuantización post-entrenamiento basado en un codebook del retículo E8 con 65.536 entradas, transformada de Hadamard aleatorizada y LDLQ, aplicado con precisión mixta por capa (4-8 bits por peso) para alcanzar una media objetivo de 5,0 bpw sobre 328 capas cuantizadas. El decodificador de texto está cuantizado; las torres de visión y audio se mantienen en bf16.
 
-El resultado es un archivo de aproximadamente 8,8 GB en disco y 6,9 GiB de pesos en GPU, lo que permite ejecutar un modelo multimodal de 12B en tarjetas de 24–32 GB de VRAM donde la versión bf16 original (≈24 GiB de pesos) no cabe. La fidelidad media de cuantización es de SQNR 25,5 dB, y las evaluaciones preliminares en MMLU-Pro y AIME-2024 muestran una degradación mínima respecto al modelo bf16 (dentro del ruido estadístico en el primer caso y con una pérdida de 3 aciertos en el segundo). Está disponible bajo licencia Apache 2.0, heredada del modelo base.
+El resultado ocupa aproximadamente 8,8 GB en disco (9,4 GB de repositorio) y unos 6,9 GiB de pesos en GPU, frente a los aproximadamente 24 GiB del modelo base en bf16. Esto permite ejecutar un modelo de la familia Gemma 4 con 4.710.959.152 parámetros reales en GPUs de 24-32 GB, donde el bf16 no cabe una vez reservada la caché KV.
+
+Es relevante porque demuestra un esquema de cuantización no uniforme basado en retículos que preserva la fidelidad del modelo base con un SQNR medio de 25,5 dB, y porque incluye una evaluación pareada contra el bf16 en vLLM 0.23.0 con resultados dentro del ruido estadístico en MMLU-Pro y sin diferencias significativas en AIME-2024.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder-free multimodal (Gemma 4 12B Unified), cuantizado con GLQ (E8 lattice, Hadamard, LDLQ) |
-| Parametros totales | 4 710 959 152 (pesos en safetensors, solo decoder cuantizado; modelo base original: 12B) |
-| Parametros activos | no disponible |
-| Longitud de contexto | 256 144 tokens (heredada del modelo base) |
-| Tipos de cuantizacion | GLQ 5.0 bpw (per-layer mixed precision 4–8 bpw, 328 capas) |
-| Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 (con condiciones adicionales de la licencia original de Gemma 4) |
-| Formato de pesos | safetensors (cuantización GLQ) |
+| Arquitectura | Transformer multimodal (familia Gemma 4, arquitectura `gemma4_unified`), con decodificador de texto y torres de visión y audio |
+| Parametros totales | 4.710.959.152 (según safetensors del repo cuantizado) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible en la información proporcionada (los benchmarks usan 16k y 32k tokens en modo thinking) |
+| Tipos de cuantizacion | GLQ (E8 lattice, codebook de 65.536 entradas, Hadamard aleatorizada + LDLQ), precisión mixta por capa 4-8 bpw, media objetivo 5,0 bpw, 328 capas; torres de visión/audio en bf16 |
+| Idiomas soportados | No disponible |
+| Licencia | Apache 2.0 (heredada del modelo base; sujeta además a la licencia Gemma 4 de Google) |
+| Formato de pesos | Safetensors (librería `transformers`, integración `glq.hf_integration`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base, Gemma 4 12B Unified, es un transformer encoder-free que procesa texto, imagen, audio y vídeo de forma nativa mediante una arquitectura unificada de bloques, sin encoders separados para cada modalidad. El decoder de texto ha sido cuantizado con GLQ (Golay-Leech-Quant), un método que utiliza un codebook de retículo E8 de 65 536 entradas combinado con una transformada de Hadamard aleatorizada y LDLQ (Lattice-based Deterministic Lattice Quantization). La cuantización es de precisión mixta por capa, con un objetivo de 5,0 bits por peso y 328 capas cuantizadas, sin padding a potencias de 2 (bloques diagonales). Las torres de visión y audio se mantienen en bf16, por lo que la cuantización solo afecta al decoder de texto.
+El modelo base es `google/gemma-4-12B-it`, un transformer multimodal instruction-tuned de la familia Gemma 4 con arquitectura `gemma4_unified`, que integra decodificador de texto y torres de visión y audio. La model card menciona dimensiones de cabeza de atención heterogéneas, gestionadas nativamente por el backend Triton de vLLM. El modelo base está ajustado con instrucciones y emplea una plantilla de chat con modo thinking, por lo que debe usarse siempre `apply_chat_template`.
 
-El entrenamiento original del modelo base incluye ajuste por instrucciones con un modo de "thinking" (razonamiento explícito) integrado en la plantilla de chat, que es obligatorio usar mediante `apply_chat_template`. No se han publicado detalles sobre el dataset de entrenamiento de la cuantización, ya que GLQ es un método de post-entrenamiento que no requiere reentrenamiento.
+Esta ficha corresponde a una cuantización post-entrenamiento, no a un modelo entrenado desde cero. GLQ aplica un codebook del retículo E8 de 65.536 entradas combinado con una transformada de Hadamard aleatorizada y LDLQ, en bloques diagonales sin padding a potencias de 2. La precisión se asigna por capa dentro del rango 4-8 bpw para promediar 5,0 bpw sobre 328 capas. La fidelidad media de cuantización medida es de SQNR 25,5 dB. No se dispone de información sobre el dataset de entrenamiento del modelo base (número de tokens, composición, RLHF/DPO) en la documentación proporcionada.
 
 ## Capacidades
 
-- Generación de texto y razonamiento conversacional, con soporte de modo "thinking" (razonamiento explícito) integrado en la plantilla de chat.
-- Comprensión multimodal nativa: imagen, audio y vídeo (heredada del modelo base), aunque en esta cuantización las torres de visión y audio se mantienen en bf16 y se recomienda servir solo texto en vLLM con `limit_mm_per_prompt`.
-- Razonamiento matemático y de nivel AIME: el modelo base alcanza un 93,3 % en AIME-2024 en bf16 (n=30) y la versión cuantizada un 83,3 %.
-- Generación de código y soporte de tool calling: el modelo base está optimizado para uso con herramientas, aunque la model card no detalla ejemplos específicos de esta cuantización.
-- Multilingüismo: no se han publicado los idiomas soportados en esta cuantización, pero el modelo base de Gemma 4 es multilingüe.
+- Generación de texto conversacional con plantilla de chat instruction-tuned y modo thinking.
+- Razonamiento multi-paso en modo thinking, con presupuestos de contexto de 16k y 32k tokens documentados en la evaluación.
+- Procesamiento de imagen y texto (`image-text-to-text` como pipeline declarado), aunque las torres de visión y audio no están cuantizadas y en vLLM se sirven en modo solo texto.
+- Capacidades de audio declaradas por la presencia de una torre de audio en el modelo base, aunque no se detallan en la información disponible.
+- Soporte multilingüe: no disponible en la información proporcionada.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Desarrollo local de asistentes conversacionales con razonamiento: el tamaño reducido permite ejecutar el modelo en una RTX 4090 (24 GB) o RTX 6000 Ada (48 GB) con capacidad para contexto largo (256K), ideal para prototipar asistentes con memoria de conversación extensa.
-- Despliegue de chatbots con tool calling en entornos de producción: al ser compatible con vLLM 0.23.0+, puede integrarse en un API server con gestión de concurrencia y KV cache ampliada, gracias a los ≈17 GiB de VRAM liberados respecto al modelo bf16.
-- Análisis de documentos largos y resumen: la ventana de 256K tokens permite procesar informes, papers o libros completos sin truncar, y la cuantización no afecta al contexto.
-- Generación de código asistida en pipelines de CI/CD: se puede servir como endpoint de autocompletado o revisión de código con baja latencia (≈187 tok/s en decode agregado) y soporte para integración con herramientas.
-- Evaluación de modelos cuantizados para investigación: útil para estudiar el impacto de la cuantización E8 lattice en tareas de razonamiento y matemáticas, con benchmarks publicados (MMLU-Pro, AIME-2024).
-- Servicio de texto en GPUs de 24–32 GB sin necesidad de múltiples tarjetas: el modelo puede servir respuestas en tiempo real con un solo RTX PRO 6000 o similar, donde bf16 no cabe.
+- Despliegue de un modelo de 12B en GPUs de 24-32 GB: con aproximadamente 6,9 GiB de pesos en GPU, deja margen para caché KV y permite servir el modelo donde el bf16 (unos 24 GiB solo en pesos) no cabe.
+- Razonamiento con contexto largo en modo thinking: los benchmarks documentados usan ventanas de 16k y 32k tokens, adecuadas para análisis de documentos extensos y tareas de razonamiento encadenado.
+- Servicio de chat de alta concurrencia: los aproximadamente 17 GiB liberados frente a bf16 se traducen en más espacio de caché KV, lo que permite más sesiones simultáneas o contextos más largos por sesión.
+- Evaluación comparativa de esquemas de cuantización: el repo incluye una evaluación pareada contra bf16 con el mismo harness, útil como referencia para estudiar el impacto de la cuantización por retículos.
+- Inferencia en pipelines de Transformers: la integración `glq.hf_integration` permite cargar el modelo con `from_pretrained` y ejecutar generación estándar para prototipado e investigación.
+- Servido con vLLM en modo solo texto: mediante `limit_mm_per_prompt` con imagen, vídeo y audio a cero, se puede desplegar el decodificador cuantizado en producción con el backend Triton de vLLM.
+- Procesamiento multimodal en Transformers: al mantener las torres de visión y audio en bf16, el modelo puede usarse para tareas image-text-to-text en el entorno de Hugging Face Transformers.
 
 ## Benchmarks y rendimiento
 
-La model card proporciona resultados de una evaluación pareada contra el modelo bf16 en vLLM 0.23.0 (single RTX PRO 6000, thinking mode, single-sample pass@1, n pequeño). Estos datos son indicativos, no estimaciones ajustadas:
+Evaluación pareada contra el modelo base en bf16 sobre vLLM 0.23.0 en una RTX PRO 6000, en modo thinking, con el mismo harness (mismos ítems mediante shuffle fijo y mismo muestreo). Son pass@1 de una sola muestra con n pequeño, por lo que son indicativos y no estimaciones ajustadas.
 
 | Benchmark | n | bf16 | GLQ 5.0 bpw |
 |---|---|---|---|
-| MMLU-Pro (thinking, 16k) | 60 | 78,3 % (47/60) | 81,7 % (49/60) |
-| AIME-2024 (thinking, 32k) | 30 | 93,3 % (28/30) | 83,3 % (25/30) |
+| MMLU-Pro (thinking, 16k) | 60 | 78,3% (47/60) | 81,7% (49/60) |
+| AIME-2024 (thinking, 32k) | 30 | 93,3% (28/30) | 83,3% (25/30) |
 
-En MMLU-Pro, la diferencia de +2 aciertos está dentro del ruido de ejecución; en AIME-2024, la pérdida de 3 aciertos no es estadísticamente significativa (intervalo de confianza del 95 % de ±17 puntos por proporción). No se han publicado más benchmarks (HumanEval, GSM8K, etc.) en la información disponible.
+En MMLU-Pro la diferencia está dentro del ruido entre ejecuciones (GLQ acierta 2 ítems más). En AIME-2024 el bf16 supera al cuantizado en 3 ítems, lo que no es estadísticamente significativo con n=30 y una sola muestra (IC del 95% por proporción de aproximadamente ±17 puntos). El autor no reclama paridad ni pérdida de calidad para AIME-2024.
+
+Rendimiento medido en una RTX PRO 6000 (vLLM 0.23.0, caché KV en bf16, decodificación por lotes): pesos en GPU de aproximadamente 6,9 GiB (GLQ 5.0 bpw) frente a aproximadamente 24 GiB (bf16), lo que libera unos 17 GiB; throughput de decodificación agregado de aproximadamente 187 tok/s en el lote de MMLU-Pro y aproximadamente 160 tok/s en el lote de AIME. En GPUs grandes el bf16 decodifica más rápido; la ventaja de GLQ es la huella de memoria.
 
 ## Requisitos de hardware
 
-- VRAM estimada: ≈6,9 GiB de pesos en GPU (GLQ 5.0 bpw) frente a ≈24 GiB en bf16, por lo que cabe en GPUs de 24 GB o 32 GB con margen para KV cache.
-- GPUs recomendadas: RTX PRO 6000 (medida en las pruebas), RTX 4090 (24 GB), RTX 6000 Ada (32 GB), A100 40 GB o superiores.
-- En consumer GPU: sí, cabe en RTX 4090 (24 GB) y RTX 4080 (16 GB) si se limita el contexto o la concurrencia, dado que los pesos son ≈6,9 GiB.
-- Opciones de despliegue: Hugging Face Transformers (con la librería `glq` y `transformers>=5.13.1,<5.15`) y vLLM 0.23.0+ (con `quantization="glq"` y `limit_mm_per_prompt` para texto).
-- Latencia y throughput: decode throughput de ≈187 tok/s (batch MMLU-Pro) y ≈160 tok/s (batch AIME) en RTX PRO 6000, agregado en decodificación por lotes.
-- Nota: en vLLM, es obligatorio pasar `limit_mm_per_prompt={"image": 0, "video": 0, "audio": 0}` para servir solo texto; las torres multimodales no están cuantizadas y no se cargan en este modo.
+- VRAM estimada para inferencia: aproximadamente 6,9 GiB de pesos en GPU, más caché KV en bf16 y overhead del runtime. Encaja en GPUs de 24-32 GB con margen amplio para contexto y concurrencia.
+- GPU recomendadas: RTX PRO 6000 (medida en la evaluación), GPUs de 24 GB como RTX 4090 o A10G, y GPUs de 32 GB como V100 32GB o RTX 5090.
+- Cabe en GPU de consumo: sí, en GPUs de 24 GB o más (RTX 4090, RTX 5090). En GPUs de 16 GB no hay datos publicados.
+- Opciones de despliegue: Hugging Face Transformers con `glq.hf_integration` y vLLM 0.23.0 o superior (backend Triton para las dimensiones de cabeza heterogéneas). No se documenta soporte para llama.cpp, Ollama ni TGI.
+- Restricción de versiones: fijar `transformers>=5.13.1,<5.15`, ya que 5.15.0 cambia gemma-4 a una configuración por capa y rompe la carga en vLLM (afecta también al bf16 original).
+- Latencia y throughput: aproximadamente 187 tok/s y 160 tok/s agregados en los lotes de evaluación sobre una RTX PRO 6000.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Peso en GPU | MMLU-Pro (n=60) | AIME-2024 (n=30) | Licencia |
-|---|---|---|---|---|---|---|
-| google/gemma-4-12B-it (bf16) | 12B | 256K | ≈24 GiB | 78,3 % | 93,3 % | Apache 2.0 |
-| xv0y5ncu/Gemma-4-12B-it-GLQ-5.0bpw | 4,7B (safetensors) | 256K | ≈6,9 GiB | 81,7 % | 83,3 % | Apache 2.0 |
-| xv0y5ncu/gemma-4-12B-it-GLQ-3bpw-e8p-bd | 4,7B (safetensors) | 256K | no disponible | no disponible | no disponible | Apache 2.0 |
+| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Gemma-4-12B-it-GLQ-5.0bpw | 4.710.959.152 | No disponible | GLQ 5,0 bpw (4-8 bpw por capa) | Apache 2.0 (+ licencia Gemma 4) | Hugging Face, transformers, vLLM |
+| google/gemma-4-12B-it (bf16) | No disponible en la información | No disponible | bf16 | Apache 2.0 (+ licencia Gemma 4) | Hugging Face |
+| Otras cuantizaciones de Gemma 4 12B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-La comparativa muestra que la cuantización GLQ 5.0 bpw reduce el peso de GPU en un 71 % respecto a bf16, manteniendo un rendimiento similar en MMLU-Pro y una pérdida no significativa en AIME-2024. La variante GLQ 3bpw (también disponible en el repositorio del autor) reduce aún más el tamaño, pero no se publican benchmarks.
+No se dispone en la información proporcionada de datos de benchmarks ni especificaciones de alternativas de otros esquemas de cuantización (GGUF, AWQ, GPTQ) para este mismo modelo base, por lo que la comparativa cuantitativa con terceros no está disponible.
 
 ## Limitaciones y advertencias
 
-- La cuantización solo afecta al decoder de texto; las torres de visión y audio se mantienen en bf16, por lo que la inferencia multimodal requiere cargar estos pesos adicionales y puede superar la VRAM de GPUs de 24 GB si se usan imágenes o vídeo.
-- Los benchmarks publicados son de una sola muestra (single-sample pass@1) con n pequeño (60 y 30 ítems), por lo que los intervalos de confianza son amplios (±17 puntos en AIME-2024). No hay que interpretarlos como estimaciones precisas.
-- Riesgo de alucinación y sesgos: el modelo base puede alucinar en tareas de razonamiento complejo y hereda sesgos de su entrenamiento; la cuantización puede exacerbar estos comportamientos en casos límite.
-- Restricciones de licencia: aunque la cuantización se publica bajo Apache 2.0, la licencia original de Gemma 4 de Google DeepMind incluye condiciones de uso aceptables y restricciones de uso prohibido; se debe revisar la licencia original antes de usar el modelo en producción.
-- Requisito de versiones: es necesario fijar `transformers>=5.13.1,<5.15`; la versión 5.15.0 rompe la carga del modelo (cambio de configuración por capa en gemma-4) y vLLM falla antes de cargar los pesos.
-- En vLLM, el guard `if __name__ == "__main__":` es obligatorio al ejecutar como script, para evitar recursión de procesos en modo "spawn".
-- La compatibilidad con vLLM está verificada en la versión 0.23.0+; versiones anteriores o posteriores no están probadas en la model card.
+- La cuantización afecta solo al decodificador de texto; las torres de visión y audio permanecen en bf16. En vLLM debe servirse en modo solo texto con `limit_mm_per_prompt={"image": 0, "video": 0, "audio": 0}`.
+- La evaluación es de una sola muestra con n pequeño (60 y 30 ítems); los intervalos de confianza son amplios y los resultados no deben interpretarse como paridad de calidad demostrada.
+- En AIME-2024 el modelo cuantizado obtiene 3 aciertos menos que bf16; el autor no reclama paridad en esta prueba.
+- La versión de `transformers` está restringida a `<5.15`; versiones posteriores rompen la carga tanto en este modelo como en el bf16 original.
+- En vLLM, al ejecutar como script es obligatorio el guard `if __name__ == "__main__"`, ya que vLLM cambia al método de multiprocesamiento `spawn` tras inicializar CUDA y el script se reimportaría recursivamente.
+- Licencia Apache 2.0 heredada, pero sujeta además a la licencia Gemma 4 de Google; debe revisarse para uso comercial.
+- Sesgos conocidos, riesgo de alucinación e idiomas soportados: no disponibles en la información proporcionada.
+- Longitud de contexto máxima: no disponible en la información proporcionada.
+- En GPUs grandes, el bf16 decodifica más rápido; GLQ solo aporta ventaja cuando la memoria es el factor limitante.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/xv0y5ncu/Gemma-4-12B-it-GLQ-5.0bpw
-- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-12B-it
-- Repositorio GLQ (GitHub): https://github.com/cnygaard/glq
-- Página oficial de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/
-- Guía de desarrollo de Gemma 4 12B (Google Developers Blog): https://developers.googleblog.com/gemma-4-12b-the-developer-guide/
-- Licencia original de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
-- Variante GLQ 3bpw del autor: https://huggingface.co/xv0y5ncu/gemma-4-12B-it-GLQ-3bpw-e8p-bd
+- Modelo base: https://huggingface.co/google/gemma-4-12B-it
+- Repositorio GLQ: https://github.com/cnygaard/glq
+- Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

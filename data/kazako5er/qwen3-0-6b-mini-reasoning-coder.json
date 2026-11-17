@@ -18,7 +18,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 9,
+  "downloads_30d": 17,
   "trending_score": 0,
   "parameters": 596049920,
   "parameters_human": "596.0M",
@@ -35,8 +35,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "kazako5er/Qwen3-0.6B-Mini-Reasoning-Coder-V1",
+  "renamed_at": "2026-11-17T07:21:36.320Z",
   "benchmarks": [],
   "sources": [
     {

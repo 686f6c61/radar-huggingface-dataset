@@ -2,79 +2,89 @@
 
 ## Resumen
 
-El modelo `xw17/Qwen2-1.5B-Instruct_SFT_lora_cogwear` es un ajuste fino mediante SFT (Supervised Fine-Tuning) con adaptadores LoRA sobre el modelo `Qwen2-1.5B-Instruct` de Alibaba Cloud. Fue publicado por el usuario `xw17` en Hugging Face, aunque la model card disponible es una plantilla autogenerada sin información técnica ni detalles del proceso de entrenamiento. El nombre del repositorio sugiere que el adaptador LoRA se ha entrenado para un dominio o tarea específica identificada como "cogwear", pero no se proporciona ninguna descripción funcional.
+`xw17/Qwen2-1.5B-Instruct_SFT_lora_cogwear` es un adaptador LoRA publicado en Hugging Face por el usuario xw17, construido sobre el modelo base Qwen2-1.5B-Instruct. El nombre del repositorio indica un ajuste fino supervisado (SFT) mediante LoRA, presumiblemente orientado a un dominio o producto denominado "cogwear". El repositorio ocupa 0.1 GB, un tamano coherente con pesos de adaptador y no con un modelo completo de 1.5B parametros en precision completa.
 
-La relevancia del modelo radica en que parte de una base ligera de 1.500 millones de parámetros, lo que permite ejecutarlo en entornos con recursos limitados. Sin embargo, al no existir documentación, benchmarks ni descripción del uso previsto, cualquier evaluación o despliegue requiere una validación manual previa. La información disponible en el repositorio es mínima y no se confirma el propósito del ajuste.
+La model card es la plantilla autogenerada por Hugging Face y no contiene informacion sustantiva: todos los campos de autor, licencia, idiomas, datos de entrenamiento, hiperparametros y evaluacion aparecen como "[More Information Needed]". Por tanto, la mayoria de especificaciones tecnicas de esta ficha no pueden confirmarse a partir de la informacion disponible y se marcan como tales.
+
+Su relevancia es limitada y de nicho: se trata de un artefacto de ajuste fino comunitario, sin descargas ni likes en el momento de la consulta, y sin documentacion que permita evaluar su calidad, sus datos de entrenamiento o sus restricciones de uso. Resulta util unicamente como ejemplo de adaptador LoRA sobre la familia Qwen2 y como punto de partida para quien quiera reproducir o inspeccionar el ajuste.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (basado en Qwen2-1.5B-Instruct) |
-| Parametros totales | 1.500 millones (modelo base) + parametros del adaptador LoRA no especificados |
-| Longitud de contexto | no disponible (el modelo base Qwen2-1.5B-Instruct admite una ventana de 32.768 tokens, pero este ajuste no lo confirma) |
-| Tipos de cuantizacion | no disponible |
+| Arquitectura | Transformer decoder-only (heredada de Qwen2-1.5B-Instruct); el adaptador es LoRA |
+| Parametros totales | 1.5B en el modelo base; el repositorio contiene solo el adaptador LoRA (0.1 GB) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (el base Qwen2-1.5B-Instruct soporta 32 768 tokens, dato no confirmado para este adaptador) |
+| Tipos de cuantizacion | no disponible; al ser un adaptador LoRA, la cuantizacion aplica al modelo base |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (segun los metadatos del repositorio) |
+| Formato de pesos | safetensors (adaptador LoRA para `transformers`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del modelo base `Qwen2-1.5B-Instruct`: un transformer autorregresivo con atencion multi-cabeza y capas de normalizacion RMSNorm. La tecnica de ajuste indicada en el nombre es SFT con LoRA (Low-Rank Adaptation), que congela los pesos del modelo base y entrena matrices de bajo rango para adaptar el modelo a una tarea o dominio especifico. No se han publicado datos sobre la dimension del adaptador LoRA, los hiperparametros de entrenamiento, el conjunto de datos utilizado ni el procedimiento de optimizacion. El README del repositorio no incluye informacion sobre datos de entrenamiento, preprocesamiento ni regimen de precision.
+El modelo base es Qwen2-1.5B-Instruct, un transformer decoder-only de la familia Qwen2 con atencion por causalidad estandar y 1.5 mil millones de parametros. Sobre el se aplica un ajuste fino supervisado (SFT) mediante LoRA, segun indica el identificador del repositorio. LoRA congela los pesos originales e introduce matrices de baja dimensionalidad en determinadas capas, lo que reduce drasticamente el numero de parametros entrenables y el coste de almacenamiento; de ahi que el repositorio ocupe solo 0.1 GB.
+
+No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens, la composicion de los datos, el rango de LoRA, la tasa de aprendizaje ni si se aplicaron tecnicas adicionales como DPO o RLHF. La model card no documenta hiperparametros ni regimen de precision (fp16, bf16, fp32). Tampoco se especifica si el adaptador modula todas las proyecciones de atencion o solo un subconjunto. Cualquier afirmacion sobre innovaciones tecnicas (decodificacion especulativa, atencion lineal, etc.) seria especulativa y no se incluye.
 
 ## Capacidades
 
-- Generacion de texto en formato instruct: hereda la capacidad del modelo base para seguir instrucciones y mantener conversaciones multi-turno, aunque no se ha confirmado que el ajuste LoRA preserve estas habilidades.
-- Razonamiento basico, generacion de codigo y matematicas: el modelo base Qwen2-1.5B-Instruct tiene capacidades modestas en estos dominios, pero no se ha verificado si el ajuste LoRA las mantiene o las modifica.
-- Soporte multilingue: el modelo base de Qwen2 es multilingue, pero no se especifica el alcance de los idiomas en este ajuste.
-- No se confirma soporte de tool calling, function calling, agentes, vision, audio ni modo de pensamiento (thinking mode) en la informacion disponible.
+- Generacion de texto y razonamiento conversacional, heredados del modelo base Qwen2-1.5B-Instruct, si bien el ajuste LoRA puede haber alterado el comportamiento en dominios especificos.
+- Instrucciones en formato de chat, asumiendo que se conserva la plantilla de chat de Qwen2.
+- Capacidad de codigo y matematicas basicas propia de un modelo de 1.5B parametros, sin datos especificos de evaluacion para este adaptador.
+- Soporte de tool calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible; los modelos de 1.5B tienen capacidad limitada para cadenas de razonamiento largas.
+- Capacidades multilingues: no disponibles; el modelo base Qwen2 tiene cobertura multilingue, pero no se confirma para este adaptador.
+- Modo thinking, vision o audio: no disponible.
 
 ## Casos de uso
 
-Dado que el repositorio no incluye documentacion de casos de uso, las siguientes aplicaciones son hipotesis razonables basadas en el modelo base y la tecnica de ajuste. Cualquier uso en produccion deberia validarse previamente con pruebas propias.
-
-- Chatbots de bajo coste: al tratarse de un modelo de 1.500 millones de parametros, puede desplegarse en servidores con recursos modestos o en GPU de consumo para gestionar conversaciones simples en entornos de atencion al cliente.
-- Resumen de documentos: el modelo puede usarse para generar resumenes de textos extensos en aplicaciones internas, siempre que se valide la calidad del resultado.
-- Clasificacion de texto: gracias a la capacidad de seguir instrucciones, puede adaptarse a tareas de etiquetado de textos en dominios especificos mediante prompting.
-- Asistente de soporte tecnico: puede integrarse en sistemas de preguntas frecuentes o en pipelines de ticket para ofrecer respuestas preliminares.
-- Generacion de codigo basico: el modelo base tiene cierta capacidad de completar fragmentos de codigo, lo que permite su uso en editores asistidos para lenguajes de programacion comunes.
-- Analisis de sentimiento: puede emplearse en pipelines de analisis de opiniones sobre textos cortos, aunque se recomienda validar el rendimiento frente a modelos mas documentados.
+- Prototipado rapido de asistentes conversacionales de dominio "cogwear": el adaptador puede cargarse sobre el base Qwen2-1.5B-Instruct para experimentar con respuestas especializadas sin reentrenar el modelo completo, gracias al bajo coste de almacenamiento del LoRA.
+- Investigacion de ajuste fino eficiente: sirve como referencia para estudiar como un LoRA SFT modifica el comportamiento de un modelo de 1.5B, comparando salidas con y sin adaptador.
+- Despliegue en entornos con recursos limitados: al combinarse con el base cuantizado (por ejemplo, en 4 bits), el conjunto puede ejecutarse en GPUs de consumo, aunque no hay datos de rendimiento que lo confirmen.
+- Generacion de texto asistida en aplicaciones de nicho textil o wearables, si el ajuste se realizo con datos de ese dominio; esta hipotesis no esta confirmada por la documentacion.
+- Base para posteriores ajustes (continuar el SFT o aplicar DPO) partiendo del adaptador ya entrenado, reduciendo el coste frente a partir del modelo original.
+- Evaluacion comparativa de adaptadores comunitarios: util para medir la degradacion o mejora respecto al base en tareas estandar, dado que no existen benchmarks publicados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos de evaluacion para MMLU, HumanEval, GSM8K ni cualquier otra metrica de referencia. Tampoco se ha publicado una comparacion con otros modelos.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Los requisitos estimados se basan en el modelo base Qwen2-1.5B-Instruct y en la naturaleza del adaptador LoRA; no se ha publicado ninguna medicion especifica para este modelo.
-
-- VRAM estimada para inferencia: aproximadamente 3 GB en FP16, unos 1 GB en cuantizacion 4-bit, siempre que se cargue el adaptador LoRA sobre el modelo base.
-- GPU recomendadas: cualquier GPU de consumo con al menos 4 GB de VRAM, como RTX 3060, RTX 4060 o similares. En servidores, una A10G o T4 es suficiente.
-- Si cabe en GPU de consumo: si, con cuantizacion 4-bit o 8-bit es viable en tarjetas de 4 GB o menos.
-- Opciones de despliegue: Transformers con PEFT para cargar el adaptador LoRA, vLLM, llama.cpp, Ollama o TGI, siempre que el adaptador se convierta o se cargue junto al modelo base.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: el modelo base de 1.5B requiere aproximadamente 3 GB en fp16, unos 1.5 GB en int8 y alrededor de 1 GB en 4 bits; el adaptador LoRA anade un coste marginal (0.1 GB en disco).
+- GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM para fp16; RTX 3060, RTX 4060, RTX 4090, A100 o H100 son suficientes y sobredimensionadas para este tamano.
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna con 4 GB o mas, y en CPU mediante llama.cpp si se convierte el modelo fusionado a GGUF.
+- Opciones de despliegue: `transformers` con `peft` para cargar el adaptador, vLLM o TGI tras fusionar el LoRA con el base, y llama.cpp/Ollama previa conversion a GGUF del modelo fusionado.
+- Latencia y throughput estimados: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-La siguiente tabla compara el modelo con el modelo base del que deriva y con dos alternativas de tamano similar. Los datos de rendimiento del modelo ajustado no estan disponibles, por lo que la comparacion se limita a especificaciones tecnicas y disponibilidad.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| xw17/Qwen2-1.5B-Instruct_SFT_lora_cogwear | 1.5B (base) + LoRA | no disponible | no disponible | Hugging Face, 0 descargas | Adaptador sin documentacion ni benchmarks |
+| Qwen2-1.5B-Instruct | 1.5B | 32 768 tokens | Apache 2.0 (segun el modelo original) | Ampliamente disponible | Modelo base oficial, con evaluaciones publicadas |
+| Qwen2.5-1.5B-Instruct | 1.5B | 32 768 tokens (128K en variantes posteriores) | Apache 2.0 | Ampliamente disponible | Generacion posterior con mejoras en codigo y matematicas |
+| SmolLM2-1.7B-Instruct | 1.7B | 8 192 tokens | Apache 2.0 | Ampliamente disponible | Alternativa compacta con benchmarks publicados |
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| xw17/Qwen2-1.5B-Instruct_SFT_lora_cogwear | 1.5B + LoRA | no disponible | no disponible | Hugging Face (repositorio publico) |
-| Qwen/Qwen2-1.5B-Instruct | 1.5B | 32.768 tokens (segun documentacion oficial) | Apache 2.0 | Hugging Face |
-| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | 1.1B | 2.048 tokens | Apache 2.0 | Hugging Face |
+La comparacion es orientativa: los datos del adaptador no estan verificados y los del modelo base se citan de la documentacion publica de Qwen, no de este repositorio.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no se ha publicado ningun estudio de sesgos; el modelo puede heredar sesgos del modelo base y del conjunto de datos de ajuste, que se desconoce.
-- Riesgo de alucinacion: al no existir evaluacion, la probabilidad de generar contenido inventado es alta y no puede cuantificarse.
-- Limitaciones de contexto o idioma: no se ha confirmado la longitud de contexto efectiva ni los idiomas soportados tras el ajuste LoRA.
-- Restricciones de licencia: la licencia del repositorio figura como "no disponible", lo que genera incertidumbre sobre el uso comercial del modelo y del adaptador.
-- El repositorio muestra un tamano de 0.0 GB y cero descargas, lo que podria indicar que los pesos no estan realmente disponibles o que el adaptador LoRA es muy pequeno. Es recomendable verificar la integridad de los archivos antes de cualquier uso.
-- Falta de documentacion completa: la model card es una plantilla autogenerada sin secciones rellenadas, lo que impide conocer el proposito, los datos de entrenamiento y las limitaciones especificas.
+- Ausencia total de documentacion: la model card es una plantilla sin rellenar, lo que impide conocer datos de entrenamiento, hiperparametros y evaluacion.
+- Licencia no especificada: no puede asumirse uso comercial; es necesario contactar con el autor o verificar la licencia del modelo base (Qwen2-1.5B-Instruct) antes de cualquier despliegue productivo.
+- Riesgo de alucinacion: inherente a los modelos de 1.5B parametros, agravado por la falta de evaluacion del adaptador.
+- Sesgos desconocidos: al no documentarse el dataset de SFT, no es posible evaluar sesgos introducidos por el ajuste.
+- Idiomas no confirmados: el adaptador podria haber degradado el multilingusimo del base si el SFT se realizo solo en un idioma.
+- Contexto no confirmado: no se garantiza que el adaptador conserve la ventana de 32 768 tokens del base.
+- Sin senales de validacion comunitaria: 0 descargas y 0 likes en el momento de la consulta, lo que sugiere ausencia de revision por terceros.
+- Fecha de creacion futura (2026-09-04) en los metadatos, posiblemente un error de registro; conviene verificar la integridad del repositorio.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/xw17/Qwen2-1.5B-Instruct_SFT_lora_cogwear
+- Repositorio en Hugging Face: https://huggingface.co/xw17/Qwen2-1.5B-Instruct_SFT_lora_cogwear
 - Modelo base Qwen2-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2-1.5B-Instruct
-- Repositorio similar del mismo autor: https://huggingface.co/xw17/Qwen2-1.5B-Instruct_SFT_lora_universal
+- Paper de Qwen2: https://arxiv.org/abs/2407.10671
+- Calculadora de impacto ambiental citada en la model card: https://mlco2.github.io/impact
+- Paper de Lacoste et al. (2019) citado en la model card: https://arxiv.org/abs/1910.09700
+- Documentacion de PEFT (carga de adaptadores LoRA): https://huggingface.co/docs/peft

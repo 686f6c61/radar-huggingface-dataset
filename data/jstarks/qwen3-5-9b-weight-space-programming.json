@@ -42,11 +42,11 @@
     "imatrix"
   ],
   "likes": 0,
-  "downloads_30d": 191,
+  "downloads_30d": 282,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
-  "storage_bytes": 7689865182,
+  "storage_bytes": 7699304094,
   "storage_human": "7.7 GB",
   "context_length": 262144,
   "base_model": "Qwen/Qwen3.5-9B",

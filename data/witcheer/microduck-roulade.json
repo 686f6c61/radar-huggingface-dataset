@@ -20,7 +20,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 74,
+  "downloads_30d": 72,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -40,31 +40,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Klantenservice – Hobbymaterialen.be",
-      "url": "https://hobbymaterialen.be/klantenservice/",
-      "snippet": "Vragen of opmerkingen? Wij proberen U steeds zo snel mogelijk verder te helpen. Enkele interessante pagina’s:"
-    },
-    {
-      "title": "Veel gestelde vragen – Hobbymaterialen.be",
-      "url": "https://hobbymaterialen.be/klantenservice/veel-gestelde-vragen/",
-      "snippet": "Heb je een klantenkaart laten aanmaken in ons magazijn? Dan spaar je automatisch punten op je naam. Bestel je enkel online & wil …"
-    },
-    {
-      "title": "Hobbymaterialen.be – Online hobbywinkel voor al Uw creatieve ideeën",
-      "url": "https://hobbymaterialen.be/",
-      "snippet": "Klantenservice Privacybeleid Verzendingskosten Veel gestelde vragen Algemene voorwaarden Formulier herroeping Onze gegevens …"
-    },
-    {
-      "title": "Stoffen – Hobbymaterialen.be",
-      "url": "https://hobbymaterialen.be/product-categorie/stoffen/",
-      "snippet": "Klantenservice Privacybeleid Verzendingskosten Veel gestelde vragen Algemene voorwaarden Formulier herroeping Onze gegevens …"
-    },
-    {
-      "title": "Algemene voorwaarden – Hobbymaterialen.be",
-      "url": "https://hobbymaterialen.be/klantenservice/algemene-voorwaarden/",
-      "snippet": "De klantendienst van LadyViolet Hobbymaterialen is bereikbaar via e-mail op hobbymaterialen@telenet.be of per post op het …"
-    }
-  ]
+  "sources": []
 }

@@ -43,16 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "PLatour - a zen-E Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/zen-E/platour",
-      "snippet": "PLatour model and dataset releases. Dataset preview; model releases will be added later."
-    },
-    {
-      "title": "Full fine-tuning of Qwen3-4B - Azure Databricks | Microsoft Learn",
-      "url": "https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-finetune-qwen3-4b",
-      "snippet": "Full-weight fine-tune the Qwen3-4B large language model on a single H100 GPU with AI Runtime (serverless GPU) for maximum model customization."
-    }
-  ]
+  "sources": []
 }

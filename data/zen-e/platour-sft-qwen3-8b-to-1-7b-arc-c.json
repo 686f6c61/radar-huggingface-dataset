@@ -43,16 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "PLatour - a zen-E Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/zen-E/platour",
-      "snippet": "PLatour model and dataset releases. Dataset preview; model releases will be added later."
-    },
-    {
-      "title": "Qwen/Qwen3-8B · Hugging Face",
-      "url": "https://huggingface.co/Qwen/Qwen3-8B",
-      "snippet": "Text Generation model with 8B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
-    }
-  ]
+  "sources": []
 }

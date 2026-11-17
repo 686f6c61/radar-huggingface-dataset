@@ -55,31 +55,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Constante universelle des gaz parfaits — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Constante_universelle_des_gaz_parfaits",
-      "snippet": "La constante universelle des gaz parfaits a été empiriquement déterminée en tant que constante de proportionnalité de l' équation …"
-    },
-    {
-      "title": "PV=nRT : Valeur de R et Applications de la Loi des Gaz Parfaits",
-      "url": "https://docteurs-chimie.org/pvnrt-valeur-de-r-et-applications-de-la-loi-des-gaz-parfaits/",
-      "snippet": "Jun 23, 2025 · La constante R dans PV=nRT représente la constante universelle des gaz parfaits, également appelée constante de …"
-    },
-    {
-      "title": "Constante des gaz parfaits : définition, valeur et rôle dans l'équation ...",
-      "url": "https://genie-des-procedes.fr/constante-des-gaz-parfaits-definition-valeur-et-role-dans-lequation-detat/",
-      "snippet": "Constante des gaz parfaits : définition, valeur et rôle dans l’équation d’état Vous arrive-t-il de vous demander comment une simple …"
-    },
-    {
-      "title": "Loi des gaz parfaits — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Loi_des_gaz_parfaits",
-      "snippet": "La loi des gaz parfaits n'est exacte que pour les gaz pour lesquels les effets des diverses interactions moléculaires sont négligeables …"
-    },
-    {
-      "title": "Constante de gaz parfait : comprendre, valeurs et applications du ...",
-      "url": "https://umasps.fr/constante-de-gaz-parfait/",
-      "snippet": "May 18, 2026 · La Constante de gaz parfait est un élément central pour décrire le comportement des gaz dans le cadre de l’équation …"
-    }
-  ]
+  "sources": []
 }

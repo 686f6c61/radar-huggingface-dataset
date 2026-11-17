@@ -2,83 +2,93 @@
 
 ## Resumen
 
-El repositorio `wizdroid/comfyui-workflows` no es un modelo de inteligencia artificial en sí, sino una colección de flujos de trabajo (workflows) listos para usar en ComfyUI, orientados a la generación de imágenes con consistencia de personaje, inferencia acelerada y creación automatizada de datasets para entrenamiento de LoRA. Desarrollado por el usuario wizdroid y publicado bajo licencia MIT, integra varios modelos de última generación como Flux2-Klein 9B, Qwen (texto a imagen), Z-Image-Turbo y SeedVR2, todos ellos con soporte de aceleración Nunchaku para una inferencia rápida.
+`wizdroid/comfyui-workflows` no es un modelo de IA en sentido estricto, sino una coleccion de workflows en formato JSON para ComfyUI, el editor de grafos de nodos para generacion de imagenes. El repositorio, publicado por el usuario wizdroid bajo licencia MIT, agrupa doce pipelines orientados a tres objetivos concretos: consistencia de identidad de personajes, inferencia acelerada y generacion automatizada de datasets para entrenar LoRA. Cada workflow es un grafo de nodos que referencia modelos externos (Flux2-Klein, Qwen-Image, Z-Image-Turbo, SeedVR2) y nodos personalizados que el usuario debe instalar por separado.
 
-La relevancia de este repositorio radica en que resuelve un problema práctico: la dificultad de mantener la identidad de un personaje a lo largo de múltiples generaciones. Sus pipelines de referencia múltiple (1, 2 o 3 imágenes) emplean inyección de Reference Latent para preservar la coherencia facial y de estilo, algo especialmente útil para producción de contenido, diseño de personajes y preparación de datos de entrenamiento. Incluye además un nodo personalizado, `WizdroidLoRADataset`, que automatiza el captioning con modelos de visión locales vía Ollama y estructura el dataset resultante.
+El interes practico del repositorio reside en la combinacion de tecnicas: inyeccion de Reference Latent para preservar la identidad de un personaje a partir de una, dos o tres imagenes de referencia; aceleracion mediante Nunchaku para los modelos Flux2-Klein de 9B parametros; y un nodo propio, `WizdroidLoRADataset`, que utiliza un modelo de vision local servido con Ollama para etiquetar automaticamente imagenes y estructurar un dataset de entrenamiento. Los workflows van acompanados de un fichero `PROMPTS.md` con mas de cuarenta variaciones de prompt en formato cuadrado 1:1.
 
-En total se ofrecen 12 workflows JSON que cubren desde generación texto a imagen básica hasta upscaling de alta calidad con SeedVR2, pasando por un generador de datasets completo. El repositorio se actualizó por última vez en agosto de 2026 y cuenta con una guía de prompts complementaria (`PROMPTS.md`) con más de 40 variaciones para referencias de personajes.
+Es relevante ahora porque reduce el trabajo de ingenieria necesario para montar pipelines de generacion de personajes consistentes y de preparacion de datos, un cuello de botella habitual en proyectos de LoRA y de contenido visual. No obstante, conviene subrayar que el repositorio no contiene pesos de modelos: su valor esta en la orquestacion, y su funcionamiento depende de la disponibilidad y versionado de los modelos y nodos de terceros a los que hace referencia.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No aplica (repositorio de workflows para ComfyUI; integra Flux2-Klein 9B, Qwen, Z-Image-Turbo, SeedVR2, Moondream) |
-| Parametros totales | No disponible (depende de los modelos subyacentes; Flux2-Klein 9B tiene ~9 mil millones) |
-| Parametros activos | No disponible (no es un modelo MoE) |
-| Longitud de contexto | No disponible (no aplica a workflows; depende de los modelos de lenguaje integrados, p. ej. Qwen3 4B/8B) |
-| Tipos de cuantizacion | No especificado en la documentacion; los modelos se cargan en safetensors con precision fp16 o fp32 |
-| Idiomas soportados | No disponible (los prompts se escriben en ingles; los modelos subyacentes como Qwen soportan multiples idiomas) |
+| Arquitectura | No aplica (coleccion de workflows JSON para ComfyUI; los grafos orquestan modelos DiT, VAE y LLM de vision externos) |
+| Parametros totales | No aplica al repositorio; los modelos referenciados incluyen Flux2-Klein 9B, SeedVR2 7B, Qwen3 8B/4B y Z-Image-Turbo |
+| Parametros activos | No disponible |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | No disponible (los workflows referencian pesos safetensors fp16 y LoRA de turbo; no se documentan esquemas de cuantizacion) |
+| Idiomas soportados | No disponible |
 | Licencia | MIT |
-| Formato de pesos | JSON (workflows), safetensors (modelos referenciados) |
+| Formato de pesos | JSON (workflows de ComfyUI); los modelos referenciados se distribuyen como safetensors |
 
 ## Arquitectura y entrenamiento
 
-Al tratarse de un repositorio de flujos de trabajo, no existe un proceso de entrenamiento propio. La arquitectura se define por los modelos que integra: Flux2-Klein 9B es un modelo de difusion de texto a imagen con arquitectura transformer y aceleracion Nunchaku; Qwen se presenta como un modelo de lenguaje multimodal que tambien genera imagenes; Z-Image-Turbo esta optimizado para pocos pasos de inferencia; y SeedVR2 es un upscaler basado en diffusion transformer (DiT) con VAE. El nodo `WizdroidLoRADataset` utiliza Ollama con el modelo de vision Moondream para generar captions automaticamente.
+El repositorio no entrena ningun modelo. Su contenido son grafos de nodos serializados en JSON que ComfyUI interpreta para encadenar cargadores de checkpoint, codificadores de texto, samplers, inyeccion de latentes de referencia, upscalers y nodos de utilidades. Los tamanos de fichero oscilan entre aproximadamente 3 MB (`dataset-generator.json`) y 41 MB (`flux2-klein-3i2i.json`), lo que refleja la complejidad del grafo y no el peso de ningun modelo.
 
-Los workflows estan disenados para inyeccion de Reference Latent, una tecnica que codifica la informacion de identidad de una o varias imagenes de referencia y la inyecta en el proceso de difusion para mantener la consistencia del personaje. No se documentan detalles sobre el dataset de entrenamiento ni sobre tecnicas como RLHF o DPO, ya que no aplican a este repositorio.
+Los pipelines se apoyan en tres familias de modelos. Flux2-Klein 9B actua como motor principal de calidad, con aceleracion Nunchaku y sampler avanzado de Flux. Qwen-Image, en variantes All-in-One y con soporte de edicion, cubre generacion texto-a-imagen y referencia de imagen con un sesgo estetico alternativo. Z-Image-Turbo se emplea para iteracion rapida con muy pocos pasos. A ello se suma SeedVR2, un upscaler basado en DiT mas VAE con tiling y correccion de color, y el nodo `WizdroidLoRADataset`, que invoca un modelo de vision via Ollama (Moondream en la configuracion recomendada) para generar leyendas y validar la estructura del dataset. La innovacion tecnica destacable es la inyeccion de Reference Latent para consistencia de identidad y la integracion de captioning local en el mismo entorno de ComfyUI.
 
 ## Capacidades
 
-- Generacion de imagenes texto a imagen con Flux2-Klein 9B y Qwen, con resolucion flexible (incluye optimizacion para formato cuadrado 1:1).
-- Consistencia de personaje mediante referencia de 1, 2 o 3 imagenes con inyeccion de Reference Latent.
-- Inferencia acelerada con Nunchaku para Flux2-Klein y Z-Image-Turbo, reduciendo el numero de pasos necesarios.
-- Upscaling de alta calidad con SeedVR2 (DiT + VAE) que incluye tiling y correccion de color, soportando factores de 2x a 4x.
-- Creacion automatizada de datasets para entrenamiento LoRA: captioning con modelo de vision local (Moondream via Ollama), estructura de carpetas y validacion.
-- Carga de LoRA integrada y conmutable en la mayoria de los pipelines.
-- Soporte para generacion rapida de prototipos con Z-Image-Turbo (muy pocos pasos).
-- Multiples variantes de workflow segun necesidad: t2i, i2i de 1 a 3 referencias, upscaler y generador de datasets.
+- Generacion texto-a-imagen de alta calidad mediante Flux2-Klein 9B con sampler de Flux y carga opcional de LoRA.
+- Generacion texto-a-imagen con Qwen-Image en variantes estandar y All-in-One, con resolucion flexible y control estetico alternativo.
+- Generacion rapida de prototipos con Z-Image-Turbo, disenada para muy pocos pasos de muestreo y aceleracion Nunchaku.
+- Consistencia de personaje imagen-a-imagen con una, dos o tres imagenes de referencia mediante inyeccion de Reference Latent.
+- Upscaling de 2x a 4x con SeedVR2, incluyendo tiling para imagenes grandes y correccion de color.
+- Creacion automatizada de datasets para LoRA: captioning con modelo de vision local, estructuración de carpetas y validacion.
+- Carga conmutable de LoRA en la mayoria de pipelines.
+- Resolucion cuadrada 1:1 y resoluciones flexibles optimizadas para trabajo de referencia de personajes.
+- No se documentan capacidades de tool calling, razonamiento multi-paso ni procesamiento de audio.
 
 ## Casos de uso
 
-- Diseno de personajes para videojuegos o animacion: el workflow `flux2-klein-3i2i.json` permite generar multiples vistas de un mismo personaje usando tres imagenes de referencia, manteniendo la identidad en angulos, expresiones y poses. Es adecuado porque la inyeccion de Reference Latent con triple referencia es la opcion mas robusta del repositorio para fidelidad maxima.
-- Creacion de datasets de entrenamiento LoRA: el workflow `dataset-generator.json` automatiza el captioning con Moondream y estructura los datos en carpetas. Un artista puede generar cientos de variaciones de su personaje y obtener captions coherentes sin intervencion manual.
-- Prototipado rapido en estudios de diseno: con `z-image-turbo-t2i.json` se obtienen generaciones en muy pocos pasos, ideal para iterar sobre ideas antes de invertir tiempo en generaciones de alta calidad.
-- Generacion de imagenes de producto con consistencia de marca: usando `flux2-klein-1i2i.json`, una empresa puede mantener el mismo producto o logotipo en multiples escenarios a partir de una unica foto de referencia.
-- Upscaling de ilustraciones o fotos para impresion: `seedvr2-i2i.json` ofrece un upscaler de calidad superior con tiling, adecuado para preparar imagenes de alta resolucion para carteles o publicaciones impresas.
-- Generacion de concept art para produccion audiovisual: la combinacion de `flux2-klein-t2i.json` con el archivo `PROMPTS.md` permite explorar variaciones de personajes con prompts estructurados, cubriendo angulos, expresiones y tipos de plano de forma sistematica.
+- Produccion de personajes consistentes para narrativa visual: el workflow `flux2-klein-3i2i.json` combina tres imagenes de referencia mediante Reference Latent para mantener la identidad facial y de vestuario a lo largo de una serie de ilustraciones, reduciendo el retoque manual entre tomas.
+- Preparacion de datasets para entrenar LoRA de personajes: `dataset-generator.json` recorre una carpeta de imagenes, genera leyendas con Moondream via Ollama y valida la estructura resultante, de modo que el usuario obtiene un dataset listo para entrenamiento sin escribir scripts propios.
+- Iteracion rapida de conceptos artisticos: `z-image-turbo-t2i.json` permite generar borradores con muy pocos pasos para explorar direcciones esteticas antes de comprometerse con una generacion de mayor calidad en Flux2-Klein.
+- Restauracion y ampliacion de material grafico: `seedvr2-i2i.json` aplica un upscaler DiT mas VAE con tiling y correccion de color, adecuado para recuperar detalle en retratos o ilustraciones de baja resolucion destinadas a impresion.
+- Creacion de hojas de referencia multiangulo: combinando los workflows de una, dos y tres imagenes con las variaciones de `PROMPTS.md` (angulos, expresiones, cuerpo entero, perfil), se generan conjuntos coherentes de vistas de un mismo personaje para documentacion o entrenamiento.
+- Exploracion estetica alternativa en proyectos de diseno: los workflows `qwen-t2i.json` y `qwen-aio-t2i.json` ofrecen un sesgo visual distinto al de Flux, util para pruebas de direccion de arte con resolucion flexible.
+- Integracion en estudios pequenos con hardware local: al depender de ComfyUI y de modelos servidos localmente, el conjunto puede desplegarse en una estacion de trabajo con GPU consumer sin depender de APIs externas, salvo el servicio local de Ollama para el captioning.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye mediciones de rendimiento, latencia ni comparativas con otros sistemas de generacion de imagenes. La unica referencia cualitativa es la afirmacion del autor de que Nunchaku proporciona "inferencia extremadamente rapida" y que SeedVR2 es "uno de los mejores upscalers disponibles", pero no se aportan numeros concretos.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- No se especifican requisitos minimos en la documentacion del repositorio.
-- Los modelos referenciados (Flux2-Klein 9B, Qwen3 4B/8B, SeedVR2 7B, Z-Image-Turbo) requieren GPUs con al menos 12-16 GB de VRAM para cargar en fp16; se recomienda una NVIDIA RTX 3090, RTX 4090 o superior para un uso fluido.
-- La aceleracion Nunchaku esta disenada para GPUs NVIDIA con soporte de TensorRT; se recomienda verificar la compatibilidad con la tarjeta concreta.
-- El workflow de dataset con Ollama y Moondream puede ejecutarse en CPU, aunque el proceso de captioning sera mas lento que en GPU.
-- Opciones de despliegue: ComfyUI como interfaz principal, con instalacion de los custom nodes indicados (ComfyUI-nunchaku, ComfyUI-SeedVR2_VideoUpscaler, wizdroid-character).
-- No se proporcionan datos de latencia o throughput estimados.
+- VRAM estimada: no disponible en la informacion proporcionada. A modo de referencia estructural, los workflows principales referencian Flux2-Klein 9B en safetensors, Qwen3 8B/4B, SeedVR2 7B y Z-Image-Turbo; el consumo dependera de la precision de los pesos y del uso de aceleracion Nunchaku, extremo no documentado.
+- GPU recomendadas: no disponible. No se especifican modelos de GPU en la documentacion.
+- Compatibilidad con GPU consumer: no confirmada. La presencia de variantes aceleradas con Nunchaku y de un modelo turbo sugiere vocacion de despliegue local, pero no se aportan cifras de VRAM que permitan confirmarlo.
+- Opciones de despliegue: ComfyUI como entorno de ejecucion, con los nodos personalizados ComfyUI-nunchaku, ComfyUI-SeedVR2_VideoUpscaler (ainvfx) y wizdroid-character. Para el captioning del dataset se requiere Ollama con el modelo `moondream:latest` (u otro configurable en el nodo).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa directa con otros repositorios de workflows de ComfyUI. El repositorio de wizdroid se distingue por su enfoque en consistencia de personaje y generacion de datasets, pero no existen datos publicos que permitan comparar su rendimiento con alternativas como los workflows oficiales de ComfyUI o los de otros creadores de la comunidad.
+| Alternativa | Tipo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|---|
+| wizdroid/comfyui-workflows | Coleccion de workflows ComfyUI | No aplica | No disponible | MIT | Enfoque en consistencia de personaje, aceleracion y generacion de datasets |
+| Repositorios de workflows ComfyUI de la comunidad | Colecciones de grafos JSON | No aplica | No disponible | Variable segun autor | Suelen carecer de nodo propio de captioning y de pipelines multi-referencia documentados |
+| Implementaciones directas de Flux / Qwen-Image | Modelos generativos | 9B (Flux2-Klein), variable (Qwen-Image) | No disponible | Segun modelo | Requieren construir el grafo a mano; mayor control pero mas trabajo de integracion |
+
+No se dispone de datos de rendimiento comparativo entre estas opciones en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo de IA: los workflows dependen de modelos externos que deben descargarse por separado; el repositorio no incluye los pesos de los modelos.
-- Los requisitos de hardware pueden ser elevados si se utilizan todos los modelos simultaneamente; se recomienda revisar la VRAM disponible antes de ejecutar workflows complejos.
-- La consistencia de personaje no esta garantizada al 100%: la inyeccion de Reference Latent reduce la deriva de identidad pero no la elimina por completo, especialmente con angulos extremos o iluminacion muy diferente.
-- El generador de datasets requiere Ollama instalado y configurado; si el modelo de vision no esta disponible, el workflow fallara.
-- La licencia MIT se aplica a los workflows, pero los modelos subyacentes (Flux2-Klein, Qwen, Z-Image-Turbo, SeedVR2, Moondream) tienen sus propias licencias que pueden restringir el uso comercial.
-- No se documentan sesgos especificos, pero los modelos de generacion de imagenes pueden reflejar sesgos de genero, raza o cultura presentes en sus datos de entrenamiento.
-- Riesgo de alucinacion en el captioning automatico: Moondream puede generar descripciones inexactas, lo que afectaria a la calidad del dataset de entrenamiento.
+- El repositorio no contiene pesos de modelos: sin descargar Flux2-Klein, Qwen-Image, Z-Image-Turbo, SeedVR2 y los codificadores CLIP correspondientes, los workflows no producen resultados.
+- Dependencia fuerte de nodos personalizados de terceros (ComfyUI-nunchaku, ComfyUI-SeedVR2_VideoUpscaler, wizdroid-character); cambios de version o abandonos de mantenimiento pueden romper los grafos.
+- Las rutas de modelos estan fijadas dentro de los JSON y deben ajustarse manualmente a la estructura de carpetas del usuario.
+- El pipeline de captioning depende de Ollama y de un modelo de vision local (Moondream por defecto); la calidad de las leyendas condiciona la calidad del LoRA entrenado.
+- No se documentan sesgos del sistema ni evaluaciones de robustez; los sesgos heredados seran los de los modelos subyacentes, no evaluados aqui.
+- Riesgo de alucinacion visual y de artefactos propios de los modelos generativos referenciados; no hay metricas publicadas que cuantifiquen la fidelidad de identidad lograda.
+- La licencia MIT cubre los workflows, pero no los modelos de terceros, cuyas condiciones de uso comercial deben verificarse por separado.
+- Ausencia total de descargas y likes en el momento de la consulta: no hay evidencia de validacion por parte de la comunidad.
+- El repositorio no documenta idiomas soportados ni limitaciones de contexto, por lo que no puede evaluarse su comportamiento multilingue.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/wizdroid/comfyui-workflows
-- Archivo de prompts complementario: https://huggingface.co/wizdroid/comfyui-workflows/blob/main/PROMPTS.md
-- Repositorio de custom nodes wizdroid-character: https://github.com/wizdroid/wizdroid-character
-- ComfyUI (proyecto base): https://github.com/comfyanonymous/ComfyUI
-- Nunchaku (aceleracion de inferencia): https://github.com/nunchaku-tech
-- SeedVR2 (upscaler): https://github.com/ainvfx/ComfyUI-SeedVR2_VideoUpscaler (referenciado en la documentacion)
+- Repositorio en Hugging Face: https://huggingface.co/wizdroid/comfyui-workflows
+- Prompts de referencia: https://huggingface.co/wizdroid/comfyui-workflows/blob/main/PROMPTS.md
+- Nodos personalizados wizdroid-character: https://github.com/wizdroid/wizdroid-character
+- ComfyUI: https://github.com/comfyanonymous/ComfyUI
+- Nunchaku: https://github.com/nunchaku-tech
+- Black Forest Labs (Flux): https://blackforestlabs.ai/
+- Licencia MIT: https://opensource.org/licenses/MIT

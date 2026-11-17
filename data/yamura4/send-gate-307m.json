@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 563,
+  "downloads_30d": 566,
   "trending_score": 0,
   "parameters": 307136769,
   "parameters_human": "307.1M",
@@ -55,31 +55,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "yamura4 (yamura) - Hugging Face",
-      "url": "https://huggingface.co/yamura4",
-      "snippet": "Sort: Recently updated. yamura4/RMBG-2.-WebGPU. Image Segmentation • Updated 3 days ago • 206 • 3. yamura4/RMBG-2.-ONNX"
-    },
-    {
-      "title": "yamura4 (yamura) - Hugging Face",
-      "url": "https://huggingface.co/yamura4/models",
-      "snippet": "yamura4&#x27;s models1 Sort: Recently updated yamura4/scenidiom-qwen3-14b-lora Translation •Updated Apr 7• 2"
-    },
-    {
-      "title": "semantic-router/website/docs/tutorials/global/vela-models.md at main ...",
-      "url": "https://github.com/vllm-project/semantic-router/blob/main/website/docs/tutorials/global/vela-models.md",
-      "snippet": "Overview Vela 1.0 is a family of fourteen published model checkpoints for intelligent routing. The Router registry currently includes the Vela 307M encoder base and ten task models covering routing, prompt protection, content safety, retrieval and reranking. Each registered release is pinned to an immutable revision."
-    },
-    {
-      "title": "Vela 1.0 Encoder 307m - AI Model Insights & Benchmarks",
-      "url": "https://free2aitools.com/model/vllm-sr/vela-1.0-encoder-307m",
-      "snippet": "Registry entry for model Vela 1.0 Encoder 307m; source metadata pending."
-    },
-    {
-      "title": "Introducing Vela 1.0 | vLLM Semantic Router",
-      "url": "https://vllm-sr.ai/blog/vela-models/",
-      "snippet": "Meet Vela: 14 open models for smarter routing, stronger retrieval, and multimodal understanding. Built for Mixture-of-Models with vLLM Semantic Router."
-    }
-  ]
+  "sources": []
 }

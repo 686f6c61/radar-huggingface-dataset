@@ -2,98 +2,93 @@
 
 ## Resumen
 
-Nemotron-3.5-Lightning-30B-A3B-W3-WSP-PoorlyCalibrated es un checkpoint cuantizado a 3 bits del modelo NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4, publicado por el usuario yemara en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una reparación experimental de un checkpoint GPTQ de 3 bits mal calibrado: un agente LLM leyó los pesos y activaciones del modelo y editó directamente dos matrices, equivalentes al 0,0008 % de los pesos totales, sin ajustar ningún peso a datos. El resultado es un modelo que recupera buena parte del rendimiento perdido por la cuantización agresiva.
+Nemotron-3.5-Lightning-30B-A3B-W3-WSP-PoorlyCalibrated es un checkpoint cuantizado a 3 bits del modelo nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4, publicado por el usuario yemara en Hugging Face. Se trata de un ejercicio de reparación de cuantización: un agente LLM partió de un checkpoint GPTQ de 3 bits mal calibrado, leyó sus pesos y activaciones, y editó directamente dos matrices que representan el 0,0008 % de los pesos totales, sin ajustar ningún peso a datos. El resultado es una recuperación sustancial de capacidades respecto al punto de partida cuantizado.
 
-El modelo base, desarrollado por NVIDIA, emplea una arquitectura híbrida de mezcla de expertos (MoE) que intercala capas Mamba-2, capas MoE y capas de atención selectivas, con 30 000 millones de parámetros totales y solo 3000 millones activos durante la inferencia. Está orientado a agentes autónomos, despliegues de subagentes e inferencia local. La relevancia de este checkpoint concreto reside en su enfoque metodológico: demuestra que una intervención quirúrgica sobre un número ínfimo de pesos puede rescatar un modelo cuantizado degradado, acercándolo de nuevo a la versión original en FP4.
+El modelo base pertenece a la familia Nemotron 3.5 Lightning de NVIDIA, con arquitectura Nemotron-H (híbrida transformer-Mamba) y un esquema mixture-of-experts de 30B parámetros totales con 3B activos, según se deduce del sufijo 30B-A3B del identificador. La relevancia de esta ficha radica en que documenta una técnica emergente de post-procesado de cuantizaciones degradadas mediante edición dirigida de pesos por agentes, así como el estado real de rendimiento de una cuantización de 3 bits frente al release original en NVFP4.
 
-La ficha se centra en este checkpoint de 3 bits, que ocupa 17,3 GB en el repositorio y se distribuye bajo licencia OpenMDW-1.1. Es un artefacto de investigación más que un modelo listo para producción, pero sus cifras de recuperación de benchmarks (de 71,4 a 91,6 en GSM8K, por ejemplo) lo convierten en un caso de estudio interesante para quienes trabajan en cuantización y reparación de modelos.
+El repo ocupa 17,3 GB y contiene los pesos cuantizados junto con un script `dequantize.py` que reconstruye un checkpoint en BF16 para servirlo con vLLM. La licencia es OpenMDW-1.1, heredada del modelo fuente, y el checkpoint se distribuye sin garantías de calibración más allá de los resultados reportados por el autor.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida MoE con capas Mamba-2, MoE y atención selectivas (familia Nemotron H) |
-| Parametros totales | 30 000 millones (30B) |
-| Parametros activos | 3000 millones (3B) |
+| Arquitectura | Nemotron-H (híbrida transformer-Mamba, según la familia del modelo base) |
+| Parametros totales | 30B (según identificador 30B-A3B del modelo base) |
+| Parametros activos | 3B (según identificador 30B-A3B del modelo base) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 3 bits (GPTQ, checkpoint base), NVFP4 en el modelo original, dequantización a BF16 para servir |
+| Tipos de cuantizacion | 3 bits (GPTQ, punto de partida); pesos dequantizables a BF16 |
 | Idiomas soportados | no disponible |
 | Licencia | OpenMDW-1.1 |
-| Formato de pesos | Pesos cuantizados a 3 bits con script `dequantize.py` para reconstruir BF16; repo de 17,3 GB |
+| Formato de pesos | safetensors (repo de 17,3 GB) con script `dequantize.py` a BF16 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 utiliza una arquitectura híbrida de mezcla de expertos que intercala capas Mamba-2 (modelos de espacio de estados), capas MoE y un subconjunto de capas de atención. Con 30B parámetros totales y 3B activos por token, el diseño busca un equilibrio entre capacidad y eficiencia de inferencia, adecuado para agentes autónomos y despliegues locales. NVIDIA lo publicó junto con varios métodos de decodificación especulativa para acelerar la generación de texto.
+El modelo base NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 emplea la arquitectura Nemotron-H, una familia híbrida que combina capas transformer con capas de tipo Mamba, y un esquema mixture-of-experts con 30B parámetros totales y 3B activos por token. El release original se distribuye en formato NVFP4 (FP4 de NVIDIA), lo que ya supone una cuantización agresiva respecto a BF16. Sobre esa base, este checkpoint aplica una cuantización GPTQ a 3 bits que, en su calibración inicial, degrada notablemente el rendimiento.
 
-Este checkpoint concreto no ha sido entrenado: parte de un GPTQ de 3 bits mal calibrado y aplica una técnica denominada "agent weight space programming" (WSP). Un agente LLM examinó los pesos y activaciones del modelo degradado y editó directamente dos matrices, que representan el 0,0008 % de los pesos totales, sin ajuste a datos. No se dispone de información sobre el número de tokens de entrenamiento del modelo original, la composición del dataset ni si hubo RLHF o DPO. La innovación destacable es precisamente el método de reparación post-cuantización, documentado en un blog del laboratorio Abdelfattah.
+La innovación de este repo no está en el entrenamiento, sino en el post-procesado. Un agente LLM inspeccionó los pesos y activaciones del checkpoint de 3 bits mal calibrado y editó directamente dos matrices, equivalentes al 0,0008 % de los pesos totales, sin ajuste a datos (no hay fine-tuning, RLHF ni DPO en esta etapa). El autor describe el proceso como "agent weight space programming". Los pesos resultantes se dequantizan a BF16 mediante `dequantize.py` y se sirven con vLLM en una sola GPU. No se dispone de información sobre el dataset de entrenamiento original del modelo base ni sobre el número de tokens utilizados.
 
 ## Capacidades
 
-- Generación de texto y razonamiento general, con resultados medidos en MMLU (74,3 en este checkpoint).
-- Razonamiento matemático: GSM8K (91,6) y MATH-500 (82,2) en la versión reparada.
-- Generación de código: LiveCodeBench v6 con 48,6.
-- Razonamiento científico de nivel avanzado: GPQA Diamond con 62,6.
-- Orientación a agentes autónomos y despliegues de subagentes, según la documentación del modelo base de NVIDIA.
-- Compatibilidad con decodificación especulativa, según la documentación del modelo base.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades multimodales (visión, audio): no disponible en la información proporcionada.
+- Generación de texto y razonamiento general, evaluado en MMLU (74,3 tras la reparación).
+- Razonamiento matemático, evaluado en GSM8K (91,6) y MATH-500 (82,2).
+- Generación de código, evaluado en LiveCodeBench v6 (48,6).
+- Razonamiento científico de nivel avanzado, evaluado en GPQA Diamond (62,6).
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
 - Capacidades multilingües: no disponible en la información proporcionada.
+- Capacidades especiales (modo thinking, visión, audio): no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Investigación en cuantización: servir como referencia para estudiar cómo la reparación selectiva de pesos recupera rendimiento tras una cuantización agresiva a 3 bits, comparando las métricas antes y después de las ediciones del agente.
-- Despliegue con restricciones de memoria: al ocupar 17,3 GB en disco y poder dequantizarse a BF16, permite ejecutar un modelo de 30B con 3B activos en una sola GPU, útil para prototipos de agentes en entornos con VRAM limitada.
-- Evaluación de pipelines de agentes: su orientación a agentes autónomos y subagentes lo hace adecuado para probar orquestaciones multi-paso en laboratorio antes de migrar a la versión NVFP4 completa.
-- Razonamiento matemático asistido: con 91,6 en GSM8K y 82,2 en MATH-500, puede emplearse en tareas de resolución de problemas matemáticos donde la latencia no sea crítica.
-- Generación de código en entornos de prueba: con 48,6 en LiveCodeBench v6, sirve para experimentar con asistentes de código en local, siempre validando la salida.
-- Reproducción de experimentos: el script `dequantize.py` y el blog asociado permiten replicar el proceso de reconstrucción del checkpoint BF16 y verificar las cifras publicadas con vLLM en una GPU.
+- Evaluación de técnicas de reparación de cuantización: el checkpoint sirve como referencia reproducible para investigar cómo la edición dirigida de un subconjunto mínimo de pesos (0,0008 %) recupera capacidades en modelos cuantizados a 3 bits, comparando contra el punto de partida y el release NVFP4.
+- Despliegue en hardware con VRAM limitada: al ocupar 17,3 GB en disco en formato de 3 bits, permite servir un modelo de 30B totales y 3B activos en GPUs de gama alta de consumo tras dequantizar a BF16 o manteniendo la cuantización, según el soporte del runtime.
+- Razonamiento matemático en producción con requisitos de memoria ajustados: los 91,6 puntos en GSM8K y 82,2 en MATH-500 lo hacen viable para asistentes de resolución de problemas cuando no se dispone de VRAM para el release NVFP4 completo.
+- Generación de código asistida en entornos con presupuesto de memoria: los 48,6 en LiveCodeBench v6 permiten integrarlo en pipelines de autocompletado o revisión, aceptando la pérdida de ~6,6 puntos respecto al release original.
+- Investigación sobre calibración de GPTQ: el contraste entre el checkpoint mal calibrado (66,8 en MMLU) y el reparado (74,3) ofrece un caso de estudio sobre la sensibilidad de la calibración en cuantizaciones de 3 bits.
+- Servicio de inferencia con vLLM en una sola GPU: el flujo documentado (`dequantize.py` seguido de `vllm serve`) permite levantar el modelo en BF16 en un único dispositivo, simplificando el despliegue frente a configuraciones multi-GPU.
 
 ## Benchmarks y rendimiento
 
 | Checkpoint | Pesos editados | GSM8K | MATH-500 | LiveCodeBench v6 | GPQA Diamond | MMLU | WikiText-2 PPL |
 |---|---|---|---|---|---|---|---|
 | NVFP4 release | – | 95,0 | 88,8 | 55,2 | 71,1 | 77,1 | 8,08 |
-| 3 bits mal calibrado | – | 71,4 | 60,8 | 30,8 | 47,1 | 66,8 | 11,76 |
-| + ediciones del agente (este repo) | 0,0008 % | 91,6 | 82,2 | 48,6 | 62,6 | 74,3 | 9,39 |
+| Poorly calibrated 3-bit | – | 71,4 | 60,8 | 30,8 | 47,1 | 66,8 | 11,76 |
+| + agent edits (este repo) | 0,0008 % | 91,6 | 82,2 | 48,6 | 62,6 | 74,3 | 9,39 |
 
-Los conjuntos de prueba se ejecutaron una sola vez, con los pesos de 3 bits dequantizados a BF16 y servidos con vLLM en una única GPU. No se han publicado otros benchmarks en la información disponible.
+Test sets ejecutados una sola vez. Pesos de 3 bits dequantizados a BF16 y servidos con vLLM en una GPU. No se han publicado resultados adicionales de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el repositorio ocupa 17,3 GB en disco en formato de 3 bits; tras dequantizar a BF16, los 30B parámetros requieren aproximadamente 60 GB de VRAM, aunque solo 3B se activan por token.
-- GPU recomendadas: A100 de 80 GB o H100 para servir el checkpoint dequantizado a BF16 con vLLM; una RTX 4090 de 24 GB no es suficiente para la versión BF16 completa.
-- Cabe en GPU de consumo: no en formato BF16; el checkpoint de 3 bits podría caber en GPUs de 24 GB si el runtime soporta la cuantización, pero la información proporcionada solo documenta el flujo de dequantización a BF16.
-- Opciones de despliegue: vLLM es el runtime documentado (`vllm serve <out dir>` tras ejecutar `dequantize.py`); no se mencionan llama.cpp, Ollama ni TGI.
+- VRAM estimada para inferencia: el repo ocupa 17,3 GB en disco en formato de 3 bits; tras dequantizar a BF16, un modelo de 30B parámetros requiere aproximadamente 60 GB de VRAM (2 bytes por parámetro), sin contar overhead de KV cache.
+- GPU recomendadas: para BF16 dequantizado, A100 80 GB o H100 80 GB en una sola unidad; para el checkpoint de 3 bits con runtime compatible, GPUs de 24 GB o más podrían ser suficientes, aunque no se documenta soporte nativo de 3 bits en vLLM.
+- Cabe en consumer GPU: el formato de 3 bits (17,3 GB) es compatible con RTX 4090 (24 GB) siempre que el runtime soporte la cuantización; en BF16 no cabe en GPUs de consumo.
+- Opciones de despliegue: vLLM (documentado por el autor, previa dequantización a BF16 con `dequantize.py`); llama.cpp, Ollama y TGI no están documentados en la información disponible.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Activos | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Este checkpoint (W3 WSP) | 30B | 3B | no disponible | OpenMDW-1.1 | Hugging Face, 0 descargas |
-| NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 | 30B | 3B | no disponible | OpenMDW-1.1 | Hugging Face, NVIDIA NIM |
-| 3 bits GPTQ mal calibrado (origen) | 30B | 3B | no disponible | OpenMDW-1.1 | No distribuido como repo independiente |
+| Modelo | Parámetros | Contexto | MMLU | GSM8K | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Este checkpoint (3-bit reparado) | 30B totales / 3B activos | no disponible | 74,3 | 91,6 | OpenMDW-1.1 | Hugging Face |
+| NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 (base) | 30B totales / 3B activos | no disponible | 77,1 | 95,0 | OpenMDW-1.1 | Hugging Face |
+| Checkpoint 3-bit mal calibrado (punto de partida) | 30B totales / 3B activos | no disponible | 66,8 | 71,4 | OpenMDW-1.1 | No distribuido como repo independiente en la información disponible |
 
-La comparativa se limita a las variantes del mismo modelo base, ya que la información proporcionada no incluye otros modelos comparables de la misma categoría. Las diferencias de rendimiento entre las tres variantes se detallan en la tabla de benchmarks.
+No se dispone de datos sobre otros modelos de la misma categoría (MoE de ~30B con ~3B activos) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es un artefacto de investigación: el propio autor lo describe como una reparación experimental con un agente, no como un modelo validado para producción.
-- Los benchmarks se ejecutaron una sola vez, sin repeticiones ni intervalos de confianza, lo que limita la fiabilidad estadística de las cifras.
-- Rendimiento inferior al modelo NVFP4 original en todas las métricas: 3,4 puntos menos en GSM8K, 6,6 en MATH-500, 6,6 en LiveCodeBench v6, 8,5 en GPQA Diamond y 2,8 en MMLU.
-- La perplejidad en WikiText-2 (9,39) sigue por encima de la del original (8,08), lo que indica degradación residual.
-- Riesgo de alucinación: no cuantificado en la información disponible, pero previsible en un modelo de 3 bits reparado.
-- Idiomas soportados no documentados, lo que impide garantizar un rendimiento multilingüe.
-- Longitud de contexto no disponible, factor crítico para casos de uso con documentos largos.
-- Licencia OpenMDW-1.1: es necesario revisar sus términos para uso comercial, ya que la model card la etiqueta como "other" y remite al texto de la licencia original de NVIDIA.
-- Sin descargas ni likes en el momento de la consulta, lo que implica ausencia de validación por parte de la comunidad.
-- El flujo de uso exige ejecutar `dequantize.py` para reconstruir un checkpoint BF16, lo que añade un paso manual y requisitos de almacenamiento adicionales.
+- El checkpoint parte de una calibración deficiente y la reparación solo edita el 0,0008 % de los pesos; persiste una brecha frente al release NVFP4 en todas las métricas (por ejemplo, −3,4 puntos en GSM8K, −5,4 en MMLU, −8,6 en GPQA Diamond).
+- Los benchmarks se ejecutaron una sola vez ("run once"), sin intervalos de confianza ni repeticiones, lo que limita la fiabilidad estadística de las cifras.
+- No hay información sobre sesgos conocidos, idiomas soportados ni comportamiento multilingüe; no debe asumirse cobertura equivalente al modelo base.
+- Riesgo de alucinación: no cuantificado en la información disponible; la perplejidad en WikiText-2 (9,39 frente a 8,08 del release) sugiere una distribución de probabilidad algo más degradada.
+- La licencia OpenMDW-1.1 se hereda del modelo fuente; es responsabilidad del usuario revisar los términos en https://openmdw.ai/license/1-1/ antes de uso comercial.
+- El flujo de despliegue documentado exige dequantizar a BF16, lo que anula la ventaja de memoria del formato de 3 bits y requiere ~60 GB de VRAM para 30B parámetros.
+- No se documenta soporte de tool calling, agentes, visión ni modo thinking; no debe asumirse en producción sin verificación empírica.
+- Al ser un repo de un autor individual con 25 descargas y 0 likes, carece de validación comunitaria independiente.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/yemara/Nemotron-3.5-Lightning-30B-A3B-W3-WSP-PoorlyCalibrated
+- Modelo en Hugging Face: https://huggingface.co/yemara/Nemotron-3.5-Lightning-30B-A3B-W3-WSP-PoorlyCalibrated
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
-- Blog del método WSP: https://abdelfattah-lab.github.io/blogs/wsp-quant-repair/
+- Blog post del autor: https://sharar-project.github.io/blog/repairing-quantized-llm/index.html
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
-- Model card en NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard
-- SourceForge: https://sourceforge.net/projects/nemotron-3-5-lightning/

@@ -2,48 +2,47 @@
 
 ## Resumen
 
-Agent-GenPath es un backbone DiT (Diffusion Transformer) preentrenado, publicado por el usuario yscript en Hugging Face, que sirve como base generativa para síntesis de imágenes de patología y para tareas posteriores de segmentación. El modelo se presenta como el componente central del trabajo "Agent-Driven Generative Priors for Pathology Image Synthesis and Segmentation", cuyo paper y código están anunciados como "coming soon" en la model card, por lo que la documentación disponible es mínima.
+Agent-GenPath es el backbone DiT (Diffusion Transformer) preentrenado del sistema Agent-GenPath, un modelo de generacion de imagenes de patologia desarrollado por Sicheng Yang, Rui Tang, Haipeng Zhou, Hongqiu Wang, Zhaohu Xing, Jianda Ma, Lie Dai, Guang Yang y Lei Zhu, y publicado en el repositorio de Hugging Face del usuario `yscript`. El modelo se presenta en el articulo "Agent-Driven Generative Priors for Pathology Image Synthesis and Segmentation" (arXiv:2611.06701), y su proposito es servir como prior generativo para sintetizar imagenes histopatologicas y, a partir de ellas, apoyar tareas de segmentacion downstream.
 
-La propuesta técnica se apoya en flow matching sobre una arquitectura DiT, un enfoque que en los últimos años ha desplazado parcialmente a los modelos de difusión clásicos en generación de imágenes por su formulación más directa del transporte entre distribuciones. El interés para desarrolladores e investigadores radica en su aplicación al dominio histopatológico, donde los priors generativos pueden emplearse para aumentar datasets escasos, generar parches sintéticos etiquetados y mejorar el entrenamiento de segmentadores.
+Tecnicamente se trata de un Diffusion Transformer entrenado con flow matching y orientado a generacion incondicional de imagenes (`unconditional-image-generation`). El repositorio ocupa aproximadamente 0,5 GB, lo que sugiere un backbone de tamano moderado, aunque la model card no especifica el numero de parametros, la longitud de contexto (no aplica en generacion de imagen) ni los detalles del dataset de entrenamiento.
 
-No obstante, la información pública es muy limitada: el repositorio ocupa 0,5 GB, no declara licencia, idiomas, pipeline ni parámetros, y no incluye resultados de benchmarks. Cualquier evaluación rigurosa requiere esperar a la publicación del paper y del código asociado.
+La relevancia del modelo radica en su enfoque: combinar priors generativos con un agente para mejorar la sintesis de imagenes de patologia y la segmentacion posterior. No obstante, la informacion publica disponible es muy limitada (0 descargas, 0 likes, sin licencia declarada, sin benchmarks ni especificaciones detalladas), por lo que debe evaluarse con cautela antes de cualquier uso en produccion o investigacion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | DiT (Diffusion Transformer) con flow matching |
+| Arquitectura | Diffusion Transformer (DiT) con flow matching |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (modelo de imagen, no de texto) |
+| Longitud de contexto | no disponible (generacion de imagen, no texto) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
+| Idiomas soportados | no disponible (modelo de imagen) |
 | Licencia | no disponible |
-| Formato de pesos | no disponible (repo de 0,5 GB, presumiblemente pesos PyTorch) |
+| Formato de pesos | no disponible (repo de 0,5 GB, presumiblemente PyTorch) |
 
 ## Arquitectura y entrenamiento
 
-La model card indica únicamente que se trata de un backbone DiT preentrenado con flow matching, orientado a síntesis de imágenes de patología y a segmentación downstream. Un DiT sustituye el U-Net de los modelos de difusión convencionales por un transformer que opera sobre parches latentes, lo que permite escalar capacidad y aprovechar mecanismos de atención global sobre la imagen. El flow matching, por su parte, entrena el modelo para predecir un campo de velocidad que transporta ruido hacia datos, lo que habitualmente simplifica la dinámica de entrenamiento frente a la predicción de ruido ε.
+La model card indica que se trata de un backbone DiT (Diffusion Transformer) preentrenado, entrenado mediante flow matching y destinado a generacion incondicional de imagenes de patologia. El sistema completo, Agent-GenPath, combina este prior generativo con un agente que guia la sintesis y la segmentacion downstream, segun el titulo del paper. No se detalla en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO u otras optimizaciones posteriores.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset histopatológico, el uso de RLHF/DPO (poco habitual en modelos generativos de imagen) ni sobre innovaciones adicionales como decodificación especulativa o atención lineal. Tampoco se detalla si el backbone se entrena desde cero o se inicializa desde un DiT genérico.
+Tampoco se especifican innovaciones tecnicas concretas como decodificacion especulativa, atencion lineal o variantes de muestreo. El unico detalle arquitectonico confirmado es el uso de DiT con flow matching, un enfoque habitual en modelos generativos de imagen de ultima generacion. Cualquier otra afirmacion sobre la arquitectura interna requeriria consultar el paper (arXiv:2611.06701) o el repositorio de codigo.
 
 ## Capacidades
 
-- Generación de imágenes sintéticas de patología a partir del backbone DiT preentrenado.
-- Soporte declarado para segmentación downstream, presumiblemente mediante ajuste fino o uso como prior generativo.
-- Modelado generativo basado en flow matching, adecuado para muestreo condicionado por máscaras o etiquetas (no confirmado en la documentación).
-- No se declaran capacidades de tool calling, function calling, agentes ni razonamiento multi-step, a pesar del término "Agent" en el nombre.
-- No se declaran capacidades multilingües ni de procesamiento de texto.
-- No se declaran modos especiales como thinking mode, visión general, audio o vídeo.
+- Generacion incondicional de imagenes de patologia (histopatologia) mediante un backbone DiT entrenado con flow matching.
+- Sintesis de imagenes que actuan como prior generativo para tareas downstream de segmentacion.
+- Integracion en el sistema Agent-GenPath, que incorpora un agente para orquestar la generacion y la segmentacion.
+- No se documentan capacidades de generacion de texto, razonamiento, codigo, matematicas, vision general, tool calling, agentes multi-paso ni multilingueismo en el sentido de LLM.
+- No se documentan modos especiales como thinking mode, vision general, audio u otras modalidades.
 
 ## Casos de uso
 
-- Aumento de datos en histopatología: generar parches sintéticos de tejido para equilibrar clases minoritarias en datasets de entrenamiento, aprovechando el prior generativo del backbone DiT.
-- Preentrenamiento de segmentadores: usar el backbone como inicialización o como generador de datos aumentados para mejorar la robustez de modelos de segmentación de estructuras histológicas.
-- Investigación en flow matching aplicado a imagen médica: servir como referencia reproducible para estudiar la dinámica de transporte entre ruido y distribuciones de tejido.
-- Validación de pipelines generativos en patología digital: integrar el modelo en flujos de trabajo de whole-slide imaging para evaluar la fidelidad de las muestras sintéticas.
-- Estudio de sesgos y artefactos en imágenes sintéticas médicas: analizar qué estructuras histológicas reproduce o distorsiona el modelo antes de usarlo en producción clínica.
-- Prototipado académico: base para experimentos de condicionamiento (por ejemplo, por tipo de tejido o por máscara de segmentación) en entornos de investigación con recursos limitados, dado el tamaño moderado del repositorio (0,5 GB).
+- Aumento de datos en patologia: generar imagenes histopatologicas sinteticas para ampliar datasets de entrenamiento en tareas de clasificacion o segmentacion, especialmente cuando hay escasez de muestras anotadas.
+- Preentrenamiento de segmentadores: utilizar el backbone DiT como prior generativo para inicializar o regularizar modelos de segmentacion de tejidos en imagenes de patologia.
+- Investigacion en generacion medica: estudiar la calidad y diversidad de imagenes sinteticas producidas por flow matching en el dominio histopatologico.
+- Reproduccion de experimentos: servir como base para reproducir los resultados del paper Agent-GenPath en entornos de investigacion academica.
+- Prototipado de pipelines agente-generador: explorar la combinacion de un agente con un prior generativo para tareas de sintesis y segmentacion encadenadas.
+- Educacion y divulgacion: generar ejemplos visuales de estructuras histopatologicas para materiales docentes, siempre que la licencia lo permita (actualmente no declarada).
 
 ## Benchmarks y rendimiento
 
@@ -51,33 +50,35 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible; el tamaño del repositorio (0,5 GB) sugiere un backbone de tamaño moderado, pero no se confirma el número de parámetros ni el coste real de muestreo.
-- GPU recomendadas: no disponible; por la naturaleza de un DiT, se esperaría que una GPU con al menos 16-24 GB de VRAM sea suficiente para inferencia en precisión completa, pero es una estimación no verificada.
-- Compatibilidad con GPU de consumo: no confirmada; probablemente viable en RTX 3090/4090 si el backbone es pequeño, sujeto a verificación.
-- Opciones de despliegue: no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI (herramientas orientadas a modelos de lenguaje, no aplicables directamente a un DiT de imagen).
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible. El tamano del repo (0,5 GB) sugiere un modelo relativamente pequeno, pero no se confirma el numero de parametros ni la precision de los pesos.
+- GPU recomendadas: no disponible.
+- Compatibilidad con GPU de consumo: no confirmada; por el tamano del repo es plausible que quepa en GPUs consumer, pero no hay datos oficiales.
+- Opciones de despliegue: no se documentan integraciones con vLLM, llama.cpp, Ollama, TGI ni otros frameworks. Al ser un modelo de difusion, requeriria un runtime de difusion (por ejemplo, PyTorch con el codigo del repositorio oficial).
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Agent-GenPath (yscript) | DiT + flow matching para patología | no disponible | no aplica | no disponible | Hugging Face, repo 0,5 GB |
+| Agent-GenPath (yscript/agent-genpath) | no disponible | no aplica | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de información suficiente para establecer una comparativa fiable con otros backbones generativos de patología.
+No se dispone de informacion suficiente para establecer una comparativa rigurosa con otros modelos de generacion de imagenes de patologia o con backbones DiT similares.
 
 ## Limitaciones y advertencias
 
-- Documentación mínima: la model card no incluye parámetros, dataset, licencia ni resultados, lo que impide evaluar su calidad de forma rigurosa.
-- Licencia no declarada: no puede asumirse uso comercial; es imprescindible contactar con el autor antes de cualquier despliegue en producción.
-- Riesgo de alucinación visual: como modelo generativo, puede producir estructuras histológicas plausibles pero biológicamente incorrectas, lo que es crítico en contexto clínico.
-- Sin validación clínica publicada: no debe utilizarse para diagnóstico ni para entrenar sistemas con fines médicos sin una evaluación independiente.
-- Idiomas y contexto no aplicables: al ser un modelo de imagen, las filas de idiomas y contexto de la ficha estándar no tienen sentido aquí y se marcan como no disponibles.
-- Paper y código anunciados pero no publicados: la reproducibilidad es nula en el momento de redactar esta ficha.
-- Cero descargas y cero likes: no hay evidencia de uso comunitario ni de revisión por pares.
+- Licencia no declarada: no se puede confirmar el uso comercial ni la redistribucion; es un riesgo critico para produccion.
+- Ausencia de benchmarks: no hay evidencia publicada de calidad, fidelidad ni diversidad de las imagenes generadas.
+- Modelo de dominio muy especifico (patologia): no es adecuado para generacion de imagenes generales ni para tareas de texto.
+- Riesgo de sesgos: al entrenarse presumiblemente con datasets histopatologicos limitados, puede reproducir sesgos de poblacion, tincion o equipamiento no documentados.
+- Riesgo de alucinacion visual: las imagenes sinteticas pueden contener estructuras anatomicamente inverosimiles; no deben usarse con fines clinicos sin validacion experta.
+- Falta de documentacion sobre el dataset de entrenamiento, lo que impide evaluar su representatividad y posibles problemas de privacidad.
+- Popularidad nula (0 descargas, 0 likes) y actualizacion reciente: ecosistema inmaduro, sin garantias de mantenimiento.
+- No se documentan limitaciones de contexto ni de idioma porque el modelo no procesa texto.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/yscript/agent-genpath
-- Paper (arXiv): anunciado como "coming soon", no disponible
-- Código: anunciado como "coming soon", no disponible
+- Paper (arXiv): https://arxiv.org/abs/2611.06701
+- PDF: https://arxiv.org/pdf/2611.06701
+- Codigo: https://github.com/script-Yang/Agent-GenPath

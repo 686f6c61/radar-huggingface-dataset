@@ -2,89 +2,98 @@
 
 ## Resumen
 
-Esta ficha describe el checkpoint cuantizado `xv0y5ncu/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-GLQ-trellis-3inst-4bpw`, una versión en 4 bits por peso del modelo multimodal `nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16` de NVIDIA. La cuantización la ha realizado un tercero (el usuario `xv0y5ncu`) mediante GLQ, un método propio basado en cuantización con codebook codificado en trellis (QTIP TCQ, variante `3inst`), transformada de Hadamard aleatorizada (RHT) y LDLQ. Los pesos permanecen comprimidos en memoria y se decodifican al vuelo con un kernel CUDA fusionado.
+NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-GLQ es una cuantizacion de 4 bits por peso (4.0 bpw) del modelo multimodal NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16, publicada por el usuario xv0y5ncu. El modelo base es un transformer de tipo `nemotron_h_omni` (arquitectura hibrida para texto e imagen) con 120.000 millones de parametros nominales, de los cuales 12.000 millones son activos (esquema MoE), desarrollado por NVIDIA. Esta version reduce el peso en disco a aproximadamente 70 GB mediante cuantizacion con codebook trellis-coded (QTIP TCQ), transformada de Hadamard aleatorizada (RHT) y LDLQ.
 
-El modelo base es un Nemotron 3.5 de tipo omni/VL con arquitectura `nemotron_h_omni`, orientado a tareas image-text-to-text, con modo de razonamiento (`<think>`) activado por defecto en su plantilla de chat. El checkpoint cuantizado declara 34.976.977.416 parámetros reales en safetensors y un repositorio de 70 GB, coherente con un modelo nominal de 120B en 4 bpw (el nombre comercial "120B-A12B" sugiere una arquitectura con parámetros totales y activos, aunque la información disponible no detalla la configuración MoE).
+La relevancia de este checkpoint es practica: permite servir un modelo de 120B con requisitos de memoria notablemente menores que el BF16 original, manteniendo los pesos comprimidos en memoria y decodificandolos al vuelo mediante un kernel CUDA fusionado. La tecnica GLQ rinde mejor en el rango de 2 a 4 bits por peso, y esta version de 4 bpw se situa en ese punto dulce. El SQNR medio de pesos es de 21,24 dB sobre 41.232 capas cuantizadas, calibrado con 128 muestras de 2.048 tokens de WikiText-2.
 
-Su relevancia práctica es doble: por un lado, permite servir un modelo de gran tamaño en hardware más modesto que el BF16; por otro, es un ejemplo de cuantización agresiva (2–4 bpw) con decodificación nativa en un solo paso, sin apilado de residuos. No obstante, el propio autor advierte de que esta build de 4 bpw **no se ha servido de extremo a extremo** y de que las cifras medidas corresponden a la build de 3 bpw. La validación multimodal (imagen y vídeo) tampoco está confirmada.
+Importante: el autor advierte que esta build de 4 bpw **no se ha servido aun de extremo a extremo**; las cifras medidas corresponden a la build de 3 bpw. Ademas, GLQ solo cuantiza el modelo de lenguaje: la torre de vision y el proyector permanecen en bf16, y la entrada multimodal (imagen y video) no ha sido validada. El uso probado es exclusivamente texto.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `nemotron_h_omni` (transformer multimodal omni/VL, según `architectures` del repo) |
-| Parametros totales | 34.976.977.416 (safetensors del checkpoint cuantizado); nombre comercial del base: 120B-A12B |
-| Parametros activos | no disponible (el nombre sugiere A12B, pero no se detalla la configuración MoE) |
-| Longitud de contexto | 65.536 tokens en el ejemplo de despliegue (`max_model_len=65536`); el máximo nativo del base no se especifica |
-| Tipos de cuantizacion | GLQ 4.0 bpw uniforme (trellis-coded QTIP TCQ variante `3inst` + RHT + LDLQ); torre de visión y proyector en BF16 |
+| Arquitectura | Transformer hibrido tipo `nemotron_h_omni` (texto + vision, MoE) |
+| Parametros totales | 34.976.977.416 (segun safetensors del checkpoint cuantizado); el nombre comercial indica 120B |
+| Parametros activos | 12B (sufijo A12B del modelo base) |
+| Longitud de contexto | Hasta 65.536 tokens en el ejemplo de servicio (no confirmado el maximo nativo) |
+| Tipos de cuantizacion | GLQ 4.0 bpw (trellis-coded QTIP TCQ variante `3inst` + RHT + LDLQ); pesos del LM comprimidos, torre de vision y proyector en bf16 |
 | Idiomas soportados | en, es, fr, de, it, ja |
-| Licencia | OpenMDW 1.1 (`license: other`, `license_name: openmdw-1.1`) |
-| Formato de pesos | safetensors (librería `vllm`, `custom_code` en `auto_map` sin código de modelado incluido) |
+| Licencia | OpenMDW 1.1 (`other`) |
+| Formato de pesos | safetensors (custom code, libreria vLLM) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer multimodal de la familia Nemotron 3.5 de NVIDIA, con pipeline `image-text-to-text` y arquitectura registrada como `nemotron_h_omni`. La información disponible no detalla la composición interna (número de capas, atención, posible mezcla de expertos) más allá del nombre "120B-A12B", que sugiere parámetros totales y activos. Los datasets declarados son `nvidia/nemotron-pre-training-datasets` y `nvidia/nemotron-post-training-v3`, lo que indica un pipeline de preentrenamiento más post-entrenamiento (posiblemente con RLHF/DPO, aunque no se confirma). No se especifica el número de tokens de entrenamiento ni la composición del dataset.
+El modelo base emplea una arquitectura `nemotron_h_omni`, una variante hibrida de NVIDIA orientada a entrada image-text-to-text, con mezcla de expertos (120B totales, 12B activos). No se dispone de detalles publicados en la informacion proporcionada sobre el numero exacto de tokens de entrenamiento, la composicion del dataset ni las fases de RLHF o DPO; los datasets referenciados son `nvidia/nemotron-post-training-v3` y `nvidia/nemotron-pre-training-datasets`.
 
-La innovación de este checkpoint es la cuantización GLQ: codebook codificado en trellis (QTIP TCQ, variante `3inst`), transformada de Hadamard aleatorizada y LDLQ, a una tasa uniforme de 4.0 bits por peso (tasa nativa del trellis, una sola pasada de decodificación sin apilado de residuos). El SQNR medio ponderado es de 21,24 dB sobre 41.232 capas cuantizadas, con calibración de 128 muestras × 2.048 tokens de WikiText-2. Los pesos se decodifican al vuelo mediante un kernel CUDA fusionado. La torre de visión y el proyector permanecen en BF16.
+La innovacion destacable de este checkpoint no esta en la arquitectura sino en la cuantizacion: GLQ combina un codebook trellis-coded (QTIP TCQ), una transformada de Hadamard aleatorizada y LDLQ para comprimir los pesos a 4.0 bpw en una unica pasada de decodificacion, sin apilamiento de residuales. Los pesos se mantienen comprimidos en memoria y se decodifican al vuelo con un kernel CUDA fusionado, lo que reduce el footprint sin descomprimir el modelo completo a bf16. La calibracion se realizo con 128 muestras de 2.048 tokens de WikiText-2, alcanzando 21,24 dB de SQNR medio. Es obligatorio usar bf16 (no fp16): en fp16 la build equivalente de Nemotron 3.5 Lightning cierra el bloque `-thinking-` de inmediato sin error ni NaN.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, con plantilla de chat que abre un bloque `<think>` (modo de razonamiento activado por defecto).
-- Razonamiento explícito mediante modo thinking; NVIDIA recomienda temperatura 1.0 y top_p 0.95 para muestreo de texto.
-- Capacidad multimodal declarada (image-text-to-text) en el modelo base; en este checkpoint la cuantización solo afecta al modelo de lenguaje y **la entrada de imagen y vídeo no ha sido validada**.
-- Soporte multilingüe declarado para inglés, español, francés, alemán, italiano y japonés.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades de audio: el campo `limit_mm_per_prompt` incluye `audio`, pero no se confirma soporte real ni validación.
+- Generacion de texto y razonamiento con modo "thinking" activado por defecto en la plantilla de chat (bloque `thinking-`).
+- Capacidad multimodal declarada en la pipeline (`image-text-to-text`), aunque la entrada de imagen y video **no ha sido validada** en esta build; el autor recomienda desactivarla en el servicio.
+- Soporte multilingue en ingles, espanol, frances, aleman, italiano y japones.
+- Razonamiento multi-paso (el modelo base esta disenado para cadenas de razonamiento).
+- Capacidades de codigo y matematicas heredadas del modelo base (no verificadas en esta cuantizacion).
+- Soporte de tool calling / function calling: no confirmado en la informacion disponible para esta build.
+- Capacidades de agente: no confirmadas en la informacion disponible.
 
 ## Casos de uso
 
-- **Servicio de chat de texto con razonamiento en vLLM**: el checkpoint está pensado para servirse con `quantization="glq"`, `dtype="bfloat16"` y el plugin de vLLM de GLQ ≥ 0.8.33. Adecuado para asistentes conversacionales que se beneficien del bloque `<think>` y de una ventana de 65.536 tokens.
-- **Despliegue en hardware con VRAM limitada**: al mantener los pesos a 4.0 bpw con decodificación al vuelo, reduce la huella de memoria frente al BF16, lo que permite servir un modelo de escala 120B nominal en nodos con menos memoria que la necesaria para el base.
-- **Procesamiento de documentos largos en varios idiomas**: con 65.536 tokens de contexto y soporte de en, es, fr, de, it y ja, encaja en tareas de resumen, extracción y Q&A sobre textos extensos.
-- **Generación de código y asistencia técnica**: el autor distribuye el wrapper `glq-code`; el modelo puede usarse en flujos de asistencia a programación siempre que se valide la calidad tras la cuantización a 4 bpw.
-- **Investigación en cuantización**: útil como referencia reproducible para estudiar el impacto de GLQ (QTIP TCQ + RHT + LDLQ) a 4 bpw frente al base BF16, con métricas de SQNR publicadas.
-- **Evaluación de pipelines multimodales (con cautela)**: el modelo base es image-text-to-text, por lo que puede emplearse para experimentar con entrada de imagen, pero el autor indica que esta build no ha validado imagen ni vídeo y que los snippets desactivan la entrada multimodal.
+- **Razonamiento de texto de largo contexto**: servir el modelo con `max_model_len=65536` para tareas de analisis documental o sintesis donde se necesita una ventana amplia, aprovechando el modo thinking para cadenas de razonamiento extensas.
+- **Generacion de codigo asistida**: el modelo base apunta a tareas de codigo; con esta cuantizacion de 4 bpw se puede integrar en un servidor vLLM interno para autocompletado y explicacion de codigo, siempre que se valide la calidad frente al BF16.
+- **Asistente conversacional multilingue**: cubrir conversaciones en ingles, espanol, frances, aleman, italiano y japones con un unico checkpoint, reduciendo el coste de despliegue frente al modelo BF16.
+- **Investigacion en cuantizacion**: usar este checkpoint como referencia practica para medir la degradacion de un LM de 120B/12B activos a 4.0 bpw con GLQ, comparando SQNR y calidad de generacion contra el original.
+- **Despliegue en hardware con VRAM limitada**: sustituir el BF16 (que no cabe en GPUs de consumo) por esta version de ~70 GB en disco para servidores con menos memoria, aceptando la perdida de precision.
+- **Prototipado de pipelines de razonamiento**: experimentar con el modo thinking por defecto en tareas de analisis o planificacion antes de comprometer recursos a la version completa.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card solo reporta métricas de cuantización: SQNR medio de 21,24 dB sobre 41.232 capas y calibración con 128 muestras × 2.048 tokens de WikiText-2. Las cifras de rendimiento medidas corresponden a la build de 3 bpw, no a esta de 4 bpw.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explicitamente que las cifras medidas corresponden a la build de 3 bpw y que esta de 4 bpw no se ha servido de extremo a extremo. El unico dato cuantitativo reportado es el SQNR medio de pesos: 21,24 dB sobre 41.232 capas.
+
+| Metrica | Valor |
+|---|---|
+| SQNR medio de pesos | 21,24 dB |
+| Capas cuantizadas | 41.232 |
+| Bits por peso | 4.0 |
+| Calibracion | 128 muestras x 2.048 tokens (WikiText-2) |
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: el repositorio ocupa 70 GB; a 4.0 bpw los pesos del modelo de lenguaje rondan esa cifra, más la torre de visión y el proyector en BF16 y el overhead de KV cache para 65.536 tokens. Para servir con contexto completo se recomienda un nodo con al menos 80 GB de VRAM, y preferiblemente 2×80 GB si se usa contexto largo.
-- **GPU recomendadas**: A100 80 GB, H100 80 GB o H200 para contexto completo; en consumer, no cabe en una RTX 4090 (24 GB) ni en una RTX 5090 (32 GB) con los pesos completos.
-- **Consumer GPU**: no es viable en GPU de consumo individual; requeriría offloading a CPU o sharding multi-GPU.
-- **Opciones de despliegue**: vLLM con el plugin GLQ (`quantization="glq"`, `dtype="bfloat16"`), instalado vía `pip install 'glq[vllm]>=0.8.33' 'transformers==5.19.0'`. No se documenta soporte de llama.cpp, Ollama ni TGI.
-- **Latencia y throughput**: no disponible; el autor indica que esta build de 4 bpw no se ha servido de extremo a extremo.
+- **VRAM estimada**: el repo pesa 70,0 GB, por lo que se necesita al menos ~70-80 GB de VRAM solo para pesos, mas overhead de KV cache y activaciones; con contexto de 65.536 tokens el requisito crece de forma significativa.
+- **GPU recomendadas**: H100 80 GB, A100 80 GB (justo para pesos, limitado para contexto largo) o configuraciones multi-GPU.
+- **GPU de consumo**: no cabe en RTX 4090 (24 GB) ni en GPUs de 48 GB; requeriria offloading a RAM/CPU, lo que degrada mucho el throughput.
+- **Despliegue**: vLLM con plugin GLQ (requiere `glq >= 0.8.33`, `transformers >= 5.18`, probado con 5.19.0, vLLM 0.32, `dtype="bfloat16"`, `quantization="glq"`). No usar `--trust-remote-code` (el repo no incluye codigo de modelado).
+- **Latencia y throughput**: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
+| Modelo | Parametros | Activos | Contexto | Cuantizacion | Licencia |
 |---|---|---|---|---|---|
-| Este checkpoint (GLQ 4 bpw) | 34,98B en safetensors (nominal 120B-A12B) | 65.536 en ejemplo | GLQ 4.0 bpw | OpenMDW 1.1 | Hugging Face, 41 descargas |
-| `nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16` | Nominal 120B-A12B | no disponible | BF16 | OpenMDW 1.1 | Hugging Face (base oficial) |
-| Build GLQ 3 bpw del mismo autor | Nominal 120B-A12B | no disponible | GLQ 3.0 bpw | OpenMDW 1.1 | Hugging Face (con métricas medidas) |
+| Nemotron-3.5-Super-VL-120B-A12B-GLQ (esta ficha) | 120B (34,98B en safetensors) | 12B | hasta 65.536 en ejemplo | GLQ 4.0 bpw | OpenMDW 1.1 |
+| NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16 | 120B | 12B | no disponible | BF16 | OpenMDW 1.1 |
+| NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-GLQ 3 bpw (misma serie) | 120B | 12B | no disponible | GLQ 3.0 bpw | OpenMDW 1.1 |
+| SmolLM3-3B GLQ (misma tecnica, otro autor) | 3B | n/a | no disponible | GLQ 4.0 bpw | no disponible |
 
-No se dispone de datos de benchmarks para comparar rendimiento frente a alternativas de la misma categoría.
+La comparativa con modelos de otros fabricantes del mismo tamano o categoria no esta disponible en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- **Build no validada de extremo a extremo**: el autor indica explícitamente que esta build de 4 bpw no se ha servido todavía; las cifras medidas son de la build de 3 bpw.
-- **Multimodalidad no validada**: la cuantización solo afecta al modelo de lenguaje; imagen y vídeo no se han probado. Los ejemplos desactivan la entrada multimodal con `limit_mm_per_prompt={"image": 0, "video": 0, "audio": 0}`.
-- **Requisitos estrictos de versiones**: GLQ ≥ 0.8.33 y transformers ≥ 5.18 (probado con 5.19.0). Con transformers 5.17 el modelo falla al cargar por código remoto no disponible; el instalador de GLQ fija 5.17.0, por lo que hay que actualizar manualmente.
-- **No usar `--trust-remote-code`**: el repo mantiene el `auto_map` de NVIDIA pero no incluye código de modelado, así que el flag falla.
-- **Usar BF16, no FP16**: en FP16 el modelo cierra el bloque `<think>` de inmediato sin error ni NaN; esta build solo se ha ejecutado en BF16.
-- **Riesgo de alucinación y sesgos**: inherentes al modelo base; no se documentan evaluaciones específicas tras la cuantización.
-- **Licencia OpenMDW 1.1**: es una licencia "other" con términos propios; conviene revisar el texto antes de un uso comercial.
-- **Contexto**: el valor de 65.536 tokens es el usado en el ejemplo, no necesariamente el máximo nativo del modelo base.
+- **Build no validada de extremo a extremo**: el autor indica que esta version de 4 bpw no se ha servido aun; las cifras de rendimiento son de la build de 3 bpw.
+- **Entrada multimodal sin validar**: la torre de vision y el proyector estan en bf16, pero imagen y video no se han probado; se recomienda servir solo texto (`limit_mm_per_prompt={"image": 0, ...}`).
+- **Degradacion por cuantizacion**: 21,24 dB de SQNR implica perdida de fidelidad respecto al BF16; la calidad en tareas exigentes (codigo, matematicas, razonamiento largo) puede degradarse y debe medirse.
+- **bf16 obligatorio**: en fp16 el modelo base equivalente falla silenciosamente el razonamiento (cierra el bloque thinking de inmediato). No usar fp16.
+- **Compatibilidad fragil**: requiere `glq >= 0.8.33`, `transformers >= 5.18` (probado 5.19.0) y vLLM 0.32; versiones anteriores fallan al iniciar el motor por el campo `vit_hidden_size`.
+- **Riesgo de alucinacion**: inherente al modelo base, no mitigado por la cuantizacion.
+- **Restricciones de licencia**: OpenMDW 1.1; revisar los terminos de uso comercial y de redistribucion antes de produccion.
+- **Idiomas limitados**: seis idiomas soportados; no se garantiza cobertura fuera de esa lista.
+- **Hardware**: no cabe en GPUs de consumo; requiere 80 GB o mas.
 
 ## Enlaces
 
-- Checkpoint en Hugging Face: https://huggingface.co/xv0y5ncu/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-GLQ-trellis-3inst-4bpw
-- Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16
-- Build GLQ 3 bpw: https://huggingface.co/xv0y5ncu/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-GLQ-trellis-3inst-3bpw
+- Hugging Face del checkpoint: https://huggingface.co/xv0y5ncu/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-GLQ-trellis-3inst-4bpw
+- Modelo base BF16: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16
+- Build de 3 bpw con cifras medidas: https://huggingface.co/xv0y5ncu/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-GLQ-trellis-3inst-3bpw
 - Repositorio GLQ: https://github.com/cnygaard/glq
-- Instalador GLQ: https://raw.githubusercontent.com/cnygaard/glq/main/install.sh
+- Modelo SmolLM3-3B GLQ: https://huggingface.co/xv0y5ncu/SmolLM3-3B-trellis-3inst-4bpw-kernel
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
-- Paper referenciado (arXiv:2406.11235): https://arxiv.org/abs/2406.11235
+- Paper referenciado: arxiv:2406.11235

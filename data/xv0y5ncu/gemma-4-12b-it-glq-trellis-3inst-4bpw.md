@@ -2,97 +2,100 @@
 
 ## Resumen
 
-El modelo `xv0y5ncu/gemma-4-12B-it-GLQ-trellis-3inst-4bpw` es una cuantización de alta eficiencia del modelo multimodal `google/gemma-4-12B-it` de Google, desarrollada por el usuario xv0y5ncu. Utiliza el método GLQ (Generalized Learned Quantization) con una tasa de 4.0 bits por peso, basado en una combinación de trellis-coded quantization (QTIP TCQ, variante 3inst), transformada de Hadamard aleatorizada (RHT) y LDLQ. Los pesos permanecen comprimidos en memoria y se decodifican sobre la marcha mediante un kernel CUDA fusionado, lo que reduce drásticamente el uso de VRAM sin sacrificar demasiada fidelidad.
+GLQ 4bpw es una cuantización de `google/gemma-4-12B-it`, un modelo multimodal "any-to-any" de Google (texto, imagen y audio) publicado bajo licencia Apache 2.0. La cuantización la firma el usuario `xv0y5ncu` y aplica un esquema de quantización con codebook trellis-coded (QTIP TCQ, variante `3inst`) combinado con transformada de Hadamard aleatorizada (RHT) y LDLQ, a una tasa uniforme de 4.0 bits por peso. Los pesos permanecen comprimidos en memoria y se decodifican al vuelo mediante un kernel CUDA fusionado.
 
-El modelo base Gemma 4 12B es un transformer multimodal encoder-free que acepta entradas de texto, imagen, audio y video, diseñado para ejecutarse en entornos locales con 16 GB de VRAM. Esta cuantización específica se centra en el decoder de texto; las torres de visión y audio se mantienen en su formato original. El checkpoint resultante ocupa unos 7.6 GB en disco y carga alrededor de 7.73 GiB de pesos en memoria, frente a los ~23.9 GB del modelo en bf16. Es relevante porque permite ejecutar un modelo multimodal de 12B en GPUs de gama media con un impacto mínimo en la calidad, y es compatible con vLLM y Transformers mediante el paquete `glq`.
+El interés de esta ficha es doble: por un lado documenta el modelo base Gemma 4 12B instruct, y por otro el método de cuantización GLQ, que según el autor brilla especialmente en el rango de 2 a 4 bits por peso. El checkpoint reporta 3.788.867.632 parámetros en safetensors (el repositorio ocupa 7,6 GB) y un peso cargado en vLLM de 7,73 GiB frente a los aproximadamente 23,9 GB del modelo en bf16.
 
-## Especificaciones técnicas
+La relevancia actual está en que permite servir un modelo multimodal de 12B en GPUs de consumo (24-32 GB) con una ventana de contexto razonable, y combinarlo con una caché KV cuantizada E8 que reduce aproximadamente 4× el espacio de la caché KV, habilitando contextos más largos en la misma VRAM. El autor advierte que las cifras de rendimiento publicadas son específicas de una RTX PRO 6000 Blackwell y no deben extrapolarse sin citar la GPU.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal encoder-free (Gemma 4 12B) con cuantización GLQ en el decoder de texto |
-| Parámetros totales | 3.788.867.632 (checkpoint cuantizado); modelo base: 12B (no se especifica el número exacto) |
-| Parámetros activos | No aplica (modelo denso) |
-| Longitud de contexto | No disponible en la información proporcionada |
-| Tipos de cuantización | GLQ 4.0 bits/peso (QTIP TCQ 3inst + RHT + LDLQ); opcional KV cache E8 (~4× más pequeña) |
-| Idiomas soportados | No disponible (no especificado) |
-| Licencia | Apache-2.0 (según la model card y el tag de HF) |
-| Formato de pesos | Safetensors (con formato interno GLQ, requiere la librería `glq`) |
+| Arquitectura | Transformer multimodal any-to-any (decoder de texto + torres de visión y audio), familia `gemma4_unified` |
+| Parametros totales | 3.788.867.632 (según safetensors); el nombre del modelo indica 12B |
+| Parametros activos | no disponible (no es MoE según la información proporcionada) |
+| Longitud de contexto | no disponible en la model card; el ejemplo de vLLM usa `max_model_len=4096` |
+| Tipos de cuantizacion | GLQ 4.0 bpw (trellis-coded QTIP TCQ variante `3inst` + RHT + LDLQ); caché KV opcional E8 (`e8_relaxed:2`) |
+| Idiomas soportados | no disponible |
+| Licencia | apache-2.0 (con `license_link` a la licencia de Gemma 4 de Google) |
+| Formato de pesos | safetensors (trellis en layout MMA-fragment para los kernels 3INST) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Gemma 4 12B es un transformer multimodal sin encoder (encoder-free), capaz de ingerir directamente audio y video además de texto e imagen. La cuantización GLQ se aplica exclusivamente al decoder de texto; las torres de visión y audio se mantienen en su formato nativo, lo que significa que las capacidades multimodales del modelo se conservan, aunque el ahorro de memoria se limita al decoder.
+El modelo base es Gemma 4 12B instruct, un transformer multimodal con pipeline `any-to-any` que acepta entradas de texto, imagen y audio. La cuantización GLQ actúa únicamente sobre el decoder de texto; las torres de visión y audio se conservan en su formato nativo. El esquema combina tres piezas: un codebook trellis-coded basado en QTIP TCQ (variante `3inst`, con kernels CUDA "lookup-free"), una transformada de Hadamard aleatorizada (RHT) para rotar los pesos antes de cuantizar, y LDLQ para la asignación de errores. La tasa es uniforme a 4.0 bpw en una sola pasada de decodificación, sin apilado de residuos.
 
-El método GLQ emplea un codebook trellis-coded (QTIP TCQ, variante 3inst) combinado con una transformación de Hadamard aleatoria y LDLQ para minimizar el error de cuantización. El checkpoint se calibró con 128 muestras de 2048 tokens del dataset WikiText-2, obteniendo una SQNR (signal-to-quantization-noise ratio) promedio de 22.34 dB sobre 328 capas cuantizadas. Los pesos se almacenan comprimidos en memoria y se decodifican en el momento de la inferencia mediante un kernel CUDA fusionado, lo que permite reducir el tráfico de memoria de pesos en un factor de 4.
-
-La cuantización no introduce pasos de entrenamiento adicionales; es un proceso de post-entrenamiento. El modelo base fue entrenado por Google con datos no especificados en la información disponible, y no se han proporcionado detalles sobre el proceso de entrenamiento (tokens, dataset, RLHF, etc.).
+La calibración se realizó con 128 muestras de 2048 tokens de WikiText-2, y el checkpoint reporta un SQNR medio de pesos de 22.34 dB sobre 328 capas cuantizadas. No se detalla en la información disponible el volumen de tokens de entrenamiento del modelo base, la composición del dataset ni si hubo RLHF o DPO. El checkpoint requiere `glq >= 0.8.0` y `transformers >= 5.13.1, < 5.15`, porque la versión 5.15.0 movió gemma-4 a una configuración por capa y rompe `config.head_dim` en vLLM.
 
 ## Capacidades
 
-- Multimodalidad nativa: el modelo base acepta texto, imagen, audio y video como entrada, aunque la cuantización se centra en el decoder de texto y las torres multimodales se mantienen en su formato original.
-- Generación de texto y razonamiento: el modelo base es capaz de tareas de lenguaje general, razonamiento, matemáticas y generación de código.
-- Soporte de agentes y código: la model card recomienda usar este checkpoint con agentes de código como `pi-code` y `opencode` mediante un endpoint compatible con la API de OpenAI, lo que sugiere que puede seguir instrucciones de herramientas y flujos de trabajo multi-paso.
-- Soporte de tool calling / function calling: no se ha confirmado explícitamente en la documentación, pero el uso con agentes de código a través de OpenAI-compatible implica que puede invocar herramientas si se le presentan en el formato adecuado.
-- Capacidades multilingües: no se especifican en la información disponible, aunque el modelo base Gemma 4 probablemente soporte múltiples idiomas (no se indica).
-- Modo de pensamiento (thinking mode): no se menciona, aunque el modelo base podría tener capacidad de razonamiento extendido (no confirmado).
-- Cuantización eficiente: los pesos se mantienen comprimidos en memoria y se decodifican en el momento, lo que reduce el uso de VRAM y permite ejecutar el modelo en GPUs con menos memoria que el modelo bf16.
+- Generación de texto y razonamiento conversacional multi-turno (modelo instruct).
+- Procesamiento de imagen y audio: el pipeline es `any-to-any` y el modelo base acepta entradas multimodales; la cuantización GLQ solo afecta al decoder de texto.
+- Modo "thinking" mencionado en la model card (la evaluación AIME-2026 se hace con `thinking`).
+- Servido como endpoint compatible con OpenAI a través de vLLM, lo que habilita su uso en agentes de código como pi-code y opencode.
+- Soporte de tool calling y function calling: no confirmado explícitamente en la información disponible, aunque el uso documentado con agentes de código sugiere compatibilidad con el protocolo OpenAI de completions.
+- Capacidades multilingües: no disponible.
+- Caché KV cuantizada E8 opcional (~4× más pequeña que fp16, casi idéntica a 4 bits), que permite contextos más largos en la misma VRAM.
 
 ## Casos de uso
 
-- **Servicio de agentes de código en local**: se puede desplegar con `vllm serve` y conectarlo a agentes como `pi-code` o `opencode` mediante un endpoint OpenAI-compatible. La baja huella de memoria permite ejecutarlo en una estación de trabajo con una GPU de 16 GB, lo que facilita un asistente de programación privado y sin latencia de red.
-- **Asistente multimodal en el dispositivo**: gracias a la cuantización, el modelo cabe en una GPU de 16 GB (como una RTX 4080 o similar) y puede procesar entradas de texto, imagen y audio, útil para aplicaciones de asistencia personal o análisis de documentos.
-- **Procesamiento de documentos con audio**: el modelo puede transcribir o procesar audio y video, y la cuantización permite ejecutarlo en hardware local sin depender de la nube, lo que es útil para entornos con requisitos de privacidad.
-- **Generación de texto con contexto largo**: activando la KV cache E8 (≈4× menor que fp16), se puede aumentar la longitud de contexto efectiva dentro de la misma VRAM, lo que permite procesar documentos largos o conversaciones extensas.
-- **Despliegue en producción con vLLM**: el checkpoint es compatible con vLLM (recomendado) y puede servir solicitudes concurrentes con baja latencia, aprovechando la reducción de ancho de banda de pesos para mejorar el throughput en GPUs de gama media.
-- **Investigación en cuantización eficiente**: el método GLQ con trellis-coded quantization es de interés para investigadores que estudian técnicas de compresión de modelos multimodales, y este checkpoint sirve como referencia para medir el impacto en calidad.
+- Servicio local de un modelo multimodal en GPU de consumo: con 7,73 GiB de pesos cargados, el checkpoint cabe en tarjetas de 24 GB (RTX 4090, RTX 3090) dejando margen para caché KV y activaciones, algo inviable con el modelo en bf16 (~23,9 GB solo de pesos).
+- Asistente de código en local para agentes tipo pi-code u opencode: se sirve con `vllm serve` en el puerto 8000 y se apunta el agente al endpoint compatible con OpenAI, sin depender de APIs externas.
+- Procesamiento de documentos con imagen y texto: al conservar las torres de visión en formato nativo, el modelo puede responder preguntas sobre capturas, diagramas o páginas escaneadas junto a instrucciones textuales.
+- Transcripción y análisis de audio combinado con texto: la torre de audio permanece sin cuantizar, por lo que se puede usar para resumir reuniones o extraer acciones a partir de grabaciones y notas.
+- Despliegue en entornos con VRAM limitada y contexto largo: activando la caché KV E8 (`GLQ_KV_QUANT=e8_relaxed:2` y las variables `GLQ_KV_E8_*`), la caché se reduce ~4× y permite ventanas de contexto mayores en la misma GPU.
+- Prototipado e investigación sobre cuantización: el checkpoint es un caso de estudio reproducible del método GLQ (TCQ + RHT + LDLQ) con métricas de SQNR y throughput declaradas, útil para comparar esquemas de cuantización post-entrenamiento.
+- Inferencia por lotes en una sola GPU Blackwell: el autor mide 83,4 tok/s en decodificación con batch 1 en una RTX PRO 6000, adecuado para tareas interactivas de un solo usuario o pequeños equipos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad (como MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card únicamente reporta métricas técnicas del checkpoint:
+| Metrica | Valor | Notas |
+|---|---|---|
+| Pesos cargados (vLLM) | 7,73 GiB | bf16 de referencia ≈ 23,9 GB |
+| Decodificación, batch 1 | 83,4 tok/s | RTX PRO 6000 Blackwell (sm_120), vLLM 0.25.1 |
+| SQNR medio de pesos | 22,34 dB | sobre 328 capas cuantizadas |
+| AIME-2026 (avg@8, thinking) | no medido | pendiente según el autor |
+| WikiText-2 perplexity | no medido | pendiente según el autor |
+| MMLU-Pro | no medido | pendiente según el autor |
 
-| Métrica | Valor |
-|---|---|
-| SQNR promedio (sobre 328 capas) | 22.34 dB |
-| Tasa de decodificación (decode, batch 1) | 83.4 tokens/s (en RTX PRO 6000 Blackwell, vLLM 0.25.1) |
-| Tamaño de pesos cargados | 7.73 GiB |
-| Tamaño del checkpoint en disco | 7.6 GB |
-
-No se ha medido aún la perplejidad de WikiText-2, MMLU-Pro ni AIME-2026. No existe un baseline bf16 bajo el mismo harness, por lo que no se puede cuantificar la pérdida exacta debida a la cuantización.
+El autor advierte explícitamente que no existe una ejecución pareada en bf16 bajo el mismo harness, por lo que estas cifras no pueden leerse como un delta de cuantización, sino como los números propios de este checkpoint. La ventaja de velocidad de GLQ proviene de mover 4× menos bytes de pesos, por lo que es mayor en tarjetas con poco ancho de banda (24-32 GB) y aproximadamente paritaria en una Blackwell de 96 GB.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: el checkpoint requiere aproximadamente 7.73 GiB para los pesos cargados, por lo que con memoria adicional para KV cache y activaciones, se recomienda al menos 10-12 GB de VRAM para uso cómodo. El modelo base sin cuantizar necesita 16 GB según el blog de Google.
-- **GPU recomendadas**: se ha probado en una RTX PRO 6000 Blackwell (sm_120). El autor indica que la ventaja de GLQ es mayor en GPUs con ancho de banda limitado (24-32 GB), donde la reducción de bytes transferidos es más beneficiosa.
-- **Compatibilidad con GPU consumer**: es viable en tarjetas como RTX 4080/4090 (16-24 GB), RTX 3080/3090 (10-24 GB) y similares. No se ha confirmado su funcionamiento en GPU sin soporte CUDA nativo (por ejemplo, AMD).
-- **Opciones de despliegue**: vLLM es el runtime recomendado (con `quantization="glq"`); también funciona con Transformers (`AutoModelForImageTextToText`). Se requiere el paquete `glq` (>=0.8.0) y la versión de Transformers entre `>=5.13.1` y `<5.15`. También se puede servir con vLLM para agentes de código.
-- **Latencia y throughput**: en el RTX PRO 6000 Blackwell, la decodificación es de 83.4 tok/s con batch 1. No hay datos para batch mayores.
+- VRAM estimada para inferencia: 7,73 GiB de pesos cargados en vLLM; hay que sumar caché KV, activaciones y buffers del runtime (el autor no publica una cifra total).
+- GPU recomendadas: RTX PRO 6000 Blackwell (medición oficial); por el tamaño de pesos, cabría en RTX 4090, RTX 3090 y GPUs de 24 GB o más, aunque no hay mediciones publicadas en esas tarjetas.
+- Cabe en GPU de consumo: sí, en principio en cualquier tarjeta con 24 GB o más, siempre que se reserve espacio para la caché KV; no confirmado con benchmarks en la información disponible.
+- Opciones de despliegue: vLLM (recomendado, con plugin `glq` registrado automáticamente) y Transformers (`AutoModelForImageTextToText` con `glq.hf_integration`). No se mencionan llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 83,4 tok/s en decodificación con batch 1 en RTX PRO 6000 Blackwell; sin datos de prefill ni de otros hardwares.
+- Requisitos de software: `pip install 'glq[vllm]' "transformers>=5.13.1,<5.15"` y `glq >= 0.8.0`; el script de vLLM debe usar el guard `if __name__ == "__main__":` por el método de arranque `spawn`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Peso en memoria | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `google/gemma-4-12B-it` (bf16) | 12B | no disponible | ~23.9 GB | Apache-2.0 | Hugging Face |
-| `xv0y5ncu/gemma-4-12B-it-GLQ-3bpw-e8p-bd` (GLQ 3bpw) | 12B (cuantizado) | no disponible | no disponible | Apache-2.0 | Hugging Face |
-| `xv0y5ncu/gemma-4-12B-it-GLQ-trellis-3inst-4bpw` | 12B (cuantizado 4bpw) | no disponible | 7.73 GiB | Apache-2.0 | Hugging Face |
+| xv0y5ncu/gemma-4-12B-it-GLQ-trellis-3inst-4bpw | 3.788.867.632 (safetensors) | no disponible | GLQ 4.0 bpw + KV E8 opcional | apache-2.0 | Hugging Face, 48 descargas |
+| google/gemma-4-12B-it (base bf16) | 12B (según nombre) | no disponible | bf16 | apache-2.0 (licencia Gemma 4) | Hugging Face |
+| Alternativas de cuantización estándar (GPTQ/AWQ 4-bit) | mismo modelo base | no disponible | 4 bits típico | según checkpoint | no disponible en la información proporcionada |
 
-No se dispone de comparativas de rendimiento entre estas variantes. La ventaja principal de la versión 4bpw es el equilibrio entre tamaño y calidad, mientras que la versión 3bpw probablemente sacrifica más precisión a cambio de un tamaño aún menor. No se han encontrado otros modelos multimodales cuantizados comparables en la información proporcionada.
+No se dispone de datos de benchmarks comparativos entre este checkpoint y otras cuantizaciones del mismo modelo base, ni de alternativas de otros fabricantes, en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- **Pérdida de calidad por cuantización**: no se ha medido la degradación en benchmarks estándar; el SQNR de 22.34 dB sugiere una buena reconstrucción, pero no garantiza resultados sin errores en tareas complejas.
-- **Sesgos del modelo base**: Gemma 4 puede heredar sesgos del dataset de entrenamiento, aunque no se documentan en esta ficha.
-- **Riesgo de alucinación**: como todo LLM, puede generar contenido falso o inconsistente, especialmente en tareas de razonamiento o con contexto largo.
-- **Compatibilidad frágil**: la model card advierte que Transformers 5.15.0 rompe la configuración de Gemma-4 (el error `config.head_dim`), y que vLLM falla antes de cargar ningún peso. Se debe fijar Transformers entre `>=5.13.1` y `<5.15`, y usar `glq >=0.8.0`.
-- **Cuantización solo en decoder de texto**: las torres de visión y audio se mantienen en su formato original, por lo que el ahorro de memoria se limita al decoder de texto; en tareas multimodales, la VRAM total será mayor que la indicada para los pesos.
-- **Dependencia de kernel CUDA**: el checkpoint requiere kernels CUDA específicos para la decodificación GLQ; no funcionará en hardware sin soporte CUDA (por ejemplo, Apple Silicon).
-- **Sin datos de contexto**: no se especifica la longitud de contexto soportada; es posible que el modelo base tenga una ventana de 128K, pero no se confirma.
+- La model card no incluye ejecución pareada en bf16 bajo el mismo harness, por lo que no hay una medida publicada de la pérdida de calidad frente al modelo original.
+- WikiText-2 perplexity, MMLU-Pro y AIME-2026 están pendientes de medición; no se puede afirmar el impacto de la cuantización en razonamiento o matemáticas.
+- El rendimiento de 83,4 tok/s está medido en una única GPU (RTX PRO 6000 Blackwell); extrapolarlo a otras tarjetas sin citar el hardware es incorrecto según el propio autor.
+- La cuantización solo cubre el decoder de texto; las torres de visión y audio se mantienen en formato nativo y su comportamiento no está evaluado en esta ficha.
+- Dependencia estricta de versiones: `transformers` debe estar por debajo de 5.15 y `glq` debe ser 0.8.0 o superior; otras combinaciones fallan al cargar el modelo.
+- El ejemplo de vLLM usa `max_model_len=4096` y desactiva imagen, vídeo y audio (`limit_mm_per_prompt`), lo que sugiere que el servido multimodal completo requiere configuración adicional no documentada.
+- El script de vLLM necesita el guard `__main__` por el método `spawn`; sin él, el proceso se relanza recursivamente y muere antes de cargar el modelo.
+- Licencia Apache 2.0 declarada, pero con enlace a la licencia de Gemma 4 de Google; conviene revisar los términos de uso comercial del modelo base antes de desplegarlo en producción.
+- No hay información sobre sesgos, idiomas soportados ni riesgo de alucinación específica de este checkpoint.
+- Repositorio con 48 descargas y 0 likes: ecosistema muy pequeño, sin validación comunitaria de los resultados declarados.
 
 ## Enlaces
 
-- Modelo en Hugging Face: [xv0y5ncu/gemma-4-12B-it-GLQ-trellis-3inst-4bpw](https://huggingface.co/xv0y5ncu/gemma-4-12B-it-GLQ-trellis-3inst-4bpw)
-- Modelo base: [google/gemma-4-12B-it](https://huggingface.co/google/gemma-4-12B-it)
-- Página oficial de Gemma 4: [https://deepmind.google/models/gemma/gemma-4/](https://deepmind.google/models/gemma/gemma-4/)
-- Blog de introducción de Gemma 4 12B: [https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/](https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/)
-- Guía para desarrolladores: [https://developers.googleblog.com/gemma-4-12b-the-developer-guide/](https://developers.googleblog.com/gemma-4-12b-the-developer-guide/)
-- Paper QTIP (trellis-coded quantization): [https://arxiv.org/abs/2406.11235](https://arxiv.org/abs/2406.11235)
-- Paper sobre la técnica GLQ (referencia adicional): [https://arxiv.org/abs/2607.02770](https://arxiv.org/abs/2607.02770)
+- Modelo en Hugging Face: https://huggingface.co/xv0y5ncu/gemma-4-12B-it-GLQ-trellis-3inst-4bpw
+- Modelo base: https://huggingface.co/google/gemma-4-12B-it
+- Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
+- Referencia QTIP (arXiv:2406.11235): https://arxiv.org/abs/2406.11235
+- Referencia adicional citada (arXiv:2607.02770): https://arxiv.org/abs/2607.02770

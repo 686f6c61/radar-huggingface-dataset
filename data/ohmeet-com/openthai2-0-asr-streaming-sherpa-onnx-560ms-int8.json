@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "ohmeet-com/openthai2.0-asr-streaming-sherpa-onnx-560ms-int8",
+  "slug": "ohmeet-com-openthai2-0-asr-streaming-sherpa-onnx-560ms-int8",
+  "author": "ohmeet-com",
+  "url": "https://huggingface.co/ohmeet-com/openthai2.0-asr-streaming-sherpa-onnx-560ms-int8",
+  "created_at": "2026-11-15T11:43:02.000Z",
+  "updated_at": "2026-11-15T11:49:07.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "th"
+  ],
+  "tags": [
+    "onnx",
+    "automatic-speech-recognition",
+    "sherpa-onnx",
+    "streaming",
+    "th",
+    "base_model:iapp/OpenThai2.0-ASR-Streaming",
+    "base_model:quantized:iapp/OpenThai2.0-ASR-Streaming",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 684497051,
+  "storage_human": "684 MB",
+  "context_length": null,
+  "base_model": "iapp/OpenThai2.0-ASR-Streaming",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

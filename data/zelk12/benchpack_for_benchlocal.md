@@ -2,96 +2,93 @@
 
 ## Resumen
 
-`zelk12/BenchPack_for_BenchLocal` no es un modelo de lenguaje, sino un repositorio de conjuntos de datos de evaluación publicados en Hugging Face para alimentar BenchLocal, un arnés de evaluación local. El paquete incluye IFEval-mini (90 tareas en inglés, ruso y mezcla de ambos) y anuncia dos conjuntos adicionales, GPQA-mini y MuSR-mini, derivados de los benchmarks homónimos. El repositorio se creó el 20 de octubre de 2026 y se actualizó tres días después, con 0 descargas y 0 likes en el momento de la consulta.
+`zelk12/BenchPack_for_BenchLocal` no es un modelo de lenguaje, sino un paquete de conjuntos de evaluación (benchmark packs) destinado a BenchLocal, una herramienta de evaluación local de modelos. El repositorio agrupa versiones reducidas de cuatro benchmarks conocidos —IFEval, GPQA, MuSR y MMLU-Pro— con el objetivo de permitir evaluaciones rápidas en entornos con recursos limitados. El autor, zelk12, indica que los conjuntos se han generado principalmente con asistencia de un modelo denominado "Gemini 3.8 Flash" y posteriormente revisados de forma parcial.
 
-Su interés es acotado pero real: ofrece versiones reducidas y bilingües de benchmarks conocidos, pensadas para ejecuciones rápidas sobre modelos servidos en local, con tareas redactadas para ser interpretadas de forma unívoca y compatibles con un validador automático. El autor declara que la generación se hizo con un modelo (citado como "Gemini 3.8 Flash") y que la revisión humana fue intensa en IFEval-mini y mucho más superficial en GPQA-mini y MuSR-mini.
+La relevancia de este paquete es práctica: ofrece subconjuntos manejables (por ejemplo, IFEval-mini con solo 90 tareas) en inglés, ruso y mezcla de ambos idiomas, lo que facilita pruebas de instrucciones, razonamiento científico, razonamiento multiescena y conocimiento general sin necesidad de ejecutar los benchmarks completos. No obstante, la documentación es muy escasa: no se especifican tamaños exactos de cada subconjunto, metodología de muestreo, métricas de validación ni instrucciones de instalación definitivas.
 
-La ficha que sigue mantiene la estructura habitual, pero numerosos campos figuran como "no aplica" o "no disponible" porque describen propiedades de un modelo neuronal (parámetros, contexto, cuantización) que aquí no existen, y porque el repositorio no declara licencia, pipeline ni instrucciones de instalación.
+Al tratarse de un artefacto de datos y no de pesos de modelo, no dispone de arquitectura, parámetros, contexto ni cuantizaciones. La licencia no está declarada, lo que limita su uso comercial sin aclaración previa del autor. Su valor está en la evaluación, no en la inferencia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no aplica: es un paquete de conjuntos de datos de evaluacion, no un modelo neuronal |
-| Parametros totales | no aplica |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no aplica al repositorio; la longitud util depende del modelo que se evalue con el |
-| Tipos de cuantizacion | no aplica |
-| Idiomas soportados | en, ru; IFEval-mini incluye ademas tareas mixtas en-rus |
-| Licencia | no disponible (no declarada en el repositorio) |
-| Formato de pesos | no aplica; el formato de serializacion de los datos no se detalla en la informacion disponible |
-| Tamano del conjunto | IFEval-mini: 90 tareas; GPQA-mini y MuSR-mini: no disponible |
-| Pipeline de Hugging Face | no disponible |
-| Fecha de creacion / actualizacion | 2026-10-20 / 2026-10-23 |
-| Descargas / likes | 0 / 0 |
+| Arquitectura | no disponible (no es un modelo de lenguaje; es un paquete de datasets de evaluación) |
+| Parametros totales | no disponible (no aplica) |
+| Parametros activos | no disponible (no aplica) |
+| Longitud de contexto | no disponible (no aplica) |
+| Tipos de cuantizacion | no disponible (no aplica) |
+| Idiomas soportados | en, ru (y mezcla de ambos en IFEval-mini) |
+| Licencia | no disponible |
+| Formato de pesos | no disponible (repositorio de datos; no se especifica formato de los ficheros) |
 
 ## Arquitectura y entrenamiento
 
-No hay arquitectura ni entrenamiento en el sentido habitual: el repositorio contiene datos de evaluacion. Lo que hace las veces de procedencia es el proceso de construccion declarado por el autor. IFEval-mini se genero con un modelo citado como "Gemini 3.8 Flash", seguido de una revision manual en la que el autor ejecuto el conjunto, leyo las tareas y corrigio formulaciones; el objetivo explicito era redactar instrucciones que se lean de forma estrictamente inequivoca y que cumplan con el validador de IFEval. GPQA-mini se genero integramente con el mismo modelo, con numerosos reinicios por fallos del sitio y algunas ediciones posteriores. MuSR-mini sigue el mismo esquema, con sugerencias del autor para forzar que las tareas exijan especificar varias cosas a la vez.
+No aplica en el sentido habitual: el repositorio contiene conjuntos de test, no un modelo entrenado. Según la model card, los conjuntos se compusieron con ayuda de "Gemini 3.8 Flash" y el autor realizó revisiones posteriores. En IFEval-mini la revisión fue más detallada, orientada a que las instrucciones sean inequívocas y compatibles con el validador; en GPQA-mini la revisión se limitó a aspectos generales por falta de dominio del autor en las materias; en MuSR-mini se hicieron sugerencias para forzar la especificación simultánea de varios elementos; y MMLU-Pro se describe como el más sencillo de componer.
 
-La innovacion tecnica, si puede llamarse asi, es la reduccion de escala (90 tareas en IFEval-mini) y la extension al ruso y a la mezcla de idiomas, algo que los originales no cubren. No se documentan filtros de contaminacion, reparto train/test, metrica de acuerdo entre anotadores ni validacion estadistica del proceso de generacion, y el propio autor advierte que en GPQA-mini su revision se limito a aspectos generales porque no domina las materias preguntadas.
+No se documentan procesos de muestreo, estratificación, tamaño final de cada subconjunto (salvo las 90 tareas de IFEval-mini), ni validación estadística frente a los benchmarks originales. Tampoco se indica si los ítems son traducciones, adaptaciones o generaciones nuevas.
 
 ## Capacidades
 
-- Evaluacion del cumplimiento de instrucciones verificables: IFEval-mini mide si el modelo respeta restricciones explicitas (formato, longitud, inclusion o exclusion de terminos) comprobables por un validador.
-- Evaluacion bilingue ingles-ruso: incluye tareas en cada idioma por separado y tareas que mezclan ambos en un mismo enunciado.
-- Evaluacion de razonamiento de nivel graduate (GPQA-mini): previsiblemente preguntas de opcion multiple de alta dificultad, aunque el contenido exacto no se detalla en la informacion disponible.
-- Evaluacion de razonamiento suave multi-paso (MuSR-mini): escenarios narrativos que requieren encadenar inferencias, segun la descripcion del autor.
-- Ejecucion local y automatizable: al ser conjuntos pequenos, permiten ciclos de evaluacion rapidos dentro de un pipeline propio (BenchLocal).
-- Comparacion entre modelos o entre versiones de un mismo modelo sobre el mismo conjunto fijo de tareas.
-- No ofrece generacion de texto, tool calling, vision, audio ni modo de razonamiento: esas capacidades pertenecen al modelo que se evalue, no al repositorio.
+- Evaluación de seguimiento de instrucciones mediante IFEval-mini (90 tareas en inglés, ruso y mixto).
+- Evaluación de razonamiento científico de nivel avanzado mediante GPQA-mini.
+- Evaluación de razonamiento multiescena y teoría de la mente mediante MuSR-mini.
+- Evaluación de conocimiento general y razonamiento multidisciplinar mediante MMLU-Pro (versión del pack).
+- Soporte multilingüe limitado a inglés y ruso.
+- Integración prevista con BenchLocal (herramienta de evaluación local), aunque las instrucciones de instalación no están publicadas.
+- No incluye tool calling, agentes, visión, audio ni modo thinking: es un pack de datos, no un modelo.
 
 ## Casos de uso
 
-- Filtro rapido de modelos antes de un despliegue: ejecutar IFEval-mini sobre dos o tres candidatos servidos en local y descartar los que no respetan restricciones de formato, usando las 90 tareas como prueba de humo de bajo coste.
-- Integracion en CI/CD de un pipeline de IA: lanzar el conjunto en cada cambio de prompt de sistema o de version del modelo y comparar la tasa de cumplimiento con la linea base registrada.
-- Evaluacion de modelos pequenos en hardware de consumo: al caber la bateria en una sola sesion de inferencia, permite medir modelos de 3-8 B en una GPU de gama alta sin presupuesto de evaluacion dedicado.
-- Validacion de capacidades en ruso: comprobar si un modelo multilingue mantiene el seguimiento de instrucciones cuando el enunciado esta en ruso o alterna idiomas dentro de la misma tarea.
-- Investigacion sobre calidad de benchmarks sinteticos: comparar el rendimiento de un modelo en IFEval-mini frente al IFEval original para estimar cuanto se desvia una version reducida y generada por LLM.
-- Auditoria interna de robustez: analizar manualmente las tareas falladas para distinguir entre errores del modelo y enunciados ambiguos o mal etiquetados, dado el reducido numero de items.
-- Docencia y demostraciones: ilustrar como se construye un validador de instrucciones con un conjunto abierto y pequeno, revisando las tareas una a una en clase o en un taller.
+- Evaluación rápida de modelos locales: usar IFEval-mini para comprobar el cumplimiento de instrucciones en inglés y ruso sin lanzar el IFEval completo, útil en iteraciones de desarrollo con presupuesto de cómputo reducido.
+- Validación de modelos bilingües en ruso: emplear las tareas mixtas en inglés y ruso para detectar degradación al cambiar de idioma dentro de una misma instrucción.
+- Pruebas de razonamiento científico: aplicar GPQA-mini como filtro preliminar antes de ejecutar GPQA completo, identificando modelos con lagunas en física, química o biología.
+- Diagnóstico de razonamiento multiescena: usar MuSR-mini para evaluar la capacidad de mantener coherencia en narrativas con múltiples personajes y estados.
+- Comparación de checkpoints en pipelines de CI: integrar el pack en BenchLocal para obtener una señal rápida de regresión tras fine-tuning o cambios de cuantización.
+- Investigación sobre calidad de benchmarks sintéticos: analizar cómo se comportan modelos frente a ítems generados por LLM y revisados parcialmente, comparando con los originales.
+- Docencia y demos: disponer de conjuntos pequeños para ilustrar metodologías de evaluación sin necesidad de infraestructura pesada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye puntuaciones de ningun modelo sobre IFEval-mini, GPQA-mini ni MuSR-mini, ni tablas comparativas propias.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio contiene los conjuntos de evaluación, no resultados de modelos sobre ellos.
 
 ## Requisitos de hardware
 
-- VRAM para el repositorio: practicamente nula; son ficheros de texto de un conjunto de evaluacion reducido.
-- VRAM para ejecutar la evaluacion: depende enteramente del modelo bajo prueba; no hay cifras en la informacion disponible.
-- GPU recomendadas: no disponible; cualquier GPU capaz de servir el modelo evaluado sirve para el conjunto.
-- Ajuste en GPU de consumo: el conjunto en si cabe en cualquier equipo; el modelo evaluado determinara si cabe en una RTX 4090 o similar.
-- Opciones de despliegue del modelo evaluado: no especificadas por el autor; BenchLocal es el arnes previsto, pero no se documenta su integracion con vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponible; dependen del modelo y del backend, no del conjunto de datos.
+- No aplica inferencia de modelo: el consumo depende de la herramienta BenchLocal y del modelo que se evalúe con este pack.
+- Almacenamiento: no disponible; no se especifica el tamaño en disco de los ficheros del repositorio.
+- VRAM: no disponible; dependerá exclusivamente del modelo evaluado, no del pack.
+- GPU recomendadas: no disponibles para el pack; para el modelo evaluado, dependerá de su tamaño y cuantización.
+- Despliegue: el pack está pensado para BenchLocal; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que corresponderían al modelo evaluado.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Criterio | IFEval-mini (este repo) | IFEval original | GPQA (original) | MuSR (original) |
-|---|---|---|---|---|
-| Naturaleza | conjunto de evaluacion reducido | benchmark de seguimiento de instrucciones | benchmark de preguntas cientificas de nivel graduate | benchmark de razonamiento multi-paso |
-| Idiomas | en, ru y mixto en-ru | en | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
-| Numero de items | 90 | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
-| Verificacion | automatica mediante validador, segun el autor | automatica | no disponible | no disponible |
-| Revision humana declarada | alta en IFEval-mini; baja en GPQA-mini y MuSR-mini | no disponible | no disponible | no disponible |
-| Licencia | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
-| Disponibilidad | repositorio Hugging Face con 0 descargas | benchmark publico ampliamente citado | benchmark publico ampliamente citado | benchmark publico ampliamente citado |
+| Pack / benchmark | Tipo | Idiomas | Tamaño | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| zelk12/BenchPack_for_BenchLocal | Pack reducido (IFEval-mini, GPQA-mini, MuSR-mini, MMLU-Pro) | en, ru | IFEval-mini: 90 tareas; resto no disponible | no disponible | Hugging Face |
+| IFEval original | Benchmark de seguimiento de instrucciones | en | Cientos de tareas | según publicación original | Público |
+| GPQA original | Benchmark de preguntas científicas | en | 448 preguntas | según publicación original | Público |
+| MuSR original | Benchmark de razonamiento multiescena | en | no disponible en esta ficha | según publicación original | Público |
+| MMLU-Pro original | Benchmark de conocimiento multidisciplinar | en | Miles de preguntas | según publicación original | Público |
 
-No se dispone de datos para comparar rendimiento, ya que no hay resultados publicados en el repositorio.
+La comparativa es estructural: este pack ofrece versiones reducidas y bilingües (en/ru) de benchmarks consolidados, pero sin documentación sobre equivalencia psicométrica con los originales ni licencia declarada.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: sin terminos explicitos, el uso comercial o la redistribucion de los conjuntos queda en un limbo legal; conviene contactar con el autor antes de integrarlos en un producto.
-- Procedencia sintetica: el autor indica que la generacion se hizo con un modelo ("Gemini 3.8 Flash"), lo que introduce riesgo de tareas ambiguas, respuestas de referencia erroneas y sesgos del generador.
-- Revision humana desigual: IFEval-mini fue revisado con detalle, pero el propio autor reconoce que en GPQA-mini su comprobacion se limito a aspectos generales por falta de dominio de la materia, y que MuSR-mini recibio solo sugerencias de cambio.
-- Muestra muy pequena: 90 tareas implican un error estadistico amplio; diferencias de pocos puntos porcentuales entre modelos no son concluyentes.
-- Sin documentacion de instalacion ni de metodologia: el autor afirma que las instrucciones y las descripciones de los conjuntos "probablemente" se anadiran, lo que deja el uso practico sin guia oficial.
-- Riesgo de contaminacion: no se documenta ningun filtro frente a datos de preentrenamiento, y al derivar de benchmarks publicos y conocidos es plausible que parte del contenido sea familiar para los modelos evaluados.
-- Cobertura limitada de idiomas: solo ingles y ruso; no hay validacion en castellano ni en otras lenguas.
-- Ausencia de validacion comunitaria: 0 descargas y 0 likes significan que no existen terceros que hayan reportado resultados o erratas.
-- Advertencia de uso: al tratarse de un artefacto de evaluacion y no de un modelo, no debe interpretarse ninguna afirmacion de esta ficha como una capacidad del repositorio.
+- No es un modelo: no debe evaluarse como tal ni usarse para inferencia.
+- Licencia no declarada: riesgo legal para uso comercial o redistribución sin autorización explícita.
+- Documentación incompleta: faltan instrucciones de instalación, descripción de diferencias frente a los originales y tamaños de GPQA-mini, MuSR-mini y MMLU-Pro.
+- Revisión desigual: el autor admite que en GPQA-mini solo verificó aspectos generales por falta de dominio, lo que aumenta el riesgo de ítems incorrectos o ambiguos.
+- Generación sintética: los ítems fueron compuestos con un LLM ("Gemini 3.8 Flash"), con posible sesgo de estilo, contaminación o errores factuales no detectados.
+- Cobertura lingüística limitada a inglés y ruso; no apto para evaluar otros idiomas.
+- Sin validación estadística publicada frente a los benchmarks originales: los resultados no son directamente comparables con puntuaciones de IFEval, GPQA, MuSR o MMLU-Pro completos.
+- Riesgo de sobreajuste si se usa como único criterio de evaluación repetidamente.
+- Fechas de creación y actualización en el repositorio (2026) poco habituales; conviene verificar la integridad y procedencia de los ficheros antes de usarlos en producción.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/zelk12/BenchPack_for_BenchLocal
-- No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo ni demos del autor.
-- Referencias externas de los benchmarks originales de los que derivan los conjuntos (no enlazadas desde el repositorio): IFEval, arXiv:2311.07911; GPQA, arXiv:2311.12022; MuSR, arXiv:2310.16049.
+- Hugging Face: https://huggingface.co/zelk12/BenchPack_for_BenchLocal
+- BenchLocal: no disponible (no se proporciona enlace en la información)
+- IFEval (paper original): no disponible en la información proporcionada
+- GPQA (paper original): no disponible en la información proporcionada
+- MuSR (paper original): no disponible en la información proporcionada
+- MMLU-Pro (paper original): no disponible en la información proporcionada

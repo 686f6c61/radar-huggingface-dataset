@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 124,
+  "downloads_30d": 126,
   "trending_score": 0,
   "parameters": 2029892,
   "parameters_human": "2.0M",
@@ -55,31 +55,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "wq2012/personal-vad-v2-conformer-unified · Hugging Face",
-      "url": "https://huggingface.co/wq2012/personal-vad-v2-conformer-unified",
-      "snippet": "wq2012 / personal-vad-v2-conformer-unified Like 0 Voice Activity Detection LiteRT Safetensors facebook/multilingual_librispeech personal-vad audio speaker-conditioning conformer lstm tensorflow arxiv:1908.04284 arxiv:2204.03793 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Personal VAD 2.0 — E5 Unified Enrolled & Enrollment-Less Causal Conformer ..."
-    },
-    {
-      "title": "wq2012 (Quan Wang) · GitHub",
-      "url": "https://github.com/wq2012",
-      "snippet": "A graph representing wq2012&#x27;s contributions from October 12, 2025 to October 12, 2026. The contributions are 100% commits, 0% pull requests, 0% issues, 0% code review."
-    },
-    {
-      "title": "GitHub - pengzhiliang/Conformer: Official code for Conformer: Local ...",
-      "url": "https://github.com/pengzhiliang/Conformer",
-      "snippet": "In this paper, we propose a hybrid network structure, termed Conformer, to take advantage of convolutional operations and self-attention mechanisms for enhanced representation learning. Conformer roots in the Feature Coupling Unit (FCU), which fuses local features and global representations under different resolutions in an interactive fashion."
-    },
-    {
-      "title": "Conformer — MMPretrain 1.2.0 documentation - Read the Docs",
-      "url": "https://mmpretrain.readthedocs.io/en/latest/api/generated/mmpretrain.models.backbones.Conformer.html",
-      "snippet": "Conformer backbone. A PyTorch implementation of : Conformer: Local Features Coupling Global Representations for Visual Recognition Parameters: arch (str | dict) - Conformer architecture. Defaults to &#x27;tiny&#x27;. patch_size (int) - The patch size. Defaults to 16. base_channels (int) - The base number of channels in CNN network. Defaults to 64."
-    },
-    {
-      "title": "Conformer Model: Hybrid Neural Architecture",
-      "url": "https://www.emergentmind.com/topics/conformer-model",
-      "snippet": "The Conformer model fuses CNNs with self-attention for efficient sequence modeling, excelling in ASR, vision, and biological tasks with state-of-the-art performance."
-    }
-  ]
+  "sources": []
 }

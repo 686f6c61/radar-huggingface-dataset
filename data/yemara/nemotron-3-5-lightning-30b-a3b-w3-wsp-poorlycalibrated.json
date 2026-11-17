@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 18,
+  "downloads_30d": 25,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -40,16 +40,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Nemotron 3.5 Lightning download | SourceForge.net",
-      "url": "https://sourceforge.net/projects/nemotron-3-5-lightning/",
-      "snippet": "NVIDIA Nemotron 3.5 Lightning 30B-A3B NVFP4 is an open large language model optimized for efficient autonomous agents, sub-agent deployments, and local inference. It uses a hybrid Mixture-of-Experts architecture combining Mamba-2, MoE, and selected attention layers, with 30B total parameters but only 3B active during inference."
-    },
-    {
-      "title": "nemotron-3.5-lightning-30b-a3b Model by NVIDIA | NVIDIA NIM",
-      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard",
-      "snippet": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 is a large language model (LLM) trained by NVIDIA. The model employs a hybrid Mixture-of-Experts architecture, utilizing interleaved Mamba-2 and MoE layers, along with select Attention layers. The Lightning 3.5 model is released alongside a number of speculative decoding methods for faster text ..."
-    }
-  ]
+  "sources": []
 }

@@ -47,8 +47,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "zeromodels/glm-4-9b-chat",
+  "renamed_at": "2026-11-17T07:22:42.134Z",
   "benchmarks": [],
   "sources": []
 }

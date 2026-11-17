@@ -2,83 +2,82 @@
 
 ## Resumen
 
-`edgeattnet-dinov3-convnext-base` es un modelo publicado en Hugging Face por el usuario youssefElghanam191 bajo licencia MIT. Por el identificador se deduce que se trata de un modelo de visión por computador que combina un backbone ConvNeXt-Base con características de DINOv3, probablemente orientado a despliegue en dispositivos de borde (edge). No obstante, la model card publicada no contiene ninguna descripción técnica, datos de entrenamiento, métricas ni instrucciones de uso más allá de la línea de licencia.
+EdgeAttNet DINOv3 ConvNeXt-Base es un modelo alojado en Hugging Face por el usuario youssefElghanam191 bajo licencia MIT. Por el identificador y el formato de pesos (`joblib`), se trata de un artefacto de tipo clasificador o red de extraccion de caracteristicas construido sobre un backbone ConvNeXt-Base preentrenado con el paradigma DINOv3 (autosupervisado) y adaptado bajo el nombre "EdgeAttNet", presumiblemente una red con mecanismos de atencion orientada a despliegue en el borde (edge). El repositorio ocupa 1,9 GB y fue creado el 2 de noviembre de 2026, con ultima actualizacion el 12 de noviembre de 2026.
 
-El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y no declara pipeline, idiomas ni formato de pesos en los metadatos de Hugging Face. La fecha de creación y actualización es la misma (2026-11-02), lo que sugiere una publicación sin iteraciones posteriores.
+La model card publicada es practicamente vacia: solo declara la licencia MIT, sin descripcion, sin datos de entrenamiento, sin metricas y sin instrucciones de uso. No hay informacion sobre el pipeline de Hugging Face, los idiomas soportados ni el dataset empleado. El modelo acumula 0 descargas y 0 likes en el momento de la consulta, lo que indica que no ha sido validado por la comunidad.
 
-Dada la ausencia de documentación, esta ficha recoge únicamente lo verificable en los metadatos y advierte explícitamente de que la mayor parte de las especificaciones no están disponibles. Cualquier uso en producción requeriría inspeccionar los archivos del repositorio y validar el modelo empíricamente.
+Su relevancia actual es limitada y debe evaluarse con cautela: el interes tecnico reside en la combinacion de un backbone ConvNeXt-Base con el preentrenamiento DINOv3 y una capa de atencion "edge", pero la ausencia total de documentacion impide verificar el rendimiento real. Se recomienda tratarlo como un experimento de autor individual y no como un modelo listo para produccion.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre sugiere ConvNeXt-Base con integración DINOv3 y posible módulo de atención, sin confirmar) |
-| Parámetros totales | no disponible |
-| Parámetros activos | no aplica (no se indica que sea MoE) |
-| Longitud de contexto | no disponible (modelo presumiblemente de visión, sin contexto textual declarado) |
-| Tipos de cuantización | no disponible |
+| Arquitectura | no disponible (por el nombre, ConvNeXt-Base con preentrenamiento DINOv3 y modulo de atencion "EdgeAttNet"; sin confirmar) |
+| Parametros totales | no disponible (un ConvNeXt-Base estandar ronda los 88 M, pero no se confirma en la informacion proporcionada) |
+| Parametros activos | no aplica (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (modelo de vision; no aplica contexto de texto) |
+| Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | no disponible |
+| Formato de pesos | joblib (serializacion de scikit-learn/joblib; no safetensors ni GGUF) |
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura interna, el proceso de entrenamiento, el volumen de datos, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. El nombre del repositorio sugiere la combinación de un backbone convolucional ConvNeXt-Base con representaciones o técnicas de destilación asociadas a DINOv3, y el prefijo "edgeattnet" apunta a un diseño con módulos de atención optimizados para inferencia en dispositivos con recursos limitados, pero ninguna de estas hipótesis está confirmada por la model card.
+No se dispone de informacion sobre la arquitectura interna ni sobre el proceso de entrenamiento. El identificador `dinov3-convnext-base` sugiere que el backbone es una ConvNeXt-Base preentrenada con DINOv3, el metodo de aprendizaje autosupervisado de Meta basado en destilacion de caracteristicas de un teacher auto-supervisado, y que sobre ella se ha construido una red denominada EdgeAttNet. El sufijo "edge" apunta a un diseno orientado a eficiencia en dispositivos de borde, pero no hay documentacion que lo confirme.
 
-Tampoco se documentan innovaciones técnicas como decodificación especulativa, atención lineal o estrategias de destilación. Ante la falta de información, no es posible evaluar la idoneidad del modelo para tareas concretas sin inspeccionar directamente los pesos y la configuración del repositorio.
+Tampoco se especifican el numero de tokens o imagenes de entrenamiento, la composicion del dataset, el uso de RLHF/DPO (no aplicable en vision) ni innovaciones tecnicas como atencion lineal o decodificacion especulativa. El unico dato objetivo es el formato de pesos `joblib`, habitual en pipelines de scikit-learn y no en el ecosistema estandar de PyTorch/Hugging Face, lo que sugiere un artefacto serializado de un experimento concreto mas que un modelo distribuido con `transformers`.
 
 ## Capacidades
 
-- No se documentan capacidades en la model card.
-- Por el identificador del repositorio, es plausible que el modelo realice tareas de visión por computador (clasificación de imágenes, extracción de características o detección), pero no está confirmado.
-- No hay evidencia de soporte de tool calling, function calling ni razonamiento multi-paso.
-- No hay evidencia de capacidades multilingües ni de procesamiento de texto.
-- No se documentan modos especiales (thinking mode, visión, audio) más allá de la posible naturaleza visual implícita en el nombre.
+- No hay informacion publicada sobre las capacidades del modelo.
+- Por el nombre y el backbone, es probable que realice extraccion de caracteristicas visuales o clasificacion de imagenes, pero no se confirma.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- No se documentan capacidades multilingues (es un modelo de vision, no de texto).
+- No se documenta ningun modo especial (thinking, vision, audio) mas alla de la posible naturaleza visual.
 
 ## Casos de uso
 
-- Extracción de características visuales en pipelines de búsqueda por similitud: si el modelo es efectivamente un backbone ConvNeXt-Base con representaciones DINOv3, podría emplearse para generar embeddings de imagen, aunque sería necesario validar la dimensionalidad y la calidad de los embeddings antes de integrarlo.
-- Prototipado de clasificación de imágenes en el borde: el prefijo "edge" sugiere un diseño orientado a dispositivos con recursos limitados, lo que permitiría experimentar con inferencia en hardware de bajo consumo, previa verificación del tamaño real de los pesos.
-- Fine-tuning para dominios específicos: al estar bajo licencia MIT, el modelo puede adaptarse y redistribuirse sin restricciones comerciales, lo que facilita su uso como punto de partida en proyectos internos.
-- Investigación comparativa de arquitecturas híbridas convolucionales: útil para estudiar la combinación de ConvNeXt con técnicas tipo DINOv3, siempre que se documente el comportamiento observado.
-- Evaluación académica de modelos publicados sin model card: sirve como caso de estudio sobre la reproducibilidad y la trazabilidad en la publicación de modelos en Hugging Face.
-- Integración experimental en aplicaciones de visión embebida: solo tras inspeccionar los archivos del repositorio y confirmar que el formato de pesos es compatible con el runtime objetivo (ONNX, TFLite, PyTorch, etc.).
+- Clasificacion de imagenes en dispositivos de borde: si el modulo "EdgeAttNet" cumple su nombre, el modelo podria desplegarse en hardware con recursos limitados para tareas de vision; sin embargo, no hay evidencia publicada que lo respalde.
+- Extraccion de embeddings visuales: un backbone ConvNeXt-Base preentrenado con DINOv3 puede emplearse como extractor de caracteristicas para busqueda por similitud o clustering, aunque se desconoce si los pesos `joblib` son compatibles con ese uso.
+- Prototipado academico: util como punto de partida para reproducir o comparar variantes de atencion sobre ConvNeXt en un entorno de investigacion.
+- Fine-tuning sobre datasets propios: al ser MIT, permite adaptacion sin restricciones legales, siempre que se valide primero su correcto funcionamiento.
+- Evaluacion comparativa de backbones: puede servir como linea base en estudios que comparen DINOv3 frente a otros preentrenamientos autosupervisados.
+- Docencia y experimentacion: por su licencia permisiva, es apto para practicas de vision por computador, con la advertencia de que la falta de documentacion exige inspeccion manual del artefacto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible; dependería del tamaño real de los pesos, que no se documenta.
+- VRAM estimada para inferencia: no disponible; el repositorio pesa 1,9 GB, lo que sugiere pesos en precision completa o mixta de un backbone de tamano medio, pero no se puede confirmar.
 - GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: no confirmada.
-- Opciones de despliegue: no documentadas; al no conocerse el formato de pesos, no puede confirmarse compatibilidad con vLLM, llama.cpp, Ollama, TGI ni otros runtimes.
-- Latencia y throughput estimados: no disponibles.
+- Compatibilidad con GPU de consumo: no confirmada; un ConvNeXt-Base suele caber en GPUs de 8-12 GB, pero el formato `joblib` y la falta de documentacion impiden garantizarlo.
+- Opciones de despliegue: no se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI (son herramientas de texto, no aplicables). Al ser `joblib`, el despliegue requeriria cargar el artefacto con la libreria `joblib`/scikit-learn o inspeccionar su contenido.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No es posible establecer una comparativa fiable porque no se conocen los parámetros, el contexto, el rendimiento ni el formato de pesos del modelo. Como referencia cualitativa, se indican alternativas de la familia ConvNeXt y de representaciones visuales tipo DINO, sin datos comparativos verificados:
+| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| EdgeAttNet DINOv3 ConvNeXt-Base | no disponible | no aplica | no disponible | MIT | Hugging Face, 0 descargas |
+| ConvNeXt-Base (ImageNet) | ~88 M | no aplica | referencia estandar en clasificacion ImageNet | MIT (codigo) / licencia de pesos segun origen | Ampliamente disponible |
+| DINOv3 ViT-Base (Meta) | ~86 M | no aplica | publicado por Meta en su model card | licencia DINOv3 de Meta | Hugging Face oficial |
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| edgeattnet-dinov3-convnext-base | no disponible | no disponible | MIT | Hugging Face |
-| ConvNeXt-Base (referencia oficial) | ~89 M | no aplica (visión) | MIT | Repositorios oficiales |
-| DINOv2/DINOv3 (backbones de referencia) | variable según variante | no aplica (visión) | variable según versión | Repositorios oficiales |
-
-Los datos de las filas de referencia corresponden a las familias de modelos citadas y no a una comparación medida frente a este repositorio concreto.
+La comparacion es orientativa: los datos de ConvNeXt-Base y DINOv3 ViT-Base corresponden a sus versiones oficiales, no a este artefacto, cuyo rendimiento real no se ha publicado.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card: no hay descripción de arquitectura, entrenamiento, datos ni evaluación, lo que impide verificar cualquier afirmación sobre el modelo.
-- Riesgo elevado de comportamiento impredecible: sin documentación ni benchmarks, no puede descartarse sobreajuste, sesgos en los datos de entrenamiento o fallos sistemáticos.
-- Riesgo de alucinación o errores de clasificación: no evaluable sin pruebas empíricas.
-- Idiomas y dominios: no declarados; no puede asumirse cobertura multilingüe ni robustez en dominios específicos.
-- Licencia MIT: permite uso comercial y redistribución, pero no exime al usuario de validar el modelo y de cumplir posibles licencias de componentes derivados (por ejemplo, si incorpora pesos de DINOv3 con condiciones propias).
-- Trazabilidad: el repositorio no registra actividad ni descargas, por lo que no hay evidencia de uso comunitario ni de mantenimiento.
-- Producción: no recomendable desplegar sin una auditoría previa de los archivos, la configuración y el comportamiento del modelo en el caso de uso objetivo.
+- Model card practicamente vacia: no hay descripcion, metricas, dataset ni instrucciones de uso.
+- Sin validacion de la comunidad: 0 descargas y 0 likes en el momento de la consulta.
+- Formato `joblib`: no es el formato estandar de Hugging Face (`safetensors`/`bin`), lo que complica la integracion con `transformers` y aumenta el riesgo de incompatibilidades o de codigo arbitrario al deserializar; conviene auditar el artefacto antes de cargarlo.
+- Riesgo de sesgos y alucinacion: no evaluable por falta de informacion; en vision, los sesgos dependerian del dataset de entrenamiento, que se desconoce.
+- Limitaciones de idioma y contexto: no aplicables o no documentadas.
+- Licencia MIT: permite uso comercial y modificacion, pero el autor no ofrece garantias ni soporte.
+- Para produccion: no recomendable sin una evaluacion previa exhaustiva del artefacto y de su comportamiento en el dominio objetivo.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/youssefElghanam191/edgeattnet-dinov3-convnext-base
-- No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.
+- No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

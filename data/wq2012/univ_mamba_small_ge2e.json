@@ -55,31 +55,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
-      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
-      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
-    },
-    {
-      "title": "Anthropic says its AI model submitted a false cold case tip to ...",
-      "url": "https://www.aol.com/articles/anthropic-says-model-submitted-false-182434000.html",
-      "snippet": "The AI model reached out to PhillyUnsolvedMurders.com, part of the police department, on July 18 and made a \"false homicide tip,\" Philadelphia police said Tuesday in a statement."
-    },
-    {
-      "title": "Mamba (deep learning architecture) - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Mamba_(deep_learning_architecture)",
-      "snippet": "Mamba, building on the S4 model, introduces significant enhancements, particularly in its treatment of time-variant operations. Central to its design is a unique selection mechanism that adapts structured state space model (SSM) parameters based on the input. [6][1] This enables Mamba to selectively focus on relevant information within ..."
-    },
-    {
-      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
-      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
-      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type. Note that dates reflect the earliest meaningful availability stage shown in each entry. Public ..."
-    },
-    {
-      "title": "Anthropic AI model submits false homicide tip to police website",
-      "url": "https://www.msn.com/en-us/news/other/anthropic-ai-model-submits-false-homicide-tip-to-police-website/ar-AA2dVuKE",
-      "snippet": "Oct 9 (Reuters) - An Anthropic artificial intelligence model submitted a false homicide tip through a Philadelphia police website, the department said in a statement, the latest incident of an AI ..."
-    }
-  ]
+  "sources": []
 }

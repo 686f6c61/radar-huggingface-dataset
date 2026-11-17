@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 127,
+  "downloads_30d": 130,
   "trending_score": 0,
   "parameters": 1239620,
   "parameters_human": "1.2M",
@@ -55,31 +55,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "funnel-transformer/small · Hugging Face",
-      "url": "https://huggingface.co/funnel-transformer/small",
-      "snippet": "Funnel Transformer is a transformers model pretrained on a large corpus of English data in a self-supervised fashion. This means it was pretrained on the raw texts only, with no humans labelling them in any way (which is why it can use lots of publicly available data) with an automatic process to generate inputs and labels from those texts."
-    },
-    {
-      "title": "wq2012 (Quan Wang) · GitHub",
-      "url": "https://github.com/wq2012",
-      "snippet": "A graph representing wq2012&#x27;s contributions from October 12, 2025 to October 12, 2026. The contributions are 100% commits, 0% pull requests, 0% issues, 0% code review."
-    },
-    {
-      "title": "Transformers library - GeeksforGeeks",
-      "url": "https://www.geeksforgeeks.org/deep-learning/transformers-library/",
-      "snippet": "The Transformers library, developed by Hugging Face, is an open source toolkit for working with advanced machine learning models across text, images, audio and multimodal data. It is widely used in NLP, computer vision and generative AI applications. Provides access to pre-trained models. Supports text, image, audio, and multimodal tasks."
-    },
-    {
-      "title": "Transformers - Hugging Face",
-      "url": "https://huggingface.co/docs/transformers/main/en/model_summary",
-      "snippet": "Transformers Transformers acts as the model-definition framework for state-of-the-art machine learning models in text, computer vision, audio, video, and multimodal models, for both inference and training."
-    },
-    {
-      "title": "Transformer (deep learning) - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning)",
-      "snippet": "The transformer model has been implemented in standard deep learning frameworks such as TensorFlow and PyTorch. Transformers is a library produced by Hugging Face that supplies transformer-based architectures and pretrained models."
-    }
-  ]
+  "sources": []
 }

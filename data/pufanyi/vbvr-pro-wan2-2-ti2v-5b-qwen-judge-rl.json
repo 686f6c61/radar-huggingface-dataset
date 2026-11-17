@@ -37,7 +37,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 19,
+  "downloads_30d": 21,
   "trending_score": 0,
   "parameters": 4999787712,
   "parameters_human": "5.00B",
@@ -55,8 +55,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Video-Reason/VBVR-Pro-Wan2.2-TI2V-5B-RLVLM-Qwen3.6-27B-Reward",
+  "renamed_at": "2026-11-17T09:07:14.688Z",
   "benchmarks": [],
   "sources": [
     {

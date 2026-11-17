@@ -5,7 +5,7 @@
   "author": "moltherm1",
   "url": "https://huggingface.co/moltherm1/olmo-mirror-olmocr-2-7b-1025",
   "created_at": "2026-10-29T04:23:02.000Z",
-  "updated_at": "2026-11-11T14:56:45.000Z",
+  "updated_at": "2026-11-17T01:25:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -23,6 +23,7 @@
     "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
     "base_model:finetune:Qwen/Qwen2.5-VL-7B-Instruct",
     "license:apache-2.0",
+    "eval-results",
     "text-generation-inference",
     "endpoints_compatible",
     "region:us"

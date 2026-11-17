@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "iq1xxs/MoE-MicroGPT-100M",
+  "renamed_at": "2026-11-17T07:04:27.120Z",
   "benchmarks": [],
   "sources": []
 }

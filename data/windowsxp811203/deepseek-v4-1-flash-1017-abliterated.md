@@ -2,50 +2,55 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-Abliterated es un fine-tuning comunitario del modelo DeepSeek-V4.1-Flash-1017, publicado por el usuario windowsxp811203 en Hugging Face. Se trata de una variante "abliterated" (también llamada "uncensored"), una técnica de modificación de pesos que elimina o atenúa los mecanismos de rechazo y las capas de alineación de seguridad del modelo original, de modo que el modelo responde a peticiones que el modelo base tendería a declinar. El modelo base es un transformer de tipo MoE (mixture of experts) multimodal con capacidad image-text-to-text, desarrollado por DeepSeek.
+DeepSeek-V4.1-Flash-1017-Abliterated es un ajuste fino del modelo base deepseek-ai/DeepSeek-V4.1-Flash-1017, publicado por el usuario windowsxp811203 en Hugging Face. Se trata de una variante "abliterated" (sin censura), una tecnica de modificacion de pesos que elimina la direccion de rechazo aprendida durante el alineamiento, de modo que el modelo deja de negarse a responder ante determinadas peticiones. El modelo conserva la arquitectura del original: un transformer MoE multimodal con pipeline image-text-to-text, orientado a generacion de texto y vision-lenguaje.
 
-El modelo conserva la arquitectura y el tamaño del original: 763.205.315.794 parámetros totales según los pesos en safetensors, con un repositorio de 510,3 GB. Incorpora etiquetas que indican soporte de visión (vision-language, image-text-to-text), arquitectura MoE, un componente denominado "dspark" y pesos en formato FP8/8-bit. La licencia declarada es MIT, aunque el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en Hugging Face.
+El dato mas relevante es su escala: 763.205.315.794 parametros totales segun los safetensors del repositorio, con un peso en disco de 733,4 GB. El repositorio declara formato de pesos safetensors y cuantizacion de 8 bits (fp8), lo que sugiere que los pesos publicados ya estan en precision reducida respecto al modelo base. La licencia es MIT y el acceso esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
-Es relevante ahora porque combina tres tendencias del ecosistema open source: modelos MoE de gran escala con capacidades multimodales, cuantización FP8 para reducir requisitos de memoria, y fine-tunings comunitarios que modifican el comportamiento de seguridad del modelo original. No obstante, la información pública disponible es muy limitada: no hay datos de benchmarks, idiomas soportados ni detalles del proceso de entrenamiento.
+Su interes practico es doble. Por un lado, ofrece una via para investigar el comportamiento de modelos de gran escala sin las capas de rechazo del alineamiento, algo util en estudios de seguridad y evaluacion de sesgos. Por otro, al ser un fine-tune de un modelo de 763B en fp8, plantea requisitos de hardware considerables y una serie de caveats de licencia y responsabilidad que conviene tener claros antes de plantear cualquier uso en produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (mixture of experts) multimodal, familia deepseek_v41; componente "dspark" segun tags |
+| Arquitectura | Transformer MoE multimodal (tag `moe`, `deepseek_v41`, `dspark`); pipeline image-text-to-text |
 | Parametros totales | 763.205.315.794 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | FP8 / 8-bit (segun tags); otras cuantizaciones no disponibles |
+| Tipos de cuantizacion | 8-bit, fp8 (segun tags del repositorio) |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
+| Tamano del repositorio | 733,4 GB |
+| Acceso | Restringido (gated), requiere aceptar condiciones |
+| Modelo base | deepseek-ai/DeepSeek-V4.1-Flash-1017 |
+| Libreria | transformers |
+| Descargas / likes | 40 / 2 |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning del DeepSeek-V4.1-Flash-1017, un transformer de tipo mixture of experts con capacidades multimodales (procesa imagen y texto, pipeline image-text-to-text). Los tags incluyen "moe", "vision-language" y "dspark", lo que sugiere una arquitectura MoE con algún componente o técnica denominada dspark, aunque no se dispone de documentación que detalle su funcionamiento. El tamaño total de 763.205.315.794 parámetros y un repositorio de 510,3 GB son coherentes con un modelo MoE de gran escala almacenado en FP8.
+El modelo hereda la arquitectura del base DeepSeek-V4.1-Flash-1017: un transformer con mezcla de expertos (MoE) y capacidad multimodal, tal como indican los tags `moe`, `vision-language` e `image-text-to-text`. El tag `dspark` aparece asociado a la familia, aunque la informacion disponible no detalla su significado tecnico concreto ni el mecanismo exacto de atencion o enrutamiento de expertos. Tampoco se especifican el numero de parametros activos por token, la longitud de contexto nativa ni la composicion del dataset de entrenamiento.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo RLHF, DPO u otras etapas de alineación en el modelo base. Respecto al fine-tuning "abliterated", la técnica habitual consiste en identificar y modificar las direcciones de activación asociadas al rechazo de peticiones, pero no se ha publicado la metodología concreta empleada en esta variante. Tampoco hay datos sobre innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
+Sobre el proceso de ajuste, lo unico documentado es la naturaleza "abliterated" del fine-tune: una modificacion de pesos orientada a eliminar la direccion de rechazo del alineamiento, sin que se detallen la metodologia exacta, el volumen de datos usado ni si hubo etapas adicionales de RLHF o DPO. No se dispone de informacion sobre el numero de tokens de entrenamiento ni sobre innovaciones tecnicas especificas (decodificacion especulativa, atencion lineal, etc.) mas alla de lo que aporta el modelo base, cuyos detalles tampoco se recogen en la informacion proporcionada.
 
 ## Capacidades
 
-- Generación de texto y razonamiento de propósito general, heredadas del modelo base DeepSeek-V4.1-Flash-1017.
-- Procesamiento multimodal image-text-to-text: acepta imágenes junto con texto como entrada.
-- Comportamiento "abliterated": responde a peticiones que el modelo base alineado rechazaría, al haberse atenuado los mecanismos de rechazo.
-- Arquitectura MoE con 763.205 millones de parámetros totales, orientada a eficiencia computacional en inferencia (parámetros activos no disponibles).
-- Soporte de tool calling / function calling: no confirmado en la información disponible.
-- Soporte de agentes y razonamiento multi-paso: no confirmado en la información disponible.
-- Capacidades multilingües: no disponibles.
-- Modo thinking, audio u otras capacidades especiales: no disponibles.
+- Generacion de texto y razonamiento general, heredadas del modelo base DeepSeek-V4.1-Flash-1017.
+- Capacidad vision-lenguaje: el pipeline declarado es image-text-to-text, por lo que acepta imagenes junto con texto como entrada.
+- Respuestas sin rechazo ante peticiones que el modelo base alineado tenderia a declinar, consecuencia directa del proceso de abliteration.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible; el repositorio no declara idiomas.
+- Modo thinking o razonamiento extendido: no disponible en la informacion proporcionada.
+- Otras capacidades especiales (audio, vision detallada): no disponible.
 
 ## Casos de uso
 
-- Investigación sobre alineación y seguridad: el modelo permite estudiar cómo la eliminación de mecanismos de rechazo afecta al comportamiento del modelo en dominios sensibles, comparándolo con el modelo base alineado en experimentos controlados.
-- Evaluación de robustez de filtros: sirve para probar sistemas de moderación y clasificadores de contenido, generando respuestas que un modelo alineado no produciría y verificando si las salvaguardas externas las detectan.
-- Procesamiento de documentos con imágenes: al ser image-text-to-text, puede extraer y razonar sobre información de capturas, diagramas o formularios combinados con texto, en entornos donde no se requiere el filtrado del modelo base.
-- Generación de texto creativo sin restricciones: útil en investigación sobre escritura creativa y estilos donde el modelo alineado impone limitaciones temáticas.
-- Experimentación académica con modelos MoE de gran escala: permite estudiar el comportamiento de un MoE de 763.000 millones de parámetros en tareas de investigación, siempre que se disponga del hardware adecuado.
-- Fine-tuning posterior para dominios específicos: al estar bajo licencia MIT y en formato safetensors compatible con transformers, puede servir como base para ajustes adicionales en investigación, asumiendo los riesgos de partir de un modelo sin alineación de seguridad.
+- Investigacion en seguridad de modelos: el modelo permite estudiar que tipos de contenido genera un LLM de gran escala cuando se elimina la capa de rechazo, comparando sus respuestas con las del base alineado para caracterizar el efecto de la abliteration.
+- Evaluacion de sesgos y robustez: al carecer de filtros de rechazo, resulta util para red teaming controlado y para medir hasta que punto el alineamiento original contenia comportamientos indeseados.
+- Analisis de mecanismos de alineamiento: comparar pesos y activaciones entre este fine-tune y deepseek-ai/DeepSeek-V4.1-Flash-1017 ayuda a localizar la direccion de rechazo y a entender como se representa en un MoE de 763B.
+- Procesamiento multimodal de documentos: con pipeline image-text-to-text, puede emplearse en entornos de investigacion para extraer y describir informacion de imagenes y documentos escaneados, siempre que el hardware lo permita.
+- Generacion de texto a gran escala en laboratorio: util para experimentos que requieran un modelo de muy alta capacidad sin restricciones de contenido, en entornos aislados y con supervision humana.
+- Estudio de eficiencia en fp8: al publicarse en 8 bits, sirve para medir el rendimiento real de inferencia en fp8 sobre un modelo de este tamano y compararlo con otras estrategias de cuantizacion.
 
 ## Benchmarks y rendimiento
 
@@ -53,33 +58,35 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 763.205 millones de parámetros en FP8 (1 byte por parámetro), los pesos ocupan aproximadamente 763 GB, por lo que se requieren al menos 8 GPU de 96 GB (H100/H200) o 10 GPU de 80 GB (A100) solo para los pesos, más memoria para KV cache y activaciones.
-- GPU recomendadas: clústeres multi-GPU con NVIDIA H100/H200 (80-141 GB) o A100 80 GB; no es viable en una sola GPU comercial.
-- ¿Cabe en consumer GPU? No. Ni siquiera en RTX 4090 (24 GB) ni en configuraciones multi-GPU de consumo.
-- Opciones de despliegue: transformers (librería declarada); compatibilidad con vLLM, TGI, llama.cpp u Ollama no confirmada en la información disponible.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada: con 763,2B parametros en fp8 (1 byte por parametro), los pesos ocupan aproximadamente 763 GB; en bf16 serian unos 1,5 TB. A ello hay que sumar el overhead de activaciones, cache KV y el hecho de que es un MoE, lo que exige agregar memoria entre GPUs.
+- GPU recomendadas: no es viable en una sola GPU. Se requiere un nodo multi-GPU de clase datacenter (H100 80 GB, H200, A100 80 GB) en numero suficiente para superar el terabyte de memoria agregada; por ejemplo, 10 o mas H100 de 80 GB solo para los pesos en fp8.
+- GPU de consumo: no cabe en ninguna GPU consumer (RTX 4090, 5090, etc.) ni en configuraciones multi-GPU domesticas.
+- Opciones de despliegue: transformers (libreria declarada) y, previsiblemente, frameworks compatibles con fp8 y paralelismo tensor/pipeline como vLLM o TGI; llama.cpp y Ollama no son opciones realistas a este tamano. La compatibilidad con endpoints se indica mediante el tag `endpoints_compatible`.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Contexto | Licencia | Multimodal | Notas |
+| Modelo | Parametros | Contexto | Licencia | Acceso | Notas |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017-Abliterated | 763.205.315.794 | no disponible | MIT | Si (image-text-to-text) | Fine-tuning abliterated comunitario; acceso gated |
-| DeepSeek-V4.1-Flash-1017 (base) | no disponible | no disponible | no disponible | Si (segun tags del derivado) | Modelo original alineado; referencia directa |
-| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables de modelos comparables en la informacion proporcionada |
+| DeepSeek-V4.1-Flash-1017-Abliterated | 763,2B | no disponible | MIT | Gated | Fine-tune abliterated, multimodal, fp8 |
+| deepseek-ai/DeepSeek-V4.1-Flash-1017 (base) | no disponible | no disponible | no disponible | no disponible | Modelo original alineado del que deriva |
+| Alternativas de mismo tamano | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la informacion proporcionada |
+
+La unica comparacion documentada es con su propio modelo base, del que se diferencia por la eliminacion del rechazo y por publicarse en fp8 bajo licencia MIT. No hay datos de rendimiento que permitan situarlo frente a otros modelos de escala similar.
 
 ## Limitaciones y advertencias
 
-- Modelo "abliterated": los mecanismos de rechazo y parte de la alineación de seguridad han sido eliminados o atenuados, por lo que puede generar contenido dañino, ilegal o sensible sin las salvaguardas del modelo base.
-- Riesgo elevado de alucinación y de respuestas no verificadas, agravado por la ausencia de benchmarks publicados que permitan evaluar su fiabilidad.
-- No hay información sobre sesgos conocidos, idiomas soportados ni limitaciones de contexto; no puede asumirse un comportamiento multilingüe o de contexto largo sin verificación.
-- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en pipelines automatizados.
-- Aunque la licencia declarada es MIT, el uso comercial de un modelo sin alineación de seguridad conlleva riesgos legales y reputacionales; conviene revisar las condiciones del modelo base y del repositorio gated.
-- El tamaño (763.000 millones de parámetros, ~763 GB en FP8) hace inviable su despliegue en hardware de consumo y exige infraestructura multi-GPU de centro de datos.
-- No se dispone de información sobre el proceso de fine-tuning, los datos utilizados ni la metodología de abliteration, lo que impide auditar el modelo.
-- Uso en producción no recomendado sin una capa externa de moderación y evaluación exhaustiva.
+- Al ser un modelo abliterated, no incorpora las capas de rechazo del alineamiento: puede generar contenido danino, ilegal o sensible sin filtros, lo que exige supervision humana y entornos controlados.
+- Riesgo elevado de alucinacion y de respuestas factualmente incorrectas, agravado por la ausencia de salvaguardas del base.
+- Sesgos conocidos: no documentados en la informacion disponible; al heredar los del modelo base, es previsible que reproduzca sesgos de sus datos de entrenamiento.
+- Idiomas y contexto: no se declaran idiomas soportados ni longitud de contexto, por lo que no se puede garantizar un comportamiento multilingue ni un uso con ventanas largas.
+- Licencia MIT: permite uso comercial segun los terminos de la licencia, pero el acceso esta restringido (gated) y el usuario debe aceptar las condiciones de Hugging Face; conviene revisar tambien las condiciones del modelo base.
+- Requisitos de hardware extremos (mas de 700 GB solo en pesos fp8), lo que descarta cualquier despliegue en infraestructura convencional.
+- Fine-tune de autor individual con 40 descargas y 2 likes: no hay validacion independiente de calidad ni de integridad de los pesos; conviene auditar el repositorio antes de usarlo.
+- No hay informacion sobre parametros activos, contexto ni benchmarks, lo que impide estimar su rendimiento real frente al base.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/windowsxp811203/DeepSeek-V4.1-Flash-1017-Abliterated
+- Modelo en Hugging Face: https://huggingface.co/windowsxp811203/DeepSeek-V4.1-Flash-1017-Abliterated
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
-- Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.
+- Paper, blog o repositorio adicional: no disponible en la informacion proporcionada.

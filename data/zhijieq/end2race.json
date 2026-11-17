@@ -48,31 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Aternos - Minecraft servers. Free. Forever. - Reddit",
-      "url": "https://www.reddit.com/r/aternos/hot/",
-      "snippet": "Aternos is the world’s largest free Minecraft server host. We want to give you the opportunity to play with your friends on your own …"
-    },
-    {
-      "title": "What is the best free Minecraft server hosting service out there?",
-      "url": "https://www.reddit.com/r/MinecraftServer/comments/yo2zqu/what_is_the_best_free_minecraft_server_hosting/",
-      "snippet": "The only good free hosting service out there would be Aternos however performance is still horrible. I know cheaper hosts that offer …"
-    },
-    {
-      "title": "Forums - Aternos Community",
-      "url": "https://board.aternos.org/",
-      "snippet": "Jul 3, 2023 · Aternos ist der größte kostenlose Minecraft-Serverhoster der Welt. Wir bieten deinen Freunden und dir die Möglichkeit …"
-    },
-    {
-      "title": "Unknown Host - General - Aternos Community",
-      "url": "https://board.aternos.org/thread/47522-unknown-host/",
-      "snippet": "Jun 16, 2020 · Good afternoon, I might need help. I've never created a server before so did my first one here. When it turned online i …"
-    },
-    {
-      "title": "Co sądzicie o Aternos - darmowa serwerownia - MPCforum.pl",
-      "url": "https://www.mpcforum.pl/topic/1610201-co-s%C4%85dzicie-o-aternos-darmowa-serwerownia/",
-      "snippet": "Apr 1, 2017 · Witam, wyguglowałem sobie darmowe serwer minecraft po czym zobaczyłem takie coś \"Aternos - Free servers.\" niby …"
-    }
-  ]
+  "sources": []
 }

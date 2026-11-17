@@ -2,80 +2,99 @@
 
 ## Resumen
 
-Sigma-Go es una red neuronal de política y valor para ajedrez, exportada a ONNX, que forma parte del motor de ajedrez Sigma-Go. El modelo combina una red residual con búsqueda en árbol Monte Carlo (MCTS) y está diseñado para ejecutarse en el navegador mediante onnxruntime-web, aprovechando WebGPU o el CPU a través de WebAssembly. Lo desarrolla el usuario xxparthparekhxx y se publica bajo licencia MIT.
+Sigma-Go es una red neuronal de política y valor para ajedrez, componente central de un motor de ajedrez que combina una red residual con búsqueda en árbol de Monte Carlo (MCTS). La desarrolla el usuario independiente xxparthparekhxx y se publica como un único fichero ONNX de 47,5 MiB exportado desde un checkpoint de PyTorch, con el objetivo explícito de ejecutar el motor directamente en el navegador mediante onnxruntime-web, WebGPU o WebAssembly. Es la red que alimenta la demo pública en chess.parthparekhdev.com.
 
-La red tiene 12.448.714 parámetros y una arquitectura de convolución 3×3 como tallo, seguida de 10 bloques residuales de 256 canales, con dos cabezas de salida: una de política con 4.544 logits (una por movimiento en una tabla fija) y otra de valor que estima el resultado esperado desde el punto de vista de las blancas en el rango −1…1. El archivo ONNX ocupa 47,5 MiB en fp32 con el eje de batch dinámico, lo que permite inferencia por lotes.
+Su relevancia es acotada y muy específica: no es un modelo de lenguaje ni un sistema generalista, sino un evaluador de posiciones de ajedrez con una arquitectura compacta de 10 bloques residuales de 256 canales, 12.448.714 parámetros y dos cabezas (política sobre 4.544 movimientos y valor escalar en rango −1 a 1). Encaja en la categoría de motores neuronales ligeros aptos para inferencia en cliente.
 
-El modelo es relevante para desarrolladores interesados en motores de ajedrez ligeros y desplegables en entornos web, así como para quienes investigan la integración de redes neuronales con MCTS en el navegador. No obstante, su fuerza de juego no ha sido medida y se entrenó únicamente con partidas humanas, sin self-play.
+La versión publicada se ha afinado sobre evaluaciones de Stockfish del conjunto público de Lichess tras un primer entrenamiento supervisado con partidas humanas. No hay autojuego en este entrenamiento. Su punto fuerte declarado es el rendimiento frente a Stockfish 19 con fuerza limitada, y su limitación principal es que la entrada no codifica derechos de enroque, capturas al paso ni historial de movimientos.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | CNN residual: tallo convolucional 3×3, 10 bloques residuales de 256 canales, cabezas de política y valor |
-| Parametros totales | 12.448.714 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (no aplica; entrada fija de 14×8×8) |
-| Tipos de cuantizacion | no disponible (exportado en fp32; no se documentan otras cuantizaciones) |
-| Idiomas soportados | no disponible (no es un modelo de lenguaje) |
+| Arquitectura | Red residual convolucional: vástago 3×3, 10 bloques residuales de 256 canales, cabezas de política y valor |
+| Parámetros totales | 12.448.714 |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no aplica (no es un modelo de lenguaje; entrada fija de 14×8×8 planos) |
+| Tipos de cuantización | no disponible (se distribuye en fp32 con BatchNorm plegado en las convoluciones) |
+| Idiomas soportados | no disponible (no procesa lenguaje natural) |
 | Licencia | MIT |
-| Formato de pesos | ONNX (opset 17, fp32, BatchNorm fusionado en las convoluciones, eje de batch dinámico) |
+| Formato de pesos | ONNX (opset 17), fp32, eje de batch dinámico, fichero `chess_net.onnx` de 47,5 MiB |
 
 ## Arquitectura y entrenamiento
 
-La red es una CNN residual con un tallo de convolución 3×3 y 10 bloques residuales de 256 canales. La entrada es un tensor float32 de forma `[batch, 14, 8, 8]`: los planos 0–5 codifican las piezas blancas (peón, caballo, alfil, torre, dama, rey) y los planos 6–11 las negras; el plano 12 se activa cuando mueven las blancas y el 13 cuando mueven las negras. No hay planos para derechos de enroque, captura al paso ni historial de movimientos. La cabeza de política produce 4.544 logits correspondientes a una tabla fija de movimientos (pares from-square/to-square más promociones), y la cabeza de valor produce un escalar en −1…1 que representa el resultado esperado desde el lado de las blancas.
+La red es un evaluador de posiciones de tipo AlphaZero reducido. Recibe un tensor `planes` de forma `[batch, 14, 8, 8]`: los planos 0–5 codifican peón, caballo, alfil, torre, dama y rey blancos, los planos 6–11 las mismas piezas negras y los planos 12 y 13 indican el turno. No se incluyen planos de enroque, captura al paso ni historial. La salida consta de `policy` (`[batch, 4544]` logits, una entrada por par origen-destino más promociones, ordenado según `create_uci_labels` de `src/dataset.py`) y `value` (`[batch, 1]`, resultado esperado desde el punto de vista de las blancas). Las BatchNorm están plegadas en las convoluciones y la exportación se validó frente al checkpoint de PyTorch en 96 posiciones y lotes de 1, 8 y 32, con diferencias máximas de 1,1e-5 en los logits de política y 7,7e-7 en el valor.
 
-El entrenamiento fue supervisado con partidas humanas leídas de archivos PGN. Cada posición se etiqueta con el movimiento jugado y el resultado final de la partida. No se empleó self-play ni RLHF/DPO. El repositorio no registra qué colección de PGN se usó para entrenar este checkpoint, y la fuerza de juego del motor no ha sido medida. Como verificación de exportación, se comparó el modelo ONNX con el checkpoint de PyTorch en 96 posiciones con tamaños de lote 1, 8 y 32: las diferencias máximas fueron 1,5e-5 en los logits de política y 2,4e-7 en el valor, y ambos eligieron el mismo movimiento principal en todas las posiciones.
+El entrenamiento tiene dos fases. La primera es aprendizaje supervisado sobre partidas humanas extraídas de ficheros PGN, etiquetando cada posición con el movimiento jugado y el resultado final de la partida; esa red es la revisión `base` del repositorio. La segunda es un ajuste fino en dos rondas sobre las evaluaciones públicas de Stockfish de Lichess (CC0, 23,7 millones de posiciones), donde el objetivo de política es el primer movimiento de la línea principal del análisis más profundo y el de valor es `tanh(centipawns/400)` desde el lado de las blancas. La segunda ronda, que produce este fichero, partió de la red de la primera y dio una pasada de 46.000 pasos de tamaño 512 en unas 7,6 horas sobre una GTX 1650 Ti. Sobre 50.000 posiciones reservadas, la red elige el movimiento de Stockfish el 41,7 % de las veces.
 
 ## Capacidades
 
-- Evaluación de posiciones de ajedrez: produce una distribución de probabilidad sobre 4.544 movimientos legales (previa máscara de movimientos ilegales) y un valor escalar del resultado esperado.
-- Inferencia en navegador: compatible con onnxruntime-web sobre WebGPU o WebAssembly (CPU).
-- Integración con MCTS: la red está pensada para guiar la búsqueda en árbol Monte Carlo del motor Sigma-Go.
-- Procesamiento por lotes: el eje de batch es dinámico, lo que permite evaluar varias posiciones a la vez.
-- No soporta tool calling, function calling, agentes, razonamiento multi-paso genérico ni capacidades multilingües; es un modelo específico de ajedrez.
-- No dispone de modo thinking, visión, audio ni otras capacidades especiales.
+- Evaluación de posiciones de ajedrez: produce una distribución de probabilidad sobre 4.544 movimientos legales candidatos (tras enmascarar los ilegales) y un valor escalar de resultado esperado.
+- Priorización de movimientos para búsqueda: los logits de política sirven como priors en el MCTS implementado en `src/mcts.py`.
+- Estimación de resultado: el valor en −1…1 permite al motor decidir entre líneas sin búsqueda profunda adicional.
+- Integración en navegador: el formato ONNX permite ejecución con onnxruntime-web sobre WebGPU o WebAssembly, con eje de batch dinámico para evaluar varias posiciones por pasada.
+- Ejecución en Python: ejemplo oficial con `onnxruntime.InferenceSession` y la librería `python-chess` para construir los planos.
+- No soporta tool calling, agentes, razonamiento multi-paso en lenguaje natural, ni capacidades multilingües; no procesa texto.
 
 ## Casos de uso
 
-- Motor de ajedrez en el navegador: el modelo puede ejecutarse con onnxruntime-web sobre WebGPU o WebAssembly, permitiendo partidas contra una IA sin instalación ni servidor, gracias a su tamaño reducido (47,5 MiB) y a la exportación ONNX optimizada.
-- Análisis de posiciones en aplicaciones web educativas: la cabeza de valor ofrece una estimación del resultado esperado desde el punto de vista de las blancas, útil para mostrar evaluaciones en tiempo real en plataformas de enseñanza de ajedrez.
-- Integración en motores con MCTS: el modelo sirve como red de política y valor para guiar la búsqueda en árbol Monte Carlo, tal como se implementa en `src/mcts.py` del repositorio, adecuado para proyectos que quieran experimentar con MCTS neuronal en ajedrez.
-- Prototipado de motores de ajedrez ligeros: al ser un checkpoint ONNX de 12,4M de parámetros, es apto para entornos con recursos limitados, como Raspberry Pi o navegadores, donde no caben modelos mayores.
-- Investigación en evaluación de redes de ajedrez: sirve como base para estudiar el comportamiento de redes entrenadas solo con partidas humanas frente a enfoques con self-play, aunque su fuerza no esté medida.
-- Generación de movimientos candidatos en herramientas de análisis: la política puede usarse para sugerir movimientos legales (tras aplicar la máscara) en interfaces de análisis o entrenamiento.
-- Despliegue en entornos sin GPU dedicada: la variante WebAssembly permite ejecución en CPU, útil para aplicaciones web que no pueden asumir WebGPU.
+- Motor de ajedrez en el navegador sin backend: gracias al ONNX de 47,5 MiB y a onnxruntime-web sobre WebGPU o WebAssembly, se puede ofrecer un rival de nivel club (en torno a 2000 Elo de Stockfish limitado) dentro de una página estática, sin servidor ni GPU remota.
+- Análisis de partidas y revisión de errores: ejecutar la red sobre cada posición de un PGN para obtener el valor esperado y contrastarlo con el movimiento jugado, destacando las jugadas que degradan más la evaluación.
+- Aplicación de entrenamiento con MCTS acotado: combinar la política con 200–800 simulaciones por movimiento produce un jugador ajustable en fuerza y coste, útil en apps docentes o de práctica.
+- Estudio de ajedrez por correspondencia o táctica: la cabeza de valor da una estimación rápida de posiciones sin necesidad de un motor completo, integrable en scripts de Python con `onnxruntime`.
+- Componente de un pipeline de destilación o comparación de evaluadores: al estar exportado a ONNX y con validación numérica frente a PyTorch, sirve como referencia para comparar otras redes de ajedrez o para fine-tuning posterior sobre nuevas evaluaciones.
+- Banear o verificar jugadas en plataformas pequeñas: usar el valor esperado y la probabilidad de política para señalar movimientos anómalos respecto a la distribución esperada, como heurística auxiliar de detección de trampas.
+- Demo educativa de AlphaZero: el repositorio y el fichero ONNX permiten ilustrar el bucle política-valor-MCTS en un entorno de recursos limitados (una GTX 1650 Ti basta para el ajuste fino).
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explícitamente que la fuerza de juego no ha sido medida. Como única métrica de validación, se documenta la comparación ONNX frente a PyTorch en 96 posiciones, con diferencias máximas de 1,5e-5 en los logits de política y 2,4e-7 en el valor, y coincidencia del movimiento principal en todas las posiciones.
+Los datos de fuerza se midieron contra Stockfish 19 con `UCI_LimitStrength` y un límite de 100.000 nodos por movimiento, en partidas de 48 juegos (24 aperturas de 2 a 4 plies aleatorios jugadas con ambos colores). Sigma-Go usa 800 simulaciones por movimiento sin aleatoriedad. La puntuación cuenta tablas como medio punto e incluye intervalo de Wilson al 95 %.
+
+| Red | UCI_Elo de Stockfish | Victorias | Tablas | Derrotas | Puntuación |
+|---|---|---|---|---|---|
+| Esta red | 2000 | 27 | 13 | 8 | 0,70 (0,56–0,81) |
+| `base` | 2000 | 3 | 18 | 27 | 0,25 (0,15–0,39) |
+| `base` | 1600 | 23 | 16 | 9 | 0,65 (0,50–0,77) |
+| `base` | 1320 | 35 | 7 | 6 | 0,80 (0,67–0,89) |
+
+En un enfrentamiento directo a 200 simulaciones, esta red puntuó 0,81 frente al primer ajuste fino (47 victorias, 10 tablas y 7 derrotas en 64 partidas). Sobre 50.000 posiciones reservadas del conjunto de Lichess, coincide con el movimiento de Stockfish el 41,7 % de las veces. No se han publicado resultados de benchmarks estándar de ajedrez (por ejemplo, Elo en listas abiertas, pruebas tipo CCRL o TCEC) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el archivo ONNX ocupa 47,5 MiB en fp32; la memoria necesaria en GPU es del orden de decenas de MiB, dependiendo del tamaño de lote.
-- GPU recomendadas: cualquier GPU compatible con WebGPU para ejecución en navegador; en servidor, GPU con soporte ONNX Runtime (por ejemplo, A100, H100, RTX 4090) aunque el modelo es muy pequeño y no requiere hardware de gama alta.
-- Cabe en GPU consumer: sí, en cualquier GPU consumer moderna; también puede ejecutarse en CPU mediante WebAssembly.
-- Opciones de despliegue: onnxruntime-web (WebGPU o WebAssembly), ONNX Runtime en Python, y el motor Sigma-Go con MCTS del repositorio.
-- Latencia y throughput estimados: no disponibles; no se documentan mediciones de latencia ni throughput.
+- VRAM estimada para inferencia: unos 50–100 MiB para los pesos en fp32; con lotes de 32 posiciones el consumo adicional de activaciones es mínimo y cabe holgadamente en cualquier GPU con 1 GB.
+- GPU recomendadas: cualquier GPU integrada o dedicada es suficiente; la red se entrenó y afinó en una GTX 1650 Ti, y en inferencia funciona en A100, H100, RTX 4090 o tarjetas de gama baja sin problema.
+- Cabe en GPU de consumo: sí, en todas las actuales (GTX 1050 en adelante, incluidas las integradas modernas), y también en CPU mediante WebAssembly u onnxruntime.
+- Opciones de despliegue: onnxruntime para Python, onnxruntime-web (WebGPU o WebAssembly) en el navegador, y cualquier runtime compatible con ONNX opset 17. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este modelo.
+- Latencia y throughput: no disponibles de forma explícita. Como referencia indirecta, la segunda ronda de ajuste fino (46.000 pasos de lote 512 sobre 23,7 millones de posiciones) se completó en 7,6 horas en una GTX 1650 Ti, lo que da una idea de la carga de entrenamiento, no de la inferencia.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye datos de rendimiento ni comparaciones con otros modelos de ajedrez (por ejemplo, Leela Chess Zero o Stockfish NNUE), por lo que no es posible establecer una comparativa rigurosa.
+| Modelo | Parámetros | Entrada | Formato | Licencia | Disponibilidad | Fuerza declarada |
+|---|---|---|---|---|---|---|
+| Sigma-Go (esta red) | 12,4 M | 14 planos 8×8 | ONNX | MIT | Hugging Face (este repo) | ~2000 Elo de Stockfish limitado (0,70 en 48 partidas) |
+| Sigma-Go `base` | no disponible con detalle (misma arquitectura, entrenada solo con partidas humanas) | 14 planos 8×8 | ONNX | MIT | Revisión `base` del mismo repo | 0,25 frente a UCI_Elo 2000 |
+| Redes tipo AlphaZero/Leela | no disponible en la información | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de datos verificables de otros motores neuronales comparables (Leela Chess Zero, Stockfish NNUE, Maia, etc.) en la información proporcionada, por lo que la comparación cuantitativa se limita a las dos revisiones del propio repositorio.
 
 ## Limitaciones y advertencias
 
-- La fuerza de juego no ha sido medida; se desconoce su nivel real frente a otros motores.
-- El entrenamiento se basó únicamente en partidas humanas, sin self-play, lo que puede limitar su rendimiento en niveles altos.
-- La entrada no incluye derechos de enroque, casilla de captura al paso ni historial de movimientos; la búsqueda aplica esas reglas, pero la red no puede verlas.
-- La cabeza de valor es cauta: en 54 posiciones de prueba variadas, incluidos casi mates, el 61% de sus salidas estuvieron dentro de ±0,2 y el valor máximo fue 0,82.
-- Riesgo de alucinación: no aplica en el sentido de generación de texto, pero la política puede asignar probabilidad a movimientos ilegales si no se aplica la máscara correspondiente antes del softmax.
-- Licencia MIT: permite uso comercial, pero se recomienda conservar el aviso de copyright.
-- No es un modelo de lenguaje: no soporta idiomas, tool calling ni agentes; su uso está restringido al ajedrez.
-- El repositorio no documenta la colección de PGN usada, lo que dificulta la reproducibilidad del entrenamiento.
+- Fuerza medida únicamente contra Stockfish con fuerza limitada y en partidas de 48 juegos, con intervalos amplios (0,56–0,81 para la puntuación de 0,70 frente a UCI_Elo 2000).
+- La entrada no incluye derechos de enroque, casilla de captura al paso ni historial de movimientos; la búsqueda aplica esas reglas, pero la red no puede verlas, lo que puede producir evaluaciones inexactas en posiciones donde esos factores son decisivos.
+- No hay autojuego en el entrenamiento, lo que limita la calidad de la política frente a redes entrenadas con RL.
+- Riesgo de alucinación en sentido figurado: la red puede asignar alta probabilidad a movimientos plausibles pero incorrectos tácticos si el MCTS no los refuta, y el valor es una estimación, no un resultado exacto.
+- Sin planos de historial, la red no distingue posiciones repetidas ni puede razonar sobre tablas por triple repetición o regla de 50 movimientos.
+- La model card no documenta sesgos de otro tipo (no aplica sesgo lingüístico o social al no procesar texto).
+- Licencia MIT: permite uso comercial y modificación, siempre que se conserve el aviso de copyright y la licencia; no hay restricciones adicionales declaradas en el repositorio.
+- En producción conviene validar numéricamente la exportación ONNX frente al checkpoint original, como ya hizo el autor, y fijar la versión de onnxruntime y la tabla de movimientos, porque el orden de la política depende de `create_uci_labels` en `src/dataset.py`.
+- El repositorio es de un autor individual, con 0 descargas y 0 likes en el momento de la consulta; no hay garantías de mantenimiento ni de soporte.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/xxparthparekhxx/sigma-go
-- Repositorio GitHub: https://github.com/xxparthparekhxx/Chess-Ai
-- Tabla de movimientos (`src/dataset.py`): https://github.com/xxparthparekhxx/Chess-Ai/blob/master/src/dataset.py
-- Búsqueda MCTS (`src/mcts.py`): https://github.com/xxparthparekhxx/Chess-Ai/blob/master/src/mcts.py
+- Modelo en Hugging Face: https://huggingface.co/xxparthparekhxx/sigma-go
+- Revisión `base` (red entrenada solo con partidas humanas): https://huggingface.co/xxparthparekhxx/sigma-go/tree/base
+- Repositorio del motor (Chess-Ai): https://github.com/xxparthparekhxx/Chess-Ai
+- Tabla de movimientos (`create_uci_labels`): https://github.com/xxparthparekhxx/Chess-Ai/blob/master/src/dataset.py
+- Búsqueda MCTS del motor: https://github.com/xxparthparekhxx/Chess-Ai/blob/master/src/mcts.py
+- Demo pública: https://chess.parthparekhdev.com
+- Conjunto de datos de evaluaciones de Lichess: https://huggingface.co/datasets/Lichess/chess-position-evaluations

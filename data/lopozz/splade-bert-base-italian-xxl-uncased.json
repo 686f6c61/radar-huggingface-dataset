@@ -1,0 +1,131 @@
+{
+  "schema": 2,
+  "id": "lopozz/splade-bert-base-italian-xxl-uncased",
+  "slug": "lopozz-splade-bert-base-italian-xxl-uncased",
+  "author": "lopozz",
+  "url": "https://huggingface.co/lopozz/splade-bert-base-italian-xxl-uncased",
+  "created_at": "2026-11-16T20:06:17.000Z",
+  "updated_at": "2026-11-17T07:20:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "sparse-encoder",
+    "sparse",
+    "asymmetric",
+    "inference-free",
+    "splade",
+    "generated_from_trainer",
+    "dataset_size:532751",
+    "loss:SpladeLoss",
+    "loss:SparseMultipleNegativesRankingLoss",
+    "loss:FlopsLoss",
+    "feature-extraction",
+    "it",
+    "arxiv:1908.10084",
+    "arxiv:2205.04733",
+    "arxiv:1807.03748",
+    "arxiv:2004.05665",
+    "base_model:dbmdz/bert-base-italian-xxl-uncased",
+    "base_model:finetune:dbmdz/bert-base-italian-xxl-uncased",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 439989464,
+  "storage_human": "440 MB",
+  "context_length": null,
+  "base_model": "dbmdz/bert-base-italian-xxl-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "mmarco",
+      "metric": "Dot Accuracy@10",
+      "value": 0.8327407886231416
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "mmarco",
+      "metric": "Dot Precision@10",
+      "value": 0.08783128636069812
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "mmarco",
+      "metric": "Dot Recall@10",
+      "value": 0.8269634776987718
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "mmarco",
+      "metric": "Dot Ndcg@10",
+      "value": 0.7106550108506705
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "mmarco",
+      "metric": "Dot Mrr@10",
+      "value": 0.6770612090990261
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "mmarco",
+      "metric": "Dot Map@10",
+      "value": 0.6708950246765373
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "mmarco",
+      "metric": "Query Active Dims",
+      "value": 9.721073150634766
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "mmarco",
+      "metric": "Query Sparsity Ratio",
+      "value": 0.999687445400597
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "mmarco",
+      "metric": "Corpus Active Dims",
+      "value": 213.88504887650515
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "mmarco",
+      "metric": "Corpus Sparsity Ratio",
+      "value": 0.9931231094824609
+    },
+    {
+      "task": "Sparse Information Retrieval",
+      "dataset": "mmarco",
+      "metric": "Avg Flops",
+      "value": 1.0572028160095215
+    }
+  ],
+  "sources": []
+}

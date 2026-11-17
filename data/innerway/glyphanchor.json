@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "innerway/GlyphAnchor",
+  "slug": "innerway-glyphanchor",
+  "author": "innerway",
+  "url": "https://huggingface.co/innerway/GlyphAnchor",
+  "created_at": "2026-11-17T10:42:58.000Z",
+  "updated_at": "2026-11-17T10:54:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "image-editing",
+    "en",
+    "zh",
+    "arxiv:2609.02349",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 94036155760,
+  "storage_human": "94.0 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

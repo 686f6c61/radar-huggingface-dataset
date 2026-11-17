@@ -42,8 +42,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "neulab/t-dig",
+  "renamed_at": "2026-11-17T08:38:34.139Z",
   "benchmarks": [],
   "sources": [
     {

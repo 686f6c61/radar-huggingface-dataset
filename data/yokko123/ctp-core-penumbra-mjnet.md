@@ -2,96 +2,102 @@
 
 ## Resumen
 
-mJ-Net Core / Penumbra (FE3 Encoder) es un modelo de segmentacion sobre imagenes de perfusion por tomografia computarizada (CTP) 4D, publicado por el usuario yokko123 en Hugging Face y presentado en IEEE BHI 2026. Se trata de un port a PyTorch de la arquitectura mJ-Net, una CNN 2D + tiempo que procesa parches de 16×16 pixeles a lo largo de los 40 puntos temporales de un estudio de CTP de admision, y predice una etiqueta de 4 clases por parche: fondo, cerebro, penumbra y nucleo (core) isquemico.
+mJ-Net Core / Penumbra es un modelo de segmentación de imágenes médicas desarrollado por yokko123 (Md Sazidur Rahman y colaboradores de la Universidad de Stavanger) y presentado en IEEE-EMBS BHI 2026. Se trata de un port a PyTorch de la arquitectura mJ-Net de Tomasetti et al. (ACM-BCB '20), adaptada a perfusión por tomografía computarizada (CTP) de admisión en 4D para la identificación de penumbra y núcleo isquémico en ictus. El modelo consume parches espaciales de 16×16 píxeles a lo largo de 40 marcas temporales y predice una etiqueta de 4 clases (fondo, cerebro, penumbra, núcleo).
 
-Lo relevante de esta publicacion no es su rendimiento como segmentador —que es deliberadamente modesto—, sino su uso como extractor de caracteristicas: el descriptor de 256 dimensiones del cuello de botella del encoder (FE3) ofrecio, segun los autores, la separacion mas clara entre penumbra salvageable y no salvageable de todas las familias de caracteristicas evaluadas en el articulo. El modelo se entreno en una cohorte de 116 casos del Stavanger University Hospital (SUH) y pesa solo 0,98 millones de parametros (19,5 MB los 5 folds), lo que lo hace trivialmente desplegable en CPU.
+La relevancia de esta publicación no reside en su capacidad de segmentación —el propio autor advierte que es débil como segmentador, con Dice de 0,30 para penumbra y 0,05 para núcleo— sino en su uso como extractor de características. El cuello de botella de 256 dimensiones del codificador (FE3) proporciona la separación más clara entre penumbra salvable y no salvable de todas las familias de características probadas en el estudio. Es, por tanto, una pieza de investigación orientada a la representación latente, no una herramienta de producción clínica.
 
-Para quien busque segmentacion core/penumbra de calidad clinica, los propios autores redirigen a sus pesos nnU-Net (Dice 0,71 / 0,30), dejando este modelo como herramienta de investigacion sobre espacios de caracteristicas en neuroimagen isquemica.
+El modelo es extremadamente compacto (0,98 M de parámetros, 19,5 MB para el ensemble de 5 folds), se distribuye con licencia MIT y está entrenado exclusivamente con 116 casos del Hospital Universitario de Stavanger. El conjunto de datos ISLES'24 enlazado se usó para aplicar el modelo, no para entrenarlo ni evaluarlo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | mJ-Net (CNN 2D + tiempo, variante estandar, `longJ=False`, `v2=False`), con BatchNorm tras cada convolucion y dropout 0,2 |
-| Parametros totales | 978.351 (~0,98 M) |
-| Parametros activos | no disponible (no es MoE; todos los parametros son activos) |
-| Longitud de contexto | no aplicable (modelo de vision, no de lenguaje) |
-| Tipos de cuantizacion | no disponible (pesos en precision original, sin cuantizacion publicada) |
-| Idiomas soportados | no aplicable (modelo de segmentacion de imagen) |
+| Arquitectura | CNN 2D + tiempo (mJ-Net, variante estándar, `longJ=False`, `v2=False`) |
+| Parametros totales | 0,98 M |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica; entrada de 16×16 píxeles × 40 marcas temporales |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no aplica (modelo de imagen médica) |
 | Licencia | MIT |
-| Formato de pesos | PyTorch (`.pt`, un fichero por fold, 19,5 MB en total para los 5 folds) |
+| Formato de pesos | no especificado en la información disponible (repo de 0,0 GB, pesos en `folds/`) |
 
 ## Arquitectura y entrenamiento
 
-mJ-Net es una red convolucional que opera sobre tensores de entrada (1, 40, 16, 16): un canal, 40 instantes temporales y un parche espacial de 16×16. La red colapsa el eje temporal y clasifica cada parche en una de 4 clases (fondo, cerebro, penumbra, nucleo). El cuello de botella del encoder produce un descriptor de 256 dimensiones tras mean pooling espacial, que es el elemento central del articulo como caracteristica FE3. La variante publicada es la estandar, con normalizacion BatchNorm tras cada convolucion y dropout de 0,2 en todas las posiciones designadas.
+mJ-Net es una red convolucional que procesa un parche espacial de 16×16 píxeles a través de 40 marcas temporales (entrada con forma `(1, 40, 16, 16)`), colapsa el eje temporal y emite una predicción de 4 clases para ese parche. Emplea normalización BatchNorm tras cada convolución y dropout de 0,2 en las ubicaciones designadas. El modelo se distribuye como un ensemble de 5 folds entrenado con validación cruzada. La innovación técnica relevante es el descriptor de cuello de botella de 256 dimensiones del codificador (FE3), que se agrupa sobre parches de 16×16 dentro de cada región etiquetada mediante `extract_features.py`, un procedimiento que `predict.py` no reproduce.
 
-El entrenamiento se realizo con AdamW (lr inicial 1·10⁻³ con planificacion cosenica hasta 1·10⁻⁶, weight decay 10⁻², batch size 32) sobre 116 casos del Stavanger University Hospital. Los parches se muestrearon con stride 4, sobremuestreando 6× los parches que contenian lesion, y con early stopping sobre la metrica de validacion. Se uso un ensemble de 5 folds, cuyos puntos de parada fueron las epocas 23, 17, 9, 26 y 13, muy por debajo del presupuesto de epocas en todos los casos. Los resultados publicados provienen exactamente de estos checkpoints. El modelo se entreno solo con la cohorte SUH; el dataset ISLES'24 enlazado es donde se aplico, no donde se entreno o evaluo.
+El entrenamiento se realizó sobre 116 casos del Hospital Universitario de Stavanger (SUH). No se especifican en la información disponible el número de tokens, la composición exacta del dataset ni si se emplearon RLHF/DPO (no aplicables a este tipo de modelo). El pipeline de preprocesado es estricto y obligatorio: corrección de movimiento 4D por registro rígido de cada frame al primero, remuestreo temporal a 1 fps uniforme (40 frames), registro rígido a la NCCT de admisión, skull-stripping con SynthStrip, ventana a [0, 100] HU y reescalado a rango de grises de 8 bits, y división por 255 en inferencia.
 
 ## Capacidades
 
-- Segmentacion 4 clases sobre CTP 4D de admision: fondo, cerebro, penumbra y nucleo isquemico, con Dice de 0,30 en penumbra y 0,05 en nucleo (rendimiento bajo, reconocido por los autores).
-- Extraccion de caracteristicas FE3: descriptor de 256 dimensiones del cuello de botella del encoder, con la mejor separacion entre penumbra salvageable y no salvageable de las familias de caracteristicas probadas en el articulo.
-- Procesado de entrada flexible: acepta un NIfTI 4D de CTP con 40 timepoints o un directorio de 40 frames 3D nombrados secuencialmente (`CASE_0000.nii.gz` … `CASE_0039.nii.gz`).
-- Control de velocidad/suavizado mediante el parametro `--stride` (por defecto 4) y opcion de ejecutar un solo fold (`--folds 0`) en lugar del ensemble completo.
-- Descarga automatica de pesos desde el Hub si se omite el parametro `--weights`.
-- Ensemble de 5 folds disponible para inferencia mas robusta.
+- Segmentación de 4 clases en parches: fondo, cerebro, penumbra y núcleo isquémico.
+- Extracción de características: descriptor de 256 dimensiones del cuello de botella del codificador FE3, con separación clara entre penumbra salvable y no salvable.
+- Procesamiento de series temporales 4D de CTP (40 marcas temporales).
+- Inferencia por parches con control de solapamiento mediante `--stride` (por defecto 4).
+- Ejecución de un solo fold (`--folds 0`) o del ensemble completo de 5 folds.
+- Entrada flexible: NIfTI 4D con 40 marcas temporales o directorio de 40 frames 3D (`CASE_0000.nii.gz … CASE_0039.nii.gz`).
+- No soporta tool calling, agentes, razonamiento multi-step ni capacidades multilingües (no aplica).
+- No soporta visión general, audio ni thinking mode.
 
 ## Casos de uso
 
-- Extraccion de descriptores FE3 para investigacion en neuroimagen: el caso de uso principal; el script `extract_features.py` del repositorio agrupa el cuello de botella de 256-D por regiones etiquetadas, util para estudiar la salvageabilidad de la penumbra.
-- Linea base de segmentacion rapida en CPU: con menos de 1 M de parametros y 19,5 MB de pesos, permite inferencia sin GPU, util para prototipado o revision visual aproximada de estudios CTP.
-- Comparacion de arquitecturas en CTP: sirve como baseline ligera frente a nnU-Net (tambien publicado por el mismo autor) en experimentos de segmentacion core/penumbra.
-- Desarrollo de pipelines de preprocesado CTP: el modelo exige una cadena concreta (correccion de movimiento, resampleo temporal a 1 fps con 40 frames, registro a NCCT, skull-stripping con SynthStrip, ventaneo [0, 100] HU), lo que lo hace util como test de validacion de pipelines de preprocesado.
-- Estudios de espacio latente en modelos medicos: el descriptor 256-D puede alimentar clasificadores posteriores, clustering o analisis de separabilidad entre tejido salvageable y no salvageable.
-- Reproduccion del articulo IEEE BHI 2026: pesos, codigo y DOI en Zenodo permiten replicar los resultados del paper.
+- Investigación en representaciones latentes de ictus: usar el descriptor FE3 de 256 dimensiones para estudiar la separabilidad entre penumbra salvable y no salvable, que es el propósito principal declarado del modelo.
+- Extracción de características para clasificadores posteriores: alimentar modelos de clasificación o regresión aguas abajo con los descriptores agrupados por región etiquetada mediante `extract_features.py`.
+- Reproducción de resultados académicos: replicar la comparación de familias de características del paper BHI 2026 sobre la cohorte SUH.
+- Análisis exploratorio de cohorts CTP: procesar series de perfusión de admisión con el pipeline de preprocesado documentado para obtener mapas de penumbra aproximados, asumiendo la baja calidad de segmentación.
+- Validación de pipelines de preprocesado: servir como referencia para verificar que la cadena de corrección de movimiento, remuestreo, registro y ventana HU está correctamente implementada antes de usar modelos de segmentación superiores.
+- Docencia y experimentación con arquitecturas CNN 2D+t: el tamaño reducido (0,98 M de parámetros, 19,5 MB) permite ejecutarlo en hardware modesto para fines formativos.
+- No adecuado para uso clínico directo: el propio autor indica que, como segmentador, es débil y que para segmentación de núcleo/penumbra debe usarse el modelo nnU-Net enlazado (Dice 0,71 / 0,30).
 
 ## Benchmarks y rendimiento
 
-Resultados en el conjunto de test reservado (33 casos), publicados en la model card:
+Conjunto de test reservado, 33 casos (los mismos pacientes que el nnU-Net):
 
 | Clase | Dice |
 |---|---|
 | Penumbra | 0,30 ± 0,23 |
-| Nucleo (core) | 0,05 ± 0,06 |
-| Lesion (nucleo ∪ penumbra) | 0,24 ± 0,20 |
+| Núcleo | 0,05 ± 0,06 |
+| Lesión (núcleo ∪ penumbra) | 0,24 ± 0,20 |
 
-Como referencia, los pesos nnU-Net del mismo autor alcanzan Dice 0,71 (penumbra) y 0,30 (nucleo) sobre los mismos 33 pacientes. Un postprocesado de componentes conexas eleva la penumbra a 0,32 sin afectar al nucleo, pero no se aplica por defecto.
+El postprocesado de componentes conectados elevó la penumbra a 0,32 y no modificó el núcleo, por lo que no se aplica por defecto. No se han publicado en la información disponible resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) por no ser aplicables a este tipo de modelo.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible explicitamente; dado el tamano (~0,98 M de parametros, parches de 16×16×40), la inferencia es viable en CPU sin GPU dedicada.
-- GPU recomendadas: no necesarias; cualquier GPU moderna sobra con diferencia si se desea acelerar el barrido de parches.
-- Consumer GPUs: perfectamente viable en cualquier GPU de consumo (incluso integradas), aunque no aporta ventaja practica.
-- Despliegue: PyTorch con `torch`, `SimpleITK` y `numpy`; descarga de pesos via `huggingface_hub`. Existe ademas un Space de demostracion en Hugging Face (ctp-core-penumbra-demo) y pesos nnU-Net alternativos para segmentacion de calidad.
-- Latencia y throughput: no disponibles; el parametro `--stride` permite ajustar la relacion velocidad/suavizado del barrido.
+- VRAM estimada para inferencia: muy baja, inferior a 1 GB, dado el tamaño de 0,98 M de parámetros y parches de 16×16×40.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; no se requiere A100, H100 ni RTX 4090.
+- Cabe en cualquier GPU de consumo (GTX 1050, RTX 2060, RTX 3060, etc.) e incluso en CPU para volúmenes pequeños.
+- Opciones de despliegue: script `predict.py` del repositorio con PyTorch, SimpleITK, NumPy y huggingface_hub; descarga de pesos vía `hf download`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplicables).
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Tarea | Dice penumbra / nucleo | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| mJ-Net FE3 (este modelo) | 0,98 M | Segmentacion 4 clases + extractor FE3 256-D | 0,30 / 0,05 | MIT | Pesos PyTorch, codigo y demo en HF |
-| nnU-Net core/penumbra (mismo autor) | no disponible | Segmentacion core/penumbra | 0,71 / 0,30 | no disponible | Pesos en HF (ctp-core-penumbra-nnunet) |
-| Modelos de la challenge ISLES'24 | no disponible | Segmentacion de lesion isquemica en CTP | no disponible | varia | Dataset publico en HF |
+| Modelo | Parámetros | Contexto/entrada | Dice penumbra | Dice núcleo | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| mJ-Net Core / Penumbra (FE3) | 0,98 M | 16×16×40 | 0,30 | 0,05 | MIT | Hugging Face |
+| nnU-Net Core / Penumbra (mismo autor) | no disponible | no disponible | 0,71 | 0,30 | no disponible | Hugging Face |
+| Otras alternativas | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Rendimiento de segmentacion deliberadamente bajo: Dice 0,05 en nucleo es practicamente inservible y 0,30 en penumbra esta muy por debajo del nnU-Net; los propios autores advierten de que estos pesos no deben usarse como segmentador.
-- Contrato de entrada estricto: el modelo no funcionara de forma sensata sobre CTP en bruto; requiere la cadena completa de preprocesado (correccion de movimiento, resampleo a 40 frames a 1 fps, registro a NCCT, SynthStrip, ventaneo [0, 100] HU).
-- Sesgo de cohorte: entrenado unicamente con 116 casos del Stavanger University Hospital; la generalizacion a otros escanners, protocolos de CTP o poblaciones no esta garantizada ni documentada.
-- Riesgo de uso clinico: no hay validacion clinica publicada para uso asistencial; no debe emplearse en entornos de decision medica sin validacion local rigurosa.
-- El script `predict.py` no reproduce la extraccion del descriptor FE3 (el aporte principal); para ello hay que usar el script `extract_features.py` del repositorio de codigo.
-- Licencia MIT sin restricciones de uso comercial, pero al tratarse de un modelo medico, las regulaciones locales (MDR europeo, FDA) pueden aplicar al uso final.
-- Comunidad muy reducida (48 descargas, 1 like), sin historial de auditoria externa.
+- Publicado como extractor de características, no como segmentador: el autor advierte explícitamente que su rendimiento de segmentación es débil (Dice de penumbra 0,30 y núcleo 0,05).
+- La segmentación de núcleo es efectivamente inutilizable (Dice 0,05 ± 0,06).
+- Requiere un pipeline de preprocesado estricto (corrección de movimiento, remuestreo a 1 fps, registro a NCCT, skull-stripping con SynthStrip, ventana [0, 100] HU, reescalado 8 bits) y no se comporta de forma sensata sobre CTP en bruto.
+- Entrenado exclusivamente con 116 casos de una única institución (SUH), lo que limita la generalización a otras cohortes y equipos.
+- El dataset ISLES'24 enlazado se usó para aplicar el modelo, no para entrenarlo ni evaluarlo; no debe citarse como conjunto de entrenamiento.
+- No se documentan sesgos demográficos ni análisis de subgrupos en la información disponible.
+- Riesgo de alucinación no aplica (modelo de segmentación), pero sí riesgo de falsos positivos y negativos clínicamente relevantes dada la baja Dice.
+- Licencia MIT permite uso comercial, pero el modelo no está validado para uso clínico; cualquier aplicación médica requeriría validación regulatoria independiente.
+- La arquitectura original no es del autor (Tomasetti et al., ACM-BCB '20); se debe citar también ese trabajo.
+- El repositorio ocupa 0,0 GB y no se detalla el formato exacto de los pesos más allá de la carpeta `folds/`.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/yokko123/ctp-core-penumbra-mjnet
+- Hugging Face: https://huggingface.co/yokko123/ctp-core-penumbra-mjnet
+- Pesos nnU-Net (FE4): https://huggingface.co/yokko123/ctp-core-penumbra-nnunet
+- Demo en vivo: https://huggingface.co/spaces/yokko123/ctp-core-penumbra-demo
 - Paper (arXiv): https://arxiv.org/abs/2602.07535
-- Pagina del proyecto: https://yokko123.github.io/bi-temporal-ctp-dwi/
-- Codigo (GitHub): https://github.com/yokko123/bi-temporal-ctp-dwi-code
-- Script de extraccion FE3: https://github.com/yokko123/bi-temporal-ctp-dwi-code/blob/main/02_features/fe3_mjnet/extract_features.py
-- Pesos nnU-Net alternativos: https://huggingface.co/yokko123/ctp-core-penumbra-nnunet
-- Demo en vivo (HF Space): https://huggingface.co/spaces/yokko123/ctp-core-penumbra-demo
+- Página del proyecto: https://yokko123.github.io/bi-temporal-ctp-dwi/
+- Código: https://github.com/yokko123/bi-temporal-ctp-dwi-code
+- Script de extracción de características: https://github.com/yokko123/bi-temporal-ctp-dwi-code/blob/main/02_features/fe3_mjnet/extract_features.py
 - DOI (Zenodo): https://doi.org/10.5281/zenodo.23209370
-- Dataset ISLES'24 (aplicacion, no entrenamiento): https://huggingface.co/datasets/hugging-science/isles24-stroke
-- Referencias adicionales citadas en tags: arXiv 2104.03002 (https://arxiv.org/abs/2104.03002) y arXiv 2303.08757 (https://arxiv.org/abs/2303.08757)
+- Dataset ISLES'24: https://huggingface.co/datasets/hugging-science/isles24-stroke
+- Paper de la arquitectura original (Tomasetti et al., ACM-BCB '20): no disponible enlace directo en la información proporcionada

@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 104,
+  "downloads_30d": 105,
   "trending_score": 0,
   "parameters": 3199264,
   "parameters_human": "3.2M",
@@ -55,31 +55,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Connectez-vous | AllCaps",
-      "url": "https://www.allcaps.eu/fr/login",
-      "snippet": "Pas encore enregistré ? Enregistrez-vous ici."
-    },
-    {
-      "title": "Gérez, cherchez et échangez vos capsules de champagne en ligne | AllCaps",
-      "url": "https://www.allcaps.eu/fr",
-      "snippet": "À tout moment, si vous voyez une erreur sur une capsule, vous pouvez la corriger. Vous pouvez aussi ajouter des nouvelles …"
-    },
-    {
-      "title": "Premium | AllCaps",
-      "url": "https://www.allcaps.eu/en/premium",
-      "snippet": "After registration you get the status of Premium user for 30 days. Once the trial is over, you can still enjoy the basic advantages by …"
-    },
-    {
-      "title": "Premium | AllCaps",
-      "url": "https://www.allcaps.eu/fr/premium",
-      "snippet": "Si vous voulez perfectionner votre collection sans limites, devenez alors membre Premium. En plus vous profitez de tous les …"
-    },
-    {
-      "title": "Manage, search and exchange your champagne capsules online | AllCaps",
-      "url": "https://www.allcaps.eu/en",
-      "snippet": "Register now on AllCaps and start expanding your collection! My father and brother have been collecting caps for quite some time …"
-    }
-  ]
+  "sources": []
 }

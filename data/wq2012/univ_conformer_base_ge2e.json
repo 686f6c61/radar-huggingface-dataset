@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 103,
+  "downloads_30d": 105,
   "trending_score": 0,
   "parameters": 4551556,
   "parameters_human": "4.6M",
@@ -55,31 +55,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Amazon.co.uk: Low Prices in Electronics, Books, Sports Equipment",
-      "url": "https://www.amazon.co.uk/",
-      "snippet": "Sign up to Amazon Prime for unlimited free delivery. Low prices at Amazon on digital cameras, MP3, sports, books, music, DVDs, …"
-    },
-    {
-      "title": "The Boys of Dungeon Lane - Amazon.co.uk",
-      "url": "https://www.amazon.co.uk/Boys-Dungeon-Lane-Paul-McCartney/dp/B0GTZK37RV",
-      "snippet": "'The Boys of Dungeon Lane' is a collection of rare and revealing glimpses into memories never-before shared, along with some …"
-    },
-    {
-      "title": "Amazon.co.uk: Powered Usb Hub",
-      "url": "https://www.amazon.co.uk/powered-usb-hub/s?k=powered+usb+hub",
-      "snippet": "Browse USB hubs with fast charging ports and data transfer capabilities. Perfect for connecting peripherals and expanding ports."
-    },
-    {
-      "title": "Amazon.co.uk",
-      "url": "https://www.amazon.co.uk/your-account",
-      "snippet": ""
-    },
-    {
-      "title": "Amazon Brand Registry: Protect and Build Your Brand in the UK",
-      "url": "https://sell.amazon.co.uk/brand-registry",
-      "snippet": "Amazon Brand Registry is a programme designed to protect your intellectual property, offering sellers an exclusive set of brand …"
-    }
-  ]
+  "sources": []
 }

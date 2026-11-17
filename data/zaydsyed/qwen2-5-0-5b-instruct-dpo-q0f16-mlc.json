@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 19,
+  "downloads_30d": 23,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -43,31 +43,5 @@
   "renamed_to": "zaydsyed/TactLM-Instruction-DPO-Qwen2.5-0.5B-q0f16-MLC",
   "renamed_at": "2026-11-11T08:12:56.308Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Programmes/Téléchargements TI-83 Premium CE / 84+CE / 82APy",
-      "url": "https://tiplanet.org/forum/archives_cat.php?cat=ce",
-      "snippet": "News, programmes, tutoriaux et forum sur les calculatrices! Programmes/Téléchargements TI-83 Premium CE / 84+CE / 82APy"
-    },
-    {
-      "title": "TI-Planet | Programmes/Téléchargements TI-82+/83+/84",
-      "url": "https://tiplanet.org/forum/archives_cat.php?cat=z80",
-      "snippet": "News, programmes, tutoriaux et forum sur les calculatrices! Programmes/Téléchargements TI-82+/83+/84"
-    },
-    {
-      "title": "TI Connect CE — TI-Planet Wiki",
-      "url": "https://wiki.tiplanet.org/TI_Connect_CE",
-      "snippet": "TI Connect CE est un logiciel de Texas Instruments permettant de transférer des fichiers aux calculatrices TI-83 Premium CE et TI …"
-    },
-    {
-      "title": "TI-82 Advanced — TI-Planet Wiki",
-      "url": "https://wiki.tiplanet.org/TI-82_Advanced",
-      "snippet": "La TI-82 Advanced (communément écrit 82A) est une calculatrice graphique programmable (TI-Basic) commercialisée par TI, …"
-    },
-    {
-      "title": "TI-Planet | Programmes/Téléchargements TI-82 Advanced / 84+T",
-      "url": "https://tiplanet.org/forum/archives_cat.php?cat=82a",
-      "snippet": "News, programmes, tutoriaux et forum sur les calculatrices! Programmes/Téléchargements TI-82 Advanced / 84+T"
-    }
-  ]
+  "sources": []
 }

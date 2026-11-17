@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 9,
+  "downloads_30d": 7,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -46,8 +46,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "zeromodels/gemma-3n-e4b-it",
+  "renamed_at": "2026-11-17T07:22:41.317Z",
   "benchmarks": [],
   "sources": []
 }

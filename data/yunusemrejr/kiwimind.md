@@ -2,124 +2,87 @@
 
 ## Resumen
 
-Kiwi Mind es un stack de modelos disenado para Kiwibro, un agente de IA que se ejecuta localmente en el ordenador del usuario. Lo desarrolla yunusemrejr y se construye sobre Qwen3-0.6B de Alibaba Cloud, tambien bajo licencia Apache-2.0. El objetivo es claro: un modelo lo bastante pequeno para correr en CPU mediante WebAssembly, sin GPU ni Python en tiempo de ejecucion, ocupando aproximadamente 1 GB de memoria. El repositorio pesa 0,5 GB y el tronco del modelo, almacenado en 4 bits, ocupa 413,3 MB.
+Kiwi Mind es un paquete de pesos en formato GGUF derivado del modelo multimodal google/gemma-4-E4B-it, publicado por el usuario yunusemrejr bajo licencia Apache 2.0. No se trata de un modelo entrenado desde cero, sino de una distribucion cuantizada y empaquetada del modelo base de Google, orientada a su integracion en KiwiBro, una aplicacion de escritorio y CLI del mismo autor. El paquete incluye un tronco cuantizado Q4_K_M, un proyector de vision compatible y una cabeza borrador Q8_0 para decodificacion especulativa.
 
-La arquitectura no es un modelo unico, sino una combinacion de un tronco compartido de 28 capas (16 compartidas y 12 especificas por habilidad) mas siete adaptadores LoRA de rango 16 intercambiables (chat, web, code, terminal, computer, tools, write) y una cabeza de control que decide que habilidad usar en cada mensaje. El tronco se entrena directamente sobre la rejilla de cuantizacion 4-bit en la que se almacena, de modo que el fichero contiene exactamente lo que se entreno.
+El repositorio ocupa 27,0 GB e incluye el paquete nativo en el subdirectorio `candidate/`, que suma 6,02 GB. El tronco emplea un ancho de feed-forward seleccionado por activacion de 8.192 en 42 capas, segun la model card. La metadata de safetensors declara 6.857.466.410 parametros totales, aunque no se especifica cuantos estan activos ni la naturaleza exacta de la arquitectura del modelo base.
 
-Su relevancia actual reside en el nicho de agentes on-device: demuestra que un modelo de 0,6B puede aprender a seleccionar herramientas y emitir llamadas validas con una tasa alta de acierto, delegando a un modelo mayor cuando la tarea lo requiere. La ventana de contexto configurable es de hasta 8192 tokens y el modelo solo soporta ingles.
+La relevancia del modelo es practica: ofrece un artefacto listo para ejecutar con llama.cpp que soporta chat, entrada de imagenes, herramientas estructuradas y memoria, con decodificacion especulativa en CPUs compatibles. La informacion publicada es escasa y mayoritariamente remite a la documentacion del proyecto KiwiBro.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (Qwen3-0.6B) con 28 capas; 16 compartidas + 12 especificas por habilidad (LoRA rango 16); cabeza de control separada |
-| Parametros totales | 0,6B (modelo base Qwen3-0.6B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | hasta 8192 tokens (configurable via `--ctx`) |
-| Tipos de cuantizacion | 4 bits en grupos de 32 con una escala por grupo; embeddings en 8 bits; atencion en 8 bits en el motor WASM |
-| Idiomas soportados | ingles (`en`) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | formatos propietarios `.fkm` (tronco), `.kms` (habilidades), `.kmh` (cabeza de control); `tokenizer.json` (Qwen3 sin cambios) |
+| Arquitectura | Transformer derivado de google/gemma-4-E4B-it (detalles de atencion y FFN no disponibles) |
+| Parametros totales | 6.857.466.410 |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q4_K_M (tronco), Q8_0 (cabeza borrador), proyector de vision (cuantizacion no especificada) |
+| Idiomas soportados | en |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (libreria llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3-0.6B y lo reorganiza en un tronco de 28 capas. Las 16 primeras son compartidas y procesan la conversacion una sola vez, independientemente de la habilidad activa. Las 12 ultimas incorporan la habilidad como un conjunto de adiciones de rango 16 a sus pesos. Cambiar de habilidad solo recalcula esas capas superiores, y los pesos se cargan una vez aunque haya varias conversaciones abiertas. La cabeza de control es una red pequena que lee el estado entre las dos mitades y puntua las siete habilidades mas una salida adicional: "necesita un modelo mayor".
+El modelo es una distribucion cuantizada del base google/gemma-4-E4B-it, no un entrenamiento propio. El tronco usa un ancho de feed-forward seleccionado por activacion de 8.192 en 42 capas, segun la model card. El paquete incorpora tres componentes: tronco Q4_K_M, proyector de vision compatible y cabeza borrador Q8_0 para decodificacion especulativa. No se detallan el numero de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF o DPO, ya que corresponden al modelo base y no se documentan en esta ficha.
 
-El tronco se entreno con 2.711 conversaciones de entrenamiento, una sola pasada. Cada habilidad aprendio de su propia parte del 30% restante, que el tronco nunca vio. Las conversaciones fueron generadas por un modelo profesor mayor (Qwen3.8-27B) para usuarios y tareas ficticias, usando la lista real de herramientas de Kiwibro. Los pesos se almacenan en 4 bits (grupos de 32 con una escala por grupo) y los embeddings en 8 bits; el tronco se entreno con esas rejillas en el bucle, de modo que el fichero contiene exactamente lo que se entreno. No se menciona RLHF ni DPO en la informacion disponible. El prompt de entrenamiento es ChatML con las etiquetas de herramientas de Qwen, con llamadas escritas como `<tool_call>{"name": ..., "arguments": {...}}</tool_call>`.
+La innovacion destacable es la decodificacion especulativa con cabeza borrador: en CPUs compatibles, la cabeza propone tokens y el tronco los verifica, reduciendo la latencia de generacion. El repositorio incluye un manifiesto (`candidate/manifest.json`) y una replay de evaluacion en Ryzen (`candidate/evals/ryzen-bounded-hatch.json`), aunque no se han publicado los resultados numericos en la informacion disponible.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, orientada a respuestas cortas y tareas cotidianas.
-- Seleccion de herramientas (tool use): decide si hace falta una herramienta, cual, y emite llamadas con argumentos validos.
-- Siete habilidades intercambiables en caliente: chat, web, code, terminal, computer, tools, write.
-- Cabeza de control que enruta cada mensaje a la habilidad adecuada y detecta cuando la tarea "necesita un modelo mayor" para delegar.
-- Cadenas cortas de llamadas a herramientas y razonamiento multi-paso acotado.
-- Ejecucion on-device en CPU via WebAssembly, con host Node.js y servidor HTTP local en 127.0.0.1 con autenticacion Bearer.
-- Entrenado para no borrar nada: ante peticiones de eliminacion de ficheros, entrega el comando en lugar de ejecutarlo.
-- Capacidades multilingues: solo ingles.
-- No dispone de vision, audio ni modo thinking explicito.
+- Generacion de texto conversacional (pipeline text-generation).
+- Entrada de imagenes mediante proyector de vision compatible.
+- Soporte de herramientas estructuradas (tool-use / function calling).
+- Memoria conversacional segun la model card.
+- Decodificacion especulativa en CPUs compatibles mediante cabeza borrador.
+- Compatibilidad con endpoints (tag `endpoints_compatible`).
+- Capacidades multilingues limitadas al ingles (`en`).
+- No se documentan capacidades de razonamiento extendido, audio ni thinking mode.
 
 ## Casos de uso
 
-- Agente local de escritorio: Kiwibro usa Kiwi Mind para interpretar cada mensaje del usuario, elegir la habilidad adecuada y decidir si invoca una herramienta del sistema, todo en CPU y sin GPU.
-- Automatizacion de terminal: con la habilidad `terminal`, alcanza un 98% de eleccion correcta de herramienta o respuesta simple y un 100% de llamadas validas en las pruebas retenidas, lo que lo hace adecuado para proponer comandos de shell con argumentos estructurados.
-- Control de aplicaciones y escritorio: la habilidad `computer` logra un 100% de eleccion correcta y llamadas validas, util para orquestar acciones sobre la interfaz del usuario.
-- Asistente de navegacion web: la habilidad `web` acierta el 92% de las veces al decidir entre herramienta o respuesta directa, con un 94% de llamadas validas, apropiada para busquedas y extraccion de paginas.
-- Generacion y asistencia de codigo: la habilidad `code` elige correctamente en un 86% de los casos y produce llamadas validas en un 89%, suficiente para tareas de edicion y consulta acotadas.
-- Enrutamiento y delegacion: la cabeza de control identifica la habilidad correcta en el 91% de los turnos retenidos y detecta "necesita un modelo mayor" con precision 79% y recall 90%, permitiendo handoff a un modelo auxiliar cuando el usuario lo haya configurado.
-- Redaccion breve: la habilidad `write` acierta el 100% al decidir entre herramienta y respuesta directa, adecuada para textos cortos en ingles.
-- Despliegue embebido sin Python: al necesitar solo Node.js 18.14 o superior, encaja en entornos restringidos donde no se puede instalar un stack de inferencia tradicional.
+- Asistente de escritorio integrado en KiwiBro: el paquete esta disenado para que la aplicacion de escritorio y CLI lo descarguen y ejecuten directamente, con chat, vision y memoria en local.
+- Procesamiento de imagenes en local: el proyector de vision permite describir o analizar capturas sin enviar datos a la nube, adecuado para entornos con requisitos de privacidad.
+- Automatizacion con herramientas estructuradas: el soporte de tool-use permite encadenar llamadas a APIs o funciones del sistema desde un agente local.
+- Despliegue en CPU sin GPU dedicada: la decodificacion especulativa con cabeza borrador acelera la inferencia en CPUs compatibles, util para estaciones de trabajo sin acelerador.
+- Prototipado rapido con llama.cpp: el formato GGUF y la integracion con llama.cpp permiten levantar un servidor de inferencia en minutos para pruebas.
+- Evaluacion comparativa de cuantizaciones: el paquete incluye replay de evaluacion en Ryzen, util para medir latencia y calidad en hardware concreto antes de produccion.
 
 ## Benchmarks y rendimiento
 
-Los datos siguientes son metricas internas sobre 311 conversaciones retenidas del entrenamiento, no benchmarks publicos. Las conversaciones fueron escritas por Qwen3.8-27B para usuarios y tareas ficticias con la lista real de herramientas de Kiwibro.
-
-Perdida (loss) en conversaciones retenidas (menor es mejor):
-
-| Habilidad | Qwen3-0.6B original | Tronco Kiwi Mind (4 bit) | Tronco + habilidad |
-|---|---|---|---|
-| chat | 2,013 | 1,582 | 1,575 |
-| web | 1,657 | 0,881 | 0,876 |
-| code | 1,787 | 0,982 | 0,972 |
-| terminal | 2,231 | 0,964 | 0,946 |
-| computer | 2,348 | 0,917 | 0,907 |
-| tools | 2,184 | 0,730 | 0,714 |
-| write | 2,222 | 1,726 | 1,719 |
-
-Primer paso de una tarea (eleccion correcta de herramienta o respuesta simple, herramienta correcta, llamada valida):
-
-| Habilidad | Casos | Qwen3-0.6B original | Kiwi Mind | Herramienta correcta | Llamada valida |
-|---|---|---|---|---|---|
-| chat | 40 | 100% | 98% | no aplica | no aplica |
-| web | 40 | 10% | 92% | 56% | 94% |
-| code | 37 | 5% | 86% | 69% | 89% |
-| terminal | 40 | 2% | 98% | 82% | 100% |
-| computer | 40 | 0% | 100% | 68% | 100% |
-| tools | 40 | 10% | 98% | 92% | 100% |
-| write | 40 | 95% | 100% | 50% | 100% |
-
-Cabeza de control: elige la habilidad correcta en el 91% de los turnos retenidos (90% en el primer mensaje de una conversacion). Para "necesita un modelo mayor": precision 79%, recall 90%.
-
-Motor WebAssembly frente a PyTorch: sobre 14 prompts retenidos, tokenizo igual en 14, la cabeza de control eligio la misma habilidad en 14, el primer token escrito coincidio en 14 y los primeros 32 tokens coincidieron en 10. El motor guarda la memoria de atencion en 8 bits, por lo que un texto largo puede divergir de PyTorch tras un tiempo.
-
-Velocidad en un portatil Ryzen 5 7530U con 6 hilos: lee unos 160 tokens por segundo y escribe unos 38 por segundo con 512 tokens de contexto, 23 con 2.048. Cada conversacion adicional abierta suma unos 135 MB a 2.048 tokens.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio incluye una replay de evaluacion (`candidate/evals/ryzen-bounded-hatch.json`) pero no se han expuesto las cifras en la informacion proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM: no aplica; el modelo corre en CPU. Memoria aproximada de 1 GB en total.
-- GPU recomendadas: ninguna; no se requiere GPU.
-- Cabe en GPU consumer: irrelevante, ya que el diseno es CPU-only via WebAssembly.
-- CPU: Ryzen 5 7530U con 6 hilos como referencia medida; cualquier CPU moderna con Node.js 18.14 o superior.
-- Despliegue: motor propio en C compilado a WebAssembly con host Node.js (`host/host.mjs`); no se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: ~160 tokens/s de lectura y ~38 tokens/s de escritura con 512 tokens de contexto; ~23 tokens/s de escritura con 2.048.
-- Cambio de habilidad en conversacion larga: unos 2 segundos por cada 500 tokens de contexto en el portatil de referencia.
-- Memoria por conversacion adicional: ~135 MB a 2.048 tokens.
+- VRAM/RAM estimada: el paquete nativo suma 6,02 GB (tronco Q4_K_M + proyector de vision + cabeza Q8_0), por lo que cabe en equipos con 8 GB de RAM o VRAM.
+- GPU recomendadas: no disponible; el diseno apunta a ejecucion en CPU con decodificacion especulativa.
+- Cabe en GPU de consumo: si, siempre que dispongan de al menos 8 GB de VRAM para el paquete completo.
+- Opciones de despliegue: llama.cpp (libreria declarada), endpoints compatibles; no se confirma soporte de vLLM, Ollama o TGI.
+- Latencia y throughput: no disponible; la model card menciona aceleracion en CPUs compatibles mediante la cabeza borrador, sin cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Kiwi Mind | 0,6B (base Qwen3-0.6B) | hasta 8192 | Apache-2.0 | Agente on-device con habilidades LoRA y cabeza de enrutamiento, CPU/WASM | Hugging Face (yunusemrejr/kiwimind) |
-| Qwen3-0.6B | 0,6B | no disponible en la informacion | Apache-2.0 | Modelo base de proposito general | Hugging Face (Qwen/Qwen3-0.6B) |
-| Qwen3.8-27B | 27B (aprox.) | no disponible en la informacion | no disponible | Modelo profesor usado para generar los datos de entrenamiento | no disponible |
-
-La comparacion directa con Qwen3-0.6B esta documentada en las tablas de perdida y de primer paso de tarea: Kiwi Mind reduce la perdida en todas las habilidades y eleva drasticamente la tasa de eleccion correcta de herramienta (por ejemplo, de 2% a 98% en terminal y de 0% a 100% en computer). No se dispone de comparaciones con otros modelos de agente on-device en la informacion proporcionada.
+| Kiwi Mind (este) | 6.857.466.410 | no disponible | apache-2.0 | GGUF | Cuantizado de gemma-4-E4B-it, vision y tool-use |
+| google/gemma-4-E4B-it | no disponible | no disponible | no disponible | safetensors | Modelo base original |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de modelos equivalentes en la informacion |
 
 ## Limitaciones y advertencias
 
-- Es un modelo de 0,6B: rinde bien en respuestas cortas, tareas cotidianas y cadenas cortas de llamadas a herramientas; el razonamiento largo y los documentos extensos no son su punto fuerte, y para eso existe la salida "necesita un modelo mayor".
-- Solo soporta ingles.
-- Las metricas publicadas son internas sobre conversaciones retenidas generadas por un modelo profesor, no benchmarks publicos; el autor advierte que la seleccion de duracion de entrenamiento sobre esas mismas conversaciones "favorece un poco al modelo".
-- La herramienta correcta en primer paso es baja en algunas habilidades (56% en web, 50% en write, 68% en computer), aunque la llamada valida es alta.
-- Cambiar de habilidad en conversaciones largas es costoso: ~2 segundos por cada 500 tokens de contexto, por el recalculo de las capas superiores.
-- El motor WASM guarda la atencion en 8 bits y puede divergir de PyTorch en textos largos (solo 10 de 14 prompts coincidieron en los primeros 32 tokens).
-- Entrenado para no borrar nada: no ejecuta eliminaciones, entrega el comando; esto limita automatizaciones que requieran borrado directo.
-- Riesgo de alucinacion inherente a modelos pequenos; no se documentan sesgos especificos en la informacion disponible.
-- Licencia Apache-2.0 permite uso comercial, pero se heredan las condiciones del modelo base Qwen3-0.6B, tambien Apache-2.0.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validacion externa.
+- Solo soporta ingles (`en`); no se declaran otros idiomas.
+- No se documentan sesgos conocidos, pero al derivar de un modelo base de Google hereda los del original, no evaluados aqui.
+- Riesgo de alucinacion inherente a los modelos generativos; no se han publicado evaluaciones de fidelidad.
+- La licencia Apache 2.0 se declara en el repositorio, pero conviene verificar las condiciones del modelo base google/gemma-4-E4B-it antes de uso comercial.
+- La informacion tecnica es muy escasa: no hay contexto, benchmarks ni detalles de entrenamiento publicados.
+- El repositorio incluye un subdirectorio `candidate/` y un archivo `archive-spark-qwen-3.1`, lo que sugiere versiones previas; verificar que se descarga el paquete correcto.
+- La decodificacion especulativa solo se ha validado en CPUs compatibles; el rendimiento en otras plataformas no esta documentado.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/yunusemrejr/kiwimind
-- Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
-- Repositorio del agente Kiwibro: https://github.com/yunusemrejr/kiwibro
+- Hugging Face: https://huggingface.co/yunusemrejr/kiwimind
+- Paquete nativo: https://huggingface.co/yunusemrejr/kiwimind/tree/main/candidate
+- Manifiesto: https://huggingface.co/yunusemrejr/kiwimind/blob/main/candidate/manifest.json
+- Replay de evaluacion Ryzen: https://huggingface.co/yunusemrejr/kiwimind/blob/main/candidate/evals/ryzen-bounded-hatch.json
+- Codigo y documentacion de KiwiBro: https://github.com/yunusemrejr/kiwibro
+- Releases archivadas Spark y Qwen: https://huggingface.co/yunusemrejr/kiwimind/tree/archive-spark-qwen-3.1
+- Modelo base: https://huggingface.co/google/gemma-4-E4B-it

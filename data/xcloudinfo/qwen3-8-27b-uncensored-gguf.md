@@ -2,87 +2,99 @@
 
 ## Resumen
 
-Qwen3.8-27B-Uncensored-xCloud es un modelo de lenguaje de 27.320 millones de parametros desarrollado por la empresa taiwanesa xCloudinfo (云硕科技). Se trata de una version modificada del modelo Qwen3.5 que ha sido sometida a un proceso de abliteration, una tecnica que elimina la direccion de rechazo del modelo, es decir, la tendencia a negarse a responder ciertas peticiones. El resultado es un modelo que responde de forma mas directa y sin filtros aparentes, aunque con los riesgos que ello conlleva.
+Qwen3.8-27B-Uncensored-GGUF es una versión abliterada y cuantizada en formato GGUF del modelo base Qwen/Qwen3.8-27B, publicado por xCloudinfo (云碩科技), empresa centrada en soluciones de IA privada on-premise. El objetivo declarado es reducir el comportamiento de rechazo excesivo (over-refusal) del modelo original mediante ortogonalización de la dirección de rechazo, sin reentrenamiento, manteniendo las capacidades generales y el razonamiento del modelo base.
 
-Esta ficha se centra en la version cuantizada a formato GGUF, publicada por el mismo autor, que permite ejecutar el modelo con llama.cpp y herramientas compatibles como Ollama o el servidor OpenAI-compatible de llama.cpp. El modelo base safetensors esta disponible en el repositorio xCloudinfo/Qwen3.8-27B-Uncensored-xCloud. La relevancia de esta version GGUF radica en que facilita el despliegue en entornos de produccion con recursos limitados, manteniendo un equilibrio entre calidad y consumo de memoria.
+El modelo base emplea una arquitectura híbrida qwen3_5 con atención lineal de tipo SSM combinada con atención transformer y modo de razonamiento (thinking). Cuenta con 26.895.998.464 parámetros totales (aproximadamente 26,9 mil millones) y conserva la torre de visión mediante un proyector multimodal en formato mmproj. Los pesos se distribuyen en múltiples niveles de cuantización GGUF, desde Q8_0 (28,6 GB) hasta IQ2_M (10,0 GB), lo que permite su despliegue en hardware de consumo.
 
-El modelo presenta una arquitectura hibrida que combina mecanismos SSM (State Space Model) y atencion lineal, una innovacion que reduce la complejidad computacional respecto a la atencion tradicional. Esta caracteristica, junto con la cuantizacion, lo hace especialmente atractivo para aplicaciones de agente conversacional y generacion de texto en tiempo real.
+La relevancia actual del modelo radica en su enfoque medido y transparente del proceso de abliteration: el autor publica una tasa de rechazo medida sobre un conjunto held-out de 10 prompts de daño grave (0/10 en Q4_K_M frente a aproximadamente 10/10 del base), optimizando simultáneamente la reducción de rechazos y la divergencia KL para preservar la calidad. Está orientado a investigación de seguridad, red teaming, moderación de contenido y usos que requieren evitar rechaces espurios, siempre bajo responsabilidad legal del usuario.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Hibrida SSM / atencion lineal (arquitectura qwen35) |
-| Parametros totales | 27.320.697.856 (27,3 B) |
-| Parametros activos | no disponible |
-| Longitud de contexto | 8192 tokens (configuracion recomendada por el autor) |
-| Tipos de cuantizacion | Q8_0, Q6_K, Q5_K_M, Q4_K_M, IQ4_XS, IQ2_M (con imatrix) |
-| Idiomas soportados | chino (zh), ingles (en) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp) |
+| Arquitectura | Híbrida qwen3_5: atención lineal SSM + atención transformer, con modo de razonamiento |
+| Parametros totales | 26.895.998.464 (aprox. 26,9 mil millones) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q8_0, Q6_K, Q5_K_M, Q4_K_M, IQ4_XS (imatrix), IQ2_M (imatrix); proyector visual f16 |
+| Idiomas soportados | zh (chino, incluido tradicional), en (inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (llama.cpp) + mmproj GGUF para visión |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es una variante de la familia Qwen3.5 con 27.300 millones de parametros. La arquitectura es hibrida, combinando capas de espacio de estados (SSM) con mecanismos de atencion lineal. Esta combinacion reduce el coste computacional de la atencion tradicional, que escala cuadraticamente con la longitud de la secuencia, permitiendo un procesamiento mas eficiente de contextos largos. El autor indica que llama.cpp maneja correctamente el estado recursivo de este tipo de arquitectura en un unico dispositivo.
+El modelo deriva del base Qwen/Qwen3.8-27B, que utiliza la arquitectura qwen3_5: una combinación de atención lineal de tipo SSM con atención transformer clásica, e incluye un modo de razonamiento (thinking) que genera una cadena de pensamiento antes de la respuesta final. La torre de visión se conserva en forma de proyector multimodal (`mmproj`) en f16, lo que permite entrada de imágenes junto al texto.
 
-El proceso de abliteration, aplicado al modelo safetensors original, consiste en eliminar o atenuar los vectores de direccion del modelo que se asocian con el rechazo de peticiones. Esta tecnica no implica un reentrenamiento completo, sino una modificacion de los pesos basada en el analisis de activaciones. El resultado es un modelo que tiende a responder a practicamente cualquier peticion, sin mostrar reticencias.
-
-Los datos de entrenamiento del modelo base no se detallan en la informacion disponible. No se especifica el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. La cuantizacion a formato GGUF se realizo con la herramienta llama.cpp, aplicando una importancia matrix (imatrix) para optimizar la calidad de las cuantizaciones IQ y K.
+No hubo reentrenamiento. La modificación consiste en abliteration por ablación direccional (Arditi et al. 2024): se extrae la dirección de rechazo fuera del segmento de thinking y se ortogonaliza en las proyecciones de salida (`out_proj`) de la atención lineal SSM del tower de texto, abarcando únicamente los escritores de residuo. Los hiperparámetros se buscaron con la herramienta Heretic (p-e-w/heretic) mediante Optuna, con 200 trials que minimizan conjuntamente la tasa de rechazo y la divergencia KL respecto al modelo original, evitando la degradación de capacidades típica de abliterations agresivas. Se aplicaron dos rondas iterativas hasta alcanzar 0/10 rechaces en el conjunto de evaluación. Los datos de entrenamiento originales (número de tokens, composición del dataset, RLHF/DPO) no están disponibles en la información proporcionada.
 
 ## Capacidades
 
-- Generacion de texto en chino e ingles con fluidez, manteniendo las capacidades linguisticas del modelo base Qwen3.5.
-- Razonamiento y resolucion de problemas en multiples dominios, incluyendo matematicas, logica y comprension lectora.
-- Generacion de codigo en diversos lenguajes de programacion, gracias a las capacidades del modelo base.
-- Soporte de tool calling y function calling, lo que permite su integracion en pipelines de agentes que necesitan invocar herramientas externas.
-- Capacidad para mantener conversaciones multi-turno con contexto de hasta 8192 tokens, suficiente para dialogos extensos o documentos de tamano medio.
-- Al estar abliteado, responde a peticiones que otros modelos rechazarian por politicas de seguridad, como preguntas sobre temas controvertidos o solicitudes de contenido explicito.
-- Compatible con el ecosistema llama.cpp, incluyendo el servidor OpenAI-compatible para despliegue como API.
+- Generación de texto conversacional multi-turno en chino (simplificado y tradicional) e inglés.
+- Razonamiento con modo thinking, con la dirección de rechazo extraída fuera de dicho segmento para no interferir con la cadena de pensamiento.
+- Comprensión de imágenes mediante el proyector multimodal mmproj (f16, 0,9 GB).
+- Reducción del rechazo excesivo: tasa de 0/10 en prompts de daño grave held-out (Q4_K_M, medida vía llama-server con thinking desactivado).
+- Capacidades generales verificadas sin degradación aparente: preguntas de conocimiento (fotosíntesis, dispersión de Rayleigh, preparación de té oolong, paradas de tren de alta velocidad) respondidas correctamente en chino tradicional.
+- Tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y multi-step reasoning: no disponible en la información proporcionada.
+- Capacidades de audio: no disponibles.
 
 ## Casos de uso
 
-- Atencion al cliente automatizada: el modelo puede gestionar conversaciones multi-turno con contexto largo gracias a su ventana de 8192 tokens. Su naturaleza abliteada permite abordar quejas o preguntas incomodas sin evasivas, aunque requiere supervision humana para evitar respuestas inapropiadas.
-- Generacion de codigo en produccion: soporta tool calling y puede integrarse en pipelines de CI/CD para autocompletar o generar fragmentos de codigo. La cuantizacion Q4_K_M permite ejecutarlo en una GPU de 24 GB, adecuada para entornos de desarrollo.
-- Desarrollo de agentes conversacionales: su compatibilidad con el servidor OpenAI-compatible de llama.cpp facilita su uso como backend para frameworks de agentes como LangChain o AutoGen, donde se requiere una API estandar.
-- Investigacion sobre alineacion y seguridad: el proceso de abliteration lo convierte en un objeto de estudio interesante para investigadores que analizan el comportamiento de modelos sin mecanismos de rechazo, y para desarrollar tecnicas de deteccion de contenido peligroso.
-- Creacion de contenido creativo sin restricciones: escritores y creadores pueden usarlo para generar narrativas, dialogos o guiones que aborden temas tabu o controvertidos sin que el modelo se niegue a colaborar.
-- Despliegue en entornos con recursos limitados: la version IQ2_M, de aproximadamente 10 GB, permite ejecutar el modelo en GPUs de gama media o incluso en CPU con suficiente RAM, habilitando aplicaciones de generacion de texto en equipos modestos.
+- Investigación de seguridad y red teaming: el modelo permite probar escenarios adversarios y evaluar defenses sin que el propio evaluador sea bloqueado por rechaces sistemáticos, facilitando la caracterización de vulnerabilidades en pipelines propios.
+- Moderación de contenido y estudios de taxonomía de daño: al no rechazar por defecto, permite analizar y clasificar prompts dañinos en corpus de investigación, comparando la respuesta del modelo abliterado con la del base para calibrar clasificadores.
+- Evaluación comparativa de abliteration: usar las distintas cuantizaciones (Q8_0 frente a IQ2_M) para medir el impacto de la compresión en la tasa de rechazo y en la coherencia, con metodología reproducible vía llama-server.
+- Despliegue on-premise en entornos privados: al ser GGUF y ejecutable con llama.cpp, encaja en infraestructuras air-gapped donde no se permite enviar datos a APIs externas, un caso alineado con el enfoque de xCloudinfo.
+- Asistente multimodal local: con el mmproj cargado, permite consultas sobre imágenes (documentos escaneados, capturas, diagramas) en chino e inglés dentro de estaciones de trabajo con GPU de consumo.
+- Generación de contenido en chino tradicional: el autor verifica fluidez y corrección en zh-TW, útil para localización de contenidos y atención al cliente en mercados de habla china con requisitos de privacidad.
+- Experimentación con decodificación y cuantización: los niveles IQ4_XS e IQ2_M con imatrix permiten estudiar el equilibrio entre tamaño (10-14,4 GB) y calidad en hardware limitado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor no proporciona datos de evaluacion como MMLU, HumanEval o GSM8K para esta version cuantizada ni para el modelo base. Se recomienda consultar el repositorio del modelo safetensors original para posibles actualizaciones, aunque en el momento de redactar esta ficha no se dispone de dicha informacion.
+El autor publica únicamente una métrica propia de rechazo, no benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+
+| Metrica | Original Qwen3.8-27B | Este modelo (Q4_K_M) |
+|---|---|---|
+| Tasa de rechazo (10 prompts held-out de daño grave, thinking off) | aprox. 10/10 | 0/10 |
+| Coherencia de salida | no medido | verificada (salidas vacías o fragmentarias no cuentan como aprobado) |
+| Fluidez en chino tradicional (muestra cualitativa) | no disponible | verificada sin degradación aparente |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: la version Q4_K_M ocupa aproximadamente 17 GB, por lo que cabe en una GPU de 24 GB (RTX 3090, RTX 4090, A5000). La version Q8_0 requiere unos 28 GB, necesitando una GPU de 32 GB o mas (A100 40 GB, H100).
-- GPU recomendadas: para la version Q4_K_M, una RTX 4090 o A5000 es suficiente. Para Q8_0, se recomienda una A100 o H100. La version IQ2_M (10 GB) puede ejecutarse en una RTX 3060 de 12 GB o similar.
-- En CPU: las versiones Q4_K_M e inferiores pueden ejecutarse en CPU con al menos 32 GB de RAM, aunque la velocidad sera significativamente menor.
-- Opciones de despliegue: llama.cpp (llama-server), Ollama, LM Studio, o cualquier herramienta compatible con GGUF. El autor recomienda usar una version reciente de llama.cpp que soporte la arquitectura qwen35.
-- Latencia y throughput: no se han publicado datos especificos. Como referencia, un modelo de 27 B en Q4_K_M en una RTX 4090 suele generar entre 20 y 40 tokens por segundo, dependiendo de la longitud de la secuencia y el numero de hilos.
+- VRAM estimada para inferencia según cuantización: Q8_0 ~28,6 GB; Q6_K ~22,1 GB; Q5_K_M ~19,2 GB; Q4_K_M ~16,5 GB; IQ4_XS ~14,4 GB; IQ2_M ~10,0 GB; añadir ~0,9 GB si se carga el proyector visual mmproj.
+- GPU recomendadas: A100 40/80 GB o H100 para Q8_0 y Q6_K con contexto largo; RTX 4090 (24 GB) para Q4_K_M, Q5_K_M e IQ4_XS; RTX 3090 (24 GB) equivalente; GPUs de 12-16 GB (RTX 4080, 4070 Ti Super) para IQ2_M o IQ4_XS con contexto moderado.
+- Cabe en GPU de consumo: sí, desde IQ2_M (10 GB) hasta Q5_K_M (19,2 GB) en tarjetas de 24 GB; Q8_0 requiere 32 GB o más o descarga parcial a CPU.
+- Opciones de despliegue: llama.cpp (llama-cli, llama-server), y derivados compatibles con GGUF; vLLM, TGI y Ollama no están confirmados en la información proporcionada (Ollama puede importar GGUF de forma genérica, pero no se documenta en la model card).
+- Latencia y throughput: no disponibles; no se publican cifras de tokens por segundo ni latencia por petición.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Cuantizacion GGUF | Abliterado |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-Uncensored-xCloud | 27,3 B | 8192 | Apache-2.0 | Si | Si |
-| Qwen2.5-32B-Instruct | 32,8 B | 131072 | Apache-2.0 | Si | No |
-| Llama-3.1-8B-Instruct | 8 B | 131072 | Llama 3.1 Community | Si | No |
-| Mistral-7B-Instruct-v0.3 | 7,3 B | 32768 | Apache-2.0 | Si | No |
-
-La comparativa muestra que este modelo se situa en un punto intermedio entre los modelos de 7-8 B y los de 30 B. Su principal diferenciador es el proceso de abliteration, que no esta presente en las alternativas comerciales o de codigo abierto mas comunes. En terminos de contexto, es inferior a Qwen2.5-32B (131072 tokens) y a Llama-3.1-8B, lo que limita su uso en tareas que requieran documentos muy extensos. La licencia Apache-2.0 es permisiva y permite uso comercial sin restricciones adicionales.
+| Qwen3.8-27B-Uncensored-GGUF (este) | 26,9 mM | no disponible | GGUF + mmproj | apache-2.0 | Abliterado, 0/10 rechaces medidos, multimodal |
+| Qwen/Qwen3.8-27B (base) | 26,9 mM | no disponible | safetensors | apache-2.0 | Aprox. 10/10 rechaces; referencia de calidad |
+| Otras abliterations comunitarias de Qwen3.8-27B | no disponible | no disponible | GGUF | no disponible | El autor indica que muchas no publican medición de rechazo |
+| Alternativas abliteradas de tamaño similar (p. ej. familias Llama o Mistral abliteradas) | no disponible | no disponible | GGUF | no disponible | No se dispone de datos comparables en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- El proceso de abliteration elimina una capa de seguridad. El modelo puede generar contenido ofensivo, ilegal o peligroso si se le solicita. El autor advierte explicitamente que el usuario es responsable del uso de estos pesos.
-- La ventana de contexto de 8192 tokens es limitada en comparacion con otros modelos actuales, lo que puede ser insuficiente para tareas que requieran procesar documentos largos o mantener conversaciones muy extensas.
-- Los idiomas soportados se limitan a chino e ingles. No se garantiza un rendimiento adecuado en otros idiomas, incluido el espanol.
-- No se dispone de informacion sobre el proceso de entrenamiento del modelo base, lo que impide evaluar posibles sesgos en los datos de entrenamiento.
-- La cuantizacion, especialmente en versiones de 2 bits (IQ2_M), puede degradar significativamente la calidad de las respuestas y aumentar la tasa de alucinaciones.
-- El modelo no ha sido evaluado con benchmarks publicos, por lo que su rendimiento real en tareas estandarizadas es desconocido.
-- Para produccion, se recomienda implementar filtros adicionales de contenido y supervisar las salidas, dado el riesgo de respuestas inapropiadas.
+- La abliteration direccional única no garantiza la eliminación total de comportamientos de seguridad; el propio autor advierte que no debe interpretarse como supresión completa.
+- El modelo hereda el mundo ideológico, posiciones políticas y afirmaciones fácticas del base Qwen3.8 (origen chino); la abliteration solo modifica la conducta de rechazo, no los juicios de valor subyacentes.
+- Riesgo de alucinación: no se han publicado evaluaciones de factualidad ni de calibración; al desactivar rechaces, es más probable que el modelo produzca contenido plausible pero incorrecto en lugar de abstenerse.
+- Idiomas limitados a chino (simplificado y tradicional) e inglés; el rendimiento en castellano u otros idiomas no está evaluado.
+- Longitud de contexto no documentada; no se puede garantizar comportamiento en ventanas largas ni en tareas de recuperación de contexto.
+- Licencia Apache-2.0 permite uso comercial, pero el autor impone una condición de uso exclusivamente lícito (investigación de seguridad, red teaming, moderación, academia); el usuario asume toda la responsabilidad legal y ética.
+- Uso prohibido para actividades ilegales; el publicador no respalda ni se responsabiliza por mal uso.
+- La evaluación de rechazo se basa en 10 prompts held-out con thinking desactivado, un conjunto pequeño y no independiente de posibles sesgos de selección; no sustituye una evaluación de seguridad amplia.
+- La cuantización IQ2_M (10 GB) puede degradar calidad y coherencia; no se publican métricas específicas por nivel de cuantización.
+- No hay datos sobre tool calling, agentes, ni latencia en producción, lo que limita su uso en pipelines automatizados críticos sin validación previa.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/xCloudinfo/Qwen3.8-27B-Uncensored-GGUF
-- Modelo base safetensors: https://huggingface.co/xCloudinfo/Qwen3.8-27B-Uncensored-xCloud
-- Documentacion de llama.cpp: https://github.com/ggerganov/llama.cpp
+- Modelo en Hugging Face: https://huggingface.co/xCloudinfo/Qwen3.8-27B-Uncensored-GGUF
+- Perfil del autor: https://hf.co/xCloudinfo
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Heretic (herramienta de abliteration): https://github.com/p-e-w/heretic
+- Referencia metodológica de ablación direccional: Arditi et al. 2024 (Refusal in Language Models Is Mediated by a Single Direction), https://arxiv.org/abs/2406.11717
+- llama.cpp: https://github.com/ggml-org/llama.cpp

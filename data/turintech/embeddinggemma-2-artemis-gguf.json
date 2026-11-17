@@ -5,7 +5,7 @@
   "author": "turintech",
   "url": "https://huggingface.co/turintech/embeddinggemma-2-Artemis-GGUF",
   "created_at": "2026-10-16T15:50:22.000Z",
-  "updated_at": "2026-11-09T16:12:47.000Z",
+  "updated_at": "2026-11-16T12:09:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",

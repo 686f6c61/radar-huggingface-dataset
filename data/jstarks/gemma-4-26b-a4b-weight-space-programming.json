@@ -5,7 +5,7 @@
   "author": "jstarks",
   "url": "https://huggingface.co/jstarks/Gemma-4-26B-A4B-Weight-Space-Programming",
   "created_at": "2026-11-13T13:48:53.000Z",
-  "updated_at": "2026-11-16T03:26:56.000Z",
+  "updated_at": "2026-11-16T10:49:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

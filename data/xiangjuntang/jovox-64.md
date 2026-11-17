@@ -2,96 +2,95 @@
 
 ## Resumen
 
-JoVox-64 es un generador de estructuras de vóxeles a resolución 64³ condicionado por imagen, desarrollado por Xiangjun Tang, Jianqi Chen y Peter Wonka (KAUST) y publicado en el repositorio de Hugging Face `xiangjuntang/JoVox-64`. Forma parte del trabajo "JoVox: Joint Hierarchical Flow Matching for Lightweight Voxel Generation" (arXiv:2611.10690), un marco de flow matching discreto que aprende la distribución jerárquica conjunta de vóxeles manteniendo la generación ligera. El modelo resuelve el problema de la reconstrucción y generación 3D a partir de una sola imagen con un coste computacional reducido, generando todos los niveles de resolución (4³ → 16³ → 64³) con un único modelo.
+JoVox-64 es un generador de estructuras voxelicas de resolución 64³ condicionado por imagen, desarrollado por Xiangjun Tang, Jianqi Chen y Peter Wonka (publicado en arXiv:2611.10690, 2026). Forma parte del framework JoVox (Joint Hierarchical Flow Matching for Lightweight Voxel Generation), un enfoque de flow matching discreto que aprende la distribución jerárquica conjunta de vóxeles manteniendo la generación ligera. El modelo genera todos los niveles de la jerarquía (4³ → 16³ → 64³) a partir de una única imagen de entrada.
 
-La arquitectura se basa en flow matching discreto sobre una jerarquía de vóxeles, con un codificador de imagen DINOv3 (ViT-L/16) que condiciona la generación. El checkpoint publicado contiene 1.541.135.360 parámetros (aproximadamente 1,54 mil millones) en formato safetensors (6,2 GB), lo que lo sitúa en una categoría de tamaño moderada para tareas de generación 3D. La licencia es Apache 2.0, lo que facilita su uso comercial y su integración en pipelines de investigación y producción.
+El modelo resuelve el problema de la reconstrucción y generación 3D a partir de imágenes 2D con un coste computacional reducido, empleando un único modelo para toda la jerarquía en lugar de pipelines separados por resolución. La imagen de condición se codifica con DINOv3 (ViT-L/16), que se descarga por separado. Con 1.541.135.360 parámetros y un repo de 6,2 GB, se distribuye bajo licencia Apache 2.0 en formato safetensors.
 
-Su relevancia actual radica en que ofrece una alternativa ligera a los modelos de generación 3D basados en difusión o en representaciones implícitas (como TRELLIS.2), con el que se compara directamente en la model card. Según los resultados reportados por los autores, JoVox supera a TRELLIS.2 en métricas de calidad geométrica (CD_V, IoU, CD_shell, FID_N) manteniendo un rendimiento similar en Uni3D, lo que lo convierte en una opción atractiva para pipelines de image-to-3D donde el coste de inferencia es un factor crítico.
+Es relevante por su planteamiento de flow matching jerárquico conjunto, que según la model card supera a TRELLIS.2 en las métricas reportadas sobre 1000 objetos de Toys4k, además de ofrecer un pipeline completo imagen → vóxeles → malla.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Flow matching discreto jerárquico sobre vóxeles, condicionado por imagen (DINOv3 ViT-L/16) |
+| Arquitectura | Flow matching discreto jerarquico (4³ → 16³ → 64³) condicionado por imagen; codificador de condicion DINOv3 ViT-L/16 |
 | Parametros totales | 1.541.135.360 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no aplica (modelo de generación 3D, no de texto) |
+| Longitud de contexto | no disponible (no aplica; modelo image-to-3D) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (modelo multimodal imagen→3D, sin soporte de texto) |
+| Idiomas soportados | no disponible (modelo no linguistico) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (`model.safetensors`, pesos EMA del generador, usado con `configs/voxelgen64.yaml`) |
 
 ## Arquitectura y entrenamiento
 
-JoVox emplea un esquema de flow matching discreto que modela conjuntamente la distribución jerárquica de vóxeles en tres niveles de resolución (4³, 16³ y 64³) con un único modelo. A diferencia de aproximaciones que entrenan un modelo por nivel o que usan difusión continua sobre representaciones implícitas, JoVox aprende la transición entre niveles mediante flujo discreto, lo que reduce el coste de generación y permite mantener coherencia global entre escalas. La condición de imagen se introduce mediante un codificador DINOv3 (ViT-L/16 preentrenado en LVD-1689M), que se descarga por separado y se integra en el pipeline de inferencia.
+JoVox es un framework de flow matching discreto que modela de forma conjunta la distribución jerárquica de vóxeles. Un único modelo genera todos los niveles de resolución (4³, 16³ y 64³) a partir de una sola imagen, en lugar de emplear un modelo por nivel. La condición visual se extrae mediante DINOv3 ViT-L/16 (`facebook/dinov3-vitl16-pretrain-lvd1689m`), que se descarga de forma independiente. Los pesos publicados corresponden a la versión EMA del generador.
 
-El entrenamiento utiliza los subconjuntos sketchfab, 3D-FUTURE, HSSD y ABO de TRELLIS-500K, con Toys4k reservado como conjunto de test. No se especifican en la model card el número exacto de tokens de entrenamiento, la composición detallada del dataset ni si se aplicaron etapas de RLHF/DPO (no aplicables en este dominio). La innovación técnica principal es la generación jerárquica conjunta con un solo modelo y un esquema de flow matching ligero, que según los autores permite igualar o superar a TRELLIS.2 con el mismo backbone.
+El entrenamiento utilizó los subconjuntos sketchfab, 3D-FUTURE, HSSD y ABO de TRELLIS-500K. Toys4k se reservó como conjunto de test. La model card no detalla el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron etapas de RLHF/DPO (no aplicable en un modelo generativo 3D de este tipo). La model card advierte que las imágenes de entrenamiento se renderizaron desde puntos de vista aleatorios, pero el tamaño del objeto en la imagen varía solo en un rango limitado y no se aplicó augmentación de recorte; el pipeline imagen-a-malla mitiga esto centrando y reescalando el objeto antes de la generación.
 
 ## Capacidades
 
-- Generación de estructuras de vóxeles 3D a resolución 64³ a partir de una única imagen de entrada.
-- Generación jerárquica multinivel: produce 4³, 16³ y 64³ de forma conjunta con un solo modelo.
-- Generación de mallas (mesh) a partir de la estructura de vóxeles generada, mediante el script `img2mesh.py` en tres etapas (prep, voxel, mesh).
-- Condicionamiento por imagen mediante DINOv3 ViT-L/16.
-- Soporte de semilla (`--seed`) para reproducibilidad en la generación.
-- No dispone de tool calling, function calling ni capacidades de agente.
-- No dispone de capacidades multilingües ni de procesamiento de texto.
-- No dispone de modo thinking, visión general (solo codificación de imagen como condición) ni audio.
+- Generación de estructuras voxelicas 3D de 64³ condicionadas por una imagen 2D.
+- Generación jerárquica conjunta: un solo modelo produce los niveles 4³, 16³ y 64³.
+- Conversión de imagen a malla mediante el pipeline `scripts/img2mesh.py` (etapas `prep`, `voxel`, `mesh`).
+- Generación controlada por semilla (`--seed`) para reproducibilidad.
+- Condicionamiento visual mediante DINOv3 ViT-L/16.
+- No soporta tool calling, agentes, razonamiento multi-step ni capacidades lingüísticas: es un modelo puramente image-to-3D.
+- No dispone de modo thinking, visión general, audio ni otras capacidades multimodales más allá del condicionamiento por imagen.
 
 ## Casos de uso
 
-- Reconstrucción 3D a partir de una sola imagen en pipelines de investigación: el modelo genera una estructura de vóxeles 64³ que puede convertirse en malla, útil para experimentos de image-to-3D donde se necesita una alternativa ligera a métodos de difusión.
-- Prototipado rápido de assets 3D para videojuegos o realidad aumentada: a partir de una foto de un objeto se obtiene una malla aproximada en pocos segundos, adecuada para iteración temprana antes de un modelado manual.
-- Generación de datasets sintéticos 3D: el modelo puede producir estructuras de vóxeles variadas a partir de imágenes de catálogo, útiles para aumentar datasets de entrenamiento de otros modelos 3D.
-- Evaluación comparativa de métodos de generación 3D: al estar publicado con métricas frente a TRELLIS.2 sobre Toys4k, sirve como baseline reproducible en experimentos académicos.
-- Integración en herramientas de diseño asistido: un usuario puede subir una imagen de referencia y obtener una malla preliminar para su posterior edición en software CAD o de modelado.
-- Investigación en flow matching discreto: el checkpoint y el código permiten reproducir y extender el marco JoVox para otras tareas de generación estructurada (vóxeles, mallas, etc.).
-- Generación de contenido 3D para entornos simulados: útil en robótica o simulación donde se necesitan objetos 3D aproximados a partir de imágenes de referencia con bajo coste computacional.
+- Reconstrucción 3D rápida desde fotografías de producto: el modelo genera una estructura voxelica 64³ y una malla a partir de una sola imagen, útil para catalogos de e-commerce que necesitan vistas 3D de artículos.
+- Prototipado de assets para videojuegos: generación de mallas base a partir de concept art o capturas, que luego se retocan en herramientas de modelado.
+- Pipelines de escaneo y digitalización de objetos: dado que el pipeline centra y reescala el objeto automáticamente, puede integrarse en flujos de captura con vistas controladas.
+- Investigación en generación 3D generativa: base para experimentar con flow matching jerárquico y comparar frente a TRELLIS.2 en tareas image-to-3D.
+- Generación de datasets sintéticos 3D: producción de estructuras voxelicas y mallas para aumentar datos de entrenamiento de otros modelos 3D.
+- Visualización y previsualización en aplicaciones de diseño: generación rápida de una malla aproximada a partir de una imagen para iterar sobre conceptos antes de modelado detallado.
+- Benchmarking de métodos image-to-3D: el modelo sirve como referencia reproducible (semilla fija) frente a alternativas en conjuntos como Toys4k.
 
 ## Benchmarks y rendimiento
 
-Resultados reportados en la model card sobre 1000 objetos de Toys4k (condicionados por imagen), comparados con TRELLIS.2 usando el mismo backbone:
+Resultados reportados en la model card sobre 1000 objetos de Toys4k (image-conditioned):
 
 | Metodo | CD_V ↓ | IoU ↑ | CD_shell ↓ | FID_N ↓ | Uni3D ↑ |
 |---|---|---|---|---|---|
 | TRELLIS.2 | 0.01250 | 0.4017 | 0.524e-3 | 33.3 | 0.3865 |
 | JoVox | 0.01107 | 0.4158 | 0.407e-3 | 31.6 | 0.3868 |
 
-JoVox mejora a TRELLIS.2 en CD_V (0.01107 frente a 0.01250), IoU (0.4158 frente a 0.4017), CD_shell (0.407e-3 frente a 0.524e-3) y FID_N (31.6 frente a 33.3), con una mejora marginal en Uni3D (0.3868 frente a 0.3865). No se han publicado otros benchmarks (MMLU, HumanEval, GSM8K, etc.) por tratarse de un modelo de generación 3D.
+No se han publicado otros resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible en la model card; el checkpoint pesa 6,2 GB en safetensors (fp32/fp16 según configuración), por lo que se estima un consumo de al menos 6-8 GB solo para los pesos, más el codificador DINOv3 ViT-L/16 (aproximadamente 1,2 GB adicionales) y memoria para activaciones.
-- GPU recomendadas: no especificadas por el autor; por tamaño, una GPU con 16-24 GB (RTX 4090, A100 40 GB, H100) es un punto de partida razonable, aunque no hay confirmación oficial.
-- ¿Cabe en consumer GPU? Probablemente sí en GPUs con 16 GB o más (RTX 4080/4090, RTX 3090), aunque no está verificado por el autor.
-- Opciones de despliegue: el repositorio oficial (github.com/yuyujunjun/JoVox) proporciona scripts `img2mesh.py` en tres etapas; la etapa de preparación y malla requiere el entorno de TRELLIS.2 y la etapa de vóxeles el entorno de JoVox. No se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplicables a este modelo).
+- VRAM estimada para inferencia: no disponible en la información proporcionada. Con 1.541.135.360 parámetros, los pesos en FP32 ocupan aproximadamente 6,2 GB (tamaño del repo); en FP16/BF16 rondarían los 3,1 GB, a lo que habría que sumar el codificador DINOv3 ViT-L/16 descargado aparte.
+- GPU recomendadas: no disponible en la información proporcionada.
+- Compatibilidad con GPU de consumo: no confirmada en la información disponible; por tamaño de pesos (≈3-6 GB) sería plausible en GPUs de consumo con suficiente VRAM, pero el dato no está publicado.
+- Opciones de despliegue: el repositorio oficial (github.com/yuyujunjun/JoVox) proporciona scripts de inferencia (`scripts/img2mesh.py`); no se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI (no aplicables a un modelo image-to-3D).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad | Rendimiento (Toys4k) |
+| Modelo | Parametros | Contexto | Rendimiento (Toys4k) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JoVox-64 | 1.541.135.360 | Voxeles 4³/16³/64³, condicionado por imagen | Apache 2.0 | Hugging Face + GitHub | CD_V 0.01107, IoU 0.4158 |
-| TRELLIS.2 | no disponible | Voxeles/mallas, condicionado por imagen | no disponible | no disponible | CD_V 0.01250, IoU 0.4017 |
-| Otros modelos image-to-3D (p. ej. basados en difusion) | no disponible | no disponible | no disponible | no disponible | no disponible |
+| JoVox-64 | 1.541.135.360 | no aplica | CD_V 0.01107; IoU 0.4158; FID_N 31.6; Uni3D 0.3868 | Apache 2.0 | Hugging Face + código GitHub |
+| TRELLIS.2 | no disponible | no aplica | CD_V 0.01250; IoU 0.4017; FID_N 33.3; Uni3D 0.3865 | no disponible | no disponible |
 
-La comparativa directa disponible en la model card es únicamente con TRELLIS.2, usando el mismo backbone. No se proporcionan datos de otros modelos comparables en la información disponible.
+No se dispone de datos de otros modelos comparables (parámetros, contexto, licencia) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo está especializado en generación de vóxeles 3D a partir de imagen; no procesa texto ni tiene capacidades lingüísticas.
-- La resolución máxima de vóxeles es 64³, lo que limita el nivel de detalle geométrico en objetos complejos.
-- El entrenamiento se realizó sobre subconjuntos de TRELLIS-500K (sketchfab, 3D-FUTURE, HSSD, ABO); puede heredar sesgos de esos datasets (categorías de objetos, estilos, dominios).
-- Riesgo de alucinación geométrica: al ser un modelo generativo, puede producir estructuras plausibles pero incorrectas respecto a la imagen de entrada.
-- La licencia Apache 2.0 permite uso comercial, pero el codificador DINOv3 se descarga por separado y su licencia debe verificarse de forma independiente.
-- El pipeline de inferencia requiere dos entornos distintos (TRELLIS.2 para prep y mesh, JoVox para vóxeles), lo que añade complejidad de despliegue.
-- No hay información publicada sobre latencia, throughput ni requisitos exactos de VRAM; el autor no los documenta en la model card.
-- El repositorio tiene 0 descargas y 1 like en el momento de la consulta, lo que indica baja validación comunitaria todavía.
-- No se especifican limitaciones idiomáticas ni de contexto porque el modelo no opera sobre texto.
+- Robustez limitada al tamaño del objeto en la imagen de entrada: el modelo puede no dar resultados óptimos si el objeto queda fuera del rango de tamaño visto en entrenamiento; el pipeline mitiga esto centrando y reescalando, y el autor anuncia una versión más robusta.
+- Sesgos de dataset: entrenado sobre subconjuntos de TRELLIS-500K (sketchfab, 3D-FUTURE, HSSD, ABO); puede heredar sesgos de esas fuentes en cuanto a categorías, estilos y distribución de objetos.
+- Riesgo de artefactos y geometrías incompletas en objetos con oclusiones o vistas atípicas; no se documentan métricas de fallo fuera de Toys4k.
+- Resolución fija de 64³: el detalle geométrico está acotado por la resolución voxelica; no se documentan modos de mayor resolución en esta release.
+- Dependencia de un codificador externo (DINOv3 ViT-L/16) que debe descargarse por separado, lo que añade un paso de configuración y requisitos de memoria.
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las licencias de los datasets de entrenamiento (TRELLIS-500K y sus subconjuntos) y de DINOv3 antes de un despliegue comercial.
+- Modelo no lingüístico: no soporta texto, tool calling ni agentes; cualquier expectativa en ese sentido queda fuera de su ámbito.
+- Sin datos publicados de latencia, VRAM ni cuantizaciones soportadas, lo que dificulta planificar un despliegue en producción.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/xiangjuntang/JoVox-64
-- Paper: https://arxiv.org/abs/2611.10690
-- Código: https://github.com/yuyujunjun/JoVox
-- Codificador DINOv3: https://huggingface.co/facebook/dinov3-vitl16-pretrain-lvd1689m
+- Demo (Hugging Face Space): https://huggingface.co/spaces/xiangjuntang/jovox-64
+- Paper (arXiv): https://arxiv.org/abs/2611.10690
+- Código (GitHub): https://github.com/yuyujunjun/JoVox
+- Página del proyecto: https://yuyujunjun.github.io/Jovox-page/
+- Codificador de condición DINOv3: https://huggingface.co/facebook/dinov3-vitl16-pretrain-lvd1689m

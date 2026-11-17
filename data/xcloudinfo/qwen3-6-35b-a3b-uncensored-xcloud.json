@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 558,
+  "downloads_30d": 560,
   "trending_score": 0,
   "parameters": 35107181936,
   "parameters_human": "35.11B",
@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Lateinische Schrift: Ursprung, Vielfalt und Zukunft der Schriftkultur",
-      "url": "https://abbra.ch/lateinische-schrift/",
-      "snippet": "Viele Sprachen, die die lateinische Schrift verwenden, ergänzen ihr Alphabet durch diakritische Zeichen: Akzente (á, é), Umlaute (ä, …"
-    },
-    {
-      "title": "Lateinisches Alphabet – Wikipedia",
-      "url": "https://de.wikipedia.org/wiki/Lateinisches_Alphabet",
-      "snippet": "Das lateinische Alphabet ist ursprünglich das von den Römern zur Schreibung der lateinischen Sprache verwendete Alphabet; es …"
-    },
-    {
-      "title": "Diakritisches Zeichen – Wikipedia",
-      "url": "https://de.wikipedia.org/wiki/Diakritisches_Zeichen",
-      "snippet": "Vor allem in den vielen lateinischen Alphabeten sind diakritische Zeichen zu finden, aber auch in der arabischen und hebräischen …"
-    },
-    {
-      "title": "Lateinische Zeichen: Eine umfassende Reise durch die Welt der ...",
-      "url": "https://gertgruber.at/lateinische-zeichen/",
-      "snippet": "Die richtige Anwendung von Akzenten, Umlauten und Ligaturen trägt wesentlich zur Lesbarkeit bei und beeinflusst auch die korrekte …"
-    },
-    {
-      "title": "abc - Lateinisches Alphabet: Key-Shortcut",
-      "url": "https://www.key-shortcut.com/schriftsysteme/lateinisches-alphabet",
-      "snippet": "Das lateinische Schriftsystem ist das weltweit am weitesten verbreitete (siehe Weltkarte der Schriftsysteme). Je nach Sprache …"
-    }
-  ]
+  "sources": []
 }

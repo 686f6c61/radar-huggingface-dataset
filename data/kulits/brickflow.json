@@ -5,7 +5,7 @@
   "author": "kulits",
   "url": "https://huggingface.co/kulits/BrickFlow",
   "created_at": "2026-11-13T00:44:04.000Z",
-  "updated_at": "2026-11-16T05:06:31.000Z",
+  "updated_at": "2026-11-16T07:07:25.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-to-3d",
@@ -22,7 +22,7 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

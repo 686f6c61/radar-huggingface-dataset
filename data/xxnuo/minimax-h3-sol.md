@@ -2,89 +2,86 @@
 
 ## Resumen
 
-MiniMax H3 Sol es un paquete de checkpoints empaquetado por el usuario xxnuo bajo el identificador `xxnuo/MiniMax-H3-Sol`, pensado como espejo (mirror) reproducible de los pesos necesarios para ejecutar el modelo de generación de vídeo MiniMax H3. El repositorio no introduce pesos nuevos ni reentrena nada: agrupa 72 ficheros de runtime con un total de 219.842.086.226 bytes (aproximadamente 219,8 GB) en un único bundle con revisiones fijadas, de modo que un despliegue pueda reproducirse byte a byte.
+MiniMax H3 Sol es un paquete de checkpoints publicado por el usuario xxnuo en Hugging Face bajo el identificador `xxnuo/MiniMax-H3-Sol`. No se trata de un modelo entrenado desde cero, sino de un espejo (model-mirror) que agrupa los pesos originales de varios componentes necesarios para ejecutar el pipeline de generación de vídeo MiniMax H3 en un entorno de inferencia concreto (`lzc-aipod-minimax-h3-sol`). El bundle contiene 72 ficheros de runtime que suman 219.842.086.226 bytes (aproximadamente 219,8 GB) y cubre las variantes de texto-a-vídeo, primer/último fotograma y vídeo de referencia.
 
-El conjunto cubre los componentes de texto a vídeo, de primer y último fotograma y de vídeo de referencia, e incluye además los ficheros de tokenizer y de configuración originales sin modificar. Según la model card, el bundle se emplea en el entorno `lzc-aipod-minimax-h3-sol` y conserva bajo el directorio `upstream/` las model cards y avisos de licencia de los repositorios de origen, junto con un manifiesto (`upstream-model-manifest.json`) que documenta repositorios, revisiones, tamaños y sumas SHA-256.
+El repositorio está etiquetado con `diffusers`, `safetensors`, `minimax-h3` y `video-generation`, y su tamaño total en disco es de 237,6 GB. La model card indica explícitamente que los pesos, tokenizadores y ficheros de configuración originales no han sido modificados, y que cada componente conserva su licencia de origen. Se incluyen textos de licencia de MiniMax H3 y de LTX-2.x bajo el directorio `upstream/`, junto con un manifiesto (`upstream-model-manifest.json`) que documenta repositorios originales, revisiones, tamaños y sumas SHA-256.
 
-La relevancia de esta ficha es acotada y conviene subrayarla: se trata de un artefacto de distribución, no de un modelo con arquitectura propia documentada. La información pública disponible no detalla la arquitectura interna, el número de parámetros ni la longitud de contexto, por lo que los apartados técnicos que dependen de esos datos se marcan como no disponibles.
+La relevancia de este repositorio es práctica: facilita la reproducibilidad de un despliegue concreto de generación de vídeo al fijar versiones y checksums de todos los componentes. No aporta información sobre arquitectura interna, datos de entrenamiento ni benchmarks, por lo que esta ficha se limita a lo declarado en la model card y en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo de generación de vídeo; componentes de texto a vídeo, primer/último fotograma y vídeo de referencia) |
+| Arquitectura | no disponible (el bundle agrupa componentes de generación de vídeo MiniMax H3 y LTX-2.x; no se detalla la arquitectura interna) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el bundle contiene pesos en safetensors sin indicación de variantes cuantizadas) |
+| Tipos de cuantizacion | no disponible (se distribuyen pesos en `safetensors` sin indicar variantes cuantizadas) |
 | Idiomas soportados | no disponible |
-| Licencia | other (cada componente conserva su licencia original: MiniMax H3 y LTX-2.x; el bundle no relicencia) |
-| Formato de pesos | safetensors (librería diffusers; 72 ficheros de runtime, 219.842.086.226 bytes) |
+| Licencia | other (cada componente conserva su licencia original: MiniMax H3 y LTX-2.x; ver `NOTICE` y `upstream/`) |
+| Formato de pesos | safetensors (librería `diffusers`) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo MiniMax H3 en la documentación proporcionada. La model card del bundle no describe el tipo de red (transformer de difusión, híbrido u otro), ni el número de tokens de entrenamiento, ni la composición del dataset, ni si se aplicaron etapas de alineación como RLHF o DPO. Tampoco se detallan innovaciones técnicas de inferencia.
+No se dispone de información sobre la arquitectura interna del modelo en la documentación proporcionada. El repositorio es un espejo de checkpoints y no incluye detalles sobre tipo de red (transformer, difusión, híbrida, etc.), número de parámetros ni estrategia de entrenamiento. La model card únicamente indica que el bundle contiene los componentes de texto-a-vídeo, primer/último fotograma y vídeo de referencia, y que los pesos originales, tokenizadores y configuraciones se mantienen sin cambios.
 
-Lo que sí documenta el repositorio es la estructura de distribución: 72 ficheros de runtime organizados según el layout de checkpoints del entorno `lzc-aipod-minimax-h3-sol`, con rutas relativas a la raíz del repositorio. El bundle integra componentes de generación de vídeo desde texto, de interpolación entre primer y último fotograma y de vídeo de referencia, e incluye los ficheros de tokenizer y configuración originales sin alteraciones. El manifiesto `upstream-model-manifest.json` registra los repositorios de origen, las revisiones fijadas, los tamaños y los checksums SHA-256 de cada fichero, lo que permite verificar la integridad de la copia.
-
-Cabe mencionar que el bundle referencia dos licencias de origen distintas: MiniMax H3 (upstream/MiniMaxAI/MiniMax-H3/LICENSE) y LTX-2.x (upstream/Lightricks/LTX-2.5/LICENSE-2_x). Esto sugiere que el paquete combina componentes de ambos linajes, aunque la documentación disponible no especifica qué ficheros corresponden a cada uno ni cómo se componen en el pipeline final.
+Tampoco se documentan datos de entrenamiento, número de tokens, composición del dataset ni procesos de alineación (RLHF, DPO). La única información técnica verificable es la estructura del bundle: 72 ficheros de runtime, 219.842.086.226 bytes, con manifiesto de repositorios, revisiones, tamaños y checksums SHA-256 en `upstream-model-manifest.json`.
 
 ## Capacidades
 
 - Generación de vídeo a partir de texto (text-to-video), según los componentes incluidos en el bundle.
-- Generación condicionada por primer y último fotograma (first/last-frame), útil para interpolar movimiento entre dos imágenes dadas.
-- Generación condicionada por vídeo de referencia (reference-video), para transferir estilo, movimiento o identidad desde un clip de entrada.
-- Distribución reproducible: revisiones fijadas y checksums SHA-256 por fichero, lo que permite auditar y replicar el despliegue.
-- Preservación de licencias y model cards originales bajo `upstream/`, con un fichero NOTICE que remite a las restricciones de uso aplicables.
-- No se documentan en la información disponible capacidades de tool calling, function calling, razonamiento multi-paso, agentes, visión general, audio ni modo de pensamiento (thinking mode).
+- Generación condicionada por primer y último fotograma (first/last-frame), según la model card.
+- Generación condicionada por vídeo de referencia (reference-video), según la model card.
+- Compatibilidad con la librería `diffusers` para carga de pesos en `safetensors`.
+- No se documentan capacidades de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo thinking.
+- No se documentan capacidades multilingües.
 
 ## Casos de uso
 
-- Despliegue reproducible en infraestructura propia: el bundle permite reconstruir exactamente el mismo conjunto de pesos en un clúster con GPU de gran memoria, verificando la integridad mediante los checksums SHA-256 del manifiesto antes de arrancar el servicio de inferencia.
-- Generación de clips publicitarios a partir de un guion de texto: el componente text-to-video permite producir tomas breves para prototipos creativos, iterando sobre el prompt sin reentrenar nada.
-- Interpolación entre fotogramas clave en postproducción: con los componentes de primer y último fotograma se puede generar el movimiento intermedio entre dos imágenes fijas aprobadas por el cliente, reduciendo el trabajo manual de animación.
-- Transferencia de movimiento desde un vídeo de referencia: el componente reference-video permite aplicar la dinámica de un clip existente a un nuevo sujeto o escena, útil en estudios de animación y en la creación de variantes de una misma toma.
-- Archivo y espejo interno de modelos: organizaciones que necesitan una copia controlada y versionada de los pesos, con trazabilidad de origen y licencias, pueden usar este repositorio como fuente interna en lugar de depender de descargas directas de los repositorios originales.
-- Investigación en generación de vídeo: al fijar revisiones concretas, el bundle sirve como base estable para experimentos comparativos y para reproducir resultados entre distintos equipos, evitando la deriva que introduce la actualización de pesos upstream.
-- Validación de pipelines de difusión con diffusers: la librería declarada permite integrar los componentes en flujos de trabajo existentes basados en diffusers, siempre que se respeten las licencias de cada componente.
+- Reproducción de un despliegue de generación de vídeo: el bundle fija versiones, tamaños y checksums SHA-256 de los 72 ficheros de runtime, lo que permite reconstruir exactamente el entorno `lzc-aipod-minimax-h3-sol` en otra máquina.
+- Auditoría de licencias en pipelines de vídeo generativo: al conservar los textos de licencia de MiniMax H3 y LTX-2.x bajo `upstream/`, facilita la revisión legal antes de un uso comercial.
+- Generación de vídeo texto-a-vídeo en entornos controlados: los componentes incluidos permiten ejecutar el pipeline completo sin depender de descargas dispersas de varios repositorios.
+- Animación de imagen con primer y último fotograma: útil para interpolar transiciones entre dos imágenes fijas en producción de vídeo corto.
+- Transferencia de estilo o movimiento mediante vídeo de referencia: el componente de reference-video permite condicionar la generación a un clip existente.
+- Archivado y espejo interno: organizaciones que necesitan una copia estable y verificable de los pesos para evitar cambios upstream pueden usar este repositorio como fuente única.
+- Integración en entornos con `diffusers`: al estar etiquetado con esa librería y distribuirse en `safetensors`, encaja en pipelines de Python basados en `diffusers`.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. El tamaño del bundle (219,8 GB) da una cota inferior del almacenamiento necesario, pero no equivale a la VRAM requerida, que depende del componente cargado y de la estrategia de offloading.
-- GPU recomendadas: no disponible en la documentación. Por el volumen de pesos, un despliegue completo requiere GPUs de centro de datos con memoria agregada muy elevada (por ejemplo, A100 o H100 en configuraciones multi-GPU), pero esta afirmación es una estimación basada en el tamaño del bundle y no un dato publicado.
-- ¿Cabe en GPU de consumo? No es plausible cargar el bundle completo en una GPU de consumo (RTX 4090, 24 GB) sin offloading agresivo a CPU o disco; no hay confirmación oficial al respecto.
-- Opciones de despliegue: la librería declarada es diffusers, por lo que el pipeline habitual sería cargar los componentes con esa librería. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que además no son adecuadas para modelos de difusión de vídeo.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible. El tamaño del bundle (219,8 GB de pesos, 237,6 GB de repositorio) sugiere requisitos muy elevados, pero no se documenta el desglose por componente ni la VRAM necesaria.
+- GPU recomendadas: no disponible.
+- Viabilidad en GPU de consumo: no disponible; por el volumen de pesos es poco probable que quepa completo en una GPU de consumo, pero no se confirma en la información proporcionada.
+- Opciones de despliegue: no se documentan explícitamente; el repositorio está etiquetado con `diffusers`, lo que apunta a ese ecosistema, pero no se detallan alternativas como vLLM, llama.cpp, Ollama o TGI (estas últimas orientadas a LLM y no a generación de vídeo).
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MiniMax H3 Sol (este bundle) | no disponible | no disponible | no disponible | other (licencias de origen MiniMax H3 y LTX-2.x) | Hugging Face, espejo de 219,8 GB |
-| MiniMax H3 (upstream) | no disponible | no disponible | no disponible | según licencia de origen | repositorio original referenciado en el manifiesto |
-| LTX-2.5 (upstream) | no disponible | no disponible | no disponible | según licencia de origen (LICENSE-2_x) | repositorio original referenciado en el manifiesto |
+| xxnuo/MiniMax-H3-Sol | no disponible | no disponible | other (componentes con licencias MiniMax H3 y LTX-2.x) | Hugging Face, espejo de 237,6 GB | Bundle de checkpoints para generación de vídeo |
+| MiniMaxAI/MiniMax-H3 (upstream) | no disponible | no disponible | ver licencia upstream | Hugging Face (referenciado en `upstream/`) | Repositorio original de los pesos MiniMax H3 |
+| Lightricks/LTX-2.5 (upstream) | no disponible | no disponible | ver licencia upstream | Hugging Face (referenciado en `upstream/`) | Repositorio original de los componentes LTX-2.x |
 
-No se dispone de datos de benchmarks ni de especificaciones técnicas de los modelos comparables en la información proporcionada, por lo que la comparación cuantitativa no es posible.
+No se dispone de datos de rendimiento ni de especificaciones técnicas de los modelos comparados en la información proporcionada, por lo que la comparativa se limita a licencia y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- Este repositorio es un espejo de pesos, no un modelo documentado de forma independiente: no hay model card técnica con arquitectura, parámetros, contexto ni datos de entrenamiento.
-- La licencia es `other` y cada componente conserva su licencia original (MiniMax H3 y LTX-2.x). Es obligatorio revisar `NOTICE` y los textos de licencia bajo `upstream/` antes de cualquier uso, especialmente comercial; el bundle no relicencia los pesos.
-- El repositorio no registra descargas ni interacciones (0 descargas, 0 likes en el momento de la consulta), lo que reduce la evidencia comunitaria sobre su correcto funcionamiento.
-- Riesgo de integridad: al tratarse de una copia de terceros, conviene verificar los checksums SHA-256 del manifiesto frente a los repositorios originales antes de confiar en el bundle.
-- El tamaño de 219,8 GB impone requisitos severos de almacenamiento y de ancho de banda para su descarga y despliegue.
-- No se documentan sesgos conocidos, tasas de alucinación, limitaciones de idioma ni restricciones específicas de producción más allá de las licencias de origen.
-- El identificador de fecha de creación (2026-10-28) debe tratarse con cautela; no se dispone de información que lo valide.
+- No es un modelo original: es un espejo de checkpoints; los pesos, tokenizadores y configuraciones pertenecen a sus autores originales.
+- La licencia es `other` y cada componente conserva su licencia de origen (MiniMax H3 y LTX-2.x). Es imprescindible revisar `NOTICE` y los ficheros bajo `upstream/` antes de cualquier uso comercial.
+- No se documentan sesgos conocidos, riesgo de alucinación ni limitaciones de contexto o idioma.
+- El tamaño del repositorio (237,6 GB) y del bundle (219,842 GB) implica requisitos de almacenamiento y transferencia considerables.
+- Al ser un espejo con 0 descargas y 0 likes en el momento de la consulta, no hay evidencia comunitaria de validación del bundle.
+- No se especifican requisitos de hardware ni instrucciones de despliegue, lo que dificulta la puesta en producción sin consultar la documentación upstream.
+- La fecha de creación (2026-10-28) y actualización (2026-11-05) figuran en los metadatos; verificar su coherencia con el estado real del repositorio.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/xxnuo/MiniMax-H3-Sol
-- Licencia MiniMax H3 (referenciada en el bundle): upstream/MiniMaxAI/MiniMax-H3/LICENSE
-- Licencia LTX-2.x (referenciada en el bundle): upstream/Lightricks/LTX-2.5/LICENSE-2_x
-- Manifiesto de repositorios de origen: upstream-model-manifest.json (dentro del repositorio)
-- Aviso legal del bundle: NOTICE (dentro del repositorio)
-- Paper, blog, repositorio de código y demo: no disponibles en la información proporcionada.
+- Repositorio Hugging Face: https://huggingface.co/xxnuo/MiniMax-H3-Sol
+- Manifiesto upstream (referenciado): `upstream-model-manifest.json` dentro del repositorio
+- Licencia MiniMax H3 (referenciada): `upstream/MiniMaxAI/MiniMax-H3/LICENSE`
+- Licencia LTX-2.x (referenciada): `upstream/Lightricks/LTX-2.5/LICENSE-2_x`
+- Aviso legal del bundle (referenciado): `NOTICE`

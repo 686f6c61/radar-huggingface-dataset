@@ -2,88 +2,95 @@
 
 ## Resumen
 
-PLatour-SFT-Qwen3-235B-to-1.7B-MMLU-Redux es un artefacto de investigación publicado por zen-E que materializa el experimento 02 (SFT sobre `mmlu_redux`) del proyecto PLatour, descrito en el paper "On the Opportunities and Challenges of Prefill-to-Autoregressive Cross-Model Transfer" (arXiv:2611.06976). No es un modelo de lenguaje autónomo, sino un conjunto de proyecciones lineales ("bridges") entrenadas entre dos backbones congelados: un emisor grande (Qwen3-235B-A22B-FP8) que codifica el prompt y un receptor pequeño (Qwen3-1.7B) que genera la respuesta de forma independiente.
+PLatour-SFT-Qwen3-235B-to-1.7B-MMLU-Redux es un checkpoint de puentes de proyección lineales (bridge projections) entrenados bajo el paradigma PACT (Prefill-to-Autoregressive Cross-model Transfer), propuesto en el artículo "On the Opportunities and Challenges of Prefill-to-Autoregressive Cross-Model Transfer" (arXiv:2611.06976). No es un modelo completo: el repositorio, de 0,9 GB, contiene únicamente los pesos de las proyecciones que conectan un modelo emisor grande con un modelo receptor pequeño, ambos congelados y descargados por separado.
 
-El método, denominado PACT (Prefill-to-Autoregressive Cross-model Transfer), entrena puentes lineales ligeros inicializados a cero mediante recompensas de tarea, y está diseñado para soportar modelos con atención híbrida. El paper introduce además PACT-Check, un conjunto de controles (Dummy Transfer, Irrelevant Transfer, Self-Communication y Trained Receiver) para verificar si la mejora observada proviene realmente de información útil del emisor o simplemente de la adaptación del receptor.
+El emisor es Qwen/Qwen3-235B-A22B-FP8, que codifica el prompt y suministra representaciones ocultas, mientras que el receptor es Qwen/Qwen3-1.7B, que genera la respuesta de forma autorregresiva. La idea central es que un modelo pequeño pueda beneficiarse de la capacidad representacional de uno grande sin asumir su coste de decodificación. Este checkpoint concreto corresponde al Experimento 02 del proyecto, entrenado con SFT sobre la tarea mmlu_redux.
 
-Es relevante ahora porque propone una vía para aprovechar la capacidad de representación de modelos de 235B en la inferencia de modelos de 1.7B, reduciendo drásticamente el coste de generación. Sin embargo, el propio autor advierte que este repositorio distribuye pesos históricos de inferencia sin puntuaciones de benchmark y que no debe interpretarse como un modelo listo para producción ni cargarse con `AutoModel.from_pretrained`.
+El interés del release es metodológico: el artículo introduce PACT-Check con controles de Dummy Transfer, Irrelevant Transfer, Self-Communication y Trained Receiver para verificar que las mejoras provienen de información útil del emisor y no de la mera adaptación del receptor. El repositorio se distribuye sin puntuaciones de benchmark, por lo que cualquier evaluación de rendimiento debe realizarse de forma independiente antes de usar el checkpoint en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Puentes lineales (bridges) sobre backbones transformer congelados; soporta atención híbrida |
-| Parametros totales | No disponible (el repo pesa 0,9 GB y contiene solo las proyecciones; los backbones se descargan aparte) |
-| Parametros activos | No disponible (el emisor Qwen3-235B-A22B es MoE, pero este repo no contiene sus pesos) |
+| Arquitectura | Transformer con puentes de proyección lineales entre backbone emisor y receptor (PACT); soporta modelos de atención híbrida |
+| Parametros totales | No disponible (el checkpoint contiene solo proyecciones; emisor Qwen3-235B-A22B y receptor Qwen3-1.7B se descargan aparte) |
+| Parametros activos | No disponible (el emisor Qwen3-235B-A22B es MoE; el receptor Qwen3-1.7B es denso) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible |
+| Tipos de cuantizacion | No disponible (el emisor se referencia en FP8; el receptor en precisión estándar) |
 | Idiomas soportados | No disponible |
-| Licencia | Apache-2.0 (los modelos upstream conservan sus propias licencias) |
-| Formato de pesos | safetensors, con cargador personalizado (`custom-loader`); no compatible con `AutoModel.from_pretrained` ni PEFT |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors con cargador personalizado (custom-loader); no cargable con `AutoModel.from_pretrained` |
 
 ## Arquitectura y entrenamiento
 
-El modelo implementa PACT: un emisor grande (Qwen3-235B-A22B-FP8) procesa el prompt y produce representaciones ocultas; un receptor pequeño (Qwen3-1.7B) genera la respuesta de forma autorregresiva e independiente. Entre ambos se entrenan proyecciones lineales ligeras, inicializadas a cero, que transforman las representaciones del emisor en el espacio del receptor. El entrenamiento utiliza recompensas de tarea (task rewards) sobre backbones congelados, y el diseño contempla modelos con atención híbrida.
+El método PACT separa el cómputo en dos fases: un emisor grande procesa el prompt y expone sus representaciones ocultas, y un receptor pequeño genera la respuesta de forma independiente. Entre ambos se entrenan puentes lineales ligeros con proyecciones inicializadas a cero, manteniendo congelados los backbones. El entrenamiento de este checkpoint usa SFT sobre la tarea mmlu_redux, con el mapeo `last_aligned` (a diferencia de la variante PLatour con GRPO, que emplea `uniform_endpoints`). El artículo menciona el uso de recompensas de tarea para entrenar los puentes y soporte para modelos con atención híbrida.
 
-Este repositorio concreto corresponde al experimento 02: SFT sobre el conjunto `mmlu_redux`, usando el dataset `zen-E/PLatour-Qwen3-Data`. El paper complementa el método con PACT-Check, que incluye controles de transferencia ficticia, transferencia irrelevante, autocomunicación y receptor entrenado, para descartar que las mejoras provengan solo de la adaptación del receptor. No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se emplearon RLHF o DPO.
+El paper incorpora además PACT-Check, un conjunto de controles experimentales (Dummy Transfer, Irrelevant Transfer, Self-Communication y Trained Receiver) diseñados para aislar si la mejora observada depende de información útil del emisor o si puede explicarse por la adaptación del receptor. El repositorio distribuye pesos de inferencia históricos sin puntuaciones de benchmark y sin afirmaciones sobre el protocolo de selección de checkpoint ni sobre rendimiento no sesgado en held-out.
 
 ## Capacidades
 
-- Transferencia de representaciones entre un emisor de 235B y un receptor de 1.7B mediante puentes lineales entrenados.
-- Generación de respuestas por parte del receptor de forma independiente tras recibir las representaciones del emisor.
-- Soporte declarado para modelos con atención híbrida en el diseño del método.
-- Evaluación orientada a tareas de conocimiento tipo MMLU (experimento sobre `mmlu_redux`).
-- Controles de validación PACT-Check para verificar la utilidad real de la comunicación entre modelos.
-- No se documentan en la información disponible capacidades de tool calling, agentes, visión, audio ni modo thinking propias de este artefacto.
+- Generación de texto autorregresiva mediante el receptor Qwen3-1.7B, condicionada por las representaciones del emisor Qwen3-235B-A22B.
+- Razonamiento y respuesta a preguntas de conocimiento general, orientado en este checkpoint a la tarea mmlu_redux.
+- Evaluación reproducible mediante la CLI `platour-exps evaluate`, con entradas TEST publicadas y ajustes de muestreo y puntuación del experimento.
+- Ejecución multi-GPU con réplicas independientes y shards disjuntos de preguntas (por defecto, 2 GPU por réplica).
+- Integración con backend vLLM para la generación.
+- No se documentan en la información disponible capacidades de tool calling, agentes, visión, audio ni modo thinking.
 
 ## Casos de uso
 
-- Investigación en transferencia entre modelos: permite reproducir el experimento 02 del paper y analizar si un emisor de 235B mejora a un receptor de 1.7B en tareas de conocimiento, usando el cargador del proyecto y los backbones descargados por separado.
-- Estudio de eficiencia computacional: evaluar si sustituir la generación con un modelo de 235B por un receptor de 1.7B guiado por representaciones del grande reduce coste de inferencia manteniendo calidad en MMLU.
-- Validación metodológica con PACT-Check: emplear los controles (Dummy Transfer, Irrelevant Transfer, Self-Communication, Trained Receiver) para comprobar que las mejoras no son artefactos de adaptación del receptor.
-- Reproducibilidad de investigación: el repo incluye `config.json` con identidad del experimento, dependencias, mapeo de tensores, nombre de fichero y SHA-256, lo que facilita auditorías de resultados.
-- Análisis de atención híbrida: estudiar cómo se comportan los puentes lineales cuando el emisor y el receptor usan esquemas de atención distintos.
-- Base para experimentos derivados: servir como punto de partida para entrenar nuevos puentes sobre otras tareas o pares de modelos, dado que las proyecciones son ligeras (0,9 GB) y los backbones permanecen congelados.
+- Investigación en transferencia entre modelos: reproducir el Experimento 02 con `platour-exps evaluate` para estudiar si un receptor pequeño aprovecha representaciones de un emisor grande en mmlu_redux.
+- Validación de metodología PACT-Check: ejecutar los controles Dummy Transfer, Irrelevant Transfer, Self-Communication y Trained Receiver para descartar que las mejoras provengan solo de la adaptación del receptor.
+- Prototipado de pipelines emisor-receptor: usar `load_session` con `family="qwen3"`, `method="sft"` y `mapping="last_aligned"` para construir demos de generación condicionada por un modelo grande.
+- Evaluación comparativa de puentes: contrastar este checkpoint SFT con la variante GRPO del mismo proyecto usando sus mapeos respectivos (`last_aligned` frente a `uniform_endpoints`).
+- Despliegue con backend vLLM: servir el receptor con las proyecciones cargadas para medir latencia y throughput en configuraciones multi-GPU con réplicas.
+- Reproducibilidad y auditoría: descargar y verificar el checkpoint con `platour-exps download --experiment 2`, que comprueba configuración y hashes de pesos contra el manifiesto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explícitamente que el repositorio distribuye pesos históricos de inferencia sin puntuaciones y que no se hace ninguna afirmación sobre el protocolo de selección de checkpoints ni sobre rendimiento imparcial en held-out.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio indica explícitamente que distribuye pesos de inferencia históricos sin puntuaciones y que se requiere evaluación independiente y revisión de procedencia.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible para el artefacto aislado; depende de los backbones. El emisor Qwen3-235B-A22B-FP8 requiere hardware de clase servidor (múltiples GPU de 80 GB), mientras que el receptor Qwen3-1.7B puede ejecutarse en una GPU consumer.
-- GPU recomendadas: no disponible de forma específica; por los backbones implicados, se presume A100/H100 para el emisor y RTX 4090 o similar para el receptor.
-- Cabe en GPU consumer: el receptor de 1.7B sí; el emisor de 235B no.
-- Opciones de despliegue: cargador propio del proyecto PLatour (`platour-exps download --experiment 2`); no es compatible con vLLM, llama.cpp, Ollama, TGI ni `AutoModel.from_pretrained`.
-- Latencia y throughput estimados: no disponibles.
+- Entorno Linux con CUDA y Python 3.11; instalación mediante `scripts/install_environment.py` sobre un checkout editable del repositorio.
+- VRAM: no disponible de forma agregada; debe cubrir el emisor Qwen3-235B-A22B-FP8, el receptor Qwen3-1.7B y la carga de decodificación de cada réplica.
+- Configuración por defecto del evaluador: 2 GPU por réplica; `--n-gpu 1` es incompatible con ese tamaño de grupo.
+- Con `--n-gpu 8` se ejecutan 4 réplicas independientes de 2 GPU cada una con shards disjuntos.
+- No se garantiza que el conjunto quepa en GPU de consumo; el tamaño del emisor (235B en FP8) exige memoria de centro de datos.
+- Despliegue: backend vLLM para generación; el proyecto aporta su propia API (`load_session`) y CLI (`platour-exps`). No se documenta soporte para llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PLatour-SFT-Qwen3-235B-to-1.7B-MMLU-Redux | Puentes ligeros (0,9 GB) + backbones 235B/1.7B | No disponible | Transferencia prefill-a-autorregresivo (PACT) | Apache-2.0 | Hugging Face, cargador propio |
-| Qwen3-1.7B (base) | 1,7B | No disponible en esta ficha | Transformer denso | Apache-2.0 | Hugging Face, ecosistema estándar |
-| Qwen3-235B-A22B (base) | 235B totales / 22B activos (MoE) | No disponible en esta ficha | MoE | Apache-2.0 | Hugging Face, ecosistema estándar |
-| Destilación clásica de logits | Depende del estudiante | Depende | KD supervisada | Depende | Depende |
-
-La comparación directa con métodos de destilación no está soportada por datos de benchmark en la información disponible.
+| PLatour-SFT-Qwen3-235B-to-1.7B-MMLU-Redux | Solo puentes (0,9 GB); emisor 235B-A22B + receptor 1.7B | No disponible | Transferencia PACT emisor-receptor con SFT | Apache-2.0 | HF + repo GitHub |
+| Qwen/Qwen3-1.7B | 1,7B | No disponible en esta ficha | Transformer denso estándar | No disponible en esta ficha | HF |
+| Qwen/Qwen3-235B-A22B-FP8 | 235B totales, 22B activos (MoE) | No disponible en esta ficha | MoE en FP8 | No disponible en esta ficha | HF |
+| Variante PLatour (GRPO) del mismo proyecto | Solo puentes | No disponible | Transferencia PACT con RL (mapeo `uniform_endpoints`) | Apache-2.0 | Colección HF zen-E/platour |
 
 ## Limitaciones y advertencias
 
-- El repositorio no incluye puntuaciones de benchmark; el autor declara que no se hace ninguna afirmación sobre rendimiento imparcial en held-out.
-- No es cargable con `AutoModel.from_pretrained` ni con PEFT; requiere el cargador específico del proyecto PLatour.
-- Las revisiones exactas de los backbones usadas en la ejecución histórica no han sido verificadas de forma independiente y no deben inferirse de la última revisión del Hub.
-- El export no es estado reanudable de optimizador/RNG, por lo que no sirve para continuar el entrenamiento tal cual.
-- Los backbones upstream (Qwen3-235B-A22B-FP8 y Qwen3-1.7B) conservan sus propias licencias y avisos, que deben respetarse además de la Apache-2.0 del export.
-- El autor exige evaluación independiente y revisión de procedencia antes de usar estos artefactos para respaldar nuevas afirmaciones comparativas.
-- Riesgo de alucinación, sesgos e idiomas soportados: no disponibles en la información proporcionada.
-- La evaluación de programación requiere además un juez oficial aislado, según la model card.
+- No es un modelo autónomo: el checkpoint contiene solo proyecciones y no puede cargarse con `AutoModel.from_pretrained`; requiere descargar emisor y receptor por separado.
+- El repositorio no incluye puntuaciones de benchmark ni garantías sobre rendimiento en held-out; se exige evaluación independiente y revisión de procedencia.
+- El ejemplo de generación de la model card es una demo de prompt personalizado, no el protocolo de benchmark publicado; el límite de 256 tokens es solo ilustrativo.
+- La generación devuelve texto y no ejecuta código generado.
+- No se documentan sesgos, cobertura idiomática ni riesgos de alucinación específicos en la información disponible.
+- El mapeo `last_aligned` es específico de este checkpoint SFT; usar `uniform_endpoints` (variante GRPO) produciría resultados incorrectos.
+- La licencia Apache-2.0 permite uso comercial, pero la procedencia y validez de los pesos deben auditarse antes de producción.
+- El tamaño del emisor (235B en FP8) limita el despliegue a hardware de centro de datos; no se garantiza encaje en GPU de consumo.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/zen-E/PLatour-SFT-Qwen3-235B-to-1.7B-MMLU-Redux
-- Paper (arXiv): https://arxiv.org/abs/2611.06976
-- Paper (HTML): https://arxiv.org/html/2611.06976
+- Paper: https://arxiv.org/html/2611.06976
+- Repositorio de código: https://github.com/zhenyi4/platour
+- Guía de agente/API: https://github.com/zhenyi4/platour/blob/main/AGENT.md
+- Guía de instalación: https://github.com/zhenyi4/platour#getting-started
+- Guía de entorno: https://github.com/zhenyi4/platour/blob/main/docs/ENVIRONMENT.md
+- Protocolos de tarea: https://github.com/zhenyi4/platour/blob/main/qwen3/README.md
+- Índice de checkpoints: https://github.com/zhenyi4/platour/blob/main/models/README.md#downloadable-checkpoints
+- Valores por defecto de GPU para evaluación: https://github.com/zhenyi4/platour#gpu-defaults-for-standalone-evaluation
+- Colección de modelos: https://huggingface.co/collections/zen-E/platour
 - Dataset: https://huggingface.co/datasets/zen-E/PLatour-Qwen3-Data
 - Modelo emisor: https://huggingface.co/Qwen/Qwen3-235B-A22B-FP8
 - Modelo receptor: https://huggingface.co/Qwen/Qwen3-1.7B

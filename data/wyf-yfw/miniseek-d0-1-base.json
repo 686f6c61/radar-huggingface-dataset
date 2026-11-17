@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 331,
+  "downloads_30d": 334,
   "trending_score": 0,
   "parameters": 28451328,
   "parameters_human": "28.5M",
@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Interflora : livraison de fleurs à domicile en 4h",
-      "url": "https://www.interflora.fr/",
-      "snippet": "Oct 9, 2026 · Leader de la livraison de fleurs depuis 80 ans, Interflora vous propose sur son site de vente en ligne la garantie d'un …"
-    },
-    {
-      "title": "Livraison de fleurs à domicile en France - 123fleurs",
-      "url": "https://www.123fleurs.com/",
-      "snippet": "Nos artisans fleuristes réalisent chaque livraison de fleurs à domicile ou sur le lieu de votre choix localement avec des fleurs fraîches …"
-    },
-    {
-      "title": "Florajet : Livraison fleurs à domicile par un artisan fleuriste en 3h",
-      "url": "https://www.florajet.com/",
-      "snippet": "Livraison de fleurs en 3h partout en France, même le dimanche. 4 500 artisans fleuristes créent et livrent vos bouquets en mains …"
-    },
-    {
-      "title": "Interflora – leader de la livraison de fleurs en ligne",
-      "url": "https://www.interflora.fr/c/livraison-fleurs-express",
-      "snippet": "INTERFLORA. Faire livrer un superbe bouquet de fleurs rapidement par un des artisans fleuristes INTERFLORA. Bouquet dés …"
-    },
-    {
-      "title": "Livraison fleurs & plantes en 4h | Fleuriste Monceau Fleurs",
-      "url": "https://www.monceaufleurs.com/",
-      "snippet": "Profitez de la livraison de fleurs et plantes en France 7j/7 Envoi de fleurs fraîches en 2h Retrait en boutique Bouquets à partir de …"
-    }
-  ]
+  "sources": []
 }

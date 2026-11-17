@@ -43,8 +43,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "webbrain-one/safesocial-trigger-classifier",
+  "renamed_at": "2026-11-17T10:36:40.704Z",
   "benchmarks": [
     {
       "task": null,

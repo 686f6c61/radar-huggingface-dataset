@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "hdae/karume-gemma4",
+  "renamed_at": "2026-11-17T06:48:37.991Z",
   "benchmarks": [],
   "sources": [
     {

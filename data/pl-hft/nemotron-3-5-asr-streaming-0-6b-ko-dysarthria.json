@@ -1,0 +1,111 @@
+{
+  "schema": 2,
+  "id": "PL-HFT/nemotron-3.5-asr-streaming-0.6b-ko-dysarthria",
+  "slug": "pl-hft-nemotron-3-5-asr-streaming-0-6b-ko-dysarthria",
+  "author": "PL-HFT",
+  "url": "https://huggingface.co/PL-HFT/nemotron-3.5-asr-streaming-0.6b-ko-dysarthria",
+  "created_at": "2026-11-17T11:27:01.000Z",
+  "updated_at": "2026-11-17T11:27:21.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "nemo",
+    "safetensors",
+    "nemotron3_5_asr",
+    "feature-extraction",
+    "automatic-speech-recognition",
+    "asr",
+    "speech-recognition",
+    "korean",
+    "dysarthria",
+    "merged",
+    "transformers",
+    "fastconformer",
+    "rnnt",
+    "streaming-asr",
+    "ko",
+    "base_model:PL-HFT/nemotron-3.5-asr-streaming-0.6b-ko-dysarthria-lora",
+    "base_model:merge:PL-HFT/nemotron-3.5-asr-streaming-0.6b-ko-dysarthria-lora",
+    "base_model:nvidia/nemotron-3.5-asr-streaming-0.6b",
+    "base_model:merge:nvidia/nemotron-3.5-asr-streaming-0.6b",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 637997088,
+  "parameters_human": "638.0M",
+  "storage_bytes": 5105161184,
+  "storage_human": "5.1 GB",
+  "context_length": null,
+  "base_model": "nvidia/nemotron-3.5-asr-streaming-0.6b, PL-HFT/nemotron-3.5-asr-streaming-0.6b-ko-dysarthria-lora",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Korean Combined Dysarthria + Typical Speech Test (AI-Hub 013 + 109)",
+      "metric": "CER (%) - Combined Test (N=38,599)",
+      "value": 6.82
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Korean Combined Dysarthria + Typical Speech Test (AI-Hub 013 + 109)",
+      "metric": "WER (%) - Combined Test (N=38,599)",
+      "value": 23.75
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Korean Dysarthria Speech Test (AI-Hub 013)",
+      "metric": "CER (%) - Dysarthria Test (N=15,495)",
+      "value": 7.22
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Korean Dysarthria Speech Test (AI-Hub 013)",
+      "metric": "WER (%) - Dysarthria Test (N=15,495)",
+      "value": 24.25
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Korean Typical Speech Test (AI-Hub 109)",
+      "metric": "CER (%) - Typical Test (N=23,104)",
+      "value": 6.57
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Korean Typical Speech Test (AI-Hub 109)",
+      "metric": "WER (%) - Typical Test (N=23,104)",
+      "value": 23.42
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "External Korean Lecture Speech Test (AI-Hub 71627)",
+      "metric": "CER (%) - External Korean Test (N=10,000)",
+      "value": 14.08
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "External Korean Lecture Speech Test (AI-Hub 71627)",
+      "metric": "WER (%) - External Korean Test (N=10,000)",
+      "value": 34.97
+    }
+  ],
+  "sources": []
+}

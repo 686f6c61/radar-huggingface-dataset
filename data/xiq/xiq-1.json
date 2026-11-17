@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 62,
+  "downloads_30d": 57,
   "trending_score": 0,
   "parameters": 2697198592,
   "parameters_human": "2.70B",
@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "发现 - 知乎",
-      "url": "https://www.zhihu.com/explore",
-      "snippet": "野草君：最近CZ的书《币安人生》发表了,里面有句话我觉得比较契合这个问题. 风险的真谛是风险因人而异. 事件本身的风险概率 ️这 …"
-    },
-    {
-      "title": "xiQ’s Personality-driven Sales and Marketing Platform",
-      "url": "https://xiqinc.com/",
-      "snippet": "Sell the way your buyers think xiQ’s Personality-driven Sales and Marketing Platform™ combines neuroscience, psychology, and AI to understand the Buyer’s mindset. xiQ individualizes sales and marketing for every buyer at every stage of the buying process."
-    },
-    {
-      "title": "知乎 - 有问题，就会有答案",
-      "url": "https://www.zhihu.com/",
-      "snippet": "知乎专栏圆桌发现移动应用联系我们来知乎工作注册机构号Investor Relations"
-    },
-    {
-      "title": "xiQ",
-      "url": "http://www.xiq.io/",
-      "snippet": "AI FOR B2B SALES & MARKETING"
-    },
-    {
-      "title": "游戏里面空白昵称(ㅤ)复制_百度知道",
-      "url": "https://zhidao.baidu.com/question/1844777515218626220.html",
-      "snippet": "Nov 27, 2025 · 游戏里面空白昵称(&#12644;)复制游戏空白昵称可通过复制特定Unicode字符或处理代码实现，具体方法如下：一、直 …"
-    }
-  ]
+  "sources": []
 }

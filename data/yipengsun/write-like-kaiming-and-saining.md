@@ -2,51 +2,52 @@
 
 ## Resumen
 
-`yipengsun/write-like-kaiming-and-saining` es un adaptador LoRA de transferencia de estilo publicado en Hugging Face por el usuario yipengsun. Su funcion es reescribir texto para que imite el estilo de escritura academica de dos autores identificados en el nombre del modelo ("Kaiming" y "Saining"), presumiblemente investigadores del ambito de la vision por computador y el aprendizaje profundo. El adaptador se monta sobre el modelo base `google/gemma-4-31B`, un transformer denso de 31 mil millones de parametros de la familia Gemma 4 de Google.
+`yipengsun/write-like-kaiming-and-saining` es un adaptador LoRA de transferencia de estilo entrenado sobre el modelo base `google/gemma-4-31B`. Su objetivo es reescribir textos academicos en ingles para que imiten el estilo de escritura de dos autores referenciados en el nombre del modelo (Kaiming y Sainain). Se publica bajo licencia Apache 2.0 y esta orientado exclusivamente al ingles.
 
-El modelo resuelve un problema acotado pero recurrente: la reescritura estilistica de textos tecnicos y academicos en ingles, orientada a que el resultado se parezca a la prosa de investigadores de referencia. No es un modelo de proposito general ni un asistente conversacional, sino un adaptador especializado en una tarea de estilo. Su relevancia practica es limitada y muy nicho: sirve como ejemplo de ajuste fino con LoRA sobre un modelo grande para una tarea de reescritura, y como herramienta para quien quiera experimentar con transferencia de estilo academico.
+El repositorio tiene un tamano de 9,8 GB, lo que sugiere que incluye los pesos del adaptador junto con artefactos adicionales (posiblemente los pesos completos del modelo base o checkpoints intermedios), aunque esta informacion no se detalla en la ficha de Hugging Face. El modelo esta marcado como de acceso restringido (gated): es necesario aceptar las condiciones en la plataforma antes de descargarlo.
 
-La informacion publica disponible es escasa: el repositorio no incluye cifras de entrenamiento, datos de benchmarks ni detalles sobre el dataset utilizado. El acceso esta restringido (gated) y el numero de descargas es cero en el momento de la consulta, lo que indica que se trata de un experimento personal reciente y poco validado por la comunidad.
+Se trata de un proyecto con nula traccion hasta la fecha (0 descargas, 1 like) y sin documentacion tecnica publicada sobre el dataset de entrenamiento, hiperparametros o evaluacion. Es relevante unicamente como ejemplo de adaptacion de estilo sobre un modelo de gran tamano y para experimentacion con LoRA aplicado a generacion de texto academico.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (adaptador de bajo rango) sobre transformer denso `google/gemma-4-31B` |
-| Parametros totales | no disponible (el adaptador LoRA es un subconjunto; el modelo base tiene 31B) |
+| Arquitectura | LoRA (adaptador de bajo rango) sobre transformer decoder-only (Gemma) |
+| Parametros totales | no disponible (modelo base: 31B, segun nomenclatura) |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible (heredada del modelo base, sin especificar) |
-| Tipos de cuantizacion | no disponible (el adaptador se distribuye en el formato del repo; el base admite las cuantizaciones de Gemma) |
-| Idiomas soportados | ingles (`en`) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | en (ingles) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (repo de 7.8 GB; pesos del adaptador LoRA, formato no detallado) |
+| Formato de pesos | no disponible (repo de 9,8 GB; presumiblemente safetensors, sin confirmar) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA (Low-Rank Adaptation) acoplado al modelo base `google/gemma-4-31B`. No se especifica el rango, el alpha ni las capas objetivo del adaptador. El modelo base es un transformer denso de 31 mil millones de parametros de la familia Gemma 4, pero no se dispone de detalles sobre su arquitectura interna (numero de capas, atencion, etc.) en la informacion proporcionada.
+El modelo es un adaptador LoRA (Low-Rank Adaptation) acoplado a `google/gemma-4-31B`, un transformer decoder-only de la familia Gemma. La tecnica LoRA congela los pesos del modelo base e introduce matrices de bajo rango entrenables en determinadas capas, lo que permite especializar el comportamiento sin reentrenar el modelo completo.
 
-No hay datos publicos sobre el dataset de entrenamiento: no se indica el numero de ejemplos, la procedencia de los textos de estilo objetivo, ni si se aplicaron tecnicas de RLHF, DPO o simplemente ajuste supervisado. Tampoco se documenta el proceso de seleccion de los autores de referencia ni la metodologia de evaluacion del estilo. La unica innovacion identificable es el uso de LoRA para una tarea de transferencia de estilo sobre un modelo de gran tamano, lo que permite un ajuste relativamente economico en comparacion con el fine-tuning completo.
+No se dispone de informacion publica sobre el dataset de entrenamiento, el numero de tokens utilizados, la composicion de las muestras, los hiperparametros del LoRA (rango, alpha, modulos objetivo) ni si se aplicaron tecnicas de alineacion como RLHF o DPO. Tampoco se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, etc.). La unica senal sobre el proposito viene de los tags: `style-transfer`, `academic-writing` y `rewriting`.
 
 ## Capacidades
 
-- Generacion y reescritura de texto en ingles con un estilo academico especifico.
-- Transferencia de estilo hacia la prosa de los autores de referencia ("Kaiming" y "Saining").
-- Reescritura de parrafos tecnicos y academicos manteniendo el contenido semantico.
-- Capacidades heredadas del modelo base Gemma 4 31B (generacion de texto general), aunque el adaptador esta orientado a la tarea de estilo.
-- Soporte de tool calling / function calling: no disponible (no documentado para este adaptador).
-- Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
-- Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma.
-- Capacidades especiales (thinking mode, vision, audio): no disponible.
+- Generacion de texto en ingles con estilo academico transferido.
+- Reescritura de parrafos y documentos para aproximar el registro de los autores de referencia.
+- Transferencia de estilo a nivel de frase y parrafo (segun el tag `style-transfer`).
+- Integracion en pipelines de `text-generation` de Hugging Face.
+- Capacidades heredadas del modelo base Gemma (razonamiento, codigo, matematicas): no verificadas para este adaptador.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: limitadas al ingles segun la ficha.
+- Capacidades especiales (vision, audio, thinking mode): no disponible.
 
 ## Casos de uso
 
-- Reescritura de abstracts y secciones de papers: el adaptador puede reformular borradores en ingles para acercar el registro y la sintaxis al estilo de investigadores de referencia, util para autores no nativos que buscan una prosa academica mas natural.
-- Armonizacion de estilo en manuscritos colaborativos: en un articulo con varios autores, permite homogeneizar secciones escritas por personas distintas hacia un estilo comun.
-- Generacion de ejemplos de prosa academica para formacion: sirve como herramienta didactica para mostrar como se estructura un parrafo tecnico en el estilo de un autor concreto.
-- Prototipado de pipelines de transferencia de estilo: util como componente en un sistema mayor de edicion asistida de textos cientificos, combinado con correctores y revisores.
-- Experimentacion en investigacion sobre estilo: permite estudiar hasta que punto un LoRA sobre un modelo grande captura rasgos estilisticos de autores especificos.
-- Preparacion de material divulgativo tecnico: reescritura de notas o borradores internos hacia un tono academico antes de su publicacion.
-- Evaluacion comparativa de adaptadores de estilo: sirve como referencia en estudios que comparen tecnicas de transferencia de estilo con LoRA.
+- Reescritura de abstracts y secciones de papers: el adaptador puede reformular borradores en ingles para alinearlos con el estilo de los autores de referencia, util en fases de pulido previas a envio.
+- Homogeneizacion de estilo en manuscritos multi-autor: aplicar el adaptador a secciones escritas por distintos colaboradores para reducir variabilidad estilistica antes de la revision final.
+- Generacion de ejemplos de escritura academica: usar el modelo para producir parrafos de muestra con un registro concreto, utiles en docencia o en materiales de formacion de redaccion cientifica.
+- Preprocesado en pipelines editoriales: integracion como paso de reescritura en flujos de revision de revistas o plataformas de preprints, siempre con supervision humana.
+- Experimentacion en investigacion sobre transferencia de estilo: servir como punto de partida para estudiar como LoRA modifica el registro estilistico en modelos de 31B.
+- Generacion de variantes de un mismo texto: producir varias reescrituras de un fragmento para que el autor seleccione la que mejor encaje, aprovechando la naturaleza generativa del modelo base.
+- Prototipado de asistentes de redaccion especializados: construir demos internas de un asistente que reescriba en un estilo academico concreto, con validacion manual obligatoria.
 
 ## Benchmarks y rendimiento
 
@@ -54,35 +55,36 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma especifica; depende del modelo base `google/gemma-4-31B`. Un modelo denso de 31B requiere aproximadamente 62 GB en FP16, unos 31 GB en cuantizacion de 8 bits y unos 16-18 GB en 4 bits (estimaciones orientativas, no confirmadas para este modelo).
-- GPU recomendadas: para FP16, A100 80GB o H100; para cuantizaciones de 8 y 4 bits, A100 40GB o RTX 4090 24GB (sujeto a verificacion).
-- Cabe en GPU de consumo: probablemente en RTX 4090 (24 GB) con cuantizacion de 4 bits, aunque no esta documentado.
-- Opciones de despliegue: no disponible para el adaptador; el modelo base Gemma admite habitualmente vLLM, llama.cpp, Ollama y TGI, pero no se confirma compatibilidad con este LoRA.
+- VRAM estimada para inferencia: no disponible para el adaptador; el modelo base de 31B requiere, en FP16, aproximadamente 62 GB de VRAM, y en cuantizaciones de 8 bits o 4 bits, del orden de 31 GB o 16-18 GB respectivamente (estimaciones estandar para modelos de ese tamano, no confirmadas para esta publicacion).
+- GPU recomendadas: A100 80 GB o H100 para FP16; A100 40 GB, L40S o RTX 6000 Ada para cuantizacion 8 bits; RTX 4090 (24 GB) posiblemente viable en 4 bits, sin confirmar.
+- Cabe en GPU de consumo: probablemente en RTX 4090 o RTX 3090 con cuantizacion agresiva, sujeto a verificacion.
+- Opciones de despliegue: vLLM, TGI, llama.cpp u Ollama para el modelo base cuantizado; la carga del adaptador LoRA depende del framework (PEFT, vLLM con soporte LoRA). No documentado por el autor.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yipengsun/write-like-kaiming-and-saining` | LoRA sobre 31B | no disponible | Apache 2.0 | Gated, 0 descargas | Adaptador de estilo academico |
-| `google/gemma-4-31B` (base) | 31B | no disponible | no disponible en la informacion | Publico (segun el autor) | Modelo general sin especializacion de estilo |
-| Adaptadores LoRA de estilo genericos | variable | variable | variable | variable | No se dispone de un comparable directo documentado |
+| yipengsun/write-like-kaiming-and-saining | 31B (base) + LoRA | no disponible | Transferencia de estilo academico (EN) | Apache 2.0 | Gated, 0 descargas |
+| Adaptadores LoRA de estilo genericos en HF | Variable | Variable | Estilo literario o editorial | Variable | Publicos en su mayoria |
+| Modelos base Gemma 4 31B (sin adaptador) | 31B | Segun ficha oficial de Google | Proposito general | Gemma Terms | Publicos con aceptacion de terminos |
 
-No se dispone de informacion suficiente para una comparativa cuantitativa con alternativas de la misma categoria.
+No se dispone de datos de rendimiento para establecer una comparacion cuantitativa con alternativas.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que limita su uso inmediato.
-- Documentacion muy escasa: no hay datos de entrenamiento, evaluacion ni metodologia, lo que impide validar la calidad del estilo generado.
-- Solo ingles: no soporta castellano ni otros idiomas.
-- Riesgo de alucinacion y de alteracion semantica: al reescribir, el adaptador puede introducir cambios de contenido no deseados; requiere revision humana.
-- Sesgo de estilo: el modelo imita a autores concretos, lo que puede producir una prosa poco original o inadecuada para contextos que no sean academicos.
-- Sin benchmarks publicados: no hay evidencia objetiva de rendimiento ni de fidelidad estilistica.
-- Licencia Apache 2.0 del adaptador, pero el uso comercial depende tambien de las condiciones del modelo base `google/gemma-4-31B`, que no se detallan en la informacion.
-- Comunidad practicamente nula (0 descargas, 1 like): no hay retroalimentacion ni casos de uso verificados.
-- Sin garantias de compatibilidad con frameworks de inferencia para el adaptador.
+- Sin documentacion tecnica: no se detallan dataset, hiperparametros ni evaluacion, lo que impide reproducir o auditar el entrenamiento.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de la descarga.
+- Solo ingles: no soporta castellano ni otros idiomas segun la ficha.
+- Riesgo de alucinacion: inherente al modelo base; el adaptador no corrige este comportamiento y puede amplificarlo al forzar un estilo.
+- Riesgo de sobreajuste estilistico: la reescritura puede degradar la precision tecnica o alterar el contenido original en favor del estilo.
+- Sesgos: no evaluados; se heredan los del modelo base Gemma y los del corpus de los autores de referencia.
+- Licencia Apache 2.0 en el adaptador, pero el uso del modelo base Gemma esta sujeto a los terminos de Google, que pueden imponer restricciones adicionales al uso comercial.
+- Sin senales de uso en produccion: 0 descargas y 1 like; no hay evidencia de validacion por terceros.
+- Tamano del repo (9,8 GB) superior al esperado para un LoRA tipico: conviene verificar el contenido antes de desplegarlo.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/yipengsun/write-like-kaiming-and-saining
-- Modelo base: https://huggingface.co/google/gemma-4-31B (referencia indicada en las etiquetas; no verificado)
+- Modelo base: https://huggingface.co/google/gemma-4-31B
+- Perfil del autor: https://huggingface.co/yipengsun

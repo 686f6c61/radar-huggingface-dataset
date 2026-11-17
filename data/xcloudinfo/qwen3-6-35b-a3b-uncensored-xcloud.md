@@ -2,102 +2,87 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B-Uncensored-xCloud es un derivado del modelo base Qwen/Qwen3.6-35B-A3B, publicado por xCloudinfo (云硕科技). Se trata de una version "abliterated" y "uncensored": en lugar de reentrenar el modelo, el autor ha aplicado una ablacion direccional (single-direction ablation) sobre los pesos del modelo original para reducir la tasa de rechazos excesivos ante peticiones que el modelo base declinaria. El resultado se distribuye en formato safetensors y conserva la licencia Apache 2.0 del modelo base.
+Qwen3.6-35B-A3B-Uncensored-xCloud es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) publicado por xCloudinfo (云碩科技), un derivado del modelo base Qwen/Qwen3.6-35B-A3B. Se trata de una fusión de pesos en formato safetensors a la que se ha aplicado una técnica de "abliteration" (ablación de dirección única) para reducir el exceso de rechazos en las respuestas, sin reentrenamiento adicional. El modelo conserva la arquitectura del original: 35.107.181.936 parámetros totales con aproximadamente 3.000 millones activos por token, según indica el autor en la model card.
 
-Arquitectonicamente hereda la configuracion del Qwen3.6-35B-A3B: una mezcla de expertos (MoE) con 35.107.181.936 parametros totales y aproximadamente 3.000 millones de parametros activos por token (de ahi la denominacion A3B). La model card menciona explicitamente modulos de atencion lineal de tipo SSM (`out_proj`), lo que apunta a una arquitectura hibrida, ademas de los expertos MoE (`down_proj`) y expertos compartidos. El repositorio ocupa 140,4 GB y solo documenta los idiomas chino e ingles.
+El problema que aborda es el de la sobre-negativa (over-refusal): modelos alineados con frecuencia rechazan peticiones legítimas por precaución excesiva. La abliteración busca mitigar ese comportamiento manteniendo las capacidades generales. El autor afirma que las capacidades en chino tradicional y el rendimiento general no se degradan tras la modificación.
 
-Su relevancia es acotada y muy especifica: es una pieza pensada para investigacion en seguridad, red teaming, estudios de moderacion de contenido y analisis del fenomeno de los rechazos excesivos, no como modelo de proposito general. Con 26 descargas y 0 likes en el momento de redactar esta ficha, se trata de un artefacto con validacion comunitaria practicamente nula, y el propio autor recomienda usar la version GGUF para inferencia en lugar de estos pesos.
+Es relevante para equipos que necesitan un modelo de gran tamaño con activación dispersa para despliegue en infraestructura propia, y que requieran menos restricciones conversacionales en contextos de investigación de seguridad, red-teaming o moderación de contenido. La licencia es Apache-2.0, heredada del modelo base. El autor recomienda explícitamente usar la versión GGUF para inferencia y señala que el modelo está pensado para uso legal exclusivamente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (mezcla de expertos) sobre transformer con atencion lineal tipo SSM; etiqueta de arquitectura `qwen3_5_moe`, heredada del modelo base |
-| Parametros totales | 35.107.181.936 (≈35,1 B) |
-| Parametros activos | ≈3 B por token (designacion A3B) |
+| Arquitectura | Transformer MoE con atención lineal SSM (tag `qwen3_5_moe`) |
+| Parametros totales | 35.107.181.936 |
+| Parametros activos | ~3B (indicado como "35B total / 3B active" en la model card) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Este repositorio solo contiene safetensors; el autor remite a una version GGUF separada para inferencia, cuyos niveles concretos no se detallan en la informacion disponible |
-| Idiomas soportados | chino (zh) e ingles (en) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (tamano del repositorio: 140,4 GB; la precision exacta de los pesos no se especifica) |
+| Tipos de cuantizacion | no disponible en esta ficha; el autor remite a la versión GGUF para inferencia cuantizada |
+| Idiomas soportados | zh, en |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (versión GGUF disponible en repo separado) |
 
 ## Arquitectura y entrenamiento
 
-El modelo no ha sido reentrenado. El autor aplica una ablacion de una unica direccion siguiendo el metodo de Arditi et al. (2024): se identifica una direccion en el espacio de activaciones asociada al comportamiento de rechazo y se proyecta fuera de los pesos, en lugar de ajustar el modelo con datos. La direccion se calcula evitando los segmentos de razonamiento (thinking) del modelo base, con el objetivo de no degradar la capacidad de razonamiento.
+El modelo es un derivado del Qwen3.6-35B-A3B, un transformer con capas de mezcla de expertos (MoE) y componentes de atención lineal de tipo SSM, según se deduce del tag `qwen3_5_moe` y de la mención en la model card a los módulos `out_proj` de la atención lineal SSM. La modificación aplicada por xCloudinfo no implica reentrenamiento: se trata de una ablación de dirección única siguiendo el método de Arditi et al. (2024), que identifica una dirección en el espacio de activaciones asociada al comportamiento de rechazo y la elimina de los pesos.
 
-La intervencion cubre 121 matrices: `out_proj` de la atencion lineal tipo SSM, `down_proj` de los expertos MoE y de los expertos compartidos, limitandose a las que escriben en las residuales de la torre de texto. Al ser una ablacion dirigida, no hay RLHF, DPO ni ajuste supervisado adicional, y la calibracion de los pesos fuera de las direcciones eliminadas permanece como en el modelo base. El autor declara que en pruebas con 10 preguntas reservadas de dano grave, cuantizadas y ejecutadas con `llama-server`, se obtuvo una tasa de 0/10 rechazos, y que el chino tradicional y las capacidades generales no se degradaron.
+La intervención cubre 121 matrices, incluyendo los `out_proj` de la atención lineal SSM, los `down_proj` de los expertos MoE y los expertos compartidos que escriben en el residual de la torre de texto. Al derivar la dirección de ablación se evitó el segmento de "thinking" del razonamiento, presumiblemente para no degradar la capacidad de razonamiento del modelo. El autor reporta que, en una prueba held-out de 10 problemas de daño severo, tras cuantización y mediante llama-server, el modelo respondió a 0 de 10 (es decir, mantiene el rechazo en esos casos), y que las capacidades en chino tradicional y generales no se degradaron. No se dispone de información sobre el volumen de tokens de entrenamiento del modelo base ni sobre la composición del dataset.
 
 ## Capacidades
 
-- Generacion de texto y dialogo conversacional de proposito general, heredadas del modelo base Qwen3.6-35B-A3B.
-- Modo de razonamiento con segmento de "thinking" explicito, segun se deduce de la propia metodologia del autor, que evita esa seccion al calcular la direccion de ablacion.
-- Reduccion medida de rechazos excesivos: el modelo deberia responder a peticiones que el modelo base declinaria por defecto.
-- Soporte multilingue limitado a chino e ingles; no se documentan otras lenguas.
-- Eficiencia de inferencia propia de una arquitectura MoE: ~3 B parametros activos por token frente a 35,1 B totales.
-- Capacidad de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no documentado en la informacion disponible.
-- Vision, audio u otras modalidades: no disponibles; el pipeline declarado es exclusivamente `text-generation`.
+- Generación de texto conversacional multi-turno en chino y en inglés.
+- Razonamiento con modo "thinking" (el autor menciona explícitamente el segmento de razonamiento al derivar la dirección de ablación, lo que implica que el modelo base lo soporta).
+- Mezcla de expertos con activación dispersa (~3B parámetros activos de 35B totales), lo que reduce el coste computacional por token frente a un modelo denso del mismo tamaño.
+- Capacidades multilingües limitadas a zh y en según los metadatos del modelo.
+- Reducción del exceso de rechazos en peticiones que el modelo base tendería a declinar.
+- No se documenta soporte de tool calling, function calling, agentes, visión ni audio en la información disponible.
 
 ## Casos de uso
 
-- Red teaming de sistemas de IA: el modelo sirve como generador de peticiones y respuestas adversarias para probar los filtros de seguridad de otros sistemas, aprovechando que su tasa de rechazo medida es deliberadamente baja.
-- Investigacion en moderacion de contenido: permite estudiar que tipos de texto genera un modelo sin las direcciones de rechazo, y alimentar clasificadores de moderacion con ejemplos dificiles de obtener de modelos alineados de forma estandar.
-- Investigacion academica sobre alineacion y abliteration: es un caso de estudio reproducible del metodo de Arditi et al. sobre una arquitectura MoE hibrida con atencion lineal, util para medir el impacto de la ablacion en calibracion, coherencia y capacidades generales.
-- Analisis comparativo frente al modelo base: al compartir parametros, tokenizador y licencia con Qwen/Qwen3.6-35B-A3B, permite evaluaciones A/B sobre la unica variable modificada, el comportamiento de rechazo.
-- Plataformas conversacionales en chino e ingles con requisitos de minima friccion: asistentes de escritura creativa o de rol donde los rechazos por defecto resultan disfuncionales, siempre que el operador aplique su propia capa de moderacion.
-- Fine-tuning posterior como punto de partida: al ser un derivado sin reentrenamiento y con licencia Apache 2.0, puede servir de base para ajustes especificos donde se quiera partir de un modelo con menos sesgo de rechazo.
-- Despliegue local mediante GGUF: el propio autor recomienda la version GGUF para inferencia, lo que permite ejecutar el modelo en hardware de una sola maquina con cuantizacion agresiva, dado el tamano del repositorio safetensors.
+- Investigación de seguridad y red-teaming: el modelo puede emplearse para generar y evaluar prompts adversarios y estudiar comportamientos de rechazo, aprovechando su menor tasa de negativas frente al modelo base. Es adecuado porque la abliteración está orientada precisamente a este tipo de análisis.
+- Moderación de contenido y análisis de políticas: equipos que necesitan examinar material sensible para clasificarlo pueden usar el modelo para describir y categorizar contenido sin que rechace sistemáticamente las peticiones, con la supervisión humana correspondiente.
+- Despliegue en infraestructura propia (on-premise): xCloudinfo está orientada a soluciones privadas; el modelo puede alojarse en servidores propios para aplicaciones que requieran confidencialidad de datos, usando la versión GGUF con llama.cpp o llama-server.
+- Asistentes conversacionales en chino e inglés: con 35B totales y ~3B activos, el modelo ofrece buena calidad conversacional con un coste de inferencia contenido, adecuado para atención al cliente o asistentes internos en entornos donde no se desea censura excesiva en temas legítimos.
+- Generación de contenido creativo y narrativo: la reducción de rechazos permite trabajar con tramas, personajes o diálogos que el modelo base podría declinar, útil en escritura de ficción y guiones.
+- Experimentación académica sobre alineación y abliteración: investigadores pueden comparar este modelo con el Qwen3.6-35B-A3B original para medir el efecto de la ablación en capacidades, sesgos y tasas de rechazo, dado que el autor documenta el método con transparencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor unicamente reporta una prueba interna de rechazo sobre 10 preguntas reservadas de contenido gravemente danino, evaluadas en version cuantizada con `llama-server`:
-
-| Prueba | Metrica | Resultado reportado | Fuente |
-|---|---|---|---|
-| Conjunto reservado de 10 preguntas de dano grave | Tasa de rechazo | 0/10 | Model card del autor |
-| Chino tradicional y capacidades generales | Degradacion percibida | Sin degradacion declarada | Model card del autor |
-
-Estos datos son autodeclarados, no han sido replicados de forma independiente y la muestra de 10 elementos no permite extraer conclusiones estadisticas. No hay datos de MMLU, GSM8K, HumanEval ni de evaluaciones de seguridad estandarizadas.
+No se han publicado resultados de benchmarks en la informacion disponible. El único dato de evaluación reportado por el autor es una prueba held-out de 10 problemas de daño severo, con resultado 0/10 tras cuantización mediante llama-server, que indica que el modelo sigue rechazando ese tipo de peticiones. No se aportan cifras de MMLU, HumanEval, GSM8K ni comparaciones cuantitativas con otros modelos.
 
 ## Requisitos de hardware
 
-- Pesos en safetensors: el repositorio ocupa 140,4 GB, lo que exige almacenamiento y memoria muy por encima de una GPU de consumo para cargar el modelo completo tal cual.
-- Inferencia en precision nativa: por encima de 70 GB de pesos en bf16/fp16 (estimacion a partir de 35,1 B parametros), por lo que se requiere una GPU de 80 GB (H100, A100 80 GB) o varias GPUs. En el caso improbable de que los safetensors esten en 32 bits, la estimacion se situa en torno a 140 GB y obligaria a 2x H100 80 GB como minimo.
-- Cuantizacion en 8 bits: aproximadamente 35 GB de pesos (estimacion), viable en A100 40 GB, A6000 48 GB o 2x RTX 4090.
-- Cuantizacion de 4 bits (Q4_K_M y similares via GGUF): aproximadamente 20-22 GB (estimacion), lo que en principio cabe en una RTX 4090 o RTX 3090 de 24 GB, con poca holgura para cache KV segun la longitud de contexto.
-- GPU recomendadas: H100 80 GB o A100 80 GB para precision completa; A6000 48 GB o 2x RTX 4090 para 8 bits; RTX 4090/3090 para cuantizaciones de 4 bits.
-- Opciones de despliegue: `llama.cpp` / `llama-server` es la ruta confirmada por el autor a traves de la version GGUF. No se confirma soporte en vLLM, TGI o SGLang para los pesos safetensors, dado que la etiqueta de arquitectura `qwen3_5_moe` puede requerir versiones recientes de esos motores.
-- Latencia y throughput: no disponibles como medida publicada. Como referencia estructural, al activar solo ~3 B parametros por token, el coste computacional por token es el de un modelo de ese orden, mientras que el requisito de memoria corresponde a un modelo de 35,1 B; el cuello de botella esperable es el ancho de banda de memoria, no el calculo.
+- VRAM estimada para inferencia en precisión completa (BF16): aproximadamente 70 GB solo para pesos, más overhead de activaciones y KV cache; en la práctica se requieren 80 GB o más, lo que apunta a A100 80GB, H100 80GB o configuraciones multi-GPU.
+- Con cuantización de 4 bits (GGUF Q4): los pesos bajan a unos 18-20 GB, lo que permite ejecución en una RTX 4090 (24 GB) o en dos GPUs consumer de 12-16 GB.
+- Con cuantización de 8 bits: en torno a 35-37 GB, viable en A100 40GB o en configuraciones de 2x RTX 3090/4090.
+- El repo safetensors ocupa 140,4 GB, lo que incluye pesos en varios formatos o precisión; conviene descargar selectivamente.
+- Opciones de despliegue: el autor recomienda la versión GGUF con llama.cpp/llama-server; para la versión safetensors son adecuados vLLM, TGI o SGLang, siempre que soporten la arquitectura `qwen3_5_moe`.
+- Latencia y throughput: no disponibles. Al tener ~3B parámetros activos, el throughput por token debería ser notablemente superior al de un modelo denso de 35B, pero no se aportan cifras medidas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Observaciones |
+| Modelo | Parámetros | Activos | Contexto | Licencia | Notas |
 |---|---|---|---|---|---|
-| Qwen3.6-35B-A3B-Uncensored-xCloud | 35,1 B totales / ~3 B activos | no disponible | zh, en | Apache 2.0 | Derivado abliterated, sin reentrenamiento, safetensors de 140,4 GB |
-| Qwen/Qwen3.6-35B-A3B (modelo base) | 35,1 B totales / ~3 B activos | no disponible | zh, en | Apache 2.0 | Mismo peso y tokenizador; comportamiento de rechazo estandar y sin ablacionar |
-| xCloudinfo/Qwen3.6-35B-A3B-Uncensored-GGUF | mismo modelo, formato GGUF | no disponible | zh, en | Apache 2.0 | Misma ablacion, formato de despliegue recomendado por el autor |
-| Otras variantes abliterated de la familia Qwen | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la informacion proporcionada |
+| Qwen3.6-35B-A3B-Uncensored-xCloud | 35,1B | ~3B | no disponible | Apache-2.0 | Derivado abliterado del base |
+| Qwen/Qwen3.6-35B-A3B (base) | 35,1B | ~3B | no disponible | Apache-2.0 | Modelo original sin modificar, con alineación estándar |
+| Alternativas MoE de tamaño similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la información proporcionada |
 
-No se dispone de resultados de benchmarks que permitan comparar el rendimiento cuantitativo de estas variantes entre si. La unica diferencia documentada entre este modelo y su base es la eliminacion de la direccion de rechazo en 121 matrices.
+La comparación más directa es con el modelo base Qwen3.6-35B-A3B: misma arquitectura, mismos parámetros y misma licencia, con la diferencia de la ablación aplicada. No se dispone de información verificada sobre otros modelos comparables de la misma categoría para esta ficha.
 
 ## Limitaciones y advertencias
 
-- Sesgos y posicionamiento: la model card indica expresamente que la vision del mundo y las posturas del modelo se heredan del Qwen3.6 base, de origen chino, y que no estan dentro del alcance de la ablacion. La intervencion modifica el rechazo, no los sesgos.
-- Alucinacion: la ablacion no mejora la veracidad. Al eliminar direcciones asociadas al rechazo, aumenta la probabilidad de que el modelo produzca contenido danino, falso o normativamente problematico sin senales de advertencia.
-- Riesgo de dano: es un modelo disenado explicitamente para reducir negativas. El autor restringe su uso a fines legales (investigacion de seguridad, red teaming, moderacion de contenido, ambito academico) y declara que el usuario asume toda la responsabilidad legal y etica.
-- Validacion limitada: la unica metrica publicada es autodeclarada, sobre 10 preguntas y en formato cuantizado. No hay replicacion independiente ni evaluacion estandarizada de seguridad.
-- Adopcion marginal: 26 descargas y 0 likes en el momento de redactar la ficha; no hay evidencia de uso en produccion ni comunidad de soporte.
-- Idiomas: solo se documentan chino e ingles. No hay garantia de comportamiento en castellano ni en otras lenguas.
-- Contexto: la longitud de contexto no se especifica en la informacion disponible, lo que impide planificar despliegues que dependan de ventanas largas.
-- Licencia: Apache 2.0 permite uso comercial segun los terminos de la licencia del modelo base. Las restricciones de uso adicionales que anade el autor en la model card no modifican la licencia, pero si senalan su postura sobre usos aceptables; conviene revisar la licencia del modelo base antes de explotarlo comercialmente.
-- Empaquetado: el repositorio safetensors ocupa 140,4 GB, un peso de descarga considerable; el propio autor recomienda la version GGUF para inferencia.
-- Inconsistencia de etiquetas: los tags declaran `qwen3.5-moe` mientras el modelo base indicado es Qwen/Qwen3.6-35B-A3B. No se aclara en la informacion disponible si se trata de un error de etiquetado o de una nomenclatura interna.
-- Documentacion: la model card esta redactada en chino tradicional, sin version en ingles ni en castellano, lo que dificulta su evaluacion por parte de equipos que no lean chino.
+- La abliteración reduce los rechazos, pero no elimina los sesgos ni la cosmovisión heredada del modelo base Qwen3.6, de origen chino; el propio autor advierte que el contenido relativo a posturas y visión del mundo queda fuera del alcance de la modificación.
+- Riesgo de alucinación inherente al modelo base; no se documentan mitigaciones específicas.
+- Idiomas soportados limitados a chino e inglés; el rendimiento en castellano no está documentado y probablemente sea inferior.
+- Longitud de contexto no especificada en la información disponible, lo que dificulta planificar aplicaciones con ventanas largas.
+- El modelo está pensado exclusivamente para usos legales (investigación de seguridad, red-teaming, moderación, académico); el usuario asume toda la responsabilidad legal y ética. El uso ilegal está prohibido por el autor.
+- La licencia Apache-2.0 permite uso comercial, pero la reducción de salvaguardas puede implicar riesgos reputacionales y de cumplimiento en productos orientados al público general; se recomienda evaluar con detalle antes de desplegarlo en producción.
+- Solo 560 descargas y 0 likes en el momento de la consulta: ecosistema y validación comunitaria muy limitados, sin evidencia independiente de calidad.
+- El autor recomienda usar la versión GGUF para inferencia; la versión safetensors puede no ser compatible con todos los frameworks sin configuración adicional.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/xCloudinfo/Qwen3.6-35B-A3B-Uncensored-xCloud
-- Version GGUF recomendada por el autor: https://huggingface.co/xCloudinfo/Qwen3.6-35B-A3B-Uncensored-GGUF
+- Versión GGUF recomendada para inferencia: https://huggingface.co/xCloudinfo/Qwen3.6-35B-A3B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
-- Paper del metodo de ablacion direccional citado en la model card (Arditi et al., 2024): https://arxiv.org/abs/2406.11717
-- Resultados de la busqueda web: no se han encontrado enlaces relevantes; los resultados devueltos corresponden a articulos sobre el alfabeto latino y sus signos diacriticos, sin relacion con el modelo.
+- Perfil del autor: https://hf.co/xCloudinfo
+- Método de abliteración (Arditi et al. 2024): referencia citada en la model card, sin enlace directo proporcionado

@@ -5,7 +5,7 @@
   "author": "san-digital",
   "url": "https://huggingface.co/san-digital/Qwen3.8-Flash-Next-Q4_K-Tokspur-GGUF",
   "created_at": "2026-11-13T12:26:32.000Z",
-  "updated_at": "2026-11-15T15:56:47.000Z",
+  "updated_at": "2026-11-16T20:07:15.000Z",
   "license": "qwen-community-license-1.0",
   "license_family": "non-commercial",
   "pipeline_tag": "text-generation",
@@ -26,7 +26,7 @@
     "conversational"
   ],
   "likes": 3,
-  "downloads_30d": 572,
+  "downloads_30d": 947,
   "trending_score": 0,
   "parameters": 51835944960,
   "parameters_human": "51.84B",

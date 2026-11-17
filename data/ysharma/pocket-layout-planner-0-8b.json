@@ -20,7 +20,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 198,
+  "downloads_30d": 165,
   "trending_score": 0,
   "parameters": 852985920,
   "parameters_human": "853.0M",
@@ -41,31 +41,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Etat civil - Ville de Roubaix",
-      "url": "https://www.ville-roubaix.fr/services-infos-pratiques/demarches/etat-civil/",
-      "snippet": "Sur place, à la mairie de Roubaix, l'accès aux registres des naissances et mariages de l'état civil est possible au bout de 75 ans et …"
-    },
-    {
-      "title": "Démarches en ligne - Ville de Roubaix",
-      "url": "https://services.ville-roubaix.fr/demarches/jsp/puaccueil.jsp?_AWNM=1524043643283",
-      "snippet": "Rendez-vous avec la Mairie de Roubaix Prendre un rendez-vous avec la Mairie de Roubaix (pour l'état-civil, une carte d'identité ou …"
-    },
-    {
-      "title": "Démarches en ligne - Ville de Roubaix",
-      "url": "https://www.ville-roubaix.fr/services-infos-pratiques/demarches/demarches-en-ligne-accompagnement/",
-      "snippet": "Pour la première connexion, n’hésitez pas à prendre rendez-vous en régie de mairie pour vous faire aider. Ainsi dans un seul …"
-    },
-    {
-      "title": "Démarches en ligne - Ville de Roubaix",
-      "url": "https://services.ville-roubaix.fr/demarches/jsp/puaccueil.jsp",
-      "snippet": "Vous désirez effectuer une démarche administrative, demander un acte d'état-civil, payer une facture, se pré-inscrire en crèche, faire …"
-    },
-    {
-      "title": "Démarches administratives : prenez rendez-vous en ligne sur roubaix.fr",
-      "url": "https://www.roubaixxl.fr/roubaix-demarches-administratives-en-ligne/",
-      "snippet": "Feb 26, 2024 · Optez dès maintenant pour la prise de rendez-vous en ligne sur Roubaix.fr et profitez d’un service rapide, pratique et …"
-    }
-  ]
+  "sources": []
 }

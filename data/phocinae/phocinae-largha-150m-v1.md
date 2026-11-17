@@ -2,134 +2,113 @@
 
 ## Resumen
 
-Phocinae-Largha-150M-v1 (nombre en chino: 斑海豹, "foca moteada") es un modelo bilingüe de 144,3 millones de parámetros especializado en decisiones estructuradas, desarrollado por Phocinae. No es un modelo conversacional: recibe un `state` y una lista de preguntas tipadas (`noul` de sí/no, `choice` de elección única y `score` de 2 a 10) y devuelve respuestas calibradas con un valor de confianza en un único forward pass, ejecutándose en hardware propio. Su propuesta central es sustituir llamadas repetitivas a APIs de LLM grandes (selección de herramientas, aprobación de comandos, comprobación de pasos, filtrado de salidas) por un motor local determinista.
+Phocinae-Largha-150M-v1 (Largha) es un modelo de decisión tipada de 144,3 millones de parámetros, desarrollado por Phocinae y publicado bajo licencia Apache-2.0. No es un modelo conversacional: recibe un texto de estado (`state`) junto con una o varias preguntas tipadas —`noul` (sí/no), `choice` (selección única entre opciones) y `score` (puntuación entera de 2 a 10)— y devuelve respuestas con confianza calibrada en un único pase hacia delante, sin generar tokens de salida. Está afinado a partir del modelo base jhu-clsp/mmBERT-small, un encoder multilingüe de la familia ModernBERT.
 
-La arquitectura se apoya en una base mmBERT-small (arquitectura tipo ModernBERT): 384 de dimensión oculta, 22 capas, 6 cabezas de atención, tokenizador de 256k de vocabulario, RoPE combinado con atención de ventana deslizante y atención completa. El contexto base es de 8192 tokens y la cabeza por defecto procesa 512 tokens. Los pesos ocupan 288,6 MB y el pico de memoria en inferencia es de 1,6 GB, lo que permite ejecutarlo en una GPU de consumo corriente.
+El modelo aborda un problema concreto en pipelines de agentes y sistemas de guardarraíles: sustituir llamadas a LLMs generativos por un clasificador pequeño y determinista cuando la tarea se reduce a tomar una decisión discreta (aprobar o denegar una acción, elegir una opción, puntuar un criterio). Al no emitir tokens y ser insensible al orden de las opciones, reduce coste y latencia, y puede ejecutarse en CPU sin GPU. Su ventana de decisión está limitada a 512 tokens en la configuración de fábrica, pese a que el encoder base soporta hasta 8192 posiciones.
 
-Su relevancia práctica se debe a dos cifras: 18,6 ms de latencia p50 en GPU en fp16 por decisión (frente a más de 1,5 s de ida y vuelta contra una API) y una puerta de confianza con umbral τ=0,6 que reduce un 54,4 % el tráfico hacia un LLM mayor, subiendo la precisión del subconjunto retenido de 0,797 a 0,886. El modelo se licencia bajo Apache 2.0 según la propia model card, aunque el metadato de Hugging Face no declara licencia.
+La relevancia actual del modelo radica en su propuesta de "puerta de escalado": usar Largha para resolver decisiones de alta confianza y derivar al LLM externo solo los casos inciertos. El autor reporta una reducción del 55,0% en llamadas a LLM externo con umbral τ=0,6. No obstante, la model card incluye una corrección explícita: la cifra principal anterior de 0,906 se midió sobre una partición parcialmente vista y la puntuación limpia reestimada por los mantenedores del benchmark es 0,791.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer tipo ModernBERT (base mmBERT-small), con RoPE, atención de ventana deslizante y atención completa |
-| Parametros totales | 144.292.870 (144,3 M) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 8192 tokens de base; cabeza por defecto de 512 tokens |
-| Tipos de cuantizacion | No disponible (el repositorio distribuye pesos en safetensors; no se documentan variantes GGUF, AWQ ni GPTQ) |
-| Idiomas soportados | Inglés y chino (bilingüe; el modelo declara precisión en zh sin filas de entrenamiento en zh) |
-| Licencia | Apache 2.0 según la model card; el metadato de Hugging Face no declara licencia |
-| Formato de pesos | safetensors (288,6 MB) |
-| Dimension oculta | 384 |
-| Capas | 22 |
-| Cabezas de atencion | 6 |
-| Vocabulario | 256k tokens |
-| Pico de VRAM en inferencia | 1,6 GB |
-| Latencia (GPU fp16, p50) | 18,6 ms por decisión |
-| Contexto de entrenamiento declarado | No disponible |
+| Arquitectura | Encoder transformer (mmBERT-small / ModernBERT): hidden 384, 22 capas, 6 cabezas, vocabulario de 256k, RoPE, atención deslizante más atención global; cabeza de decisión con ventana de atención de 192 |
+| Parámetros totales | 144.292.870 (144,3M), dtype F16 |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | Encoder base hasta 8192 posiciones; configuración de fábrica trunca a `max_len: 512` (estado + preguntas + opciones combinados) |
+| Tipos de cuantización | No disponible |
+| Idiomas soportados | Inglés (en) y chino (zh) |
+| Licencia | Apache-2.0 (modelo base mmBERT-small: MIT) |
+| Formato de pesos | safetensors (288,6 MB en fp16; sha256 `b6472511eea30729985374f43968cf7f4b16bbe0827de6c6ca07cf92afbb778a`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la familia mmBERT-small y adopta el diseño de ModernBERT: un transformer encoder con RoPE en lugar de embeddings posicionales absolutos, atención de ventana deslizante combinada con capas de atención completa, y un tokenizador de 256k de vocabulario. El tamaño es contenido (384 de dimensión oculta, 22 capas, 6 cabezas) y la salida no es texto libre, sino un conjunto de respuestas tipadas con tres modalidades: decisión binaria (`noul`), elección entre opciones (`choice`) y puntuación en escala de 2 a 10 (`score`).
+Largha se construye sobre jhu-clsp/mmBERT-small, un encoder de la familia ModernBERT con 22 capas, dimensión oculta de 384 y 6 cabezas de atención. El encoder combina atención deslizante con atención global y usa RoPE, lo que le permite en teoría procesar secuencias de hasta 8192 posiciones; sin embargo, la configuración de fábrica del modelo limita la entrada a 512 tokens. Sobre esta base se añade una cabeza de decisión específica con una ventana de atención de 192, que produce directamente etiquetas tipadas (`noul`, `choice`, `score`) con una puntuación de confianza asociada.
 
-La model card no detalla el número de tokens de entrenamiento, la composición del dataset ni si se emplearon fases de RLHF o DPO; esa información figura como no disponible. Sí se documentan dos mecanismos de calibración aplicados en inferencia: temperaturas de calibración de 0,7698, 0,7879 y 0,7560, y un ECE de la columna enviada de 0,1313. El modelo también se presenta como robusto al reordenamiento de opciones, con métricas específicas de flip (flip150 y flip400 de 0,0300, random-mean de 0,0233 y "any" de 0,0433 en CPU fp32). La inferencia es determinista, lo que permite auditar y reproducir cada decisión.
+El modelo se ha afinado sobre el dataset LocalLLaMA/typed-decisions. La model card reconoce que la versión v1.1 del mezcla de entrenamiento incluyó un conjunto de 500 ejemplos de corrección extraídos a partir de predicciones sobre filas de test, lo que contamina parcialmente la evaluación. No se detalla el número total de tokens de entrenamiento ni la composición completa del dataset, ni si se aplicaron técnicas de RLHF o DPO. La innovación principal no es arquitectónica sino de interfaz: salida de cero tokens, invariancia al orden de las opciones (tasas de volteo reportadas entre 0,0144 y 0,0283) y confianza calibrada, con una columna de calibración opcional en `calib/` que reduce el ECE de 0,2519 a 0,0168 en inglés a costa de empeorar el Brier de 0,0207 a 0,1218.
 
 ## Capacidades
 
-- Toma de decisiones estructuradas con salidas tipadas: respuestas sí/no (`noul`), elección única entre opciones (`choice`) y puntuación de 2 a 10 (`score`).
-- Devolución de confianza calibrada junto a cada respuesta, apta para construir puertas de enrutado por umbral.
-- Enrutado hacia un LLM mayor mediante puerta de escalado (τ=0,6), con ganancia de precisión en el subconjunto retenido y reducción de coste.
-- Selección de herramientas (tool selection): 12/12 en la tarea tool_selection de JevBench con k≤10.
-- Robustez al reordenamiento de opciones, lo que reduce el sesgo posicional en decisiones de elección.
-- Capacidad bilingüe inglés-chino, con precisión declarada en zh (0,789) sobre casos traducidos y sin filas de entrenamiento en zh.
-- Adecuado para decisiones de un solo forward pass, no para generación de texto libre ni conversación multi-turno.
-- Ejecución local con inferencia determinista, sin salida de datos a servicios externos.
+- Clasificación de decisiones tipadas: responde preguntas de tipo `noul` (booleano sí/no), `choice` (selección única entre opciones, devuelve índice base 0) y `score` (entero de 2 a 10).
+- Salida con confianza calibrada por respuesta, utilizable para umbrales de escalado.
+- Invariancia al orden de las opciones: la respuesta no depende de la posición de las alternativas en la lista.
+- Ejecución sin generación de tokens: una sola pasada hacia delante, sin decodificación autoregresiva.
+- Capacidad bilingüe inglés-chino, aunque la evaluación en chino es sobre casos traducidos automáticamente y dentro de la mezcla de entrenamiento, no como transferencia zero-shot.
+- Ejecución en CPU (single-thread p50 de 1,64 s por caso; 8 hilos en batch: 8-20 decisiones por segundo) y en GPU (fp16 p50 de 21,0 ms por decisión en RTX 5090, no reproducido de forma independiente).
+- Uso como guardarraíl o puerta de seguridad en agentes: ejemplo de la model card con denegación de borrado de base de datos en producción.
+- No soporta tool calling ni function calling en el sentido de los LLMs generativos; su función es clasificar, no invocar herramientas.
+- No soporta razonamiento multi-paso ni modo de pensamiento.
 
 ## Casos de uso
 
-- Aprobación de comandos en agentes: interceptar operaciones peligrosas (por ejemplo `rm -rf`) en 18,6 ms y decidir con `noul`; la model card documenta p(deny)=0,96 para ese caso concreto.
-- Selección de herramientas en agentes: elegir qué herramienta invocar entre un conjunto (k≤10) antes de llamar al LLM mayor, aprovechando el 12/12 en tool_selection de JevBench.
-- Enrutado con ahorro de coste: usar la confianza calibrada con τ=0,6 para enviar solo el 45,7 % de las decisiones al LLM grande, reduciendo un 54,4 % las llamadas (82,8 % con τ=0,5).
-- Filtrado y cribado de salidas: puntuar respuestas o resultados en escala 2-10 para descartar los de baja calidad antes de mostrarlos al usuario.
-- Comprobación de pasos en pipelines multi-step: validar si un paso intermedio cumple las condiciones esperadas antes de continuar el flujo.
-- Clasificación y triaje en tiempo real: dado que cada decisión cuesta 18,6 ms en GPU, encaja en rutas síncronas de baja latencia donde una API externa añadiría más de un segundo de ida y vuelta.
-- Procesamiento por lotes en CPU: con 8 hilos se obtienen de 8 a 21 decisiones/s, suficiente para tareas por lotes sin GPU.
-- Despliegue con soberanía de datos: al ejecutarse en hardware propio y no enviar nada fuera, sirve para entornos con requisitos de privacidad o auditoría.
+- Guardarraíl de acciones en agentes: antes de ejecutar una acción destructiva (borrar una base de datos, purgar copias de seguridad), Largha evalúa el estado y la pregunta de permiso y devuelve un `noul` con confianza; si la confianza supera el umbral, se bloquea o permite sin consultar al LLM principal.
+- Puerta de escalado para reducir coste de LLM: en un pipeline con un LLM externo, Largha resuelve primero las decisiones de alta confianza y solo deriva al LLM las inciertas; el autor reporta una reducción del 55,0% de llamadas externas con τ=0,6 y una mejora de 0,0876 en exactitud sobre el conjunto retenido.
+- Enrutamiento de tickets o solicitudes: dado el estado de una petición y un conjunto de categorías, el modelo elige la opción adecuada (`choice`) con una confianza que permite derivar casos ambiguos a revisión humana.
+- Puntuación de criterios en evaluación de candidatos o contenidos: con la pregunta `score` de 2 a 10, se puntúa un criterio concreto (por ejemplo, experiencia en ingeniería de backend) sobre el texto de estado, integrándose en un pipeline de cribado.
+- Validación de lotes en procesos administrativos: el ejemplo de la model card muestra la decisión entre aprobar un lote de facturas, reintentar el procesamiento o marcarlo para revisión humana, con puntuaciones de 0,62, 0,24 y 0,14 respectivamente.
+- Despliegue en entornos on-premise sin GPU: al requerir aproximadamente 1,6 GB de VRAM o 1,8 GB de RAM y poder ejecutarse en CPU, es adecuado para entornos con restricciones de hardware o de confidencialidad donde no se permite enviar datos a la nube.
+- Filtrado previo en pipelines de moderación o cumplimiento: clasificación binaria de si un contenido o una acción cumple una política, con umbral de confianza para escalar los casos dudosos.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Resultado |
-|---|---|
-| typed-decisions en (400 casos / 2000 decisiones) | 0,797 |
-| typed-decisions zh (casos traducidos, sin filas de entrenamiento zh) | 0,789 |
-| JevBench public-231 | 0,5108 (118/231), por debajo del umbral del 58,4 % |
-| JevBench tool_selection | 12/12 |
-| ECE de la columna enviada | 0,1313 |
-| Temperaturas de calibración | 0,7698 / 0,7879 / 0,7560 |
-| Enrutado escalado (τ=0,6) | +0,089 de precisión en subconjunto retenido (0,797→0,886); −54,4 % de coste LLM (82,8 % con τ=0,5; 45,7 % de decisiones escaladas) |
+| Benchmark / métrica | Resultado | Notas |
+|---|---|---|
+| typed-decisions en (curated) | 0,791 | Reestimación limpia de los mantenedores del benchmark; la cifra anterior de 0,906 se midió sobre una partición parcialmente vista |
+| typed-decisions en, subconjunto contaminado (500) | 0,198 | Lectura limpia sobre las 500 filas contaminadas |
+| typed-decisions en, subconjunto no tocado (1.500) | 0,989 | Lectura limpia sobre filas no vistas en entrenamiento |
+| typed-decisions zh | 0,848 | Evaluación in-mix sobre casos traducidos automáticamente, no zero-shot |
+| Laya (mismo protocolo) | 0,766 | Clase de medición distinta; no directamente comparable |
+| JEV-27B (mismo protocolo) | 0,727 | Clase de medición distinta; no directamente comparable |
+| meraGPT (mismo protocolo) | 0,768 | Clase de medición distinta; no directamente comparable |
+| JevBench public-231 | 0,5455 (126/231) | Por debajo de la mayoría de sistemas del ranking; el benchmark no tiene puerta de puntuación |
+| Tasa de volteo por orden de opciones (CPU fp32) | flip150 0,0200; flip400 0,0217; random-mean 0,0144; any 0,0283 | Menor es mejor |
+| ECE (calibración de fábrica) | 0,2519 (en) / 0,1941 (zh) | Columna opcional en `calib/`: 0,0168 / 0,0152 |
+| Brier (calibración de fábrica) | 0,0207 | Con la columna opcional sube a 0,1218 |
+| Latencia GPU fp16 p50 | 21,0 ms por decisión | RTX 5090, no reproducido de forma independiente |
+| Latencia CPU single-thread p50 | 1,64 s por caso | — |
+| Throughput CPU 8 hilos | 8-20 decisiones/s | — |
 
-Robustez al reordenamiento de opciones (menor es mejor), CPU fp32:
-
-| Metrica | Valor |
-|---|---|
-| flip150 | 0,0300 |
-| flip400 | 0,0300 |
-| random-mean | 0,0233 |
-| any | 0,0433 |
-| GPU fp16 (nota) | 0,027 / 0,028 |
-
-Latencia:
-
-| Escenario | Valor |
-|---|---|
-| GPU fp16 p50 | 18,6 ms por decisión |
-| CPU monohilo p50 | 1,51 s por caso (1 estado + 5 preguntas, un forward pass); ≈0,28 s por decisión |
-| CPU 8 hilos (lote) | 8-21 decisiones/s |
-| CPU en caliente, 20 hilos (1 estado + 3 preguntas) | ≈51 ms por llamada, ≈17 ms por decisión |
+Advertencia del autor: la comparación con Laya, JEV-27B y meraGPT no es homogénea, porque la puntuación en inglés de Largha corresponde a un especialista ajustado sobre ese mismo protocolo, mientras que las otras filas no. Además, el gold del benchmark es la media de tres muestreos de un profesor de aproximadamente 4B, con un techo de autoconsistencia declarado de 0,735, por lo que estas cifras miden concordancia con el profesor, no corrección absoluta.
 
 ## Requisitos de hardware
 
-- Weights: 288,6 MB; pico de VRAM en inferencia: 1,6 GB, según la model card.
-- GPU fp16: latencia p50 de 18,6 ms por decisión. Cualquier GPU moderna con al menos 2 GB de VRAM puede ejecutarlo.
-- Cabe holgadamente en GPU de consumo (RTX 3060, RTX 4060, RTX 4090, etc.), dado el pico de 1,6 GB.
-- CPU: monohilo con 1,51 s por caso (≈0,28 s por decisión); con 8 hilos en lote, 8-21 decisiones/s; con 20 hilos en caliente, ≈51 ms por llamada (≈17 ms por decisión).
-- Opciones de despliegue: el runtime oficial es phocinae-server (servicio FastAPI local). No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI en la información disponible.
-- No se publican datos de throughput en GPU más allá de la latencia p50 por decisión.
+- VRAM estimada: aproximadamente 1,6 GB en inferencia; en RAM, aproximadamente 1,8 GB. Los pesos en fp16 ocupan 288,6 MB.
+- GPU recomendadas: el autor reporta latencia en RTX 5090; por el tamaño del modelo, cualquier GPU con al menos 2 GB de VRAM es suficiente. No se han publicado mediciones en A100, H100 o RTX 4090.
+- Cabe en GPU de consumo: sí, en cualquier GPU consumer con 2 GB o más de VRAM.
+- Ejecución en CPU: sí, con p50 de 1,64 s por caso en un hilo y 8-20 decisiones por segundo con 8 hilos en batch.
+- Opciones de despliegue: el runtime oficial es phocinae-server (PyTorch propio que lee directamente los safetensors del repositorio). No se debe cargar con `AutoModelForSequenceClassification` de transformers, ya que devuelve la cabeza de clasificación del modelo base y no la cabeza de decisión entrenada. No se mencionan integraciones con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: ver tabla de benchmarks; las cifras de GPU no han sido reproducidas de forma independiente.
 
 ## Comparativa con modelos similares
 
-Comparativa sobre el mismo protocolo de typed-decisions (400 casos / 2000 decisiones), según los datos de la model card:
-
-| Modelo | typed-decisions (mismo protocolo) | Parametros | Contexto | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Rendimiento (typed-decisions en) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Phocinae-Largha-150M-v1 | 0,797 (en) / 0,789 (zh) | 144,3 M | 8192 base / 512 cabeza | Apache 2.0 (segun model card) | Hugging Face, GitHub, ModelScope |
-| Laya | 0,766 | No disponible | No disponible | No disponible | No disponible |
-| JEV | 0,727 | No disponible | No disponible | No disponible | No disponible |
-| meraGPT | 0,768 | No disponible | No disponible | No disponible | No disponible |
+| Phocinae-Largha-150M-v1 | 144,3M | 512 (config. de fábrica) | 0,791 curated; 0,989 en subconjunto no tocado | Apache-2.0 | Hugging Face, runtime phocinae-server |
+| Laya | No disponible | No disponible | 0,766 (protocolo distinto) | No disponible | No disponible |
+| JEV-27B | 27B (según nombre) | No disponible | 0,727 (protocolo distinto) | No disponible | No disponible |
+| meraGPT | No disponible | No disponible | 0,768 (protocolo distinto) | No disponible | No disponible |
 
-No se dispone de especificaciones técnicas, licencias ni datos de contexto de Laya, JEV ni meraGPT más allá de su precisión en este protocolo concreto.
+La comparación directa no es fiable: las puntuaciones de Laya, JEV-27B y meraGPT pertenecen a una clase de medición distinta y el propio autor advierte contra la comparación horizontal. No se dispone de datos de parámetros, contexto ni licencia de esos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo conversacional: no genera texto libre ni mantiene diálogo multi-turno; está diseñado para decisiones de un solo forward pass.
-- JevBench public-231 se sitúa en 0,5108 (118/231), por debajo del umbral del 58,4 %, algo que la propia model card declara abiertamente; el rendimiento en esa tarea es limitado.
-- Riesgo de alucinación y de decisiones erróneas: aunque la salida esté calibrada (ECE 0,1313), un ECE de esa magnitud implica desviación entre confianza y acierto; conviene usar la puerta de escalado antes de confiar decisiones críticas.
-- Sesgo posicional: aunque se documenta robustez al reordenamiento (flip150/flip400 de 0,0300; "any" de 0,0433), no es cero, por lo que el orden de opciones puede seguir influyendo en algunos casos.
-- Contexto limitado: 8192 tokens de base y 512 en la cabeza por defecto, insuficiente para documentos o historiales muy largos.
-- Cobertura de idiomas limitada a inglés y chino; no se documentan otros idiomas.
-- Licencia: la model card muestra una insignia Apache 2.0, pero el metadato de Hugging Face no declara licencia; conviene confirmar los términos antes de un uso comercial.
-- Trazabilidad de datos de entrenamiento: no se publican tokens, composición del dataset ni fases de alineación (RLHF/DPO), lo que dificulta evaluar sesgos de origen.
-- El repositorio de pesos no incluye el runtime: phocinae-server distribuye la ejecución, no los pesos, que deben descargarse por separado.
+- No es un modelo conversacional ni generativo: no produce texto libre y no debe usarse como chatbot.
+- No se carga por la vía habitual de transformers; requiere el runtime phocinae-server. Usar `AutoModelForSequenceClassification` devuelve una cabeza incorrecta.
+- Contaminación de evaluación reconocida: la mezcla de entrenamiento v1.1 incluyó 500 ejemplos de corrección derivados de predicciones sobre filas de test. La puntuación limpia en ese subconjunto es 0,198, frente a 0,989 en las 1.500 filas no tocadas.
+- La puntuación en chino (0,848) es una evaluación in-mix sobre casos traducidos automáticamente, no una medida de transferencia zero-shot.
+- La calibración de fábrica es deficiente (ECE 0,2519 en inglés); la columna opcional de calibración mejora el ECE pero degrada el Brier de 0,0207 a 0,1218, y no está activada por defecto.
+- JevBench public-231: 0,5455, por debajo de la mayoría de sistemas del ranking; el benchmark no tiene puerta de puntuación y su admisión se basa en coste, latencia y contaminación.
+- Contexto efectivo limitado a 512 tokens en la configuración de fábrica, pese a que el encoder base soporte 8192.
+- La latencia en GPU (21,0 ms) no ha sido reproducida de forma independiente.
+- Riesgo de sesgo y alucinación: no se documentan análisis de sesgo en la información disponible; al ser un clasificador, el riesgo de alucinación se manifiesta como clasificaciones erróneas con confianza alta, mitigable con umbrales.
+- Licencia Apache-2.0: permite uso comercial, pero el modelo base mmBERT-small es MIT; conviene verificar las condiciones de ambos.
+- El modelo tiene 373 descargas y 28 likes en el momento de la consulta, lo que indica una adopción todavía limitada y poca validación independiente.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Phocinae/Phocinae-Largha-150M-v1
-- GitHub: https://github.com/Phocinae/Phocinae-Largha-150M-v1
-- Runtime oficial (phocinae-server): https://github.com/Phocinae/phocinae-server
-- ModelScope: https://modelscope.cn/models/PerryLink/Phocinae-Largha-150M-v1
-- Landing page: https://phocinae.github.io/Phocinae-Largha-150M-v1/
-- BENCHMARKS.md: https://github.com/Phocinae/Phocinae-Largha-150M-v1/blob/main/BENCHMARKS.md
-- Documentación de costes: https://github.com/Phocinae/Phocinae-Largha-150M-v1/blob/main/docs/cost-savings.md
-- Galería de escenarios: https://github.com/Phocinae/Phocinae-Largha-150M-v1/blob/main/docs/gallery/README.md
-- Galería en chino: https://github.com/Phocinae/Phocinae-Largha-150M-v1/blob/main/docs/gallery/README_cn.md
-- FAQ en chino: https://github.com/Phocinae/Phocinae-Largha-150M-v1/blob/main/docs/faq.zh.md
+- Runtime oficial phocinae-server: https://github.com/Phocinae/phocinae-server
+- Modelo base jhu-clsp/mmBERT-small: https://huggingface.co/jhu-clsp/mmBERT-small
+- Dataset LocalLLaMA/typed-decisions: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
+- Figura de comparación de exactitud tipada: figures/C1_typed_acc_comparison.png (en el repositorio del modelo)
+- Paper, blog o demo adicionales: no disponible

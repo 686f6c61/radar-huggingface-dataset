@@ -41,16 +41,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "DeepTaxon-Tri-JevAny-Qwen3.5-4B-Checkpoints - Hugging Face",
-      "url": "https://huggingface.co/wyqdf/DeepTaxon-Tri-JevAny-Qwen3.5-4B-Checkpoints",
-      "snippet": "wyqdf / DeepTaxon-Tri-JevAny-Qwen3.5-4B-Checkpoints Like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket No model card Downloads last month -"
-    },
-    {
-      "title": "DeepTaxon-Tri-JevAny-Qwen3.5-4B-Checkpoints - Hugging Face",
-      "url": "https://huggingface.co/wyqdf/DeepTaxon-Tri-JevAny-Qwen3.5-4B-Checkpoints/tree/main/runs",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    }
-  ]
+  "sources": []
 }
