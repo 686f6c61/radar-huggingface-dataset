@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "jungwook2358/pyrualean-libero90-qwen35-4b-summary-code-full-e3-20261118-v1",
+  "slug": "jungwook2358-pyrualean-libero90-qwen35-4b-summary-code-full-e3-20261118-v1",
+  "author": "jungwook2358",
+  "url": "https://huggingface.co/jungwook2358/pyrualean-libero90-qwen35-4b-summary-code-full-e3-20261118-v1",
+  "created_at": "2026-11-17T17:37:10.000Z",
+  "updated_at": "2026-11-17T17:44:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9098609861,
+  "storage_human": "9.1 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "Probabilistr/qwen3.5-4b-supervision-note-lora",
+  "slug": "probabilistr-qwen3-5-4b-supervision-note-lora",
+  "author": "Probabilistr",
+  "url": "https://huggingface.co/Probabilistr/qwen3.5-4b-supervision-note-lora",
+  "created_at": "2026-10-15T05:00:10.000Z",
+  "updated_at": "2026-11-17T16:13:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "hi"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "hindi",
+    "police",
+    "supervision-note",
+    "text-generation",
+    "conversational",
+    "hi",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 104957747,
+  "storage_human": "105 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "lrsoft/Qwen3.8-27B-FP8-Cybersecurity",
+  "slug": "lrsoft-qwen3-8-27b-fp8-cybersecurity",
+  "author": "lrsoft",
+  "url": "https://huggingface.co/lrsoft/Qwen3.8-27B-FP8-Cybersecurity",
+  "created_at": "2026-11-17T15:04:38.000Z",
+  "updated_at": "2026-11-17T15:16:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B-FP8",
+    "base_model:finetune:Qwen/Qwen3.8-27B-FP8",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54733596111,
+  "storage_human": "54.7 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.8-27B-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Llama_3.x_70b_Triads_V5-GGUF",
+  "slug": "mradermacher-llama_3-x_70b_triads_v5-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama_3.x_70b_Triads_V5-GGUF",
+  "created_at": "2025-03-14T06:40:02.000Z",
+  "updated_at": "2026-11-17T18:09:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:Nexesenex/Llama_3.x_70b_Triads_V5",
+    "base_model:quantized:Nexesenex/Llama_3.x_70b_Triads_V5",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 46,
+  "trending_score": 0,
+  "parameters": 70554361920,
+  "parameters_human": "70.55B",
+  "storage_bytes": 481308227680,
+  "storage_human": "481.3 GB",
+  "context_length": 131072,
+  "base_model": "Nexesenex/Llama_3.x_70b_Triads_V5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

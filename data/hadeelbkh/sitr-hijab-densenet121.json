@@ -1,0 +1,82 @@
+{
+  "schema": 2,
+  "id": "hadeelbkh/sitr-hijab-densenet121",
+  "slug": "hadeelbkh-sitr-hijab-densenet121",
+  "author": "hadeelbkh",
+  "url": "https://huggingface.co/hadeelbkh/sitr-hijab-densenet121",
+  "created_at": "2026-11-17T16:08:08.000Z",
+  "updated_at": "2026-11-17T16:08:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "image-classification",
+    "densenet",
+    "hijab-detection",
+    "privacy",
+    "computer-vision",
+    "dataset:hadeelbkh/sitr-hijab-dataset",
+    "base_model:timm/densenet121.tv_in1k",
+    "base_model:finetune:timm/densenet121.tv_in1k",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7038529,
+  "parameters_human": "7.0M",
+  "storage_bytes": 28238308,
+  "storage_human": "28 MB",
+  "context_length": null,
+  "base_model": "timm/densenet121.tv_in1k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Hijab / no-hijab classification",
+      "dataset": "SITR Hijab Dataset (cleaned, test split)",
+      "metric": null,
+      "value": 92.16
+    },
+    {
+      "task": "Hijab / no-hijab classification",
+      "dataset": "SITR Hijab Dataset (cleaned, test split)",
+      "metric": null,
+      "value": 91.63
+    },
+    {
+      "task": "Hijab / no-hijab classification",
+      "dataset": "SITR Hijab Dataset (cleaned, test split)",
+      "metric": null,
+      "value": 81.72
+    },
+    {
+      "task": "Hijab / no-hijab classification",
+      "dataset": "SITR Hijab Dataset (cleaned, test split)",
+      "metric": null,
+      "value": 86.39
+    },
+    {
+      "task": "Hijab / no-hijab classification",
+      "dataset": "SITR Hijab Dataset (cleaned, test split)",
+      "metric": null,
+      "value": 96.66
+    }
+  ],
+  "sources": []
+}

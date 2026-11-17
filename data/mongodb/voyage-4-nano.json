@@ -1,0 +1,78 @@
+{
+  "schema": 2,
+  "id": "MongoDB/voyage-4-nano",
+  "slug": "mongodb-voyage-4-nano",
+  "author": "MongoDB",
+  "url": "https://huggingface.co/MongoDB/voyage-4-nano",
+  "created_at": "2026-01-06T00:15:08.000Z",
+  "updated_at": "2026-11-17T18:57:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "transformers",
+    "feature-extraction",
+    "custom_code",
+    "multilingual",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 154,
+  "downloads_30d": 129476,
+  "trending_score": 0,
+  "parameters": 346451968,
+  "parameters_human": "346.5M",
+  "storage_bytes": 697113512,
+  "storage_human": "697 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MongoDB | The Intelligent Data Platform for the AI Era",
+      "url": "https://www.mongodb.com/?msockid=0dbee73606e168aa2f99ff2207b26901",
+      "snippet": "MongoDB is the intelligent data platform for the AI era. Get your ideas to market faster with flexible, real-time data that scales across …"
+    },
+    {
+      "title": "Download MongoDB Community Server",
+      "url": "https://www.mongodb.com/try/download/community?msockid=0dbee73606e168aa2f99ff2207b26901",
+      "snippet": "The database is also offered as a fully managed service with MongoDB Atlas. Get access to advanced functionality such as auto …"
+    },
+    {
+      "title": "MongoDB — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/MongoDB",
+      "snippet": "Historique MongoDB est développé depuis 2007 par MongoDB. Cette entreprise travaillait alors sur un système de Cloud computing, …"
+    },
+    {
+      "title": "Log in | MongoDB",
+      "url": "https://account.mongodb.com/account",
+      "snippet": "Experience up to 2x throughput, enhanced scalability, and unmatched resilience."
+    },
+    {
+      "title": "MongoDB - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/MongoDB",
+      "snippet": "MongoDB provides three ways to perform aggregation: the aggregation pipeline (preferred), the map-reduce function (deprecated as …"
+    }
+  ]
+}

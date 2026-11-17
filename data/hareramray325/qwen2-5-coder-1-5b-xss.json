@@ -1,0 +1,95 @@
+{
+  "schema": 2,
+  "id": "hareramray325/qwen2.5-coder-1.5b-xss",
+  "slug": "hareramray325-qwen2-5-coder-1-5b-xss",
+  "author": "hareramray325",
+  "url": "https://huggingface.co/hareramray325/qwen2.5-coder-1.5b-xss",
+  "created_at": "2026-11-17T19:27:18.000Z",
+  "updated_at": "2026-11-17T19:27:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "security",
+    "xss",
+    "cross-site-scripting",
+    "vulnerability-detection",
+    "code",
+    "lora",
+    "qlora",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:hareramray325/xss-detection-bench",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333004,
+  "storage_human": "85 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "XSS detection (out-of-distribution)",
+      "dataset": "xss-detection-bench (ood split)",
+      "metric": "Detection accuracy",
+      "value": 58.3
+    },
+    {
+      "task": "XSS detection (out-of-distribution)",
+      "dataset": "xss-detection-bench (ood split)",
+      "metric": "Recall (vulnerable found)",
+      "value": 70.6
+    },
+    {
+      "task": "XSS detection (out-of-distribution)",
+      "dataset": "xss-detection-bench (ood split)",
+      "metric": "False-positive rate (lower is better)",
+      "value": 50
+    },
+    {
+      "task": "XSS detection (out-of-distribution)",
+      "dataset": "xss-detection-bench (ood split)",
+      "metric": "Grounded citations",
+      "value": 83.3
+    },
+    {
+      "task": "XSS detection (out-of-distribution)",
+      "dataset": "xss-detection-bench (ood split)",
+      "metric": "Valid JSON report",
+      "value": 97.2
+    },
+    {
+      "task": "XSS detection (out-of-distribution)",
+      "dataset": "xss-detection-bench (ood split)",
+      "metric": "XSS type accuracy",
+      "value": 75
+    }
+  ],
+  "sources": []
+}

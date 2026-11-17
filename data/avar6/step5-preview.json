@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "avar6/Step5-Preview",
+  "slug": "avar6-step5-preview",
+  "author": "avar6",
+  "url": "https://huggingface.co/avar6/Step5-Preview",
+  "created_at": "2026-09-22T00:16:57.000Z",
+  "updated_at": "2026-11-17T12:50:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 5,
+  "downloads_30d": 44,
+  "trending_score": 0,
+  "parameters": 600556275680,
+  "parameters_human": "600.56B",
+  "storage_bytes": 549099008576,
+  "storage_human": "549.1 GB",
+  "context_length": 1048576,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "guymorlan/levanti_diacritics2translit",
+  "slug": "guymorlan-levanti_diacritics2translit",
+  "author": "guymorlan",
+  "url": "https://huggingface.co/guymorlan/levanti_diacritics2translit",
+  "created_at": "2024-07-10T10:06:32.000Z",
+  "updated_at": "2026-11-17T14:18:51.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "canine",
+    "token-classification",
+    "ar",
+    "dataset:guymorlan/levanti",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 132088327,
+  "parameters_human": "132.1M",
+  "storage_bytes": 528383308,
+  "storage_human": "528 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,45 @@
+{
+  "schema": 2,
+  "id": "tts-hub/speaker_encoder_hasp",
+  "slug": "tts-hub-speaker_encoder_hasp",
+  "author": "tts-hub",
+  "url": "https://huggingface.co/tts-hub/speaker_encoder_hasp",
+  "created_at": "2026-11-17T14:26:39.000Z",
+  "updated_at": "2026-11-17T14:26:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44610930,
+  "storage_human": "45 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TTS engine",
+      "url": "https://huggingface.co/spaces/haydenbanz/Speechstylis-AI/commit/cae21cc75166eab7f69eed57ff8f58b6191b5cf2.diff",
+      "snippet": "+ + + {% endif %} + + + + \\ No newline at end of file diff --git a/TTS/server/templates/index.html b/TTS/server/templates/index.html new file mode 100644 index 0000000000000000000000000000000000000000..6354d3919d9a1e9c1e22e9866c84c4eb8284bc13 --- /dev/null +++ b/TTS/server/templates/index.html @@ -0,0 +1,154 @@ + + ... + + + {%if use_gst%} + + {%endif%} + + + Speak + + {%if use_multi_speaker%} + Choose a speaker: + + {% for speaker_id in speaker_ids %} +"
+    }
+  ]
+}

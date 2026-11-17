@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "sharp-pixel/opensearch-compact-variables-v2",
+  "slug": "sharp-pixel-opensearch-compact-variables-v2",
+  "author": "sharp-pixel",
+  "url": "https://huggingface.co/sharp-pixel/opensearch-compact-variables-v2",
+  "created_at": "2026-11-17T17:00:49.000Z",
+  "updated_at": "2026-11-17T17:01:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "sft",
+    "opensearch",
+    "json",
+    "text-generation",
+    "en",
+    "base_model:mistralai/Ministral-3-8B-Instruct-2512-BF16",
+    "base_model:adapter:mistralai/Ministral-3-8B-Instruct-2512-BF16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 89199976,
+  "storage_human": "89 MB",
+  "context_length": null,
+  "base_model": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

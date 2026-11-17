@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "mradermacher/arco-reflection-v2-GGUF",
+  "slug": "mradermacher-arco-reflection-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/arco-reflection-v2-GGUF",
+  "created_at": "2025-03-20T12:54:24.000Z",
+  "updated_at": "2026-11-17T14:48:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "trl",
+    "sft",
+    "en",
+    "base_model:appvoid/arco-reflection-v2",
+    "base_model:quantized:appvoid/arco-reflection-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 46,
+  "trending_score": 0,
+  "parameters": 513590784,
+  "parameters_human": "513.6M",
+  "storage_bytes": 4632675456,
+  "storage_human": "4.6 GB",
+  "context_length": 8192,
+  "base_model": "appvoid/arco-reflection-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

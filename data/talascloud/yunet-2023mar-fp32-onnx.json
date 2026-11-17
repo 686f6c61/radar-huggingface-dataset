@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "TalasCloud/YuNet-2023mar-FP32-ONNX",
+  "slug": "talascloud-yunet-2023mar-fp32-onnx",
+  "author": "TalasCloud",
+  "url": "https://huggingface.co/TalasCloud/YuNet-2023mar-FP32-ONNX",
+  "created_at": "2026-11-17T15:55:12.000Z",
+  "updated_at": "2026-11-17T15:55:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "face-detection",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 232589,
+  "storage_human": "232589 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "erdem-erdem/dyn-spec-dflash-gendiag-generator-attn-r32-2ep-kl-pt1024",
+  "slug": "erdem-erdem-dyn-spec-dflash-gendiag-generator-attn-r32-2ep-kl-pt1024",
+  "author": "erdem-erdem",
+  "url": "https://huggingface.co/erdem-erdem/dyn-spec-dflash-gendiag-generator-attn-r32-2ep-kl-pt1024",
+  "created_at": "2026-11-17T16:36:42.000Z",
+  "updated_at": "2026-11-17T16:37:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "speculators",
+    "dflash",
+    "speculative-decoding",
+    "lora-generator",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5333034499,
+  "storage_human": "5.3 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Erdem & Erdem - Law Firm - International Legal Services",
+      "url": "https://www.erdem-erdem.av.tr/en",
+      "snippet": "The Erdem & Erdem team follows current legal developments, keeps you informed of amendments, writes articles, publishes books …"
+    }
+  ]
+}

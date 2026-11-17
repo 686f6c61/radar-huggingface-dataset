@@ -1,0 +1,60 @@
+{
+  "schema": 2,
+  "id": "Adiutant/word-line-e5",
+  "slug": "adiutant-word-line-e5",
+  "author": "Adiutant",
+  "url": "https://huggingface.co/Adiutant/word-line-e5",
+  "created_at": "2026-11-17T13:08:17.000Z",
+  "updated_at": "2026-11-17T13:37:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "word_line_e5",
+    "feature-extraction",
+    "handwriting",
+    "image-embeddings",
+    "information-retrieval",
+    "trocr",
+    "e5",
+    "russian",
+    "custom_code",
+    "ru",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 88129152,
+  "parameters_human": "88.1M",
+  "storage_bytes": 357370937,
+  "storage_human": "357 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "manasrpandya/cnndm-summ-onnx",
+  "slug": "manasrpandya-cnndm-summ-onnx",
+  "author": "manasrpandya",
+  "url": "https://huggingface.co/manasrpandya/cnndm-summ-onnx",
+  "created_at": "2026-11-17T16:05:02.000Z",
+  "updated_at": "2026-11-17T16:05:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "summarization",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "bart",
+    "text2text-generation",
+    "onnx",
+    "summarization",
+    "cnn-dailymail",
+    "length-control",
+    "en",
+    "dataset:abisee/cnn_dailymail",
+    "base_model:facebook/bart-base",
+    "base_model:finetune:facebook/bart-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": "facebook/bart-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

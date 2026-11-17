@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Qwen-7B-2B-KL-GGUF",
+  "slug": "mradermacher-qwen-7b-2b-kl-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen-7B-2B-KL-GGUF",
+  "created_at": "2025-03-02T19:48:01.000Z",
+  "updated_at": "2026-11-17T14:48:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Sayan01/Qwen-7B-2B-KL",
+    "base_model:quantized:Sayan01/Qwen-7B-2B-KL",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 2426049024,
+  "parameters_human": "2.43B",
+  "storage_bytes": 22589229568,
+  "storage_human": "22.6 GB",
+  "context_length": 131072,
+  "base_model": "Sayan01/Qwen-7B-2B-KL",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

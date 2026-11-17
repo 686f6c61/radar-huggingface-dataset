@@ -1,0 +1,65 @@
+{
+  "schema": 2,
+  "id": "guptashashank/claimsight-damage-rtdetr",
+  "slug": "guptashashank-claimsight-damage-rtdetr",
+  "author": "guptashashank",
+  "url": "https://huggingface.co/guptashashank/claimsight-damage-rtdetr",
+  "created_at": "2026-11-17T16:43:30.000Z",
+  "updated_at": "2026-11-17T16:43:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "rt_detr_v2",
+    "object-detection",
+    "rt-detr",
+    "car-damage",
+    "insurance",
+    "dataset:DrBimmer/car-parts-and-damage-dataset",
+    "base_model:PekingU/rtdetr_v2_r18vd",
+    "base_model:finetune:PekingU/rtdetr_v2_r18vd",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20117268,
+  "parameters_human": "20.1M",
+  "storage_bytes": 80534840,
+  "storage_human": "81 MB",
+  "context_length": null,
+  "base_model": "PekingU/rtdetr_v2_r18vd",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Humans in the Loop car damages (CC0), held-out test split",
+      "metric": "mAP@[.50:.95]",
+      "value": 0.0757
+    },
+    {
+      "task": null,
+      "dataset": "Humans in the Loop car damages (CC0), held-out test split",
+      "metric": "mAP@.50",
+      "value": 0.1293
+    }
+  ],
+  "sources": []
+}

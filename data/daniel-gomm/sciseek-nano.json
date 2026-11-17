@@ -1,0 +1,111 @@
+{
+  "schema": 2,
+  "id": "daniel-gomm/sciseek-nano",
+  "slug": "daniel-gomm-sciseek-nano",
+  "author": "daniel-gomm",
+  "url": "https://huggingface.co/daniel-gomm/sciseek-nano",
+  "created_at": "2026-11-02T12:20:21.000Z",
+  "updated_at": "2026-11-17T14:50:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "feature-extraction",
+    "sentence-similarity",
+    "text-retrieval",
+    "scientific-papers",
+    "literature-search",
+    "arxiv",
+    "transformers.js",
+    "en",
+    "dataset:daniel-gomm/sciseek-train",
+    "dataset:daniel-gomm/SciSeek",
+    "base_model:ibm-granite/granite-embedding-small-english-r2",
+    "base_model:quantized:ibm-granite/granite-embedding-small-english-r2",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 47662464,
+  "parameters_human": "47.7M",
+  "storage_bytes": 435075405,
+  "storage_human": "435 MB",
+  "context_length": null,
+  "base_model": "ibm-granite/granite-embedding-small-english-r2",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Retrieval",
+      "dataset": "SciSeek (test)",
+      "metric": null,
+      "value": 0.6461
+    },
+    {
+      "task": "Retrieval",
+      "dataset": "SciSeek (test)",
+      "metric": null,
+      "value": 0.5418
+    },
+    {
+      "task": "Retrieval",
+      "dataset": "LitSearch",
+      "metric": null,
+      "value": 0.5119
+    },
+    {
+      "task": "Retrieval",
+      "dataset": "DORIS-MAE",
+      "metric": null,
+      "value": 0.6506
+    },
+    {
+      "task": "Retrieval",
+      "dataset": "BEIR TREC-COVID",
+      "metric": null,
+      "value": 0.6304
+    },
+    {
+      "task": "Retrieval",
+      "dataset": "BEIR SciFact",
+      "metric": null,
+      "value": 0.7413
+    },
+    {
+      "task": "Retrieval",
+      "dataset": "BEIR NFCorpus",
+      "metric": null,
+      "value": 0.3657
+    },
+    {
+      "task": "Retrieval",
+      "dataset": "BEIR SciDocs",
+      "metric": null,
+      "value": 0.2287
+    }
+  ],
+  "sources": []
+}

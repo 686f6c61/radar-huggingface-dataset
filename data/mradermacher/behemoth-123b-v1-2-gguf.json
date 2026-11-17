@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Behemoth-123B-v1.2-GGUF",
+  "slug": "mradermacher-behemoth-123b-v1-2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Behemoth-123B-v1.2-GGUF",
+  "created_at": "2025-02-24T07:07:07.000Z",
+  "updated_at": "2026-11-17T17:03:29.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:TheDrummer/Behemoth-123B-v1.2",
+    "base_model:quantized:TheDrummer/Behemoth-123B-v1.2",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 122610069504,
+  "parameters_human": "122.61B",
+  "storage_bytes": 832244627680,
+  "storage_human": "832.2 GB",
+  "context_length": 131072,
+  "base_model": "TheDrummer/Behemoth-123B-v1.2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

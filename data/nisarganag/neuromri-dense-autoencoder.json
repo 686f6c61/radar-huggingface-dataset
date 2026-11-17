@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "nisarganag/neuromri-dense-autoencoder",
+  "slug": "nisarganag-neuromri-dense-autoencoder",
+  "author": "nisarganag",
+  "url": "https://huggingface.co/nisarganag/neuromri-dense-autoencoder",
+  "created_at": "2026-11-17T13:14:08.000Z",
+  "updated_at": "2026-11-17T13:14:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1069376,
+  "parameters_human": "1.1M",
+  "storage_bytes": 4278160,
+  "storage_human": "4 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

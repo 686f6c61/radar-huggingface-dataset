@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "openadmet/cyp1a2-cyp2d6-cyp3a4-cyp2c9-cyp2b6-cyp2c8-cyp2c19-chemeleon-v2",
+  "slug": "openadmet-cyp1a2-cyp2d6-cyp3a4-cyp2c9-cyp2b6-cyp2c8-cyp2c19-chemeleon-v2",
+  "author": "openadmet",
+  "url": "https://huggingface.co/openadmet/cyp1a2-cyp2d6-cyp3a4-cyp2c9-cyp2b6-cyp2c8-cyp2c19-chemeleon-v2",
+  "created_at": "2026-11-13T02:34:13.000Z",
+  "updated_at": "2026-11-17T20:35:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "chemistry",
+    "biology",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51682040,
+  "storage_human": "52 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

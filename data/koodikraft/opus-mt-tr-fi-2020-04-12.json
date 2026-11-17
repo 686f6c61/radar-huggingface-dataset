@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "koodikraft/opus-mt-tr-fi-2020-04-12",
+  "slug": "koodikraft-opus-mt-tr-fi-2020-04-12",
+  "author": "koodikraft",
+  "url": "https://huggingface.co/koodikraft/opus-mt-tr-fi-2020-04-12",
+  "created_at": "2026-11-17T18:14:41.000Z",
+  "updated_at": "2026-11-17T18:15:02.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "tr",
+    "fi"
+  ],
+  "tags": [
+    "safetensors",
+    "marian",
+    "translation",
+    "opus-mt",
+    "tr",
+    "fi",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 105994171,
+  "parameters_human": "106.0M",
+  "storage_bytes": 213699782,
+  "storage_human": "214 MB",
+  "context_length": null,
+  "base_model": "Helsinki-NLP/opus-mt-tr-fi",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

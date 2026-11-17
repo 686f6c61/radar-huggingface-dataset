@@ -2,100 +2,93 @@
 
 ## Resumen
 
-`zixianma/action-selection-heads` no es un modelo generativo autonomo, sino un repositorio con dos cabezas de seleccion de acciones (*selection heads*) de 22,6 millones de parametros cada una, disenadas para el agente web `OpenWebRL/OpenWebRL-4B-SFT`. En cada paso de navegacion, el actor de 4B muestrea cinco respuestas candidatas y la cabeza lee sus estados ocultos congelados (capas 18, 27 y 36) para elegir cual ejecutar. Los pesos del actor no se modifican.
+`zixianma/action-selection-heads` es un conjunto de cabezas de selección de candidatos (*selection heads*) para el agente web `OpenWebRL/OpenWebRL-4B-SFT`. No es un modelo generativo autónomo: son módulos de 22,6 millones de parámetros que, dado un estado del navegador (captura de pantalla más prompt del actor) y cinco respuestas candidatas muestreadas por el actor, eligen cuál ejecutar. El actor permanece congelado y sus pesos no se modifican; las cabezas leen sus estados ocultos internos en las capas 18, 27 y 36 del decodificador.
 
-El problema que resuelve es la varianza en la seleccion de acciones de un agente web: en lugar de ejecutar la primera respuesta muestreada, se puntuan cinco alternativas de forma conjunta y se ejecuta el *argmax*. Las dos cabezas incluidas, `piotr-data` y `lookahead-k3-1380`, se entrenaron con objetivos distintos (la eleccion de GPT-5.5 antes de ejecutar y una votacion *lookahead* de Luna a tres pasos, respectivamente) y alcanzan un exito medio en vivo del 44,3 % / 46,3 % y 42,3 % / 44,0 % con los jueces terra y o4-mini.
+El problema que resuelve es el *best-of-N* en agentes web: en lugar de ejecutar la primera acción muestreada, se generan cinco alternativas y un discriminador ligero selecciona la más prometedora. Esto mejora la tasa de éxito sin reentrenar el modelo base ni multiplicar el coste de inferencia del actor. Las cabezas están entrenadas con etiquetas de *lookahead* (ejecutar la acción y simular tres pasos posteriores) o con las elecciones de GPT-5.5 antes de ejecutar.
 
-Su relevancia es acotada pero tecnica: es un componente reutilizable para evaluar y mejorar pipelines *best-of-N* en agentes web, con la restriccion explicita de que solo es valido para el checkpoint SFT exacto del actor y paneles de cinco candidatos.
+El repositorio incluye además tres selectores LoRA de 4B completos (visión-lenguaje) y una tercera cabeza de 22,6 M publicada el 13 de noviembre. El tamaño total del repo es de 28 GB, aunque las cabezas en sí son minúsculas en comparación. La relevancia actual radica en que ofrece una vía barata (unas 30 veces más rápida que el selector LoRA de 4B) para mejorar agentes web open source sin tocar el modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer pequeno sobre los estados ocultos congelados del actor en las capas 18, 27 y 36; comparacion conjunta de los cinco candidatos con equivarianza a permutaciones |
-| Parametros totales | 22,6 M por cabeza; el repositorio contiene dos cabezas (`piotr-data` y `lookahead-k3-1380`) |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible; el actor muestrea candidatos con un maximo de 1.024 tokens nuevos por respuesta |
-| Tipos de cuantizacion | No disponible en la informacion proporcionada |
+| Arquitectura | Cabezas de selección sobre estados ocultos de un transformer decoder (OpenWebRL-4B-SFT); selectores LoRA de 4B como alternativas |
+| Parametros totales | 22,6 M por cabeza (cabezas); selectores LoRA sobre base de 4B |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (heredada del actor OpenWebRL-4B-SFT; no especificada) |
+| Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible |
 | Licencia | No disponible |
-| Formato de pesos | safetensors, con script de inferencia en PyTorch (`openwebrl_selection_head.py`) |
-| Modelo base | `OpenWebRL/OpenWebRL-4B-SFT`, revision `15e777db2ddba2e0e82080ebccd3ad8d215b7f0a` |
-| Tamano del repositorio | 0,4 GB |
-| Descargas / likes | 0 / 0 en el momento de la consulta |
+| Formato de pesos | safetensors, PyTorch (`openwebrl_selection_head.py`, `system_prompt.txt`) |
 
 ## Arquitectura y entrenamiento
 
-Cada cabeza es un transformer pequeno que recibe representaciones internas del actor de 4B, no texto bruto. El *scorer* ejecuta una pasada del actor sobre el *prompt* y la captura de pantalla, y despues lee el texto de cada candidato a traves del mismo modelo sin generar texto nuevo. De las activaciones de las capas 18, 27 y 36 extrae un resumen de la pagina (al final del *prompt*) y, por candidato, resumenes de su razonamiento, de su accion y de su token final. Una comparacion conjunta de los cinco candidatos produce una puntuacion por candidato; se ejecuta la de mayor valor y los empates se resuelven por el indice mas bajo. El orden de los candidatos no afecta al resultado y los duplicados se conservan.
+Las cabezas son módulos ligeros que operan sobre los estados ocultos del actor congelado `OpenWebRL-4B-SFT` (revisión `15e777db2ddba2e0e82080ebccd3ad8d215b7f0a`) en las capas 18, 27 y 36 del decodificador. Para cada panel de cinco candidatos, la cabeza puntúa cada respuesta y devuelve el argmax (empates al índice más bajo); es permutación-equivariante, por lo que el orden de los candidatos no afecta al resultado. Las features dependen del checkpoint SFT exacto, de modo que las cabezas no son válidas para otro actor ni para actores OpenWebRL entrenados con RL, salvo que se re-codifiquen los candidatos con este mismo checkpoint SFT.
 
-Los datos de entrenamiento difieren entre las dos cabezas. `piotr-data` usa 2.692 estados y 35.916 paneles de cinco candidatos procedentes de la release SelectionARM de Piotr, con el objetivo de imitar la eleccion de GPT-5.5 realizada antes de la ejecucion a partir de la captura y los candidatos. `lookahead-k3-1380` usa 1.380 estados de ramificacion de OpenWebRL-4B-SFT (347 tareas), con un panel por estado formado por las 2 a 5 acciones distintas propuestas, y aprende la cuota de voto de una evaluacion *lookahead* de Luna que juzga cada accion tras ejecutarla y seguir tres pasos mas, con dos llamadas por estado y dos ordenes. No se documenta el numero total de tokens de entrenamiento, la composicion completa del dataset ni el uso de RLHF o DPO para las cabezas.
+Hay dos cabezas principales de 22,6 M: `piotr-data/`, entrenada sobre 2.692 estados y 35.916 paneles de cinco candidatos del release SelectionARM de Piotr, con etiquetas de la elección de GPT-5.5 antes de ejecutar; y `lookahead-k3-1380/`, entrenada sobre 1.380 estados ramificados de OpenWebRL-4B-SFT (347 tareas), con votos de *lookahead* de Luna (cada acción se juzga tras ejecutarla y seguir tres pasos más, dos llamadas por estado en dos órdenes). La tercera cabeza, `head-22m-gpt55-h4-p16/`, se entrenó sobre los mismos 18.786 paneles con etiquetas *lookahead* de GPT-5.5. Los selectores LoRA de 4B (`decoder-4b-lora-recipe2-2.6k/`, `decoder-4b-lora-gpt55-k3-p16/`, `decoder-4b-lora-gpt55-pre-p16/`) son modelos visión-lenguaje completos que leen la captura y los cinco candidatos y responden con su elección; el primero se entrenó sobre 2.612 estados etiquetados con *lookahead* de Luna y los otros dos sobre los 18.786 paneles con etiquetas de GPT-5.5.
 
 ## Capacidades
 
-- Seleccion *best-of-5* de acciones para `OpenWebRL-4B-SFT`: puntua cinco candidatos y devuelve el indice a ejecutar.
-- Puntuacion individual de candidatos mediante `scorer.score(...)`, que devuelve los cinco logits del panel.
-- Equivarianza a permutaciones: el orden de los candidatos no altera la seleccion y los duplicados no se eliminan.
-- Reconstruccion exacta del *prompt* del actor con `build_prompt`, incluyendo el *system prompt* de evaluacion y el historial de acciones y respuestas del entorno.
-- Procesamiento secuencial o por lotes (`batch_size=5`) de los candidatos, con puntuaciones equivalentes.
-- Integracion en bucles de agente web con *tool calling*: el actor emite llamadas tipo `click` en JSON y la cabeza elige cual ejecutar.
-- Ejecucion de la cabeza en CPU en torno a 1 ms, sin generar texto adicional.
-- No dispone de capacidades generativas, de vision ni multilingues propias; hereda las del actor de 4B sobre el que opera.
+- Selección best-of-5 de acciones para el agente web OpenWebRL-4B-SFT: puntúa cinco respuestas candidatas y devuelve el índice a ejecutar.
+- Puntuación por panel: `scorer.score(...)` devuelve los cinco logits, comparables solo dentro de un mismo panel, no entre estados.
+- Reconstrucción del prompt del actor: `build_prompt` genera el prompt exacto a partir de la tarea, observaciones, respuestas ejecutadas y feedback del entorno, con el system prompt de evaluación.
+- Equivarianza a permutaciones: el orden de los candidatos no altera la selección.
+- Operación con token ids o con cadenas de texto de los candidatos.
+- Selectores LoRA de 4B alternativos con capacidad visión-lenguaje completa (leen captura y candidatos).
+- No es un modelo de recompensa ni un generador: no produce texto nuevo, solo elige entre candidatos existentes.
 
 ## Casos de uso
 
-- **Mejora de un agente web existente basado en OpenWebRL-4B-SFT**: sustituir la ejecucion directa de la primera respuesta muestreada por una seleccion *best-of-5* con la cabeza, manteniendo intactos los pesos del actor y anadiendo solo el coste de puntuar cinco candidatos.
-- **Evaluacion reproducible de agentes web**: integrar la cabeza en un *harness* de evaluacion para reducir la varianza entre ejecuciones, con el mismo *prompt*, la misma captura y cinco muestras a temperatura 1,0 y top-p 0,9.
-- **Investigacion sobre reranking de acciones**: comparar `piotr-data` y `lookahead-k3-1380` como dos objetivos de seleccion distintos sobre el mismo actor, usando los logits dentro de cada panel para analizar casos de desacuerdo.
-- **Despliegue en hardware modesto**: ejecutar el bucle completo en una GPU de 18 GB procesando los candidatos uno a uno, o pasar a `batch_size=5` en una GPU grande para obtener las mismas puntuaciones con mayor rapidez.
-- **Depuracion de trayectorias de navegacion**: reconstruir *prompts* guardados con `build_prompt` y verificar que coinciden byte a byte con los de la evaluacion (360 *prompts* y 4.644 pasos de historial en las tres benchmarks citadas) antes de reproducir una decision.
-- **Prototipado de pipelines *best-of-N* en tareas de formularios y reservas**: usar el agente para rellenar campos y hacer clic en sitios como Google Flights, eligiendo entre cinco acciones propuestas la que la cabeza puntua mas alto, hasta un maximo de 30 pasos.
-- **Analisis de sensibilidad al numero de candidatos**: replicar el unico caso documentado con N distinto de 5, la cabeza `piotr-data` con N = 3 en Online-Mind2Web, donde igualo el resultado de N = 5.
+- Mejora de agentes web en producción sin reentrenar el actor: se integra en el bucle existente de OpenWebRL, se muestrean cinco acciones por paso y la cabeza elige la mejor; el coste añadido es mínimo frente a un selector de 4B.
+- Automatización de tareas de navegación (reservas, formularios, búsquedas): en cada paso del navegador se descartan cuatro de cinco acciones candidatas, reduciendo ejecuciones erróneas en flujos multi-paso de hasta 30 pasos.
+- Evaluación de políticas de agentes: sirve como discriminador barato para comparar checkpoints SFT o configuraciones de muestreo sin desplegar un segundo modelo grande.
+- Investigación en *best-of-N* y *lookahead*: permite reproducir experimentos de selección con etiquetas de GPT-5.5 o de votos de Luna sobre estados ramificados.
+- Despliegue con requisitos de latencia estrictos: la cabeza de 22,6 M es aproximadamente 30 veces más rápida en selección que el selector LoRA de 4B, adecuada para entornos con presupuesto de cómputo limitado.
+- Prototipado de agentes web en investigación académica: el script `openwebrl_selection_head.py` y `build_prompt` permiten reconstruir prompts byte a byte (verificado sobre 360 prompts y 4.644 pasos de historial) para experimentos reproducibles.
 
 ## Benchmarks y rendimiento
 
-| Cabeza | Datos de entrenamiento | Objetivo | Exito medio (juez terra) | Exito medio (juez o4-mini) |
-|---|---|---|---:|---:|
-| `piotr-data` | 2.692 estados / 35.916 paneles de cinco candidatos | Eleccion de GPT-5.5 antes de ejecutar, a partir de captura y candidatos | 44,3 % | 46,3 % |
-| `lookahead-k3-1380` | 1.380 estados de ramificacion / 347 tareas | Cuota de voto *lookahead* de Luna tras ejecutar y seguir 3 pasos | 42,3 % | 44,0 % |
+| Cabeza | Datos de entrenamiento | Objetivo | Éxito medio en vivo (juez OM2W terra / o4-mini) |
+|---|---|---|---:|
+| `piotr-data/` | 2.692 estados / 35.916 paneles | Elección de GPT-5.5 antes de ejecutar | 44,3% / 46,3% |
+| `lookahead-k3-1380/` | 1.380 estados ramificados (347 tareas) | Voto de *lookahead* de Luna | 42,3% / 44,0% |
 
-La diferencia entre ambas cabezas es de +2,1 puntos porcentuales a favor de `piotr-data` en la media de tres benchmarks, con un intervalo de confianza de [−1,3; +5,4], por lo que la model card las considera equivalentes dentro del ruido. No se han publicado en la informacion disponible resultados de MMLU, HumanEval, GSM8K ni de la linea base sin cabeza.
+Diferencia entre ambas cabezas: `piotr-data − lookahead-k3-1380` = +2,1 pp [−1,3, +5,4] en la media de tres benchmarks, es decir, dentro del ruido. La cabeza `piotr-data` igualó el rendimiento con N=5 al usar N=3 en Online-Mind2Web. No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- La cabeza en si es minima (22,6 M de parametros) y se ejecuta en CPU en torno a 1 ms, pero el *scorer* necesita cargar el actor de 4B para extraer los estados ocultos.
-- La model card indica que el procesamiento secuencial de los cinco candidatos cabe en una GPU pequena de 18 GB; no se especifica la VRAM exacta del pipeline completo.
-- GPU recomendadas: RTX 4090 (24 GB), A100 (40/80 GB) o H100 para el modo por lotes; una GPU de 18 GB es suficiente en modo secuencial segun el autor.
-- Si el actor ya esta cargado para el muestreo, se puede pasar como `model=` y `processor=` para evitar una segunda copia en memoria.
-- Despliegue mediante PyTorch, `transformers` y `safetensors` con el script `openwebrl_selection_head.py`; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia documentada: aproximadamente 1 ms para la cabeza en CPU. No se proporcionan cifras de latencia ni de *throughput* del paso completo.
-- El coste dominante es la pasada del actor de 4B sobre el *prompt*, la captura y los cinco candidatos, mas la generacion previa de esos cinco candidatos.
+- VRAM para las cabezas: despreciable (22,6 M de parámetros); el coste real lo determina el actor OpenWebRL-4B-SFT congelado.
+- VRAM para el actor de 4B: no especificada en la información disponible; depende de la cuantización elegida para el modelo base.
+- GPU recomendadas: no disponible; para el actor de 4B se requiere al menos una GPU con memoria suficiente para inferencia en fp16/bf16, pero no se detalla.
+- Cabe en GPU de consumo: las cabezas sí; el actor de 4B depende de la cuantización, no confirmado.
+- Opciones de despliegue: script propio `openwebrl_selection_head.py` con torch, transformers y safetensors; descarga vía `huggingface_hub.snapshot_download`. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: la cabeza de 22,6 M es aproximadamente 30 veces más rápida en selección que el selector LoRA de 4B; no se publican cifras absolutas.
 
 ## Comparativa con modelos similares
 
-| Componente | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `piotr-data` | 22,6 M + actor de 4B | No disponible | Seleccion *best-of-5* | No disponible | Hugging Face |
-| `lookahead-k3-1380` | 22,6 M + actor de 4B | No disponible | Seleccion *best-of-5* | No disponible | Hugging Face |
-| `OpenWebRL-4B-SFT` sin cabeza | 4B | No disponible | Generacion de acciones | No disponible | Hugging Face |
-| Otros selectores o *reward models* para agentes web | No disponible | No disponible | No disponible | No disponible | No disponible |
+| `zixianma/action-selection-heads` (cabezas) | 22,6 M | No disponible | Selección best-of-5 para OpenWebRL-4B-SFT | No disponible | Hugging Face |
+| `decoder-4b-lora-recipe2-2.6k` (mismo repo) | 4B (LoRA) | No disponible | Selector visión-lenguaje completo | No disponible | Hugging Face |
+| `decoder-4b-lora-gpt55-k3-p16` / `pre-p16` (mismo repo) | 4B (LoRA) | No disponible | Selector visión-lenguaje completo | No disponible | Hugging Face |
+| `OpenWebRL/OpenWebRL-4B-SFT` (actor base) | 4B | No disponible | Agente web generativo | No disponible | Hugging Face |
 
-No se dispone de datos publicados en la informacion proporcionada para comparar estas cabezas con alternativas de la misma categoria, ni de la linea base del actor sin seleccion. La unica comparacion cuantitativa disponible es interna, entre las dos cabezas, con una diferencia de +2,1 pp dentro del intervalo de confianza.
+No se dispone de datos de benchmarks comparativos con alternativas externas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Validas unicamente para `OpenWebRL-4B-SFT` en la revision `15e777db2ddba2e0e82080ebccd3ad8d215b7f0a`; no funcionan con otro actor ni con actores OpenWebRL entrenados con RL, salvo que sus candidatos se recodifiquen con este checkpoint SFT exacto.
-- Los identificadores de tokens de los candidatos solo son transferibles si el tokenizer y la plantilla de chat son identicos.
-- No son *reward models*: los logits solo son comparables dentro de un mismo panel, nunca entre estados distintos.
-- No se entrenaron ni evaluaron con N distinto de 5 en inferencia, salvo `piotr-data` con N = 3 en Online-Mind2Web, donde igualo a N = 5.
-- La licencia no esta disponible, por lo que el uso comercial no puede confirmarse.
-- No hay informacion sobre sesgos, idiomas soportados ni riesgos de alucinacion de la cabeza; el comportamiento depende del actor y de sus propias limitaciones.
-- El *prompt* debe coincidir exactamente con aquel del que se muestreo al actor (incluido el sufijo `<|im_start|>assistant\n<think>\n` y un unico marcador de imagen); una discrepancia puede degradar la seleccion.
-- La evaluacion se limita a la media de tres benchmarks con dos jueces y no se publican resultados por tarea ni de la linea base sin cabeza.
-- El repositorio tiene 0 descargas y 0 likes, sin validacion independiente de la comunidad.
-- El bucle esta pensado para un maximo de 30 pasos; no se documenta el comportamiento en tareas de horizonte mas largo.
+- Las cabezas solo son válidas para el checkpoint exacto `OpenWebRL-4B-SFT` (revisión `15e777db2ddba2e0e82080ebccd3ad8d215b7f0a`); no funcionan con otros actores ni con actores OpenWebRL entrenados con RL, salvo re-codificación con este SFT y tokenizer y chat template idénticos.
+- No son modelos de recompensa: los logits solo son comparables dentro de un mismo panel, no entre estados.
+- Entrenadas y evaluadas con N=5; la única excepción es la cabeza `piotr-data` con N=3 en Online-Mind2Web, donde igualó a N=5.
+- Licencia no disponible: no se puede confirmar el uso comercial.
+- Idiomas soportados no disponibles.
+- Riesgo de sesgo y alucinación heredado del actor base y de las etiquetas de GPT-5.5 o Luna usadas en el entrenamiento.
+- Dependencia de la captura de pantalla y del prompt exacto del actor; `build_prompt` debe reproducir el formato byte a byte.
+- Las cabezas no generan texto ni razonan de forma autónoma; solo eligen entre candidatos ya muestreados.
 
 ## Enlaces
 
-- [Hugging Face: zixianma/action-selection-heads](https://huggingface.co/zixianma/action-selection-heads)
-- [Modelo base: OpenWebRL/OpenWebRL-4B-SFT](https://huggingface.co/OpenWebRL/OpenWebRL-4B-SFT)
-- No se han encontrado en la informacion proporcionada papers, blogs, repositorios adicionales ni demos.
+- Hugging Face: https://huggingface.co/zixianma/action-selection-heads
+- Modelo base: https://huggingface.co/OpenWebRL/OpenWebRL-4B-SFT
+- Release SelectionARM de Piotr: no disponible como enlace directo en la información proporcionada
+- Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada

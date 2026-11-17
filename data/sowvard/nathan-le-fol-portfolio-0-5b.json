@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "sowvard/nathan-le-fol-portfolio-0.5b",
+  "slug": "sowvard-nathan-le-fol-portfolio-0-5b",
+  "author": "sowvard",
+  "url": "https://huggingface.co/sowvard/nathan-le-fol-portfolio-0.5b",
+  "created_at": "2026-11-17T16:44:08.000Z",
+  "updated_at": "2026-11-17T16:51:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "lora",
+    "qwen2.5",
+    "portfolio",
+    "fr",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1987585368,
+  "storage_human": "2.0 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

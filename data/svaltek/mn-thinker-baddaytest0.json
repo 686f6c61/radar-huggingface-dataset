@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "SvalTek/MN-Thinker-BadDayTest0",
+  "slug": "svaltek-mn-thinker-baddaytest0",
+  "author": "SvalTek",
+  "url": "https://huggingface.co/SvalTek/MN-Thinker-BadDayTest0",
+  "created_at": "2026-11-17T13:35:52.000Z",
+  "updated_at": "2026-11-17T13:39:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:SvalTek/MN-Thinker-Base-ToolTest0",
+    "base_model:finetune:SvalTek/MN-Thinker-Base-ToolTest0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 24512685446,
+  "storage_human": "24.5 GB",
+  "context_length": null,
+  "base_model": "SvalTek/MN-Thinker-Base-ToolTest0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

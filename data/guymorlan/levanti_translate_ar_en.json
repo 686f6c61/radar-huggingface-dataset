@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "guymorlan/levanti_translate_ar_en",
+  "slug": "guymorlan-levanti_translate_ar_en",
+  "author": "guymorlan",
+  "url": "https://huggingface.co/guymorlan/levanti_translate_ar_en",
+  "created_at": "2024-07-10T09:24:47.000Z",
+  "updated_at": "2026-11-17T14:19:13.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "ar",
+    "en",
+    "dataset:guymorlan/levanti",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 60,
+  "trending_score": 0,
+  "parameters": 76372338,
+  "parameters_human": "76.4M",
+  "storage_bytes": 305518408,
+  "storage_human": "306 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

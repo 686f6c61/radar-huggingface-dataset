@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "mradermacher/bella-bartender-qwen3.5-4b-GGUF",
+  "slug": "mradermacher-bella-bartender-qwen3-5-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/bella-bartender-qwen3.5-4b-GGUF",
+  "created_at": "2026-11-17T20:46:24.000Z",
+  "updated_at": "2026-11-17T20:46:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 333514240,
+  "parameters_human": "333.5M",
+  "storage_bytes": 1039317312,
+  "storage_human": "1.0 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=roleplay&p=2&sort=trending",
+      "snippet": "• 4.68k • 5 · juiceb0xc0de/bella-bartender-9b-yi-GGUF. Text Generation • 9B • Updated Jul 2 • 757 • 2 · mradermacher/Gemma-4-Novelist-Eclipse-31B-i1-GGUF."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=creative-writing",
+      "snippet": "juiceb0xc0de/bella-bartender-gemma-e4b. Text Generation • 8B • Updated ... mradermacher/Gemma-4-31B-StyleTune-i1-GGUF. 32B • Updated Jul 3 • 4.46k • 24."
+    }
+  ]
+}

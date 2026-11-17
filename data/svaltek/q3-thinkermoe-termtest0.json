@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "SvalTek/Q3-ThinkerMOE-TermTest0",
+  "slug": "svaltek-q3-thinkermoe-termtest0",
+  "author": "SvalTek",
+  "url": "https://huggingface.co/SvalTek/Q3-ThinkerMOE-TermTest0",
+  "created_at": "2026-11-17T17:08:10.000Z",
+  "updated_at": "2026-11-17T17:11:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:SvalTek/Q3-ThinkerMOE-Base0",
+    "base_model:finetune:SvalTek/Q3-ThinkerMOE-Base0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7005742080,
+  "parameters_human": "7.01B",
+  "storage_bytes": 14022998146,
+  "storage_human": "14.0 GB",
+  "context_length": null,
+  "base_model": "SvalTek/Q3-ThinkerMOE-Base0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

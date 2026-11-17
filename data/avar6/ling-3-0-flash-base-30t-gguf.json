@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "avar6/Ling-3.0-flash-base-30T-gguf",
+  "slug": "avar6-ling-3-0-flash-base-30t-gguf",
+  "author": "avar6",
+  "url": "https://huggingface.co/avar6/Ling-3.0-flash-base-30T-gguf",
+  "created_at": "2026-08-22T00:56:28.000Z",
+  "updated_at": "2026-11-17T12:50:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:inclusionAI/Ling-3.0-flash-base-30T",
+    "base_model:quantized:inclusionAI/Ling-3.0-flash-base-30T",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 127486405600,
+  "parameters_human": "127.49B",
+  "storage_bytes": 90465971744,
+  "storage_human": "90.5 GB",
+  "context_length": 8192,
+  "base_model": "inclusionAI/Ling-3.0-flash-base-30T",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

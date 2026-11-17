@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "caikybaldo999/ZYLU-1-MED",
+  "slug": "caikybaldo999-zylu-1-med",
+  "author": "caikybaldo999",
+  "url": "https://huggingface.co/caikybaldo999/ZYLU-1-MED",
+  "created_at": "2026-11-17T17:51:53.000Z",
+  "updated_at": "2026-11-17T19:18:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "zylu",
+    "from-scratch",
+    "muon",
+    "small-language-model",
+    "portuguese",
+    "text-generation",
+    "pt",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 65753856,
+  "parameters_human": "65.8M",
+  "storage_bytes": 1317510033,
+  "storage_human": "1.3 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

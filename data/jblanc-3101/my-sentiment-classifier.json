@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "jblanc-3101/my-sentiment-classifier",
+  "slug": "jblanc-3101-my-sentiment-classifier",
+  "author": "jblanc-3101",
+  "url": "https://huggingface.co/jblanc-3101/my-sentiment-classifier",
+  "created_at": "2026-11-17T16:44:20.000Z",
+  "updated_at": "2026-11-17T16:44:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "sentiment-analysis",
+    "text-classification",
+    "en",
+    "dataset:stanfordnlp/sst2",
+    "base_model:distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+    "base_model:finetune:distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "context_length": null,
+  "base_model": "distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

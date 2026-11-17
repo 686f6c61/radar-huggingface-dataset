@@ -1,0 +1,111 @@
+{
+  "schema": 2,
+  "id": "msbayindir/tr-ocr-markdown-deepseek-ocr2-lora-v0.4",
+  "slug": "msbayindir-tr-ocr-markdown-deepseek-ocr2-lora-v0-4",
+  "author": "msbayindir",
+  "url": "https://huggingface.co/msbayindir/tr-ocr-markdown-deepseek-ocr2-lora-v0.4",
+  "created_at": "2026-11-17T12:45:38.000Z",
+  "updated_at": "2026-11-17T12:49:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "ocr",
+    "document-ai",
+    "markdown",
+    "lora",
+    "deepseek-ocr-2",
+    "turkish",
+    "türkçe",
+    "image-text-to-text",
+    "tr",
+    "base_model:unsloth/DeepSeek-OCR-2",
+    "base_model:adapter:unsloth/DeepSeek-OCR-2",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 345908528,
+  "storage_human": "346 MB",
+  "context_length": null,
+  "base_model": "unsloth/DeepSeek-OCR-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Türkçe belge görüntüsü → Markdown (OCR + yapı)",
+      "dataset": "Gerçek kanun sayfaları (born-digital PDF, 55 sayfa)",
+      "metric": "CER (%)",
+      "value": 0.4
+    },
+    {
+      "task": "Türkçe belge görüntüsü → Markdown (OCR + yapı)",
+      "dataset": "Taranmış Resmî Gazete sayfaları (50 sayfa)",
+      "metric": "CER (%)",
+      "value": 25.4
+    },
+    {
+      "task": "Türkçe belge görüntüsü → Markdown (OCR + yapı)",
+      "dataset": "OCRTurk (ODTÜ; 165 gerçek sayfa, denklemler LaTeX, yalnız ölçüm)",
+      "metric": "CER (%)",
+      "value": 16.9
+    },
+    {
+      "task": "Türkçe belge görüntüsü → Markdown (OCR + yapı)",
+      "dataset": "Taranmış akademik makale sayfaları, DergiPark (109 sayfa)",
+      "metric": "CER (%)",
+      "value": 6.8
+    },
+    {
+      "task": "Türkçe belge görüntüsü → Markdown (OCR + yapı)",
+      "dataset": "Resmî belgeler — RG/TBMM taramaları (104 sayfa)",
+      "metric": "CER (%)",
+      "value": 6.9
+    },
+    {
+      "task": "Türkçe belge görüntüsü → Markdown (OCR + yapı)",
+      "dataset": "Telif dışı kitap taramaları (49 sayfa)",
+      "metric": "CER (%)",
+      "value": 2
+    },
+    {
+      "task": "Türkçe belge görüntüsü → Markdown (OCR + yapı)",
+      "dataset": "Fotoğraflanmış fiş/fatura/form, düz metin OCR (moganai, 300 sayfa)",
+      "metric": "CER (%)",
+      "value": 1.8
+    },
+    {
+      "task": "Türkçe belge görüntüsü → Markdown (OCR + yapı)",
+      "dataset": "Fotoğraflanmış fiş/fatura/form, Markdown (150 sayfa)",
+      "metric": "CER (%)",
+      "value": 0.4
+    },
+    {
+      "task": "Türkçe belge görüntüsü → Markdown (OCR + yapı)",
+      "dataset": "Gerçek PDF sayfaları, bozulma uygulanmış (87 sayfa)",
+      "metric": "CER (%)",
+      "value": 9.2
+    }
+  ],
+  "sources": []
+}

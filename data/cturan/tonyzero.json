@@ -1,0 +1,46 @@
+{
+  "schema": 2,
+  "id": "cturan/TonyZero",
+  "slug": "cturan-tonyzero",
+  "author": "cturan",
+  "url": "https://huggingface.co/cturan/TonyZero",
+  "created_at": "2026-11-17T20:15:28.000Z",
+  "updated_at": "2026-11-17T20:17:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "chess",
+    "chess engine",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4150472057,
+  "storage_human": "4.2 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "413 Online bots - Lichess.org",
+      "url": "https://lichess.org/player/bots",
+      "snippet": "It is trained with a deep learning model based on Leela Zero and Maia2 ... https://github.com/cturan/Tony I live on a tiny VPS that I share with a mail ..."
+    }
+  ]
+}

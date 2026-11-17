@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Amadeus-Verbo-FI-Qwen2.5-72B-PT-BR-Instruct-GGUF",
+  "slug": "mradermacher-amadeus-verbo-fi-qwen2-5-72b-pt-br-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Amadeus-Verbo-FI-Qwen2.5-72B-PT-BR-Instruct-GGUF",
+  "created_at": "2025-06-04T11:10:23.000Z",
+  "updated_at": "2026-11-17T19:15:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "pt",
+    "base_model:amadeusai/Amadeus-Verbo-FI-Qwen2.5-72B-PT-BR-Instruct",
+    "base_model:quantized:amadeusai/Amadeus-Verbo-FI-Qwen2.5-72B-PT-BR-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 153,
+  "trending_score": 0,
+  "parameters": 72706203648,
+  "parameters_human": "72.71B",
+  "storage_bytes": 520404529088,
+  "storage_human": "520.4 GB",
+  "context_length": 32768,
+  "base_model": "amadeusai/Amadeus-Verbo-FI-Qwen2.5-72B-PT-BR-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

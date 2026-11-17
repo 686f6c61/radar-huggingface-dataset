@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "glassbox/gpt-alpha-bg-restorer-multistyle",
+  "slug": "glassbox-gpt-alpha-bg-restorer-multistyle",
+  "author": "glassbox",
+  "url": "https://huggingface.co/glassbox/gpt-alpha-bg-restorer-multistyle",
+  "created_at": "2026-11-17T19:54:15.000Z",
+  "updated_at": "2026-11-17T20:00:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "bg"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt",
+    "from-scratch",
+    "bulgarian",
+    "transliteration",
+    "character-level",
+    "pytorch",
+    "text-generation",
+    "bg",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4736768,
+  "parameters_human": "4.7M",
+  "storage_bytes": 37917157,
+  "storage_human": "38 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

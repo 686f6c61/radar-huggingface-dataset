@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "quangdung/bamibert-tn-adapted-171126",
+  "slug": "quangdung-bamibert-tn-adapted-171126",
+  "author": "quangdung",
+  "url": "https://huggingface.co/quangdung/bamibert-tn-adapted-171126",
+  "created_at": "2026-11-17T17:03:11.000Z",
+  "updated_at": "2026-11-17T17:35:39.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "fill-mask",
+    "vietnamese",
+    "masked-lm",
+    "text-normalization",
+    "tts",
+    "pll",
+    "vi",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 102993666,
+  "parameters_human": "103.0M",
+  "storage_bytes": 411998912,
+  "storage_human": "412 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

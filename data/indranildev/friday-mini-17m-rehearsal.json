@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "indranildev/friday-mini-17m-rehearsal",
+  "slug": "indranildev-friday-mini-17m-rehearsal",
+  "author": "indranildev",
+  "url": "https://huggingface.co/indranildev/friday-mini-17m-rehearsal",
+  "created_at": "2026-11-17T18:56:52.000Z",
+  "updated_at": "2026-11-17T18:57:52.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "llama",
+    "marvel",
+    "from-scratch",
+    "small-language-model",
+    "en",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17234304,
+  "parameters_human": "17.2M",
+  "storage_bytes": 69508252,
+  "storage_human": "70 MB",
+  "context_length": 512,
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

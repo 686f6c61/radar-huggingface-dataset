@@ -1,0 +1,64 @@
+{
+  "schema": 2,
+  "id": "marcosmaceo/orb-planner",
+  "slug": "marcosmaceo-orb-planner",
+  "author": "marcosmaceo",
+  "url": "https://huggingface.co/marcosmaceo/orb-planner",
+  "created_at": "2026-11-17T15:11:21.000Z",
+  "updated_at": "2026-11-17T15:11:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "orb-planner",
+    "audio",
+    "sound-effects",
+    "text-to-audio",
+    "procedural-audio",
+    "dsp",
+    "agents",
+    "mcp",
+    "safetensors",
+    "from-scratch",
+    "orb",
+    "en",
+    "dataset:marcosmaceo/orb-planner-data",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20795000,
+  "storage_human": "21 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Caption to Spec",
+      "dataset": "ORB scores (500 held-out captions)",
+      "metric": "Held-out exact Spec match (%)",
+      "value": 100
+    }
+  ],
+  "sources": []
+}

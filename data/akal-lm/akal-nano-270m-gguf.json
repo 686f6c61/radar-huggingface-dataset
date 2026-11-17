@@ -1,0 +1,87 @@
+{
+  "schema": 2,
+  "id": "akal-lm/Akal-Nano-270M-GGUF",
+  "slug": "akal-lm-akal-nano-270m-gguf",
+  "author": "akal-lm",
+  "url": "https://huggingface.co/akal-lm/Akal-Nano-270M-GGUF",
+  "created_at": "2026-11-17T15:58:14.000Z",
+  "updated_at": "2026-11-17T16:00:03.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "id",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "gemma",
+    "gemma3",
+    "speculative-decoding",
+    "micro-lm",
+    "edge-ai",
+    "cpu-inference",
+    "llama-cpp",
+    "indonesian-nlp",
+    "importance-matrix",
+    "text-generation",
+    "id",
+    "en",
+    "base_model:google/gemma-3-270m-it",
+    "base_model:quantized:google/gemma-3-270m-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 788683871,
+  "storage_human": "789 MB",
+  "context_length": 32768,
+  "base_model": "google/gemma-3-270m-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spiruline Bio Française Artisanale | Akal - Producteur en Normandie",
+      "url": "https://akal-spiruline.com/",
+      "snippet": "Découvrez la spiruline bio française Akal, cultivée artisanalement en Normandie. Superaliment naturel, écologique et éthique pour …"
+    },
+    {
+      "title": "Spiruline - AKAL",
+      "url": "https://akal-spiruline.com/categorie-produit/racine/tous-nos-produits/spiruline/",
+      "snippet": "La Spiruline naturelle AKAL est un joyau de bien-être naturel et BIOlogique. Notre Spiruline française est produite dans notre éco …"
+    },
+    {
+      "title": "Akal España | Akal",
+      "url": "https://www.akal.com/",
+      "snippet": "Presentación de DEMOCRACIAS ESTRESADAS, en Madrid 26-11-2026 / Palma de Mallorca Presentación de ESTADO DE …"
+    },
+    {
+      "title": "akal, études et création bâtiment haut de gamme",
+      "url": "https://akal-studio.com/",
+      "snippet": "akal accompagne foncières premium et hôtellerie de luxe avec expertise en ingénierie, design d’espace et performance durable."
+    },
+    {
+      "title": "AKAL - Restaurant (@akal.restaurant) - Instagram",
+      "url": "https://www.instagram.com/akal.restaurant/",
+      "snippet": "22K Followers, 7 Following, 61 Posts - AKAL - Restaurant (@akal.restaurant) on Instagram: \"Bouskoura - Cité du cheval 🕛 De 9h à …"
+    }
+  ]
+}
