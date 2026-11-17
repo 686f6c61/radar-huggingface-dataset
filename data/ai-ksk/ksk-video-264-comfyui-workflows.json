@@ -5,7 +5,7 @@
   "author": "AI-KSK",
   "url": "https://huggingface.co/AI-KSK/ksk-video-264-comfyui-workflows",
   "created_at": "2026-11-09T11:49:44.000Z",
-  "updated_at": "2026-11-09T11:49:58.000Z",
+  "updated_at": "2026-11-16T23:21:35.000Z",
   "license": "other",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -14,12 +14,6 @@
     "en"
   ],
   "tags": [
-    "comfyui",
-    "scail",
-    "video-generation",
-    "gguf",
-    "en",
-    "license:other",
     "region:us"
   ],
   "likes": 0,
@@ -27,13 +21,11 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 22272184,
-  "storage_human": "22 MB",
+  "storage_bytes": 19524546,
+  "storage_human": "20 MB",
   "context_length": null,
   "base_model": null,
-  "formats": [
-    "gguf"
-  ],
+  "formats": [],
   "is_conversational": false,
   "gated": false,
   "disabled": false,

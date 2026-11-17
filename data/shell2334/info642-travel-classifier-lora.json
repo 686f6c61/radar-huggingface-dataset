@@ -1,0 +1,54 @@
+{
+  "schema": 2,
+  "id": "Shell2334/info642-travel-classifier-lora",
+  "slug": "shell2334-info642-travel-classifier-lora",
+  "author": "Shell2334",
+  "url": "https://huggingface.co/Shell2334/info642-travel-classifier-lora",
+  "created_at": "2026-11-17T00:18:26.000Z",
+  "updated_at": "2026-11-17T00:44:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "text-classification",
+    "travel",
+    "en",
+    "base_model:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "base_model:adapter:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9063072,
+  "storage_human": "9 MB",
+  "context_length": null,
+  "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "classifier - vLLM",
+      "url": "https://docs.vllm.ai/en/latest/api/vllm/lora/layers/classifier/",
+      "snippet": "You are viewing the latest developer preview docs. Click here to view docs for the latest stable release"
+    }
+  ]
+}

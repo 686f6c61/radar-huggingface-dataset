@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "Smashinfries/pixai-tagger-v1.0-onnx-mobile",
+  "slug": "smashinfries-pixai-tagger-v1-0-onnx-mobile",
+  "author": "Smashinfries",
+  "url": "https://huggingface.co/Smashinfries/pixai-tagger-v1.0-onnx-mobile",
+  "created_at": "2026-11-12T21:01:42.000Z",
+  "updated_at": "2026-11-16T22:40:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "base_model:Mexes/pixai-tagger-v1.0-onnx-fp32-fp16-int8",
+    "base_model:quantized:Mexes/pixai-tagger-v1.0-onnx-fp32-fp16-int8",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1541218816,
+  "storage_human": "1.5 GB",
+  "context_length": null,
+  "base_model": "pixai-labs/pixai-tagger-v1.0, Mexes/pixai-tagger-v1.0-onnx-fp32-fp16-int8",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

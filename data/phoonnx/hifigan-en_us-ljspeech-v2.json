@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/hifigan-en_us-ljspeech-v2",
   "created_at": "2026-11-14T22:32:57.000Z",
-  "updated_at": "2026-11-15T15:59:05.000Z",
+  "updated_at": "2026-11-16T11:40:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",

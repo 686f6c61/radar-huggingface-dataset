@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "matt-pai/demo-write",
+  "slug": "matt-pai-demo-write",
+  "author": "matt-pai",
+  "url": "https://huggingface.co/matt-pai/demo-write",
+  "created_at": "2026-07-30T13:48:53.000Z",
+  "updated_at": "2026-11-16T22:19:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 434,
+  "trending_score": 0,
+  "parameters": 170082048,
+  "parameters_human": "170.1M",
+  "storage_bytes": 271310059374,
+  "storage_human": "271.3 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,10 +5,10 @@
   "author": "RX5950XT",
   "url": "https://huggingface.co/RX5950XT/silicon-based-girlfriend-v2",
   "created_at": "2026-09-17T16:35:13.000Z",
-  "updated_at": "2026-09-17T16:43:44.000Z",
+  "updated_at": "2026-11-14T19:43:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "text-generation",
   "library": "peft",
   "languages": [
     "zh"
@@ -20,8 +20,9 @@
     "lora",
     "traditional-chinese",
     "qwen3_5",
+    "text-generation",
     "zh",
-    "dataset:RX5950XT/silicon-based-girlfriend-v2-dataset",
+    "dataset:RX5950XT/silicon-based-girlfriend-dataset",
     "base_model:huihui-ai/Huihui-Qwen3.5-9B-abliterated",
     "base_model:adapter:huihui-ai/Huihui-Qwen3.5-9B-abliterated",
     "license:apache-2.0",

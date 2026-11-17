@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/TOEIC-Part4-GGUF",
+  "slug": "mradermacher-toeic-part4-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/TOEIC-Part4-GGUF",
+  "created_at": "2025-03-13T10:35:51.000Z",
+  "updated_at": "2026-11-16T22:25:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Nared45/TOEIC-Part4",
+    "base_model:quantized:Nared45/TOEIC-Part4",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 51,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 59564803328,
+  "storage_human": "59.6 GB",
+  "context_length": 4096,
+  "base_model": "Nared45/TOEIC-Part4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

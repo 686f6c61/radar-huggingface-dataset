@@ -5,7 +5,7 @@
   "author": "LTM-Lab",
   "url": "https://huggingface.co/LTM-Lab/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4-v15",
   "created_at": "2026-11-16T11:46:11.000Z",
-  "updated_at": "2026-11-16T11:59:05.000Z",
+  "updated_at": "2026-11-17T03:13:59.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

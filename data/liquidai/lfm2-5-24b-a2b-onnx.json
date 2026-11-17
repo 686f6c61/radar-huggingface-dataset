@@ -9,7 +9,7 @@
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
-  "library": null,
+  "library": "onnxruntime-genai",
   "languages": [
     "en",
     "ar",
@@ -23,6 +23,7 @@
     "it"
   ],
   "tags": [
+    "onnxruntime-genai",
     "onnx",
     "lfm2_moe",
     "liquid",
@@ -30,7 +31,6 @@
     "lfm2.5",
     "moe",
     "onnxruntime",
-    "onnxruntime-genai",
     "text-generation",
     "conversational",
     "en",
@@ -49,7 +49,7 @@
     "region:us"
   ],
   "likes": 20,
-  "downloads_30d": 712,
+  "downloads_30d": 658,
   "trending_score": 17,
   "parameters": null,
   "parameters_human": null,

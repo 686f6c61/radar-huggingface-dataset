@@ -19,7 +19,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 7,
+  "downloads_30d": 12,
   "trending_score": 0,
   "parameters": 5506950723,
   "parameters_human": "5.51B",
@@ -36,8 +36,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Guilherme34/Firefly-v6-part3-dontdownload",
+  "renamed_at": "2026-11-17T03:00:20.795Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "Phoonnx/vits-si-chan4lk-espeak",
+  "slug": "phoonnx-vits-si-chan4lk-espeak",
+  "author": "Phoonnx",
+  "url": "https://huggingface.co/Phoonnx/vits-si-chan4lk-espeak",
+  "created_at": "2026-11-16T21:35:18.000Z",
+  "updated_at": "2026-11-16T21:35:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "phoonnx",
+  "languages": [
+    "si"
+  ],
+  "tags": [
+    "phoonnx",
+    "onnx",
+    "vits",
+    "text-to-speech",
+    "si",
+    "base_model:chan4lk/piper-tts-sinhala",
+    "base_model:quantized:chan4lk/piper-tts-sinhala",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 82844983,
+  "storage_human": "83 MB",
+  "context_length": null,
+  "base_model": "chan4lk/piper-tts-sinhala",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

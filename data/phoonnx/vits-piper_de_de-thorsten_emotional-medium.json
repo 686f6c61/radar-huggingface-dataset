@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/vits-piper_de_DE-thorsten_emotional-medium",
   "created_at": "2026-11-14T23:07:37.000Z",
-  "updated_at": "2026-11-15T16:02:53.000Z",
+  "updated_at": "2026-11-16T11:42:44.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 29,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": "Phoonnx/vits-de_de-thorsten_emotional-medium",
-  "renamed_at": "2026-11-16T03:58:11.036Z",
+  "renamed_to": "Phoonnx/vits-de_de-thorsten_emotional-medium-espeak",
+  "renamed_at": "2026-11-17T04:05:13.018Z",
   "benchmarks": [],
   "sources": []
 }

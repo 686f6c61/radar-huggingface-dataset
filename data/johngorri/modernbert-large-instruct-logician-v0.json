@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 16,
+  "downloads_30d": 14,
   "trending_score": 0,
   "parameters": 395881664,
   "parameters_human": "395.9M",
@@ -39,8 +39,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "JohnGorri/ModernBERT-Large-Instruct-Logician-v0.5",
+  "renamed_at": "2026-11-17T03:19:54.527Z",
   "benchmarks": [],
   "sources": [
     {

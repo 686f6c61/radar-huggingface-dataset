@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/styletts2-hitz-eu-styletts2",
   "created_at": "2026-11-14T22:42:24.000Z",
-  "updated_at": "2026-11-15T16:00:17.000Z",
+  "updated_at": "2026-11-16T11:41:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 27,
+  "downloads_30d": 20,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": "Phoonnx/styletts2-eu_es-hitz",
-  "renamed_at": "2026-11-16T03:55:51.439Z",
+  "renamed_to": "Phoonnx/styletts2-eu_es-hitz-ahotts",
+  "renamed_at": "2026-11-17T04:00:50.789Z",
   "benchmarks": [],
   "sources": []
 }

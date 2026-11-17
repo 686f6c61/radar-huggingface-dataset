@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 9,
+  "downloads_30d": 7,
   "trending_score": 0,
   "parameters": 405334016,
   "parameters_human": "405.3M",
@@ -39,8 +39,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "TheHassanSaud/P2_pythia410m_q0_dpo_beta0.05",
+  "renamed_at": "2026-11-17T04:42:04.576Z",
   "benchmarks": [],
   "sources": [
     {

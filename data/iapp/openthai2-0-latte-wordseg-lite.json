@@ -1,0 +1,80 @@
+{
+  "schema": 2,
+  "id": "iapp/OpenThai2.0-LATTE-WordSeg-Lite",
+  "slug": "iapp-openthai2-0-latte-wordseg-lite",
+  "author": "iapp",
+  "url": "https://huggingface.co/iapp/OpenThai2.0-LATTE-WordSeg-Lite",
+  "created_at": "2026-11-14T16:28:38.000Z",
+  "updated_at": "2026-11-17T00:22:45.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "th"
+  ],
+  "tags": [
+    "onnx",
+    "thai",
+    "word-segmentation",
+    "tokenization",
+    "cpu",
+    "knowledge-distillation",
+    "token-classification",
+    "th",
+    "dataset:typhoon-ai/khammoon-data",
+    "dataset:wikimedia/wikipedia",
+    "dataset:pythainlp/wisesight_sentiment",
+    "dataset:pythainlp/wisesight1000",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7297935,
+  "storage_human": "7 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IAPP",
+      "url": "https://iapp.org/",
+      "snippet": "The IAPP is a policy neutral, not-for-profit association founded in 2000 with a mission to define, promote and improve the professions …"
+    },
+    {
+      "title": "Certification | IAPP",
+      "url": "https://iapp.org/certify",
+      "snippet": "The IAPP offers six distinct CIPP designation concentrations, demonstrating mastery in privacy laws, regulations and frameworks for …"
+    },
+    {
+      "title": "MyIAPP",
+      "url": "https://myiapp.org/",
+      "snippet": "Manage your IAPP account"
+    },
+    {
+      "title": "International Association of Privacy Professionals - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/International_Association_of_Privacy_Professionals",
+      "snippet": "The IAPP offers a full suite of educational and professional development services, including privacy training, certification programs, …"
+    },
+    {
+      "title": "IAPP Store",
+      "url": "https://store.iapp.org/",
+      "snippet": "Exclusive networking events and discounted pricing on all products, including our popular conferences, are just two of many valuable …"
+    }
+  ]
+}

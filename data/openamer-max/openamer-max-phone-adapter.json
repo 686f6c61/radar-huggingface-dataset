@@ -1,0 +1,58 @@
+{
+  "schema": 2,
+  "id": "openamer-max/openamer-max-phone-adapter",
+  "slug": "openamer-max-openamer-max-phone-adapter",
+  "author": "openamer-max",
+  "url": "https://huggingface.co/openamer-max/openamer-max-phone-adapter",
+  "created_at": "2026-11-16T22:33:20.000Z",
+  "updated_at": "2026-11-16T22:33:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "de",
+    "bs"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "openamer",
+    "lora",
+    "qwen2.5",
+    "de",
+    "bs",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 250958164,
+  "storage_human": "251 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lidl Carry-le-Rouet 13620 (adresse, téléphone et horaires)",
+      "url": "https://alternativi.fr/annuaire/lidl/carry-le-rouet-13620",
+      "snippet": "Lidl à Carry-le-Rouet dans les Bouches-du-Rhône (13620) : adresse, contact téléphonique et horaires d'ouverture."
+    }
+  ]
+}

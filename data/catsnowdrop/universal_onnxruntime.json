@@ -5,7 +5,7 @@
   "author": "CatSnowdrop",
   "url": "https://huggingface.co/CatSnowdrop/universal_onnxruntime",
   "created_at": "2026-11-14T16:44:57.000Z",
-  "updated_at": "2026-11-14T17:46:09.000Z",
+  "updated_at": "2026-11-16T13:23:18.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 23,
+  "downloads_30d": 28,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

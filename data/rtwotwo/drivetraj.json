@@ -5,7 +5,7 @@
   "author": "Rtwotwo",
   "url": "https://huggingface.co/Rtwotwo/DriveTraj",
   "created_at": "2026-11-15T06:39:22.000Z",
-  "updated_at": "2026-11-15T09:41:41.000Z",
+  "updated_at": "2026-11-16T11:54:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -35,8 +35,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Rtwotwo/DriveSTA",
+  "renamed_at": "2026-11-17T04:18:35.325Z",
   "benchmarks": [],
   "sources": []
 }

@@ -5,7 +5,7 @@
   "author": "Louis1283",
   "url": "https://huggingface.co/Louis1283/so101-mocktail-act-stir-v1",
   "created_at": "2026-11-16T17:04:46.000Z",
-  "updated_at": "2026-11-16T17:04:48.000Z",
+  "updated_at": "2026-11-16T22:50:40.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -17,6 +17,7 @@
     "act",
     "so101",
     "robotics",
+    "dataset:Louis1283/Mocktail_full_V1",
     "region:us"
   ],
   "likes": 0,

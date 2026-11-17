@@ -5,7 +5,7 @@
   "author": "CordwainerSmith",
   "url": "https://huggingface.co/CordwainerSmith/GolemPII-v2-tiny",
   "created_at": "2026-11-13T11:56:01.000Z",
-  "updated_at": "2026-11-16T09:37:28.000Z",
+  "updated_at": "2026-11-16T09:54:53.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",

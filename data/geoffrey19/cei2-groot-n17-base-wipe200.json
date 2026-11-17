@@ -5,7 +5,7 @@
   "author": "Geoffrey19",
   "url": "https://huggingface.co/Geoffrey19/cei2-groot-n17-base-wipe200",
   "created_at": "2026-11-16T03:57:17.000Z",
-  "updated_at": "2026-11-16T04:03:24.000Z",
+  "updated_at": "2026-11-16T16:30:14.000Z",
   "license": "nvidia-license",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 9,
   "trending_score": 0,
   "parameters": 3144016000,
   "parameters_human": "3.14B",

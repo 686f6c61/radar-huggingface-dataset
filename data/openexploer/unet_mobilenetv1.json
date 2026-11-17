@@ -35,8 +35,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "OpenExplorer/unet_mobilenetv1",
+  "renamed_at": "2026-11-17T03:52:42.582Z",
   "benchmarks": [],
   "sources": [
     {

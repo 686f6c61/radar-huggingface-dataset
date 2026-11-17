@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mradermacher/POLAR-14B-HES-DPO-v1.5-i1-GGUF",
+  "slug": "mradermacher-polar-14b-hes-dpo-v1-5-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/POLAR-14B-HES-DPO-v1.5-i1-GGUF",
+  "created_at": "2024-12-15T10:10:14.000Z",
+  "updated_at": "2026-11-16T23:30:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "ko",
+    "base_model:xgen-ai/POLAR-14B-HES-DPO-v1.5",
+    "base_model:quantized:xgen-ai/POLAR-14B-HES-DPO-v1.5",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 45,
+  "trending_score": 0,
+  "parameters": 14221316096,
+  "parameters_human": "14.22B",
+  "storage_bytes": 142496825693,
+  "storage_human": "142.5 GB",
+  "context_length": 4096,
+  "base_model": "xgen-ai/POLAR-14B-HES-DPO-v1.5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

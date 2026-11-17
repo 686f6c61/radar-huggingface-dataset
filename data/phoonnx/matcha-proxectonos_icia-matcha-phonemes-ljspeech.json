@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/matcha-proxectonos_icia-matcha-phonemes-ljspeech",
   "created_at": "2026-11-14T22:38:52.000Z",
-  "updated_at": "2026-11-15T15:59:34.000Z",
+  "updated_at": "2026-11-16T11:40:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": "Phoonnx/matcha-gl_es-icia_phonemes_ljspeech",
-  "renamed_at": "2026-11-16T03:55:29.865Z",
+  "renamed_to": "Phoonnx/matcha-gl_es-icia_phonemes_ljspeech-cotovia",
+  "renamed_at": "2026-11-17T04:00:12.304Z",
   "benchmarks": [],
   "sources": []
 }

@@ -5,7 +5,7 @@
   "author": "Bob99Bob",
   "url": "https://huggingface.co/Bob99Bob/openjev-qwen3.5-4b-nli-v5-mlx-affine5",
   "created_at": "2026-11-16T18:45:08.000Z",
-  "updated_at": "2026-11-16T18:50:15.000Z",
+  "updated_at": "2026-11-16T20:03:40.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",

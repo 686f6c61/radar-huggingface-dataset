@@ -36,8 +36,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "XXXXyu/oxygen-pi05-textual-memory-lora",
+  "renamed_at": "2026-11-17T04:54:21.986Z",
   "benchmarks": [],
   "sources": [
     {

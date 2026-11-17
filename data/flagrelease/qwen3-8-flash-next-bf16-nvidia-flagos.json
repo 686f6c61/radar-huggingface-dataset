@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "FlagRelease/Qwen3.8-Flash-Next-BF16-nvidia-FlagOS",
+  "slug": "flagrelease-qwen3-8-flash-next-bf16-nvidia-flagos",
+  "author": "FlagRelease",
+  "url": "https://huggingface.co/FlagRelease/Qwen3.8-Flash-Next-BF16-nvidia-FlagOS",
+  "created_at": "2026-08-25T07:32:29.000Z",
+  "updated_at": "2026-11-17T01:57:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 46,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 360013002208,
+  "storage_human": "360.0 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

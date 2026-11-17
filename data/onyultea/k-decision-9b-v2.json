@@ -5,7 +5,7 @@
   "author": "ONYULTEA",
   "url": "https://huggingface.co/ONYULTEA/K-Decision-9B-v2",
   "created_at": "2026-11-16T10:20:38.000Z",
-  "updated_at": "2026-11-16T10:22:29.000Z",
+  "updated_at": "2026-11-16T14:03:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "zero-shot-classification",
@@ -35,7 +35,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 8953803264,

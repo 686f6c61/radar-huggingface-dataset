@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "ovokat/fish-v0.7-m",
+  "slug": "ovokat-fish-v0-7-m",
+  "author": "ovokat",
+  "url": "https://huggingface.co/ovokat/fish-v0.7-m",
+  "created_at": "2026-11-17T04:05:46.000Z",
+  "updated_at": "2026-11-17T04:10:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:ovokat/fish-v0.7-m",
+    "base_model:finetune:ovokat/fish-v0.7-m",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14596063712,
+  "storage_human": "14.6 GB",
+  "context_length": null,
+  "base_model": "ovokat/fish-v0.7-m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

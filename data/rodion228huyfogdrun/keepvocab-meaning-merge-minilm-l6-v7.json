@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "Rodion228huyfogdrun/KeepVocab-meaning-merge-minilm-l6-v7",
+  "slug": "rodion228huyfogdrun-keepvocab-meaning-merge-minilm-l6-v7",
+  "author": "Rodion228huyfogdrun",
+  "url": "https://huggingface.co/Rodion228huyfogdrun/KeepVocab-meaning-merge-minilm-l6-v7",
+  "created_at": "2026-11-16T21:26:09.000Z",
+  "updated_at": "2026-11-16T21:26:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "feature-extraction",
+    "semantic-similarity",
+    "keepvocab",
+    "en",
+    "base_model:sentence-transformers/paraphrase-MiniLM-L6-v2",
+    "base_model:quantized:sentence-transformers/paraphrase-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45279365,
+  "storage_human": "45 MB",
+  "context_length": null,
+  "base_model": "sentence-transformers/paraphrase-MiniLM-L6-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

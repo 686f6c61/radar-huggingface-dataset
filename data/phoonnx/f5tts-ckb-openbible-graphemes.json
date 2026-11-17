@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "Phoonnx/f5tts-ckb-openbible-graphemes",
+  "slug": "phoonnx-f5tts-ckb-openbible-graphemes",
+  "author": "Phoonnx",
+  "url": "https://huggingface.co/Phoonnx/f5tts-ckb-openbible-graphemes",
+  "created_at": "2026-11-16T23:49:15.000Z",
+  "updated_at": "2026-11-16T23:49:39.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "phoonnx",
+  "languages": [
+    "ckb"
+  ],
+  "tags": [
+    "phoonnx",
+    "onnx",
+    "f5-tts",
+    "text-to-speech",
+    "ckb",
+    "dataset:davidguzmanr/open-bible-resources",
+    "base_model:multilingual-tts/F5-TTS-OpenBible-Central-Kurdish",
+    "base_model:quantized:multilingual-tts/F5-TTS-OpenBible-Central-Kurdish",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1909584710,
+  "storage_human": "1.9 GB",
+  "context_length": null,
+  "base_model": "multilingual-tts/F5-TTS-OpenBible-Central-Kurdish",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

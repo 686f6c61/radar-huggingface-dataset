@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "Phoonnx/vits-ig-openbible-graphemes",
+  "slug": "phoonnx-vits-ig-openbible-graphemes",
+  "author": "Phoonnx",
+  "url": "https://huggingface.co/Phoonnx/vits-ig-openbible-graphemes",
+  "created_at": "2026-11-16T21:36:39.000Z",
+  "updated_at": "2026-11-16T21:36:47.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "phoonnx",
+  "languages": [
+    "ig"
+  ],
+  "tags": [
+    "phoonnx",
+    "onnx",
+    "vits",
+    "text-to-speech",
+    "ig",
+    "dataset:davidguzmanr/open-bible-resources",
+    "base_model:multilingual-tts/VITS-OpenBible-Igbo",
+    "base_model:quantized:multilingual-tts/VITS-OpenBible-Igbo",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 154160612,
+  "storage_human": "154 MB",
+  "context_length": null,
+  "base_model": "multilingual-tts/VITS-OpenBible-Igbo",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

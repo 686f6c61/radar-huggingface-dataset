@@ -5,7 +5,7 @@
   "author": "DON-IT",
   "url": "https://huggingface.co/DON-IT/donit-fashion-cir-v0.1",
   "created_at": "2026-11-16T17:19:29.000Z",
-  "updated_at": "2026-11-16T17:27:27.000Z",
+  "updated_at": "2026-11-16T23:56:27.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -14,11 +14,13 @@
     "en"
   ],
   "tags": [
+    "safetensors",
     "fashion",
     "multimodal-retrieval",
     "composed-image-retrieval",
     "image-retrieval",
     "fashion-search",
+    "research",
     "en",
     "model-index",
     "region:us"
@@ -28,11 +30,13 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 24453380,
+  "storage_human": "24 MB",
   "context_length": null,
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "disabled": false,

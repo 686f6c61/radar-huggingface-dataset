@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/vits-fr_fr-siwis-medium",
   "created_at": "2026-11-14T22:55:23.000Z",
-  "updated_at": "2026-11-15T16:02:44.000Z",
+  "updated_at": "2026-11-16T11:42:24.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 28,
+  "downloads_30d": 20,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -40,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Phoonnx/vits-fr_fr-siwis-medium-espeak",
+  "renamed_at": "2026-11-17T04:03:28.468Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "ddanielle/U-2-Netp",
+  "slug": "ddanielle-u-2-netp",
+  "author": "ddanielle",
+  "url": "https://huggingface.co/ddanielle/U-2-Netp",
+  "created_at": "2026-11-17T03:44:01.000Z",
+  "updated_at": "2026-11-17T03:44:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "u2net",
+    "image-segmentation",
+    "mask-generation",
+    "transformers.js",
+    "vision",
+    "background-removal",
+    "portrait-matting",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4574861,
+  "storage_human": "5 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

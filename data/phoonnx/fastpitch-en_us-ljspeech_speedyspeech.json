@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/fastpitch-en_us-ljspeech_speedyspeech",
   "created_at": "2026-11-14T22:35:27.000Z",
-  "updated_at": "2026-11-15T15:59:17.000Z",
+  "updated_at": "2026-11-16T11:40:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 31,
+  "downloads_30d": 21,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -40,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Phoonnx/fastpitch-en_us-ljspeech_speedyspeech-gruut",
+  "renamed_at": "2026-11-17T03:58:48.142Z",
   "benchmarks": [],
   "sources": []
 }

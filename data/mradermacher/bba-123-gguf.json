@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/BBA-123-GGUF",
+  "slug": "mradermacher-bba-123-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/BBA-123-GGUF",
+  "created_at": "2025-02-27T00:52:37.000Z",
+  "updated_at": "2026-11-17T03:52:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:Supichi/BBA-123",
+    "base_model:quantized:Supichi/BBA-123",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 39,
+  "trending_score": 0,
+  "parameters": 17160508416,
+  "parameters_human": "17.16B",
+  "storage_bytes": 118184622304,
+  "storage_human": "118.2 GB",
+  "context_length": 32768,
+  "base_model": "Supichi/BBA-123",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

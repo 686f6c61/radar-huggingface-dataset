@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "syaikhipin/defectforge-foreign-body-yolo",
+  "slug": "syaikhipin-defectforge-foreign-body-yolo",
+  "author": "syaikhipin",
+  "url": "https://huggingface.co/syaikhipin/defectforge-foreign-body-yolo",
+  "created_at": "2026-11-16T22:52:34.000Z",
+  "updated_at": "2026-11-16T22:52:45.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "object-detection",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57116758,
+  "storage_human": "57 MB",
+  "context_length": null,
+  "base_model": "ultralytics/yolo11s",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

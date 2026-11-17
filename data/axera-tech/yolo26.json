@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "AXERA-TECH/yolo26",
+  "slug": "axera-tech-yolo26",
+  "author": "AXERA-TECH",
+  "url": "https://huggingface.co/AXERA-TECH/yolo26",
+  "created_at": "2026-01-16T03:00:04.000Z",
+  "updated_at": "2026-11-17T02:42:13.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "ONNX",
+    "Axera",
+    "YOLO26",
+    "NPU",
+    "Ultralytics",
+    "object-detection",
+    "en",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 49,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 814080351,
+  "storage_human": "814 MB",
+  "context_length": null,
+  "base_model": "YOLO26",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

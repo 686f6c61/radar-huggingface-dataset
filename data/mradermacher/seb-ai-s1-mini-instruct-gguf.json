@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Seb-AI-S1-Mini-Instruct-GGUF",
+  "slug": "mradermacher-seb-ai-s1-mini-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Seb-AI-S1-Mini-Instruct-GGUF",
+  "created_at": "2026-11-17T02:18:45.000Z",
+  "updated_at": "2026-11-17T02:43:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "seb-ai",
+    "text-generation",
+    "causal-lm",
+    "llama",
+    "trained-from-scratch",
+    "en",
+    "base_model:sebaiinc/Seb-AI-S1-Mini-Instruct",
+    "base_model:quantized:sebaiinc/Seb-AI-S1-Mini-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 408996864,
+  "parameters_human": "409.0M",
+  "storage_bytes": 3731103456,
+  "storage_human": "3.7 GB",
+  "context_length": 512,
+  "base_model": "sebaiinc/Seb-AI-S1-Mini-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

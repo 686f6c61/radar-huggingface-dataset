@@ -5,7 +5,7 @@
   "author": "Suarify",
   "url": "https://huggingface.co/Suarify/suaradee-michael-v0.2",
   "created_at": "2026-11-16T02:41:48.000Z",
-  "updated_at": "2026-11-16T03:15:59.000Z",
+  "updated_at": "2026-11-16T12:38:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -35,7 +35,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 9629456,
+  "storage_bytes": 9789284,
   "storage_human": "10 MB",
   "context_length": null,
   "base_model": "sahilmahendrakar/Paradee-8M-v1.3",
@@ -48,8 +48,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Suarify/kecil-tts-michael-v0.2",
+  "renamed_at": "2026-11-17T04:36:26.897Z",
   "benchmarks": [],
   "sources": []
 }

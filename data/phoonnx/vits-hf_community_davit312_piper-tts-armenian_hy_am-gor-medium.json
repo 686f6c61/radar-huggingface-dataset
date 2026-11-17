@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/vits-hf_community_davit312_piper-TTS-Armenian_hy_AM-gor-medium",
   "created_at": "2026-11-14T23:05:25.000Z",
-  "updated_at": "2026-11-15T16:03:18.000Z",
+  "updated_at": "2026-11-16T11:42:38.000Z",
   "license": "gpl-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": "Phoonnx/vits-hy_am-gor",
-  "renamed_at": "2026-11-16T03:56:42.370Z",
+  "renamed_to": "Phoonnx/vits-hy_am-gor-espeak",
+  "renamed_at": "2026-11-17T04:03:55.701Z",
   "benchmarks": [],
   "sources": [
     {

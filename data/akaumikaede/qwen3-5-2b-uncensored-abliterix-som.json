@@ -56,7 +56,7 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 6884,
+  "downloads_30d": 6363,
   "trending_score": 0,
   "parameters": 2213241664,
   "parameters_human": "2.21B",
@@ -74,8 +74,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": "AkaumiKaede/Qwen3.5-2B-Uncensored-Zero-Refusal-SOMA",
-  "renamed_at": "2026-11-11T02:14:35.314Z",
+  "renamed_to": "AkiMizuki/Qwen3.5-2B-Uncensored-Zero-Refusal-SOMA",
+  "renamed_at": "2026-11-17T02:16:50.309Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Llama3.3-Grand-Skibidi-70B-GGUF",
+  "slug": "mradermacher-llama3-3-grand-skibidi-70b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama3.3-Grand-Skibidi-70B-GGUF",
+  "created_at": "2025-03-07T14:54:39.000Z",
+  "updated_at": "2026-11-16T22:25:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:mergekit-community/Llama3.3-Grand-Skibidi-70B",
+    "base_model:quantized:mergekit-community/Llama3.3-Grand-Skibidi-70B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 89,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 481303045376,
+  "storage_human": "481.3 GB",
+  "context_length": 131072,
+  "base_model": "mergekit-community/Llama3.3-Grand-Skibidi-70B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

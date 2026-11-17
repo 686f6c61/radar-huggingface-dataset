@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "gaotang/MBT-2-branch-W4",
+  "slug": "gaotang-mbt-2-branch-w4",
+  "author": "gaotang",
+  "url": "https://huggingface.co/gaotang/MBT-2-branch-W4",
+  "created_at": "2026-11-17T03:38:10.000Z",
+  "updated_at": "2026-11-17T03:38:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "multi-branch-transformer",
+    "mixture-of-experts",
+    "custom-code",
+    "research",
+    "text-generation",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2063292608,
+  "parameters_human": "2.06B",
+  "storage_bytes": 4126968216,
+  "storage_human": "4.1 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

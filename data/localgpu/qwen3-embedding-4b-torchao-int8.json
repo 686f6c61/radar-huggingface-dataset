@@ -5,7 +5,7 @@
   "author": "LocalGpu",
   "url": "https://huggingface.co/LocalGpu/Qwen3-Embedding-4B-torchao-INT8",
   "created_at": "2026-11-16T04:04:00.000Z",
-  "updated_at": "2026-11-16T04:04:55.000Z",
+  "updated_at": "2026-11-16T05:27:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 12,
   "trending_score": 0,
   "parameters": 4021774336,
   "parameters_human": "4.02B",

@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "Neel536/ivs-annotate-models",
+  "slug": "neel536-ivs-annotate-models",
+  "author": "Neel536",
+  "url": "https://huggingface.co/Neel536/ivs-annotate-models",
+  "created_at": "2026-11-16T22:11:09.000Z",
+  "updated_at": "2026-11-16T22:31:15.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "ivs-annotate",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4303449244,
+  "storage_human": "4.3 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

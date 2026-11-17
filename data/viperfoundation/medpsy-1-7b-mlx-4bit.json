@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "viperfoundation/MedPsy-1.7B-MLX-4bit",
+  "slug": "viperfoundation-medpsy-1-7b-mlx-4bit",
+  "author": "viperfoundation",
+  "url": "https://huggingface.co/viperfoundation/MedPsy-1.7B-MLX-4bit",
+  "created_at": "2026-11-16T23:04:38.000Z",
+  "updated_at": "2026-11-16T23:05:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "medical",
+    "on-device",
+    "viper",
+    "en",
+    "base_model:qvac/MedPsy-1.7B",
+    "base_model:quantized:qvac/MedPsy-1.7B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 979502860,
+  "storage_human": "980 MB",
+  "context_length": null,
+  "base_model": "qvac/MedPsy-1.7B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

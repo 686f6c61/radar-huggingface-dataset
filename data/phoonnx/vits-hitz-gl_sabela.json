@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/vits-hitz-gl_sabela",
   "created_at": "2026-11-14T23:03:01.000Z",
-  "updated_at": "2026-11-15T16:02:22.000Z",
+  "updated_at": "2026-11-16T11:42:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 27,
+  "downloads_30d": 18,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": "Phoonnx/vits-gl_es-sabela",
-  "renamed_at": "2026-11-16T03:57:54.529Z",
+  "renamed_to": "Phoonnx/vits-gl_es-sabela-hitz_center-cotovia",
+  "renamed_at": "2026-11-17T04:04:22.813Z",
   "benchmarks": [],
   "sources": []
 }

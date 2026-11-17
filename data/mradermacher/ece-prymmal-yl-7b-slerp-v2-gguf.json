@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/ECE-PRYMMAL-YL-7B-SLERP-V2-GGUF",
+  "slug": "mradermacher-ece-prymmal-yl-7b-slerp-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ECE-PRYMMAL-YL-7B-SLERP-V2-GGUF",
+  "created_at": "2025-03-19T15:29:13.000Z",
+  "updated_at": "2026-11-16T22:25:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Youlln/ECE-PRYMMAL-YL-7B-SLERP-V2",
+    "base_model:quantized:Youlln/ECE-PRYMMAL-YL-7B-SLERP-V2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 65,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146898432,
+  "storage_human": "68.1 GB",
+  "context_length": 32768,
+  "base_model": "Youlln/ECE-PRYMMAL-YL-7B-SLERP-V2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

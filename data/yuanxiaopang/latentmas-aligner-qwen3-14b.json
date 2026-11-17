@@ -40,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "lingzhiyxp/latentmas-aligner-qwen3-14b",
+  "renamed_at": "2026-11-17T04:59:03.092Z",
   "benchmarks": [],
   "sources": [
     {

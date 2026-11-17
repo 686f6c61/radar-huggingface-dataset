@@ -44,8 +44,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "DuoNeural/hyperbolic-peft-qwen2.5-1.5b",
+  "renamed_at": "2026-11-17T02:49:03.194Z",
   "benchmarks": [],
   "sources": []
 }

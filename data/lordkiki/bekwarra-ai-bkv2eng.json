@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "Lordkiki/bekwarra-ai-bkv2eng",
+  "slug": "lordkiki-bekwarra-ai-bkv2eng",
+  "author": "Lordkiki",
+  "url": "https://huggingface.co/Lordkiki/bekwarra-ai-bkv2eng",
+  "created_at": "2026-09-05T14:12:38.000Z",
+  "updated_at": "2026-11-17T01:51:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "marian",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 77058732,
+  "parameters_human": "77.1M",
+  "storage_bytes": 618026079,
+  "storage_human": "618 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

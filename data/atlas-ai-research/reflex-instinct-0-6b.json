@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 49,
+  "downloads_30d": 34,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -50,8 +50,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "AtlasAI-official/reflex-instinct-0.6b",
+  "renamed_at": "2026-11-17T02:24:37.358Z",
   "benchmarks": [],
   "sources": [
     {

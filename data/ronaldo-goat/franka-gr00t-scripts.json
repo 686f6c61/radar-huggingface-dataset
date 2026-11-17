@@ -30,8 +30,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "jhoonjwa/franka-gr00t-scripts",
+  "renamed_at": "2026-11-17T04:18:12.327Z",
   "benchmarks": [],
   "sources": [
     {

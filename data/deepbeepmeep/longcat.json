@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "DeepBeepMeep/LongCat",
+  "slug": "deepbeepmeep-longcat",
+  "author": "DeepBeepMeep",
+  "url": "https://huggingface.co/DeepBeepMeep/LongCat",
+  "created_at": "2025-12-23T23:03:03.000Z",
+  "updated_at": "2026-11-17T02:04:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "safetensors",
+    "base_model:meituan-longcat/LongCat-Video",
+    "base_model:finetune:meituan-longcat/LongCat-Video",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 112701,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 248758713487,
+  "storage_human": "248.8 GB",
+  "context_length": null,
+  "base_model": "meituan-longcat/LongCat-Video",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

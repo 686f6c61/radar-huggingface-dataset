@@ -1,0 +1,68 @@
+{
+  "schema": 2,
+  "id": "lfss/Taxi-V4",
+  "slug": "lfss-taxi-v4",
+  "author": "lfss",
+  "url": "https://huggingface.co/lfss/Taxi-V4",
+  "created_at": "2026-11-16T22:24:20.000Z",
+  "updated_at": "2026-11-16T22:24:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24571,
+  "storage_human": "24571 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PLFSS pour 2027 - securite-sociale.fr",
+      "url": "https://www.securite-sociale.fr/la-secu-en-detail/loi-de-financement/annee-en-cours",
+      "snippet": "Oct 12, 2026 · Le projet de loi de financement de la Sécurité sociale pour l’année 2027 (PLFSS 2027) a été présenté en Conseil des …"
+    },
+    {
+      "title": "Loi de financement de la sécurité sociale 2026 : les mesures phares",
+      "url": "https://solidarites.gouv.fr/loi-de-financement-de-la-securite-sociale-2026-les-mesures-phares",
+      "snippet": "Dec 17, 2025 · Alors que le déficit s’élève à 23 Md d’euros en 2025, la loi de financement de la sécurité sociale (LFSS) vise à le …"
+    },
+    {
+      "title": "Qu'est ce qu'une loi de financement de la sécurité sociale (LFSS) ?",
+      "url": "https://www.vie-publique.fr/fiches/21969-quest-ce-quune-loi-de-financement-de-la-securite-sociale-lfss",
+      "snippet": "Jul 31, 2024 · L’essentiel Une loi de financement de la sécurité sociale (LFSS) est une catégorie de loi qui détermine les conditions …"
+    },
+    {
+      "title": "Présentation",
+      "url": "https://www.securite-sociale.fr/la-secu-en-detail/loi-de-financement/presentation",
+      "snippet": "La LFSS a été créée suite à la réforme de la Constitution en 1996. Elle est votée chaque année, à l'automne, par le Parlement qui …"
+    },
+    {
+      "title": "Loi de financement de la Sécurité sociale — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Loi_de_financement_de_la_S%C3%A9curit%C3%A9_sociale",
+      "snippet": "La LFSS définit les conditions générales de l'équilibre financier des finances sociales, non son équilibre précis. Cela s'explique par le …"
+    }
+  ]
+}

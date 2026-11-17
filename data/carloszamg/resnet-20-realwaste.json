@@ -5,7 +5,7 @@
   "author": "CarlosZamG",
   "url": "https://huggingface.co/CarlosZamG/resnet-20-realwaste",
   "created_at": "2026-11-16T04:09:24.000Z",
-  "updated_at": "2026-11-16T04:46:49.000Z",
+  "updated_at": "2026-11-16T05:27:10.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-classification",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 4,
   "trending_score": 0,
   "parameters": 274761,
   "parameters_human": "274761",

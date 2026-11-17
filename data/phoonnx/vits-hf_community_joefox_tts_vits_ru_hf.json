@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/vits-hf_community_joefox_tts_vits_ru_hf",
   "created_at": "2026-11-14T23:06:27.000Z",
-  "updated_at": "2026-11-15T16:02:04.000Z",
+  "updated_at": "2026-11-16T11:42:06.000Z",
   "license": "cc-by-nc-4.0",
   "license_family": "non-commercial",
   "pipeline_tag": "text-to-speech",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 25,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": "Phoonnx/vits-ru-joefox",
-  "renamed_at": "2026-11-16T03:56:44.507Z",
+  "renamed_to": "Phoonnx/vits-ru-joefox-graphemes",
+  "renamed_at": "2026-11-17T04:03:58.163Z",
   "benchmarks": [],
   "sources": []
 }

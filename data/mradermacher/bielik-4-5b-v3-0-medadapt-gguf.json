@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Bielik-4.5B-v3.0-medadapt-GGUF",
+  "slug": "mradermacher-bielik-4-5b-v3-0-medadapt-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Bielik-4.5B-v3.0-medadapt-GGUF",
+  "created_at": "2026-05-27T15:28:03.000Z",
+  "updated_at": "2026-11-17T03:51:55.000Z",
+  "license": "upstream-and-data-terms",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "polish",
+    "medical",
+    "domain-adaptation",
+    "pl",
+    "base_model:jmajkutewicz/Bielik-4.5B-v3.0-medadapt",
+    "base_model:quantized:jmajkutewicz/Bielik-4.5B-v3.0-medadapt",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 200,
+  "trending_score": 0,
+  "parameters": 4757260288,
+  "parameters_human": "4.76B",
+  "storage_bytes": 41990169856,
+  "storage_human": "42.0 GB",
+  "context_length": 32768,
+  "base_model": "jmajkutewicz/Bielik-4.5B-v3.0-medadapt",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "Daemons-Q",
   "url": "https://huggingface.co/Daemons-Q/qsh-telecom-qml-ids",
   "created_at": "2026-08-05T03:45:09.000Z",
-  "updated_at": "2026-11-06T02:21:18.000Z",
+  "updated_at": "2026-11-13T01:58:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "tabular-classification",
@@ -20,6 +20,7 @@
     "tabular-classification",
     "arxiv:2509.14282",
     "arxiv:2512.05069",
+    "arxiv:2508.12749",
     "license:apache-2.0",
     "region:us"
   ],

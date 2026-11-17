@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "bluewake-labs/QwenCleo-ASR-GGUF",
+  "slug": "bluewake-labs-qwencleo-asr-gguf",
+  "author": "bluewake-labs",
+  "url": "https://huggingface.co/bluewake-labs/QwenCleo-ASR-GGUF",
+  "created_at": "2026-11-17T00:38:43.000Z",
+  "updated_at": "2026-11-17T00:55:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "automatic-speech-recognition",
+    "ar",
+    "en",
+    "base_model:mohammedaly22/QwenCleo-ASR",
+    "base_model:quantized:mohammedaly22/QwenCleo-ASR",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 2476196160,
+  "storage_human": "2.5 GB",
+  "context_length": 65536,
+  "base_model": "mohammedaly22/QwenCleo-ASR",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

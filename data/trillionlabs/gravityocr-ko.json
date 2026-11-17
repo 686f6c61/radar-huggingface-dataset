@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "trillionlabs/GravityOCR-KO",
+  "slug": "trillionlabs-gravityocr-ko",
+  "author": "trillionlabs",
+  "url": "https://huggingface.co/trillionlabs/GravityOCR-KO",
+  "created_at": "2026-09-22T01:03:00.000Z",
+  "updated_at": "2026-11-17T04:15:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "glm_ocr",
+    "ocr",
+    "document-understanding",
+    "block-diffusion",
+    "speculative-decoding",
+    "ko",
+    "en",
+    "base_model:trillionlabs/GravityOCR",
+    "base_model:finetune:trillionlabs/GravityOCR",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 168,
+  "trending_score": 0,
+  "parameters": 1107070976,
+  "parameters_human": "1.11B",
+  "storage_bytes": 4428405712,
+  "storage_human": "4.4 GB",
+  "context_length": null,
+  "base_model": "trillionlabs/GravityOCR",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

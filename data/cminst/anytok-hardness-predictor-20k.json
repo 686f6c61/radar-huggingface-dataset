@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "cminst/anytok-hardness-predictor-20k",
+  "slug": "cminst-anytok-hardness-predictor-20k",
+  "author": "cminst",
+  "url": "https://huggingface.co/cminst/anytok-hardness-predictor-20k",
+  "created_at": "2026-11-16T22:01:51.000Z",
+  "updated_at": "2026-11-16T22:35:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tokenizer-transfer",
+    "hypernetwork",
+    "online-regression",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8634401699,
+  "storage_human": "8.6 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

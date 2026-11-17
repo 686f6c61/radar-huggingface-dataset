@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Llama_3.x_70b_BetsyTeaz_0.1-GGUF",
+  "slug": "mradermacher-llama_3-x_70b_betsyteaz_0-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama_3.x_70b_BetsyTeaz_0.1-GGUF",
+  "created_at": "2025-03-01T12:58:01.000Z",
+  "updated_at": "2026-11-16T23:30:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:NexesMess/Llama_3.x_70b_BetsyTeaz_0.1",
+    "base_model:quantized:NexesMess/Llama_3.x_70b_BetsyTeaz_0.1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 481303041504,
+  "storage_human": "481.3 GB",
+  "context_length": 131072,
+  "base_model": "NexesMess/Llama_3.x_70b_BetsyTeaz_0.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

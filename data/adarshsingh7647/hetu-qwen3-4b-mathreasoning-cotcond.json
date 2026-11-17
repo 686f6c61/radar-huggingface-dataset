@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 20,
+  "downloads_30d": 7,
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",
@@ -45,8 +45,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "AdarshSingh7647/Eklav-4B-Math",
+  "renamed_at": "2026-11-17T02:15:08.577Z",
   "benchmarks": [],
   "sources": [
     {

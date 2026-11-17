@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "grumpydan99/BERT",
+  "slug": "grumpydan99-bert",
+  "author": "grumpydan99",
+  "url": "https://huggingface.co/grumpydan99/BERT",
+  "created_at": "2026-11-17T01:42:28.000Z",
+  "updated_at": "2026-11-17T01:45:27.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437963416,
+  "storage_human": "438 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

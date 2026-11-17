@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/mixertts-ar-mixer128",
   "created_at": "2026-11-14T22:31:30.000Z",
-  "updated_at": "2026-11-15T15:58:52.000Z",
+  "updated_at": "2026-11-16T11:40:25.000Z",
   "license": "other",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 33,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -40,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Phoonnx/mixertts-ar-mixer128-mantoq",
+  "renamed_at": "2026-11-17T04:00:13.684Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "Sviat2501/xlm-roberta-base-mix3",
+  "slug": "sviat2501-xlm-roberta-base-mix3",
+  "author": "Sviat2501",
+  "url": "https://huggingface.co/Sviat2501/xlm-roberta-base-mix3",
+  "created_at": "2026-11-16T23:15:27.000Z",
+  "updated_at": "2026-11-16T23:16:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "uk"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "sentiment-analysis",
+    "ukrainian",
+    "uk",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278045955,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129306268,
+  "storage_human": "1.1 GB",
+  "context_length": null,
+  "base_model": "FacebookAI/xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

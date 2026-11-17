@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 67,
+  "downloads_30d": 63,
   "trending_score": 0,
   "parameters": 1916676352,
   "parameters_human": "1.92B",
@@ -49,8 +49,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "oriyu90/qwen3-tts-1.7b-ja-yuki",
+  "renamed_at": "2026-11-17T03:41:21.936Z",
   "benchmarks": [],
   "sources": []
 }

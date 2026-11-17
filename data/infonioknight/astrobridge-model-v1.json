@@ -39,8 +39,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "UniverseTBD/astrobridge-model-v1",
+  "renamed_at": "2026-11-17T03:11:40.264Z",
   "benchmarks": [],
   "sources": [
     {

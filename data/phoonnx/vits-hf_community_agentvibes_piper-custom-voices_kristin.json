@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/vits-hf_community_agentvibes_piper-custom-voices_kristin",
   "created_at": "2026-11-14T23:04:53.000Z",
-  "updated_at": "2026-11-15T16:03:08.000Z",
+  "updated_at": "2026-11-16T11:42:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": "Phoonnx/vits-en_us-kristin",
-  "renamed_at": "2026-11-16T03:56:40.203Z",
+  "renamed_to": "Phoonnx/vits-en_us-kristin-espeak",
+  "renamed_at": "2026-11-17T04:03:53.187Z",
   "benchmarks": [],
   "sources": []
 }

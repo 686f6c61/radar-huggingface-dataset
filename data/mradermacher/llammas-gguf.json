@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Llammas-GGUF",
+  "slug": "mradermacher-llammas-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llammas-GGUF",
+  "created_at": "2025-03-09T14:15:10.000Z",
+  "updated_at": "2026-11-16T23:30:19.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "et",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "conversational",
+    "et",
+    "en",
+    "base_model:tartuNLP/Llammas",
+    "base_model:quantized:tartuNLP/Llammas",
+    "license:llama2",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 171,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 59564800256,
+  "storage_human": "59.6 GB",
+  "context_length": 4096,
+  "base_model": "tartuNLP/Llammas",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

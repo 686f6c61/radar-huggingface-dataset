@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/vits-hf_community_HirCoir_Piper-TTS-Laura",
   "created_at": "2026-11-14T23:04:47.000Z",
-  "updated_at": "2026-11-15T16:03:17.000Z",
+  "updated_at": "2026-11-16T11:43:03.000Z",
   "license": "cc-by-nc-4.0",
   "license_family": "non-commercial",
   "pipeline_tag": "text-to-speech",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 32,
+  "downloads_30d": 25,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": "Phoonnx/vits-es_mx-laura",
-  "renamed_at": "2026-11-16T03:56:32.088Z",
+  "renamed_to": "Phoonnx/vits-es_mx-laura-espeak",
+  "renamed_at": "2026-11-17T04:03:42.762Z",
   "benchmarks": [],
   "sources": []
 }

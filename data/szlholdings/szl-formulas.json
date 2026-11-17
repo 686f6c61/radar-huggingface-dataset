@@ -5,16 +5,15 @@
   "author": "SZLHOLDINGS",
   "url": "https://huggingface.co/SZLHOLDINGS/szl-formulas",
   "created_at": "2026-07-12T11:55:07.000Z",
-  "updated_at": "2026-11-06T10:39:04.000Z",
+  "updated_at": "2026-11-16T06:21:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": "kernels",
   "languages": [],
   "tags": [
-    "kernel",
     "szl-holdings",
-    "doi:10.5281/zenodo.19944926",
+    "doi:10.5281/zenodo.24239653",
     "license:apache-2.0",
     "region:us"
   ],

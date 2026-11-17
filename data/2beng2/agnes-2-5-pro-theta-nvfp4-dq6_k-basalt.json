@@ -5,7 +5,7 @@
   "author": "2beng2",
   "url": "https://huggingface.co/2beng2/Agnes-2.5-Pro-Theta-NVFP4-DQ6_K-Basalt",
   "created_at": "2026-11-15T22:37:03.000Z",
-  "updated_at": "2026-11-16T00:20:30.000Z",
+  "updated_at": "2026-11-16T23:35:29.000Z",
   "license": "apache-2.0-and-qwen-community-1.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,7 +25,7 @@
     "license:other",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

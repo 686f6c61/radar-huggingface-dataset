@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 49,
+  "downloads_30d": 7,
   "trending_score": 0,
   "parameters": 12247782400,
   "parameters_human": "12.25B",
@@ -42,8 +42,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "SubMaroon-exp/MN-12B-Mag-Mell-Sodom-v2",
+  "renamed_at": "2026-11-17T04:36:36.065Z",
   "benchmarks": [],
   "sources": [
     {

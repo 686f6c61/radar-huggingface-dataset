@@ -5,7 +5,7 @@
   "author": "Easonnoway",
   "url": "https://huggingface.co/Easonnoway/qwen3-4b-ablation-matched-response",
   "created_at": "2026-11-10T20:04:58.000Z",
-  "updated_at": "2026-11-11T06:41:48.000Z",
+  "updated_at": "2026-11-16T04:50:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -19,7 +19,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 58,
+  "downloads_30d": 60,
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",
@@ -36,8 +36,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Easonnoway/model-c84b7ea3d1",
+  "renamed_at": "2026-11-17T02:49:41.908Z",
   "benchmarks": [],
   "sources": []
 }

@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "Phoonnx/parlertts-wo-adia-unicode",
+  "slug": "phoonnx-parlertts-wo-adia-unicode",
+  "author": "Phoonnx",
+  "url": "https://huggingface.co/Phoonnx/parlertts-wo-adia-unicode",
+  "created_at": "2026-11-16T21:39:37.000Z",
+  "updated_at": "2026-11-16T21:40:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "phoonnx",
+  "languages": [
+    "wo"
+  ],
+  "tags": [
+    "phoonnx",
+    "onnx",
+    "parler-tts",
+    "text-to-speech",
+    "wo",
+    "base_model:CONCREE/Adia_TTS",
+    "base_model:quantized:CONCREE/Adia_TTS",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5170709770,
+  "storage_human": "5.2 GB",
+  "context_length": null,
+  "base_model": "CONCREE/Adia_TTS",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

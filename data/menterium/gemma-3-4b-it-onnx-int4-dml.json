@@ -9,11 +9,11 @@
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
-  "library": null,
+  "library": "onnxruntime-genai",
   "languages": [],
   "tags": [
-    "onnx",
     "onnxruntime-genai",
+    "onnx",
     "directml",
     "gemma3",
     "int4",

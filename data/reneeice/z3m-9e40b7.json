@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "reneeice/z3m-9e40b7",
+  "slug": "reneeice-z3m-9e40b7",
+  "author": "reneeice",
+  "url": "https://huggingface.co/reneeice/z3m-9e40b7",
+  "created_at": "2026-11-16T13:07:47.000Z",
+  "updated_at": "2026-11-16T13:08:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9078616080,
+  "storage_human": "9.1 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

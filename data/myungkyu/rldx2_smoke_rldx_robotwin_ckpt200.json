@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 23,
+  "downloads_30d": 11,
   "trending_score": 0,
   "parameters": 6912896320,
   "parameters_human": "6.91B",
@@ -41,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Myungkyu/smoke_rldx_robotwin_ckpt200",
+  "renamed_at": "2026-11-17T03:44:26.634Z",
   "benchmarks": [],
   "sources": [
     {

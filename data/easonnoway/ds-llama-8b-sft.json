@@ -5,7 +5,7 @@
   "author": "Easonnoway",
   "url": "https://huggingface.co/Easonnoway/ds-llama-8b-sft",
   "created_at": "2026-11-10T09:55:54.000Z",
-  "updated_at": "2026-11-11T06:41:35.000Z",
+  "updated_at": "2026-11-16T04:50:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -17,7 +17,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 296,
+  "downloads_30d": 299,
   "trending_score": 0,
   "parameters": 8030261248,
   "parameters_human": "8.03B",
@@ -34,8 +34,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Easonnoway/model-84ad1ebafd",
+  "renamed_at": "2026-11-17T02:49:41.193Z",
   "benchmarks": [],
   "sources": []
 }

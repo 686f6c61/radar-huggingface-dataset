@@ -1,0 +1,79 @@
+{
+  "schema": 2,
+  "id": "Rashik24/parti-sft-artcanvas-full-2026-11-07-qwen3.5-4b-r128-b32",
+  "slug": "rashik24-parti-sft-artcanvas-full-2026-11-07-qwen3-5-4b-r128-b32",
+  "author": "Rashik24",
+  "url": "https://huggingface.co/Rashik24/parti-sft-artcanvas-full-2026-11-07-qwen3.5-4b-r128-b32",
+  "created_at": "2026-11-17T03:32:28.000Z",
+  "updated_at": "2026-11-17T04:22:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "artcanvas",
+    "pycairo",
+    "tool-use",
+    "drawing",
+    "sft",
+    "image-text-to-text",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1166617368,
+  "storage_human": "1.2 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PES 2021 Mega Scoreboard AIO Update 2026/27",
+      "url": "https://pes-files.com/pes-2021-mega-scoreboard-aio-update-2026-27/",
+      "snippet": "1 day ago · PES 2021 Mega Scoreboard AIO Update 2026/27 – The creators have released a large package of realistic scoreboards …"
+    },
+    {
+      "title": "NEW ANIMATION SCOREBOARDS AIO SEASON 2026/27 + INSTALATION - FOOTBALL ...",
+      "url": "https://www.youtube.com/watch?v=sXOvA-_8PFg",
+      "snippet": "NEW ANIMATION SCOREBOARDS AIO SEASON 2026/27 + INSTALATION - FOOTBALL LIFE 2027 Prayudi Stargames 29.2K …"
+    },
+    {
+      "title": "PES Modding : SP Football Life",
+      "url": "https://www.pesmodding.com/search/label/SP%20Football%20Life",
+      "snippet": "Nov 10, 2026 · New Premier League season 2026 - 2027 full kit pack released for eFootball Pro Evolution Soccer 2021 & SP …"
+    },
+    {
+      "title": "SP Football Life 2027 - SmokePatch",
+      "url": "https://www.pessmokepatch.com/2026/10/spfl27.html",
+      "snippet": "SP Football Life 2027 is the 2026/27 season release, featuring updated teams, players, competitions, graphics, gameplay, and …"
+    },
+    {
+      "title": "⚙️ Customizations and Mods - SmokePatch",
+      "url": "https://www.pessmokepatch.com/p/customizations-and-mods.html",
+      "snippet": "Oct 29, 2026 · Changes the game's theme color, including menus, the default scoreboard, and other theme-related graphics. Game …"
+    }
+  ]
+}

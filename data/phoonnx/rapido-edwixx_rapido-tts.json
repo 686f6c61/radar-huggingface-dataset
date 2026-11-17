@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/rapido-edwixx_rapido-tts",
   "created_at": "2026-11-14T22:34:26.000Z",
-  "updated_at": "2026-11-15T15:59:11.000Z",
+  "updated_at": "2026-11-16T16:43:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -21,12 +21,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 25,
+  "downloads_30d": 23,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 267290736,
-  "storage_human": "267 MB",
+  "storage_bytes": 283378584,
+  "storage_human": "283 MB",
   "context_length": null,
   "base_model": null,
   "formats": [
@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": "Phoonnx/rapido-pt_br-edwixx",
-  "renamed_at": "2026-11-16T03:55:44.697Z",
+  "renamed_to": "Phoonnx/rapido-pt_br-edwixx-graphemes",
+  "renamed_at": "2026-11-17T04:00:36.027Z",
   "benchmarks": [],
   "sources": []
 }

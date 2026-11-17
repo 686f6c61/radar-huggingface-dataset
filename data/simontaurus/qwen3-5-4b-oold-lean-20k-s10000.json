@@ -44,8 +44,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "OO-LD/oold-quantities-lean-20k-qwen4b-r16-s10000",
+  "renamed_at": "2026-11-17T04:31:25.486Z",
   "benchmarks": [],
   "sources": [
     {

@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mradermacher/gemma3-4b-it-abliterated-GGUF",
+  "slug": "mradermacher-gemma3-4b-it-abliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma3-4b-it-abliterated-GGUF",
+  "created_at": "2025-03-16T19:43:32.000Z",
+  "updated_at": "2026-11-17T00:36:03.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:kabachuha/gemma3-4b-it-abliterated",
+    "base_model:quantized:kabachuha/gemma3-4b-it-abliterated",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 9,
+  "downloads_30d": 1168,
+  "trending_score": 0,
+  "parameters": 3880263168,
+  "parameters_human": "3.88B",
+  "storage_bytes": 37271628736,
+  "storage_human": "37.3 GB",
+  "context_length": 131072,
+  "base_model": "kabachuha/gemma3-4b-it-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

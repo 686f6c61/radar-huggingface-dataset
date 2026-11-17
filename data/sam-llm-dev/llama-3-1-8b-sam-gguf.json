@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "sam-llm-dev/Llama-3.1-8B-SAM-GGUF",
+  "slug": "sam-llm-dev-llama-3-1-8b-sam-gguf",
+  "author": "sam-llm-dev",
+  "url": "https://huggingface.co/sam-llm-dev/Llama-3.1-8B-SAM-GGUF",
+  "created_at": "2026-11-16T19:49:54.000Z",
+  "updated_at": "2026-11-16T20:42:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama-3.1",
+    "qlora",
+    "education",
+    "low-vram",
+    "en",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:quantized:meta-llama/Llama-3.1-8B-Instruct",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 4920739008,
+  "storage_human": "4.9 GB",
+  "context_length": 131072,
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

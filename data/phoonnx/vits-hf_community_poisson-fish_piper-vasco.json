@@ -5,7 +5,7 @@
   "author": "Phoonnx",
   "url": "https://huggingface.co/Phoonnx/vits-hf_community_poisson-fish_piper-vasco",
   "created_at": "2026-11-14T23:07:08.000Z",
-  "updated_at": "2026-11-15T16:04:02.000Z",
+  "updated_at": "2026-11-16T11:43:20.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 28,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": "Phoonnx/vits-en_us-vasco",
-  "renamed_at": "2026-11-16T03:57:40.868Z",
+  "renamed_to": "Phoonnx/vits-en_us-vasco-espeak",
+  "renamed_at": "2026-11-17T04:04:05.396Z",
   "benchmarks": [],
   "sources": []
 }

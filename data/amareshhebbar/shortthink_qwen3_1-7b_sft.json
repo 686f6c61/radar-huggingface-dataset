@@ -5,7 +5,7 @@
   "author": "AmareshHebbar",
   "url": "https://huggingface.co/AmareshHebbar/ShortThink_Qwen3_1.7B_SFT",
   "created_at": "2026-11-16T14:19:54.000Z",
-  "updated_at": "2026-11-16T14:20:24.000Z",
+  "updated_at": "2026-11-16T21:10:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -5,13 +5,14 @@
   "author": "Schwi-AI",
   "url": "https://huggingface.co/Schwi-AI/Qwen-Image-2.1-MosaicMate-LoRA",
   "created_at": "2026-11-07T15:29:38.000Z",
-  "updated_at": "2026-11-07T12:00:00.000Z",
+  "updated_at": "2026-11-14T12:00:00.000Z",
   "license": "qwen-research",
   "license_family": "oss",
   "pipeline_tag": "image-to-image",
-  "library": null,
+  "library": "diffusers",
   "languages": [],
   "tags": [
+    "diffusers",
     "lora",
     "image-editing",
     "qwen-image",
@@ -24,7 +25,7 @@
     "license:other",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
@@ -33,7 +34,9 @@
   "storage_human": "51 MB",
   "context_length": null,
   "base_model": "Qwen/Qwen-Image-2.1",
-  "formats": [],
+  "formats": [
+    "diffusers"
+  ],
   "is_conversational": false,
   "gated": false,
   "disabled": false,
